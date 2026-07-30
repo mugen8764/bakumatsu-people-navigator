@@ -6,15 +6,15 @@
       "name": "幕府",
       "shortName": "幕",
       "color": "#557493",
-      "summary": "徳川将軍を頂点とする政権。開国後、外交・朝廷・雄藩への対応で統制力が揺らぐ。",
+      "summary": "徳川将軍を頂点とする政権。条約締結、長州征討、大政奉還を経て、1867年の王政復古で廃止された。",
       "aliases": [
         "江戸幕府",
         "徳川幕府"
       ],
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力概要の項目別出典が必要。"
+        "sourceIds": ["archives_timeline", "ndl_modern_timeline", "kyoto_restoration_transition"],
+        "reviewStatus": "verified",
+        "note": "公的年表と京都市解説で条約締結、長州征討、大政奉還、王政復古を確認。"
       }
     },
     {
@@ -22,14 +22,14 @@
       "name": "朝廷",
       "shortName": "朝",
       "color": "#a37a29",
-      "summary": "天皇と公家を中心とする京都の政治主体。条約勅許問題以降、国政への影響力を急速に強める。",
+      "summary": "天皇と公家を中心とする京都の政治主体。条約勅許、攘夷、王政復古などの政治判断に関与した。",
       "aliases": [
         "京都朝廷"
       ],
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力概要の項目別出典が必要。"
+        "sourceIds": ["ndl_modern_timeline", "ndl_handwriting_bakumatsu_people", "cultural_heritage_aug18"],
+        "reviewStatus": "verified",
+        "note": "条約勅許問題、八月十八日の政変、王政復古への関与を確認。"
       }
     },
     {
@@ -37,14 +37,14 @@
       "name": "薩摩藩",
       "shortName": "薩",
       "color": "#ad554e",
-      "summary": "島津家の雄藩。公武合体、幕政改革を経て長州と連携し、新政府の中核となる。",
+      "summary": "島津家の藩。公武合体による幕政改革を進めた後、長州藩と同盟し、幕府解体へ動いた。",
       "aliases": [
         "鹿児島藩"
       ],
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力概要の項目別出典が必要。"
+        "sourceIds": ["kagoshima_okinoerabu_saigo", "ndl_history_satcho"],
+        "reviewStatus": "verified",
+        "note": "鹿児島県解説と国際子ども図書館資料で公武合体、薩長同盟、幕府解体への転換を確認。"
       }
     },
     {
@@ -52,15 +52,15 @@
       "name": "長州藩",
       "shortName": "長",
       "color": "#527e5b",
-      "summary": "毛利家の雄藩。尊王攘夷を主導した後、軍制改革と薩摩との連携を経て倒幕の中核となる。",
+      "summary": "毛利家の藩。外国船砲撃と禁門の変を経て藩政を転換し、西洋軍制を導入して薩摩藩と同盟した。",
       "aliases": [
         "萩藩",
         "山口藩"
       ],
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力概要の項目別出典が必要。"
+        "sourceIds": ["shimonoseki_joi_bombardment", "yamaguchi_choshu_reform", "ndl_history_satcho"],
+        "reviewStatus": "verified",
+        "note": "下関市・山口県立図書館・国際子ども図書館資料で攘夷戦、藩政転換、軍制改革、薩長同盟を確認。"
       }
     },
     {
@@ -68,14 +68,14 @@
       "name": "会津藩",
       "shortName": "会",
       "color": "#705d91",
-      "summary": "京都守護職を担い、幕府・孝明天皇の信任を背景に京都治安を担当する。",
+      "summary": "松平容保を藩主とする藩。京都守護職を務め、戊辰戦争では新政府軍と戦って降伏した。",
       "aliases": [
         "会津松平家"
       ],
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力概要の項目別出典が必要。"
+        "sourceIds": ["kyoto_shugoshoku_site", "archives_boshin_war"],
+        "reviewStatus": "verified",
+        "note": "京都市と国立公文書館の解説で京都守護職と戊辰戦争での抗戦・降伏を確認。"
       }
     },
     {
@@ -83,14 +83,14 @@
       "name": "土佐藩",
       "shortName": "土",
       "color": "#9a6844",
-      "summary": "山内家の雄藩。藩内尊攘派の弾圧後、大政奉還論を通じて政権移行に関与する。",
+      "summary": "山内家の藩。後藤象二郎と前藩主山内容堂らが大政奉還を推進した。",
       "aliases": [
         "高知藩"
       ],
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力概要の項目別出典が必要。"
+        "sourceIds": ["kochi_taisei_hokan", "ndl_ryoma_political_plan"],
+        "reviewStatus": "verified",
+        "note": "高知市と国立国会図書館の解説で土佐藩による大政奉還推進を確認。"
       }
     },
     {
@@ -98,14 +98,14 @@
       "name": "水戸藩",
       "shortName": "水",
       "color": "#467b7b",
-      "summary": "徳川御三家の一つ。水戸学と海防論が尊王攘夷思想へ大きな影響を与える。",
+      "summary": "徳川斉昭を藩主とした徳川家の一藩。将軍継嗣と条約調印をめぐって井伊直弼と対立し、水戸藩浪士らが桜田門外の変を起こした。",
       "aliases": [
         "水戸徳川家"
       ],
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力概要の項目別出典が必要。"
+        "sourceIds": ["ndl_handwriting_bakumatsu_people"],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の井伊直弼解説で将軍継嗣・条約問題での対立と桜田門外の変を確認。"
       }
     },
     {
@@ -118,9 +118,9 @@
         "壬生浪士組"
       ],
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力概要の項目別出典が必要。"
+        "sourceIds": ["archives_timeline", "kyoto_kinmon"],
+        "reviewStatus": "verified",
+        "note": "国立公文書館と京都市の解説で新選組の池田屋襲撃と京都での活動を確認。"
       }
     },
     {
@@ -128,14 +128,14 @@
       "name": "外国勢力",
       "shortName": "外",
       "color": "#397fa6",
-      "summary": "アメリカ、イギリス、フランスなど。条約、外交、軍事衝突、技術導入を通じて国内政局を動かす。",
+      "summary": "アメリカ、ロシア、イギリス、フランスなど。幕府との条約締結、薩英戦争、下関攻撃などを行った。",
       "aliases": [
         "列強"
       ],
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力概要の項目別出典が必要。"
+        "sourceIds": ["archives_timeline", "shimonoseki_joi_bombardment"],
+        "reviewStatus": "verified",
+        "note": "国立公文書館年表と下関市解説で各国の来航・条約・軍事衝突を確認。"
       }
     },
     {
@@ -143,15 +143,15 @@
       "name": "新政府",
       "shortName": "新政",
       "color": "#b34f72",
-      "summary": "王政復古後、薩摩・長州・土佐などを中核に成立した政権。戊辰戦争を通じ全国統治を確立する。",
+      "summary": "王政復古後に総裁・議定・参与の三職を置いた政権。旧幕府側との戊辰戦争に勝利した。",
       "aliases": [
         "明治新政府",
         "官軍"
       ],
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力概要の項目別出典が必要。"
+        "sourceIds": ["ndl_modern_timeline", "archives_boshin_war"],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館年表と国立公文書館解説で三職設置と戊辰戦争を確認。"
       }
     },
     {
@@ -159,14 +159,14 @@
       "name": "旧幕府勢力",
       "shortName": "旧",
       "color": "#56616e",
-      "summary": "徳川家や旧幕臣、会津・桑名など、王政復古後も新政府と対立・交渉した諸勢力。",
+      "summary": "王政復古後に新政府と戦った旧幕府軍や諸藩の勢力。江戸開城後も東北・箱館で戦闘を続けた。",
       "aliases": [
         "旧幕府軍"
       ],
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力概要の項目別出典が必要。"
+        "sourceIds": ["archives_toba_fushimi", "archives_boshin_war", "hakodate_war_history"],
+        "reviewStatus": "verified",
+        "note": "国立公文書館と函館市の解説で鳥羽・伏見から東北・箱館までの旧幕府側勢力を確認。"
       }
     }
   ],
