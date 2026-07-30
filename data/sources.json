@@ -574,8 +574,8 @@
     {
       "id": "jacar_kawaji_detail",
       "title": "アジア歴史資料センター「川路利良」",
-      "url": "https://www.jacar.archives.go.jp/das/term/00000414",
-      "note": "川路利良の1850年兵具方与力附就任、1868年の戊辰戦争従軍などの職歴。"
+      "url": "https://www.jacar.go.jp/dictionary/02_item.html?id=00025247",
+      "note": "川路利良の1850年の兵具方与力附就任と、1867年の兵具方一番小隊長・学兵隊長就任。"
     },
     {
       "id": "jacar_kido_detail",
@@ -672,6 +672,78 @@
       "title": "国立国会図書館「近代日本人の肖像・坂本竜馬」",
       "url": "https://www.ndl.go.jp/portrait/datas/89",
       "note": "坂本竜馬の土佐藩郷士としての出自、1861年の土佐勤王党参加、1862年の脱藩と勝海舟門下入り。"
+    },
+    {
+      "id": "fukui_yoshinobu_shungaku_1862",
+      "title": "福井市立郷土歴史博物館「一橋徳川家と将軍慶喜にまつわる品々」",
+      "url": "https://history-museum.city.fukui.lg.jp/tenji/kaisetsusheets/66.pdf",
+      "note": "1862年の一橋慶喜による一橋家再相続と将軍後見職就任、松平春嶽の政事総裁職就任、両者による幕府改革・公武合体の推進。"
+    },
+    {
+      "id": "ndl_katsu_timeline",
+      "title": "国立国会図書館「日記の世界・勝海舟」",
+      "url": "https://www.ndl.go.jp/nikki/person/katsukaishu/",
+      "note": "勝海舟の1862年7月の二丸留守居格・軍艦頭取就任と、同年閏8月の軍艦奉行並就任。"
+    },
+    {
+      "id": "tokunoshima_saigo_1862",
+      "title": "徳之島町「奥山家（西郷松）」",
+      "url": "https://www.tokunoshima-town.org/shakaikyoikuka/kurashi/kyoiku/bunka/bunkazai/shiseki/inokawa/okuyamake.html",
+      "note": "大島三右衛門を名乗った西郷隆盛の1862年7月の徳之島上陸と、沖永良部島への再遠島命令。"
+    },
+    {
+      "id": "kagoshima_komatsu_1862",
+      "title": "鹿児島県観光連盟「小松帯刀像」",
+      "url": "https://www.kagoshima-kankou.com/guide/70359",
+      "note": "小松帯刀の1861年の側役就任、1862年の島津久光上京への随行、寺田屋事件・幕政改革への対応と家老就任。"
+    },
+    {
+      "id": "kyoto_kido_1862",
+      "title": "京都市「木戸孝允神道碑・碑文の大意」",
+      "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hi145_abst.html",
+      "note": "1862年7月の毛利敬親上洛に先立つ桂小五郎の入京と、朝廷への接近・周旋。"
+    },
+    {
+      "id": "hagi_takasugi_1862",
+      "title": "萩市立萩図書館「高杉晋作ものしり100問」",
+      "url": "https://hagilib.city.hagi.lg.jp/hagilib-archive/image/417.pdf",
+      "note": "高杉晋作への1862年2月の上海視察命令、4月の出航、5月の上海到着と外国勢力下の現地視察。"
+    },
+    {
+      "id": "hagi_choshu_policy_1862",
+      "title": "萩市「市報はぎ・長井雅楽」",
+      "url": "https://www.city.hagi.lg.jp/uploaded/attachment/10250.pdf",
+      "note": "桂小五郎・久坂玄瑞らによる航海遠略策の弾劾と、1862年の長州藩是の破約攘夷への転換。"
+    },
+    {
+      "id": "yamaguchi_kusaka_guide",
+      "title": "山口県立山口図書館「久坂玄瑞・人物調べ方案内」",
+      "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/kusaka_genzui/",
+      "note": "久坂玄瑞の尊王攘夷運動での指導的位置と、1862年の英国公使館焼き討ち。"
+    },
+    {
+      "id": "ndl_iwakura_exile",
+      "title": "国立国会図書館「あの人の直筆・岩倉具視日記」",
+      "url": "https://www.ndl.go.jp/jikihitsu/part3/s3_1",
+      "note": "和宮降嫁推進を理由に幕府との内通を疑われた岩倉具視の失脚と、1862年から約5年間の洛中追放・岩倉村蟄居。"
+    },
+    {
+      "id": "kochi_yodo_1862",
+      "title": "高知県立坂本龍馬記念館「天誅―土佐藩の奔走―」展開催要項",
+      "url": "https://www.pref.kochi.lg.jp/press1/2025021300098/files/file_20252134191656_1.pdf",
+      "note": "1862年の吉田東洋暗殺後に行われた下手人探索と、江戸在府の山内容堂への逐次報告。"
+    },
+    {
+      "id": "kochi_ryoma_1862",
+      "title": "高知市「龍馬、勝海舟の門人になる」",
+      "url": "https://www.city.kochi.kochi.jp/soshiki/80/man2606.html",
+      "note": "坂本龍馬の1862年の脱藩と、同年12月に勝海舟を訪ねて門人になったとされる経緯。"
+    },
+    {
+      "id": "hino_shinsengumi_2003",
+      "title": "日野市「広報ひの・新選組誕生前夜」",
+      "url": "https://www.lib.city.hino.lg.jp/hinocity/digital/folder/sfsg4/kouhou15.4.1.pdf",
+      "note": "近藤勇の1861年の天然理心流四代目継承、近藤・土方の1863年の浪士組参加、土方による上洛前の家伝薬販売の手伝い。"
     }
   ]
 }

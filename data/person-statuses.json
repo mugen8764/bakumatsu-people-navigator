@@ -180,15 +180,17 @@
       "displayName": "徳川家茂",
       "role": "14代将軍",
       "factionId": "bakufu",
-      "stance": "文久の改革を受け入れ、翌年の将軍上洛に備える。",
-      "importance": "実権は慶喜・春嶽ら改革職にも分散した。",
+      "stance": "2月11日に和宮との婚儀を行い、7月には一橋慶喜が将軍後見職、松平春嶽が政事総裁職に就いた。",
+      "importance": "幕府は同年、陸軍の編制改革を行い、京都守護職を新設した。",
       "evidence": {
         "sourceIds": [
           "archives_timeline",
-          "ndl_handwriting"
+          "iwaki_kazunomiya",
+          "fukui_yoshinobu_shungaku_1862",
+          "kyoto_shugoshoku_site"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "いわき市の解説で1862年2月11日の婚儀、福井市立郷土歴史博物館の展示解説で慶喜・春嶽の就任、国立公文書館と京都市の解説で軍制改革と京都守護職新設を確認。"
       }
     },
     {
@@ -295,16 +297,15 @@
       "displayName": "一橋慶喜",
       "role": "将軍後見職",
       "factionId": "bakufu",
-      "stance": "文久の改革で幕政へ復帰し、家茂を補佐して朝廷対応を担う。",
-      "importance": "京都・幕府間の調整を担う改革派の中心。",
+      "stance": "7月6日に一橋家を再相続し、将軍後見職に就任する。",
+      "importance": "政事総裁職の松平春嶽とともに幕府改革と公武合体を進めた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_modern_timeline",
-          "ndl_handwriting"
+          "matsudo_yoshinobu_timeline",
+          "fukui_yoshinobu_shungaku_1862"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "松戸市戸定歴史館の年表で1862年7月6日の一橋家再相続・将軍後見職就任、福井市立郷土歴史博物館の展示解説で春嶽との幕府改革・公武合体推進を確認。"
       }
     },
     {
@@ -512,15 +513,15 @@
       "displayName": "勝海舟",
       "role": "軍艦奉行並",
       "factionId": "bakufu",
-      "stance": "神戸海軍操練所構想を進め、藩を越えた海軍人材を育てる。",
-      "importance": "坂本龍馬らを海軍・交易構想へ導いた。",
+      "stance": "7月に二丸留守居格・軍艦頭取、閏8月に軍艦奉行並へ就任する。",
+      "importance": "幕府海軍行政を担い始める。神戸海軍操練所の開設は1864年で、この時点ではまだ開設前。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_katsu_timeline",
+          "kobe_naval_training_center"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の履歴で1862年の両就任、神戸市立中央図書館の解説で神戸海軍操練所の開設が1864年であることを確認し、操練所の運営を1862年から除外。"
       }
     },
     {
@@ -871,15 +872,15 @@
       "displayName": "松平春嶽",
       "role": "政事総裁職",
       "factionId": "bakufu",
-      "stance": "慶喜とともに文久の改革を進め、幕府と朝廷・雄藩の調整を図る。",
-      "importance": "幕府の意思決定へ雄藩大名が参加する制度実験。",
+      "stance": "政事総裁職に就任し、将軍後見職の一橋慶喜と幕府改革を進める。",
+      "importance": "慶喜とともに公武合体を推進した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "fukui_yoshinobu_shungaku_1862",
+          "fukui_bakumatsu_chronicle"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "福井市立郷土歴史博物館の展示解説と年表で1862年の政事総裁職就任、慶喜との幕府改革・公武合体推進を確認。"
       }
     },
     {
@@ -1094,15 +1095,16 @@
       "displayName": "島津久光",
       "role": "薩摩藩国父",
       "factionId": "satsuma",
-      "stance": "率兵上京・江戸下向し、公武合体と幕政改革を要求する。",
-      "importance": "寺田屋事件で藩内急進派を鎮圧し、文久の改革を実現した。",
+      "stance": "大兵を率いて上洛し、孝明天皇へ幕府との協調を訴えたのち、勅命を伝えるため江戸へ下る。",
+      "importance": "寺田屋に集結した薩摩藩の尊攘急進派を藩士に鎮撫させ、幕政改革を求める勅命を江戸へ伝えた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kyoto_kinmon",
+          "kagoshima_teradaya",
+          "ndl_portrait_ohara"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "京都市の解説で率兵上洛、朝廷への幕府協調要請、江戸への勅命伝達、鹿児島県の解説で寺田屋事件の鎮撫、国立国会図書館で大原重徳との江戸下向を確認。"
       }
     },
     {
@@ -1338,18 +1340,18 @@
       "personId": "saigo",
       "startSceneId": "1862-bunkyu",
       "endSceneId": "1862-bunkyu",
-      "displayName": "西郷吉之助",
-      "role": "沖永良部島へ遠島",
+      "displayName": "大島三右衛門",
+      "role": "徳之島・沖永良部島へ遠島",
       "factionId": "satsuma",
-      "stance": "久光の命に背いたとして処分され、政治の場から外れる。",
-      "importance": "薩摩藩内が一枚岩ではなかったことを示す。",
+      "stance": "島津久光の率兵上京に伴って奄美大島から召還されたが、命令違反を問われて徳之島へ送られる。",
+      "importance": "7月初めに徳之島へ上陸し、さらに沖永良部島への再遠島を命じられた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_saigo_detail",
+          "tokunoshima_saigo_1862"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1862年の召還と沖永良部島遠島、徳之島町で大島三右衛門の名、7月の徳之島上陸と再遠島命令を確認。"
       }
     },
     {
@@ -1605,17 +1607,17 @@
       "startSceneId": "1862-bunkyu",
       "endSceneId": "1862-bunkyu",
       "displayName": "大久保一蔵",
-      "role": "島津久光側近",
+      "role": "薩摩藩小納戸役",
       "factionId": "satsuma",
-      "stance": "久光の上京・江戸下向と幕政改革を実務面で支える。",
-      "importance": "薩摩の公武合体政策を動かす交渉担当。",
+      "stance": "前年に小納戸役となり、島津久光のもとで登用が進む。",
+      "importance": "御側役となるのは1863年で、この時点で確認できる役職は小納戸役。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_okubo_detail",
+          "kagoshima_okubo_people"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで大久保一蔵の別名、1861年小納戸役と1863年御側役の職歴、鹿児島県観光連盟の解説で久光による登用を確認。1862年の役職を御側役としない。"
       }
     },
     {
@@ -1835,15 +1837,14 @@
       "displayName": "小松帯刀",
       "role": "薩摩藩家老",
       "factionId": "satsuma",
-      "stance": "久光・大久保らと藩政と中央政局の実務を担う。",
-      "importance": "若い家老として藩の公式意思を代表できた。",
+      "stance": "島津久光の上京に家臣筆頭として随行し、寺田屋事件や幕政改革への対応にあたる。",
+      "importance": "同年に家老へ進み、京都の藩邸にとどまって薩摩藩を代表した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kagoshima_komatsu_1862"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "鹿児島県観光連盟の人物解説で1862年の久光上京随行、寺田屋事件・幕政改革への対応、家老就任と京都での薩摩藩代表活動を確認。"
       }
     },
     {
@@ -2041,17 +2042,16 @@
       "startSceneId": "1862-bunkyu",
       "endSceneId": "1863-aug18",
       "displayName": "川路正之進",
-      "role": "薩摩藩士",
+      "role": "薩摩藩士（兵具方歴任）",
       "factionId": "satsuma",
-      "stance": "久光主導の薩摩藩組織の中で活動する。",
-      "importance": "藩の中央政治参加を支えた多数の実務藩士の一人。",
+      "stance": "1850年の兵具方与力附就任は確認できるが、1862年の具体的な任務は確認できない。",
+      "importance": "兵具方一番小隊長・学兵隊長となるのは1867年で、後年の軍事・警察職をこの時点へ遡らせない。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "jacar_kawaji_detail"
         ],
         "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "note": "アジア歴史資料センターの職歴で1850年と1867年の役職は確認できるが、1862年の在職・任務を直接示す出典は未確認。推測で役職や中央政局への関与を補わない。"
       }
     },
     {
@@ -2363,17 +2363,17 @@
       "startSceneId": "1862-bunkyu",
       "endSceneId": "1862-bunkyu",
       "displayName": "桂小五郎",
-      "role": "長州藩京都政務担当",
+      "role": "長州藩士・京都で国事周旋",
       "factionId": "choshu",
-      "stance": "朝廷・諸藩との交渉を担い、尊王攘夷政策を進める。",
-      "importance": "長州の政治実務を代表する。",
+      "stance": "7月の藩主毛利敬親上洛に先立って京都へ入り、朝廷への周旋にあたる。",
+      "importance": "久坂玄瑞らと長井雅楽の航海遠略策を弾劾し、藩是の破約攘夷への転換に関わった。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kyoto_kido_1862",
+          "hagi_choshu_policy_1862"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "京都市の碑文解説で1862年7月の先行入京と朝廷周旋、萩市の解説で久坂らと行った航海遠略策の弾劾と藩是転換を確認。正式役職と断定していた「京都政務担当」は避けた。"
       }
     },
     {
@@ -2609,17 +2609,18 @@
       "startSceneId": "1862-bunkyu",
       "endSceneId": "1862-bunkyu",
       "displayName": "高杉晋作",
-      "role": "長州藩士・上海渡航後",
+      "role": "長州藩士・上海視察",
       "factionId": "choshu",
-      "stance": "上海で列強支配を見て、軍事近代化の必要性を認識する。",
-      "importance": "攘夷と西洋技術導入を同時に考える。",
+      "stance": "2月に上海視察を命じられ、4月に長崎を出航、5月に上海へ到着する。",
+      "importance": "外国勢力の支配下にある上海を現地で視察した。奇兵隊の結成は翌1863年。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "hagi_takasugi_1862",
+          "hagi_takasugi_shanghai",
+          "yamaguchi_library_kinmon"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "萩市立萩図書館と萩博物館の解説で1862年の視察命令・出航・上海到着と現地の状況、山口県立山口図書館の解説で奇兵隊結成が1863年であることを確認。内面の変化は断定しない。"
       }
     },
     {
@@ -2760,17 +2761,17 @@
       "startSceneId": "1862-bunkyu",
       "endSceneId": "1862-bunkyu",
       "displayName": "久坂玄瑞",
-      "role": "長州藩尊攘派",
+      "role": "長州藩士・尊王攘夷運動指導者",
       "factionId": "choshu",
-      "stance": "京都で攘夷実行と朝廷工作を進める。",
-      "importance": "長州急進派を代表する。",
+      "stance": "桂小五郎らと長井雅楽の航海遠略策を弾劾し、長州藩の藩是を破約攘夷へ転換させる動きに加わる。",
+      "importance": "同年、英国公使館焼き討ちに参加した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "hagi_choshu_policy_1862",
+          "yamaguchi_kusaka_guide"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "萩市の解説で航海遠略策の弾劾と1862年の藩是転換、山口県立山口図書館の人物案内で尊王攘夷運動での指導的位置と同年の英国公使館焼き討ちを確認。"
       }
     },
     {
@@ -3389,15 +3390,16 @@
       "displayName": "孝明天皇",
       "role": "天皇",
       "factionId": "imperial-court",
-      "stance": "攘夷を望みつつ、幕府・有力藩との協調も重視する。",
-      "importance": "京都へ政治の中心が移る中で意思表示の重みが増す。",
+      "stance": "前年までに応諾した和宮と家茂の婚儀が、2月11日に江戸城で行われる。",
+      "importance": "毛利敬親へ上洛を命じ、敬親は7月に京都へ入った。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "iwaki_kazunomiya",
+          "kyoto_kido_1862",
+          "ndl_authority_komei"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "いわき市の解説で婚姻への応諾と1862年2月11日の婚儀、京都市の碑文解説で孝明天皇の勅命による毛利敬親の同年7月上洛、国立国会図書館典拠で在位を確認。抽象的な政治姿勢は除外。"
       }
     },
     {
@@ -3671,17 +3673,17 @@
       "startSceneId": "1862-bunkyu",
       "endSceneId": "1863-joi",
       "displayName": "岩倉具視",
-      "role": "蟄居・洛外に退く",
+      "role": "失脚・岩倉村蟄居",
       "factionId": "imperial-court",
-      "stance": "尊攘派から佐幕派と批判され、政治の表舞台を離れる。",
-      "importance": "朝廷内の勢力変化で公家も失脚した。",
+      "stance": "和宮降嫁を推進したことで幕府と通じているとの嫌疑を受け、洛中を追放される。",
+      "importance": "1862年から約5年間、京都市北郊の岩倉村で蟄居した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_iwakura_exile",
+          "ndl_portrait_iwakura_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の直筆資料解説で和宮降嫁推進による嫌疑・失脚、1862年から約5年間の洛中追放と岩倉村蟄居を確認。"
       }
     },
     {
@@ -3958,15 +3960,14 @@
       "displayName": "松平容保",
       "role": "会津藩主・京都守護職",
       "factionId": "aizu",
-      "stance": "幕府から京都治安と朝廷警護を命じられる。",
-      "importance": "京都における幕府側の軍事・治安責任者。",
+      "stance": "京都の治安維持を目的に新設された京都守護職へ任命される。",
+      "importance": "京都守護職は京都所司代・京都町奉行の上位に置かれた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kyoto_shugoshoku_site"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "京都市の史跡解説で1862年の京都守護職新設、その目的、会津藩主松平容保の就任、京都所司代・町奉行との位置関係を確認。"
       }
     },
     {
@@ -4203,17 +4204,17 @@
       "startSceneId": "1862-bunkyu",
       "endSceneId": "1863-joi",
       "displayName": "山内容堂",
-      "role": "前土佐藩主",
+      "role": "前土佐藩主・江戸在府",
       "factionId": "tosa",
-      "stance": "幕政改革に関与しつつ、土佐勤王党など藩内急進派を警戒する。",
-      "importance": "公武合体と藩内尊攘派の緊張を体現する。",
+      "stance": "吉田東洋暗殺後に始まった下手人探索の状況について、土佐藩から逐次報告を受ける。",
+      "importance": "藩の要人を狙う暗殺事件への対応を、江戸在府中も重要案件として扱った。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kochi_yodo_timeline",
+          "kochi_yodo_1862"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "高知県立高知城歴史博物館で前藩主・容堂の立場、高知県立坂本龍馬記念館の展示要項で1862年の吉田東洋暗殺、下手人探索、江戸在府の容堂への逐次報告を確認。幕政改革への関与という未特定の記述は除外。"
       }
     },
     {
@@ -4355,17 +4356,17 @@
       "startSceneId": "1862-bunkyu",
       "endSceneId": "1862-bunkyu",
       "displayName": "武市半平太",
-      "role": "土佐勤王党盟主",
+      "role": "土佐勤王党盟主・勅使随行",
       "factionId": "tosa",
-      "stance": "藩論を尊王攘夷へ転換し、京都政局へ参加する。",
-      "importance": "下級藩士組織が藩政へ影響した。",
+      "stance": "8月25日に京都へ入り、公家や他藩の志士と会合して攘夷督促の勅使派遣を働きかける。",
+      "importance": "10月12日に勅使一行へ随行して京都を出発し、江戸へ赴いた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kochi_takechi_kyoto",
+          "kochi_tosa_timeline"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "高知県立坂本龍馬記念館の企画展解説で1862年8月25日の入京、京都での会合と勅使派遣への働きかけ、10月12日の勅使随行出発、高知県立高知城歴史博物館で土佐勤王党の結成時期を確認。"
       }
     },
     {
@@ -4469,17 +4470,17 @@
       "startSceneId": "1862-bunkyu",
       "endSceneId": "1862-bunkyu",
       "displayName": "坂本龍馬",
-      "role": "脱藩浪士・勝海舟門下へ",
+      "role": "土佐脱藩浪士",
       "factionId": "tosa",
-      "stance": "土佐を脱藩し、勝海舟と出会って海軍構想へ関心を移す。",
-      "importance": "排外的攘夷から海軍・交易重視へ変化する。",
+      "stance": "土佐藩を脱藩し、12月に勝海舟を訪ねて門人になったとされる。",
+      "importance": "脱藩と勝海舟門下入りはいずれも1862年の出来事で、思想の転換までは断定しない。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_ryoma_detail",
+          "kochi_ryoma_1862"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で1862年の脱藩と勝海舟門下入り、高知市の解説で同年12月の訪問・門下入りとされる経緯を確認。内面の変化は根拠が不足するため除外。"
       }
     },
     {
@@ -4906,17 +4907,17 @@
       "startSceneId": "1862-bunkyu",
       "endSceneId": "1862-bunkyu",
       "displayName": "近藤勇",
-      "role": "天然理心流試衛館主",
+      "role": "天然理心流四代目宗家・試衛館主",
       "factionId": "shinsengumi",
-      "stance": "江戸で道場を運営し、翌年の浪士組参加へ向かう。",
-      "importance": "まだ新選組局長ではない。",
+      "stance": "前年に天然理心流四代目を継承し、江戸の試衛館を主宰する。",
+      "importance": "浪士組への参加と京都上洛は翌1863年で、この時点ではまだ新選組局長ではない。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "hino_shinsengumi_2003",
+          "kyoto_shinsengumi_history"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "日野市の広報で1861年の天然理心流四代目継承、京都市歴史資料館の講座資料で近藤の浪士組参加・入京が1863年であることを確認。"
       }
     },
     {
@@ -5079,15 +5080,15 @@
       "displayName": "土方歳三",
       "role": "天然理心流門人",
       "factionId": "shinsengumi",
-      "stance": "近藤勇ら試衛館の仲間と行動する。",
-      "importance": "まだ新選組副長ではない。",
+      "stance": "天然理心流を修め、上洛前には実家の家伝薬販売を手伝っていた。",
+      "importance": "浪士組への参加と京都上洛は翌1863年で、この時点ではまだ新選組副長ではない。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "hino_shinsengumi_2003",
+          "kyoto_shinsengumi_history"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "日野市の解説で天然理心流の修得と上洛前の家伝薬販売の手伝い、京都市歴史資料館の講座資料で土方の浪士組参加・入京が1863年であることを確認。"
       }
     },
     {
@@ -5359,17 +5360,17 @@
       "startSceneId": "1862-bunkyu",
       "endSceneId": "1866-satcho",
       "displayName": "和宮",
-      "role": "14代将軍家茂御台所",
+      "role": "14代将軍家茂御台所（2月11日婚儀）",
       "factionId": "imperial-court",
-      "stance": "江戸城大奥で朝廷と徳川家の結節点となる。",
-      "importance": "京都出身の皇族として大奥の慣習と調整を要した。",
+      "stance": "前年11月に江戸へ入り、12月に大奥へ入ったのち、2月11日に家茂との婚儀を行う。",
+      "importance": "幕府が公武合体策として進めた皇女降嫁が婚儀に至った。",
       "evidence": {
         "sourceIds": [
           "archives_timeline",
-          "ndl_handwriting"
+          "iwaki_kazunomiya"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "いわき市の解説で1861年の江戸到着・大奥入りと1862年2月11日の婚儀、国立公文書館の年表で公武合体策としての婚姻を確認。抽象的な調整役の記述は除外。"
       }
     },
     {
