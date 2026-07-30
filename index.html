@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>幕末人物・勢力ナビ 1853–1869</title>
+  <meta name="description" content="幕末の人物・勢力・事件・場所の関係を、時点ごとの名前・役職・立場から理解するインタラクティブな史実ナビゲーション。">
+  <meta property="og:title" content="幕末人物・勢力ナビ 1853–1869">
+  <meta property="og:description" content="黒船来航から箱館戦争終結まで、人物・勢力・事件の関係を時点ごとにたどる。">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#8b4333">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="page">
+  <header class="hero">
+    <div class="brand"><div class="mark" aria-hidden="true">幕</div><div><h1>幕末人物・勢力ナビ</h1><p class="lead">黒船来航から箱館戦争終結まで。人物を生涯の経歴ではなく、選択した時点の名前・役職・所属・関係から理解します。</p></div></div>
+    <span class="version">完成版 v1 · 史実のみ</span>
+  </header>
+
+  <section class="panel top" aria-label="年代と検索">
+    <div class="control-grid">
+      <label>表示時点<select id="sceneSelect"></select></label>
+      <label>時系列<input id="sceneRange" type="range" min="0" value="0"></label>
+      <label>年代表示<select id="calendarMode"><option value="both">西暦＋元号</option><option value="western">西暦のみ</option><option value="japanese">元号のみ</option></select></label>
+      <div class="transport" aria-label="時系列操作"><button id="prevScene" class="icon-button" type="button" aria-label="前の時点">←</button><button id="playScenes" class="button primary" type="button">▶ 再生</button><button id="nextScene" class="icon-button" type="button" aria-label="次の時点">→</button></div>
+    </div>
+    <div class="scene-row">
+      <div class="year-box"><strong id="sceneYear"></strong><span id="sceneEra"></span></div>
+      <div class="scene-copy"><h2 id="sceneTitle"></h2><p id="sceneSummary"></p></div>
+      <div id="sceneCounts" class="counts"></div>
+    </div>
+    <div class="progress"><div id="sceneProgress"></div></div>
+    <div id="sceneInsights" class="insights"></div>
+    <div class="global-search" style="margin-top:11px"><label>人物・勢力・事件を横断検索<input id="globalSearch" type="search" placeholder="例：桂小五郎、大政奉還、京都守護職、薩摩"></label><div id="searchResults" class="search-results" hidden></div></div>
+  </section>
+
+  <nav class="tabs" aria-label="表示切替">
+    <button class="tab active" data-view="people" type="button">人物</button>
+    <button class="tab" data-view="factions" type="button">勢力</button>
+    <button class="tab" data-view="relations" type="button">相関図</button>
+    <button class="tab" data-view="map" type="button">地図</button>
+    <button class="tab" data-view="events" type="button">事件の因果</button>
+    <button class="tab" data-view="sources" type="button">出典・方針</button>
+  </nav>
+
+  <section id="view-people" class="view active">
+    <div class="main-grid">
+      <div>
+        <div class="catalog-tools"><div id="personFilters" class="filter-scroll"></div><button id="clearPersonFilter" class="button" type="button">絞り込み解除</button></div>
+        <div class="notice">カードは選択時点で一般的に使われる名前を優先します。「桂小五郎」「木戸孝允」のように、どの時期の名前でも検索できます。</div>
+        <div id="personCards" class="cards"></div>
+      </div>
+      <aside id="personDetail" class="panel detail" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section id="view-factions" class="view">
+    <div class="main-grid">
+      <div><div class="notice">勢力は固定した「味方・敵」ではありません。薩摩と長州のように、同じ期間内でも敵対から提携へ変化します。</div><div id="factionCards" class="faction-grid"></div></div>
+      <aside id="factionDetail" class="panel detail" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section id="view-relations" class="view">
+    <div class="layout">
+      <div class="panel visual"><svg id="relationGraph" viewBox="0 0 820 590" role="img" aria-label="選択人物を中心とした人物相関図"></svg></div>
+      <aside class="panel side"><h2>時点で変わる相関図</h2><p class="muted">選択人物を中央に置き、その時点で意味のある関係だけを表示します。破線は対立関係です。</p><div class="metrics"><div class="metric"><b id="metricPeople">0</b><span>表示人物</span></div><div class="metric"><b id="metricRelations">0</b><span>全関係</span></div><div class="metric"><b id="metricFactions">0</b><span>活動勢力</span></div></div><label>関係の種類<select id="relationType"><option value="all">すべて</option><option value="主従・登用">主従・登用</option><option value="政治協力">政治協力</option><option value="対立">対立</option><option value="師弟・同志">師弟・同志</option><option value="組織">組織</option><option value="仲介・交渉">仲介・交渉</option><option value="親族">親族</option></select></label><div id="graphExplanation" class="relations" style="margin-top:12px"></div><div id="graphLegend" class="legend"></div></aside>
+    </div>
+  </section>
+
+  <section id="view-map" class="view">
+    <div class="layout">
+      <div><div class="panel visual"><svg id="historyMap" viewBox="0 0 720 770" role="img" aria-label="人物と事件の関連地を示す日本地図"><text id="mapStatus" x="360" y="380" text-anchor="middle" class="map-label">日本地図を準備しています…</text></svg></div><div class="map-key"><span><i class="symbol-circle"></i>人物の関連地</span><span><i class="symbol-diamond"></i>事件の主要地点</span></div></div>
+      <aside class="panel side"><h2 id="mapTitle">関連地</h2><p id="mapDescription" class="muted"></p><div id="placeList" class="list"></div><div class="notice" style="margin-top:12px">地図は現代の海岸線上に主要地点を示します。幕末期の藩境や人物の全旅程を厳密に再現するものではありません。</div></aside>
+    </div>
+  </section>
+
+  <section id="view-events" class="view">
+    <div class="timeline-layout">
+      <div class="panel side"><h2>事件の因果タイムライン</h2><p class="muted">事件名だけでなく、原因・争点・結果をつないで読みます。</p><div id="causalTimeline" class="chain"></div></div>
+      <aside id="eventDetail" class="panel detail" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section id="view-sources" class="view">
+    <div class="panel side">
+      <div id="dataStats" class="stats"></div>
+      <div class="method-grid">
+        <article class="method-card"><h3>編集原則</h3><p>特定の漫画・ドラマ・小説の作中情報は使用せず、史実上の人物・勢力・事件だけを扱います。善悪や「幕府対倒幕」の二択に単純化せず、時点による役職・所属・政策の変化を優先します。</p></article>
+        <article class="method-card"><h3>名前の扱い</h3><p>大久保正助／一蔵／利通、桂小五郎／木戸孝允のように、人物IDは統一しつつ画面には選択時点の名前を表示します。通称・変名・後年の名前をすべて検索対象にします。</p></article>
+        <article class="method-card"><h3>日付の扱い</h3><p>幕末の事件日は旧暦と新暦が混在するため、定着した和暦日付と換算後の西暦日付を併記します。複数月に及ぶ出来事は期間として表示します。</p></article>
+        <article class="method-card"><h3>断定の範囲</h3><p>動機や密約の解釈に諸説がある事項は、関係者の公的立場と確認できる結果を中心に記述します。地図の経路線や勢力境界は推測表示しません。</p></article>
+      </div>
+      <h2 style="margin-top:17px">主な公開資料</h2><div id="sourceCatalog" class="source-list"></div>
+      <h2 style="margin-top:17px">収録ファイル</h2><div class="list"><div class="list-item"><strong>data.js</strong><br><span class="muted">人物・勢力・関係・事件・地点の構造化データ。編集時はここを更新します。</span></div><div class="list-item"><strong>SOURCES.md</strong><br><span class="muted">出典と校正方針をまとめた文書。</span></div><div class="list-item"><strong>README.md</strong><br><span class="muted">公開方法、データ追加方法、操作説明。</span></div></div>
+    </div>
+  </section>
+
+  <footer class="panel"><div class="footer-row"><div><strong>幕末人物・勢力ナビ 1853–1869</strong><br>史実の背景知識を、人物・勢力・事件・場所のつながりとして整理した静的サイトです。</div><div class="footer-links"><a href="README.md">README</a><a href="SOURCES.md">出典一覧</a><button id="copyLink" class="link-button" type="button">現在の表示URLをコピー</button></div></div><div id="copyStatus" class="status-line" aria-live="polite"></div></footer>
+</main>
+<noscript><p style="padding:20px">このサイトの表示にはJavaScriptが必要です。</p></noscript>
+<script src="map-data.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
