@@ -30,7 +30,7 @@
       const ids = placeIds();
       $('#mapTitle').textContent = status ? `${status.display}と「${event.title}」の関連地` : `「${event.title}」の関連地`;
       $('#mapDescription').textContent = '緑系の丸は人物の主な関連地、菱形は事件の主要地点です。人物の所在地を特定日ごとに断定する表示ではありません。';
-      $('#placeList').innerHTML = ids.map(id => data.places[id] ? `<div class="list-item"><strong>${data.places[id].name}</strong><br><span class="muted">${data.places[id].note}</span>${(data.places[id].coord[0] < 125 || data.places[id].coord[0] > 146 || data.places[id].coord[1] < 24 || data.places[id].coord[1] > 46) ? '<br><small class="muted">日本地図の範囲外</small>' : ''}</div>` : '').join('');
+      $('#placeList').innerHTML = ids.map(id => data.places[id] ? `<div class="list-item"><strong>${data.places[id].name} ${shared.reviewBadge(data.places[id].evidence)}</strong><br><span class="muted">${data.places[id].note}</span>${(data.places[id].coord[0] < 125 || data.places[id].coord[0] > 146 || data.places[id].coord[1] < 24 || data.places[id].coord[1] > 46) ? '<br><small class="muted">日本地図の範囲外</small>' : ''}</div>` : '').join('');
       return { event, ids, person };
     }
 

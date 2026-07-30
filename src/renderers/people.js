@@ -49,16 +49,16 @@
         .filter(item => item.scene)
         .sort((a, b) => a.scene.index - b.scene.index);
       box.innerHTML = `<div class="detail-head"><div class="avatar" style="background:${shared.factionColor(status.faction)}">${shared.factionShort(status.faction)}</div><div><div class="detail-title">${status.display}</div>${status.display !== person.name ? `<div class="aliases">後の名前：${person.name}</div>` : ''}<div class="badges"><span class="badge">${status.faction}</span><span class="badge">${status.role}</span><span class="badge">${person.born}</span></div></div></div>
-      <div class="snapshot"><strong>${shared.dateLabel(shared.scene())}の位置づけ</strong>${status.importance}</div>
+      <div class="snapshot"><strong>${shared.dateLabel(shared.scene())}の位置づけ ${shared.reviewBadge(status.evidence)}</strong>${status.importance}</div>
       <div class="section"><h3>この時点の行動・立場</h3><p>${status.stance}</p></div>
       <div class="section"><h3>一言で</h3><p>${person.oneLine}</p></div>
       <div class="section"><h3>名前・通称</h3><div class="tags">${[person.name, ...person.aliases].map(alias => `<span class="tag">${alias}</span>`).join('')}</div></div>
       <div class="section"><h3>この時点の主要関係</h3><div class="relations">${relations.length ? relations.map(relation => {
         const other = domain.getPerson(relation.a === person.id ? relation.b : relation.a);
-        return `<div class="rel"><button type="button" data-other-person="${other.id}">${domain.statusAt(other, state.scene).display}</button> — ${relation.label}<br><span class="muted">${relation.text}</span></div>`;
+        return `<div class="rel"><button type="button" data-other-person="${other.id}">${domain.statusAt(other, state.scene).display}</button> — ${relation.label} ${shared.reviewBadge(relation.evidence)}<br><span class="muted">${relation.text}</span></div>`;
       }).join('') : '<span class="muted">登録済みの主要関係はありません。</span>'}</div></div>
       <div class="section"><h3>関連事件</h3><div class="tags">${person.events.map(id => data.events[id] ? `<button type="button" class="tag" data-open-event="${id}">${data.events[id].title}</button>` : '').join('')}</div></div>
-      <div class="section"><h3>人物の変化</h3><div class="history-list">${history.map(item => `<div class="history-item ${item.scene.index === state.scene ? 'current' : ''}"><button type="button" data-history-scene="${item.scene.index}"><b>${item.scene.year}年 ${item.value.display}</b>${item.value.role}</button></div>`).join('')}</div></div>
+      <div class="section"><h3>人物の変化</h3><div class="history-list">${history.map(item => `<div class="history-item ${item.scene.index === state.scene ? 'current' : ''}"><button type="button" data-history-scene="${item.scene.index}"><b>${item.scene.year}年 ${item.value.display} ${shared.reviewBadge(item.value.evidence)}</b>${item.value.role}</button></div>`).join('')}</div></div>
       <div class="actions"><button type="button" class="button" id="personToGraph">相関図</button><button type="button" class="button" id="personToMap">地図</button></div>
       <div class="section"><h3>参考資料</h3><div class="source-list">${shared.sourceLinks(person.sources)}</div></div>`;
       $$('[data-other-person]', box).forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.otherPerson)));

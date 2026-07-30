@@ -50,7 +50,7 @@
       $('#metricFactions').textContent = domain.activeFactionNames(state.scene).length;
       $('#graphExplanation').innerHTML = relations.length ? relations.map(relation => {
         const other = domain.getPerson(relation.a === person.id ? relation.b : relation.a);
-        return `<div class="rel"><button type="button" data-graph-other="${other.id}">${domain.statusAt(other, state.scene).display}</button> — ${relation.label}<br><span class="muted">${relation.text}</span></div>`;
+        return `<div class="rel"><button type="button" data-graph-other="${other.id}">${domain.statusAt(other, state.scene).display}</button> — ${relation.label} ${shared.reviewBadge(relation.evidence)}<br><span class="muted">${relation.text}</span></div>`;
       }).join('') : '<span class="muted">該当する関係はありません。</span>';
       $$('[data-graph-other]').forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.graphOther, 'relations')));
       const legendFactions = [...new Set([status.faction, ...others.map(other => domain.factionAt(other, state.scene))])];

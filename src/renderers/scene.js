@@ -19,7 +19,7 @@
       $('#sceneSummary').textContent = scene.summary;
       $('#sceneProgress').style.width = `${(state.scene + 1) / data.scenes.length * 100}%`;
       const event = data.events[scene.event];
-      $('#sceneCounts').innerHTML = `<span class="count">人物 ${domain.activePeople(state.scene).length}</span><span class="count">勢力 ${domain.activeFactionNames(state.scene).length}</span><span class="count">関係 ${domain.activeRelations(state.scene, state.relationType).length}</span><span class="count">${event.category}</span>`;
+      $('#sceneCounts').innerHTML = `<span class="count">人物 ${domain.activePeople(state.scene).length}</span><span class="count">勢力 ${domain.activeFactionNames(state.scene).length}</span><span class="count">関係 ${domain.activeRelations(state.scene, state.relationType).length}</span><span class="count">${event.category}</span>${shared.reviewBadge(scene.evidence)}`;
       $('#sceneInsights').innerHTML = scene.insights.map(insight => `<div class="insight">${insight}</div>`).join('');
       $('#prevScene').disabled = state.scene === 0;
       $('#nextScene').disabled = state.scene === data.scenes.length - 1;

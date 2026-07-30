@@ -32,7 +32,15 @@
         .join('');
     }
 
-    return { dateLabel, factionColor, factionShort, scene, sourceLinks };
+    function reviewBadge(evidence) {
+      if (!evidence || evidence.reviewStatus === 'verified') return '';
+      if (evidence.reviewStatus === 'disputed') {
+        return '<span class="badge review-status disputed" title="複数の見解がある項目です">諸説あり</span>';
+      }
+      return '<span class="badge review-status" title="項目単位の出典を確認中です">出典校正中</span>';
+    }
+
+    return { dateLabel, factionColor, factionShort, reviewBadge, scene, sourceLinks };
   }
 
   return { createShared };

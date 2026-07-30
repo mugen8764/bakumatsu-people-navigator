@@ -1,4 +1,5 @@
 const { defineConfig, devices } = require('@playwright/test');
+const fullBrowserMatrix = Boolean(process.env.CI || process.env.PLAYWRIGHT_ALL_BROWSERS);
 
 module.exports = defineConfig({
   testDir: './tests/e2e',
@@ -25,6 +26,18 @@ module.exports = defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] }
-    }
+    },
+    ...(fullBrowserMatrix ? [
+      {
+        name: 'firefox',
+        testIgnore: /visual\.spec\.js/,
+        use: { ...devices['Desktop Firefox'] }
+      },
+      {
+        name: 'webkit',
+        testIgnore: /visual\.spec\.js/,
+        use: { ...devices['Desktop Safari'] }
+      }
+    ] : [])
   ]
 });

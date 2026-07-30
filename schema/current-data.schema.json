@@ -92,6 +92,15 @@
       "uniqueItems": true,
       "items": { "$ref": "#/$defs/dataId" }
     },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceIds", "reviewStatus"],
+      "properties": {
+        "sourceIds": { "$ref": "#/$defs/idList" },
+        "reviewStatus": { "enum": ["verified", "needs_review", "disputed"] }
+      }
+    },
     "meta": {
       "type": "object",
       "additionalProperties": false,
@@ -115,18 +124,19 @@
     "faction": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["short", "color", "summary", "aliases"],
+      "required": ["short", "color", "summary", "aliases", "evidence"],
       "properties": {
         "short": { "$ref": "#/$defs/nonEmptyString" },
         "color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
         "summary": { "$ref": "#/$defs/nonEmptyString" },
-        "aliases": { "$ref": "#/$defs/stringList" }
+        "aliases": { "$ref": "#/$defs/stringList" },
+        "evidence": { "$ref": "#/$defs/evidence" }
       }
     },
     "scene": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "year", "era", "date", "title", "summary", "event", "insights"],
+      "required": ["id", "year", "era", "date", "title", "summary", "event", "insights", "evidence"],
       "properties": {
         "id": { "$ref": "#/$defs/sceneId" },
         "year": { "type": "integer", "minimum": 1800, "maximum": 1900 },
@@ -138,13 +148,14 @@
         "insights": {
           "allOf": [{ "$ref": "#/$defs/stringList" }],
           "minItems": 1
-        }
+        },
+        "evidence": { "$ref": "#/$defs/evidence" }
       }
     },
     "event": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["date", "title", "category", "description", "causes", "issues", "results", "people", "factions", "places", "sources"],
+      "required": ["date", "title", "category", "description", "causes", "issues", "results", "people", "factions", "places", "sources", "evidence"],
       "properties": {
         "date": { "$ref": "#/$defs/nonEmptyString" },
         "title": { "$ref": "#/$defs/nonEmptyString" },
@@ -156,13 +167,14 @@
         "people": { "$ref": "#/$defs/idList" },
         "factions": { "allOf": [{ "$ref": "#/$defs/stringList" }], "uniqueItems": true },
         "places": { "$ref": "#/$defs/idList" },
-        "sources": { "allOf": [{ "$ref": "#/$defs/idList" }], "minItems": 1 }
+        "sources": { "allOf": [{ "$ref": "#/$defs/idList" }], "minItems": 1 },
+        "evidence": { "$ref": "#/$defs/evidence" }
       }
     },
     "place": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["name", "coord", "note"],
+      "required": ["name", "coord", "note", "evidence"],
       "properties": {
         "name": { "$ref": "#/$defs/nonEmptyString" },
         "coord": {
@@ -175,19 +187,21 @@
           "minItems": 2,
           "maxItems": 2
         },
-        "note": { "$ref": "#/$defs/nonEmptyString" }
+        "note": { "$ref": "#/$defs/nonEmptyString" },
+        "evidence": { "$ref": "#/$defs/evidence" }
       }
     },
     "personStatus": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["display", "role", "stance", "importance"],
+      "required": ["display", "role", "stance", "importance", "evidence"],
       "properties": {
         "display": { "$ref": "#/$defs/nonEmptyString" },
         "role": { "$ref": "#/$defs/nonEmptyString" },
         "faction": { "$ref": "#/$defs/nonEmptyString" },
         "stance": { "$ref": "#/$defs/nonEmptyString" },
-        "importance": { "$ref": "#/$defs/nonEmptyString" }
+        "importance": { "$ref": "#/$defs/nonEmptyString" },
+        "evidence": { "$ref": "#/$defs/evidence" }
       }
     },
     "person": {
@@ -235,7 +249,7 @@
       "allOf": [{ "$ref": "#/$defs/range" }],
       "type": "object",
       "additionalProperties": false,
-      "required": ["a", "b", "start", "end", "type", "label", "text"],
+      "required": ["a", "b", "start", "end", "type", "label", "text", "evidence"],
       "properties": {
         "a": { "$ref": "#/$defs/dataId" },
         "b": { "$ref": "#/$defs/dataId" },
@@ -243,30 +257,33 @@
         "end": { "type": "integer", "minimum": 0 },
         "type": { "enum": ["主従・登用", "政治協力", "対立", "師弟・同志", "組織", "仲介・交渉", "親族"] },
         "label": { "$ref": "#/$defs/nonEmptyString" },
-        "text": { "$ref": "#/$defs/nonEmptyString" }
+        "text": { "$ref": "#/$defs/nonEmptyString" },
+        "evidence": { "$ref": "#/$defs/evidence" }
       }
     },
     "factionRelation": {
       "allOf": [{ "$ref": "#/$defs/range" }],
       "type": "object",
       "additionalProperties": false,
-      "required": ["a", "b", "start", "end", "label", "text"],
+      "required": ["a", "b", "start", "end", "label", "text", "evidence"],
       "properties": {
         "a": { "$ref": "#/$defs/nonEmptyString" },
         "b": { "$ref": "#/$defs/nonEmptyString" },
         "start": { "type": "integer", "minimum": 0 },
         "end": { "type": "integer", "minimum": 0 },
         "label": { "$ref": "#/$defs/nonEmptyString" },
-        "text": { "$ref": "#/$defs/nonEmptyString" }
+        "text": { "$ref": "#/$defs/nonEmptyString" },
+        "evidence": { "$ref": "#/$defs/evidence" }
       }
     },
     "factionState": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["goal", "position"],
+      "required": ["goal", "position", "evidence"],
       "properties": {
         "goal": { "$ref": "#/$defs/nonEmptyString" },
-        "position": { "$ref": "#/$defs/nonEmptyString" }
+        "position": { "$ref": "#/$defs/nonEmptyString" },
+        "evidence": { "$ref": "#/$defs/evidence" }
       }
     }
   }

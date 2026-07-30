@@ -2,7 +2,13 @@ const fs = require('node:fs');
 const http = require('node:http');
 const path = require('node:path');
 
-const root = path.resolve(__dirname, '../..');
+const projectRoot = path.resolve(__dirname, '../..');
+const root = process.env.STATIC_SITE_ROOT
+  ? path.resolve(projectRoot, process.env.STATIC_SITE_ROOT)
+  : projectRoot;
+if (root !== projectRoot && !root.startsWith(`${projectRoot}${path.sep}`)) {
+  throw new Error(`STATIC_SITE_ROOT must stay inside the project: ${root}`);
+}
 const port = 4173;
 const mimeTypes = {
   '.css': 'text/css; charset=utf-8',

@@ -5,13 +5,18 @@
   "scripts": {
     "test": "npm run test:data && npm run test:e2e",
     "build:data": "node scripts/build-data.cjs",
+    "build:site": "npm run check:release && node scripts/build-site.cjs",
     "check:data": "node scripts/build-data.cjs --check",
+    "check:links": "node scripts/check-links.cjs",
+    "check:release": "npm run validate:data && npm run check:data && node scripts/check-release.cjs && node scripts/review-status.cjs --check",
+    "report:review": "node scripts/review-status.cjs",
     "validate:data": "node scripts/validate-data.cjs",
     "test:data": "npm run validate:data && npm run check:data && node --test tests/data/*.test.cjs",
     "test:e2e": "playwright test",
     "test:e2e:update": "playwright test --update-snapshots"
   },
   "devDependencies": {
+    "@axe-core/playwright": "4.12.1",
     "@playwright/test": "1.62.0",
     "ajv": "8.20.0",
     "ajv-formats": "3.0.1"

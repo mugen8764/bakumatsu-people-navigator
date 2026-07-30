@@ -16,7 +16,7 @@
   <div id="appStatus" class="panel app-status" role="alert" hidden></div>
   <header class="hero">
     <div class="brand"><div class="mark" aria-hidden="true">幕</div><div><h1>幕末人物・勢力ナビ</h1><p class="lead">黒船来航から箱館戦争終結まで。人物を生涯の経歴ではなく、選択した時点の名前・役職・所属・関係から理解します。</p></div></div>
-    <span class="version">完成版 v1 · 史実のみ</span>
+    <span class="version">v1 · 出典校正中</span>
   </header>
 
   <section class="panel top" aria-label="年代と検索">
@@ -65,7 +65,7 @@
 
   <section id="view-relations" class="view" role="tabpanel" aria-labelledby="tab-relations" hidden>
     <div class="layout">
-      <div class="panel visual"><svg id="relationGraph" viewBox="0 0 820 590" role="img" aria-label="選択人物を中心とした人物相関図"></svg></div>
+      <div class="panel visual"><svg id="relationGraph" viewBox="0 0 820 590" role="group" aria-label="選択人物を中心とした人物相関図"></svg></div>
       <aside class="panel side"><h2>時点で変わる相関図</h2><p class="muted">選択人物を中央に置き、その時点で意味のある関係だけを表示します。破線は対立関係です。</p><div class="metrics"><div class="metric"><b id="metricPeople">0</b><span>表示人物</span></div><div class="metric"><b id="metricRelations">0</b><span>全関係</span></div><div class="metric"><b id="metricFactions">0</b><span>活動勢力</span></div></div><label>関係の種類<select id="relationType"><option value="all">すべて</option><option value="主従・登用">主従・登用</option><option value="政治協力">政治協力</option><option value="対立">対立</option><option value="師弟・同志">師弟・同志</option><option value="組織">組織</option><option value="仲介・交渉">仲介・交渉</option><option value="親族">親族</option></select></label><div id="graphExplanation" class="relations" style="margin-top:12px"></div><div id="graphLegend" class="legend"></div></aside>
     </div>
   </section>
@@ -92,6 +92,7 @@
         <article class="method-card"><h3>名前の扱い</h3><p>大久保正助／一蔵／利通、桂小五郎／木戸孝允のように、人物IDは統一しつつ画面には選択時点の名前を表示します。通称・変名・後年の名前をすべて検索対象にします。</p></article>
         <article class="method-card"><h3>日付の扱い</h3><p>幕末の事件日は旧暦と新暦が混在するため、定着した和暦日付と換算後の西暦日付を併記します。複数月に及ぶ出来事は期間として表示します。</p></article>
         <article class="method-card"><h3>断定の範囲</h3><p>動機や密約の解釈に諸説がある事項は、関係者の公的立場と確認できる結果を中心に記述します。地図の経路線や勢力境界は推測表示しません。</p></article>
+        <article class="method-card"><h3>校正状況</h3><p>人物概要と主要事件には出典を登録しています。時点別の役職・所属、人物・勢力関係、地点は項目単位の出典を継続確認中です。正式な研究・引用ではリンク先の原資料を確認してください。</p></article>
       </div>
       <h2 style="margin-top:17px">主な公開資料</h2><div id="sourceCatalog" class="source-list"></div>
       <h2 style="margin-top:17px">収録ファイル</h2><div class="list"><div class="list-item"><strong>data/*.json</strong><br><span class="muted">人物・勢力・関係・事件・地点の正本データ。data.jsはここから生成します。</span></div><div class="list-item"><strong>SOURCES.md</strong><br><span class="muted">出典と校正方針をまとめた文書。</span></div><div class="list-item"><strong>README.md</strong><br><span class="muted">公開方法、データ追加方法、操作説明。</span></div></div>

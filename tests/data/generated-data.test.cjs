@@ -46,3 +46,12 @@ test('canonical records keep review status explicit', () => {
   assert.ok(evidenceRecords.some(record => record.evidence.reviewStatus === 'verified'));
   assert.ok(evidenceRecords.some(record => record.evidence.reviewStatus === 'needs_review'));
 });
+
+test('browser compatibility data preserves item-level review status', () => {
+  const statuses = legacyData.people.flatMap(person => Object.values(person.statuses));
+  assert.ok(statuses.every(status => status.evidence?.reviewStatus));
+  assert.ok(legacyData.relations.every(relation => relation.evidence?.reviewStatus));
+  assert.ok(legacyData.factionRelations.every(relation => relation.evidence?.reviewStatus));
+  assert.ok(Object.values(legacyData.places).every(place => place.evidence?.reviewStatus));
+  assert.ok(Object.values(legacyData.factionStates).flatMap(Object.values).every(state => state.evidence?.reviewStatus));
+});

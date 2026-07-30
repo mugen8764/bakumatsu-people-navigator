@@ -13,6 +13,13 @@ function toObject(items, valueFor) {
   return Object.fromEntries(items.map(item => [item.id, valueFor(item)]));
 }
 
+function evidence(value) {
+  return {
+    sourceIds: [...value.sourceIds],
+    reviewStatus: value.reviewStatus
+  };
+}
+
 function assembleLegacyData(documents) {
   const scenes = [...documents.events.scenes].sort((a, b) => a.order - b.order);
   const sceneIndex = new Map(scenes.map((scene, index) => [scene.id, index]));
@@ -28,7 +35,8 @@ function assembleLegacyData(documents) {
     short: faction.shortName,
     color: faction.color,
     summary: faction.summary,
-    aliases: [...faction.aliases]
+    aliases: [...faction.aliases],
+    evidence: evidence(faction.evidence)
   }));
   const legacyFactions = Object.fromEntries(Object.entries(factions).map(([id, faction]) => [
     requiredMapping(factionNameById, id, 'faction name'),
@@ -43,7 +51,8 @@ function assembleLegacyData(documents) {
     title: scene.title,
     summary: scene.summary,
     event: scene.eventId,
-    insights: [...scene.insights]
+    insights: [...scene.insights],
+    evidence: evidence(scene.evidence)
   }));
 
   const events = toObject(documents.events.events, event => ({
@@ -57,13 +66,15 @@ function assembleLegacyData(documents) {
     people: [...event.personIds],
     factions: event.factionIds.map(id => requiredMapping(factionNameById, id, 'faction name')),
     places: [...event.placeIds],
-    sources: [...event.evidence.sourceIds]
+    sources: [...event.evidence.sourceIds],
+    evidence: evidence(event.evidence)
   }));
 
   const places = toObject(documents.places.places, place => ({
     name: place.name,
     coord: [place.longitude, place.latitude],
-    note: place.note
+    note: place.note,
+    evidence: evidence(place.evidence)
   }));
 
   const statusesByPerson = new Map();
@@ -82,7 +93,8 @@ function assembleLegacyData(documents) {
             ? { faction: requiredMapping(factionNameById, status.factionId, 'faction name') }
             : {}),
           stance: status.stance,
-          importance: status.importance
+          importance: status.importance,
+          evidence: evidence(status.evidence)
         };
         return [status.startSceneId, legacyStatus];
       });
@@ -109,7 +121,8 @@ function assembleLegacyData(documents) {
     end: sceneIndex.get(relation.endSceneId),
     type: requiredMapping(relationTypeNameById, relation.typeId, 'relation type'),
     label: relation.label,
-    text: relation.text
+    text: relation.text,
+    evidence: evidence(relation.evidence)
   }));
 
   const factionRelations = documents.relations.factionRelations.map(relation => ({
@@ -118,7 +131,8 @@ function assembleLegacyData(documents) {
     start: sceneIndex.get(relation.startSceneId),
     end: sceneIndex.get(relation.endSceneId),
     label: relation.label,
-    text: relation.text
+    text: relation.text,
+    evidence: evidence(relation.evidence)
   }));
 
   const factionStates = Object.fromEntries(scenes.map(scene => [scene.id, {}]));
@@ -127,7 +141,11 @@ function assembleLegacyData(documents) {
     const start = sceneIndex.get(state.startSceneId);
     const end = sceneIndex.get(state.endSceneId);
     for (let index = start; index <= end; index += 1) {
-      factionStates[scenes[index].id][name] = { goal: state.goal, position: state.position };
+      factionStates[scenes[index].id][name] = {
+        goal: state.goal,
+        position: state.position,
+        evidence: evidence(state.evidence)
+      };
     }
   }
 

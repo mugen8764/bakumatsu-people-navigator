@@ -151,3 +151,24 @@ test('reduced motion preference disables optional animation and transitions', as
   const activeMarker = page.locator('#historyMap .map-active').first();
   await expect(activeMarker).toHaveCSS('animation-name', 'none');
 });
+
+test('404 page recovers the correct site root from a nested path', async ({ page }) => {
+  const response = await page.goto('/missing/nested/page');
+  expect(response.status()).toBe(404);
+  await expect(page.locator('h1')).toHaveText('ページが見つかりません');
+  await expect(page.locator('#homeLink')).toHaveAttribute('href', '/');
+  await page.locator('#homeLink').click();
+  await expect(page.locator('h1')).toHaveText('幕末人物・勢力ナビ');
+});
+
+test('items awaiting source review are disclosed where their claims appear', async ({ page }) => {
+  await page.goto('/#scene=1866-satcho&view=people&person=kido&faction=長州藩');
+  await expect(page.locator('#sceneCounts .review-status')).toHaveText('出典校正中');
+  await expect(page.locator('#personDetail .snapshot .review-status')).toHaveText('出典校正中');
+
+  await page.locator('#tab-relations').click();
+  await expect(page.locator('#graphExplanation .review-status').first()).toHaveText('出典校正中');
+
+  await page.locator('#tab-map').click();
+  await expect(page.locator('#placeList .review-status').first()).toHaveText('出典校正中');
+});
