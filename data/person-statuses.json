@@ -220,15 +220,15 @@
       "displayName": "徳川家茂",
       "role": "14代将軍",
       "factionId": "bakufu",
-      "stance": "禁門の変後、第一次長州征討を命じる。",
-      "importance": "諸藩を動員する幕府権力がなお機能していた。",
+      "stance": "禁門の変後、幕府は長州藩へ第一次長州征討軍を送る。",
+      "importance": "長州藩は幕府軍との戦闘を避け、三家老の処分などで恭順した。",
       "evidence": {
         "sourceIds": [
           "archives_timeline",
-          "ndl_handwriting"
+          "archives_zaihan_diary"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立公文書館で家茂在職期の第一次長州戦争と長州藩の恭順を確認。家茂個人が征討を命令したという直接根拠は未確認のため、幕府の行動として記述。"
       }
     },
     {
@@ -354,16 +354,14 @@
       "displayName": "一橋慶喜",
       "role": "禁裏御守衛総督・摂海防禦指揮",
       "factionId": "bakufu",
-      "stance": "禁門の変で京都防衛を指揮し、長州処分を進める。",
-      "importance": "将軍就任前から幕府の京都軍事責任を担った。",
+      "stance": "7月19日の禁門の変で諸藩を指揮し、一橋家床几隊と日華門を守備する。",
+      "importance": "将軍就任前に京都防衛の指揮を担った。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_modern_timeline",
-          "ndl_handwriting"
+          "matsudo_yoshinobu_timeline"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "松戸市戸定歴史館の年表で、1864年7月19日の諸藩指揮と日華門守備、1866年7月31日までに禁裏御守衛総督・摂海防禦指揮を辞したことを確認。"
       }
     },
     {
@@ -528,17 +526,17 @@
       "startSceneId": "1864-kinmon",
       "endSceneId": "1866-expedition",
       "displayName": "勝海舟",
-      "role": "軍艦奉行",
+      "role": "軍艦奉行（1864年就任）",
       "factionId": "bakufu",
-      "stance": "海軍操練所への尊攘派参加を疑われ、幕府内で立場を弱める。",
-      "importance": "幕府改革機関も京都政局の影響を受けた。",
+      "stance": "1864年に軍艦奉行へ進み、神戸海軍操練所を開いて幕臣・諸藩の学生や志士を教育する。",
+      "importance": "坂本龍馬らが学ぶ海軍教育の場を幕府機関として運営した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_katsu_detail",
+          "kobe_naval_1863"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で1864年の軍艦奉行就任・神戸海軍操練所開設・坂本龍馬らへの教育、神戸市文化財保護審議会資料で操練所の1864年竣工を確認。尊攘派参加を疑われたとの因果関係は直接確認できないため削除。"
       }
     },
     {
@@ -1149,15 +1147,14 @@
       "displayName": "島津久光",
       "role": "薩摩藩国父",
       "factionId": "satsuma",
-      "stance": "禁門の変後の長州処分へ関与しつつ、幕府との距離を測る。",
-      "importance": "幕府協力と薩摩独自の国政構想を併存させた。",
+      "stance": "沖永良部島に流していた西郷を呼び戻し、禁門の変と第一次長州征伐にあたらせる。",
+      "importance": "国父として藩政の実権を握り、復帰させた西郷を軍事・交渉の実務へ配置した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kagoshima_library_hisamitsu_saigo"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "鹿児島県立図書館の島津久光解説で、国父として藩政の実権を握ったことと、1864年に西郷を呼び戻して禁門の変・第一次長州征伐に尽力させたことを確認。"
       }
     },
     {
@@ -1396,15 +1393,15 @@
       "displayName": "西郷吉之助",
       "role": "薩摩藩軍賦役",
       "factionId": "satsuma",
-      "stance": "赦免後に復帰し、禁門の変・長州征討で軍事と交渉を担う。",
-      "importance": "薩摩の軍事・政治実務の中心へ復帰した。",
+      "stance": "1864年に赦免され、軍賦役兼諸藩応接係・側役となり、禁門の変と第一次長州征伐にあたる。",
+      "importance": "沖永良部島での流罪から薩摩藩の軍事・対藩交渉の実務へ復帰した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_saigo_detail",
+          "kagoshima_library_hisamitsu_saigo"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1864年の赦免と軍賦役兼諸藩応接係・側役、鹿児島県立図書館で禁門の変・第一次長州征伐への従事を確認。"
       }
     },
     {
@@ -1659,17 +1656,17 @@
       "startSceneId": "1864-kinmon",
       "endSceneId": "1864-kinmon",
       "displayName": "大久保一蔵",
-      "role": "薩摩藩国事担当",
+      "role": "薩摩藩御側役",
       "factionId": "satsuma",
-      "stance": "長州処分に関与しながら、幕府との距離と薩摩の構想を調整する。",
-      "importance": "単純な佐幕ではない薩摩独自の判断を担う。",
+      "stance": "島津久光の御側役を務め、第一次長州征討期には長州謝罪について西郷から報告を受ける。",
+      "importance": "西郷の現地活動と薩摩藩中枢をつなぐ受報者だったことが書状目録から確認できる。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_okubo_detail",
+          "kagoshima_sources_1864"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1863年の御側役就任、鹿児島県史料の収録案内で元治元年の長州謝罪に関する西郷隆盛から大久保一蔵への報告を確認。「国事担当」という未確認の役職名は使用しない。"
       }
     },
     {
@@ -1888,15 +1885,15 @@
       "displayName": "小松帯刀",
       "role": "薩摩藩家老",
       "factionId": "satsuma",
-      "stance": "禁門の変後の京都政局と長州処分に関与する。",
-      "importance": "薩摩藩の公式責任者として交渉する。",
+      "stance": "家老として藩政中枢にあり、第一次長州征討では出軍について伊地知正治から届書を受ける。",
+      "importance": "長州征討に出る薩摩藩部隊の報告先となったことが史料目録から確認できる。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kagoshima_komatsu_1862",
+          "kagoshima_sources_1864"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "鹿児島県観光連盟で1862年の家老就任、鹿児島県史料の収録案内で元治元年の長防征討出軍に関する伊地知正治から小松帯刀への届書を確認。具体的な京都交渉の内容は断定しない。"
       }
     },
     {
@@ -2055,17 +2052,16 @@
       "startSceneId": "1864-kinmon",
       "endSceneId": "1866-satcho",
       "displayName": "川路正之進",
-      "role": "薩摩藩兵",
+      "role": "薩摩藩士（1864年の職務は未確認）",
       "factionId": "satsuma",
-      "stance": "禁門の変で薩摩藩兵として長州軍との戦闘に参加する。",
-      "importance": "幕末の軍事経験を得る転機。",
+      "stance": "1850年の兵具方与力附就任は確認できるが、1864年の役職・行動は確認できない。",
+      "importance": "兵具方一番小隊長・学兵隊長となるのは1867年で、禁門の変への参加を示す根拠は未確認。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "jacar_kawaji_detail"
         ],
         "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "note": "アジア歴史資料センターの職歴は1850年の兵具方与力附と1867年の兵具方一番小隊長・学兵隊長を示すが、1864年の任務を示さない。従来の禁門の変参戦記述は根拠未確認のため削除し、追加史料の確認待ちとする。"
       }
     },
     {
@@ -2150,17 +2146,16 @@
       "startSceneId": "1864-kinmon",
       "endSceneId": "1866-satcho",
       "displayName": "黒田了介",
-      "role": "薩摩藩士・砲術修業",
+      "role": "薩摩藩士・韮山塾門人",
       "factionId": "satsuma",
-      "stance": "西洋砲術を学び、藩の軍事近代化へ加わる。",
-      "importance": "後の戊辰戦争参謀だが、まだ若い軍事人材。",
+      "stance": "1863年に韮山塾へ入門し、砲術を学ぶ。",
+      "importance": "この時点で確認できる活動は砲術修業で、戊辰戦争で参謀を務めるのは後年である。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "jacar_kuroda_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1863年の韮山塾入門と砲術修業を確認。出典が示さない1864年の薩摩藩軍事近代化への具体的関与は断定しない。"
       }
     },
     {
@@ -2414,17 +2409,16 @@
       "startSceneId": "1864-kinmon",
       "endSceneId": "1864-kinmon",
       "displayName": "桂小五郎",
-      "role": "潜伏中",
+      "role": "京都潜伏・但馬へ逃走",
       "factionId": "choshu",
-      "stance": "禁門の変後、但馬などで潜伏し生き残る。",
-      "importance": "急進的上京論と距離を取り、後の藩政再建に戻る。",
+      "stance": "長州藩士の軽挙を戒めたが聞き入れられず、禁門の変後も京都に潜伏し、危険が迫ると但馬へ逃れる。",
+      "importance": "上京強行を制止した立場と、敗戦後に京都へ残った行動を区別して表示する。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kyoto_kido_1862"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "京都市の木戸孝允神道碑解説で、上京した長州藩士への制止、禁門の変後の京都潜伏、但馬への逃走を確認。"
       }
     },
     {
@@ -2642,17 +2636,17 @@
       "startSceneId": "1864-kinmon",
       "endSceneId": "1864-kinmon",
       "displayName": "高杉晋作",
-      "role": "長州藩士・一時処分",
+      "role": "長州藩士・野山獄収監後に再起用",
       "factionId": "choshu",
-      "stance": "禁門の変後の藩内混乱で政治的に後退する。",
-      "importance": "藩が恭順派へ傾く中で再起を準備する。",
+      "stance": "脱藩の罪で野山獄に収監されるが、四国連合艦隊の下関攻撃が始まると講和のため再び起用される。",
+      "importance": "禁門の変後に恭順へ傾く藩主流派へ対し、下関で挙兵する。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "yamaguchi_takasugi_guide",
+          "yamaguchi_bakan_war"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "山口県立山口図書館の人物案内と馬関戦争解説で、1864年の投獄、下関戦争時の再起用・講和、禁門の変後の下関挙兵を確認。"
       }
     },
     {
@@ -2812,17 +2806,17 @@
       "startSceneId": "1864-kinmon",
       "endSceneId": "1864-kinmon",
       "displayName": "久坂玄瑞",
-      "role": "禁門の変参加・死去",
+      "role": "長州藩尊攘派指導者・禁門の変で死去",
       "factionId": "choshu",
-      "stance": "長州軍の上京に参加し、敗北後に自刃する。",
-      "importance": "急進派の大きな人的損失。",
+      "stance": "禁門の変で負傷し、鷹司邸で自刃する。",
+      "importance": "長州藩は禁門の変で久坂を含む多数の人材を失った。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "yamaguchi_kusaka_guide",
+          "archives_kinmon_aftermath"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "山口県立山口図書館で禁門の変での負傷と鷹司邸での自刃、国立公文書館で久坂らを失った長州藩側の人的損失を確認。"
       }
     },
     {
@@ -2888,17 +2882,17 @@
       "startSceneId": "1864-kinmon",
       "endSceneId": "1864-kinmon",
       "displayName": "伊藤俊輔",
-      "role": "英国から帰国・和平工作",
+      "role": "英国留学から帰国・対外交渉役",
       "factionId": "choshu",
-      "stance": "下関戦争を避けるため帰国し、列強との交渉を試みる。",
-      "importance": "尊攘派から現実的開国・近代化路線へ転換する。",
+      "stance": "下関戦争の報を受けて英国から急遽帰国し、井上聞多と戦争回避の調停に努める。",
+      "importance": "戦闘を止められなかった後も、戦後処理で対外交渉にあたる。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "yamaguchi_ito_guide",
+          "yamaguchi_bakan_war"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "山口県立山口図書館の人物案内と馬関戦争解説で、1864年の帰国、井上聞多との戦争回避調停、戦後処理での対外交渉を確認。「開国・近代化路線への転換」という解釈は表示文から除外。"
       }
     },
     {
@@ -3002,17 +2996,18 @@
       "startSceneId": "1864-kinmon",
       "endSceneId": "1864-kinmon",
       "displayName": "井上聞多",
-      "role": "帰国・開国派長州藩士",
+      "role": "英国留学から帰国・対外交渉役",
       "factionId": "choshu",
-      "stance": "下関で列強との和平を主張し、藩内攘夷派と衝突する。",
-      "importance": "襲撃で重傷を負いながら開国・近代化を訴えた。",
+      "stance": "英国から帰国して下関戦争の回避と講和にあたり、9月25日に俗論派から襲撃され重傷を負う。",
+      "importance": "所郁太郎の手当てで一命を取り留めた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "jacar_inoue_detail",
+          "yamaguchi_bakan_war",
+          "yamaguchi_inoue_assault"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターと山口県立山口図書館で1864年の帰国・下関戦争の調停と講和、山口市で9月25日の俗論派による襲撃・重傷・救命を確認。"
       }
     },
     {
@@ -3097,17 +3092,17 @@
       "startSceneId": "1864-kinmon",
       "endSceneId": "1864-kinmon",
       "displayName": "村田蔵六",
-      "role": "長州藩軍事顧問",
+      "role": "長州藩士・兵学者",
       "factionId": "choshu",
-      "stance": "禁門の変後、藩の軍制・防衛改革へ本格的に関与する。",
-      "importance": "医学・蘭学から軍事専門家へ役割を広げた。",
+      "stance": "1860年に萩藩士となり、長州藩の軍制改革に取り組む。",
+      "importance": "禁門の変後に帰藩した桂小五郎は、村田蔵六へ軍事改革を担当させた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "yamaguchi_omura_1869",
+          "kyoto_kido_1862"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "山口市で1860年の萩藩士登用と軍制改革、京都市の木戸孝允神道碑解説で禁門の変後に木戸が村田蔵六へ軍事改革を担当させた経緯を確認。「軍事顧問」という未確認の役職名は使用しない。"
       }
     },
     {
@@ -3232,15 +3227,15 @@
       "displayName": "山県狂介",
       "role": "奇兵隊軍監",
       "factionId": "choshu",
-      "stance": "長州の諸隊で軍事実務を担う。",
-      "importance": "高杉のカリスマとは別に部隊運営を支える。",
+      "stance": "1863年に奇兵隊軍監となり、1864年の下関戦争に従軍する。",
+      "importance": "確認できる役職と従軍歴を表示し、部隊運営上の評価は推測で補わない。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "yamaguchi_yamagata_guide",
+          "jacar_yamagata_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "山口県立山口図書館で1863年の奇兵隊軍監就任、アジア歴史資料センターで同役職と1864年の下関戦争従軍を確認。"
       }
     },
     {
@@ -3443,15 +3438,15 @@
       "displayName": "孝明天皇",
       "role": "天皇",
       "factionId": "imperial-court",
-      "stance": "禁門の変後、長州を朝敵とする京都秩序を支持する。",
-      "importance": "幕府・会津・薩摩側の行動に朝廷上の根拠を与える。",
+      "stance": "朝廷は京都周辺へ集結した長州勢に解兵を命じ、応じなかったため長州追討を決定する。",
+      "importance": "禁門の変後、長州藩は朝敵とされ、第一次長州征討を受ける。",
       "evidence": {
         "sourceIds": [
           "archives_timeline",
-          "ndl_handwriting"
+          "kyoto_kinmon"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "京都市で朝廷による解兵命令と長州追討決定、国立公文書館で禁門の変・第一次長州戦争・長州藩の恭順を確認。孝明天皇個人の意思決定としては断定せず、在位中の朝廷の行動として記述。"
       }
     },
     {
@@ -3856,19 +3851,36 @@
       "id": "person-status-sanjo-1864-kinmon",
       "personId": "sanjo",
       "startSceneId": "1864-kinmon",
-      "endSceneId": "1865-choshu",
+      "endSceneId": "1864-kinmon",
       "displayName": "三条実美",
-      "role": "長州・太宰府方面に滞在",
+      "role": "京都追放中・長州滞在",
       "factionId": "imperial-court",
-      "stance": "長州の名誉回復を求めるが京都へ戻れない。",
-      "importance": "長州と朝廷尊攘派の結びつきを維持する。",
+      "stance": "八月十八日の政変で官位を奪われ京都を追放されたまま、長州で帰京できない状態にある。",
+      "importance": "太宰府へ移送されるのは1865年で、1864年の滞在地と混同しない。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_sanjo_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1863年の官位褫奪・京都追放と1865年の太宰府移送を確認。従来の「長州・太宰府方面」という時期の混在を訂正。"
+      }
+    },
+    {
+      "id": "person-status-sanjo-1865-choshu",
+      "personId": "sanjo",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "三条実美",
+      "role": "京都追放中・太宰府へ移送",
+      "factionId": "imperial-court",
+      "stance": "京都追放が続くなか、長州から太宰府へ移送される。",
+      "importance": "1864年の長州滞在と、1865年からの太宰府滞在を分けて表示する。",
+      "evidence": {
+        "sourceIds": [
+          "jacar_sanjo_detail"
+        ],
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1863年の京都追放と1865年の太宰府移送を確認。"
       }
     },
     {
@@ -4012,15 +4024,14 @@
       "displayName": "松平容保",
       "role": "京都守護職",
       "factionId": "aizu",
-      "stance": "新選組を指揮下に置き、禁門の変で長州軍に対応する。",
-      "importance": "会津が長州から強く敵視される背景。",
+      "stance": "京都守護職として京都の治安維持にあたり、禁門の変で長州勢を攻撃する。",
+      "importance": "八月十八日の政変に続いて長州勢と対峙し、征長強硬論をとった。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_katamori_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で京都守護職就任、八月十八日の政変での長州勢排除、1864年の禁門の変での長州勢攻撃、征長強硬論を確認。"
       }
     },
     {
@@ -4238,17 +4249,17 @@
       "startSceneId": "1864-kinmon",
       "endSceneId": "1865-choshu",
       "displayName": "山内容堂",
-      "role": "土佐藩の実権者",
+      "role": "前土佐藩主・藩政の実権者",
       "factionId": "tosa",
-      "stance": "幕府・朝廷秩序を重視し、藩内急進派への処分を続ける。",
-      "importance": "土佐は長州型の急進路線を取らなかった。",
+      "stance": "土佐勤王党の方針と対立し、八月十八日の政変後に武市半平太ら党員の捕縛を進めた藩政を主導する。",
+      "importance": "武市は1864年も投獄中で、土佐勤王党への弾圧が続いていた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kochi_yodo_timeline",
+          "kochi_tosa_bakumatsu"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "高知県立高知城歴史博物館の歴代藩主紹介と幕末維新期解説で、容堂が前藩主として藩政の実権を握ったこと、土佐勤王党との方針対立、政変後の武市ら捕縛を確認。"
       }
     },
     {
@@ -4411,15 +4422,14 @@
       "displayName": "武市半平太",
       "role": "投獄中",
       "factionId": "tosa",
-      "stance": "土佐勤王党への取り調べが続く。",
-      "importance": "翌年の切腹へ至る藩内弾圧の過程。",
+      "stance": "1863年9月21日に投獄され、土佐勤王党への取り調べを受ける。",
+      "importance": "釈放されないまま、翌1865年に切腹を命じられる。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kochi_takechi_imprisonment"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "高知市の史跡解説で1863年9月21日の投獄と1865年の切腹を確認し、1864年が投獄継続中であることを時系列から確認。"
       }
     },
     {
@@ -4505,17 +4515,17 @@
       "startSceneId": "1864-kinmon",
       "endSceneId": "1864-kinmon",
       "displayName": "坂本龍馬",
-      "role": "海軍操練所関係者",
+      "role": "勝海舟門下・神戸海軍操練所生",
       "factionId": "tosa",
-      "stance": "禁門の変後、操練所への政治的圧力が強まる中で活動する。",
-      "importance": "幕府機関と脱藩浪士が交わる場にいた。",
+      "stance": "勝海舟のもとで、1864年に開かれた神戸海軍操練所に学ぶ。",
+      "importance": "操練所では幕臣だけでなく、龍馬ら諸藩の学生・志士も教育を受けた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_katsu_detail",
+          "kobe_naval_1863"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で勝が1864年に神戸海軍操練所を開き龍馬らを教育したこと、神戸市文化財保護審議会資料で同年の竣工を確認。禁門の変後の政治的圧力という因果関係は直接確認できないため削除。"
       }
     },
     {
@@ -4695,17 +4705,16 @@
       "startSceneId": "1864-kinmon",
       "endSceneId": "1864-kinmon",
       "displayName": "中岡慎太郎",
-      "role": "土佐脱藩志士",
+      "role": "土佐脱藩志士・長州藩下で活動",
       "factionId": "tosa",
-      "stance": "長州・薩摩などを往来し、諸藩連携を探る。",
-      "importance": "藩境を越える志士ネットワークを形成する。",
+      "stance": "26歳で土佐藩を脱藩し、長州藩のもとで活動する。",
+      "importance": "薩長両藩の代表者を説得して薩長連合へ進むのは、この後の活動である。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "nakaoka_museum_profile"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "中岡慎太郎館の生涯解説で26歳での脱藩、脱藩後の長州藩下での活動、その後の薩長連合への取り組みを確認。1864年に薩摩・長州間を往来したという具体的日程は断定しない。"
       }
     },
     {
@@ -4963,15 +4972,16 @@
       "displayName": "近藤勇",
       "role": "新選組局長",
       "factionId": "shinsengumi",
-      "stance": "池田屋事件で尊攘派を襲撃し、禁門の変でも京都警備に参加する。",
-      "importance": "会津・幕府側の実力治安組織を率いる。",
+      "stance": "局長を務めた新選組は、池田屋事件で志士の会合を襲撃し、禁門の変でも活動して武名を上げる。",
+      "importance": "会津藩預かりから発展した京都の治安組織を率いた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "hino_honjin_shinsengumi",
+          "kyoto_shinsengumi_history",
+          "archives_kinmon_aftermath"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "日野市で近藤が新選組局長となった経歴、京都市歴史資料館で会津藩預かり壬生浪士組から新選組への改称と池田屋事件・禁門の変での活動、国立公文書館で池田屋襲撃を確認。個別戦闘での近藤の行動は出典範囲を超えて断定しない。"
       }
     },
     {
@@ -5115,15 +5125,15 @@
       "displayName": "土方歳三",
       "role": "新選組副長",
       "factionId": "shinsengumi",
-      "stance": "池田屋事件などで尊攘派探索と部隊運営を担う。",
-      "importance": "近藤とともに新選組を強力な組織へ整える。",
+      "stance": "副長を務めた新選組は、池田屋事件と禁門の変で活動して武名を上げる。",
+      "importance": "会津藩預かりから発展した新選組の指揮部にいた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "hino_hijikata_profile",
+          "kyoto_shinsengumi_history"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "日野市で土方が新選組副長を務めた経歴、京都市歴史資料館で会津藩預かり壬生浪士組から新選組への改称と池田屋事件・禁門の変での活動を確認。個人単位の探索・部隊運営の詳細は出典範囲を超えて断定しない。"
       }
     },
     {

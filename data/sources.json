@@ -353,7 +353,7 @@
       "id": "archives_zaihan_diary",
       "title": "国立公文書館「激動幕末・在阪中日記」",
       "url": "https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/44.html",
-      "note": "1865年の将軍家茂の長州再征出立と幕府軍の大坂駐留。"
+      "note": "禁門の変後の第一次長州戦争で長州藩内の保守派が勢力を回復して幕府へ恭順した経緯と、1865年の将軍家茂の長州再征出立。"
     },
     {
       "id": "ndl_kameyama_trade",
@@ -443,7 +443,7 @@
       "id": "yamaguchi_omura_1869",
       "title": "山口市「大村益次郎関係資料」",
       "url": "https://www.city.yamaguchi.lg.jp/rs/rekibunshigen/r1253.html",
-      "note": "大村益次郎の戊辰戦争参加、1869年の兵部大輔就任と陸海軍制度改革。"
+      "note": "大村益次郎が1860年に萩藩士となって軍制改革へ取り組み、四境戦争で石州口・芸州口を指揮した経歴。"
     },
     {
       "id": "ndl_modern_opening",
@@ -719,7 +719,7 @@
       "id": "yamaguchi_kusaka_guide",
       "title": "山口県立山口図書館「久坂玄瑞・人物調べ方案内」",
       "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/kusaka_genzui/",
-      "note": "久坂玄瑞の尊王攘夷運動での指導的位置と、1862年の英国公使館焼き討ち。"
+      "note": "久坂玄瑞の尊王攘夷運動での指導的位置と、1864年の禁門の変での負傷・鷹司邸での自刃。"
     },
     {
       "id": "ndl_iwakura_exile",
@@ -767,7 +767,7 @@
       "id": "yamaguchi_takasugi_guide",
       "title": "山口県立山口図書館「高杉晋作・人物調べ方案内」",
       "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/takasugi_shinsaku/",
-      "note": "高杉晋作による1863年の下関での奇兵隊創設。"
+      "note": "高杉晋作による1863年の奇兵隊創設、1864年の脱藩罪による投獄、下関戦争時の再起用と講和、禁門の変後の挙兵。"
     },
     {
       "id": "yamaguchi_takasugi_1863",
@@ -785,7 +785,7 @@
       "id": "jacar_sanjo_detail",
       "title": "アジア歴史資料センター「三條實美」",
       "url": "https://www.jacar.archives.go.jp/das/term/00000389",
-      "note": "三条実美の1862年の議奏・国事御用掛就任と、1863年八月十八日の政変に伴う官位褫奪・京都追放。"
+      "note": "三条実美の1863年八月十八日の政変に伴う官位褫奪・京都追放と、1865年の太宰府移送。"
     },
     {
       "id": "kochi_takechi_1863",
@@ -822,6 +822,90 @@
       "title": "高知市「史跡 武市半平太旧宅及び墓」",
       "url": "https://www.city.kochi.kochi.jp/soshiki/90/cas-state-1600100.html",
       "note": "武市半平太の京都留守居加役就任と帰国、八月十八日の政変後の土佐勤王党弾圧、1863年9月21日の投獄。"
+    },
+    {
+      "id": "archives_kinmon_aftermath",
+      "title": "国立公文書館「激動幕末・元治甲子長州附属諸国脱走変名大略」",
+      "url": "https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/42.html",
+      "note": "池田屋事件を受けた長州藩の京都出兵、禁門の変での敗北と久坂玄瑞らの人的損失。"
+    },
+    {
+      "id": "kagoshima_library_hisamitsu_saigo",
+      "title": "鹿児島県立図書館「これまでの貴重資料展・島津久光」",
+      "url": "https://www.library.pref.kagoshima.jp/honkan/86d3f6348d59231317789859dc609bbd/page1",
+      "note": "島津久光が国父として藩政の実権を握ったことと、1864年に西郷を沖永良部島から呼び戻して禁門の変・第一次長州征伐にあたらせた経緯。"
+    },
+    {
+      "id": "kagoshima_sources_1864",
+      "title": "鹿児島県歴史・美術センター黎明館『鹿児島県史料』",
+      "url": "https://www.pref.kagoshima.jp/ab23/reimeikan/siroyu/kensi.html",
+      "note": "元治元年の長州謝罪について西郷から大久保一蔵へ送られた報告と、長防征討出軍について伊地知正治から小松帯刀へ送られた届書の収録情報。"
+    },
+    {
+      "id": "jacar_kuroda_detail",
+      "title": "アジア歴史資料センター「黒田清隆」",
+      "url": "https://www.jacar.go.jp/dictionary/02_item.html?id=00000581",
+      "note": "黒田了介が1863年に韮山塾へ入門して砲術を学んだ経歴。"
+    },
+    {
+      "id": "yamaguchi_ito_guide",
+      "title": "山口県立山口図書館「伊藤博文・人物調べ方案内」",
+      "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/itou_hirobumi/",
+      "note": "伊藤俊輔の英国密航留学、1864年の急遽帰国と下関戦争の戦後処理での対外交渉。"
+    },
+    {
+      "id": "yamaguchi_bakan_war",
+      "title": "山口県立山口図書館「明治維新人物ギャラリー・馬関戦争」",
+      "url": "https://library.pref.yamaguchi.lg.jp/meijiishin/201408",
+      "note": "井上聞多・伊藤俊輔による下関戦争回避のための調停と、開戦後に高杉晋作が講和の正使へ起用された経緯。"
+    },
+    {
+      "id": "jacar_inoue_detail",
+      "title": "アジア歴史資料センター「井上馨」",
+      "url": "https://www.jacar.archives.go.jp/das/term/00000373",
+      "note": "井上聞多の1864年の帰国、四国艦隊下関砲撃の講和交渉、同年の俗論党による襲撃。"
+    },
+    {
+      "id": "yamaguchi_inoue_assault",
+      "title": "山口市「井上馨候遭難の地碑」",
+      "url": "https://www.city.yamaguchi.lg.jp/rs/rekibunshigen/r493.html",
+      "note": "井上聞多が1864年9月25日に俗論派から襲撃されて重傷を負い、所郁太郎の手当てで一命を取り留めた経緯。"
+    },
+    {
+      "id": "yamaguchi_yamagata_guide",
+      "title": "山口県立山口図書館「山縣有朋・人物調べ方案内」",
+      "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/yamagata_aritomo/",
+      "note": "山県狂介が1863年に奇兵隊軍監へ就任した経歴。"
+    },
+    {
+      "id": "jacar_yamagata_detail",
+      "title": "アジア歴史資料センター「山縣有朋」",
+      "url": "https://www.jacar.archives.go.jp/das/term/00000402",
+      "note": "山県狂介の1863年の奇兵隊軍監就任と、1864年の下関戦争従軍。"
+    },
+    {
+      "id": "nakaoka_museum_profile",
+      "title": "中岡慎太郎館「中岡慎太郎とは」",
+      "url": "https://www.nakaokashintarokan.jp/about.html",
+      "note": "中岡慎太郎の26歳での脱藩と、脱藩後に長州藩のもとで活動して薩長連合へ向かった経緯。"
+    },
+    {
+      "id": "ndl_portrait_katamori_detail",
+      "title": "国立国会図書館「近代日本人の肖像・松平容保」",
+      "url": "https://www.ndl.go.jp/portrait/datas/334/",
+      "note": "松平容保の京都守護職就任、八月十八日の政変、1864年の禁門の変での長州勢攻撃。"
+    },
+    {
+      "id": "hino_hijikata_profile",
+      "title": "日野市「土方歳三」",
+      "url": "https://www.city.hino.lg.jp/shisei/keywords/1014641/1014642.html",
+      "note": "土方歳三が新選組で副長を務めた経歴。"
+    },
+    {
+      "id": "hino_honjin_shinsengumi",
+      "title": "日野市「日野宿本陣」",
+      "url": "https://www.city.hino.lg.jp/shisei/profile/kokusai/note/nikki/1002355.html",
+      "note": "近藤勇が新選組局長、土方歳三が新選組副長となった経歴。"
     }
   ]
 }
