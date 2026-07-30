@@ -17,7 +17,7 @@ test('all six primary views render without a page error', async ({ page }) => {
     await expect(page.locator(`#view-${view}`)).toBeVisible();
   }
 
-  await expect(page.locator('#sourceCatalog .source')).toHaveCount(6);
+  await expect(page.locator('#sourceCatalog .source')).toHaveCount(12);
   await expect(page.locator('#view-sources')).toContainText('data/*.json');
   expect(pageErrors).toEqual([]);
 });

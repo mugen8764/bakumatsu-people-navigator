@@ -786,59 +786,59 @@
       "aPersonId": "saigo",
       "bPersonId": "kido",
       "startSceneId": "1866-satcho",
-      "endSceneId": "1869-hakodate",
+      "endSceneId": "1866-satcho",
       "typeId": "political-cooperation",
-      "label": "薩長提携",
-      "text": "両者は敵対していた薩摩・長州を政治・軍事上の提携へ転換した。",
+      "label": "薩長同盟の締結",
+      "text": "西郷と木戸は、敵対していた薩摩・長州の間で薩長同盟を結んだ。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": ["ndl_history_satcho", "ndl_portrait_saigo_detail"],
+        "reviewStatus": "verified",
+        "note": "1866年の薩長同盟締結を公的機関の解説で確認。"
       }
     },
     {
       "id": "person-relation-ryoma-saigo-1865-choshu-mediation-or-negotiation",
       "aPersonId": "ryoma",
       "bPersonId": "saigo",
-      "startSceneId": "1865-choshu",
-      "endSceneId": "1867-taisei",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
       "typeId": "mediation-or-negotiation",
-      "label": "薩長交渉の接点",
-      "text": "龍馬は薩摩側の西郷らと長州側の交渉をつないだ。",
+      "label": "薩長同盟の仲介",
+      "text": "龍馬は中岡慎太郎とともに、西郷と木戸の薩長同盟締結を仲介した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": ["ndl_history_satcho", "ndl_portrait_saigo_detail"],
+        "reviewStatus": "verified",
+        "note": "1866年の薩長同盟仲介を公的機関の解説で確認。"
       }
     },
     {
       "id": "person-relation-ryoma-kido-1865-choshu-mediation-or-negotiation",
       "aPersonId": "ryoma",
       "bPersonId": "kido",
-      "startSceneId": "1865-choshu",
-      "endSceneId": "1867-taisei",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
       "typeId": "mediation-or-negotiation",
       "label": "合意内容の確認",
-      "text": "木戸は薩長合意の確認を龍馬へ求めた。",
+      "text": "木戸は薩長同盟の内容を記した書簡を龍馬へ送り、裏書による確認を求めた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": ["ndl_history_satcho", "kyohaku_kido_ryoma_letter"],
+        "reviewStatus": "verified",
+        "note": "木戸書状と龍馬の裏書が残る資料を確認。"
       }
     },
     {
       "id": "person-relation-nakaoka-saigo-1865-choshu-mediation-or-negotiation",
       "aPersonId": "nakaoka",
       "bPersonId": "saigo",
-      "startSceneId": "1865-choshu",
-      "endSceneId": "1867-taisei",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
       "typeId": "mediation-or-negotiation",
-      "label": "薩長連携工作",
-      "text": "中岡は諸藩を往来して薩長連携を推進した。",
+      "label": "薩長同盟の仲介",
+      "text": "中岡は坂本龍馬とともに、西郷と木戸の薩長同盟締結を仲介した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": ["ndl_history_satcho"],
+        "reviewStatus": "verified",
+        "note": "1866年の薩長同盟仲介を公的機関の解説で確認。"
       }
     },
     {
@@ -999,11 +999,11 @@
       "endSceneId": "1868-edo",
       "typeId": "appointment",
       "label": "恭順と江戸防衛",
-      "text": "慶喜の恭順方針を受け、勝が江戸の和平交渉を担った。",
+      "text": "鳥羽・伏見の戦い後、慶喜は事後処理を勝へ委ね、勝は恭順と戦争回避へ徳川方をまとめた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": ["sumida_katsu_edo_surrender"],
+        "reviewStatus": "verified",
+        "note": "慶喜から勝への事後処理委任と、勝の恭順・戦争回避方針を確認。"
       }
     },
     {
@@ -1016,9 +1016,9 @@
       "label": "江戸開城の事前交渉",
       "text": "山岡が西郷との事前交渉を行い、勝との会談へ道を開いた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": ["tokyo_archive_katsu_yamaoka_letter", "sumida_katsu_edo_surrender"],
+        "reviewStatus": "verified",
+        "note": "山岡と西郷の事前交渉が勝・西郷会談に先行したことを確認。"
       }
     },
     {
@@ -1029,11 +1029,11 @@
       "endSceneId": "1868-edo",
       "typeId": "mediation-or-negotiation",
       "label": "江戸城引き渡し交渉",
-      "text": "両者は江戸市街戦回避と徳川処分条件を交渉した。",
+      "text": "両者は徳川家の処遇を交渉し、江戸総攻撃の中止と江戸城の引き渡しへつなげた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": ["ndl_portrait_saigo_detail", "ndl_portrait_katsu_detail", "sumida_katsu_edo_surrender"],
+        "reviewStatus": "verified",
+        "note": "勝・西郷会談、総攻撃中止、江戸城引き渡しの経緯を確認。"
       }
     },
     {
@@ -1044,11 +1044,11 @@
       "endSceneId": "1868-edo",
       "typeId": "mediation-or-negotiation",
       "label": "駿府会談",
-      "text": "山岡は慶喜の恭順を伝え、西郷と条件を調整した。",
+      "text": "山岡は駿府で西郷と会談し、徳川家の処遇と戦闘回避の条件を協議した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": ["tokyo_archive_katsu_yamaoka_letter", "sumida_katsu_edo_surrender"],
+        "reviewStatus": "verified",
+        "note": "駿府会談と徳川家処遇をめぐる事前交渉を確認。"
       }
     },
     {

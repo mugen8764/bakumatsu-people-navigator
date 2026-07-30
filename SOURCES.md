@@ -17,6 +17,15 @@
 5. [アジア歴史資料センター「地名・人名・出来事事典」](https://www.jacar.go.jp/dictionary/index.html)  
    人物・地名・出来事の異称、経歴、関連語と資料検索の入口。
 
+## 項目別資料
+
+- [国際子ども図書館「薩長同盟」](https://www.kodomo.go.jp/yareki/theme/theme_04.html)
+- [京都国立博物館「坂本龍馬関係書状　木戸孝允書状ほか」](https://knmdb.kyohaku.go.jp/482.html)
+- [国立国会図書館「近代日本人の肖像・西郷隆盛」](https://www.ndl.go.jp/portrait/datas/85/index.html)
+- [国立国会図書館「近代日本人の肖像・勝海舟」](https://www.ndl.go.jp/portrait/datas/51/index.html)
+- [東京都立図書館「勝海舟書簡　山岡鉄舟あて」](https://archive.library.metro.tokyo.lg.jp/da/detail?tilcod=0000000017-00040922)
+- [墨田区「勝海舟　幕末・明治を生きた巨人」](https://www.city.sumida.lg.jp/sisetu_info/siryou/kyoudobunka/sonota/tenzi/h15/kikakuten_katukaisyuu.html)
+
 ## 情報の分類
 
 - **事実**: 日付、役職、所属、条約、戦闘結果など。

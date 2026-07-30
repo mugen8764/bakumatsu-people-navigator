@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.0",
-    "updated": "2026-07-26"
+    "version": "1.0.1",
+    "updated": "2026-07-30"
   },
   "sources": {
     "archives_timeline": {
@@ -34,6 +34,36 @@
       "title": "アジア歴史資料センター「地名・人名・出来事事典」",
       "url": "https://www.jacar.go.jp/dictionary/index.html",
       "note": "歴史資料検索のための人名・地名・出来事の異称・基本語。"
+    },
+    "ndl_history_satcho": {
+      "title": "国際子ども図書館「薩長同盟」",
+      "url": "https://www.kodomo.go.jp/yareki/theme/theme_04.html",
+      "note": "薩長同盟の成立、坂本龍馬・中岡慎太郎による仲介と龍馬の裏書。"
+    },
+    "kyohaku_kido_ryoma_letter": {
+      "title": "京都国立博物館「坂本龍馬関係書状　木戸孝允書状ほか」",
+      "url": "https://knmdb.kyohaku.go.jp/482.html",
+      "note": "木戸孝允が薩長同盟の内容確認を坂本龍馬へ求めた書状。"
+    },
+    "ndl_portrait_saigo_detail": {
+      "title": "国立国会図書館「近代日本人の肖像・西郷隆盛」",
+      "url": "https://www.ndl.go.jp/portrait/datas/85/index.html",
+      "note": "薩長同盟と江戸城無血開城を含む西郷隆盛の略歴。"
+    },
+    "ndl_portrait_katsu_detail": {
+      "title": "国立国会図書館「近代日本人の肖像・勝海舟」",
+      "url": "https://www.ndl.go.jp/portrait/datas/51/index.html",
+      "note": "西郷隆盛との交渉による江戸城無血開城を含む勝海舟の略歴。"
+    },
+    "tokyo_archive_katsu_yamaoka_letter": {
+      "title": "東京都立図書館「勝海舟書簡　山岡鉄舟あて」",
+      "url": "https://archive.library.metro.tokyo.lg.jp/da/detail?tilcod=0000000017-00040922",
+      "note": "山岡鉄舟と西郷隆盛の事前交渉、勝海舟との会談に至る経緯。"
+    },
+    "sumida_katsu_edo_surrender": {
+      "title": "墨田区「勝海舟　幕末・明治を生きた巨人」",
+      "url": "https://www.city.sumida.lg.jp/sisetu_info/siryou/kyoudobunka/sonota/tenzi/h15/kikakuten_katukaisyuu.html",
+      "note": "徳川慶喜から勝海舟への事後処理委任、山岡鉄舟の事前交渉、江戸城引き渡し。"
     }
   },
   "factions": {
@@ -7549,52 +7579,63 @@
       "a": "saigo",
       "b": "kido",
       "start": 9,
-      "end": 15,
+      "end": 9,
       "type": "政治協力",
-      "label": "薩長提携",
-      "text": "両者は敵対していた薩摩・長州を政治・軍事上の提携へ転換した。",
+      "label": "薩長同盟の締結",
+      "text": "西郷と木戸は、敵対していた薩摩・長州の間で薩長同盟を結んだ。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ndl_history_satcho",
+          "ndl_portrait_saigo_detail"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
       "a": "ryoma",
       "b": "saigo",
-      "start": 8,
-      "end": 11,
+      "start": 9,
+      "end": 9,
       "type": "仲介・交渉",
-      "label": "薩長交渉の接点",
-      "text": "龍馬は薩摩側の西郷らと長州側の交渉をつないだ。",
+      "label": "薩長同盟の仲介",
+      "text": "龍馬は中岡慎太郎とともに、西郷と木戸の薩長同盟締結を仲介した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ndl_history_satcho",
+          "ndl_portrait_saigo_detail"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
       "a": "ryoma",
       "b": "kido",
-      "start": 8,
-      "end": 11,
+      "start": 9,
+      "end": 9,
       "type": "仲介・交渉",
       "label": "合意内容の確認",
-      "text": "木戸は薩長合意の確認を龍馬へ求めた。",
+      "text": "木戸は薩長同盟の内容を記した書簡を龍馬へ送り、裏書による確認を求めた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ndl_history_satcho",
+          "kyohaku_kido_ryoma_letter"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
       "a": "nakaoka",
       "b": "saigo",
-      "start": 8,
-      "end": 11,
+      "start": 9,
+      "end": 9,
       "type": "仲介・交渉",
-      "label": "薩長連携工作",
-      "text": "中岡は諸藩を往来して薩長連携を推進した。",
+      "label": "薩長同盟の仲介",
+      "text": "中岡は坂本龍馬とともに、西郷と木戸の薩長同盟締結を仲介した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ndl_history_satcho"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -7734,10 +7775,12 @@
       "end": 13,
       "type": "主従・登用",
       "label": "恭順と江戸防衛",
-      "text": "慶喜の恭順方針を受け、勝が江戸の和平交渉を担った。",
+      "text": "鳥羽・伏見の戦い後、慶喜は事後処理を勝へ委ね、勝は恭順と戦争回避へ徳川方をまとめた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "sumida_katsu_edo_surrender"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -7749,8 +7792,11 @@
       "label": "江戸開城の事前交渉",
       "text": "山岡が西郷との事前交渉を行い、勝との会談へ道を開いた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "tokyo_archive_katsu_yamaoka_letter",
+          "sumida_katsu_edo_surrender"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -7760,10 +7806,14 @@
       "end": 13,
       "type": "仲介・交渉",
       "label": "江戸城引き渡し交渉",
-      "text": "両者は江戸市街戦回避と徳川処分条件を交渉した。",
+      "text": "両者は徳川家の処遇を交渉し、江戸総攻撃の中止と江戸城の引き渡しへつなげた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ndl_portrait_saigo_detail",
+          "ndl_portrait_katsu_detail",
+          "sumida_katsu_edo_surrender"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -7773,10 +7823,13 @@
       "end": 13,
       "type": "仲介・交渉",
       "label": "駿府会談",
-      "text": "山岡は慶喜の恭順を伝え、西郷と条件を調整した。",
+      "text": "山岡は駿府で西郷と会談し、徳川家の処遇と戦闘回避の条件を協議した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "tokyo_archive_katsu_yamaoka_letter",
+          "sumida_katsu_edo_surrender"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {

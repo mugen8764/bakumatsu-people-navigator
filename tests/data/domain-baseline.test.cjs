@@ -23,14 +23,14 @@ test('scene-level counts stay at the current display baseline', () => {
     { scene: '1863-joi', people: 26, factions: 5, relations: 24 },
     { scene: '1863-aug18', people: 26, factions: 5, relations: 25 },
     { scene: '1864-kinmon', people: 30, factions: 5, relations: 27 },
-    { scene: '1865-choshu', people: 32, factions: 4, relations: 33 },
+    { scene: '1865-choshu', people: 32, factions: 4, relations: 30 },
     { scene: '1866-satcho', people: 29, factions: 5, relations: 27 },
-    { scene: '1866-expedition', people: 30, factions: 4, relations: 29 },
-    { scene: '1867-taisei', people: 30, factions: 5, relations: 26 },
-    { scene: '1868-toba', people: 27, factions: 5, relations: 29 },
-    { scene: '1868-edo', people: 27, factions: 4, relations: 28 },
-    { scene: '1868-tohoku', people: 20, factions: 6, relations: 16 },
-    { scene: '1869-hakodate', people: 17, factions: 4, relations: 13 }
+    { scene: '1866-expedition', people: 30, factions: 4, relations: 25 },
+    { scene: '1867-taisei', people: 30, factions: 5, relations: 22 },
+    { scene: '1868-toba', people: 27, factions: 5, relations: 28 },
+    { scene: '1868-edo', people: 27, factions: 4, relations: 27 },
+    { scene: '1868-tohoku', people: 20, factions: 6, relations: 15 },
+    { scene: '1869-hakodate', people: 17, factions: 4, relations: 12 }
   ]);
 });
 test('a sparse status carries forward until the next explicit status', () => {

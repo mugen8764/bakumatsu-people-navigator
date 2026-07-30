@@ -36,6 +36,42 @@
       "title": "アジア歴史資料センター「地名・人名・出来事事典」",
       "url": "https://www.jacar.go.jp/dictionary/index.html",
       "note": "歴史資料検索のための人名・地名・出来事の異称・基本語。"
+    },
+    {
+      "id": "ndl_history_satcho",
+      "title": "国際子ども図書館「薩長同盟」",
+      "url": "https://www.kodomo.go.jp/yareki/theme/theme_04.html",
+      "note": "薩長同盟の成立、坂本龍馬・中岡慎太郎による仲介と龍馬の裏書。"
+    },
+    {
+      "id": "kyohaku_kido_ryoma_letter",
+      "title": "京都国立博物館「坂本龍馬関係書状　木戸孝允書状ほか」",
+      "url": "https://knmdb.kyohaku.go.jp/482.html",
+      "note": "木戸孝允が薩長同盟の内容確認を坂本龍馬へ求めた書状。"
+    },
+    {
+      "id": "ndl_portrait_saigo_detail",
+      "title": "国立国会図書館「近代日本人の肖像・西郷隆盛」",
+      "url": "https://www.ndl.go.jp/portrait/datas/85/index.html",
+      "note": "薩長同盟と江戸城無血開城を含む西郷隆盛の略歴。"
+    },
+    {
+      "id": "ndl_portrait_katsu_detail",
+      "title": "国立国会図書館「近代日本人の肖像・勝海舟」",
+      "url": "https://www.ndl.go.jp/portrait/datas/51/index.html",
+      "note": "西郷隆盛との交渉による江戸城無血開城を含む勝海舟の略歴。"
+    },
+    {
+      "id": "tokyo_archive_katsu_yamaoka_letter",
+      "title": "東京都立図書館「勝海舟書簡　山岡鉄舟あて」",
+      "url": "https://archive.library.metro.tokyo.lg.jp/da/detail?tilcod=0000000017-00040922",
+      "note": "山岡鉄舟と西郷隆盛の事前交渉、勝海舟との会談に至る経緯。"
+    },
+    {
+      "id": "sumida_katsu_edo_surrender",
+      "title": "墨田区「勝海舟　幕末・明治を生きた巨人」",
+      "url": "https://www.city.sumida.lg.jp/sisetu_info/siryou/kyoudobunka/sonota/tenzi/h15/kikakuten_katukaisyuu.html",
+      "note": "徳川慶喜から勝海舟への事後処理委任、山岡鉄舟の事前交渉、江戸城引き渡し。"
     }
   ]
 }
