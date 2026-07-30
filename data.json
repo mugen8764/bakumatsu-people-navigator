@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "updated": "2026-07-30"
   },
   "sources": {
@@ -309,6 +309,31 @@
       "title": "国立国会図書館サーチ「薩長同盟の展開―六ヶ条盟約の成立」",
       "url": "https://ndlsearch.ndl.go.jp/books/R000000004-I7488694",
       "note": "慶応元年9月の長州再征勅許と薩長提携の展開を扱う査読論文の書誌・要約。"
+    },
+    "ndl_katsu_1866_diary": {
+      "title": "国立国会図書館「勝海舟・慶応2年9月2日の日記」",
+      "url": "https://www.ndl.go.jp/nikki/citeid/katsu_18660902/",
+      "note": "将軍家茂死去後の第二次長州征討停止と勝海舟による休戦交渉。"
+    },
+    "ndl_authority_komei": {
+      "title": "国立国会図書館典拠データ「孝明天皇」",
+      "url": "https://id.ndl.go.jp/auth/ndlna/00291353",
+      "note": "孝明天皇の生没年と慶応2年12月25日の崩御。"
+    },
+    "kagoshima_tobaku_mitchoku": {
+      "title": "鹿児島県「討幕の密勅」",
+      "url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/mittyoku.html",
+      "note": "1867年の薩・長・芸三藩の討幕協議、薩摩藩士の請願、薩摩・長州両藩への密勅。"
+    },
+    "ndl_crd_choshu_status": {
+      "title": "国立国会図書館レファレンス協同データベース「長州藩の朝敵取消し」",
+      "url": "https://crd.ndl.go.jp/reference/entry/reference/show?asc=desc&dtltbs=1&fi=8_21+6_0+5_%E7%A4%BE%E4%BC%9A%E4%BA%BA+2_2+3_%E4%BA%8B%E5%AE%9F%E8%AA%BF%E6%9F%BB+4_%E9%83%B7%E5%9C%9F&id=1000242097&ldtl=1&mcmd=25&page=ref_view&st=update&state=2200000036",
+      "note": "慶応3年12月8～9日の長州藩主父子の官位復旧と入京許可。"
+    },
+    "archives_royal_restoration": {
+      "title": "国立公文書館「王政復古の大号令が発せられる」",
+      "url": "https://www.archives.go.jp/ayumi/kobetsu/k03_1867_01.html",
+      "note": "1867年12月9日の王政復古宣言と摂政・関白等の廃止、総裁・議定・参与の三職設置。"
     }
   },
   "factions": {
@@ -8995,119 +9020,160 @@
     },
     "1866-satcho": {
       "薩摩藩": {
-        "goal": "幕府再征を阻止し、将来の政権再編へ備える。",
-        "position": "長州と秘密裏に提携する。",
+        "goal": "長州藩と提携し、幕府の長州処分へ対応する。",
+        "position": "西郷隆盛と木戸孝允が、坂本龍馬・中岡慎太郎の仲介で薩長同盟を結ぶ。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_history_satcho",
+            "kyohaku_kido_ryoma_letter"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "長州藩": {
-        "goal": "孤立を解消し、名誉回復と幕府再征への防衛を図る。",
-        "position": "薩摩の政治・物資支援を得る。",
+        "goal": "薩摩藩と提携し、幕府の長州処分へ対応する。",
+        "position": "木戸孝允と西郷隆盛が、坂本龍馬・中岡慎太郎の仲介で薩長同盟を結ぶ。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_history_satcho",
+            "kyohaku_kido_ryoma_letter"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "幕府": {
-        "goal": "長州再征を実施し政権の威信を回復する。",
-        "position": "諸藩の協力低下に直面する。",
+        "goal": "長州再征の軍事行動を進める。",
+        "position": "将軍家茂と幕府軍が大坂に駐留し、同年6月の戦闘開始に備える。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "archives_zaihan_diary",
+            "archives_timeline"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "土佐藩": {
-        "goal": "藩を越えた連携と新政局への参加を探る。",
-        "position": "龍馬・中岡ら脱藩者が薩長間を仲介する。",
+        "goal": "土佐藩出身の脱藩者が薩長間を仲介する。",
+        "position": "坂本龍馬・中岡慎太郎が西郷隆盛と木戸孝允の会談を仲介する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_history_satcho",
+            "kyohaku_kido_ryoma_letter"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "朝廷": {
-        "goal": "京都秩序と長州処分を維持する。",
-        "position": "孝明天皇の下では薩長倒幕は公認されていない。",
+        "goal": "幕府からの長州処分奏請を審議する。",
+        "position": "薩長同盟翌日の1月22日、幕府が奏請した長州処分を勅許する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_satcho_alliance_research"
+          ],
+          "reviewStatus": "verified"
         }
       }
     },
     "1866-expedition": {
       "幕府": {
-        "goal": "長州を軍事制圧し、政権の統制力を回復する。",
-        "position": "征討に失敗し、家茂死去・慶喜継承へ。",
+        "goal": "第二次長州戦争を開始する。",
+        "position": "将軍家茂の死後に休戦し、徳川慶喜が第15代将軍となる。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "archives_timeline",
+            "ndl_katsu_1866_diary",
+            "ndl_portrait_yoshinobu_detail"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "長州藩": {
-        "goal": "改革軍制で幕府軍を撃退する。",
-        "position": "各戦線で優位に立ち、政治的地位を回復する。",
+        "goal": "西洋軍制と整備した軍事組織で幕府軍に対抗する。",
+        "position": "四境で幕府軍を退け、幕府と休戦する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "yamaguchi_choshu_reform",
+            "archives_timeline"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "薩摩藩": {
-        "goal": "幕府へ協力せず、長州と次の政権を準備する。",
-        "position": "幕府離れを明確にする。",
+        "goal": "薩長同盟に基づき第二次長州征討へ参加しない。",
+        "position": "長州藩向けの武器・汽船購入をあっせんし、長州征討への出兵を断る。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_history_satcho",
+            "kagoshima_okinoerabu_saigo"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "朝廷": {
-        "goal": "戦争停止と京都秩序を保つ。",
-        "position": "孝明天皇崩御で政局の前提が変わる。",
+        "goal": "孝明天皇の在位下で長州処分をめぐる政局に対応する。",
+        "position": "慶応2年12月25日に孝明天皇が崩御する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_satcho_alliance_research",
+            "ndl_authority_komei"
+          ],
+          "reviewStatus": "verified"
         }
       }
     },
     "1867-taisei": {
       "幕府": {
-        "goal": "政権返上後も徳川家を新体制の中心に残す。",
+        "goal": "大政奉還によって徳川家の復権を図る。",
         "position": "大政奉還により幕府制度を自ら返上する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_portrait_yoshinobu_detail",
+            "archives_timeline"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "薩摩藩": {
-        "goal": "徳川家の政治力を排除し、王政復古を実現する。",
-        "position": "長州・岩倉と政変を準備する。",
+        "goal": "長州・安芸両藩と武力討幕の具体策を協議する。",
+        "position": "西郷隆盛・大久保利通・小松帯刀が討幕の宣旨を請願し、薩摩藩へ密勅が下る。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kagoshima_tobaku_mitchoku"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "長州藩": {
-        "goal": "朝敵処分を解消し、新政権の中核へ入る。",
-        "position": "薩摩と武力倒幕を準備する。",
+        "goal": "薩摩藩と武力討幕を準備し、討幕の密勅を受ける。",
+        "position": "12月8～9日に藩主父子の官位が復旧し、入京を許される。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kagoshima_tobaku_mitchoku",
+            "ndl_crd_choshu_status"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "土佐藩": {
-        "goal": "徳川家を含む公議政体へ平和的に移行する。",
-        "position": "大政奉還案を幕府へ建白する。",
+        "goal": "公議政体論に基づく大政奉還を進言する。",
+        "position": "土佐藩は10月3日に建白書を幕府へ提出し、10月15日に大政奉還が決定される。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_ryoma_political_plan",
+            "kochi_taisei_hokan"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "朝廷": {
-        "goal": "返上された政権を誰がどの制度で担うか決める。",
-        "position": "王政復古派と徳川参加派が競合する。",
+        "goal": "大政奉還を受理し、新たな統治体制を設ける。",
+        "position": "王政復古を宣言し、摂政・関白などを廃して総裁・議定・参与の三職を置く。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "archives_timeline",
+            "archives_royal_restoration"
+          ],
+          "reviewStatus": "verified"
         }
       }
     },

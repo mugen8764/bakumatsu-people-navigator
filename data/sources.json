@@ -366,6 +366,36 @@
       "title": "国立国会図書館サーチ「薩長同盟の展開―六ヶ条盟約の成立」",
       "url": "https://ndlsearch.ndl.go.jp/books/R000000004-I7488694",
       "note": "慶応元年9月の長州再征勅許と薩長提携の展開を扱う査読論文の書誌・要約。"
+    },
+    {
+      "id": "ndl_katsu_1866_diary",
+      "title": "国立国会図書館「勝海舟・慶応2年9月2日の日記」",
+      "url": "https://www.ndl.go.jp/nikki/citeid/katsu_18660902/",
+      "note": "将軍家茂死去後の第二次長州征討停止と勝海舟による休戦交渉。"
+    },
+    {
+      "id": "ndl_authority_komei",
+      "title": "国立国会図書館典拠データ「孝明天皇」",
+      "url": "https://id.ndl.go.jp/auth/ndlna/00291353",
+      "note": "孝明天皇の生没年と慶応2年12月25日の崩御。"
+    },
+    {
+      "id": "kagoshima_tobaku_mitchoku",
+      "title": "鹿児島県「討幕の密勅」",
+      "url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/mittyoku.html",
+      "note": "1867年の薩・長・芸三藩の討幕協議、薩摩藩士の請願、薩摩・長州両藩への密勅。"
+    },
+    {
+      "id": "ndl_crd_choshu_status",
+      "title": "国立国会図書館レファレンス協同データベース「長州藩の朝敵取消し」",
+      "url": "https://crd.ndl.go.jp/reference/entry/reference/show?asc=desc&dtltbs=1&fi=8_21+6_0+5_%E7%A4%BE%E4%BC%9A%E4%BA%BA+2_2+3_%E4%BA%8B%E5%AE%9F%E8%AA%BF%E6%9F%BB+4_%E9%83%B7%E5%9C%9F&id=1000242097&ldtl=1&mcmd=25&page=ref_view&st=update&state=2200000036",
+      "note": "慶応3年12月8～9日の長州藩主父子の官位復旧と入京許可。"
+    },
+    {
+      "id": "archives_royal_restoration",
+      "title": "国立公文書館「王政復古の大号令が発せられる」",
+      "url": "https://www.archives.go.jp/ayumi/kobetsu/k03_1867_01.html",
+      "note": "1867年12月9日の王政復古宣言と摂政・関白等の廃止、総裁・議定・参与の三職設置。"
     }
   ]
 }

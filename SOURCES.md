@@ -74,6 +74,11 @@
 - [国立公文書館「激動幕末・在阪中日記」](https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/44.html)
 - [国立国会図書館「幕末・明治初期の商社誕生に関わった人々」](https://www.ndl.go.jp/portrait/pickup/029/)
 - [国立国会図書館サーチ「薩長同盟の展開―六ヶ条盟約の成立」](https://ndlsearch.ndl.go.jp/books/R000000004-I7488694)
+- [国立国会図書館「勝海舟・慶応2年9月2日の日記」](https://www.ndl.go.jp/nikki/citeid/katsu_18660902/)
+- [国立国会図書館典拠データ「孝明天皇」](https://id.ndl.go.jp/auth/ndlna/00291353)
+- [鹿児島県「討幕の密勅」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/mittyoku.html)
+- [国立国会図書館レファレンス協同データベース「長州藩の朝敵取消し」](https://crd.ndl.go.jp/reference/entry/reference/show?asc=desc&dtltbs=1&fi=8_21+6_0+5_%E7%A4%BE%E4%BC%9A%E4%BA%BA+2_2+3_%E4%BA%8B%E5%AE%9F%E8%AA%BF%E6%9F%BB+4_%E9%83%B7%E5%9C%9F&id=1000242097&ldtl=1&mcmd=25&page=ref_view&st=update&state=2200000036)
+- [国立公文書館「王政復古の大号令が発せられる」](https://www.archives.go.jp/ayumi/kobetsu/k03_1867_01.html)
 
 ## 情報の分類
 
