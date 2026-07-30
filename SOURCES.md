@@ -25,6 +25,9 @@
 - [国立国会図書館「近代日本人の肖像・勝海舟」](https://www.ndl.go.jp/portrait/datas/51/index.html)
 - [東京都立図書館「勝海舟書簡　山岡鉄舟あて」](https://archive.library.metro.tokyo.lg.jp/da/detail?tilcod=0000000017-00040922)
 - [墨田区「勝海舟　幕末・明治を生きた巨人」](https://www.city.sumida.lg.jp/sisetu_info/siryou/kyoudobunka/sonota/tenzi/h15/kikakuten_katukaisyuu.html)
+- [国立国会図書館「日米和親条約写」](https://www.ndl.go.jp/modern/img_t/002/002-003tx.html)
+- [国立国会図書館「日本の開国と日蘭関係」](https://www.ndl.go.jp/nichiran/s1/s1_4.html)
+- [国立国会図書館「あの人の直筆・幕末を生きた人々」](https://www.ndl.go.jp/jikihitsu/part2/s1_1/)
 
 ## 情報の分類
 

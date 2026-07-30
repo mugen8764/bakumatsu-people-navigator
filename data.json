@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "updated": "2026-07-30"
   },
   "sources": {
@@ -64,6 +64,21 @@
       "title": "墨田区「勝海舟　幕末・明治を生きた巨人」",
       "url": "https://www.city.sumida.lg.jp/sisetu_info/siryou/kyoudobunka/sonota/tenzi/h15/kikakuten_katukaisyuu.html",
       "note": "徳川慶喜から勝海舟への事後処理委任、山岡鉄舟の事前交渉、江戸城引き渡し。"
+    },
+    "ndl_treaty_1854_text": {
+      "title": "国立国会図書館「日米和親条約写」",
+      "url": "https://www.ndl.go.jp/modern/img_t/002/002-003tx.html",
+      "note": "下田・箱館への米国船来航、薪水・食料供給などを定めた条約本文。"
+    },
+    "ndl_nichiran_opening": {
+      "title": "国立国会図書館「日本の開国と日蘭関係」",
+      "url": "https://www.ndl.go.jp/nichiran/s1/s1_4.html",
+      "note": "日米和親条約による下田・箱館開港と長崎海軍伝習所。"
+    },
+    "ndl_handwriting_bakumatsu_people": {
+      "title": "国立国会図書館「あの人の直筆・幕末を生きた人々」",
+      "url": "https://www.ndl.go.jp/jikihitsu/part2/s1_1/",
+      "note": "井伊直弼による条約調印、将軍継嗣問題、安政の大獄と桜田門外の変。"
     }
   },
   "factions": {
@@ -210,19 +225,19 @@
       "era": "嘉永6年",
       "date": "6月3日（7月8日）",
       "title": "黒船来航",
-      "summary": "ペリー艦隊の来航により、海防と開国が幕府だけでなく諸大名を巻き込む政治問題になる。",
+      "summary": "ペリー艦隊が浦賀へ来航し、久里浜で米国大統領の国書を幕府側へ渡した。幕府は品川台場の築造と大船建造の解禁に着手した。",
       "event": "blackships",
       "insights": [
-        "幕府は諸大名へ意見を求め、意思決定の独占を自ら緩めた。",
-        "攘夷論だけでなく、海軍・砲術・交易を重視する開国論も並行していた。",
-        "後に著名になる人物の多くは、まだ藩内の若手や学習者だった。"
+        "ペリーは浦賀へ来航し、久里浜で大統領国書を幕府側へ渡した。",
+        "幕府は同年に品川台場の築造を始め、大船建造の禁を解いた。",
+        "同年にはロシア使節プチャーチンも長崎へ来航し、通商と国境問題を協議した。"
       ],
       "evidence": {
         "sourceIds": [
           "archives_timeline",
           "ndl_modern_timeline"
         ],
-        "reviewStatus": "needs_review"
+        "reviewStatus": "verified"
       }
     },
     {
@@ -231,19 +246,21 @@
       "era": "嘉永7年／安政元年",
       "date": "3月3日（3月31日）",
       "title": "日米和親条約",
-      "summary": "下田・箱館の開港などを定め、鎖国体制の枠が崩れる。幕府は海防と洋学導入を急ぐ。",
+      "summary": "横浜で日米和親条約が調印され、米国船への下田・箱館の開港と薪水・食料などの供給が定められた。",
       "event": "treaty1854",
       "insights": [
-        "和親条約は本格的な通商条約ではないが、他国との条約の先例になった。",
-        "開国は外交問題だけでなく、造船・海軍教育・翻訳機関の整備を促した。",
-        "吉田松陰の密航未遂は、海外知識を直接得ようとする焦りの表れだった。"
+        "条約は米国船が下田・箱館へ来航できることを定めた。",
+        "幕府は同年、英国・ロシアとも和親条約を結んだ。",
+        "翌1855年、長崎でオランダ軍人による海軍伝習が始まった。"
       ],
       "evidence": {
         "sourceIds": [
           "archives_timeline",
-          "ndl_modern_timeline"
+          "ndl_modern_timeline",
+          "ndl_treaty_1854_text",
+          "ndl_nichiran_opening"
         ],
-        "reviewStatus": "needs_review"
+        "reviewStatus": "verified"
       }
     },
     {
@@ -252,20 +269,20 @@
       "era": "安政5年",
       "date": "6月〜9月",
       "title": "通商条約・将軍継嗣・安政の大獄",
-      "summary": "条約調印と次期将軍をめぐる対立が重なり、井伊直弼が一橋派や反対派を処分する。",
+      "summary": "大老井伊直弼は勅許を得ずに日米修好通商条約へ調印し、徳川慶福を将軍継嗣に定め、反対する大名・公家・志士らを処分した。",
       "event": "ansei",
       "insights": [
-        "「開国か攘夷か」だけでなく、「誰が政策を決めるか」が争点だった。",
-        "一橋派は慶喜個人の支持者ではなく、雄藩参加型の幕政改革を求める連合でもあった。",
-        "朝廷の勅許をめぐる問題が、幕府と朝廷の権力関係を変えた。"
+        "井伊は安政5年4月に大老へ就任した。",
+        "日米修好通商条約は朝廷の勅許を得ずに調印された。",
+        "将軍継嗣問題では徳川慶福を推し、一橋慶喜を推す一派と対立した。"
       ],
       "evidence": {
         "sourceIds": [
           "archives_timeline",
           "ndl_modern_timeline",
-          "ndl_handwriting"
+          "ndl_handwriting_bakumatsu_people"
         ],
-        "reviewStatus": "needs_review"
+        "reviewStatus": "verified"
       }
     },
     {
@@ -274,19 +291,20 @@
       "era": "安政7年／万延元年",
       "date": "3月3日（3月24日）",
       "title": "桜田門外の変",
-      "summary": "井伊直弼が水戸浪士らに殺害され、幕府中枢の権威低下と政治的暴力の拡大が明白になる。",
+      "summary": "大老井伊直弼が江戸城桜田門外で水戸藩の浪士らに襲撃され、殺害された。",
       "event": "sakurada",
       "insights": [
-        "襲撃者は単純な長州・薩摩の倒幕派ではなく、水戸藩を中心とする浪士だった。",
-        "井伊の死後も通商条約は維持され、政策そのものは巻き戻らなかった。",
-        "幕府は朝廷との関係強化を図る公武合体へ軸足を移した。"
+        "襲撃者は水戸藩の浪士らだった。",
+        "井伊は日米修好通商条約の調印と将軍継嗣問題を主導した大老だった。",
+        "国立国会図書館の年表は、安政の大獄の期間を開始から桜田門外の変までとしている。"
       ],
       "evidence": {
         "sourceIds": [
           "archives_timeline",
-          "ndl_handwriting"
+          "ndl_modern_timeline",
+          "ndl_handwriting_bakumatsu_people"
         ],
-        "reviewStatus": "needs_review"
+        "reviewStatus": "verified"
       }
     },
     {

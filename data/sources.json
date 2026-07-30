@@ -72,6 +72,24 @@
       "title": "墨田区「勝海舟　幕末・明治を生きた巨人」",
       "url": "https://www.city.sumida.lg.jp/sisetu_info/siryou/kyoudobunka/sonota/tenzi/h15/kikakuten_katukaisyuu.html",
       "note": "徳川慶喜から勝海舟への事後処理委任、山岡鉄舟の事前交渉、江戸城引き渡し。"
+    },
+    {
+      "id": "ndl_treaty_1854_text",
+      "title": "国立国会図書館「日米和親条約写」",
+      "url": "https://www.ndl.go.jp/modern/img_t/002/002-003tx.html",
+      "note": "下田・箱館への米国船来航、薪水・食料供給などを定めた条約本文。"
+    },
+    {
+      "id": "ndl_nichiran_opening",
+      "title": "国立国会図書館「日本の開国と日蘭関係」",
+      "url": "https://www.ndl.go.jp/nichiran/s1/s1_4.html",
+      "note": "日米和親条約による下田・箱館開港と長崎海軍伝習所。"
+    },
+    {
+      "id": "ndl_handwriting_bakumatsu_people",
+      "title": "国立国会図書館「あの人の直筆・幕末を生きた人々」",
+      "url": "https://www.ndl.go.jp/jikihitsu/part2/s1_1/",
+      "note": "井伊直弼による条約調印、将軍継嗣問題、安政の大獄と桜田門外の変。"
     }
   ]
 }
