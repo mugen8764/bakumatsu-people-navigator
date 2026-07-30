@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bakumatsu-people-navigator.local/schema/v2/definitions.schema.json",
+  "$defs": {
+    "nonEmptyString": { "type": "string", "minLength": 1 },
+    "stableId": { "type": "string", "pattern": "^[a-z][a-z0-9_-]*$" },
+    "sceneId": { "type": "string", "pattern": "^[0-9]{4}-[a-z0-9-]+$" },
+    "stringList": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/nonEmptyString" }
+    },
+    "referenceList": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/stableId" }
+    },
+    "sceneRange": {
+      "type": "object",
+      "required": ["startSceneId", "endSceneId"],
+      "properties": {
+        "startSceneId": { "$ref": "#/$defs/sceneId" },
+        "endSceneId": { "$ref": "#/$defs/sceneId" }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceIds", "reviewStatus"],
+      "properties": {
+        "sourceIds": { "$ref": "#/$defs/referenceList" },
+        "reviewStatus": { "enum": ["verified", "disputed", "needs_review"] },
+        "note": { "$ref": "#/$defs/nonEmptyString" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "reviewStatus": { "const": "verified" } }, "required": ["reviewStatus"] },
+          "then": { "properties": { "sourceIds": { "minItems": 1 } } }
+        }
+      ]
+    }
+  }
+}

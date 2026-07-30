@@ -1,0 +1,17 @@
+{
+  "name": "bakumatsu-people-navigator",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "npm run test:data && npm run test:e2e",
+    "validate:data": "node scripts/validate-data.cjs",
+    "test:data": "npm run validate:data && node --test tests/data/*.test.cjs",
+    "test:e2e": "playwright test",
+    "test:e2e:update": "playwright test --update-snapshots"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.0",
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bakumatsu-people-navigator.local/schema/v2/events.schema.json",
+  "title": "data/events.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "scenes", "events"],
+  "properties": {
+    "schemaVersion": { "const": 2 },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "order", "year", "era", "date", "title", "summary", "eventId", "insights", "evidence"],
+        "properties": {
+          "id": { "$ref": "definitions.schema.json#/$defs/sceneId" },
+          "order": { "type": "integer", "minimum": 0 },
+          "year": { "type": "integer", "minimum": 1800, "maximum": 1900 },
+          "era": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "date": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "title": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "summary": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "eventId": { "$ref": "definitions.schema.json#/$defs/stableId" },
+          "insights": { "allOf": [{ "$ref": "definitions.schema.json#/$defs/stringList" }], "minItems": 1 },
+          "evidence": { "$ref": "definitions.schema.json#/$defs/evidence" }
+        }
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "date", "title", "category", "description", "causes", "issues", "results", "personIds", "factionIds", "placeIds", "evidence"],
+        "properties": {
+          "id": { "$ref": "definitions.schema.json#/$defs/stableId" },
+          "date": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "title": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "category": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "description": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "causes": { "allOf": [{ "$ref": "definitions.schema.json#/$defs/stringList" }], "minItems": 1 },
+          "issues": { "allOf": [{ "$ref": "definitions.schema.json#/$defs/stringList" }], "minItems": 1 },
+          "results": { "allOf": [{ "$ref": "definitions.schema.json#/$defs/stringList" }], "minItems": 1 },
+          "personIds": { "$ref": "definitions.schema.json#/$defs/referenceList" },
+          "factionIds": { "$ref": "definitions.schema.json#/$defs/referenceList" },
+          "placeIds": { "$ref": "definitions.schema.json#/$defs/referenceList" },
+          "evidence": { "$ref": "definitions.schema.json#/$defs/evidence" }
+        }
+      }
+    }
+  }
+}

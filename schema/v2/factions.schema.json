@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bakumatsu-people-navigator.local/schema/v2/factions.schema.json",
+  "title": "data/factions.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "factions", "states"],
+  "properties": {
+    "schemaVersion": { "const": 2 },
+    "factions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "shortName", "color", "summary", "aliases", "evidence"],
+        "properties": {
+          "id": { "$ref": "definitions.schema.json#/$defs/stableId" },
+          "name": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "shortName": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+          "summary": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "aliases": { "$ref": "definitions.schema.json#/$defs/stringList" },
+          "evidence": { "$ref": "definitions.schema.json#/$defs/evidence" }
+        }
+      }
+    },
+    "states": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "factionId", "startSceneId", "endSceneId", "goal", "position", "evidence"],
+        "properties": {
+          "id": { "$ref": "definitions.schema.json#/$defs/stableId" },
+          "factionId": { "$ref": "definitions.schema.json#/$defs/stableId" },
+          "startSceneId": { "$ref": "definitions.schema.json#/$defs/sceneId" },
+          "endSceneId": { "$ref": "definitions.schema.json#/$defs/sceneId" },
+          "goal": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "position": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "evidence": { "$ref": "definitions.schema.json#/$defs/evidence" }
+        }
+      }
+    }
+  }
+}

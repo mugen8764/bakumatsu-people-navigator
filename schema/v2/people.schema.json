@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bakumatsu-people-navigator.local/schema/v2/people.schema.json",
+  "title": "data/people.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "people"],
+  "properties": {
+    "schemaVersion": { "const": 2 },
+    "people": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "kana", "aliases", "lifespan", "defaultFactionId", "activeStartSceneId", "activeEndSceneId", "oneLine", "placeIds", "eventIds", "evidence"],
+        "properties": {
+          "id": { "$ref": "definitions.schema.json#/$defs/stableId" },
+          "name": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "kana": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "aliases": { "$ref": "definitions.schema.json#/$defs/stringList" },
+          "lifespan": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "defaultFactionId": { "$ref": "definitions.schema.json#/$defs/stableId" },
+          "activeStartSceneId": { "$ref": "definitions.schema.json#/$defs/sceneId" },
+          "activeEndSceneId": { "$ref": "definitions.schema.json#/$defs/sceneId" },
+          "oneLine": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "placeIds": { "$ref": "definitions.schema.json#/$defs/referenceList" },
+          "eventIds": { "$ref": "definitions.schema.json#/$defs/referenceList" },
+          "evidence": { "$ref": "definitions.schema.json#/$defs/evidence" }
+        }
+      }
+    }
+  }
+}

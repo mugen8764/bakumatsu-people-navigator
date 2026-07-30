@@ -1,0 +1,273 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bakumatsu-people-navigator.local/schema/current-data.schema.json",
+  "title": "幕末人物・勢力ナビ 現行統合データ",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "meta",
+    "sources",
+    "factions",
+    "scenes",
+    "events",
+    "places",
+    "people",
+    "relations",
+    "factionRelations",
+    "factionStates"
+  ],
+  "properties": {
+    "meta": { "$ref": "#/$defs/meta" },
+    "sources": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": { "$ref": "#/$defs/dataId" },
+      "additionalProperties": { "$ref": "#/$defs/source" }
+    },
+    "factions": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "$ref": "#/$defs/faction" }
+    },
+    "scenes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/scene" }
+    },
+    "events": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": { "$ref": "#/$defs/dataId" },
+      "additionalProperties": { "$ref": "#/$defs/event" }
+    },
+    "places": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": { "$ref": "#/$defs/dataId" },
+      "additionalProperties": { "$ref": "#/$defs/place" }
+    },
+    "people": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/person" }
+    },
+    "relations": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/personRelation" }
+    },
+    "factionRelations": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/factionRelation" }
+    },
+    "factionStates": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": { "$ref": "#/$defs/sceneId" },
+      "additionalProperties": {
+        "type": "object",
+        "minProperties": 1,
+        "additionalProperties": { "$ref": "#/$defs/factionState" }
+      }
+    }
+  },
+  "$defs": {
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dataId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]*$"
+    },
+    "sceneId": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[a-z0-9-]+$"
+    },
+    "stringList": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/nonEmptyString" }
+    },
+    "idList": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/dataId" }
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "version", "updated"],
+      "properties": {
+        "title": { "$ref": "#/$defs/nonEmptyString" },
+        "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+        "updated": { "type": "string", "format": "date" }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "url", "note"],
+      "properties": {
+        "title": { "$ref": "#/$defs/nonEmptyString" },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "note": { "$ref": "#/$defs/nonEmptyString" }
+      }
+    },
+    "faction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["short", "color", "summary", "aliases"],
+      "properties": {
+        "short": { "$ref": "#/$defs/nonEmptyString" },
+        "color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+        "summary": { "$ref": "#/$defs/nonEmptyString" },
+        "aliases": { "$ref": "#/$defs/stringList" }
+      }
+    },
+    "scene": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "year", "era", "date", "title", "summary", "event", "insights"],
+      "properties": {
+        "id": { "$ref": "#/$defs/sceneId" },
+        "year": { "type": "integer", "minimum": 1800, "maximum": 1900 },
+        "era": { "$ref": "#/$defs/nonEmptyString" },
+        "date": { "$ref": "#/$defs/nonEmptyString" },
+        "title": { "$ref": "#/$defs/nonEmptyString" },
+        "summary": { "$ref": "#/$defs/nonEmptyString" },
+        "event": { "$ref": "#/$defs/dataId" },
+        "insights": {
+          "allOf": [{ "$ref": "#/$defs/stringList" }],
+          "minItems": 1
+        }
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["date", "title", "category", "description", "causes", "issues", "results", "people", "factions", "places", "sources"],
+      "properties": {
+        "date": { "$ref": "#/$defs/nonEmptyString" },
+        "title": { "$ref": "#/$defs/nonEmptyString" },
+        "category": { "$ref": "#/$defs/nonEmptyString" },
+        "description": { "$ref": "#/$defs/nonEmptyString" },
+        "causes": { "allOf": [{ "$ref": "#/$defs/stringList" }], "minItems": 1 },
+        "issues": { "allOf": [{ "$ref": "#/$defs/stringList" }], "minItems": 1 },
+        "results": { "allOf": [{ "$ref": "#/$defs/stringList" }], "minItems": 1 },
+        "people": { "$ref": "#/$defs/idList" },
+        "factions": { "allOf": [{ "$ref": "#/$defs/stringList" }], "uniqueItems": true },
+        "places": { "$ref": "#/$defs/idList" },
+        "sources": { "allOf": [{ "$ref": "#/$defs/idList" }], "minItems": 1 }
+      }
+    },
+    "place": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "coord", "note"],
+      "properties": {
+        "name": { "$ref": "#/$defs/nonEmptyString" },
+        "coord": {
+          "type": "array",
+          "prefixItems": [
+            { "type": "number", "minimum": -180, "maximum": 180 },
+            { "type": "number", "minimum": -90, "maximum": 90 }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "note": { "$ref": "#/$defs/nonEmptyString" }
+      }
+    },
+    "personStatus": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["display", "role", "stance", "importance"],
+      "properties": {
+        "display": { "$ref": "#/$defs/nonEmptyString" },
+        "role": { "$ref": "#/$defs/nonEmptyString" },
+        "faction": { "$ref": "#/$defs/nonEmptyString" },
+        "stance": { "$ref": "#/$defs/nonEmptyString" },
+        "importance": { "$ref": "#/$defs/nonEmptyString" }
+      }
+    },
+    "person": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "kana", "aliases", "born", "defaultFaction", "activeRange", "oneLine", "places", "events", "sources", "statuses"],
+      "properties": {
+        "id": { "$ref": "#/$defs/dataId" },
+        "name": { "$ref": "#/$defs/nonEmptyString" },
+        "kana": { "$ref": "#/$defs/nonEmptyString" },
+        "aliases": { "$ref": "#/$defs/stringList" },
+        "born": { "$ref": "#/$defs/nonEmptyString" },
+        "defaultFaction": { "$ref": "#/$defs/nonEmptyString" },
+        "activeRange": {
+          "type": "array",
+          "prefixItems": [
+            { "type": "integer", "minimum": 0 },
+            { "type": "integer", "minimum": 0 }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "oneLine": { "$ref": "#/$defs/nonEmptyString" },
+        "places": { "$ref": "#/$defs/idList" },
+        "events": { "$ref": "#/$defs/idList" },
+        "sources": { "allOf": [{ "$ref": "#/$defs/idList" }], "minItems": 1 },
+        "statuses": {
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": { "$ref": "#/$defs/sceneId" },
+          "additionalProperties": { "$ref": "#/$defs/personStatus" }
+        }
+      }
+    },
+    "range": {
+      "type": "object",
+      "required": ["start", "end"],
+      "properties": {
+        "start": { "type": "integer", "minimum": 0 },
+        "end": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "personRelation": {
+      "allOf": [{ "$ref": "#/$defs/range" }],
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["a", "b", "start", "end", "type", "label", "text"],
+      "properties": {
+        "a": { "$ref": "#/$defs/dataId" },
+        "b": { "$ref": "#/$defs/dataId" },
+        "start": { "type": "integer", "minimum": 0 },
+        "end": { "type": "integer", "minimum": 0 },
+        "type": { "enum": ["主従・登用", "政治協力", "対立", "師弟・同志", "組織", "仲介・交渉", "親族"] },
+        "label": { "$ref": "#/$defs/nonEmptyString" },
+        "text": { "$ref": "#/$defs/nonEmptyString" }
+      }
+    },
+    "factionRelation": {
+      "allOf": [{ "$ref": "#/$defs/range" }],
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["a", "b", "start", "end", "label", "text"],
+      "properties": {
+        "a": { "$ref": "#/$defs/nonEmptyString" },
+        "b": { "$ref": "#/$defs/nonEmptyString" },
+        "start": { "type": "integer", "minimum": 0 },
+        "end": { "type": "integer", "minimum": 0 },
+        "label": { "$ref": "#/$defs/nonEmptyString" },
+        "text": { "$ref": "#/$defs/nonEmptyString" }
+      }
+    },
+    "factionState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["goal", "position"],
+      "properties": {
+        "goal": { "$ref": "#/$defs/nonEmptyString" },
+        "position": { "$ref": "#/$defs/nonEmptyString" }
+      }
+    }
+  }
+}

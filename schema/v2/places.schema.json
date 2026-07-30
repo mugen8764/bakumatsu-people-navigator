@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bakumatsu-people-navigator.local/schema/v2/places.schema.json",
+  "title": "data/places.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "places"],
+  "properties": {
+    "schemaVersion": { "const": 2 },
+    "places": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "longitude", "latitude", "note", "evidence"],
+        "properties": {
+          "id": { "$ref": "definitions.schema.json#/$defs/stableId" },
+          "name": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "longitude": { "type": "number", "minimum": -180, "maximum": 180 },
+          "latitude": { "type": "number", "minimum": -90, "maximum": 90 },
+          "note": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "evidence": { "$ref": "definitions.schema.json#/$defs/evidence" }
+        }
+      }
+    }
+  }
+}

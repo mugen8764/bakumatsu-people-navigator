@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bakumatsu-people-navigator.local/schema/v2/sources.schema.json",
+  "title": "data/sources.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "sources"],
+  "properties": {
+    "schemaVersion": { "const": 2 },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "title", "url", "note"],
+        "properties": {
+          "id": { "$ref": "definitions.schema.json#/$defs/stableId" },
+          "title": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+          "note": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" }
+        }
+      }
+    }
+  }
+}

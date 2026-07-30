@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bakumatsu-people-navigator.local/schema/v2/person-statuses.schema.json",
+  "title": "data/person-statuses.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "statuses"],
+  "properties": {
+    "schemaVersion": { "const": 2 },
+    "statuses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "personId", "startSceneId", "endSceneId", "displayName", "role", "factionId", "stance", "importance", "evidence"],
+        "properties": {
+          "id": { "$ref": "definitions.schema.json#/$defs/stableId" },
+          "personId": { "$ref": "definitions.schema.json#/$defs/stableId" },
+          "startSceneId": { "$ref": "definitions.schema.json#/$defs/sceneId" },
+          "endSceneId": { "$ref": "definitions.schema.json#/$defs/sceneId" },
+          "displayName": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "role": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "factionId": { "$ref": "definitions.schema.json#/$defs/stableId" },
+          "stance": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "importance": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "evidence": { "$ref": "definitions.schema.json#/$defs/evidence" }
+        }
+      }
+    }
+  }
+}

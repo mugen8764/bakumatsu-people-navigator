@@ -1,0 +1,24 @@
+{
+  "factions": {
+    "幕府": "bakufu",
+    "外国勢力": "foreign-powers",
+    "水戸藩": "mito",
+    "薩摩藩": "satsuma",
+    "長州藩": "choshu",
+    "朝廷": "imperial-court",
+    "会津藩": "aizu",
+    "新選組": "shinsengumi",
+    "土佐藩": "tosa",
+    "旧幕府勢力": "former-bakufu",
+    "新政府": "new-government"
+  },
+  "personRelationTypes": {
+    "主従・登用": "appointment",
+    "政治協力": "political-cooperation",
+    "対立": "conflict",
+    "師弟・同志": "mentorship-or-comradeship",
+    "組織": "organization",
+    "仲介・交渉": "mediation-or-negotiation",
+    "親族": "kinship"
+  }
+}

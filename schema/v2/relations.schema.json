@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bakumatsu-people-navigator.local/schema/v2/relations.schema.json",
+  "title": "data/relations.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "personRelations", "factionRelations"],
+  "properties": {
+    "schemaVersion": { "const": 2 },
+    "personRelations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "aPersonId", "bPersonId", "startSceneId", "endSceneId", "typeId", "label", "text", "evidence"],
+        "properties": {
+          "id": { "$ref": "definitions.schema.json#/$defs/stableId" },
+          "aPersonId": { "$ref": "definitions.schema.json#/$defs/stableId" },
+          "bPersonId": { "$ref": "definitions.schema.json#/$defs/stableId" },
+          "startSceneId": { "$ref": "definitions.schema.json#/$defs/sceneId" },
+          "endSceneId": { "$ref": "definitions.schema.json#/$defs/sceneId" },
+          "typeId": {
+            "enum": ["appointment", "political-cooperation", "conflict", "mentorship-or-comradeship", "organization", "mediation-or-negotiation", "kinship"]
+          },
+          "label": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "text": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "evidence": { "$ref": "definitions.schema.json#/$defs/evidence" }
+        }
+      }
+    },
+    "factionRelations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "aFactionId", "bFactionId", "startSceneId", "endSceneId", "label", "text", "evidence"],
+        "properties": {
+          "id": { "$ref": "definitions.schema.json#/$defs/stableId" },
+          "aFactionId": { "$ref": "definitions.schema.json#/$defs/stableId" },
+          "bFactionId": { "$ref": "definitions.schema.json#/$defs/stableId" },
+          "startSceneId": { "$ref": "definitions.schema.json#/$defs/sceneId" },
+          "endSceneId": { "$ref": "definitions.schema.json#/$defs/sceneId" },
+          "label": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "text": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "evidence": { "$ref": "definitions.schema.json#/$defs/evidence" }
+        }
+      }
+    }
+  }
+}
