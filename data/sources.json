@@ -144,6 +144,54 @@
       "title": "山口県文書館「大田・絵堂の戦い」",
       "url": "https://archives.pref.yamaguchi.lg.jp/events/exhibition/h30/",
       "note": "1865年の萩藩政府軍と高杉晋作ら諸隊による藩内戦と諸隊側の勝利。"
+    },
+    {
+      "id": "kyoto_restoration_transition",
+      "title": "京都市上京区「東京遷都と京都の復興」",
+      "url": "https://www.city.kyoto.lg.jp/kamigyo/page/0000012512.html",
+      "note": "第二次長州征討、大政奉還、王政復古、鳥羽・伏見から江戸開城までの経緯。"
+    },
+    {
+      "id": "ndl_ryoma_political_plan",
+      "title": "国立国会図書館「坂本龍馬の政体構想」",
+      "url": "https://www.ndl.go.jp/modern/cha1/description02.html",
+      "note": "後藤象二郎による山内容堂への大政奉還建白と坂本龍馬の政体構想。"
+    },
+    {
+      "id": "archives_toba_fushimi",
+      "title": "国立公文書館「鳥羽・伏見の戦い」",
+      "url": "https://www.archives.go.jp/ayumi/kobetsu/m01_1868_01.html",
+      "note": "新政府軍と幕府軍の衝突、新政府軍の勝利、戊辰戦争の範囲。"
+    },
+    {
+      "id": "kyoto_toba_fushimi_site",
+      "title": "京都市「鳥羽伏見の戦跡」",
+      "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hu061.html",
+      "note": "旧幕府軍の京都進軍と鳥羽・伏見での衝突。"
+    },
+    {
+      "id": "yamaguchi_nishiki_flag",
+      "title": "山口県立山口図書館「『錦旗』調製」",
+      "url": "https://library.pref.yamaguchi.lg.jp/meijiishin/202404/",
+      "note": "鳥羽・伏見の戦いにおける征夷大将軍任命と錦旗・節刀の授与。"
+    },
+    {
+      "id": "archives_boshin_war",
+      "title": "国立公文書館「戊辰戦争」",
+      "url": "https://www.archives.go.jp/exhibition/digital/modean_state/contents/boshin-war/index.html",
+      "note": "鳥羽・伏見、奥羽越列藩同盟、会津降伏、箱館五稜郭陥落までの戊辰戦争。"
+    },
+    {
+      "id": "akita_ouu_alliance",
+      "title": "秋田県公文書館「奥羽列藩同盟約書写」",
+      "url": "https://www.pref.akita.lg.jp/pages/archive/67634",
+      "note": "仙台・米沢両藩の呼びかけと会津・庄内両藩への寛典要求。"
+    },
+    {
+      "id": "hakodate_war_history",
+      "title": "函館市「五稜郭の歴史（箱館戦争から現在）」",
+      "url": "https://www.city.hakodate.hokkaido.jp/docs/2014011700789/",
+      "note": "旧幕府脱走軍の五稜郭占拠、土方歳三の戦死、榎本武揚らの降伏。"
     }
   ]
 }

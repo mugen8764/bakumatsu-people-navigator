@@ -17,7 +17,7 @@ test('all six primary views render without a page error', async ({ page }) => {
     await expect(page.locator(`#view-${view}`)).toBeVisible();
   }
 
-  await expect(page.locator('#sourceCatalog .source')).toHaveCount(24);
+  await expect(page.locator('#sourceCatalog .source')).toHaveCount(32);
   await expect(page.locator('#view-sources')).toContainText('data/*.json');
   expect(pageErrors).toEqual([]);
 });
@@ -161,9 +161,9 @@ test('404 page recovers the correct site root from a nested path', async ({ page
   await expect(page.locator('h1')).toHaveText('幕末人物・勢力ナビ');
 });
 
-test('items awaiting source review are disclosed where their claims appear', async ({ page }) => {
+test('review status follows item-level calibration', async ({ page }) => {
   await page.goto('/#scene=1866-satcho&view=people&person=kido&faction=長州藩');
-  await expect(page.locator('#sceneCounts .review-status')).toHaveText('出典校正中');
+  await expect(page.locator('#sceneCounts .review-status')).toHaveCount(0);
   await expect(page.locator('#personDetail .snapshot .review-status')).toHaveText('出典校正中');
 
   await page.locator('#tab-relations').click();

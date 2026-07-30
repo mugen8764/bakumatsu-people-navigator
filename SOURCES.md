@@ -37,6 +37,14 @@
 - [京都市上京区「幕末動乱と禁門の変」](https://www.city.kyoto.lg.jp/kamigyo/page/0000012502.html)
 - [山口県立山口図書館「四境戦争～時代の流れを変えた戦い～」](https://library.pref.yamaguchi.lg.jp/meijiishin/201607/)
 - [山口県文書館「大田・絵堂の戦い」](https://archives.pref.yamaguchi.lg.jp/events/exhibition/h30/)
+- [京都市上京区「東京遷都と京都の復興」](https://www.city.kyoto.lg.jp/kamigyo/page/0000012512.html)
+- [国立国会図書館「坂本龍馬の政体構想」](https://www.ndl.go.jp/modern/cha1/description02.html)
+- [国立公文書館「鳥羽・伏見の戦い」](https://www.archives.go.jp/ayumi/kobetsu/m01_1868_01.html)
+- [京都市「鳥羽伏見の戦跡」](https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hu061.html)
+- [山口県立山口図書館「『錦旗』調製」](https://library.pref.yamaguchi.lg.jp/meijiishin/202404/)
+- [国立公文書館「戊辰戦争」](https://www.archives.go.jp/exhibition/digital/modean_state/contents/boshin-war/index.html)
+- [秋田県公文書館「奥羽列藩同盟約書写」](https://www.pref.akita.lg.jp/pages/archive/67634)
+- [函館市「五稜郭の歴史（箱館戦争から現在）」](https://www.city.hakodate.hokkaido.jp/docs/2014011700789/)
 
 ## 情報の分類
 
