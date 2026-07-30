@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.16",
+    "version": "1.0.17",
     "updated": "2026-07-30"
   },
   "sources": {
@@ -503,7 +503,7 @@
     "hagi_kusaka_1858": {
       "title": "萩市「松陰の愛弟子 久坂玄瑞との結婚と死別」",
       "url": "https://www.city.hagi.lg.jp/site/humi-hanamoyu/h9203.html",
-      "note": "久坂玄瑞の松下村塾での位置、安政4年末の杉文との婚姻、1858年からの江戸・京都遊学。"
+      "note": "久坂玄瑞の松下村塾での位置、安政4年末の杉文との婚姻、1858年からの江戸・京都遊学、1863年八月十八日の政変による京都追放。"
     },
     "jacar_ito_detail": {
       "title": "アジア歴史資料センター「伊藤博文」",
@@ -679,6 +679,16 @@
       "title": "神戸市文化財保護審議会「海軍操練所跡及び神戸港第一波止場の遺構」",
       "url": "https://www.city.kobe.lg.jp/documents/19965/20240827hogoshinshiryo.pdf",
       "note": "勝海舟の建言を受けた1863年の神戸海軍操練所建設開始、1864年の竣工、1865年の閉所。"
+    },
+    "kochi_tosa_bakumatsu": {
+      "title": "高知県立高知城歴史博物館「土佐藩の歴史・幕末維新期」",
+      "url": "https://www.kochi-johaku.jp/column/4529/",
+      "note": "山内容堂と土佐勤王党の方針不一致、朝廷から尊王攘夷派が一掃された後の武市半平太ら勤王党員の捕縛。"
+    },
+    "kochi_takechi_imprisonment": {
+      "title": "高知市「史跡 武市半平太旧宅及び墓」",
+      "url": "https://www.city.kochi.kochi.jp/soshiki/90/cas-state-1600100.html",
+      "note": "武市半平太の京都留守居加役就任と帰国、八月十八日の政変後の土佐勤王党弾圧、1863年9月21日の投獄。"
     }
   },
   "factions": {
@@ -2869,15 +2879,14 @@
         "1863-aug18": {
           "display": "一橋慶喜",
           "role": "将軍後見職",
-          "stance": "長州系急進派の排除後、朝廷と幕府の協調維持を図る。",
-          "importance": "長州とは対立しつつ、薩摩・会津とも常に同じ構想ではなかった。",
+          "stance": "八月十八日の政変時も将軍後見職にあり、京都を中心とする幕政にあたった。",
+          "importance": "将軍後見職を辞して禁裏御守衛総督に就くのは翌1864年3月である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_modern_timeline",
-              "ndl_handwriting"
+              "fukui_yoshinobu_1863",
+              "archives_timeline"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1864-kinmon": {
@@ -3681,14 +3690,14 @@
         "1863-aug18": {
           "display": "島津久光",
           "role": "薩摩藩国父",
-          "stance": "会津藩・公武合体派公家と連携し、長州系急進派を京都から排除する。",
-          "importance": "薩摩と長州が敵対していた時期の薩摩指導者。",
+          "stance": "久光が藩政の実権を握る薩摩藩は、会津藩とともに公武合体派として長州系尊攘派を京都から排除した。",
+          "importance": "薩摩藩国父としての立場と、在京藩士による政変の実務を区別する必要がある。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kagoshima_okubo_people",
+              "cultural_heritage_aug18"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1864-kinmon": {
@@ -3894,16 +3903,16 @@
           }
         },
         "1863-aug18": {
-          "display": "西郷吉之助",
+          "display": "大島吉之助",
           "role": "沖永良部島に遠島中",
-          "stance": "八月十八日の政変時も島にあり、薩摩の行動を指揮していない。",
-          "importance": "薩摩の政変は久光・大久保・小松らが担った。",
+          "stance": "前年閏8月から沖永良部島で流罪・禁固の身にあり、政変時も島にいた。",
+          "importance": "薩摩藩に召還されて中央政局へ戻るのは翌1864年である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "isen_saigo_1863_letter",
+              "kagoshima_okinoerabu_saigo"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1864-kinmon": {
@@ -4118,15 +4127,15 @@
         },
         "1863-aug18": {
           "display": "大久保一蔵",
-          "role": "薩摩藩国事担当",
-          "stance": "会津・公家との連絡を進め、八月十八日の政変に関与する。",
-          "importance": "京都政局における薩摩の実務責任者。",
+          "role": "薩摩藩御側役",
+          "stance": "1863年に御側役へ進んだ。同年、薩摩藩は会津藩とともに八月十八日の政変を進めた。",
+          "importance": "御側役という確認可能な役職と、政変における薩摩藩の行動を表示する。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "jacar_okubo_detail",
+              "cultural_heritage_aug18"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1864-kinmon": {
@@ -4314,14 +4323,14 @@
         "1863-aug18": {
           "display": "小松帯刀",
           "role": "薩摩藩家老",
-          "stance": "京都で公武合体派の政治活動と藩の公式交渉を支える。",
-          "importance": "西郷・大久保の活動を制度上支える立場。",
+          "stance": "前年に家老へ進み、京都の藩邸に多く滞在して薩摩藩を代表した。",
+          "importance": "薩摩藩が会津藩とともに政変を進めた時期の藩政中枢にいた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kagoshima_komatsu_1862",
+              "cultural_heritage_aug18"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1864-kinmon": {
@@ -4821,15 +4830,15 @@
         },
         "1863-aug18": {
           "display": "桂小五郎",
-          "role": "京都を追われた長州藩士",
-          "stance": "政変で長州勢力が排除され、藩論調整と復帰策を探る。",
-          "importance": "京都での政治基盤を失う。",
+          "role": "長州藩士・京都に残留",
+          "stance": "長州藩兵と三条実美らが京都を去った後も一人京都にとどまり、長州藩主らの冤罪を訴えた。",
+          "importance": "長州勢力の京都追放と、桂本人の京都残留を区別して示す。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kyoto_kido_1862",
+              "cultural_heritage_aug18"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1864-kinmon": {
@@ -5163,15 +5172,15 @@
         },
         "1863-aug18": {
           "display": "久坂玄瑞",
-          "role": "京都を追われた長州尊攘派",
-          "stance": "政変で追放され、長州の京都復帰を主張する。",
-          "importance": "失地回復を急ぐ上京論の中心。",
+          "role": "京都追放・長州へ退去",
+          "stance": "八月十八日の政変で京都から追放され、三条実美ら尊攘派七卿とともに長州へ退いた。",
+          "importance": "翌1864年の禁門の変で再び京都へ出兵する前の段階である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "hagi_kusaka_1858",
+              "cultural_heritage_aug18"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1864-kinmon": {
@@ -5776,14 +5785,14 @@
         "1863-aug18": {
           "display": "孝明天皇",
           "role": "天皇",
-          "stance": "長州系急進派への不信を強め、会津・薩摩側を支持する。",
-          "importance": "八月十八日の政変の政治的背景。",
+          "stance": "朝廷の秩序を乱した尊攘派に対する強い反感が、政変の背景にあったとされる。",
+          "importance": "薩摩・会津両藩の公武合体派による画策と、天皇の意向が重なった政変だった。",
           "evidence": {
             "sourceIds": [
-              "archives_timeline",
-              "ndl_handwriting"
+              "cultural_heritage_aug18",
+              "archives_timeline"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1864-kinmon": {
@@ -6024,15 +6033,15 @@
         },
         "1863-aug18": {
           "display": "岩倉具視",
-          "role": "蟄居中",
-          "stance": "政変を直接主導せず、洛外で情勢を見守る。",
-          "importance": "後の王政復古から過去を逆算しないため重要。",
+          "role": "岩倉村に蟄居中",
+          "stance": "前年に辞官・落飾し、洛中を追放されて京都北郊の岩倉村に蟄居していた。",
+          "importance": "蟄居を解かれて朝廷政治へ復帰するのは1867年である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "ndl_iwakura_exile",
+              "ndl_portrait_iwakura_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1865-choshu": {
@@ -6164,15 +6173,15 @@
         },
         "1863-aug18": {
           "display": "三条実美",
-          "role": "京都を追放された公家",
-          "stance": "七卿の一人として長州へ下る。",
-          "importance": "政変で朝廷内尊攘派が失脚した象徴。",
+          "role": "官位褫奪・京都追放",
+          "stance": "八月十八日の政変に伴って官位を奪われ、他の尊攘派公家6名と長州へ逃れた。",
+          "importance": "前年から務めた議奏・国事御用掛の地位を失い、京都を離れた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "jacar_sanjo_detail",
+              "cultural_heritage_aug18"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1864-kinmon": {
@@ -6304,14 +6313,15 @@
         "1863-aug18": {
           "display": "松平容保",
           "role": "京都守護職",
-          "stance": "薩摩と連携して長州系急進派を排除する。",
-          "importance": "八月十八日の政変を支えた中心人物。",
+          "stance": "京都守護職として、実美ら攘夷派公家の謹慎と長州藩兵の禁裏警備停止にあたった。",
+          "importance": "会津藩は薩摩藩と連携し、壬生浪士組も政変に出動した。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kyoto_kido_1862",
+              "kyoto_shinsengumi_history",
+              "cultural_heritage_aug18"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1864-kinmon": {
@@ -6496,15 +6506,15 @@
         },
         "1863-aug18": {
           "display": "山内容堂",
-          "role": "土佐藩の実権者",
-          "stance": "京都政変後、武市半平太ら土佐勤王党を弾圧する。",
-          "importance": "中央政局の変化が藩内権力闘争へ波及した。",
+          "role": "前土佐藩主・容堂",
+          "stance": "公武合体を唱え、尊王攘夷を掲げる武市半平太ら土佐勤王党と対立した。",
+          "importance": "朝廷から尊王攘夷派が排除されると、土佐藩は武市ら勤王党員を捕らえた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kochi_yodo_timeline",
+              "kochi_tosa_bakumatsu"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1864-kinmon": {
@@ -6645,15 +6655,15 @@
         },
         "1863-aug18": {
           "display": "武市半平太",
-          "role": "土佐藩で投獄",
-          "stance": "政変後、山内容堂による勤王党弾圧を受ける。",
-          "importance": "京都の尊攘派後退が土佐藩内へ波及した。",
+          "role": "土佐藩で投獄（9月21日）",
+          "stance": "八月十八日の政変後に土佐勤王党が弾圧を受け、9月21日に投獄された。",
+          "importance": "京都留守居加役として活動した時期を終え、以後は獄中に置かれた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kochi_takechi_imprisonment",
+              "kochi_tosa_bakumatsu"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1864-kinmon": {
@@ -7187,15 +7197,15 @@
         },
         "1863-aug18": {
           "display": "近藤勇",
-          "role": "壬生浪士組局長",
-          "stance": "会津藩のもとで政変後の京都警備を担う。",
-          "importance": "新選組の名称・組織確立へ向かう。",
+          "role": "壬生浪士組（政変後に新選組）",
+          "stance": "会津藩預かりの壬生浪士組として八月十八日の政変へ出動した。",
+          "importance": "政変での働きを認められ、武家伝奏から新選組の隊名を受けた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kyoto_shinsengumi_history",
+              "hino_shinsengumi_2003"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1864-kinmon": {

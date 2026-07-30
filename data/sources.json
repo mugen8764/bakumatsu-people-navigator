@@ -599,7 +599,7 @@
       "id": "hagi_kusaka_1858",
       "title": "萩市「松陰の愛弟子 久坂玄瑞との結婚と死別」",
       "url": "https://www.city.hagi.lg.jp/site/humi-hanamoyu/h9203.html",
-      "note": "久坂玄瑞の松下村塾での位置、安政4年末の杉文との婚姻、1858年からの江戸・京都遊学。"
+      "note": "久坂玄瑞の松下村塾での位置、安政4年末の杉文との婚姻、1858年からの江戸・京都遊学、1863年八月十八日の政変による京都追放。"
     },
     {
       "id": "jacar_ito_detail",
@@ -810,6 +810,18 @@
       "title": "神戸市文化財保護審議会「海軍操練所跡及び神戸港第一波止場の遺構」",
       "url": "https://www.city.kobe.lg.jp/documents/19965/20240827hogoshinshiryo.pdf",
       "note": "勝海舟の建言を受けた1863年の神戸海軍操練所建設開始、1864年の竣工、1865年の閉所。"
+    },
+    {
+      "id": "kochi_tosa_bakumatsu",
+      "title": "高知県立高知城歴史博物館「土佐藩の歴史・幕末維新期」",
+      "url": "https://www.kochi-johaku.jp/column/4529/",
+      "note": "山内容堂と土佐勤王党の方針不一致、朝廷から尊王攘夷派が一掃された後の武市半平太ら勤王党員の捕縛。"
+    },
+    {
+      "id": "kochi_takechi_imprisonment",
+      "title": "高知市「史跡 武市半平太旧宅及び墓」",
+      "url": "https://www.city.kochi.kochi.jp/soshiki/90/cas-state-1600100.html",
+      "note": "武市半平太の京都留守居加役就任と帰国、八月十八日の政変後の土佐勤王党弾圧、1863年9月21日の投獄。"
     }
   ]
 }
