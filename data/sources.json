@@ -498,6 +498,138 @@
       "title": "指宿市観光協会「天璋院篤姫について」",
       "url": "https://www.ibusuki.or.jp/info/machiaruki/atsuhime/atsuhimeinfo/index.php",
       "note": "篤姫の斉彬養女化、1853年の鹿児島出立、近衛家養女化と1856年の家定への輿入れ。"
+    },
+    {
+      "id": "mofa_harris_credentials",
+      "title": "外務省「ハリス信任状」",
+      "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/10.html",
+      "note": "ハリスの総領事兼条約改定全権委員就任、将軍謁見と日米修好通商条約締結に向けた外交。"
+    },
+    {
+      "id": "mofa_treaty_1858",
+      "title": "外務省「日米修好通商条約」",
+      "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/09.html",
+      "note": "ハリスと幕府全権の交渉、井伊直弼による無勅許調印、条約の主要条項。"
+    },
+    {
+      "id": "fukui_bakumatsu_chronicle",
+      "title": "福井市立郷土歴史博物館「幕末かけあし年表」",
+      "url": "https://history-museum.city.fukui.lg.jp/gakko/for_students/bakumatsu/bakumatsu_chronicle.html",
+      "note": "徳川慶福の将軍継嗣決定、松平慶永の一橋慶喜擁立運動と1858年の隠居・謹慎。"
+    },
+    {
+      "id": "ndl_authority_iemochi",
+      "title": "国立国会図書館典拠データ「徳川家茂」",
+      "url": "https://id.ndl.go.jp/auth/ndlna/01079959",
+      "note": "徳川家茂の生没年と江戸幕府第14代将軍としての典拠。"
+    },
+    {
+      "id": "ibaraki_nariaki_succession",
+      "title": "茨城県立歴史館「通商条約締結と将軍継嗣問題」",
+      "url": "https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/tuusyoujyouyaku.htm",
+      "note": "南紀派と一橋派の構成、徳川斉昭・島津斉彬・松平慶永・山内豊信らによる一橋慶喜擁立。"
+    },
+    {
+      "id": "ibaraki_nariaki_treaty",
+      "title": "茨城県立歴史館「日米修好通商条約調印」",
+      "url": "https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/nitibeisyuukoutuusyoujyouyaku.htm",
+      "note": "孝明天皇の勅許拒否、一橋派諸侯の抗議登城、1858年7月の処分と慶喜の登城禁止。"
+    },
+    {
+      "id": "ibaraki_nariaki_ansei",
+      "title": "茨城県立歴史館「戊午の密勅と安政の大獄」",
+      "url": "https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/annseinotaigoku.htm",
+      "note": "1858年8月の水戸藩への勅諚と諸藩回達命令、1859年の徳川斉昭・慶喜らへの処分。"
+    },
+    {
+      "id": "kagoshima_library_nariakira",
+      "title": "鹿児島県立図書館「島津斉彬」",
+      "url": "https://www.library.pref.kagoshima.jp/announcements/announcements/view/626/b235acaadfc576743c86f0a4d598ab4b",
+      "note": "一橋慶喜擁立、率兵上洛の準備、天保山での練兵と1858年7月16日の急死。"
+    },
+    {
+      "id": "jacar_saigo_detail",
+      "title": "アジア歴史資料センター「西郷隆盛」",
+      "url": "https://www.jacar.archives.go.jp/das/term/00000385",
+      "note": "西郷隆盛の1857年徒目付就任、1859年の奄美大島配流などの職歴。"
+    },
+    {
+      "id": "kagoshima_saigo_moon",
+      "title": "鹿児島県「西郷・月照入水の後始末書」",
+      "url": "https://www.pref.kagoshima.jp/ab23/reimeikan/josetsu/theme/gendai/toubaku/kgs04_s1_1.html",
+      "note": "1858年11月16日の西郷隆盛と月照の入水、および同時代の後始末記録。"
+    },
+    {
+      "id": "kagoshima_okubo_people",
+      "title": "鹿児島県観光連盟「西郷隆盛を取り巻く人々」",
+      "url": "https://www.kagoshima-kankou.com/feature/segodonguide/people",
+      "note": "大久保正助の御徒目付時代と精忠組での指導的立場。"
+    },
+    {
+      "id": "rekihaku_okubo_saigo_letter",
+      "title": "国立歴史民俗博物館「大久保利通書簡 西郷隆盛宛」",
+      "url": "https://khirin.rekihaku.ac.jp/pid/nmjh_collection/H-1316-4-1-1.html",
+      "note": "1858年12月29日に山川港の西郷へ送られた大久保書簡と、盟中の動揺に関する記述。"
+    },
+    {
+      "id": "jacar_kawaji_detail",
+      "title": "アジア歴史資料センター「川路利良」",
+      "url": "https://www.jacar.archives.go.jp/das/term/00000414",
+      "note": "川路利良の1850年兵具方与力附就任、1868年の戊辰戦争従軍などの職歴。"
+    },
+    {
+      "id": "jacar_kido_detail",
+      "title": "アジア歴史資料センター「木戸孝允」",
+      "url": "https://www.jacar.archives.go.jp/das/term/00000381",
+      "note": "桂小五郎の1852年江戸遊学と1858年の大検使・大番手就任。"
+    },
+    {
+      "id": "ndl_portrait_kido_detail",
+      "title": "国立国会図書館「近代日本人の肖像・木戸孝允」",
+      "url": "https://www.ndl.go.jp/portrait/datas/65/",
+      "note": "桂小五郎の別称、江戸での剣術・西洋兵学修学、その後の尊王攘夷運動。"
+    },
+    {
+      "id": "hagi_takasugi_sonjuku",
+      "title": "萩市「高杉晋作 参上」",
+      "url": "https://www.city.hagi.lg.jp/soshiki/5/h9596.html",
+      "note": "高杉晋作の1857年後半の松下村塾入塾と、久坂玄瑞と並ぶ門下での位置。"
+    },
+    {
+      "id": "hagi_kusaka_1858",
+      "title": "萩市「松陰の愛弟子 久坂玄瑞との結婚と死別」",
+      "url": "https://www.city.hagi.lg.jp/site/humi-hanamoyu/h9203.html",
+      "note": "久坂玄瑞の松下村塾での位置、安政4年末の杉文との婚姻、1858年からの江戸・京都遊学。"
+    },
+    {
+      "id": "jacar_ito_detail",
+      "title": "アジア歴史資料センター「伊藤博文」",
+      "url": "https://www.jacar.archives.go.jp/das/term/00000372",
+      "note": "伊藤俊輔の中間伊藤家への所属、松下村塾での修学と後年の活動。"
+    },
+    {
+      "id": "archives_ito",
+      "title": "国立公文書館「明治宰相列伝・伊藤博文」",
+      "url": "https://www.archives.go.jp/exhibition/digital/2007_01/hirobumi_ito/index.html",
+      "note": "長州藩下級藩士伊藤家、松下村塾での修学、英国留学と後年の職歴。"
+    },
+    {
+      "id": "ndl_portrait_iwakura_detail",
+      "title": "国立国会図書館「近代日本人の肖像・岩倉具視」",
+      "url": "https://www.ndl.go.jp/portrait/datas/23/index.html",
+      "note": "岩倉具視の侍従就任、1858年の日米修好通商条約勅許奏請阻止、その後の公武合体策。"
+    },
+    {
+      "id": "kochi_yodo_timeline",
+      "title": "高知県立高知城歴史博物館「土佐藩歴代藩主紹介」",
+      "url": "https://www.kochi-johaku.jp/column/3819/",
+      "note": "15代土佐藩主山内豊信の一橋慶喜擁立、1859年の隠居・謹慎、隠居後の容堂号。"
+    },
+    {
+      "id": "kagoshima_tenshoin",
+      "title": "鹿児島県「郷土の偉人・天璋院篤姫」",
+      "url": "https://www.pref.kagoshima.jp/kids/rekishi/bakumatsu.html",
+      "note": "家定死後の天璋院への改名、生涯にわたる徳川家の立場と徳川家達の養育。"
     }
   ]
 }

@@ -45,16 +45,17 @@
       "startSceneId": "1858-ansei",
       "endSceneId": "1858-ansei",
       "displayName": "ハリス",
-      "role": "駐日米国総領事",
+      "role": "駐日米国総領事・条約改定全権委員",
       "factionId": "foreign-powers",
-      "stance": "列強の軍事圧力を示しながら通商条約の早期締結を要求する。",
-      "importance": "条約締結期限と条件をめぐり幕府へ強い圧力をかけた。",
+      "stance": "国際情勢の変化と貿易の利益を説き、幕府と修好通商条約の交渉を続ける。",
+      "importance": "井上清直・岩瀬忠震との交渉で条約内容を確定し、日米修好通商条約の締結へ至った。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline"
+          "mofa_harris_credentials",
+          "mofa_treaty_1858"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "外務省の信任状・条約解説で、総領事兼条約改定全権委員としての赴任、幕府との外交、全権委員との交渉と条約締結を確認。"
       }
     },
     {
@@ -103,15 +104,15 @@
       "displayName": "井伊直弼",
       "role": "大老・彦根藩主",
       "factionId": "bakufu",
-      "stance": "無勅許で通商条約を調印し、家茂擁立と反対派処分を進める。",
-      "importance": "幕府の意思決定を集中的に主導した。",
+      "stance": "4月に大老へ就任し、勅許を得ないまま通商条約へ調印して徳川慶福を将軍継嗣に決める。",
+      "importance": "条約・継嗣問題の反対派へ謹慎などを命じ、安政の大獄を進めた。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "ndl_handwriting_bakumatsu_people",
+          "mofa_treaty_1858"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館と外務省の解説で、1858年4月の大老就任、無勅許調印、徳川慶福擁立、反対派処分を確認。"
       }
     },
     {
@@ -138,18 +139,18 @@
       "personId": "iemochi",
       "startSceneId": "1858-ansei",
       "endSceneId": "1858-ansei",
-      "displayName": "徳川家茂",
-      "role": "14代将軍",
+      "displayName": "徳川慶福（のち家茂）",
+      "role": "紀州藩主・将軍継嗣",
       "factionId": "bakufu",
-      "stance": "紀州徳川家から将軍となり、井伊直弼の政策下で幕府の正統性を担う。",
-      "importance": "将軍継嗣争いで一橋慶喜に勝った南紀派の候補。",
+      "stance": "6月に将軍継嗣と決まり、家定の死後に徳川宗家を継いで家茂と改名する。",
+      "importance": "同年に将軍宣下を受け、紀州徳川家から14代将軍となった。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "fukui_bakumatsu_chronicle",
+          "ndl_authority_iemochi"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "福井市立郷土歴史博物館の年表で1858年6月の継嗣決定、国立国会図書館典拠で徳川家茂が14代将軍であることを確認。"
       }
     },
     {
@@ -255,16 +256,16 @@
       "displayName": "一橋慶喜",
       "role": "一橋徳川家当主・将軍継嗣候補",
       "factionId": "bakufu",
-      "stance": "一橋派から将軍候補に推されるが、家茂に敗れ謹慎処分を受ける。",
-      "importance": "雄藩参加型幕政改革を求める勢力の焦点。",
+      "stance": "一橋派から将軍候補に推されるが徳川慶福に敗れ、7月に登城停止処分を受ける。",
+      "importance": "隠居・謹慎となるのは翌1859年で、この時点の処分は当分登城禁止だった。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_modern_timeline",
-          "ndl_handwriting"
+          "ndl_portrait_yoshinobu_detail",
+          "ibaraki_nariaki_treaty",
+          "ibaraki_nariaki_ansei"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館と茨城県立歴史館で、継嗣争い、1858年7月の登城停止、1859年8月の隠居・謹慎を区別して確認。"
       }
     },
     {
@@ -795,15 +796,15 @@
       "displayName": "徳川斉昭",
       "role": "前水戸藩主・一橋派",
       "factionId": "mito",
-      "stance": "実子の一橋慶喜を将軍継嗣に推し、井伊直弼と対立する。",
-      "importance": "将軍継嗣・条約反対派を代表する大名。",
+      "stance": "実子の一橋慶喜を将軍継嗣に推し、無勅許の条約調印に抗議するため登城する。",
+      "importance": "抗議と継嗣発表延期の働きかけに失敗し、7月に処分を受けた。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "ibaraki_nariaki_succession",
+          "ibaraki_nariaki_treaty"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "茨城県立歴史館の解説で、一橋慶喜擁立、条約調印への抗議登城、継嗣発表延期の働きかけと1858年7月の処分を確認。"
       }
     },
     {
@@ -830,18 +831,18 @@
       "personId": "shungaku",
       "startSceneId": "1858-ansei",
       "endSceneId": "1858-ansei",
-      "displayName": "松平春嶽",
-      "role": "前越前福井藩主・一橋派",
+      "displayName": "松平慶永（春嶽）",
+      "role": "前越前福井藩主・隠居謹慎",
       "factionId": "bakufu",
-      "stance": "一橋慶喜を将軍継嗣に推し、雄藩参加型の幕政改革を主張する。",
-      "importance": "一橋派を代表する開明的大名。",
+      "stance": "一橋慶喜を将軍継嗣に推すが、一橋派の敗北後、7月に隠居・謹慎を命じられる。",
+      "importance": "橋本左内を用いて継嗣運動を進めた福井藩主だったが、この処分で藩主の座を退いた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "fukui_sanai_shungaku",
+          "fukui_bakumatsu_chronicle"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "福井市立郷土歴史博物館の解説と年表で、一橋慶喜擁立運動と1858年7月の隠居・謹慎処分を確認。"
       }
     },
     {
@@ -964,16 +965,16 @@
       "startSceneId": "1858-ansei",
       "endSceneId": "1858-ansei",
       "displayName": "橋本左内",
-      "role": "福井藩士・松平春嶽側近",
+      "role": "福井藩侍読兼御内用掛",
       "factionId": "bakufu",
-      "stance": "一橋慶喜擁立のため諸大名・公家間を奔走し、開国・人材登用を構想する。",
-      "importance": "藩士レベルの政策実務家が全国政局を動かした例。",
+      "stance": "松平慶永の命を受け、一橋慶喜を将軍継嗣とするよう幕府要人や京都の公家を説得する。",
+      "importance": "一橋派敗北後の10月22日、福井藩邸内で謹慎を命じられた。",
       "evidence": {
         "sourceIds": [
-          "ndl_handwriting"
+          "fukui_sanai_shungaku"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "福井市立郷土歴史博物館の史料解説で、侍読兼御内用掛就任、慶喜擁立の説得活動、1858年10月の謹慎を確認。"
       }
     },
     {
@@ -1038,15 +1039,14 @@
       "displayName": "島津斉彬",
       "role": "薩摩藩主（同年死去）",
       "factionId": "satsuma",
-      "stance": "一橋慶喜を支持し、率兵上京も構想したが急死する。",
-      "importance": "死によって薩摩の指導体制と西郷らの立場が変化した。",
+      "stance": "一橋慶喜擁立を進め、形勢を立て直すため薩摩藩兵を率いる上洛を決意する。",
+      "importance": "7月8日に軍事演習を指揮した後に発病し、上洛前の7月16日に死去した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "archives_timeline"
+          "kagoshima_library_nariakira"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "鹿児島県立図書館の人物解説で、一橋慶喜擁立、率兵上洛の準備、軍事演習、1858年7月16日の急死を確認。"
       }
     },
     {
@@ -1300,17 +1300,18 @@
       "startSceneId": "1858-ansei",
       "endSceneId": "1858-ansei",
       "displayName": "西郷吉之助",
-      "role": "島津斉彬側近",
+      "role": "薩摩藩徒目付・島津斉彬側近",
       "factionId": "satsuma",
-      "stance": "斉彬の命を受け、一橋派の公家・大名間連絡に関与する。",
-      "importance": "薩摩と朝廷・雄藩をつなぐ実務を担った。",
+      "stance": "斉彬の死と安政の大獄のなかで僧月照を保護し、11月に月照と錦江湾へ入水する。",
+      "importance": "月照は死亡したが西郷は蘇生し、翌1859年に奄美大島へ送られた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_saigo_detail",
+          "kagoshima_saigo_moon",
+          "ndl_portrait_saigo_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1857年の徒目付就任、鹿児島県資料と国立国会図書館で斉彬死後の月照との入水、1859年の奄美配流を確認。"
       }
     },
     {
@@ -1566,17 +1567,17 @@
       "startSceneId": "1858-ansei",
       "endSceneId": "1858-ansei",
       "displayName": "大久保正助",
-      "role": "薩摩藩記録所書役助",
+      "role": "薩摩藩徒目付・精忠組有志",
       "factionId": "satsuma",
-      "stance": "藩内若手と政治活動を進め、久光への接近を図る。",
-      "importance": "斉彬死後の薩摩で新しい政治経路を築く。",
+      "stance": "斉彬死後の若手藩士の結集に関わり、12月に山川港の西郷へ書簡を送る。",
+      "importance": "書簡では、西郷の渡海によって盟中が支えを失うことへの懸念と今後の方針を伝えた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kagoshima_okubo_people",
+          "rekihaku_okubo_saigo_letter"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "鹿児島県観光連盟の解説で徒目付と精忠組での立場、国立歴史民俗博物館所蔵の1858年12月書簡で西郷渡海時の活動を確認。"
       }
     },
     {
@@ -2022,17 +2023,16 @@
       "startSceneId": "1858-ansei",
       "endSceneId": "1860-sakurada",
       "displayName": "川路正之進",
-      "role": "薩摩藩士",
+      "role": "薩摩藩兵具方与力附",
       "factionId": "satsuma",
-      "stance": "若手藩士として藩の実務・軍事組織で経験を積む。",
-      "importance": "後世の知名度から当時の地位を過大評価しないことが重要。",
+      "stance": "1850年に任じられた兵具方与力附として、薩摩藩の兵具部門に属する。",
+      "importance": "戊辰戦争への従軍は1868年で、この時点では藩内の一役人だった。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "jacar_kawaji_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターの人物解説で、1850年の兵具方与力附就任と1868年の戊辰戦争従軍を確認し、時点を区別。"
       }
     },
     {
@@ -2289,15 +2289,15 @@
       "displayName": "吉田松陰",
       "role": "松下村塾主宰",
       "factionId": "choshu",
-      "stance": "幕府の条約・政治姿勢を批判し、行動論を急進化させる。",
-      "importance": "高杉・久坂・伊藤らへ思想的影響を与えた。",
+      "stance": "家学教授の公許を得て塾生を指導する一方、幕府老中間部詮勝への要撃を計画する。",
+      "importance": "11月に再び幽囚され、12月26日に野山獄へ投じられて松下村塾での指導を終えた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "hagi_shoin_timeline",
+          "hagi_shokasonjuku"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "萩市の略年譜と史跡解説で、1858年の家学教授公許、間部詮勝要撃計画、再幽囚・野山獄収容、塾閉鎖を確認。"
       }
     },
     {
@@ -2344,17 +2344,17 @@
       "startSceneId": "1858-ansei",
       "endSceneId": "1860-sakurada",
       "displayName": "桂小五郎",
-      "role": "長州藩士・江戸藩邸勤務",
+      "role": "長州藩大検使・大番手",
       "factionId": "choshu",
-      "stance": "剣術・海防を学び、藩の対外危機対応に関わる。",
-      "importance": "後の指導者だが、まだ若手実務藩士。",
+      "stance": "江戸遊学で剣術と西洋兵学を学んだ後、長州藩の大検使・大番手を務める。",
+      "importance": "尊王攘夷運動を本格化させる前の、藩内役職に就いていた時期。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_kido_detail",
+          "ndl_portrait_kido_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1852年の江戸遊学と1858年の大検使・大番手、国立国会図書館で剣術・西洋兵学の修学を確認。"
       }
     },
     {
@@ -2593,15 +2593,14 @@
       "displayName": "高杉晋作",
       "role": "松下村塾門下・長州藩士",
       "factionId": "choshu",
-      "stance": "吉田松陰に学び、若手尊攘派として成長する。",
-      "importance": "まだ藩政の中心ではない。",
+      "stance": "前年後半に松下村塾へ入り、吉田松陰のもとで学問に取り組む。",
+      "importance": "久坂玄瑞と並ぶ門下の中心へ成長するが、まだ上海渡航や奇兵隊結成より前。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "hagi_takasugi_sonjuku"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "萩市の人物解説で、1857年後半の松下村塾入塾と久坂玄瑞と並ぶ門下での位置を確認。後年の事績と区別。"
       }
     },
     {
@@ -2743,17 +2742,16 @@
       "startSceneId": "1858-ansei",
       "endSceneId": "1860-sakurada",
       "displayName": "久坂玄瑞",
-      "role": "松下村塾門下・長州藩士",
+      "role": "長州藩医・松下村塾門下",
       "factionId": "choshu",
-      "stance": "吉田松陰の影響を受け、尊王攘夷運動へ進む。",
-      "importance": "若い門下生の指導的存在。",
+      "stance": "松下村塾の中心門下として、2月から江戸・京都へ遊学する。",
+      "importance": "松陰から高杉晋作と並ぶ門下の中心と評価され、安政4年末には松陰の妹文と結婚していた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "hagi_kusaka_1858"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "萩市の解説で、松下村塾中心門下としての位置、安政4年末の結婚、1858年2月からの江戸・京都遊学を確認。"
       }
     },
     {
@@ -2857,17 +2855,17 @@
       "startSceneId": "1858-ansei",
       "endSceneId": "1862-bunkyu",
       "displayName": "伊藤俊輔",
-      "role": "長州藩士・松下村塾に学ぶ",
+      "role": "長州藩中間・松下村塾門下",
       "factionId": "choshu",
-      "stance": "尊王攘夷運動へ参加する若手藩士。",
-      "importance": "後の首相だが、この時点では下級藩士。",
+      "stance": "中間身分の伊藤家に入り、吉田松陰の松下村塾で学ぶ。",
+      "importance": "英国公使館焼き打ちや英国留学より前で、門下生として学んでいた時期。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "jacar_ito_detail",
+          "archives_ito"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターと国立公文書館の人物解説で、中間伊藤家への所属、松下村塾での修学、後年の焼き打ち・英国留学を確認。"
       }
     },
     {
@@ -3353,15 +3351,15 @@
       "displayName": "孝明天皇",
       "role": "天皇",
       "factionId": "imperial-court",
-      "stance": "無勅許での条約調印を問題視し、強い攘夷意向を示す。",
-      "importance": "朝廷が幕府外交へ本格関与する契機。",
+      "stance": "日米修好通商条約への勅許を認めず、無勅許調印後に幕政改革を求める勅諚を水戸藩へ下す。",
+      "importance": "8月の戊午の密勅は幕府を経ず水戸藩へ下され、諸藩への回達も命じた。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "ibaraki_nariaki_treaty",
+          "ibaraki_nariaki_ansei"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "茨城県立歴史館の解説で、条約勅許を認めなかった孝明天皇の姿勢と、1858年8月の水戸藩への勅諚・諸藩回達命令を確認。"
       }
     },
     {
@@ -3638,15 +3636,14 @@
       "displayName": "岩倉具視",
       "role": "公家",
       "factionId": "imperial-court",
-      "stance": "条約勅許と公武関係をめぐる朝廷内調整に関与する。",
-      "importance": "朝廷内部の現実的政治実務を担う。",
+      "stance": "幕府による日米修好通商条約勅許の奏請に対し、朝廷内で阻止を図る。",
+      "importance": "この時点では公武合体を進める前で、条約勅許反対の公家として行動した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_iwakura_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の人物解説で、侍従であった岩倉が1858年の条約勅許奏請阻止を図ったことを確認。後年の公武合体策と区別。"
       }
     },
     {
@@ -4167,18 +4164,18 @@
       "personId": "yodo",
       "startSceneId": "1858-ansei",
       "endSceneId": "1858-ansei",
-      "displayName": "山内容堂",
+      "displayName": "山内豊信（のち容堂）",
       "role": "土佐藩主・一橋派",
       "factionId": "tosa",
-      "stance": "一橋慶喜を将軍継嗣に推し、井伊直弼と対立する。",
-      "importance": "安政の大獄で隠居・謹慎となる雄藩大名。",
+      "stance": "島津斉彬・松平慶永らとともに、一橋慶喜を将軍継嗣へ推す。",
+      "importance": "1858年時点では土佐藩主で、隠居を命じられるのは翌1859年。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ibaraki_nariaki_succession",
+          "kochi_yodo_timeline"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "茨城県立歴史館で一橋派としての継嗣運動、高知県立高知城歴史博物館の年譜で1859年の隠居を確認し、時点名と処分年を修正。"
       }
     },
     {
@@ -5252,15 +5249,14 @@
       "displayName": "天璋院",
       "role": "13代将軍家定の御台所・大奥の中心",
       "factionId": "bakufu",
-      "stance": "家定死後も大奥に残り、徳川将軍家の内側を支える。",
-      "importance": "出身は薩摩でも、立場は徳川将軍家にある。",
+      "stance": "家定の死後に落飾して天璋院と号し、徳川将軍家にとどまる。",
+      "importance": "薩摩出身だが、以後も徳川家の立場を貫き、徳川家達の養育にあたった。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "kagoshima_tenshoin"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "鹿児島県の人物解説で、家定死後の天璋院への改名、生涯にわたる徳川家の立場、徳川家達の養育を確認。"
       }
     },
     {
