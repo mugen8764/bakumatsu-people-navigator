@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 2,
+  "places": [
+    {
+      "id": "edo",
+      "name": "江戸／東京",
+      "longitude": 139.76,
+      "latitude": 35.68,
+      "note": "幕府中枢。1868年に江戸城が新政府へ引き渡され、東京と改称される。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "uraga",
+      "name": "浦賀・久里浜",
+      "longitude": 139.72,
+      "latitude": 35.25,
+      "note": "1853年のペリー来航と国書受領の舞台。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "yokohama",
+      "name": "横浜",
+      "longitude": 139.64,
+      "latitude": 35.45,
+      "note": "条約交渉・開港・外国人居留地・洋学や技術導入の拠点。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "shimoda",
+      "name": "下田",
+      "longitude": 138.95,
+      "latitude": 34.68,
+      "note": "日米和親条約後の開港地。吉田松陰の密航未遂地。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "hakodate",
+      "name": "箱館・五稜郭",
+      "longitude": 140.73,
+      "latitude": 41.77,
+      "note": "和親条約の開港地。1868〜69年の箱館戦争の中心。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "kyoto",
+      "name": "京都",
+      "longitude": 135.77,
+      "latitude": 35.01,
+      "note": "朝廷と幕末政局の中心。八月十八日の政変、禁門の変、王政復古の舞台。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "fushimi",
+      "name": "鳥羽・伏見",
+      "longitude": 135.75,
+      "latitude": 34.94,
+      "note": "1868年、戊辰戦争最初の大規模戦闘が起きた地域。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "osaka",
+      "name": "大坂",
+      "longitude": 135.5,
+      "latitude": 34.69,
+      "note": "幕府の西国拠点。第二次長州征討や鳥羽・伏見前後の軍事拠点。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "kagoshima",
+      "name": "鹿児島",
+      "longitude": 130.56,
+      "latitude": 31.6,
+      "note": "薩摩藩の本拠。集成館事業、寺田屋後の藩政、薩英戦争の背景。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "namamugi",
+      "name": "生麦",
+      "longitude": 139.67,
+      "latitude": 35.49,
+      "note": "1862年、生麦事件が起きた地点。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "hagi",
+      "name": "萩",
+      "longitude": 131.4,
+      "latitude": 34.41,
+      "note": "長州藩の旧本拠。松下村塾と多くの長州人物の出身地。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "yamaguchi",
+      "name": "山口",
+      "longitude": 131.47,
+      "latitude": 34.18,
+      "note": "幕末期に長州藩庁が移された政治拠点。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "shimonoseki",
+      "name": "下関",
+      "longitude": 130.94,
+      "latitude": 33.96,
+      "note": "攘夷戦、四国艦隊砲撃、奇兵隊活動の舞台。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "mitajiri",
+      "name": "三田尻・防府",
+      "longitude": 131.57,
+      "latitude": 34.05,
+      "note": "長州藩の海軍・交通拠点。薩長交渉にも関係する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "aizu",
+      "name": "会津若松",
+      "longitude": 139.93,
+      "latitude": 37.5,
+      "note": "会津藩の本拠。1868年の会津戦争で鶴ヶ城が包囲された。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "sendai",
+      "name": "仙台",
+      "longitude": 140.87,
+      "latitude": 38.27,
+      "note": "仙台藩と奥羽越列藩同盟の主要拠点。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "niigata",
+      "name": "新潟・北越",
+      "longitude": 139.04,
+      "latitude": 37.9,
+      "note": "北越戦争の主要地域。新政府軍と長岡藩などが戦った。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "mito",
+      "name": "水戸",
+      "longitude": 140.47,
+      "latitude": 36.37,
+      "note": "水戸藩と水戸学の拠点。尊王攘夷思想と桜田門外の変の背景。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "hikone",
+      "name": "彦根",
+      "longitude": 136.25,
+      "latitude": 35.27,
+      "note": "井伊家・彦根藩の本拠。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "fukui",
+      "name": "福井",
+      "longitude": 136.22,
+      "latitude": 36.06,
+      "note": "松平春嶽・橋本左内ら幕政改革派の拠点。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "kochi",
+      "name": "高知",
+      "longitude": 133.53,
+      "latitude": 33.56,
+      "note": "土佐藩の本拠。土佐勤王党と大政奉還論の背景。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "nagasaki",
+      "name": "長崎",
+      "longitude": 129.87,
+      "latitude": 32.75,
+      "note": "海軍伝習、貿易、亀山社中・海援隊などの活動拠点。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "kobe",
+      "name": "神戸",
+      "longitude": 135.19,
+      "latitude": 34.69,
+      "note": "勝海舟の海軍操練所が置かれた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "amami",
+      "name": "奄美大島",
+      "longitude": 129.49,
+      "latitude": 28.38,
+      "note": "西郷が潜居した島。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "okinoerabu",
+      "name": "沖永良部島",
+      "longitude": 128.61,
+      "latitude": 27.37,
+      "note": "西郷が遠島処分を受けた島。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "shanghai",
+      "name": "上海",
+      "longitude": 121.47,
+      "latitude": 31.23,
+      "note": "高杉晋作・伊藤博文らが列強支配の実態を見た海外都市。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    },
+    {
+      "id": "london",
+      "name": "ロンドン",
+      "longitude": -0.13,
+      "latitude": 51.51,
+      "note": "長州五傑などが留学した英国の首都。地図では日本外のため一覧のみ表示。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "地点単位の出典確認が必要。"
+      }
+    }
+  ]
+}

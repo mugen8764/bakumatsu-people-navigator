@@ -1,0 +1,1356 @@
+{
+  "schemaVersion": 2,
+  "people": [
+    {
+      "id": "perry",
+      "name": "マシュー・ペリー",
+      "kana": "ましゅー ぺりー",
+      "aliases": [
+        "ペリー提督",
+        "米国東インド艦隊司令長官"
+      ],
+      "lifespan": "1794–1858",
+      "defaultFactionId": "foreign-powers",
+      "activeStartSceneId": "1853-blackships",
+      "activeEndSceneId": "1854-treaty",
+      "oneLine": "黒船艦隊を率いて来航し、日米和親条約を締結した米国海軍軍人。",
+      "placeIds": [
+        "uraga",
+        "yokohama",
+        "shimoda"
+      ],
+      "eventIds": [
+        "blackships",
+        "treaty1854"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "harris",
+      "name": "タウンゼント・ハリス",
+      "kana": "たうんぜんと はりす",
+      "aliases": [
+        "米国総領事",
+        "ハリス"
+      ],
+      "lifespan": "1804–1878",
+      "defaultFactionId": "foreign-powers",
+      "activeStartSceneId": "1858-ansei",
+      "activeEndSceneId": "1858-ansei",
+      "oneLine": "日米修好通商条約締結を進めた初代米国総領事。",
+      "placeIds": [
+        "shimoda",
+        "edo"
+      ],
+      "eventIds": [
+        "ansei"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "abe",
+      "name": "阿部正弘",
+      "kana": "あべ まさひろ",
+      "aliases": [
+        "老中首座",
+        "備後福山藩主"
+      ],
+      "lifespan": "1819–1857",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1853-blackships",
+      "activeEndSceneId": "1854-treaty",
+      "oneLine": "黒船来航時の老中首座。諸大名の意見を求め、海防・洋学政策を進めた。",
+      "placeIds": [
+        "edo",
+        "uraga"
+      ],
+      "eventIds": [
+        "blackships",
+        "treaty1854"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "ii",
+      "name": "井伊直弼",
+      "kana": "いい なおすけ",
+      "aliases": [
+        "井伊大老",
+        "掃部頭",
+        "彦根藩主"
+      ],
+      "lifespan": "1815–1860",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1858-ansei",
+      "activeEndSceneId": "1860-sakurada",
+      "oneLine": "条約調印と将軍継嗣を主導し、安政の大獄を進めた幕府大老。",
+      "placeIds": [
+        "hikone",
+        "edo"
+      ],
+      "eventIds": [
+        "ansei",
+        "sakurada"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "iemochi",
+      "name": "徳川家茂",
+      "kana": "とくがわ いえもち",
+      "aliases": [
+        "紀州慶福",
+        "14代将軍"
+      ],
+      "lifespan": "1846–1866",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1858-ansei",
+      "activeEndSceneId": "1866-expedition",
+      "oneLine": "南紀派に推され14代将軍となり、和宮降嫁・上洛・長州征討に臨んだ。",
+      "placeIds": [
+        "edo",
+        "kyoto",
+        "osaka"
+      ],
+      "eventIds": [
+        "ansei",
+        "bunkyu",
+        "joi1863",
+        "kinmon",
+        "second_choshu"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "yoshinobu",
+      "name": "徳川慶喜",
+      "kana": "とくがわ よしのぶ",
+      "aliases": [
+        "一橋慶喜",
+        "一橋公",
+        "15代将軍"
+      ],
+      "lifespan": "1837–1913",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1858-ansei",
+      "activeEndSceneId": "1868-tohoku",
+      "oneLine": "一橋家当主、将軍後見職、15代将軍を経て大政奉還を行った。",
+      "placeIds": [
+        "mito",
+        "edo",
+        "kyoto",
+        "osaka"
+      ],
+      "eventIds": [
+        "ansei",
+        "bunkyu",
+        "joi1863",
+        "kinmon",
+        "second_choshu",
+        "taisei",
+        "toba",
+        "edo_surrender"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_modern_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "katsu",
+      "name": "勝海舟",
+      "kana": "かつ かいしゅう",
+      "aliases": [
+        "勝麟太郎",
+        "安房守",
+        "海舟"
+      ],
+      "lifespan": "1823–1899",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1853-blackships",
+      "activeEndSceneId": "1868-tohoku",
+      "oneLine": "海軍建設を進め、江戸開城交渉で旧幕府側の中心となった幕臣。",
+      "placeIds": [
+        "edo",
+        "nagasaki",
+        "kobe"
+      ],
+      "eventIds": [
+        "treaty1854",
+        "bunkyu",
+        "edo_surrender"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "yamaoka",
+      "name": "山岡鉄舟",
+      "kana": "やまおか てっしゅう",
+      "aliases": [
+        "山岡鉄太郎",
+        "鉄舟"
+      ],
+      "lifespan": "1836–1888",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1868-toba",
+      "activeEndSceneId": "1868-edo",
+      "oneLine": "慶喜の恭順意思を新政府軍へ伝え、江戸開城交渉の道を開いた幕臣。",
+      "placeIds": [
+        "edo"
+      ],
+      "eventIds": [
+        "edo_surrender"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "enomoto",
+      "name": "榎本武揚",
+      "kana": "えのもと たけあき",
+      "aliases": [
+        "榎本釜次郎",
+        "海軍副総裁"
+      ],
+      "lifespan": "1836–1908",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1866-expedition",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "幕府海軍を率いて箱館へ渡り、旧幕府軍政権の中心となった。",
+      "placeIds": [
+        "edo",
+        "osaka",
+        "hakodate"
+      ],
+      "eventIds": [
+        "second_choshu",
+        "edo_surrender",
+        "tohoku",
+        "hakodate"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "nariaki",
+      "name": "徳川斉昭",
+      "kana": "とくがわ なりあき",
+      "aliases": [
+        "烈公",
+        "水戸老公",
+        "前水戸藩主"
+      ],
+      "lifespan": "1800–1860",
+      "defaultFactionId": "mito",
+      "activeStartSceneId": "1853-blackships",
+      "activeEndSceneId": "1860-sakurada",
+      "oneLine": "海防論と一橋慶喜擁立を主導し、水戸学を通じ尊王攘夷へ影響した。",
+      "placeIds": [
+        "mito",
+        "edo"
+      ],
+      "eventIds": [
+        "blackships",
+        "ansei",
+        "sakurada"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "shungaku",
+      "name": "松平慶永",
+      "kana": "まつだいら よしなが",
+      "aliases": [
+        "松平春嶽",
+        "春嶽公",
+        "越前福井藩主"
+      ],
+      "lifespan": "1828–1890",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1858-ansei",
+      "activeEndSceneId": "1868-edo",
+      "oneLine": "一橋派の雄藩大名。文久の改革で政事総裁職となり、政権移行期にも調整役を担った。",
+      "placeIds": [
+        "fukui",
+        "edo",
+        "kyoto"
+      ],
+      "eventIds": [
+        "ansei",
+        "bunkyu",
+        "taisei",
+        "toba"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "sanai",
+      "name": "橋本左内",
+      "kana": "はしもと さない",
+      "aliases": [
+        "橋本綱紀",
+        "左内"
+      ],
+      "lifespan": "1834–1859",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1858-ansei",
+      "activeEndSceneId": "1860-sakurada",
+      "oneLine": "福井藩の俊才。一橋慶喜擁立と幕政改革に奔走し、安政の大獄で刑死した。",
+      "placeIds": [
+        "fukui",
+        "edo",
+        "kyoto"
+      ],
+      "eventIds": [
+        "ansei"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "nariakira",
+      "name": "島津斉彬",
+      "kana": "しまづ なりあきら",
+      "aliases": [
+        "斉彬公",
+        "薩摩藩主"
+      ],
+      "lifespan": "1809–1858",
+      "defaultFactionId": "satsuma",
+      "activeStartSceneId": "1853-blackships",
+      "activeEndSceneId": "1860-sakurada",
+      "oneLine": "集成館事業と人材登用を進め、一橋派の雄藩連合を構想した薩摩藩主。",
+      "placeIds": [
+        "kagoshima",
+        "edo"
+      ],
+      "eventIds": [
+        "blackships",
+        "treaty1854",
+        "ansei"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "archives_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "hisamitsu",
+      "name": "島津久光",
+      "kana": "しまづ ひさみつ",
+      "aliases": [
+        "島津三郎",
+        "国父"
+      ],
+      "lifespan": "1817–1887",
+      "defaultFactionId": "satsuma",
+      "activeStartSceneId": "1860-sakurada",
+      "activeEndSceneId": "1868-edo",
+      "oneLine": "斉彬死後の薩摩藩政を主導し、公武合体と幕政改革を推進した国父。",
+      "placeIds": [
+        "kagoshima",
+        "kyoto",
+        "edo",
+        "namamugi"
+      ],
+      "eventIds": [
+        "bunkyu",
+        "joi1863",
+        "aug18",
+        "kinmon",
+        "taisei"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "saigo",
+      "name": "西郷隆盛",
+      "kana": "さいごう たかもり",
+      "aliases": [
+        "西郷吉之助",
+        "大島三右衛門",
+        "菊池源吾",
+        "南洲"
+      ],
+      "lifespan": "1828–1877",
+      "defaultFactionId": "satsuma",
+      "activeStartSceneId": "1853-blackships",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "斉彬の側近から薩摩の軍事・政治責任者となり、薩長提携と戊辰戦争を主導した。",
+      "placeIds": [
+        "kagoshima",
+        "edo",
+        "amami",
+        "okinoerabu",
+        "kyoto",
+        "fushimi",
+        "aizu"
+      ],
+      "eventIds": [
+        "ansei",
+        "bunkyu",
+        "kinmon",
+        "satcho",
+        "second_choshu",
+        "taisei",
+        "toba",
+        "edo_surrender",
+        "tohoku"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "okubo",
+      "name": "大久保利通",
+      "kana": "おおくぼ としみち",
+      "aliases": [
+        "大久保正助",
+        "大久保一蔵",
+        "甲東"
+      ],
+      "lifespan": "1830–1878",
+      "defaultFactionId": "satsuma",
+      "activeStartSceneId": "1858-ansei",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "島津久光の側近から薩摩の国事担当となり、王政復古・新政府形成を進めた実務家。",
+      "placeIds": [
+        "kagoshima",
+        "kyoto",
+        "edo",
+        "osaka"
+      ],
+      "eventIds": [
+        "bunkyu",
+        "aug18",
+        "kinmon",
+        "satcho",
+        "taisei",
+        "toba",
+        "tohoku"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "komatsu",
+      "name": "小松帯刀",
+      "kana": "こまつ たてわき",
+      "aliases": [
+        "小松清廉",
+        "帯刀"
+      ],
+      "lifespan": "1835–1870",
+      "defaultFactionId": "satsuma",
+      "activeStartSceneId": "1862-bunkyu",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "薩摩藩家老として藩を公式に代表し、薩長提携・貿易・人材登用を支えた。",
+      "placeIds": [
+        "kagoshima",
+        "kyoto",
+        "nagasaki"
+      ],
+      "eventIds": [
+        "bunkyu",
+        "joi1863",
+        "aug18",
+        "kinmon",
+        "satcho",
+        "second_choshu",
+        "taisei"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "kawaji",
+      "name": "川路利良",
+      "kana": "かわじ としよし",
+      "aliases": [
+        "川路正之進",
+        "大警視"
+      ],
+      "lifespan": "1834–1879",
+      "defaultFactionId": "satsuma",
+      "activeStartSceneId": "1858-ansei",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "薩摩藩兵として戊辰戦争に参加し、明治期に近代警察制度を整えた。",
+      "placeIds": [
+        "kagoshima",
+        "kyoto",
+        "fushimi",
+        "edo",
+        "aizu"
+      ],
+      "eventIds": [
+        "kinmon",
+        "toba",
+        "tohoku"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "kuroda",
+      "name": "黒田清隆",
+      "kana": "くろだ きよたか",
+      "aliases": [
+        "黒田了介",
+        "黒田参謀"
+      ],
+      "lifespan": "1840–1900",
+      "defaultFactionId": "satsuma",
+      "activeStartSceneId": "1864-kinmon",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "薩摩藩軍人として戊辰戦争に参加し、箱館で榎本武揚の降伏・助命に関与した。",
+      "placeIds": [
+        "kagoshima",
+        "niigata",
+        "aizu",
+        "hakodate"
+      ],
+      "eventIds": [
+        "kinmon",
+        "tohoku",
+        "hakodate"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "sho-in",
+      "name": "吉田松陰",
+      "kana": "よしだ しょういん",
+      "aliases": [
+        "吉田寅次郎",
+        "松陰"
+      ],
+      "lifespan": "1830–1859",
+      "defaultFactionId": "choshu",
+      "activeStartSceneId": "1853-blackships",
+      "activeEndSceneId": "1865-choshu",
+      "oneLine": "松下村塾で長州の若手を育て、安政の大獄で刑死した思想家・兵学者。",
+      "placeIds": [
+        "hagi",
+        "uraga",
+        "shimoda",
+        "edo"
+      ],
+      "eventIds": [
+        "blackships",
+        "treaty1854",
+        "ansei"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "kido",
+      "name": "木戸孝允",
+      "kana": "きど たかよし",
+      "aliases": [
+        "桂小五郎",
+        "木戸準一郎"
+      ],
+      "lifespan": "1833–1877",
+      "defaultFactionId": "choshu",
+      "activeStartSceneId": "1858-ansei",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "長州の政治・交渉責任者。京都潜伏、薩長提携、王政復古、新政府形成を担った。",
+      "placeIds": [
+        "hagi",
+        "edo",
+        "kyoto",
+        "yamaguchi"
+      ],
+      "eventIds": [
+        "ansei",
+        "joi1863",
+        "aug18",
+        "kinmon",
+        "choshu_reform",
+        "satcho",
+        "second_choshu",
+        "taisei",
+        "toba",
+        "tohoku"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "takasugi",
+      "name": "高杉晋作",
+      "kana": "たかすぎ しんさく",
+      "aliases": [
+        "東行",
+        "谷潜蔵"
+      ],
+      "lifespan": "1839–1867",
+      "defaultFactionId": "choshu",
+      "activeStartSceneId": "1858-ansei",
+      "activeEndSceneId": "1867-taisei",
+      "oneLine": "奇兵隊を創設し、功山寺挙兵で長州藩の改革派政権を成立させた。",
+      "placeIds": [
+        "hagi",
+        "shanghai",
+        "shimonoseki",
+        "yamaguchi"
+      ],
+      "eventIds": [
+        "joi1863",
+        "kinmon",
+        "choshu_reform",
+        "second_choshu"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "kusaka",
+      "name": "久坂玄瑞",
+      "kana": "くさか げんずい",
+      "aliases": [
+        "久坂義助",
+        "玄瑞"
+      ],
+      "lifespan": "1840–1864",
+      "defaultFactionId": "choshu",
+      "activeStartSceneId": "1858-ansei",
+      "activeEndSceneId": "1865-choshu",
+      "oneLine": "長州尊攘派を率い、京都復帰を目指した禁門の変で死去した松下村塾門下。",
+      "placeIds": [
+        "hagi",
+        "kyoto",
+        "shimonoseki"
+      ],
+      "eventIds": [
+        "joi1863",
+        "aug18",
+        "kinmon"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "ito",
+      "name": "伊藤博文",
+      "kana": "いとう ひろぶみ",
+      "aliases": [
+        "伊藤俊輔",
+        "俊輔"
+      ],
+      "lifespan": "1841–1909",
+      "defaultFactionId": "choshu",
+      "activeStartSceneId": "1858-ansei",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "松下村塾系の若手藩士。英国留学後、長州の開国・軍制改革と新政府実務を担った。",
+      "placeIds": [
+        "hagi",
+        "london",
+        "shimonoseki",
+        "yamaguchi"
+      ],
+      "eventIds": [
+        "ansei",
+        "joi1863",
+        "choshu_reform",
+        "second_choshu",
+        "toba"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "inoue",
+      "name": "井上馨",
+      "kana": "いのうえ かおる",
+      "aliases": [
+        "井上聞多",
+        "聞多"
+      ],
+      "lifespan": "1836–1915",
+      "defaultFactionId": "choshu",
+      "activeStartSceneId": "1863-joi",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "英国留学後に長州の開国・財政・武器調達を担い、新政府の外交官僚となった。",
+      "placeIds": [
+        "hagi",
+        "london",
+        "shimonoseki",
+        "nagasaki"
+      ],
+      "eventIds": [
+        "joi1863",
+        "kinmon",
+        "choshu_reform",
+        "second_choshu"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "omura",
+      "name": "大村益次郎",
+      "kana": "おおむら ますじろう",
+      "aliases": [
+        "村田蔵六",
+        "益次郎"
+      ],
+      "lifespan": "1824–1869",
+      "defaultFactionId": "choshu",
+      "activeStartSceneId": "1864-kinmon",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "西洋兵学を用いて長州軍を再編し、戊辰戦争では新政府軍の軍事制度を担った。",
+      "placeIds": [
+        "yamaguchi",
+        "shimonoseki",
+        "edo",
+        "niigata"
+      ],
+      "eventIds": [
+        "kinmon",
+        "choshu_reform",
+        "second_choshu",
+        "toba",
+        "tohoku"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "yamagata",
+      "name": "山県有朋",
+      "kana": "やまがた ありとも",
+      "aliases": [
+        "山県狂介",
+        "狂介"
+      ],
+      "lifespan": "1838–1922",
+      "defaultFactionId": "choshu",
+      "activeStartSceneId": "1864-kinmon",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "奇兵隊軍監として長州戦争・戊辰戦争に参加し、後に陸軍制度を担った。",
+      "placeIds": [
+        "hagi",
+        "shimonoseki",
+        "yamaguchi",
+        "aizu"
+      ],
+      "eventIds": [
+        "kinmon",
+        "choshu_reform",
+        "second_choshu",
+        "tohoku"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "komei",
+      "name": "孝明天皇",
+      "kana": "こうめい てんのう",
+      "aliases": [
+        "統仁",
+        "今上"
+      ],
+      "lifespan": "1831–1867",
+      "defaultFactionId": "imperial-court",
+      "activeStartSceneId": "1858-ansei",
+      "activeEndSceneId": "1867-taisei",
+      "oneLine": "条約勅許と攘夷をめぐり朝廷の政治力を高め、会津・公武合体を信任した天皇。",
+      "placeIds": [
+        "kyoto"
+      ],
+      "eventIds": [
+        "ansei",
+        "bunkyu",
+        "joi1863",
+        "aug18",
+        "kinmon"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "meiji",
+      "name": "明治天皇",
+      "kana": "めいじ てんのう",
+      "aliases": [
+        "睦仁",
+        "祐宮"
+      ],
+      "lifespan": "1852–1912",
+      "defaultFactionId": "imperial-court",
+      "activeStartSceneId": "1867-taisei",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "孝明天皇崩御後に践祚し、王政復古・戊辰戦争期の新政府の君主となった。",
+      "placeIds": [
+        "kyoto",
+        "edo"
+      ],
+      "eventIds": [
+        "taisei",
+        "toba",
+        "edo_surrender",
+        "tohoku",
+        "hakodate"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_handwriting",
+          "ndl_modern_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "iwakura",
+      "name": "岩倉具視",
+      "kana": "いわくら ともみ",
+      "aliases": [
+        "岩倉卿",
+        "具視"
+      ],
+      "lifespan": "1825–1883",
+      "defaultFactionId": "imperial-court",
+      "activeStartSceneId": "1858-ansei",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "公武合体から蟄居を経て薩長と結び、王政復古と新政府形成を主導した公家。",
+      "placeIds": [
+        "kyoto"
+      ],
+      "eventIds": [
+        "ansei",
+        "bunkyu",
+        "taisei",
+        "toba"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "sanjo",
+      "name": "三条実美",
+      "kana": "さんじょう さねとみ",
+      "aliases": [
+        "三条卿",
+        "七卿落ち"
+      ],
+      "lifespan": "1837–1891",
+      "defaultFactionId": "imperial-court",
+      "activeStartSceneId": "1863-joi",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "尊王攘夷派公家として長州へ下り、維新後は新政府の最高指導層となった。",
+      "placeIds": [
+        "kyoto",
+        "yamaguchi"
+      ],
+      "eventIds": [
+        "joi1863",
+        "aug18",
+        "kinmon",
+        "taisei",
+        "toba"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "katamori",
+      "name": "松平容保",
+      "kana": "まつだいら かたもり",
+      "aliases": [
+        "会津中将",
+        "京都守護職"
+      ],
+      "lifespan": "1836–1893",
+      "defaultFactionId": "aizu",
+      "activeStartSceneId": "1862-bunkyu",
+      "activeEndSceneId": "1868-tohoku",
+      "oneLine": "京都守護職として孝明天皇の信任を得て京都治安を担い、戊辰戦争で会津藩主として抗戦した。",
+      "placeIds": [
+        "aizu",
+        "kyoto",
+        "osaka"
+      ],
+      "eventIds": [
+        "bunkyu",
+        "aug18",
+        "kinmon",
+        "toba",
+        "tohoku"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "yodo",
+      "name": "山内容堂",
+      "kana": "やまうち ようどう",
+      "aliases": [
+        "山内豊信",
+        "容堂公",
+        "鯨海酔侯"
+      ],
+      "lifespan": "1827–1872",
+      "defaultFactionId": "tosa",
+      "activeStartSceneId": "1858-ansei",
+      "activeEndSceneId": "1868-edo",
+      "oneLine": "一橋派から公武合体へ進み、後藤象二郎の大政奉還案を採用した前土佐藩主。",
+      "placeIds": [
+        "kochi",
+        "edo",
+        "kyoto"
+      ],
+      "eventIds": [
+        "ansei",
+        "bunkyu",
+        "taisei",
+        "toba"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "takechi",
+      "name": "武市瑞山",
+      "kana": "たけち ずいざん",
+      "aliases": [
+        "武市半平太",
+        "瑞山"
+      ],
+      "lifespan": "1829–1865",
+      "defaultFactionId": "tosa",
+      "activeStartSceneId": "1860-sakurada",
+      "activeEndSceneId": "1865-choshu",
+      "oneLine": "土佐勤王党を組織し藩論を尊王攘夷へ動かしたが、山内容堂に弾圧された。",
+      "placeIds": [
+        "kochi",
+        "kyoto"
+      ],
+      "eventIds": [
+        "bunkyu",
+        "aug18"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "ryoma",
+      "name": "坂本龍馬",
+      "kana": "さかもと りょうま",
+      "aliases": [
+        "才谷梅太郎",
+        "龍馬"
+      ],
+      "lifespan": "1836–1867",
+      "defaultFactionId": "tosa",
+      "activeStartSceneId": "1860-sakurada",
+      "activeEndSceneId": "1867-taisei",
+      "oneLine": "脱藩後、海軍・交易構想を持ち、薩長間と土佐の大政奉還論をつないだ。",
+      "placeIds": [
+        "kochi",
+        "edo",
+        "kobe",
+        "nagasaki",
+        "kyoto"
+      ],
+      "eventIds": [
+        "bunkyu",
+        "satcho",
+        "taisei"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "goto",
+      "name": "後藤象二郎",
+      "kana": "ごとう しょうじろう",
+      "aliases": [
+        "後藤象二郎",
+        "象二郎"
+      ],
+      "lifespan": "1838–1897",
+      "defaultFactionId": "tosa",
+      "activeStartSceneId": "1865-choshu",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "土佐藩参政として坂本龍馬の構想を藩論へ取り込み、大政奉還建白を進めた。",
+      "placeIds": [
+        "kochi",
+        "nagasaki",
+        "kyoto"
+      ],
+      "eventIds": [
+        "taisei"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "nakaoka",
+      "name": "中岡慎太郎",
+      "kana": "なかおか しんたろう",
+      "aliases": [
+        "中岡慎太郎",
+        "遠山左衛門"
+      ],
+      "lifespan": "1838–1867",
+      "defaultFactionId": "tosa",
+      "activeStartSceneId": "1864-kinmon",
+      "activeEndSceneId": "1867-taisei",
+      "oneLine": "土佐脱藩志士として薩長間を往来し、陸援隊を組織して倒幕を進めた。",
+      "placeIds": [
+        "kochi",
+        "kyoto",
+        "yamaguchi",
+        "nagasaki"
+      ],
+      "eventIds": [
+        "satcho",
+        "taisei"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "itakagi",
+      "name": "板垣退助",
+      "kana": "いたがき たいすけ",
+      "aliases": [
+        "乾退助",
+        "板垣退助"
+      ],
+      "lifespan": "1837–1919",
+      "defaultFactionId": "tosa",
+      "activeStartSceneId": "1865-choshu",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "土佐藩軍事指導者として戊辰戦争で東山道・会津方面へ進み、後に民権運動を率いた。",
+      "placeIds": [
+        "kochi",
+        "edo",
+        "aizu"
+      ],
+      "eventIds": [
+        "toba",
+        "tohoku"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "kondo",
+      "name": "近藤勇",
+      "kana": "こんどう いさみ",
+      "aliases": [
+        "大久保大和",
+        "新選組局長"
+      ],
+      "lifespan": "1834–1868",
+      "defaultFactionId": "shinsengumi",
+      "activeStartSceneId": "1862-bunkyu",
+      "activeEndSceneId": "1868-edo",
+      "oneLine": "新選組局長として京都治安を担い、戊辰戦争では旧幕府側で戦った。",
+      "placeIds": [
+        "edo",
+        "kyoto"
+      ],
+      "eventIds": [
+        "aug18",
+        "kinmon",
+        "toba"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "hijikata",
+      "name": "土方歳三",
+      "kana": "ひじかた としぞう",
+      "aliases": [
+        "新選組副長",
+        "内藤隼人"
+      ],
+      "lifespan": "1835–1869",
+      "defaultFactionId": "shinsengumi",
+      "activeStartSceneId": "1862-bunkyu",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "新選組副長として組織を統率し、戊辰戦争を箱館まで戦った。",
+      "placeIds": [
+        "edo",
+        "kyoto",
+        "fushimi",
+        "aizu",
+        "hakodate"
+      ],
+      "eventIds": [
+        "aug18",
+        "kinmon",
+        "toba",
+        "tohoku",
+        "hakodate"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "tenshoin",
+      "name": "天璋院",
+      "kana": "てんしょういん",
+      "aliases": [
+        "篤姫",
+        "島津篤子",
+        "13代将軍家定御台所"
+      ],
+      "lifespan": "1836–1883",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1854-treaty",
+      "activeEndSceneId": "1868-edo",
+      "oneLine": "薩摩島津家から将軍家へ入り、大奥の立場から徳川家存続と江戸開城期の調整に関わった。",
+      "placeIds": [
+        "kagoshima",
+        "edo"
+      ],
+      "eventIds": [
+        "ansei",
+        "edo_surrender"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "kazunomiya",
+      "name": "和宮親子内親王",
+      "kana": "かずのみや ちかこ ないしんのう",
+      "aliases": [
+        "和宮",
+        "静寛院宮",
+        "14代将軍家茂御台所"
+      ],
+      "lifespan": "1846–1877",
+      "defaultFactionId": "imperial-court",
+      "activeStartSceneId": "1860-sakurada",
+      "activeEndSceneId": "1868-edo",
+      "oneLine": "孝明天皇の妹として将軍家茂へ降嫁し、公武合体と徳川家存続交渉の象徴となった。",
+      "placeIds": [
+        "kyoto",
+        "edo"
+      ],
+      "eventIds": [
+        "sakurada",
+        "bunkyu",
+        "edo_surrender"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    }
+  ]
+}

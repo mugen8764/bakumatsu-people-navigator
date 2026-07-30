@@ -1,0 +1,1430 @@
+{
+  "schemaVersion": 2,
+  "personRelations": [
+    {
+      "id": "person-relation-abe-nariaki-1853-blackships-political-cooperation",
+      "aPersonId": "abe",
+      "bPersonId": "nariaki",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1854-treaty",
+      "typeId": "political-cooperation",
+      "label": "海防参与として登用",
+      "text": "阿部正弘は斉昭を海防参与に迎え、対外政策を諸大名と議論した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-abe-katsu-1853-blackships-appointment",
+      "aPersonId": "abe",
+      "bPersonId": "katsu",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1854-treaty",
+      "typeId": "appointment",
+      "label": "海防意見を評価",
+      "text": "勝の海防意見が幕府の海軍人材登用につながった。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-perry-abe-1853-blackships-mediation-or-negotiation",
+      "aPersonId": "perry",
+      "bPersonId": "abe",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1854-treaty",
+      "typeId": "mediation-or-negotiation",
+      "label": "国書受領・条約交渉",
+      "text": "両者は武力を背景にした外交要求と戦争回避の交渉を担った。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-perry-sho-in-1853-blackships-conflict",
+      "aPersonId": "perry",
+      "bPersonId": "sho-in",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1854-treaty",
+      "typeId": "conflict",
+      "label": "密航希望を拒否",
+      "text": "松陰はペリー艦隊での渡航を求めたが受け入れられなかった。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-nariakira-saigo-1853-blackships-appointment",
+      "aPersonId": "nariakira",
+      "bPersonId": "saigo",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1860-sakurada",
+      "typeId": "appointment",
+      "label": "登用・側近",
+      "text": "斉彬は西郷を見いだし、江戸・京都での政治活動に用いた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-nariakira-katsu-1853-blackships-political-cooperation",
+      "aPersonId": "nariakira",
+      "bPersonId": "katsu",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1854-treaty",
+      "typeId": "political-cooperation",
+      "label": "海軍・開国構想",
+      "text": "両者は幕府・雄藩の海軍力と西洋技術導入を重視した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-nariakira-yoshinobu-1858-ansei-political-cooperation",
+      "aPersonId": "nariakira",
+      "bPersonId": "yoshinobu",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "typeId": "political-cooperation",
+      "label": "将軍候補として支持",
+      "text": "斉彬は一橋慶喜を将軍継嗣に推す一橋派の中心だった。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-nariakira-shungaku-1858-ansei-political-cooperation",
+      "aPersonId": "nariakira",
+      "bPersonId": "shungaku",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "typeId": "political-cooperation",
+      "label": "一橋派",
+      "text": "幕政改革と慶喜擁立をめぐって協力した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-nariakira-nariaki-1858-ansei-political-cooperation",
+      "aPersonId": "nariakira",
+      "bPersonId": "nariaki",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "typeId": "political-cooperation",
+      "label": "一橋派",
+      "text": "将軍継嗣と幕政改革で利害が一致した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-ii-yoshinobu-1858-ansei-conflict",
+      "aPersonId": "ii",
+      "bPersonId": "yoshinobu",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1860-sakurada",
+      "typeId": "conflict",
+      "label": "将軍継嗣で対立",
+      "text": "井伊は家茂を支持し、一橋慶喜と一橋派を処分した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-ii-nariaki-1858-ansei-conflict",
+      "aPersonId": "ii",
+      "bPersonId": "nariaki",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1860-sakurada",
+      "typeId": "conflict",
+      "label": "条約・継嗣で対立",
+      "text": "条約手続きと将軍継嗣をめぐり激しく対立した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-ii-shungaku-1858-ansei-conflict",
+      "aPersonId": "ii",
+      "bPersonId": "shungaku",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1860-sakurada",
+      "typeId": "conflict",
+      "label": "一橋派を処分",
+      "text": "春嶽は安政の大獄で隠居・謹慎となった。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-ii-sanai-1858-ansei-conflict",
+      "aPersonId": "ii",
+      "bPersonId": "sanai",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1860-sakurada",
+      "typeId": "conflict",
+      "label": "安政の大獄",
+      "text": "左内は一橋派工作を理由に処刑された。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-ii-yodo-1858-ansei-conflict",
+      "aPersonId": "ii",
+      "bPersonId": "yodo",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1860-sakurada",
+      "typeId": "conflict",
+      "label": "一橋派を処分",
+      "text": "容堂は一橋派として隠居・謹慎となった。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-ii-sho-in-1858-ansei-conflict",
+      "aPersonId": "ii",
+      "bPersonId": "sho-in",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1860-sakurada",
+      "typeId": "conflict",
+      "label": "安政の大獄",
+      "text": "松陰は幕府批判と政治計画を理由に処刑された。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-harris-ii-1858-ansei-mediation-or-negotiation",
+      "aPersonId": "harris",
+      "bPersonId": "ii",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "typeId": "mediation-or-negotiation",
+      "label": "通商条約交渉",
+      "text": "ハリスの要求に対し、井伊政権が条約調印を決断した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-komei-ii-1858-ansei-conflict",
+      "aPersonId": "komei",
+      "bPersonId": "ii",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1860-sakurada",
+      "typeId": "conflict",
+      "label": "条約勅許で対立",
+      "text": "孝明天皇は無勅許調印を問題視した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-yoshinobu-iemochi-1858-ansei-kinship",
+      "aPersonId": "yoshinobu",
+      "bPersonId": "iemochi",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1866-expedition",
+      "typeId": "kinship",
+      "label": "将軍家の継承競争と補佐",
+      "text": "継嗣争いでは競合したが、後に慶喜は将軍後見職として家茂を補佐した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-sho-in-takasugi-1858-ansei-mentorship-or-comradeship",
+      "aPersonId": "sho-in",
+      "bPersonId": "takasugi",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1865-choshu",
+      "typeId": "mentorship-or-comradeship",
+      "label": "松下村塾の師弟",
+      "text": "松陰の思想と行動論は高杉の軍事・政治活動へ影響した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-sho-in-kusaka-1858-ansei-mentorship-or-comradeship",
+      "aPersonId": "sho-in",
+      "bPersonId": "kusaka",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1865-choshu",
+      "typeId": "mentorship-or-comradeship",
+      "label": "松下村塾の師弟",
+      "text": "久坂は松陰門下の中心として尊王攘夷運動を進めた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-sho-in-ito-1858-ansei-mentorship-or-comradeship",
+      "aPersonId": "sho-in",
+      "bPersonId": "ito",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1865-choshu",
+      "typeId": "mentorship-or-comradeship",
+      "label": "松下村塾に学ぶ",
+      "text": "伊藤は短期間ながら松下村塾に学び、門下ネットワークへ加わった。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-shungaku-sanai-1858-ansei-appointment",
+      "aPersonId": "shungaku",
+      "bPersonId": "sanai",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1860-sakurada",
+      "typeId": "appointment",
+      "label": "藩主と側近",
+      "text": "春嶽は左内を政策立案・一橋派工作の側近として用いた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-nariaki-yoshinobu-1858-ansei-kinship",
+      "aPersonId": "nariaki",
+      "bPersonId": "yoshinobu",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1860-sakurada",
+      "typeId": "kinship",
+      "label": "父子",
+      "text": "斉昭は実子慶喜の将軍継嗣を強く支持した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-iemochi-kazunomiya-1860-sakurada-kinship",
+      "aPersonId": "iemochi",
+      "bPersonId": "kazunomiya",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1866-expedition",
+      "typeId": "kinship",
+      "label": "公武合体の婚姻",
+      "text": "家茂と和宮の婚姻は幕府と朝廷の関係修復を象徴した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-tenshoin-kazunomiya-1860-sakurada-organization",
+      "aPersonId": "tenshoin",
+      "bPersonId": "kazunomiya",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1868-edo",
+      "typeId": "organization",
+      "label": "大奥の年長者と御台所",
+      "text": "大奥の慣習や徳川家存続をめぐり協力と緊張を含む関係を持った。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-tenshoin-nariakira-1854-treaty-kinship",
+      "aPersonId": "tenshoin",
+      "bPersonId": "nariakira",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1860-sakurada",
+      "typeId": "kinship",
+      "label": "養父と養女",
+      "text": "斉彬は篤姫を将軍家へ送り、薩摩と幕府を結ぶ構想を持った。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-saigo-okubo-1858-ansei-mentorship-or-comradeship",
+      "aPersonId": "saigo",
+      "bPersonId": "okubo",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1869-hakodate",
+      "typeId": "mentorship-or-comradeship",
+      "label": "同郷の同志",
+      "text": "政治経路や判断が異なる時期もあるが、薩摩の重要な協力関係を築いた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-hisamitsu-okubo-1860-sakurada-appointment",
+      "aPersonId": "hisamitsu",
+      "bPersonId": "okubo",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1868-edo",
+      "typeId": "appointment",
+      "label": "側近として登用",
+      "text": "大久保は久光への接近を通じて薩摩藩政の中枢へ入った。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-hisamitsu-saigo-1862-bunkyu-conflict",
+      "aPersonId": "hisamitsu",
+      "bPersonId": "saigo",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1863-aug18",
+      "typeId": "conflict",
+      "label": "命令違反・遠島",
+      "text": "西郷は久光の命に従わず、沖永良部島への遠島処分を受けた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-hisamitsu-komatsu-1862-bunkyu-appointment",
+      "aPersonId": "hisamitsu",
+      "bPersonId": "komatsu",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1868-edo",
+      "typeId": "appointment",
+      "label": "家老・側近",
+      "text": "小松は家老として久光の中央政局関与を支えた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-okubo-komatsu-1862-bunkyu-political-cooperation",
+      "aPersonId": "okubo",
+      "bPersonId": "komatsu",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1868-toba",
+      "typeId": "political-cooperation",
+      "label": "薩摩藩国事・藩政実務",
+      "text": "大久保の交渉と小松の家老権限が薩摩の政策を支えた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-saigo-komatsu-1864-kinmon-political-cooperation",
+      "aPersonId": "saigo",
+      "bPersonId": "komatsu",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1868-toba",
+      "typeId": "political-cooperation",
+      "label": "軍事と藩代表",
+      "text": "西郷の軍事・交渉を小松が藩の公式責任者として支えた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-yoshinobu-shungaku-1862-bunkyu-political-cooperation",
+      "aPersonId": "yoshinobu",
+      "bPersonId": "shungaku",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1863-joi",
+      "typeId": "political-cooperation",
+      "label": "文久の改革",
+      "text": "将軍後見職と政事総裁職として幕政改革を担った。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-hisamitsu-yoshinobu-1862-bunkyu-political-cooperation",
+      "aPersonId": "hisamitsu",
+      "bPersonId": "yoshinobu",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1863-joi",
+      "typeId": "political-cooperation",
+      "label": "幕政改革を要求",
+      "text": "久光の江戸下向は慶喜・春嶽の幕政復帰を実現させた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-komei-katamori-1862-bunkyu-appointment",
+      "aPersonId": "komei",
+      "bPersonId": "katamori",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1866-expedition",
+      "typeId": "appointment",
+      "label": "信任・朝廷警護",
+      "text": "容保は京都守護職として孝明天皇の強い信任を得た。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-katamori-kondo-1863-joi-organization",
+      "aPersonId": "katamori",
+      "bPersonId": "kondo",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1868-edo",
+      "typeId": "organization",
+      "label": "会津藩預かり",
+      "text": "壬生浪士組・新選組は京都守護職会津藩のもとで活動した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-kondo-hijikata-1862-bunkyu-organization",
+      "aPersonId": "kondo",
+      "bPersonId": "hijikata",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1869-hakodate",
+      "typeId": "organization",
+      "label": "試衛館・新選組",
+      "text": "近藤が局長、土方が副長として組織を率いた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-katamori-hisamitsu-1863-aug18-political-cooperation",
+      "aPersonId": "katamori",
+      "bPersonId": "hisamitsu",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1864-kinmon",
+      "typeId": "political-cooperation",
+      "label": "京都で連携",
+      "text": "薩摩と会津は長州系尊攘派の排除で協力した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-katamori-kido-1863-aug18-conflict",
+      "aPersonId": "katamori",
+      "bPersonId": "kido",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1868-tohoku",
+      "typeId": "conflict",
+      "label": "京都政局で対立",
+      "text": "会津と長州は京都の治安・朝廷政策をめぐり敵対を深めた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-hisamitsu-kido-1863-aug18-conflict",
+      "aPersonId": "hisamitsu",
+      "bPersonId": "kido",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1864-kinmon",
+      "typeId": "conflict",
+      "label": "八月十八日の政変",
+      "text": "薩摩は会津とともに長州勢力を京都から排除した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-kido-kusaka-1862-bunkyu-mentorship-or-comradeship",
+      "aPersonId": "kido",
+      "bPersonId": "kusaka",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1865-choshu",
+      "typeId": "mentorship-or-comradeship",
+      "label": "長州の政治同志",
+      "text": "京都政局で協力したが、軍事行動への距離感には差があった。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-kido-takasugi-1863-joi-mentorship-or-comradeship",
+      "aPersonId": "kido",
+      "bPersonId": "takasugi",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1867-taisei",
+      "typeId": "mentorship-or-comradeship",
+      "label": "長州改革派",
+      "text": "政治・軍事の役割を分担して長州藩を再建した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-takasugi-kusaka-1858-ansei-mentorship-or-comradeship",
+      "aPersonId": "takasugi",
+      "bPersonId": "kusaka",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1865-choshu",
+      "typeId": "mentorship-or-comradeship",
+      "label": "松下村塾の同志",
+      "text": "ともに松陰門下だが、軍事・政治上の手法は同一ではなかった。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-takasugi-omura-1864-kinmon-political-cooperation",
+      "aPersonId": "takasugi",
+      "bPersonId": "omura",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1866-expedition",
+      "typeId": "political-cooperation",
+      "label": "藩政・軍制改革",
+      "text": "高杉の政治行動と大村の軍制設計が長州の再建を支えた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-takasugi-yamagata-1864-kinmon-organization",
+      "aPersonId": "takasugi",
+      "bPersonId": "yamagata",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1866-expedition",
+      "typeId": "organization",
+      "label": "奇兵隊の指導",
+      "text": "高杉が創設した奇兵隊で山県が軍事実務を担った。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-kido-ito-1865-choshu-appointment",
+      "aPersonId": "kido",
+      "bPersonId": "ito",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1869-hakodate",
+      "typeId": "appointment",
+      "label": "長州の若手実務者",
+      "text": "木戸は伊藤ら海外経験を持つ若手を藩政・政府実務へ登用した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-kido-inoue-1865-choshu-political-cooperation",
+      "aPersonId": "kido",
+      "bPersonId": "inoue",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1869-hakodate",
+      "typeId": "political-cooperation",
+      "label": "長州の外交・財政実務",
+      "text": "木戸の政治指導を井上が財政・外交面で支えた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-ito-inoue-1863-joi-mentorship-or-comradeship",
+      "aPersonId": "ito",
+      "bPersonId": "inoue",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1869-hakodate",
+      "typeId": "mentorship-or-comradeship",
+      "label": "長州五傑・実務同志",
+      "text": "英国留学と長州改革、新政府実務を共に経験した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-yodo-takechi-1862-bunkyu-conflict",
+      "aPersonId": "yodo",
+      "bPersonId": "takechi",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1865-choshu",
+      "typeId": "conflict",
+      "label": "藩論と主導権で対立",
+      "text": "容堂は土佐勤王党の藩政介入を警戒し、政変後に弾圧した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-takechi-ryoma-1860-sakurada-mentorship-or-comradeship",
+      "aPersonId": "takechi",
+      "bPersonId": "ryoma",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1862-bunkyu",
+      "typeId": "mentorship-or-comradeship",
+      "label": "土佐勤王党と脱藩",
+      "text": "龍馬は勤王党に関わったが、脱藩して独自の海軍路線へ進んだ。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-katsu-ryoma-1862-bunkyu-mentorship-or-comradeship",
+      "aPersonId": "katsu",
+      "bPersonId": "ryoma",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1865-choshu",
+      "typeId": "mentorship-or-comradeship",
+      "label": "海軍構想の師弟",
+      "text": "勝は龍馬を海軍・交易を重視する方向へ導いた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-ryoma-nakaoka-1864-kinmon-mentorship-or-comradeship",
+      "aPersonId": "ryoma",
+      "bPersonId": "nakaoka",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1867-taisei",
+      "typeId": "mentorship-or-comradeship",
+      "label": "土佐脱藩の同志",
+      "text": "薩長接近で協力したが、龍馬は政権返上論、中岡は武力倒幕へより強く傾いた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-saigo-kido-1866-satcho-political-cooperation",
+      "aPersonId": "saigo",
+      "bPersonId": "kido",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1869-hakodate",
+      "typeId": "political-cooperation",
+      "label": "薩長提携",
+      "text": "両者は敵対していた薩摩・長州を政治・軍事上の提携へ転換した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-ryoma-saigo-1865-choshu-mediation-or-negotiation",
+      "aPersonId": "ryoma",
+      "bPersonId": "saigo",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1867-taisei",
+      "typeId": "mediation-or-negotiation",
+      "label": "薩長交渉の接点",
+      "text": "龍馬は薩摩側の西郷らと長州側の交渉をつないだ。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-ryoma-kido-1865-choshu-mediation-or-negotiation",
+      "aPersonId": "ryoma",
+      "bPersonId": "kido",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1867-taisei",
+      "typeId": "mediation-or-negotiation",
+      "label": "合意内容の確認",
+      "text": "木戸は薩長合意の確認を龍馬へ求めた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-nakaoka-saigo-1865-choshu-mediation-or-negotiation",
+      "aPersonId": "nakaoka",
+      "bPersonId": "saigo",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1867-taisei",
+      "typeId": "mediation-or-negotiation",
+      "label": "薩長連携工作",
+      "text": "中岡は諸藩を往来して薩長連携を推進した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-yodo-goto-1865-choshu-appointment",
+      "aPersonId": "yodo",
+      "bPersonId": "goto",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1868-edo",
+      "typeId": "appointment",
+      "label": "前藩主と参政",
+      "text": "後藤は容堂へ大政奉還案を進言し、藩の公式方針にした。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-goto-ryoma-1865-choshu-political-cooperation",
+      "aPersonId": "goto",
+      "bPersonId": "ryoma",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1867-taisei",
+      "typeId": "political-cooperation",
+      "label": "大政奉還・新政府構想",
+      "text": "龍馬の構想を後藤が土佐藩政策として扱える形へ整えた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-iwakura-okubo-1865-choshu-political-cooperation",
+      "aPersonId": "iwakura",
+      "bPersonId": "okubo",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1869-hakodate",
+      "typeId": "political-cooperation",
+      "label": "王政復古の政変",
+      "text": "岩倉の宮中工作と大久保の薩摩藩実務が政変を支えた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-iwakura-saigo-1866-expedition-political-cooperation",
+      "aPersonId": "iwakura",
+      "bPersonId": "saigo",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1869-hakodate",
+      "typeId": "political-cooperation",
+      "label": "倒幕・新政府形成",
+      "text": "軍事力を担う西郷と宮中政治を担う岩倉が連携した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-iwakura-kido-1866-expedition-political-cooperation",
+      "aPersonId": "iwakura",
+      "bPersonId": "kido",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1869-hakodate",
+      "typeId": "political-cooperation",
+      "label": "新政府形成",
+      "text": "長州の政治力と朝廷内の王政復古派を結びつけた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-komei-iwakura-1858-ansei-conflict",
+      "aPersonId": "komei",
+      "bPersonId": "iwakura",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1862-bunkyu",
+      "typeId": "conflict",
+      "label": "公武合体をめぐる不信",
+      "text": "岩倉は和宮降嫁を進めたが尊攘派から批判され蟄居した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-komei-sanjo-1863-joi-conflict",
+      "aPersonId": "komei",
+      "bPersonId": "sanjo",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "typeId": "conflict",
+      "label": "急進尊攘への不信",
+      "text": "孝明天皇は三条ら長州系公家の急進路線を警戒した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-sanjo-kido-1863-joi-political-cooperation",
+      "aPersonId": "sanjo",
+      "bPersonId": "kido",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1869-hakodate",
+      "typeId": "political-cooperation",
+      "label": "朝廷尊攘派と長州",
+      "text": "追放期から新政府形成まで長州と公家の関係を維持した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-yoshinobu-iwakura-1867-taisei-conflict",
+      "aPersonId": "yoshinobu",
+      "bPersonId": "iwakura",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1868-edo",
+      "typeId": "conflict",
+      "label": "新政権の主導権",
+      "text": "慶喜を含む新体制と、徳川政治力を排除する王政復古派が対立した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-yoshinobu-saigo-1867-taisei-conflict",
+      "aPersonId": "yoshinobu",
+      "bPersonId": "saigo",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1868-edo",
+      "typeId": "conflict",
+      "label": "徳川処分・軍事対立",
+      "text": "大政奉還後の徳川家処遇をめぐり対立し、鳥羽・伏見へ至った。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-yoshinobu-katsu-1868-toba-appointment",
+      "aPersonId": "yoshinobu",
+      "bPersonId": "katsu",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-edo",
+      "typeId": "appointment",
+      "label": "恭順と江戸防衛",
+      "text": "慶喜の恭順方針を受け、勝が江戸の和平交渉を担った。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-katsu-yamaoka-1868-toba-political-cooperation",
+      "aPersonId": "katsu",
+      "bPersonId": "yamaoka",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-edo",
+      "typeId": "political-cooperation",
+      "label": "江戸開城の事前交渉",
+      "text": "山岡が西郷との事前交渉を行い、勝との会談へ道を開いた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-katsu-saigo-1868-edo-mediation-or-negotiation",
+      "aPersonId": "katsu",
+      "bPersonId": "saigo",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "typeId": "mediation-or-negotiation",
+      "label": "江戸城引き渡し交渉",
+      "text": "両者は江戸市街戦回避と徳川処分条件を交渉した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-yamaoka-saigo-1868-toba-mediation-or-negotiation",
+      "aPersonId": "yamaoka",
+      "bPersonId": "saigo",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-edo",
+      "typeId": "mediation-or-negotiation",
+      "label": "駿府会談",
+      "text": "山岡は慶喜の恭順を伝え、西郷と条件を調整した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-tenshoin-saigo-1868-toba-mediation-or-negotiation",
+      "aPersonId": "tenshoin",
+      "bPersonId": "saigo",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-edo",
+      "typeId": "mediation-or-negotiation",
+      "label": "徳川家への寛典嘆願",
+      "text": "天璋院は薩摩との縁も用い、徳川家存続を求めた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-kazunomiya-iwakura-1868-toba-kinship",
+      "aPersonId": "kazunomiya",
+      "bPersonId": "iwakura",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-edo",
+      "typeId": "kinship",
+      "label": "朝廷への嘆願経路",
+      "text": "和宮は皇族として朝廷・新政府へ徳川家への寛典を求めた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-kondo-hijikata-1868-toba-organization",
+      "aPersonId": "kondo",
+      "bPersonId": "hijikata",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-edo",
+      "typeId": "organization",
+      "label": "旧幕府軍として転戦",
+      "text": "鳥羽・伏見後も新選組を再編して関東で抗戦した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-hijikata-enomoto-1868-tohoku-political-cooperation",
+      "aPersonId": "hijikata",
+      "bPersonId": "enomoto",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1869-hakodate",
+      "typeId": "political-cooperation",
+      "label": "東北から箱館へ",
+      "text": "土方は榎本艦隊と合流し、箱館で陸軍指揮を担った。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-katamori-enomoto-1868-tohoku-political-cooperation",
+      "aPersonId": "katamori",
+      "bPersonId": "enomoto",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "typeId": "political-cooperation",
+      "label": "旧幕府側の敗走経路",
+      "text": "会津降伏後、榎本艦隊は旧幕臣らを率いて北へ向かった。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-kuroda-enomoto-1869-hakodate-mediation-or-negotiation",
+      "aPersonId": "kuroda",
+      "bPersonId": "enomoto",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "typeId": "mediation-or-negotiation",
+      "label": "降伏・助命",
+      "text": "黒田は榎本の降伏に関わり、後の助命も求めた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-omura-itakagi-1868-toba-organization",
+      "aPersonId": "omura",
+      "bPersonId": "itakagi",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-tohoku",
+      "typeId": "organization",
+      "label": "新政府軍の中央と前線",
+      "text": "大村の軍制・作戦と板垣の東山道方面指揮が新政府軍を支えた。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-saigo-itakagi-1868-toba-organization",
+      "aPersonId": "saigo",
+      "bPersonId": "itakagi",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-tohoku",
+      "typeId": "organization",
+      "label": "新政府軍参謀",
+      "text": "薩摩・土佐の軍事指導者として東征・東北戦線を分担した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "person-relation-kuroda-kawaji-1868-toba-organization",
+      "aPersonId": "kuroda",
+      "bPersonId": "kawaji",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1869-hakodate",
+      "typeId": "organization",
+      "label": "薩摩系新政府軍人材",
+      "text": "薩摩藩の若手軍事実務者として戊辰戦争に参加した。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "関係単位の出典が必要。"
+      }
+    }
+  ],
+  "factionRelations": [
+    {
+      "id": "faction-relation-bakufu-foreign-powers-1853-blackships",
+      "aFactionId": "bakufu",
+      "bFactionId": "foreign-powers",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1858-ansei",
+      "label": "交渉・条約",
+      "text": "武力圧力を受けて和親・通商条約を締結する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "faction-relation-bakufu-mito-1853-blackships",
+      "aFactionId": "bakufu",
+      "bFactionId": "mito",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1860-sakurada",
+      "label": "協力から対立",
+      "text": "海防政策では協力したが、条約・継嗣問題で対立が激化する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "faction-relation-bakufu-satsuma-1853-blackships",
+      "aFactionId": "bakufu",
+      "bFactionId": "satsuma",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1862-bunkyu",
+      "label": "改革協力",
+      "text": "斉彬・久光が幕政改革へ関与する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "faction-relation-bakufu-imperial-court-1858-ansei",
+      "aFactionId": "bakufu",
+      "bFactionId": "imperial-court",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1866-expedition",
+      "label": "勅許・公武合体",
+      "text": "条約勅許、攘夷、将軍上洛をめぐり協調と対立を繰り返す。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "faction-relation-satsuma-aizu-1863-aug18",
+      "aFactionId": "satsuma",
+      "bFactionId": "aizu",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1864-kinmon",
+      "label": "京都で連携",
+      "text": "八月十八日の政変と禁門の変で長州へ対抗する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "faction-relation-satsuma-choshu-1863-aug18",
+      "aFactionId": "satsuma",
+      "bFactionId": "choshu",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1864-kinmon",
+      "label": "敵対",
+      "text": "京都政局と長州征討で軍事的に敵対する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "faction-relation-choshu-foreign-powers-1863-joi",
+      "aFactionId": "choshu",
+      "bFactionId": "foreign-powers",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1864-kinmon",
+      "label": "軍事衝突",
+      "text": "下関攘夷戦と四国艦隊砲撃で交戦する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "faction-relation-satsuma-foreign-powers-1863-joi",
+      "aFactionId": "satsuma",
+      "bFactionId": "foreign-powers",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "label": "戦争から接近",
+      "text": "薩英戦争後、英国との協力・武器導入へ転じる。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "faction-relation-bakufu-choshu-1864-kinmon",
+      "aFactionId": "bakufu",
+      "bFactionId": "choshu",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1866-expedition",
+      "label": "征討・内戦",
+      "text": "第一次・第二次長州征討を通じて対立する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "faction-relation-satsuma-choshu-1865-choshu",
+      "aFactionId": "satsuma",
+      "bFactionId": "choshu",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1868-toba",
+      "label": "接近・提携",
+      "text": "再征への非協力、武器取引、薩長提携へ進む。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "faction-relation-tosa-bakufu-1866-satcho",
+      "aFactionId": "tosa",
+      "bFactionId": "bakufu",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1867-taisei",
+      "label": "公議政体・大政奉還",
+      "text": "武力倒幕を避け、政権返上による再編を提案する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "faction-relation-imperial-court-bakufu-1867-taisei",
+      "aFactionId": "imperial-court",
+      "bFactionId": "bakufu",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1868-toba",
+      "label": "政権返上から排除",
+      "text": "大政奉還後、王政復古で幕府制度を廃止する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "faction-relation-new-government-former-bakufu-1868-toba",
+      "aFactionId": "new-government",
+      "bFactionId": "former-bakufu",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1869-hakodate",
+      "label": "戊辰戦争",
+      "text": "鳥羽・伏見、関東、東北、箱館へ戦線が移る。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "faction-relation-new-government-aizu-1868-toba",
+      "aFactionId": "new-government",
+      "bFactionId": "aizu",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-tohoku",
+      "label": "朝敵処分・戦争",
+      "text": "京都守護職時代の責任をめぐり処分と抗戦に至る。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "faction-relation-new-government-satsuma-1868-toba",
+      "aFactionId": "new-government",
+      "bFactionId": "satsuma",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1869-hakodate",
+      "label": "中核参加",
+      "text": "薩摩藩の人材・軍事力が新政府中枢へ移る。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "faction-relation-new-government-choshu-1868-toba",
+      "aFactionId": "new-government",
+      "bFactionId": "choshu",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1869-hakodate",
+      "label": "中核参加",
+      "text": "長州藩の人材・軍事力が新政府中枢へ移る。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力関係単位の出典が必要。"
+      }
+    },
+    {
+      "id": "faction-relation-new-government-tosa-1868-toba",
+      "aFactionId": "new-government",
+      "bFactionId": "tosa",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1869-hakodate",
+      "label": "参加",
+      "text": "土佐藩の政治・軍事人材が新政府へ参加する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力関係単位の出典が必要。"
+      }
+    }
+  ]
+}

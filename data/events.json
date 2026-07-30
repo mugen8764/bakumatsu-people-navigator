@@ -1,0 +1,1150 @@
+{
+  "schemaVersion": 2,
+  "scenes": [
+    {
+      "id": "1853-blackships",
+      "order": 0,
+      "year": 1853,
+      "era": "嘉永6年",
+      "date": "6月3日（7月8日）",
+      "title": "黒船来航",
+      "summary": "ペリー艦隊の来航により、海防と開国が幕府だけでなく諸大名を巻き込む政治問題になる。",
+      "eventId": "blackships",
+      "insights": [
+        "幕府は諸大名へ意見を求め、意思決定の独占を自ら緩めた。",
+        "攘夷論だけでなく、海軍・砲術・交易を重視する開国論も並行していた。",
+        "後に著名になる人物の多くは、まだ藩内の若手や学習者だった。"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_modern_timeline"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "事件出典を、シーン要約と洞察の各主張へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "1854-treaty",
+      "order": 1,
+      "year": 1854,
+      "era": "嘉永7年／安政元年",
+      "date": "3月3日（3月31日）",
+      "title": "日米和親条約",
+      "summary": "下田・箱館の開港などを定め、鎖国体制の枠が崩れる。幕府は海防と洋学導入を急ぐ。",
+      "eventId": "treaty1854",
+      "insights": [
+        "和親条約は本格的な通商条約ではないが、他国との条約の先例になった。",
+        "開国は外交問題だけでなく、造船・海軍教育・翻訳機関の整備を促した。",
+        "吉田松陰の密航未遂は、海外知識を直接得ようとする焦りの表れだった。"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_modern_timeline"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "事件出典を、シーン要約と洞察の各主張へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "1858-ansei",
+      "order": 2,
+      "year": 1858,
+      "era": "安政5年",
+      "date": "6月〜9月",
+      "title": "通商条約・将軍継嗣・安政の大獄",
+      "summary": "条約調印と次期将軍をめぐる対立が重なり、井伊直弼が一橋派や反対派を処分する。",
+      "eventId": "ansei",
+      "insights": [
+        "「開国か攘夷か」だけでなく、「誰が政策を決めるか」が争点だった。",
+        "一橋派は慶喜個人の支持者ではなく、雄藩参加型の幕政改革を求める連合でもあった。",
+        "朝廷の勅許をめぐる問題が、幕府と朝廷の権力関係を変えた。"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_modern_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "事件出典を、シーン要約と洞察の各主張へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "1860-sakurada",
+      "order": 3,
+      "year": 1860,
+      "era": "安政7年／万延元年",
+      "date": "3月3日（3月24日）",
+      "title": "桜田門外の変",
+      "summary": "井伊直弼が水戸浪士らに殺害され、幕府中枢の権威低下と政治的暴力の拡大が明白になる。",
+      "eventId": "sakurada",
+      "insights": [
+        "襲撃者は単純な長州・薩摩の倒幕派ではなく、水戸藩を中心とする浪士だった。",
+        "井伊の死後も通商条約は維持され、政策そのものは巻き戻らなかった。",
+        "幕府は朝廷との関係強化を図る公武合体へ軸足を移した。"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "事件出典を、シーン要約と洞察の各主張へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "1862-bunkyu",
+      "order": 4,
+      "year": 1862,
+      "era": "文久2年",
+      "date": "春〜秋",
+      "title": "文久の改革・寺田屋・生麦",
+      "summary": "島津久光の率兵上京を背景に幕政改革が実現する一方、薩摩藩内の急進派鎮圧と対英摩擦が起きる。",
+      "eventId": "bunkyu",
+      "insights": [
+        "薩摩はこの時点では倒幕ではなく、公武合体と幕政改革を目指していた。",
+        "西郷と久光の対立は、薩摩藩内が一枚岩ではなかったことを示す。",
+        "京都守護職の設置により、会津藩が京都政局の前面へ出た。"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "事件出典を、シーン要約と洞察の各主張へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "1863-joi",
+      "order": 5,
+      "year": 1863,
+      "era": "文久3年",
+      "date": "5月〜8月",
+      "title": "攘夷実行と薩英戦争",
+      "summary": "長州が下関で外国船を砲撃し、薩摩は生麦事件をめぐり英国艦隊と交戦する。",
+      "eventId": "joi1863",
+      "insights": [
+        "朝廷が求めた攘夷と、実際の軍事力で外国を排除できるかは別問題だった。",
+        "薩摩は英国との戦争後、むしろ英国との関係と軍備近代化を深めた。",
+        "長州でも高杉晋作らは攘夷戦の敗北から身分を越えた軍制改革へ向かった。"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "事件出典を、シーン要約と洞察の各主張へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "1863-aug18",
+      "order": 6,
+      "year": 1863,
+      "era": "文久3年",
+      "date": "8月18日（9月30日）",
+      "title": "八月十八日の政変",
+      "summary": "薩摩・会津と公武合体派公家が長州系尊攘派を京都から排除し、京都の勢力図が反転する。",
+      "eventId": "aug18",
+      "insights": [
+        "薩摩と長州はまだ倒幕の盟友ではなく、京都政局で敵対していた。",
+        "孝明天皇は長州系急進派を警戒し、会津への信任を強めた。",
+        "失地回復を急ぐ長州の動きが翌年の禁門の変につながる。"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_modern_timeline"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "事件出典を、シーン要約と洞察の各主張へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "1864-kinmon",
+      "order": 7,
+      "year": 1864,
+      "era": "元治元年",
+      "date": "6月〜12月",
+      "title": "池田屋・禁門の変・第一次長州征討",
+      "summary": "京都での治安衝突が内戦化し、長州は朝敵とされ、幕府・諸藩の征討と列強の下関攻撃を受ける。",
+      "eventId": "kinmon",
+      "insights": [
+        "新選組の池田屋襲撃と禁門の変は別事件だが、京都の緊張を連続的に高めた。",
+        "西郷はこの時期に復帰し、薩摩軍の指揮と長州処分の交渉を担った。",
+        "長州の敗北は終わりではなく、藩内改革派の再起を促した。"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "事件出典を、シーン要約と洞察の各主張へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "1865-choshu",
+      "order": 8,
+      "year": 1865,
+      "era": "慶応元年",
+      "date": "1月〜年末",
+      "title": "長州藩政の転換",
+      "summary": "高杉晋作ら改革派が藩内で主導権を奪い返し、軍制と財政を再編。幕府は再征を準備する。",
+      "eventId": "choshu_reform",
+      "insights": [
+        "長州は幕府との戦いの前に、藩内の保守派と改革派の権力闘争を経験した。",
+        "奇兵隊など諸隊は、藩の正式軍制へ組み込まれていった。",
+        "薩摩は表向き長州処分側にありながら、再征への協力を弱め始めた。"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "jacar_dictionary",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "事件出典を、シーン要約と洞察の各主張へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "1866-satcho",
+      "order": 9,
+      "year": 1866,
+      "era": "慶応2年",
+      "date": "1月21日（3月7日）",
+      "title": "薩長提携",
+      "summary": "薩摩と長州が政治・軍事面で協力する密約を結び、長州の孤立が解消される。",
+      "eventId": "satcho",
+      "insights": [
+        "薩長提携は単純な友好宣言ではなく、長州の名誉回復と幕府対応をめぐる実務的合意だった。",
+        "坂本龍馬・中岡慎太郎らが交渉の接点を作った。",
+        "小松帯刀・西郷・木戸など、藩を代表して責任を負える人物の存在が不可欠だった。"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_modern_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "事件出典を、シーン要約と洞察の各主張へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "1866-expedition",
+      "order": 10,
+      "year": 1866,
+      "era": "慶応2年",
+      "date": "6月〜12月",
+      "title": "第二次長州征討の失敗",
+      "summary": "幕府軍は長州を制圧できず、将軍家茂も大坂で死去。徳川慶喜が15代将軍となる。",
+      "eventId": "second_choshu",
+      "insights": [
+        "長州軍の装備・指揮改革だけでなく、諸藩が幕府へ積極協力しなかったことも大きい。",
+        "幕府が一藩を制圧できない事実は、政権の軍事的求心力を傷つけた。",
+        "慶喜は将軍になった時点で、すでに従来型の幕府を維持しにくい状況にあった。"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "事件出典を、シーン要約と洞察の各主張へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "1867-taisei",
+      "order": 11,
+      "year": 1867,
+      "era": "慶応3年",
+      "date": "10月14日（11月9日）",
+      "title": "大政奉還",
+      "summary": "徳川慶喜が政権返上を上表。徳川家を含む新しい諸侯会議型政権の可能性と武力倒幕が競合する。",
+      "eventId": "taisei",
+      "insights": [
+        "大政奉還は慶喜の全面降伏ではなく、新体制でも主導権を保つ政治戦略だった。",
+        "土佐藩の後藤象二郎・山内容堂が政権返上案を推進した。",
+        "倒幕の密勅、龍馬・中岡暗殺、王政復古が短期間に重なった。"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_modern_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "事件出典を、シーン要約と洞察の各主張へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "1868-toba",
+      "order": 12,
+      "year": 1868,
+      "era": "慶応4年／明治元年",
+      "date": "1月",
+      "title": "王政復古と鳥羽・伏見",
+      "summary": "新政府が徳川家の政治力を排除する方針を取り、旧幕府軍との戦闘で新政府軍が勝利する。",
+      "eventId": "toba",
+      "insights": [
+        "大政奉還で幕府制度は返上されたが、徳川家の土地・軍事力・官職は残っていた。",
+        "「官軍」の旗印により、諸藩の態度が新政府側へ傾いた。",
+        "慶喜の大坂から江戸への退去は、旧幕府軍の指揮を大きく動揺させた。"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_modern_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "事件出典を、シーン要約と洞察の各主張へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "1868-edo",
+      "order": 13,
+      "year": 1868,
+      "era": "慶応4年／明治元年",
+      "date": "3月〜5月",
+      "title": "江戸開城",
+      "summary": "勝海舟・山岡鉄舟と西郷隆盛らの交渉により、江戸城は大規模戦闘を避けて新政府へ引き渡される。",
+      "eventId": "edo_surrender",
+      "insights": [
+        "無血開城は一度の会談ではなく、事前交渉・条件調整・徳川慶喜の恭順が重なった結果だった。",
+        "江戸が開城しても戊辰戦争は終わらず、関東・東北・北越で戦闘が続いた。",
+        "新政府側にも江戸市街戦による被害と外国への影響を避ける利害があった。"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_handwriting",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "事件出典を、シーン要約と洞察の各主張へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "1868-tohoku",
+      "order": 14,
+      "year": 1868,
+      "era": "明治元年",
+      "date": "5月〜11月",
+      "title": "奥羽越列藩同盟と会津戦争",
+      "summary": "会津処分をめぐって東北諸藩が同盟を結ぶが、新政府軍が北越・東北を制圧し、会津が降伏する。",
+      "eventId": "tohoku",
+      "insights": [
+        "東北諸藩の当初目的は必ずしも新政府転覆ではなく、会津・庄内への寛典嘆願だった。",
+        "同盟内部には方針差があり、統一した中央指揮を作れなかった。",
+        "西郷・大久保だけでなく、板垣退助・大村益次郎・黒田清隆らが各戦線を担った。"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "jacar_dictionary",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "事件出典を、シーン要約と洞察の各主張へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "1869-hakodate",
+      "order": 15,
+      "year": 1869,
+      "era": "明治2年",
+      "date": "5月18日（6月27日）",
+      "title": "箱館戦争終結",
+      "summary": "榎本武揚ら旧幕府軍が五稜郭を開城し、戊辰戦争が終結。新政府の全国統治が確立する。",
+      "eventId": "hakodate",
+      "insights": [
+        "榎本らは単なる逃亡軍ではなく、蝦夷地開拓と徳川家臣の救済を構想していた。",
+        "土方歳三は箱館戦争で戦死し、旧幕府軍の象徴的存在となった。",
+        "黒田清隆は降伏交渉に関与し、榎本の助命にもつながった。"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "jacar_dictionary",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "事件出典を、シーン要約と洞察の各主張へ細分化する必要がある。"
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "blackships",
+      "date": "1853年7月8日（嘉永6年6月3日）",
+      "title": "ペリー来航",
+      "category": "外交・海防",
+      "description": "アメリカ東インド艦隊司令長官ペリーが浦賀沖へ来航し、久里浜で大統領国書を幕府へ渡した。幕府は回答を翌年へ延期し、諸大名に意見を求めた。",
+      "causes": [
+        "米国による太平洋航路・補給港の確保",
+        "アヘン戦争後の東アジア情勢",
+        "幕府の従来の異国船対応の限界"
+      ],
+      "issues": [
+        "開国か拒絶か",
+        "海防と西洋軍事技術",
+        "幕府と諸大名の政策決定"
+      ],
+      "results": [
+        "品川台場の築造と大船建造解禁",
+        "諸大名・知識人による海防論の活発化",
+        "翌年の日米和親条約交渉へ"
+      ],
+      "personIds": [
+        "perry",
+        "abe",
+        "nariaki",
+        "nariakira",
+        "sho-in"
+      ],
+      "factionIds": [
+        "foreign-powers",
+        "bakufu",
+        "mito",
+        "satsuma",
+        "choshu"
+      ],
+      "placeIds": [
+        "uraga",
+        "edo"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_modern_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "treaty1854",
+      "date": "1854年3月31日（嘉永7年3月3日）",
+      "title": "日米和親条約",
+      "category": "外交・開国",
+      "description": "横浜で日米和親条約が調印され、下田・箱館の開港、米国船への薪水・食料供給、領事駐在などが定められた。",
+      "causes": [
+        "ペリー艦隊の再来航",
+        "武力衝突を避ける幕府の判断",
+        "漂流民保護・補給港を求める米国の要求"
+      ],
+      "issues": [
+        "限定的開港",
+        "最恵国待遇",
+        "列強との同種条約"
+      ],
+      "results": [
+        "英国・ロシア・オランダとも和親条約",
+        "洋学・海軍伝習・造船の推進",
+        "通商条約交渉と条約勅許問題へ"
+      ],
+      "personIds": [
+        "perry",
+        "abe",
+        "sho-in"
+      ],
+      "factionIds": [
+        "foreign-powers",
+        "bakufu"
+      ],
+      "placeIds": [
+        "yokohama",
+        "shimoda",
+        "hakodate"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_modern_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "ansei",
+      "date": "1858〜1859年（安政5〜6年）",
+      "title": "通商条約・将軍継嗣・安政の大獄",
+      "category": "幕政・条約",
+      "description": "井伊直弼は勅許を得ないまま日米修好通商条約を調印し、徳川家茂を将軍継嗣とした。反対した大名・公家・志士らは処分された。",
+      "causes": [
+        "ハリスによる通商条約締結要求",
+        "清国が列強に敗れたことへの危機感",
+        "将軍家定の後継者問題",
+        "朝廷の勅許をめぐる対立"
+      ],
+      "issues": [
+        "一橋派と南紀派",
+        "無勅許調印",
+        "雄藩参加型改革と幕府専断"
+      ],
+      "results": [
+        "一橋派・改革派の後退",
+        "吉田松陰・橋本左内らの刑死",
+        "尊王攘夷運動と井伊への反発の激化"
+      ],
+      "personIds": [
+        "harris",
+        "ii",
+        "yoshinobu",
+        "nariaki",
+        "shungaku",
+        "sanai",
+        "yodo",
+        "sho-in",
+        "nariakira",
+        "saigo",
+        "komei"
+      ],
+      "factionIds": [
+        "foreign-powers",
+        "bakufu",
+        "mito",
+        "satsuma",
+        "imperial-court"
+      ],
+      "placeIds": [
+        "edo",
+        "kyoto",
+        "hagi",
+        "fukui"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_modern_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "sakurada",
+      "date": "1860年3月24日（安政7年3月3日）",
+      "title": "桜田門外の変",
+      "category": "襲撃・政局",
+      "description": "水戸浪士を中心とする一団が江戸城桜田門外で大老井伊直弼を襲撃し、殺害した。",
+      "causes": [
+        "安政の大獄への反発",
+        "無勅許条約調印への批判",
+        "水戸藩への処分と勅書返納問題"
+      ],
+      "issues": [
+        "政治的暴力",
+        "幕府中枢の権威",
+        "水戸藩内の分裂"
+      ],
+      "results": [
+        "大老政治の終焉",
+        "幕府の威信低下",
+        "公武合体政策の推進と浪士活動の拡大"
+      ],
+      "personIds": [
+        "ii",
+        "nariaki"
+      ],
+      "factionIds": [
+        "bakufu",
+        "mito"
+      ],
+      "placeIds": [
+        "edo",
+        "mito"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "bunkyu",
+      "date": "1862年（文久2年）",
+      "title": "文久の改革・寺田屋事件・生麦事件",
+      "category": "幕政改革・藩政",
+      "description": "島津久光が兵を率いて上京・江戸下向し、慶喜の将軍後見職、春嶽の政事総裁職就任などを実現した。薩摩では寺田屋事件で急進派を鎮圧し、帰路に生麦事件が起きた。",
+      "causes": [
+        "桜田門外の変後の幕府権威低下",
+        "朝廷と雄藩の発言力上昇",
+        "薩摩藩内の公武合体派と急進尊攘派の対立"
+      ],
+      "issues": [
+        "公武合体",
+        "参勤交代緩和などの幕政改革",
+        "京都治安と藩内統制",
+        "対英賠償問題"
+      ],
+      "results": [
+        "京都守護職設置と松平容保の就任",
+        "一橋慶喜・松平春嶽の幕政復帰",
+        "薩英戦争の原因形成"
+      ],
+      "personIds": [
+        "hisamitsu",
+        "okubo",
+        "komatsu",
+        "yoshinobu",
+        "shungaku",
+        "katamori",
+        "saigo",
+        "yodo",
+        "takechi",
+        "ryoma"
+      ],
+      "factionIds": [
+        "satsuma",
+        "bakufu",
+        "aizu",
+        "tosa"
+      ],
+      "placeIds": [
+        "kagoshima",
+        "kyoto",
+        "edo",
+        "namamugi"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "joi1863",
+      "date": "1863年5〜8月（文久3年）",
+      "title": "攘夷実行と薩英戦争",
+      "category": "対外戦争",
+      "description": "長州藩は攘夷期限に下関海峡で外国船を砲撃した。薩摩藩は生麦事件をめぐる交渉決裂後、鹿児島湾で英国艦隊と交戦した。",
+      "causes": [
+        "朝廷による攘夷要求",
+        "長州藩の尊王攘夷路線",
+        "生麦事件の賠償・犯人処罰をめぐる対立"
+      ],
+      "issues": [
+        "攘夷の実行可能性",
+        "列強の軍事力",
+        "藩の軍制・産業近代化"
+      ],
+      "results": [
+        "薩摩と英国の接近・軍備近代化",
+        "高杉晋作による奇兵隊創設",
+        "翌年の四国艦隊下関砲撃へ"
+      ],
+      "personIds": [
+        "hisamitsu",
+        "komatsu",
+        "okubo",
+        "takasugi",
+        "kido",
+        "kusaka"
+      ],
+      "factionIds": [
+        "satsuma",
+        "choshu",
+        "foreign-powers"
+      ],
+      "placeIds": [
+        "kagoshima",
+        "shimonoseki"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "aug18",
+      "date": "1863年9月30日（文久3年8月18日）",
+      "title": "八月十八日の政変",
+      "category": "京都政局",
+      "description": "薩摩・会津と公武合体派公家が宮中を掌握し、長州藩と尊王攘夷派公家を京都から排除した。",
+      "causes": [
+        "長州主導の急進的攘夷への孝明天皇の不信",
+        "京都守護職会津藩と薩摩藩の連携",
+        "朝廷内公家勢力の対立"
+      ],
+      "issues": [
+        "京都の主導権",
+        "公武合体と尊王攘夷",
+        "朝廷警護"
+      ],
+      "results": [
+        "長州勢力と七卿の京都追放",
+        "会津・薩摩の京都支配強化",
+        "長州の失地回復運動と禁門の変へ"
+      ],
+      "personIds": [
+        "komei",
+        "katamori",
+        "hisamitsu",
+        "okubo",
+        "komatsu",
+        "sanjo",
+        "kido",
+        "kusaka",
+        "takasugi",
+        "kondo",
+        "hijikata"
+      ],
+      "factionIds": [
+        "imperial-court",
+        "aizu",
+        "satsuma",
+        "choshu",
+        "shinsengumi"
+      ],
+      "placeIds": [
+        "kyoto",
+        "hagi"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_modern_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "kinmon",
+      "date": "1864年6〜12月（元治元年）",
+      "title": "池田屋事件・禁門の変・第一次長州征討",
+      "category": "京都戦・征討",
+      "description": "新選組が池田屋で尊攘派を襲撃し、長州軍は京都へ進攻して禁門の変で敗北した。幕府は長州征討を命じ、四国艦隊も下関を攻撃した。",
+      "causes": [
+        "八月十八日の政変後の長州の失地回復要求",
+        "京都での尊攘派探索と治安衝突",
+        "長州の攘夷継続と列強の報復"
+      ],
+      "issues": [
+        "京都の軍事支配",
+        "朝敵とされた長州の処分",
+        "攘夷の軍事的破綻"
+      ],
+      "results": [
+        "久坂玄瑞らの死と長州の一時恭順",
+        "高杉ら改革派による藩政転換の準備",
+        "薩摩・会津・長州の敵対深化"
+      ],
+      "personIds": [
+        "kondo",
+        "hijikata",
+        "katamori",
+        "yoshinobu",
+        "saigo",
+        "kawaji",
+        "kido",
+        "kusaka",
+        "takasugi",
+        "omura"
+      ],
+      "factionIds": [
+        "shinsengumi",
+        "aizu",
+        "bakufu",
+        "satsuma",
+        "choshu",
+        "foreign-powers"
+      ],
+      "placeIds": [
+        "kyoto",
+        "hagi",
+        "yamaguchi",
+        "shimonoseki"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "choshu_reform",
+      "date": "1865年（慶応元年）",
+      "title": "長州藩政の転換",
+      "category": "藩内政変・軍制改革",
+      "description": "高杉晋作ら改革派が功山寺挙兵などを通じ保守派を退け、長州藩の主導権を奪回した。大村益次郎らが軍制改革を進めた。",
+      "causes": [
+        "第一次長州征討後の保守派政権への反発",
+        "諸隊の存続問題",
+        "幕府による再征の可能性"
+      ],
+      "issues": [
+        "恭順か抗戦か",
+        "藩兵と諸隊の統合",
+        "武器調達と財政"
+      ],
+      "results": [
+        "改革派の藩政掌握",
+        "第二次長州征討に備えた軍制整備",
+        "薩摩との接触・武器取引の拡大"
+      ],
+      "personIds": [
+        "takasugi",
+        "kido",
+        "omura",
+        "ito",
+        "inoue",
+        "yamagata"
+      ],
+      "factionIds": [
+        "choshu"
+      ],
+      "placeIds": [
+        "shimonoseki",
+        "yamaguchi",
+        "hagi"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "jacar_dictionary",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "satcho",
+      "date": "1866年3月7日（慶応2年1月21日）",
+      "title": "薩長提携",
+      "category": "藩間提携",
+      "description": "京都で薩摩藩と長州藩の間に政治・軍事上の提携が成立した。坂本龍馬らが合意内容の確認や仲介に関わった。",
+      "causes": [
+        "幕府による第二次長州征討の準備",
+        "薩摩の幕府への不信",
+        "長州の孤立解消と名誉回復の必要"
+      ],
+      "issues": [
+        "長州処分の撤回",
+        "幕府出兵への薩摩の対応",
+        "武器・物資供給"
+      ],
+      "results": [
+        "薩摩と長州の敵対関係の転換",
+        "長州の軍事的孤立解消",
+        "倒幕勢力形成の基盤"
+      ],
+      "personIds": [
+        "saigo",
+        "komatsu",
+        "kido",
+        "ryoma",
+        "nakaoka",
+        "okubo"
+      ],
+      "factionIds": [
+        "satsuma",
+        "choshu",
+        "tosa"
+      ],
+      "placeIds": [
+        "kyoto",
+        "nagasaki",
+        "mitajiri"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_modern_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "second_choshu",
+      "date": "1866年6〜12月（慶応2年）",
+      "title": "第二次長州征討の失敗",
+      "category": "内戦・幕政危機",
+      "description": "幕府は長州へ再征したが、長州軍の抵抗と諸藩の消極姿勢により敗退した。将軍家茂が大坂で死去し、慶喜が15代将軍となった。",
+      "causes": [
+        "長州改革派の藩政掌握",
+        "幕府による長州再処分",
+        "薩摩など諸藩の幕府協力低下"
+      ],
+      "issues": [
+        "幕府の軍事動員力",
+        "近代化された長州軍",
+        "将軍継承と政権再編"
+      ],
+      "results": [
+        "幕府の軍事的権威失墜",
+        "徳川慶喜の将軍就任",
+        "薩長主導の政局形成"
+      ],
+      "personIds": [
+        "iemochi",
+        "yoshinobu",
+        "kido",
+        "takasugi",
+        "omura",
+        "yamagata",
+        "saigo",
+        "komatsu"
+      ],
+      "factionIds": [
+        "bakufu",
+        "choshu",
+        "satsuma"
+      ],
+      "placeIds": [
+        "osaka",
+        "yamaguchi",
+        "shimonoseki"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "taisei",
+      "date": "1867年11月9日（慶応3年10月14日）",
+      "title": "大政奉還",
+      "category": "政権返上",
+      "description": "徳川慶喜が政権を朝廷へ返上する上表を提出した。土佐藩の建言を取り入れ、徳川家を含む新体制で主導権を保つ意図があった。",
+      "causes": [
+        "薩長による武力倒幕準備",
+        "土佐藩の大政奉還建白",
+        "幕府の軍事・財政的求心力低下"
+      ],
+      "issues": [
+        "徳川家を新政権へ含めるか",
+        "諸侯会議型政権",
+        "武力倒幕か平和的移行か"
+      ],
+      "results": [
+        "幕府制度の政権返上",
+        "王政復古の政変による徳川排除方針",
+        "辞官納地問題と鳥羽・伏見の戦いへ"
+      ],
+      "personIds": [
+        "yoshinobu",
+        "yodo",
+        "goto",
+        "ryoma",
+        "nakaoka",
+        "iwakura",
+        "saigo",
+        "okubo",
+        "kido"
+      ],
+      "factionIds": [
+        "bakufu",
+        "tosa",
+        "imperial-court",
+        "satsuma",
+        "choshu"
+      ],
+      "placeIds": [
+        "kyoto",
+        "kochi",
+        "nagasaki"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_modern_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "toba",
+      "date": "1868年1月（慶応3年12月〜慶応4年1月）",
+      "title": "王政復古と鳥羽・伏見の戦い",
+      "category": "政変・戊辰戦争",
+      "description": "王政復古の政変で新政府が成立し、徳川慶喜への辞官納地要求をめぐる緊張から、鳥羽・伏見で旧幕府軍と新政府軍が戦った。",
+      "causes": [
+        "大政奉還後の権力配分問題",
+        "王政復古による幕府・摂関制廃止",
+        "旧幕府軍の京都進軍"
+      ],
+      "issues": [
+        "徳川家の政治的・軍事的処遇",
+        "官軍と朝敵の認定",
+        "新政府の正統性"
+      ],
+      "results": [
+        "新政府軍の勝利と慶喜の江戸退去",
+        "諸藩の新政府側への転向",
+        "戊辰戦争の東日本への拡大"
+      ],
+      "personIds": [
+        "meiji",
+        "iwakura",
+        "saigo",
+        "okubo",
+        "kido",
+        "yoshinobu",
+        "katamori",
+        "kondo",
+        "hijikata"
+      ],
+      "factionIds": [
+        "new-government",
+        "former-bakufu",
+        "satsuma",
+        "choshu",
+        "aizu",
+        "shinsengumi"
+      ],
+      "placeIds": [
+        "kyoto",
+        "fushimi",
+        "osaka",
+        "edo"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_modern_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "edo_surrender",
+      "date": "1868年3〜5月（慶応4年）",
+      "title": "江戸開城",
+      "category": "交渉・政権移行",
+      "description": "徳川慶喜が恭順し、山岡鉄舟・勝海舟と西郷隆盛らの交渉を経て、江戸城は新政府軍へ引き渡された。",
+      "causes": [
+        "鳥羽・伏見後の旧幕府側敗勢",
+        "江戸総攻撃の準備",
+        "慶喜の恭順と徳川家存続交渉"
+      ],
+      "issues": [
+        "江戸市街戦の回避",
+        "慶喜の処分",
+        "徳川家臣と武器・軍艦の扱い"
+      ],
+      "results": [
+        "江戸城の無血開城",
+        "徳川家の駿府移封",
+        "抗戦派の関東・東北・箱館への移動"
+      ],
+      "personIds": [
+        "katsu",
+        "yamaoka",
+        "saigo",
+        "yoshinobu",
+        "tenshoin",
+        "kazunomiya",
+        "enomoto"
+      ],
+      "factionIds": [
+        "new-government",
+        "former-bakufu"
+      ],
+      "placeIds": [
+        "edo"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_handwriting",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "tohoku",
+      "date": "1868年5〜11月（明治元年）",
+      "title": "奥羽越列藩同盟と会津戦争",
+      "category": "戊辰戦争",
+      "description": "会津・庄内への寛典を求めた東北諸藩は奥羽越列藩同盟を結成したが、新政府軍が北越・東北へ進攻し、会津は降伏した。",
+      "causes": [
+        "会津・庄内処分をめぐる対立",
+        "東北諸藩の嘆願不受理",
+        "新政府による全国統一方針"
+      ],
+      "issues": [
+        "同盟の目的と統一指揮",
+        "北越・東北の軍事戦",
+        "朝敵認定と藩の存続"
+      ],
+      "results": [
+        "会津・庄内などの降伏",
+        "東北諸藩の処分",
+        "旧幕府海軍の箱館移動"
+      ],
+      "personIds": [
+        "katamori",
+        "itakagi",
+        "omura",
+        "kuroda",
+        "saigo",
+        "hijikata",
+        "enomoto"
+      ],
+      "factionIds": [
+        "new-government",
+        "former-bakufu",
+        "aizu"
+      ],
+      "placeIds": [
+        "aizu",
+        "sendai",
+        "niigata",
+        "edo"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "jacar_dictionary",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "hakodate",
+      "date": "1869年6月27日（明治2年5月18日）",
+      "title": "箱館戦争終結",
+      "category": "戊辰戦争終結",
+      "description": "榎本武揚ら旧幕府軍が五稜郭を開城し、新政府軍へ降伏した。これにより戊辰戦争が終結した。",
+      "causes": [
+        "旧幕府海軍・旧幕臣の蝦夷地移動",
+        "徳川家臣の救済と蝦夷地開拓構想",
+        "新政府による全国統一"
+      ],
+      "issues": [
+        "蝦夷地政権構想",
+        "海軍力と五稜郭防衛",
+        "降伏・助命交渉"
+      ],
+      "results": [
+        "戊辰戦争の終結",
+        "新政府の全国的軍事統一",
+        "榎本武揚ら旧幕臣の後の新政府登用"
+      ],
+      "personIds": [
+        "enomoto",
+        "hijikata",
+        "kuroda"
+      ],
+      "factionIds": [
+        "new-government",
+        "former-bakufu"
+      ],
+      "placeIds": [
+        "hakodate"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "jacar_dictionary",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "verified"
+      }
+    }
+  ]
+}

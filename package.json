@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "test": "npm run test:data && npm run test:e2e",
+    "build:data": "node scripts/build-data.cjs",
+    "check:data": "node scripts/build-data.cjs --check",
     "validate:data": "node scripts/validate-data.cjs",
-    "test:data": "npm run validate:data && node --test tests/data/*.test.cjs",
+    "test:data": "npm run validate:data && npm run check:data && node --test tests/data/*.test.cjs",
     "test:e2e": "playwright test",
     "test:e2e:update": "playwright test --update-snapshots"
   },

@@ -37,14 +37,20 @@
 
 ## データ編集
 
-- `data.json`: 人物・勢力・時点・事件・関係・地点の元データ
-- `data.js`: ブラウザ読み込み用データ
+- `data/*.json`: 人物・勢力・時点・事件・関係・地点の正本データ
+- `data.json`: 分割JSONから生成する互換データ
+- `data.js`: 分割JSONから生成するブラウザ読み込み用データ
 - `app.js`: 表示・検索・相関図・地図の処理
 - `styles.css`: レイアウトと配色
 - `map-data.js`: Natural Earth由来の低解像度地理形状を、このサイト用に投影・変換したSVGパス
 
-人物の状態を追加する場合は `statuses` に時点IDをキーとして追加します。
-人物の表示期間は `activeRange: [開始時点インデックス, 終了時点インデックス]` で指定します。
+人物の状態は `data/person-statuses.json` に追加します。表示期間には `startSceneId` と `endSceneId` を指定し、勢力などの参照には表示名ではなく安定IDを使います。
+
+データ編集後は互換ファイルを再生成してください。
+
+```sh
+npm run build:data
+```
 
 ## 注意
 

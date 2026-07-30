@@ -1,0 +1,5462 @@
+{
+  "schemaVersion": 2,
+  "statuses": [
+    {
+      "id": "person-status-perry-1853-blackships",
+      "personId": "perry",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1853-blackships",
+      "displayName": "ペリー",
+      "role": "米国東インド艦隊司令長官",
+      "factionId": "foreign-powers",
+      "stance": "武力を背景に大統領国書を渡し、開港・補給を求める。",
+      "importance": "外圧を国内政治の中心課題へ変えた人物。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-perry-1854-treaty",
+      "personId": "perry",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1854-treaty",
+      "displayName": "ペリー",
+      "role": "米国全権",
+      "factionId": "foreign-powers",
+      "stance": "再来航して幕府代表と交渉し、日米和親条約を締結する。",
+      "importance": "限定的開国を条約として確定させた。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-harris-1858-ansei",
+      "personId": "harris",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "ハリス",
+      "role": "駐日米国総領事",
+      "factionId": "foreign-powers",
+      "stance": "列強の軍事圧力を示しながら通商条約の早期締結を要求する。",
+      "importance": "条約締結期限と条件をめぐり幕府へ強い圧力をかけた。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-abe-1853-blackships",
+      "personId": "abe",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1853-blackships",
+      "displayName": "阿部正弘",
+      "role": "老中首座",
+      "factionId": "bakufu",
+      "stance": "戦争を避けながら国書を受領し、諸大名へ意見を求める。",
+      "importance": "外交を幕府だけの専管事項から全国的政治課題へ広げた。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-abe-1854-treaty",
+      "personId": "abe",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1854-treaty",
+      "displayName": "阿部正弘",
+      "role": "老中首座",
+      "factionId": "bakufu",
+      "stance": "和親条約を締結し、海軍伝習・洋学・造船などの体制整備を進める。",
+      "importance": "開国後の制度改革を始動させた。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-ii-1858-ansei",
+      "personId": "ii",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "井伊直弼",
+      "role": "大老・彦根藩主",
+      "factionId": "bakufu",
+      "stance": "無勅許で通商条約を調印し、家茂擁立と反対派処分を進める。",
+      "importance": "幕府の意思決定を集中的に主導した。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-ii-1860-sakurada",
+      "personId": "ii",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "井伊直弼",
+      "role": "大老（桜田門外で死去）",
+      "factionId": "bakufu",
+      "stance": "安政の大獄への反発を受け、水戸浪士らに襲撃される。",
+      "importance": "その死が幕府の統制力低下を象徴した。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-iemochi-1858-ansei",
+      "personId": "iemochi",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "徳川家茂",
+      "role": "14代将軍",
+      "factionId": "bakufu",
+      "stance": "紀州徳川家から将軍となり、井伊直弼の政策下で幕府の正統性を担う。",
+      "importance": "将軍継嗣争いで一橋慶喜に勝った南紀派の候補。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-iemochi-1860-sakurada",
+      "personId": "iemochi",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "徳川家茂",
+      "role": "14代将軍",
+      "factionId": "bakufu",
+      "stance": "井伊死後、公武合体を進めるため皇女和宮との婚姻へ向かう。",
+      "importance": "幕府と朝廷の関係修復を象徴する存在。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-iemochi-1862-bunkyu",
+      "personId": "iemochi",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "徳川家茂",
+      "role": "14代将軍",
+      "factionId": "bakufu",
+      "stance": "文久の改革を受け入れ、翌年の将軍上洛に備える。",
+      "importance": "実権は慶喜・春嶽ら改革職にも分散した。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-iemochi-1863-joi",
+      "personId": "iemochi",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "displayName": "徳川家茂",
+      "role": "14代将軍・上洛中",
+      "factionId": "bakufu",
+      "stance": "朝廷から攘夷実行を迫られ、幕府として期限を約束する。",
+      "importance": "将軍として約230年ぶりに上洛し、朝廷の政治力上昇を示した。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-iemochi-1864-kinmon",
+      "personId": "iemochi",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1866-satcho",
+      "displayName": "徳川家茂",
+      "role": "14代将軍",
+      "factionId": "bakufu",
+      "stance": "禁門の変後、第一次長州征討を命じる。",
+      "importance": "諸藩を動員する幕府権力がなお機能していた。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-iemochi-1866-expedition",
+      "personId": "iemochi",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "displayName": "徳川家茂",
+      "role": "14代将軍（大坂で死去）",
+      "factionId": "bakufu",
+      "stance": "第二次長州征討の途上、大坂城で病死する。",
+      "importance": "将軍死去が征討継続を困難にし、慶喜継承を招いた。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yoshinobu-1858-ansei",
+      "personId": "yoshinobu",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "一橋慶喜",
+      "role": "一橋徳川家当主・将軍継嗣候補",
+      "factionId": "bakufu",
+      "stance": "一橋派から将軍候補に推されるが、家茂に敗れ謹慎処分を受ける。",
+      "importance": "雄藩参加型幕政改革を求める勢力の焦点。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_modern_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yoshinobu-1860-sakurada",
+      "personId": "yoshinobu",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "一橋慶喜",
+      "role": "謹慎中",
+      "factionId": "bakufu",
+      "stance": "安政の大獄による政治活動制限が続く。",
+      "importance": "一橋派の後退を示す。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_modern_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yoshinobu-1862-bunkyu",
+      "personId": "yoshinobu",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "一橋慶喜",
+      "role": "将軍後見職",
+      "factionId": "bakufu",
+      "stance": "文久の改革で幕政へ復帰し、家茂を補佐して朝廷対応を担う。",
+      "importance": "京都・幕府間の調整を担う改革派の中心。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_modern_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yoshinobu-1863-joi",
+      "personId": "yoshinobu",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "displayName": "一橋慶喜",
+      "role": "将軍後見職",
+      "factionId": "bakufu",
+      "stance": "攘夷実行を求める朝廷と、実行困難な幕府の間で対応する。",
+      "importance": "京都政局で幕府を代表する人物となる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_modern_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yoshinobu-1863-aug18",
+      "personId": "yoshinobu",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "displayName": "一橋慶喜",
+      "role": "将軍後見職",
+      "factionId": "bakufu",
+      "stance": "長州系急進派の排除後、朝廷と幕府の協調維持を図る。",
+      "importance": "長州とは対立しつつ、薩摩・会津とも常に同じ構想ではなかった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_modern_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yoshinobu-1864-kinmon",
+      "personId": "yoshinobu",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1866-satcho",
+      "displayName": "一橋慶喜",
+      "role": "禁裏御守衛総督・摂海防禦指揮",
+      "factionId": "bakufu",
+      "stance": "禁門の変で京都防衛を指揮し、長州処分を進める。",
+      "importance": "将軍就任前から幕府の京都軍事責任を担った。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_modern_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yoshinobu-1866-expedition",
+      "personId": "yoshinobu",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "displayName": "徳川慶喜",
+      "role": "15代将軍",
+      "factionId": "bakufu",
+      "stance": "家茂死後に将軍となり、フランス式軍制など幕府再建を試みる。",
+      "importance": "従来型幕府を改革しつつ存続させる最後の試み。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_modern_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yoshinobu-1867-taisei",
+      "personId": "yoshinobu",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "徳川慶喜",
+      "role": "15代将軍・大政奉還上表",
+      "factionId": "bakufu",
+      "stance": "政権を朝廷へ返上し、徳川家を含む新体制での主導権を狙う。",
+      "importance": "大政奉還は幕府廃止を先取りする高度な政治戦略でもあった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_modern_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yoshinobu-1868-toba",
+      "personId": "yoshinobu",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "徳川慶喜",
+      "role": "前将軍・旧幕府勢力の中心",
+      "factionId": "former-bakufu",
+      "stance": "鳥羽・伏見敗戦後、大坂から江戸へ退き、恭順へ転じる。",
+      "importance": "抗戦継続を避けた判断が旧幕府軍を分裂させた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_modern_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yoshinobu-1868-edo",
+      "personId": "yoshinobu",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "徳川慶喜",
+      "role": "寛永寺で謹慎",
+      "factionId": "former-bakufu",
+      "stance": "江戸総攻撃を避けるため恭順姿勢を示し、徳川家存続交渉の対象となる。",
+      "importance": "勝・山岡らの交渉を成立させる前提となった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_modern_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yoshinobu-1868-tohoku",
+      "personId": "yoshinobu",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "徳川慶喜",
+      "role": "水戸・駿府で謹慎",
+      "factionId": "former-bakufu",
+      "stance": "東北戦争には直接参加せず、徳川家は駿府へ移される。",
+      "importance": "旧幕府側の諸戦線と慶喜本人の意思は一致していなかった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_modern_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-katsu-1853-blackships",
+      "personId": "katsu",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1853-blackships",
+      "displayName": "勝麟太郎",
+      "role": "幕臣・蘭学修業中",
+      "factionId": "bakufu",
+      "stance": "海防意見書を提出し、西洋式海軍の必要性を説く。",
+      "importance": "身分の低い幕臣にも政策登用の機会が開かれた例。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-katsu-1854-treaty",
+      "personId": "katsu",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1860-sakurada",
+      "displayName": "勝麟太郎",
+      "role": "幕臣",
+      "factionId": "bakufu",
+      "stance": "開国後の海軍建設構想で評価され、長崎海軍伝習へ進む。",
+      "importance": "幕府海軍人材の育成を象徴する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-katsu-1862-bunkyu",
+      "personId": "katsu",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1863-aug18",
+      "displayName": "勝海舟",
+      "role": "軍艦奉行並",
+      "factionId": "bakufu",
+      "stance": "神戸海軍操練所構想を進め、藩を越えた海軍人材を育てる。",
+      "importance": "坂本龍馬らを海軍・交易構想へ導いた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-katsu-1864-kinmon",
+      "personId": "katsu",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1866-expedition",
+      "displayName": "勝海舟",
+      "role": "軍艦奉行",
+      "factionId": "bakufu",
+      "stance": "海軍操練所への尊攘派参加を疑われ、幕府内で立場を弱める。",
+      "importance": "幕府改革機関も京都政局の影響を受けた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-katsu-1867-taisei",
+      "personId": "katsu",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "勝海舟",
+      "role": "陸軍総裁など幕府重職",
+      "factionId": "bakufu",
+      "stance": "幕府軍制に関わりながら、内戦回避の可能性を探る。",
+      "importance": "旧幕府の軍事力と現実的な和平判断を併せ持つ。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-katsu-1868-toba",
+      "personId": "katsu",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "勝海舟",
+      "role": "陸軍総裁",
+      "factionId": "former-bakufu",
+      "stance": "慶喜の恭順を受け、江戸の防衛と和平交渉を担う。",
+      "importance": "旧幕府側の交渉責任者となる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-katsu-1868-edo",
+      "personId": "katsu",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-tohoku",
+      "displayName": "勝海舟",
+      "role": "旧幕府側交渉責任者",
+      "factionId": "former-bakufu",
+      "stance": "西郷隆盛と江戸城引き渡し条件を交渉し、市街戦を回避する。",
+      "importance": "江戸無血開城の中心人物。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yamaoka-1868-toba",
+      "personId": "yamaoka",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "山岡鉄太郎",
+      "role": "幕臣・精鋭隊頭",
+      "factionId": "former-bakufu",
+      "stance": "慶喜の恭順を伝える使者として新政府軍へ向かう。",
+      "importance": "勝・西郷会談以前の条件調整を行った。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yamaoka-1868-edo",
+      "personId": "yamaoka",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "山岡鉄舟",
+      "role": "旧幕府側使者",
+      "factionId": "former-bakufu",
+      "stance": "駿府で西郷と会談し、徳川家処分・江戸開城の交渉基盤を作る。",
+      "importance": "無血開城を一回の会談だけで説明できないことを示す人物。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-enomoto-1866-expedition",
+      "personId": "enomoto",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "displayName": "榎本釜次郎",
+      "role": "幕府海軍・軍艦奉行",
+      "factionId": "bakufu",
+      "stance": "オランダ留学の知識を生かし、幕府海軍の近代化を担う。",
+      "importance": "幕府が保有する近代海軍の専門家。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-enomoto-1867-taisei",
+      "personId": "enomoto",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "榎本武揚",
+      "role": "海軍副総裁",
+      "factionId": "bakufu",
+      "stance": "政権返上後も幕府海軍の指揮と処遇問題に直面する。",
+      "importance": "徳川の政権返上と軍艦の帰属が別問題だったことを示す。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-enomoto-1868-toba",
+      "personId": "enomoto",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "榎本武揚",
+      "role": "旧幕府海軍副総裁",
+      "factionId": "former-bakufu",
+      "stance": "慶喜を大坂から江戸へ運び、艦隊を維持する。",
+      "importance": "旧幕府側がなお強力な海軍を保持していた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-enomoto-1868-edo",
+      "personId": "enomoto",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "榎本武揚",
+      "role": "旧幕府海軍指揮官",
+      "factionId": "former-bakufu",
+      "stance": "軍艦引き渡しに抵抗し、徳川家臣を率いる新天地を模索する。",
+      "importance": "江戸開城後も旧幕府の軍事抵抗が続く理由の一つ。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-enomoto-1868-tohoku",
+      "personId": "enomoto",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "榎本武揚",
+      "role": "旧幕府艦隊司令",
+      "factionId": "former-bakufu",
+      "stance": "艦隊を率いて奥羽諸藩を経由し、蝦夷地へ向かう。",
+      "importance": "東北戦争と箱館戦争を海上でつなぐ。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-enomoto-1869-hakodate",
+      "personId": "enomoto",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "displayName": "榎本武揚",
+      "role": "箱館旧幕府軍政権総裁",
+      "factionId": "former-bakufu",
+      "stance": "五稜郭を拠点に抵抗するが、新政府軍へ降伏する。",
+      "importance": "戊辰戦争最後の旧幕府側指導者。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-nariaki-1853-blackships",
+      "personId": "nariaki",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1853-blackships",
+      "displayName": "徳川斉昭",
+      "role": "前水戸藩主・海防参与",
+      "factionId": "mito",
+      "stance": "強い海防論を唱え、幕府の対外政策へ関与する。",
+      "importance": "外様・親藩大名を幕政へ参加させる阿部政権の象徴。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-nariaki-1854-treaty",
+      "personId": "nariaki",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1854-treaty",
+      "displayName": "徳川斉昭",
+      "role": "海防参与",
+      "factionId": "mito",
+      "stance": "開港に批判的な立場から海防強化と軍備拡充を求める。",
+      "importance": "条約反対論と海防論の有力な発信者。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-nariaki-1858-ansei",
+      "personId": "nariaki",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "徳川斉昭",
+      "role": "前水戸藩主・一橋派",
+      "factionId": "mito",
+      "stance": "実子の一橋慶喜を将軍継嗣に推し、井伊直弼と対立する。",
+      "importance": "将軍継嗣・条約反対派を代表する大名。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-nariaki-1860-sakurada",
+      "personId": "nariaki",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "徳川斉昭",
+      "role": "謹慎中（同年死去）",
+      "factionId": "mito",
+      "stance": "安政の大獄で処分を受けた一橋派の象徴となる。",
+      "importance": "水戸藩内外の尊王攘夷運動へ思想的影響を残した。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-shungaku-1858-ansei",
+      "personId": "shungaku",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "松平春嶽",
+      "role": "前越前福井藩主・一橋派",
+      "factionId": "bakufu",
+      "stance": "一橋慶喜を将軍継嗣に推し、雄藩参加型の幕政改革を主張する。",
+      "importance": "一橋派を代表する開明的大名。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-shungaku-1860-sakurada",
+      "personId": "shungaku",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "松平春嶽",
+      "role": "謹慎中",
+      "factionId": "bakufu",
+      "stance": "安政の大獄による処分を受けている。",
+      "importance": "幕府内改革派が抑え込まれた状況を示す。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-shungaku-1862-bunkyu",
+      "personId": "shungaku",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "松平春嶽",
+      "role": "政事総裁職",
+      "factionId": "bakufu",
+      "stance": "慶喜とともに文久の改革を進め、幕府と朝廷・雄藩の調整を図る。",
+      "importance": "幕府の意思決定へ雄藩大名が参加する制度実験。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-shungaku-1863-joi",
+      "personId": "shungaku",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1866-expedition",
+      "displayName": "松平春嶽",
+      "role": "前政事総裁職",
+      "factionId": "bakufu",
+      "stance": "攘夷実行の困難と公武合体の維持に苦慮する。",
+      "importance": "幕府改革派も朝廷の攘夷圧力で身動きが難しくなった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-shungaku-1867-taisei",
+      "personId": "shungaku",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "松平春嶽",
+      "role": "越前藩主経験者・政局調整者",
+      "factionId": "bakufu",
+      "stance": "大政奉還後の諸侯会議型政権を支持し、徳川家を含む再編を模索する。",
+      "importance": "倒幕・佐幕の二択ではない第三の政権構想を持つ。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-shungaku-1868-toba",
+      "personId": "shungaku",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "松平春嶽",
+      "role": "新政府議定",
+      "factionId": "new-government",
+      "stance": "王政復古後、新政府内部で徳川慶喜の処遇をめぐる調整に関わる。",
+      "importance": "旧幕府改革派が新政府へ参加した例。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-shungaku-1868-edo",
+      "personId": "shungaku",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "松平春嶽",
+      "role": "新政府議定",
+      "factionId": "new-government",
+      "stance": "徳川家の処分と政権移行に関わる。",
+      "importance": "政権交代は旧幕府系人材の全面排除ではなかった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-sanai-1858-ansei",
+      "personId": "sanai",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "橋本左内",
+      "role": "福井藩士・松平春嶽側近",
+      "factionId": "bakufu",
+      "stance": "一橋慶喜擁立のため諸大名・公家間を奔走し、開国・人材登用を構想する。",
+      "importance": "藩士レベルの政策実務家が全国政局を動かした例。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-sanai-1860-sakurada",
+      "personId": "sanai",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "橋本左内",
+      "role": "故人（1859年刑死）",
+      "factionId": "bakufu",
+      "stance": "安政の大獄による刑死が改革派へ衝撃を与える。",
+      "importance": "幕政改革の人材損失を象徴する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-nariakira-1853-blackships",
+      "personId": "nariakira",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1853-blackships",
+      "displayName": "島津斉彬",
+      "role": "薩摩藩主",
+      "factionId": "satsuma",
+      "stance": "西洋技術を導入し、海防・産業近代化と幕政改革を構想する。",
+      "importance": "雄藩が国政へ積極関与する流れを代表する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "archives_timeline"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-nariakira-1854-treaty",
+      "personId": "nariakira",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1854-treaty",
+      "displayName": "島津斉彬",
+      "role": "薩摩藩主",
+      "factionId": "satsuma",
+      "stance": "集成館事業、造船、反射炉など藩の近代化を進める。",
+      "importance": "開国後の軍事・産業改革を藩単位で先行させた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "archives_timeline"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-nariakira-1858-ansei",
+      "personId": "nariakira",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "島津斉彬",
+      "role": "薩摩藩主（同年死去）",
+      "factionId": "satsuma",
+      "stance": "一橋慶喜を支持し、率兵上京も構想したが急死する。",
+      "importance": "死によって薩摩の指導体制と西郷らの立場が変化した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "archives_timeline"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-nariakira-1860-sakurada",
+      "personId": "nariakira",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "島津斉彬",
+      "role": "故人",
+      "factionId": "satsuma",
+      "stance": "登用した人材と近代化政策が薩摩藩に残る。",
+      "importance": "斉彬の遺産を誰がどの形で継ぐかが薩摩政局の背景となる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "archives_timeline"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-hisamitsu-1860-sakurada",
+      "personId": "hisamitsu",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "島津久光",
+      "role": "薩摩藩主の父・国父",
+      "factionId": "satsuma",
+      "stance": "藩主忠義を補佐し、薩摩藩政の実権を握る。",
+      "importance": "斉彬死後の薩摩を主導する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-hisamitsu-1862-bunkyu",
+      "personId": "hisamitsu",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "島津久光",
+      "role": "薩摩藩国父",
+      "factionId": "satsuma",
+      "stance": "率兵上京・江戸下向し、公武合体と幕政改革を要求する。",
+      "importance": "寺田屋事件で藩内急進派を鎮圧し、文久の改革を実現した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-hisamitsu-1863-joi",
+      "personId": "hisamitsu",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "displayName": "島津久光",
+      "role": "薩摩藩国父",
+      "factionId": "satsuma",
+      "stance": "生麦事件をめぐる英国との対立に直面し、藩の軍事対応を主導する。",
+      "importance": "薩英戦争後の対英接近・近代化の政治責任者。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-hisamitsu-1863-aug18",
+      "personId": "hisamitsu",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "displayName": "島津久光",
+      "role": "薩摩藩国父",
+      "factionId": "satsuma",
+      "stance": "会津藩・公武合体派公家と連携し、長州系急進派を京都から排除する。",
+      "importance": "薩摩と長州が敵対していた時期の薩摩指導者。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-hisamitsu-1864-kinmon",
+      "personId": "hisamitsu",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "島津久光",
+      "role": "薩摩藩国父",
+      "factionId": "satsuma",
+      "stance": "禁門の変後の長州処分へ関与しつつ、幕府との距離を測る。",
+      "importance": "幕府協力と薩摩独自の国政構想を併存させた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-hisamitsu-1865-choshu",
+      "personId": "hisamitsu",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "島津久光",
+      "role": "薩摩藩国父",
+      "factionId": "satsuma",
+      "stance": "第二次長州征討への全面協力を避け、幕府への不信を強める。",
+      "importance": "薩長接近の背景にある薩摩の政策転換。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-hisamitsu-1866-satcho",
+      "personId": "hisamitsu",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-expedition",
+      "displayName": "島津久光",
+      "role": "薩摩藩国父",
+      "factionId": "satsuma",
+      "stance": "藩として長州との提携を認めつつ、急進的倒幕には慎重さを残す。",
+      "importance": "薩摩藩内にも倒幕の速度をめぐる差があった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-hisamitsu-1867-taisei",
+      "personId": "hisamitsu",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "島津久光",
+      "role": "薩摩藩国父",
+      "factionId": "satsuma",
+      "stance": "徳川主導の新体制を警戒し、王政復古を支持する。",
+      "importance": "薩摩の藩主権力と西郷・大久保ら実務家の関係は単純な上下だけではない。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-hisamitsu-1868-toba",
+      "personId": "hisamitsu",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "島津久光",
+      "role": "薩摩藩国父",
+      "factionId": "new-government",
+      "stance": "薩摩藩を新政府の中核勢力として支える。",
+      "importance": "前線指揮より藩の政治的後ろ盾を担った。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-hisamitsu-1868-edo",
+      "personId": "hisamitsu",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "島津久光",
+      "role": "薩摩藩国父",
+      "factionId": "new-government",
+      "stance": "新政府の政権確立を支持する。",
+      "importance": "薩摩藩内部で明治政権への関与を支えた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-saigo-1853-blackships",
+      "personId": "saigo",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1853-blackships",
+      "displayName": "西郷吉之助",
+      "role": "薩摩藩郡方書役助",
+      "factionId": "satsuma",
+      "stance": "藩の下級役人として農政に携わる。",
+      "importance": "後の著名人も、この時点では中央政局の主要人物ではない。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-saigo-1854-treaty",
+      "personId": "saigo",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1854-treaty",
+      "displayName": "西郷吉之助",
+      "role": "島津斉彬の供役へ",
+      "factionId": "satsuma",
+      "stance": "斉彬に見いだされ、江戸で藩主側近の仕事に入る。",
+      "importance": "藩主の登用が身分を越える政治経路を作った。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-saigo-1858-ansei",
+      "personId": "saigo",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "西郷吉之助",
+      "role": "島津斉彬側近",
+      "factionId": "satsuma",
+      "stance": "斉彬の命を受け、一橋派の公家・大名間連絡に関与する。",
+      "importance": "薩摩と朝廷・雄藩をつなぐ実務を担った。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-saigo-1860-sakurada",
+      "personId": "saigo",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "大島三右衛門",
+      "role": "奄美大島に潜居",
+      "factionId": "satsuma",
+      "stance": "安政の大獄後の情勢から薩摩を離れ、奄美で生活する。",
+      "importance": "中央政局から一時退いていた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-saigo-1862-bunkyu",
+      "personId": "saigo",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "西郷吉之助",
+      "role": "沖永良部島へ遠島",
+      "factionId": "satsuma",
+      "stance": "久光の命に背いたとして処分され、政治の場から外れる。",
+      "importance": "薩摩藩内が一枚岩ではなかったことを示す。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-saigo-1863-joi",
+      "personId": "saigo",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "displayName": "西郷吉之助",
+      "role": "沖永良部島に遠島中",
+      "factionId": "satsuma",
+      "stance": "薩英戦争や京都政局に直接参加していない。",
+      "importance": "後の活躍から当時を逆算しないため重要な時点。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-saigo-1863-aug18",
+      "personId": "saigo",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "displayName": "西郷吉之助",
+      "role": "沖永良部島に遠島中",
+      "factionId": "satsuma",
+      "stance": "八月十八日の政変時も島にあり、薩摩の行動を指揮していない。",
+      "importance": "薩摩の政変は久光・大久保・小松らが担った。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-saigo-1864-kinmon",
+      "personId": "saigo",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "西郷吉之助",
+      "role": "薩摩藩軍賦役",
+      "factionId": "satsuma",
+      "stance": "赦免後に復帰し、禁門の変・長州征討で軍事と交渉を担う。",
+      "importance": "薩摩の軍事・政治実務の中心へ復帰した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-saigo-1865-choshu",
+      "personId": "saigo",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "西郷吉之助",
+      "role": "薩摩藩軍事・国事担当",
+      "factionId": "satsuma",
+      "stance": "長州再征への協力を抑え、長州との接触を進める。",
+      "importance": "敵対から提携への政策転換を実務で担う。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-saigo-1866-satcho",
+      "personId": "saigo",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "displayName": "西郷吉之助",
+      "role": "薩摩藩代表",
+      "factionId": "satsuma",
+      "stance": "木戸孝允と会談し、薩長提携の合意を結ぶ。",
+      "importance": "藩を代表して軍事・政治上の約束を担った。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-saigo-1866-expedition",
+      "personId": "saigo",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "displayName": "西郷吉之助",
+      "role": "薩摩藩軍事責任者",
+      "factionId": "satsuma",
+      "stance": "第二次長州征討への出兵を避け、幕府の失敗を見極める。",
+      "importance": "薩摩の幕府離れを具体化した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-saigo-1867-taisei",
+      "personId": "saigo",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "西郷吉之助",
+      "role": "薩摩藩倒幕派の中心",
+      "factionId": "satsuma",
+      "stance": "大政奉還後も徳川家の政治力排除を求め、王政復古を準備する。",
+      "importance": "平和的政権返上だけでは不十分と考えた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-saigo-1868-toba",
+      "personId": "saigo",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "西郷隆盛",
+      "role": "新政府軍参謀",
+      "factionId": "new-government",
+      "stance": "鳥羽・伏見の戦いと東征軍の軍事・政治指揮を担う。",
+      "importance": "新政府の軍事的勝利を支えた中心人物。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-saigo-1868-edo",
+      "personId": "saigo",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "西郷隆盛",
+      "role": "東征大総督府参謀",
+      "factionId": "new-government",
+      "stance": "勝海舟らと交渉し、江戸城引き渡し条件をまとめる。",
+      "importance": "江戸総攻撃を回避する新政府側責任者。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-saigo-1868-tohoku",
+      "personId": "saigo",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "西郷隆盛",
+      "role": "新政府参謀・薩摩藩指導者",
+      "factionId": "new-government",
+      "stance": "東北戦線全体の政治・軍事方針に関与する。",
+      "importance": "各戦線の現場指揮は板垣・黒田らにも分担された。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-saigo-1869-hakodate",
+      "personId": "saigo",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "displayName": "西郷隆盛",
+      "role": "新政府参与級の指導者",
+      "factionId": "new-government",
+      "stance": "中央政府の軍事・政治運営に関わる。",
+      "importance": "箱館戦線の直接交渉は黒田清隆らが担った。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-okubo-1858-ansei",
+      "personId": "okubo",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "大久保正助",
+      "role": "薩摩藩記録所書役助",
+      "factionId": "satsuma",
+      "stance": "藩内若手と政治活動を進め、久光への接近を図る。",
+      "importance": "斉彬死後の薩摩で新しい政治経路を築く。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-okubo-1860-sakurada",
+      "personId": "okubo",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "大久保一蔵",
+      "role": "島津久光の側近へ",
+      "factionId": "satsuma",
+      "stance": "久光を通じて藩政と中央政局へ関与する。",
+      "importance": "西郷とは異なる経路で薩摩中枢へ上がる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-okubo-1862-bunkyu",
+      "personId": "okubo",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "大久保一蔵",
+      "role": "島津久光側近",
+      "factionId": "satsuma",
+      "stance": "久光の上京・江戸下向と幕政改革を実務面で支える。",
+      "importance": "薩摩の公武合体政策を動かす交渉担当。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-okubo-1863-joi",
+      "personId": "okubo",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "displayName": "大久保一蔵",
+      "role": "薩摩藩国事担当",
+      "factionId": "satsuma",
+      "stance": "対英対応と京都政局の双方を調整する。",
+      "importance": "軍事衝突後の外交・藩政転換を支えた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-okubo-1863-aug18",
+      "personId": "okubo",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "displayName": "大久保一蔵",
+      "role": "薩摩藩国事担当",
+      "factionId": "satsuma",
+      "stance": "会津・公家との連絡を進め、八月十八日の政変に関与する。",
+      "importance": "京都政局における薩摩の実務責任者。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-okubo-1864-kinmon",
+      "personId": "okubo",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "大久保一蔵",
+      "role": "薩摩藩国事担当",
+      "factionId": "satsuma",
+      "stance": "長州処分に関与しながら、幕府との距離と薩摩の構想を調整する。",
+      "importance": "単純な佐幕ではない薩摩独自の判断を担う。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-okubo-1865-choshu",
+      "personId": "okubo",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "大久保一蔵",
+      "role": "薩摩藩国事担当",
+      "factionId": "satsuma",
+      "stance": "幕府の長州再征に慎重姿勢を取り、長州との提携可能性を探る。",
+      "importance": "薩摩の政策転換を藩内外で調整した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-okubo-1866-satcho",
+      "personId": "okubo",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "displayName": "大久保一蔵",
+      "role": "薩摩藩国事担当",
+      "factionId": "satsuma",
+      "stance": "薩長提携を支持し、京都・藩内の政治調整を進める。",
+      "importance": "西郷・小松と異なる実務領域から提携を支えた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-okubo-1866-expedition",
+      "personId": "okubo",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "displayName": "大久保一蔵",
+      "role": "薩摩藩国事担当",
+      "factionId": "satsuma",
+      "stance": "第二次長州征討失敗を受け、幕府に代わる政権構想を強める。",
+      "importance": "倒幕へ向かう政策設計を担う。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-okubo-1867-taisei",
+      "personId": "okubo",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "大久保一蔵",
+      "role": "薩摩藩倒幕派の実務責任者",
+      "factionId": "satsuma",
+      "stance": "岩倉具視らと王政復古の政変を準備し、徳川家の政治力排除を目指す。",
+      "importance": "政変の制度設計・宮中工作を担った。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-okubo-1868-toba",
+      "personId": "okubo",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "大久保利通",
+      "role": "新政府参与",
+      "factionId": "new-government",
+      "stance": "新政府の制度・財政・徳川処分方針をまとめる。",
+      "importance": "軍事前線の西郷に対し中央政治を担う。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-okubo-1868-edo",
+      "personId": "okubo",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "大久保利通",
+      "role": "新政府参与",
+      "factionId": "new-government",
+      "stance": "政権組織と徳川家処分、東京遷都を含む統治再編に関与する。",
+      "importance": "新政府の中央集権化を設計する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-okubo-1868-tohoku",
+      "personId": "okubo",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "大久保利通",
+      "role": "新政府参議級の政策担当",
+      "factionId": "new-government",
+      "stance": "戊辰戦争の継続と新政府の財政・行政運営を支える。",
+      "importance": "戦争と制度構築を同時に進めた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-okubo-1869-hakodate",
+      "personId": "okubo",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "displayName": "大久保利通",
+      "role": "新政府指導者",
+      "factionId": "new-government",
+      "stance": "全国統治の制度整備と旧藩秩序の再編を進める。",
+      "importance": "戦後の中央集権化へ政策の重心を移す。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-komatsu-1862-bunkyu",
+      "personId": "komatsu",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "小松帯刀",
+      "role": "薩摩藩家老",
+      "factionId": "satsuma",
+      "stance": "久光・大久保らと藩政と中央政局の実務を担う。",
+      "importance": "若い家老として藩の公式意思を代表できた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-komatsu-1863-joi",
+      "personId": "komatsu",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "displayName": "小松帯刀",
+      "role": "薩摩藩家老",
+      "factionId": "satsuma",
+      "stance": "薩英戦争後の対英交渉・軍備近代化・貿易を支える。",
+      "importance": "対外戦争を国際協力へ転換する藩政責任者。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-komatsu-1863-aug18",
+      "personId": "komatsu",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "displayName": "小松帯刀",
+      "role": "薩摩藩家老",
+      "factionId": "satsuma",
+      "stance": "京都で公武合体派の政治活動と藩の公式交渉を支える。",
+      "importance": "西郷・大久保の活動を制度上支える立場。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-komatsu-1864-kinmon",
+      "personId": "komatsu",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "小松帯刀",
+      "role": "薩摩藩家老",
+      "factionId": "satsuma",
+      "stance": "禁門の変後の京都政局と長州処分に関与する。",
+      "importance": "薩摩藩の公式責任者として交渉する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-komatsu-1865-choshu",
+      "personId": "komatsu",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "小松帯刀",
+      "role": "薩摩藩家老",
+      "factionId": "satsuma",
+      "stance": "長崎貿易や武器取引を通じ長州との接点を作る。",
+      "importance": "薩長提携を物資面・外交面から準備した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-komatsu-1866-satcho",
+      "personId": "komatsu",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "displayName": "小松帯刀",
+      "role": "薩摩藩家老・京都屋敷責任者",
+      "factionId": "satsuma",
+      "stance": "薩長会談の場と藩としての保証を提供する。",
+      "importance": "提携を私的な志士間の約束ではなく藩間合意にした。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-komatsu-1866-expedition",
+      "personId": "komatsu",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "displayName": "小松帯刀",
+      "role": "薩摩藩家老",
+      "factionId": "satsuma",
+      "stance": "幕府再征への非協力と長州支援を調整する。",
+      "importance": "薩摩の公式政策転換を支える。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-komatsu-1867-taisei",
+      "personId": "komatsu",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "小松帯刀",
+      "role": "薩摩藩家老",
+      "factionId": "satsuma",
+      "stance": "大政奉還後の政権構想と王政復古に関与する。",
+      "importance": "倒幕派の中でも藩政・外交・経済を横断する人物。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-komatsu-1868-toba",
+      "personId": "komatsu",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-tohoku",
+      "displayName": "小松帯刀",
+      "role": "新政府参与",
+      "factionId": "new-government",
+      "stance": "病を抱えながら新政府に参加する。",
+      "importance": "薩摩の藩政責任者が新政府へ移行した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-komatsu-1869-hakodate",
+      "personId": "komatsu",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "displayName": "小松帯刀",
+      "role": "新政府参与経験者・療養中",
+      "factionId": "new-government",
+      "stance": "病気により第一線を退く。",
+      "importance": "維新直後に早世し、西郷・大久保ほど後世の知名度が上がらなかった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kawaji-1858-ansei",
+      "personId": "kawaji",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1860-sakurada",
+      "displayName": "川路正之進",
+      "role": "薩摩藩士",
+      "factionId": "satsuma",
+      "stance": "若手藩士として藩の実務・軍事組織で経験を積む。",
+      "importance": "後世の知名度から当時の地位を過大評価しないことが重要。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kawaji-1862-bunkyu",
+      "personId": "kawaji",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1863-aug18",
+      "displayName": "川路正之進",
+      "role": "薩摩藩士",
+      "factionId": "satsuma",
+      "stance": "久光主導の薩摩藩組織の中で活動する。",
+      "importance": "藩の中央政治参加を支えた多数の実務藩士の一人。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kawaji-1864-kinmon",
+      "personId": "kawaji",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1866-satcho",
+      "displayName": "川路正之進",
+      "role": "薩摩藩兵",
+      "factionId": "satsuma",
+      "stance": "禁門の変で薩摩藩兵として長州軍との戦闘に参加する。",
+      "importance": "幕末の軍事経験を得る転機。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kawaji-1866-expedition",
+      "personId": "kawaji",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1867-taisei",
+      "displayName": "川路正之進",
+      "role": "薩摩藩士・軍事担当",
+      "factionId": "satsuma",
+      "stance": "薩摩藩の軍制整備の中で活動する。",
+      "importance": "薩摩の近代軍事組織を現場で支える。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kawaji-1868-toba",
+      "personId": "kawaji",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-edo",
+      "displayName": "川路利良",
+      "role": "薩摩藩小隊長級・新政府軍",
+      "factionId": "new-government",
+      "stance": "鳥羽・伏見から戊辰戦争の軍事行動に参加する。",
+      "importance": "倒幕指導者ではなく現場軍事実務を担う人物。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kawaji-1868-tohoku",
+      "personId": "kawaji",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "川路利良",
+      "role": "新政府軍薩摩藩兵",
+      "factionId": "new-government",
+      "stance": "東北方面の戦闘・占領実務に関与する。",
+      "importance": "維新後の軍・警察経歴につながる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kawaji-1869-hakodate",
+      "personId": "kawaji",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "displayName": "川路利良",
+      "role": "新政府軍事・行政人材",
+      "factionId": "new-government",
+      "stance": "戊辰戦争後、新政府の軍事・警察組織へ活動領域を移す。",
+      "importance": "幕末人物の経歴が明治国家制度へ接続する例。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kuroda-1864-kinmon",
+      "personId": "kuroda",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1866-satcho",
+      "displayName": "黒田了介",
+      "role": "薩摩藩士・砲術修業",
+      "factionId": "satsuma",
+      "stance": "西洋砲術を学び、藩の軍事近代化へ加わる。",
+      "importance": "後の戊辰戦争参謀だが、まだ若い軍事人材。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kuroda-1866-expedition",
+      "personId": "kuroda",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1867-taisei",
+      "displayName": "黒田了介",
+      "role": "薩摩藩小銃隊指揮官級",
+      "factionId": "satsuma",
+      "stance": "薩摩の軍制整備と長州支援に関わる。",
+      "importance": "近代小銃戦術を担う世代。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kuroda-1868-toba",
+      "personId": "kuroda",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-edo",
+      "displayName": "黒田了介",
+      "role": "新政府軍薩摩隊指揮官",
+      "factionId": "new-government",
+      "stance": "戊辰戦争へ薩摩藩兵を率いて参加する。",
+      "importance": "現場指揮官として新政府軍を支える。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kuroda-1868-tohoku",
+      "personId": "kuroda",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "黒田了介",
+      "role": "北越・会津征討参謀",
+      "factionId": "new-government",
+      "stance": "北越・東北戦線で軍事指揮と交渉を担う。",
+      "importance": "薩摩の若手軍事参謀として台頭する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kuroda-1869-hakodate",
+      "personId": "kuroda",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "displayName": "黒田清隆",
+      "role": "新政府軍参謀",
+      "factionId": "new-government",
+      "stance": "箱館戦争で降伏交渉に関わり、榎本武揚の助命を求める。",
+      "importance": "旧幕府人材の後の登用につながる橋渡しをした。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-sho-in-1853-blackships",
+      "personId": "sho-in",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1853-blackships",
+      "displayName": "吉田寅次郎",
+      "role": "長州藩士・兵学者",
+      "factionId": "choshu",
+      "stance": "黒船を自ら見て、海外事情と海防を直接学ぼうとする。",
+      "importance": "翌年の密航未遂につながる強い知識欲を持つ。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-sho-in-1854-treaty",
+      "personId": "sho-in",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1854-treaty",
+      "displayName": "吉田寅次郎",
+      "role": "長州藩士・密航未遂",
+      "factionId": "choshu",
+      "stance": "下田でペリー艦隊への乗船を試み、失敗して投獄される。",
+      "importance": "海外知識を求める行動が幕府法秩序と衝突した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-sho-in-1858-ansei",
+      "personId": "sho-in",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "吉田松陰",
+      "role": "松下村塾主宰",
+      "factionId": "choshu",
+      "stance": "幕府の条約・政治姿勢を批判し、行動論を急進化させる。",
+      "importance": "高杉・久坂・伊藤らへ思想的影響を与えた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-sho-in-1860-sakurada",
+      "personId": "sho-in",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1864-kinmon",
+      "displayName": "吉田松陰",
+      "role": "故人（1859年刑死）",
+      "factionId": "choshu",
+      "stance": "刑死が門下生の反幕府感情を強める。",
+      "importance": "死後も長州尊攘運動の精神的中心となる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-sho-in-1865-choshu",
+      "personId": "sho-in",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "吉田松陰",
+      "role": "故人・松下村塾の師",
+      "factionId": "choshu",
+      "stance": "門下生が藩政改革と軍制再編を担う。",
+      "importance": "思想が異なる実務・軍事路線へ継承された。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kido-1858-ansei",
+      "personId": "kido",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1860-sakurada",
+      "displayName": "桂小五郎",
+      "role": "長州藩士・江戸藩邸勤務",
+      "factionId": "choshu",
+      "stance": "剣術・海防を学び、藩の対外危機対応に関わる。",
+      "importance": "後の指導者だが、まだ若手実務藩士。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kido-1862-bunkyu",
+      "personId": "kido",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "桂小五郎",
+      "role": "長州藩京都政務担当",
+      "factionId": "choshu",
+      "stance": "朝廷・諸藩との交渉を担い、尊王攘夷政策を進める。",
+      "importance": "長州の政治実務を代表する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kido-1863-joi",
+      "personId": "kido",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "displayName": "桂小五郎",
+      "role": "長州藩京都政務担当",
+      "factionId": "choshu",
+      "stance": "攘夷実行と京都工作を支えるが、無計画な軍事行動には慎重。",
+      "importance": "長州内部にも手法の違いがあった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kido-1863-aug18",
+      "personId": "kido",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "displayName": "桂小五郎",
+      "role": "京都を追われた長州藩士",
+      "factionId": "choshu",
+      "stance": "政変で長州勢力が排除され、藩論調整と復帰策を探る。",
+      "importance": "京都での政治基盤を失う。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kido-1864-kinmon",
+      "personId": "kido",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "桂小五郎",
+      "role": "潜伏中",
+      "factionId": "choshu",
+      "stance": "禁門の変後、但馬などで潜伏し生き残る。",
+      "importance": "急進的上京論と距離を取り、後の藩政再建に戻る。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kido-1865-choshu",
+      "personId": "kido",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "桂小五郎",
+      "role": "長州藩改革派指導者",
+      "factionId": "choshu",
+      "stance": "高杉らの藩政転換後、政治・外交の中心へ復帰する。",
+      "importance": "軍事指揮とは別に藩の政治統合を担う。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kido-1866-satcho",
+      "personId": "kido",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "displayName": "桂小五郎",
+      "role": "長州藩代表",
+      "factionId": "choshu",
+      "stance": "西郷らと会談し、薩長提携の条件を確認する。",
+      "importance": "長州の名誉回復と対幕府方針を藩代表として交渉した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kido-1866-expedition",
+      "personId": "kido",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "displayName": "桂小五郎",
+      "role": "長州藩政指導者",
+      "factionId": "choshu",
+      "stance": "第二次長州征討で藩の政治・外交・軍事連携を統括する。",
+      "importance": "長州が幕府軍を退ける政権運営を支えた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kido-1867-taisei",
+      "personId": "kido",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "木戸孝允",
+      "role": "長州藩倒幕派指導者",
+      "factionId": "choshu",
+      "stance": "薩摩・岩倉らと徳川政治力を排除する新政権を構想する。",
+      "importance": "桂小五郎から木戸孝允へ改名し、藩代表政治家となる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kido-1868-toba",
+      "personId": "kido",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "木戸孝允",
+      "role": "新政府参与",
+      "factionId": "new-government",
+      "stance": "新政府の制度設計と長州藩の軍事動員を担う。",
+      "importance": "軍事前線と中央政府を結ぶ。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kido-1868-edo",
+      "personId": "kido",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "木戸孝允",
+      "role": "新政府参与",
+      "factionId": "new-government",
+      "stance": "徳川処分・政体整備に関与する。",
+      "importance": "薩摩と協力しつつ新政府内で独自意見を持つ。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kido-1868-tohoku",
+      "personId": "kido",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "木戸孝允",
+      "role": "新政府指導者",
+      "factionId": "new-government",
+      "stance": "戊辰戦争と制度改革を並行して進める。",
+      "importance": "長州人材の中央政府登用を進める。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kido-1869-hakodate",
+      "personId": "kido",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "displayName": "木戸孝允",
+      "role": "新政府指導者",
+      "factionId": "new-government",
+      "stance": "版籍奉還など藩体制再編へ取り組む。",
+      "importance": "戦争終結後の政治改革へ重心を移す。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-takasugi-1858-ansei",
+      "personId": "takasugi",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1860-sakurada",
+      "displayName": "高杉晋作",
+      "role": "松下村塾門下・長州藩士",
+      "factionId": "choshu",
+      "stance": "吉田松陰に学び、若手尊攘派として成長する。",
+      "importance": "まだ藩政の中心ではない。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-takasugi-1862-bunkyu",
+      "personId": "takasugi",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "高杉晋作",
+      "role": "長州藩士・上海渡航後",
+      "factionId": "choshu",
+      "stance": "上海で列強支配を見て、軍事近代化の必要性を認識する。",
+      "importance": "攘夷と西洋技術導入を同時に考える。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-takasugi-1863-joi",
+      "personId": "takasugi",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "displayName": "高杉晋作",
+      "role": "奇兵隊創設者",
+      "factionId": "choshu",
+      "stance": "下関戦の敗北後、身分を越えた奇兵隊を組織する。",
+      "importance": "長州軍制改革の出発点。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-takasugi-1864-kinmon",
+      "personId": "takasugi",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "高杉晋作",
+      "role": "長州藩士・一時処分",
+      "factionId": "choshu",
+      "stance": "禁門の変後の藩内混乱で政治的に後退する。",
+      "importance": "藩が恭順派へ傾く中で再起を準備する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-takasugi-1865-choshu",
+      "personId": "takasugi",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "高杉晋作",
+      "role": "諸隊改革派指導者",
+      "factionId": "choshu",
+      "stance": "功山寺挙兵から藩内保守派を退け、改革派政権を成立させる。",
+      "importance": "長州が第二次征討へ抗戦できる体制を作った。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-takasugi-1866-satcho",
+      "personId": "takasugi",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "displayName": "高杉晋作",
+      "role": "長州藩軍事指導者",
+      "factionId": "choshu",
+      "stance": "薩長提携を背景に海軍・諸隊を整備する。",
+      "importance": "長州の軍事力を実戦体制へ高める。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-takasugi-1866-expedition",
+      "personId": "takasugi",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "displayName": "高杉晋作",
+      "role": "長州藩海軍・諸隊指導者",
+      "factionId": "choshu",
+      "stance": "小倉口などで幕府軍と戦い、長州側勝利へ貢献する。",
+      "importance": "近代化軍制の成果を示した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-takasugi-1867-taisei",
+      "personId": "takasugi",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "高杉晋作",
+      "role": "故人（1867年死去）",
+      "factionId": "choshu",
+      "stance": "第二次長州征討後に病死する。",
+      "importance": "倒幕・維新の最終局面を見ずに死去した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kusaka-1858-ansei",
+      "personId": "kusaka",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1860-sakurada",
+      "displayName": "久坂玄瑞",
+      "role": "松下村塾門下・長州藩士",
+      "factionId": "choshu",
+      "stance": "吉田松陰の影響を受け、尊王攘夷運動へ進む。",
+      "importance": "若い門下生の指導的存在。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kusaka-1862-bunkyu",
+      "personId": "kusaka",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "久坂玄瑞",
+      "role": "長州藩尊攘派",
+      "factionId": "choshu",
+      "stance": "京都で攘夷実行と朝廷工作を進める。",
+      "importance": "長州急進派を代表する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kusaka-1863-joi",
+      "personId": "kusaka",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "displayName": "久坂玄瑞",
+      "role": "長州藩尊攘派指導者",
+      "factionId": "choshu",
+      "stance": "攘夷実行を推進し、京都で長州藩の影響力を強める。",
+      "importance": "朝廷の攘夷方針を藩の行動へ結びつけた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kusaka-1863-aug18",
+      "personId": "kusaka",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "displayName": "久坂玄瑞",
+      "role": "京都を追われた長州尊攘派",
+      "factionId": "choshu",
+      "stance": "政変で追放され、長州の京都復帰を主張する。",
+      "importance": "失地回復を急ぐ上京論の中心。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kusaka-1864-kinmon",
+      "personId": "kusaka",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "久坂玄瑞",
+      "role": "禁門の変参加・死去",
+      "factionId": "choshu",
+      "stance": "長州軍の上京に参加し、敗北後に自刃する。",
+      "importance": "急進派の大きな人的損失。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kusaka-1865-choshu",
+      "personId": "kusaka",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "久坂玄瑞",
+      "role": "故人",
+      "factionId": "choshu",
+      "stance": "死後、長州尊攘派の象徴となる。",
+      "importance": "高杉・木戸らの再建路線とは異なる最期を迎えた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-ito-1858-ansei",
+      "personId": "ito",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "伊藤俊輔",
+      "role": "長州藩士・松下村塾に学ぶ",
+      "factionId": "choshu",
+      "stance": "尊王攘夷運動へ参加する若手藩士。",
+      "importance": "後の首相だが、この時点では下級藩士。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-ito-1863-joi",
+      "personId": "ito",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "displayName": "伊藤俊輔",
+      "role": "長州五傑として英国留学",
+      "factionId": "choshu",
+      "stance": "密航して英国へ渡り、西洋の国力と技術を学ぶ。",
+      "importance": "攘夷の不可能性を海外で認識する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-ito-1864-kinmon",
+      "personId": "ito",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "伊藤俊輔",
+      "role": "英国から帰国・和平工作",
+      "factionId": "choshu",
+      "stance": "下関戦争を避けるため帰国し、列強との交渉を試みる。",
+      "importance": "尊攘派から現実的開国・近代化路線へ転換する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-ito-1865-choshu",
+      "personId": "ito",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1866-satcho",
+      "displayName": "伊藤俊輔",
+      "role": "長州藩改革派実務者",
+      "factionId": "choshu",
+      "stance": "高杉らを支え、軍制・外交・藩政改革に関わる。",
+      "importance": "若手実務官僚として台頭する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-ito-1866-expedition",
+      "personId": "ito",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1867-taisei",
+      "displayName": "伊藤俊輔",
+      "role": "長州藩軍事・外交実務",
+      "factionId": "choshu",
+      "stance": "第二次長州征討で改革派政権を支える。",
+      "importance": "戦争を支える行政・外交人材。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-ito-1868-toba",
+      "personId": "ito",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-tohoku",
+      "displayName": "伊藤博文",
+      "role": "新政府参与級実務者",
+      "factionId": "new-government",
+      "stance": "新政府の外交・制度実務へ参加する。",
+      "importance": "若手長州人材が新国家官僚へ移行する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-ito-1869-hakodate",
+      "personId": "ito",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "displayName": "伊藤博文",
+      "role": "新政府官僚",
+      "factionId": "new-government",
+      "stance": "外交・財政・制度整備を担う。",
+      "importance": "幕末の志士から明治官僚への転換を示す。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-inoue-1863-joi",
+      "personId": "inoue",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "displayName": "井上聞多",
+      "role": "長州五傑として英国留学",
+      "factionId": "choshu",
+      "stance": "攘夷派として渡英するが、西洋の国力を知り開国論へ転じる。",
+      "importance": "海外経験が藩の政策転換へ直結した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-inoue-1864-kinmon",
+      "personId": "inoue",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "井上聞多",
+      "role": "帰国・開国派長州藩士",
+      "factionId": "choshu",
+      "stance": "下関で列強との和平を主張し、藩内攘夷派と衝突する。",
+      "importance": "襲撃で重傷を負いながら開国・近代化を訴えた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-inoue-1865-choshu",
+      "personId": "inoue",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1866-satcho",
+      "displayName": "井上聞多",
+      "role": "長州藩改革派実務者",
+      "factionId": "choshu",
+      "stance": "高杉・木戸らと藩政改革、武器調達、財政を支える。",
+      "importance": "戦争を支える経済・調達能力を担った。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-inoue-1866-expedition",
+      "personId": "inoue",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1867-taisei",
+      "displayName": "井上聞多",
+      "role": "長州藩財政・外交担当",
+      "factionId": "choshu",
+      "stance": "第二次長州征討の物資・外交面を支える。",
+      "importance": "軍事勝利の背後にある藩政実務。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-inoue-1868-toba",
+      "personId": "inoue",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-tohoku",
+      "displayName": "井上馨",
+      "role": "新政府実務者",
+      "factionId": "new-government",
+      "stance": "新政府の財政・外交へ参加する。",
+      "importance": "長州の開国派が明治政府官僚へ転換した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-inoue-1869-hakodate",
+      "personId": "inoue",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "displayName": "井上馨",
+      "role": "新政府官僚",
+      "factionId": "new-government",
+      "stance": "造幣・財政など近代国家実務へ移る。",
+      "importance": "戦争後の制度構築を担う。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-omura-1864-kinmon",
+      "personId": "omura",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "村田蔵六",
+      "role": "長州藩軍事顧問",
+      "factionId": "choshu",
+      "stance": "禁門の変後、藩の軍制・防衛改革へ本格的に関与する。",
+      "importance": "医学・蘭学から軍事専門家へ役割を広げた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-omura-1865-choshu",
+      "personId": "omura",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1866-satcho",
+      "displayName": "村田蔵六",
+      "role": "長州藩軍制改革責任者",
+      "factionId": "choshu",
+      "stance": "藩兵・諸隊の編成、訓練、指揮体系を整える。",
+      "importance": "第二次長州征討に備える近代軍制を設計した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-omura-1866-expedition",
+      "personId": "omura",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1867-taisei",
+      "displayName": "大村益次郎",
+      "role": "長州藩軍事指導者",
+      "factionId": "choshu",
+      "stance": "各戦線の作戦・兵站を統括し、幕府軍への勝利を支える。",
+      "importance": "近代的指揮と兵站の有効性を示した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-omura-1868-toba",
+      "personId": "omura",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "大村益次郎",
+      "role": "新政府軍軍事官僚",
+      "factionId": "new-government",
+      "stance": "新政府の軍制・作戦立案へ参加する。",
+      "importance": "藩軍の寄せ集めを統合する制度を担う。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-omura-1868-edo",
+      "personId": "omura",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "大村益次郎",
+      "role": "軍防事務局判事級",
+      "factionId": "new-government",
+      "stance": "上野戦争など関東の軍事作戦を指揮する。",
+      "importance": "江戸開城後の抗戦派鎮圧を担った。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-omura-1868-tohoku",
+      "personId": "omura",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "大村益次郎",
+      "role": "兵部大輔級の軍事指導者",
+      "factionId": "new-government",
+      "stance": "北越・東北戦線を含む新政府軍の作戦と制度を統括する。",
+      "importance": "新政府中央軍制の基礎を作る。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-omura-1869-hakodate",
+      "personId": "omura",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "displayName": "大村益次郎",
+      "role": "新政府軍制責任者",
+      "factionId": "new-government",
+      "stance": "藩兵中心の軍から中央軍への改革を進める。",
+      "importance": "同年襲撃され、翌年の徴兵制を直接見ることなく死去した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yamagata-1864-kinmon",
+      "personId": "yamagata",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "山県狂介",
+      "role": "奇兵隊軍監",
+      "factionId": "choshu",
+      "stance": "長州の諸隊で軍事実務を担う。",
+      "importance": "高杉のカリスマとは別に部隊運営を支える。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yamagata-1865-choshu",
+      "personId": "yamagata",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1866-satcho",
+      "displayName": "山県狂介",
+      "role": "奇兵隊軍監・改革派",
+      "factionId": "choshu",
+      "stance": "藩内戦で改革派側に立ち、諸隊の統制を担う。",
+      "importance": "長州改革派の軍事組織を維持する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yamagata-1866-expedition",
+      "personId": "yamagata",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1867-taisei",
+      "displayName": "山県狂介",
+      "role": "長州藩軍指揮官",
+      "factionId": "choshu",
+      "stance": "小倉口などで幕府軍と戦う。",
+      "importance": "後の陸軍指導者となる実戦経験を得る。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yamagata-1868-toba",
+      "personId": "yamagata",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-edo",
+      "displayName": "山県狂介",
+      "role": "新政府軍長州隊指揮官",
+      "factionId": "new-government",
+      "stance": "戊辰戦争へ長州兵を率いて参加する。",
+      "importance": "藩兵指揮官から中央軍人へ移行する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yamagata-1868-tohoku",
+      "personId": "yamagata",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "山県有朋",
+      "role": "新政府軍参謀級",
+      "factionId": "new-government",
+      "stance": "北越・東北戦線に参加する。",
+      "importance": "新政府の陸軍人材として台頭する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yamagata-1869-hakodate",
+      "personId": "yamagata",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "displayName": "山県有朋",
+      "role": "新政府軍人",
+      "factionId": "new-government",
+      "stance": "戦後の軍制研究・改革へ移る。",
+      "importance": "戊辰戦争経験が後の陸軍制度へつながる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-komei-1858-ansei",
+      "personId": "komei",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "孝明天皇",
+      "role": "天皇",
+      "factionId": "imperial-court",
+      "stance": "無勅許での条約調印を問題視し、強い攘夷意向を示す。",
+      "importance": "朝廷が幕府外交へ本格関与する契機。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-komei-1860-sakurada",
+      "personId": "komei",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "孝明天皇",
+      "role": "天皇",
+      "factionId": "imperial-court",
+      "stance": "幕府との協調を保ちながら攘夷実行を求める。",
+      "importance": "公武合体政策の正統性を左右する。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-komei-1862-bunkyu",
+      "personId": "komei",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "孝明天皇",
+      "role": "天皇",
+      "factionId": "imperial-court",
+      "stance": "攘夷を望みつつ、幕府・有力藩との協調も重視する。",
+      "importance": "京都へ政治の中心が移る中で意思表示の重みが増す。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-komei-1863-joi",
+      "personId": "komei",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "displayName": "孝明天皇",
+      "role": "天皇",
+      "factionId": "imperial-court",
+      "stance": "幕府へ攘夷実行を迫るが、外国との全面戦争を直接指揮する体制はない。",
+      "importance": "朝廷の理念と実務の距離が表面化する。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-komei-1863-aug18",
+      "personId": "komei",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "displayName": "孝明天皇",
+      "role": "天皇",
+      "factionId": "imperial-court",
+      "stance": "長州系急進派への不信を強め、会津・薩摩側を支持する。",
+      "importance": "八月十八日の政変の政治的背景。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-komei-1864-kinmon",
+      "personId": "komei",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "孝明天皇",
+      "role": "天皇",
+      "factionId": "imperial-court",
+      "stance": "禁門の変後、長州を朝敵とする京都秩序を支持する。",
+      "importance": "幕府・会津・薩摩側の行動に朝廷上の根拠を与える。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-komei-1865-choshu",
+      "personId": "komei",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "孝明天皇",
+      "role": "天皇",
+      "factionId": "imperial-court",
+      "stance": "長州処分を求めつつ、幕府の再征と京都秩序を注視する。",
+      "importance": "倒幕勢力にとって孝明天皇の信任は自明ではなかった。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-komei-1866-satcho",
+      "personId": "komei",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "displayName": "孝明天皇",
+      "role": "天皇",
+      "factionId": "imperial-court",
+      "stance": "会津・幕府への信任を保ち、長州の処分解除に慎重。",
+      "importance": "薩長提携は当初から朝廷公認の倒幕同盟ではない。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-komei-1866-expedition",
+      "personId": "komei",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "displayName": "孝明天皇",
+      "role": "天皇（同年末に崩御）",
+      "factionId": "imperial-court",
+      "stance": "幕府・会津と協調する姿勢を保つ。",
+      "importance": "崩御により京都政局の前提が大きく変わる。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-komei-1867-taisei",
+      "personId": "komei",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "孝明天皇",
+      "role": "故人",
+      "factionId": "imperial-court",
+      "stance": "後継の明治天皇の下で、岩倉・薩長が宮中政治を再編する。",
+      "importance": "王政復古前の朝廷と後の新政府を同一視しないため重要。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-meiji-1867-taisei",
+      "personId": "meiji",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "明治天皇",
+      "role": "天皇",
+      "factionId": "imperial-court",
+      "stance": "若年で践祚し、大政奉還後の政権再編の正統性を担う。",
+      "importance": "実務は岩倉・諸藩指導者が担うが、王政復古の中心制度となる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_handwriting",
+          "ndl_modern_timeline"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-meiji-1868-toba",
+      "personId": "meiji",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "明治天皇",
+      "role": "天皇・新政府の君主",
+      "factionId": "new-government",
+      "stance": "王政復古と新政府軍の正統性を象徴する。",
+      "importance": "錦旗・官軍認定が諸藩の態度へ大きく影響した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_handwriting",
+          "ndl_modern_timeline"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-meiji-1868-edo",
+      "personId": "meiji",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "明治天皇",
+      "role": "天皇・新政府の君主",
+      "factionId": "new-government",
+      "stance": "江戸開城後、東幸と東京への政権移動が進む。",
+      "importance": "京都朝廷から全国政府への転換を象徴する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_handwriting",
+          "ndl_modern_timeline"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-meiji-1868-tohoku",
+      "personId": "meiji",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "明治天皇",
+      "role": "天皇・新政府の君主",
+      "factionId": "new-government",
+      "stance": "戊辰戦争と政体整備の正統性を担う。",
+      "importance": "新政府は天皇名義で各藩へ命令を発した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_handwriting",
+          "ndl_modern_timeline"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-meiji-1869-hakodate",
+      "personId": "meiji",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "displayName": "明治天皇",
+      "role": "天皇・明治政府の君主",
+      "factionId": "new-government",
+      "stance": "東京を政治拠点とし、全国統治の制度化が進む。",
+      "importance": "幕末の朝廷が近代国家の君主制へ変化する過程。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_handwriting",
+          "ndl_modern_timeline"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-iwakura-1858-ansei",
+      "personId": "iwakura",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "岩倉具視",
+      "role": "公家",
+      "factionId": "imperial-court",
+      "stance": "条約勅許と公武関係をめぐる朝廷内調整に関与する。",
+      "importance": "朝廷内部の現実的政治実務を担う。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-iwakura-1860-sakurada",
+      "personId": "iwakura",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "岩倉具視",
+      "role": "公家",
+      "factionId": "imperial-court",
+      "stance": "皇女和宮降嫁による公武合体を推進する。",
+      "importance": "婚姻を使う幕府・朝廷関係修復の実務家。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-iwakura-1862-bunkyu",
+      "personId": "iwakura",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1863-joi",
+      "displayName": "岩倉具視",
+      "role": "蟄居・洛外に退く",
+      "factionId": "imperial-court",
+      "stance": "尊攘派から佐幕派と批判され、政治の表舞台を離れる。",
+      "importance": "朝廷内の勢力変化で公家も失脚した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-iwakura-1863-aug18",
+      "personId": "iwakura",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1864-kinmon",
+      "displayName": "岩倉具視",
+      "role": "蟄居中",
+      "factionId": "imperial-court",
+      "stance": "政変を直接主導せず、洛外で情勢を見守る。",
+      "importance": "後の王政復古から過去を逆算しないため重要。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-iwakura-1865-choshu",
+      "personId": "iwakura",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "岩倉具視",
+      "role": "蟄居中・薩摩と接触",
+      "factionId": "imperial-court",
+      "stance": "薩摩藩士らと新政権構想を協議し始める。",
+      "importance": "宮中政治への復帰準備を進める。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-iwakura-1866-satcho",
+      "personId": "iwakura",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-expedition",
+      "displayName": "岩倉具視",
+      "role": "公家・倒幕派と接近",
+      "factionId": "imperial-court",
+      "stance": "薩長の連携と朝廷内の政局転換を結びつける。",
+      "importance": "藩間提携を宮中政変へ接続する役割。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-iwakura-1867-taisei",
+      "personId": "iwakura",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "岩倉具視",
+      "role": "公家・王政復古派",
+      "factionId": "imperial-court",
+      "stance": "大久保らと王政復古の政変を準備し、新政府の三職を構想する。",
+      "importance": "宮中で徳川政治力を排除する中心人物。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-iwakura-1868-toba",
+      "personId": "iwakura",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "岩倉具視",
+      "role": "新政府参与・議定級指導者",
+      "factionId": "new-government",
+      "stance": "新政府の正統性と制度設計を主導する。",
+      "importance": "薩長の軍事力と朝廷の制度を結びつけた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-iwakura-1868-edo",
+      "personId": "iwakura",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-tohoku",
+      "displayName": "岩倉具視",
+      "role": "新政府指導者",
+      "factionId": "new-government",
+      "stance": "東京移転・政体整備・徳川処分へ関与する。",
+      "importance": "宮廷政治家から全国政府の指導者へ変化する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-iwakura-1869-hakodate",
+      "personId": "iwakura",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "displayName": "岩倉具視",
+      "role": "新政府上級指導者",
+      "factionId": "new-government",
+      "stance": "中央政府制度と皇室・公家秩序の再編を進める。",
+      "importance": "王政復古を近代国家制度へ移す役割を担う。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-sanjo-1863-joi",
+      "personId": "sanjo",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "displayName": "三条実美",
+      "role": "尊攘派公家",
+      "factionId": "imperial-court",
+      "stance": "長州藩と連携し、朝廷から攘夷実行を強く求める。",
+      "importance": "公家が藩と結び政治運動を主導した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-sanjo-1863-aug18",
+      "personId": "sanjo",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "displayName": "三条実美",
+      "role": "京都を追放された公家",
+      "factionId": "imperial-court",
+      "stance": "七卿の一人として長州へ下る。",
+      "importance": "政変で朝廷内尊攘派が失脚した象徴。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-sanjo-1864-kinmon",
+      "personId": "sanjo",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1865-choshu",
+      "displayName": "三条実美",
+      "role": "長州・太宰府方面に滞在",
+      "factionId": "imperial-court",
+      "stance": "長州の名誉回復を求めるが京都へ戻れない。",
+      "importance": "長州と朝廷尊攘派の結びつきを維持する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-sanjo-1866-satcho",
+      "personId": "sanjo",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-expedition",
+      "displayName": "三条実美",
+      "role": "追放中の公家",
+      "factionId": "imperial-court",
+      "stance": "薩長提携と長州復権により帰京の可能性が高まる。",
+      "importance": "新政権に必要な朝廷側人材となる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-sanjo-1867-taisei",
+      "personId": "sanjo",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "三条実美",
+      "role": "帰京・王政復古派公家",
+      "factionId": "imperial-court",
+      "stance": "新政府形成へ参加する。",
+      "importance": "尊攘派公家から国家指導者へ移行する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-sanjo-1868-toba",
+      "personId": "sanjo",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-tohoku",
+      "displayName": "三条実美",
+      "role": "新政府副総裁級",
+      "factionId": "new-government",
+      "stance": "新政府の政務と戊辰戦争指令を担う。",
+      "importance": "公家が全国政府の行政責任者となる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-sanjo-1869-hakodate",
+      "personId": "sanjo",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "displayName": "三条実美",
+      "role": "右大臣級の新政府指導者",
+      "factionId": "new-government",
+      "stance": "中央政府の政務を統括する。",
+      "importance": "維新後の太政官政府を代表する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-katamori-1862-bunkyu",
+      "personId": "katamori",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "松平容保",
+      "role": "会津藩主・京都守護職",
+      "factionId": "aizu",
+      "stance": "幕府から京都治安と朝廷警護を命じられる。",
+      "importance": "京都における幕府側の軍事・治安責任者。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-katamori-1863-joi",
+      "personId": "katamori",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "displayName": "松平容保",
+      "role": "京都守護職",
+      "factionId": "aizu",
+      "stance": "孝明天皇の信任を受け、攘夷派浪士と長州勢力を警戒する。",
+      "importance": "幕府より朝廷への忠誠を強く意識する複雑な立場。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-katamori-1863-aug18",
+      "personId": "katamori",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "displayName": "松平容保",
+      "role": "京都守護職",
+      "factionId": "aizu",
+      "stance": "薩摩と連携して長州系急進派を排除する。",
+      "importance": "八月十八日の政変を支えた中心人物。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-katamori-1864-kinmon",
+      "personId": "katamori",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "松平容保",
+      "role": "京都守護職",
+      "factionId": "aizu",
+      "stance": "新選組を指揮下に置き、禁門の変で長州軍に対応する。",
+      "importance": "会津が長州から強く敵視される背景。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-katamori-1865-choshu",
+      "personId": "katamori",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "松平容保",
+      "role": "京都守護職",
+      "factionId": "aizu",
+      "stance": "長州再征と京都秩序維持を支持する。",
+      "importance": "薩摩が幕府から離れる中でも会津は幕府・朝廷協調を維持する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-katamori-1866-satcho",
+      "personId": "katamori",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "displayName": "松平容保",
+      "role": "京都守護職",
+      "factionId": "aizu",
+      "stance": "薩長接近を警戒し、孝明天皇と幕府を支える。",
+      "importance": "薩摩・会津の旧来の連携が崩れていく。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-katamori-1866-expedition",
+      "personId": "katamori",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "displayName": "松平容保",
+      "role": "京都守護職",
+      "factionId": "aizu",
+      "stance": "長州征討失敗後も京都の幕府側秩序を維持する。",
+      "importance": "幕府の軍事的後退と京都守護の負担が会津へ集中する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-katamori-1867-taisei",
+      "personId": "katamori",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "松平容保",
+      "role": "会津藩主・旧幕府側京都軍事責任者",
+      "factionId": "aizu",
+      "stance": "大政奉還後も徳川慶喜を支え、王政復古派と対立する。",
+      "importance": "徳川家を含む新体制を支持し、武力倒幕に反対した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-katamori-1868-toba",
+      "personId": "katamori",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "松平容保",
+      "role": "旧幕府軍会津藩主",
+      "factionId": "former-bakufu",
+      "stance": "鳥羽・伏見敗戦後、慶喜と江戸へ退く。",
+      "importance": "会津は朝敵とされ、藩の存亡問題へ発展する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-katamori-1868-edo",
+      "personId": "katamori",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "松平容保",
+      "role": "会津藩主",
+      "factionId": "former-bakufu",
+      "stance": "会津へ戻り、新政府への謝罪・嘆願と防衛準備を進める。",
+      "importance": "慶喜が恭順しても会津処分問題は解決しなかった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-katamori-1868-tohoku",
+      "personId": "katamori",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "松平容保",
+      "role": "会津藩主・籠城側指導者",
+      "factionId": "former-bakufu",
+      "stance": "鶴ヶ城で新政府軍へ抗戦し、降伏する。",
+      "importance": "奥羽越列藩同盟の争点となった人物。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yodo-1858-ansei",
+      "personId": "yodo",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "山内容堂",
+      "role": "土佐藩主・一橋派",
+      "factionId": "tosa",
+      "stance": "一橋慶喜を将軍継嗣に推し、井伊直弼と対立する。",
+      "importance": "安政の大獄で隠居・謹慎となる雄藩大名。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yodo-1860-sakurada",
+      "personId": "yodo",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "山内容堂",
+      "role": "前土佐藩主",
+      "factionId": "tosa",
+      "stance": "藩政への影響力を保ちながら中央政局の変化をうかがう。",
+      "importance": "藩内尊攘派とは距離を置く。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yodo-1862-bunkyu",
+      "personId": "yodo",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1863-joi",
+      "displayName": "山内容堂",
+      "role": "前土佐藩主",
+      "factionId": "tosa",
+      "stance": "幕政改革に関与しつつ、土佐勤王党など藩内急進派を警戒する。",
+      "importance": "公武合体と藩内尊攘派の緊張を体現する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yodo-1863-aug18",
+      "personId": "yodo",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "displayName": "山内容堂",
+      "role": "土佐藩の実権者",
+      "factionId": "tosa",
+      "stance": "京都政変後、武市半平太ら土佐勤王党を弾圧する。",
+      "importance": "中央政局の変化が藩内権力闘争へ波及した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yodo-1864-kinmon",
+      "personId": "yodo",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1865-choshu",
+      "displayName": "山内容堂",
+      "role": "土佐藩の実権者",
+      "factionId": "tosa",
+      "stance": "幕府・朝廷秩序を重視し、藩内急進派への処分を続ける。",
+      "importance": "土佐は長州型の急進路線を取らなかった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yodo-1866-satcho",
+      "personId": "yodo",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-expedition",
+      "displayName": "山内容堂",
+      "role": "前土佐藩主",
+      "factionId": "tosa",
+      "stance": "幕府存続を前提とする公議政体を模索する。",
+      "importance": "薩長の武力倒幕とは異なる政権移行を求める。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yodo-1867-taisei",
+      "personId": "yodo",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "山内容堂",
+      "role": "前土佐藩主・大政奉還建白者",
+      "factionId": "tosa",
+      "stance": "後藤の建言を採用し、慶喜へ大政奉還を勧める。",
+      "importance": "徳川家を含む平和的政権再編を目指した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yodo-1868-toba",
+      "personId": "yodo",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "山内容堂",
+      "role": "新政府議定",
+      "factionId": "new-government",
+      "stance": "王政復古後も慶喜への過酷な処分に反対する。",
+      "importance": "新政府内部にも徳川処分をめぐる意見差があった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-yodo-1868-edo",
+      "personId": "yodo",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "山内容堂",
+      "role": "新政府議定",
+      "factionId": "new-government",
+      "stance": "政権移行と徳川家存続に関与する。",
+      "importance": "武力倒幕派とは異なる立場から新政府へ参加した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-takechi-1860-sakurada",
+      "personId": "takechi",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "武市半平太",
+      "role": "土佐藩士",
+      "factionId": "tosa",
+      "stance": "尊王攘夷を掲げる藩士の組織化を進める。",
+      "importance": "土佐勤王党結成前夜の中心人物。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-takechi-1862-bunkyu",
+      "personId": "takechi",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "武市半平太",
+      "role": "土佐勤王党盟主",
+      "factionId": "tosa",
+      "stance": "藩論を尊王攘夷へ転換し、京都政局へ参加する。",
+      "importance": "下級藩士組織が藩政へ影響した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-takechi-1863-joi",
+      "personId": "takechi",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "displayName": "武市半平太",
+      "role": "土佐勤王党盟主",
+      "factionId": "tosa",
+      "stance": "京都の尊攘運動と藩内統制を進める。",
+      "importance": "藩主権力との緊張が高まる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-takechi-1863-aug18",
+      "personId": "takechi",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "displayName": "武市半平太",
+      "role": "土佐藩で投獄",
+      "factionId": "tosa",
+      "stance": "政変後、山内容堂による勤王党弾圧を受ける。",
+      "importance": "京都の尊攘派後退が土佐藩内へ波及した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-takechi-1864-kinmon",
+      "personId": "takechi",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "武市半平太",
+      "role": "投獄中",
+      "factionId": "tosa",
+      "stance": "土佐勤王党への取り調べが続く。",
+      "importance": "翌年の切腹へ至る藩内弾圧の過程。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-takechi-1865-choshu",
+      "personId": "takechi",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "武市瑞山",
+      "role": "切腹（1865年）",
+      "factionId": "tosa",
+      "stance": "土佐藩命により切腹する。",
+      "importance": "土佐藩の尊攘運動は長州とは異なる形で抑え込まれた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-ryoma-1860-sakurada",
+      "personId": "ryoma",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "坂本龍馬",
+      "role": "土佐藩士",
+      "factionId": "tosa",
+      "stance": "江戸で剣術修行を重ね、尊攘論の影響を受ける。",
+      "importance": "まだ全国政治の仲介者ではない。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-ryoma-1862-bunkyu",
+      "personId": "ryoma",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "坂本龍馬",
+      "role": "脱藩浪士・勝海舟門下へ",
+      "factionId": "tosa",
+      "stance": "土佐を脱藩し、勝海舟と出会って海軍構想へ関心を移す。",
+      "importance": "排外的攘夷から海軍・交易重視へ変化する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-ryoma-1863-joi",
+      "personId": "ryoma",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "displayName": "坂本龍馬",
+      "role": "神戸海軍操練所関係者",
+      "factionId": "tosa",
+      "stance": "藩を越えた海軍人材の育成へ関わる。",
+      "importance": "まだ薩長提携以前の段階。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-ryoma-1864-kinmon",
+      "personId": "ryoma",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "坂本龍馬",
+      "role": "海軍操練所関係者",
+      "factionId": "tosa",
+      "stance": "禁門の変後、操練所への政治的圧力が強まる中で活動する。",
+      "importance": "幕府機関と脱藩浪士が交わる場にいた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-ryoma-1865-choshu",
+      "personId": "ryoma",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "坂本龍馬",
+      "role": "亀山社中代表",
+      "factionId": "tosa",
+      "stance": "長崎を拠点に交易・海運を行い、薩摩名義で長州へ武器を仲介する。",
+      "importance": "政治提携を物資・商取引で支える。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-ryoma-1866-satcho",
+      "personId": "ryoma",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "displayName": "坂本龍馬",
+      "role": "亀山社中代表・仲介者",
+      "factionId": "tosa",
+      "stance": "薩長会談に関わり、木戸の求めに応じ合意内容を確認する。",
+      "importance": "藩間の不信を埋める第三者的接点。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-ryoma-1866-expedition",
+      "personId": "ryoma",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "displayName": "坂本龍馬",
+      "role": "亀山社中・海運活動",
+      "factionId": "tosa",
+      "stance": "長州の海軍行動や物資輸送を支援する。",
+      "importance": "政治だけでなく海運・武器調達が戦局を支えた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-ryoma-1867-taisei",
+      "personId": "ryoma",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "坂本龍馬",
+      "role": "海援隊長・政権構想者",
+      "factionId": "tosa",
+      "stance": "後藤象二郎と大政奉還・新政府構想を議論し、京都で暗殺される。",
+      "importance": "薩長倒幕と土佐の平和移行論の間をつないだ。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-goto-1865-choshu",
+      "personId": "goto",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "後藤象二郎",
+      "role": "土佐藩参政",
+      "factionId": "tosa",
+      "stance": "藩政改革と開成館事業を進め、海運・貿易へ関与する。",
+      "importance": "土佐藩上層部と脱藩者の接点になりうる立場。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-goto-1866-satcho",
+      "personId": "goto",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-expedition",
+      "displayName": "後藤象二郎",
+      "role": "土佐藩参政",
+      "factionId": "tosa",
+      "stance": "長崎で坂本龍馬らと接触し、土佐藩の新政局参加を模索する。",
+      "importance": "土佐藩の政策を現実的に転換する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-goto-1867-taisei",
+      "personId": "goto",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "後藤象二郎",
+      "role": "土佐藩参政・大政奉還建言者",
+      "factionId": "tosa",
+      "stance": "龍馬らの構想を山内容堂へ進言し、慶喜への建白を進める。",
+      "importance": "個人構想を藩の公式政策へ変換した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-goto-1868-toba",
+      "personId": "goto",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-tohoku",
+      "displayName": "後藤象二郎",
+      "role": "新政府参与",
+      "factionId": "new-government",
+      "stance": "新政府へ参加し、土佐藩の立場を代表する。",
+      "importance": "平和移行論者も戊辰戦争後の政府に入った。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-goto-1869-hakodate",
+      "personId": "goto",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "displayName": "後藤象二郎",
+      "role": "新政府官僚",
+      "factionId": "new-government",
+      "stance": "政府の行政・経済政策に関わる。",
+      "importance": "藩参政から近代官僚へ移行した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-nakaoka-1864-kinmon",
+      "personId": "nakaoka",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "中岡慎太郎",
+      "role": "土佐脱藩志士",
+      "factionId": "tosa",
+      "stance": "長州・薩摩などを往来し、諸藩連携を探る。",
+      "importance": "藩境を越える志士ネットワークを形成する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-nakaoka-1865-choshu",
+      "personId": "nakaoka",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "中岡慎太郎",
+      "role": "薩長連携工作者",
+      "factionId": "tosa",
+      "stance": "長州の再起と薩摩の政策転換をつなぐ活動を進める。",
+      "importance": "龍馬と並ぶ薩長接近の仲介者。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-nakaoka-1866-satcho",
+      "personId": "nakaoka",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "displayName": "中岡慎太郎",
+      "role": "薩長提携仲介者",
+      "factionId": "tosa",
+      "stance": "薩摩・長州双方の人物を結び、倒幕連携を推進する。",
+      "importance": "龍馬より明確に武力倒幕へ傾く。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-nakaoka-1866-expedition",
+      "personId": "nakaoka",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "displayName": "中岡慎太郎",
+      "role": "倒幕派志士",
+      "factionId": "tosa",
+      "stance": "諸藩連携と軍事組織化を進める。",
+      "importance": "藩を越えた陸上軍事組織を構想する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-nakaoka-1867-taisei",
+      "personId": "nakaoka",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "中岡慎太郎",
+      "role": "陸援隊長",
+      "factionId": "tosa",
+      "stance": "武力倒幕を準備し、近江屋で坂本龍馬とともに襲撃され死去する。",
+      "importance": "大政奉還後も武力対決が消えていなかったことを示す。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-itakagi-1865-choshu",
+      "personId": "itakagi",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1866-expedition",
+      "displayName": "乾退助",
+      "role": "土佐藩軍事・藩政担当",
+      "factionId": "tosa",
+      "stance": "土佐勤王党弾圧後の藩政で軍事改革に関わる。",
+      "importance": "武市派とは別の土佐藩上士系人材。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-itakagi-1867-taisei",
+      "personId": "itakagi",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "乾退助",
+      "role": "土佐藩軍事責任者",
+      "factionId": "tosa",
+      "stance": "藩の新政局参加と軍備を支える。",
+      "importance": "後藤の政論と並行して軍事面を担う。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-itakagi-1868-toba",
+      "personId": "itakagi",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "板垣退助",
+      "role": "新政府軍東山道先鋒総督府参謀",
+      "factionId": "new-government",
+      "stance": "土佐藩兵を率いて関東へ進軍する。",
+      "importance": "土佐藩が新政府軍の主要戦力となる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-itakagi-1868-edo",
+      "personId": "itakagi",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "板垣退助",
+      "role": "新政府軍参謀",
+      "factionId": "new-government",
+      "stance": "江戸周辺の旧幕府勢力への対応に関わる。",
+      "importance": "江戸開城後も軍事作戦は継続した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-itakagi-1868-tohoku",
+      "personId": "itakagi",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "板垣退助",
+      "role": "新政府軍参謀・会津方面指揮",
+      "factionId": "new-government",
+      "stance": "東北へ進軍し、会津戦争に参加する。",
+      "importance": "土佐藩の戊辰戦争での役割を代表する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-itakagi-1869-hakodate",
+      "personId": "itakagi",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "displayName": "板垣退助",
+      "role": "新政府官僚・土佐藩指導者",
+      "factionId": "new-government",
+      "stance": "戦後の藩政・政府活動へ移る。",
+      "importance": "後の民権運動以前は軍事・政府人材だった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kondo-1862-bunkyu",
+      "personId": "kondo",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "近藤勇",
+      "role": "天然理心流試衛館主",
+      "factionId": "shinsengumi",
+      "stance": "江戸で道場を運営し、翌年の浪士組参加へ向かう。",
+      "importance": "まだ新選組局長ではない。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kondo-1863-joi",
+      "personId": "kondo",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "displayName": "近藤勇",
+      "role": "壬生浪士組局長級",
+      "factionId": "shinsengumi",
+      "stance": "会津藩預かりとして京都治安へ参加する。",
+      "importance": "浪士組が幕府側治安組織へ変化する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kondo-1863-aug18",
+      "personId": "kondo",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "displayName": "近藤勇",
+      "role": "壬生浪士組局長",
+      "factionId": "shinsengumi",
+      "stance": "会津藩のもとで政変後の京都警備を担う。",
+      "importance": "新選組の名称・組織確立へ向かう。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kondo-1864-kinmon",
+      "personId": "kondo",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "近藤勇",
+      "role": "新選組局長",
+      "factionId": "shinsengumi",
+      "stance": "池田屋事件で尊攘派を襲撃し、禁門の変でも京都警備に参加する。",
+      "importance": "会津・幕府側の実力治安組織を率いる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kondo-1865-choshu",
+      "personId": "kondo",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "近藤勇",
+      "role": "新選組局長",
+      "factionId": "shinsengumi",
+      "stance": "京都で長州系志士・倒幕派の探索を続ける。",
+      "importance": "幕府京都支配の一部を担う。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kondo-1866-satcho",
+      "personId": "kondo",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-expedition",
+      "displayName": "近藤勇",
+      "role": "新選組局長",
+      "factionId": "shinsengumi",
+      "stance": "薩長接近と倒幕派活動を警戒する。",
+      "importance": "京都の勢力関係変化で新選組の敵対対象が広がる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kondo-1867-taisei",
+      "personId": "kondo",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "近藤勇",
+      "role": "幕臣・新選組局長",
+      "factionId": "shinsengumi",
+      "stance": "大政奉還後も旧幕府側軍事組織として京都・大坂に残る。",
+      "importance": "幕府制度返上後も武装組織は存続した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kondo-1868-toba",
+      "personId": "kondo",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "近藤勇",
+      "role": "旧幕府軍新選組局長",
+      "factionId": "former-bakufu",
+      "stance": "鳥羽・伏見で戦い、江戸へ退却する。",
+      "importance": "京都治安組織から内戦部隊へ変化した。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kondo-1868-edo",
+      "personId": "kondo",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "近藤勇",
+      "role": "甲陽鎮撫隊指揮・捕縛",
+      "factionId": "former-bakufu",
+      "stance": "甲州方面で戦うが敗れ、流山で捕縛され処刑される。",
+      "importance": "慶喜の恭順と新選組の抗戦は一致しなかった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-hijikata-1862-bunkyu",
+      "personId": "hijikata",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "土方歳三",
+      "role": "天然理心流門人",
+      "factionId": "shinsengumi",
+      "stance": "近藤勇ら試衛館の仲間と行動する。",
+      "importance": "まだ新選組副長ではない。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-hijikata-1863-joi",
+      "personId": "hijikata",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "displayName": "土方歳三",
+      "role": "壬生浪士組副長級",
+      "factionId": "shinsengumi",
+      "stance": "京都で組織統制と治安活動を担う。",
+      "importance": "規律と実務を支える。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-hijikata-1864-kinmon",
+      "personId": "hijikata",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1866-expedition",
+      "displayName": "土方歳三",
+      "role": "新選組副長",
+      "factionId": "shinsengumi",
+      "stance": "池田屋事件などで尊攘派探索と部隊運営を担う。",
+      "importance": "近藤とともに新選組を強力な組織へ整える。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-hijikata-1867-taisei",
+      "personId": "hijikata",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "土方歳三",
+      "role": "幕臣・新選組副長",
+      "factionId": "shinsengumi",
+      "stance": "旧幕府側の軍事組織として活動を続ける。",
+      "importance": "政権返上後も京都の軍事対立は解けなかった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-hijikata-1868-toba",
+      "personId": "hijikata",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "土方歳三",
+      "role": "旧幕府軍新選組副長",
+      "factionId": "former-bakufu",
+      "stance": "鳥羽・伏見で戦い、江戸・関東へ転戦する。",
+      "importance": "新選組を内戦部隊として再編する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-hijikata-1868-edo",
+      "personId": "hijikata",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "土方歳三",
+      "role": "旧幕府軍指揮官",
+      "factionId": "former-bakufu",
+      "stance": "宇都宮・会津方面へ転戦する。",
+      "importance": "近藤死後も抗戦を継続する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-hijikata-1868-tohoku",
+      "personId": "hijikata",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "土方歳三",
+      "role": "旧幕府軍指揮官",
+      "factionId": "former-bakufu",
+      "stance": "会津・仙台を経て榎本艦隊と蝦夷地へ向かう。",
+      "importance": "東北戦争と箱館戦争をつなぐ人物。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-hijikata-1869-hakodate",
+      "personId": "hijikata",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "displayName": "土方歳三",
+      "role": "箱館旧幕府軍陸軍奉行並",
+      "factionId": "former-bakufu",
+      "stance": "箱館防衛を指揮し、降伏前に戦死する。",
+      "importance": "旧幕府軍の最後の抵抗を象徴する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait",
+          "jacar_dictionary"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-tenshoin-1854-treaty",
+      "personId": "tenshoin",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1854-treaty",
+      "displayName": "篤姫",
+      "role": "島津家一門の女性",
+      "factionId": "satsuma",
+      "stance": "斉彬の構想により将軍家への婚姻準備が進む。",
+      "importance": "婚姻が藩と幕府を結ぶ政治手段だった。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-tenshoin-1858-ansei",
+      "personId": "tenshoin",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "天璋院",
+      "role": "13代将軍家定の御台所・大奥の中心",
+      "factionId": "bakufu",
+      "stance": "家定死後も大奥に残り、徳川将軍家の内側を支える。",
+      "importance": "出身は薩摩でも、立場は徳川将軍家にある。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-tenshoin-1860-sakurada",
+      "personId": "tenshoin",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1866-expedition",
+      "displayName": "天璋院",
+      "role": "大奥の中心人物",
+      "factionId": "bakufu",
+      "stance": "和宮降嫁を迎える大奥で徳川家内部の調整を担う。",
+      "importance": "薩摩出身だから薩摩藩の代理人とは限らない。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-tenshoin-1867-taisei",
+      "personId": "tenshoin",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "天璋院",
+      "role": "大奥・徳川家の年長者",
+      "factionId": "bakufu",
+      "stance": "政権返上後の徳川家と大奥の処遇に直面する。",
+      "importance": "政権制度と将軍家の生活・家臣団は別々に処理する必要があった。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-tenshoin-1868-toba",
+      "personId": "tenshoin",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "天璋院",
+      "role": "徳川家存続を求める大奥の代表",
+      "factionId": "former-bakufu",
+      "stance": "新政府側へ徳川慶喜・徳川家への寛典を求める。",
+      "importance": "軍事交渉以外の人的・親族的な和平経路。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-tenshoin-1868-edo",
+      "personId": "tenshoin",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "天璋院",
+      "role": "徳川家存続交渉の関係者",
+      "factionId": "former-bakufu",
+      "stance": "大奥の整理と徳川家臣・女性たちの処遇に関わる。",
+      "importance": "江戸開城を武将同士だけで捉えないための人物。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kazunomiya-1860-sakurada",
+      "personId": "kazunomiya",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "和宮",
+      "role": "孝明天皇の妹・降嫁準備",
+      "factionId": "imperial-court",
+      "stance": "幕府と朝廷の関係修復のため、将軍家茂との婚姻が進められる。",
+      "importance": "公武合体を婚姻で具体化する人物。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kazunomiya-1862-bunkyu",
+      "personId": "kazunomiya",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1866-satcho",
+      "displayName": "和宮",
+      "role": "14代将軍家茂御台所",
+      "factionId": "imperial-court",
+      "stance": "江戸城大奥で朝廷と徳川家の結節点となる。",
+      "importance": "京都出身の皇族として大奥の慣習と調整を要した。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kazunomiya-1866-expedition",
+      "personId": "kazunomiya",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "displayName": "静寛院宮",
+      "role": "家茂未亡人",
+      "factionId": "imperial-court",
+      "stance": "家茂死去後、徳川家の年長女性として大奥に残る。",
+      "importance": "公武合体の象徴から徳川家存続の関係者へ役割が変わる。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kazunomiya-1867-taisei",
+      "personId": "kazunomiya",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "静寛院宮",
+      "role": "徳川家の皇族出身者",
+      "factionId": "imperial-court",
+      "stance": "政権返上後の徳川家処遇に関わる。",
+      "importance": "朝廷と徳川家を結ぶ親族関係が和平交渉にも使われる。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kazunomiya-1868-toba",
+      "personId": "kazunomiya",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "静寛院宮",
+      "role": "徳川家存続を求める交渉関係者",
+      "factionId": "former-bakufu",
+      "stance": "朝廷・新政府側へ徳川家への寛典を嘆願する。",
+      "importance": "天璋院とともに人的な交渉経路を形成する。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    },
+    {
+      "id": "person-status-kazunomiya-1868-edo",
+      "personId": "kazunomiya",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "静寛院宮",
+      "role": "徳川家存続交渉の関係者",
+      "factionId": "former-bakufu",
+      "stance": "江戸開城と徳川家処分の中で嘆願を続ける。",
+      "importance": "公武合体の婚姻が政権末期にも意味を持った。",
+      "evidence": {
+        "sourceIds": [
+          "archives_timeline",
+          "ndl_handwriting"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+      }
+    }
+  ]
+}

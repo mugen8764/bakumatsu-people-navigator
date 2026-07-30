@@ -1,8 +1,11 @@
 const fs = require('node:fs');
 const path = require('node:path');
+const vm = require('node:vm');
+const { isDeepStrictEqual } = require('node:util');
 const Ajv2020 = require('ajv/dist/2020');
 const addFormats = require('ajv-formats');
-const { projectLegacyData } = require('./lib/project-v2.cjs');
+const { assembleLegacyData } = require('./lib/assemble-legacy-data.cjs');
+const { loadV2Documents } = require('./lib/v2-files.cjs');
 
 const root = path.resolve(__dirname, '..');
 const v2SchemaFiles = {
@@ -77,6 +80,26 @@ function validateNonOverlappingRanges(items, ownerKey, sceneOrder, label) {
   }
 }
 
+function validatePersonStatusCoverage(documents, sceneOrder) {
+  const statusesByPerson = new Map();
+  for (const status of documents.personStatuses.statuses) {
+    if (!statusesByPerson.has(status.personId)) statusesByPerson.set(status.personId, []);
+    statusesByPerson.get(status.personId).push(status);
+  }
+  for (const person of documents.people.people) {
+    const ranges = [...(statusesByPerson.get(person.id) || [])]
+      .sort((a, b) => sceneOrder.get(a.startSceneId) - sceneOrder.get(b.startSceneId));
+    if (!ranges.length) throw new Error(`${person.id} has no status ranges`);
+    if (ranges[0].startSceneId !== person.activeStartSceneId) throw new Error(`${person.id} status coverage starts late`);
+    if (ranges.at(-1).endSceneId !== person.activeEndSceneId) throw new Error(`${person.id} status coverage ends early`);
+    for (let index = 1; index < ranges.length; index += 1) {
+      if (sceneOrder.get(ranges[index - 1].endSceneId) + 1 !== sceneOrder.get(ranges[index].startSceneId)) {
+        throw new Error(`${person.id} has a gap between status ranges`);
+      }
+    }
+  }
+}
+
 function validateV2References(documents) {
   const sourceIds = uniqueIds(documents.sources.sources, 'sources');
   const placeIds = uniqueIds(documents.places.places, 'places');
@@ -146,6 +169,7 @@ function validateV2References(documents) {
   uniqueIds(documents.relations.factionRelations, 'faction relations');
   validateNonOverlappingRanges(documents.personStatuses.statuses, 'personId', sceneOrder, 'person status');
   validateNonOverlappingRanges(documents.factions.states, 'factionId', sceneOrder, 'faction state');
+  validatePersonStatusCoverage(documents, sceneOrder);
 }
 
 function validateV2Documents(documents) {
@@ -160,10 +184,18 @@ function validateV2Documents(documents) {
 }
 
 function validateRepositoryData() {
-  const data = readJson('data.json');
-  validateCurrentData(data);
-  const documents = projectLegacyData(data);
+  const documents = loadV2Documents(root);
   validateV2Documents(documents);
+  const assembled = assembleLegacyData(documents);
+  validateCurrentData(assembled);
+
+  const data = readJson('data.json');
+  if (!isDeepStrictEqual(data, assembled)) throw new Error('data.json differs from canonical data/*.json. Run npm run build:data.');
+
+  const context = { window: {} };
+  vm.runInNewContext(fs.readFileSync(path.join(root, 'data.js'), 'utf8'), context);
+  const browserData = JSON.parse(JSON.stringify(context.window.BM_DATA));
+  if (!isDeepStrictEqual(browserData, assembled)) throw new Error('data.js differs from canonical data/*.json. Run npm run build:data.');
   return documents;
 }
 

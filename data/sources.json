@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 2,
+  "sources": [
+    {
+      "id": "archives_timeline",
+      "title": "国立公文書館「激動幕末・年表」",
+      "url": "https://www.archives.go.jp/exhibition/digital/bakumatsu/history.html",
+      "note": "幕末の主要事件と公文書資料への入口。"
+    },
+    {
+      "id": "ndl_portrait",
+      "title": "国立国会図書館「近代日本人の肖像」",
+      "url": "https://www.ndl.go.jp/portrait/index.html",
+      "note": "近代日本の形成に関わった人物の肖像・略歴。"
+    },
+    {
+      "id": "ndl_portrait_index",
+      "title": "国立国会図書館「近代日本人の肖像・人名索引」",
+      "url": "https://www.ndl.go.jp/portrait/indexes/index.html",
+      "note": "人物名から肖像・略歴を探す索引。"
+    },
+    {
+      "id": "ndl_modern_timeline",
+      "title": "国立国会図書館「史料にみる日本の近代・年表」",
+      "url": "https://www.ndl.go.jp/modern/utility/chronology.html",
+      "note": "黒船来航、大政奉還、王政復古などの主要年表。"
+    },
+    {
+      "id": "ndl_handwriting",
+      "title": "国立国会図書館「あの人の直筆・人物一覧」",
+      "url": "https://www.ndl.go.jp/jikihitsu/person",
+      "note": "維新期を含む人物解説と直筆資料。"
+    },
+    {
+      "id": "jacar_dictionary",
+      "title": "アジア歴史資料センター「地名・人名・出来事事典」",
+      "url": "https://www.jacar.go.jp/dictionary/index.html",
+      "note": "歴史資料検索のための人名・地名・出来事の異称・基本語。"
+    }
+  ]
+}

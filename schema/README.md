@@ -2,10 +2,10 @@
 
 ## 目的
 
-このディレクトリは、現行表示を維持したままデータを分割JSONへ移行するための契約を定義します。
+このディレクトリは、現行表示を維持したまま `data/*.json` を管理するための契約を定義します。
 
-- `current-data.schema.json`: 現在の `data.json` を厳格に検証する移行期間用Schema
-- `v2/*.schema.json`: `data/` へ分割する次期データのSchema
+- `current-data.schema.json`: 互換生成物 `data.json` を厳格に検証するSchema
+- `v2/*.schema.json`: 正本である `data/*.json` のSchema
 - `v2/id-mappings.json`: 表示名から独立した勢力ID・関係種別ID
 
 検証には JSON Schema Draft 2020-12 と Ajv を使用します。
@@ -53,4 +53,4 @@
 npm run validate:data
 ```
 
-このコマンドは現在の `data.json` を検証した後、メモリ上でv2へ投影し、全v2 Schema、IDの一意性、参照先、期間順序、状態期間の非重複を検証します。第2段階では分割JSONをまだ生成しません。
+このコマンドは正本である `data/*.json` に対して、全v2 Schema、IDの一意性、参照先、期間順序、状態期間の非重複を検証します。その後、互換形式へ組み立てた結果がルートの `data.json` と `data.js` に一致することも確認します。

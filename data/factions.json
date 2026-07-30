@@ -1,0 +1,1137 @@
+{
+  "schemaVersion": 2,
+  "factions": [
+    {
+      "id": "bakufu",
+      "name": "幕府",
+      "shortName": "幕",
+      "color": "#557493",
+      "summary": "徳川将軍を頂点とする政権。開国後、外交・朝廷・雄藩への対応で統制力が揺らぐ。",
+      "aliases": [
+        "江戸幕府",
+        "徳川幕府"
+      ],
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力概要の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "imperial-court",
+      "name": "朝廷",
+      "shortName": "朝",
+      "color": "#a37a29",
+      "summary": "天皇と公家を中心とする京都の政治主体。条約勅許問題以降、国政への影響力を急速に強める。",
+      "aliases": [
+        "京都朝廷"
+      ],
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力概要の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "satsuma",
+      "name": "薩摩藩",
+      "shortName": "薩",
+      "color": "#ad554e",
+      "summary": "島津家の雄藩。公武合体、幕政改革を経て長州と連携し、新政府の中核となる。",
+      "aliases": [
+        "鹿児島藩"
+      ],
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力概要の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "choshu",
+      "name": "長州藩",
+      "shortName": "長",
+      "color": "#527e5b",
+      "summary": "毛利家の雄藩。尊王攘夷を主導した後、軍制改革と薩摩との連携を経て倒幕の中核となる。",
+      "aliases": [
+        "萩藩",
+        "山口藩"
+      ],
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力概要の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "aizu",
+      "name": "会津藩",
+      "shortName": "会",
+      "color": "#705d91",
+      "summary": "京都守護職を担い、幕府・孝明天皇の信任を背景に京都治安を担当する。",
+      "aliases": [
+        "会津松平家"
+      ],
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力概要の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "tosa",
+      "name": "土佐藩",
+      "shortName": "土",
+      "color": "#9a6844",
+      "summary": "山内家の雄藩。藩内尊攘派の弾圧後、大政奉還論を通じて政権移行に関与する。",
+      "aliases": [
+        "高知藩"
+      ],
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力概要の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "mito",
+      "name": "水戸藩",
+      "shortName": "水",
+      "color": "#467b7b",
+      "summary": "徳川御三家の一つ。水戸学と海防論が尊王攘夷思想へ大きな影響を与える。",
+      "aliases": [
+        "水戸徳川家"
+      ],
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力概要の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "shinsengumi",
+      "name": "新選組",
+      "shortName": "新",
+      "color": "#656b75",
+      "summary": "京都守護職会津藩のもとで京都治安を担った浪士組織。",
+      "aliases": [
+        "壬生浪士組"
+      ],
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力概要の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "foreign-powers",
+      "name": "外国勢力",
+      "shortName": "外",
+      "color": "#397fa6",
+      "summary": "アメリカ、イギリス、フランスなど。条約、外交、軍事衝突、技術導入を通じて国内政局を動かす。",
+      "aliases": [
+        "列強"
+      ],
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力概要の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "new-government",
+      "name": "新政府",
+      "shortName": "新政",
+      "color": "#b34f72",
+      "summary": "王政復古後、薩摩・長州・土佐などを中核に成立した政権。戊辰戦争を通じ全国統治を確立する。",
+      "aliases": [
+        "明治新政府",
+        "官軍"
+      ],
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力概要の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "former-bakufu",
+      "name": "旧幕府勢力",
+      "shortName": "旧",
+      "color": "#56616e",
+      "summary": "徳川家や旧幕臣、会津・桑名など、王政復古後も新政府と対立・交渉した諸勢力。",
+      "aliases": [
+        "旧幕府軍"
+      ],
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力概要の項目別出典が必要。"
+      }
+    }
+  ],
+  "states": [
+    {
+      "id": "faction-state-bakufu-1853-blackships",
+      "factionId": "bakufu",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1853-blackships",
+      "goal": "戦争を避け、国書への回答と海防を準備する。",
+      "position": "外交の決定主体だが、諸大名へ意見を求め始める。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-foreign-powers-1853-blackships",
+      "factionId": "foreign-powers",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1853-blackships",
+      "goal": "補給港・漂流民保護・通商への入口を確保する。",
+      "position": "米国とロシアが相次いで来航する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-mito-1853-blackships",
+      "factionId": "mito",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1853-blackships",
+      "goal": "海防強化と外国船への強硬対応を主張する。",
+      "position": "徳川斉昭が海防参与として幕政へ参加する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-satsuma-1853-blackships",
+      "factionId": "satsuma",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1853-blackships",
+      "goal": "西洋技術を導入し、雄藩参加型の国政改革を進める。",
+      "position": "島津斉彬が近代化と幕政改革を構想する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-bakufu-1854-treaty",
+      "factionId": "bakufu",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1854-treaty",
+      "goal": "限定的な開港で武力衝突を避ける。",
+      "position": "和親条約を締結し、海軍・洋学体制を整備する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-foreign-powers-1854-treaty",
+      "factionId": "foreign-powers",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1854-treaty",
+      "goal": "港・領事・補給の権利を条約化する。",
+      "position": "米国の条約を先例に各国が接近する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-satsuma-1854-treaty",
+      "factionId": "satsuma",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1854-treaty",
+      "goal": "藩の産業・軍事近代化を加速する。",
+      "position": "集成館事業や造船を進める。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-choshu-1854-treaty",
+      "factionId": "choshu",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1854-treaty",
+      "goal": "海防と海外知識を強化する。",
+      "position": "吉田松陰の密航未遂など若手の危機感が高まる。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-bakufu-1858-ansei",
+      "factionId": "bakufu",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "goal": "通商条約を締結し、家茂を将軍として統制を維持する。",
+      "position": "井伊直弼の大老政治で反対派を処分する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-imperial-court-1858-ansei",
+      "factionId": "imperial-court",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "goal": "条約勅許と攘夷方針への発言権を確保する。",
+      "position": "幕府外交へ本格的に介入する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-mito-1858-ansei",
+      "factionId": "mito",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "goal": "慶喜擁立と勅許重視、海防強化を求める。",
+      "position": "井伊政権と激しく対立する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-satsuma-1858-ansei",
+      "factionId": "satsuma",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "goal": "一橋慶喜擁立と雄藩参加型改革を目指す。",
+      "position": "斉彬急死で政治方針の再編を迫られる。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-foreign-powers-1858-ansei",
+      "factionId": "foreign-powers",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "goal": "通商・開港・治外法権などを条約で確保する。",
+      "position": "列強の圧力が幕府の決断を急がせる。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-bakufu-1860-sakurada",
+      "factionId": "bakufu",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "goal": "井伊死後の政局を安定させ、朝廷との協調を回復する。",
+      "position": "公武合体と和宮降嫁へ向かう。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-mito-1860-sakurada",
+      "factionId": "mito",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "goal": "藩内統制と勅書問題への対応。",
+      "position": "改革派・激派・鎮派などに分裂する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-imperial-court-1860-sakurada",
+      "factionId": "imperial-court",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "goal": "攘夷方針を維持しつつ、幕府との協調条件を探る。",
+      "position": "和宮降嫁が政治課題となる。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-satsuma-1860-sakurada",
+      "factionId": "satsuma",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "goal": "斉彬死後の藩政を久光中心に再建する。",
+      "position": "西郷は奄美にあり、大久保が久光へ接近する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-satsuma-1862-bunkyu",
+      "factionId": "satsuma",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "goal": "公武合体と雄藩参加型の幕政改革を実現する。",
+      "position": "久光が率兵上京し、藩内急進派を鎮圧する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-bakufu-1862-bunkyu",
+      "factionId": "bakufu",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "goal": "改革職を設け、京都・朝廷への対応力を高める。",
+      "position": "慶喜・春嶽が復帰し、京都守護職を設置する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-aizu-1862-bunkyu",
+      "factionId": "aizu",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "goal": "京都治安と朝廷警護を担う。",
+      "position": "松平容保が京都守護職に就く。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-tosa-1862-bunkyu",
+      "factionId": "tosa",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "goal": "藩内尊攘派の圧力と上層部の公武合体を調整する。",
+      "position": "武市の勤王党が藩政へ影響を強める。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-imperial-court-1862-bunkyu",
+      "factionId": "imperial-court",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "goal": "攘夷実行と将軍上洛を求める。",
+      "position": "京都が全国政局の中心となる。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-choshu-1863-joi",
+      "factionId": "choshu",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "goal": "朝廷の攘夷方針を実力で実行する。",
+      "position": "下関で外国船を砲撃し、軍事的報復を招く。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-satsuma-1863-joi",
+      "factionId": "satsuma",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "goal": "生麦事件への対応と藩の防衛。",
+      "position": "英国と交戦後、近代化・対英協力へ転じる。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-foreign-powers-1863-joi",
+      "factionId": "foreign-powers",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "goal": "条約上の航行・居留権と賠償を確保する。",
+      "position": "薩摩・長州へ軍事力を行使する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-imperial-court-1863-joi",
+      "factionId": "imperial-court",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "goal": "攘夷実行を幕府・諸藩へ求める。",
+      "position": "実行手段を持たず、藩ごとの行動差が拡大する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-bakufu-1863-joi",
+      "factionId": "bakufu",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "goal": "朝廷の攘夷要求と条約履行を両立させる。",
+      "position": "矛盾した要求の間で求心力を失う。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-aizu-1863-aug18",
+      "factionId": "aizu",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "goal": "京都治安と孝明天皇の信任を守る。",
+      "position": "薩摩と連携し長州系勢力を排除する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-satsuma-1863-aug18",
+      "factionId": "satsuma",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "goal": "急進尊攘派を排除し、公武合体を回復する。",
+      "position": "京都政局の主導権を得る。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-choshu-1863-aug18",
+      "factionId": "choshu",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "goal": "朝廷内での影響力と攘夷主導権を維持する。",
+      "position": "政変で京都から追放される。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-imperial-court-1863-aug18",
+      "factionId": "imperial-court",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "goal": "急進派を抑え、幕府・会津・薩摩との協調を回復する。",
+      "position": "公家勢力が大きく入れ替わる。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-shinsengumi-1863-aug18",
+      "factionId": "shinsengumi",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "goal": "京都の尊攘派・浪士を探索する。",
+      "position": "会津藩預かりの治安組織として地位を固める。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-choshu-1864-kinmon",
+      "factionId": "choshu",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "goal": "京都での名誉と政治的地位を回復する。",
+      "position": "禁門の変に敗れ、朝敵・征討対象となる。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-bakufu-1864-kinmon",
+      "factionId": "bakufu",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "goal": "長州を処分し、京都秩序と諸藩統制を回復する。",
+      "position": "第一次長州征討を発動する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-satsuma-1864-kinmon",
+      "factionId": "satsuma",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "goal": "京都防衛と長州処分を進めつつ、幕府を利用する。",
+      "position": "西郷が軍事・交渉の中心へ復帰する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-aizu-1864-kinmon",
+      "factionId": "aizu",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "goal": "京都を長州軍から防衛する。",
+      "position": "新選組・幕府軍とともに抗戦する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-foreign-powers-1864-kinmon",
+      "factionId": "foreign-powers",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "goal": "下関海峡の安全と条約権益を確保する。",
+      "position": "四国艦隊が長州砲台を攻撃する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-choshu-1865-choshu",
+      "factionId": "choshu",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "goal": "藩内保守派を退け、幕府再征へ備える。",
+      "position": "高杉・木戸・大村ら改革派が主導権を握る。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-bakufu-1865-choshu",
+      "factionId": "bakufu",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "goal": "長州を再度処分し、諸藩統制を回復する。",
+      "position": "第二次長州征討を準備する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-satsuma-1865-choshu",
+      "factionId": "satsuma",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "goal": "幕府への全面協力を避け、長州との接点を増やす。",
+      "position": "長崎貿易・武器供給を介し接近する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-imperial-court-1865-choshu",
+      "factionId": "imperial-court",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "goal": "長州処分と京都秩序を維持する。",
+      "position": "孝明天皇・会津は長州復権に慎重。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-satsuma-1866-satcho",
+      "factionId": "satsuma",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "goal": "幕府再征を阻止し、将来の政権再編へ備える。",
+      "position": "長州と秘密裏に提携する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-choshu-1866-satcho",
+      "factionId": "choshu",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "goal": "孤立を解消し、名誉回復と幕府再征への防衛を図る。",
+      "position": "薩摩の政治・物資支援を得る。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-bakufu-1866-satcho",
+      "factionId": "bakufu",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "goal": "長州再征を実施し政権の威信を回復する。",
+      "position": "諸藩の協力低下に直面する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-tosa-1866-satcho",
+      "factionId": "tosa",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "goal": "藩を越えた連携と新政局への参加を探る。",
+      "position": "龍馬・中岡ら脱藩者が薩長間を仲介する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-imperial-court-1866-satcho",
+      "factionId": "imperial-court",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "goal": "京都秩序と長州処分を維持する。",
+      "position": "孝明天皇の下では薩長倒幕は公認されていない。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-bakufu-1866-expedition",
+      "factionId": "bakufu",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "goal": "長州を軍事制圧し、政権の統制力を回復する。",
+      "position": "征討に失敗し、家茂死去・慶喜継承へ。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-choshu-1866-expedition",
+      "factionId": "choshu",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "goal": "改革軍制で幕府軍を撃退する。",
+      "position": "各戦線で優位に立ち、政治的地位を回復する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-satsuma-1866-expedition",
+      "factionId": "satsuma",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "goal": "幕府へ協力せず、長州と次の政権を準備する。",
+      "position": "幕府離れを明確にする。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-imperial-court-1866-expedition",
+      "factionId": "imperial-court",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "goal": "戦争停止と京都秩序を保つ。",
+      "position": "孝明天皇崩御で政局の前提が変わる。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-bakufu-1867-taisei",
+      "factionId": "bakufu",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "goal": "政権返上後も徳川家を新体制の中心に残す。",
+      "position": "大政奉還により幕府制度を自ら返上する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-satsuma-1867-taisei",
+      "factionId": "satsuma",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "goal": "徳川家の政治力を排除し、王政復古を実現する。",
+      "position": "長州・岩倉と政変を準備する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-choshu-1867-taisei",
+      "factionId": "choshu",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "goal": "朝敵処分を解消し、新政権の中核へ入る。",
+      "position": "薩摩と武力倒幕を準備する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-tosa-1867-taisei",
+      "factionId": "tosa",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "goal": "徳川家を含む公議政体へ平和的に移行する。",
+      "position": "大政奉還案を幕府へ建白する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-imperial-court-1867-taisei",
+      "factionId": "imperial-court",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "goal": "返上された政権を誰がどの制度で担うか決める。",
+      "position": "王政復古派と徳川参加派が競合する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-new-government-1868-toba",
+      "factionId": "new-government",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "goal": "徳川家の軍事・政治力を排除し全国政権を確立する。",
+      "position": "鳥羽・伏見に勝利し官軍として諸藩を動員する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-former-bakufu-1868-toba",
+      "factionId": "former-bakufu",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "goal": "徳川家の地位を守り、京都政局へ復帰する。",
+      "position": "鳥羽・伏見敗戦と慶喜退去で指揮が崩れる。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-satsuma-1868-toba",
+      "factionId": "satsuma",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "goal": "新政府軍の軍事中核となる。",
+      "position": "西郷らが京都・東征を指揮する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-choshu-1868-toba",
+      "factionId": "choshu",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "goal": "朝敵から官軍へ立場を転換し、新政府へ参加する。",
+      "position": "京都防衛・東征の主要戦力となる。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-aizu-1868-toba",
+      "factionId": "aizu",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "goal": "慶喜と旧幕府側を支える。",
+      "position": "朝敵とされ、会津処分問題へ進む。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-new-government-1868-edo",
+      "factionId": "new-government",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "goal": "江戸城と徳川領・軍事力を平穏に接収する。",
+      "position": "総攻撃を準備しつつ、条件交渉を受け入れる。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-former-bakufu-1868-edo",
+      "factionId": "former-bakufu",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "goal": "慶喜・徳川家の存続と江戸市街戦回避を図る。",
+      "position": "恭順派と抗戦派に分裂する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-satsuma-1868-edo",
+      "factionId": "satsuma",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "goal": "東征軍の軍事・交渉を主導する。",
+      "position": "西郷が勝・山岡と交渉する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-shinsengumi-1868-edo",
+      "factionId": "shinsengumi",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "goal": "旧幕府軍として関東で抗戦を継続する。",
+      "position": "近藤・土方が甲州・関東へ転戦する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-new-government-1868-tohoku",
+      "factionId": "new-government",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "goal": "東北・北越を制圧し全国統一を進める。",
+      "position": "薩長土などの藩兵を各戦線へ投入する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-former-bakufu-1868-tohoku",
+      "factionId": "former-bakufu",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "goal": "会津・庄内への寛典または抗戦を図る。",
+      "position": "奥羽越列藩同盟を結ぶが統一指揮に欠ける。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-aizu-1868-tohoku",
+      "factionId": "aizu",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "goal": "藩主容保と藩の存続を守る。",
+      "position": "鶴ヶ城へ籠城し降伏する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-satsuma-1868-tohoku",
+      "factionId": "satsuma",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "goal": "新政府軍の北越・東北戦線を支える。",
+      "position": "黒田・川路らが参戦する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-choshu-1868-tohoku",
+      "factionId": "choshu",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "goal": "新政府軍の軍制・作戦を支える。",
+      "position": "大村・山県らが軍事指揮へ参加する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-tosa-1868-tohoku",
+      "factionId": "tosa",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "goal": "東山道・会津方面の軍事作戦を担う。",
+      "position": "板垣退助らが前線を指揮する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-new-government-1869-hakodate",
+      "factionId": "new-government",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "goal": "箱館の旧幕府軍を降伏させ、全国軍事統一を完成する。",
+      "position": "海陸から五稜郭を包囲し、降伏交渉を行う。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-former-bakufu-1869-hakodate",
+      "factionId": "former-bakufu",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "goal": "蝦夷地を拠点に旧幕臣の生活と政治的地位を確保する。",
+      "position": "戦力を失い、五稜郭を開城する。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-satsuma-1869-hakodate",
+      "factionId": "satsuma",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "goal": "新政府軍参謀・部隊を派遣する。",
+      "position": "黒田清隆が降伏・助命交渉に関わる。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    },
+    {
+      "id": "faction-state-choshu-1869-hakodate",
+      "factionId": "choshu",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "goal": "新政府軍制と中央政府を支える。",
+      "position": "戦後の軍制・制度改革へ重心を移す。",
+      "evidence": {
+        "sourceIds": [],
+        "reviewStatus": "needs_review",
+        "note": "勢力状態の項目別出典が必要。"
+      }
+    }
+  ]
+}
