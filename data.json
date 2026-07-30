@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "updated": "2026-07-30"
   },
   "sources": {
@@ -79,6 +79,51 @@
       "title": "国立国会図書館「あの人の直筆・幕末を生きた人々」",
       "url": "https://www.ndl.go.jp/jikihitsu/part2/s1_1/",
       "note": "井伊直弼による条約調印、将軍継嗣問題、安政の大獄と桜田門外の変。"
+    },
+    "hyogo_bakumatsu_timeline_2": {
+      "title": "兵庫県「年表　幕末期2」",
+      "url": "https://web.pref.hyogo.lg.jp/kk32/pa13_000000027.html",
+      "note": "寺田屋騒動、生麦事件、京都守護職設置、攘夷実行、薩英戦争、八月十八日の政変。"
+    },
+    "kyoto_teradaya_1862": {
+      "title": "京都市「寺田屋」",
+      "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hu040.html",
+      "note": "1862年の寺田屋騒動における薩摩藩急進派の集結と藩による鎮圧。"
+    },
+    "kyoto_shugoshoku_site": {
+      "title": "京都市「京都守護職屋敷址」",
+      "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/ka016.html",
+      "note": "京都守護職の設置目的と松平容保の就任。"
+    },
+    "shimonoseki_joi_bombardment": {
+      "title": "下関市「市報しものせき・歴史の舞台で現代に伝える砲術」",
+      "url": "https://www.city.shimonoseki.lg.jp/site/kouhou/5416.html",
+      "note": "1863年の長州藩による外国船砲撃と翌年の下関戦争。"
+    },
+    "cultural_heritage_aug18": {
+      "title": "文化遺産オンライン「文久三年八月十九日未明七卿妙法院宸殿ヲ出テ将サニ長州ニ奔ラントスル図」",
+      "url": "https://online.bunka.go.jp/db/heritages/detail/141077",
+      "note": "八月十八日の政変、七卿落ち、薩摩・会津と孝明天皇の関与。"
+    },
+    "yamaguchi_library_kinmon": {
+      "title": "山口県立山口図書館「禁門の変、勃発」",
+      "url": "https://library.pref.yamaguchi.lg.jp/meijiishin/201407/",
+      "note": "八月十八日の政変後の長州藩、池田屋事件、禁門の変の経緯。"
+    },
+    "kyoto_kinmon": {
+      "title": "京都市上京区「幕末動乱と禁門の変」",
+      "url": "https://www.city.kyoto.lg.jp/kamigyo/page/0000012502.html",
+      "note": "池田屋事件から禁門の変に至る経緯と京都での戦闘。"
+    },
+    "yamaguchi_choshu_reform": {
+      "title": "山口県立山口図書館「四境戦争～時代の流れを変えた戦い～」",
+      "url": "https://library.pref.yamaguchi.lg.jp/meijiishin/201607/",
+      "note": "長州藩内戦後の武備恭順への転換、西洋軍制導入と軍事組織整備。"
+    },
+    "yamaguchi_archives_ota_edo": {
+      "title": "山口県文書館「大田・絵堂の戦い」",
+      "url": "https://archives.pref.yamaguchi.lg.jp/events/exhibition/h30/",
+      "note": "1865年の萩藩政府軍と高杉晋作ら諸隊による藩内戦と諸隊側の勝利。"
     }
   },
   "factions": {
@@ -312,20 +357,21 @@
       "year": 1862,
       "era": "文久2年",
       "date": "春〜秋",
-      "title": "文久の改革・寺田屋・生麦",
-      "summary": "島津久光の率兵上京を背景に幕政改革が実現する一方、薩摩藩内の急進派鎮圧と対英摩擦が起きる。",
+      "title": "寺田屋・京都守護職・生麦",
+      "summary": "薩摩藩は寺田屋に集結した藩内急進派を鎮圧した。幕府は京都守護職を設置して松平容保を任命し、同年には生麦事件が起きた。",
       "event": "bunkyu",
       "insights": [
-        "薩摩はこの時点では倒幕ではなく、公武合体と幕政改革を目指していた。",
-        "西郷と久光の対立は、薩摩藩内が一枚岩ではなかったことを示す。",
-        "京都守護職の設置により、会津藩が京都政局の前面へ出た。"
+        "寺田屋では薩摩藩急進派が集結し、藩が派遣した藩士との争闘で9人が死亡した。",
+        "京都守護職は京都の治安維持を目的に新設され、会津藩主松平容保が就任した。",
+        "生麦事件では島津久光の行列を護衛する薩摩藩士が英国人を殺傷した。"
       ],
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "hyogo_bakumatsu_timeline_2",
+          "kyoto_teradaya_1862",
+          "kyoto_shugoshoku_site"
         ],
-        "reviewStatus": "needs_review"
+        "reviewStatus": "verified"
       }
     },
     {
@@ -334,18 +380,20 @@
       "era": "文久3年",
       "date": "5月〜8月",
       "title": "攘夷実行と薩英戦争",
-      "summary": "長州が下関で外国船を砲撃し、薩摩は生麦事件をめぐり英国艦隊と交戦する。",
+      "summary": "長州藩は攘夷期限に下関で米・仏・蘭の船を砲撃し、薩摩藩は鹿児島湾で英国艦隊と交戦した。",
       "event": "joi1863",
       "insights": [
-        "朝廷が求めた攘夷と、実際の軍事力で外国を排除できるかは別問題だった。",
-        "薩摩は英国との戦争後、むしろ英国との関係と軍備近代化を深めた。",
-        "長州でも高杉晋作らは攘夷戦の敗北から身分を越えた軍制改革へ向かった。"
+        "幕府が上奏した攘夷期限は5月10日だった。",
+        "長州藩は下関で米国・フランス・オランダの船を砲撃した。",
+        "薩摩藩は英国艦隊と交戦し、長州藩への砲撃は翌年の四国艦隊による下関攻撃につながった。"
       ],
       "evidence": {
         "sourceIds": [
-          "archives_timeline"
+          "archives_timeline",
+          "hyogo_bakumatsu_timeline_2",
+          "shimonoseki_joi_bombardment"
         ],
-        "reviewStatus": "needs_review"
+        "reviewStatus": "verified"
       }
     },
     {
@@ -354,19 +402,20 @@
       "era": "文久3年",
       "date": "8月18日（9月30日）",
       "title": "八月十八日の政変",
-      "summary": "薩摩・会津と公武合体派公家が長州系尊攘派を京都から排除し、京都の勢力図が反転する。",
+      "summary": "薩摩・会津と公武合体派公家が長州藩と尊王攘夷派公家を京都から排除し、三条実美ら七卿は長州へ退いた。",
       "event": "aug18",
       "insights": [
-        "薩摩と長州はまだ倒幕の盟友ではなく、京都政局で敵対していた。",
-        "孝明天皇は長州系急進派を警戒し、会津への信任を強めた。",
-        "失地回復を急ぐ長州の動きが翌年の禁門の変につながる。"
+        "政変は公武合体を進める薩摩・会津両藩の働きかけを背景に起きた。",
+        "孝明天皇は朝廷の秩序を乱した尊王攘夷派へ強い反感を持っていたとされる。",
+        "追放された三条実美ら七卿と長州藩士は長州へ退いた。"
       ],
       "evidence": {
         "sourceIds": [
           "archives_timeline",
-          "ndl_modern_timeline"
+          "ndl_modern_timeline",
+          "cultural_heritage_aug18"
         ],
-        "reviewStatus": "needs_review"
+        "reviewStatus": "verified"
       }
     },
     {
@@ -375,18 +424,20 @@
       "era": "元治元年",
       "date": "6月〜12月",
       "title": "池田屋・禁門の変・第一次長州征討",
-      "summary": "京都での治安衝突が内戦化し、長州は朝敵とされ、幕府・諸藩の征討と列強の下関攻撃を受ける。",
+      "summary": "新選組の池田屋襲撃後、長州藩は京都へ出兵して禁門の変で会津・薩摩などに敗れた。幕府は長州征討を命じ、四国艦隊も下関を攻撃した。",
       "event": "kinmon",
       "insights": [
-        "新選組の池田屋襲撃と禁門の変は別事件だが、京都の緊張を連続的に高めた。",
-        "西郷はこの時期に復帰し、薩摩軍の指揮と長州処分の交渉を担った。",
-        "長州の敗北は終わりではなく、藩内改革派の再起を促した。"
+        "池田屋事件をきっかけに長州藩内では京都進発論が強まった。",
+        "禁門の変では長州藩と会津・薩摩などの諸藩が京都で交戦し、長州藩が敗れた。",
+        "幕府は第一次長州征討を命じ、英・仏・蘭・米の四国艦隊は下関を砲撃した。"
       ],
       "evidence": {
         "sourceIds": [
-          "archives_timeline"
+          "archives_timeline",
+          "yamaguchi_library_kinmon",
+          "kyoto_kinmon"
         ],
-        "reviewStatus": "needs_review"
+        "reviewStatus": "verified"
       }
     },
     {
@@ -395,19 +446,20 @@
       "era": "慶応元年",
       "date": "1月〜年末",
       "title": "長州藩政の転換",
-      "summary": "高杉晋作ら改革派が藩内で主導権を奪い返し、軍制と財政を再編。幕府は再征を準備する。",
+      "summary": "高杉晋作ら諸隊は萩藩政府軍との藩内戦に勝利し、長州藩は武備恭順へ転換して西洋軍制と軍事組織の整備を進めた。幕府は長州再征を準備した。",
       "event": "choshu_reform",
       "insights": [
-        "長州は幕府との戦いの前に、藩内の保守派と改革派の権力闘争を経験した。",
-        "奇兵隊など諸隊は、藩の正式軍制へ組み込まれていった。",
-        "薩摩は表向き長州処分側にありながら、再征への協力を弱め始めた。"
+        "大田・絵堂では萩藩政府の正規軍と高杉晋作ら諸隊が戦い、諸隊側が勝利した。",
+        "藩内戦後、長州藩論は武備恭順へ転換した。",
+        "長州藩は大村益次郎を最高責任者として西洋軍制を導入し、武器購入などを進めた。"
       ],
       "evidence": {
         "sourceIds": [
-          "jacar_dictionary",
-          "ndl_handwriting"
+          "archives_timeline",
+          "yamaguchi_choshu_reform",
+          "yamaguchi_archives_ota_edo"
         ],
-        "reviewStatus": "needs_review"
+        "reviewStatus": "verified"
       }
     },
     {

@@ -90,6 +90,60 @@
       "title": "国立国会図書館「あの人の直筆・幕末を生きた人々」",
       "url": "https://www.ndl.go.jp/jikihitsu/part2/s1_1/",
       "note": "井伊直弼による条約調印、将軍継嗣問題、安政の大獄と桜田門外の変。"
+    },
+    {
+      "id": "hyogo_bakumatsu_timeline_2",
+      "title": "兵庫県「年表　幕末期2」",
+      "url": "https://web.pref.hyogo.lg.jp/kk32/pa13_000000027.html",
+      "note": "寺田屋騒動、生麦事件、京都守護職設置、攘夷実行、薩英戦争、八月十八日の政変。"
+    },
+    {
+      "id": "kyoto_teradaya_1862",
+      "title": "京都市「寺田屋」",
+      "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hu040.html",
+      "note": "1862年の寺田屋騒動における薩摩藩急進派の集結と藩による鎮圧。"
+    },
+    {
+      "id": "kyoto_shugoshoku_site",
+      "title": "京都市「京都守護職屋敷址」",
+      "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/ka016.html",
+      "note": "京都守護職の設置目的と松平容保の就任。"
+    },
+    {
+      "id": "shimonoseki_joi_bombardment",
+      "title": "下関市「市報しものせき・歴史の舞台で現代に伝える砲術」",
+      "url": "https://www.city.shimonoseki.lg.jp/site/kouhou/5416.html",
+      "note": "1863年の長州藩による外国船砲撃と翌年の下関戦争。"
+    },
+    {
+      "id": "cultural_heritage_aug18",
+      "title": "文化遺産オンライン「文久三年八月十九日未明七卿妙法院宸殿ヲ出テ将サニ長州ニ奔ラントスル図」",
+      "url": "https://online.bunka.go.jp/db/heritages/detail/141077",
+      "note": "八月十八日の政変、七卿落ち、薩摩・会津と孝明天皇の関与。"
+    },
+    {
+      "id": "yamaguchi_library_kinmon",
+      "title": "山口県立山口図書館「禁門の変、勃発」",
+      "url": "https://library.pref.yamaguchi.lg.jp/meijiishin/201407/",
+      "note": "八月十八日の政変後の長州藩、池田屋事件、禁門の変の経緯。"
+    },
+    {
+      "id": "kyoto_kinmon",
+      "title": "京都市上京区「幕末動乱と禁門の変」",
+      "url": "https://www.city.kyoto.lg.jp/kamigyo/page/0000012502.html",
+      "note": "池田屋事件から禁門の変に至る経緯と京都での戦闘。"
+    },
+    {
+      "id": "yamaguchi_choshu_reform",
+      "title": "山口県立山口図書館「四境戦争～時代の流れを変えた戦い～」",
+      "url": "https://library.pref.yamaguchi.lg.jp/meijiishin/201607/",
+      "note": "長州藩内戦後の武備恭順への転換、西洋軍制導入と軍事組織整備。"
+    },
+    {
+      "id": "yamaguchi_archives_ota_edo",
+      "title": "山口県文書館「大田・絵堂の戦い」",
+      "url": "https://archives.pref.yamaguchi.lg.jp/events/exhibition/h30/",
+      "note": "1865年の萩藩政府軍と高杉晋作ら諸隊による藩内戦と諸隊側の勝利。"
     }
   ]
 }

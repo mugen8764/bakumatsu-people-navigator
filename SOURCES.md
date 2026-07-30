@@ -28,6 +28,15 @@
 - [国立国会図書館「日米和親条約写」](https://www.ndl.go.jp/modern/img_t/002/002-003tx.html)
 - [国立国会図書館「日本の開国と日蘭関係」](https://www.ndl.go.jp/nichiran/s1/s1_4.html)
 - [国立国会図書館「あの人の直筆・幕末を生きた人々」](https://www.ndl.go.jp/jikihitsu/part2/s1_1/)
+- [兵庫県「年表　幕末期2」](https://web.pref.hyogo.lg.jp/kk32/pa13_000000027.html)
+- [京都市「寺田屋」](https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hu040.html)
+- [京都市「京都守護職屋敷址」](https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/ka016.html)
+- [下関市「市報しものせき・歴史の舞台で現代に伝える砲術」](https://www.city.shimonoseki.lg.jp/site/kouhou/5416.html)
+- [文化遺産オンライン「文久三年八月十九日未明七卿妙法院宸殿ヲ出テ将サニ長州ニ奔ラントスル図」](https://online.bunka.go.jp/db/heritages/detail/141077)
+- [山口県立山口図書館「禁門の変、勃発」](https://library.pref.yamaguchi.lg.jp/meijiishin/201407/)
+- [京都市上京区「幕末動乱と禁門の変」](https://www.city.kyoto.lg.jp/kamigyo/page/0000012502.html)
+- [山口県立山口図書館「四境戦争～時代の流れを変えた戦い～」](https://library.pref.yamaguchi.lg.jp/meijiishin/201607/)
+- [山口県文書館「大田・絵堂の戦い」](https://archives.pref.yamaguchi.lg.jp/events/exhibition/h30/)
 
 ## 情報の分類
 
