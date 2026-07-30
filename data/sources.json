@@ -396,6 +396,54 @@
       "title": "国立公文書館「王政復古の大号令が発せられる」",
       "url": "https://www.archives.go.jp/ayumi/kobetsu/k03_1867_01.html",
       "note": "1867年12月9日の王政復古宣言と摂政・関白等の廃止、総裁・議定・参与の三職設置。"
+    },
+    {
+      "id": "kyoto_fushimi_history",
+      "title": "京都市伏見区「江戸時代～幕末・港湾商業都市の繁栄」",
+      "url": "https://www.city.kyoto.lg.jp/fushimi/page/0000013321.html",
+      "note": "鳥羽・伏見における幕府・会津・桑名側と薩摩・長州・土佐・安芸の新政府軍の戦闘。"
+    },
+    {
+      "id": "hino_koyo_chinbutai",
+      "title": "日野市郷土資料館「助郷史料に記されている鎮撫隊」",
+      "url": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/024/157/rekimin160.pdf",
+      "note": "1868年の新選組・甲陽鎮撫隊の甲州道中進軍と勝沼での敗退。"
+    },
+    {
+      "id": "aizuwakamatsu_surrender",
+      "title": "会津若松市「鶴ヶ城みりょく発見マップ」",
+      "url": "https://www.city.aizuwakamatsu.fukushima.jp/docs/2024090400012/file_contents/tsurugajo_miryokuhakken_panph3.pdf",
+      "note": "戊辰戦争の鶴ヶ城籠城と1868年9月22日の降伏。"
+    },
+    {
+      "id": "kagoshima_boshin",
+      "title": "鹿児島県「戊辰戦争」",
+      "url": "https://www.pref.kagoshima.jp/reimeikan/josetsu/theme/gendai/boshin/index.html",
+      "note": "薩摩・長州兵による官軍編成、江戸城無血開城、北越・東北・箱館への進軍。"
+    },
+    {
+      "id": "kochi_itagaki_boshin",
+      "title": "高知県「龍馬関連情報・板垣退助生誕地」",
+      "url": "https://www.pref.kochi.lg.jp/doc/kanko-ryoma/",
+      "note": "板垣退助が土佐藩兵を率いて戊辰戦争に参加した経歴。"
+    },
+    {
+      "id": "yamaguchi_boshin_choshu",
+      "title": "山口県「維新文化財探訪・田中義一誕生地」",
+      "url": "https://bunkazai.pref.yamaguchi.lg.jp/sp/support/theme/isinn/inaka.html",
+      "note": "長州藩の西洋式軍制改革と諸隊の新政府軍主力としての戊辰戦争参加。"
+    },
+    {
+      "id": "archives_kuroda",
+      "title": "国立公文書館「明治宰相列伝・黒田清隆」",
+      "url": "https://www.archives.go.jp/exhibition/digital/2007_01/kiyotaka_kuroda/",
+      "note": "黒田清隆の北越・函館征討参謀としての戦功と榎本武揚助命。"
+    },
+    {
+      "id": "yamaguchi_omura_1869",
+      "title": "山口市「大村益次郎関係資料」",
+      "url": "https://www.city.yamaguchi.lg.jp/rs/rekibunshigen/r1253.html",
+      "note": "大村益次郎の戊辰戦争参加、1869年の兵部大輔就任と陸海軍制度改革。"
     }
   ]
 }

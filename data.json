@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "updated": "2026-07-30"
   },
   "sources": {
@@ -334,6 +334,46 @@
       "title": "国立公文書館「王政復古の大号令が発せられる」",
       "url": "https://www.archives.go.jp/ayumi/kobetsu/k03_1867_01.html",
       "note": "1867年12月9日の王政復古宣言と摂政・関白等の廃止、総裁・議定・参与の三職設置。"
+    },
+    "kyoto_fushimi_history": {
+      "title": "京都市伏見区「江戸時代～幕末・港湾商業都市の繁栄」",
+      "url": "https://www.city.kyoto.lg.jp/fushimi/page/0000013321.html",
+      "note": "鳥羽・伏見における幕府・会津・桑名側と薩摩・長州・土佐・安芸の新政府軍の戦闘。"
+    },
+    "hino_koyo_chinbutai": {
+      "title": "日野市郷土資料館「助郷史料に記されている鎮撫隊」",
+      "url": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/024/157/rekimin160.pdf",
+      "note": "1868年の新選組・甲陽鎮撫隊の甲州道中進軍と勝沼での敗退。"
+    },
+    "aizuwakamatsu_surrender": {
+      "title": "会津若松市「鶴ヶ城みりょく発見マップ」",
+      "url": "https://www.city.aizuwakamatsu.fukushima.jp/docs/2024090400012/file_contents/tsurugajo_miryokuhakken_panph3.pdf",
+      "note": "戊辰戦争の鶴ヶ城籠城と1868年9月22日の降伏。"
+    },
+    "kagoshima_boshin": {
+      "title": "鹿児島県「戊辰戦争」",
+      "url": "https://www.pref.kagoshima.jp/reimeikan/josetsu/theme/gendai/boshin/index.html",
+      "note": "薩摩・長州兵による官軍編成、江戸城無血開城、北越・東北・箱館への進軍。"
+    },
+    "kochi_itagaki_boshin": {
+      "title": "高知県「龍馬関連情報・板垣退助生誕地」",
+      "url": "https://www.pref.kochi.lg.jp/doc/kanko-ryoma/",
+      "note": "板垣退助が土佐藩兵を率いて戊辰戦争に参加した経歴。"
+    },
+    "yamaguchi_boshin_choshu": {
+      "title": "山口県「維新文化財探訪・田中義一誕生地」",
+      "url": "https://bunkazai.pref.yamaguchi.lg.jp/sp/support/theme/isinn/inaka.html",
+      "note": "長州藩の西洋式軍制改革と諸隊の新政府軍主力としての戊辰戦争参加。"
+    },
+    "archives_kuroda": {
+      "title": "国立公文書館「明治宰相列伝・黒田清隆」",
+      "url": "https://www.archives.go.jp/exhibition/digital/2007_01/kiyotaka_kuroda/",
+      "note": "黒田清隆の北越・函館征討参謀としての戦功と榎本武揚助命。"
+    },
+    "yamaguchi_omura_1869": {
+      "title": "山口市「大村益次郎関係資料」",
+      "url": "https://www.city.yamaguchi.lg.jp/rs/rekibunshigen/r1253.html",
+      "note": "大村益次郎の戊辰戦争参加、1869年の兵部大輔就任と陸海軍制度改革。"
     }
   },
   "factions": {
@@ -9179,161 +9219,209 @@
     },
     "1868-toba": {
       "新政府": {
-        "goal": "徳川家の軍事・政治力を排除し全国政権を確立する。",
-        "position": "鳥羽・伏見に勝利し官軍として諸藩を動員する。",
+        "goal": "京都へ進軍する幕府側を阻止する。",
+        "position": "鳥羽・伏見で幕府側に勝利し、東征大総督を任じて東征を始める。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "archives_toba_fushimi",
+            "archives_boshin_war"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "旧幕府勢力": {
-        "goal": "徳川家の地位を守り、京都政局へ復帰する。",
-        "position": "鳥羽・伏見敗戦と慶喜退去で指揮が崩れる。",
+        "goal": "薩摩藩を討つため、大坂から京都へ進軍する。",
+        "position": "鳥羽・伏見で新政府軍に敗れる。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kyoto_toba_fushimi_site",
+            "archives_toba_fushimi"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "薩摩藩": {
-        "goal": "新政府軍の軍事中核となる。",
-        "position": "西郷らが京都・東征を指揮する。",
+        "goal": "新政府側として京都へ進む幕府軍を阻止する。",
+        "position": "長州兵とともに官軍を構成し、鳥羽・伏見で旧幕府軍と戦う。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kagoshima_boshin",
+            "kyoto_fushimi_history"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "長州藩": {
-        "goal": "朝敵から官軍へ立場を転換し、新政府へ参加する。",
-        "position": "京都防衛・東征の主要戦力となる。",
+        "goal": "新政府側として京都へ進む幕府軍を阻止する。",
+        "position": "薩摩兵とともに官軍を構成し、鳥羽・伏見で旧幕府軍と戦う。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kagoshima_boshin",
+            "kyoto_fushimi_history"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "会津藩": {
-        "goal": "慶喜と旧幕府側を支える。",
-        "position": "朝敵とされ、会津処分問題へ進む。",
+        "goal": "旧幕府側として京都への進軍に加わる。",
+        "position": "幕府・桑名両軍とともに薩摩・長州などの新政府軍と戦い、敗退する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kyoto_fushimi_history"
+          ],
+          "reviewStatus": "verified"
         }
       }
     },
     "1868-edo": {
       "新政府": {
-        "goal": "江戸城と徳川領・軍事力を平穏に接収する。",
-        "position": "総攻撃を準備しつつ、条件交渉を受け入れる。",
+        "goal": "江戸城への総攻撃に先立ち旧幕府側の降伏条件を協議する。",
+        "position": "勝海舟と西郷隆盛の会談を経て、江戸城を無血開城させる。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kagoshima_boshin",
+            "ndl_portrait_katsu_detail"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "旧幕府勢力": {
-        "goal": "慶喜・徳川家の存続と江戸市街戦回避を図る。",
-        "position": "恭順派と抗戦派に分裂する。",
+        "goal": "東征軍へ降伏を申し入れ、江戸での戦闘を避ける。",
+        "position": "勝海舟が西郷隆盛と会談し、江戸城を明け渡す。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kagoshima_boshin",
+            "ndl_portrait_katsu_detail"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "薩摩藩": {
-        "goal": "東征軍の軍事・交渉を主導する。",
-        "position": "西郷が勝・山岡と交渉する。",
+        "goal": "東征軍参謀として旧幕府側の降伏申し入れを協議する。",
+        "position": "西郷隆盛が勝海舟と3月13・14日に会談し、江戸城無血開城を決める。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kagoshima_boshin",
+            "ndl_portrait_saigo_detail"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "新選組": {
-        "goal": "旧幕府軍として関東で抗戦を継続する。",
-        "position": "近藤・土方が甲州・関東へ転戦する。",
+        "goal": "甲陽鎮撫隊として江戸から甲府へ進軍する。",
+        "position": "甲州勝沼で東征軍と戦い、敗退する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "hino_koyo_chinbutai"
+          ],
+          "reviewStatus": "verified"
         }
       }
     },
     "1868-tohoku": {
       "新政府": {
-        "goal": "東北・北越を制圧し全国統一を進める。",
-        "position": "薩長土などの藩兵を各戦線へ投入する。",
+        "goal": "北越・東北へ東征軍を進める。",
+        "position": "奥羽25藩と北越諸藩の同盟に対抗し、会津藩の降伏により勝利を確定する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "archives_boshin_war"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "旧幕府勢力": {
-        "goal": "会津・庄内への寛典または抗戦を図る。",
-        "position": "奥羽越列藩同盟を結ぶが統一指揮に欠ける。",
+        "goal": "新政府へ会津・庄内両藩の寛典を求める。",
+        "position": "仙台・米沢両藩の呼びかけで奥羽諸藩が盟約を結び、新政府軍へ抵抗する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "akita_ouu_alliance",
+            "archives_boshin_war"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "会津藩": {
-        "goal": "藩主容保と藩の存続を守る。",
-        "position": "鶴ヶ城へ籠城し降伏する。",
+        "goal": "鶴ヶ城へ籠城し、新政府軍に抗戦する。",
+        "position": "約1か月の籠城戦後、9月22日に降伏する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "aizuwakamatsu_surrender",
+            "archives_boshin_war"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "薩摩藩": {
-        "goal": "新政府軍の北越・東北戦線を支える。",
-        "position": "黒田・川路らが参戦する。",
+        "goal": "薩摩兵を新政府軍として東征へ投入する。",
+        "position": "薩摩兵を主軸とする官軍が江戸から北越・東北へ進み、長岡・会津両藩を降伏させる。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kagoshima_boshin"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "長州藩": {
-        "goal": "新政府軍の軍制・作戦を支える。",
-        "position": "大村・山県らが軍事指揮へ参加する。",
+        "goal": "西洋軍制で整備した諸隊を新政府軍へ投入する。",
+        "position": "長州藩諸隊は新政府軍の主力として戊辰戦争を戦う。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "yamaguchi_boshin_choshu"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "土佐藩": {
-        "goal": "東山道・会津方面の軍事作戦を担う。",
-        "position": "板垣退助らが前線を指揮する。",
+        "goal": "土佐藩兵を戊辰戦争へ派遣する。",
+        "position": "板垣退助が土佐藩兵を率いて戦う。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kochi_itagaki_boshin"
+          ],
+          "reviewStatus": "verified"
         }
       }
     },
     "1869-hakodate": {
       "新政府": {
-        "goal": "箱館の旧幕府軍を降伏させ、全国軍事統一を完成する。",
-        "position": "海陸から五稜郭を包囲し、降伏交渉を行う。",
+        "goal": "箱館の旧幕府脱走軍を降伏させる。",
+        "position": "5月18日に榎本武揚らの降伏を受け、五稜郭を明け渡させる。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "hakodate_war_history",
+            "archives_boshin_war"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "旧幕府勢力": {
-        "goal": "蝦夷地を拠点に旧幕臣の生活と政治的地位を確保する。",
-        "position": "戦力を失い、五稜郭を開城する。",
+        "goal": "榎本武揚を総裁とする蝦夷地仮政権を五稜郭に置く。",
+        "position": "各拠点で敗れ、5月18日に榎本らが降伏して五稜郭を明け渡す。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "hakodate_war_history"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "薩摩藩": {
-        "goal": "新政府軍参謀・部隊を派遣する。",
-        "position": "黒田清隆が降伏・助命交渉に関わる。",
+        "goal": "黒田清隆が函館征討参謀として新政府軍に加わる。",
+        "position": "黒田は箱館戦争で戦功を立て、榎本武揚の助命にも尽力する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "archives_kuroda"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "長州藩": {
-        "goal": "新政府軍制と中央政府を支える。",
-        "position": "戦後の軍制・制度改革へ重心を移す。",
+        "goal": "長州出身の大村益次郎が新政府の軍制を整備する。",
+        "position": "明治2年に兵部大輔となり、陸海軍制度を改革して近代軍制の基礎を築く。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "yamaguchi_omura_1869"
+          ],
+          "reviewStatus": "verified"
         }
       }
     }

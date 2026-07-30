@@ -79,6 +79,14 @@
 - [鹿児島県「討幕の密勅」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/mittyoku.html)
 - [国立国会図書館レファレンス協同データベース「長州藩の朝敵取消し」](https://crd.ndl.go.jp/reference/entry/reference/show?asc=desc&dtltbs=1&fi=8_21+6_0+5_%E7%A4%BE%E4%BC%9A%E4%BA%BA+2_2+3_%E4%BA%8B%E5%AE%9F%E8%AA%BF%E6%9F%BB+4_%E9%83%B7%E5%9C%9F&id=1000242097&ldtl=1&mcmd=25&page=ref_view&st=update&state=2200000036)
 - [国立公文書館「王政復古の大号令が発せられる」](https://www.archives.go.jp/ayumi/kobetsu/k03_1867_01.html)
+- [京都市伏見区「江戸時代～幕末・港湾商業都市の繁栄」](https://www.city.kyoto.lg.jp/fushimi/page/0000013321.html)
+- [日野市郷土資料館「助郷史料に記されている鎮撫隊」](https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/024/157/rekimin160.pdf)
+- [会津若松市「鶴ヶ城みりょく発見マップ」](https://www.city.aizuwakamatsu.fukushima.jp/docs/2024090400012/file_contents/tsurugajo_miryokuhakken_panph3.pdf)
+- [鹿児島県「戊辰戦争」](https://www.pref.kagoshima.jp/reimeikan/josetsu/theme/gendai/boshin/index.html)
+- [高知県「龍馬関連情報・板垣退助生誕地」](https://www.pref.kochi.lg.jp/doc/kanko-ryoma/)
+- [山口県「維新文化財探訪・田中義一誕生地」](https://bunkazai.pref.yamaguchi.lg.jp/sp/support/theme/isinn/inaka.html)
+- [国立公文書館「明治宰相列伝・黒田清隆」](https://www.archives.go.jp/exhibition/digital/2007_01/kiyotaka_kuroda/)
+- [山口市「大村益次郎関係資料」](https://www.city.yamaguchi.lg.jp/rs/rekibunshigen/r1253.html)
 
 ## 情報の分類
 
