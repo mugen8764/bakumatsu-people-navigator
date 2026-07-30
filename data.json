@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "updated": "2026-07-30"
   },
   "sources": {
@@ -169,6 +169,71 @@
       "title": "国土地理院「地理院地図・標高・住所の確認」",
       "url": "https://maps.gsi.go.jp/help/intro/kinolist/2-jusho.html",
       "note": "日本国内地点の表示用概略座標を世界測地系の緯度・経度で確認。"
+    },
+    "natural_earth_populated_places": {
+      "title": "Natural Earth「Populated Places」",
+      "url": "https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-populated-places/",
+      "note": "海外都市の表示用概略座標に利用する公開地理データ。"
+    },
+    "hagi_shokasonjuku": {
+      "title": "萩市「萩エリア～萩市の資産　松下村塾」",
+      "url": "https://www.city.hagi.lg.jp/site/sekaiisan/h6081.html",
+      "note": "萩の松下村塾、吉田松陰と塾生による人材育成。"
+    },
+    "yamaguchi_capital_move": {
+      "title": "山口市「維新策源地・山口」",
+      "url": "https://www.city.yamaguchi.lg.jp/site/rekibunshigen/124849.html",
+      "note": "1863年の萩から山口への藩庁機能移転。"
+    },
+    "hofu_mitajiri_navy": {
+      "title": "防府市議会会議録・三田尻港と長州藩海軍局",
+      "url": "https://www.city.hofu.yamaguchi.jp/uploaded/attachment/35079.pdf",
+      "note": "幕末の三田尻港に置かれた長州藩海軍局。"
+    },
+    "fukui_sanai_shungaku": {
+      "title": "福井市立郷土歴史博物館「橋本左内と安政の大獄」",
+      "url": "https://history-museum.city.fukui.lg.jp/tenji/tenran/taigoku.html",
+      "note": "福井藩主松平春嶽と橋本左内による将軍継嗣問題への関与。"
+    },
+    "kochi_taisei_hokan": {
+      "title": "高知市「大政奉還150年」",
+      "url": "https://www.city.kochi.kochi.jp/akarui/naiwa/nw1703.htm",
+      "note": "土佐藩の後藤象二郎・山内容堂らによる大政奉還推進。"
+    },
+    "nagasaki_kameyama_company": {
+      "title": "長崎市「亀山社中」",
+      "url": "https://www.city.nagasaki.lg.jp/site/kodomo/61102.html",
+      "note": "坂本龍馬らが長崎で結成した亀山社中。"
+    },
+    "kobe_naval_training_center": {
+      "title": "神戸市立中央図書館「神戸海軍操練所平面図」",
+      "url": "https://www.city.kobe.lg.jp/information/institution/institution/library/arc/items/090.html",
+      "note": "勝海舟の発案で幕府が開いた神戸海軍操練所。"
+    },
+    "kagoshima_amami_saigo": {
+      "title": "鹿児島県「西郷南州謫居跡」",
+      "url": "https://www.pref.kagoshima.jp/suisuinavi/22253.html",
+      "note": "西郷隆盛が1859年に奄美大島で暮らした謫居跡。"
+    },
+    "kagoshima_okinoerabu_saigo": {
+      "title": "鹿児島県「公武合体論から討幕論へ」",
+      "url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/tobaku.html",
+      "note": "沖永良部島で流罪・禁固中だった西郷隆盛の召還。"
+    },
+    "hagi_takasugi_shanghai": {
+      "title": "萩博物館「高杉晋作資料室」",
+      "url": "https://www.city.hagi.lg.jp/hagihaku/hikidashi/shinsaku/index.htm",
+      "note": "高杉晋作による列強支配下の上海視察。"
+    },
+    "hagi_choshu_five": {
+      "title": "萩博物館「古写真で見る幕末明治・海外渡航者編」",
+      "url": "https://www.city.hagi.lg.jp/hagihaku/event/202303_spring/index.html",
+      "note": "1863年に英国へ渡った井上馨・山尾庸三・井上勝・伊藤博文・遠藤謹助。"
+    },
+    "hagi_choshu_five_london": {
+      "title": "萩市「長州ファイブ」",
+      "url": "https://www.city.hagi.lg.jp/uploaded/attachment/5003.pdf",
+      "note": "1863年にロンドンで撮影された長州五傑の写真と英国留学。"
     }
   },
   "factions": {
@@ -1650,10 +1715,13 @@
         131.4,
         34.41
       ],
-      "note": "長州藩の旧本拠。松下村塾と多くの長州人物の出身地。",
+      "note": "長州藩の城下町。吉田松陰が松下村塾を主宰し、高杉晋作・伊藤博文らが学んだ。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "gsi_maps_coordinates",
+          "hagi_shokasonjuku"
+        ],
+        "reviewStatus": "verified"
       }
     },
     "yamaguchi": {
@@ -1664,8 +1732,11 @@
       ],
       "note": "幕末期に長州藩庁が移された政治拠点。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "gsi_maps_coordinates",
+          "yamaguchi_capital_move"
+        ],
+        "reviewStatus": "verified"
       }
     },
     "shimonoseki": {
@@ -1690,10 +1761,13 @@
         131.57,
         34.05
       ],
-      "note": "長州藩の海軍・交通拠点。薩長交渉にも関係する。",
+      "note": "幕末に長州藩の海軍局が置かれた港。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "gsi_maps_coordinates",
+          "hofu_mitajiri_navy"
+        ],
+        "reviewStatus": "verified"
       }
     },
     "aizu": {
@@ -1748,10 +1822,13 @@
         140.47,
         36.37
       ],
-      "note": "水戸藩と水戸学の拠点。尊王攘夷思想と桜田門外の変の背景。",
+      "note": "水戸藩の本拠。桜田門外の変では水戸藩の浪士らが井伊直弼を襲撃した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "gsi_maps_coordinates",
+          "ndl_handwriting_bakumatsu_people"
+        ],
+        "reviewStatus": "verified"
       }
     },
     "hikone": {
@@ -1760,10 +1837,13 @@
         136.25,
         35.27
       ],
-      "note": "井伊家・彦根藩の本拠。",
+      "note": "井伊家の彦根藩の本拠。井伊直弼は彦根藩主から幕府大老となった。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "gsi_maps_coordinates",
+          "ndl_handwriting_bakumatsu_people"
+        ],
+        "reviewStatus": "verified"
       }
     },
     "fukui": {
@@ -1772,10 +1852,13 @@
         136.22,
         36.06
       ],
-      "note": "松平春嶽・橋本左内ら幕政改革派の拠点。",
+      "note": "福井藩の本拠。藩主松平春嶽は橋本左内を登用し、将軍継嗣問題に関与した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "gsi_maps_coordinates",
+          "fukui_sanai_shungaku"
+        ],
+        "reviewStatus": "verified"
       }
     },
     "kochi": {
@@ -1784,10 +1867,14 @@
         133.53,
         33.56
       ],
-      "note": "土佐藩の本拠。土佐勤王党と大政奉還論の背景。",
+      "note": "土佐藩の本拠。後藤象二郎・山内容堂らは大政奉還を推進した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "gsi_maps_coordinates",
+          "kochi_taisei_hokan",
+          "ndl_ryoma_political_plan"
+        ],
+        "reviewStatus": "verified"
       }
     },
     "nagasaki": {
@@ -1796,10 +1883,14 @@
         129.87,
         32.75
       ],
-      "note": "海軍伝習、貿易、亀山社中・海援隊などの活動拠点。",
+      "note": "オランダ軍人による海軍伝習が行われ、坂本龍馬らが亀山社中を結成した港町。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "gsi_maps_coordinates",
+          "ndl_nichiran_opening",
+          "nagasaki_kameyama_company"
+        ],
+        "reviewStatus": "verified"
       }
     },
     "kobe": {
@@ -1810,8 +1901,11 @@
       ],
       "note": "勝海舟の海軍操練所が置かれた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "gsi_maps_coordinates",
+          "kobe_naval_training_center"
+        ],
+        "reviewStatus": "verified"
       }
     },
     "amami": {
@@ -1820,10 +1914,13 @@
         129.49,
         28.38
       ],
-      "note": "西郷が潜居した島。",
+      "note": "西郷隆盛が1859年から暮らした島。龍郷には謫居跡が残る。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "gsi_maps_coordinates",
+          "kagoshima_amami_saigo"
+        ],
+        "reviewStatus": "verified"
       }
     },
     "okinoerabu": {
@@ -1832,10 +1929,13 @@
         128.61,
         27.37
       ],
-      "note": "西郷が遠島処分を受けた島。",
+      "note": "西郷隆盛が流罪・禁固となり、1864年に召還された島。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "gsi_maps_coordinates",
+          "kagoshima_okinoerabu_saigo"
+        ],
+        "reviewStatus": "verified"
       }
     },
     "shanghai": {
@@ -1844,10 +1944,13 @@
         121.47,
         31.23
       ],
-      "note": "高杉晋作・伊藤博文らが列強支配の実態を見た海外都市。",
+      "note": "高杉晋作が1862年に視察し、欧米列強の支配を目の当たりにした都市。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "natural_earth_populated_places",
+          "hagi_takasugi_shanghai"
+        ],
+        "reviewStatus": "verified"
       }
     },
     "london": {
@@ -1856,10 +1959,14 @@
         -0.13,
         51.51
       ],
-      "note": "長州五傑などが留学した英国の首都。地図では日本外のため一覧のみ表示。",
+      "note": "1863年、後に長州五傑と呼ばれる井上馨・山尾庸三・井上勝・伊藤博文・遠藤謹助が留学した英国の都市。地図では日本外のため一覧のみ表示。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "natural_earth_populated_places",
+          "hagi_choshu_five",
+          "hagi_choshu_five_london"
+        ],
+        "reviewStatus": "verified"
       }
     }
   },

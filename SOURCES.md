@@ -46,6 +46,19 @@
 - [秋田県公文書館「奥羽列藩同盟約書写」](https://www.pref.akita.lg.jp/pages/archive/67634)
 - [函館市「五稜郭の歴史（箱館戦争から現在）」](https://www.city.hakodate.hokkaido.jp/docs/2014011700789/)
 - [国土地理院「地理院地図・標高・住所の確認」](https://maps.gsi.go.jp/help/intro/kinolist/2-jusho.html)
+- [Natural Earth「Populated Places」](https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-populated-places/)
+- [萩市「萩エリア～萩市の資産　松下村塾」](https://www.city.hagi.lg.jp/site/sekaiisan/h6081.html)
+- [山口市「維新策源地・山口」](https://www.city.yamaguchi.lg.jp/site/rekibunshigen/124849.html)
+- [防府市議会会議録・三田尻港と長州藩海軍局](https://www.city.hofu.yamaguchi.jp/uploaded/attachment/35079.pdf)
+- [福井市立郷土歴史博物館「橋本左内と安政の大獄」](https://history-museum.city.fukui.lg.jp/tenji/tenran/taigoku.html)
+- [高知市「大政奉還150年」](https://www.city.kochi.kochi.jp/akarui/naiwa/nw1703.htm)
+- [長崎市「亀山社中」](https://www.city.nagasaki.lg.jp/site/kodomo/61102.html)
+- [神戸市立中央図書館「神戸海軍操練所平面図」](https://www.city.kobe.lg.jp/information/institution/institution/library/arc/items/090.html)
+- [鹿児島県「西郷南州謫居跡」](https://www.pref.kagoshima.jp/suisuinavi/22253.html)
+- [鹿児島県「公武合体論から討幕論へ」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/tobaku.html)
+- [萩博物館「高杉晋作資料室」](https://www.city.hagi.lg.jp/hagihaku/hikidashi/shinsaku/index.htm)
+- [萩博物館「古写真で見る幕末明治・海外渡航者編」](https://www.city.hagi.lg.jp/hagihaku/event/202303_spring/index.html)
+- [萩市「長州ファイブ」](https://www.city.hagi.lg.jp/uploaded/attachment/5003.pdf)
 
 ## 情報の分類
 

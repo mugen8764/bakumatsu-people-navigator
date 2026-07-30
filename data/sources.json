@@ -198,6 +198,84 @@
       "title": "国土地理院「地理院地図・標高・住所の確認」",
       "url": "https://maps.gsi.go.jp/help/intro/kinolist/2-jusho.html",
       "note": "日本国内地点の表示用概略座標を世界測地系の緯度・経度で確認。"
+    },
+    {
+      "id": "natural_earth_populated_places",
+      "title": "Natural Earth「Populated Places」",
+      "url": "https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-populated-places/",
+      "note": "海外都市の表示用概略座標に利用する公開地理データ。"
+    },
+    {
+      "id": "hagi_shokasonjuku",
+      "title": "萩市「萩エリア～萩市の資産　松下村塾」",
+      "url": "https://www.city.hagi.lg.jp/site/sekaiisan/h6081.html",
+      "note": "萩の松下村塾、吉田松陰と塾生による人材育成。"
+    },
+    {
+      "id": "yamaguchi_capital_move",
+      "title": "山口市「維新策源地・山口」",
+      "url": "https://www.city.yamaguchi.lg.jp/site/rekibunshigen/124849.html",
+      "note": "1863年の萩から山口への藩庁機能移転。"
+    },
+    {
+      "id": "hofu_mitajiri_navy",
+      "title": "防府市議会会議録・三田尻港と長州藩海軍局",
+      "url": "https://www.city.hofu.yamaguchi.jp/uploaded/attachment/35079.pdf",
+      "note": "幕末の三田尻港に置かれた長州藩海軍局。"
+    },
+    {
+      "id": "fukui_sanai_shungaku",
+      "title": "福井市立郷土歴史博物館「橋本左内と安政の大獄」",
+      "url": "https://history-museum.city.fukui.lg.jp/tenji/tenran/taigoku.html",
+      "note": "福井藩主松平春嶽と橋本左内による将軍継嗣問題への関与。"
+    },
+    {
+      "id": "kochi_taisei_hokan",
+      "title": "高知市「大政奉還150年」",
+      "url": "https://www.city.kochi.kochi.jp/akarui/naiwa/nw1703.htm",
+      "note": "土佐藩の後藤象二郎・山内容堂らによる大政奉還推進。"
+    },
+    {
+      "id": "nagasaki_kameyama_company",
+      "title": "長崎市「亀山社中」",
+      "url": "https://www.city.nagasaki.lg.jp/site/kodomo/61102.html",
+      "note": "坂本龍馬らが長崎で結成した亀山社中。"
+    },
+    {
+      "id": "kobe_naval_training_center",
+      "title": "神戸市立中央図書館「神戸海軍操練所平面図」",
+      "url": "https://www.city.kobe.lg.jp/information/institution/institution/library/arc/items/090.html",
+      "note": "勝海舟の発案で幕府が開いた神戸海軍操練所。"
+    },
+    {
+      "id": "kagoshima_amami_saigo",
+      "title": "鹿児島県「西郷南州謫居跡」",
+      "url": "https://www.pref.kagoshima.jp/suisuinavi/22253.html",
+      "note": "西郷隆盛が1859年に奄美大島で暮らした謫居跡。"
+    },
+    {
+      "id": "kagoshima_okinoerabu_saigo",
+      "title": "鹿児島県「公武合体論から討幕論へ」",
+      "url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/tobaku.html",
+      "note": "沖永良部島で流罪・禁固中だった西郷隆盛の召還。"
+    },
+    {
+      "id": "hagi_takasugi_shanghai",
+      "title": "萩博物館「高杉晋作資料室」",
+      "url": "https://www.city.hagi.lg.jp/hagihaku/hikidashi/shinsaku/index.htm",
+      "note": "高杉晋作による列強支配下の上海視察。"
+    },
+    {
+      "id": "hagi_choshu_five",
+      "title": "萩博物館「古写真で見る幕末明治・海外渡航者編」",
+      "url": "https://www.city.hagi.lg.jp/hagihaku/event/202303_spring/index.html",
+      "note": "1863年に英国へ渡った井上馨・山尾庸三・井上勝・伊藤博文・遠藤謹助。"
+    },
+    {
+      "id": "hagi_choshu_five_london",
+      "title": "萩市「長州ファイブ」",
+      "url": "https://www.city.hagi.lg.jp/uploaded/attachment/5003.pdf",
+      "note": "1863年にロンドンで撮影された長州五傑の写真と英国留学。"
     }
   ]
 }

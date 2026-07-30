@@ -126,11 +126,11 @@
       "name": "萩",
       "longitude": 131.4,
       "latitude": 34.41,
-      "note": "長州藩の旧本拠。松下村塾と多くの長州人物の出身地。",
+      "note": "長州藩の城下町。吉田松陰が松下村塾を主宰し、高杉晋作・伊藤博文らが学んだ。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "hagi_shokasonjuku"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と萩の松下村塾を確認。"
       }
     },
     {
@@ -140,9 +140,9 @@
       "latitude": 34.18,
       "note": "幕末期に長州藩庁が移された政治拠点。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "yamaguchi_capital_move"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と1863年の山口移鎮を確認。"
       }
     },
     {
@@ -162,11 +162,11 @@
       "name": "三田尻・防府",
       "longitude": 131.57,
       "latitude": 34.05,
-      "note": "長州藩の海軍・交通拠点。薩長交渉にも関係する。",
+      "note": "幕末に長州藩の海軍局が置かれた港。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "hofu_mitajiri_navy"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と三田尻港の長州藩海軍局を確認。"
       }
     },
     {
@@ -210,11 +210,11 @@
       "name": "水戸",
       "longitude": 140.47,
       "latitude": 36.37,
-      "note": "水戸藩と水戸学の拠点。尊王攘夷思想と桜田門外の変の背景。",
+      "note": "水戸藩の本拠。桜田門外の変では水戸藩の浪士らが井伊直弼を襲撃した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "ndl_handwriting_bakumatsu_people"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と水戸浪士らによる襲撃を確認。"
       }
     },
     {
@@ -222,11 +222,11 @@
       "name": "彦根",
       "longitude": 136.25,
       "latitude": 35.27,
-      "note": "井伊家・彦根藩の本拠。",
+      "note": "井伊家の彦根藩の本拠。井伊直弼は彦根藩主から幕府大老となった。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "ndl_handwriting_bakumatsu_people"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と井伊直弼の彦根藩主歴を確認。"
       }
     },
     {
@@ -234,11 +234,11 @@
       "name": "福井",
       "longitude": 136.22,
       "latitude": 36.06,
-      "note": "松平春嶽・橋本左内ら幕政改革派の拠点。",
+      "note": "福井藩の本拠。藩主松平春嶽は橋本左内を登用し、将軍継嗣問題に関与した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "fukui_sanai_shungaku"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と春嶽・左内の福井藩での活動を確認。"
       }
     },
     {
@@ -246,11 +246,11 @@
       "name": "高知",
       "longitude": 133.53,
       "latitude": 33.56,
-      "note": "土佐藩の本拠。土佐勤王党と大政奉還論の背景。",
+      "note": "土佐藩の本拠。後藤象二郎・山内容堂らは大政奉還を推進した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "kochi_taisei_hokan", "ndl_ryoma_political_plan"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と土佐藩による大政奉還推進を確認。"
       }
     },
     {
@@ -258,11 +258,11 @@
       "name": "長崎",
       "longitude": 129.87,
       "latitude": 32.75,
-      "note": "海軍伝習、貿易、亀山社中・海援隊などの活動拠点。",
+      "note": "オランダ軍人による海軍伝習が行われ、坂本龍馬らが亀山社中を結成した港町。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "ndl_nichiran_opening", "nagasaki_kameyama_company"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標、長崎海軍伝習、亀山社中を確認。"
       }
     },
     {
@@ -272,9 +272,9 @@
       "latitude": 34.69,
       "note": "勝海舟の海軍操練所が置かれた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "kobe_naval_training_center"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と勝の発案による神戸海軍操練所を確認。"
       }
     },
     {
@@ -282,11 +282,11 @@
       "name": "奄美大島",
       "longitude": 129.49,
       "latitude": 28.38,
-      "note": "西郷が潜居した島。",
+      "note": "西郷隆盛が1859年から暮らした島。龍郷には謫居跡が残る。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "kagoshima_amami_saigo"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と西郷の奄美大島での居住を確認。"
       }
     },
     {
@@ -294,11 +294,11 @@
       "name": "沖永良部島",
       "longitude": 128.61,
       "latitude": 27.37,
-      "note": "西郷が遠島処分を受けた島。",
+      "note": "西郷隆盛が流罪・禁固となり、1864年に召還された島。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "kagoshima_okinoerabu_saigo"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と西郷の沖永良部島での流罪・召還を確認。"
       }
     },
     {
@@ -306,11 +306,11 @@
       "name": "上海",
       "longitude": 121.47,
       "latitude": 31.23,
-      "note": "高杉晋作・伊藤博文らが列強支配の実態を見た海外都市。",
+      "note": "高杉晋作が1862年に視察し、欧米列強の支配を目の当たりにした都市。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["natural_earth_populated_places", "hagi_takasugi_shanghai"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と高杉の上海視察を確認。"
       }
     },
     {
@@ -318,11 +318,11 @@
       "name": "ロンドン",
       "longitude": -0.13,
       "latitude": 51.51,
-      "note": "長州五傑などが留学した英国の首都。地図では日本外のため一覧のみ表示。",
+      "note": "1863年、後に長州五傑と呼ばれる井上馨・山尾庸三・井上勝・伊藤博文・遠藤謹助が留学した英国の都市。地図では日本外のため一覧のみ表示。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["natural_earth_populated_places", "hagi_choshu_five", "hagi_choshu_five_london"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と長州五傑の英国留学を確認。"
       }
     }
   ]
