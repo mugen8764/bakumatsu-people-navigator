@@ -1200,15 +1200,14 @@
       "displayName": "島津久光",
       "role": "薩摩藩国父",
       "factionId": "satsuma",
-      "stance": "徳川主導の新体制を警戒し、王政復古を支持する。",
-      "importance": "薩摩の藩主権力と西郷・大久保ら実務家の関係は単純な上下だけではない。",
+      "stance": "藩主島津忠義を後見し、薩摩藩政の実権を握る。",
+      "importance": "西郷・大久保を中心に藩が倒幕路線へ進むなか、国父の立場にあった。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kagoshima_library_hisamitsu_saigo"
         ],
         "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "note": "鹿児島県立図書館で国父として藩主忠義を後見し藩政の実権を握ったことは確認。1867年の王政復古支持という個人の立場は直接確認できないため削除し、この時点の個別行動は校正待ちを維持。"
       }
     },
     {
@@ -1466,17 +1465,16 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "西郷吉之助",
-      "role": "薩摩藩倒幕派の中心",
+      "role": "薩摩藩士・討幕宣旨請願者",
       "factionId": "satsuma",
-      "stance": "大政奉還後も徳川家の政治力排除を求め、王政復古を準備する。",
-      "importance": "平和的政権返上だけでは不十分と考えた。",
+      "stance": "10月8日、大久保利通・小松帯刀と連署して討幕の宣旨を請願する。",
+      "importance": "薩摩・長州・安芸三藩の討幕協議が進むなか、その請願に加わった。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kagoshima_tobaku_mitchoku"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "鹿児島県の解説で1867年10月8日の西郷・大久保・小松による連署請願を確認。徳川家の政治力排除という目的や王政復古準備の具体的役割は、提示した出典から直接確認できないため削除。"
       }
     },
     {
@@ -1732,17 +1730,16 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "大久保一蔵",
-      "role": "薩摩藩倒幕派の実務責任者",
+      "role": "薩摩藩士・討幕宣旨請願者",
       "factionId": "satsuma",
-      "stance": "岩倉具視らと王政復古の政変を準備し、徳川家の政治力排除を目指す。",
-      "importance": "政変の制度設計・宮中工作を担った。",
+      "stance": "10月8日、西郷隆盛・小松帯刀と連署して討幕の宣旨を請願する。",
+      "importance": "10月14日、薩摩藩に対する討幕の密勅を受ける。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kagoshima_tobaku_mitchoku"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "鹿児島県の解説で1867年10月8日の西郷・大久保・小松による連署請願と、14日に大久保が密勅を受けたことを確認。王政復古政変の実務責任者という評価は、提示した出典から直接確認できないため削除。"
       }
     },
     {
@@ -1959,17 +1956,17 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "小松帯刀",
-      "role": "薩摩藩家老",
+      "role": "薩摩藩家老・討幕宣旨請願者",
       "factionId": "satsuma",
-      "stance": "大政奉還後の政権構想と王政復古に関与する。",
-      "importance": "倒幕派の中でも藩政・外交・経済を横断する人物。",
+      "stance": "10月8日、西郷隆盛・大久保利通と連署して討幕の宣旨を請願する。",
+      "importance": "密勅を受けた後、西郷・大久保と帰藩して討幕挙兵へ向けて動く。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kagoshima_tobaku_mitchoku",
+          "kagoshima_komatsu_1862"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "鹿児島県の解説で1867年10月8日の三名による連署請願を、鹿児島県観光連盟で家老就任と密勅受領後の帰藩を確認。抽象的な政権構想・内部調整評価は削除。"
       }
     },
     {
