@@ -45,6 +45,7 @@
 - [国立公文書館「戊辰戦争」](https://www.archives.go.jp/exhibition/digital/modean_state/contents/boshin-war/index.html)
 - [秋田県公文書館「奥羽列藩同盟約書写」](https://www.pref.akita.lg.jp/pages/archive/67634)
 - [函館市「五稜郭の歴史（箱館戦争から現在）」](https://www.city.hakodate.hokkaido.jp/docs/2014011700789/)
+- [国土地理院「地理院地図・標高・住所の確認」](https://maps.gsi.go.jp/help/intro/kinolist/2-jusho.html)
 
 ## 情報の分類
 

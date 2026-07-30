@@ -6,11 +6,11 @@
       "name": "江戸／東京",
       "longitude": 139.76,
       "latitude": 35.68,
-      "note": "幕府中枢。1868年に江戸城が新政府へ引き渡され、東京と改称される。",
+      "note": "幕府中枢。1868年4月11日に江戸城が新政府へ引き渡された。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "sumida_katsu_edo_surrender"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と江戸城引き渡しを確認。"
       }
     },
     {
@@ -20,9 +20,9 @@
       "latitude": 35.25,
       "note": "1853年のペリー来航と国書受領の舞台。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "archives_timeline"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と浦賀来航・久里浜での国書受領を確認。"
       }
     },
     {
@@ -30,11 +30,11 @@
       "name": "横浜",
       "longitude": 139.64,
       "latitude": 35.45,
-      "note": "条約交渉・開港・外国人居留地・洋学や技術導入の拠点。",
+      "note": "1854年の日米和親条約が調印された条約交渉地。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "archives_timeline", "ndl_modern_timeline"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と横浜での条約調印を確認。"
       }
     },
     {
@@ -42,11 +42,11 @@
       "name": "下田",
       "longitude": 138.95,
       "latitude": 34.68,
-      "note": "日米和親条約後の開港地。吉田松陰の密航未遂地。",
+      "note": "日米和親条約で米国船への開港が定められた港。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "ndl_treaty_1854_text"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と条約本文の下田開港規定を確認。"
       }
     },
     {
@@ -54,11 +54,11 @@
       "name": "箱館・五稜郭",
       "longitude": 140.73,
       "latitude": 41.77,
-      "note": "和親条約の開港地。1868〜69年の箱館戦争の中心。",
+      "note": "日米和親条約の開港地。1868〜69年の箱館戦争では五稜郭が旧幕府脱走軍の拠点となった。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "ndl_treaty_1854_text", "hakodate_war_history"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標、条約の開港規定、五稜郭をめぐる箱館戦争を確認。"
       }
     },
     {
@@ -68,9 +68,9 @@
       "latitude": 35.01,
       "note": "朝廷と幕末政局の中心。八月十八日の政変、禁門の変、王政復古の舞台。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "cultural_heritage_aug18", "kyoto_kinmon", "ndl_modern_timeline"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と京都で起きた政変・戦闘・王政復古を確認。"
       }
     },
     {
@@ -78,11 +78,11 @@
       "name": "鳥羽・伏見",
       "longitude": 135.75,
       "latitude": 34.94,
-      "note": "1868年、戊辰戦争最初の大規模戦闘が起きた地域。",
+      "note": "1868年1月3日、旧幕府軍と新政府軍が衝突し、戊辰戦争が始まった地域。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "archives_toba_fushimi", "kyoto_toba_fushimi_site"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と鳥羽・伏見での開戦を確認。"
       }
     },
     {
@@ -90,11 +90,11 @@
       "name": "大坂",
       "longitude": 135.5,
       "latitude": 34.69,
-      "note": "幕府の西国拠点。第二次長州征討や鳥羽・伏見前後の軍事拠点。",
+      "note": "第二次長州征討中に将軍家茂が大坂城で病没し、鳥羽・伏見の戦い前には徳川慶喜が滞在した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "archives_timeline", "kyoto_toba_fushimi_site"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と家茂病没・慶喜滞在を確認。"
       }
     },
     {
@@ -102,11 +102,11 @@
       "name": "鹿児島",
       "longitude": 130.56,
       "latitude": 31.6,
-      "note": "薩摩藩の本拠。集成館事業、寺田屋後の藩政、薩英戦争の背景。",
+      "note": "薩摩藩の本拠。1863年に鹿児島湾で薩摩藩と英国艦隊が交戦した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "archives_timeline"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と薩英戦争を確認。"
       }
     },
     {
@@ -116,9 +116,9 @@
       "latitude": 35.49,
       "note": "1862年、生麦事件が起きた地点。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "hyogo_bakumatsu_timeline_2"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と生麦事件を確認。"
       }
     },
     {
@@ -152,9 +152,9 @@
       "latitude": 33.96,
       "note": "攘夷戦、四国艦隊砲撃、奇兵隊活動の舞台。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "shimonoseki_joi_bombardment", "yamaguchi_choshu_reform"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標、外国船砲撃、下関戦争、諸隊活動を確認。"
       }
     },
     {
@@ -174,11 +174,11 @@
       "name": "会津若松",
       "longitude": 139.93,
       "latitude": 37.5,
-      "note": "会津藩の本拠。1868年の会津戦争で鶴ヶ城が包囲された。",
+      "note": "会津藩の本拠。1868年の東北戦争で会津藩が新政府軍と戦い、降伏した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "archives_boshin_war"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と会津藩の抗戦・降伏を確認。"
       }
     },
     {
@@ -186,11 +186,11 @@
       "name": "仙台",
       "longitude": 140.87,
       "latitude": 38.27,
-      "note": "仙台藩と奥羽越列藩同盟の主要拠点。",
+      "note": "仙台藩の本拠。仙台・米沢両藩は奥羽列藩同盟の結成を呼びかけた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "akita_ouu_alliance"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と仙台藩の同盟結成への関与を確認。"
       }
     },
     {
@@ -200,9 +200,9 @@
       "latitude": 37.9,
       "note": "北越戦争の主要地域。新政府軍と長岡藩などが戦った。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "地点単位の出典確認が必要。"
+        "sourceIds": ["gsi_maps_coordinates", "archives_toba_fushimi", "archives_boshin_war"],
+        "reviewStatus": "verified",
+        "note": "表示用概略座標と戊辰戦争が北越へ展開したことを確認。"
       }
     },
     {

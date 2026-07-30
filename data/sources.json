@@ -192,6 +192,12 @@
       "title": "函館市「五稜郭の歴史（箱館戦争から現在）」",
       "url": "https://www.city.hakodate.hokkaido.jp/docs/2014011700789/",
       "note": "旧幕府脱走軍の五稜郭占拠、土方歳三の戦死、榎本武揚らの降伏。"
+    },
+    {
+      "id": "gsi_maps_coordinates",
+      "title": "国土地理院「地理院地図・標高・住所の確認」",
+      "url": "https://maps.gsi.go.jp/help/intro/kinolist/2-jusho.html",
+      "note": "日本国内地点の表示用概略座標を世界測地系の緯度・経度で確認。"
     }
   ]
 }
