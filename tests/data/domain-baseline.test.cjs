@@ -3,22 +3,15 @@ const path = require('node:path');
 const test = require('node:test');
 
 const data = require(path.resolve(__dirname, '../../data.json'));
-
-function statusAt(person, sceneIndex) {
-  if (!person || sceneIndex < person.activeRange[0] || sceneIndex > person.activeRange[1]) return null;
-  for (let index = sceneIndex; index >= person.activeRange[0]; index -= 1) {
-    const status = person.statuses[data.scenes[index].id];
-    if (status) return { ...status, faction: status.faction || person.defaultFaction };
-  }
-  return null;
-}
+const { createDomain } = require(path.resolve(__dirname, '../../src/domain.js'));
+const domain = createDomain(data);
 
 test('scene-level counts stay at the current display baseline', () => {
   const counts = data.scenes.map((scene, sceneIndex) => ({
     scene: scene.id,
-    people: data.people.filter(person => statusAt(person, sceneIndex)).length,
-    factions: Object.keys(data.factionStates[scene.id] || {}).length,
-    relations: data.relations.filter(relation => relation.start <= sceneIndex && relation.end >= sceneIndex).length
+    people: domain.activePeople(sceneIndex).length,
+    factions: domain.activeFactionNames(sceneIndex).length,
+    relations: domain.activeRelations(sceneIndex).length
   }));
 
   assert.deepEqual(counts, [
@@ -42,18 +35,18 @@ test('scene-level counts stay at the current display baseline', () => {
 });
 test('a sparse status carries forward until the next explicit status', () => {
   const kido = data.people.find(person => person.id === 'kido');
-  assert.equal(statusAt(kido, 2).display, '桂小五郎');
-  assert.equal(statusAt(kido, 3).display, '桂小五郎');
-  assert.equal(statusAt(kido, 10).display, '桂小五郎');
-  assert.equal(statusAt(kido, 11).display, '木戸孝允');
-  assert.equal(statusAt(kido, 12).faction, '新政府');
-  assert.equal(statusAt(kido, 15).display, '木戸孝允');
+  assert.equal(domain.statusAt(kido, 2).display, '桂小五郎');
+  assert.equal(domain.statusAt(kido, 3).display, '桂小五郎');
+  assert.equal(domain.statusAt(kido, 10).display, '桂小五郎');
+  assert.equal(domain.statusAt(kido, 11).display, '木戸孝允');
+  assert.equal(domain.statusAt(kido, 12).faction, '新政府');
+  assert.equal(domain.statusAt(kido, 15).display, '木戸孝允');
 });
 
 test('a person is not displayed outside activeRange', () => {
   const perry = data.people.find(person => person.id === 'perry');
   const kondo = data.people.find(person => person.id === 'kondo');
-  assert.equal(statusAt(perry, 2), null);
-  assert.ok(statusAt(kondo, 13));
-  assert.equal(statusAt(kondo, 14), null);
+  assert.equal(domain.statusAt(perry, 2), null);
+  assert.ok(domain.statusAt(kondo, 13));
+  assert.equal(domain.statusAt(kondo, 14), null);
 });

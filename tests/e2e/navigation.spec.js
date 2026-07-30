@@ -85,4 +85,15 @@ test('timeline transport, calendar mode, and faction selection remain usable', a
   await page.locator('.tab[data-view="factions"]').click();
   await page.locator('[data-faction-card="幕府"]').click();
   await expect(page.locator('#factionDetail .detail-title')).toHaveText('幕府');
+  await expect(page).toHaveURL(/faction=%E5%B9%95%E5%BA%9C/);
+});
+
+test('changing the hash after load updates the visible state', async ({ page }) => {
+  await page.goto('/');
+  await page.evaluate(() => {
+    location.hash = 'scene=1867-taisei&view=relations&person=kido&faction=長州藩';
+  });
+  await expect(page.locator('#view-relations')).toBeVisible();
+  await expect(page.locator('#sceneSelect')).toHaveValue('11');
+  await expect(page.locator('#relationGraph .node.selected')).toHaveAttribute('data-graph-person', 'kido');
 });
