@@ -97,3 +97,57 @@ test('changing the hash after load updates the visible state', async ({ page }) 
   await expect(page.locator('#sceneSelect')).toHaveValue('11');
   await expect(page.locator('#relationGraph .node.selected')).toHaveAttribute('data-graph-person', 'kido');
 });
+
+test('tabs, search results, and relation nodes support keyboard operation', async ({ page }) => {
+  await page.goto('/');
+
+  const peopleTab = page.locator('#tab-people');
+  await expect(peopleTab).toHaveAttribute('aria-selected', 'true');
+  await peopleTab.focus();
+  await page.keyboard.press('ArrowRight');
+  await expect(page.locator('#tab-factions')).toBeFocused();
+  await expect(page.locator('#tab-factions')).toHaveAttribute('aria-selected', 'true');
+  await expect(page.locator('#view-factions')).toBeVisible();
+
+  const search = page.locator('#globalSearch');
+  await search.fill('桂小五郎');
+  await expect(search).toHaveAttribute('aria-expanded', 'true');
+  await search.press('ArrowDown');
+  await expect(search).toHaveAttribute('aria-activedescendant', 'search-result-0');
+  await search.press('Enter');
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('桂小五郎');
+  await expect(search).toHaveAttribute('aria-expanded', 'false');
+
+  await page.locator('#sceneSelect').selectOption('9');
+  await page.locator('#tab-relations').click();
+  const otherNode = page.locator('#relationGraph [data-graph-person]:not([data-graph-person="kido"])').first();
+  const nextPerson = await otherNode.getAttribute('data-graph-person');
+  await otherNode.focus();
+  await otherNode.press('Enter');
+  await expect(page).toHaveURL(new RegExp(`person=${nextPerson}`));
+});
+
+test('missing generated data shows a recovery message instead of a blank page', async ({ page }) => {
+  const pageErrors = [];
+  page.on('pageerror', error => pageErrors.push(error.message));
+  await page.route('**/data.js', route => route.fulfill({
+    contentType: 'text/javascript',
+    body: 'window.BM_DATA = null;'
+  }));
+
+  await page.goto('/');
+  await expect(page.locator('#appStatus')).toBeVisible();
+  await expect(page.locator('#appStatus')).toContainText('表示データを読み込めませんでした');
+  await expect(page.locator('#appStatus')).toContainText('data.js');
+  expect(pageErrors).toEqual([]);
+});
+
+test('reduced motion preference disables optional animation and transitions', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.goto('/');
+
+  await expect(page.locator('#sceneProgress')).toHaveCSS('transition-duration', '0s');
+  await page.locator('#tab-map').click();
+  const activeMarker = page.locator('#historyMap .map-active').first();
+  await expect(activeMarker).toHaveCSS('animation-name', 'none');
+});

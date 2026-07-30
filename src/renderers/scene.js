@@ -24,11 +24,21 @@
       $('#prevScene').disabled = state.scene === 0;
       $('#nextScene').disabled = state.scene === data.scenes.length - 1;
       $('#playScenes').textContent = state.timer ? 'Ⅱ 一時停止' : '▶ 再生';
+      $('#playScenes').setAttribute('aria-pressed', String(Boolean(state.timer)));
     }
 
     function renderTabs() {
-      $$('.tab').forEach(button => button.classList.toggle('active', button.dataset.view === state.view));
-      $$('.view').forEach(view => view.classList.toggle('active', view.id === `view-${state.view}`));
+      $$('.tab').forEach(button => {
+        const active = button.dataset.view === state.view;
+        button.classList.toggle('active', active);
+        button.setAttribute('aria-selected', String(active));
+        button.tabIndex = active ? 0 : -1;
+      });
+      $$('.view').forEach(view => {
+        const active = view.id === `view-${state.view}`;
+        view.classList.toggle('active', active);
+        view.hidden = !active;
+      });
     }
 
     function renderSources() {

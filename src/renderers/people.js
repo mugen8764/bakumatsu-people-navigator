@@ -11,7 +11,7 @@
       const names = ['すべて', ...domain.activeFactionNames(state.scene)
         .filter(name => activePeople.some(person => domain.factionAt(person, state.scene) === name))];
       if (!names.includes(state.personFactionFilter)) state.personFactionFilter = 'すべて';
-      $('#personFilters').innerHTML = names.map(name => `<button type="button" class="chip ${state.personFactionFilter === name ? 'active' : ''}" data-person-filter="${name}">${name}</button>`).join('');
+      $('#personFilters').innerHTML = names.map(name => `<button type="button" class="chip ${state.personFactionFilter === name ? 'active' : ''}" data-person-filter="${name}" aria-pressed="${state.personFactionFilter === name}">${name}</button>`).join('');
       $$('[data-person-filter]').forEach(button => button.addEventListener('click', () => {
         state.personFactionFilter = button.dataset.personFilter;
         render();
@@ -29,7 +29,7 @@
       $('#personCards').innerHTML = people.map(person => {
         const status = domain.statusAt(person, state.scene);
         const faction = status.faction;
-        return `<button type="button" class="card-button ${person.id === state.selectedPerson ? 'selected' : ''}" data-person-card="${person.id}"><div class="avatar" style="background:${shared.factionColor(faction)}">${shared.factionShort(faction)}</div><div class="name">${status.display}</div><div class="later-name">${status.display !== person.name ? `後の名：${person.name}` : (person.aliases[0] || '')}</div><div class="role">${status.role}</div><div class="card-foot"><span>${faction}</span><span>詳細 →</span></div></button>`;
+        return `<button type="button" class="card-button ${person.id === state.selectedPerson ? 'selected' : ''}" data-person-card="${person.id}" aria-pressed="${person.id === state.selectedPerson}"><div class="avatar" style="background:${shared.factionColor(faction)}">${shared.factionShort(faction)}</div><div class="name">${status.display}</div><div class="later-name">${status.display !== person.name ? `後の名：${person.name}` : (person.aliases[0] || '')}</div><div class="role">${status.role}</div><div class="card-foot"><span>${faction}</span><span>詳細 →</span></div></button>`;
       }).join('') || '<div class="notice">この条件で表示できる人物はいません。</div>';
       $$('[data-person-card]').forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.personCard)));
       renderDetail();

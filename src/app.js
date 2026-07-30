@@ -1,6 +1,22 @@
 (() => {
   'use strict';
 
+  function showFatalError(error) {
+    console.error(error);
+    const status = document.querySelector('#appStatus');
+    if (!status) return;
+    document.querySelectorAll('.page > :not(#appStatus)').forEach(element => { element.hidden = true; });
+    status.hidden = false;
+    status.innerHTML = '<h1>表示データを読み込めませんでした</h1><p>ページを再読み込みしてください。解決しない場合は、公開ファイルに <code>data.js</code> と <code>src/</code> が含まれているか確認してください。</p>';
+  }
+
+  try {
+    initialize();
+  } catch (error) {
+    showFatalError(error);
+  }
+
+  function initialize() {
   const data = window.BM_DATA;
   if (!data) throw new Error('data.js could not be loaded');
   const requiredModules = [
@@ -171,17 +187,32 @@
     state.relationType = event.target.value;
     relationsRenderer.render();
   });
-  $$('.tab').forEach(button => button.addEventListener('click', () => setView(button.dataset.view)));
+  const tabs = $$('.tab');
+  tabs.forEach((button, index) => {
+    button.addEventListener('click', () => setView(button.dataset.view));
+    button.addEventListener('keydown', event => {
+      let nextIndex = null;
+      if (event.key === 'ArrowRight') nextIndex = (index + 1) % tabs.length;
+      else if (event.key === 'ArrowLeft') nextIndex = (index - 1 + tabs.length) % tabs.length;
+      else if (event.key === 'Home') nextIndex = 0;
+      else if (event.key === 'End') nextIndex = tabs.length - 1;
+      if (nextIndex === null) return;
+      event.preventDefault();
+      setView(tabs[nextIndex].dataset.view);
+      tabs[nextIndex].focus();
+    });
+  });
   $('#globalSearch').addEventListener('input', searchController.render);
   $('#globalSearch').addEventListener('keydown', event => {
+    if (searchController.handleKeydown(event)) return;
     if (event.key === 'Escape') {
       event.currentTarget.value = '';
-      searchController.render();
+      searchController.close();
       event.currentTarget.blur();
     }
   });
   document.addEventListener('click', event => {
-    if (!event.target.closest('.global-search')) $('#searchResults').hidden = true;
+    if (!event.target.closest('.global-search')) searchController.close();
   });
   document.addEventListener('keydown', event => {
     if (event.key === '/' && document.activeElement !== $('#globalSearch')) {
@@ -199,4 +230,5 @@
 
   renderAll();
   mapRenderer.init();
+  }
 })();

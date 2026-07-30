@@ -29,14 +29,22 @@
         if (!point) return;
         html += `<line x1="${center.x}" y1="${center.y}" x2="${point.x}" y2="${point.y}" class="edge focus ${relation.type === '対立' ? 'dash' : ''}"></line><text x="${(center.x + point.x) / 2}" y="${(center.y + point.y) / 2 - 6}" text-anchor="middle" class="edge-label">${relation.label}</text>`;
       });
-      html += `<circle cx="${center.x}" cy="${center.y}" r="45" fill="${shared.factionColor(status.faction)}" class="node selected" data-graph-person="${person.id}"></circle><text x="${center.x}" y="${center.y + 5}" text-anchor="middle" class="node-label">${status.display}</text>`;
+      html += `<circle cx="${center.x}" cy="${center.y}" r="45" fill="${shared.factionColor(status.faction)}" class="node selected" data-graph-person="${person.id}" role="button" tabindex="0" aria-label="${status.display}を選択"></circle><text x="${center.x}" y="${center.y + 5}" text-anchor="middle" class="node-label">${status.display}</text>`;
       points.forEach(({ other, x, y }) => {
         const otherStatus = domain.statusAt(other, state.scene);
-        html += `<circle cx="${x}" cy="${y}" r="36" fill="${shared.factionColor(otherStatus.faction)}" class="node" data-graph-person="${other.id}"></circle><text x="${x}" y="${y + 5}" text-anchor="middle" class="node-label">${otherStatus.display}</text>`;
+        html += `<circle cx="${x}" cy="${y}" r="36" fill="${shared.factionColor(otherStatus.faction)}" class="node" data-graph-person="${other.id}" role="button" tabindex="0" aria-label="${otherStatus.display}を選択"></circle><text x="${x}" y="${y + 5}" text-anchor="middle" class="node-label">${otherStatus.display}</text>`;
       });
       if (!points.length) html += '<text x="410" y="390" text-anchor="middle" class="edge-label">選択条件で表示できる関係がありません</text>';
       svg.innerHTML = html;
-      $$('[data-graph-person]', svg).forEach(node => node.addEventListener('click', () => actions.selectPerson(node.dataset.graphPerson, 'relations')));
+      $$('[data-graph-person]', svg).forEach(node => {
+        const select = () => actions.selectPerson(node.dataset.graphPerson, 'relations');
+        node.addEventListener('click', select);
+        node.addEventListener('keydown', event => {
+          if (event.key !== 'Enter' && event.key !== ' ') return;
+          event.preventDefault();
+          select();
+        });
+      });
       $('#metricPeople').textContent = domain.activePeople(state.scene).length;
       $('#metricRelations').textContent = domain.activeRelations(state.scene, state.relationType).length;
       $('#metricFactions').textContent = domain.activeFactionNames(state.scene).length;

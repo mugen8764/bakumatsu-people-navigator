@@ -12,7 +12,7 @@
       $('#factionCards').innerHTML = names.map(name => {
         const metadata = data.factions[name];
         const memberCount = domain.activePeople(state.scene).filter(person => domain.factionAt(person, state.scene) === name).length;
-        return `<button type="button" class="faction-card ${name === state.selectedFaction ? 'selected' : ''}" data-faction-card="${name}"><div class="faction-header"><div class="faction-dot" style="background:${metadata.color}">${metadata.short}</div><div><div class="name">${name}</div><div class="faction-count">表示人物 ${memberCount}名</div></div></div><p>${states[name].position}</p><div class="faction-count">目的：${states[name].goal}</div></button>`;
+        return `<button type="button" class="faction-card ${name === state.selectedFaction ? 'selected' : ''}" data-faction-card="${name}" aria-pressed="${name === state.selectedFaction}"><div class="faction-header"><div class="faction-dot" style="background:${metadata.color}">${metadata.short}</div><div><div class="name">${name}</div><div class="faction-count">表示人物 ${memberCount}名</div></div></div><p>${states[name].position}</p><div class="faction-count">目的：${states[name].goal}</div></button>`;
       }).join('');
       $$('[data-faction-card]').forEach(button => button.addEventListener('click', () => actions.selectFaction(button.dataset.factionCard)));
       renderDetail();
