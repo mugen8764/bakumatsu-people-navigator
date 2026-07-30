@@ -239,7 +239,7 @@
       "id": "nagasaki_kameyama_company",
       "title": "長崎市「亀山社中」",
       "url": "https://www.city.nagasaki.lg.jp/site/kodomo/61102.html",
-      "note": "坂本龍馬らが長崎で結成した亀山社中。"
+      "note": "坂本龍馬らが長崎で結成した亀山社中と、1866年の長州向け鉄砲・汽船購入および輸送。"
     },
     {
       "id": "kobe_naval_training_center",
@@ -254,10 +254,10 @@
       "note": "西郷隆盛が1859年に奄美大島で暮らした謫居跡。"
     },
     {
-      "id": "kagoshima_okinoerabu_saigo",
-      "title": "鹿児島県「公武合体論から討幕論へ」",
+      "id": "kagoshima_tobaku_transition",
+      "title": "鹿児島県歴史・美術センター黎明館「公武合体論から討幕論へ」",
       "url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/tobaku.html",
-      "note": "沖永良部島で流罪・禁固中だった西郷隆盛の召還。"
+      "note": "沖永良部島からの西郷隆盛召還、島津久光の公武合体路線が支持を失った経緯、西郷による1865年の長州再征出兵拒否と武器・汽船購入の斡旋。"
     },
     {
       "id": "hagi_takasugi_shanghai",
@@ -287,7 +287,7 @@
       "id": "ndl_portrait_shoin_detail",
       "title": "国立国会図書館「近代日本人の肖像・吉田松陰」",
       "url": "https://www.ndl.go.jp/portrait/datas/217/index.html",
-      "note": "1854年の下田での海外密航未遂と松下村塾。"
+      "note": "1854年の下田での海外密航未遂、松下村塾での門人教育、1859年の安政の大獄による刑死。"
     },
     {
       "id": "iwaki_kazunomiya",
@@ -695,13 +695,13 @@
       "id": "kagoshima_komatsu_1862",
       "title": "鹿児島県観光連盟「小松帯刀像」",
       "url": "https://www.kagoshima-kankou.com/guide/70359",
-      "note": "小松帯刀の1861年の側役就任、1862年の島津久光上京への随行、寺田屋事件・幕政改革への対応と家老就任。"
+      "note": "小松帯刀の1861年の側役就任、1862年の家老就任、長州再征への出兵拒否の藩論取りまとめ、1866年の小松邸での薩長間会談。"
     },
     {
       "id": "kyoto_kido_1862",
       "title": "京都市「木戸孝允神道碑・碑文の大意」",
       "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hi145_abst.html",
-      "note": "1862年7月の毛利敬親上洛に先立つ桂小五郎の入京と、朝廷への接近・周旋。"
+      "note": "1862年の朝廷周旋、禁門の変後の但馬逃走、長州帰還後の木戸準一郎への改名と政務担当、大村益次郎への軍事改革委任。"
     },
     {
       "id": "hagi_takasugi_1862",
@@ -821,7 +821,7 @@
       "id": "kochi_takechi_imprisonment",
       "title": "高知市「史跡 武市半平太旧宅及び墓」",
       "url": "https://www.city.kochi.kochi.jp/soshiki/90/cas-state-1600100.html",
-      "note": "武市半平太の京都留守居加役就任と帰国、八月十八日の政変後の土佐勤王党弾圧、1863年9月21日の投獄。"
+      "note": "武市半平太の京都留守居加役就任と帰国、八月十八日の政変後の土佐勤王党弾圧、1863年9月21日の投獄、1865年閏5月11日の切腹命令と死去。"
     },
     {
       "id": "archives_kinmon_aftermath",
@@ -887,13 +887,13 @@
       "id": "nakaoka_museum_profile",
       "title": "中岡慎太郎館「中岡慎太郎とは」",
       "url": "https://www.nakaokashintarokan.jp/about.html",
-      "note": "中岡慎太郎の26歳での脱藩と、脱藩後に長州藩のもとで活動して薩長連合へ向かった経緯。"
+      "note": "中岡慎太郎の26歳での脱藩、長州藩下での活動、坂本龍馬と両藩代表を説得して1866年の薩長連合へ至った経緯。"
     },
     {
       "id": "ndl_portrait_katamori_detail",
       "title": "国立国会図書館「近代日本人の肖像・松平容保」",
       "url": "https://www.ndl.go.jp/portrait/datas/334/",
-      "note": "松平容保の京都守護職就任、八月十八日の政変、1864年の禁門の変での長州勢攻撃。"
+      "note": "松平容保の京都守護職就任、京都の治安と公武合体への関与、八月十八日の政変、禁門の変、征長強硬論、1867年の免職。"
     },
     {
       "id": "hino_hijikata_profile",
@@ -906,6 +906,66 @@
       "title": "日野市「日野宿本陣」",
       "url": "https://www.city.hino.lg.jp/shisei/profile/kokusai/note/nikki/1002355.html",
       "note": "近藤勇が新選組局長、土方歳三が新選組副長となった経歴。"
+    },
+    {
+      "id": "fukui_research_okubo_1865",
+      "title": "福井県文書館研究紀要・佐々木克「松平春嶽と明治維新」",
+      "url": "https://dl.ndl.go.jp/view/prepareDownload?contentNo=1&itemId=info%3Andljp%2Fpid%2F10325050",
+      "note": "1865年9月の長州征討勅許、大久保利通による朝廷への反対工作と「非義ノ勅命」とする薩摩藩庁への報告。"
+    },
+    {
+      "id": "yamaguchi_kido_guide",
+      "title": "山口県立山口図書館「木戸孝允（桂小五郎）・人物調べ方案内」",
+      "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/kido_takayoshi/",
+      "note": "木戸孝允の但馬潜伏、長州藩政改革、藩命による木戸姓の使用、1866年の薩長同盟締結。"
+    },
+    {
+      "id": "yamaguchi_tokankeki",
+      "title": "山口県立山口図書館「明治維新人物ギャラリー・討奸檄」",
+      "url": "https://library.pref.yamaguchi.lg.jp/meijiishin/202501/",
+      "note": "高杉晋作らの功山寺決起と下関藩会所襲撃、藩政府へ掲げた檄文、伊藤博文が清書したとされる高札。"
+    },
+    {
+      "id": "yamaguchi_inoue_1865",
+      "title": "山口県立山口図書館「没後100年 井上馨」",
+      "url": "https://library.pref.yamaguchi.lg.jp/material/201508/",
+      "note": "井上聞多の英国留学・帰国・下関での和平工作、1865年の功山寺決起への山口鴻城軍総督としての参加。"
+    },
+    {
+      "id": "nagasaki_kameyama_1865",
+      "title": "長崎市「歌で巡るながさき・亀山社中跡」",
+      "url": "https://www.city.nagasaki.lg.jp/nagazine/uta/060110/",
+      "note": "坂本龍馬が薩摩藩などの援助を得て1865年に亀山社中を設立し、海運を中心に活動した経緯。"
+    },
+    {
+      "id": "kochi_goto_1865",
+      "title": "高知県立坂本龍馬記念館「後藤象二郎誕生地」",
+      "url": "https://ryoma-kinenkan.jp/place/2018/02/post-25.html",
+      "note": "後藤象二郎が1865年の土佐勤王党の獄で大監察として取り調べにあたり、1866年に開成館を開業した経歴。"
+    },
+    {
+      "id": "kochi_tosa_people",
+      "title": "高知県立高知城歴史博物館「土佐史の人々・幕末維新期」",
+      "url": "https://www.kochi-johaku.jp/column/4520/",
+      "note": "後藤象二郎が海防・軍事関係の役職を経て重職へ進み、1866年に開成館の責任者となった経歴。"
+    },
+    {
+      "id": "kochi_itagaki_book",
+      "title": "高知市立自由民権記念館『板垣退助BOOK』",
+      "url": "https://www.city.kochi.kochi.jp/uploaded/life/182643_683933_misc.pdf",
+      "note": "乾退助の1864年の町奉行・大目付就任、1866年の騎兵修行のための江戸行き、1867年の土佐藩兵制改革。"
+    },
+    {
+      "id": "ndl_portrait_kondo_detail",
+      "title": "国立国会図書館「近代日本人の肖像・近藤勇」",
+      "url": "https://www.ndl.go.jp/portrait/datas/269",
+      "note": "近藤勇の新選組局長就任と、京都守護職松平容保の下で新選組が京都の治安維持を担った経緯。"
+    },
+    {
+      "id": "kyoto_shinsengumi_1865",
+      "title": "京都市下京区役所「区内の施設案内・光縁寺」",
+      "url": "https://www.city.kyoto.lg.jp/shimogyo/page/0000012669.html",
+      "note": "新選組が1865年に屯所を西本願寺へ移したことと、移転に反対した山南敬助の脱走・切腹。"
     }
   ]
 }

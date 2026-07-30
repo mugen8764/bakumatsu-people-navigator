@@ -42,7 +42,7 @@
         "鹿児島藩"
       ],
       "evidence": {
-        "sourceIds": ["kagoshima_okinoerabu_saigo", "ndl_history_satcho"],
+        "sourceIds": ["kagoshima_tobaku_transition", "ndl_history_satcho"],
         "reviewStatus": "verified",
         "note": "鹿児島県解説と国際子ども図書館資料で公武合体、薩長同盟、幕府解体への転換を確認。"
       }
@@ -803,7 +803,7 @@
       "goal": "薩長同盟に基づき第二次長州征討へ参加しない。",
       "position": "長州藩向けの武器・汽船購入をあっせんし、長州征討への出兵を断る。",
       "evidence": {
-        "sourceIds": ["ndl_history_satcho", "kagoshima_okinoerabu_saigo"],
+        "sourceIds": ["ndl_history_satcho", "kagoshima_tobaku_transition"],
         "reviewStatus": "verified",
         "note": "国際子ども図書館と鹿児島県解説で薩摩藩の征討不参加と長州への物資支援を確認。"
       }

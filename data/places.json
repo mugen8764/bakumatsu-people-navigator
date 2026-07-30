@@ -296,7 +296,7 @@
       "latitude": 27.37,
       "note": "西郷隆盛が流罪・禁固となり、1864年に召還された島。",
       "evidence": {
-        "sourceIds": ["gsi_maps_coordinates", "kagoshima_okinoerabu_saigo"],
+        "sourceIds": ["gsi_maps_coordinates", "kagoshima_tobaku_transition"],
         "reviewStatus": "verified",
         "note": "表示用概略座標と西郷の沖永良部島での流罪・召還を確認。"
       }

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.18",
+    "version": "1.0.19",
     "updated": "2026-07-30"
   },
   "sources": {
@@ -203,7 +203,7 @@
     "nagasaki_kameyama_company": {
       "title": "長崎市「亀山社中」",
       "url": "https://www.city.nagasaki.lg.jp/site/kodomo/61102.html",
-      "note": "坂本龍馬らが長崎で結成した亀山社中。"
+      "note": "坂本龍馬らが長崎で結成した亀山社中と、1866年の長州向け鉄砲・汽船購入および輸送。"
     },
     "kobe_naval_training_center": {
       "title": "神戸市立中央図書館「神戸海軍操練所平面図」",
@@ -215,10 +215,10 @@
       "url": "https://www.pref.kagoshima.jp/suisuinavi/22253.html",
       "note": "西郷隆盛が1859年に奄美大島で暮らした謫居跡。"
     },
-    "kagoshima_okinoerabu_saigo": {
-      "title": "鹿児島県「公武合体論から討幕論へ」",
+    "kagoshima_tobaku_transition": {
+      "title": "鹿児島県歴史・美術センター黎明館「公武合体論から討幕論へ」",
       "url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/tobaku.html",
-      "note": "沖永良部島で流罪・禁固中だった西郷隆盛の召還。"
+      "note": "沖永良部島からの西郷隆盛召還、島津久光の公武合体路線が支持を失った経緯、西郷による1865年の長州再征出兵拒否と武器・汽船購入の斡旋。"
     },
     "hagi_takasugi_shanghai": {
       "title": "萩博物館「高杉晋作資料室」",
@@ -243,7 +243,7 @@
     "ndl_portrait_shoin_detail": {
       "title": "国立国会図書館「近代日本人の肖像・吉田松陰」",
       "url": "https://www.ndl.go.jp/portrait/datas/217/index.html",
-      "note": "1854年の下田での海外密航未遂と松下村塾。"
+      "note": "1854年の下田での海外密航未遂、松下村塾での門人教育、1859年の安政の大獄による刑死。"
     },
     "iwaki_kazunomiya": {
       "title": "いわき市「安藤信正生誕200年・公武合体策と和宮降嫁」",
@@ -583,12 +583,12 @@
     "kagoshima_komatsu_1862": {
       "title": "鹿児島県観光連盟「小松帯刀像」",
       "url": "https://www.kagoshima-kankou.com/guide/70359",
-      "note": "小松帯刀の1861年の側役就任、1862年の島津久光上京への随行、寺田屋事件・幕政改革への対応と家老就任。"
+      "note": "小松帯刀の1861年の側役就任、1862年の家老就任、長州再征への出兵拒否の藩論取りまとめ、1866年の小松邸での薩長間会談。"
     },
     "kyoto_kido_1862": {
       "title": "京都市「木戸孝允神道碑・碑文の大意」",
       "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hi145_abst.html",
-      "note": "1862年7月の毛利敬親上洛に先立つ桂小五郎の入京と、朝廷への接近・周旋。"
+      "note": "1862年の朝廷周旋、禁門の変後の但馬逃走、長州帰還後の木戸準一郎への改名と政務担当、大村益次郎への軍事改革委任。"
     },
     "hagi_takasugi_1862": {
       "title": "萩市立萩図書館「高杉晋作ものしり100問」",
@@ -688,7 +688,7 @@
     "kochi_takechi_imprisonment": {
       "title": "高知市「史跡 武市半平太旧宅及び墓」",
       "url": "https://www.city.kochi.kochi.jp/soshiki/90/cas-state-1600100.html",
-      "note": "武市半平太の京都留守居加役就任と帰国、八月十八日の政変後の土佐勤王党弾圧、1863年9月21日の投獄。"
+      "note": "武市半平太の京都留守居加役就任と帰国、八月十八日の政変後の土佐勤王党弾圧、1863年9月21日の投獄、1865年閏5月11日の切腹命令と死去。"
     },
     "archives_kinmon_aftermath": {
       "title": "国立公文書館「激動幕末・元治甲子長州附属諸国脱走変名大略」",
@@ -743,12 +743,12 @@
     "nakaoka_museum_profile": {
       "title": "中岡慎太郎館「中岡慎太郎とは」",
       "url": "https://www.nakaokashintarokan.jp/about.html",
-      "note": "中岡慎太郎の26歳での脱藩と、脱藩後に長州藩のもとで活動して薩長連合へ向かった経緯。"
+      "note": "中岡慎太郎の26歳での脱藩、長州藩下での活動、坂本龍馬と両藩代表を説得して1866年の薩長連合へ至った経緯。"
     },
     "ndl_portrait_katamori_detail": {
       "title": "国立国会図書館「近代日本人の肖像・松平容保」",
       "url": "https://www.ndl.go.jp/portrait/datas/334/",
-      "note": "松平容保の京都守護職就任、八月十八日の政変、1864年の禁門の変での長州勢攻撃。"
+      "note": "松平容保の京都守護職就任、京都の治安と公武合体への関与、八月十八日の政変、禁門の変、征長強硬論、1867年の免職。"
     },
     "hino_hijikata_profile": {
       "title": "日野市「土方歳三」",
@@ -759,6 +759,56 @@
       "title": "日野市「日野宿本陣」",
       "url": "https://www.city.hino.lg.jp/shisei/profile/kokusai/note/nikki/1002355.html",
       "note": "近藤勇が新選組局長、土方歳三が新選組副長となった経歴。"
+    },
+    "fukui_research_okubo_1865": {
+      "title": "福井県文書館研究紀要・佐々木克「松平春嶽と明治維新」",
+      "url": "https://dl.ndl.go.jp/view/prepareDownload?contentNo=1&itemId=info%3Andljp%2Fpid%2F10325050",
+      "note": "1865年9月の長州征討勅許、大久保利通による朝廷への反対工作と「非義ノ勅命」とする薩摩藩庁への報告。"
+    },
+    "yamaguchi_kido_guide": {
+      "title": "山口県立山口図書館「木戸孝允（桂小五郎）・人物調べ方案内」",
+      "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/kido_takayoshi/",
+      "note": "木戸孝允の但馬潜伏、長州藩政改革、藩命による木戸姓の使用、1866年の薩長同盟締結。"
+    },
+    "yamaguchi_tokankeki": {
+      "title": "山口県立山口図書館「明治維新人物ギャラリー・討奸檄」",
+      "url": "https://library.pref.yamaguchi.lg.jp/meijiishin/202501/",
+      "note": "高杉晋作らの功山寺決起と下関藩会所襲撃、藩政府へ掲げた檄文、伊藤博文が清書したとされる高札。"
+    },
+    "yamaguchi_inoue_1865": {
+      "title": "山口県立山口図書館「没後100年 井上馨」",
+      "url": "https://library.pref.yamaguchi.lg.jp/material/201508/",
+      "note": "井上聞多の英国留学・帰国・下関での和平工作、1865年の功山寺決起への山口鴻城軍総督としての参加。"
+    },
+    "nagasaki_kameyama_1865": {
+      "title": "長崎市「歌で巡るながさき・亀山社中跡」",
+      "url": "https://www.city.nagasaki.lg.jp/nagazine/uta/060110/",
+      "note": "坂本龍馬が薩摩藩などの援助を得て1865年に亀山社中を設立し、海運を中心に活動した経緯。"
+    },
+    "kochi_goto_1865": {
+      "title": "高知県立坂本龍馬記念館「後藤象二郎誕生地」",
+      "url": "https://ryoma-kinenkan.jp/place/2018/02/post-25.html",
+      "note": "後藤象二郎が1865年の土佐勤王党の獄で大監察として取り調べにあたり、1866年に開成館を開業した経歴。"
+    },
+    "kochi_tosa_people": {
+      "title": "高知県立高知城歴史博物館「土佐史の人々・幕末維新期」",
+      "url": "https://www.kochi-johaku.jp/column/4520/",
+      "note": "後藤象二郎が海防・軍事関係の役職を経て重職へ進み、1866年に開成館の責任者となった経歴。"
+    },
+    "kochi_itagaki_book": {
+      "title": "高知市立自由民権記念館『板垣退助BOOK』",
+      "url": "https://www.city.kochi.kochi.jp/uploaded/life/182643_683933_misc.pdf",
+      "note": "乾退助の1864年の町奉行・大目付就任、1866年の騎兵修行のための江戸行き、1867年の土佐藩兵制改革。"
+    },
+    "ndl_portrait_kondo_detail": {
+      "title": "国立国会図書館「近代日本人の肖像・近藤勇」",
+      "url": "https://www.ndl.go.jp/portrait/datas/269",
+      "note": "近藤勇の新選組局長就任と、京都守護職松平容保の下で新選組が京都の治安維持を担った経緯。"
+    },
+    "kyoto_shinsengumi_1865": {
+      "title": "京都市下京区役所「区内の施設案内・光縁寺」",
+      "url": "https://www.city.kyoto.lg.jp/shimogyo/page/0000012669.html",
+      "note": "新選組が1865年に屯所を西本願寺へ移したことと、移転に反対した山南敬助の脱走・切腹。"
     }
   },
   "factions": {
@@ -804,7 +854,7 @@
       ],
       "evidence": {
         "sourceIds": [
-          "kagoshima_okinoerabu_saigo",
+          "kagoshima_tobaku_transition",
           "ndl_history_satcho"
         ],
         "reviewStatus": "verified"
@@ -2494,7 +2544,7 @@
       "evidence": {
         "sourceIds": [
           "gsi_maps_coordinates",
-          "kagoshima_okinoerabu_saigo"
+          "kagoshima_tobaku_transition"
         ],
         "reviewStatus": "verified"
       }
@@ -3783,14 +3833,14 @@
         "1865-choshu": {
           "display": "島津久光",
           "role": "薩摩藩国父",
-          "stance": "第二次長州征討への全面協力を避け、幕府への不信を強める。",
-          "importance": "薩長接近の背景にある薩摩の政策転換。",
+          "stance": "公武合体による幕政改革を唱えてきたが、その路線は次第に支持を失う。",
+          "importance": "薩摩藩では西郷が第二次長州征討への出兵を断り、長州支援へ動いた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kagoshima_library_hisamitsu_saigo",
+              "kagoshima_tobaku_transition"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1866-satcho": {
@@ -3964,7 +4014,7 @@
           "evidence": {
             "sourceIds": [
               "isen_saigo_1863_letter",
-              "kagoshima_okinoerabu_saigo"
+              "kagoshima_tobaku_transition"
             ],
             "reviewStatus": "verified"
           }
@@ -3977,7 +4027,7 @@
           "evidence": {
             "sourceIds": [
               "isen_saigo_1863_letter",
-              "kagoshima_okinoerabu_saigo"
+              "kagoshima_tobaku_transition"
             ],
             "reviewStatus": "verified"
           }
@@ -3997,15 +4047,15 @@
         },
         "1865-choshu": {
           "display": "西郷吉之助",
-          "role": "薩摩藩軍事・国事担当",
-          "stance": "長州再征への協力を抑え、長州との接触を進める。",
-          "importance": "敵対から提携への政策転換を実務で担う。",
+          "role": "薩摩藩軍賦役・対外交渉担当",
+          "stance": "第二次長州征討への出兵を断り、長州の武器・汽船購入を取り次ぐ。",
+          "importance": "第一次征討で交渉にあたった立場から、長州を支援する側へ移る。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "jacar_saigo_detail",
+              "kagoshima_tobaku_transition"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1866-satcho": {
@@ -4220,15 +4270,15 @@
         },
         "1865-choshu": {
           "display": "大久保一蔵",
-          "role": "薩摩藩国事担当",
-          "stance": "幕府の長州再征に慎重姿勢を取り、長州との提携可能性を探る。",
-          "importance": "薩摩の政策転換を藩内外で調整した。",
+          "role": "薩摩藩御側役",
+          "stance": "朝廷で長州再征反対を働きかけ、勅命が下ると西郷宛書簡で従えないとの立場を示す。",
+          "importance": "1865年9月の長州再征勅命に対し、正義を欠くとして明確に反対した。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "jacar_okubo_detail",
+              "fukui_research_okubo_1865"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1866-satcho": {
@@ -4416,14 +4466,13 @@
         "1865-choshu": {
           "display": "小松帯刀",
           "role": "薩摩藩家老",
-          "stance": "長崎貿易や武器取引を通じ長州との接点を作る。",
-          "importance": "薩長提携を物資面・外交面から準備した。",
+          "stance": "幕府からの長州再征出兵命令を拒む藩論をまとめる。",
+          "importance": "翌1866年には京都の小松邸で薩長間の会談が行われる。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kagoshima_komatsu_1862"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1866-satcho": {
@@ -4804,15 +4853,14 @@
         },
         "1865-choshu": {
           "display": "吉田松陰",
-          "role": "故人・松下村塾の師",
-          "stance": "門下生が藩政改革と軍制再編を担う。",
-          "importance": "思想が異なる実務・軍事路線へ継承された。",
+          "role": "1859年に刑死・松下村塾の師",
+          "stance": "安政の大獄で刑死しており、1865年時点では活動していない。",
+          "importance": "松下村塾では高杉晋作・久坂玄瑞・伊藤博文・山県有朋らを教えた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "ndl_portrait_shoin_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         }
       }
@@ -4920,15 +4968,15 @@
         },
         "1865-choshu": {
           "display": "桂小五郎",
-          "role": "長州藩改革派指導者",
-          "stance": "高杉らの藩政転換後、政治・外交の中心へ復帰する。",
-          "importance": "軍事指揮とは別に藩の政治統合を担う。",
+          "role": "長州藩政務担当・木戸準一郎",
+          "stance": "但馬から長州へ戻り、藩命で木戸準一郎と改名して政務の舵取りを担う。",
+          "importance": "大村益次郎に軍事改革を担当させ、幕府との戦いに備えた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kyoto_kido_1862",
+              "yamaguchi_kido_guide"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1866-satcho": {
@@ -5114,15 +5162,15 @@
         },
         "1865-choshu": {
           "display": "高杉晋作",
-          "role": "諸隊改革派指導者",
-          "stance": "功山寺挙兵から藩内保守派を退け、改革派政権を成立させる。",
-          "importance": "長州が第二次征討へ抗戦できる体制を作った。",
+          "role": "功山寺挙兵・藩政府反対派指導者",
+          "stance": "功山寺で決起し、下関の藩会所を襲撃して保守派が握る藩政府へ反旗を翻す。",
+          "importance": "藩内戦に勝利し、恭順を掲げた藩の主流派を退けた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "yamaguchi_takasugi_guide",
+              "yamaguchi_tokankeki"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1866-satcho": {
@@ -5262,15 +5310,15 @@
         },
         "1865-choshu": {
           "display": "久坂玄瑞",
-          "role": "故人",
-          "stance": "死後、長州尊攘派の象徴となる。",
-          "importance": "高杉・木戸らの再建路線とは異なる最期を迎えた。",
+          "role": "前年の禁門の変で死去",
+          "stance": "1864年の禁門の変で負傷し、鷹司邸で自刃しており、1865年時点では活動していない。",
+          "importance": "長州藩が禁門の変で失った人材の一人である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "yamaguchi_kusaka_guide",
+              "archives_kinmon_aftermath"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         }
       }
@@ -5349,15 +5397,14 @@
         },
         "1865-choshu": {
           "display": "伊藤俊輔",
-          "role": "長州藩改革派実務者",
-          "stance": "高杉らを支え、軍制・外交・藩政改革に関わる。",
-          "importance": "若手実務官僚として台頭する。",
+          "role": "高杉晋作の挙兵参加者",
+          "stance": "高杉らの下関挙兵に参加し、藩政府に対する主張を掲げた「討奸檄」を清書したとされる。",
+          "importance": "広範な藩政改革を担ったとの抽象的評価ではなく、確認できる挙兵時の行動を表示する。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "yamaguchi_tokankeki"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1866-expedition": {
@@ -5464,15 +5511,14 @@
         },
         "1865-choshu": {
           "display": "井上聞多",
-          "role": "長州藩改革派実務者",
-          "stance": "高杉・木戸らと藩政改革、武器調達、財政を支える。",
-          "importance": "戦争を支える経済・調達能力を担った。",
+          "role": "山口鴻城軍総督",
+          "stance": "前年の襲撃による重傷から復帰し、高杉晋作の功山寺決起に山口鴻城軍総督として加わる。",
+          "importance": "確認できない財政・武器調達の役割ではなく、1865年の軍職を表示する。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "yamaguchi_inoue_1865"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1866-expedition": {
@@ -5566,15 +5612,15 @@
         },
         "1865-choshu": {
           "display": "村田蔵六",
-          "role": "長州藩軍制改革責任者",
-          "stance": "藩兵・諸隊の編成、訓練、指揮体系を整える。",
-          "importance": "第二次長州征討に備える近代軍制を設計した。",
+          "role": "長州藩軍事改革担当",
+          "stance": "帰藩して政務を担う木戸から軍事改革を任され、幕府との戦いに備える。",
+          "importance": "1860年から取り組んだ長州藩の軍制改革を進める。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kyoto_kido_1862",
+              "yamaguchi_omura_1869"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1866-expedition": {
@@ -5695,13 +5741,13 @@
         },
         "1865-choshu": {
           "display": "山県狂介",
-          "role": "奇兵隊軍監・改革派",
-          "stance": "藩内戦で改革派側に立ち、諸隊の統制を担う。",
-          "importance": "長州改革派の軍事組織を維持する。",
+          "role": "奇兵隊軍監（1863年就任）",
+          "stance": "1863年の奇兵隊軍監就任は確認できるが、1865年の在職継続と具体的な行動は確認中。",
+          "importance": "藩内戦で諸隊を統制したとの従来記述は、項目を直接支える根拠が未確認。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "yamaguchi_yamagata_guide",
+              "jacar_yamagata_detail"
             ],
             "reviewStatus": "needs_review"
           }
@@ -5876,14 +5922,14 @@
         "1865-choshu": {
           "display": "孝明天皇",
           "role": "天皇",
-          "stance": "長州処分を求めつつ、幕府の再征と京都秩序を注視する。",
-          "importance": "倒幕勢力にとって孝明天皇の信任は自明ではなかった。",
+          "stance": "朝廷は9月21日、将軍家茂に長州再征の勅命を下す。",
+          "importance": "大久保利通は勅命を阻止しようと働きかけ、発令後も正義を欠くとして反対した。",
           "evidence": {
             "sourceIds": [
               "archives_timeline",
-              "ndl_handwriting"
+              "fukui_research_okubo_1865"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1866-satcho": {
@@ -6111,15 +6157,15 @@
         },
         "1865-choshu": {
           "display": "岩倉具視",
-          "role": "蟄居中・薩摩と接触",
-          "stance": "薩摩藩士らと新政権構想を協議し始める。",
-          "importance": "宮中政治への復帰準備を進める。",
+          "role": "岩倉村に蟄居中",
+          "stance": "洛中追放が続くなか、岩倉村で日記・覚書を記す。",
+          "importance": "1865年閏5月の日記が残るが、蟄居を赦され朝廷へ復帰するのは1867年である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "ndl_iwakura_exile",
+              "ndl_portrait_iwakura_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1866-satcho": {
@@ -6415,14 +6461,13 @@
         "1865-choshu": {
           "display": "松平容保",
           "role": "京都守護職",
-          "stance": "長州再征と京都秩序維持を支持する。",
-          "importance": "薩摩が幕府から離れる中でも会津は幕府・朝廷協調を維持する。",
+          "stance": "京都の治安と公武合体にあたり、長州征討では強硬論をとる。",
+          "importance": "1862年の就任から王政復古で免職される1867年まで京都守護職にあった。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "ndl_portrait_katamori_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1866-satcho": {
@@ -6755,15 +6800,14 @@
         },
         "1865-choshu": {
           "display": "武市瑞山",
-          "role": "切腹（1865年）",
-          "stance": "土佐藩命により切腹する。",
-          "importance": "土佐藩の尊攘運動は長州とは異なる形で抑え込まれた。",
+          "role": "投獄中・1865年閏5月11日に切腹",
+          "stance": "1863年からの投獄が続き、土佐藩から切腹を命じられて死去する。",
+          "importance": "約1年9か月の獄中生活の末、37歳で没した。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kochi_takechi_imprisonment"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         }
       }
@@ -6855,15 +6899,15 @@
         },
         "1865-choshu": {
           "display": "坂本龍馬",
-          "role": "亀山社中代表",
-          "stance": "長崎を拠点に交易・海運を行い、薩摩名義で長州へ武器を仲介する。",
-          "importance": "政治提携を物資・商取引で支える。",
+          "role": "亀山社中を結成",
+          "stance": "薩摩藩などの援助を受け、長崎で海運を中心とする亀山社中を結成する。",
+          "importance": "長州向けの鉄砲・汽船購入と輸送は1866年の活動であり、1865年の結成と分ける。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "nagasaki_kameyama_1865",
+              "nagasaki_kameyama_company"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1866-satcho": {
@@ -6937,15 +6981,15 @@
       "statuses": {
         "1865-choshu": {
           "display": "後藤象二郎",
-          "role": "土佐藩参政",
-          "stance": "藩政改革と開成館事業を進め、海運・貿易へ関与する。",
-          "importance": "土佐藩上層部と脱藩者の接点になりうる立場。",
+          "role": "土佐藩大監察",
+          "stance": "土佐勤王党の獄で、武市半平太らの取り調べと処分にあたる。",
+          "importance": "開成館の設立と責任者就任は翌1866年であり、この時点へ先取りしない。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kochi_goto_1865",
+              "kochi_tosa_people"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1866-satcho": {
@@ -7048,15 +7092,14 @@
         },
         "1865-choshu": {
           "display": "中岡慎太郎",
-          "role": "薩長連携工作者",
-          "stance": "長州の再起と薩摩の政策転換をつなぐ活動を進める。",
-          "importance": "龍馬と並ぶ薩長接近の仲介者。",
+          "role": "土佐脱藩志士・薩長連合の仲介者",
+          "stance": "長州藩のもとで活動し、龍馬とともに薩摩・長州両藩の代表者を説得する。",
+          "importance": "両藩の連合が成立するのは翌1866年である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "nakaoka_museum_profile"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1866-satcho": {
@@ -7131,15 +7174,26 @@
       "statuses": {
         "1865-choshu": {
           "display": "乾退助",
-          "role": "土佐藩軍事・藩政担当",
-          "stance": "土佐勤王党弾圧後の藩政で軍事改革に関わる。",
-          "importance": "武市派とは別の土佐藩上士系人材。",
+          "role": "土佐藩町奉行・大目付",
+          "stance": "1864年に町奉行・大目付となり、土佐藩の役職に就く。",
+          "importance": "騎兵修行は1866年、兵制改革は1867年であり、1865年の実績として先取りしない。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "kochi_itagaki_book"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
+          }
+        },
+        "1866-satcho": {
+          "display": "乾退助",
+          "role": "騎兵修行のため江戸へ赴く",
+          "stance": "1866年、騎兵を学ぶため江戸へ赴く。",
+          "importance": "土佐藩の兵制改革を手がけるのは翌1867年である。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_itagaki_book"
+            ],
+            "reviewStatus": "verified"
           }
         },
         "1867-taisei": {
@@ -7298,14 +7352,14 @@
         "1865-choshu": {
           "display": "近藤勇",
           "role": "新選組局長",
-          "stance": "京都で長州系志士・倒幕派の探索を続ける。",
-          "importance": "幕府京都支配の一部を担う。",
+          "stance": "局長を務める新選組は、屯所を壬生から西本願寺へ移す。",
+          "importance": "京都守護職松平容保の下で京都の治安維持を担った。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "ndl_portrait_kondo_detail",
+              "kyoto_shinsengumi_1865"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1866-satcho": {
@@ -9521,7 +9575,7 @@
         "evidence": {
           "sourceIds": [
             "ndl_history_satcho",
-            "kagoshima_okinoerabu_saigo"
+            "kagoshima_tobaku_transition"
           ],
           "reviewStatus": "verified"
         }
