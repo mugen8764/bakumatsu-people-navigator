@@ -118,6 +118,13 @@
 - [国立国会図書館「近代日本人の肖像・岩倉具視」](https://www.ndl.go.jp/portrait/datas/23/index.html)
 - [高知県立高知城歴史博物館「土佐藩歴代藩主紹介」](https://www.kochi-johaku.jp/column/3819/)
 - [鹿児島県「郷土の偉人・天璋院篤姫」](https://www.pref.kagoshima.jp/kids/rekishi/bakumatsu.html)
+- [茨城県立歴史館「桜田門外の変」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/sakuradamonngainohen.htm)
+- [茨城県立歴史館「斉昭薨去」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/nariakikoukyo.htm)
+- [松戸市戸定歴史館「徳川慶喜・昭武関係年表 一」](https://www.city.matsudo.chiba.jp/tojo/rekishikan_shoukai/rekishi/nenpyou/1837-1869.html)
+- [鹿児島県「菊池源吾の手紙」](https://www.pref.kagoshima.jp/ab23/reimeikan/josetsu/theme/gendai/toubaku/kgs04_s1_3.html)
+- [アジア歴史資料センター「大久保利通」](https://www.jacar.go.jp/dictionary/02_item.html?id=00000312)
+- [高知県立高知城歴史博物館「土佐藩の歴史―年表―」](https://www.kochi-johaku.jp/column/4531/)
+- [国立国会図書館「近代日本人の肖像・坂本竜馬」](https://www.ndl.go.jp/portrait/datas/89)
 
 ## 情報の分類
 
