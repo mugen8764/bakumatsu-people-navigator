@@ -37,7 +37,7 @@ test('a sparse status carries forward until the next explicit status', () => {
   const kido = data.people.find(person => person.id === 'kido');
   assert.equal(domain.statusAt(kido, 2).display, '桂小五郎');
   assert.equal(domain.statusAt(kido, 3).display, '桂小五郎');
-  assert.equal(domain.statusAt(kido, 10).display, '桂小五郎');
+  assert.equal(domain.statusAt(kido, 10).display, '木戸準一郎');
   assert.equal(domain.statusAt(kido, 11).display, '木戸孝允');
   assert.equal(domain.statusAt(kido, 12).faction, '新政府');
   assert.equal(domain.statusAt(kido, 15).display, '木戸孝允');

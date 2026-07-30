@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.20",
+    "version": "1.0.21",
     "updated": "2026-07-30"
   },
   "sources": {
@@ -258,7 +258,7 @@
     "ndl_portrait_yoshinobu_detail": {
       "title": "国立国会図書館「近代日本人の肖像・徳川慶喜」",
       "url": "https://www.ndl.go.jp/portrait/datas/147/index.html",
-      "note": "一橋慶喜の将軍継嗣擁立、井伊直弼との対立、安政の大獄での処分。"
+      "note": "一橋慶喜の将軍継嗣擁立、井伊直弼との対立、安政の大獄での処分、1862年の将軍後見職、1866年の第15代将軍就任。"
     },
     "kagoshima_teradaya": {
       "title": "鹿児島県「寺田屋事件」",
@@ -648,7 +648,7 @@
     "yamaguchi_takasugi_1863": {
       "title": "山口県立山口図書館「資料に見る 坂本龍馬と長州」",
       "url": "https://library.pref.yamaguchi.lg.jp/material/201005/",
-      "note": "高杉晋作の1863年の奇兵隊結成と攘夷活動。"
+      "note": "高杉晋作の奇兵隊結成、1866年の海軍総督としての第二次幕長戦争指揮、乙丑丸を引き渡した坂本龍馬の小倉口参戦。"
     },
     "kyoto_kusaka_site": {
       "title": "京都市「長州藩士久坂玄瑞の密議の角屋」",
@@ -743,7 +743,7 @@
     "nakaoka_museum_profile": {
       "title": "中岡慎太郎館「中岡慎太郎とは」",
       "url": "https://www.nakaokashintarokan.jp/about.html",
-      "note": "中岡慎太郎の26歳での脱藩、長州藩下での活動、坂本龍馬と両藩代表を説得して1866年の薩長連合へ至った経緯。"
+      "note": "中岡慎太郎の26歳での脱藩、長州藩下での活動、坂本龍馬と両藩代表を説得して1866年の薩長連合へ至った経緯、1867年の陸援隊結成。"
     },
     "ndl_portrait_katamori_detail": {
       "title": "国立国会図書館「近代日本人の肖像・松平容保」",
@@ -778,7 +778,7 @@
     "yamaguchi_inoue_1865": {
       "title": "山口県立山口図書館「没後100年 井上馨」",
       "url": "https://library.pref.yamaguchi.lg.jp/material/201508/",
-      "note": "井上聞多の英国留学・帰国・下関での和平工作、1865年の功山寺決起への山口鴻城軍総督としての参加。"
+      "note": "井上聞多の英国留学・帰国・下関での和平工作、1865年の功山寺決起への山口鴻城軍総督としての参加、1866年四境戦争での芸州口参謀。"
     },
     "nagasaki_kameyama_1865": {
       "title": "長崎市「歌で巡るながさき・亀山社中跡」",
@@ -814,6 +814,26 @@
       "title": "鹿児島県歴史・美術センター黎明館「薩長同盟成立」",
       "url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/sattyo.html",
       "note": "1866年の薩長盟約、坂本龍馬・中岡慎太郎による仲介、京都の小松帯刀邸で小松・西郷・木戸が盟約を結んだこと。"
+    },
+    "archives_enomoto_1867": {
+      "title": "国立公文書館「旗本御家人・榎本釜次郎脱艦一件書並仏人ブリユウネ等所罰方」",
+      "url": "https://www.archives.go.jp/exhibition/digital/hatamotogokenin/contents/56.html",
+      "note": "榎本武揚のオランダ留学と、帰国後の1867年における軍艦役・軍艦頭並就任。"
+    },
+    "yamaguchi_omura_guide": {
+      "title": "山口県立山口図書館「大村益次郎・人物調べ方案内」",
+      "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/omura_masujiro2/",
+      "note": "1866年の兵学校三兵教授役兼軍政用掛への登用と、四境戦争での石州口参謀としての戦闘。"
+    },
+    "yamaguchi_yamagata_1866": {
+      "title": "山口県立山口図書館「山県有朋と高杉・西郷」",
+      "url": "https://library.pref.yamaguchi.lg.jp/meijiishin/202102/",
+      "note": "山県有朋が志士として四境戦争と戊辰戦争を戦った経歴。"
+    },
+    "ndl_portrait_kazunomiya_detail": {
+      "title": "国立国会図書館「近代日本人の肖像・和宮」",
+      "url": "https://www.ndl.go.jp/portrait/datas/6156",
+      "note": "1866年の家茂死去後の出家と静寛院宮号、戊辰戦争期の江戸攻撃中止・徳川家存続への尽力。"
     }
   },
   "factions": {
@@ -2898,14 +2918,15 @@
         "1866-expedition": {
           "display": "徳川家茂",
           "role": "14代将軍（大坂で死去）",
-          "stance": "第二次長州征討の途上、大坂城で病死する。",
-          "importance": "将軍死去が征討継続を困難にし、慶喜継承を招いた。",
+          "stance": "第二次長州戦争の戦闘開始後、大坂城で病没する。",
+          "importance": "家茂の死去を受け、幕府は征討停止を決めて休戦交渉へ移る。",
           "evidence": {
             "sourceIds": [
               "archives_timeline",
-              "ndl_handwriting"
+              "ndl_katsu_1866_diary",
+              "ndl_authority_iemochi"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         }
       }
@@ -3029,15 +3050,14 @@
         "1866-expedition": {
           "display": "徳川慶喜",
           "role": "15代将軍",
-          "stance": "家茂死後に将軍となり、フランス式軍制など幕府再建を試みる。",
-          "importance": "従来型幕府を改革しつつ存続させる最後の試み。",
+          "stance": "家茂死去後、勝海舟に長州との休戦交渉を進めさせ、同年に第15代将軍となる。",
+          "importance": "フランス式軍制改革の具体像は当該出典が直接支えないため、この時点では表示しない。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_modern_timeline",
-              "ndl_handwriting"
+              "ndl_portrait_yoshinobu_detail",
+              "ndl_katsu_1866_diary"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1867-taisei": {
@@ -3315,15 +3335,14 @@
       "statuses": {
         "1866-expedition": {
           "display": "榎本釜次郎",
-          "role": "幕府海軍・軍艦奉行",
-          "stance": "オランダ留学の知識を生かし、幕府海軍の近代化を担う。",
-          "importance": "幕府が保有する近代海軍の専門家。",
+          "role": "オランダ留学生",
+          "stance": "1862年からオランダで航海術や国際法を学んでおり、第二次長州戦争時は帰国前である。",
+          "importance": "帰国して軍艦役、のち軍艦頭並となるのは1867年である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "archives_enomoto_1867"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1867-taisei": {
@@ -4079,15 +4098,16 @@
         },
         "1866-expedition": {
           "display": "西郷吉之助",
-          "role": "薩摩藩軍事責任者",
-          "stance": "第二次長州征討への出兵を避け、幕府の失敗を見極める。",
-          "importance": "薩摩の幕府離れを具体化した。",
+          "role": "薩摩藩御側役",
+          "stance": "前年に第二次長州征討への出兵を断り、武器・汽船購入を取り次いだ薩摩藩は征討に参加しない。",
+          "importance": "西郷個人の戦場指揮ではなく、御側役としての立場と征討不参加へ至る行動を表示する。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "jacar_saigo_detail",
+              "kagoshima_tobaku_transition",
+              "ndl_history_satcho"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1867-taisei": {
@@ -4303,15 +4323,15 @@
         },
         "1866-expedition": {
           "display": "大久保一蔵",
-          "role": "薩摩藩国事担当",
-          "stance": "第二次長州征討失敗を受け、幕府に代わる政権構想を強める。",
-          "importance": "倒幕へ向かう政策設計を担う。",
+          "role": "薩摩藩御側役",
+          "stance": "前年の長州再征反対に続き、1866年の薩長盟約実現に関わる。",
+          "importance": "征討失敗直後に幕府に代わる政権構想を強めたとの従来記述は、直接根拠がないため表示しない。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "jacar_okubo_detail",
+              "fukui_research_okubo_1865"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1867-taisei": {
@@ -4498,14 +4518,15 @@
         "1866-expedition": {
           "display": "小松帯刀",
           "role": "薩摩藩家老",
-          "stance": "幕府再征への非協力と長州支援を調整する。",
-          "importance": "薩摩の公式政策転換を支える。",
+          "stance": "長州再征への出兵拒否の藩論をまとめ、京都の自邸で薩長盟約の当事者となる。",
+          "importance": "薩摩藩が第二次長州征討へ参加しない政策に至る過程を担った。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kagoshima_komatsu_1862",
+              "kagoshima_satcho_alliance",
+              "ndl_history_satcho"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1867-taisei": {
@@ -4621,13 +4642,12 @@
         },
         "1866-expedition": {
           "display": "川路正之進",
-          "role": "薩摩藩士・軍事担当",
-          "stance": "薩摩藩の軍制整備の中で活動する。",
-          "importance": "薩摩の近代軍事組織を現場で支える。",
+          "role": "薩摩藩兵具方与力附（1850年就任）",
+          "stance": "1867年の兵具方一番小隊長・学兵隊長就任は確認できるが、1866年の役職と行動は確認中。",
+          "importance": "従来の「軍事担当」「軍制整備」は時点を直接支える根拠がない。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "jacar_kawaji_detail"
             ],
             "reviewStatus": "needs_review"
           }
@@ -4721,13 +4741,12 @@
         },
         "1866-expedition": {
           "display": "黒田了介",
-          "role": "薩摩藩小銃隊指揮官級",
-          "stance": "薩摩の軍制整備と長州支援に関わる。",
-          "importance": "近代小銃戦術を担う世代。",
+          "role": "薩摩藩士・砲術修行経験者",
+          "stance": "1863年に江川太郎左衛門の韮山塾で砲術を学んだことは確認できるが、1866年の役職と行動は確認中。",
+          "importance": "「小銃隊指揮官級」や長州支援への関与は、項目を直接支える根拠が未確認。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "jacar_kuroda_detail"
             ],
             "reviewStatus": "needs_review"
           }
@@ -5003,16 +5022,17 @@
           }
         },
         "1866-expedition": {
-          "display": "桂小五郎",
-          "role": "長州藩政指導者",
-          "stance": "第二次長州征討で藩の政治・外交・軍事連携を統括する。",
-          "importance": "長州が幕府軍を退ける政権運営を支えた。",
+          "display": "木戸準一郎",
+          "role": "長州藩政務担当",
+          "stance": "藩政改革を進めた長州藩は四境で幕府軍と戦い、家茂死去後に休戦へ移る。",
+          "importance": "休戦交渉は広沢兵助らが勝海舟と行っており、木戸が政治・外交・軍事を一人で統括したとは表示しない。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kyoto_kido_1862",
+              "yamaguchi_choshu_reform",
+              "ndl_katsu_1866_diary"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1867-taisei": {
@@ -5198,15 +5218,15 @@
         },
         "1866-expedition": {
           "display": "高杉晋作",
-          "role": "長州藩海軍・諸隊指導者",
-          "stance": "小倉口などで幕府軍と戦い、長州側勝利へ貢献する。",
-          "importance": "近代化軍制の成果を示した。",
+          "role": "長州藩海軍総督",
+          "stance": "第二次幕長戦争で海軍総督として采配を振るい、小倉口で幕府軍と戦う。",
+          "importance": "長州藩全体の軍制改革ではなく、確認できる海軍総督としての指揮を表示する。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "yamaguchi_takasugi_guide",
+              "yamaguchi_takasugi_1863"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1867-taisei": {
@@ -5419,13 +5439,13 @@
         },
         "1866-expedition": {
           "display": "伊藤俊輔",
-          "role": "長州藩軍事・外交実務",
-          "stance": "第二次長州征討で改革派政権を支える。",
-          "importance": "戦争を支える行政・外交人材。",
+          "role": "長州藩士・高杉挙兵参加者",
+          "stance": "1865年の高杉晋作らの挙兵参加は確認できるが、1866年の役職と具体的行動は確認中。",
+          "importance": "「軍事・外交実務」「戦争を支える行政」という従来記述は、項目単位の根拠が未確認。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "yamaguchi_tokankeki",
+              "yamaguchi_ito_guide"
             ],
             "reviewStatus": "needs_review"
           }
@@ -5533,15 +5553,14 @@
         },
         "1866-expedition": {
           "display": "井上聞多",
-          "role": "長州藩財政・外交担当",
-          "stance": "第二次長州征討の物資・外交面を支える。",
-          "importance": "軍事勝利の背後にある藩政実務。",
+          "role": "四境戦争・芸州口参謀",
+          "stance": "四境戦争で芸州口の参謀として幕府軍と戦う。",
+          "importance": "財政・外交・物資調達を一括して担ったとの従来記述ではなく、確認できる戦時職を表示する。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "yamaguchi_inoue_1865"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-toba": {
@@ -5635,15 +5654,15 @@
         },
         "1866-expedition": {
           "display": "大村益次郎",
-          "role": "長州藩軍事指導者",
-          "stance": "各戦線の作戦・兵站を統括し、幕府軍への勝利を支える。",
-          "importance": "近代的指揮と兵站の有効性を示した。",
+          "role": "兵学校三兵教授役兼軍政用掛・石州口参謀",
+          "stance": "1866年に軍政用掛などへ登用され、四境戦争では石州口の参謀として幕府軍を敗走させる。",
+          "importance": "全戦線の作戦・兵站を統括したとの抽象的記述ではなく、確認できる役職と戦線を表示する。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "yamaguchi_omura_guide",
+              "yamaguchi_choshu_reform"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-toba": {
@@ -5764,15 +5783,15 @@
         },
         "1866-expedition": {
           "display": "山県狂介",
-          "role": "長州藩軍指揮官",
-          "stance": "小倉口などで幕府軍と戦う。",
-          "importance": "後の陸軍指導者となる実戦経験を得る。",
+          "role": "奇兵隊軍監として活動した長州藩士",
+          "stance": "奇兵隊軍監就任後、志士として四境戦争を戦う。",
+          "importance": "小倉口で指揮したとの従来記述は直接根拠がないため、戦線を限定しない。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "yamaguchi_yamagata_guide",
+              "yamaguchi_yamagata_1866"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-toba": {
@@ -5957,14 +5976,13 @@
         "1866-expedition": {
           "display": "孝明天皇",
           "role": "天皇（同年末に崩御）",
-          "stance": "幕府・会津と協調する姿勢を保つ。",
-          "importance": "崩御により京都政局の前提が大きく変わる。",
+          "stance": "慶応2年12月25日に崩御する。",
+          "importance": "幕府・会津への個人的な姿勢はこの項目の出典から推測せず、確認できる崩御日を表示する。",
           "evidence": {
             "sourceIds": [
-              "archives_timeline",
-              "ndl_handwriting"
+              "ndl_authority_komei"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1867-taisei": {
@@ -6494,14 +6512,13 @@
         "1866-expedition": {
           "display": "松平容保",
           "role": "京都守護職",
-          "stance": "長州征討失敗後も京都の幕府側秩序を維持する。",
-          "importance": "幕府の軍事的後退と京都守護の負担が会津へ集中する。",
+          "stance": "京都の治安と公武合体を担い、征長では強硬論をとる。",
+          "importance": "征討失敗後の具体的な職務負担が会津へ集中したとの従来記述は、直接根拠がないため表示しない。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "ndl_portrait_katamori_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1867-taisei": {
@@ -6934,15 +6951,15 @@
         },
         "1866-expedition": {
           "display": "坂本龍馬",
-          "role": "亀山社中・海運活動",
-          "stance": "長州の海軍行動や物資輸送を支援する。",
-          "importance": "政治だけでなく海運・武器調達が戦局を支えた。",
+          "role": "亀山社中代表・小倉口参戦者",
+          "stance": "薩摩藩名義で長州が購入した乙丑丸を引き渡すため下関へ入り、高杉晋作と小倉口で幕府軍と戦う。",
+          "importance": "亀山社中による鉄砲・汽船購入と輸送が、長州側の軍事行動につながる。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "yamaguchi_takasugi_1863",
+              "nagasaki_kameyama_company"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1867-taisei": {
@@ -7127,15 +7144,14 @@
         },
         "1866-expedition": {
           "display": "中岡慎太郎",
-          "role": "倒幕派志士",
-          "stance": "諸藩連携と軍事組織化を進める。",
-          "importance": "藩を越えた陸上軍事組織を構想する。",
+          "role": "土佐脱藩志士・薩長盟約仲介者",
+          "stance": "坂本龍馬と薩摩・長州両藩の代表者を説得し、同年の薩長連合成立を仲介する。",
+          "importance": "軍事組織である陸援隊の結成は1867年であり、第二次長州征討時点へ先取りしない。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "nakaoka_museum_profile"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1867-taisei": {
@@ -7739,15 +7755,14 @@
         },
         "1866-expedition": {
           "display": "静寛院宮",
-          "role": "家茂未亡人",
-          "stance": "家茂死去後、徳川家の年長女性として大奥に残る。",
-          "importance": "公武合体の象徴から徳川家存続の関係者へ役割が変わる。",
+          "role": "家茂死後に出家・静寛院宮",
+          "stance": "1866年の家茂死去後に仏門へ入り、静寛院宮と号する。",
+          "importance": "徳川家存続や江戸攻撃中止への働きかけは戊辰戦争期であり、この時点の行動へ先取りしない。",
           "evidence": {
             "sourceIds": [
-              "archives_timeline",
-              "ndl_handwriting"
+              "ndl_portrait_kazunomiya_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1867-taisei": {

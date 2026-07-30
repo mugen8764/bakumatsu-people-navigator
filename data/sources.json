@@ -305,7 +305,7 @@
       "id": "ndl_portrait_yoshinobu_detail",
       "title": "国立国会図書館「近代日本人の肖像・徳川慶喜」",
       "url": "https://www.ndl.go.jp/portrait/datas/147/index.html",
-      "note": "一橋慶喜の将軍継嗣擁立、井伊直弼との対立、安政の大獄での処分。"
+      "note": "一橋慶喜の将軍継嗣擁立、井伊直弼との対立、安政の大獄での処分、1862年の将軍後見職、1866年の第15代将軍就任。"
     },
     {
       "id": "kagoshima_teradaya",
@@ -773,7 +773,7 @@
       "id": "yamaguchi_takasugi_1863",
       "title": "山口県立山口図書館「資料に見る 坂本龍馬と長州」",
       "url": "https://library.pref.yamaguchi.lg.jp/material/201005/",
-      "note": "高杉晋作の1863年の奇兵隊結成と攘夷活動。"
+      "note": "高杉晋作の奇兵隊結成、1866年の海軍総督としての第二次幕長戦争指揮、乙丑丸を引き渡した坂本龍馬の小倉口参戦。"
     },
     {
       "id": "kyoto_kusaka_site",
@@ -887,7 +887,7 @@
       "id": "nakaoka_museum_profile",
       "title": "中岡慎太郎館「中岡慎太郎とは」",
       "url": "https://www.nakaokashintarokan.jp/about.html",
-      "note": "中岡慎太郎の26歳での脱藩、長州藩下での活動、坂本龍馬と両藩代表を説得して1866年の薩長連合へ至った経緯。"
+      "note": "中岡慎太郎の26歳での脱藩、長州藩下での活動、坂本龍馬と両藩代表を説得して1866年の薩長連合へ至った経緯、1867年の陸援隊結成。"
     },
     {
       "id": "ndl_portrait_katamori_detail",
@@ -929,7 +929,7 @@
       "id": "yamaguchi_inoue_1865",
       "title": "山口県立山口図書館「没後100年 井上馨」",
       "url": "https://library.pref.yamaguchi.lg.jp/material/201508/",
-      "note": "井上聞多の英国留学・帰国・下関での和平工作、1865年の功山寺決起への山口鴻城軍総督としての参加。"
+      "note": "井上聞多の英国留学・帰国・下関での和平工作、1865年の功山寺決起への山口鴻城軍総督としての参加、1866年四境戦争での芸州口参謀。"
     },
     {
       "id": "nagasaki_kameyama_1865",
@@ -972,6 +972,30 @@
       "title": "鹿児島県歴史・美術センター黎明館「薩長同盟成立」",
       "url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/sattyo.html",
       "note": "1866年の薩長盟約、坂本龍馬・中岡慎太郎による仲介、京都の小松帯刀邸で小松・西郷・木戸が盟約を結んだこと。"
+    },
+    {
+      "id": "archives_enomoto_1867",
+      "title": "国立公文書館「旗本御家人・榎本釜次郎脱艦一件書並仏人ブリユウネ等所罰方」",
+      "url": "https://www.archives.go.jp/exhibition/digital/hatamotogokenin/contents/56.html",
+      "note": "榎本武揚のオランダ留学と、帰国後の1867年における軍艦役・軍艦頭並就任。"
+    },
+    {
+      "id": "yamaguchi_omura_guide",
+      "title": "山口県立山口図書館「大村益次郎・人物調べ方案内」",
+      "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/omura_masujiro2/",
+      "note": "1866年の兵学校三兵教授役兼軍政用掛への登用と、四境戦争での石州口参謀としての戦闘。"
+    },
+    {
+      "id": "yamaguchi_yamagata_1866",
+      "title": "山口県立山口図書館「山県有朋と高杉・西郷」",
+      "url": "https://library.pref.yamaguchi.lg.jp/meijiishin/202102/",
+      "note": "山県有朋が志士として四境戦争と戊辰戦争を戦った経歴。"
+    },
+    {
+      "id": "ndl_portrait_kazunomiya_detail",
+      "title": "国立国会図書館「近代日本人の肖像・和宮」",
+      "url": "https://www.ndl.go.jp/portrait/datas/6156",
+      "note": "1866年の家茂死去後の出家と静寛院宮号、戊辰戦争期の江戸攻撃中止・徳川家存続への尽力。"
     }
   ]
 }
