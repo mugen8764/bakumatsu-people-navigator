@@ -444,6 +444,60 @@
       "title": "山口市「大村益次郎関係資料」",
       "url": "https://www.city.yamaguchi.lg.jp/rs/rekibunshigen/r1253.html",
       "note": "大村益次郎の戊辰戦争参加、1869年の兵部大輔就任と陸海軍制度改革。"
+    },
+    {
+      "id": "ndl_modern_opening",
+      "title": "国立国会図書館「開国―近代の幕開け」",
+      "url": "https://www.ndl.go.jp/modern/cha1/description01.html",
+      "note": "1853年のペリー艦隊来航と国書授受要求、1854年の再来航と幕府代表との交渉。"
+    },
+    {
+      "id": "yokosuka_perry_blackships",
+      "title": "横須賀市「ペリーの黒船」",
+      "url": "https://www.city.yokosuka.kanagawa.jp/2752/uraga_walk/kurohune.html",
+      "note": "東インド艦隊司令長官ペリーの浦賀来航、米国大統領国書、艦隊による示威。"
+    },
+    {
+      "id": "mofa_treaty_1854",
+      "title": "外務省「日米和親条約（複製）」",
+      "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/04.html",
+      "note": "1854年のペリー再来航、幕府代表との調印、日米和親条約の主要条項。"
+    },
+    {
+      "id": "hiroshima_abe_opening",
+      "title": "広島県教育委員会「阿部正弘」",
+      "url": "https://www.pref.hiroshima.lg.jp/uploaded/attachment/92154.pdf",
+      "note": "老中首座阿部正弘による黒船対応、諸大名・幕臣への諮問、日米和親条約締結。"
+    },
+    {
+      "id": "archives_katsu_kaibo",
+      "title": "国立公文書館「旗本御家人・勝安房等ノ動静探索書」",
+      "url": "https://www.archives.go.jp/exhibition/digital/hatamotogokenin/contents/51.html",
+      "note": "勝海舟の蘭学・西洋兵学修学、1853年の海防意見書提出とその後の幕府登用。"
+    },
+    {
+      "id": "ibaraki_nariaki_kaibo",
+      "title": "茨城県立歴史館「海防参与就任」",
+      "url": "https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/kaibousannyosyuunin.htm",
+      "note": "徳川斉昭への黒船対応諮問、海防参与就任、大砲献上、ペリー再来航時の進言。"
+    },
+    {
+      "id": "kagoshima_saigo_youth",
+      "title": "鹿児島市・西郷南洲顕彰館「西郷隆盛ゆかりの品」",
+      "url": "https://www.city.kagoshima.lg.jp/kyoiku/kyoiku/syogaigaku/shisetsu/kanko/documents/saigou_digital-museum.pdf",
+      "note": "西郷隆盛の郡方書役助時代、1854年の中御小姓江戸詰と庭方役就任。"
+    },
+    {
+      "id": "hagi_shoin_timeline",
+      "title": "萩市「吉田松陰・文 略年譜」",
+      "url": "https://www.city.hagi.lg.jp/site/humi-hanamoyu/h9366.html",
+      "note": "吉田松陰の士籍削除、1853年の黒船目撃、1854年の下田密航未遂と野山獄収容。"
+    },
+    {
+      "id": "ibusuki_atsuhime",
+      "title": "指宿市観光協会「天璋院篤姫について」",
+      "url": "https://www.ibusuki.or.jp/info/machiaruki/atsuhime/atsuhimeinfo/index.php",
+      "note": "篤姫の斉彬養女化、1853年の鹿児島出立、近衛家養女化と1856年の家定への輿入れ。"
     }
   ]
 }

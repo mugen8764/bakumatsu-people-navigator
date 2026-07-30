@@ -9,14 +9,15 @@
       "displayName": "ペリー",
       "role": "米国東インド艦隊司令長官",
       "factionId": "foreign-powers",
-      "stance": "武力を背景に大統領国書を渡し、開港・補給を求める。",
-      "importance": "外圧を国内政治の中心課題へ変えた人物。",
+      "stance": "艦隊を率いて浦賀へ来航し、示威行動を伴いながら米国大統領国書を渡す。",
+      "importance": "国書で日米間の友好と通商を求め、翌年の回答を要求した。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline"
+          "ndl_modern_opening",
+          "yokosuka_perry_blackships"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館と横須賀市の解説で、東インド艦隊を率いた浦賀来航、国書授受の要求、艦隊による示威を確認。"
       }
     },
     {
@@ -25,16 +26,17 @@
       "startSceneId": "1854-treaty",
       "endSceneId": "1854-treaty",
       "displayName": "ペリー",
-      "role": "米国全権",
+      "role": "米国東インド艦隊司令長官・全権",
       "factionId": "foreign-powers",
-      "stance": "再来航して幕府代表と交渉し、日米和親条約を締結する。",
-      "importance": "限定的開国を条約として確定させた。",
+      "stance": "軍艦7隻を率いて再来航し、幕府代表へ和親条約の締結を強く求める。",
+      "importance": "幕府代表との交渉を経て日米和親条約へ調印した。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline"
+          "mofa_treaty_1854",
+          "ndl_modern_opening"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "外務省と国立国会図書館の解説で、ペリーの再来航、幕府代表との交渉、日米和親条約調印を確認。"
       }
     },
     {
@@ -63,14 +65,15 @@
       "displayName": "阿部正弘",
       "role": "老中首座",
       "factionId": "bakufu",
-      "stance": "戦争を避けながら国書を受領し、諸大名へ意見を求める。",
-      "importance": "外交を幕府だけの専管事項から全国的政治課題へ広げた。",
+      "stance": "ペリーの国書を受領した後、米国の要求への対応について諸大名や幕臣へ意見を求める。",
+      "importance": "幕府内に限らず諸大名・幕臣から対外政策の意見を集めた。",
       "evidence": {
         "sourceIds": [
+          "hiroshima_abe_opening",
           "archives_timeline"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "広島県の教材と国立公文書館年表で、老中首座としての黒船対応と諸大名・幕臣への諮問を確認。"
       }
     },
     {
@@ -81,14 +84,15 @@
       "displayName": "阿部正弘",
       "role": "老中首座",
       "factionId": "bakufu",
-      "stance": "和親条約を締結し、海軍伝習・洋学・造船などの体制整備を進める。",
-      "importance": "開国後の制度改革を始動させた。",
+      "stance": "幕府政治の中心としてペリーとの交渉に対応し、日米和親条約を締結する。",
+      "importance": "下田・箱館の開港などを定めた条約による対外政策の転換を担った。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline"
+          "hiroshima_abe_opening",
+          "mofa_treaty_1854"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "広島県の阿部正弘解説と外務省の条約解説で、老中首座としての対応、日米和親条約締結と条約内容を確認。"
       }
     },
     {
@@ -469,17 +473,16 @@
       "startSceneId": "1853-blackships",
       "endSceneId": "1853-blackships",
       "displayName": "勝麟太郎",
-      "role": "幕臣・蘭学修業中",
+      "role": "幕臣・蘭学者",
       "factionId": "bakufu",
-      "stance": "海防意見書を提出し、西洋式海軍の必要性を説く。",
-      "importance": "身分の低い幕臣にも政策登用の機会が開かれた例。",
+      "stance": "ペリー来航後、幕府へ海防に関する意見書を提出する。",
+      "importance": "意見書の提出を契機に幕府内で頭角を現した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "archives_katsu_kaibo"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立公文書館の人物解説で、蘭学・西洋兵学の修学、1853年の海防意見書提出とその後の登用を確認。"
       }
     },
     {
@@ -488,17 +491,17 @@
       "startSceneId": "1854-treaty",
       "endSceneId": "1860-sakurada",
       "displayName": "勝麟太郎",
-      "role": "幕臣",
+      "role": "幕臣・蘭学者",
       "factionId": "bakufu",
-      "stance": "開国後の海軍建設構想で評価され、長崎海軍伝習へ進む。",
-      "importance": "幕府海軍人材の育成を象徴する。",
+      "stance": "前年の黒船来航後に幕府へ海防に関する意見書を提出している。",
+      "importance": "この時点では長崎海軍伝習所赴任前で、幕府への登用は翌1855年から進む。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "archives_katsu_kaibo",
+          "ndl_portrait_katsu_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立公文書館で1853年の意見書提出、国立国会図書館で1855年以後の長崎海軍伝習を確認し、選択時点では赴任前と整理。"
       }
     },
     {
@@ -756,15 +759,14 @@
       "displayName": "徳川斉昭",
       "role": "前水戸藩主・海防参与",
       "factionId": "mito",
-      "stance": "強い海防論を唱え、幕府の対外政策へ関与する。",
-      "importance": "外様・親藩大名を幕政へ参加させる阿部政権の象徴。",
+      "stance": "阿部正弘から意見を求められ、海防参与として幕府の対外政策へ関与する。",
+      "importance": "水戸で鋳造した大砲を幕府へ献上するなど海防強化を進言した。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "ibaraki_nariaki_kaibo"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "茨城県立歴史館の解説で、阿部正弘からの諮問、1853年7月の海防参与就任、幕府への大砲献上を確認。"
       }
     },
     {
@@ -775,15 +777,14 @@
       "displayName": "徳川斉昭",
       "role": "海防参与",
       "factionId": "mito",
-      "stance": "開港に批判的な立場から海防強化と軍備拡充を求める。",
-      "importance": "条約反対論と海防論の有力な発信者。",
+      "stance": "再来航したペリー艦隊への強硬策を主張した後、石炭補給などを認める妥協案も示す。",
+      "importance": "条約交渉時に海防参与として強硬論と限定的な妥協案の双方を幕府へ進言した。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "ibaraki_nariaki_kaibo"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "茨城県立歴史館の解説で、ペリー再来航時の打ち払い主張と石炭補給等を認める妥協案を確認。"
       }
     },
     {
@@ -1001,15 +1002,14 @@
       "displayName": "島津斉彬",
       "role": "薩摩藩主",
       "factionId": "satsuma",
-      "stance": "西洋技術を導入し、海防・産業近代化と幕政改革を構想する。",
-      "importance": "雄藩が国政へ積極関与する流れを代表する。",
+      "stance": "富国強兵策をとり、西欧科学を導入して集成館事業を進める。",
+      "importance": "反射炉建設や洋式造船など、薩摩藩内の軍事・産業改革を主導した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "archives_timeline"
+          "kagoshima_nariakira"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "鹿児島県歴史・美術センター黎明館の解説で、薩摩藩主就任、富国強兵策、西欧科学導入、集成館・洋式造船事業を確認。"
       }
     },
     {
@@ -1020,15 +1020,14 @@
       "displayName": "島津斉彬",
       "role": "薩摩藩主",
       "factionId": "satsuma",
-      "stance": "集成館事業、造船、反射炉など藩の近代化を進める。",
-      "importance": "開国後の軍事・産業改革を藩単位で先行させた。",
+      "stance": "集成館事業を通じ、反射炉建設や洋式造船など藩の近代化を進める。",
+      "importance": "西欧科学を導入し、薩摩藩の軍事科学工業と人材育成を推進した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "archives_timeline"
+          "kagoshima_nariakira"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "鹿児島県歴史・美術センター黎明館の解説で、集成館、反射炉、洋式造船、西欧科学導入、人材育成を確認。"
       }
     },
     {
@@ -1267,15 +1266,14 @@
       "displayName": "西郷吉之助",
       "role": "薩摩藩郡方書役助",
       "factionId": "satsuma",
-      "stance": "藩の下級役人として農政に携わる。",
-      "importance": "後の著名人も、この時点では中央政局の主要人物ではない。",
+      "stance": "郡方の役人として農村を巡り、農政や河川土木に携わる。",
+      "importance": "翌1854年1月、島津斉彬の参勤に従って江戸へ出るまで郡方で勤務した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kagoshima_saigo_youth"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "鹿児島市・西郷南洲顕彰館の資料解説で、郡方書役助としての農村行政と1854年の江戸詰就任を確認。"
       }
     },
     {
@@ -1284,17 +1282,16 @@
       "startSceneId": "1854-treaty",
       "endSceneId": "1854-treaty",
       "displayName": "西郷吉之助",
-      "role": "島津斉彬の供役へ",
+      "role": "薩摩藩中御小姓・庭方役",
       "factionId": "satsuma",
-      "stance": "斉彬に見いだされ、江戸で藩主側近の仕事に入る。",
-      "importance": "藩主の登用が身分を越える政治経路を作った。",
+      "stance": "中御小姓江戸詰として斉彬の参勤に従い、江戸で庭方役に就く。",
+      "importance": "庭方役として斉彬から直接召し出され、側近として問答を受ける立場になった。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kagoshima_saigo_youth"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "鹿児島市・西郷南洲顕彰館の資料解説で、1854年1月の中御小姓江戸詰、同年4月の庭方役就任、斉彬との直接の問答を確認。"
       }
     },
     {
@@ -2253,17 +2250,16 @@
       "startSceneId": "1853-blackships",
       "endSceneId": "1853-blackships",
       "displayName": "吉田寅次郎",
-      "role": "長州藩士・兵学者",
+      "role": "父預かり・兵学者",
       "factionId": "choshu",
-      "stance": "黒船を自ら見て、海外事情と海防を直接学ぼうとする。",
-      "importance": "翌年の密航未遂につながる強い知識欲を持つ。",
+      "stance": "諸国遊歴中、黒船来航を聞いて浦賀へ急行し、艦隊を目撃する。",
+      "importance": "前年に士籍を削られ父預かりとなっており、同年にはロシア行きも試みた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "hagi_shoin_timeline"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "萩市の略年譜で、1852年の士籍削除と父預かり、1853年の諸国遊歴、浦賀での黒船目撃、ロシア行きの試みを確認。"
       }
     },
     {
@@ -2272,17 +2268,17 @@
       "startSceneId": "1854-treaty",
       "endSceneId": "1854-treaty",
       "displayName": "吉田寅次郎",
-      "role": "長州藩士・密航未遂",
+      "role": "父預かり・密航未遂",
       "factionId": "choshu",
       "stance": "下田でペリー艦隊への乗船を試み、失敗して投獄される。",
-      "importance": "海外知識を求める行動が幕府法秩序と衝突した。",
+      "importance": "米艦への乗り込みを拒絶された後に自首し、江戸から萩の野山獄へ移された。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_shoin_detail",
+          "hagi_shoin_timeline"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館と萩市の略年譜で、下田での米艦乗船未遂、投獄、萩の野山獄への移送を確認。"
       }
     },
     {
@@ -5236,17 +5232,16 @@
       "startSceneId": "1854-treaty",
       "endSceneId": "1854-treaty",
       "displayName": "篤姫",
-      "role": "島津家一門の女性",
+      "role": "島津斉彬の養女",
       "factionId": "satsuma",
-      "stance": "斉彬の構想により将軍家への婚姻準備が進む。",
-      "importance": "婚姻が藩と幕府を結ぶ政治手段だった。",
+      "stance": "将軍家定への輿入れを前提に篤姫と改名し、鹿児島から江戸の薩摩藩邸へ移る。",
+      "importance": "この時点では将軍家への輿入れ準備中で、家定との婚姻は1856年。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "ibusuki_atsuhime"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "指宿市観光協会の人物解説で、1853年の改名・斉彬養女化・鹿児島出立と、1856年の家定との婚姻を確認。"
       }
     },
     {

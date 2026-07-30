@@ -87,6 +87,15 @@
 - [山口県「維新文化財探訪・田中義一誕生地」](https://bunkazai.pref.yamaguchi.lg.jp/sp/support/theme/isinn/inaka.html)
 - [国立公文書館「明治宰相列伝・黒田清隆」](https://www.archives.go.jp/exhibition/digital/2007_01/kiyotaka_kuroda/)
 - [山口市「大村益次郎関係資料」](https://www.city.yamaguchi.lg.jp/rs/rekibunshigen/r1253.html)
+- [国立国会図書館「開国―近代の幕開け」](https://www.ndl.go.jp/modern/cha1/description01.html)
+- [横須賀市「ペリーの黒船」](https://www.city.yokosuka.kanagawa.jp/2752/uraga_walk/kurohune.html)
+- [外務省「日米和親条約（複製）」](https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/04.html)
+- [広島県教育委員会「阿部正弘」](https://www.pref.hiroshima.lg.jp/uploaded/attachment/92154.pdf)
+- [国立公文書館「旗本御家人・勝安房等ノ動静探索書」](https://www.archives.go.jp/exhibition/digital/hatamotogokenin/contents/51.html)
+- [茨城県立歴史館「海防参与就任」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/kaibousannyosyuunin.htm)
+- [鹿児島市・西郷南洲顕彰館「西郷隆盛ゆかりの品」](https://www.city.kagoshima.lg.jp/kyoiku/kyoiku/syogaigaku/shisetsu/kanko/documents/saigou_digital-museum.pdf)
+- [萩市「吉田松陰・文 略年譜」](https://www.city.hagi.lg.jp/site/humi-hanamoyu/h9366.html)
+- [指宿市観光協会「天璋院篤姫について」](https://www.ibusuki.or.jp/info/machiaruki/atsuhime/atsuhimeinfo/index.php)
 
 ## 情報の分類
 
@@ -124,7 +133,7 @@
 
 ## 現在の校正状態
 
-人物概要と主要事件には出典IDを登録しています。人物の時点別状態、勢力状態、人物・勢力関係、地点は、項目単位の根拠を確認しながら `needs_review` から `verified` へ移行する段階です。
+人物概要、勢力状態、主要事件、地点には出典IDを登録し、項目単位の校正を完了しています。人物の時点別状態と人物・勢力関係は、項目単位の根拠を確認しながら `needs_review` から `verified` へ移行する段階です。
 
 件数は次のコマンドで確認できます。
 
