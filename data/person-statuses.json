@@ -390,18 +390,18 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "徳川慶喜",
-      "role": "15代将軍・大政奉還上表",
+      "role": "第15代将軍・大政奉還を上表",
       "factionId": "bakufu",
-      "stance": "政権を朝廷へ返上し、徳川家を含む新体制での主導権を狙う。",
-      "importance": "大政奉還は幕府廃止を先取りする高度な政治戦略でもあった。",
+      "stance": "1867年10月14日、朝廷へ大政奉還を上表する。",
+      "importance": "同年12月には王政復古の大号令が発せられた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
           "ndl_modern_timeline",
-          "ndl_handwriting"
+          "ndl_portrait_yoshinobu_detail",
+          "kyoto_restoration_transition"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で第15代将軍就任と1867年10月14日の大政奉還上表、京都市の解説で同年12月の王政復古を確認。新体制での主導権を狙ったという意図評価は、提示した出典から直接確認できないため削除。"
       }
     },
     {
@@ -545,17 +545,16 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "勝海舟",
-      "role": "陸軍総裁など幕府重職",
+      "role": "幕府軍艦奉行",
       "factionId": "bakufu",
-      "stance": "幕府軍制に関わりながら、内戦回避の可能性を探る。",
-      "importance": "旧幕府の軍事力と現実的な和平判断を併せ持つ。",
+      "stance": "1866年5月に就任した軍艦奉行として幕府海軍に関わる。",
+      "importance": "海軍奉行並・陸軍総裁への就任は1868年1月である。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_katsu_timeline"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の勝海舟年譜で、1866年5月の軍艦奉行就任と、海軍奉行並・陸軍総裁就任が1868年1月であることを確認。従来の1867年「陸軍総裁」は年代が誤っているため訂正し、未確認の内戦回避評価を削除。"
       }
     },
     {
@@ -658,17 +657,16 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "榎本武揚",
-      "role": "海軍副総裁",
+      "role": "幕府軍艦頭並",
       "factionId": "bakufu",
-      "stance": "政権返上後も幕府海軍の指揮と処遇問題に直面する。",
-      "importance": "徳川の政権返上と軍艦の帰属が別問題だったことを示す。",
+      "stance": "1867年にオランダから帰国し、軍艦役を経て軍艦頭並に就任する。",
+      "importance": "帰国後、幕府海軍の役職に就いた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "archives_enomoto_1867"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立公文書館で1867年の帰国後に軍艦役、続いて軍艦頭並へ就任したことを確認。従来の「海軍副総裁」は1868年の役職であるため訂正し、政権返上後の軍艦処遇に関する未確認の説明を削除。"
       }
     },
     {

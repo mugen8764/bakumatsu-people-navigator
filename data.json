@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.21",
-    "updated": "2026-07-30"
+    "version": "1.0.22",
+    "updated": "2026-07-31"
   },
   "sources": {
     "archives_timeline": {
@@ -573,7 +573,7 @@
     "ndl_katsu_timeline": {
       "title": "国立国会図書館「日記の世界・勝海舟」",
       "url": "https://www.ndl.go.jp/nikki/person/katsukaishu/",
-      "note": "勝海舟の1862年7月の二丸留守居格・軍艦頭取就任と、同年閏8月の軍艦奉行並就任。"
+      "note": "勝海舟の1862年の軍艦頭取・軍艦奉行並就任、1866年5月の軍艦奉行就任、1868年1月の海軍奉行並・陸軍総裁就任。"
     },
     "tokunoshima_saigo_1862": {
       "title": "徳之島町「奥山家（西郷松）」",
@@ -3062,16 +3062,16 @@
         },
         "1867-taisei": {
           "display": "徳川慶喜",
-          "role": "15代将軍・大政奉還上表",
-          "stance": "政権を朝廷へ返上し、徳川家を含む新体制での主導権を狙う。",
-          "importance": "大政奉還は幕府廃止を先取りする高度な政治戦略でもあった。",
+          "role": "第15代将軍・大政奉還を上表",
+          "stance": "1867年10月14日、朝廷へ大政奉還を上表する。",
+          "importance": "同年12月には王政復古の大号令が発せられた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
               "ndl_modern_timeline",
-              "ndl_handwriting"
+              "ndl_portrait_yoshinobu_detail",
+              "kyoto_restoration_transition"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-toba": {
@@ -3205,15 +3205,14 @@
         },
         "1867-taisei": {
           "display": "勝海舟",
-          "role": "陸軍総裁など幕府重職",
-          "stance": "幕府軍制に関わりながら、内戦回避の可能性を探る。",
-          "importance": "旧幕府の軍事力と現実的な和平判断を併せ持つ。",
+          "role": "幕府軍艦奉行",
+          "stance": "1866年5月に就任した軍艦奉行として幕府海軍に関わる。",
+          "importance": "海軍奉行並・陸軍総裁への就任は1868年1月である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "ndl_katsu_timeline"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-toba": {
@@ -3347,15 +3346,14 @@
         },
         "1867-taisei": {
           "display": "榎本武揚",
-          "role": "海軍副総裁",
-          "stance": "政権返上後も幕府海軍の指揮と処遇問題に直面する。",
-          "importance": "徳川の政権返上と軍艦の帰属が別問題だったことを示す。",
+          "role": "幕府軍艦頭並",
+          "stance": "1867年にオランダから帰国し、軍艦役を経て軍艦頭並に就任する。",
+          "importance": "帰国後、幕府海軍の役職に就いた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "archives_enomoto_1867"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-toba": {
