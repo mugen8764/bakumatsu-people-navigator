@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "updated": "2026-07-30"
   },
   "sources": {
@@ -259,6 +259,56 @@
       "title": "国立国会図書館「近代日本人の肖像・徳川慶喜」",
       "url": "https://www.ndl.go.jp/portrait/datas/147/index.html",
       "note": "一橋慶喜の将軍継嗣擁立、井伊直弼との対立、安政の大獄での処分。"
+    },
+    "kagoshima_teradaya": {
+      "title": "鹿児島県「寺田屋事件」",
+      "url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/teradaya.html",
+      "note": "島津久光の雄藩連合・公武合体構想と寺田屋に集結した薩摩藩急進派の鎮撫。"
+    },
+    "ndl_portrait_ohara": {
+      "title": "国立国会図書館「近代日本人の肖像・大原重徳」",
+      "url": "https://www.ndl.go.jp/portrait/datas/6167/",
+      "note": "1862年の幕政改革勅使として島津久光と江戸へ赴いた経歴。"
+    },
+    "kochi_takechi_kyoto": {
+      "title": "高知県立坂本龍馬記念館「企画展・半平太と京都」",
+      "url": "https://www.pref.kochi.lg.jp/press1/2025072200026/",
+      "note": "尊王攘夷を掲げた土佐勤王党党首武市半平太の文久2～3年の京都での政治活動。"
+    },
+    "kagoshima_satsuei": {
+      "title": "鹿児島県「薩英戦争」",
+      "url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/satuei.html",
+      "note": "生麦事件後の英国要求、鹿児島来攻、薩英戦争、薩摩藩論の開国への転換。"
+    },
+    "kyoto_shinsengumi_history": {
+      "title": "京都市歴史資料館・歴史講座「浪士組から新選組」",
+      "url": "https://www.city.kyoto.lg.jp/bunshi/cmsfiles/contents/0000233/233972/2kimura.pdf",
+      "note": "会津藩預かりの壬生浪士組、八月十八日の政変への出動、新選組命名。"
+    },
+    "shimonoseki_bakumatsu_fighting": {
+      "title": "下関市「市報しものせき・外国との闘い」",
+      "url": "https://www.city.shimonoseki.lg.jp/site/kouhou/5394.html",
+      "note": "1863年の外国船砲撃と反撃、1864年の四国連合艦隊による報復攻撃。"
+    },
+    "kyoto_kinmon_history": {
+      "title": "京都市「都市史25・蛤御門の変とどんどん焼け」",
+      "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/nenpyou/htmlsheet/toshi25.html",
+      "note": "長州藩の名誉回復・七卿赦免要求、京都出兵、会津・薩摩・幕府連合軍との戦闘。"
+    },
+    "archives_zaihan_diary": {
+      "title": "国立公文書館「激動幕末・在阪中日記」",
+      "url": "https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/44.html",
+      "note": "1865年の将軍家茂の長州再征出立と幕府軍の大坂駐留。"
+    },
+    "ndl_kameyama_trade": {
+      "title": "国立国会図書館「幕末・明治初期の商社誕生に関わった人々」",
+      "url": "https://www.ndl.go.jp/portrait/pickup/029/",
+      "note": "1865年の亀山社中設立、薩摩藩の支援、薩摩名義による長州向け小銃・蒸気船購入。"
+    },
+    "ndl_satcho_alliance_research": {
+      "title": "国立国会図書館サーチ「薩長同盟の展開―六ヶ条盟約の成立」",
+      "url": "https://ndlsearch.ndl.go.jp/books/R000000004-I7488694",
+      "note": "慶応元年9月の長州再征勅許と薩長提携の展開を扱う査読論文の書誌・要約。"
     }
   },
   "factions": {
@@ -8681,203 +8731,265 @@
     },
     "1862-bunkyu": {
       "薩摩藩": {
-        "goal": "公武合体と雄藩参加型の幕政改革を実現する。",
-        "position": "久光が率兵上京し、藩内急進派を鎮圧する。",
+        "goal": "雄藩連合・公武合体による幕政改革を進める。",
+        "position": "島津久光が率兵上京し、寺田屋に集結した藩内急進派を鎮撫する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kagoshima_teradaya",
+            "ndl_portrait_ohara"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "幕府": {
-        "goal": "改革職を設け、京都・朝廷への対応力を高める。",
-        "position": "慶喜・春嶽が復帰し、京都守護職を設置する。",
+        "goal": "朝廷の勅使から示された幕政改革に対応する。",
+        "position": "一橋慶喜を将軍後見職とし、京都守護職を新設する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_portrait_ohara",
+            "ndl_portrait_yoshinobu_detail",
+            "kyoto_shugoshoku_site"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "会津藩": {
         "goal": "京都治安と朝廷警護を担う。",
         "position": "松平容保が京都守護職に就く。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kyoto_shugoshoku_site"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "土佐藩": {
-        "goal": "藩内尊攘派の圧力と上層部の公武合体を調整する。",
-        "position": "武市の勤王党が藩政へ影響を強める。",
+        "goal": "尊王攘夷を掲げる土佐勤王党が京都で活動する。",
+        "position": "党首武市半平太は文久2～3年に京都で人脈を築き、政治活動を行う。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kochi_takechi_kyoto"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "朝廷": {
-        "goal": "攘夷実行と将軍上洛を求める。",
-        "position": "京都が全国政局の中心となる。",
+        "goal": "幕府へ幕政改革を命じる。",
+        "position": "大原重徳を勅使として、島津久光とともに江戸へ派遣する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_portrait_ohara"
+          ],
+          "reviewStatus": "verified"
         }
       }
     },
     "1863-joi": {
       "長州藩": {
-        "goal": "朝廷の攘夷方針を実力で実行する。",
-        "position": "下関で外国船を砲撃し、軍事的報復を招く。",
+        "goal": "幕府が上奏した5月10日の攘夷期限に外国船を砲撃する。",
+        "position": "下関で米国・フランス・オランダ船を砲撃し、翌月に反撃を受ける。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "archives_timeline",
+            "shimonoseki_bakumatsu_fighting"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "薩摩藩": {
-        "goal": "生麦事件への対応と藩の防衛。",
-        "position": "英国と交戦後、近代化・対英協力へ転じる。",
+        "goal": "生麦事件をめぐる英国の要求に対応し、鹿児島の防備を整える。",
+        "position": "英国艦隊と交戦し、戦後に藩論を開国へ転換する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kagoshima_satsuei"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "外国勢力": {
-        "goal": "条約上の航行・居留権と賠償を確保する。",
-        "position": "薩摩・長州へ軍事力を行使する。",
+        "goal": "英国は生麦事件の犯人処刑と賠償を薩摩藩へ要求する。",
+        "position": "英国艦隊が鹿児島へ来攻し、外国艦も下関で長州藩へ反撃する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kagoshima_satsuei",
+            "shimonoseki_bakumatsu_fighting"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "朝廷": {
-        "goal": "攘夷実行を幕府・諸藩へ求める。",
-        "position": "実行手段を持たず、藩ごとの行動差が拡大する。",
+        "goal": "国事参政・国事寄人を設置し、攘夷実行を進める。",
+        "position": "攘夷親征の詔を出し、幕府は5月10日を攘夷期限として上奏する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "hyogo_bakumatsu_timeline_2",
+            "archives_timeline"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "幕府": {
-        "goal": "朝廷の攘夷要求と条約履行を両立させる。",
-        "position": "矛盾した要求の間で求心力を失う。",
+        "goal": "朝廷へ5月10日を攘夷期限として上奏する。",
+        "position": "将軍家茂が上洛し、期限日に長州藩が下関で外国船を砲撃する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "archives_timeline",
+            "hyogo_bakumatsu_timeline_2"
+          ],
+          "reviewStatus": "verified"
         }
       }
     },
     "1863-aug18": {
       "会津藩": {
-        "goal": "京都治安と孝明天皇の信任を守る。",
-        "position": "薩摩と連携し長州系勢力を排除する。",
+        "goal": "京都守護職として公武合体派の政変に加わる。",
+        "position": "薩摩藩とともに朝廷内の尊攘激派と長州藩を京都から排除する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "archives_timeline",
+            "ndl_history_satcho"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "薩摩藩": {
-        "goal": "急進尊攘派を排除し、公武合体を回復する。",
-        "position": "京都政局の主導権を得る。",
+        "goal": "公武合体派として朝廷内の尊攘激派を排除する。",
+        "position": "会津藩とともに長州藩を京都から排除する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "archives_timeline",
+            "ndl_history_satcho"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "長州藩": {
-        "goal": "朝廷内での影響力と攘夷主導権を維持する。",
-        "position": "政変で京都から追放される。",
+        "goal": "朝廷警護と京都での政治活動を継続する。",
+        "position": "政変で京都から追放され、三条実美ら七卿とともに長州へ退く。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "archives_timeline",
+            "cultural_heritage_aug18"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "朝廷": {
-        "goal": "急進派を抑え、幕府・会津・薩摩との協調を回復する。",
-        "position": "公家勢力が大きく入れ替わる。",
+        "goal": "朝廷内の尊攘激派を排除する。",
+        "position": "三条実美ら七卿の参内を禁じ、長州藩とともに京都から退去させる。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "archives_timeline",
+            "cultural_heritage_aug18"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "新選組": {
-        "goal": "京都の尊攘派・浪士を探索する。",
-        "position": "会津藩預かりの治安組織として地位を固める。",
+        "goal": "会津藩の要請を受けて八月十八日の政変へ出動する。",
+        "position": "働きが認められ、武家伝奏から新選組の隊名を受ける。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kyoto_shinsengumi_history"
+          ],
+          "reviewStatus": "verified"
         }
       }
     },
     "1864-kinmon": {
       "長州藩": {
-        "goal": "京都での名誉と政治的地位を回復する。",
-        "position": "禁門の変に敗れ、朝敵・征討対象となる。",
+        "goal": "藩主父子の名誉回復と七卿の赦免を求める。",
+        "position": "京都へ出兵し、会津・薩摩・幕府連合軍に敗れる。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kyoto_kinmon_history"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "幕府": {
-        "goal": "長州を処分し、京都秩序と諸藩統制を回復する。",
-        "position": "第一次長州征討を発動する。",
+        "goal": "禁門の変後、長州征討を諸藩に命じる。",
+        "position": "第一次征討で長州藩は三家老を処分し、幕府へ恭順を表す。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_history_satcho",
+            "archives_timeline"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "薩摩藩": {
-        "goal": "京都防衛と長州処分を進めつつ、幕府を利用する。",
-        "position": "西郷が軍事・交渉の中心へ復帰する。",
+        "goal": "会津・幕府とともに京都御所を防衛する。",
+        "position": "禁門の変で長州藩を敗退させる。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kyoto_kinmon_history"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "会津藩": {
         "goal": "京都を長州軍から防衛する。",
-        "position": "新選組・幕府軍とともに抗戦する。",
+        "position": "薩摩・幕府とともに京都御所付近で長州藩と戦う。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kyoto_kinmon_history"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "外国勢力": {
-        "goal": "下関海峡の安全と条約権益を確保する。",
-        "position": "四国艦隊が長州砲台を攻撃する。",
+        "goal": "前年の外国船砲撃に対する報復攻撃を行う。",
+        "position": "英国・フランス・オランダ・米国の連合艦隊が下関を攻撃し、長州藩を破る。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "shimonoseki_bakumatsu_fighting"
+          ],
+          "reviewStatus": "verified"
         }
       }
     },
     "1865-choshu": {
       "長州藩": {
-        "goal": "藩内保守派を退け、幕府再征へ備える。",
-        "position": "高杉・木戸・大村ら改革派が主導権を握る。",
+        "goal": "武備恭順へ転換し、攻撃に備えて軍事組織を整える。",
+        "position": "高杉晋作らの諸隊が藩政府軍との内戦に勝ち、大村益次郎を最高責任者に西洋軍制を導入する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "yamaguchi_choshu_reform",
+            "yamaguchi_archives_ota_edo"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "幕府": {
-        "goal": "長州を再度処分し、諸藩統制を回復する。",
-        "position": "第二次長州征討を準備する。",
+        "goal": "長州再征のため、将軍家茂が軍を率いて江戸を出立する。",
+        "position": "幕府軍は翌年6月の戦闘開始まで大坂に駐留する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "archives_zaihan_diary"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "薩摩藩": {
-        "goal": "幕府への全面協力を避け、長州との接点を増やす。",
-        "position": "長崎貿易・武器供給を介し接近する。",
+        "goal": "亀山社中を通じた長州藩との取引を支援する。",
+        "position": "慶応元年に薩摩藩などの支援で亀山社中が設立され、同社は長州向けの小銃・蒸気船を薩摩名義で購入する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_kameyama_trade"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "朝廷": {
-        "goal": "長州処分と京都秩序を維持する。",
-        "position": "孝明天皇・会津は長州復権に慎重。",
+        "goal": "禁門の変後の長州処分を継続する。",
+        "position": "慶応元年9月、幕府の長州再征を勅許する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_history_satcho",
+            "ndl_satcho_alliance_research"
+          ],
+          "reviewStatus": "verified"
         }
       }
     },

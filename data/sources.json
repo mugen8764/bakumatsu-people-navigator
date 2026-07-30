@@ -306,6 +306,66 @@
       "title": "国立国会図書館「近代日本人の肖像・徳川慶喜」",
       "url": "https://www.ndl.go.jp/portrait/datas/147/index.html",
       "note": "一橋慶喜の将軍継嗣擁立、井伊直弼との対立、安政の大獄での処分。"
+    },
+    {
+      "id": "kagoshima_teradaya",
+      "title": "鹿児島県「寺田屋事件」",
+      "url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/teradaya.html",
+      "note": "島津久光の雄藩連合・公武合体構想と寺田屋に集結した薩摩藩急進派の鎮撫。"
+    },
+    {
+      "id": "ndl_portrait_ohara",
+      "title": "国立国会図書館「近代日本人の肖像・大原重徳」",
+      "url": "https://www.ndl.go.jp/portrait/datas/6167/",
+      "note": "1862年の幕政改革勅使として島津久光と江戸へ赴いた経歴。"
+    },
+    {
+      "id": "kochi_takechi_kyoto",
+      "title": "高知県立坂本龍馬記念館「企画展・半平太と京都」",
+      "url": "https://www.pref.kochi.lg.jp/press1/2025072200026/",
+      "note": "尊王攘夷を掲げた土佐勤王党党首武市半平太の文久2～3年の京都での政治活動。"
+    },
+    {
+      "id": "kagoshima_satsuei",
+      "title": "鹿児島県「薩英戦争」",
+      "url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/satuei.html",
+      "note": "生麦事件後の英国要求、鹿児島来攻、薩英戦争、薩摩藩論の開国への転換。"
+    },
+    {
+      "id": "kyoto_shinsengumi_history",
+      "title": "京都市歴史資料館・歴史講座「浪士組から新選組」",
+      "url": "https://www.city.kyoto.lg.jp/bunshi/cmsfiles/contents/0000233/233972/2kimura.pdf",
+      "note": "会津藩預かりの壬生浪士組、八月十八日の政変への出動、新選組命名。"
+    },
+    {
+      "id": "shimonoseki_bakumatsu_fighting",
+      "title": "下関市「市報しものせき・外国との闘い」",
+      "url": "https://www.city.shimonoseki.lg.jp/site/kouhou/5394.html",
+      "note": "1863年の外国船砲撃と反撃、1864年の四国連合艦隊による報復攻撃。"
+    },
+    {
+      "id": "kyoto_kinmon_history",
+      "title": "京都市「都市史25・蛤御門の変とどんどん焼け」",
+      "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/nenpyou/htmlsheet/toshi25.html",
+      "note": "長州藩の名誉回復・七卿赦免要求、京都出兵、会津・薩摩・幕府連合軍との戦闘。"
+    },
+    {
+      "id": "archives_zaihan_diary",
+      "title": "国立公文書館「激動幕末・在阪中日記」",
+      "url": "https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/44.html",
+      "note": "1865年の将軍家茂の長州再征出立と幕府軍の大坂駐留。"
+    },
+    {
+      "id": "ndl_kameyama_trade",
+      "title": "国立国会図書館「幕末・明治初期の商社誕生に関わった人々」",
+      "url": "https://www.ndl.go.jp/portrait/pickup/029/",
+      "note": "1865年の亀山社中設立、薩摩藩の支援、薩摩名義による長州向け小銃・蒸気船購入。"
+    },
+    {
+      "id": "ndl_satcho_alliance_research",
+      "title": "国立国会図書館サーチ「薩長同盟の展開―六ヶ条盟約の成立」",
+      "url": "https://ndlsearch.ndl.go.jp/books/R000000004-I7488694",
+      "note": "慶応元年9月の長州再征勅許と薩長提携の展開を扱う査読論文の書誌・要約。"
     }
   ]
 }

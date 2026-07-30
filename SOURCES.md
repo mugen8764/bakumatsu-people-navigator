@@ -64,6 +64,16 @@
 - [いわき市「安藤信正生誕200年・公武合体策と和宮降嫁」](https://www.city.iwaki.lg.jp/www/contents/1571875265178/index.html)
 - [水戸市「歴史的風致形成の背景」](https://www.city.mito.lg.jp/uploaded/attachment/11943.pdf)
 - [国立国会図書館「近代日本人の肖像・徳川慶喜」](https://www.ndl.go.jp/portrait/datas/147/index.html)
+- [鹿児島県「寺田屋事件」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/teradaya.html)
+- [国立国会図書館「近代日本人の肖像・大原重徳」](https://www.ndl.go.jp/portrait/datas/6167/)
+- [高知県立坂本龍馬記念館「企画展・半平太と京都」](https://www.pref.kochi.lg.jp/press1/2025072200026/)
+- [鹿児島県「薩英戦争」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/satuei.html)
+- [京都市歴史資料館・歴史講座「浪士組から新選組」](https://www.city.kyoto.lg.jp/bunshi/cmsfiles/contents/0000233/233972/2kimura.pdf)
+- [下関市「市報しものせき・外国との闘い」](https://www.city.shimonoseki.lg.jp/site/kouhou/5394.html)
+- [京都市「都市史25・蛤御門の変とどんどん焼け」](https://www2.city.kyoto.lg.jp/somu/rekishi/fm/nenpyou/htmlsheet/toshi25.html)
+- [国立公文書館「激動幕末・在阪中日記」](https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/44.html)
+- [国立国会図書館「幕末・明治初期の商社誕生に関わった人々」](https://www.ndl.go.jp/portrait/pickup/029/)
+- [国立国会図書館サーチ「薩長同盟の展開―六ヶ条盟約の成立」](https://ndlsearch.ndl.go.jp/books/R000000004-I7488694)
 
 ## 情報の分類
 
