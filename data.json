@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.15",
+    "version": "1.0.16",
     "updated": "2026-07-30"
   },
   "sources": {
@@ -624,6 +624,61 @@
       "title": "日野市「広報ひの・新選組誕生前夜」",
       "url": "https://www.lib.city.hino.lg.jp/hinocity/digital/folder/sfsg4/kouhou15.4.1.pdf",
       "note": "近藤勇の1861年の天然理心流四代目継承、近藤・土方の1863年の浪士組参加、土方による上洛前の家伝薬販売の手伝い。"
+    },
+    "fukui_pref_timeline": {
+      "title": "福井県文書館「福井県史年表（1861年～1870年）」",
+      "url": "https://www.library-archives.pref.fukui.lg.jp/fukui/07/nenpyo/rekishi/chrn40.html",
+      "note": "1863年の家茂の出発・上洛・帰府、幕府が上奏した攘夷期限、松平春嶽の免職願・離京・政事総裁職免職。"
+    },
+    "fukui_yoshinobu_1863": {
+      "title": "福井市立郷土歴史博物館「展示解説シートNo.96」",
+      "url": "https://history-museum.city.fukui.lg.jp/tenji/kaisetsusheets/96.pdf",
+      "note": "徳川慶喜が1862年7月から1864年3月まで将軍後見職として幕政を担い、攘夷を求める朝廷への対応にあたった時期。"
+    },
+    "isen_saigo_1863_letter": {
+      "title": "伊仙町『伊仙町の文化遺産』",
+      "url": "https://sitereports.nabunken.go.jp/files/attach/29/29636/21504_1_%E4%BC%8A%E4%BB%99%E7%94%BA%E3%81%AE%E6%96%87%E5%8C%96%E9%81%BA%E7%94%A3.pdf",
+      "note": "文久3年6月2日付の大島吉之助書状と、西郷隆盛が流謫中に用いた名。"
+    },
+    "yamaguchi_takasugi_guide": {
+      "title": "山口県立山口図書館「高杉晋作・人物調べ方案内」",
+      "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/takasugi_shinsaku/",
+      "note": "高杉晋作による1863年の下関での奇兵隊創設。"
+    },
+    "yamaguchi_takasugi_1863": {
+      "title": "山口県立山口図書館「資料に見る 坂本龍馬と長州」",
+      "url": "https://library.pref.yamaguchi.lg.jp/material/201005/",
+      "note": "高杉晋作の1863年の奇兵隊結成と攘夷活動。"
+    },
+    "kyoto_kusaka_site": {
+      "title": "京都市「長州藩士久坂玄瑞の密議の角屋」",
+      "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/si020.html",
+      "note": "上洛後の久坂玄瑞による朝廷工作などの尊王攘夷運動と、角屋での密議。"
+    },
+    "jacar_sanjo_detail": {
+      "title": "アジア歴史資料センター「三條實美」",
+      "url": "https://www.jacar.archives.go.jp/das/term/00000389",
+      "note": "三条実美の1862年の議奏・国事御用掛就任と、1863年八月十八日の政変に伴う官位褫奪・京都追放。"
+    },
+    "kochi_takechi_1863": {
+      "title": "高知県立坂本龍馬記念館「半平太と京都」",
+      "url": "https://ryoma-kinenkan.jp/exhibition/2025/06/post-27.html",
+      "note": "武市半平太の上士昇格、京都留守居加役就任、1862年12月23日の帰京から1863年4月4日の離京。"
+    },
+    "kyoto_museum_ryoma_1863": {
+      "title": "京都国立博物館「坂本龍馬関係書状 文久三年三月二十日 坂本乙女あて」",
+      "url": "https://knmdb.kyohaku.go.jp/479.html",
+      "note": "坂本龍馬が勝海舟の門下で海軍創設に従事し、1863年3月に海軍修行中だったことを示す書状。"
+    },
+    "fukui_ryoma_1863": {
+      "title": "福井市立郷土歴史博物館「龍馬と福井」",
+      "url": "https://history-museum.city.fukui.lg.jp/tenji/tenran/ryouma_fukui2021.html",
+      "note": "坂本龍馬が勝海舟の門弟となり、神戸海軍操練所設立資金の援助を福井藩に求める使者となったこと。"
+    },
+    "kobe_naval_1863": {
+      "title": "神戸市文化財保護審議会「海軍操練所跡及び神戸港第一波止場の遺構」",
+      "url": "https://www.city.kobe.lg.jp/documents/19965/20240827hogoshinshiryo.pdf",
+      "note": "勝海舟の建言を受けた1863年の神戸海軍操練所建設開始、1864年の竣工、1865年の閉所。"
     }
   },
   "factions": {
@@ -2681,15 +2736,15 @@
         },
         "1863-joi": {
           "display": "徳川家茂",
-          "role": "14代将軍・上洛中",
-          "stance": "朝廷から攘夷実行を迫られ、幕府として期限を約束する。",
-          "importance": "将軍として約230年ぶりに上洛し、朝廷の政治力上昇を示した。",
+          "role": "14代将軍（3月4日上洛・6月16日帰府）",
+          "stance": "2月13日に江戸を発ち、3月4日に京都へ入った。幕府は4月20日、5月10日を攘夷期限として上奏した。",
+          "importance": "家光の1634年上洛以来の将軍上洛を行い、6月16日に軍艦で江戸へ戻った。",
           "evidence": {
             "sourceIds": [
               "archives_timeline",
-              "ndl_handwriting"
+              "fukui_pref_timeline"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1864-kinmon": {
@@ -2800,16 +2855,15 @@
         },
         "1863-joi": {
           "display": "一橋慶喜",
-          "role": "将軍後見職",
-          "stance": "攘夷実行を求める朝廷と、実行困難な幕府の間で対応する。",
-          "importance": "京都政局で幕府を代表する人物となる。",
+          "role": "将軍後見職・京都政局",
+          "stance": "1862年に将軍後見職に就き、政局の中心となった京都で幕府と朝廷の間の対応にあたった。",
+          "importance": "将軍後見職を辞して禁裏御守衛総督に就くのは翌1864年である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_modern_timeline",
-              "ndl_handwriting"
+              "matsudo_yoshinobu_timeline",
+              "fukui_yoshinobu_1863"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1863-aug18": {
@@ -3366,15 +3420,14 @@
         },
         "1863-joi": {
           "display": "松平春嶽",
-          "role": "前政事総裁職",
-          "stance": "攘夷実行の困難と公武合体の維持に苦慮する。",
-          "importance": "幕府改革派も朝廷の攘夷圧力で身動きが難しくなった。",
+          "role": "前政事総裁職・福井帰国",
+          "stance": "3月18日に政事総裁職の免職を願い、許可を得ないまま21日に京都を発った。",
+          "importance": "3月26日に政事総裁職を免じられ、逼塞を命じられた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "fukui_pref_timeline"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1867-taisei": {
@@ -3616,14 +3669,13 @@
         "1863-joi": {
           "display": "島津久光",
           "role": "薩摩藩国父",
-          "stance": "生麦事件をめぐる英国との対立に直面し、藩の軍事対応を主導する。",
-          "importance": "薩英戦争後の対英接近・近代化の政治責任者。",
+          "stance": "前年の久光一行通行時に起きた生麦事件をめぐり、薩摩藩は英国の要求を拒否した。",
+          "importance": "英国艦隊が6月27日に鹿児島へ来航し、7月2日に薩英戦争が起きた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kagoshima_satsuei"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1863-aug18": {
@@ -3829,16 +3881,16 @@
           }
         },
         "1863-joi": {
-          "display": "西郷吉之助",
+          "display": "大島吉之助",
           "role": "沖永良部島に遠島中",
-          "stance": "薩英戦争や京都政局に直接参加していない。",
-          "importance": "後の活躍から当時を逆算しないため重要な時点。",
+          "stance": "前年閏8月から沖永良部島で流罪・禁固の身にあり、1863年には島から大島吉之助名義の書状を出した。",
+          "importance": "薩摩藩に召還されて政局へ復帰するのは翌1864年である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "isen_saigo_1863_letter",
+              "kagoshima_okinoerabu_saigo"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1863-aug18": {
@@ -4054,15 +4106,14 @@
         },
         "1863-joi": {
           "display": "大久保一蔵",
-          "role": "薩摩藩国事担当",
-          "stance": "対英対応と京都政局の双方を調整する。",
-          "importance": "軍事衝突後の外交・藩政転換を支えた。",
+          "role": "薩摩藩御側役",
+          "stance": "1861年の小納戸役を経て、1863年に御側役へ進んだ。",
+          "importance": "島津久光に近侍する藩政上の役職に就いた時期である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "jacar_okubo_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1863-aug18": {
@@ -4250,14 +4301,14 @@
         "1863-joi": {
           "display": "小松帯刀",
           "role": "薩摩藩家老",
-          "stance": "薩英戦争後の対英交渉・軍備近代化・貿易を支える。",
-          "importance": "対外戦争を国際協力へ転換する藩政責任者。",
+          "stance": "前年に家老へ進み、京都の藩邸に多く滞在して薩摩藩を代表した。",
+          "importance": "薩英戦争が起きた1863年にも、薩摩藩政の中枢にいた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kagoshima_komatsu_1862",
+              "kagoshima_satsuei"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1863-aug18": {
@@ -4758,15 +4809,14 @@
         },
         "1863-joi": {
           "display": "桂小五郎",
-          "role": "長州藩京都政務担当",
-          "stance": "攘夷実行と京都工作を支えるが、無計画な軍事行動には慎重。",
-          "importance": "長州内部にも手法の違いがあった。",
+          "role": "長州藩士・京都で朝廷周旋",
+          "stance": "前年から京都で朝廷への接近・周旋に奔走した。4月に攘夷の詔勅が出され、長州藩は5月に馬関で外国船を砲撃した。",
+          "importance": "長州藩の攘夷実行期に京都で政治活動を続けた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kyoto_kido_1862"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1863-aug18": {
@@ -4966,14 +5016,14 @@
         "1863-joi": {
           "display": "高杉晋作",
           "role": "奇兵隊創設者",
-          "stance": "下関戦の敗北後、身分を越えた奇兵隊を組織する。",
-          "importance": "長州軍制改革の出発点。",
+          "stance": "文久3年、下関で奇兵隊を創設した。",
+          "importance": "長州藩が外国船を砲撃した同年に、新たな部隊を組織した。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "yamaguchi_takasugi_guide",
+              "yamaguchi_takasugi_1863"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1864-kinmon": {
@@ -5101,14 +5151,14 @@
         "1863-joi": {
           "display": "久坂玄瑞",
           "role": "長州藩尊攘派指導者",
-          "stance": "攘夷実行を推進し、京都で長州藩の影響力を強める。",
-          "importance": "朝廷の攘夷方針を藩の行動へ結びつけた。",
+          "stance": "上洛後、尊王攘夷の急進派として朝廷工作などの運動を行った。",
+          "importance": "京都の角屋などで尊王攘夷運動の密議を重ねた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "yamaguchi_kusaka_guide",
+              "kyoto_kusaka_site"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1863-aug18": {
@@ -5201,14 +5251,14 @@
         "1863-joi": {
           "display": "伊藤俊輔",
           "role": "長州五傑として英国留学",
-          "stance": "密航して英国へ渡り、西洋の国力と技術を学ぶ。",
-          "importance": "攘夷の不可能性を海外で認識する。",
+          "stance": "5月、井上聞多ら4名とともに長州藩から英国へ密かに送り出された。",
+          "importance": "日本人の海外渡航が禁じられていた時代の密航留学だった。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "hagi_choshu_five",
+              "hagi_choshu_five_london"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1864-kinmon": {
@@ -5315,14 +5365,14 @@
         "1863-joi": {
           "display": "井上聞多",
           "role": "長州五傑として英国留学",
-          "stance": "攘夷派として渡英するが、西洋の国力を知り開国論へ転じる。",
-          "importance": "海外経験が藩の政策転換へ直結した。",
+          "stance": "5月、伊藤俊輔ら4名とともに長州藩から英国へ密かに送り出された。",
+          "importance": "日本人の海外渡航が禁じられていた時代の密航留学だった。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "hagi_choshu_five",
+              "hagi_choshu_five_london"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1864-kinmon": {
@@ -5712,14 +5762,15 @@
         "1863-joi": {
           "display": "孝明天皇",
           "role": "天皇",
-          "stance": "幕府へ攘夷実行を迫るが、外国との全面戦争を直接指揮する体制はない。",
-          "importance": "朝廷の理念と実務の距離が表面化する。",
+          "stance": "4月に攘夷の詔勅が出され、幕府は4月20日に5月10日を攘夷期限として上奏した。",
+          "importance": "長州藩は期限当日の5月10日から馬関で外国船を砲撃した。",
           "evidence": {
             "sourceIds": [
               "archives_timeline",
-              "ndl_handwriting"
+              "fukui_pref_timeline",
+              "kyoto_kido_1862"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1863-aug18": {
@@ -6100,15 +6151,15 @@
       "statuses": {
         "1863-joi": {
           "display": "三条実美",
-          "role": "尊攘派公家",
-          "stance": "長州藩と連携し、朝廷から攘夷実行を強く求める。",
-          "importance": "公家が藩と結び政治運動を主導した。",
+          "role": "議奏・国事御用掛",
+          "stance": "長州藩が上奏した天皇による攘夷戦親征の案に賛同し、その実現を計画した。",
+          "importance": "議奏・国事御用掛として朝廷政治に関わり、長州藩の攘夷方針に同調した。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "jacar_sanjo_detail",
+              "kyoto_kido_1862"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1863-aug18": {
@@ -6240,14 +6291,14 @@
         "1863-joi": {
           "display": "松平容保",
           "role": "京都守護職",
-          "stance": "孝明天皇の信任を受け、攘夷派浪士と長州勢力を警戒する。",
-          "importance": "幕府より朝廷への忠誠を強く意識する複雑な立場。",
+          "stance": "京都の治安維持を担い、京都に残留した浪士を会津藩預かりの壬生浪士組として配下に置いた。",
+          "importance": "壬生浪士組は将軍警固、市中巡邏、志士の取り締まりにあたった。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kyoto_shugoshoku_site",
+              "kyoto_shinsengumi_history"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1863-aug18": {
@@ -6581,15 +6632,15 @@
         },
         "1863-joi": {
           "display": "武市半平太",
-          "role": "土佐勤王党盟主",
-          "stance": "京都の尊攘運動と藩内統制を進める。",
-          "importance": "藩主権力との緊張が高まる。",
+          "role": "土佐藩京都留守居加役",
+          "stance": "上士へ昇格して京都留守居加役に就いたが、山内容堂を追って4月4日に京都を発った。",
+          "importance": "前年12月23日から続いた京都での政治活動を終え、土佐へ戻った。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kochi_takechi_kyoto",
+              "kochi_takechi_1863"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1863-aug18": {
@@ -6693,15 +6744,16 @@
         },
         "1863-joi": {
           "display": "坂本龍馬",
-          "role": "神戸海軍操練所関係者",
-          "stance": "藩を越えた海軍人材の育成へ関わる。",
-          "importance": "まだ薩長提携以前の段階。",
+          "role": "勝海舟門下・海軍修行中",
+          "stance": "勝海舟の神戸海軍操練所建設資金への援助を求める使者として福井藩を訪ねた。",
+          "importance": "操練所は1863年に建設が始まり、翌1864年に竣工・開設したため、この時点は建設準備段階である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kyoto_museum_ryoma_1863",
+              "fukui_ryoma_1863",
+              "kobe_naval_1863"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1864-kinmon": {
@@ -7122,15 +7174,15 @@
         },
         "1863-joi": {
           "display": "近藤勇",
-          "role": "壬生浪士組局長級",
-          "stance": "会津藩預かりとして京都治安へ参加する。",
-          "importance": "浪士組が幕府側治安組織へ変化する。",
+          "role": "会津藩預かり壬生浪士組隊士",
+          "stance": "浪士組に加わって2月23日に入京し、江戸へ戻らず京都に残って壬生浪士組を構成した。",
+          "importance": "壬生浪士組は将軍警固と市中巡邏などを担い、新選組の隊名を得るのは8月18日の政変後である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "hino_shinsengumi_2003",
+              "kyoto_shinsengumi_history"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1863-aug18": {
@@ -7277,15 +7329,15 @@
         },
         "1863-joi": {
           "display": "土方歳三",
-          "role": "壬生浪士組副長級",
-          "stance": "京都で組織統制と治安活動を担う。",
-          "importance": "規律と実務を支える。",
+          "role": "会津藩預かり壬生浪士組隊士",
+          "stance": "近藤勇らと浪士組に加わって2月23日に入京し、京都に残った壬生浪士組で活動した。",
+          "importance": "壬生浪士組は8月18日の政変に出動し、その働きの後に新選組の隊名を得た。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "hino_shinsengumi_2003",
+              "kyoto_shinsengumi_history"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1864-kinmon": {
