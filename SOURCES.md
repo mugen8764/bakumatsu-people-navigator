@@ -59,6 +59,11 @@
 - [萩博物館「高杉晋作資料室」](https://www.city.hagi.lg.jp/hagihaku/hikidashi/shinsaku/index.htm)
 - [萩博物館「古写真で見る幕末明治・海外渡航者編」](https://www.city.hagi.lg.jp/hagihaku/event/202303_spring/index.html)
 - [萩市「長州ファイブ」](https://www.city.hagi.lg.jp/uploaded/attachment/5003.pdf)
+- [鹿児島県「島津斉彬像」](https://www.pref.kagoshima.jp/ab23/reimeikan/josetsu/theme/kinsei/nariakira/kgs03_s6_4.html)
+- [国立国会図書館「近代日本人の肖像・吉田松陰」](https://www.ndl.go.jp/portrait/datas/217/index.html)
+- [いわき市「安藤信正生誕200年・公武合体策と和宮降嫁」](https://www.city.iwaki.lg.jp/www/contents/1571875265178/index.html)
+- [水戸市「歴史的風致形成の背景」](https://www.city.mito.lg.jp/uploaded/attachment/11943.pdf)
+- [国立国会図書館「近代日本人の肖像・徳川慶喜」](https://www.ndl.go.jp/portrait/datas/147/index.html)
 
 ## 情報の分類
 

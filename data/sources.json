@@ -276,6 +276,36 @@
       "title": "萩市「長州ファイブ」",
       "url": "https://www.city.hagi.lg.jp/uploaded/attachment/5003.pdf",
       "note": "1863年にロンドンで撮影された長州五傑の写真と英国留学。"
+    },
+    {
+      "id": "kagoshima_nariakira",
+      "title": "鹿児島県「島津斉彬像」",
+      "url": "https://www.pref.kagoshima.jp/ab23/reimeikan/josetsu/theme/kinsei/nariakira/kgs03_s6_4.html",
+      "note": "島津斉彬による集成館事業、洋式造船、一橋派での将軍継嗣運動。"
+    },
+    {
+      "id": "ndl_portrait_shoin_detail",
+      "title": "国立国会図書館「近代日本人の肖像・吉田松陰」",
+      "url": "https://www.ndl.go.jp/portrait/datas/217/index.html",
+      "note": "1854年の下田での海外密航未遂と松下村塾。"
+    },
+    {
+      "id": "iwaki_kazunomiya",
+      "title": "いわき市「安藤信正生誕200年・公武合体策と和宮降嫁」",
+      "url": "https://www.city.iwaki.lg.jp/www/contents/1571875265178/index.html",
+      "note": "桜田門外の変後の幕府による和宮降嫁申し入れと朝廷の応諾。"
+    },
+    {
+      "id": "mito_nariaki_reform",
+      "title": "水戸市「歴史的風致形成の背景」",
+      "url": "https://www.city.mito.lg.jp/uploaded/attachment/11943.pdf",
+      "note": "徳川斉昭の藩政改革と幕府海防参与就任。"
+    },
+    {
+      "id": "ndl_portrait_yoshinobu_detail",
+      "title": "国立国会図書館「近代日本人の肖像・徳川慶喜」",
+      "url": "https://www.ndl.go.jp/portrait/datas/147/index.html",
+      "note": "一橋慶喜の将軍継嗣擁立、井伊直弼との対立、安政の大獄での処分。"
     }
   ]
 }

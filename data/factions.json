@@ -176,12 +176,12 @@
       "factionId": "bakufu",
       "startSceneId": "1853-blackships",
       "endSceneId": "1853-blackships",
-      "goal": "戦争を避け、国書への回答と海防を準備する。",
-      "position": "外交の決定主体だが、諸大名へ意見を求め始める。",
+      "goal": "米国大統領国書を受領し、回答と海防を準備する。",
+      "position": "品川台場の築造を始め、大船建造の禁を解く。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力状態の項目別出典が必要。"
+        "sourceIds": ["archives_timeline"],
+        "reviewStatus": "verified",
+        "note": "国立公文書館年表で国書受領、台場築造、大船建造解禁を確認。"
       }
     },
     {
@@ -189,12 +189,12 @@
       "factionId": "foreign-powers",
       "startSceneId": "1853-blackships",
       "endSceneId": "1853-blackships",
-      "goal": "補給港・漂流民保護・通商への入口を確保する。",
-      "position": "米国とロシアが相次いで来航する。",
+      "goal": "米国は国書を渡し、ロシアは通商・国境問題を協議する。",
+      "position": "ペリーが浦賀、プチャーチンが長崎へ相次いで来航する。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力状態の項目別出典が必要。"
+        "sourceIds": ["archives_timeline"],
+        "reviewStatus": "verified",
+        "note": "国立公文書館年表で米国・ロシア使節の来航と要求を確認。"
       }
     },
     {
@@ -202,12 +202,12 @@
       "factionId": "mito",
       "startSceneId": "1853-blackships",
       "endSceneId": "1853-blackships",
-      "goal": "海防強化と外国船への強硬対応を主張する。",
+      "goal": "幕府の海防政策へ参与する。",
       "position": "徳川斉昭が海防参与として幕政へ参加する。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力状態の項目別出典が必要。"
+        "sourceIds": ["mito_nariaki_reform"],
+        "reviewStatus": "verified",
+        "note": "水戸市資料で徳川斉昭の幕府海防参与就任を確認。"
       }
     },
     {
@@ -215,12 +215,12 @@
       "factionId": "satsuma",
       "startSceneId": "1853-blackships",
       "endSceneId": "1853-blackships",
-      "goal": "西洋技術を導入し、雄藩参加型の国政改革を進める。",
-      "position": "島津斉彬が近代化と幕政改革を構想する。",
+      "goal": "西洋科学を導入し、藩の産業・軍事技術を整備する。",
+      "position": "島津斉彬が集成館事業と洋式造船を進める。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力状態の項目別出典が必要。"
+        "sourceIds": ["kagoshima_nariakira"],
+        "reviewStatus": "verified",
+        "note": "鹿児島県資料で斉彬の西欧科学導入、集成館事業、洋式造船を確認。"
       }
     },
     {
@@ -228,12 +228,12 @@
       "factionId": "bakufu",
       "startSceneId": "1854-treaty",
       "endSceneId": "1854-treaty",
-      "goal": "限定的な開港で武力衝突を避ける。",
-      "position": "和親条約を締結し、海軍・洋学体制を整備する。",
+      "goal": "米国船への下田・箱館開港と物資供給を条約化する。",
+      "position": "日米和親条約を締結し、翌年に長崎海軍伝習を始める。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力状態の項目別出典が必要。"
+        "sourceIds": ["ndl_treaty_1854_text", "ndl_nichiran_opening"],
+        "reviewStatus": "verified",
+        "note": "条約本文と国立国会図書館解説で開港・供給規定と海軍伝習を確認。"
       }
     },
     {
@@ -241,12 +241,12 @@
       "factionId": "foreign-powers",
       "startSceneId": "1854-treaty",
       "endSceneId": "1854-treaty",
-      "goal": "港・領事・補給の権利を条約化する。",
-      "position": "米国の条約を先例に各国が接近する。",
+      "goal": "米国は下田・箱館への来航と物資供給を条約化する。",
+      "position": "米国との条約後、英国・ロシアも幕府と和親条約を結ぶ。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力状態の項目別出典が必要。"
+        "sourceIds": ["ndl_treaty_1854_text", "archives_timeline"],
+        "reviewStatus": "verified",
+        "note": "条約本文と国立公文書館年表で米国の条約内容と後続条約を確認。"
       }
     },
     {
@@ -257,9 +257,9 @@
       "goal": "藩の産業・軍事近代化を加速する。",
       "position": "集成館事業や造船を進める。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力状態の項目別出典が必要。"
+        "sourceIds": ["kagoshima_nariakira"],
+        "reviewStatus": "verified",
+        "note": "鹿児島県資料で集成館事業と洋式造船を確認。"
       }
     },
     {
@@ -267,12 +267,12 @@
       "factionId": "choshu",
       "startSceneId": "1854-treaty",
       "endSceneId": "1854-treaty",
-      "goal": "海防と海外知識を強化する。",
-      "position": "吉田松陰の密航未遂など若手の危機感が高まる。",
+      "goal": "海外の実情を学ぶ手段を模索する。",
+      "position": "藩士吉田松陰が下田で米国艦への密航を試み、投獄される。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力状態の項目別出典が必要。"
+        "sourceIds": ["ndl_portrait_shoin_detail"],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の吉田松陰解説で海外密航未遂と投獄を確認。"
       }
     },
     {
@@ -280,12 +280,12 @@
       "factionId": "bakufu",
       "startSceneId": "1858-ansei",
       "endSceneId": "1858-ansei",
-      "goal": "通商条約を締結し、家茂を将軍として統制を維持する。",
+      "goal": "通商条約を締結し、徳川慶福を将軍継嗣に定める。",
       "position": "井伊直弼の大老政治で反対派を処分する。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力状態の項目別出典が必要。"
+        "sourceIds": ["ndl_handwriting_bakumatsu_people"],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の井伊直弼解説で条約、将軍継嗣、反対派処分を確認。"
       }
     },
     {
@@ -293,12 +293,12 @@
       "factionId": "imperial-court",
       "startSceneId": "1858-ansei",
       "endSceneId": "1858-ansei",
-      "goal": "条約勅許と攘夷方針への発言権を確保する。",
-      "position": "幕府外交へ本格的に介入する。",
+      "goal": "幕府が求めた通商条約勅許を審議する。",
+      "position": "勅許がないまま幕府が条約へ調印し、朝廷内の反対派も処分を受ける。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力状態の項目別出典が必要。"
+        "sourceIds": ["ndl_handwriting_bakumatsu_people"],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館解説で無勅許調印と公家の処分を確認。"
       }
     },
     {
@@ -306,12 +306,12 @@
       "factionId": "mito",
       "startSceneId": "1858-ansei",
       "endSceneId": "1858-ansei",
-      "goal": "慶喜擁立と勅許重視、海防強化を求める。",
-      "position": "井伊政権と激しく対立する。",
+      "goal": "一橋慶喜の将軍継嗣擁立を進める。",
+      "position": "条約調印と将軍継嗣問題で井伊直弼と対立し、処分を受ける。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力状態の項目別出典が必要。"
+        "sourceIds": ["ndl_handwriting_bakumatsu_people", "ndl_portrait_yoshinobu_detail"],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館解説で慶喜擁立、井伊との対立、安政の大獄での処分を確認。"
       }
     },
     {
@@ -322,9 +322,9 @@
       "goal": "一橋慶喜擁立と雄藩参加型改革を目指す。",
       "position": "斉彬急死で政治方針の再編を迫られる。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力状態の項目別出典が必要。"
+        "sourceIds": ["kagoshima_nariakira"],
+        "reviewStatus": "verified",
+        "note": "鹿児島県資料で斉彬の一橋派での活動と1858年の急死を確認。"
       }
     },
     {
@@ -332,12 +332,12 @@
       "factionId": "foreign-powers",
       "startSceneId": "1858-ansei",
       "endSceneId": "1858-ansei",
-      "goal": "通商・開港・治外法権などを条約で確保する。",
-      "position": "列強の圧力が幕府の決断を急がせる。",
+      "goal": "通商と開港を条約で確保する。",
+      "position": "米国との通商条約後、オランダ・ロシア・英国・フランスも同様の条約を結ぶ。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力状態の項目別出典が必要。"
+        "sourceIds": ["archives_timeline"],
+        "reviewStatus": "verified",
+        "note": "国立公文書館年表で日米修好通商条約と五ヶ国条約を確認。"
       }
     },
     {
@@ -345,12 +345,12 @@
       "factionId": "bakufu",
       "startSceneId": "1860-sakurada",
       "endSceneId": "1860-sakurada",
-      "goal": "井伊死後の政局を安定させ、朝廷との協調を回復する。",
-      "position": "公武合体と和宮降嫁へ向かう。",
+      "goal": "朝廷へ和宮の将軍家茂への降嫁を申し入れる。",
+      "position": "井伊直弼の死後、公武合体策として和宮降嫁を進める。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力状態の項目別出典が必要。"
+        "sourceIds": ["iwaki_kazunomiya"],
+        "reviewStatus": "verified",
+        "note": "いわき市解説で1860年の幕府による降嫁申し入れを確認。"
       }
     },
     {
@@ -358,12 +358,12 @@
       "factionId": "mito",
       "startSceneId": "1860-sakurada",
       "endSceneId": "1860-sakurada",
-      "goal": "藩内統制と勅書問題への対応。",
-      "position": "改革派・激派・鎮派などに分裂する。",
+      "goal": "桜田門外の変後の藩士処分へ対応する。",
+      "position": "水戸藩の浪士らが井伊直弼を襲撃し、殺害する。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力状態の項目別出典が必要。"
+        "sourceIds": ["ndl_handwriting_bakumatsu_people"],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の井伊直弼解説で水戸浪士らによる襲撃を確認。"
       }
     },
     {
@@ -371,12 +371,12 @@
       "factionId": "imperial-court",
       "startSceneId": "1860-sakurada",
       "endSceneId": "1860-sakurada",
-      "goal": "攘夷方針を維持しつつ、幕府との協調条件を探る。",
-      "position": "和宮降嫁が政治課題となる。",
+      "goal": "幕府からの和宮降嫁申し入れを審議する。",
+      "position": "孝明天皇は当初反対したが、幕府の要請を受けて降嫁を認める。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力状態の項目別出典が必要。"
+        "sourceIds": ["iwaki_kazunomiya"],
+        "reviewStatus": "verified",
+        "note": "いわき市解説で朝廷側の反対と応諾を確認。"
       }
     },
     {
@@ -384,12 +384,12 @@
       "factionId": "satsuma",
       "startSceneId": "1860-sakurada",
       "endSceneId": "1860-sakurada",
-      "goal": "斉彬死後の藩政を久光中心に再建する。",
-      "position": "西郷は奄美にあり、大久保が久光へ接近する。",
+      "goal": "斉彬急死後の藩政下で西郷隆盛の処遇を継続する。",
+      "position": "西郷は1859年から奄美大島で暮らしている。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力状態の項目別出典が必要。"
+        "sourceIds": ["ndl_portrait_saigo_detail", "kagoshima_amami_saigo"],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館と鹿児島県資料で斉彬死後の西郷と奄美居住を確認。"
       }
     },
     {

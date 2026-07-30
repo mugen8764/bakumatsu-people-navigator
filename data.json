@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "updated": "2026-07-30"
   },
   "sources": {
@@ -234,6 +234,31 @@
       "title": "萩市「長州ファイブ」",
       "url": "https://www.city.hagi.lg.jp/uploaded/attachment/5003.pdf",
       "note": "1863年にロンドンで撮影された長州五傑の写真と英国留学。"
+    },
+    "kagoshima_nariakira": {
+      "title": "鹿児島県「島津斉彬像」",
+      "url": "https://www.pref.kagoshima.jp/ab23/reimeikan/josetsu/theme/kinsei/nariakira/kgs03_s6_4.html",
+      "note": "島津斉彬による集成館事業、洋式造船、一橋派での将軍継嗣運動。"
+    },
+    "ndl_portrait_shoin_detail": {
+      "title": "国立国会図書館「近代日本人の肖像・吉田松陰」",
+      "url": "https://www.ndl.go.jp/portrait/datas/217/index.html",
+      "note": "1854年の下田での海外密航未遂と松下村塾。"
+    },
+    "iwaki_kazunomiya": {
+      "title": "いわき市「安藤信正生誕200年・公武合体策と和宮降嫁」",
+      "url": "https://www.city.iwaki.lg.jp/www/contents/1571875265178/index.html",
+      "note": "桜田門外の変後の幕府による和宮降嫁申し入れと朝廷の応諾。"
+    },
+    "mito_nariaki_reform": {
+      "title": "水戸市「歴史的風致形成の背景」",
+      "url": "https://www.city.mito.lg.jp/uploaded/attachment/11943.pdf",
+      "note": "徳川斉昭の藩政改革と幕府海防参与就任。"
+    },
+    "ndl_portrait_yoshinobu_detail": {
+      "title": "国立国会図書館「近代日本人の肖像・徳川慶喜」",
+      "url": "https://www.ndl.go.jp/portrait/datas/147/index.html",
+      "note": "一橋慶喜の将軍継嗣擁立、井伊直弼との対立、安政の大獄での処分。"
     }
   },
   "factions": {
@@ -8474,145 +8499,183 @@
   "factionStates": {
     "1853-blackships": {
       "幕府": {
-        "goal": "戦争を避け、国書への回答と海防を準備する。",
-        "position": "外交の決定主体だが、諸大名へ意見を求め始める。",
+        "goal": "米国大統領国書を受領し、回答と海防を準備する。",
+        "position": "品川台場の築造を始め、大船建造の禁を解く。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "archives_timeline"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "外国勢力": {
-        "goal": "補給港・漂流民保護・通商への入口を確保する。",
-        "position": "米国とロシアが相次いで来航する。",
+        "goal": "米国は国書を渡し、ロシアは通商・国境問題を協議する。",
+        "position": "ペリーが浦賀、プチャーチンが長崎へ相次いで来航する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "archives_timeline"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "水戸藩": {
-        "goal": "海防強化と外国船への強硬対応を主張する。",
+        "goal": "幕府の海防政策へ参与する。",
         "position": "徳川斉昭が海防参与として幕政へ参加する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "mito_nariaki_reform"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "薩摩藩": {
-        "goal": "西洋技術を導入し、雄藩参加型の国政改革を進める。",
-        "position": "島津斉彬が近代化と幕政改革を構想する。",
+        "goal": "西洋科学を導入し、藩の産業・軍事技術を整備する。",
+        "position": "島津斉彬が集成館事業と洋式造船を進める。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kagoshima_nariakira"
+          ],
+          "reviewStatus": "verified"
         }
       }
     },
     "1854-treaty": {
       "幕府": {
-        "goal": "限定的な開港で武力衝突を避ける。",
-        "position": "和親条約を締結し、海軍・洋学体制を整備する。",
+        "goal": "米国船への下田・箱館開港と物資供給を条約化する。",
+        "position": "日米和親条約を締結し、翌年に長崎海軍伝習を始める。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_treaty_1854_text",
+            "ndl_nichiran_opening"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "外国勢力": {
-        "goal": "港・領事・補給の権利を条約化する。",
-        "position": "米国の条約を先例に各国が接近する。",
+        "goal": "米国は下田・箱館への来航と物資供給を条約化する。",
+        "position": "米国との条約後、英国・ロシアも幕府と和親条約を結ぶ。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_treaty_1854_text",
+            "archives_timeline"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "薩摩藩": {
         "goal": "藩の産業・軍事近代化を加速する。",
         "position": "集成館事業や造船を進める。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kagoshima_nariakira"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "長州藩": {
-        "goal": "海防と海外知識を強化する。",
-        "position": "吉田松陰の密航未遂など若手の危機感が高まる。",
+        "goal": "海外の実情を学ぶ手段を模索する。",
+        "position": "藩士吉田松陰が下田で米国艦への密航を試み、投獄される。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_portrait_shoin_detail"
+          ],
+          "reviewStatus": "verified"
         }
       }
     },
     "1858-ansei": {
       "幕府": {
-        "goal": "通商条約を締結し、家茂を将軍として統制を維持する。",
+        "goal": "通商条約を締結し、徳川慶福を将軍継嗣に定める。",
         "position": "井伊直弼の大老政治で反対派を処分する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_handwriting_bakumatsu_people"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "朝廷": {
-        "goal": "条約勅許と攘夷方針への発言権を確保する。",
-        "position": "幕府外交へ本格的に介入する。",
+        "goal": "幕府が求めた通商条約勅許を審議する。",
+        "position": "勅許がないまま幕府が条約へ調印し、朝廷内の反対派も処分を受ける。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_handwriting_bakumatsu_people"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "水戸藩": {
-        "goal": "慶喜擁立と勅許重視、海防強化を求める。",
-        "position": "井伊政権と激しく対立する。",
+        "goal": "一橋慶喜の将軍継嗣擁立を進める。",
+        "position": "条約調印と将軍継嗣問題で井伊直弼と対立し、処分を受ける。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_handwriting_bakumatsu_people",
+            "ndl_portrait_yoshinobu_detail"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "薩摩藩": {
         "goal": "一橋慶喜擁立と雄藩参加型改革を目指す。",
         "position": "斉彬急死で政治方針の再編を迫られる。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "kagoshima_nariakira"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "外国勢力": {
-        "goal": "通商・開港・治外法権などを条約で確保する。",
-        "position": "列強の圧力が幕府の決断を急がせる。",
+        "goal": "通商と開港を条約で確保する。",
+        "position": "米国との通商条約後、オランダ・ロシア・英国・フランスも同様の条約を結ぶ。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "archives_timeline"
+          ],
+          "reviewStatus": "verified"
         }
       }
     },
     "1860-sakurada": {
       "幕府": {
-        "goal": "井伊死後の政局を安定させ、朝廷との協調を回復する。",
-        "position": "公武合体と和宮降嫁へ向かう。",
+        "goal": "朝廷へ和宮の将軍家茂への降嫁を申し入れる。",
+        "position": "井伊直弼の死後、公武合体策として和宮降嫁を進める。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "iwaki_kazunomiya"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "水戸藩": {
-        "goal": "藩内統制と勅書問題への対応。",
-        "position": "改革派・激派・鎮派などに分裂する。",
+        "goal": "桜田門外の変後の藩士処分へ対応する。",
+        "position": "水戸藩の浪士らが井伊直弼を襲撃し、殺害する。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_handwriting_bakumatsu_people"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "朝廷": {
-        "goal": "攘夷方針を維持しつつ、幕府との協調条件を探る。",
-        "position": "和宮降嫁が政治課題となる。",
+        "goal": "幕府からの和宮降嫁申し入れを審議する。",
+        "position": "孝明天皇は当初反対したが、幕府の要請を受けて降嫁を認める。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "iwaki_kazunomiya"
+          ],
+          "reviewStatus": "verified"
         }
       },
       "薩摩藩": {
-        "goal": "斉彬死後の藩政を久光中心に再建する。",
-        "position": "西郷は奄美にあり、大久保が久光へ接近する。",
+        "goal": "斉彬急死後の藩政下で西郷隆盛の処遇を継続する。",
+        "position": "西郷は1859年から奄美大島で暮らしている。",
         "evidence": {
-          "sourceIds": [],
-          "reviewStatus": "needs_review"
+          "sourceIds": [
+            "ndl_portrait_saigo_detail",
+            "kagoshima_amami_saigo"
+          ],
+          "reviewStatus": "verified"
         }
       }
     },
