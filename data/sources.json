@@ -659,7 +659,7 @@
       "id": "jacar_okubo_detail",
       "title": "アジア歴史資料センター「大久保利通」",
       "url": "https://www.jacar.go.jp/dictionary/02_item.html?id=00000312",
-      "note": "大久保利通の1857年徒目付、1861年小納戸役などの職歴と大久保一蔵の別名。"
+      "note": "大久保利通の1857年徒目付、1861年小納戸役、1863年御側役などの職歴、大久保一蔵の別名、1866年の薩長盟約実現への関与。"
     },
     {
       "id": "kochi_tosa_timeline",
@@ -966,6 +966,12 @@
       "title": "京都市下京区役所「区内の施設案内・光縁寺」",
       "url": "https://www.city.kyoto.lg.jp/shimogyo/page/0000012669.html",
       "note": "新選組が1865年に屯所を西本願寺へ移したことと、移転に反対した山南敬助の脱走・切腹。"
+    },
+    {
+      "id": "kagoshima_satcho_alliance",
+      "title": "鹿児島県歴史・美術センター黎明館「薩長同盟成立」",
+      "url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/sattyo.html",
+      "note": "1866年の薩長盟約、坂本龍馬・中岡慎太郎による仲介、京都の小松帯刀邸で小松・西郷・木戸が盟約を結んだこと。"
     }
   ]
 }

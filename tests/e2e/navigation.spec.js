@@ -17,7 +17,7 @@ test('all six primary views render without a page error', async ({ page }) => {
     await expect(page.locator(`#view-${view}`)).toBeVisible();
   }
 
-  await expect(page.locator('#sourceCatalog .source')).toHaveCount(161);
+  await expect(page.locator('#sourceCatalog .source')).toHaveCount(162);
   await expect(page.locator('#view-sources')).toContainText('data/*.json');
   expect(pageErrors).toEqual([]);
 });
@@ -41,7 +41,7 @@ test('alias search and timeline changes preserve the selected person', async ({ 
 
 test('person, relation, map, and event views remain coordinated', async ({ page }) => {
   await page.goto('/#scene=1866-satcho&view=people&person=kido&faction=長州藩');
-  await expect(page.locator('#personDetail .detail-title')).toHaveText('桂小五郎');
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('木戸準一郎');
 
   await page.locator('#personToGraph').click();
   await expect(page.locator('#view-relations')).toBeVisible();
@@ -164,7 +164,7 @@ test('404 page recovers the correct site root from a nested path', async ({ page
 test('review status follows item-level calibration', async ({ page }) => {
   await page.goto('/#scene=1866-satcho&view=people&person=kido&faction=長州藩');
   await expect(page.locator('#sceneCounts .review-status')).toHaveCount(0);
-  await expect(page.locator('#personDetail .snapshot .review-status')).toHaveText('出典校正中');
+  await expect(page.locator('#personDetail .snapshot .review-status')).toHaveCount(0);
 
   await page.locator('#tab-relations').click();
   await expect(page.locator('#graphExplanation .review-status').first()).toHaveText('出典校正中');

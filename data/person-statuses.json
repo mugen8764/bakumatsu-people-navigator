@@ -1184,15 +1184,15 @@
       "displayName": "島津久光",
       "role": "薩摩藩国父",
       "factionId": "satsuma",
-      "stance": "藩として長州との提携を認めつつ、急進的倒幕には慎重さを残す。",
-      "importance": "薩摩藩内にも倒幕の速度をめぐる差があった。",
+      "stance": "国父として藩政の実権を握る一方、薩長盟約の会談には小松帯刀と西郷隆盛が出席する。",
+      "importance": "薩摩藩の実権者と、盟約の会談当事者を区別して表示する。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kagoshima_library_hisamitsu_saigo",
+          "kagoshima_satcho_alliance"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "鹿児島県立図書館で久光が国父として藩政の実権を握ったこと、鹿児島県歴史・美術センター黎明館で小松・西郷・木戸を盟約当事者として確認。久光個人の会談出席や承認手続は出典が示さないため記述しない。"
       }
     },
     {
@@ -1429,17 +1429,18 @@
       "startSceneId": "1866-satcho",
       "endSceneId": "1866-satcho",
       "displayName": "西郷吉之助",
-      "role": "薩摩藩代表",
+      "role": "薩摩藩御側役・薩長盟約当事者",
       "factionId": "satsuma",
-      "stance": "木戸孝允と会談し、薩長提携の合意を結ぶ。",
-      "importance": "藩を代表して軍事・政治上の約束を担った。",
+      "stance": "京都の小松帯刀邸で、小松とともに木戸との盟約を結ぶ。",
+      "importance": "坂本龍馬・中岡慎太郎が仲介した薩摩側の会談当事者。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_saigo_detail",
+          "kagoshima_satcho_alliance",
+          "ndl_history_satcho"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで御側役への就任、鹿児島県歴史・美術センター黎明館と国際子ども図書館で1866年の盟約当事者・仲介者を確認。"
       }
     },
     {
@@ -1694,17 +1695,18 @@
       "startSceneId": "1866-satcho",
       "endSceneId": "1866-satcho",
       "displayName": "大久保一蔵",
-      "role": "薩摩藩国事担当",
+      "role": "薩摩藩御側役",
       "factionId": "satsuma",
-      "stance": "薩長提携を支持し、京都・藩内の政治調整を進める。",
-      "importance": "西郷・小松と異なる実務領域から提携を支えた。",
+      "stance": "1865年の長州再征反対に続き、1866年の薩長盟約実現に関わる。",
+      "importance": "小松邸での会談当事者とは区別し、出典が示す盟約実現への関与までを表示する。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_okubo_detail",
+          "fukui_research_okubo_1865",
+          "kagoshima_satcho_alliance"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで御側役就任と1866年の薩長盟約実現への関与、福井県文書館研究紀要で前年の長州再征反対を確認。鹿児島県解説が示す会談当事者は小松・西郷・木戸であり、大久保が同席したとは記述しない。"
       }
     },
     {
@@ -1920,17 +1922,17 @@
       "startSceneId": "1866-satcho",
       "endSceneId": "1866-satcho",
       "displayName": "小松帯刀",
-      "role": "薩摩藩家老・京都屋敷責任者",
+      "role": "薩摩藩家老・薩長盟約当事者",
       "factionId": "satsuma",
-      "stance": "薩長会談の場と藩としての保証を提供する。",
-      "importance": "提携を私的な志士間の約束ではなく藩間合意にした。",
+      "stance": "京都の自邸で西郷隆盛と木戸の会談を開き、自らも盟約当事者となる。",
+      "importance": "会談場所の提供者にとどまらず、薩摩側の当事者として確認できる。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kagoshima_komatsu_1862",
+          "kagoshima_satcho_alliance"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "鹿児島県観光連盟で家老就任と小松邸での会談、鹿児島県歴史・美術センター黎明館で会談場所と小松・西郷・木戸が盟約を結んだことを確認。"
       }
     },
     {
@@ -2443,18 +2445,21 @@
       "personId": "kido",
       "startSceneId": "1866-satcho",
       "endSceneId": "1866-satcho",
-      "displayName": "桂小五郎",
+      "displayName": "木戸準一郎",
       "role": "長州藩代表",
       "factionId": "choshu",
-      "stance": "西郷らと会談し、薩長提携の条件を確認する。",
-      "importance": "長州の名誉回復と対幕府方針を藩代表として交渉した。",
+      "stance": "京都の小松帯刀邸で小松・西郷と会談し、六か条の盟約内容を確認する。",
+      "importance": "後日、合意内容を書いた書簡を坂本龍馬に送り、裏書による確認を求めた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "yamaguchi_kido_guide",
+          "kyoto_kido_1862",
+          "ndl_satcho_alliance_research",
+          "kagoshima_satcho_alliance",
+          "kyohaku_kido_ryoma_letter"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "山口県立山口図書館で藩代表としての盟約締結、京都市で前年の木戸準一郎への改名、査読論文要約で六か条の盟約、鹿児島県歴史・美術センター黎明館で会談当事者、京都国立博物館で木戸書状と龍馬の裏書を確認。"
       }
     },
     {
@@ -2672,17 +2677,17 @@
       "startSceneId": "1866-satcho",
       "endSceneId": "1866-satcho",
       "displayName": "高杉晋作",
-      "role": "長州藩軍事指導者",
+      "role": "長州藩士・改革派指導者",
       "factionId": "choshu",
-      "stance": "薩長提携を背景に海軍・諸隊を整備する。",
-      "importance": "長州の軍事力を実戦体制へ高める。",
+      "stance": "前年の藩内戦に勝利して藩論を転換させ、第二次幕長戦争に備える長州にいる。",
+      "importance": "海軍総督として采配を振るうのは、同年6月に戦闘が始まってからである。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "yamaguchi_takasugi_guide",
+          "yamaguchi_choshu_reform"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "山口県立山口図書館で高杉の挙兵と藩内戦勝利、長州藩の軍事組織整備、1866年6月以後の海軍総督としての指揮を確認。盟約時点に海軍総督だったとは先取りしない。"
       }
     },
     {
@@ -3472,15 +3477,14 @@
       "displayName": "孝明天皇",
       "role": "天皇",
       "factionId": "imperial-court",
-      "stance": "会津・幕府への信任を保ち、長州の処分解除に慎重。",
-      "importance": "薩長提携は当初から朝廷公認の倒幕同盟ではない。",
+      "stance": "朝廷は薩長盟約翌日の1月22日、幕府が奏請した長州処分を勅許する。",
+      "importance": "薩摩・長州間の盟約と、同時期の朝廷による長州処分の決定を区別する。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "ndl_satcho_alliance_research"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館サーチ収録の査読論文要約で、慶応2年1月22日に幕府の長州処分奏請を朝廷が勅許したことを確認。天皇個人の内心や薩長盟約への評価は推測しない。"
       }
     },
     {
@@ -3716,17 +3720,17 @@
       "startSceneId": "1866-satcho",
       "endSceneId": "1866-expedition",
       "displayName": "岩倉具視",
-      "role": "公家・倒幕派と接近",
+      "role": "岩倉村に蟄居中",
       "factionId": "imperial-court",
-      "stance": "薩長の連携と朝廷内の政局転換を結びつける。",
-      "importance": "藩間提携を宮中政変へ接続する役割。",
+      "stance": "1862年から続く洛中追放により、岩倉村で蟄居している。",
+      "importance": "朝廷への復帰は1867年であり、薩長盟約時点の宮中活動として先取りしない。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_iwakura_exile",
+          "ndl_portrait_iwakura_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で1862年から約5年間の岩倉村蟄居と、1867年の赦免を確認。盟約を宮中政変へ接続したとの従来記述は、この時点を直接支える根拠がないため削除。"
       }
     },
     {
@@ -3885,17 +3889,17 @@
       "startSceneId": "1866-satcho",
       "endSceneId": "1866-expedition",
       "displayName": "三条実美",
-      "role": "追放中の公家",
+      "role": "太宰府に滞在する追放公家",
       "factionId": "imperial-court",
-      "stance": "薩長提携と長州復権により帰京の可能性が高まる。",
-      "importance": "新政権に必要な朝廷側人材となる。",
+      "stance": "1865年に長州から太宰府へ移され、京都追放が続いている。",
+      "importance": "薩長盟約時点では帰京しておらず、会談の当事者でもない。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_sanjo_detail",
+          "ndl_history_satcho"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1863年の京都追放と1865年の太宰府移送、国際子ども図書館で八月十八日の政変による追放を確認。帰京可能性という予測は表示しない。"
       }
     },
     {
@@ -4056,15 +4060,14 @@
       "displayName": "松平容保",
       "role": "京都守護職",
       "factionId": "aizu",
-      "stance": "薩長接近を警戒し、孝明天皇と幕府を支える。",
-      "importance": "薩摩・会津の旧来の連携が崩れていく。",
+      "stance": "京都の治安と公武合体を担い、征長では強硬論をとる。",
+      "importance": "薩長盟約への具体的な対応は確認できる出典がないため表示しない。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_katamori_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で京都守護職、京都の治安と公武合体への関与、征長強硬論を確認。盟約を警戒したとの個別の反応や薩摩との関係変化は当該出典が示さないため削除。"
       }
     },
     {
@@ -4265,15 +4268,15 @@
       "displayName": "山内容堂",
       "role": "前土佐藩主",
       "factionId": "tosa",
-      "stance": "幕府存続を前提とする公議政体を模索する。",
-      "importance": "薩長の武力倒幕とは異なる政権移行を求める。",
+      "stance": "1859年に隠居・謹慎し、以後は容堂と号する前藩主の立場にある。",
+      "importance": "公議政体論に基づく大政奉還の建言は1867年であり、薩長盟約時点へ先取りしない。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kochi_yodo_timeline",
+          "ndl_ryoma_political_plan"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "高知県立高知城歴史博物館で1859年の隠居・謹慎と容堂号、国立国会図書館で後藤による大政奉還進言が1867年であることを確認。1866年の具体的な政体構想は表示しない。"
       }
     },
     {
@@ -4547,17 +4550,18 @@
       "startSceneId": "1866-satcho",
       "endSceneId": "1866-satcho",
       "displayName": "坂本龍馬",
-      "role": "亀山社中代表・仲介者",
+      "role": "亀山社中代表・薩長盟約仲介者",
       "factionId": "tosa",
-      "stance": "薩長会談に関わり、木戸の求めに応じ合意内容を確認する。",
-      "importance": "藩間の不信を埋める第三者的接点。",
+      "stance": "中岡慎太郎と小松・西郷・木戸の会談を仲介し、木戸の求めに応じて盟約内容を裏書で確認する。",
+      "importance": "会談当事者ではなく、仲介と合意内容の確認を担った。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_history_satcho",
+          "kyohaku_kido_ryoma_letter",
+          "nagasaki_kameyama_1865"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国際子ども図書館で龍馬・中岡の仲介、京都国立博物館で木戸書状と龍馬の朱書裏書、長崎市で亀山社中代表としての活動を確認。"
       }
     },
     {
@@ -4623,17 +4627,17 @@
       "startSceneId": "1866-satcho",
       "endSceneId": "1866-expedition",
       "displayName": "後藤象二郎",
-      "role": "土佐藩参政",
+      "role": "土佐藩開成館担当",
       "factionId": "tosa",
-      "stance": "長崎で坂本龍馬らと接触し、土佐藩の新政局参加を模索する。",
-      "importance": "土佐藩の政策を現実的に転換する。",
+      "stance": "殖産興業と富国強兵を目的に1866年に設けられた開成館の責任者となる。",
+      "importance": "坂本龍馬との和解と大政奉還への協働は1867年であり、この時点へ先取りしない。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kochi_goto_1865",
+          "kochi_tosa_people"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "高知県立坂本龍馬記念館で1866年の開成館開業、高知県立高知城歴史博物館で後藤が責任者となったことを確認。長崎での龍馬との接触という従来記述は1866年の根拠がないため削除。"
       }
     },
     {
@@ -4735,17 +4739,18 @@
       "startSceneId": "1866-satcho",
       "endSceneId": "1866-satcho",
       "displayName": "中岡慎太郎",
-      "role": "薩長提携仲介者",
+      "role": "土佐脱藩志士・薩長盟約仲介者",
       "factionId": "tosa",
-      "stance": "薩摩・長州双方の人物を結び、倒幕連携を推進する。",
-      "importance": "龍馬より明確に武力倒幕へ傾く。",
+      "stance": "坂本龍馬とともに薩摩・長州両藩の代表者を説得し、盟約成立を仲介する。",
+      "importance": "龍馬との思想差を単純化せず、確認できる仲介行動を表示する。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "nakaoka_museum_profile",
+          "ndl_history_satcho",
+          "kagoshima_satcho_alliance"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "中岡慎太郎館、国際子ども図書館、鹿児島県歴史・美術センター黎明館で龍馬・中岡による仲介と1866年の盟約成立を確認。「龍馬より武力倒幕寄り」という比較は直接根拠がないため削除。"
       }
     },
     {
@@ -5021,15 +5026,15 @@
       "displayName": "近藤勇",
       "role": "新選組局長",
       "factionId": "shinsengumi",
-      "stance": "薩長接近と倒幕派活動を警戒する。",
-      "importance": "京都の勢力関係変化で新選組の敵対対象が広がる。",
+      "stance": "西本願寺を屯所とし、京都守護職松平容保の下で京都の治安維持を担う新選組を率いる。",
+      "importance": "新選組は前年に屯所を西本願寺へ移しており、薩長盟約への個別対応は出典がないため表示しない。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_kondo_detail",
+          "kyoto_shinsengumi_1865"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で新選組局長と京都守護職下での治安維持、京都市で1865年の西本願寺への屯所移転を確認。盟約を警戒したとの個人的反応は表示しない。"
       }
     },
     {
