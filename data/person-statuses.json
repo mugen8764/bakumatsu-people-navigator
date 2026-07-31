@@ -2710,17 +2710,16 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "高杉晋作",
-      "role": "故人（1867年死去）",
+      "role": "故人（1867年4月死去）",
       "factionId": "choshu",
-      "stance": "第二次長州征討後に病死する。",
-      "importance": "倒幕・維新の最終局面を見ずに死去した。",
+      "stance": "第二次幕長戦争で海軍総督を務めた後、肺結核により下関で死去する。",
+      "importance": "大政奉還時点ではすでに死去しており、同年後半の政治行動には参加していない。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "yamaguchi_takasugi_guide"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "山口県立山口図書館で第二次幕長戦争の海軍総督就任、肺結核、1867年4月の下関での死去を確認。"
       }
     },
     {
@@ -3505,17 +3504,16 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "孝明天皇",
-      "role": "故人",
+      "role": "故人（1866年崩御）",
       "factionId": "imperial-court",
-      "stance": "後継の明治天皇の下で、岩倉・薩長が宮中政治を再編する。",
-      "importance": "王政復古前の朝廷と後の新政府を同一視しないため重要。",
+      "stance": "慶応2年12月25日に崩御しており、この時点では政治行動を行わない。",
+      "importance": "1867年の朝廷・新政府の動きを本人の行動として扱わない。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "ndl_authority_komei"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館典拠データで慶応2年12月25日の崩御を確認。後継者や他人物の政治行動を孝明天皇本人の状態欄から削除。"
       }
     },
     {
@@ -3526,15 +3524,15 @@
       "displayName": "明治天皇",
       "role": "天皇",
       "factionId": "imperial-court",
-      "stance": "若年で践祚し、大政奉還後の政権再編の正統性を担う。",
-      "importance": "実務は岩倉・諸藩指導者が担うが、王政復古の中心制度となる。",
+      "stance": "1867年12月9日、王政復古の大号令により旧来の朝廷制度が廃止され、新政府の三職が置かれる。",
+      "importance": "1852年生まれで、王政復古時は若年の天皇だった。",
       "evidence": {
         "sourceIds": [
-          "ndl_handwriting",
-          "ndl_modern_timeline"
+          "ndl_authority_meiji",
+          "archives_royal_restoration"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館典拠データで人物と生年を、国立公文書館で1867年12月9日の王政復古と三職設置を確認。本人の意思や実務分担に関する評価は記述しない。"
       }
     },
     {
@@ -3732,17 +3730,17 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "岩倉具視",
-      "role": "公家・王政復古派",
+      "role": "公家・王政復古政変の計画者",
       "factionId": "imperial-court",
-      "stance": "大久保らと王政復古の政変を準備し、新政府の三職を構想する。",
-      "importance": "宮中で徳川政治力を排除する中心人物。",
+      "stance": "1867年まで続いた幽居の後、12月に大久保利通らと王政復古の政変を計画する。",
+      "importance": "王政復古後、新政府の参与・議定などを務める。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_iwakura_detail",
+          "ndl_iwakura_exile"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で1862年から約5年間の幽居と、1867年12月に大久保らと王政復古の政変を計画したこと、その後の新政府参与・議定就任を確認。三職の制度構想者という未確認の説明は削除。"
       }
     },
     {
@@ -3901,17 +3899,17 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "三条実美",
-      "role": "帰京・王政復古派公家",
+      "role": "王政復古により赦免・新政府議定",
       "factionId": "imperial-court",
-      "stance": "新政府形成へ参加する。",
-      "importance": "尊攘派公家から国家指導者へ移行する。",
+      "stance": "1863年の京都追放から、王政復古により赦免され議定に就任する。",
+      "importance": "太宰府滞在を終え、新政府の三職の一つである議定となった。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_sanjo_detail",
+          "archives_royal_restoration"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1867年の王政復古による赦免・議定就任を、国立公文書館で議定が新設三職の一つであることを確認。抽象的な国家指導者評価は削除。"
       }
     },
     {

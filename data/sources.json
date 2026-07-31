@@ -380,6 +380,12 @@
       "note": "孝明天皇の生没年と慶応2年12月25日の崩御。"
     },
     {
+      "id": "ndl_authority_meiji",
+      "title": "国立国会図書館典拠データ「明治天皇」",
+      "url": "https://id.ndl.go.jp/auth/ndlna/00043014",
+      "note": "明治天皇の人物同定と1852年から1912年の生没年。"
+    },
+    {
       "id": "kagoshima_tobaku_mitchoku",
       "title": "鹿児島県「討幕の密勅」",
       "url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/mittyoku.html",
@@ -617,7 +623,7 @@
       "id": "ndl_portrait_iwakura_detail",
       "title": "国立国会図書館「近代日本人の肖像・岩倉具視」",
       "url": "https://www.ndl.go.jp/portrait/datas/23/index.html",
-      "note": "岩倉具視の侍従就任、1858年の日米修好通商条約勅許奏請阻止、その後の公武合体策。"
+      "note": "岩倉具視の侍従就任、1858年の日米修好通商条約勅許奏請阻止、公武合体策、1867年までの幽居と同年12月の王政復古政変計画。"
     },
     {
       "id": "kochi_yodo_timeline",
@@ -767,7 +773,7 @@
       "id": "yamaguchi_takasugi_guide",
       "title": "山口県立山口図書館「高杉晋作・人物調べ方案内」",
       "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/takasugi_shinsaku/",
-      "note": "高杉晋作による1863年の奇兵隊創設、1864年の脱藩罪による投獄、下関戦争時の再起用と講和、禁門の変後の挙兵。"
+      "note": "高杉晋作による1863年の奇兵隊創設、1864年の投獄と下関戦争時の再起用・講和、禁門の変後の挙兵、第二次幕長戦争での海軍総督就任と1867年4月の病没。"
     },
     {
       "id": "yamaguchi_takasugi_1863",
@@ -785,7 +791,7 @@
       "id": "jacar_sanjo_detail",
       "title": "アジア歴史資料センター「三條實美」",
       "url": "https://www.jacar.archives.go.jp/das/term/00000389",
-      "note": "三条実美の1863年八月十八日の政変に伴う官位褫奪・京都追放と、1865年の太宰府移送。"
+      "note": "三条実美の1863年八月十八日の政変に伴う官位褫奪・京都追放、1865年の太宰府移送、1867年の王政復古による赦免・議定就任。"
     },
     {
       "id": "kochi_takechi_1863",
