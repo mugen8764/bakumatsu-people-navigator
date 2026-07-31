@@ -75,6 +75,17 @@ test('alias search and timeline changes preserve the selected person', async ({ 
 test('person, relation, map, and event views remain coordinated', async ({ page }) => {
   await page.goto('/#scene=1866-satcho&view=people&person=kido&faction=長州藩');
   await expect(page.locator('#personDetail .detail-title')).toHaveText('木戸準一郎');
+  await expect(page.locator('#personDetail .event-peers')).toContainText('直接の人物関係を示すものではありません');
+  await expect(page.locator('#personDetail [data-event-peer]')).toHaveCount(3);
+  await expect(page.locator('#personDetail [data-event-peer="komatsu"]')).toHaveText('小松帯刀');
+  await expect(page.locator('#personDetail [data-event-peer="saigo"]')).toHaveCount(0);
+
+  await page.locator('#personDetail [data-event-peer="komatsu"]').click();
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('小松帯刀');
+  await expect(page).toHaveURL(/person=komatsu/);
+
+  await page.locator('#personDetail [data-event-peer="kido"]').click();
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('木戸準一郎');
 
   await page.locator('#personToGraph').click();
   await expect(page.locator('#view-relations')).toBeVisible();

@@ -50,3 +50,11 @@ test('a person is not displayed outside activeRange', () => {
   assert.ok(domain.statusAt(kondo, 13));
   assert.equal(domain.statusAt(kondo, 14), null);
 });
+
+test('event peers exclude the selected person and direct relations', () => {
+  assert.deepEqual(
+    domain.eventPeersFor('kido', 9).map(person => person.id),
+    ['komatsu', 'nakaoka', 'okubo']
+  );
+  assert.deepEqual(domain.eventPeersFor('takasugi', 9), []);
+});

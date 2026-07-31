@@ -53,6 +53,18 @@
       });
     }
 
+    function eventPeersFor(personId, sceneIndex) {
+      const event = data.events[data.scenes[sceneIndex]?.event];
+      if (!event?.people?.includes(personId)) return [];
+      const directlyRelated = new Set(relationsFor(personId, sceneIndex, 'all').map(
+        relation => (relation.a === personId ? relation.b : relation.a)
+      ));
+      return event.people
+        .filter(id => id !== personId && !directlyRelated.has(id))
+        .map(getPerson)
+        .filter(person => statusAt(person, sceneIndex));
+    }
+
     function activeFactionRelations(sceneIndex) {
       return data.factionRelations.filter(relation => relation.start <= sceneIndex && relation.end >= sceneIndex);
     }
@@ -78,6 +90,7 @@
       activeFactionRelations,
       activePeople,
       activeRelations,
+      eventPeersFor,
       eventScene,
       factionAt,
       getPerson,
