@@ -45,7 +45,7 @@ test('the published collection sizes stay at the stage-one baseline', () => {
     relations: 79,
     factionRelations: 17,
     places: 27,
-    sources: 206
+    sources: 207
   });
 });
 
@@ -124,7 +124,7 @@ test('people and events retain valid HTTPS source references', () => {
   for (const [eventId, event] of Object.entries(data.events)) assert.ok(event.sources.length > 0, `${eventId} needs a source`);
 });
 
-test('known temporal inconsistencies are explicitly frozen for later correction', () => {
+test('relations do not extend beyond a person active range', () => {
   const peopleById = new Map(data.people.map(person => [person.id, person]));
   const personIssues = [];
   data.relations.forEach((relation, relationIndex) => {
@@ -133,10 +133,7 @@ test('known temporal inconsistencies are explicitly frozen for later correction'
       if (inactive.length) personIssues.push({ relationIndex, sceneId: data.scenes[sceneIndex].id, inactive });
     }
   });
-  assert.deepEqual(personIssues, [
-    { relationIndex: 36, sceneId: '1868-tohoku', inactive: ['kondo'] },
-    { relationIndex: 36, sceneId: '1869-hakodate', inactive: ['kondo'] }
-  ]);
+  assert.deepEqual(personIssues, []);
 
   const factionIssues = [];
   data.factionRelations.forEach((relation, relationIndex) => {

@@ -3312,6 +3312,26 @@
       }
     },
     {
+      "id": "person-status-yamagata-1863-joi",
+      "personId": "yamagata",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "displayName": "山県狂介",
+      "role": "奇兵隊軍監",
+      "factionId": "choshu",
+      "stance": "1863年に高杉晋作が創設した奇兵隊の軍監へ就任する。",
+      "importance": "確認できる就任時期と役職を表示し、具体的な指揮内容は推測で補わない。",
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_takasugi_guide",
+          "yamaguchi_yamagata_guide",
+          "jacar_yamagata_detail"
+        ],
+        "reviewStatus": "verified",
+        "note": "山口県立山口図書館で高杉による1863年の奇兵隊創設と山県の同年の軍監就任、アジア歴史資料センターで山県の職歴を確認。"
+      }
+    },
+    {
       "id": "person-status-yamagata-1864-kinmon",
       "personId": "yamagata",
       "startSceneId": "1864-kinmon",

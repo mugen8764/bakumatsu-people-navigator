@@ -508,11 +508,14 @@
       "endSceneId": "1863-aug18",
       "typeId": "conflict",
       "label": "命令違反・遠島",
-      "text": "西郷は久光の命に従わず、沖永良部島への遠島処分を受けた。",
+      "text": "西郷は下関待機の命に従わず、久光により徳之島、さらに沖永良部島へ流された。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "kagoshima_library_hisamitsu_saigo",
+          "tokunoshima_saigo_1862"
+        ],
+        "reviewStatus": "verified",
+        "note": "鹿児島県立図書館で西郷が久光の下関待機命令に背いて流罪となった経緯、徳之島町で徳之島上陸と沖永良部島への再遠島命令を確認。"
       }
     },
     {
@@ -523,11 +526,13 @@
       "endSceneId": "1868-edo",
       "typeId": "appointment",
       "label": "家老・側近",
-      "text": "小松は家老として久光の中央政局関与を支えた。",
+      "text": "小松は1861年に久光の側役となり、1862年の上京に随行して家老へ進んだ。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "kagoshima_komatsu_1862"
+        ],
+        "reviewStatus": "verified",
+        "note": "鹿児島県観光連盟の人物解説で、小松の1861年の側役就任、1862年の久光上京への随行と家老就任を確認。"
       }
     },
     {
@@ -538,11 +543,14 @@
       "endSceneId": "1868-toba",
       "typeId": "political-cooperation",
       "label": "薩摩藩国事・藩政実務",
-      "text": "大久保の交渉と小松の家老権限が薩摩の政策を支えた。",
+      "text": "小松は久光の藩政改革を支え、大久保らを重く用いて活動を助けた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "kagoshima_komatsu_1862",
+          "kagoshima_okubo_people"
+        ],
+        "reviewStatus": "verified",
+        "note": "鹿児島県観光連盟の小松解説で、小松が大久保らを重用して助けたことを確認し、同団体の人物解説で両者の連携を確認。"
       }
     },
     {
@@ -553,11 +561,15 @@
       "endSceneId": "1868-toba",
       "typeId": "political-cooperation",
       "label": "軍事と藩代表",
-      "text": "西郷の軍事・交渉を小松が藩の公式責任者として支えた。",
+      "text": "小松は西郷と連携したが、1864年からの直接の役割分担は公開出典で確認中。",
       "evidence": {
-        "sourceIds": [],
+        "sourceIds": [
+          "kagoshima_okubo_people",
+          "kagoshima_library_hisamitsu_saigo",
+          "kagoshima_satcho_alliance"
+        ],
         "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "note": "鹿児島県観光連盟で小松が西郷・大久保と連携したこと、鹿児島県立図書館で1864年の西郷召還と活動、鹿児島県で1866年の小松・西郷の直接協力は確認できるが、1864年からの両者の役割分担を項目単位で直接示す公開出典は未確認。"
       }
     },
     {
@@ -568,11 +580,13 @@
       "endSceneId": "1863-joi",
       "typeId": "political-cooperation",
       "label": "文久の改革",
-      "text": "将軍後見職と政事総裁職として幕政改革を担った。",
+      "text": "慶喜は将軍後見職、春嶽は政事総裁職として幕府改革と公武合体を進めた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "fukui_yoshinobu_shungaku_1862"
+        ],
+        "reviewStatus": "verified",
+        "note": "福井市立郷土歴史博物館の解説で、1862年に慶喜と春嶽がそれぞれ将軍後見職・政事総裁職に就き、ともに幕府改革と公武合体を進めたことを確認。"
       }
     },
     {
@@ -583,11 +597,14 @@
       "endSceneId": "1863-joi",
       "typeId": "political-cooperation",
       "label": "幕政改革を要求",
-      "text": "久光の江戸下向は慶喜・春嶽の幕政復帰を実現させた。",
+      "text": "久光は一橋慶喜と松平春嶽の登用を幕府に催促し、慶喜は将軍後見職に就いた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "ndl_hirosawa_hisamitsu_1862",
+          "fukui_yoshinobu_shungaku_1862"
+        ],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の広沢真臣関係文書目録で久光書簡写の「一橋・越前両侯登用評決催促」、福井市立郷土歴史博物館で慶喜の将軍後見職就任を確認。"
       }
     },
     {
@@ -598,11 +615,14 @@
       "endSceneId": "1866-expedition",
       "typeId": "appointment",
       "label": "信任・朝廷警護",
-      "text": "容保は京都守護職として孝明天皇の強い信任を得た。",
+      "text": "容保は京都守護職として京都の治安と公武合体に関与し、孝明天皇の信頼を得た。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "kyoto_shugoshoku_site",
+          "ndl_portrait_katamori_detail"
+        ],
+        "reviewStatus": "verified",
+        "note": "京都市で京都守護職の設置目的と容保の就任、国立国会図書館で容保が京都の治安・公武合体に尽力して孝明天皇の信頼を得たことを確認。"
       }
     },
     {
@@ -613,26 +633,32 @@
       "endSceneId": "1868-edo",
       "typeId": "organization",
       "label": "会津藩預かり",
-      "text": "壬生浪士組・新選組は京都守護職会津藩のもとで活動した。",
+      "text": "近藤らは京都守護職預かりの壬生浪士組を組織し、のち新選組として容保の下で活動した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "kyoto_shinsengumi_history",
+          "ndl_portrait_kondo_detail"
+        ],
+        "reviewStatus": "verified",
+        "note": "京都市歴史資料館で近藤らが京都守護職預かりの壬生浪士組を名乗った経緯、国立国会図書館で松平容保の下で新選組となったことを確認。"
       }
     },
     {
       "id": "person-relation-kondo-hijikata-1862-bunkyu-organization",
       "aPersonId": "kondo",
       "bPersonId": "hijikata",
-      "startSceneId": "1862-bunkyu",
-      "endSceneId": "1869-hakodate",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1867-taisei",
       "typeId": "organization",
       "label": "試衛館・新選組",
-      "text": "近藤が局長、土方が副長として組織を率いた。",
+      "text": "近藤と土方は1863年に浪士組へ参加し、新選組で近藤が局長、土方が副長を務めた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "ndl_portrait_kondo_detail",
+          "ndl_portrait_hijikata_detail"
+        ],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の両人物解説で、近藤と土方が1863年に浪士組へ参加し、新選組でそれぞれ局長・副長を務めたことを確認。鳥羽・伏見後の関係は別項目で扱うため、この期間は1867年までとした。"
       }
     },
     {
@@ -642,12 +668,15 @@
       "startSceneId": "1863-aug18",
       "endSceneId": "1864-kinmon",
       "typeId": "political-cooperation",
-      "label": "京都で連携",
-      "text": "薩摩と会津は長州系尊攘派の排除で協力した。",
+      "label": "会津・薩摩の連携",
+      "text": "八月十八日の政変では会津・薩摩が連携したが、容保と久光の直接協議は確認中。",
       "evidence": {
-        "sourceIds": [],
+        "sourceIds": [
+          "cultural_heritage_aug18",
+          "ndl_portrait_katamori_detail"
+        ],
         "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "note": "文化遺産オンラインと国立国会図書館で八月十八日の政変における会津・薩摩の連携と容保の関与は確認できるが、容保と久光個人の直接協議を示す公開出典は未確認。"
       }
     },
     {
@@ -658,11 +687,15 @@
       "endSceneId": "1868-tohoku",
       "typeId": "conflict",
       "label": "京都政局で対立",
-      "text": "会津と長州は京都の治安・朝廷政策をめぐり敵対を深めた。",
+      "text": "容保は八月十八日の政変で長州勢力を京都から排除したが、木戸との直接対立は確認中。",
       "evidence": {
-        "sourceIds": [],
+        "sourceIds": [
+          "ndl_portrait_katamori_detail",
+          "kyoto_kido_1862",
+          "cultural_heritage_aug18"
+        ],
         "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "note": "国立国会図書館と文化遺産オンラインで容保による長州勢力排除、京都市で木戸の朝廷周旋と禁門の変後の逃走は確認できるが、両者個人の直接対立を項目単位で示す公開出典は未確認。"
       }
     },
     {
@@ -673,11 +706,14 @@
       "endSceneId": "1864-kinmon",
       "typeId": "conflict",
       "label": "八月十八日の政変",
-      "text": "薩摩は会津とともに長州勢力を京都から排除した。",
+      "text": "薩摩は会津とともに長州勢力を京都から排除したが、久光と木戸の直接対立は確認中。",
       "evidence": {
-        "sourceIds": [],
+        "sourceIds": [
+          "cultural_heritage_aug18",
+          "kyoto_kido_1862"
+        ],
         "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "note": "文化遺産オンラインで薩摩・会津による長州系尊攘派排除、京都市で木戸の朝廷周旋は確認できるが、久光と木戸個人の直接対立を示す公開出典は未確認。"
       }
     },
     {
@@ -685,29 +721,35 @@
       "aPersonId": "kido",
       "bPersonId": "kusaka",
       "startSceneId": "1862-bunkyu",
-      "endSceneId": "1865-choshu",
+      "endSceneId": "1864-kinmon",
       "typeId": "mentorship-or-comradeship",
       "label": "長州の政治同志",
-      "text": "京都政局で協力したが、軍事行動への距離感には差があった。",
+      "text": "木戸と久坂は長井雅楽の航海遠略策を弾劾し、長州藩是を破約攘夷へ転換させた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "hagi_choshu_policy_1862"
+        ],
+        "reviewStatus": "verified",
+        "note": "萩市の長井雅楽解説で、久坂玄瑞と桂小五郎が航海遠略策を弾劾し、1862年に藩是が破約攘夷へ転換したことを確認。久坂が禁門の変で死去したため終了時点を1864年に修正。"
       }
     },
     {
       "id": "person-relation-kido-takasugi-1863-joi-mentorship-or-comradeship",
       "aPersonId": "kido",
       "bPersonId": "takasugi",
-      "startSceneId": "1863-joi",
-      "endSceneId": "1867-taisei",
-      "typeId": "mentorship-or-comradeship",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1866-expedition",
+      "typeId": "political-cooperation",
       "label": "長州改革派",
-      "text": "政治・軍事の役割を分担して長州藩を再建した。",
+      "text": "高杉らの挙兵を経て、木戸ら改革派は1865年に長州藩政を掌握した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "fukui_research_okubo_1865",
+          "yamaguchi_kido_guide",
+          "yamaguchi_takasugi_guide"
+        ],
+        "reviewStatus": "verified",
+        "note": "福井県文書館研究紀要で高杉・木戸ら改革派による1865年の藩政掌握、山口県立山口図書館の両人物解説で高杉の挙兵と木戸の藩政改革を確認。高杉が1867年4月に死去したため、表示期間を直前の1866年場面までとした。"
       }
     },
     {
@@ -715,7 +757,7 @@
       "aPersonId": "takasugi",
       "bPersonId": "kusaka",
       "startSceneId": "1858-ansei",
-      "endSceneId": "1865-choshu",
+      "endSceneId": "1864-kinmon",
       "typeId": "mentorship-or-comradeship",
       "label": "松下村塾の同門・双璧",
       "text": "高杉と久坂はともに松陰門下で、松下村塾の双璧とされた。",
@@ -725,7 +767,7 @@
           "hagi_kusaka_1858"
         ],
         "reviewStatus": "verified",
-        "note": "萩市の人物解説で、高杉晋作と久坂玄瑞がともに松下村塾の中心に位置し、双璧とされたことを確認。"
+        "note": "萩市の人物解説で、高杉晋作と久坂玄瑞がともに松下村塾の中心に位置し、双璧とされたことを確認。久坂が禁門の変で死去したため終了時点を1864年に修正。"
       }
     },
     {
@@ -736,26 +778,34 @@
       "endSceneId": "1866-expedition",
       "typeId": "political-cooperation",
       "label": "藩政・軍制改革",
-      "text": "高杉の政治行動と大村の軍制設計が長州の再建を支えた。",
+      "text": "高杉らの挙兵後に藩論が転換し、大村が軍制改革を担った。両者の直接協力は確認中。",
       "evidence": {
-        "sourceIds": [],
+        "sourceIds": [
+          "yamaguchi_takasugi_guide",
+          "yamaguchi_choshu_reform",
+          "yamaguchi_omura_guide"
+        ],
         "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "note": "山口県立山口図書館で高杉の挙兵後の藩論転換と大村による軍制改革は確認できるが、高杉と大村の直接協力を示す公開出典は未確認。"
       }
     },
     {
       "id": "person-relation-takasugi-yamagata-1864-kinmon-organization",
       "aPersonId": "takasugi",
       "bPersonId": "yamagata",
-      "startSceneId": "1864-kinmon",
+      "startSceneId": "1863-joi",
       "endSceneId": "1866-expedition",
       "typeId": "organization",
       "label": "奇兵隊の指導",
-      "text": "高杉が創設した奇兵隊で山県が軍事実務を担った。",
+      "text": "高杉は1863年に奇兵隊を創設し、山県は同年に奇兵隊軍監へ就任した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "yamaguchi_takasugi_guide",
+          "yamaguchi_yamagata_guide",
+          "jacar_yamagata_detail"
+        ],
+        "reviewStatus": "verified",
+        "note": "山口県立山口図書館で高杉による1863年の奇兵隊創設と山県の奇兵隊軍監就任、アジア歴史資料センターで山県の職歴を確認。開始時点を1863年に修正。"
       }
     },
     {
@@ -796,11 +846,15 @@
       "endSceneId": "1869-hakodate",
       "typeId": "mentorship-or-comradeship",
       "label": "長州五傑・実務同志",
-      "text": "英国留学と長州改革、新政府実務を共に経験した。",
+      "text": "伊藤と井上は1863年に英国へ渡り、1864年に帰国して下関戦争回避の調停にあたった。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "hagi_choshu_five",
+          "hagi_choshu_five_london",
+          "yamaguchi_bakan_war"
+        ],
+        "reviewStatus": "verified",
+        "note": "萩博物館・萩市で伊藤と井上の1863年英国留学、山口県立山口図書館で両者が1864年に帰国して下関戦争回避の調停にあたったことを確認。"
       }
     },
     {
@@ -811,11 +865,14 @@
       "endSceneId": "1865-choshu",
       "typeId": "conflict",
       "label": "藩論と主導権で対立",
-      "text": "容堂は土佐勤王党の藩政介入を警戒し、政変後に弾圧した。",
+      "text": "容堂と土佐勤王党の方針は一致せず、八月十八日の政変後、武市ら勤王党員は捕縛された。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "kochi_tosa_bakumatsu",
+          "kochi_takechi_imprisonment"
+        ],
+        "reviewStatus": "verified",
+        "note": "高知県立高知城歴史博物館で山内容堂と土佐勤王党の方針不一致と武市らの捕縛、高知市で政変後の弾圧・投獄・切腹を確認。"
       }
     },
     {
@@ -845,26 +902,33 @@
       "endSceneId": "1865-choshu",
       "typeId": "mentorship-or-comradeship",
       "label": "海軍構想の師弟",
-      "text": "勝は龍馬を海軍・交易を重視する方向へ導いた。",
+      "text": "龍馬は1862年12月に勝を訪ね、その門人となった。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "kochi_ryoma_1862",
+          "ndl_portrait_ryoma_detail"
+        ],
+        "reviewStatus": "verified",
+        "note": "高知市で龍馬が1862年12月に勝を訪ねて門人になった経緯、国立国会図書館で勝海舟門下入りを確認。思想的影響の範囲を推測せず、直接確認できる師弟関係に説明を限定。"
       }
     },
     {
       "id": "person-relation-ryoma-nakaoka-1864-kinmon-mentorship-or-comradeship",
       "aPersonId": "ryoma",
       "bPersonId": "nakaoka",
-      "startSceneId": "1864-kinmon",
+      "startSceneId": "1866-satcho",
       "endSceneId": "1867-taisei",
       "typeId": "mentorship-or-comradeship",
       "label": "土佐脱藩の同志",
-      "text": "薩長接近で協力したが、龍馬は政権返上論、中岡は武力倒幕へより強く傾いた。",
+      "text": "龍馬と中岡は薩長盟約を仲介し、1867年に京都でともに襲撃されて相次いで死亡した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "ndl_history_satcho",
+          "nakaoka_museum_profile",
+          "ndl_portrait_ryoma_detail"
+        ],
+        "reviewStatus": "verified",
+        "note": "国際子ども図書館と中岡慎太郎館で両者による薩長盟約仲介、国立国会図書館と中岡慎太郎館で1867年の近江屋襲撃と死去を確認。政治路線の差という解釈を削り、直接確認できる協力関係へ限定。"
       }
     },
     {
@@ -1027,11 +1091,14 @@
       "endSceneId": "1863-aug18",
       "typeId": "conflict",
       "label": "急進尊攘への不信",
-      "text": "孝明天皇は三条ら長州系公家の急進路線を警戒した。",
+      "text": "孝明天皇が尊攘派に強い反感を持つ中、八月十八日の政変で三条ら七卿は長州へ逃れた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "cultural_heritage_aug18",
+          "jacar_sanjo_detail"
+        ],
+        "reviewStatus": "verified",
+        "note": "文化遺産オンラインで孝明天皇の尊攘派への反感と三条ら七卿の長州下向、アジア歴史資料センターで三条の1863年の官位褫奪・京都追放を確認。"
       }
     },
     {
@@ -1042,11 +1109,15 @@
       "endSceneId": "1869-hakodate",
       "typeId": "political-cooperation",
       "label": "朝廷尊攘派と長州",
-      "text": "追放期から新政府形成まで長州と公家の関係を維持した。",
+      "text": "三条は長州へ下り、木戸は長州藩で活動したが、両者の継続的な直接協力は確認中。",
       "evidence": {
-        "sourceIds": [],
+        "sourceIds": [
+          "jacar_sanjo_detail",
+          "jacar_kido_detail",
+          "cultural_heritage_aug18"
+        ],
         "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "note": "アジア歴史資料センターと文化遺産オンラインで三条の長州下向、アジア歴史資料センターで木戸の長州藩での活動と両者の新政府入りは確認できるが、1863年からの両者の継続的な直接協力を示す公開出典は未確認。"
       }
     },
     {
