@@ -18,6 +18,7 @@ function requireFile(relativePath) {
 
 const requiredFiles = [
   '404.html',
+  'LICENSE',
   'README.md',
   'SOURCES.md',
   '_headers',

@@ -135,10 +135,10 @@ GitHub Actionsでは、プッシュとプルリクエストごとに `dist/` を
 - `data/manifest.json` の `contentVersion` と `updated` を更新する
 - `SOURCES.md` が `data/sources.json` から再生成された最新状態である
 - 校正待ち項目とサイト上の注意書きを確認する
-- 公開者が再利用条件を決め、必要に応じて `LICENSE` を追加する
+- 公開成果物に `LICENSE` が含まれ、サイト内のリンクから参照できる
 
 ## ライセンスと出典
 
 歴史情報の主な参照先は `SOURCES.md` を参照してください。
 地図形状は Natural Earth の public domain データをもとにしています。
-サイトのプログラムと独自の編集文について、再利用条件を設定する場合は公開者が `LICENSE` を追加してください。
+プログラムコードはMIT License、独自の編集文とデータ編集物はCreative Commons Attribution 4.0 International（CC BY 4.0）で提供します。外部出典の内容や第三者素材は対象外です。詳しい適用範囲と表示条件は `LICENSE` を参照してください。

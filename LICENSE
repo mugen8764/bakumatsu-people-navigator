@@ -1,0 +1,55 @@
+# Licensing
+
+Copyright (c) 2026 幕末人物・勢力ナビ contributors
+
+## Software code
+
+Unless otherwise noted, the software code and technical implementation in this
+repository are licensed under the MIT License below. This includes JavaScript,
+CSS, HTML structure and behavior, schemas, tests, build scripts, and
+configuration files.
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Original editorial content and data compilation
+
+Original editorial text, descriptions, labels, and copyrightable contributions
+to the selection and arrangement of the historical data are licensed under the
+[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+When sharing or adapting that material, credit "幕末人物・勢力ナビ
+contributors", provide a link to the material and the license where reasonably
+practicable, and indicate whether changes were made.
+
+The CC BY 4.0 license applies only to rights that the contributors are
+authorized to license. No copyright is claimed over historical facts
+themselves.
+
+## Third-party material
+
+Content on linked source websites and other third-party material is not covered
+by this repository's licenses. Consult each source for its own terms.
+
+The geographic shapes derived from Natural Earth use its public-domain map
+data. Natural Earth does not require attribution; its terms are available at
+https://www.naturalearthdata.com/about/terms-of-use/.
+
+Names, logos, and trademarks remain the property of their respective owners.

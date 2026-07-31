@@ -6,6 +6,7 @@ const root = path.resolve(__dirname, '..');
 const output = path.join(root, 'dist');
 const entries = [
   '404.html',
+  'LICENSE',
   'README.md',
   'SOURCES.md',
   '_headers',

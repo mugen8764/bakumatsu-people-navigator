@@ -2,6 +2,7 @@
   "name": "bakumatsu-people-navigator",
   "version": "1.0.0",
   "private": true,
+  "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "test": "npm run test:data && npm run test:e2e",
     "build:data": "node scripts/build-data.cjs",
