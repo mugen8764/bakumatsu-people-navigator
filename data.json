@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.51",
+    "version": "1.0.52",
     "updated": "2026-07-31"
   },
   "sources": {
@@ -4915,14 +4915,14 @@
         },
         "1862-bunkyu": {
           "display": "川路正之進",
-          "role": "薩摩藩出身（1862年の役職は未確認）",
+          "role": "薩摩藩出身（1862年の役職は出典校正中）",
           "stance": "1850年に兵具方与力附となった後、1867年に兵具方一番小隊長・学兵隊長となるまでの役職は確認できない。",
           "importance": "兵具方一番小隊長・学兵隊長となるのは1867年で、後年の軍事・警察職をこの時点へ遡らせない。",
           "evidence": {
             "sourceIds": [
               "jacar_kawaji_detail"
             ],
-            "reviewStatus": "verified"
+            "reviewStatus": "needs_review"
           }
         },
         "1864-kinmon": {
@@ -4940,7 +4940,7 @@
         },
         "1866-expedition": {
           "display": "川路正之進",
-          "role": "薩摩藩出身（1866年の役職は未確認）",
+          "role": "薩摩藩出身（1866年の役職は出典校正中）",
           "stance": "1864年の禁門の変参加後、1867年に兵具方一番小隊長・学兵隊長となるまでの役職は確認できない。",
           "importance": "出典が示す次の役職は1867年の両隊長で、「軍事担当」「軍制整備」を1866年へ遡らせない。",
           "evidence": {
@@ -4948,7 +4948,7 @@
               "jacar_kawaji_detail",
               "kagoshima_cci_kawaji"
             ],
-            "reviewStatus": "verified"
+            "reviewStatus": "needs_review"
           }
         },
         "1868-toba": {
@@ -5731,7 +5731,7 @@
         },
         "1866-expedition": {
           "display": "伊藤俊輔",
-          "role": "長州藩出身（1866年の役職・行動は未確認）",
+          "role": "長州藩出身（1866年の役職・行動は出典校正中）",
           "stance": "1865年の高杉晋作らの挙兵参加は確認できるが、1866年の役職と具体的行動は確認中。",
           "importance": "「軍事・外交実務」「戦争を支える行政」という従来記述は、項目単位の根拠が未確認。",
           "evidence": {
@@ -5739,7 +5739,7 @@
               "yamaguchi_tokankeki",
               "yamaguchi_ito_guide"
             ],
-            "reviewStatus": "verified"
+            "reviewStatus": "needs_review"
           }
         },
         "1868-toba": {
