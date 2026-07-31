@@ -1242,6 +1242,24 @@
       "title": "国立国会図書館「日記の世界・伊藤博文」",
       "url": "https://www.ndl.go.jp/nikki/person/itohirobumi/index.html",
       "note": "伊藤博文が1869年7月に大蔵少輔、同年8月に民部少輔兼任となった履歴。"
+    },
+    {
+      "id": "ndl_portrait_okubo_detail",
+      "title": "国立国会図書館「近代日本人の肖像・大久保利通」",
+      "url": "https://www.ndl.go.jp/portrait/datas/32/index.html",
+      "note": "大久保利通が岩倉具視らとともに1867年12月の王政復古の政変を実行したこと。"
+    },
+    {
+      "id": "shugiin_ito_kido",
+      "title": "衆議院憲政記念館「憲政だより 時計塔 No.003・伊藤博文」",
+      "url": "https://dl.ndl.go.jp/view/prepareDownload?contentNo=1&itemId=info%3Andljp%2Fpid%2F11040581",
+      "note": "伊藤博文が木戸孝允の知遇を得て、尊王攘夷運動と武力倒幕運動に参加したこと。"
+    },
+    {
+      "id": "reimeikan_tenshoin_saigo_petition",
+      "title": "鹿児島県歴史資料センター黎明館「黎明館だより・天璋院篤姫講座」",
+      "url": "https://dl.ndl.go.jp/view/prepareDownload?contentNo=1&itemId=info%3Andljp%2Fpid%2F10963596",
+      "note": "江戸総攻撃を前に天璋院が官軍隊長宛てに徳川家存続を願う書状を送り、西郷吉之助が受け取ったこと。"
     }
   ]
 }

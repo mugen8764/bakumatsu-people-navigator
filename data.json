@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.46",
+    "version": "1.0.47",
     "updated": "2026-07-31"
   },
   "sources": {
@@ -1039,6 +1039,21 @@
       "title": "国立国会図書館「日記の世界・伊藤博文」",
       "url": "https://www.ndl.go.jp/nikki/person/itohirobumi/index.html",
       "note": "伊藤博文が1869年7月に大蔵少輔、同年8月に民部少輔兼任となった履歴。"
+    },
+    "ndl_portrait_okubo_detail": {
+      "title": "国立国会図書館「近代日本人の肖像・大久保利通」",
+      "url": "https://www.ndl.go.jp/portrait/datas/32/index.html",
+      "note": "大久保利通が岩倉具視らとともに1867年12月の王政復古の政変を実行したこと。"
+    },
+    "shugiin_ito_kido": {
+      "title": "衆議院憲政記念館「憲政だより 時計塔 No.003・伊藤博文」",
+      "url": "https://dl.ndl.go.jp/view/prepareDownload?contentNo=1&itemId=info%3Andljp%2Fpid%2F11040581",
+      "note": "伊藤博文が木戸孝允の知遇を得て、尊王攘夷運動と武力倒幕運動に参加したこと。"
+    },
+    "reimeikan_tenshoin_saigo_petition": {
+      "title": "鹿児島県歴史資料センター黎明館「黎明館だより・天璋院篤姫講座」",
+      "url": "https://dl.ndl.go.jp/view/prepareDownload?contentNo=1&itemId=info%3Andljp%2Fpid%2F10963596",
+      "note": "江戸総攻撃を前に天璋院が官軍隊長宛てに徳川家存続を願う書状を送り、西郷吉之助が受け取ったこと。"
     }
   },
   "factions": {
@@ -8843,12 +8858,15 @@
       "a": "kido",
       "b": "ito",
       "start": 8,
-      "end": 15,
-      "type": "主従・登用",
-      "label": "長州の若手実務者",
-      "text": "木戸は伊藤ら海外経験を持つ若手を藩政・政府実務へ登用した。",
+      "end": 11,
+      "type": "師弟・同志",
+      "label": "木戸の知遇",
+      "text": "伊藤は木戸の知遇を得て、尊王攘夷運動と武力倒幕運動に加わった。",
       "evidence": {
-        "sourceIds": [],
+        "sourceIds": [
+          "shugiin_ito_kido",
+          "archives_ito"
+        ],
         "reviewStatus": "needs_review"
       }
     },
@@ -8859,9 +8877,13 @@
       "end": 15,
       "type": "政治協力",
       "label": "長州の外交・財政実務",
-      "text": "木戸の政治指導を井上が財政・外交面で支えた。",
+      "text": "木戸と井上は長州藩から新政府へ移ったが、1865～69年の直接の役割分担は確認中。",
       "evidence": {
-        "sourceIds": [],
+        "sourceIds": [
+          "jacar_kido_detail",
+          "jacar_inoue_detail",
+          "yamaguchi_inoue_1865"
+        ],
         "reviewStatus": "needs_review"
       }
     },
@@ -9014,65 +9036,83 @@
     {
       "a": "yodo",
       "b": "goto",
-      "start": 8,
-      "end": 13,
-      "type": "主従・登用",
-      "label": "前藩主と参政",
-      "text": "後藤は容堂へ大政奉還案を進言し、藩の公式方針にした。",
+      "start": 11,
+      "end": 11,
+      "type": "政治協力",
+      "label": "大政奉還の進言",
+      "text": "後藤は1867年7月8日に容堂へ大政奉還を建白し、土佐藩による幕府への建白へつなげた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ndl_ryoma_political_plan",
+          "kochi_taisei_hokan",
+          "kochi_yodo_timeline"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
       "a": "goto",
       "b": "ryoma",
-      "start": 8,
+      "start": 11,
       "end": 11,
       "type": "政治協力",
-      "label": "大政奉還・新政府構想",
-      "text": "龍馬の構想を後藤が土佐藩政策として扱える形へ整えた。",
+      "label": "大政奉還案の協議",
+      "text": "龍馬と後藤らは1867年6月に船中で大政奉還を協議し、龍馬は後藤と相談して政体案を作成した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ndl_ryoma_political_plan",
+          "kochi_taisei_hokan"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
       "a": "iwakura",
       "b": "okubo",
-      "start": 8,
-      "end": 15,
+      "start": 11,
+      "end": 12,
       "type": "政治協力",
       "label": "王政復古の政変",
-      "text": "岩倉の宮中工作と大久保の薩摩藩実務が政変を支えた。",
+      "text": "岩倉と大久保は1867年12月の王政復古の政変を計画・実行した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ndl_portrait_iwakura_detail",
+          "ndl_portrait_okubo_detail"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
       "a": "iwakura",
       "b": "saigo",
-      "start": 10,
-      "end": 15,
+      "start": 11,
+      "end": 12,
       "type": "政治協力",
-      "label": "倒幕・新政府形成",
-      "text": "軍事力を担う西郷と宮中政治を担う岩倉が連携した。",
+      "label": "武力倒幕の計画",
+      "text": "西郷・大久保らは岩倉らと武力倒幕を計画し、1867年10月に討幕宣旨を請願した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "kagoshima_tobaku_mitchoku",
+          "ndl_portrait_saigo_detail",
+          "ndl_portrait_iwakura_detail"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
       "a": "iwakura",
       "b": "kido",
-      "start": 10,
+      "start": 12,
       "end": 15,
       "type": "政治協力",
       "label": "新政府形成",
-      "text": "長州の政治力と朝廷内の王政復古派を結びつけた。",
+      "text": "岩倉と木戸は新政府の要職に就いたが、1868～69年の直接の役割分担は確認中。",
       "evidence": {
-        "sourceIds": [],
+        "sourceIds": [
+          "ndl_portrait_iwakura_detail",
+          "ndl_portrait_kido_detail",
+          "ndl_iwakura_diary"
+        ],
         "reviewStatus": "needs_review"
       }
     },
@@ -9131,9 +9171,14 @@
       "end": 13,
       "type": "対立",
       "label": "新政権の主導権",
-      "text": "慶喜を含む新体制と、徳川政治力を排除する王政復古派が対立した。",
+      "text": "岩倉は王政復古の政変を計画し、新政府は慶喜に辞官・納地を求めたが、両者の直接交渉は確認中。",
       "evidence": {
-        "sourceIds": [],
+        "sourceIds": [
+          "ndl_portrait_iwakura_detail",
+          "archives_royal_restoration",
+          "kagoshima_boshin",
+          "jacar_yoshinobu_punitive_order"
+        ],
         "reviewStatus": "needs_review"
       }
     },
@@ -9144,10 +9189,15 @@
       "end": 13,
       "type": "対立",
       "label": "徳川処分・軍事対立",
-      "text": "大政奉還後の徳川家処遇をめぐり対立し、鳥羽・伏見へ至った。",
+      "text": "西郷は東征軍参謀として、恭順する慶喜側の勝海舟と徳川家の降伏条件を協議した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "kagoshima_boshin",
+          "jacar_saigo_detail",
+          "ndl_portrait_yoshinobu_detail",
+          "jacar_yoshinobu_punitive_order"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -9221,23 +9271,31 @@
       "end": 13,
       "type": "仲介・交渉",
       "label": "徳川家への寛典嘆願",
-      "text": "天璋院は薩摩との縁も用い、徳川家存続を求めた。",
+      "text": "江戸総攻撃を前に天璋院は官軍隊長宛てに徳川家存続を願う書状を送り、西郷が受け取った。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "reimeikan_tenshoin_saigo_petition",
+          "chiyoda_edo_surrender_petitions",
+          "kagoshima_tenshoin"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
       "a": "kazunomiya",
       "b": "iwakura",
-      "start": 12,
-      "end": 13,
-      "type": "親族",
-      "label": "朝廷への嘆願経路",
-      "text": "和宮は皇族として朝廷・新政府へ徳川家への寛典を求めた。",
+      "start": 3,
+      "end": 4,
+      "type": "仲介・交渉",
+      "label": "和宮降嫁を推進",
+      "text": "岩倉は公武合体策として和宮と徳川家茂の婚姻を推進した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ndl_portrait_iwakura_detail",
+          "ndl_iwakura_exile",
+          "ndl_portrait_kazunomiya"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -9246,11 +9304,15 @@
       "start": 12,
       "end": 13,
       "type": "組織",
-      "label": "旧幕府軍として転戦",
-      "text": "鳥羽・伏見後も新選組を再編して関東で抗戦した。",
+      "label": "甲陽鎮撫隊から流山へ",
+      "text": "近藤と土方は甲陽鎮撫隊として出陣し、敗走後に流山で再起を図ったが、近藤の出頭後に別行動となった。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ndl_portrait_kondo_detail",
+          "ndl_portrait_hijikata_detail",
+          "nagareyama_shinsengumi_1868"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -9260,10 +9322,14 @@
       "end": 15,
       "type": "政治協力",
       "label": "東北から箱館へ",
-      "text": "土方は榎本艦隊と合流し、箱館で陸軍指揮を担った。",
+      "text": "土方は榎本が率いる旧幕府脱走軍に加わり、箱館で新政府軍と戦った。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "hakodate_war_history",
+          "archives_enomoto_1867",
+          "ndl_portrait_hijikata_detail"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -9273,9 +9339,13 @@
       "end": 14,
       "type": "政治協力",
       "label": "旧幕府側の敗走経路",
-      "text": "会津降伏後、榎本艦隊は旧幕臣らを率いて北へ向かった。",
+      "text": "容保は会津で降伏し、榎本は旧幕臣らを率いて箱館へ進んだが、両者の直接協力は確認中。",
       "evidence": {
-        "sourceIds": [],
+        "sourceIds": [
+          "ndl_portrait_katamori_detail",
+          "archives_enomoto_1867",
+          "hakodate_war_history"
+        ],
         "reviewStatus": "needs_review"
       }
     },
@@ -9286,10 +9356,13 @@
       "end": 15,
       "type": "仲介・交渉",
       "label": "降伏・助命",
-      "text": "黒田は榎本の降伏に関わり、後の助命も求めた。",
+      "text": "黒田は箱館で榎本の降伏を促し、戦後は榎本の助命にも尽力した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "archives_kuroda",
+          "hakodate_war_history"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -9299,9 +9372,13 @@
       "end": 14,
       "type": "組織",
       "label": "新政府軍の中央と前線",
-      "text": "大村の軍制・作戦と板垣の東山道方面指揮が新政府軍を支えた。",
+      "text": "大村は新政府の軍務を担い、板垣は東山道軍を率いたが、両者の直接の指揮関係は確認中。",
       "evidence": {
-        "sourceIds": [],
+        "sourceIds": [
+          "yamaguchi_omura_1869",
+          "jacar_itagaki_march_1868",
+          "kochi_itagaki_boshin"
+        ],
         "reviewStatus": "needs_review"
       }
     },
@@ -9312,9 +9389,13 @@
       "end": 14,
       "type": "組織",
       "label": "新政府軍参謀",
-      "text": "薩摩・土佐の軍事指導者として東征・東北戦線を分担した。",
+      "text": "西郷は東征軍、板垣は東山道軍で新政府軍を指揮したが、両者の直接の役割分担は確認中。",
       "evidence": {
-        "sourceIds": [],
+        "sourceIds": [
+          "jacar_saigo_detail",
+          "jacar_itagaki_march_1868",
+          "kochi_itagaki_boshin"
+        ],
         "reviewStatus": "needs_review"
       }
     },
@@ -9325,9 +9406,12 @@
       "end": 15,
       "type": "組織",
       "label": "薩摩系新政府軍人材",
-      "text": "薩摩藩の若手軍事実務者として戊辰戦争に参加した。",
+      "text": "黒田と川路は薩摩藩出身者として戊辰戦争に参加したが、両者の直接の役割分担は確認中。",
       "evidence": {
-        "sourceIds": [],
+        "sourceIds": [
+          "jacar_kuroda_detail",
+          "jacar_kawaji_detail"
+        ],
         "reviewStatus": "needs_review"
       }
     }
