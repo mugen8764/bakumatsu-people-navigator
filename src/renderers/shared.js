@@ -24,11 +24,18 @@
       return `${value.year}年（${value.era}）`;
     }
 
+    function sourceCard(source) {
+      const precision = source.locator
+        ? `<span class="source-meta"><span>該当箇所: ${source.locator}</span><span>内容確認日: ${source.contentCheckedAt}</span></span>`
+        : '';
+      return `<a class="source" href="${source.url}" target="_blank" rel="noopener"><strong>${source.title}</strong><span class="muted">${source.note}</span>${precision}</a>`;
+    }
+
     function sourceLinks(ids) {
       return [...new Set(ids || [])]
         .map(id => data.sources[id])
         .filter(Boolean)
-        .map(source => `<a class="source" href="${source.url}" target="_blank" rel="noopener"><strong>${source.title}</strong><span class="muted">${source.note}</span></a>`)
+        .map(sourceCard)
         .join('');
     }
 
@@ -40,7 +47,7 @@
       return '<span class="badge review-status" title="項目単位の出典を確認中です">出典校正中</span>';
     }
 
-    return { dateLabel, factionColor, factionShort, reviewBadge, scene, sourceLinks };
+    return { dateLabel, factionColor, factionShort, reviewBadge, scene, sourceCard, sourceLinks };
   }
 
   return { createShared };

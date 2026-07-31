@@ -18,6 +18,10 @@ test('all six primary views render without a page error', async ({ page }) => {
   }
 
   await expect(page.locator('#sourceCatalog .source')).toHaveCount(208);
+  const preciseSource = page.locator('#sourceCatalog .source', { hasText: '木戸孝允遺文集' });
+  await expect(preciseSource.locator('.source-meta')).toContainText('該当箇所: 目次144頁（0110.jp2）');
+  await expect(preciseSource.locator('.source-meta')).toContainText('内容確認日: 2026-07-31');
+  await expect(page.locator('#sourcePrecisionNote')).toContainText('URLの到達確認日ではありません');
   await expect(page.locator('#view-sources')).toContainText('再利用と公開情報');
   await expect(page.locator('#view-sources')).toContainText('CC BY 4.0');
   expect(pageErrors).toEqual([]);

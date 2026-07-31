@@ -43,7 +43,7 @@
 
     function renderSources() {
       $('#dataStats').innerHTML = `<div class="stat"><b>${data.people.length}</b><span>人物</span></div><div class="stat"><b>${Object.keys(data.factions).length}</b><span>勢力</span></div><div class="stat"><b>${data.scenes.length}</b><span>時点・事件</span></div><div class="stat"><b>${data.relations.length}</b><span>人物関係</span></div>`;
-      $('#sourceCatalog').innerHTML = Object.values(data.sources).map(source => `<a class="source" href="${source.url}" target="_blank" rel="noopener"><strong>${source.title}</strong><span class="muted">${source.note}</span></a>`).join('');
+      $('#sourceCatalog').innerHTML = Object.values(data.sources).map(shared.sourceCard).join('');
     }
 
     return { renderScene, renderSources, renderTabs };
