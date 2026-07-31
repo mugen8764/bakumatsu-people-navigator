@@ -730,7 +730,7 @@
     {
       "id": "jacar_okubo_detail",
       "title": "アジア歴史資料センター「大久保利通」",
-      "url": "https://www.jacar.go.jp/dictionary/02_item.html?id=00000312",
+      "url": "https://www.jacar.archives.go.jp/das/term/00000377",
       "note": "大久保利通の徒目付・小納戸役・御側役等の職歴、1866年の薩長盟約、1867年の参与、1868年の徴士・内国事務掛・総裁局顧問・鎮将府参与。"
     },
     {
@@ -770,10 +770,10 @@
       "note": "小松帯刀の1861年の側役就任、1862年の家老就任、長州再征への出兵拒否の藩論取りまとめ、1866年の小松邸での薩長間会談、1867年の討幕密勅受領後の帰藩。"
     },
     {
-      "id": "kagoshima_city_komatsu_1868",
-      "title": "鹿児島市「明治元年を忙しく過ごした小松帯刀」",
+      "id": "kagoshima_city_satsuma_meiji",
+      "title": "鹿児島市「明治維新と薩摩藩」",
       "url": "https://meijiishin150countdown.com/topics/discovery/",
-      "note": "1868年1月28日の参与兼外国事務掛就任と、堺事件・浦上のキリスト教徒をめぐる問題への対応。"
+      "note": "小松帯刀の1868年1月28日の参与兼外国事務掛就任と外交案件、西郷隆盛の東北戦線から鹿児島帰国まで、大久保利通による東京奠都推進など、明治初年の薩摩関係者の動向。"
     },
     {
       "id": "kyoto_kido_1862",
@@ -1182,6 +1182,24 @@
       "title": "国立公文書館「明治天皇、東京へ再び行幸」",
       "url": "https://www.archives.go.jp/exhibition/digital/henbou/contents/08.html",
       "note": "明治天皇が1869年3月7日に京都を出発し、3月28日に東京城へ到着したこと、および同日の皇城改称。"
+    },
+    {
+      "id": "ndl_okubo_papers",
+      "title": "国立国会図書館リサーチ・ナビ「大久保利通関係文書」",
+      "url": "https://ndlsearch.ndl.go.jp/rnavi/kensei/ookubotoshimichi1",
+      "note": "大久保利通が1867年12月から1869年7月まで参与、同年7月から参議を務めた履歴。"
+    },
+    {
+      "id": "archives_okubo_osaka_capital",
+      "title": "国立公文書館「大久保利通の大坂遷都論」",
+      "url": "https://www.archives.go.jp/exhibition/digital/henbou/contents/01.html",
+      "note": "新政府参与の大久保利通が1868年1月17日に総裁有栖川宮熾仁親王へ大坂遷都を建言したこと。"
+    },
+    {
+      "id": "ndl_portrait_komatsu_detail",
+      "title": "国立国会図書館「近代日本人の肖像・小松帯刀」",
+      "url": "https://www.ndl.go.jp/portrait/datas/82/",
+      "note": "小松帯刀が1868年に総裁局顧問へ就任し、1869年5月に病気のため官を辞したこと。"
     }
   ]
 }

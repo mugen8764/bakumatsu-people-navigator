@@ -1247,16 +1247,17 @@
       "endSceneId": "1868-edo",
       "displayName": "島津久光",
       "role": "薩摩藩国父",
-      "factionId": "new-government",
-      "stance": "新政府の政権確立を支持する。",
-      "importance": "薩摩藩内部で明治政権への関与を支えた。",
+      "factionId": "satsuma",
+      "stance": "藩主島津忠義を後見し、薩摩藩政の実権を握る。",
+      "importance": "江戸開城交渉の実務は、東征大総督下参謀の西郷隆盛らが担った。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kagoshima_library_hisamitsu_saigo",
+          "jacar_saigo_detail",
+          "sumida_katsu_edo_surrender"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "鹿児島県立図書館で久光が国父として忠義を後見し藩政の実権を握ったこと、アジア歴史資料センターと墨田区で西郷の役職と江戸開城交渉を確認。久光個人による新政府支持という根拠未確認の旧記述を削除した。"
       }
     },
     {
@@ -1533,17 +1534,17 @@
       "startSceneId": "1868-tohoku",
       "endSceneId": "1868-tohoku",
       "displayName": "西郷隆盛",
-      "role": "新政府参謀・薩摩藩指導者",
+      "role": "東征大総督下参謀",
       "factionId": "new-government",
-      "stance": "東北戦線全体の政治・軍事方針に関与する。",
-      "importance": "各戦線の現場指揮は板垣・黒田らにも分担された。",
+      "stance": "北越・東北へ進み、9月27日に庄内へ到着する。",
+      "importance": "庄内藩の降伏処分では、西郷の指示を受けた参謀黒田清隆が直接対応した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_saigo_detail",
+          "kagoshima_city_satsuma_meiji"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1868年の東征大総督下参謀就任、鹿児島市の維新ふるさと館監修記事で北越・東北への従軍、9月27日の庄内到着と黒田による降伏対応を確認。戦線全体を統轄したとは断定しない。"
       }
     },
     {
@@ -1552,17 +1553,16 @@
       "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "displayName": "西郷隆盛",
-      "role": "新政府参与級の指導者",
-      "factionId": "new-government",
-      "stance": "中央政府の軍事・政治運営に関わる。",
-      "importance": "箱館戦線の直接交渉は黒田清隆らが担った。",
+      "role": "薩摩藩士・鹿児島在住",
+      "factionId": "satsuma",
+      "stance": "東北諸藩降伏後に東京へ戻ったのち、島津忠義と鹿児島へ帰国して中央政界を退く。",
+      "importance": "1871年1月まで鹿児島に留まり、箱館戦線の降伏交渉は黒田清隆が担った。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kagoshima_city_satsuma_meiji"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "鹿児島市の維新ふるさと館監修記事で、東北戦争後の東京帰還、島津忠義との鹿児島帰国、1871年1月までの中央政界離脱、箱館戦争での黒田の参謀任命と降伏交渉を確認。箱館戦争終結時に中央政府を運営していたとする旧記述を訂正した。"
       }
     },
     {
@@ -1780,15 +1780,16 @@
       "displayName": "大久保利通",
       "role": "新政府参与",
       "factionId": "new-government",
-      "stance": "政権組織と徳川家処分、東京遷都を含む統治再編に関与する。",
-      "importance": "新政府の中央集権化を設計する。",
+      "stance": "前年12月から参与に在職し、1868年には徴士・内国事務掛・総裁局顧問・鎮将府参与も務める。",
+      "importance": "1月17日には、新政府総裁へ大坂遷都を建言していた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_okubo_papers",
+          "jacar_okubo_detail",
+          "archives_okubo_osaka_capital"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で1867年12月から1869年7月までの参与在職、アジア歴史資料センターで1868年の諸官職、国立公文書館で1月17日の大坂遷都建言を確認。徳川家処分や中央集権化を大久保個人の担当として断定する旧記述を削除した。"
       }
     },
     {
@@ -1797,17 +1798,18 @@
       "startSceneId": "1868-tohoku",
       "endSceneId": "1868-tohoku",
       "displayName": "大久保利通",
-      "role": "新政府参議級の政策担当",
+      "role": "新政府参与・鎮将府参与",
       "factionId": "new-government",
-      "stance": "戊辰戦争の継続と新政府の財政・行政運営を支える。",
-      "importance": "戦争と制度構築を同時に進めた。",
+      "stance": "江戸の東京改称と天皇の東京行幸を推進する。",
+      "importance": "前線活動より、後方支援と新政府の体制づくりに従事した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_okubo_papers",
+          "jacar_okubo_detail",
+          "kagoshima_city_satsuma_meiji"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で参与在職、アジア歴史資料センターで1868年の鎮将府参与、鹿児島市の維新ふるさと館監修記事で前線より後方支援・新政府樹立に取り組み、東京改称と東幸を推進したことを確認。「参議級」という非正式な役職表現を改めた。"
       }
     },
     {
@@ -1816,17 +1818,17 @@
       "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "displayName": "大久保利通",
-      "role": "新政府指導者",
+      "role": "新政府参与",
       "factionId": "new-government",
-      "stance": "全国統治の制度整備と旧藩秩序の再編を進める。",
-      "importance": "戦後の中央集権化へ政策の重心を移す。",
+      "stance": "5月13日の官吏公選で、参与候補の最多となる49票を得る。",
+      "importance": "参与在職は7月までで、参議就任は箱館戦争終結後に当たる。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_okubo_papers",
+          "ndl_1869_official_election"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で参与の在職期間と1869年5月13日の官吏公選結果を確認。箱館戦争終結日の5月18日時点では参与であり、同年7月からの参議を先取りしない。"
       }
     },
     {
@@ -1993,7 +1995,7 @@
       "evidence": {
         "sourceIds": [
           "kagoshima_komatsu_1862",
-          "kagoshima_city_komatsu_1868"
+          "kagoshima_city_satsuma_meiji"
         ],
         "reviewStatus": "verified",
         "note": "鹿児島県観光連盟で薩摩藩家老、鹿児島市の維新ふるさと館監修記事で1868年1月28日の参与兼外国事務掛就任を確認。戦闘への個別関与は表示しない。"
@@ -2005,16 +2007,16 @@
       "startSceneId": "1868-edo",
       "endSceneId": "1868-tohoku",
       "displayName": "小松帯刀",
-      "role": "新政府参与・外交担当（1868年）",
+      "role": "参与兼外国事務掛（1月28日就任）",
       "factionId": "new-government",
       "stance": "参与兼外国事務掛就任後、堺事件や浦上のキリスト教徒をめぐる問題への対応にあたる。",
-      "importance": "官制改編後の正式な役職名を場面ごとに確認する必要がある。",
+      "importance": "戊辰戦争の前線指揮ではなく、新政府の外交案件を担当した。",
       "evidence": {
         "sourceIds": [
-          "kagoshima_city_komatsu_1868"
+          "kagoshima_city_satsuma_meiji"
         ],
-        "reviewStatus": "needs_review",
-        "note": "鹿児島市資料で1868年の外交案件への対応は確認できるが、3月から11月までの官制改編に伴う正式な職名と任免月は未確認。役職名を推測せず校正待ちを維持。"
+        "reviewStatus": "verified",
+        "note": "鹿児島市の維新ふるさと館監修記事で、1868年1月28日の参与兼外国事務掛就任と堺事件・浦上のキリスト教徒をめぐる問題への対応を確認。就任日を明記し、在任終了日を推測しない。"
       }
     },
     {
@@ -2023,17 +2025,16 @@
       "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "displayName": "小松帯刀",
-      "role": "新政府参与経験者・療養中",
+      "role": "総裁局顧問（5月に病気で辞官）",
       "factionId": "new-government",
-      "stance": "病気により第一線を退く。",
-      "importance": "維新直後に早世し、西郷・大久保ほど後世の知名度が上がらなかった。",
+      "stance": "新政府の総裁局顧問を務めていたが、病気のため官を辞する。",
+      "importance": "辞官は箱館戦争終結と同じ1869年5月で、日付の前後は確認できない。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_komatsu_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で1868年の総裁局顧問就任と1869年5月の病気による辞官を確認。出典は辞官日を示さないため、箱館戦争終結日の5月18日より前か後かは断定せず表示にも明記した。"
       }
     },
     {
