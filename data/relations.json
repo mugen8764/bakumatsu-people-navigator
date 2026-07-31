@@ -11,9 +11,11 @@
       "label": "海防参与として登用",
       "text": "阿部正弘は斉昭を海防参与に迎え、対外政策を諸大名と議論した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "ibaraki_nariaki_kaibo"
+        ],
+        "reviewStatus": "verified",
+        "note": "茨城県立歴史館の解説で、1853年に阿部正弘が徳川斉昭へ黒船対応の意見を求め、同年7月に海防参与へ任命したことを確認。"
       }
     },
     {
@@ -26,9 +28,12 @@
       "label": "海防意見を評価",
       "text": "勝の海防意見が幕府の海軍人材登用につながった。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "hiroshima_abe_opening",
+          "archives_katsu_kaibo"
+        ],
+        "reviewStatus": "verified",
+        "note": "広島県の阿部正弘解説で身分を問わない人材登用と勝海舟の抜擢、国立公文書館で勝の海防意見書提出とその後の登用を確認。"
       }
     },
     {
@@ -39,11 +44,14 @@
       "endSceneId": "1854-treaty",
       "typeId": "mediation-or-negotiation",
       "label": "国書受領・条約交渉",
-      "text": "両者は武力を背景にした外交要求と戦争回避の交渉を担った。",
+      "text": "ペリーは開港を要求し、阿部を首座とする幕府は国書を受領して翌年の条約交渉へ進んだ。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "ndl_modern_opening",
+          "mofa_treaty_1854"
+        ],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館と外務省で、ペリーの国書授受要求、再来航、幕府代表との交渉・条約調印を確認。阿部とペリーが直接会談したとは表示しない。"
       }
     },
     {
@@ -56,9 +64,12 @@
       "label": "密航希望を拒否",
       "text": "松陰はペリー艦隊での渡航を求めたが受け入れられなかった。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "hagi_shoin_timeline",
+          "ndl_portrait_shoin_detail"
+        ],
+        "reviewStatus": "verified",
+        "note": "萩市と国立国会図書館の人物解説で、1854年に吉田松陰が下田でペリー艦隊への乗船・海外渡航を試み、拒否されたことを確認。"
       }
     },
     {
@@ -71,9 +82,12 @@
       "label": "登用・側近",
       "text": "斉彬は西郷を見いだし、江戸・京都での政治活動に用いた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "kagoshima_saigo_youth",
+          "kagoshima_nariakira"
+        ],
+        "reviewStatus": "verified",
+        "note": "鹿児島市資料で斉彬の参勤に随行した西郷が庭方役となり、斉彬から直接召し出されて教育されたことを確認し、鹿児島県資料で斉彬の一橋派活動を照合。"
       }
     },
     {
@@ -83,12 +97,15 @@
       "startSceneId": "1853-blackships",
       "endSceneId": "1854-treaty",
       "typeId": "political-cooperation",
-      "label": "海軍・開国構想",
-      "text": "両者は幕府・雄藩の海軍力と西洋技術導入を重視した。",
+      "label": "海軍構想への関心",
+      "text": "斉彬は洋式造船を進め、勝は海防意見書で西洋式海軍の必要を説いたが、両者の直接の協力は確認中。",
       "evidence": {
-        "sourceIds": [],
+        "sourceIds": [
+          "kagoshima_nariakira",
+          "archives_katsu_kaibo"
+        ],
         "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "note": "鹿児島県で斉彬の洋式造船、国立公文書館で勝の海防意見書は確認できるが、両者の直接の交流・協力を示す公的な公開資料は未確認。類似した構想だけで人物関係を verified にしない。"
       }
     },
     {
@@ -101,9 +118,12 @@
       "label": "将軍候補として支持",
       "text": "斉彬は一橋慶喜を将軍継嗣に推す一橋派の中心だった。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "ibaraki_nariaki_succession",
+          "kagoshima_nariakira"
+        ],
+        "reviewStatus": "verified",
+        "note": "茨城県立歴史館と鹿児島県の解説で、島津斉彬が一橋派として一橋慶喜の将軍継嗣擁立を進めたことを確認。"
       }
     },
     {
@@ -116,9 +136,12 @@
       "label": "一橋派",
       "text": "幕政改革と慶喜擁立をめぐって協力した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "ibaraki_nariaki_succession",
+          "fukui_sanai_shungaku"
+        ],
+        "reviewStatus": "verified",
+        "note": "茨城県立歴史館で斉彬と松平慶永がともに一橋派として慶喜擁立を進めたことを確認し、福井市立郷土歴史博物館で越前藩側の継嗣工作を照合。"
       }
     },
     {
@@ -131,9 +154,12 @@
       "label": "一橋派",
       "text": "将軍継嗣と幕政改革で利害が一致した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "ibaraki_nariaki_succession",
+          "kagoshima_nariakira"
+        ],
+        "reviewStatus": "verified",
+        "note": "茨城県立歴史館で徳川斉昭と島津斉彬が一橋派として慶喜を支持したことを確認し、鹿児島県資料で斉彬の継嗣運動を照合。"
       }
     },
     {
@@ -146,9 +172,12 @@
       "label": "将軍継嗣で対立",
       "text": "井伊は家茂を支持し、一橋慶喜と一橋派を処分した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "ibaraki_nariaki_succession",
+          "ibaraki_nariaki_ansei"
+        ],
+        "reviewStatus": "verified",
+        "note": "茨城県立歴史館で井伊直弼ら南紀派による徳川慶福擁立と、安政の大獄における一橋慶喜への登城停止処分を確認。"
       }
     },
     {
@@ -161,9 +190,12 @@
       "label": "条約・継嗣で対立",
       "text": "条約手続きと将軍継嗣をめぐり激しく対立した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "ibaraki_nariaki_treaty",
+          "ibaraki_nariaki_ansei"
+        ],
+        "reviewStatus": "verified",
+        "note": "茨城県立歴史館で、無勅許の条約調印と継嗣決定に抗議した斉昭らへの井伊政権の処分を確認。"
       }
     },
     {
@@ -176,9 +208,12 @@
       "label": "一橋派を処分",
       "text": "春嶽は安政の大獄で隠居・謹慎となった。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "fukui_sanai_shungaku",
+          "ndl_handwriting_bakumatsu_people"
+        ],
+        "reviewStatus": "verified",
+        "note": "福井市立郷土歴史博物館と国立国会図書館で、継嗣問題をめぐる一橋派の活動と井伊政権による春嶽の処分を確認。"
       }
     },
     {
@@ -191,9 +226,12 @@
       "label": "安政の大獄",
       "text": "左内は一橋派工作を理由に処刑された。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "fukui_sanai_shungaku",
+          "ndl_handwriting_bakumatsu_people"
+        ],
+        "reviewStatus": "verified",
+        "note": "福井市立郷土歴史博物館で橋本左内の一橋派工作と安政の大獄での刑死を確認し、国立国会図書館の事件解説で照合。"
       }
     },
     {
@@ -206,9 +244,12 @@
       "label": "一橋派を処分",
       "text": "容堂は一橋派として隠居・謹慎となった。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "kochi_yodo_timeline",
+          "ibaraki_nariaki_succession"
+        ],
+        "reviewStatus": "verified",
+        "note": "高知城歴史博物館で山内容堂の一橋慶喜擁立と1859年の隠居・謹慎、茨城県立歴史館で一橋派の構成を確認。"
       }
     },
     {
@@ -221,9 +262,12 @@
       "label": "安政の大獄",
       "text": "松陰は幕府批判と政治計画を理由に処刑された。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "ndl_portrait_shoin_detail",
+          "ndl_handwriting_bakumatsu_people"
+        ],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の人物・事件解説で、吉田松陰が安政の大獄に連座して1859年に刑死したことを確認。"
       }
     },
     {
@@ -236,9 +280,11 @@
       "label": "通商条約交渉",
       "text": "ハリスの要求に対し、井伊政権が条約調印を決断した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "mofa_treaty_1858"
+        ],
+        "reviewStatus": "verified",
+        "note": "外務省の条約解説で、ハリスと幕府全権の交渉、および井伊直弼が勅許を得ないまま調印を決断した経緯を確認。両者の直接会談とは表現しない。"
       }
     },
     {
@@ -251,9 +297,12 @@
       "label": "条約勅許で対立",
       "text": "孝明天皇は無勅許調印を問題視した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "mofa_treaty_1858",
+          "ibaraki_nariaki_treaty"
+        ],
+        "reviewStatus": "verified",
+        "note": "外務省と茨城県立歴史館で、孝明天皇が条約勅許を拒み、井伊政権が無勅許で調印したことを確認。"
       }
     },
     {
@@ -266,9 +315,12 @@
       "label": "将軍家の継承競争と補佐",
       "text": "継嗣争いでは競合したが、後に慶喜は将軍後見職として家茂を補佐した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "ibaraki_nariaki_succession",
+          "fukui_yoshinobu_shungaku_1862"
+        ],
+        "reviewStatus": "verified",
+        "note": "茨城県立歴史館で慶喜と慶福（家茂）をめぐる継嗣争い、福井市立郷土歴史博物館で1862年の慶喜の将軍後見職就任を確認。"
       }
     },
     {
@@ -281,9 +333,12 @@
       "label": "松下村塾の師弟",
       "text": "松陰の思想と行動論は高杉の軍事・政治活動へ影響した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "hagi_shokasonjuku",
+          "hagi_takasugi_sonjuku"
+        ],
+        "reviewStatus": "verified",
+        "note": "萩市の松下村塾・高杉晋作解説で、吉田松陰が主宰した塾に高杉が入塾し、門下の中心となった師弟関係を確認。"
       }
     },
     {
@@ -296,9 +351,12 @@
       "label": "松下村塾の師弟",
       "text": "久坂は松陰門下の中心として尊王攘夷運動を進めた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "hagi_shokasonjuku",
+          "hagi_kusaka_1858"
+        ],
+        "reviewStatus": "verified",
+        "note": "萩市の松下村塾と久坂玄瑞の解説で、久坂が吉田松陰門下の中心人物だったことを確認。"
       }
     },
     {
@@ -311,9 +369,12 @@
       "label": "松下村塾に学ぶ",
       "text": "伊藤は短期間ながら松下村塾に学び、門下ネットワークへ加わった。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "hagi_shokasonjuku",
+          "jacar_ito_detail"
+        ],
+        "reviewStatus": "verified",
+        "note": "萩市とアジア歴史資料センターの人物解説で、伊藤俊輔が吉田松陰の松下村塾で学んだことを確認。"
       }
     },
     {
@@ -326,9 +387,11 @@
       "label": "藩主と側近",
       "text": "春嶽は左内を政策立案・一橋派工作の側近として用いた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "fukui_sanai_shungaku"
+        ],
+        "reviewStatus": "verified",
+        "note": "福井市立郷土歴史博物館の解説で、藩主松平春嶽と橋本左内が将軍継嗣問題に関与し、一橋慶喜擁立を進めた関係を確認。"
       }
     },
     {
@@ -341,9 +404,11 @@
       "label": "父子",
       "text": "斉昭は実子慶喜の将軍継嗣を強く支持した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "ibaraki_nariaki_succession"
+        ],
+        "reviewStatus": "verified",
+        "note": "茨城県立歴史館で、徳川斉昭の実子一橋慶喜を一橋派が将軍継嗣に推したことを確認。"
       }
     },
     {
@@ -356,9 +421,12 @@
       "label": "公武合体の婚姻",
       "text": "家茂と和宮の婚姻は幕府と朝廷の関係修復を象徴した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "iwaki_kazunomiya",
+          "ndl_portrait_kazunomiya_detail"
+        ],
+        "reviewStatus": "verified",
+        "note": "いわき市と国立国会図書館で、桜田門外の変後に幕府が和宮降嫁を申し入れ、和宮が家茂へ降嫁した公武合体の婚姻を確認。"
       }
     },
     {
@@ -371,9 +439,12 @@
       "label": "大奥の年長者と御台所",
       "text": "大奥の慣習や徳川家存続をめぐり協力と緊張を含む関係を持った。",
       "evidence": {
-        "sourceIds": [],
+        "sourceIds": [
+          "kagoshima_tenshoin",
+          "ndl_portrait_kazunomiya_detail"
+        ],
         "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "note": "鹿児島県で天璋院の徳川家維持、国立国会図書館で静寛院宮の徳川家存続への尽力は確認できるが、両者間の協力と緊張を項目単位で直接示す公開出典は未確認。"
       }
     },
     {
@@ -386,9 +457,11 @@
       "label": "養父と養女",
       "text": "斉彬は篤姫を将軍家へ送り、薩摩と幕府を結ぶ構想を持った。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "ibusuki_atsuhime"
+        ],
+        "reviewStatus": "verified",
+        "note": "指宿市の解説で、篤姫が島津斉彬の養女となり、近衛家の養女を経て1856年に将軍家定へ輿入れしたことを確認。"
       }
     },
     {
@@ -401,9 +474,12 @@
       "label": "同郷の同志",
       "text": "政治経路や判断が異なる時期もあるが、薩摩の重要な協力関係を築いた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "rekihaku_okubo_saigo_letter",
+          "kagoshima_okubo_people"
+        ],
+        "reviewStatus": "verified",
+        "note": "国立歴史民俗博物館所蔵の1858年大久保書簡で西郷との直接連絡、鹿児島県観光連盟の人物解説で同郷の盟友としての関係と幕末の協働を確認。"
       }
     },
     {
@@ -416,9 +492,12 @@
       "label": "側近として登用",
       "text": "大久保は久光への接近を通じて薩摩藩政の中枢へ入った。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "kagoshima_okubo_people",
+          "jacar_okubo_detail"
+        ],
+        "reviewStatus": "verified",
+        "note": "鹿児島県観光連盟で久光が実権を握ると大久保がその下で頭角を現したこと、アジア歴史資料センターで御側役などの職歴を確認。"
       }
     },
     {
@@ -638,12 +717,15 @@
       "startSceneId": "1858-ansei",
       "endSceneId": "1865-choshu",
       "typeId": "mentorship-or-comradeship",
-      "label": "松下村塾の同志",
-      "text": "ともに松陰門下だが、軍事・政治上の手法は同一ではなかった。",
+      "label": "松下村塾の同門・双璧",
+      "text": "高杉と久坂はともに松陰門下で、松下村塾の双璧とされた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "hagi_takasugi_sonjuku",
+          "hagi_kusaka_1858"
+        ],
+        "reviewStatus": "verified",
+        "note": "萩市の人物解説で、高杉晋作と久坂玄瑞がともに松下村塾の中心に位置し、双璧とされたことを確認。"
       }
     },
     {
@@ -746,9 +828,13 @@
       "label": "土佐勤王党と脱藩",
       "text": "龍馬は勤王党に関わったが、脱藩して独自の海軍路線へ進んだ。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "sourceIds": [
+          "ndl_portrait_ryoma_detail",
+          "kochi_takechi_kyoto",
+          "kochi_ryoma_1862"
+        ],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で龍馬の土佐勤王党参加と脱藩、高知県で武市半平太の党首としての活動、高知市で龍馬の勝海舟門下入りを確認。"
       }
     },
     {
@@ -923,12 +1009,14 @@
       "startSceneId": "1858-ansei",
       "endSceneId": "1862-bunkyu",
       "typeId": "conflict",
-      "label": "公武合体をめぐる不信",
-      "text": "岩倉は和宮降嫁を進めたが尊攘派から批判され蟄居した。",
+      "label": "和宮降嫁後の失脚",
+      "text": "岩倉は和宮降嫁を進めた後、幕府との内通を疑われて洛中追放・蟄居となったが、孝明天皇との直接的な対立の範囲は確認中。",
       "evidence": {
-        "sourceIds": [],
+        "sourceIds": [
+          "ndl_iwakura_exile"
+        ],
         "reviewStatus": "needs_review",
-        "note": "関係単位の出典が必要。"
+        "note": "国立国会図書館で岩倉の和宮降嫁推進と、尊攘派から幕府内通を疑われた失脚・蟄居は確認できるが、孝明天皇との直接的な対立関係を示す項目単位の公開出典は未確認。"
       }
     },
     {

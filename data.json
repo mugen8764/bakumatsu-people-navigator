@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.44",
+    "version": "1.0.45",
     "updated": "2026-07-31"
   },
   "sources": {
@@ -8112,8 +8112,10 @@
       "label": "海防参与として登用",
       "text": "阿部正弘は斉昭を海防参与に迎え、対外政策を諸大名と議論した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ibaraki_nariaki_kaibo"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8125,8 +8127,11 @@
       "label": "海防意見を評価",
       "text": "勝の海防意見が幕府の海軍人材登用につながった。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "hiroshima_abe_opening",
+          "archives_katsu_kaibo"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8136,10 +8141,13 @@
       "end": 1,
       "type": "仲介・交渉",
       "label": "国書受領・条約交渉",
-      "text": "両者は武力を背景にした外交要求と戦争回避の交渉を担った。",
+      "text": "ペリーは開港を要求し、阿部を首座とする幕府は国書を受領して翌年の条約交渉へ進んだ。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ndl_modern_opening",
+          "mofa_treaty_1854"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8151,8 +8159,11 @@
       "label": "密航希望を拒否",
       "text": "松陰はペリー艦隊での渡航を求めたが受け入れられなかった。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "hagi_shoin_timeline",
+          "ndl_portrait_shoin_detail"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8164,8 +8175,11 @@
       "label": "登用・側近",
       "text": "斉彬は西郷を見いだし、江戸・京都での政治活動に用いた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "kagoshima_saigo_youth",
+          "kagoshima_nariakira"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8174,10 +8188,13 @@
       "start": 0,
       "end": 1,
       "type": "政治協力",
-      "label": "海軍・開国構想",
-      "text": "両者は幕府・雄藩の海軍力と西洋技術導入を重視した。",
+      "label": "海軍構想への関心",
+      "text": "斉彬は洋式造船を進め、勝は海防意見書で西洋式海軍の必要を説いたが、両者の直接の協力は確認中。",
       "evidence": {
-        "sourceIds": [],
+        "sourceIds": [
+          "kagoshima_nariakira",
+          "archives_katsu_kaibo"
+        ],
         "reviewStatus": "needs_review"
       }
     },
@@ -8190,8 +8207,11 @@
       "label": "将軍候補として支持",
       "text": "斉彬は一橋慶喜を将軍継嗣に推す一橋派の中心だった。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ibaraki_nariaki_succession",
+          "kagoshima_nariakira"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8203,8 +8223,11 @@
       "label": "一橋派",
       "text": "幕政改革と慶喜擁立をめぐって協力した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ibaraki_nariaki_succession",
+          "fukui_sanai_shungaku"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8216,8 +8239,11 @@
       "label": "一橋派",
       "text": "将軍継嗣と幕政改革で利害が一致した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ibaraki_nariaki_succession",
+          "kagoshima_nariakira"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8229,8 +8255,11 @@
       "label": "将軍継嗣で対立",
       "text": "井伊は家茂を支持し、一橋慶喜と一橋派を処分した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ibaraki_nariaki_succession",
+          "ibaraki_nariaki_ansei"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8242,8 +8271,11 @@
       "label": "条約・継嗣で対立",
       "text": "条約手続きと将軍継嗣をめぐり激しく対立した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ibaraki_nariaki_treaty",
+          "ibaraki_nariaki_ansei"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8255,8 +8287,11 @@
       "label": "一橋派を処分",
       "text": "春嶽は安政の大獄で隠居・謹慎となった。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "fukui_sanai_shungaku",
+          "ndl_handwriting_bakumatsu_people"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8268,8 +8303,11 @@
       "label": "安政の大獄",
       "text": "左内は一橋派工作を理由に処刑された。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "fukui_sanai_shungaku",
+          "ndl_handwriting_bakumatsu_people"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8281,8 +8319,11 @@
       "label": "一橋派を処分",
       "text": "容堂は一橋派として隠居・謹慎となった。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "kochi_yodo_timeline",
+          "ibaraki_nariaki_succession"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8294,8 +8335,11 @@
       "label": "安政の大獄",
       "text": "松陰は幕府批判と政治計画を理由に処刑された。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ndl_portrait_shoin_detail",
+          "ndl_handwriting_bakumatsu_people"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8307,8 +8351,10 @@
       "label": "通商条約交渉",
       "text": "ハリスの要求に対し、井伊政権が条約調印を決断した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "mofa_treaty_1858"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8320,8 +8366,11 @@
       "label": "条約勅許で対立",
       "text": "孝明天皇は無勅許調印を問題視した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "mofa_treaty_1858",
+          "ibaraki_nariaki_treaty"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8333,8 +8382,11 @@
       "label": "将軍家の継承競争と補佐",
       "text": "継嗣争いでは競合したが、後に慶喜は将軍後見職として家茂を補佐した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ibaraki_nariaki_succession",
+          "fukui_yoshinobu_shungaku_1862"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8346,8 +8398,11 @@
       "label": "松下村塾の師弟",
       "text": "松陰の思想と行動論は高杉の軍事・政治活動へ影響した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "hagi_shokasonjuku",
+          "hagi_takasugi_sonjuku"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8359,8 +8414,11 @@
       "label": "松下村塾の師弟",
       "text": "久坂は松陰門下の中心として尊王攘夷運動を進めた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "hagi_shokasonjuku",
+          "hagi_kusaka_1858"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8372,8 +8430,11 @@
       "label": "松下村塾に学ぶ",
       "text": "伊藤は短期間ながら松下村塾に学び、門下ネットワークへ加わった。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "hagi_shokasonjuku",
+          "jacar_ito_detail"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8385,8 +8446,10 @@
       "label": "藩主と側近",
       "text": "春嶽は左内を政策立案・一橋派工作の側近として用いた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "fukui_sanai_shungaku"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8398,8 +8461,10 @@
       "label": "父子",
       "text": "斉昭は実子慶喜の将軍継嗣を強く支持した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ibaraki_nariaki_succession"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8411,8 +8476,11 @@
       "label": "公武合体の婚姻",
       "text": "家茂と和宮の婚姻は幕府と朝廷の関係修復を象徴した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "iwaki_kazunomiya",
+          "ndl_portrait_kazunomiya_detail"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8424,7 +8492,10 @@
       "label": "大奥の年長者と御台所",
       "text": "大奥の慣習や徳川家存続をめぐり協力と緊張を含む関係を持った。",
       "evidence": {
-        "sourceIds": [],
+        "sourceIds": [
+          "kagoshima_tenshoin",
+          "ndl_portrait_kazunomiya_detail"
+        ],
         "reviewStatus": "needs_review"
       }
     },
@@ -8437,8 +8508,10 @@
       "label": "養父と養女",
       "text": "斉彬は篤姫を将軍家へ送り、薩摩と幕府を結ぶ構想を持った。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ibusuki_atsuhime"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8450,8 +8523,11 @@
       "label": "同郷の同志",
       "text": "政治経路や判断が異なる時期もあるが、薩摩の重要な協力関係を築いた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "rekihaku_okubo_saigo_letter",
+          "kagoshima_okubo_people"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8463,8 +8539,11 @@
       "label": "側近として登用",
       "text": "大久保は久光への接近を通じて薩摩藩政の中枢へ入った。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "kagoshima_okubo_people",
+          "jacar_okubo_detail"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8655,11 +8734,14 @@
       "start": 2,
       "end": 8,
       "type": "師弟・同志",
-      "label": "松下村塾の同志",
-      "text": "ともに松陰門下だが、軍事・政治上の手法は同一ではなかった。",
+      "label": "松下村塾の同門・双璧",
+      "text": "高杉と久坂はともに松陰門下で、松下村塾の双璧とされた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "hagi_takasugi_sonjuku",
+          "hagi_kusaka_1858"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8749,8 +8831,12 @@
       "label": "土佐勤王党と脱藩",
       "text": "龍馬は勤王党に関わったが、脱藩して独自の海軍路線へ進んだ。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review"
+        "sourceIds": [
+          "ndl_portrait_ryoma_detail",
+          "kochi_takechi_kyoto",
+          "kochi_ryoma_1862"
+        ],
+        "reviewStatus": "verified"
       }
     },
     {
@@ -8913,10 +8999,12 @@
       "start": 2,
       "end": 4,
       "type": "対立",
-      "label": "公武合体をめぐる不信",
-      "text": "岩倉は和宮降嫁を進めたが尊攘派から批判され蟄居した。",
+      "label": "和宮降嫁後の失脚",
+      "text": "岩倉は和宮降嫁を進めた後、幕府との内通を疑われて洛中追放・蟄居となったが、孝明天皇との直接的な対立の範囲は確認中。",
       "evidence": {
-        "sourceIds": [],
+        "sourceIds": [
+          "ndl_iwakura_exile"
+        ],
         "reviewStatus": "needs_review"
       }
     },
