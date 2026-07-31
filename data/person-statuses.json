@@ -900,17 +900,17 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "松平春嶽",
-      "role": "越前藩主経験者・政局調整者",
+      "role": "前福井藩主・新政府議定",
       "factionId": "bakufu",
-      "stance": "大政奉還後の諸侯会議型政権を支持し、徳川家を含む再編を模索する。",
-      "importance": "倒幕・佐幕の二択ではない第三の政権構想を持つ。",
+      "stance": "5月に島津久光・山内容堂・伊達宗城と会談し、11月には土佐藩の大政奉還論に疑念を抱いて入京する。",
+      "importance": "12月9日の王政復古当日、新政府の議定に就任した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "fukui_pref_timeline",
+          "archives_royal_restoration"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "福井県史年表で1867年5月の四侯会談、11月の大政奉還論への疑念を伴う入京、12月9日の議定就任を確認し、国立公文書館で議定が王政復古で設けられた三職の一つであることを照合。諸侯会議型政権・第三の政権構想という解釈は表示しない。"
       }
     },
     {
