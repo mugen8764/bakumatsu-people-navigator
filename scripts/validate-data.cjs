@@ -109,6 +109,11 @@ function validateV2References(documents) {
   const sceneIds = uniqueIds(documents.events.scenes, 'scenes');
   const orderedScenes = [...documents.events.scenes].sort((a, b) => a.order - b.order);
   const sceneOrder = new Map(orderedScenes.map((scene, index) => [scene.id, index]));
+  for (const source of documents.sources.sources) {
+    if (source.contentCheckedAt && source.contentCheckedAt > documents.manifest.updated) {
+      throw new Error(`${source.id}.contentCheckedAt is later than manifest.updated`);
+    }
+  }
   if (new Set(documents.events.scenes.map(scene => scene.order)).size !== documents.events.scenes.length) {
     throw new Error('scenes contains duplicate order values');
   }

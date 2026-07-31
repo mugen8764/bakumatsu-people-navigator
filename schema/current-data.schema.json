@@ -114,11 +114,17 @@
     "source": {
       "type": "object",
       "additionalProperties": false,
+      "dependentRequired": {
+        "locator": ["contentCheckedAt"],
+        "contentCheckedAt": ["locator"]
+      },
       "required": ["title", "url", "note"],
       "properties": {
         "title": { "$ref": "#/$defs/nonEmptyString" },
         "url": { "type": "string", "format": "uri", "pattern": "^https://" },
-        "note": { "$ref": "#/$defs/nonEmptyString" }
+        "note": { "$ref": "#/$defs/nonEmptyString" },
+        "locator": { "$ref": "#/$defs/nonEmptyString" },
+        "contentCheckedAt": { "type": "string", "format": "date" }
       }
     },
     "faction": {

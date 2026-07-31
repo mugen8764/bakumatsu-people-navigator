@@ -12,10 +12,19 @@ function escapeLinkText(value) {
 }
 
 function renderCatalog(sources) {
-  const entries = sources.flatMap((source, index) => [
-    `${index + 1}. [${escapeLinkText(source.title)}](${source.url}) — ${source.note}`,
-    ''
-  ]);
+  const entries = sources.flatMap((source, index) => {
+    const metadata = source.locator
+      ? [
+          `   - 該当箇所: ${source.locator}`,
+          `   - 内容確認日: ${source.contentCheckedAt}`
+        ]
+      : [];
+    return [
+      `${index + 1}. [${escapeLinkText(source.title)}](${source.url}) — ${source.note}`,
+      ...metadata,
+      ''
+    ];
+  });
 
   return [
     beginMarker,
@@ -37,6 +46,10 @@ function loadSources() {
       if (typeof source[field] !== 'string' || !source[field].trim()) {
         throw new Error(`data/sources.json sources[${index}].${field} must be a non-empty string.`);
       }
+    }
+    const precisionFields = ['locator', 'contentCheckedAt'].filter(field => field in source);
+    if (precisionFields.length === 1) {
+      throw new Error(`data/sources.json sources[${index}] must define locator and contentCheckedAt together.`);
     }
   }
   return document.sources;

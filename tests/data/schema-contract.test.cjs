@@ -63,6 +63,17 @@ test('verified records cannot omit sources', () => {
   assert.throws(() => validateV2Documents(documents), /must NOT have fewer than 1 items/);
 });
 
+test('source precision metadata stays paired and cannot postdate the content version', () => {
+  const missingDate = projectLegacyData(data);
+  missingDate.sources.sources[0].locator = '本文';
+  assert.throws(() => validateV2Documents(missingDate), /must have property contentCheckedAt/);
+
+  const futureDate = projectLegacyData(data);
+  futureDate.sources.sources[0].locator = '本文';
+  futureDate.sources.sources[0].contentCheckedAt = '9999-12-31';
+  assert.throws(() => validateV2Documents(futureDate), /contentCheckedAt is later than manifest.updated/);
+});
+
 test('scene-ID ranges cannot run backwards or overlap', () => {
   const backwards = projectLegacyData(data);
   backwards.personStatuses.statuses[1].endSceneId = '1853-blackships';

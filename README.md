@@ -72,6 +72,8 @@ npm run build:data
 npm run build:sources
 ```
 
+出典本文を確認した場合は、`locator` に該当する見出し・頁・コマを、`contentCheckedAt` に内容確認日を記録します。URLの到達確認だけでは内容確認日を更新しません。
+
 ## 注意
 
 - 日付は、定着した旧暦日付と換算後の西暦日付を必要に応じて併記しています。

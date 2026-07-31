@@ -126,6 +126,29 @@ test('people and events retain valid HTTPS source references', () => {
   for (const [eventId, event] of Object.entries(data.events)) assert.ok(event.sources.length > 0, `${eventId} needs a source`);
 });
 
+test('content-checked sources keep precise locators and non-future review dates', () => {
+  const expectedPreciseSources = [
+    'jacar_iwakura_yoshinobu_disposition_1867',
+    'jacar_kawaji_detail',
+    'kagoshima_cci_kawaji',
+    'kagoshima_satcho_alliance',
+    'ndl_kido_iwakura_proposal_1869',
+    'yamaguchi_ito_guide',
+    'yamaguchi_tokankeki'
+  ];
+
+  for (const sourceId of expectedPreciseSources) {
+    const source = data.sources[sourceId];
+    assert.ok(source.locator?.trim(), `${sourceId} needs a locator`);
+    assert.match(source.contentCheckedAt, /^\d{4}-\d{2}-\d{2}$/, `${sourceId} needs a content review date`);
+    assert.ok(source.contentCheckedAt <= data.meta.updated, `${sourceId} review date is later than the content version`);
+  }
+
+  const sourcesDocument = fs.readFileSync(path.join(root, 'SOURCES.md'), 'utf8');
+  assert.match(sourcesDocument, /該当箇所: 目次144頁（0110\.jp2）/);
+  assert.match(sourcesDocument, /内容確認日: 2026-07-31/);
+});
+
 test('the source catalog has one used entry per URL', () => {
   const sourceEntries = Object.entries(data.sources);
   unique(sourceEntries.map(([, source]) => source.url), 'source URLs');

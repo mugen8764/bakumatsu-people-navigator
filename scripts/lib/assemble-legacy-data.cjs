@@ -28,7 +28,9 @@ function assembleLegacyData(documents) {
   const sources = toObject(documents.sources.sources, source => ({
     title: source.title,
     url: source.url,
-    note: source.note
+    note: source.note,
+    ...(source.locator ? { locator: source.locator } : {}),
+    ...(source.contentCheckedAt ? { contentCheckedAt: source.contentCheckedAt } : {})
   }));
 
   const factions = toObject(documents.factions.factions, faction => ({

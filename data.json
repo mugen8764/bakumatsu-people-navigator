@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.50",
+    "version": "1.0.51",
     "updated": "2026-07-31"
   },
   "sources": {
@@ -518,12 +518,16 @@
     "jacar_kawaji_detail": {
       "title": "アジア歴史資料センター「川路利良」",
       "url": "https://www.jacar.archives.go.jp/das/term/00000414",
-      "note": "川路利良の1850年の兵具方与力附、1867年の兵具方一番小隊長・学兵隊長就任と抜刀隊組織、1868年の戊辰戦争従軍、1869年の兵具奉行就任。"
+      "note": "川路利良の1850年の兵具方与力附、1867年の兵具方一番小隊長・学兵隊長就任と抜刀隊組織、1868年の戊辰戦争従軍、1869年の兵具奉行就任。",
+      "locator": "「解説」欄",
+      "contentCheckedAt": "2026-07-31"
     },
     "kagoshima_cci_kawaji": {
       "title": "鹿児島商工会議所「川路利良」",
       "url": "https://www.kagoshima-cci.or.jp/?page_id=23600",
-      "note": "川路利良が1864年の禁門の変で働きを見せ、西郷隆盛に見出され、3年後に兵具隊長となった経緯。"
+      "note": "川路利良が1864年の禁門の変で働きを見せ、西郷隆盛に見出され、3年後に兵具隊長となった経緯。",
+      "locator": "本文「1864（元治元）年、京都禁門の変での活躍で…」の段落",
+      "contentCheckedAt": "2026-07-31"
     },
     "kwansei_kawaji_letter": {
       "title": "関西学院大学図書館「安田定則宛川路利良書翰」",
@@ -773,7 +777,9 @@
     "yamaguchi_ito_guide": {
       "title": "山口県立山口図書館「伊藤博文・人物調べ方案内」",
       "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/itou_hirobumi/",
-      "note": "伊藤俊輔の英国密航留学、1864年の急遽帰国と下関戦争の戦後処理での対外交渉。"
+      "note": "伊藤俊輔の英国密航留学、1864年の急遽帰国と下関戦争の戦後処理での対外交渉。",
+      "locator": "「人物紹介」第1段落",
+      "contentCheckedAt": "2026-07-31"
     },
     "yamaguchi_bakan_war": {
       "title": "山口県立山口図書館「明治維新人物ギャラリー・馬関戦争」",
@@ -853,7 +859,9 @@
     "yamaguchi_tokankeki": {
       "title": "山口県立山口図書館「明治維新人物ギャラリー・討奸檄」",
       "url": "https://library.pref.yamaguchi.lg.jp/meijiishin/202501/",
-      "note": "高杉晋作らの功山寺決起と下関藩会所襲撃、藩政府へ掲げた檄文、伊藤博文が清書したとされる高札。"
+      "note": "高杉晋作らの功山寺決起と下関藩会所襲撃、藩政府へ掲げた檄文、伊藤博文が清書したとされる高札。",
+      "locator": "「展示資料」内『高杉晋作小伝』の項",
+      "contentCheckedAt": "2026-07-31"
     },
     "yamaguchi_inoue_1865": {
       "title": "山口県立山口図書館「没後100年 井上馨」",
@@ -903,7 +911,9 @@
     "kagoshima_satcho_alliance": {
       "title": "鹿児島県歴史・美術センター黎明館「薩長同盟成立」",
       "url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/sattyo.html",
-      "note": "1866年の薩長盟約、坂本龍馬・中岡慎太郎による仲介、京都の小松帯刀邸で小松・西郷・木戸が盟約を結んだこと。"
+      "note": "1866年の薩長盟約、坂本龍馬・中岡慎太郎による仲介、京都の小松帯刀邸で小松・西郷・木戸が盟約を結んだこと。",
+      "locator": "本文「薩長同盟は、京都の小松帯刀宅で…」の段落",
+      "contentCheckedAt": "2026-07-31"
     },
     "archives_enomoto_1867": {
       "title": "国立公文書館「旗本御家人・榎本釜次郎脱艦一件書並仏人ブリユウネ等所罰方」",
@@ -1038,12 +1048,16 @@
     "ndl_kido_iwakura_proposal_1869": {
       "title": "国立国会図書館デジタルコレクション『木戸孝允遺文集』「岩倉具視への建言」",
       "url": "https://lab.ndl.go.jp/dl-text/book?page=96&pid=1038118",
-      "note": "『木戸孝允遺文集』に明治2年4月15日付「岩倉具視への建言」が収録され、建言の宛先と日付を確認できること。"
+      "note": "『木戸孝允遺文集』に明治2年4月15日付「岩倉具視への建言」が収録され、建言の宛先と日付を確認できること。",
+      "locator": "目次144頁（0110.jp2）",
+      "contentCheckedAt": "2026-07-31"
     },
     "jacar_iwakura_yoshinobu_disposition_1867": {
       "title": "太政類典「岩倉具視松平慶永等ニ慶喜処分ノ朝旨ヲ示シ其奏状ノ擬按ヲ内付ス」",
       "url": "https://www.jacar.archives.go.jp/das/meta/A15071465300",
-      "note": "慶応3年12月16日・18日、岩倉具視が松平慶永らへ徳川慶喜の処分方針と奏状案を示し、慶喜に実行させるため協議したこと。"
+      "note": "慶応3年12月16日・18日、岩倉具視が松平慶永らへ徳川慶喜の処分方針と奏状案を示し、慶喜に実行させるため協議したこと。",
+      "locator": "「内容」欄（慶応3年12月16日・18日条）",
+      "contentCheckedAt": "2026-07-31"
     }
   },
   "factions": {

@@ -12,12 +12,18 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
+        "dependentRequired": {
+          "locator": ["contentCheckedAt"],
+          "contentCheckedAt": ["locator"]
+        },
         "required": ["id", "title", "url", "note"],
         "properties": {
           "id": { "$ref": "definitions.schema.json#/$defs/stableId" },
           "title": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
           "url": { "type": "string", "format": "uri", "pattern": "^https://" },
-          "note": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" }
+          "note": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "locator": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "contentCheckedAt": { "type": "string", "format": "date" }
         }
       }
     }
