@@ -641,7 +641,7 @@
       "id": "jacar_kido_detail",
       "title": "アジア歴史資料センター「木戸孝允」",
       "url": "https://www.jacar.archives.go.jp/das/term/00000381",
-      "note": "桂小五郎の江戸遊学と長州藩での職歴、1868年の太政官徴士・総裁局顧問・外国事務掛・参与。"
+      "note": "桂小五郎の江戸遊学と長州藩での職歴、1868年の太政官徴士・総裁局顧問・外国事務掛・参与、1869年の版籍奉還推進・待詔院学士・待詔院出仕。"
     },
     {
       "id": "jacar_kido_ito_1868_appointments",
@@ -653,7 +653,7 @@
       "id": "ndl_portrait_kido_detail",
       "title": "国立国会図書館「近代日本人の肖像・木戸孝允」",
       "url": "https://www.ndl.go.jp/portrait/datas/65/",
-      "note": "桂小五郎の別称、江戸での剣術・西洋兵学修学、長州藩の重職として藩論を討幕へ導いた経緯、1866年の薩長連合締結。"
+      "note": "桂小五郎の別称、江戸での剣術・西洋兵学修学、長州藩の重職、1866年の薩長連合、五箇条の御誓文草案起草、参与就任と版籍奉還への尽力、1870年6月の参議就任。"
     },
     {
       "id": "hagi_takasugi_sonjuku",
@@ -863,7 +863,7 @@
       "id": "jacar_sanjo_detail",
       "title": "アジア歴史資料センター「三條實美」",
       "url": "https://www.jacar.archives.go.jp/das/term/00000389",
-      "note": "三条実美の1863年の官位褫奪・京都追放、1865年の太宰府移送、1867年の王政復古による赦免・議定就任、1868年の議定・副総裁等の役職。"
+      "note": "三条実美の1863年の官位褫奪・京都追放、1865年の太宰府移送、1867年の赦免・議定就任、1868年の議定・副総裁等、1869年の右大臣就任。"
     },
     {
       "id": "kochi_takechi_1863",
@@ -1140,6 +1140,30 @@
       "title": "国立公文書館「山県有朋露仏2国に差遣し地理形勢を視察せしむ（明治2年）」",
       "url": "https://www.archives.go.jp/exhibition/digital/2007_01/aritomo_yamagata/archive01_01.html",
       "note": "山県有朋が1869年3月に西郷従道と長崎を出航し、欧州で徴兵制度などを調査して1870年8月に帰国したこと。"
+    },
+    {
+      "id": "ndl_iwakura_diary",
+      "title": "国立国会図書館「日記の世界・岩倉具視」",
+      "url": "https://www.ndl.go.jp/nikki/person/iwakuratomomi/index.html",
+      "note": "岩倉具視の1868年の副総裁・海陸軍務会計事務総督・議定兼輔相、1869年の権大納言・議定・大納言などの履歴。"
+    },
+    {
+      "id": "jacar_daijokan",
+      "title": "アジア歴史資料センター「太政官」",
+      "url": "https://www.jacar.go.jp/exhibition/glossary/term3/0010-0020-0010.html",
+      "note": "1869年7月8日からの三条実美の右大臣、岩倉具視の大納言など、明治初期太政官の部局長と在職期間。"
+    },
+    {
+      "id": "ndl_1869_official_election",
+      "title": "国立国会図書館「選挙と日記―マツリの記録をよむ」",
+      "url": "https://www.ndl.go.jp/nikki/essay/03/",
+      "note": "1869年5月13日の官吏公選と、大村益次郎の軍務官副知官事への選出。"
+    },
+    {
+      "id": "ndl_sanjo_papers",
+      "title": "国立国会図書館リサーチ・ナビ「三条家文書（所蔵）」",
+      "url": "https://ndlsearch.ndl.go.jp/rnavi/kensei/sannjouke1",
+      "note": "三条実美の1868年4月の輔相、1869年4月の史局総裁、同年7月の右大臣などの履歴。"
     }
   ]
 }

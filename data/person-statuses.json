@@ -2150,16 +2150,16 @@
       "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "displayName": "川路利良",
-      "role": "薩摩藩兵具奉行",
+      "role": "薩摩藩兵具奉行（1869年、就任月未確認）",
       "factionId": "satsuma",
       "stance": "1869年、薩摩藩の兵具奉行となる。",
-      "importance": "東京府の官職へ移るのは1871年である。",
+      "importance": "箱館戦争終結時点で就任済みかは、現在の出典では確認できない。",
       "evidence": {
         "sourceIds": [
           "jacar_kawaji_detail"
         ],
-        "reviewStatus": "verified",
-        "note": "アジア歴史資料センターで1869年の兵具奉行就任と1871年の東京府大属・権典事・典事就任を確認。1869年時点で新政府の警察組織へ移ったとの従来記述は時期が早いため訂正。"
+        "reviewStatus": "needs_review",
+        "note": "アジア歴史資料センターで1869年の兵具奉行就任は確認できるが、就任月がなく、1869年5月18日（西暦6月27日）の箱館戦争終結時点の役職と断定できないため needs_review に戻す。"
       }
     },
     {
@@ -2545,17 +2545,17 @@
       "startSceneId": "1868-edo",
       "endSceneId": "1868-edo",
       "displayName": "木戸孝允",
-      "role": "新政府参与",
+      "role": "総裁局顧問・新政府参与（1868年）",
       "factionId": "new-government",
-      "stance": "徳川処分・政体整備に関与する。",
-      "importance": "薩摩と協力しつつ新政府内で独自意見を持つ。",
+      "stance": "太政官徴士となり、総裁局顧問・外国事務掛・参与を務める。",
+      "importance": "五箇条の御誓文の草案を起草した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_kido_detail",
+          "ndl_portrait_kido_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1868年の太政官徴士・総裁局顧問・外国事務掛・参与、国立国会図書館で五箇条の御誓文草案起草を確認。徳川処分と新政府内の意見差は当該出典が直接支えないため表示しない。"
       }
     },
     {
@@ -2564,17 +2564,16 @@
       "startSceneId": "1868-tohoku",
       "endSceneId": "1868-tohoku",
       "displayName": "木戸孝允",
-      "role": "新政府指導者",
+      "role": "新政府参与・外国事務掛（1868年）",
       "factionId": "new-government",
-      "stance": "戊辰戦争と制度改革を並行して進める。",
-      "importance": "長州人材の中央政府登用を進める。",
+      "stance": "太政官徴士・総裁局顧問などとともに、参与と外国事務掛を務める。",
+      "importance": "東北戦線での具体的な軍事指揮は、現在の出典では確認できない。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_kido_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1868年の太政官徴士・総裁局顧問・外国事務掛・参与を確認。東北戦線への関与や長州人材登用という従来記述は直接根拠がないため表示しない。"
       }
     },
     {
@@ -2583,17 +2582,17 @@
       "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "displayName": "木戸孝允",
-      "role": "新政府指導者",
+      "role": "待詔院学士・待詔院出仕",
       "factionId": "new-government",
-      "stance": "版籍奉還など藩体制再編へ取り組む。",
-      "importance": "戦争終結後の政治改革へ重心を移す。",
+      "stance": "版籍奉還を推進し、待詔院学士・待詔院出仕を務める。",
+      "importance": "参議へ就任するのは翌1870年6月である。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_kido_detail",
+          "ndl_portrait_kido_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1869年の版籍奉還推進、待詔院学士・出仕、国立国会図書館で版籍奉還への尽力と1870年6月の参議就任を確認。「新政府指導者」を時点別の正式な役職へ訂正。"
       }
     },
     {
@@ -3299,17 +3298,17 @@
       "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "displayName": "大村益次郎",
-      "role": "兵部大輔",
+      "role": "軍務官副知官事",
       "factionId": "new-government",
-      "stance": "7月に兵部大輔へ就任し、陸海軍の制度改革に取り組む。",
-      "importance": "9月に襲撃され、その傷がもとで11月5日に死去した。",
+      "stance": "5月13日の官吏公選で、軍務官副知官事に選ばれる。",
+      "importance": "兵部大輔へ就任するのは同年7月である。",
       "evidence": {
         "sourceIds": [
-          "yamaguchi_omura_1869",
+          "ndl_1869_official_election",
           "ndl_omura_papers"
         ],
         "reviewStatus": "verified",
-        "note": "山口市で1869年の兵部大輔就任、陸海軍制度改革、9月の襲撃と11月の死去を確認し、国立国会図書館で7月の就任日と11月5日の死亡を照合。翌年の徴兵制という従来記述は時系列・根拠とも不正確なため削除。"
+        "note": "国立国会図書館で1869年5月13日の官吏公選による軍務官副知官事就任と、同年7月の兵部大輔就任を確認。箱館戦争終結場面へ7月の役職を先取りしないよう訂正。"
       }
     },
     {
@@ -3886,17 +3885,17 @@
       "startSceneId": "1868-edo",
       "endSceneId": "1868-tohoku",
       "displayName": "岩倉具視",
-      "role": "新政府指導者",
+      "role": "副総裁、のち議定兼輔相",
       "factionId": "new-government",
-      "stance": "東京移転・政体整備・徳川処分へ関与する。",
-      "importance": "宮廷政治家から全国政府の指導者へ変化する。",
+      "stance": "1月に副総裁となり、海陸軍務会計事務総督を兼ね、閏4月には議定兼輔相となる。",
+      "importance": "新政府の官制変更に伴い、同じ1868年中に役職が変化した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_iwakura_diary",
+          "ndl_portrait_iwakura_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の履歴で1868年1月の副総裁・海陸軍務会計事務総督、閏4月の議定兼輔相を確認し、人物解説でも新政府の参与・議定歴を照合。東京移転・徳川処分への具体的関与は当該出典が直接支えないため表示しない。"
       }
     },
     {
@@ -3905,17 +3904,17 @@
       "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "displayName": "岩倉具視",
-      "role": "新政府上級指導者",
+      "role": "議定",
       "factionId": "new-government",
-      "stance": "中央政府制度と皇室・公家秩序の再編を進める。",
-      "importance": "王政復古を近代国家制度へ移す役割を担う。",
+      "stance": "1月に権大納言となり、4月に議定へ就任する。",
+      "importance": "大納言へ就任するのは同年7月8日である。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_iwakura_diary",
+          "jacar_daijokan"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の履歴で1869年1月の権大納言・4月の議定、アジア歴史資料センターで7月8日の大納言就任を確認。箱館戦争終結場面の役職は議定とし、後月の大納言を先取りしない。"
       }
     },
     {
@@ -4054,17 +4053,17 @@
       "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "displayName": "三条実美",
-      "role": "右大臣級の新政府指導者",
+      "role": "輔相・史局総裁",
       "factionId": "new-government",
-      "stance": "中央政府の政務を統括する。",
-      "importance": "維新後の太政官政府を代表する。",
+      "stance": "1868年4月から輔相を務め、1869年4月に史局総裁を兼ねる。",
+      "importance": "太政官の右大臣へ就任するのは同年7月8日である。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_sanjo_papers",
+          "jacar_daijokan"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の履歴で1868年4月の輔相、1869年4月の史局総裁、アジア歴史資料センターで7月8日の右大臣就任を確認。箱館戦争終結場面へ後月の右大臣を先取りしない。"
       }
     },
     {
