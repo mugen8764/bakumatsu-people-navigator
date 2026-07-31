@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.33",
+    "version": "1.0.34",
     "updated": "2026-07-31"
   },
   "sources": {
@@ -144,6 +144,16 @@
       "title": "国立公文書館「鳥羽・伏見の戦い」",
       "url": "https://www.archives.go.jp/ayumi/kobetsu/m01_1868_01.html",
       "note": "新政府軍と幕府軍の衝突、新政府軍の勝利、戊辰戦争の範囲。"
+    },
+    "jacar_yoshinobu_punitive_order": {
+      "title": "太政類典「徳川慶喜征討大号令」",
+      "url": "https://www.jacar.archives.go.jp/das/meta/A15071486300",
+      "note": "慶応4年1月9日、鳥羽・伏見で兵端を開いたとして朝廷が徳川慶喜の追討を命じた大号令。"
+    },
+    "archives_boshin_war_flags": {
+      "title": "国立公文書館「近代国家 日本の登場・戊辰戦争」",
+      "url": "https://www.archives.go.jp/exhibition/digital/modean_state/contents/boshin-war/index.html",
+      "note": "官軍を示す錦旗を掲げた新政府軍が鳥羽・伏見の戦いに勝利し、東征を行った経緯。"
     },
     "kyoto_toba_fushimi_site": {
       "title": "京都市「鳥羽伏見の戦跡」",
@@ -615,6 +625,11 @@
       "url": "https://www.kagoshima-kankou.com/guide/70359",
       "note": "小松帯刀の1861年の側役就任、1862年の家老就任、長州再征への出兵拒否の藩論取りまとめ、1866年の小松邸での薩長間会談、1867年の討幕密勅受領後の帰藩。"
     },
+    "kagoshima_city_komatsu_1868": {
+      "title": "鹿児島市「明治元年を忙しく過ごした小松帯刀」",
+      "url": "https://meijiishin150countdown.com/topics/discovery/",
+      "note": "1868年1月28日の参与兼外国事務掛就任と、堺事件・浦上のキリスト教徒をめぐる問題への対応。"
+    },
     "kyoto_kido_1862": {
       "title": "京都市「木戸孝允神道碑・碑文の大意」",
       "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hi145_abst.html",
@@ -754,6 +769,16 @@
       "title": "アジア歴史資料センター「井上馨」",
       "url": "https://www.jacar.archives.go.jp/das/term/00000373",
       "note": "井上聞多の1864年の帰国・講和交渉・襲撃、1867年の三条実美らの帰京随行、1868年の参与・外国事務局判事・九州鎮撫総督参謀・長崎府判事兼外国官判事・佐渡知県事。"
+    },
+    "ndl_inoue_papers": {
+      "title": "国立国会図書館「井上馨関係文書」",
+      "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=3000004893&page=col_view",
+      "note": "1868年1月の参与職・外国事務掛・九州鎮撫総督参謀、2月の徴士参与職・外国事務局判事、5月の長崎府判事兼外国官判事、9月の佐渡知県事などの月別職歴。"
+    },
+    "jacar_inoue_sado_dismissal": {
+      "title": "太政類典「井上馨ノ佐渡県知事ヲ罷ム」",
+      "url": "https://www.jacar.archives.go.jp/das/meta/A03023353200",
+      "note": "1868年10月17日、井上聞多を佐渡知県事から免じ、長崎府判事へ復帰させた記録。"
     },
     "yamaguchi_inoue_assault": {
       "title": "山口市「井上馨候遭難の地碑」",
@@ -4589,13 +4614,27 @@
         },
         "1868-toba": {
           "display": "小松帯刀",
-          "role": "薩摩藩家老",
+          "role": "薩摩藩家老・参与兼外国事務掛（1月28日以降）",
           "faction": "新政府",
-          "stance": "前年、討幕の密勅を受けて西郷・大久保と帰藩し、討幕挙兵へ向けて動く。",
-          "importance": "1868年の正式な新政府役職は、現在の項目別出典では確認できていない。",
+          "stance": "1月28日、新政府の参与兼外国事務掛を命じられる。",
+          "importance": "鳥羽・伏見での戦闘指揮ではなく、月末に新政府の外交担当へ就いた状態を表示する。",
           "evidence": {
             "sourceIds": [
-              "kagoshima_komatsu_1862"
+              "kagoshima_komatsu_1862",
+              "kagoshima_city_komatsu_1868"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-edo": {
+          "display": "小松帯刀",
+          "role": "新政府参与・外交担当（1868年）",
+          "faction": "新政府",
+          "stance": "参与兼外国事務掛就任後、堺事件や浦上のキリスト教徒をめぐる問題への対応にあたる。",
+          "importance": "官制改編後の正式な役職名を場面ごとに確認する必要がある。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_city_komatsu_1868"
             ],
             "reviewStatus": "needs_review"
           }
@@ -5635,15 +5674,44 @@
         },
         "1868-toba": {
           "display": "井上聞多",
-          "role": "参与・外国事務局判事など（1868年）",
+          "role": "参与職・外国事務掛・九州鎮撫総督参謀（1月）",
           "faction": "新政府",
-          "stance": "前年に三条実美らの帰京に随行し、1868年には新政府の参与・外国事務局判事などを務める。",
-          "importance": "九州鎮撫総督参謀・長崎府判事兼外国官判事・佐渡知県事にも就いた。",
+          "stance": "1月、新政府の参与職となり、外国事務掛と九州鎮撫総督参謀を務める。",
+          "importance": "鳥羽・伏見の戦闘指揮ではなく、新政府への出仕と九州派遣準備の時期にあたる。",
           "evidence": {
             "sourceIds": [
+              "jacar_inoue_detail",
+              "ndl_inoue_papers"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-edo": {
+          "display": "井上聞多",
+          "role": "徴士参与職・外国事務局判事（2月以降）",
+          "faction": "新政府",
+          "stance": "2月、徴士参与職兼外国事務局判事となり、九州鎮撫総督参謀として長崎へ赴く。",
+          "importance": "5月には長崎府判事兼外国官判事に移る。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_inoue_papers",
               "jacar_inoue_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-tohoku": {
+          "display": "井上聞多",
+          "role": "長崎府判事兼外国官判事・佐渡知県事（1868年）",
+          "faction": "新政府",
+          "stance": "5月に長崎府判事兼外国官判事となり、9月には佐渡知県事を命じられる。",
+          "importance": "10月17日、佐渡知県事を免じられ、長崎府判事へ戻る。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_inoue_papers",
+              "jacar_inoue_sado_dismissal"
+            ],
+            "reviewStatus": "verified"
           }
         },
         "1869-hakodate": {
@@ -6127,16 +6195,17 @@
         },
         "1868-toba": {
           "display": "明治天皇",
-          "role": "天皇・新政府の君主",
+          "role": "天皇",
           "faction": "新政府",
-          "stance": "王政復古と新政府軍の正統性を象徴する。",
-          "importance": "錦旗・官軍認定が諸藩の態度へ大きく影響した。",
+          "stance": "1月9日、朝廷から徳川慶喜追討の大号令が発せられる。",
+          "importance": "新政府軍は官軍を示す錦旗を掲げ、鳥羽・伏見の戦いに勝利した。",
           "evidence": {
             "sourceIds": [
-              "ndl_handwriting",
-              "ndl_modern_timeline"
+              "ndl_authority_meiji",
+              "jacar_yoshinobu_punitive_order",
+              "archives_boshin_war_flags"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-edo": {

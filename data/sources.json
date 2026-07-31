@@ -170,6 +170,18 @@
       "note": "新政府軍と幕府軍の衝突、新政府軍の勝利、戊辰戦争の範囲。"
     },
     {
+      "id": "jacar_yoshinobu_punitive_order",
+      "title": "太政類典「徳川慶喜征討大号令」",
+      "url": "https://www.jacar.archives.go.jp/das/meta/A15071486300",
+      "note": "慶応4年1月9日、鳥羽・伏見で兵端を開いたとして朝廷が徳川慶喜の追討を命じた大号令。"
+    },
+    {
+      "id": "archives_boshin_war_flags",
+      "title": "国立公文書館「近代国家 日本の登場・戊辰戦争」",
+      "url": "https://www.archives.go.jp/exhibition/digital/modean_state/contents/boshin-war/index.html",
+      "note": "官軍を示す錦旗を掲げた新政府軍が鳥羽・伏見の戦いに勝利し、東征を行った経緯。"
+    },
+    {
       "id": "kyoto_toba_fushimi_site",
       "title": "京都市「鳥羽伏見の戦跡」",
       "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hu061.html",
@@ -734,6 +746,12 @@
       "note": "小松帯刀の1861年の側役就任、1862年の家老就任、長州再征への出兵拒否の藩論取りまとめ、1866年の小松邸での薩長間会談、1867年の討幕密勅受領後の帰藩。"
     },
     {
+      "id": "kagoshima_city_komatsu_1868",
+      "title": "鹿児島市「明治元年を忙しく過ごした小松帯刀」",
+      "url": "https://meijiishin150countdown.com/topics/discovery/",
+      "note": "1868年1月28日の参与兼外国事務掛就任と、堺事件・浦上のキリスト教徒をめぐる問題への対応。"
+    },
+    {
       "id": "kyoto_kido_1862",
       "title": "京都市「木戸孝允神道碑・碑文の大意」",
       "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hi145_abst.html",
@@ -900,6 +918,18 @@
       "title": "アジア歴史資料センター「井上馨」",
       "url": "https://www.jacar.archives.go.jp/das/term/00000373",
       "note": "井上聞多の1864年の帰国・講和交渉・襲撃、1867年の三条実美らの帰京随行、1868年の参与・外国事務局判事・九州鎮撫総督参謀・長崎府判事兼外国官判事・佐渡知県事。"
+    },
+    {
+      "id": "ndl_inoue_papers",
+      "title": "国立国会図書館「井上馨関係文書」",
+      "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=3000004893&page=col_view",
+      "note": "1868年1月の参与職・外国事務掛・九州鎮撫総督参謀、2月の徴士参与職・外国事務局判事、5月の長崎府判事兼外国官判事、9月の佐渡知県事などの月別職歴。"
+    },
+    {
+      "id": "jacar_inoue_sado_dismissal",
+      "title": "太政類典「井上馨ノ佐渡県知事ヲ罷ム」",
+      "url": "https://www.jacar.archives.go.jp/das/meta/A03023353200",
+      "note": "1868年10月17日、井上聞多を佐渡知県事から免じ、長崎府判事へ復帰させた記録。"
     },
     {
       "id": "yamaguchi_inoue_assault",

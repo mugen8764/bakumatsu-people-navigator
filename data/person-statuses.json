@@ -1968,18 +1968,37 @@
       "id": "person-status-komatsu-1868-toba",
       "personId": "komatsu",
       "startSceneId": "1868-toba",
-      "endSceneId": "1868-tohoku",
+      "endSceneId": "1868-toba",
       "displayName": "小松帯刀",
-      "role": "薩摩藩家老",
+      "role": "薩摩藩家老・参与兼外国事務掛（1月28日以降）",
       "factionId": "new-government",
-      "stance": "前年、討幕の密勅を受けて西郷・大久保と帰藩し、討幕挙兵へ向けて動く。",
-      "importance": "1868年の正式な新政府役職は、現在の項目別出典では確認できていない。",
+      "stance": "1月28日、新政府の参与兼外国事務掛を命じられる。",
+      "importance": "鳥羽・伏見での戦闘指揮ではなく、月末に新政府の外交担当へ就いた状態を表示する。",
       "evidence": {
         "sourceIds": [
-          "kagoshima_komatsu_1862"
+          "kagoshima_komatsu_1862",
+          "kagoshima_city_komatsu_1868"
+        ],
+        "reviewStatus": "verified",
+        "note": "鹿児島県観光連盟で薩摩藩家老、鹿児島市の維新ふるさと館監修記事で1868年1月28日の参与兼外国事務掛就任を確認。戦闘への個別関与は表示しない。"
+      }
+    },
+    {
+      "id": "person-status-komatsu-1868-edo",
+      "personId": "komatsu",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-tohoku",
+      "displayName": "小松帯刀",
+      "role": "新政府参与・外交担当（1868年）",
+      "factionId": "new-government",
+      "stance": "参与兼外国事務掛就任後、堺事件や浦上のキリスト教徒をめぐる問題への対応にあたる。",
+      "importance": "官制改編後の正式な役職名を場面ごとに確認する必要がある。",
+      "evidence": {
+        "sourceIds": [
+          "kagoshima_city_komatsu_1868"
         ],
         "reviewStatus": "needs_review",
-        "note": "鹿児島県観光連盟で家老就任と1867年の密勅受領後の帰藩は確認。従来の「新政府参与」と病を抱えた参加は当該出典が直接支えないため削除し、1868年の正式役職確認まで校正待ちを維持。"
+        "note": "鹿児島市資料で1868年の外交案件への対応は確認できるが、3月から11月までの官制改編に伴う正式な職名と任免月は未確認。役職名を推測せず校正待ちを維持。"
       }
     },
     {
@@ -3077,18 +3096,57 @@
       "id": "person-status-inoue-1868-toba",
       "personId": "inoue",
       "startSceneId": "1868-toba",
-      "endSceneId": "1868-tohoku",
+      "endSceneId": "1868-toba",
       "displayName": "井上聞多",
-      "role": "参与・外国事務局判事など（1868年）",
+      "role": "参与職・外国事務掛・九州鎮撫総督参謀（1月）",
       "factionId": "new-government",
-      "stance": "前年に三条実美らの帰京に随行し、1868年には新政府の参与・外国事務局判事などを務める。",
-      "importance": "九州鎮撫総督参謀・長崎府判事兼外国官判事・佐渡知県事にも就いた。",
+      "stance": "1月、新政府の参与職となり、外国事務掛と九州鎮撫総督参謀を務める。",
+      "importance": "鳥羽・伏見の戦闘指揮ではなく、新政府への出仕と九州派遣準備の時期にあたる。",
       "evidence": {
         "sourceIds": [
+          "jacar_inoue_detail",
+          "ndl_inoue_papers"
+        ],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の井上馨関係文書案内で1868年1月の参与職・外国事務掛・九州鎮撫総督参謀を確認し、アジア歴史資料センターの人物解説と照合。戦闘への個別関与は断定しない。"
+      }
+    },
+    {
+      "id": "person-status-inoue-1868-edo",
+      "personId": "inoue",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "井上聞多",
+      "role": "徴士参与職・外国事務局判事（2月以降）",
+      "factionId": "new-government",
+      "stance": "2月、徴士参与職兼外国事務局判事となり、九州鎮撫総督参謀として長崎へ赴く。",
+      "importance": "5月には長崎府判事兼外国官判事に移る。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_inoue_papers",
           "jacar_inoue_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "アジア歴史資料センターで1867年と1868年の職歴は確認できるが、各任命月を示す項目別史料が未確認のため、1月・3月〜5月・5月〜11月の場面別分割は保留する。財政担当という未確認の説明は削除。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の関係文書案内で2月の徴士参与職・外国事務局判事、5月の長崎府判事兼外国官判事を確認。アジア歴史資料センターの職歴とも整合する。"
+      }
+    },
+    {
+      "id": "person-status-inoue-1868-tohoku",
+      "personId": "inoue",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "井上聞多",
+      "role": "長崎府判事兼外国官判事・佐渡知県事（1868年）",
+      "factionId": "new-government",
+      "stance": "5月に長崎府判事兼外国官判事となり、9月には佐渡知県事を命じられる。",
+      "importance": "10月17日、佐渡知県事を免じられ、長崎府判事へ戻る。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_inoue_papers",
+          "jacar_inoue_sado_dismissal"
+        ],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の関係文書案内で5月と9月の任命、太政類典の10月17日付記録で佐渡知県事免職と長崎府判事復帰を確認。奥羽戦線への関与は表示しない。"
       }
     },
     {
@@ -3590,17 +3648,18 @@
       "startSceneId": "1868-toba",
       "endSceneId": "1868-toba",
       "displayName": "明治天皇",
-      "role": "天皇・新政府の君主",
+      "role": "天皇",
       "factionId": "new-government",
-      "stance": "王政復古と新政府軍の正統性を象徴する。",
-      "importance": "錦旗・官軍認定が諸藩の態度へ大きく影響した。",
+      "stance": "1月9日、朝廷から徳川慶喜追討の大号令が発せられる。",
+      "importance": "新政府軍は官軍を示す錦旗を掲げ、鳥羽・伏見の戦いに勝利した。",
       "evidence": {
         "sourceIds": [
-          "ndl_handwriting",
-          "ndl_modern_timeline"
+          "ndl_authority_meiji",
+          "jacar_yoshinobu_punitive_order",
+          "archives_boshin_war_flags"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館典拠データで人物を、太政類典の1868年1月9日付「徳川慶喜征討大号令」で朝廷の追討命令を、国立公文書館で錦旗を用いた新政府軍の勝利を確認。本人の意思や「象徴性」は推定しない。"
       }
     },
     {
