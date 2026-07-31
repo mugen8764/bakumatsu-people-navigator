@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">幕末人物・勢力ナビ 1853–1869</title>
+  <desc id="description">人物、勢力、事件、場所のつながりを表す公開用画像</desc>
+  <rect width="1200" height="630" fill="#f6f1ea"/>
+  <circle cx="1110" cy="72" r="190" fill="#8b4333" opacity=".08"/>
+  <circle cx="92" cy="584" r="225" fill="#285f5a" opacity=".07"/>
+  <path d="M760 170 920 258 788 405 1015 474" fill="none" stroke="#c5b7a7" stroke-width="5"/>
+  <path d="M920 258 1060 145M788 405 1035 382" fill="none" stroke="#c5b7a7" stroke-width="5"/>
+  <g font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="30" font-weight="700" text-anchor="middle">
+    <g transform="translate(760 170)">
+      <circle r="70" fill="#fffaf3" stroke="#8b4333" stroke-width="5"/>
+      <text y="11" fill="#8b4333">人物</text>
+    </g>
+    <g transform="translate(920 258)">
+      <circle r="70" fill="#fffaf3" stroke="#285f5a" stroke-width="5"/>
+      <text y="11" fill="#285f5a">勢力</text>
+    </g>
+    <g transform="translate(788 405)">
+      <circle r="70" fill="#fffaf3" stroke="#ad6c22" stroke-width="5"/>
+      <text y="11" fill="#8a551b">事件</text>
+    </g>
+    <g transform="translate(1015 474)">
+      <circle r="70" fill="#fffaf3" stroke="#596b87" stroke-width="5"/>
+      <text y="11" fill="#465671">場所</text>
+    </g>
+    <circle cx="1060" cy="145" r="13" fill="#8b4333"/>
+    <circle cx="1035" cy="382" r="13" fill="#285f5a"/>
+  </g>
+  <rect x="80" y="82" width="170" height="46" rx="23" fill="#8b4333"/>
+  <text x="165" y="114" fill="#fffaf3" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="23" font-weight="700" letter-spacing="2" text-anchor="middle">1853–1869</text>
+  <text x="78" y="225" fill="#251f1a" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="70" font-weight="800">幕末人物・</text>
+  <text x="78" y="311" fill="#251f1a" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="70" font-weight="800">勢力ナビ</text>
+  <rect x="80" y="353" width="520" height="4" rx="2" fill="#d8b07a"/>
+  <text x="80" y="413" fill="#5e554d" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="27">黒船来航から箱館戦争終結まで</text>
+  <text x="80" y="459" fill="#5e554d" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="27">時点ごとの名前・役職・所属・関係をたどる</text>
+  <text x="80" y="550" fill="#8b4333" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="22" font-weight="700">bakumatsu-people-navigator.pages.dev</text>
+</svg>

@@ -13,10 +13,13 @@ const entries = [
   'data',
   'data.js',
   'data.json',
+  'favicon.svg',
   'index.html',
   'map-data.js',
+  'og-image.png',
   'robots.txt',
   'schema',
+  'sitemap.xml',
   'src'
 ];
 

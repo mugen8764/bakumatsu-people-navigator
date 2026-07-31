@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://bakumatsu-people-navigator.pages.dev/sitemap.xml

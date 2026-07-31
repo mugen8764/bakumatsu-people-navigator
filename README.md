@@ -3,6 +3,8 @@
 黒船来航から箱館戦争終結までを、人物・勢力・事件・場所の関係として読む静的ウェブサイトです。
 特定の漫画・ドラマ・小説の情報は含めず、史実だけで構成しています。
 
+公開サイト: https://bakumatsu-people-navigator.pages.dev/
+
 ## 収録内容
 
 - 人物: 42名
@@ -35,11 +37,7 @@ npm run build:site
 
 `dist/index.html` がトップページです。`dist/` の内容だけを静的サイトホスティングへ配置してください。アプリケーション自体にバンドルや変換は行わず、開発用のテスト・スクリプト・依存パッケージを公開物から除外します。
 
-例:
-
-- Netlify Dropへ `dist/` またはそのZIPをアップロード
-- Cloudflare PagesのDirect Upload
-- GitHub Pagesの公開ディレクトリへ `dist/` の内容を配置
+本番はCloudflare PagesとGitHubの `main` ブランチを接続し、`npm run build:site` の出力先 `dist/` だけを自動配置します。
 
 公開前に、生成データ、参照ファイル、セキュリティヘッダー、校正状態を確認してください。
 
