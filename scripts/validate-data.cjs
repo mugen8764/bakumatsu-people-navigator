@@ -100,6 +100,58 @@ function validatePersonStatusCoverage(documents, sceneOrder) {
   }
 }
 
+function baseDisplayName(displayName) {
+  return displayName.replace(/（[^）]*）/g, '').trim();
+}
+
+function validatePersonStatusNames(documents) {
+  const personById = new Map(documents.people.people.map(person => [person.id, person]));
+  for (const status of documents.personStatuses.statuses) {
+    const person = personById.get(status.personId);
+    const knownNames = new Set([person.name, ...person.aliases]);
+    const displayName = baseDisplayName(status.displayName);
+    if (!knownNames.has(displayName)) {
+      throw new Error(`${status.id}.displayName is not registered for ${person.id}: ${displayName}`);
+    }
+  }
+}
+
+function validateRelationChronology(items, aKey, bKey, sceneOrder, label, activeRangeById) {
+  const groups = new Map();
+  for (const item of items) {
+    const aId = item[aKey];
+    const bId = item[bKey];
+    if (aId === bId) throw new Error(`${item.id} has the same ${label} at both ends`);
+
+    if (activeRangeById) {
+      for (const entityId of [aId, bId]) {
+        const activeRange = activeRangeById.get(entityId);
+        if (
+          sceneOrder.get(item.startSceneId) < sceneOrder.get(activeRange.startSceneId)
+          || sceneOrder.get(item.endSceneId) > sceneOrder.get(activeRange.endSceneId)
+        ) {
+          throw new Error(`${item.id} extends outside ${entityId}'s active range`);
+        }
+      }
+    }
+
+    const pair = [aId, bId].sort().join('|');
+    if (!groups.has(pair)) groups.set(pair, []);
+    groups.get(pair).push(item);
+  }
+
+  for (const [pair, ranges] of groups) {
+    ranges.sort((a, b) => sceneOrder.get(a.startSceneId) - sceneOrder.get(b.startSceneId));
+    for (let index = 1; index < ranges.length; index += 1) {
+      const previous = ranges[index - 1];
+      const current = ranges[index];
+      if (sceneOrder.get(previous.endSceneId) >= sceneOrder.get(current.startSceneId)) {
+        throw new Error(`${label} relation overlap for ${pair}: ${previous.id} / ${current.id}`);
+      }
+    }
+  }
+}
+
 function validateV2References(documents) {
   const sourceIds = uniqueIds(documents.sources.sources, 'sources');
   const placeIds = uniqueIds(documents.places.places, 'places');
@@ -175,6 +227,25 @@ function validateV2References(documents) {
   validateNonOverlappingRanges(documents.personStatuses.statuses, 'personId', sceneOrder, 'person status');
   validateNonOverlappingRanges(documents.factions.states, 'factionId', sceneOrder, 'faction state');
   validatePersonStatusCoverage(documents, sceneOrder);
+  validatePersonStatusNames(documents);
+  validateRelationChronology(
+    documents.relations.personRelations,
+    'aPersonId',
+    'bPersonId',
+    sceneOrder,
+    'person',
+    new Map(documents.people.people.map(person => [person.id, {
+      startSceneId: person.activeStartSceneId,
+      endSceneId: person.activeEndSceneId
+    }]))
+  );
+  validateRelationChronology(
+    documents.relations.factionRelations,
+    'aFactionId',
+    'bFactionId',
+    sceneOrder,
+    'faction'
+  );
 }
 
 function validateV2Documents(documents) {

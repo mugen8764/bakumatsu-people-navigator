@@ -84,3 +84,31 @@ test('scene-ID ranges cannot run backwards or overlap', () => {
   kido[0].endSceneId = kido[1].startSceneId;
   assert.throws(() => validateV2Documents(overlapping), /person status overlap for kido/);
 });
+
+test('display names stay registered and relations stay inside valid chronology', () => {
+  const unknownName = projectLegacyData(data);
+  const perry = unknownName.people.people.find(person => person.id === 'perry');
+  perry.aliases = perry.aliases.filter(alias => alias !== 'ペリー');
+  assert.throws(() => validateV2Documents(unknownName), /displayName is not registered for perry/);
+
+  const outsideActiveRange = projectLegacyData(data);
+  const relation = outsideActiveRange.relations.personRelations.find(item => {
+    const a = outsideActiveRange.people.people.find(person => person.id === item.aPersonId);
+    const b = outsideActiveRange.people.people.find(person => person.id === item.bPersonId);
+    return a.activeStartSceneId !== outsideActiveRange.events.scenes[0].id
+      || b.activeStartSceneId !== outsideActiveRange.events.scenes[0].id;
+  });
+  relation.startSceneId = outsideActiveRange.events.scenes[0].id;
+  assert.throws(() => validateV2Documents(outsideActiveRange), /extends outside .* active range/);
+
+  const overlappingRelations = projectLegacyData(data);
+  const kondoHijikata = overlappingRelations.relations.personRelations
+    .filter(item => [item.aPersonId, item.bPersonId].sort().join('|') === 'hijikata|kondo')
+    .sort((a, b) => a.startSceneId.localeCompare(b.startSceneId));
+  kondoHijikata[1].startSceneId = kondoHijikata[0].endSceneId;
+  assert.throws(() => validateV2Documents(overlappingRelations), /person relation overlap for hijikata\|kondo/);
+
+  const selfRelation = projectLegacyData(data);
+  selfRelation.relations.personRelations[0].bPersonId = selfRelation.relations.personRelations[0].aPersonId;
+  assert.throws(() => validateV2Documents(selfRelation), /same person at both ends/);
+});
