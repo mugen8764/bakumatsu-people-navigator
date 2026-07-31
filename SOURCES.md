@@ -32,6 +32,8 @@
 13. [アジア歴史資料センター「勝海舟」](https://www.jacar.archives.go.jp/das/term/00000380) — 勝海舟の幕府海軍での職歴、江戸城開城と開城後の江戸鎮撫取締への尽力。
 
 14. [墨田区「勝海舟　幕末・明治を生きた巨人」](https://www.city.sumida.lg.jp/sisetu_info/siryou/kyoudobunka/sonota/tenzi/h15/kikakuten_katukaisyuu.html) — 徳川慶喜から勝海舟への事後処理委任、3月9日の山岡鉄舟・西郷隆盛会談、13・14日の勝・西郷会談、総攻撃中止、4月11日の江戸城引き渡し。
+   - 該当箇所: 「解説パネルから」内「江戸無血開城」の段落
+   - 内容確認日: 2026-07-31
 
 15. [千代田区「江戸から東京へ・江戸城無血開城から東京の新たな幕開け」](https://www.city.chiyoda.lg.jp/koho/kuse/koho/pressrelease/h30/h3009/h300905-2.html) — 江戸総攻撃を前に、天璋院が薩摩藩へ、皇女和宮が天皇家へ幕府・徳川家に関する嘆願を行った経緯。
 
@@ -52,10 +54,14 @@
 23. [文化遺産オンライン「文久三年八月十九日未明七卿妙法院宸殿ヲ出テ将サニ長州ニ奔ラントスル図」](https://online.bunka.go.jp/db/heritages/detail/141077) — 八月十八日の政変、七卿落ち、薩摩・会津と孝明天皇の関与。
 
 24. [山口県立山口図書館「禁門の変、勃発」](https://library.pref.yamaguchi.lg.jp/meijiishin/201407/) — 八月十八日の政変後の長州藩、池田屋事件、禁門の変の経緯。
+   - 該当箇所: 「禁門の変、勃発」冒頭3段落
+   - 内容確認日: 2026-07-31
 
 25. [京都市上京区「幕末動乱と禁門の変」](https://www.city.kyoto.lg.jp/kamigyo/page/0000012502.html) — 池田屋事件から禁門の変に至る経緯と京都での戦闘。
 
 26. [山口県立山口図書館「四境戦争～時代の流れを変えた戦い～」](https://library.pref.yamaguchi.lg.jp/meijiishin/201607/) — 長州藩内戦後の武備恭順への転換、西洋軍制導入と軍事組織整備。
+   - 該当箇所: 本文冒頭（元治の内訌から四境戦争まで）の3段落
+   - 内容確認日: 2026-07-31
 
 27. [山口県文書館「大田・絵堂の戦い」](https://archives.pref.yamaguchi.lg.jp/events/exhibition/h30/) — 1865年の萩藩政府軍と高杉晋作ら諸隊による藩内戦と諸隊側の勝利。
 
@@ -64,6 +70,8 @@
 29. [国立国会図書館「坂本龍馬の政体構想」](https://www.ndl.go.jp/modern/cha1/description02.html) — 1867年6月の後藤象二郎による山内容堂への大政奉還進言、坂本龍馬が後藤と相談して作成した政体案、10月の土佐藩による幕府への建白と11月の新政府綱領八策。
 
 30. [国立公文書館「鳥羽・伏見の戦い」](https://www.archives.go.jp/ayumi/kobetsu/m01_1868_01.html) — 新政府軍と幕府軍の衝突、新政府軍の勝利、戊辰戦争の範囲。
+   - 該当箇所: 「解説」の段落
+   - 内容確認日: 2026-07-31
 
 31. [太政類典「徳川慶喜征討大号令」](https://www.jacar.archives.go.jp/das/meta/A15071486300) — 慶応4年1月9日、鳥羽・伏見で兵端を開いたとして朝廷が徳川慶喜の追討を命じた大号令。
 
@@ -74,8 +82,12 @@
 34. [国立公文書館「戊辰戦争」](https://www.archives.go.jp/exhibition/digital/modean_state/contents/boshin-war/index.html) — 錦旗を掲げた新政府軍の鳥羽・伏見での勝利と東征、奥羽越列藩同盟の抵抗、会津降伏、箱館五稜郭陥落までの戊辰戦争。
 
 35. [秋田県公文書館「奥羽列藩同盟約書写」](https://www.pref.akita.lg.jp/pages/archive/67634) — 仙台・米沢両藩の呼びかけと会津・庄内両藩への寛典要求。
+   - 該当箇所: 資料名「奥羽列藩同盟約書写」直下の解説
+   - 内容確認日: 2026-07-31
 
 36. [函館市「五稜郭の歴史（箱館戦争から現在）」](https://www.city.hakodate.hokkaido.jp/docs/2014011700789/) — 榎本武揚率いる旧幕府脱走艦隊の1868年10月20日の蝦夷地到着、五稜郭占拠、榎本を総裁とする蝦夷地仮政権、土方歳三の1869年5月11日の戦死、5月18日の榎本らの降伏。
+   - 該当箇所: 「箱館戦争」の節
+   - 内容確認日: 2026-07-31
 
 37. [国土地理院「地理院地図・標高・住所の確認」](https://maps.gsi.go.jp/help/intro/kinolist/2-jusho.html) — 日本国内地点の表示用概略座標を世界測地系の緯度・経度で確認。
 
@@ -90,6 +102,8 @@
 42. [福井市立郷土歴史博物館「橋本左内と安政の大獄」](https://history-museum.city.fukui.lg.jp/tenji/tenran/taigoku.html) — 福井藩主松平春嶽と橋本左内による将軍継嗣問題への関与。
 
 43. [高知市「大政奉還150年」](https://www.city.kochi.kochi.jp/akarui/naiwa/nw1703.htm) — 1867年6月の坂本龍馬・後藤象二郎らによる大政奉還協議、7月8日の後藤から山内容堂への建白、10月3日の土佐藩による幕府への建白書提出。
+   - 該当箇所: 「大政奉還150年」本文の慶応3年6月9日から10月15日までの段落
+   - 内容確認日: 2026-07-31
 
 44. [長崎市「亀山社中」](https://www.city.nagasaki.lg.jp/site/kodomo/61102.html) — 坂本龍馬らが長崎で結成した亀山社中と、1866年の長州向け鉄砲・汽船購入および輸送。
 
@@ -116,12 +130,16 @@
 55. [国立国会図書館「近代日本人の肖像・徳川慶喜」](https://www.ndl.go.jp/portrait/datas/147/index.html) — 一橋慶喜の将軍継嗣擁立、井伊直弼との対立、安政の大獄での処分、1862年の将軍後見職、1866年の第15代将軍就任。
 
 56. [鹿児島県「寺田屋事件」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/teradaya.html) — 島津久光の雄藩連合・公武合体構想と寺田屋に集結した薩摩藩急進派の鎮撫。
+   - 該当箇所: 「寺田屋事件」本文の全4段落
+   - 内容確認日: 2026-07-31
 
 57. [国立国会図書館「近代日本人の肖像・大原重徳」](https://www.ndl.go.jp/portrait/datas/6167/) — 1862年の幕政改革勅使として島津久光と江戸へ赴いた経歴。
 
 58. [高知県立坂本龍馬記念館「企画展・半平太と京都」](https://www.pref.kochi.lg.jp/press1/2025072200026/) — 尊王攘夷を掲げた土佐勤王党党首武市半平太の文久2～3年の京都での政治活動。
 
 59. [鹿児島県「薩英戦争」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/satuei.html) — 生麦事件後の英国要求、鹿児島来攻、薩英戦争、薩摩藩論の開国への転換。
+   - 該当箇所: 「薩英戦争」本文の段落
+   - 内容確認日: 2026-07-31
 
 60. [京都市歴史資料館・歴史講座「浪士組から新選組」](https://www.city.kyoto.lg.jp/bunshi/cmsfiles/contents/0000233/233972/2kimura.pdf) — 会津藩預かりの壬生浪士組、八月十八日の政変への出動、新選組命名。
 
@@ -136,6 +154,8 @@
 65. [国立国会図書館サーチ「薩長同盟の展開―六ヶ条盟約の成立」](https://ndlsearch.ndl.go.jp/books/R000000004-I7488694) — 慶応元年9月の長州再征勅許と薩長提携の展開を扱う査読論文の書誌・要約。
 
 66. [国立国会図書館「勝海舟・慶応2年9月2日の日記」](https://www.ndl.go.jp/nikki/citeid/katsu_18660902/) — 将軍家茂死去後の第二次長州征討停止と勝海舟による休戦交渉。
+   - 該当箇所: 「長州征伐の停戦交渉」の本文・解説
+   - 内容確認日: 2026-07-31
 
 67. [国立国会図書館典拠データ「孝明天皇」](https://id.ndl.go.jp/auth/ndlna/00291353) — 孝明天皇の生没年と慶応2年12月25日の崩御。
 
@@ -170,8 +190,12 @@
 82. [国立国会図書館「開国―近代の幕開け」](https://www.ndl.go.jp/modern/cha1/description01.html) — 1853年のペリー艦隊来航と国書授受要求、1854年の再来航と幕府代表との交渉。
 
 83. [横須賀市「ペリーの黒船」](https://www.city.yokosuka.kanagawa.jp/2752/uraga_walk/kurohune.html) — 東インド艦隊司令長官ペリーの浦賀来航、米国大統領国書、艦隊による示威。
+   - 該当箇所: 「ペリーの黒船」の嘉永6年（1853）の項
+   - 内容確認日: 2026-07-31
 
 84. [外務省「日米和親条約（複製）」](https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/04.html) — 1854年のペリー再来航、幕府代表との調印、日米和親条約の主要条項。
+   - 該当箇所: 「4．日米和親条約（複製）」本文第1段落
+   - 内容確認日: 2026-07-31
 
 85. [広島県教育委員会「阿部正弘」](https://www.pref.hiroshima.lg.jp/uploaded/attachment/92154.pdf) — 老中首座阿部正弘による黒船対応、諸大名・幕臣への諮問、日米和親条約締結。
 
@@ -188,6 +212,8 @@
 91. [外務省「ハリス信任状」](https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/10.html) — ハリスの総領事兼条約改定全権委員就任、将軍謁見と日米修好通商条約締結に向けた外交。
 
 92. [外務省「日米修好通商条約」](https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/09.html) — ハリスと幕府全権の交渉、井伊直弼による無勅許調印、条約の主要条項。
+   - 該当箇所: 「9．日米修好通商条約（重要文化財）」本文の段落
+   - 内容確認日: 2026-07-31
 
 93. [福井市立郷土歴史博物館「幕末かけあし年表」](https://history-museum.city.fukui.lg.jp/gakko/for_students/bakumatsu/bakumatsu_chronicle.html) — 徳川慶福の将軍継嗣決定、松平慶永の一橋慶喜擁立運動と1858年の隠居・謹慎。
 
@@ -242,6 +268,8 @@
 116. [鹿児島県「郷土の偉人・天璋院篤姫」](https://www.pref.kagoshima.jp/kids/rekishi/bakumatsu.html) — 家定死後の天璋院への改名、生涯にわたる徳川家の立場と徳川家達の養育。
 
 117. [茨城県立歴史館「桜田門外の変」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/sakuradamonngainohen.htm) — 1860年3月3日、水戸浪士17名と薩摩藩士有村次左衛門が江戸城桜田門外で井伊直弼を襲撃した経緯。
+   - 該当箇所: 「桜田門外の変」本文第1・2段落
+   - 内容確認日: 2026-07-31
 
 118. [茨城県立歴史館「斉昭薨去」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/nariakikoukyo.htm) — 徳川斉昭の万延元年（1860）8月15日の死去と、死後に水戸藩内の対立各派が斉昭の遺志を掲げた状況。
 
