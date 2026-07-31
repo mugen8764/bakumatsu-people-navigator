@@ -35,8 +35,23 @@
       return data.people.filter(person => statusAt(person, sceneIndex));
     }
 
+    function personFactionNames(sceneIndex) {
+      const activeNames = new Set(activePeople(sceneIndex).map(person => factionAt(person, sceneIndex)));
+      return Object.keys(data.factions).filter(name => activeNames.has(name));
+    }
+
     function activeFactionNames(sceneIndex) {
       return Object.keys(data.factionStates[data.scenes[sceneIndex].id] || {});
+    }
+
+    function laterNameAt(person, sceneIndex) {
+      const current = statusAt(person, sceneIndex);
+      if (!current || current.display === person.name) return null;
+      const canonicalNameAppearsLater = Object.entries(person.statuses).some(([sceneId, status]) => {
+        const futureScene = sceneById.get(sceneId);
+        return futureScene && futureScene.index > sceneIndex && status.display === person.name;
+      });
+      return canonicalNameAppearsLater ? person.name : null;
     }
 
     function activeRelations(sceneIndex, relationType = 'all') {
@@ -94,8 +109,10 @@
       eventScene,
       factionAt,
       getPerson,
+      laterNameAt,
       nearestSceneForFaction,
       nearestSceneForPerson,
+      personFactionNames,
       relationsFor,
       sceneById,
       statusAt,

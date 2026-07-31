@@ -72,6 +72,31 @@ test('alias search and timeline changes preserve the selected person', async ({ 
   await expect(page.locator('#sceneSelect')).toHaveValue('11');
 });
 
+test('person filters follow displayed affiliations and later-name labels follow chronology', async ({ page }) => {
+  await page.goto('/#scene=1853-blackships&view=people&person=perry&faction=幕府');
+
+  const perryCard = page.locator('[data-person-card="perry"]');
+  await expect(perryCard.locator('.name')).toHaveText('ペリー');
+  await expect(perryCard.locator('.later-name')).toHaveCount(0);
+  await expect(page.locator('#personDetail')).not.toContainText('後の名前：マシュー・ペリー');
+
+  await page.locator('#sceneSelect').selectOption('2');
+  await expect(page.locator('[data-person-filter="土佐藩"]')).toBeVisible();
+
+  const displayedFactions = await page.locator('#personCards .card-foot span:first-child').allTextContents();
+  const filterNames = await page.locator('#personFilters [data-person-filter]').allTextContents();
+  for (const faction of new Set(displayedFactions)) expect(filterNames).toContain(faction);
+
+  await page.locator('[data-person-filter="土佐藩"]').click();
+  const yodoCard = page.locator('[data-person-card="yodo"]');
+  await expect(yodoCard.locator('.name')).toHaveText('山内豊信');
+  await expect(yodoCard.locator('.later-name')).toHaveText('後の名：山内容堂');
+
+  await yodoCard.click();
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('山内豊信');
+  await expect(page.locator('#personDetail .aliases').first()).toHaveText('後の名前：山内容堂');
+});
+
 test('person, relation, map, and event views remain coordinated', async ({ page }) => {
   await page.goto('/#scene=1866-satcho&view=people&person=kido&faction=長州藩');
   await expect(page.locator('#personDetail .detail-title')).toHaveText('木戸準一郎');

@@ -100,16 +100,15 @@ function validatePersonStatusCoverage(documents, sceneOrder) {
   }
 }
 
-function baseDisplayName(displayName) {
-  return displayName.replace(/（[^）]*）/g, '').trim();
-}
-
 function validatePersonStatusNames(documents) {
   const personById = new Map(documents.people.people.map(person => [person.id, person]));
   for (const status of documents.personStatuses.statuses) {
     const person = personById.get(status.personId);
     const knownNames = new Set([person.name, ...person.aliases]);
-    const displayName = baseDisplayName(status.displayName);
+    const displayName = status.displayName;
+    if (/[（）]/.test(displayName)) {
+      throw new Error(`${status.id}.displayName must not contain parenthetical annotations`);
+    }
     if (!knownNames.has(displayName)) {
       throw new Error(`${status.id}.displayName is not registered for ${person.id}: ${displayName}`);
     }

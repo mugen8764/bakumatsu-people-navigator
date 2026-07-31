@@ -86,6 +86,10 @@ test('scene-ID ranges cannot run backwards or overlap', () => {
 });
 
 test('display names stay registered and relations stay inside valid chronology', () => {
+  const annotatedName = projectLegacyData(data);
+  annotatedName.personStatuses.statuses[0].displayName = 'ペリー（提督）';
+  assert.throws(() => validateV2Documents(annotatedName), /displayName must not contain parenthetical annotations/);
+
   const unknownName = projectLegacyData(data);
   const perry = unknownName.people.people.find(person => person.id === 'perry');
   perry.aliases = perry.aliases.filter(alias => alias !== 'ペリー');

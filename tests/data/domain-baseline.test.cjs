@@ -58,3 +58,21 @@ test('event peers exclude the selected person and direct relations', () => {
   );
   assert.deepEqual(domain.eventPeersFor('takasugi', 9), []);
 });
+
+test('person filters include every faction represented by an active person', () => {
+  for (let sceneIndex = 0; sceneIndex < data.scenes.length; sceneIndex += 1) {
+    const represented = [...new Set(
+      domain.activePeople(sceneIndex).map(person => domain.factionAt(person, sceneIndex))
+    )].sort();
+    assert.deepEqual([...domain.personFactionNames(sceneIndex)].sort(), represented);
+  }
+  assert.ok(domain.personFactionNames(2).includes('土佐藩'));
+});
+
+test('later names only appear when the canonical name occurs in a future status', () => {
+  assert.equal(domain.laterNameAt(domain.getPerson('perry'), 0), null);
+  assert.equal(domain.laterNameAt(domain.getPerson('harris'), 2), null);
+  assert.equal(domain.laterNameAt(domain.getPerson('shungaku'), 2), null);
+  assert.equal(domain.laterNameAt(domain.getPerson('iemochi'), 2), '徳川家茂');
+  assert.equal(domain.laterNameAt(domain.getPerson('yodo'), 2), '山内容堂');
+});
