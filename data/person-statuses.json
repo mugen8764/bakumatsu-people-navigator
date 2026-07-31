@@ -4701,19 +4701,54 @@
       "id": "person-status-goto-1868-toba",
       "personId": "goto",
       "startSceneId": "1868-toba",
-      "endSceneId": "1868-tohoku",
+      "endSceneId": "1868-toba",
       "displayName": "後藤象二郎",
       "role": "新政府参与",
       "factionId": "new-government",
-      "stance": "新政府へ参加し、土佐藩の立場を代表する。",
-      "importance": "平和移行論者も戊辰戦争後の政府に入った。",
+      "stance": "前年、薩土盟約・大政奉還・王政復古に関わり、新政府の参与となる。",
+      "importance": "1868年には外国事務掛などの役職を務めた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_goto_detail"
+        ],
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1867年の薩土盟約・大政奉還・王政復古への関与と参与就任、1868年の外国事務掛等を確認。土佐藩を代表したという抽象的評価や「戊辰戦争後」という時点ずれを削除。"
+      }
+    },
+    {
+      "id": "person-status-goto-1868-edo",
+      "personId": "goto",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "後藤象二郎",
+      "role": "外国事務掛・徴士参与・外国事務局判事（1868年）",
+      "factionId": "new-government",
+      "stance": "1868年、新政府で外国事務掛、徴士参与、外国事務局判事などを務める。",
+      "importance": "各役職の任命月は、現在の項目別出典では確認できていない。",
+      "evidence": {
+        "sourceIds": [
+          "jacar_goto_detail"
         ],
         "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "note": "アジア歴史資料センターで1868年中の職歴は確認できるが、3月〜5月場面のどの時点で各職へ移ったかを示す辞令史料が未確認。場面別の順序を推測しない。"
+      }
+    },
+    {
+      "id": "person-status-goto-1868-tohoku",
+      "personId": "goto",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "後藤象二郎",
+      "role": "新政府参与・大坂府知事（1868年）",
+      "factionId": "new-government",
+      "stance": "1868年、参与を務め、大坂府知事も兼ねる。",
+      "importance": "就任月と奥羽戦線への具体的関与は、現在の項目別出典では確認できていない。",
+      "evidence": {
+        "sourceIds": [
+          "jacar_goto_detail"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "アジア歴史資料センターで1868年の参与・大坂府知事を確認。5月〜11月場面における就任時期と具体的な軍事関与は確認できないため、校正待ちを維持。"
       }
     },
     {
@@ -4887,18 +4922,18 @@
       "personId": "itakagi",
       "startSceneId": "1868-toba",
       "endSceneId": "1868-toba",
-      "displayName": "板垣退助",
-      "role": "新政府軍東山道先鋒総督府参謀",
-      "factionId": "new-government",
-      "stance": "土佐藩兵を率いて関東へ進軍する。",
-      "importance": "土佐藩が新政府軍の主要戦力となる。",
+      "displayName": "乾退助",
+      "role": "土佐藩兵制改革担当",
+      "factionId": "tosa",
+      "stance": "前年に土佐藩の兵制改革を手がけ、戊辰戦争への出兵前にあたる。",
+      "importance": "東山道征討軍参謀として甲府へ進むのは同年3月である。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "kochi_itagaki_book",
+          "kochi_itagaki_1868_name"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "高知市立自由民権記念館で1867年の兵制改革、高知市で1868年3月の東山道征討軍参謀・甲府進軍・板垣への改姓を確認。3月の役職と新姓を1月場面へ先取りせず、所属も土佐藩へ訂正。"
       }
     },
     {
@@ -4907,17 +4942,17 @@
       "startSceneId": "1868-edo",
       "endSceneId": "1868-edo",
       "displayName": "板垣退助",
-      "role": "新政府軍参謀",
+      "role": "東山道先鋒総督府参謀",
       "factionId": "new-government",
-      "stance": "江戸周辺の旧幕府勢力への対応に関わる。",
-      "importance": "江戸開城後も軍事作戦は継続した。",
+      "stance": "3月、土佐藩兵を率いて諏訪・甲府方面へ進軍する。",
+      "importance": "甲府占領時に板垣氏との系譜を名乗り、乾から板垣へ改姓した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "jacar_itagaki_march_1868",
+          "kochi_itagaki_1868_name"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "軍務官文書で1868年3月の土佐軍を含む東山道軍の諏訪・甲府方面進軍、高知市で東山道征討軍参謀としての甲府占領と改姓を確認。「新政府軍参謀」という曖昧な役職を具体化。"
       }
     },
     {

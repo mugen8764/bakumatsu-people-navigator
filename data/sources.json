@@ -440,6 +440,18 @@
       "note": "板垣退助が土佐藩兵を率いて戊辰戦争に参加した経歴。"
     },
     {
+      "id": "jacar_itagaki_march_1868",
+      "title": "アジア歴史資料センター「3月 乾退助（1日より18日迄書類）」",
+      "url": "https://www.jacar.archives.go.jp/das/meta/C09080031100",
+      "note": "1868年3月、乾退助が率いる土佐軍を含む東山道軍の諏訪・甲府方面への進軍を記録した軍務官文書。"
+    },
+    {
+      "id": "kochi_itagaki_1868_name",
+      "title": "高知市「高知市歴史散歩・武田信玄と板垣退助（一）」",
+      "url": "https://www.city.kochi.kochi.jp/akarui/rekishi/re0612.htm",
+      "note": "1868年3月、東山道征討軍参謀の乾退助が甲府占領時に板垣氏との系譜を名乗り、乾から板垣へ改姓した経緯。"
+    },
+    {
       "id": "yamaguchi_boshin_choshu",
       "title": "山口県「維新文化財探訪・田中義一誕生地」",
       "url": "https://bunkazai.pref.yamaguchi.lg.jp/sp/support/theme/isinn/inaka.html",
@@ -978,6 +990,12 @@
       "title": "高知県立高知城歴史博物館「土佐史の人々・幕末維新期」",
       "url": "https://www.kochi-johaku.jp/column/4520/",
       "note": "後藤象二郎が海防・軍事関係の役職を経て重職へ進み、1866年に開成館の責任者となった経歴。"
+    },
+    {
+      "id": "jacar_goto_detail",
+      "title": "アジア歴史資料センター「後藤象二郎」",
+      "url": "https://www.jacar.archives.go.jp/das/term/00000383",
+      "note": "後藤象二郎の1867年の薩土盟約・大政奉還・王政復古への関与と参与就任、1868年の外国事務掛・徴士参与・外国事務局判事・大坂府知事などの職歴。"
     },
     {
       "id": "kochi_itagaki_book",
