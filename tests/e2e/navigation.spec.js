@@ -17,7 +17,7 @@ test('all six primary views render without a page error', async ({ page }) => {
     await expect(page.locator(`#view-${view}`)).toBeVisible();
   }
 
-  await expect(page.locator('#sourceCatalog .source')).toHaveCount(207);
+  await expect(page.locator('#sourceCatalog .source')).toHaveCount(208);
   await expect(page.locator('#view-sources')).toContainText('再利用と公開情報');
   await expect(page.locator('#view-sources')).toContainText('CC BY 4.0');
   expect(pageErrors).toEqual([]);
@@ -191,6 +191,19 @@ test('404 page recovers the correct site root from a nested path', async ({ page
 });
 
 test('review status follows item-level calibration', async ({ page }) => {
+  await page.route('**/data.js', async route => {
+    const response = await route.fetch();
+    const script = await response.text();
+    const data = JSON.parse(script.replace(/^window\.BM_DATA=/, '').replace(/;\s*$/, ''));
+    const relation = data.relations.find(item => item.a === 'kido' && item.b === 'takasugi');
+    relation.evidence.reviewStatus = 'needs_review';
+    await route.fulfill({
+      response,
+      contentType: 'application/javascript',
+      body: `window.BM_DATA=${JSON.stringify(data)};`
+    });
+  });
+
   await page.goto('/#scene=1866-satcho&view=people&person=kido&faction=長州藩');
   await expect(page.locator('#sceneCounts .review-status')).toHaveCount(0);
   await expect(page.locator('#personDetail .snapshot .review-status')).toHaveCount(0);

@@ -1232,16 +1232,22 @@
       "note": "大久保利通が岩倉具視らとともに1867年12月の王政復古の政変を実行したこと。"
     },
     {
-      "id": "shugiin_ito_kido",
-      "title": "衆議院憲政記念館「憲政だより 時計塔 No.003・伊藤博文」",
-      "url": "https://dl.ndl.go.jp/view/prepareDownload?contentNo=1&itemId=info%3Andljp%2Fpid%2F11040581",
-      "note": "伊藤博文が木戸孝允の知遇を得て、尊王攘夷運動と武力倒幕運動に参加したこと。"
-    },
-    {
       "id": "reimeikan_tenshoin_saigo_petition",
       "title": "鹿児島県歴史資料センター黎明館「黎明館だより・天璋院篤姫講座」",
       "url": "https://dl.ndl.go.jp/view/prepareDownload?contentNo=1&itemId=info%3Andljp%2Fpid%2F10963596",
       "note": "江戸総攻撃を前に天璋院が官軍隊長宛てに徳川家存続を願う書状を送り、西郷吉之助が受け取ったこと。"
+    },
+    {
+      "id": "ndl_kido_iwakura_proposal_1869",
+      "title": "国立国会図書館デジタルコレクション『木戸孝允遺文集』「岩倉具視への建言」",
+      "url": "https://lab.ndl.go.jp/dl-text/book?page=96&pid=1038118",
+      "note": "『木戸孝允遺文集』に明治2年4月15日付「岩倉具視への建言」が収録され、建言の宛先と日付を確認できること。"
+    },
+    {
+      "id": "jacar_iwakura_yoshinobu_disposition_1867",
+      "title": "太政類典「岩倉具視松平慶永等ニ慶喜処分ノ朝旨ヲ示シ其奏状ノ擬按ヲ内付ス」",
+      "url": "https://www.jacar.archives.go.jp/das/meta/A15071465300",
+      "note": "慶応3年12月16日・18日、岩倉具視が松平慶永らへ徳川慶喜の処分方針と奏状案を示し、慶喜に実行させるため協議したこと。"
     }
   ]
 }

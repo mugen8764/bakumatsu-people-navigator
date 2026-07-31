@@ -91,24 +91,6 @@
       }
     },
     {
-      "id": "person-relation-nariakira-katsu-1853-blackships-political-cooperation",
-      "aPersonId": "nariakira",
-      "bPersonId": "katsu",
-      "startSceneId": "1853-blackships",
-      "endSceneId": "1854-treaty",
-      "typeId": "political-cooperation",
-      "label": "海軍構想への関心",
-      "text": "斉彬は洋式造船を進め、勝は海防意見書で西洋式海軍の必要を説いたが、両者の直接の協力は確認中。",
-      "evidence": {
-        "sourceIds": [
-          "kagoshima_nariakira",
-          "archives_katsu_kaibo"
-        ],
-        "reviewStatus": "needs_review",
-        "note": "鹿児島県で斉彬の洋式造船、国立公文書館で勝の海防意見書は確認できるが、両者の直接の交流・協力を示す公的な公開資料は未確認。類似した構想だけで人物関係を verified にしない。"
-      }
-    },
-    {
       "id": "person-relation-nariakira-yoshinobu-1858-ansei-political-cooperation",
       "aPersonId": "nariakira",
       "bPersonId": "yoshinobu",
@@ -430,24 +412,6 @@
       }
     },
     {
-      "id": "person-relation-tenshoin-kazunomiya-1860-sakurada-organization",
-      "aPersonId": "tenshoin",
-      "bPersonId": "kazunomiya",
-      "startSceneId": "1860-sakurada",
-      "endSceneId": "1868-edo",
-      "typeId": "organization",
-      "label": "大奥の年長者と御台所",
-      "text": "大奥の慣習や徳川家存続をめぐり協力と緊張を含む関係を持った。",
-      "evidence": {
-        "sourceIds": [
-          "kagoshima_tenshoin",
-          "ndl_portrait_kazunomiya_detail"
-        ],
-        "reviewStatus": "needs_review",
-        "note": "鹿児島県で天璋院の徳川家維持、国立国会図書館で静寛院宮の徳川家存続への尽力は確認できるが、両者間の協力と緊張を項目単位で直接示す公開出典は未確認。"
-      }
-    },
-    {
       "id": "person-relation-tenshoin-nariakira-1854-treaty-kinship",
       "aPersonId": "tenshoin",
       "bPersonId": "nariakira",
@@ -554,22 +518,20 @@
       }
     },
     {
-      "id": "person-relation-saigo-komatsu-1864-kinmon-political-cooperation",
+      "id": "person-relation-saigo-komatsu-1866-satcho-political-cooperation",
       "aPersonId": "saigo",
       "bPersonId": "komatsu",
-      "startSceneId": "1864-kinmon",
-      "endSceneId": "1868-toba",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
       "typeId": "political-cooperation",
-      "label": "軍事と藩代表",
-      "text": "小松は西郷と連携したが、1864年からの直接の役割分担は公開出典で確認中。",
+      "label": "薩長同盟で協力",
+      "text": "1866年、小松と西郷は京都の小松邸で木戸孝允と会し、薩長同盟の成立に関わった。",
       "evidence": {
         "sourceIds": [
-          "kagoshima_okubo_people",
-          "kagoshima_library_hisamitsu_saigo",
           "kagoshima_satcho_alliance"
         ],
-        "reviewStatus": "needs_review",
-        "note": "鹿児島県観光連盟で小松が西郷・大久保と連携したこと、鹿児島県立図書館で1864年の西郷召還と活動、鹿児島県で1866年の小松・西郷の直接協力は確認できるが、1864年からの両者の役割分担を項目単位で直接示す公開出典は未確認。"
+        "reviewStatus": "verified",
+        "note": "鹿児島県歴史・美術センター黎明館の解説で、1866年に京都の小松帯刀宅で木戸孝允と薩摩藩の小松・西郷の間に薩長同盟が成立したことを確認。確認できる直接協力の場面に期間を限定した。"
       }
     },
     {
@@ -662,61 +624,6 @@
       }
     },
     {
-      "id": "person-relation-katamori-hisamitsu-1863-aug18-political-cooperation",
-      "aPersonId": "katamori",
-      "bPersonId": "hisamitsu",
-      "startSceneId": "1863-aug18",
-      "endSceneId": "1864-kinmon",
-      "typeId": "political-cooperation",
-      "label": "会津・薩摩の連携",
-      "text": "八月十八日の政変では会津・薩摩が連携したが、容保と久光の直接協議は確認中。",
-      "evidence": {
-        "sourceIds": [
-          "cultural_heritage_aug18",
-          "ndl_portrait_katamori_detail"
-        ],
-        "reviewStatus": "needs_review",
-        "note": "文化遺産オンラインと国立国会図書館で八月十八日の政変における会津・薩摩の連携と容保の関与は確認できるが、容保と久光個人の直接協議を示す公開出典は未確認。"
-      }
-    },
-    {
-      "id": "person-relation-katamori-kido-1863-aug18-conflict",
-      "aPersonId": "katamori",
-      "bPersonId": "kido",
-      "startSceneId": "1863-aug18",
-      "endSceneId": "1868-tohoku",
-      "typeId": "conflict",
-      "label": "京都政局で対立",
-      "text": "容保は八月十八日の政変で長州勢力を京都から排除したが、木戸との直接対立は確認中。",
-      "evidence": {
-        "sourceIds": [
-          "ndl_portrait_katamori_detail",
-          "kyoto_kido_1862",
-          "cultural_heritage_aug18"
-        ],
-        "reviewStatus": "needs_review",
-        "note": "国立国会図書館と文化遺産オンラインで容保による長州勢力排除、京都市で木戸の朝廷周旋と禁門の変後の逃走は確認できるが、両者個人の直接対立を項目単位で示す公開出典は未確認。"
-      }
-    },
-    {
-      "id": "person-relation-hisamitsu-kido-1863-aug18-conflict",
-      "aPersonId": "hisamitsu",
-      "bPersonId": "kido",
-      "startSceneId": "1863-aug18",
-      "endSceneId": "1864-kinmon",
-      "typeId": "conflict",
-      "label": "八月十八日の政変",
-      "text": "薩摩は会津とともに長州勢力を京都から排除したが、久光と木戸の直接対立は確認中。",
-      "evidence": {
-        "sourceIds": [
-          "cultural_heritage_aug18",
-          "kyoto_kido_1862"
-        ],
-        "reviewStatus": "needs_review",
-        "note": "文化遺産オンラインで薩摩・会津による長州系尊攘派排除、京都市で木戸の朝廷周旋は確認できるが、久光と木戸個人の直接対立を示す公開出典は未確認。"
-      }
-    },
-    {
       "id": "person-relation-kido-kusaka-1862-bunkyu-mentorship-or-comradeship",
       "aPersonId": "kido",
       "bPersonId": "kusaka",
@@ -771,25 +678,6 @@
       }
     },
     {
-      "id": "person-relation-takasugi-omura-1864-kinmon-political-cooperation",
-      "aPersonId": "takasugi",
-      "bPersonId": "omura",
-      "startSceneId": "1864-kinmon",
-      "endSceneId": "1866-expedition",
-      "typeId": "political-cooperation",
-      "label": "藩政・軍制改革",
-      "text": "高杉らの挙兵後に藩論が転換し、大村が軍制改革を担った。両者の直接協力は確認中。",
-      "evidence": {
-        "sourceIds": [
-          "yamaguchi_takasugi_guide",
-          "yamaguchi_choshu_reform",
-          "yamaguchi_omura_guide"
-        ],
-        "reviewStatus": "needs_review",
-        "note": "山口県立山口図書館で高杉の挙兵後の藩論転換と大村による軍制改革は確認できるが、高杉と大村の直接協力を示す公開出典は未確認。"
-      }
-    },
-    {
       "id": "person-relation-takasugi-yamagata-1863-joi-organization",
       "aPersonId": "takasugi",
       "bPersonId": "yamagata",
@@ -806,43 +694,6 @@
         ],
         "reviewStatus": "verified",
         "note": "山口県立山口図書館で高杉による1863年の奇兵隊創設と山県の奇兵隊軍監就任、アジア歴史資料センターで山県の職歴を確認。開始時点を1863年に修正。"
-      }
-    },
-    {
-      "id": "person-relation-kido-ito-1865-choshu-mentorship-or-comradeship",
-      "aPersonId": "kido",
-      "bPersonId": "ito",
-      "startSceneId": "1865-choshu",
-      "endSceneId": "1867-taisei",
-      "typeId": "mentorship-or-comradeship",
-      "label": "木戸の知遇",
-      "text": "伊藤は木戸の知遇を得て、尊王攘夷運動と武力倒幕運動に加わった。",
-      "evidence": {
-        "sourceIds": [
-          "shugiin_ito_kido",
-          "archives_ito"
-        ],
-        "reviewStatus": "needs_review",
-        "note": "衆議院憲政記念館で木戸と伊藤の直接関係は確認できるが、知遇を得た時期を1865年の場面に特定できる公開出典は未確認。木戸による具体的な官職への登用とは断定しない。"
-      }
-    },
-    {
-      "id": "person-relation-kido-inoue-1865-choshu-political-cooperation",
-      "aPersonId": "kido",
-      "bPersonId": "inoue",
-      "startSceneId": "1865-choshu",
-      "endSceneId": "1869-hakodate",
-      "typeId": "political-cooperation",
-      "label": "長州の外交・財政実務",
-      "text": "木戸と井上は長州藩から新政府へ移ったが、1865～69年の直接の役割分担は確認中。",
-      "evidence": {
-        "sourceIds": [
-          "jacar_kido_detail",
-          "jacar_inoue_detail",
-          "yamaguchi_inoue_1865"
-        ],
-        "reviewStatus": "needs_review",
-        "note": "両者それぞれの長州藩・新政府での経歴は確認できるが、この期間に井上が木戸を財政・外交面で支えたとする直接の公開出典は未確認。"
       }
     },
     {
@@ -1073,39 +924,20 @@
       }
     },
     {
-      "id": "person-relation-iwakura-kido-1868-toba-political-cooperation",
+      "id": "person-relation-iwakura-kido-1869-hakodate-political-cooperation",
       "aPersonId": "iwakura",
       "bPersonId": "kido",
-      "startSceneId": "1868-toba",
+      "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "typeId": "political-cooperation",
-      "label": "新政府形成",
-      "text": "岩倉と木戸は新政府の要職に就いたが、1868～69年の直接の役割分担は確認中。",
+      "label": "岩倉への建言",
+      "text": "1869年4月15日付で、木戸は岩倉具視宛ての建言を残した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait_iwakura_detail",
-          "ndl_portrait_kido_detail",
-          "ndl_iwakura_diary"
+          "ndl_kido_iwakura_proposal_1869"
         ],
-        "reviewStatus": "needs_review",
-        "note": "両者の新政府での経歴は確認できるが、長州の政治力と朝廷内勢力を両者が直接結びつけたとする項目単位の公開出典は未確認。"
-      }
-    },
-    {
-      "id": "person-relation-komei-iwakura-1858-ansei-conflict",
-      "aPersonId": "komei",
-      "bPersonId": "iwakura",
-      "startSceneId": "1858-ansei",
-      "endSceneId": "1862-bunkyu",
-      "typeId": "conflict",
-      "label": "和宮降嫁後の失脚",
-      "text": "岩倉は和宮降嫁を進めた後、幕府との内通を疑われて洛中追放・蟄居となったが、孝明天皇との直接的な対立の範囲は確認中。",
-      "evidence": {
-        "sourceIds": [
-          "ndl_iwakura_exile"
-        ],
-        "reviewStatus": "needs_review",
-        "note": "国立国会図書館で岩倉の和宮降嫁推進と、尊攘派から幕府内通を疑われた失脚・蟄居は確認できるが、孝明天皇との直接的な対立関係を示す項目単位の公開出典は未確認。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館デジタル資料『木戸孝允遺文集』所収「岩倉具視への建言（明治二年四月十五日）」で、木戸から岩倉への直接の建言を確認。本文内容を推測せず、資料名から確認できる宛先と日付に説明を限定した。"
       }
     },
     {
@@ -1127,42 +959,20 @@
       }
     },
     {
-      "id": "person-relation-sanjo-kido-1863-joi-political-cooperation",
-      "aPersonId": "sanjo",
-      "bPersonId": "kido",
-      "startSceneId": "1863-joi",
-      "endSceneId": "1869-hakodate",
-      "typeId": "political-cooperation",
-      "label": "朝廷尊攘派と長州",
-      "text": "三条は長州へ下り、木戸は長州藩で活動したが、両者の継続的な直接協力は確認中。",
-      "evidence": {
-        "sourceIds": [
-          "jacar_sanjo_detail",
-          "jacar_kido_detail",
-          "cultural_heritage_aug18"
-        ],
-        "reviewStatus": "needs_review",
-        "note": "アジア歴史資料センターと文化遺産オンラインで三条の長州下向、アジア歴史資料センターで木戸の長州藩での活動と両者の新政府入りは確認できるが、1863年からの両者の継続的な直接協力を示す公開出典は未確認。"
-      }
-    },
-    {
       "id": "person-relation-yoshinobu-iwakura-1867-taisei-conflict",
       "aPersonId": "yoshinobu",
       "bPersonId": "iwakura",
       "startSceneId": "1867-taisei",
-      "endSceneId": "1868-edo",
+      "endSceneId": "1867-taisei",
       "typeId": "conflict",
-      "label": "新政権の主導権",
-      "text": "岩倉は王政復古の政変を計画し、新政府は慶喜に辞官・納地を求めたが、両者の直接交渉は確認中。",
+      "label": "辞官・納地処分",
+      "text": "岩倉は慶喜の辞官・納地処分を進め、松平慶永らに処分方針と奏状案を示した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait_iwakura_detail",
-          "archives_royal_restoration",
-          "kagoshima_boshin",
-          "jacar_yoshinobu_punitive_order"
+          "jacar_iwakura_yoshinobu_disposition_1867"
         ],
-        "reviewStatus": "needs_review",
-        "note": "岩倉による王政復古計画と新政府による慶喜処分は確認できるが、1867～68年の岩倉と慶喜の直接的な交渉・対立を示す公開出典は未確認。"
+        "reviewStatus": "verified",
+        "note": "太政類典の慶応3年12月16日・18日条で、岩倉が松平慶永らに慶喜処分の朝旨と奏状案を示し、慶喜へ実行させるため協議したことを確認。両者の直接会談とはせず、確認できる政治的対立に限定した。"
       }
     },
     {
@@ -1322,25 +1132,6 @@
       }
     },
     {
-      "id": "person-relation-katamori-enomoto-1868-tohoku-political-cooperation",
-      "aPersonId": "katamori",
-      "bPersonId": "enomoto",
-      "startSceneId": "1868-tohoku",
-      "endSceneId": "1868-tohoku",
-      "typeId": "political-cooperation",
-      "label": "旧幕府側の敗走経路",
-      "text": "容保は会津で降伏し、榎本は旧幕臣らを率いて箱館へ進んだが、両者の直接協力は確認中。",
-      "evidence": {
-        "sourceIds": [
-          "ndl_portrait_katamori_detail",
-          "archives_enomoto_1867",
-          "hakodate_war_history"
-        ],
-        "reviewStatus": "needs_review",
-        "note": "容保の会津降伏と榎本の箱館進出はそれぞれ確認できるが、会津戦争期に両者が直接協力したとする公開出典は未確認。"
-      }
-    },
-    {
       "id": "person-relation-kuroda-enomoto-1869-hakodate-mediation-or-negotiation",
       "aPersonId": "kuroda",
       "bPersonId": "enomoto",
@@ -1356,62 +1147,6 @@
         ],
         "reviewStatus": "verified",
         "note": "国立公文書館で黒田による榎本の降伏説得と助命、函館市で榎本軍の降伏を確認。"
-      }
-    },
-    {
-      "id": "person-relation-omura-itakagi-1868-toba-organization",
-      "aPersonId": "omura",
-      "bPersonId": "itakagi",
-      "startSceneId": "1868-toba",
-      "endSceneId": "1868-tohoku",
-      "typeId": "organization",
-      "label": "新政府軍の中央と前線",
-      "text": "大村は新政府の軍務を担い、板垣は東山道軍を率いたが、両者の直接の指揮関係は確認中。",
-      "evidence": {
-        "sourceIds": [
-          "yamaguchi_omura_1869",
-          "jacar_itagaki_march_1868",
-          "kochi_itagaki_boshin"
-        ],
-        "reviewStatus": "needs_review",
-        "note": "大村の軍務官での役割と板垣の東山道軍指揮はそれぞれ確認できるが、両者の直接の命令・調整関係を示す公開出典は未確認。"
-      }
-    },
-    {
-      "id": "person-relation-saigo-itakagi-1868-toba-organization",
-      "aPersonId": "saigo",
-      "bPersonId": "itakagi",
-      "startSceneId": "1868-toba",
-      "endSceneId": "1868-tohoku",
-      "typeId": "organization",
-      "label": "新政府軍参謀",
-      "text": "西郷は東征軍、板垣は東山道軍で新政府軍を指揮したが、両者の直接の役割分担は確認中。",
-      "evidence": {
-        "sourceIds": [
-          "jacar_saigo_detail",
-          "jacar_itagaki_march_1868",
-          "kochi_itagaki_boshin"
-        ],
-        "reviewStatus": "needs_review",
-        "note": "両者それぞれの新政府軍での役割は確認できるが、1868年の直接の協議・指揮関係を示す公開出典は未確認。"
-      }
-    },
-    {
-      "id": "person-relation-kuroda-kawaji-1868-toba-organization",
-      "aPersonId": "kuroda",
-      "bPersonId": "kawaji",
-      "startSceneId": "1868-toba",
-      "endSceneId": "1869-hakodate",
-      "typeId": "organization",
-      "label": "薩摩系新政府軍人材",
-      "text": "黒田と川路は薩摩藩出身者として戊辰戦争に参加したが、両者の直接の役割分担は確認中。",
-      "evidence": {
-        "sourceIds": [
-          "jacar_kuroda_detail",
-          "jacar_kawaji_detail"
-        ],
-        "reviewStatus": "needs_review",
-        "note": "両者それぞれの戊辰戦争参加は確認できるが、1868～69年の直接の指揮・協力関係を示す公開出典は未確認。"
       }
     }
   ],

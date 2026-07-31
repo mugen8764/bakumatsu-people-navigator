@@ -29,7 +29,7 @@ test('assembling split JSON reproduces the legacy runtime data exactly', () => {
   assert.deepEqual(assembleLegacyData(documents), legacyData);
 });
 
-test('canonical records keep review status explicit', () => {
+test('canonical records keep an explicit supported review status', () => {
   const documents = loadV2Documents(root);
   const evidenceRecords = [
     ...documents.people.people,
@@ -42,9 +42,12 @@ test('canonical records keep review status explicit', () => {
     ...documents.relations.personRelations,
     ...documents.relations.factionRelations
   ];
+  const allowedStatuses = new Set(['verified', 'needs_review', 'disputed']);
   assert.ok(evidenceRecords.every(record => record.evidence));
-  assert.ok(evidenceRecords.some(record => record.evidence.reviewStatus === 'verified'));
-  assert.ok(evidenceRecords.some(record => record.evidence.reviewStatus === 'needs_review'));
+  assert.ok(evidenceRecords.every(record => allowedStatuses.has(record.evidence.reviewStatus)));
+  assert.ok(evidenceRecords
+    .filter(record => record.evidence.reviewStatus === 'verified')
+    .every(record => record.evidence.sourceIds.length > 0));
 });
 
 test('browser compatibility data preserves item-level review status', () => {

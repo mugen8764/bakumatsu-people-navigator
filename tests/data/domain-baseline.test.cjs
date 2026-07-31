@@ -15,22 +15,22 @@ test('scene-level counts stay at the current display baseline', () => {
   }));
 
   assert.deepEqual(counts, [
-    { scene: '1853-blackships', people: 7, factions: 4, relations: 6 },
-    { scene: '1854-treaty', people: 8, factions: 4, relations: 7 },
-    { scene: '1858-ansei', people: 21, factions: 5, relations: 22 },
-    { scene: '1860-sakurada', people: 24, factions: 4, relations: 23 },
-    { scene: '1862-bunkyu', people: 24, factions: 5, relations: 21 },
-    { scene: '1863-joi', people: 27, factions: 5, relations: 24 },
-    { scene: '1863-aug18', people: 27, factions: 5, relations: 25 },
-    { scene: '1864-kinmon', people: 30, factions: 5, relations: 25 },
-    { scene: '1865-choshu', people: 32, factions: 4, relations: 24 },
-    { scene: '1866-satcho', people: 29, factions: 5, relations: 24 },
-    { scene: '1866-expedition', people: 30, factions: 4, relations: 20 },
-    { scene: '1867-taisei', people: 30, factions: 5, relations: 20 },
-    { scene: '1868-toba', people: 27, factions: 5, relations: 24 },
-    { scene: '1868-edo', people: 27, factions: 4, relations: 21 },
-    { scene: '1868-tohoku', people: 20, factions: 6, relations: 11 },
-    { scene: '1869-hakodate', people: 17, factions: 4, relations: 8 }
+    { scene: '1853-blackships', people: 7, factions: 4, relations: 5 },
+    { scene: '1854-treaty', people: 8, factions: 4, relations: 6 },
+    { scene: '1858-ansei', people: 21, factions: 5, relations: 21 },
+    { scene: '1860-sakurada', people: 24, factions: 4, relations: 21 },
+    { scene: '1862-bunkyu', people: 24, factions: 5, relations: 19 },
+    { scene: '1863-joi', people: 27, factions: 5, relations: 22 },
+    { scene: '1863-aug18', people: 27, factions: 5, relations: 20 },
+    { scene: '1864-kinmon', people: 30, factions: 5, relations: 18 },
+    { scene: '1865-choshu', people: 32, factions: 4, relations: 17 },
+    { scene: '1866-satcho', people: 29, factions: 5, relations: 18 },
+    { scene: '1866-expedition', people: 30, factions: 4, relations: 13 },
+    { scene: '1867-taisei', people: 30, factions: 5, relations: 14 },
+    { scene: '1868-toba', people: 27, factions: 5, relations: 14 },
+    { scene: '1868-edo', people: 27, factions: 4, relations: 12 },
+    { scene: '1868-tohoku', people: 20, factions: 6, relations: 3 },
+    { scene: '1869-hakodate', people: 17, factions: 4, relations: 5 }
   ]);
 });
 test('a sparse status carries forward until the next explicit status', () => {
