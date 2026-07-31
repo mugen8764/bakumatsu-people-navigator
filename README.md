@@ -123,7 +123,15 @@ npm run test:e2e:update
 npm run report:review
 ```
 
-GitHub Actionsでは、プッシュとプルリクエストごとに `dist/` を生成し、その公開成果物に対してChromiumの全テスト、FirefoxとWebKitの主要操作テストを実行します。
+出典本文の精密情報と主要事件の網羅率を確認する場合:
+
+```sh
+npm run report:sources
+```
+
+GitHub Actionsでは、プッシュとプルリクエストごとにREADMEの掲載件数と主要事件の精密出典網羅も含む `dist/` 検査を行い、その公開成果物に対してChromiumの全テスト、FirefoxとWebKitの主要操作テストを実行します。
+`main` のCI成功後はCloudflare Pagesの反映を待ち、本番の主要5ファイルが同じコミットの内容になったことと、4種のセキュリティヘッダーを自動確認します。
+必要に応じてGitHub Actionsの「Production smoke」を手動実行するか、ローカルで `npm run check:production` を実行して同じ検査を再実行できます。
 登録済みの公式出典URLは週1回 `npm run check:links` で到達性を確認します。外部サイト側の一時障害を通常のプッシュ検査へ波及させないため、リンク検査は独立した定期ジョブです。
 
 ## 公開前チェックリスト
