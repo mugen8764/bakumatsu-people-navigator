@@ -377,7 +377,9 @@
       "id": "kyoto_shinsengumi_history",
       "title": "京都市歴史資料館・歴史講座「浪士組から新選組」",
       "url": "https://www.city.kyoto.lg.jp/bunshi/cmsfiles/contents/0000233/233972/2kimura.pdf",
-      "note": "会津藩預かりの壬生浪士組、八月十八日の政変への出動、新選組命名。"
+      "note": "会津藩預かりの壬生浪士組、八月十八日の政変への出動、新選組命名。",
+      "locator": "1頁（全1頁）「第2回 浪士組から新選組」本文",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "shimonoseki_bakumatsu_fighting",
@@ -619,7 +621,9 @@
       "id": "jacar_saigo_detail",
       "title": "アジア歴史資料センター「西郷隆盛」",
       "url": "https://www.jacar.archives.go.jp/das/term/00000385",
-      "note": "西郷隆盛の徒目付・軍賦役兼諸藩応接係・側役・大番頭等の職歴、1867年の参与就任、1868年の東征大総督下参謀と江戸城開城。"
+      "note": "西郷隆盛の徒目付・軍賦役兼諸藩応接係・側役・大番頭等の職歴、1867年の参与就任、1868年の東征大総督下参謀と江戸城開城。",
+      "locator": "「解説」欄",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "kagoshima_saigo_moon",
@@ -713,13 +717,17 @@
       "id": "ndl_portrait_iwakura_detail",
       "title": "国立国会図書館「近代日本人の肖像・岩倉具視」",
       "url": "https://www.ndl.go.jp/portrait/datas/23/index.html",
-      "note": "岩倉具視の侍従就任、条約勅許奏請阻止、公武合体策、1867年までの幽居と同年12月の王政復古政変計画、その後の新政府参与・議定就任。"
+      "note": "岩倉具視の侍従就任、条約勅許奏請阻止、公武合体策、1867年までの幽居と同年12月の王政復古政変計画、その後の新政府参与・議定就任。",
+      "locator": "「解説」",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "kochi_yodo_timeline",
       "title": "高知県立高知城歴史博物館「土佐藩歴代藩主紹介」",
       "url": "https://www.kochi-johaku.jp/column/3819/",
-      "note": "15代土佐藩主山内豊信の一橋慶喜擁立、1859年の隠居・謹慎、容堂号、1867年の大政奉還建白と小御所会議での徳川家擁護。"
+      "note": "15代土佐藩主山内豊信の一橋慶喜擁立、1859年の隠居・謹慎、容堂号、1867年の大政奉還建白と小御所会議での徳川家擁護。",
+      "locator": "「15代 豊信（とよしげ）」",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "kagoshima_tenshoin",
@@ -745,7 +753,9 @@
       "id": "matsudo_yoshinobu_timeline",
       "title": "松戸市戸定歴史館「徳川慶喜・昭武関係年表 一」",
       "url": "https://www.city.matsudo.chiba.jp/tojo/rekishikan_shoukai/rekishi/nenpyou/1837-1869.html",
-      "note": "徳川慶喜への1859年の隠居謹慎命令、1862年の一橋家再相続・将軍後見職就任、1868年の鳥羽・伏見開戦と大坂脱出、2月12日の寛永寺謹慎、4月の水戸移動、7月19日の駿府移動。"
+      "note": "徳川慶喜への1859年の隠居謹慎命令、1862年の一橋家再相続・将軍後見職就任、1868年の鳥羽・伏見開戦と大坂脱出、2月12日の寛永寺謹慎、4月の水戸移動、7月19日の駿府移動。",
+      "locator": "「1837年（天保8年）9月29日～1869年（明治2年）9月28日」年表の慶喜関係記事",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "kagoshima_saigo_kikuchi",
@@ -757,7 +767,9 @@
       "id": "jacar_okubo_detail",
       "title": "アジア歴史資料センター「大久保利通」",
       "url": "https://www.jacar.archives.go.jp/das/term/00000377",
-      "note": "大久保利通の徒目付・小納戸役・御側役等の職歴、1866年の薩長盟約、1867年の参与、1868年の徴士・内国事務掛・総裁局顧問・鎮将府参与。"
+      "note": "大久保利通の徒目付・小納戸役・御側役等の職歴、1866年の薩長盟約、1867年の参与、1868年の徴士・内国事務掛・総裁局顧問・鎮将府参与。",
+      "locator": "「解説」欄",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "kochi_tosa_timeline",
@@ -805,7 +817,9 @@
       "id": "kyoto_kido_1862",
       "title": "京都市「木戸孝允神道碑・碑文の大意」",
       "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hi145_abst.html",
-      "note": "1862年の朝廷周旋、禁門の変後の但馬逃走、長州帰還後の木戸準一郎への改名と政務担当、大村益次郎への軍事改革委任。"
+      "note": "1862年の朝廷周旋、禁門の変後の但馬逃走、長州帰還後の木戸準一郎への改名と政務担当、大村益次郎への軍事改革委任。",
+      "locator": "「木戸孝允神道碑　碑文の大意」第3～5段落",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "hagi_takasugi_1862",
@@ -871,7 +885,9 @@
       "id": "yamaguchi_takasugi_guide",
       "title": "山口県立山口図書館「高杉晋作・人物調べ方案内」",
       "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/takasugi_shinsaku/",
-      "note": "高杉晋作による1863年の奇兵隊創設、1864年の投獄と下関戦争時の再起用・講和、禁門の変後の挙兵、第二次幕長戦争での海軍総督就任と1867年4月の病没。"
+      "note": "高杉晋作による1863年の奇兵隊創設、1864年の投獄と下関戦争時の再起用・講和、禁門の変後の挙兵、第二次幕長戦争での海軍総督就任と1867年4月の病没。",
+      "locator": "「人物紹介」",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "yamaguchi_takasugi_1863",
@@ -1011,13 +1027,17 @@
       "id": "nakaoka_museum_profile",
       "title": "中岡慎太郎館「中岡慎太郎とは」",
       "url": "https://www.nakaokashintarokan.jp/about.html",
-      "note": "中岡慎太郎の脱藩と長州藩下での活動、1866年の薩長連合仲介、1867年の薩土盟約・陸援隊結成と京都近江屋での襲撃による死去。"
+      "note": "中岡慎太郎の脱藩と長州藩下での活動、1866年の薩長連合仲介、1867年の薩土盟約・陸援隊結成と京都近江屋での襲撃による死去。",
+      "locator": "「中岡慎太郎とは」「慎太郎の生涯」",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "ndl_portrait_katamori_detail",
       "title": "国立国会図書館「近代日本人の肖像・松平容保」",
       "url": "https://www.ndl.go.jp/portrait/datas/334/",
-      "note": "松平容保の京都守護職就任、京都の治安と公武合体への関与、八月十八日の政変、禁門の変、征長強硬論、1867年の免職、1868年の鳥羽・伏見敗戦後の会津での謹慎と降伏。"
+      "note": "松平容保の京都守護職就任、京都の治安と公武合体への関与、八月十八日の政変、禁門の変、征長強硬論、1867年の免職、1868年の鳥羽・伏見敗戦後の会津での謹慎と降伏。",
+      "locator": "「解説」",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "hino_hijikata_profile",
