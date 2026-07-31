@@ -143,6 +143,6 @@ test('relations do not extend beyond a person active range', () => {
       if (inactive.length) factionIssues.push({ relationIndex, sceneId: data.scenes[sceneIndex].id, inactive });
     }
   });
-  assert.equal(factionIssues.length, 11);
-  assert.deepEqual([...new Set(factionIssues.map(issue => issue.relationIndex))], [1, 3, 6, 10, 11, 13, 15, 16]);
+  assert.equal(factionIssues.length, 10);
+  assert.deepEqual([...new Set(factionIssues.map(issue => issue.relationIndex))], [1, 3, 6, 11, 13, 15, 16]);
 });

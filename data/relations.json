@@ -1423,11 +1423,14 @@
       "startSceneId": "1853-blackships",
       "endSceneId": "1858-ansei",
       "label": "交渉・条約",
-      "text": "武力圧力を受けて和親・通商条約を締結する。",
+      "text": "幕府はペリー艦隊の圧力下で1854年に日米和親条約を結び、1858年には勅許を得ないまま日米修好通商条約を締結した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力関係単位の出典が必要。"
+        "sourceIds": [
+          "mofa_treaty_1854",
+          "mofa_treaty_1858"
+        ],
+        "reviewStatus": "verified",
+        "note": "外務省でペリー艦隊による和親条約締結要求と1854年の調印、ハリスとの交渉と1858年の未勅許調印を確認。"
       }
     },
     {
@@ -1437,25 +1440,34 @@
       "startSceneId": "1853-blackships",
       "endSceneId": "1860-sakurada",
       "label": "協力から対立",
-      "text": "海防政策では協力したが、条約・継嗣問題で対立が激化する。",
+      "text": "幕府は1853年に水戸の徳川斉昭を海防参与に任じたが、条約・将軍継嗣問題を経て水戸藩への密勅返納要求と処分に至った。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力関係単位の出典が必要。"
+        "sourceIds": [
+          "ibaraki_nariaki_kaibo",
+          "ibaraki_nariaki_succession",
+          "ibaraki_nariaki_treaty",
+          "ibaraki_nariaki_ansei"
+        ],
+        "reviewStatus": "verified",
+        "note": "茨城県立歴史館で斉昭の海防参与就任、条約・継嗣問題での対立、戊午の密勅返納要求と斉昭・水戸藩関係者への処分を確認。"
       }
     },
     {
-      "id": "faction-relation-bakufu-satsuma-1853-blackships",
+      "id": "faction-relation-bakufu-satsuma-1858-ansei",
       "aFactionId": "bakufu",
       "bFactionId": "satsuma",
-      "startSceneId": "1853-blackships",
+      "startSceneId": "1858-ansei",
       "endSceneId": "1862-bunkyu",
       "label": "改革協力",
-      "text": "斉彬・久光が幕政改革へ関与する。",
+      "text": "斉彬は一橋派の中心として将軍継嗣問題から幕政改革を図り、久光は1862年に幕政改革を求める勅命を幕府へ伝えた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力関係単位の出典が必要。"
+        "sourceIds": [
+          "kagoshima_nariakira",
+          "kagoshima_tobaku_transition",
+          "kyoto_kinmon"
+        ],
+        "reviewStatus": "verified",
+        "note": "鹿児島県で斉彬の一橋派としての幕政改革と久光の公武合体による幕政改革、京都市で久光が1862年に勅命を幕府へ伝えたことを確認。開始時点を1858年へ修正。"
       }
     },
     {
@@ -1465,11 +1477,15 @@
       "startSceneId": "1858-ansei",
       "endSceneId": "1866-expedition",
       "label": "勅許・公武合体",
-      "text": "条約勅許、攘夷、将軍上洛をめぐり協調と対立を繰り返す。",
+      "text": "幕府は勅許を得ずに通商条約へ調印した後、和宮降嫁による公武合体を進め、1863年には朝廷へ攘夷期限を上奏した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力関係単位の出典が必要。"
+        "sourceIds": [
+          "mofa_treaty_1858",
+          "kyoto_kinmon",
+          "archives_timeline"
+        ],
+        "reviewStatus": "verified",
+        "note": "外務省で通商条約の未勅許調印、京都市で幕府による和宮降嫁の公武合体、国立公文書館年表で1863年の将軍上洛と攘夷期限上奏を確認。"
       }
     },
     {
@@ -1479,11 +1495,14 @@
       "startSceneId": "1863-aug18",
       "endSceneId": "1864-kinmon",
       "label": "京都で連携",
-      "text": "八月十八日の政変と禁門の変で長州へ対抗する。",
+      "text": "会津藩と薩摩藩は1863年の八月十八日の政変で長州勢を京都から排除し、1864年の禁門の変でも長州勢と戦った。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力関係単位の出典が必要。"
+        "sourceIds": [
+          "cultural_heritage_aug18",
+          "kyoto_kinmon"
+        ],
+        "reviewStatus": "verified",
+        "note": "文化遺産オンラインと京都市で会津・薩摩の八月十八日の政変における連携、京都市で禁門の変における両藩と長州勢の戦闘を確認。"
       }
     },
     {
@@ -1493,11 +1512,15 @@
       "startSceneId": "1863-aug18",
       "endSceneId": "1864-kinmon",
       "label": "敵対",
-      "text": "京都政局と長州征討で軍事的に敵対する。",
+      "text": "薩摩藩は会津藩と連携して1863年に長州勢を京都から排除し、1864年の禁門の変では長州勢と交戦した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力関係単位の出典が必要。"
+        "sourceIds": [
+          "cultural_heritage_aug18",
+          "kyoto_kinmon",
+          "archives_timeline"
+        ],
+        "reviewStatus": "verified",
+        "note": "文化遺産オンライン・京都市・国立公文書館で八月十八日の政変と禁門の変における薩摩・長州の対立を確認。薩摩が長州征討で一貫して敵対したとする表現は削除。"
       }
     },
     {
@@ -1507,11 +1530,15 @@
       "startSceneId": "1863-joi",
       "endSceneId": "1864-kinmon",
       "label": "軍事衝突",
-      "text": "下関攘夷戦と四国艦隊砲撃で交戦する。",
+      "text": "長州藩は1863年に下関海峡を通る米・仏・蘭船を砲撃し、1864年には英仏蘭米の四国連合艦隊による攻撃を受けた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力関係単位の出典が必要。"
+        "sourceIds": [
+          "yamaguchi_bakan_war",
+          "shimonoseki_joi_bombardment",
+          "yamaguchi_choshu_reform"
+        ],
+        "reviewStatus": "verified",
+        "note": "山口県立山口図書館で1863年の外国船砲撃と1864年の四国連合艦隊下関砲撃、下関市と山口県でも長州藩と列強の戦闘を確認。"
       }
     },
     {
@@ -1521,11 +1548,13 @@
       "startSceneId": "1863-joi",
       "endSceneId": "1863-joi",
       "label": "戦争から接近",
-      "text": "薩英戦争後、英国との協力・武器導入へ転じる。",
+      "text": "薩摩藩とイギリスは1863年に交戦し、戦後は互いの力を認識して接近へ転じた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力関係単位の出典が必要。"
+        "sourceIds": [
+          "kagoshima_satsuei"
+        ],
+        "reviewStatus": "verified",
+        "note": "鹿児島県で薩英戦争の経緯と、戦後に薩摩藩とイギリスが互いの力を認識して接近したことを確認。直接裏付けのない武器導入の表現は削除。"
       }
     },
     {
@@ -1535,11 +1564,15 @@
       "startSceneId": "1864-kinmon",
       "endSceneId": "1866-expedition",
       "label": "征討・内戦",
-      "text": "第一次・第二次長州征討を通じて対立する。",
+      "text": "幕府は1864年の第一次長州征討で長州藩を恭順させ、1866年の第二次長州征討では四境で敗退した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力関係単位の出典が必要。"
+        "sourceIds": [
+          "yamaguchi_choshu_reform",
+          "archives_timeline",
+          "yamaguchi_boshin_choshu"
+        ],
+        "reviewStatus": "verified",
+        "note": "山口県立山口図書館と国立公文書館で第一次長州征討の恭順、第二次長州征討の戦闘と幕府軍敗退、山口県で四境戦争の長州藩勝利を確認。"
       }
     },
     {
@@ -1549,25 +1582,33 @@
       "startSceneId": "1865-choshu",
       "endSceneId": "1868-toba",
       "label": "接近・提携",
-      "text": "再征への非協力、武器取引、薩長提携へ進む。",
+      "text": "薩摩藩は1865年に長州再征への出兵を断り、長州藩の武器・汽船購入を仲介し、1866年に薩長盟約を結んだ。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力関係単位の出典が必要。"
+        "sourceIds": [
+          "kagoshima_satcho_alliance",
+          "ndl_kameyama_trade",
+          "ndl_satcho_alliance_research"
+        ],
+        "reviewStatus": "verified",
+        "note": "鹿児島県で再征への出兵拒否・購入仲介・1866年の盟約、国立国会図書館で薩摩名義の武器・汽船購入と薩長盟約の形成を確認。"
       }
     },
     {
-      "id": "faction-relation-tosa-bakufu-1866-satcho",
+      "id": "faction-relation-tosa-bakufu-1867-taisei",
       "aFactionId": "tosa",
       "bFactionId": "bakufu",
-      "startSceneId": "1866-satcho",
+      "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "label": "公議政体・大政奉還",
-      "text": "武力倒幕を避け、政権返上による再編を提案する。",
+      "text": "土佐藩は1867年10月3日に幕府へ大政奉還を建白し、政権返上による政治体制の再編を提案した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力関係単位の出典が必要。"
+        "sourceIds": [
+          "ndl_ryoma_political_plan",
+          "kochi_taisei_hokan",
+          "kochi_yodo_timeline"
+        ],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館・高知市・高知県立高知城歴史博物館で土佐藩の大政奉還建白と新政体構想を確認。開始時点を1867年へ修正。"
       }
     },
     {
@@ -1577,11 +1618,15 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1868-toba",
       "label": "政権返上から排除",
-      "text": "大政奉還後、王政復古で幕府制度を廃止する。",
+      "text": "慶喜が大政奉還を行った後、朝廷は1867年12月9日の王政復古の大号令で幕府と従来の朝廷制度を廃止し、三職を置いた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力関係単位の出典が必要。"
+        "sourceIds": [
+          "archives_royal_restoration",
+          "ndl_ryoma_political_plan",
+          "kyoto_restoration_transition"
+        ],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館と京都市で大政奉還、国立公文書館で王政復古による幕府・従来の朝廷制度廃止と三職設置を確認。"
       }
     },
     {
@@ -1591,11 +1636,15 @@
       "startSceneId": "1868-toba",
       "endSceneId": "1869-hakodate",
       "label": "戊辰戦争",
-      "text": "鳥羽・伏見、関東、東北、箱館へ戦線が移る。",
+      "text": "新政府軍と旧幕府側の戦争は1868年の鳥羽・伏見から東征・東北戦争へ広がり、1869年の箱館五稜郭陥落で終結した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力関係単位の出典が必要。"
+        "sourceIds": [
+          "archives_boshin_war",
+          "hakodate_war_history",
+          "kagoshima_boshin"
+        ],
+        "reviewStatus": "verified",
+        "note": "国立公文書館で鳥羽・伏見から東征・奥羽越列藩同盟との戦い・五稜郭陥落まで、函館市と鹿児島県で箱館までの戦争経過を確認。"
       }
     },
     {
@@ -1604,12 +1653,16 @@
       "bFactionId": "aizu",
       "startSceneId": "1868-toba",
       "endSceneId": "1868-tohoku",
-      "label": "朝敵処分・戦争",
-      "text": "京都守護職時代の責任をめぐり処分と抗戦に至る。",
+      "label": "鳥羽・伏見から会津戦争",
+      "text": "会津藩は旧幕府軍として鳥羽・伏見で新政府軍と戦い、1868年8月の新政府軍侵攻後、9月に若松城を明け渡した。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力関係単位の出典が必要。"
+        "sourceIds": [
+          "aizuwakamatsu_surrender",
+          "fukushima_modern_history",
+          "archives_boshin_war"
+        ],
+        "reviewStatus": "verified",
+        "note": "会津若松市で会津藩の鳥羽・伏見参戦と新政府軍の会津侵攻、福島県・国立公文書館で若松城明け渡しと会津藩降伏を確認。責任論の解釈を削除。"
       }
     },
     {
@@ -1619,11 +1672,15 @@
       "startSceneId": "1868-toba",
       "endSceneId": "1869-hakodate",
       "label": "中核参加",
-      "text": "薩摩藩の人材・軍事力が新政府中枢へ移る。",
+      "text": "薩摩兵は新政府軍の主軸として戊辰戦争を戦い、薩摩藩出身の大久保利通らは新政府の参与を務めた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力関係単位の出典が必要。"
+        "sourceIds": [
+          "kagoshima_boshin",
+          "ndl_1869_official_election",
+          "ndl_okubo_papers"
+        ],
+        "reviewStatus": "verified",
+        "note": "鹿児島県で薩摩兵を主軸とする新政府軍の戦闘、国立国会図書館で大久保の参与就任と1869年官吏公選を確認。"
       }
     },
     {
@@ -1633,11 +1690,16 @@
       "startSceneId": "1868-toba",
       "endSceneId": "1869-hakodate",
       "label": "中核参加",
-      "text": "長州藩の人材・軍事力が新政府中枢へ移る。",
+      "text": "長州藩諸隊は新政府軍の主力として戊辰戦争を戦い、木戸孝允ら長州藩出身者は新政府の参与を務めた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力関係単位の出典が必要。"
+        "sourceIds": [
+          "yamaguchi_boshin_choshu",
+          "kagoshima_boshin",
+          "ndl_1869_official_election",
+          "jacar_kido_detail"
+        ],
+        "reviewStatus": "verified",
+        "note": "山口県で長州藩諸隊の新政府軍主力としての参戦、鹿児島県で長州兵の官軍参加、国立国会図書館・アジア歴史資料センターで木戸の参与就任を確認。"
       }
     },
     {
@@ -1647,11 +1709,16 @@
       "startSceneId": "1868-toba",
       "endSceneId": "1869-hakodate",
       "label": "参加",
-      "text": "土佐藩の政治・軍事人材が新政府へ参加する。",
+      "text": "板垣退助らは土佐藩兵を率いて戊辰戦争に参加し、後藤象二郎・板垣ら土佐藩出身者は新政府の参与を務めた。",
       "evidence": {
-        "sourceIds": [],
-        "reviewStatus": "needs_review",
-        "note": "勢力関係単位の出典が必要。"
+        "sourceIds": [
+          "kochi_itagaki_boshin",
+          "jacar_itagaki_march_1868",
+          "ndl_1869_official_election",
+          "jacar_goto_detail"
+        ],
+        "reviewStatus": "verified",
+        "note": "高知県とアジア歴史資料センターで板垣・土佐藩兵の戊辰戦争参加、国立国会図書館とアジア歴史資料センターで後藤・板垣の新政府参与を確認。"
       }
     }
   ]
