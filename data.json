@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.43",
+    "version": "1.0.44",
     "updated": "2026-07-31"
   },
   "sources": {
@@ -782,7 +782,7 @@
     },
     "jacar_kuroda_detail": {
       "title": "アジア歴史資料センター「黒田清隆」",
-      "url": "https://www.jacar.go.jp/dictionary/02_item.html?id=00000581",
+      "url": "https://www.jacar.archives.go.jp/das/term/00000382",
       "note": "黒田了介の韮山塾での砲術修学、1866年薩長盟約への協力、1868年の戊辰戦争従軍・薩摩藩小銃隊一番隊長・奥羽および北越征討参謀等の職歴。"
     },
     "yamaguchi_ito_guide": {
@@ -939,6 +939,11 @@
       "title": "山口県立山口図書館「山県有朋と高杉・西郷」",
       "url": "https://library.pref.yamaguchi.lg.jp/meijiishin/202102/",
       "note": "山県有朋が志士として四境戦争と戊辰戦争を戦った経歴。"
+    },
+    "mine_yamagata_1865": {
+      "title": "美祢市「ぐるっと川上 大田川」",
+      "url": "https://www2.city.mine.lg.jp/material/files/group/12/new13.pdf",
+      "note": "1865年の大田・絵堂の戦いで、金麗社にいた山県有朋が奇兵隊第二銃隊へ幣振坂からの急襲を命じ、劣勢を挽回したとの現地解説。"
     },
     "ndl_portrait_kazunomiya_detail": {
       "title": "国立国会図書館「近代日本人の肖像・和宮」",
@@ -4945,14 +4950,14 @@
         },
         "1866-expedition": {
           "display": "黒田了介",
-          "role": "薩摩藩士・砲術修行経験者",
-          "stance": "1863年に江川太郎左衛門の韮山塾で砲術を学んだことは確認できるが、1866年の役職と行動は確認中。",
-          "importance": "「小銃隊指揮官級」や長州支援への関与は、項目を直接支える根拠が未確認。",
+          "role": "薩摩藩士（薩長盟約の実現に協力）",
+          "stance": "1866年、対立していた薩摩藩と長州藩の盟約実現に協力する。",
+          "importance": "薩摩藩小銃隊一番隊長や戊辰戦争の参謀となるのは1868年で、この時点へ遡らせない。",
           "evidence": {
             "sourceIds": [
               "jacar_kuroda_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-toba": {
@@ -5640,7 +5645,7 @@
         },
         "1866-expedition": {
           "display": "伊藤俊輔",
-          "role": "長州藩士・高杉挙兵参加者",
+          "role": "長州藩士（1866年の役職・行動は未確認）",
           "stance": "1865年の高杉晋作らの挙兵参加は確認できるが、1866年の役職と具体的行動は確認中。",
           "importance": "「軍事・外交実務」「戦争を支える行政」という従来記述は、項目単位の根拠が未確認。",
           "evidence": {
@@ -6023,15 +6028,15 @@
         },
         "1865-choshu": {
           "display": "山県狂介",
-          "role": "奇兵隊軍監（1863年就任）",
-          "stance": "1863年の奇兵隊軍監就任は確認できるが、1865年の在職継続と具体的な行動は確認中。",
-          "importance": "藩内戦で諸隊を統制したとの従来記述は、項目を直接支える根拠が未確認。",
+          "role": "奇兵隊を指揮する長州藩士",
+          "stance": "1865年1月の大田・絵堂の戦いで、奇兵隊第二銃隊に幣振坂からの急襲を命じる。",
+          "importance": "劣勢だった諸隊側が盛り返す一局面となった。",
           "evidence": {
             "sourceIds": [
               "yamaguchi_yamagata_guide",
-              "jacar_yamagata_detail"
+              "mine_yamagata_1865"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1866-expedition": {

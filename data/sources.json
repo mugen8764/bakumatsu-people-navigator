@@ -934,7 +934,7 @@
     {
       "id": "jacar_kuroda_detail",
       "title": "アジア歴史資料センター「黒田清隆」",
-      "url": "https://www.jacar.go.jp/dictionary/02_item.html?id=00000581",
+      "url": "https://www.jacar.archives.go.jp/das/term/00000382",
       "note": "黒田了介の韮山塾での砲術修学、1866年薩長盟約への協力、1868年の戊辰戦争従軍・薩摩藩小銃隊一番隊長・奥羽および北越征討参謀等の職歴。"
     },
     {
@@ -1122,6 +1122,12 @@
       "title": "山口県立山口図書館「山県有朋と高杉・西郷」",
       "url": "https://library.pref.yamaguchi.lg.jp/meijiishin/202102/",
       "note": "山県有朋が志士として四境戦争と戊辰戦争を戦った経歴。"
+    },
+    {
+      "id": "mine_yamagata_1865",
+      "title": "美祢市「ぐるっと川上 大田川」",
+      "url": "https://www2.city.mine.lg.jp/material/files/group/12/new13.pdf",
+      "note": "1865年の大田・絵堂の戦いで、金麗社にいた山県有朋が奇兵隊第二銃隊へ幣振坂からの急襲を命じ、劣勢を挽回したとの現地解説。"
     },
     {
       "id": "ndl_portrait_kazunomiya_detail",
