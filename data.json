@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.27",
+    "version": "1.0.28",
     "updated": "2026-07-31"
   },
   "sources": {
@@ -548,7 +548,7 @@
     "matsudo_yoshinobu_timeline": {
       "title": "松戸市戸定歴史館「徳川慶喜・昭武関係年表 一」",
       "url": "https://www.city.matsudo.chiba.jp/tojo/rekishikan_shoukai/rekishi/nenpyou/1837-1869.html",
-      "note": "徳川慶喜への1859年8月27日の隠居謹慎命令と、1862年7月6日の一橋家再相続・将軍後見職就任。"
+      "note": "徳川慶喜への1859年の隠居謹慎命令、1862年の一橋家再相続・将軍後見職就任、1868年1月3日の鳥羽・伏見開戦、6日の大坂城脱出・海路江戸行き、2月12日の寛永寺謹慎。"
     },
     "kagoshima_saigo_kikuchi": {
       "title": "鹿児島県「菊池源吾の手紙」",
@@ -3088,15 +3088,14 @@
           "display": "徳川慶喜",
           "role": "前将軍・旧幕府勢力の中心",
           "faction": "旧幕府勢力",
-          "stance": "鳥羽・伏見敗戦後、大坂から江戸へ退き、恭順へ転じる。",
-          "importance": "抗戦継続を避けた判断が旧幕府軍を分裂させた。",
+          "stance": "1月6日、鳥羽・伏見の敗報を受けて大坂城を脱出し、海路江戸へ向かう。",
+          "importance": "1月7日に追討命令を受け、2月12日に上野寛永寺で謹慎する。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_modern_timeline",
-              "ndl_handwriting"
+              "matsudo_yoshinobu_timeline",
+              "ndl_portrait_yoshinobu_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-edo": {
@@ -3229,14 +3228,13 @@
           "display": "勝海舟",
           "role": "陸軍総裁",
           "faction": "旧幕府勢力",
-          "stance": "慶喜の恭順を受け、江戸の防衛と和平交渉を担う。",
-          "importance": "旧幕府側の交渉責任者となる。",
+          "stance": "1868年1月、海軍奉行並・陸軍総裁に就任する。",
+          "importance": "1月11日の日記に、鳥羽・伏見の顛末を初めて聞いたと記す。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "ndl_katsu_timeline"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-edo": {
@@ -6539,16 +6537,16 @@
         },
         "1868-toba": {
           "display": "松平容保",
-          "role": "旧幕府軍会津藩主",
+          "role": "会津藩主・旧幕府側",
           "faction": "旧幕府勢力",
-          "stance": "鳥羽・伏見敗戦後、慶喜と江戸へ退く。",
-          "importance": "会津は朝敵とされ、藩の存亡問題へ発展する。",
+          "stance": "1868年、鳥羽・伏見の戦いで敗れる。",
+          "importance": "その後は会津で謹慎し、新政府軍の攻撃を受けて降伏へ至る。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "ndl_portrait_katamori_detail",
+              "archives_toba_fushimi"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-edo": {
@@ -7420,16 +7418,16 @@
         },
         "1868-toba": {
           "display": "近藤勇",
-          "role": "旧幕府軍新選組局長",
+          "role": "旧幕府側・新選組局長",
           "faction": "旧幕府勢力",
-          "stance": "鳥羽・伏見で戦い、江戸へ退却する。",
-          "importance": "京都治安組織から内戦部隊へ変化した。",
+          "stance": "鳥羽・伏見の戦い後、甲陽鎮撫隊を組織して新政府軍と戦う。",
+          "importance": "1867年に幕臣となった後、戊辰戦争の部隊指揮へ移る。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "ndl_portrait_kondo_detail",
+              "archives_toba_fushimi"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-edo": {
@@ -7536,16 +7534,17 @@
         },
         "1868-toba": {
           "display": "土方歳三",
-          "role": "旧幕府軍新選組副長",
+          "role": "旧幕府側・新選組副長",
           "faction": "旧幕府勢力",
-          "stance": "鳥羽・伏見で戦い、江戸・関東へ転戦する。",
-          "importance": "新選組を内戦部隊として再編する。",
+          "stance": "鳥羽・伏見の戦い後、宇都宮・会津などを転戦する。",
+          "importance": "前年に幕臣となった後、戊辰戦争を箱館まで戦い続ける。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "ndl_portrait_hijikata_detail",
+              "hino_hijikata_profile",
+              "archives_toba_fushimi"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-edo": {

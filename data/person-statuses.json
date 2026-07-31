@@ -412,16 +412,15 @@
       "displayName": "徳川慶喜",
       "role": "前将軍・旧幕府勢力の中心",
       "factionId": "former-bakufu",
-      "stance": "鳥羽・伏見敗戦後、大坂から江戸へ退き、恭順へ転じる。",
-      "importance": "抗戦継続を避けた判断が旧幕府軍を分裂させた。",
+      "stance": "1月6日、鳥羽・伏見の敗報を受けて大坂城を脱出し、海路江戸へ向かう。",
+      "importance": "1月7日に追討命令を受け、2月12日に上野寛永寺で謹慎する。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_modern_timeline",
-          "ndl_handwriting"
+          "matsudo_yoshinobu_timeline",
+          "ndl_portrait_yoshinobu_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "松戸市戸定歴史館の年表で鳥羽・伏見開戦、1月6日の大坂城脱出・海路江戸行き、7日の追討命令、2月12日の寛永寺謹慎を確認。抗戦回避による旧幕府軍分裂という因果評価は削除。"
       }
     },
     {
@@ -565,15 +564,14 @@
       "displayName": "勝海舟",
       "role": "陸軍総裁",
       "factionId": "former-bakufu",
-      "stance": "慶喜の恭順を受け、江戸の防衛と和平交渉を担う。",
-      "importance": "旧幕府側の交渉責任者となる。",
+      "stance": "1868年1月、海軍奉行並・陸軍総裁に就任する。",
+      "importance": "1月11日の日記に、鳥羽・伏見の顛末を初めて聞いたと記す。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_katsu_timeline"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の年譜で1868年1月の海軍奉行並・陸軍総裁就任、同月11日の日記で鳥羽・伏見の顛末を初めて聞いたことを確認。江戸の和平交渉は3月の状態へ分離。"
       }
     },
     {
@@ -4104,17 +4102,17 @@
       "startSceneId": "1868-toba",
       "endSceneId": "1868-toba",
       "displayName": "松平容保",
-      "role": "旧幕府軍会津藩主",
+      "role": "会津藩主・旧幕府側",
       "factionId": "former-bakufu",
-      "stance": "鳥羽・伏見敗戦後、慶喜と江戸へ退く。",
-      "importance": "会津は朝敵とされ、藩の存亡問題へ発展する。",
+      "stance": "1868年、鳥羽・伏見の戦いで敗れる。",
+      "importance": "その後は会津で謹慎し、新政府軍の攻撃を受けて降伏へ至る。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_katamori_detail",
+          "archives_toba_fushimi"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で1868年の鳥羽・伏見敗戦と、その後の会津での謹慎・降伏を確認し、国立公文書館で戦闘日と新政府軍勝利を照合。慶喜と江戸へ退いたという個別行動は当該出典が直接支えないため表示しない。"
       }
     },
     {
@@ -5052,17 +5050,17 @@
       "startSceneId": "1868-toba",
       "endSceneId": "1868-toba",
       "displayName": "近藤勇",
-      "role": "旧幕府軍新選組局長",
+      "role": "旧幕府側・新選組局長",
       "factionId": "former-bakufu",
-      "stance": "鳥羽・伏見で戦い、江戸へ退却する。",
-      "importance": "京都治安組織から内戦部隊へ変化した。",
+      "stance": "鳥羽・伏見の戦い後、甲陽鎮撫隊を組織して新政府軍と戦う。",
+      "importance": "1867年に幕臣となった後、戊辰戦争の部隊指揮へ移る。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_kondo_detail",
+          "archives_toba_fushimi"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で新選組局長、1867年の幕臣就任、鳥羽・伏見後の甲陽鎮撫隊組織と新政府軍との戦闘を確認。鳥羽・伏見での個人の戦闘・江戸退却は当該出典が直接支えないため表示しない。"
       }
     },
     {
@@ -5166,17 +5164,18 @@
       "startSceneId": "1868-toba",
       "endSceneId": "1868-toba",
       "displayName": "土方歳三",
-      "role": "旧幕府軍新選組副長",
+      "role": "旧幕府側・新選組副長",
       "factionId": "former-bakufu",
-      "stance": "鳥羽・伏見で戦い、江戸・関東へ転戦する。",
-      "importance": "新選組を内戦部隊として再編する。",
+      "stance": "鳥羽・伏見の戦い後、宇都宮・会津などを転戦する。",
+      "importance": "前年に幕臣となった後、戊辰戦争を箱館まで戦い続ける。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "ndl_portrait_hijikata_detail",
+          "hino_hijikata_profile",
+          "archives_toba_fushimi"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で新選組副長、1867年の幕臣就任、鳥羽・伏見後の宇都宮・会津転戦と箱館戦死を確認し、日野市の略歴でも副長・箱館戦死を照合。鳥羽・伏見での個人の戦闘は断定しない。"
       }
     },
     {
