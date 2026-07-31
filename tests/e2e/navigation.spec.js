@@ -22,6 +22,20 @@ test('all six primary views render without a page error', async ({ page }) => {
   expect(pageErrors).toEqual([]);
 });
 
+test('all primary views stay inside a 320px document viewport', async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 780 });
+  await page.goto('/');
+
+  for (const view of ['people', 'factions', 'relations', 'map', 'events', 'sources']) {
+    await page.locator(`.tab[data-view="${view}"]`).click();
+    await expect(page.locator(`#view-${view}`)).toBeVisible();
+    const hasHorizontalOverflow = await page.evaluate(
+      () => document.documentElement.scrollWidth > document.documentElement.clientWidth
+    );
+    expect(hasHorizontalOverflow, `${view} view has document-level horizontal overflow`).toBe(false);
+  }
+});
+
 test('alias search and timeline changes preserve the selected person', async ({ page }) => {
   await page.goto('/');
   await page.locator('#globalSearch').fill('桂小五郎');
