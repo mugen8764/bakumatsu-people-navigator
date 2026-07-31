@@ -919,15 +919,14 @@
       "displayName": "松平春嶽",
       "role": "新政府議定",
       "factionId": "new-government",
-      "stance": "王政復古後、新政府内部で徳川慶喜の処遇をめぐる調整に関わる。",
-      "importance": "旧幕府改革派が新政府へ参加した例。",
+      "stance": "鳥羽・伏見の戦いが始まった1月3日、議定の辞職を申し出る。",
+      "importance": "1月17日の官制公布では、議定として内国事務総督に就任した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "fukui_pref_timeline"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "福井県史年表で1867年12月の議定就任、1868年1月3日の辞職申出、17日の内国事務総督就任を確認。徳川慶喜処遇の調整という当該時点の具体的行動は出典が直接支えないため削除。"
       }
     },
     {
@@ -3748,17 +3747,17 @@
       "startSceneId": "1868-toba",
       "endSceneId": "1868-toba",
       "displayName": "岩倉具視",
-      "role": "新政府参与・議定級指導者",
+      "role": "新政府参与・議定",
       "factionId": "new-government",
-      "stance": "新政府の正統性と制度設計を主導する。",
-      "importance": "薩長の軍事力と朝廷の制度を結びつけた。",
+      "stance": "1867年12月に王政復古の政変を計画し、その後は新政府の参与・議定を務める。",
+      "importance": "幽居から復帰し、新政府の正式な役職に就いた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_iwakura_detail",
+          "ndl_iwakura_exile"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で1867年までの幽居、同年12月の王政復古政変計画、その後の新政府参与・議定就任を確認。新政府の正統性・制度設計を主導したという抽象評価は削除。"
       }
     },
     {
@@ -3917,17 +3916,16 @@
       "startSceneId": "1868-toba",
       "endSceneId": "1868-tohoku",
       "displayName": "三条実美",
-      "role": "新政府副総裁級",
+      "role": "新政府議定・副総裁",
       "factionId": "new-government",
-      "stance": "新政府の政務と戊辰戦争指令を担う。",
-      "importance": "公家が全国政府の行政責任者となる。",
+      "stance": "1868年、議定・副総裁・外国事務取調掛などを務める。",
+      "importance": "のち議定兼輔相となり、戊辰戦争では関東大監察使・鎮将も務めた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_sanjo_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1868年の議定・副総裁・外国事務取調掛・議定兼輔相と、戊辰戦争時の関東大監察使・鎮将を確認。「副総裁級」という曖昧な役職名を正式な役職へ訂正。"
       }
     },
     {
@@ -4293,17 +4291,16 @@
       "startSceneId": "1868-toba",
       "endSceneId": "1868-toba",
       "displayName": "山内容堂",
-      "role": "新政府議定",
+      "role": "前土佐藩主・小御所会議出席者",
       "factionId": "new-government",
-      "stance": "王政復古後も慶喜への過酷な処分に反対する。",
-      "importance": "新政府内部にも徳川処分をめぐる意見差があった。",
+      "stance": "王政復古後の小御所会議で徳川家を擁護する。",
+      "importance": "その主張は会議で認められなかった。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kochi_yodo_timeline"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "高知県立高知城歴史博物館で1867年末の小御所会議における徳川家擁護と、その主張が認められなかったことを確認。新政府議定という役職は当該出典で確認できないため表示しない。"
       }
     },
     {
