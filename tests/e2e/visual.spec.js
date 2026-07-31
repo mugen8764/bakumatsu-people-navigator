@@ -24,3 +24,8 @@ test('320px mobile appearance stays stable', async ({ page }) => {
   await prepare(page, { width: 320, height: 780, colorScheme: 'light' });
   await expect(page).toHaveScreenshot('people-mobile-320.png', { animations: 'disabled' });
 });
+
+test('320px mobile dark appearance stays stable', async ({ page }) => {
+  await prepare(page, { width: 320, height: 780, colorScheme: 'dark' });
+  await expect(page).toHaveScreenshot('people-mobile-320-dark.png', { animations: 'disabled' });
+});

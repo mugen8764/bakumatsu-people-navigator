@@ -111,6 +111,23 @@ test('keyboard shortcut focuses and dismisses global search', async ({ page }) =
   await expect(page.locator('#globalSearch')).toHaveValue('');
 });
 
+test('keyboard focus remains visible at 320px in dark mode', async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 780 });
+  await page.emulateMedia({ colorScheme: 'dark', reducedMotion: 'reduce' });
+  await page.goto('/');
+
+  await page.keyboard.press('/');
+  const search = page.locator('#globalSearch');
+  await expect(search).toBeFocused();
+  expect(await search.evaluate(element => getComputedStyle(element).boxShadow)).not.toBe('none');
+
+  await search.fill('桂小五郎');
+  await search.press('ArrowDown');
+  await expect(search).toHaveAttribute('aria-activedescendant', 'search-result-0');
+  await search.press('Enter');
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('桂小五郎');
+});
+
 test('timeline transport, calendar mode, and faction selection remain usable', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator('#sceneSelect')).toHaveValue('0');
