@@ -431,7 +431,7 @@
         "sourceIds": [
           "archives_timeline",
           "ndl_modern_timeline",
-          "mofa_treaty_1854"
+          "yokosuka_perry_blackships"
         ],
         "reviewStatus": "verified"
       }
@@ -474,7 +474,8 @@
       "evidence": {
         "sourceIds": [
           "archives_timeline",
-          "ndl_modern_timeline"
+          "ndl_modern_timeline",
+          "mofa_treaty_1854"
         ],
         "reviewStatus": "verified"
       }
