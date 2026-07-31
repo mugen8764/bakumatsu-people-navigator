@@ -2495,18 +2495,18 @@
       "personId": "kido",
       "startSceneId": "1868-toba",
       "endSceneId": "1868-toba",
-      "displayName": "木戸孝允",
-      "role": "新政府参与",
+      "displayName": "木戸準一郎",
+      "role": "新政府総裁局顧問",
       "factionId": "new-government",
-      "stance": "新政府の制度設計と長州藩の軍事動員を担う。",
-      "importance": "軍事前線と中央政府を結ぶ。",
+      "stance": "1月25日、太政官から総裁局顧問を命じられる。",
+      "importance": "1868年には太政官徴士・外国事務掛・参与も務めた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_kido_ito_1868_appointments",
+          "jacar_kido_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "太政類典の1868年1月25日付記録で「木戸準一郎」の総裁局顧問就任を確認し、アジア歴史資料センターの人物辞典で同年の職歴を照合。制度設計・軍事動員という抽象的な担当範囲は表示しない。"
       }
     },
     {
@@ -2928,19 +2928,56 @@
       "id": "person-status-ito-1868-toba",
       "personId": "ito",
       "startSceneId": "1868-toba",
-      "endSceneId": "1868-tohoku",
-      "displayName": "伊藤博文",
-      "role": "新政府参与級実務者",
+      "endSceneId": "1868-toba",
+      "displayName": "伊藤俊介",
+      "role": "徴士参与・外国事務掛",
       "factionId": "new-government",
-      "stance": "新政府の外交・制度実務へ参加する。",
-      "importance": "若手長州人材が新国家官僚へ移行する。",
+      "stance": "1月25日、徴士参与をもって外国事務掛を命じられる。",
+      "importance": "同じ辞令で兵庫在留を命じられた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "jacar_kido_ito_1868_appointments"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "太政類典の1868年1月25日付記録で「伊藤俊介」の徴士参与・外国事務掛就任と兵庫在留命令を確認。「参与級」という曖昧な役職名を正式な辞令へ改めた。"
+      }
+    },
+    {
+      "id": "person-status-ito-1868-edo",
+      "personId": "ito",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "伊藤俊介",
+      "role": "外国事務掛・兵庫在留、のち兵庫県知事",
+      "factionId": "new-government",
+      "stance": "1月の任命後も兵庫に在留し、5月23日に初代兵庫県知事となる。",
+      "importance": "兵庫県知事の任期は1869年4月10日まで続いた。",
+      "evidence": {
+        "sourceIds": [
+          "jacar_kido_ito_1868_appointments",
+          "hyogo_ito_governor"
+        ],
+        "reviewStatus": "verified",
+        "note": "太政類典で1月の外国事務掛・兵庫在留命令、兵庫県の歴代知事記録で5月23日の初代知事就任と翌年4月10日までの任期を確認。場面内の役職移行を併記した。"
+      }
+    },
+    {
+      "id": "person-status-ito-1868-tohoku",
+      "personId": "ito",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "伊藤俊介",
+      "role": "兵庫県知事",
+      "factionId": "new-government",
+      "stance": "5月23日に初代兵庫県知事へ就任し、兵庫県政を担う。",
+      "importance": "任期は1869年4月10日までで、東北戦線での軍事指揮は表示しない。",
+      "evidence": {
+        "sourceIds": [
+          "hyogo_ito_governor",
+          "jacar_ito_detail"
+        ],
+        "reviewStatus": "verified",
+        "note": "兵庫県の歴代知事記録で就任日・退任日を確認し、アジア歴史資料センターの人物辞典で1868年の兵庫県知事就任を照合。従来の一括した外交・制度実務という記述を場面別の役職へ分割した。"
       }
     },
     {
@@ -3042,18 +3079,17 @@
       "personId": "inoue",
       "startSceneId": "1868-toba",
       "endSceneId": "1868-tohoku",
-      "displayName": "井上馨",
-      "role": "新政府実務者",
+      "displayName": "井上聞多",
+      "role": "参与・外国事務局判事など（1868年）",
       "factionId": "new-government",
-      "stance": "新政府の財政・外交へ参加する。",
-      "importance": "長州の開国派が明治政府官僚へ転換した。",
+      "stance": "前年に三条実美らの帰京に随行し、1868年には新政府の参与・外国事務局判事などを務める。",
+      "importance": "九州鎮撫総督参謀・長崎府判事兼外国官判事・佐渡知県事にも就いた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "jacar_inoue_detail"
         ],
         "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "note": "アジア歴史資料センターで1867年と1868年の職歴は確認できるが、各任命月を示す項目別史料が未確認のため、1月・3月〜5月・5月〜11月の場面別分割は保留する。財政担当という未確認の説明は削除。"
       }
     },
     {
@@ -3138,17 +3174,17 @@
       "startSceneId": "1868-toba",
       "endSceneId": "1868-toba",
       "displayName": "大村益次郎",
-      "role": "新政府軍軍事官僚",
-      "factionId": "new-government",
-      "stance": "新政府の軍制・作戦立案へ参加する。",
-      "importance": "藩軍の寄せ集めを統合する制度を担う。",
+      "role": "長州藩軍政担当",
+      "factionId": "choshu",
+      "stance": "第二次長州征討の休戦後も、長州藩の軍制改革を進める。",
+      "importance": "新政府の軍防事務局へ入るのは翌2月である。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "yamaguchi_omura_1869",
+          "ndl_omura_papers"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で第二次長州征討休戦後の藩軍制改革と1868年2月の軍防事務局入りを確認。1月場面に後月の新政府役職を遡及させず、所属も新政府から長州藩へ訂正した。"
       }
     },
     {
@@ -3269,19 +3305,38 @@
       "id": "person-status-yamagata-1868-toba",
       "personId": "yamagata",
       "startSceneId": "1868-toba",
-      "endSceneId": "1868-edo",
+      "endSceneId": "1868-toba",
       "displayName": "山県狂介",
-      "role": "新政府軍長州隊指揮官",
+      "role": "奇兵隊を率いる長州藩士",
       "factionId": "new-government",
-      "stance": "戊辰戦争へ長州兵を率いて参加する。",
-      "importance": "藩兵指揮官から中央軍人へ移行する。",
+      "stance": "1868年、奇兵隊を率いて戊辰戦争に従軍する。",
+      "importance": "越後口総督参謀を命じられるのは同年4月である。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "jacar_yamagata_detail",
+          "jacar_yamagata_1868_career"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1868年に奇兵隊を率いて戊辰戦争へ従軍したことと、4月の越後口総督参謀就任を確認。鳥羽・伏見での個別行動は出典が直接支えないため表示しない。"
+      }
+    },
+    {
+      "id": "person-status-yamagata-1868-edo",
+      "personId": "yamagata",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "山県狂介",
+      "role": "越後口総督参謀",
+      "factionId": "new-government",
+      "stance": "4月、越後口総督参謀を命じられる。",
+      "importance": "奇兵隊を率いた戊辰戦争従軍から、北越戦線の参謀へ移る。",
+      "evidence": {
+        "sourceIds": [
+          "jacar_yamagata_1868_career",
+          "jacar_yamagata_detail"
+        ],
+        "reviewStatus": "verified",
+        "note": "山県有朋の履歴書で1868年4月の越後口総督参謀就任、人物辞典で奇兵隊を率いた戊辰戦争従軍と北陸道鎮撫総督兼会津征討越後口総督参謀の職歴を確認。"
       }
     },
     {
@@ -3289,18 +3344,18 @@
       "personId": "yamagata",
       "startSceneId": "1868-tohoku",
       "endSceneId": "1868-tohoku",
-      "displayName": "山県有朋",
-      "role": "新政府軍参謀級",
+      "displayName": "山県狂介",
+      "role": "越後口総督参謀",
       "factionId": "new-government",
-      "stance": "北越・東北戦線に参加する。",
-      "importance": "新政府の陸軍人材として台頭する。",
+      "stance": "北越戦線へ出張し、7月にいったん参謀を免じられる。",
+      "importance": "同月、越後口参謀として引き続き尽力するよう総督から求められた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "jacar_yamagata_1868_career",
+          "jacar_yamagata_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "山県有朋の履歴書で旧名「狂介」、北越出張、1868年7月6日の参謀免職、7月17日の総督からの尽力要請を確認し、人物辞典で越後口総督参謀の職歴を照合。「参謀級」という曖昧な表現を正式な役職へ改めた。"
       }
     },
     {

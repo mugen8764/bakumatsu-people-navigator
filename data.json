@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.30",
+    "version": "1.0.31",
     "updated": "2026-07-31"
   },
   "sources": {
@@ -493,7 +493,12 @@
     "jacar_kido_detail": {
       "title": "アジア歴史資料センター「木戸孝允」",
       "url": "https://www.jacar.archives.go.jp/das/term/00000381",
-      "note": "桂小五郎の1852年江戸遊学と1858年の大検使・大番手就任。"
+      "note": "桂小五郎の江戸遊学と長州藩での職歴、1868年の太政官徴士・総裁局顧問・外国事務掛・参与。"
+    },
+    "jacar_kido_ito_1868_appointments": {
+      "title": "アジア歴史資料センター「木戸孝允外三名ヲ総裁局顧問以下ニ任命」",
+      "url": "https://www.jacar.archives.go.jp/das/meta/A15070197600",
+      "note": "1868年1月25日、木戸準一郎を総裁局顧問に、伊藤俊介を徴士参与・外国事務掛に任じ、伊藤には兵庫在留を命じた太政類典の記録。"
     },
     "ndl_portrait_kido_detail": {
       "title": "国立国会図書館「近代日本人の肖像・木戸孝允」",
@@ -513,12 +518,17 @@
     "jacar_ito_detail": {
       "title": "アジア歴史資料センター「伊藤博文」",
       "url": "https://www.jacar.archives.go.jp/das/term/00000372",
-      "note": "伊藤俊輔の中間伊藤家への所属、松下村塾での修学と後年の活動。"
+      "note": "伊藤俊輔の中間伊藤家への所属、松下村塾での修学、1868年の兵庫県知事就任と後年の職歴。"
     },
     "archives_ito": {
       "title": "国立公文書館「明治宰相列伝・伊藤博文」",
       "url": "https://www.archives.go.jp/exhibition/digital/2007_01/hirobumi_ito/index.html",
       "note": "長州藩下級藩士伊藤家、松下村塾での修学、英国留学と後年の職歴。"
+    },
+    "hyogo_ito_governor": {
+      "title": "兵庫県「歴代兵庫県知事」",
+      "url": "https://web.pref.hyogo.lg.jp/kk32/pa13_000000016.html",
+      "note": "伊藤博文（俊介）が1868年5月23日から1869年4月10日まで初代兵庫県知事を務めた記録。"
     },
     "ndl_portrait_iwakura_detail": {
       "title": "国立国会図書館「近代日本人の肖像・岩倉具視」",
@@ -728,7 +738,7 @@
     "jacar_inoue_detail": {
       "title": "アジア歴史資料センター「井上馨」",
       "url": "https://www.jacar.archives.go.jp/das/term/00000373",
-      "note": "井上聞多の1864年の帰国、四国艦隊下関砲撃の講和交渉、同年の俗論党による襲撃。"
+      "note": "井上聞多の1864年の帰国・講和交渉・襲撃、1867年の三条実美らの帰京随行、1868年の参与・外国事務局判事・九州鎮撫総督参謀・長崎府判事兼外国官判事・佐渡知県事。"
     },
     "yamaguchi_inoue_assault": {
       "title": "山口市「井上馨候遭難の地碑」",
@@ -743,7 +753,12 @@
     "jacar_yamagata_detail": {
       "title": "アジア歴史資料センター「山縣有朋」",
       "url": "https://www.jacar.archives.go.jp/das/term/00000402",
-      "note": "山県狂介の1863年の奇兵隊軍監就任と、1864年の下関戦争従軍。"
+      "note": "山県狂介の1863年の奇兵隊軍監、1864年の下関戦争、1866年の第二次幕長戦争、1868年に奇兵隊を率いた戊辰戦争従軍と越後口総督参謀。"
+    },
+    "jacar_yamagata_1868_career": {
+      "title": "アジア歴史資料センター「山県有朋」",
+      "url": "https://www.jacar.archives.go.jp/das/meta/A06051174300",
+      "note": "旧名を狂介とする山県有朋の履歴書。1868年4月の越後口総督参謀就任、7月の参謀免職と北越での尽力を記録する。"
     },
     "nakaoka_museum_profile": {
       "title": "中岡慎太郎館「中岡慎太郎とは」",
@@ -834,6 +849,11 @@
       "title": "山口県立山口図書館「大村益次郎・人物調べ方案内」",
       "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/omura_masujiro2/",
       "note": "1866年の兵学校三兵教授役兼軍政用掛への登用と、四境戦争での石州口参謀としての戦闘。"
+    },
+    "ndl_omura_papers": {
+      "title": "国立国会図書館リサーチ・ナビ「大村家文書（大村益次郎）」",
+      "url": "https://ndlsearch.ndl.go.jp/rnavi/kensei/oomuramasujirou",
+      "note": "第二次長州征討後の軍制整備、1868年2月の軍防事務局入り、同年5月の軍務官判事、10月の軍務官副知事就任。"
     },
     "yamaguchi_yamagata_1866": {
       "title": "山口県立山口図書館「山県有朋と高杉・西郷」",
@@ -5049,17 +5069,17 @@
           }
         },
         "1868-toba": {
-          "display": "木戸孝允",
-          "role": "新政府参与",
+          "display": "木戸準一郎",
+          "role": "新政府総裁局顧問",
           "faction": "新政府",
-          "stance": "新政府の制度設計と長州藩の軍事動員を担う。",
-          "importance": "軍事前線と中央政府を結ぶ。",
+          "stance": "1月25日、太政官から総裁局顧問を命じられる。",
+          "importance": "1868年には太政官徴士・外国事務掛・参与も務めた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "jacar_kido_ito_1868_appointments",
+              "jacar_kido_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-edo": {
@@ -5450,17 +5470,44 @@
           }
         },
         "1868-toba": {
-          "display": "伊藤博文",
-          "role": "新政府参与級実務者",
+          "display": "伊藤俊介",
+          "role": "徴士参与・外国事務掛",
           "faction": "新政府",
-          "stance": "新政府の外交・制度実務へ参加する。",
-          "importance": "若手長州人材が新国家官僚へ移行する。",
+          "stance": "1月25日、徴士参与をもって外国事務掛を命じられる。",
+          "importance": "同じ辞令で兵庫在留を命じられた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "jacar_kido_ito_1868_appointments"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-edo": {
+          "display": "伊藤俊介",
+          "role": "外国事務掛・兵庫在留、のち兵庫県知事",
+          "faction": "新政府",
+          "stance": "1月の任命後も兵庫に在留し、5月23日に初代兵庫県知事となる。",
+          "importance": "兵庫県知事の任期は1869年4月10日まで続いた。",
+          "evidence": {
+            "sourceIds": [
+              "jacar_kido_ito_1868_appointments",
+              "hyogo_ito_governor"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-tohoku": {
+          "display": "伊藤俊介",
+          "role": "兵庫県知事",
+          "faction": "新政府",
+          "stance": "5月23日に初代兵庫県知事へ就任し、兵庫県政を担う。",
+          "importance": "任期は1869年4月10日までで、東北戦線での軍事指揮は表示しない。",
+          "evidence": {
+            "sourceIds": [
+              "hyogo_ito_governor",
+              "jacar_ito_detail"
+            ],
+            "reviewStatus": "verified"
           }
         },
         "1869-hakodate": {
@@ -5563,15 +5610,14 @@
           }
         },
         "1868-toba": {
-          "display": "井上馨",
-          "role": "新政府実務者",
+          "display": "井上聞多",
+          "role": "参与・外国事務局判事など（1868年）",
           "faction": "新政府",
-          "stance": "新政府の財政・外交へ参加する。",
-          "importance": "長州の開国派が明治政府官僚へ転換した。",
+          "stance": "前年に三条実美らの帰京に随行し、1868年には新政府の参与・外国事務局判事などを務める。",
+          "importance": "九州鎮撫総督参謀・長崎府判事兼外国官判事・佐渡知県事にも就いた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "jacar_inoue_detail"
             ],
             "reviewStatus": "needs_review"
           }
@@ -5666,16 +5712,15 @@
         },
         "1868-toba": {
           "display": "大村益次郎",
-          "role": "新政府軍軍事官僚",
-          "faction": "新政府",
-          "stance": "新政府の軍制・作戦立案へ参加する。",
-          "importance": "藩軍の寄せ集めを統合する制度を担う。",
+          "role": "長州藩軍政担当",
+          "stance": "第二次長州征討の休戦後も、長州藩の軍制改革を進める。",
+          "importance": "新政府の軍防事務局へ入るのは翌2月である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "yamaguchi_omura_1869",
+              "ndl_omura_papers"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-edo": {
@@ -5795,30 +5840,44 @@
         },
         "1868-toba": {
           "display": "山県狂介",
-          "role": "新政府軍長州隊指揮官",
+          "role": "奇兵隊を率いる長州藩士",
           "faction": "新政府",
-          "stance": "戊辰戦争へ長州兵を率いて参加する。",
-          "importance": "藩兵指揮官から中央軍人へ移行する。",
+          "stance": "1868年、奇兵隊を率いて戊辰戦争に従軍する。",
+          "importance": "越後口総督参謀を命じられるのは同年4月である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "jacar_yamagata_detail",
+              "jacar_yamagata_1868_career"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-edo": {
+          "display": "山県狂介",
+          "role": "越後口総督参謀",
+          "faction": "新政府",
+          "stance": "4月、越後口総督参謀を命じられる。",
+          "importance": "奇兵隊を率いた戊辰戦争従軍から、北越戦線の参謀へ移る。",
+          "evidence": {
+            "sourceIds": [
+              "jacar_yamagata_1868_career",
+              "jacar_yamagata_detail"
+            ],
+            "reviewStatus": "verified"
           }
         },
         "1868-tohoku": {
-          "display": "山県有朋",
-          "role": "新政府軍参謀級",
+          "display": "山県狂介",
+          "role": "越後口総督参謀",
           "faction": "新政府",
-          "stance": "北越・東北戦線に参加する。",
-          "importance": "新政府の陸軍人材として台頭する。",
+          "stance": "北越戦線へ出張し、7月にいったん参謀を免じられる。",
+          "importance": "同月、越後口参謀として引き続き尽力するよう総督から求められた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "jacar_yamagata_1868_career",
+              "jacar_yamagata_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1869-hakodate": {

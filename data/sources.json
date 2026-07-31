@@ -587,7 +587,13 @@
       "id": "jacar_kido_detail",
       "title": "アジア歴史資料センター「木戸孝允」",
       "url": "https://www.jacar.archives.go.jp/das/term/00000381",
-      "note": "桂小五郎の1852年江戸遊学と1858年の大検使・大番手就任。"
+      "note": "桂小五郎の江戸遊学と長州藩での職歴、1868年の太政官徴士・総裁局顧問・外国事務掛・参与。"
+    },
+    {
+      "id": "jacar_kido_ito_1868_appointments",
+      "title": "アジア歴史資料センター「木戸孝允外三名ヲ総裁局顧問以下ニ任命」",
+      "url": "https://www.jacar.archives.go.jp/das/meta/A15070197600",
+      "note": "1868年1月25日、木戸準一郎を総裁局顧問に、伊藤俊介を徴士参与・外国事務掛に任じ、伊藤には兵庫在留を命じた太政類典の記録。"
     },
     {
       "id": "ndl_portrait_kido_detail",
@@ -611,13 +617,19 @@
       "id": "jacar_ito_detail",
       "title": "アジア歴史資料センター「伊藤博文」",
       "url": "https://www.jacar.archives.go.jp/das/term/00000372",
-      "note": "伊藤俊輔の中間伊藤家への所属、松下村塾での修学と後年の活動。"
+      "note": "伊藤俊輔の中間伊藤家への所属、松下村塾での修学、1868年の兵庫県知事就任と後年の職歴。"
     },
     {
       "id": "archives_ito",
       "title": "国立公文書館「明治宰相列伝・伊藤博文」",
       "url": "https://www.archives.go.jp/exhibition/digital/2007_01/hirobumi_ito/index.html",
       "note": "長州藩下級藩士伊藤家、松下村塾での修学、英国留学と後年の職歴。"
+    },
+    {
+      "id": "hyogo_ito_governor",
+      "title": "兵庫県「歴代兵庫県知事」",
+      "url": "https://web.pref.hyogo.lg.jp/kk32/pa13_000000016.html",
+      "note": "伊藤博文（俊介）が1868年5月23日から1869年4月10日まで初代兵庫県知事を務めた記録。"
     },
     {
       "id": "ndl_portrait_iwakura_detail",
@@ -869,7 +881,7 @@
       "id": "jacar_inoue_detail",
       "title": "アジア歴史資料センター「井上馨」",
       "url": "https://www.jacar.archives.go.jp/das/term/00000373",
-      "note": "井上聞多の1864年の帰国、四国艦隊下関砲撃の講和交渉、同年の俗論党による襲撃。"
+      "note": "井上聞多の1864年の帰国・講和交渉・襲撃、1867年の三条実美らの帰京随行、1868年の参与・外国事務局判事・九州鎮撫総督参謀・長崎府判事兼外国官判事・佐渡知県事。"
     },
     {
       "id": "yamaguchi_inoue_assault",
@@ -887,7 +899,13 @@
       "id": "jacar_yamagata_detail",
       "title": "アジア歴史資料センター「山縣有朋」",
       "url": "https://www.jacar.archives.go.jp/das/term/00000402",
-      "note": "山県狂介の1863年の奇兵隊軍監就任と、1864年の下関戦争従軍。"
+      "note": "山県狂介の1863年の奇兵隊軍監、1864年の下関戦争、1866年の第二次幕長戦争、1868年に奇兵隊を率いた戊辰戦争従軍と越後口総督参謀。"
+    },
+    {
+      "id": "jacar_yamagata_1868_career",
+      "title": "アジア歴史資料センター「山県有朋」",
+      "url": "https://www.jacar.archives.go.jp/das/meta/A06051174300",
+      "note": "旧名を狂介とする山県有朋の履歴書。1868年4月の越後口総督参謀就任、7月の参謀免職と北越での尽力を記録する。"
     },
     {
       "id": "nakaoka_museum_profile",
@@ -996,6 +1014,12 @@
       "title": "山口県立山口図書館「大村益次郎・人物調べ方案内」",
       "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/omura_masujiro2/",
       "note": "1866年の兵学校三兵教授役兼軍政用掛への登用と、四境戦争での石州口参謀としての戦闘。"
+    },
+    {
+      "id": "ndl_omura_papers",
+      "title": "国立国会図書館リサーチ・ナビ「大村家文書（大村益次郎）」",
+      "url": "https://ndlsearch.ndl.go.jp/rnavi/kensei/oomuramasujirou",
+      "note": "第二次長州征討後の軍制整備、1868年2月の軍防事務局入り、同年5月の軍務官判事、10月の軍務官副知事就任。"
     },
     {
       "id": "yamaguchi_yamagata_1866",
