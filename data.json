@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.31",
+    "version": "1.0.32",
     "updated": "2026-07-31"
   },
   "sources": {
@@ -59,6 +59,11 @@
       "title": "東京都立図書館「勝海舟書簡　山岡鉄舟あて」",
       "url": "https://archive.library.metro.tokyo.lg.jp/da/detail?tilcod=0000000017-00040922",
       "note": "山岡鉄舟と西郷隆盛の事前交渉、勝海舟との会談に至る経緯。"
+    },
+    "ndl_portrait_yamaoka_detail": {
+      "title": "国立国会図書館「近代日本人の肖像・山岡鉄太郎」",
+      "url": "https://www.ndl.go.jp/portrait/datas/207/",
+      "note": "山岡鉄太郎が1868年に徳川慶喜の警固役として精鋭隊頭となり、同年3月に駿府で西郷隆盛と談判した経歴。"
     },
     "sumida_katsu_edo_surrender": {
       "title": "墨田区「勝海舟　幕末・明治を生きた巨人」",
@@ -844,6 +849,11 @@
       "title": "国立公文書館「旗本御家人・榎本釜次郎脱艦一件書並仏人ブリユウネ等所罰方」",
       "url": "https://www.archives.go.jp/exhibition/digital/hatamotogokenin/contents/56.html",
       "note": "榎本武揚のオランダ留学と、帰国後の1867年における軍艦役・軍艦頭並就任。"
+    },
+    "ndl_enomoto_papers": {
+      "title": "国立国会図書館リサーチ・ナビ「榎本武揚関係文書」",
+      "url": "https://ndlsearch.ndl.go.jp/rnavi/kensei/enomototakeaki",
+      "note": "榎本武揚の1862年から1867年までのオランダ留学、1868年1月の海軍副総裁就任、1869年5月の五稜郭での降伏。"
     },
     "yamaguchi_omura_guide": {
       "title": "山口県立山口図書館「大村益次郎・人物調べ方案内」",
@@ -3303,14 +3313,13 @@
           "display": "山岡鉄太郎",
           "role": "幕臣・精鋭隊頭",
           "faction": "旧幕府勢力",
-          "stance": "慶喜の恭順を伝える使者として新政府軍へ向かう。",
-          "importance": "勝・西郷会談以前の条件調整を行った。",
+          "stance": "徳川慶喜の警固役として精鋭隊頭を務める。",
+          "importance": "駿府で西郷隆盛と談判するのは同年3月である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "ndl_portrait_yamaoka_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-edo": {
@@ -3388,14 +3397,14 @@
           "display": "榎本武揚",
           "role": "旧幕府海軍副総裁",
           "faction": "旧幕府勢力",
-          "stance": "慶喜を大坂から江戸へ運び、艦隊を維持する。",
-          "importance": "旧幕府側がなお強力な海軍を保持していた。",
+          "stance": "1868年1月、海軍副総裁に就任する。",
+          "importance": "艦隊を率いて品川沖を脱走するのは同年8月である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "ndl_enomoto_papers",
+              "archives_enomoto_1867"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-edo": {
@@ -7725,16 +7734,15 @@
         },
         "1868-toba": {
           "display": "天璋院",
-          "role": "徳川家存続を求める大奥の代表",
+          "role": "13代将軍家定正室・天璋院",
           "faction": "旧幕府勢力",
-          "stance": "新政府側へ徳川慶喜・徳川家への寛典を求める。",
-          "importance": "軍事交渉以外の人的・親族的な和平経路。",
+          "stance": "家定の死後も徳川家にとどまり、生涯にわたって徳川家の立場を貫く。",
+          "importance": "同年、江戸城の無血開城に力を尽くした。",
           "evidence": {
             "sourceIds": [
-              "archives_timeline",
-              "ndl_handwriting"
+              "kagoshima_tenshoin"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-edo": {
@@ -7834,16 +7842,15 @@
         },
         "1868-toba": {
           "display": "静寛院宮",
-          "role": "徳川家存続を求める交渉関係者",
+          "role": "14代将軍家茂夫人・静寛院宮",
           "faction": "旧幕府勢力",
-          "stance": "朝廷・新政府側へ徳川家への寛典を嘆願する。",
-          "importance": "天璋院とともに人的な交渉経路を形成する。",
+          "stance": "戊辰戦争の際、江戸攻撃の中止と徳川家の存続に尽力する。",
+          "importance": "具体的な嘆願先や時期は、現在の項目別出典では限定しない。",
           "evidence": {
             "sourceIds": [
-              "archives_timeline",
-              "ndl_handwriting"
+              "ndl_portrait_kazunomiya_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-edo": {

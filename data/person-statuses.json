@@ -601,15 +601,14 @@
       "displayName": "山岡鉄太郎",
       "role": "幕臣・精鋭隊頭",
       "factionId": "former-bakufu",
-      "stance": "慶喜の恭順を伝える使者として新政府軍へ向かう。",
-      "importance": "勝・西郷会談以前の条件調整を行った。",
+      "stance": "徳川慶喜の警固役として精鋭隊頭を務める。",
+      "importance": "駿府で西郷隆盛と談判するのは同年3月である。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_yamaoka_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で1868年の慶喜警固役・精鋭隊頭就任と、3月の駿府での西郷との談判を確認。江戸開城場面の使者・事前交渉を1月の行動として先取りしない。"
       }
     },
     {
@@ -675,15 +674,15 @@
       "displayName": "榎本武揚",
       "role": "旧幕府海軍副総裁",
       "factionId": "former-bakufu",
-      "stance": "慶喜を大坂から江戸へ運び、艦隊を維持する。",
-      "importance": "旧幕府側がなお強力な海軍を保持していた。",
+      "stance": "1868年1月、海軍副総裁に就任する。",
+      "importance": "艦隊を率いて品川沖を脱走するのは同年8月である。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "ndl_enomoto_papers",
+          "archives_enomoto_1867"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の関係文書解説で1868年1月の海軍副総裁就任、国立公文書館で前年の軍艦役・軍艦頭並と同年8月の脱走を確認。慶喜を大坂から運んだという個別行動は当該出典が直接支えないため削除。"
       }
     },
     {
@@ -5363,17 +5362,16 @@
       "startSceneId": "1868-toba",
       "endSceneId": "1868-toba",
       "displayName": "天璋院",
-      "role": "徳川家存続を求める大奥の代表",
+      "role": "13代将軍家定正室・天璋院",
       "factionId": "former-bakufu",
-      "stance": "新政府側へ徳川慶喜・徳川家への寛典を求める。",
-      "importance": "軍事交渉以外の人的・親族的な和平経路。",
+      "stance": "家定の死後も徳川家にとどまり、生涯にわたって徳川家の立場を貫く。",
+      "importance": "同年、江戸城の無血開城に力を尽くした。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "kagoshima_tenshoin"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "鹿児島県の人物解説で家定正室、家定死後の改名、生涯の徳川家支持、江戸城無血開城への尽力を確認。1月中の具体的な嘆願先や交渉経路は出典が示さないため表示しない。"
       }
     },
     {
@@ -5474,17 +5472,16 @@
       "startSceneId": "1868-toba",
       "endSceneId": "1868-toba",
       "displayName": "静寛院宮",
-      "role": "徳川家存続を求める交渉関係者",
+      "role": "14代将軍家茂夫人・静寛院宮",
       "factionId": "former-bakufu",
-      "stance": "朝廷・新政府側へ徳川家への寛典を嘆願する。",
-      "importance": "天璋院とともに人的な交渉経路を形成する。",
+      "stance": "戊辰戦争の際、江戸攻撃の中止と徳川家の存続に尽力する。",
+      "importance": "具体的な嘆願先や時期は、現在の項目別出典では限定しない。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "ndl_portrait_kazunomiya_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で家茂夫人、1866年の出家・静寛院宮号、戊辰戦争期の江戸攻撃中止と徳川家存続への尽力を確認。天璋院と共同で交渉経路を形成したという未確認の関係付けは表示しない。"
       }
     },
     {

@@ -68,6 +68,12 @@
       "note": "山岡鉄舟と西郷隆盛の事前交渉、勝海舟との会談に至る経緯。"
     },
     {
+      "id": "ndl_portrait_yamaoka_detail",
+      "title": "国立国会図書館「近代日本人の肖像・山岡鉄太郎」",
+      "url": "https://www.ndl.go.jp/portrait/datas/207/",
+      "note": "山岡鉄太郎が1868年に徳川慶喜の警固役として精鋭隊頭となり、同年3月に駿府で西郷隆盛と談判した経歴。"
+    },
+    {
       "id": "sumida_katsu_edo_surrender",
       "title": "墨田区「勝海舟　幕末・明治を生きた巨人」",
       "url": "https://www.city.sumida.lg.jp/sisetu_info/siryou/kyoudobunka/sonota/tenzi/h15/kikakuten_katukaisyuu.html",
@@ -1008,6 +1014,12 @@
       "title": "国立公文書館「旗本御家人・榎本釜次郎脱艦一件書並仏人ブリユウネ等所罰方」",
       "url": "https://www.archives.go.jp/exhibition/digital/hatamotogokenin/contents/56.html",
       "note": "榎本武揚のオランダ留学と、帰国後の1867年における軍艦役・軍艦頭並就任。"
+    },
+    {
+      "id": "ndl_enomoto_papers",
+      "title": "国立国会図書館リサーチ・ナビ「榎本武揚関係文書」",
+      "url": "https://ndlsearch.ndl.go.jp/rnavi/kensei/enomototakeaki",
+      "note": "榎本武揚の1862年から1867年までのオランダ留学、1868年1月の海軍副総裁就任、1869年5月の五稜郭での降伏。"
     },
     {
       "id": "yamaguchi_omura_guide",
