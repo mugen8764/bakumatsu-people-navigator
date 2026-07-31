@@ -1157,7 +1157,7 @@
       "id": "ndl_1869_official_election",
       "title": "国立国会図書館「選挙と日記―マツリの記録をよむ」",
       "url": "https://www.ndl.go.jp/nikki/essay/03/",
-      "note": "1869年5月13日の官吏公選と、大村益次郎の軍務官副知官事への選出。"
+      "note": "1869年5月13日の官吏公選と、大久保利通・後藤象二郎・板垣退助らの参与選出、大村益次郎の軍務官副知官事選出。"
     },
     {
       "id": "ndl_sanjo_papers",
@@ -1200,6 +1200,18 @@
       "title": "国立国会図書館「近代日本人の肖像・小松帯刀」",
       "url": "https://www.ndl.go.jp/portrait/datas/82/",
       "note": "小松帯刀が1868年に総裁局顧問へ就任し、1869年5月に病気のため官を辞したこと。"
+    },
+    {
+      "id": "ndl_shungaku_papers",
+      "title": "国立国会図書館リサーチ・ナビ「松平春嶽関係文書」",
+      "url": "https://ndlsearch.ndl.go.jp/rnavi/kensei/matsudairashunngaku2",
+      "note": "松平春嶽の1867年12月の議定職、1868年1月の内国事務総督、同年2月の議定職内国事務局補などの履歴。"
+    },
+    {
+      "id": "osaka_archives_early_governors",
+      "title": "大阪府公文書館「大阪府政と歴代知事」",
+      "url": "https://archives.pref.osaka.lg.jp/search/information.do?id=70&method=initPage",
+      "note": "参与後藤象二郎が1868年7月12日に大坂府知事兼勤を命じられ、1869年2月18日に辞任したこと。"
     }
   ]
 }

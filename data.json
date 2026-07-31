@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.40",
+    "version": "1.0.41",
     "updated": "2026-07-31"
   },
   "sources": {
@@ -968,7 +968,7 @@
     "ndl_1869_official_election": {
       "title": "国立国会図書館「選挙と日記―マツリの記録をよむ」",
       "url": "https://www.ndl.go.jp/nikki/essay/03/",
-      "note": "1869年5月13日の官吏公選と、大村益次郎の軍務官副知官事への選出。"
+      "note": "1869年5月13日の官吏公選と、大久保利通・後藤象二郎・板垣退助らの参与選出、大村益次郎の軍務官副知官事選出。"
     },
     "ndl_sanjo_papers": {
       "title": "国立国会図書館リサーチ・ナビ「三条家文書（所蔵）」",
@@ -1004,6 +1004,16 @@
       "title": "国立国会図書館「近代日本人の肖像・小松帯刀」",
       "url": "https://www.ndl.go.jp/portrait/datas/82/",
       "note": "小松帯刀が1868年に総裁局顧問へ就任し、1869年5月に病気のため官を辞したこと。"
+    },
+    "ndl_shungaku_papers": {
+      "title": "国立国会図書館リサーチ・ナビ「松平春嶽関係文書」",
+      "url": "https://ndlsearch.ndl.go.jp/rnavi/kensei/matsudairashunngaku2",
+      "note": "松平春嶽の1867年12月の議定職、1868年1月の内国事務総督、同年2月の議定職内国事務局補などの履歴。"
+    },
+    "osaka_archives_early_governors": {
+      "title": "大阪府公文書館「大阪府政と歴代知事」",
+      "url": "https://archives.pref.osaka.lg.jp/search/information.do?id=70&method=initPage",
+      "note": "参与後藤象二郎が1868年7月12日に大坂府知事兼勤を命じられ、1869年2月18日に辞任したこと。"
     }
   },
   "factions": {
@@ -3784,16 +3794,15 @@
         },
         "1868-edo": {
           "display": "松平春嶽",
-          "role": "新政府議定",
+          "role": "議定職・内国事務局補",
           "faction": "新政府",
-          "stance": "徳川家の処分と政権移行に関わる。",
-          "importance": "政権交代は旧幕府系人材の全面排除ではなかった。",
+          "stance": "1867年12月に議定職、1868年1月に内国事務総督、2月に議定職内国事務局補へ就く。",
+          "importance": "江戸開城期には、旧幕府の政事総裁職ではなく新政府の官職にあった。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "ndl_shungaku_papers"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         }
       }
@@ -6958,16 +6967,15 @@
         },
         "1868-edo": {
           "display": "山内容堂",
-          "role": "新政府議定",
-          "faction": "新政府",
-          "stance": "政権移行と徳川家存続に関与する。",
-          "importance": "武力倒幕派とは異なる立場から新政府へ参加した。",
+          "role": "前土佐藩主・容堂",
+          "stance": "前年末の小御所会議で徳川家を擁護したが、その主張は認められなかった。",
+          "importance": "江戸開城の直接交渉は西郷隆盛と勝海舟らが担った。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kochi_yodo_timeline",
+              "sumida_katsu_edo_surrender"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         }
       }
@@ -7301,42 +7309,44 @@
         },
         "1868-edo": {
           "display": "後藤象二郎",
-          "role": "外国事務掛・徴士参与・外国事務局判事（1868年）",
+          "role": "新政府徴士・参与",
           "faction": "新政府",
-          "stance": "1868年、新政府で外国事務掛、徴士参与、外国事務局判事などを務める。",
-          "importance": "各役職の任命月は、現在の項目別出典では確認できていない。",
+          "stance": "1867年に参与へ就き、1868年には外国事務掛・外国事務局判事などを歴任する。",
+          "importance": "大坂府知事兼勤を命じられるのは、この場面後の7月12日。",
           "evidence": {
             "sourceIds": [
-              "jacar_goto_detail"
+              "jacar_goto_detail",
+              "osaka_archives_early_governors"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-tohoku": {
           "display": "後藤象二郎",
-          "role": "新政府参与・大坂府知事（1868年）",
+          "role": "新政府参与・大坂府知事（7月12日以降）",
           "faction": "新政府",
-          "stance": "1868年、参与を務め、大坂府知事も兼ねる。",
-          "importance": "就任月と奥羽戦線への具体的関与は、現在の項目別出典では確認できていない。",
+          "stance": "7月12日、参与のまま大坂府知事兼勤を命じられる。",
+          "importance": "大坂府知事は翌1869年2月18日に辞任した。",
           "evidence": {
             "sourceIds": [
-              "jacar_goto_detail"
+              "jacar_goto_detail",
+              "osaka_archives_early_governors"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1869-hakodate": {
           "display": "後藤象二郎",
-          "role": "新政府官僚",
+          "role": "新政府参与",
           "faction": "新政府",
-          "stance": "政府の行政・経済政策に関わる。",
-          "importance": "藩参政から近代官僚へ移行した。",
+          "stance": "5月13日の官吏公選で23票を得て、参与に選出される。",
+          "importance": "大坂府知事は2月18日に辞任済みで、箱館戦争終結時は参与だった。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "ndl_1869_official_election",
+              "osaka_archives_early_governors"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         }
       }
@@ -7544,14 +7554,16 @@
         },
         "1869-hakodate": {
           "display": "板垣退助",
-          "role": "戊辰戦争後の土佐藩士",
-          "stance": "戊辰戦争の功績により土佐藩の家老格へ昇進するが、その時期は現在の出典では特定できない。",
-          "importance": "箱館戦線への直接関与を示す根拠は確認できない。",
+          "role": "新政府参与",
+          "faction": "新政府",
+          "stance": "5月13日の官吏公選で21票を得て、参与に選出される。",
+          "importance": "戊辰戦争の功績で土佐藩の家老格へ進んだが、箱館戦線への直接関与は確認できない。",
           "evidence": {
             "sourceIds": [
+              "ndl_1869_official_election",
               "kochi_itagaki_profile"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         }
       }

@@ -949,17 +949,16 @@
       "startSceneId": "1868-edo",
       "endSceneId": "1868-edo",
       "displayName": "松平春嶽",
-      "role": "新政府議定",
+      "role": "議定職・内国事務局補",
       "factionId": "new-government",
-      "stance": "徳川家の処分と政権移行に関わる。",
-      "importance": "政権交代は旧幕府系人材の全面排除ではなかった。",
+      "stance": "1867年12月に議定職、1868年1月に内国事務総督、2月に議定職内国事務局補へ就く。",
+      "importance": "江戸開城期には、旧幕府の政事総裁職ではなく新政府の官職にあった。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_shungaku_papers"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の松平春嶽関係文書履歴で、1867年12月の議定職、1868年1月の内国事務総督、2月の議定職内国事務局補を確認。徳川家処分への具体的関与は当該出典が直接支えないため表示しない。"
       }
     },
     {
@@ -4430,17 +4429,17 @@
       "startSceneId": "1868-edo",
       "endSceneId": "1868-edo",
       "displayName": "山内容堂",
-      "role": "新政府議定",
-      "factionId": "new-government",
-      "stance": "政権移行と徳川家存続に関与する。",
-      "importance": "武力倒幕派とは異なる立場から新政府へ参加した。",
+      "role": "前土佐藩主・容堂",
+      "factionId": "tosa",
+      "stance": "前年末の小御所会議で徳川家を擁護したが、その主張は認められなかった。",
+      "importance": "江戸開城の直接交渉は西郷隆盛と勝海舟らが担った。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kochi_yodo_timeline",
+          "sumida_katsu_edo_surrender"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "高知県立高知城歴史博物館で前土佐藩主としての立場と小御所会議での徳川家擁護、墨田区で西郷・勝らによる江戸開城交渉を確認。江戸開城期の議定在職を直接示す任免史料がないため、役職を推測しない。"
       }
     },
     {
@@ -4791,16 +4790,17 @@
       "startSceneId": "1868-edo",
       "endSceneId": "1868-edo",
       "displayName": "後藤象二郎",
-      "role": "外国事務掛・徴士参与・外国事務局判事（1868年）",
+      "role": "新政府徴士・参与",
       "factionId": "new-government",
-      "stance": "1868年、新政府で外国事務掛、徴士参与、外国事務局判事などを務める。",
-      "importance": "各役職の任命月は、現在の項目別出典では確認できていない。",
+      "stance": "1867年に参与へ就き、1868年には外国事務掛・外国事務局判事などを歴任する。",
+      "importance": "大坂府知事兼勤を命じられるのは、この場面後の7月12日。",
       "evidence": {
         "sourceIds": [
-          "jacar_goto_detail"
+          "jacar_goto_detail",
+          "osaka_archives_early_governors"
         ],
-        "reviewStatus": "needs_review",
-        "note": "アジア歴史資料センターで1868年中の職歴は確認できるが、3月〜5月場面のどの時点で各職へ移ったかを示す辞令史料が未確認。場面別の順序を推測しない。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1867年の参与と1868年の徴士・参与・外交関係職、大阪府公文書館で7月12日の大坂府知事兼勤を確認。3月から5月の外交職の任免順序は示さず、知事職を先取りしない。"
       }
     },
     {
@@ -4809,16 +4809,17 @@
       "startSceneId": "1868-tohoku",
       "endSceneId": "1868-tohoku",
       "displayName": "後藤象二郎",
-      "role": "新政府参与・大坂府知事（1868年）",
+      "role": "新政府参与・大坂府知事（7月12日以降）",
       "factionId": "new-government",
-      "stance": "1868年、参与を務め、大坂府知事も兼ねる。",
-      "importance": "就任月と奥羽戦線への具体的関与は、現在の項目別出典では確認できていない。",
+      "stance": "7月12日、参与のまま大坂府知事兼勤を命じられる。",
+      "importance": "大坂府知事は翌1869年2月18日に辞任した。",
       "evidence": {
         "sourceIds": [
-          "jacar_goto_detail"
+          "jacar_goto_detail",
+          "osaka_archives_early_governors"
         ],
-        "reviewStatus": "needs_review",
-        "note": "アジア歴史資料センターで1868年の参与・大坂府知事を確認。5月〜11月場面における就任時期と具体的な軍事関与は確認できないため、校正待ちを維持。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1868年の参与・大坂府知事、大阪府公文書館で7月12日の兼勤命令と1869年2月18日の辞任を確認。奥羽戦線への具体的関与は表示しない。"
       }
     },
     {
@@ -4827,17 +4828,17 @@
       "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "displayName": "後藤象二郎",
-      "role": "新政府官僚",
+      "role": "新政府参与",
       "factionId": "new-government",
-      "stance": "政府の行政・経済政策に関わる。",
-      "importance": "藩参政から近代官僚へ移行した。",
+      "stance": "5月13日の官吏公選で23票を得て、参与に選出される。",
+      "importance": "大坂府知事は2月18日に辞任済みで、箱館戦争終結時は参与だった。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_1869_official_election",
+          "osaka_archives_early_governors"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で1869年5月13日の官吏公選における参与選出、大阪府公文書館で同年2月18日の知事辞任を確認。箱館戦争終結日の5月18日時点へ合わせた。"
       }
     },
     {
@@ -5050,16 +5051,17 @@
       "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "displayName": "板垣退助",
-      "role": "戊辰戦争後の土佐藩士",
-      "factionId": "tosa",
-      "stance": "戊辰戦争の功績により土佐藩の家老格へ昇進するが、その時期は現在の出典では特定できない。",
-      "importance": "箱館戦線への直接関与を示す根拠は確認できない。",
+      "role": "新政府参与",
+      "factionId": "new-government",
+      "stance": "5月13日の官吏公選で21票を得て、参与に選出される。",
+      "importance": "戊辰戦争の功績で土佐藩の家老格へ進んだが、箱館戦線への直接関与は確認できない。",
       "evidence": {
         "sourceIds": [
+          "ndl_1869_official_election",
           "kochi_itagaki_profile"
         ],
-        "reviewStatus": "needs_review",
-        "note": "高知市で戊辰戦争の功績による家老格昇進は確認できるが、昇進時期と1869年の具体的な役職・行動を特定できないため needs_review を維持。抽象的な「新政府官僚」は表示しない。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で1869年5月13日の官吏公選における参与選出、高知市で戊辰戦争の功績による家老格昇進を確認。箱館戦争終結日の5月18日時点では参与であり、戦地での直接行動は断定しない。"
       }
     },
     {
