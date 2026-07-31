@@ -74,10 +74,34 @@
       "note": "山岡鉄太郎が1868年に徳川慶喜の警固役として精鋭隊頭となり、同年3月に駿府で西郷隆盛と談判した経歴。"
     },
     {
+      "id": "ndl_katsu_papers",
+      "title": "国立国会図書館「勝海舟関係文書」",
+      "url": "https://ndlsearch.ndl.go.jp/rnavi/kensei/katsukaishuu",
+      "note": "勝海舟の幕府職歴と、1868年1月の海軍奉行並・陸軍総裁就任。"
+    },
+    {
+      "id": "jacar_katsu_detail",
+      "title": "アジア歴史資料センター「勝海舟」",
+      "url": "https://www.jacar.archives.go.jp/das/term/00000380",
+      "note": "勝海舟の幕府海軍での職歴、江戸城開城と開城後の江戸鎮撫取締への尽力。"
+    },
+    {
       "id": "sumida_katsu_edo_surrender",
       "title": "墨田区「勝海舟　幕末・明治を生きた巨人」",
       "url": "https://www.city.sumida.lg.jp/sisetu_info/siryou/kyoudobunka/sonota/tenzi/h15/kikakuten_katukaisyuu.html",
-      "note": "徳川慶喜から勝海舟への事後処理委任、山岡鉄舟の事前交渉、江戸城引き渡し。"
+      "note": "徳川慶喜から勝海舟への事後処理委任、3月9日の山岡鉄舟・西郷隆盛会談、13・14日の勝・西郷会談、総攻撃中止、4月11日の江戸城引き渡し。"
+    },
+    {
+      "id": "chiyoda_edo_surrender_petitions",
+      "title": "千代田区「江戸から東京へ・江戸城無血開城から東京の新たな幕開け」",
+      "url": "https://www.city.chiyoda.lg.jp/koho/kuse/koho/pressrelease/h30/h3009/h300905-2.html",
+      "note": "江戸総攻撃を前に、天璋院が薩摩藩へ、皇女和宮が天皇家へ幕府・徳川家に関する嘆願を行った経緯。"
+    },
+    {
+      "id": "ndl_portrait_kazunomiya",
+      "title": "国立国会図書館「近代日本人の肖像・和宮」",
+      "url": "https://www.ndl.go.jp/portrait/datas/6156",
+      "note": "和宮が14代将軍徳川家茂の夫人であり、家茂死後に静寛院宮と号した経歴。"
     },
     {
       "id": "ndl_treaty_1854_text",
@@ -695,7 +719,7 @@
       "id": "matsudo_yoshinobu_timeline",
       "title": "松戸市戸定歴史館「徳川慶喜・昭武関係年表 一」",
       "url": "https://www.city.matsudo.chiba.jp/tojo/rekishikan_shoukai/rekishi/nenpyou/1837-1869.html",
-      "note": "徳川慶喜への1859年の隠居謹慎命令、1862年の一橋家再相続・将軍後見職就任、1868年1月3日の鳥羽・伏見開戦、6日の大坂城脱出・海路江戸行き、2月12日の寛永寺謹慎。"
+      "note": "徳川慶喜への1859年の隠居謹慎命令、1862年の一橋家再相続・将軍後見職就任、1868年の鳥羽・伏見開戦と大坂脱出、2月12日の寛永寺謹慎、4月の水戸移動、7月19日の駿府移動。"
     },
     {
       "id": "kagoshima_saigo_kikuchi",

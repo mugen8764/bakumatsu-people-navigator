@@ -429,18 +429,16 @@
       "startSceneId": "1868-edo",
       "endSceneId": "1868-edo",
       "displayName": "徳川慶喜",
-      "role": "寛永寺で謹慎",
+      "role": "寛永寺・水戸で謹慎",
       "factionId": "former-bakufu",
-      "stance": "江戸総攻撃を避けるため恭順姿勢を示し、徳川家存続交渉の対象となる。",
-      "importance": "勝・山岡らの交渉を成立させる前提となった。",
+      "stance": "2月12日に寛永寺へ移って謹慎し、江戸城開城日の4月11日に水戸へ向かう。",
+      "importance": "4月15日から水戸の弘道館で謹慎を続ける。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_modern_timeline",
-          "ndl_handwriting"
+          "matsudo_yoshinobu_timeline"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "松戸市戸定歴史館の年表で1868年2月12日の寛永寺謹慎、4月11日の水戸移動、15日の弘道館謹慎を確認。恭順の動機や交渉成立の因果は推定せず、確認できる所在と処遇を表示。"
       }
     },
     {
@@ -451,16 +449,14 @@
       "displayName": "徳川慶喜",
       "role": "水戸・駿府で謹慎",
       "factionId": "former-bakufu",
-      "stance": "東北戦争には直接参加せず、徳川家は駿府へ移される。",
-      "importance": "旧幕府側の諸戦線と慶喜本人の意思は一致していなかった。",
+      "stance": "水戸の弘道館で謹慎し、7月19日に駿府の宝台院へ移る。",
+      "importance": "東北戦線での個別行動ではなく、謹慎場所の移動を表示する。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_modern_timeline",
-          "ndl_handwriting"
+          "matsudo_yoshinobu_timeline"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "松戸市戸定歴史館の年表で1868年4月15日からの弘道館謹慎と7月19日の駿府・宝台院への移動を確認。「東北戦争へ直接参加しなかった」という不在の断定は表示文から外した。"
       }
     },
     {
@@ -578,19 +574,37 @@
       "id": "person-status-katsu-1868-edo",
       "personId": "katsu",
       "startSceneId": "1868-edo",
-      "endSceneId": "1868-tohoku",
+      "endSceneId": "1868-edo",
       "displayName": "勝海舟",
-      "role": "旧幕府側交渉責任者",
+      "role": "陸軍総裁・旧幕府側交渉責任者",
       "factionId": "former-bakufu",
-      "stance": "西郷隆盛と江戸城引き渡し条件を交渉し、市街戦を回避する。",
-      "importance": "江戸無血開城の中心人物。",
+      "stance": "3月13日・14日に西郷隆盛と会談し、徳川家の処分条件について譲歩を求める。",
+      "importance": "会談後、3月15日に予定された江戸総攻撃は中止され、4月11日に江戸城が引き渡された。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_katsu_papers",
+          "sumida_katsu_edo_surrender"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の関係文書案内で1868年1月の陸軍総裁就任、墨田区立すみだ郷土文化資料館で3月13・14日の西郷との会談、総攻撃中止、4月11日の引渡しを確認。「無血開城の中心人物」という評価語を具体的な行動へ置換。"
+      }
+    },
+    {
+      "id": "person-status-katsu-1868-tohoku",
+      "personId": "katsu",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "勝海舟",
+      "role": "旧幕臣・江戸鎮撫取締",
+      "factionId": "former-bakufu",
+      "stance": "江戸城開城後、江戸の鎮撫と秩序維持に尽力する。",
+      "importance": "東北戦線の指揮官ではなく、開城後の江戸で活動した。",
+      "evidence": {
+        "sourceIds": [
+          "jacar_katsu_detail"
+        ],
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターの人物解説で、江戸城開城後の江戸鎮撫取締への尽力を確認。東北戦線全体への関与は断定しない。"
       }
     },
     {
@@ -617,17 +631,18 @@
       "startSceneId": "1868-edo",
       "endSceneId": "1868-edo",
       "displayName": "山岡鉄舟",
-      "role": "旧幕府側使者",
+      "role": "精鋭隊頭・旧幕府側使者",
       "factionId": "former-bakufu",
-      "stance": "駿府で西郷と会談し、徳川家処分・江戸開城の交渉基盤を作る。",
-      "importance": "無血開城を一回の会談だけで説明できないことを示す人物。",
+      "stance": "3月9日、駿府で西郷隆盛と会談し、徳川家の処分条件について交渉する。",
+      "importance": "西郷は山岡との会談で勝海舟との会談を約束した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_yamaoka_detail",
+          "tokyo_archive_katsu_yamaoka_letter",
+          "sumida_katsu_edo_surrender"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で徳川慶喜警固役としての精鋭隊頭と1868年3月の駿府談判、墨田区で3月9日の日付、東京都立図書館で勝・西郷会談に先立つ交渉だったことを確認。抽象的な意義説明を具体的な経過へ改めた。"
       }
     },
     {
@@ -1498,17 +1513,18 @@
       "startSceneId": "1868-edo",
       "endSceneId": "1868-edo",
       "displayName": "西郷隆盛",
-      "role": "東征大総督府参謀",
+      "role": "東征大総督下参謀",
       "factionId": "new-government",
-      "stance": "勝海舟らと交渉し、江戸城引き渡し条件をまとめる。",
-      "importance": "江戸総攻撃を回避する新政府側責任者。",
+      "stance": "3月9日に山岡鉄舟、13日・14日に勝海舟と会談し、徳川家の処分条件を協議する。",
+      "importance": "勝との会談後、3月15日に予定された江戸総攻撃は中止された。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_saigo_detail",
+          "sumida_katsu_edo_surrender",
+          "tokyo_archive_katsu_yamaoka_letter"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで東征大総督下参謀と江戸城開城、墨田区で山岡・勝との会談日と総攻撃中止、東京都立図書館で山岡との事前交渉を確認。「新政府側責任者」という抽象評価を削除。"
       }
     },
     {
@@ -5474,17 +5490,17 @@
       "startSceneId": "1868-edo",
       "endSceneId": "1868-edo",
       "displayName": "天璋院",
-      "role": "徳川家存続交渉の関係者",
+      "role": "前将軍家定正室・徳川家存続の嘆願者",
       "factionId": "former-bakufu",
-      "stance": "大奥の整理と徳川家臣・女性たちの処遇に関わる。",
-      "importance": "江戸開城を武将同士だけで捉えないための人物。",
+      "stance": "江戸総攻撃を前に、出身家にあたる薩摩藩へ徳川家存続を嘆願する。",
+      "importance": "薩摩藩への嘆願という確認できる行動を表示する。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "chiyoda_edo_surrender_petitions",
+          "kagoshima_tenshoin"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "千代田区立日比谷図書文化館で天璋院が薩摩藩へ嘆願したこと、鹿児島県で家定死後の天璋院への改名と徳川家を支えた経歴を確認。大奥整理や女性の処遇という未確認の担当は削除。"
       }
     },
     {
@@ -5584,17 +5600,17 @@
       "startSceneId": "1868-edo",
       "endSceneId": "1868-edo",
       "displayName": "静寛院宮",
-      "role": "徳川家存続交渉の関係者",
+      "role": "前将軍家茂正室・徳川家存続の嘆願者",
       "factionId": "former-bakufu",
-      "stance": "江戸開城と徳川家処分の中で嘆願を続ける。",
-      "importance": "公武合体の婚姻が政権末期にも意味を持った。",
+      "stance": "江戸総攻撃を前に、出身家にあたる天皇家へ徳川家存続を嘆願する。",
+      "importance": "家茂の死後は静寛院宮と号していたため、時点名を表示する。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "chiyoda_edo_surrender_petitions",
+          "ndl_portrait_kazunomiya"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "千代田区立日比谷図書文化館で皇女和宮が天皇家へ嘆願したこと、国立国会図書館で家茂死後に静寛院宮と号したことを確認。公武合体婚姻の効果という解釈を表示文から外した。"
       }
     }
   ]
