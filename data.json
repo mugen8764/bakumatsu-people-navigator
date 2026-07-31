@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.41",
+    "version": "1.0.42",
     "updated": "2026-07-31"
   },
   "sources": {
@@ -1014,6 +1014,11 @@
       "title": "大阪府公文書館「大阪府政と歴代知事」",
       "url": "https://archives.pref.osaka.lg.jp/search/information.do?id=70&method=initPage",
       "note": "参与後藤象二郎が1868年7月12日に大坂府知事兼勤を命じられ、1869年2月18日に辞任したこと。"
+    },
+    "ndl_ito_diary": {
+      "title": "国立国会図書館「日記の世界・伊藤博文」",
+      "url": "https://www.ndl.go.jp/nikki/person/itohirobumi/index.html",
+      "note": "伊藤博文が1869年7月に大蔵少輔、同年8月に民部少輔兼任となった履歴。"
     }
   },
   "factions": {
@@ -5678,16 +5683,16 @@
         },
         "1869-hakodate": {
           "display": "伊藤博文",
-          "role": "新政府官僚",
+          "role": "前兵庫県知事",
           "faction": "新政府",
-          "stance": "外交・財政・制度整備を担う。",
-          "importance": "幕末の志士から明治官僚への転換を示す。",
+          "stance": "4月10日に兵庫県知事を退任し、7月の大蔵少輔就任前にあたる。",
+          "importance": "箱館戦争終結日の官職は確認できないため、前職と次の就任時期だけを表示する。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "hyogo_ito_governor",
+              "ndl_ito_diary"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         }
       }
@@ -5819,16 +5824,15 @@
         },
         "1869-hakodate": {
           "display": "井上馨",
-          "role": "新政府官僚",
+          "role": "長崎府判事兼外国官判事",
           "faction": "新政府",
-          "stance": "造幣・財政など近代国家実務へ移る。",
-          "importance": "戦争後の制度構築を担う。",
+          "stance": "1868年5月から、長崎府判事と外国官判事を兼ねる。",
+          "importance": "造幣頭へ就くのは1869年8月で、箱館戦争終結時にはまだ先だった。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "ndl_inoue_papers"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         }
       }

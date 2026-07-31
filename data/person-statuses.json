@@ -3015,17 +3015,17 @@
       "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "displayName": "伊藤博文",
-      "role": "新政府官僚",
+      "role": "前兵庫県知事",
       "factionId": "new-government",
-      "stance": "外交・財政・制度整備を担う。",
-      "importance": "幕末の志士から明治官僚への転換を示す。",
+      "stance": "4月10日に兵庫県知事を退任し、7月の大蔵少輔就任前にあたる。",
+      "importance": "箱館戦争終結日の官職は確認できないため、前職と次の就任時期だけを表示する。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "hyogo_ito_governor",
+          "ndl_ito_diary"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "兵庫県で1869年4月10日の知事退任、国立国会図書館で同年7月の大蔵少輔就任を確認。箱館戦争終結日の5月18日は両任期の間にあるため、未確認の官職を推測せず「前兵庫県知事」とした。"
       }
     },
     {
@@ -3166,17 +3166,16 @@
       "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "displayName": "井上馨",
-      "role": "新政府官僚",
+      "role": "長崎府判事兼外国官判事",
       "factionId": "new-government",
-      "stance": "造幣・財政など近代国家実務へ移る。",
-      "importance": "戦争後の制度構築を担う。",
+      "stance": "1868年5月から、長崎府判事と外国官判事を兼ねる。",
+      "importance": "造幣頭へ就くのは1869年8月で、箱館戦争終結時にはまだ先だった。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "ndl_inoue_papers"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の井上馨関係文書履歴で、1868年5月の長崎府判事兼外国官判事と1869年8月の造幣頭就任を確認。箱館戦争終結日の5月18日に造幣・財政官職を先取りする旧記述を改めた。"
       }
     },
     {

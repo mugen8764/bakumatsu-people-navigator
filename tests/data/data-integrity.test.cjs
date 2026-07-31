@@ -45,7 +45,7 @@ test('the published collection sizes stay at the stage-one baseline', () => {
     relations: 79,
     factionRelations: 17,
     places: 27,
-    sources: 202
+    sources: 203
   });
 });
 

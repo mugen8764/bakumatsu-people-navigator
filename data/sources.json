@@ -1212,6 +1212,12 @@
       "title": "大阪府公文書館「大阪府政と歴代知事」",
       "url": "https://archives.pref.osaka.lg.jp/search/information.do?id=70&method=initPage",
       "note": "参与後藤象二郎が1868年7月12日に大坂府知事兼勤を命じられ、1869年2月18日に辞任したこと。"
+    },
+    {
+      "id": "ndl_ito_diary",
+      "title": "国立国会図書館「日記の世界・伊藤博文」",
+      "url": "https://www.ndl.go.jp/nikki/person/itohirobumi/index.html",
+      "note": "伊藤博文が1869年7月に大蔵少輔、同年8月に民部少輔兼任となった履歴。"
     }
   ]
 }
