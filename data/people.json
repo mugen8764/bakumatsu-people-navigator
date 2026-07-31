@@ -402,8 +402,7 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "archives_timeline"
+          "kagoshima_nariakira"
         ],
         "reviewStatus": "verified"
       }
@@ -436,8 +435,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kagoshima_library_hisamitsu_saigo",
+          "kagoshima_teradaya"
         ],
         "reviewStatus": "verified"
       }
@@ -480,8 +479,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_saigo_detail",
+          "jacar_saigo_detail"
         ],
         "reviewStatus": "verified"
       }
@@ -517,8 +516,7 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_okubo_detail"
         ],
         "reviewStatus": "verified"
       }
@@ -552,8 +550,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_komatsu_detail",
+          "kagoshima_satcho_alliance"
         ],
         "reviewStatus": "verified"
       }
@@ -585,8 +583,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "jacar_kawaji_detail",
+          "kagoshima_cci_kawaji"
         ],
         "reviewStatus": "verified"
       }
@@ -617,8 +615,7 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "archives_kuroda"
         ],
         "reviewStatus": "verified"
       }
@@ -649,8 +646,7 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_handwriting_bakumatsu_people"
         ],
         "reviewStatus": "verified"
       }
@@ -688,8 +684,9 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_kido_detail",
+          "kyoto_kido_1862",
+          "kagoshima_satcho_alliance"
         ],
         "reviewStatus": "verified"
       }
@@ -721,8 +718,7 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "yamaguchi_takasugi_guide"
         ],
         "reviewStatus": "verified"
       }
@@ -752,8 +748,7 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "yamaguchi_kusaka_guide"
         ],
         "reviewStatus": "verified"
       }
@@ -787,8 +782,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "yamaguchi_ito_guide",
+          "archives_ito"
         ],
         "reviewStatus": "verified"
       }
@@ -820,8 +815,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "yamaguchi_inoue_1865",
+          "jacar_inoue_detail"
         ],
         "reviewStatus": "verified"
       }
@@ -854,8 +849,7 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "yamaguchi_omura_guide"
         ],
         "reviewStatus": "verified"
       }
@@ -887,8 +881,7 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "yamaguchi_yamagata_guide"
         ],
         "reviewStatus": "verified"
       }

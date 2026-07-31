@@ -47,7 +47,9 @@
       "id": "ndl_portrait_saigo_detail",
       "title": "国立国会図書館「近代日本人の肖像・西郷隆盛」",
       "url": "https://www.ndl.go.jp/portrait/datas/85/index.html",
-      "note": "薩長同盟と江戸城無血開城を含む西郷隆盛の略歴。"
+      "note": "島津斉彬による登用、薩長連合、江戸城無血開城を含む西郷隆盛の略歴。",
+      "locator": "生没年・別称・「解説」",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "ndl_portrait_katsu_detail",
@@ -325,7 +327,9 @@
       "id": "kagoshima_nariakira",
       "title": "鹿児島県「島津斉彬像」",
       "url": "https://www.pref.kagoshima.jp/ab23/reimeikan/josetsu/theme/kinsei/nariakira/kgs03_s6_4.html",
-      "note": "島津斉彬による集成館事業、洋式造船、一橋派での将軍継嗣運動。"
+      "note": "島津斉彬による集成館事業、洋式造船、一橋派での将軍継嗣運動。",
+      "locator": "「島津斉彬像」本文",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "ndl_portrait_shoin_detail",
@@ -515,7 +519,9 @@
       "id": "archives_kuroda",
       "title": "国立公文書館「明治宰相列伝・黒田清隆」",
       "url": "https://www.archives.go.jp/exhibition/digital/2007_01/kiyotaka_kuroda/",
-      "note": "黒田了介の1868年鳥羽・伏見従軍、北越征討参謀、1869年箱館征討参謀としての戦功と榎本武揚助命。"
+      "note": "黒田了介の1868年鳥羽・伏見従軍、北越征討参謀、1869年箱館征討参謀としての戦功と榎本武揚助命。",
+      "locator": "「黒田清隆」人物解説第1段落",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "yamaguchi_omura_1869",
@@ -711,7 +717,9 @@
       "id": "ndl_portrait_kido_detail",
       "title": "国立国会図書館「近代日本人の肖像・木戸孝允」",
       "url": "https://www.ndl.go.jp/portrait/datas/65/",
-      "note": "桂小五郎の別称、江戸での剣術・西洋兵学修学、長州藩の重職、1866年の薩長連合、五箇条の御誓文草案起草、参与就任と版籍奉還への尽力、1870年6月の参議就任。"
+      "note": "桂小五郎の別称、江戸での剣術・西洋兵学修学、長州藩の重職、1866年の薩長連合、五箇条の御誓文草案起草、参与就任と版籍奉還への尽力、1870年6月の参議就任。",
+      "locator": "生没年・別称・「解説」",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "hagi_takasugi_sonjuku",
@@ -735,7 +743,9 @@
       "id": "archives_ito",
       "title": "国立公文書館「明治宰相列伝・伊藤博文」",
       "url": "https://www.archives.go.jp/exhibition/digital/2007_01/hirobumi_ito/index.html",
-      "note": "長州藩下級藩士伊藤家、松下村塾での修学、英国留学と後年の職歴。"
+      "note": "長州藩下級藩士伊藤家、松下村塾での修学、英国留学と後年の職歴。",
+      "locator": "「伊藤博文」人物解説第1段落",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "hyogo_ito_governor",
@@ -869,7 +879,9 @@
       "id": "yamaguchi_kusaka_guide",
       "title": "山口県立山口図書館「久坂玄瑞・人物調べ方案内」",
       "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/kusaka_genzui/",
-      "note": "久坂玄瑞の尊王攘夷運動での指導的位置と、1864年の禁門の変での負傷・鷹司邸での自刃。"
+      "note": "久坂玄瑞の尊王攘夷運動での指導的位置と、1864年の禁門の変での負傷・鷹司邸での自刃。",
+      "locator": "「人物紹介」",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "ndl_iwakura_exile",
@@ -987,7 +999,9 @@
       "id": "kagoshima_library_hisamitsu_saigo",
       "title": "鹿児島県立図書館「これまでの貴重資料展・島津久光」",
       "url": "https://www.library.pref.kagoshima.jp/honkan/86d3f6348d59231317789859dc609bbd/page1",
-      "note": "島津久光が国父として藩政の実権を握ったことと、1864年に西郷を沖永良部島から呼び戻して禁門の変・第一次長州征伐にあたらせた経緯。"
+      "note": "島津久光が国父として藩政の実権を握ったことと、1864年に西郷を沖永良部島から呼び戻して禁門の変・第一次長州征伐にあたらせた経緯。",
+      "locator": "「斉彬と久光・忠義の時代」内「島津久光」人物解説",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "kagoshima_sources_1864",
@@ -1019,7 +1033,9 @@
       "id": "jacar_inoue_detail",
       "title": "アジア歴史資料センター「井上馨」",
       "url": "https://www.jacar.archives.go.jp/das/term/00000373",
-      "note": "井上聞多の1864年の帰国・講和交渉・襲撃、1867年の三条実美らの帰京随行、1868年の参与・外国事務局判事・九州鎮撫総督参謀・長崎府判事兼外国官判事・佐渡知県事。"
+      "note": "井上聞多の1864年の帰国・講和交渉・襲撃、1867年の三条実美らの帰京随行、1868年の参与・外国事務局判事・九州鎮撫総督参謀・長崎府判事兼外国官判事・佐渡知県事。",
+      "locator": "「解説」欄",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "ndl_inoue_papers",
@@ -1043,7 +1059,9 @@
       "id": "yamaguchi_yamagata_guide",
       "title": "山口県立山口図書館「山縣有朋・人物調べ方案内」",
       "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/yamagata_aritomo/",
-      "note": "山県狂介が1863年に奇兵隊軍監へ就任した経歴。"
+      "note": "山県狂介が1863年に奇兵隊軍監へ就任し、戊辰戦争で隊や官軍を率いた経歴。",
+      "locator": "「人物紹介」",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "jacar_yamagata_detail",
@@ -1115,7 +1133,9 @@
       "id": "yamaguchi_inoue_1865",
       "title": "山口県立山口図書館「没後100年 井上馨」",
       "url": "https://library.pref.yamaguchi.lg.jp/material/201508/",
-      "note": "井上聞多の英国留学・帰国・下関での和平工作、1865年の功山寺決起への山口鴻城軍総督としての参加、1866年四境戦争での芸州口参謀。"
+      "note": "井上聞多の英国留学・帰国・下関での和平工作、1865年の功山寺決起への山口鴻城軍総督としての参加、1866年四境戦争での芸州口参謀。",
+      "locator": "本文冒頭の人物解説",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "nagasaki_kameyama_1865",
@@ -1191,7 +1211,9 @@
       "id": "yamaguchi_omura_guide",
       "title": "山口県立山口図書館「大村益次郎・人物調べ方案内」",
       "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/omura_masujiro2/",
-      "note": "1866年の兵学校三兵教授役兼軍政用掛への登用と、四境戦争での石州口参謀としての戦闘。"
+      "note": "1866年の兵学校三兵教授役兼軍政用掛への登用、四境戦争・戊辰戦争での軍事指導、1869年の兵部大輔就任と軍政改革。",
+      "locator": "「人物紹介」",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "ndl_omura_papers",
@@ -1301,7 +1323,9 @@
       "id": "ndl_portrait_komatsu_detail",
       "title": "国立国会図書館「近代日本人の肖像・小松帯刀」",
       "url": "https://www.ndl.go.jp/portrait/datas/82/",
-      "note": "小松帯刀が1868年に総裁局顧問へ就任し、1869年5月に病気のため官を辞したこと。"
+      "note": "小松帯刀の薩摩藩家老就任、1866年の薩長連合締結、大政奉還進言、新政府での総裁局顧問就任。",
+      "locator": "生没年・「解説」",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "ndl_shungaku_papers",
