@@ -1164,6 +1164,24 @@
       "title": "国立国会図書館リサーチ・ナビ「三条家文書（所蔵）」",
       "url": "https://ndlsearch.ndl.go.jp/rnavi/kensei/sannjouke1",
       "note": "三条実美の1868年4月の輔相、1869年4月の史局総裁、同年7月の右大臣などの履歴。"
+    },
+    {
+      "id": "archives_charter_oath",
+      "title": "国立公文書館「五箇条の御誓文が発せられる」",
+      "url": "https://www.archives.go.jp/ayumi/kobetsu/m01_1868_02.html",
+      "note": "1868年3月14日、明治天皇が京都御所の南殿で公卿諸侯らと誓いを立て、新政府の基本方針を示したこと。"
+    },
+    {
+      "id": "archives_meiji_first_tokyo_journey",
+      "title": "国立公文書館「江戸城を皇居と定め東京城と改称」",
+      "url": "https://www.archives.go.jp/exhibition/digital/henbou/contents/05.html",
+      "note": "明治天皇が1868年9月20日に京都を出発し、10月13日に江戸城西の丸へ到着したこと、および同日の東京城改称。"
+    },
+    {
+      "id": "archives_meiji_second_tokyo_journey",
+      "title": "国立公文書館「明治天皇、東京へ再び行幸」",
+      "url": "https://www.archives.go.jp/exhibition/digital/henbou/contents/08.html",
+      "note": "明治天皇が1869年3月7日に京都を出発し、3月28日に東京城へ到着したこと、および同日の皇城改称。"
     }
   ]
 }

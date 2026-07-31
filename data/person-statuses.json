@@ -3677,17 +3677,18 @@
       "startSceneId": "1868-edo",
       "endSceneId": "1868-edo",
       "displayName": "明治天皇",
-      "role": "天皇・新政府の君主",
+      "role": "天皇・京都在京",
       "factionId": "new-government",
-      "stance": "江戸開城後、東幸と東京への政権移動が進む。",
-      "importance": "京都朝廷から全国政府への転換を象徴する。",
+      "stance": "3月14日、京都御所で五箇条の御誓文を発し、新政府の基本方針を示す。",
+      "importance": "江戸城引き渡し時点では京都におり、東京への初度東幸は9月20日に始まった。",
       "evidence": {
         "sourceIds": [
-          "ndl_handwriting",
-          "ndl_modern_timeline"
+          "ndl_authority_meiji",
+          "archives_charter_oath",
+          "archives_meiji_first_tokyo_journey"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立公文書館で3月14日に京都御所で五箇条の御誓文が発せられたことと、東京への出発が9月20日だったことを確認。江戸開城期に東幸済みと読める旧記述を改めた。"
       }
     },
     {
@@ -3696,17 +3697,17 @@
       "startSceneId": "1868-tohoku",
       "endSceneId": "1868-tohoku",
       "displayName": "明治天皇",
-      "role": "天皇・新政府の君主",
+      "role": "天皇・京都から東京へ東幸",
       "factionId": "new-government",
-      "stance": "戊辰戦争と政体整備の正統性を担う。",
-      "importance": "新政府は天皇名義で各藩へ命令を発した。",
+      "stance": "9月20日に京都を出発し、10月13日に江戸城西の丸へ到着する。",
+      "importance": "到着日に江戸城は行幸中の皇居と定められ、東京城と改称された。",
       "evidence": {
         "sourceIds": [
-          "ndl_handwriting",
-          "ndl_modern_timeline"
+          "ndl_authority_meiji",
+          "archives_meiji_first_tokyo_journey"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立公文書館で初度東幸の京都出発日、東京到着日、江戸城を行幸中の皇居として東京城へ改称したことを確認。抽象的な「正統性」の評価は表示しない。"
       }
     },
     {
@@ -3715,17 +3716,17 @@
       "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "displayName": "明治天皇",
-      "role": "天皇・明治政府の君主",
+      "role": "天皇・東京在京",
       "factionId": "new-government",
-      "stance": "東京を政治拠点とし、全国統治の制度化が進む。",
-      "importance": "幕末の朝廷が近代国家の君主制へ変化する過程。",
+      "stance": "3月7日に京都を出発し、3月28日に東京城へ到着する。",
+      "importance": "到着日に東京城は皇城と称され、箱館戦争終結はこの再度の東京行幸後に当たる。",
       "evidence": {
         "sourceIds": [
-          "ndl_handwriting",
-          "ndl_modern_timeline"
+          "ndl_authority_meiji",
+          "archives_meiji_second_tokyo_journey"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立公文書館で明治2年3月7日の京都出発、3月28日の東京城到着と皇城への改称を確認。箱館戦争終結日の5月18日より前であることを時点へ反映した。"
       }
     },
     {

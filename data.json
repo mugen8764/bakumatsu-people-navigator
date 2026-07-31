@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.38",
+    "version": "1.0.39",
     "updated": "2026-07-31"
   },
   "sources": {
@@ -974,6 +974,21 @@
       "title": "国立国会図書館リサーチ・ナビ「三条家文書（所蔵）」",
       "url": "https://ndlsearch.ndl.go.jp/rnavi/kensei/sannjouke1",
       "note": "三条実美の1868年4月の輔相、1869年4月の史局総裁、同年7月の右大臣などの履歴。"
+    },
+    "archives_charter_oath": {
+      "title": "国立公文書館「五箇条の御誓文が発せられる」",
+      "url": "https://www.archives.go.jp/ayumi/kobetsu/m01_1868_02.html",
+      "note": "1868年3月14日、明治天皇が京都御所の南殿で公卿諸侯らと誓いを立て、新政府の基本方針を示したこと。"
+    },
+    "archives_meiji_first_tokyo_journey": {
+      "title": "国立公文書館「江戸城を皇居と定め東京城と改称」",
+      "url": "https://www.archives.go.jp/exhibition/digital/henbou/contents/05.html",
+      "note": "明治天皇が1868年9月20日に京都を出発し、10月13日に江戸城西の丸へ到着したこと、および同日の東京城改称。"
+    },
+    "archives_meiji_second_tokyo_journey": {
+      "title": "国立公文書館「明治天皇、東京へ再び行幸」",
+      "url": "https://www.archives.go.jp/exhibition/digital/henbou/contents/08.html",
+      "note": "明治天皇が1869年3月7日に京都を出発し、3月28日に東京城へ到着したこと、および同日の皇城改称。"
     }
   },
   "factions": {
@@ -6273,44 +6288,45 @@
         },
         "1868-edo": {
           "display": "明治天皇",
-          "role": "天皇・新政府の君主",
+          "role": "天皇・京都在京",
           "faction": "新政府",
-          "stance": "江戸開城後、東幸と東京への政権移動が進む。",
-          "importance": "京都朝廷から全国政府への転換を象徴する。",
+          "stance": "3月14日、京都御所で五箇条の御誓文を発し、新政府の基本方針を示す。",
+          "importance": "江戸城引き渡し時点では京都におり、東京への初度東幸は9月20日に始まった。",
           "evidence": {
             "sourceIds": [
-              "ndl_handwriting",
-              "ndl_modern_timeline"
+              "ndl_authority_meiji",
+              "archives_charter_oath",
+              "archives_meiji_first_tokyo_journey"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-tohoku": {
           "display": "明治天皇",
-          "role": "天皇・新政府の君主",
+          "role": "天皇・京都から東京へ東幸",
           "faction": "新政府",
-          "stance": "戊辰戦争と政体整備の正統性を担う。",
-          "importance": "新政府は天皇名義で各藩へ命令を発した。",
+          "stance": "9月20日に京都を出発し、10月13日に江戸城西の丸へ到着する。",
+          "importance": "到着日に江戸城は行幸中の皇居と定められ、東京城と改称された。",
           "evidence": {
             "sourceIds": [
-              "ndl_handwriting",
-              "ndl_modern_timeline"
+              "ndl_authority_meiji",
+              "archives_meiji_first_tokyo_journey"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1869-hakodate": {
           "display": "明治天皇",
-          "role": "天皇・明治政府の君主",
+          "role": "天皇・東京在京",
           "faction": "新政府",
-          "stance": "東京を政治拠点とし、全国統治の制度化が進む。",
-          "importance": "幕末の朝廷が近代国家の君主制へ変化する過程。",
+          "stance": "3月7日に京都を出発し、3月28日に東京城へ到着する。",
+          "importance": "到着日に東京城は皇城と称され、箱館戦争終結はこの再度の東京行幸後に当たる。",
           "evidence": {
             "sourceIds": [
-              "ndl_handwriting",
-              "ndl_modern_timeline"
+              "ndl_authority_meiji",
+              "archives_meiji_second_tokyo_journey"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         }
       }
