@@ -6,6 +6,8 @@ const vm = require('node:vm');
 
 const root = path.resolve(__dirname, '../..');
 const data = JSON.parse(fs.readFileSync(path.join(root, 'data.json'), 'utf8'));
+const canonicalPersonStatuses = JSON.parse(fs.readFileSync(path.join(root, 'data/person-statuses.json'), 'utf8')).statuses;
+const canonicalRelations = JSON.parse(fs.readFileSync(path.join(root, 'data/relations.json'), 'utf8'));
 
 function unique(values, label) {
   assert.equal(new Set(values).size, values.length, `${label} must be unique`);
@@ -45,7 +47,7 @@ test('the published collection sizes stay at the stage-one baseline', () => {
     relations: 79,
     factionRelations: 17,
     places: 27,
-    sources: 210
+    sources: 207
   });
 });
 
@@ -122,6 +124,54 @@ test('people and events retain valid HTTPS source references', () => {
   }
   for (const person of data.people) assert.ok(person.sources.length > 0, `${person.id} needs a source`);
   for (const [eventId, event] of Object.entries(data.events)) assert.ok(event.sources.length > 0, `${eventId} needs a source`);
+});
+
+test('the source catalog has one used entry per URL', () => {
+  const sourceEntries = Object.entries(data.sources);
+  unique(sourceEntries.map(([, source]) => source.url), 'source URLs');
+
+  const usedSourceIds = new Set();
+  function collectSourceIds(value) {
+    if (!value || typeof value !== 'object') return;
+    if (Array.isArray(value)) {
+      value.forEach(collectSourceIds);
+      return;
+    }
+    for (const [key, child] of Object.entries(value)) {
+      if ((key === 'sourceIds' || key === 'sources') && Array.isArray(child)) {
+        child.forEach(sourceId => usedSourceIds.add(sourceId));
+      } else {
+        collectSourceIds(child);
+      }
+    }
+  }
+  collectSourceIds({
+    people: data.people,
+    factions: data.factions,
+    factionStates: data.factionStates,
+    scenes: data.scenes,
+    events: data.events,
+    relations: data.relations,
+    factionRelations: data.factionRelations,
+    places: data.places
+  });
+
+  assert.deepEqual(sourceEntries.map(([sourceId]) => sourceId).filter(sourceId => !usedSourceIds.has(sourceId)), []);
+});
+
+test('canonical IDs reflect each record range and relation type', () => {
+  for (const status of canonicalPersonStatuses) {
+    assert.equal(status.id, `person-status-${status.personId}-${status.startSceneId}`);
+  }
+  for (const relation of canonicalRelations.personRelations) {
+    assert.equal(
+      relation.id,
+      `person-relation-${relation.aPersonId}-${relation.bPersonId}-${relation.startSceneId}-${relation.typeId}`
+    );
+  }
+  for (const relation of canonicalRelations.factionRelations) {
+    assert.equal(relation.id, `faction-relation-${relation.aFactionId}-${relation.bFactionId}-${relation.startSceneId}`);
+  }
 });
 
 test('relations do not extend beyond a person active range', () => {

@@ -644,7 +644,7 @@
       }
     },
     {
-      "id": "person-relation-kondo-hijikata-1862-bunkyu-organization",
+      "id": "person-relation-kondo-hijikata-1863-joi-organization",
       "aPersonId": "kondo",
       "bPersonId": "hijikata",
       "startSceneId": "1863-joi",
@@ -734,7 +734,7 @@
       }
     },
     {
-      "id": "person-relation-kido-takasugi-1863-joi-mentorship-or-comradeship",
+      "id": "person-relation-kido-takasugi-1865-choshu-political-cooperation",
       "aPersonId": "kido",
       "bPersonId": "takasugi",
       "startSceneId": "1865-choshu",
@@ -790,7 +790,7 @@
       }
     },
     {
-      "id": "person-relation-takasugi-yamagata-1864-kinmon-organization",
+      "id": "person-relation-takasugi-yamagata-1863-joi-organization",
       "aPersonId": "takasugi",
       "bPersonId": "yamagata",
       "startSceneId": "1863-joi",
@@ -920,7 +920,7 @@
       }
     },
     {
-      "id": "person-relation-ryoma-nakaoka-1864-kinmon-mentorship-or-comradeship",
+      "id": "person-relation-ryoma-nakaoka-1866-satcho-mentorship-or-comradeship",
       "aPersonId": "ryoma",
       "bPersonId": "nakaoka",
       "startSceneId": "1866-satcho",
@@ -954,7 +954,7 @@
       }
     },
     {
-      "id": "person-relation-ryoma-saigo-1865-choshu-mediation-or-negotiation",
+      "id": "person-relation-ryoma-saigo-1866-satcho-mediation-or-negotiation",
       "aPersonId": "ryoma",
       "bPersonId": "saigo",
       "startSceneId": "1866-satcho",
@@ -969,7 +969,7 @@
       }
     },
     {
-      "id": "person-relation-ryoma-kido-1865-choshu-mediation-or-negotiation",
+      "id": "person-relation-ryoma-kido-1866-satcho-mediation-or-negotiation",
       "aPersonId": "ryoma",
       "bPersonId": "kido",
       "startSceneId": "1866-satcho",
@@ -984,7 +984,7 @@
       }
     },
     {
-      "id": "person-relation-nakaoka-saigo-1865-choshu-mediation-or-negotiation",
+      "id": "person-relation-nakaoka-saigo-1866-satcho-mediation-or-negotiation",
       "aPersonId": "nakaoka",
       "bPersonId": "saigo",
       "startSceneId": "1866-satcho",
@@ -1277,7 +1277,7 @@
         "sourceIds": [
           "ndl_portrait_iwakura_detail",
           "ndl_iwakura_exile",
-          "ndl_portrait_kazunomiya"
+          "ndl_portrait_kazunomiya_detail"
         ],
         "reviewStatus": "verified",
         "note": "国立国会図書館で岩倉による和宮降嫁推進と和宮・家茂の婚姻を確認。1868年の和宮の嘆願先を岩倉具視とする根拠はなく、時期と関係内容を修正。"

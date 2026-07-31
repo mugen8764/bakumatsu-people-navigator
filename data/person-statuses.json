@@ -3685,7 +3685,7 @@
         "sourceIds": [
           "ndl_authority_meiji",
           "jacar_yoshinobu_punitive_order",
-          "archives_boshin_war_flags"
+          "archives_boshin_war"
         ],
         "reviewStatus": "verified",
         "note": "国立国会図書館典拠データで人物を、太政類典の1868年1月9日付「徳川慶喜征討大号令」で朝廷の追討命令を、国立公文書館で錦旗を用いた新政府軍の勝利を確認。本人の意思や「象徴性」は推定しない。"
@@ -4973,7 +4973,7 @@
       }
     },
     {
-      "id": "person-status-itakagi-1866-expedition",
+      "id": "person-status-itakagi-1866-satcho",
       "personId": "itakagi",
       "startSceneId": "1866-satcho",
       "endSceneId": "1866-expedition",
@@ -5624,7 +5624,7 @@
       "evidence": {
         "sourceIds": [
           "chiyoda_edo_surrender_petitions",
-          "ndl_portrait_kazunomiya"
+          "ndl_portrait_kazunomiya_detail"
         ],
         "reviewStatus": "verified",
         "note": "千代田区立日比谷図書文化館で皇女和宮が天皇家へ嘆願したこと、国立国会図書館で家茂死後に静寛院宮と号したことを確認。公武合体婚姻の効果という解釈を表示文から外した。"

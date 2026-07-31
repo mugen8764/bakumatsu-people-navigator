@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.48",
+    "version": "1.0.49",
     "updated": "2026-07-31"
   },
   "sources": {
@@ -14,11 +14,6 @@
       "title": "国立国会図書館「近代日本人の肖像」",
       "url": "https://www.ndl.go.jp/portrait/index.html",
       "note": "近代日本の形成に関わった人物の肖像・略歴。"
-    },
-    "ndl_portrait_index": {
-      "title": "国立国会図書館「近代日本人の肖像・人名索引」",
-      "url": "https://www.ndl.go.jp/portrait/indexes/index.html",
-      "note": "人物名から肖像・略歴を探す索引。"
     },
     "ndl_modern_timeline": {
       "title": "国立国会図書館「史料にみる日本の近代・年表」",
@@ -84,11 +79,6 @@
       "title": "千代田区「江戸から東京へ・江戸城無血開城から東京の新たな幕開け」",
       "url": "https://www.city.chiyoda.lg.jp/koho/kuse/koho/pressrelease/h30/h3009/h300905-2.html",
       "note": "江戸総攻撃を前に、天璋院が薩摩藩へ、皇女和宮が天皇家へ幕府・徳川家に関する嘆願を行った経緯。"
-    },
-    "ndl_portrait_kazunomiya": {
-      "title": "国立国会図書館「近代日本人の肖像・和宮」",
-      "url": "https://www.ndl.go.jp/portrait/datas/6156",
-      "note": "和宮が14代将軍徳川家茂の夫人であり、家茂死後に静寛院宮と号した経歴。"
     },
     "ndl_treaty_1854_text": {
       "title": "国立国会図書館「日米和親条約写」",
@@ -170,11 +160,6 @@
       "url": "https://www.jacar.archives.go.jp/das/meta/A15071486300",
       "note": "慶応4年1月9日、鳥羽・伏見で兵端を開いたとして朝廷が徳川慶喜の追討を命じた大号令。"
     },
-    "archives_boshin_war_flags": {
-      "title": "国立公文書館「近代国家 日本の登場・戊辰戦争」",
-      "url": "https://www.archives.go.jp/exhibition/digital/modean_state/contents/boshin-war/index.html",
-      "note": "官軍を示す錦旗を掲げた新政府軍が鳥羽・伏見の戦いに勝利し、東征を行った経緯。"
-    },
     "kyoto_toba_fushimi_site": {
       "title": "京都市「鳥羽伏見の戦跡」",
       "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hu061.html",
@@ -188,7 +173,7 @@
     "archives_boshin_war": {
       "title": "国立公文書館「戊辰戦争」",
       "url": "https://www.archives.go.jp/exhibition/digital/modean_state/contents/boshin-war/index.html",
-      "note": "鳥羽・伏見、奥羽越列藩同盟、会津降伏、箱館五稜郭陥落までの戊辰戦争。"
+      "note": "錦旗を掲げた新政府軍の鳥羽・伏見での勝利と東征、奥羽越列藩同盟の抵抗、会津降伏、箱館五稜郭陥落までの戊辰戦争。"
     },
     "akita_ouu_alliance": {
       "title": "秋田県公文書館「奥羽列藩同盟約書写」",
@@ -953,7 +938,7 @@
     "ndl_portrait_kazunomiya_detail": {
       "title": "国立国会図書館「近代日本人の肖像・和宮」",
       "url": "https://www.ndl.go.jp/portrait/datas/6156",
-      "note": "1866年の家茂死去後の出家と静寛院宮号、戊辰戦争期の江戸攻撃中止・徳川家存続への尽力。"
+      "note": "14代将軍徳川家茂の夫人であったこと、1866年の家茂死去後の出家と静寛院宮号、戊辰戦争期の江戸攻撃中止・徳川家存続への尽力。"
     },
     "nagareyama_shinsengumi_1868": {
       "title": "流山市立博物館「新選組と流山」",
@@ -6358,7 +6343,7 @@
             "sourceIds": [
               "ndl_authority_meiji",
               "jacar_yoshinobu_punitive_order",
-              "archives_boshin_war_flags"
+              "archives_boshin_war"
             ],
             "reviewStatus": "verified"
           }
@@ -8128,7 +8113,7 @@
           "evidence": {
             "sourceIds": [
               "chiyoda_edo_surrender_petitions",
-              "ndl_portrait_kazunomiya"
+              "ndl_portrait_kazunomiya_detail"
             ],
             "reviewStatus": "verified"
           }
@@ -9293,7 +9278,7 @@
         "sourceIds": [
           "ndl_portrait_iwakura_detail",
           "ndl_iwakura_exile",
-          "ndl_portrait_kazunomiya"
+          "ndl_portrait_kazunomiya_detail"
         ],
         "reviewStatus": "verified"
       }
