@@ -58,7 +58,9 @@
     "ndl_portrait_yamaoka_detail": {
       "title": "国立国会図書館「近代日本人の肖像・山岡鉄太郎」",
       "url": "https://www.ndl.go.jp/portrait/datas/207/",
-      "note": "山岡鉄太郎が1868年に徳川慶喜の警固役として精鋭隊頭となり、同年3月に駿府で西郷隆盛と談判した経歴。"
+      "note": "山岡鉄太郎が1868年に徳川慶喜の警固役として精鋭隊頭となり、同年3月に駿府で西郷隆盛と談判した経歴。",
+      "locator": "生没年・別称・「解説」",
+      "contentCheckedAt": "2026-07-31"
     },
     "ndl_katsu_papers": {
       "title": "国立国会図書館「勝海舟関係文書」",
@@ -95,7 +97,9 @@
     "ndl_handwriting_bakumatsu_people": {
       "title": "国立国会図書館「あの人の直筆・幕末を生きた人々」",
       "url": "https://www.ndl.go.jp/jikihitsu/part2/s1_1/",
-      "note": "井伊直弼による条約調印、将軍継嗣問題、安政の大獄と桜田門外の変。"
+      "note": "井伊直弼による条約調印、将軍継嗣問題、安政の大獄と桜田門外の変。",
+      "locator": "「井伊直弼」人物解説",
+      "contentCheckedAt": "2026-07-31"
     },
     "hyogo_bakumatsu_timeline_2": {
       "title": "兵庫県「年表　幕末期2」",
@@ -225,7 +229,9 @@
     "fukui_sanai_shungaku": {
       "title": "福井市立郷土歴史博物館「橋本左内と安政の大獄」",
       "url": "https://history-museum.city.fukui.lg.jp/tenji/tenran/taigoku.html",
-      "note": "福井藩主松平春嶽と橋本左内による将軍継嗣問題への関与。"
+      "note": "福井藩主松平春嶽と橋本左内による将軍継嗣問題への関与。",
+      "locator": "展示構成「国事奔走時代の橋本左内」～「橋本左内の最期と吉田松陰」",
+      "contentCheckedAt": "2026-07-31"
     },
     "kochi_taisei_hokan": {
       "title": "高知市「大政奉還150年」",
@@ -282,7 +288,9 @@
     "iwaki_kazunomiya": {
       "title": "いわき市「安藤信正生誕200年・公武合体策と和宮降嫁」",
       "url": "https://www.city.iwaki.lg.jp/www/contents/1571875265178/index.html",
-      "note": "桜田門外の変後の幕府による和宮降嫁申し入れと朝廷の応諾。"
+      "note": "桜田門外の変後の幕府による和宮降嫁申し入れと朝廷の応諾。",
+      "locator": "「公武合体策と和宮降嫁」本文",
+      "contentCheckedAt": "2026-07-31"
     },
     "mito_nariaki_reform": {
       "title": "水戸市「歴史的風致形成の背景」",
@@ -360,12 +368,16 @@
     "ndl_authority_komei": {
       "title": "国立国会図書館典拠データ「孝明天皇」",
       "url": "https://id.ndl.go.jp/auth/ndlna/00291353",
-      "note": "孝明天皇の生没年と慶応2年12月25日の崩御。"
+      "note": "孝明天皇の生没年と慶応2年12月25日の崩御。",
+      "locator": "典拠詳細「生年」「没年」「別名」",
+      "contentCheckedAt": "2026-07-31"
     },
     "ndl_authority_meiji": {
       "title": "国立国会図書館典拠データ「明治天皇」",
       "url": "https://id.ndl.go.jp/auth/ndlna/00043014",
-      "note": "明治天皇の人物同定と1852年から1912年の生没年。"
+      "note": "明治天皇の人物同定と1852年から1912年の生没年。",
+      "locator": "典拠詳細「生年」「没年」「別名」",
+      "contentCheckedAt": "2026-07-31"
     },
     "kagoshima_tobaku_mitchoku": {
       "title": "鹿児島県「討幕の密勅」",
@@ -380,7 +392,9 @@
     "archives_royal_restoration": {
       "title": "国立公文書館「王政復古の大号令が発せられる」",
       "url": "https://www.archives.go.jp/ayumi/kobetsu/k03_1867_01.html",
-      "note": "1867年12月9日の王政復古宣言と摂政・関白等の廃止、総裁・議定・参与の三職設置。"
+      "note": "1867年12月9日の王政復古宣言と摂政・関白等の廃止、総裁・議定・参与の三職設置。",
+      "locator": "「王政復古の大号令が発せられる」解説",
+      "contentCheckedAt": "2026-07-31"
     },
     "kyoto_fushimi_history": {
       "title": "京都市伏見区「江戸時代～幕末・港湾商業都市の繁栄」",
@@ -454,17 +468,23 @@
     "hiroshima_abe_opening": {
       "title": "広島県教育委員会「阿部正弘」",
       "url": "https://www.pref.hiroshima.lg.jp/uploaded/attachment/92154.pdf",
-      "note": "老中首座阿部正弘による黒船対応、諸大名・幕臣への諮問、日米和親条約締結。"
+      "note": "老中首座阿部正弘による黒船対応、諸大名・幕臣への諮問、日米和親条約締結。",
+      "locator": "42～43頁「阿部正弘とは」「ペリーの開国要求への対応」",
+      "contentCheckedAt": "2026-07-31"
     },
     "archives_katsu_kaibo": {
       "title": "国立公文書館「旗本御家人・勝安房等ノ動静探索書」",
       "url": "https://www.archives.go.jp/exhibition/digital/hatamotogokenin/contents/51.html",
-      "note": "勝海舟の蘭学・西洋兵学修学、1853年の海防意見書提出とその後の幕府登用。"
+      "note": "勝海舟の蘭学・西洋兵学修学、1853年の海防意見書提出とその後の幕府登用。",
+      "locator": "資料51の人物解説第1・2段落",
+      "contentCheckedAt": "2026-07-31"
     },
     "ibaraki_nariaki_kaibo": {
       "title": "茨城県立歴史館「海防参与就任」",
       "url": "https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/kaibousannyosyuunin.htm",
-      "note": "徳川斉昭への黒船対応諮問、海防参与就任、大砲献上、ペリー再来航時の進言。"
+      "note": "徳川斉昭への黒船対応諮問、海防参与就任、大砲献上、ペリー再来航時の進言。",
+      "locator": "「徳川斉昭の生涯・海防参与就任」本文",
+      "contentCheckedAt": "2026-07-31"
     },
     "kagoshima_saigo_youth": {
       "title": "鹿児島市・西郷南洲顕彰館「西郷隆盛ゆかりの品」",
@@ -484,7 +504,9 @@
     "mofa_harris_credentials": {
       "title": "外務省「ハリス信任状」",
       "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/10.html",
-      "note": "ハリスの総領事兼条約改定全権委員就任、将軍謁見と日米修好通商条約締結に向けた外交。"
+      "note": "ハリスの総領事兼条約改定全権委員就任、将軍謁見と日米修好通商条約締結に向けた外交。",
+      "locator": "「10．ハリス信任状」本文第1・2段落",
+      "contentCheckedAt": "2026-07-31"
     },
     "mofa_treaty_1858": {
       "title": "外務省「日米修好通商条約」",
@@ -496,22 +518,30 @@
     "fukui_bakumatsu_chronicle": {
       "title": "福井市立郷土歴史博物館「幕末かけあし年表」",
       "url": "https://history-museum.city.fukui.lg.jp/gakko/for_students/bakumatsu/bakumatsu_chronicle.html",
-      "note": "徳川慶福の将軍継嗣決定、松平慶永の一橋慶喜擁立運動と1858年の隠居・謹慎。"
+      "note": "徳川慶福の将軍継嗣決定、松平慶永の一橋慶喜擁立運動と1858年の隠居・謹慎。",
+      "locator": "安政5年（1858）6月～7月の年表",
+      "contentCheckedAt": "2026-07-31"
     },
     "ndl_authority_iemochi": {
       "title": "国立国会図書館典拠データ「徳川家茂」",
       "url": "https://id.ndl.go.jp/auth/ndlna/01079959",
-      "note": "徳川家茂の生没年と江戸幕府第14代将軍としての典拠。"
+      "note": "徳川家茂の生没年と江戸幕府第14代将軍としての典拠。",
+      "locator": "典拠詳細「生年」「没年」「別名」「関連情報」",
+      "contentCheckedAt": "2026-07-31"
     },
     "ibaraki_nariaki_succession": {
       "title": "茨城県立歴史館「通商条約締結と将軍継嗣問題」",
       "url": "https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/tuusyoujyouyaku.htm",
-      "note": "南紀派と一橋派の構成、徳川斉昭・島津斉彬・松平慶永・山内豊信らによる一橋慶喜擁立。"
+      "note": "南紀派と一橋派の構成、徳川斉昭・島津斉彬・松平慶永・山内豊信らによる一橋慶喜擁立。",
+      "locator": "「通商条約締結問題と将軍継嗣問題」本文",
+      "contentCheckedAt": "2026-07-31"
     },
     "ibaraki_nariaki_treaty": {
       "title": "茨城県立歴史館「日米修好通商条約調印」",
       "url": "https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/nitibeisyuukoutuusyoujyouyaku.htm",
-      "note": "孝明天皇の勅許拒否、一橋派諸侯の抗議登城、1858年7月の処分と慶喜の登城禁止。"
+      "note": "孝明天皇の勅許拒否、一橋派諸侯の抗議登城、1858年7月の処分と慶喜の登城禁止。",
+      "locator": "「日米修好通商条約調印」本文",
+      "contentCheckedAt": "2026-07-31"
     },
     "ibaraki_nariaki_ansei": {
       "title": "茨城県立歴史館「戊午の密勅と安政の大獄」",
@@ -667,7 +697,9 @@
     "fukui_yoshinobu_shungaku_1862": {
       "title": "福井市立郷土歴史博物館「一橋徳川家と将軍慶喜にまつわる品々」",
       "url": "https://history-museum.city.fukui.lg.jp/tenji/kaisetsusheets/66.pdf",
-      "note": "1862年の一橋慶喜による一橋家再相続と将軍後見職就任、松平春嶽の政事総裁職就任、両者による幕府改革・公武合体の推進。"
+      "note": "1862年の一橋慶喜による一橋家再相続と将軍後見職就任、松平春嶽の政事総裁職就任、両者による幕府改革・公武合体の推進。",
+      "locator": "2頁「徳川慶喜」人物解説",
+      "contentCheckedAt": "2026-07-31"
     },
     "ndl_katsu_timeline": {
       "title": "国立国会図書館「日記の世界・勝海舟」",
@@ -734,7 +766,9 @@
     "fukui_pref_timeline": {
       "title": "福井県文書館「福井県史年表（1861年～1870年）」",
       "url": "https://www.library-archives.pref.fukui.lg.jp/fukui/07/nenpyo/rekishi/chrn40.html",
-      "note": "1863年の家茂上洛と松平春嶽の政事総裁職免職、1867年の春嶽上京・四侯会談・大政奉還論への疑念を伴う入京・王政復古当日の議定就任。"
+      "note": "1863年の家茂上洛と松平春嶽の政事総裁職免職、1867年の春嶽上京・四侯会談・大政奉還論への疑念を伴う入京・王政復古当日の議定就任。",
+      "locator": "文久3年2月～3月、慶応3年4月～12月の年表",
+      "contentCheckedAt": "2026-07-31"
     },
     "fukui_yoshinobu_1863": {
       "title": "福井市立郷土歴史博物館「展示解説シートNo.96」",
@@ -966,7 +1000,9 @@
     "archives_enomoto_1867": {
       "title": "国立公文書館「旗本御家人・榎本釜次郎脱艦一件書並仏人ブリユウネ等所罰方」",
       "url": "https://www.archives.go.jp/exhibition/digital/hatamotogokenin/contents/56.html",
-      "note": "榎本武揚のオランダ留学、帰国後の1867年における軍艦役・軍艦頭並就任、江戸城明け渡し後の軍艦引き渡し拒否、1868年8月19日夜の開陽丸ほか計8隻による品川沖出航。"
+      "note": "榎本武揚のオランダ留学、帰国後の1867年における軍艦役・軍艦頭並就任、江戸城明け渡し後の軍艦引き渡し拒否、1868年8月19日夜の開陽丸ほか計8隻による品川沖出航。",
+      "locator": "資料56の人物解説第1・2段落",
+      "contentCheckedAt": "2026-07-31"
     },
     "ndl_enomoto_papers": {
       "title": "国立国会図書館リサーチ・ナビ「榎本武揚関係文書」",
@@ -1041,7 +1077,9 @@
     "archives_charter_oath": {
       "title": "国立公文書館「五箇条の御誓文が発せられる」",
       "url": "https://www.archives.go.jp/ayumi/kobetsu/m01_1868_02.html",
-      "note": "1868年3月14日、明治天皇が京都御所の南殿で公卿諸侯らと誓いを立て、新政府の基本方針を示したこと。"
+      "note": "1868年3月14日、明治天皇が京都御所の南殿で公卿諸侯らと誓いを立て、新政府の基本方針を示したこと。",
+      "locator": "「五箇条の御誓文が発せられる」解説",
+      "contentCheckedAt": "2026-07-31"
     },
     "archives_meiji_first_tokyo_journey": {
       "title": "国立公文書館「江戸城を皇居と定め東京城と改称」",
@@ -2940,7 +2978,8 @@
         "treaty1854"
       ],
       "sources": [
-        "archives_timeline"
+        "yokosuka_perry_blackships",
+        "mofa_treaty_1854"
       ],
       "statuses": {
         "1853-blackships": {
@@ -2994,7 +3033,8 @@
         "ansei"
       ],
       "sources": [
-        "archives_timeline"
+        "mofa_harris_credentials",
+        "mofa_treaty_1858"
       ],
       "statuses": {
         "1858-ansei": {
@@ -3036,7 +3076,7 @@
         "treaty1854"
       ],
       "sources": [
-        "archives_timeline"
+        "hiroshima_abe_opening"
       ],
       "statuses": {
         "1853-blackships": {
@@ -3092,8 +3132,9 @@
         "sakurada"
       ],
       "sources": [
-        "archives_timeline",
-        "ndl_handwriting"
+        "ndl_handwriting_bakumatsu_people",
+        "mofa_treaty_1858",
+        "ibaraki_sakuradamon"
       ],
       "statuses": {
         "1858-ansei": {
@@ -3153,8 +3194,11 @@
         "second_choshu"
       ],
       "sources": [
-        "archives_timeline",
-        "ndl_handwriting"
+        "ndl_authority_iemochi",
+        "fukui_bakumatsu_chronicle",
+        "iwaki_kazunomiya",
+        "fukui_pref_timeline",
+        "ndl_katsu_1866_diary"
       ],
       "statuses": {
         "1858-ansei": {
@@ -3273,9 +3317,8 @@
         "edo_surrender"
       ],
       "sources": [
-        "ndl_portrait",
-        "ndl_modern_timeline",
-        "ndl_handwriting"
+        "matsudo_yoshinobu_timeline",
+        "fukui_yoshinobu_shungaku_1862"
       ],
       "statuses": {
         "1858-ansei": {
@@ -3452,8 +3495,8 @@
         "edo_surrender"
       ],
       "sources": [
-        "ndl_portrait",
-        "ndl_handwriting"
+        "archives_katsu_kaibo",
+        "sumida_katsu_edo_surrender"
       ],
       "statuses": {
         "1853-blackships": {
@@ -3583,8 +3626,8 @@
         "edo_surrender"
       ],
       "sources": [
-        "ndl_portrait",
-        "ndl_handwriting"
+        "ndl_portrait_yamaoka_detail",
+        "sumida_katsu_edo_surrender"
       ],
       "statuses": {
         "1868-toba": {
@@ -3644,8 +3687,8 @@
         "hakodate"
       ],
       "sources": [
-        "ndl_portrait",
-        "jacar_dictionary"
+        "archives_enomoto_1867",
+        "hakodate_war_history"
       ],
       "statuses": {
         "1866-expedition": {
@@ -3756,8 +3799,8 @@
         "sakurada"
       ],
       "sources": [
-        "archives_timeline",
-        "ndl_handwriting"
+        "ibaraki_nariaki_kaibo",
+        "ibaraki_nariaki_succession"
       ],
       "statuses": {
         "1853-blackships": {
@@ -3840,8 +3883,9 @@
         "toba"
       ],
       "sources": [
-        "ndl_portrait",
-        "ndl_handwriting"
+        "fukui_sanai_shungaku",
+        "fukui_yoshinobu_shungaku_1862",
+        "fukui_pref_timeline"
       ],
       "statuses": {
         "1858-ansei": {
@@ -3960,7 +4004,7 @@
         "ansei"
       ],
       "sources": [
-        "ndl_handwriting"
+        "fukui_sanai_shungaku"
       ],
       "statuses": {
         "1858-ansei": {
@@ -6261,8 +6305,10 @@
         "kinmon"
       ],
       "sources": [
-        "archives_timeline",
-        "ndl_handwriting"
+        "ndl_authority_komei",
+        "ibaraki_nariaki_treaty",
+        "iwaki_kazunomiya",
+        "ndl_portrait_katamori_detail"
       ],
       "statuses": {
         "1858-ansei": {
@@ -6423,8 +6469,9 @@
         "hakodate"
       ],
       "sources": [
-        "ndl_handwriting",
-        "ndl_modern_timeline"
+        "ndl_authority_meiji",
+        "archives_royal_restoration",
+        "archives_charter_oath"
       ],
       "statuses": {
         "1867-taisei": {

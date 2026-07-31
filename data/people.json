@@ -26,7 +26,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "archives_timeline"
+          "yokosuka_perry_blackships",
+          "mofa_treaty_1854"
         ],
         "reviewStatus": "verified"
       }
@@ -53,7 +54,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "archives_timeline"
+          "mofa_harris_credentials",
+          "mofa_treaty_1858"
         ],
         "reviewStatus": "verified"
       }
@@ -81,7 +83,7 @@
       ],
       "evidence": {
         "sourceIds": [
-          "archives_timeline"
+          "hiroshima_abe_opening"
         ],
         "reviewStatus": "verified"
       }
@@ -110,8 +112,9 @@
       ],
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "ndl_handwriting_bakumatsu_people",
+          "mofa_treaty_1858",
+          "ibaraki_sakuradamon"
         ],
         "reviewStatus": "verified"
       }
@@ -144,8 +147,11 @@
       ],
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "ndl_authority_iemochi",
+          "fukui_bakumatsu_chronicle",
+          "iwaki_kazunomiya",
+          "fukui_pref_timeline",
+          "ndl_katsu_1866_diary"
         ],
         "reviewStatus": "verified"
       }
@@ -182,9 +188,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_modern_timeline",
-          "ndl_handwriting"
+          "matsudo_yoshinobu_timeline",
+          "fukui_yoshinobu_shungaku_1862"
         ],
         "reviewStatus": "verified"
       }
@@ -215,8 +220,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "archives_katsu_kaibo",
+          "sumida_katsu_edo_surrender"
         ],
         "reviewStatus": "verified"
       }
@@ -242,8 +247,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_yamaoka_detail",
+          "sumida_katsu_edo_surrender"
         ],
         "reviewStatus": "verified"
       }
@@ -274,8 +279,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "archives_enomoto_1867",
+          "hakodate_war_history"
         ],
         "reviewStatus": "verified"
       }
@@ -305,8 +310,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "ibaraki_nariaki_kaibo",
+          "ibaraki_nariaki_succession"
         ],
         "reviewStatus": "verified"
       }
@@ -338,8 +343,9 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "fukui_sanai_shungaku",
+          "fukui_yoshinobu_shungaku_1862",
+          "fukui_pref_timeline"
         ],
         "reviewStatus": "verified"
       }
@@ -367,7 +373,7 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_handwriting"
+          "fukui_sanai_shungaku"
         ],
         "reviewStatus": "verified"
       }
@@ -912,8 +918,10 @@
       ],
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "ndl_authority_komei",
+          "ibaraki_nariaki_treaty",
+          "iwaki_kazunomiya",
+          "ndl_portrait_katamori_detail"
         ],
         "reviewStatus": "verified"
       }
@@ -944,8 +952,9 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_handwriting",
-          "ndl_modern_timeline"
+          "ndl_authority_meiji",
+          "archives_royal_restoration",
+          "archives_charter_oath"
         ],
         "reviewStatus": "verified"
       }
