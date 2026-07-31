@@ -68,6 +68,12 @@ npm run check:release
 npm run build:data
 ```
 
+`data/sources.json` を変更した場合は、公開用の出典一覧も再生成してください。
+
+```sh
+npm run build:sources
+```
+
 ## 注意
 
 - 日付は、定着した旧暦日付と換算後の西暦日付を必要に応じて併記しています。
@@ -127,6 +133,7 @@ GitHub Actionsでは、プッシュとプルリクエストごとに `dist/` を
 - 存在しないURLからトップページへ戻れる
 - ライト、ダーク、320px幅で主要画面を確認する
 - `data/manifest.json` の `contentVersion` と `updated` を更新する
+- `SOURCES.md` が `data/sources.json` から再生成された最新状態である
 - 校正待ち項目とサイト上の注意書きを確認する
 - 公開者が再利用条件を決め、必要に応じて `LICENSE` を追加する
 
