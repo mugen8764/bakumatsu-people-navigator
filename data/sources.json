@@ -593,7 +593,7 @@
       "id": "ndl_portrait_kido_detail",
       "title": "国立国会図書館「近代日本人の肖像・木戸孝允」",
       "url": "https://www.ndl.go.jp/portrait/datas/65/",
-      "note": "桂小五郎の別称、江戸での剣術・西洋兵学修学、その後の尊王攘夷運動。"
+      "note": "桂小五郎の別称、江戸での剣術・西洋兵学修学、長州藩の重職として藩論を討幕へ導いた経緯、1866年の薩長連合締結。"
     },
     {
       "id": "hagi_takasugi_sonjuku",
@@ -965,7 +965,13 @@
       "id": "ndl_portrait_kondo_detail",
       "title": "国立国会図書館「近代日本人の肖像・近藤勇」",
       "url": "https://www.ndl.go.jp/portrait/datas/269",
-      "note": "近藤勇の新選組局長就任と、京都守護職松平容保の下で新選組が京都の治安維持を担った経緯。"
+      "note": "近藤勇の新選組局長就任、京都守護職松平容保の下での京都治安維持、1867年の見廻組頭取・幕臣就任。"
+    },
+    {
+      "id": "ndl_portrait_hijikata_detail",
+      "title": "国立国会図書館「近代日本人の肖像・土方歳三」",
+      "url": "https://www.ndl.go.jp/portrait/datas/316",
+      "note": "土方歳三の新選組副長就任、京都守護職松平容保の下での京都治安維持、1867年の見廻組肝煎格・幕臣就任。"
     },
     {
       "id": "kyoto_shinsengumi_1865",

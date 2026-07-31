@@ -1206,8 +1206,8 @@
         "sourceIds": [
           "kagoshima_library_hisamitsu_saigo"
         ],
-        "reviewStatus": "needs_review",
-        "note": "鹿児島県立図書館で国父として藩主忠義を後見し藩政の実権を握ったことは確認。1867年の王政復古支持という個人の立場は直接確認できないため削除し、この時点の個別行動は校正待ちを維持。"
+        "reviewStatus": "verified",
+        "note": "鹿児島県立図書館で国父として藩主忠義を後見し藩政の実権を握ったことと、西郷・大久保を中心に薩摩藩が倒幕路線へ進んだ経緯を確認。1867年の王政復古支持という個人の立場は直接確認できないため表示しない。"
       }
     },
     {
@@ -2482,17 +2482,18 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "木戸孝允",
-      "role": "長州藩倒幕派指導者",
+      "role": "木戸準一郎・長州藩政担当",
       "factionId": "choshu",
-      "stance": "薩摩・岩倉らと徳川政治力を排除する新政権を構想する。",
-      "importance": "桂小五郎から木戸孝允へ改名し、藩代表政治家となる。",
+      "stance": "長州藩の重職として、藩論を討幕へ導く。",
+      "importance": "前年の薩長連合後、長州藩の政務を担う立場にあった。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kyoto_kido_1862",
+          "ndl_portrait_kido_detail",
+          "yamaguchi_kido_guide"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "京都市で長州帰還後の木戸準一郎への改名と政務担当、国立国会図書館で藩重職として藩論を討幕へ導いた経緯、山口県立山口図書館で1866年の薩長同盟締結を確認。岩倉らとの新政権構想という未確認の説明は削除。"
       }
     },
     {
@@ -4085,17 +4086,16 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "松平容保",
-      "role": "会津藩主・旧幕府側京都軍事責任者",
+      "role": "会津藩主・京都守護職（王政復古で免職）",
       "factionId": "aizu",
-      "stance": "大政奉還後も徳川慶喜を支え、王政復古派と対立する。",
-      "importance": "徳川家を含む新体制を支持し、武力倒幕に反対した。",
+      "stance": "1862年から京都守護職を務め、1867年の王政復古で免職となる。",
+      "importance": "在職中は京都の治安維持と公武合体に関わった。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_katamori_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で京都守護職就任、京都の治安と公武合体への関与、1867年の王政復古による免職を確認。大政奉還後の政治的立場や徳川家を含む新体制支持は、当該出典が直接支えないため削除。"
       }
     },
     {
@@ -5033,17 +5033,17 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "近藤勇",
-      "role": "幕臣・新選組局長",
+      "role": "新選組局長・幕臣（見廻組頭取）",
       "factionId": "shinsengumi",
-      "stance": "大政奉還後も旧幕府側軍事組織として京都・大坂に残る。",
-      "importance": "幕府制度返上後も武装組織は存続した。",
+      "stance": "1867年、見廻組頭取を命じられて幕臣となる。",
+      "importance": "新選組は京都守護職松平容保の下で京都の治安維持を担った。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_kondo_detail",
+          "ndl_portrait_katamori_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で新選組局長、京都守護職下での治安維持、1867年の見廻組頭取・幕臣就任を確認。大政奉還後の京都・大坂での具体的配置は当該出典が直接支えないため削除。"
       }
     },
     {
@@ -5147,17 +5147,17 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "土方歳三",
-      "role": "幕臣・新選組副長",
+      "role": "新選組副長・幕臣（見廻組肝煎格）",
       "factionId": "shinsengumi",
-      "stance": "旧幕府側の軍事組織として活動を続ける。",
-      "importance": "政権返上後も京都の軍事対立は解けなかった。",
+      "stance": "1867年、見廻組肝煎格を命じられて幕臣となる。",
+      "importance": "新選組は京都守護職松平容保の下で京都の治安維持を担った。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "ndl_portrait_hijikata_detail",
+          "hino_hijikata_profile"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で新選組副長、京都守護職下での治安維持、1867年の見廻組肝煎格・幕臣就任を確認し、日野市の人物解説でも副長歴を照合。抽象的な軍事対立評価は削除。"
       }
     },
     {
@@ -5297,17 +5297,16 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "天璋院",
-      "role": "大奥・徳川家の年長者",
+      "role": "13代将軍家定の正室・天璋院",
       "factionId": "bakufu",
-      "stance": "政権返上後の徳川家と大奥の処遇に直面する。",
-      "importance": "政権制度と将軍家の生活・家臣団は別々に処理する必要があった。",
+      "stance": "家定の死後に天璋院と名を改め、生涯にわたり徳川家の立場を貫く。",
+      "importance": "江戸城の無血開城への働きは翌1868年であり、この時点へ先取りしない。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "kagoshima_tenshoin"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "鹿児島県の人物解説で家定正室、家定死後の天璋院への改名、生涯の徳川家支持と江戸城無血開城への尽力を確認。政権返上後の大奥処遇という未確認の説明を削除し、開城への働きを1867年へ先取りしない。"
       }
     },
     {
@@ -5409,17 +5408,16 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "静寛院宮",
-      "role": "徳川家の皇族出身者",
+      "role": "14代将軍家茂夫人・静寛院宮",
       "factionId": "imperial-court",
-      "stance": "政権返上後の徳川家処遇に関わる。",
-      "importance": "朝廷と徳川家を結ぶ親族関係が和平交渉にも使われる。",
+      "stance": "1866年の家茂死去後に仏門へ入り、静寛院宮と号する。",
+      "importance": "江戸攻撃中止と徳川家存続への働きは翌年の戊辰戦争期である。",
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "ndl_portrait_kazunomiya_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で家茂夫人、1866年の家茂死去後の出家・静寛院宮号、戊辰戦争期の江戸攻撃中止・徳川家存続への尽力を確認。後者を1867年の行動として先取りしない。"
       }
     },
     {

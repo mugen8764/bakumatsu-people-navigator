@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.25",
+    "version": "1.0.26",
     "updated": "2026-07-31"
   },
   "sources": {
@@ -498,7 +498,7 @@
     "ndl_portrait_kido_detail": {
       "title": "国立国会図書館「近代日本人の肖像・木戸孝允」",
       "url": "https://www.ndl.go.jp/portrait/datas/65/",
-      "note": "桂小五郎の別称、江戸での剣術・西洋兵学修学、その後の尊王攘夷運動。"
+      "note": "桂小五郎の別称、江戸での剣術・西洋兵学修学、長州藩の重職として藩論を討幕へ導いた経緯、1866年の薩長連合締結。"
     },
     "hagi_takasugi_sonjuku": {
       "title": "萩市「高杉晋作 参上」",
@@ -808,7 +808,12 @@
     "ndl_portrait_kondo_detail": {
       "title": "国立国会図書館「近代日本人の肖像・近藤勇」",
       "url": "https://www.ndl.go.jp/portrait/datas/269",
-      "note": "近藤勇の新選組局長就任と、京都守護職松平容保の下で新選組が京都の治安維持を担った経緯。"
+      "note": "近藤勇の新選組局長就任、京都守護職松平容保の下での京都治安維持、1867年の見廻組頭取・幕臣就任。"
+    },
+    "ndl_portrait_hijikata_detail": {
+      "title": "国立国会図書館「近代日本人の肖像・土方歳三」",
+      "url": "https://www.ndl.go.jp/portrait/datas/316",
+      "note": "土方歳三の新選組副長就任、京都守護職松平容保の下での京都治安維持、1867年の見廻組肝煎格・幕臣就任。"
     },
     "kyoto_shinsengumi_1865": {
       "title": "京都市下京区役所「区内の施設案内・光縁寺」",
@@ -3892,7 +3897,7 @@
             "sourceIds": [
               "kagoshima_library_hisamitsu_saigo"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-toba": {
@@ -5037,15 +5042,16 @@
         },
         "1867-taisei": {
           "display": "木戸孝允",
-          "role": "長州藩倒幕派指導者",
-          "stance": "薩摩・岩倉らと徳川政治力を排除する新政権を構想する。",
-          "importance": "桂小五郎から木戸孝允へ改名し、藩代表政治家となる。",
+          "role": "木戸準一郎・長州藩政担当",
+          "stance": "長州藩の重職として、藩論を討幕へ導く。",
+          "importance": "前年の薩長連合後、長州藩の政務を担う立場にあった。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kyoto_kido_1862",
+              "ndl_portrait_kido_detail",
+              "yamaguchi_kido_guide"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-toba": {
@@ -6521,15 +6527,14 @@
         },
         "1867-taisei": {
           "display": "松平容保",
-          "role": "会津藩主・旧幕府側京都軍事責任者",
-          "stance": "大政奉還後も徳川慶喜を支え、王政復古派と対立する。",
-          "importance": "徳川家を含む新体制を支持し、武力倒幕に反対した。",
+          "role": "会津藩主・京都守護職（王政復古で免職）",
+          "stance": "1862年から京都守護職を務め、1867年の王政復古で免職となる。",
+          "importance": "在職中は京都の治安維持と公武合体に関わった。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "ndl_portrait_katamori_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-toba": {
@@ -7402,15 +7407,15 @@
         },
         "1867-taisei": {
           "display": "近藤勇",
-          "role": "幕臣・新選組局長",
-          "stance": "大政奉還後も旧幕府側軍事組織として京都・大坂に残る。",
-          "importance": "幕府制度返上後も武装組織は存続した。",
+          "role": "新選組局長・幕臣（見廻組頭取）",
+          "stance": "1867年、見廻組頭取を命じられて幕臣となる。",
+          "importance": "新選組は京都守護職松平容保の下で京都の治安維持を担った。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "ndl_portrait_kondo_detail",
+              "ndl_portrait_katamori_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-toba": {
@@ -7518,15 +7523,15 @@
         },
         "1867-taisei": {
           "display": "土方歳三",
-          "role": "幕臣・新選組副長",
-          "stance": "旧幕府側の軍事組織として活動を続ける。",
-          "importance": "政権返上後も京都の軍事対立は解けなかった。",
+          "role": "新選組副長・幕臣（見廻組肝煎格）",
+          "stance": "1867年、見廻組肝煎格を命じられて幕臣となる。",
+          "importance": "新選組は京都守護職松平容保の下で京都の治安維持を担った。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "ndl_portrait_hijikata_detail",
+              "hino_hijikata_profile"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-toba": {
@@ -7656,15 +7661,14 @@
         },
         "1867-taisei": {
           "display": "天璋院",
-          "role": "大奥・徳川家の年長者",
-          "stance": "政権返上後の徳川家と大奥の処遇に直面する。",
-          "importance": "政権制度と将軍家の生活・家臣団は別々に処理する必要があった。",
+          "role": "13代将軍家定の正室・天璋院",
+          "stance": "家定の死後に天璋院と名を改め、生涯にわたり徳川家の立場を貫く。",
+          "importance": "江戸城の無血開城への働きは翌1868年であり、この時点へ先取りしない。",
           "evidence": {
             "sourceIds": [
-              "archives_timeline",
-              "ndl_handwriting"
+              "kagoshima_tenshoin"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-toba": {
@@ -7766,15 +7770,14 @@
         },
         "1867-taisei": {
           "display": "静寛院宮",
-          "role": "徳川家の皇族出身者",
-          "stance": "政権返上後の徳川家処遇に関わる。",
-          "importance": "朝廷と徳川家を結ぶ親族関係が和平交渉にも使われる。",
+          "role": "14代将軍家茂夫人・静寛院宮",
+          "stance": "1866年の家茂死去後に仏門へ入り、静寛院宮と号する。",
+          "importance": "江戸攻撃中止と徳川家存続への働きは翌年の戊辰戦争期である。",
           "evidence": {
             "sourceIds": [
-              "archives_timeline",
-              "ndl_handwriting"
+              "ndl_portrait_kazunomiya_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-toba": {
