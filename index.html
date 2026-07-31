@@ -99,7 +99,7 @@
     </div>
   </section>
 
-  <section id="view-sources" class="view" role="tabpanel" aria-labelledby="tab-sources" hidden>
+  <section id="view-sources" class="view" role="tabpanel" aria-labelledby="tab-sources" tabindex="-1" hidden>
     <div class="panel side">
       <div id="dataStats" class="stats"></div>
       <div class="method-grid">
@@ -110,11 +110,11 @@
         <article class="method-card"><h3>校正状況</h3><p>人物、時点別状態、勢力、関係、事件、地点には項目単位の出典と校正状態を登録しています。根拠を確定できない項目は「出典校正中」と表示します。正式な研究・引用ではリンク先の原資料を確認してください。</p></article>
       </div>
       <h2 style="margin-top:17px">主な公開資料</h2><div id="sourceCatalog" class="source-list"></div>
-      <h2 style="margin-top:17px">収録ファイル</h2><div class="list"><div class="list-item"><strong>data/*.json</strong><br><span class="muted">人物・勢力・関係・事件・地点の正本データ。data.jsはここから生成します。</span></div><div class="list-item"><strong>SOURCES.md</strong><br><span class="muted">出典と校正方針をまとめた文書。</span></div><div class="list-item"><strong>README.md</strong><br><span class="muted">公開方法、データ追加方法、操作説明。</span></div><div class="list-item"><strong>LICENSE</strong><br><span class="muted">コード、独自の編集文、データ編集物の再利用条件。</span></div></div>
+      <h2 style="margin-top:17px">再利用と公開情報</h2><div class="list"><div class="list-item"><strong>再利用条件</strong><br><span class="muted">プログラムコードはMIT License、独自の編集文とデータ編集物はCC BY 4.0で提供します。歴史的事実そのものや、リンク先を含む第三者の資料には適用されません。詳しくは<a href="LICENSE">ライセンス全文</a>をご確認ください。</span></div><div class="list-item"><strong>ソースコード</strong><br><span class="muted">データとサイトの実装、変更履歴は<a href="https://github.com/mugen8764/bakumatsu-people-navigator">GitHubリポジトリ</a>で公開しています。</span></div></div>
     </div>
   </section>
 
-  <footer class="panel"><div class="footer-row"><div><strong>幕末人物・勢力ナビ 1853–1869</strong><br>史実の背景知識を、人物・勢力・事件・場所のつながりとして整理した静的サイトです。</div><div class="footer-links"><a href="README.md">README</a><a href="SOURCES.md">出典一覧</a><a href="LICENSE">ライセンス</a><button id="copyLink" class="link-button" type="button">現在の表示URLをコピー</button></div></div><div id="copyStatus" class="status-line" aria-live="polite"></div></footer>
+  <footer class="panel"><div class="footer-row"><div><strong>幕末人物・勢力ナビ 1853–1869</strong><br>史実の背景知識を、人物・勢力・事件・場所のつながりとして整理した静的サイトです。</div><div class="footer-links"><button id="footerSources" class="link-button" type="button">出典・編集方針</button><a href="https://github.com/mugen8764/bakumatsu-people-navigator">GitHub</a><button id="copyLink" class="link-button" type="button">現在の表示URLをコピー</button></div></div><div id="copyStatus" class="status-line" aria-live="polite"></div></footer>
 </main>
 <noscript><p style="padding:20px">このサイトの表示にはJavaScriptが必要です。</p></noscript>
 <script src="map-data.js"></script>

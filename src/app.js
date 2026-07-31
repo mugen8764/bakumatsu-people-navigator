@@ -158,6 +158,13 @@
     }
   }
 
+  function openSourcesFromFooter() {
+    setView('sources');
+    const sourcesView = $('#view-sources');
+    sourcesView.focus({ preventScroll: true });
+    sourcesView.scrollIntoView({ block: 'start' });
+  }
+
   $('#sceneSelect').addEventListener('change', event => {
     stopPlayback();
     setScene(event.target.value);
@@ -220,6 +227,7 @@
       $('#globalSearch').focus();
     }
   });
+  $('#footerSources').addEventListener('click', openSourcesFromFooter);
   $('#copyLink').addEventListener('click', copyCurrentUrl);
   window.addEventListener('hashchange', () => {
     const route = window.BM_ROUTER.readHashRoute(domain, window.location);

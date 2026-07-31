@@ -18,8 +18,23 @@ test('all six primary views render without a page error', async ({ page }) => {
   }
 
   await expect(page.locator('#sourceCatalog .source')).toHaveCount(207);
-  await expect(page.locator('#view-sources')).toContainText('data/*.json');
+  await expect(page.locator('#view-sources')).toContainText('再利用と公開情報');
+  await expect(page.locator('#view-sources')).toContainText('CC BY 4.0');
   expect(pageErrors).toEqual([]);
+});
+
+test('footer links expose reader-facing publication information', async ({ page }) => {
+  await page.goto('/#scene=1866-satcho&view=people&person=kido&faction=長州藩');
+
+  await page.locator('#footerSources').click();
+  await expect(page.locator('#view-sources')).toBeVisible();
+  await expect(page.locator('#view-sources')).toBeFocused();
+  await expect(page).toHaveURL(/scene=1866-satcho&view=sources&person=kido/);
+
+  await expect(page.locator('#view-sources a[href="LICENSE"]')).toHaveText('ライセンス全文');
+  await expect(page.locator('a[href="https://github.com/mugen8764/bakumatsu-people-navigator"]')).toHaveCount(2);
+  await expect(page.locator('footer a[href="README.md"]')).toHaveCount(0);
+  await expect(page.locator('footer a[href="SOURCES.md"]')).toHaveCount(0);
 });
 
 test('all primary views stay inside a 320px document viewport', async ({ page }) => {
