@@ -10,11 +10,6 @@
       "url": "https://www.archives.go.jp/exhibition/digital/bakumatsu/history.html",
       "note": "幕末の主要事件と公文書資料への入口。"
     },
-    "ndl_portrait": {
-      "title": "国立国会図書館「近代日本人の肖像」",
-      "url": "https://www.ndl.go.jp/portrait/index.html",
-      "note": "近代日本の形成に関わった人物の肖像・略歴。"
-    },
     "ndl_modern_timeline": {
       "title": "国立国会図書館「史料にみる日本の近代・年表」",
       "url": "https://www.ndl.go.jp/modern/utility/chronology.html",
@@ -321,7 +316,9 @@
     "kochi_takechi_kyoto": {
       "title": "高知県立坂本龍馬記念館「企画展・半平太と京都」",
       "url": "https://www.pref.kochi.lg.jp/press1/2025072200026/",
-      "note": "尊王攘夷を掲げた土佐勤王党党首武市半平太の文久2～3年の京都での政治活動。"
+      "note": "尊王攘夷を掲げた土佐勤王党党首武市半平太の文久2～3年の京都での政治活動。",
+      "locator": "「取材ポイント」",
+      "contentCheckedAt": "2026-07-31"
     },
     "kagoshima_satsuei": {
       "title": "鹿児島県「薩英戦争」",
@@ -661,7 +658,9 @@
     "kagoshima_tenshoin": {
       "title": "鹿児島県「郷土の偉人・天璋院篤姫」",
       "url": "https://www.pref.kagoshima.jp/kids/rekishi/bakumatsu.html",
-      "note": "家定死後の天璋院への改名、生涯にわたる徳川家の立場と徳川家達の養育。"
+      "note": "家定死後の天璋院への改名、江戸城無血開城への関与、生涯にわたる徳川家の立場と徳川家達の養育。",
+      "locator": "「天璋院篤姫」人物解説",
+      "contentCheckedAt": "2026-07-31"
     },
     "ibaraki_sakuradamon": {
       "title": "茨城県立歴史館「桜田門外の変」",
@@ -702,7 +701,9 @@
     "ndl_portrait_ryoma_detail": {
       "title": "国立国会図書館「近代日本人の肖像・坂本竜馬」",
       "url": "https://www.ndl.go.jp/portrait/datas/89",
-      "note": "坂本竜馬の土佐勤王党参加・脱藩・勝海舟門下入り、1867年6月の後藤象二郎との船中での政体案作成、同年11月の中岡慎太郎との京都での暗殺。"
+      "note": "坂本竜馬の土佐勤王党参加・脱藩・勝海舟門下入り、1867年6月の後藤象二郎との船中での政体案作成、同年11月の中岡慎太郎との京都での暗殺。",
+      "locator": "生没年・「解説」",
+      "contentCheckedAt": "2026-07-31"
     },
     "fukui_yoshinobu_shungaku_1862": {
       "title": "福井市立郷土歴史博物館「一橋徳川家と将軍慶喜にまつわる品々」",
@@ -812,7 +813,9 @@
     "jacar_sanjo_detail": {
       "title": "アジア歴史資料センター「三條實美」",
       "url": "https://www.jacar.archives.go.jp/das/term/00000389",
-      "note": "三条実美の1863年の官位褫奪・京都追放、1865年の太宰府移送、1867年の赦免・議定就任、1868年の議定・副総裁等、1869年の右大臣就任。"
+      "note": "三条実美の1863年の官位褫奪・京都追放、1865年の太宰府移送、1867年の赦免・議定就任、1868年の議定・副総裁等、1869年の右大臣就任。",
+      "locator": "「解説」欄",
+      "contentCheckedAt": "2026-07-31"
     },
     "kochi_takechi_1863": {
       "title": "高知県立坂本龍馬記念館「半平太と京都」",
@@ -837,12 +840,16 @@
     "kochi_tosa_bakumatsu": {
       "title": "高知県立高知城歴史博物館「土佐藩の歴史・幕末維新期」",
       "url": "https://www.kochi-johaku.jp/column/4529/",
-      "note": "山内容堂と土佐勤王党の方針不一致、武市半平太ら勤王党員の捕縛、戊辰戦争で板垣退助率いる土佐藩兵が東進して会津若松城攻略にあたったこと。"
+      "note": "山内容堂と土佐勤王党の方針不一致、武市半平太ら勤王党員の捕縛、戊辰戦争で板垣退助率いる土佐藩兵が東進して会津若松城攻略にあたったこと。",
+      "locator": "「公武合体の周旋と国力増強」「大政奉還の建白と倒幕」",
+      "contentCheckedAt": "2026-07-31"
     },
     "kochi_takechi_imprisonment": {
       "title": "高知市「史跡 武市半平太旧宅及び墓」",
       "url": "https://www.city.kochi.kochi.jp/soshiki/90/cas-state-1600100.html",
-      "note": "武市半平太の京都留守居加役就任と帰国、八月十八日の政変後の土佐勤王党弾圧、1863年9月21日の投獄、1865年閏5月11日の切腹命令と死去。"
+      "note": "武市半平太の土佐勤王党結成、京都留守居加役就任と帰国、八月十八日の政変後の弾圧、1863年9月21日の投獄、1865年閏5月11日の切腹命令と死去。",
+      "locator": "「解説」",
+      "contentCheckedAt": "2026-07-31"
     },
     "archives_kinmon_aftermath": {
       "title": "国立公文書館「激動幕末・元治甲子長州附属諸国脱走変名大略」",
@@ -998,12 +1005,16 @@
     "ndl_portrait_kondo_detail": {
       "title": "国立国会図書館「近代日本人の肖像・近藤勇」",
       "url": "https://www.ndl.go.jp/portrait/datas/269",
-      "note": "近藤勇の新選組局長就任、京都守護職松平容保の下での京都治安維持、1867年の見廻組頭取・幕臣就任、鳥羽・伏見後の甲陽鎮撫隊組織、流山での捕縛と斬首。"
+      "note": "近藤勇の新選組局長就任、京都守護職松平容保の下での京都治安維持、1867年の見廻組頭取・幕臣就任、鳥羽・伏見後の甲陽鎮撫隊組織、流山での捕縛と斬首。",
+      "locator": "生没年・別称・「解説」",
+      "contentCheckedAt": "2026-07-31"
     },
     "ndl_portrait_hijikata_detail": {
       "title": "国立国会図書館「近代日本人の肖像・土方歳三」",
       "url": "https://www.ndl.go.jp/portrait/datas/316",
-      "note": "土方歳三の新選組副長就任、京都守護職松平容保の下での京都治安維持、1867年の見廻組肝煎格・幕臣就任、鳥羽・伏見後の宇都宮・会津転戦と箱館五稜郭での戦死。"
+      "note": "土方歳三の新選組副長就任、京都守護職松平容保の下での京都治安維持、1867年の見廻組肝煎格・幕臣就任、鳥羽・伏見後の宇都宮・会津転戦と箱館五稜郭での戦死。",
+      "locator": "生没年・「解説」",
+      "contentCheckedAt": "2026-07-31"
     },
     "kyoto_shinsengumi_1865": {
       "title": "京都市下京区役所「区内の施設案内・光縁寺」",
@@ -1054,7 +1065,9 @@
     "ndl_portrait_kazunomiya_detail": {
       "title": "国立国会図書館「近代日本人の肖像・和宮」",
       "url": "https://www.ndl.go.jp/portrait/datas/6156",
-      "note": "14代将軍徳川家茂の夫人であったこと、1866年の家茂死去後の出家と静寛院宮号、戊辰戦争期の江戸攻撃中止・徳川家存続への尽力。"
+      "note": "仁孝天皇第8皇女、14代将軍徳川家茂への降嫁、1866年の家茂死去後の出家と静寛院宮号、戊辰戦争期の江戸攻撃中止・徳川家存続への尽力。",
+      "locator": "生没年・別称・「解説」",
+      "contentCheckedAt": "2026-07-31"
     },
     "nagareyama_shinsengumi_1868": {
       "title": "流山市立博物館「新選組と流山」",
@@ -1069,7 +1082,9 @@
     "kochi_itagaki_profile": {
       "title": "高知市「板垣退助」",
       "url": "https://www.city.kochi.kochi.jp/site/kanko/taisuke.html",
-      "note": "板垣退助が戊辰戦争の功績により土佐藩の家老格へ昇進し、後に明治政府の参議となった経歴。"
+      "note": "板垣退助が戊辰戦争の功績により土佐藩の家老格へ昇進し、後に明治政府の参議となった経歴。",
+      "locator": "本文第1段落",
+      "contentCheckedAt": "2026-07-31"
     },
     "archives_yamagata_europe_1869": {
       "title": "国立公文書館「山県有朋露仏2国に差遣し地理形勢を視察せしむ（明治2年）」",
@@ -6589,8 +6604,7 @@
         "toba"
       ],
       "sources": [
-        "ndl_portrait",
-        "ndl_handwriting"
+        "ndl_portrait_iwakura_detail"
       ],
       "statuses": {
         "1858-ansei": {
@@ -6754,8 +6768,7 @@
         "toba"
       ],
       "sources": [
-        "ndl_portrait",
-        "ndl_handwriting"
+        "jacar_sanjo_detail"
       ],
       "statuses": {
         "1863-joi": {
@@ -6891,8 +6904,7 @@
         "tohoku"
       ],
       "sources": [
-        "ndl_portrait",
-        "ndl_handwriting"
+        "ndl_portrait_katamori_detail"
       ],
       "statuses": {
         "1862-bunkyu": {
@@ -7066,8 +7078,7 @@
         "toba"
       ],
       "sources": [
-        "ndl_portrait",
-        "ndl_handwriting"
+        "kochi_yodo_timeline"
       ],
       "statuses": {
         "1858-ansei": {
@@ -7214,8 +7225,8 @@
         "aug18"
       ],
       "sources": [
-        "ndl_portrait",
-        "ndl_handwriting"
+        "kochi_takechi_kyoto",
+        "kochi_takechi_imprisonment"
       ],
       "statuses": {
         "1860-sakurada": {
@@ -7324,8 +7335,8 @@
         "taisei"
       ],
       "sources": [
-        "ndl_portrait",
-        "ndl_handwriting"
+        "ndl_portrait_ryoma_detail",
+        "kochi_taisei_hokan"
       ],
       "statuses": {
         "1860-sakurada": {
@@ -7461,8 +7472,7 @@
         "taisei"
       ],
       "sources": [
-        "ndl_portrait",
-        "ndl_handwriting"
+        "kochi_taisei_hokan"
       ],
       "statuses": {
         "1865-choshu": {
@@ -7587,8 +7597,7 @@
         "taisei"
       ],
       "sources": [
-        "ndl_portrait",
-        "ndl_handwriting"
+        "nakaoka_museum_profile"
       ],
       "statuses": {
         "1864-kinmon": {
@@ -7681,8 +7690,8 @@
         "tohoku"
       ],
       "sources": [
-        "ndl_portrait",
-        "jacar_dictionary"
+        "kochi_tosa_bakumatsu",
+        "kochi_itagaki_profile"
       ],
       "statuses": {
         "1865-choshu": {
@@ -7803,8 +7812,7 @@
         "toba"
       ],
       "sources": [
-        "ndl_portrait",
-        "ndl_handwriting"
+        "ndl_portrait_kondo_detail"
       ],
       "statuses": {
         "1862-bunkyu": {
@@ -7959,8 +7967,7 @@
         "hakodate"
       ],
       "sources": [
-        "ndl_portrait",
-        "jacar_dictionary"
+        "ndl_portrait_hijikata_detail"
       ],
       "statuses": {
         "1862-bunkyu": {
@@ -8100,8 +8107,7 @@
         "edo_surrender"
       ],
       "sources": [
-        "archives_timeline",
-        "ndl_handwriting"
+        "kagoshima_tenshoin"
       ],
       "statuses": {
         "1854-treaty": {
@@ -8209,8 +8215,8 @@
         "edo_surrender"
       ],
       "sources": [
-        "archives_timeline",
-        "ndl_handwriting"
+        "ndl_portrait_kazunomiya_detail",
+        "iwaki_kazunomiya"
       ],
       "statuses": {
         "1860-sakurada": {

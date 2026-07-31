@@ -17,7 +17,7 @@ test('all six primary views render without a page error', async ({ page }) => {
     await expect(page.locator(`#view-${view}`)).toBeVisible();
   }
 
-  await expect(page.locator('#sourceCatalog .source')).toHaveCount(208);
+  await expect(page.locator('#sourceCatalog .source')).toHaveCount(207);
   const preciseSource = page.locator('#sourceCatalog .source', { hasText: '木戸孝允遺文集' });
   await expect(preciseSource.locator('.source-meta')).toContainText('該当箇所: 目次144頁（0110.jp2）');
   await expect(preciseSource.locator('.source-meta')).toContainText('内容確認日: 2026-07-31');

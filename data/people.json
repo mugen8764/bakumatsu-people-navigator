@@ -976,8 +976,7 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_iwakura_detail"
         ],
         "reviewStatus": "verified"
       }
@@ -1008,8 +1007,7 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_sanjo_detail"
         ],
         "reviewStatus": "verified"
       }
@@ -1041,8 +1039,7 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_katamori_detail"
         ],
         "reviewStatus": "verified"
       }
@@ -1074,8 +1071,7 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kochi_yodo_timeline"
         ],
         "reviewStatus": "verified"
       }
@@ -1103,8 +1099,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kochi_takechi_kyoto",
+          "kochi_takechi_imprisonment"
         ],
         "reviewStatus": "verified"
       }
@@ -1136,8 +1132,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_ryoma_detail",
+          "kochi_taisei_hokan"
         ],
         "reviewStatus": "verified"
       }
@@ -1165,8 +1161,7 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kochi_taisei_hokan"
         ],
         "reviewStatus": "verified"
       }
@@ -1196,8 +1191,7 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "nakaoka_museum_profile"
         ],
         "reviewStatus": "verified"
       }
@@ -1226,8 +1220,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "kochi_tosa_bakumatsu",
+          "kochi_itagaki_profile"
         ],
         "reviewStatus": "verified"
       }
@@ -1256,8 +1250,7 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_kondo_detail"
         ],
         "reviewStatus": "verified"
       }
@@ -1291,8 +1284,7 @@
       ],
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "ndl_portrait_hijikata_detail"
         ],
         "reviewStatus": "verified"
       }
@@ -1321,8 +1313,7 @@
       ],
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "kagoshima_tenshoin"
         ],
         "reviewStatus": "verified"
       }
@@ -1352,8 +1343,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "archives_timeline",
-          "ndl_handwriting"
+          "ndl_portrait_kazunomiya_detail",
+          "iwaki_kazunomiya"
         ],
         "reviewStatus": "verified"
       }
