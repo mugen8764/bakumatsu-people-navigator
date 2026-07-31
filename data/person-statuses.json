@@ -2132,17 +2132,16 @@
       "startSceneId": "1868-tohoku",
       "endSceneId": "1868-tohoku",
       "displayName": "川路利良",
-      "role": "新政府軍薩摩藩兵",
+      "role": "薩摩藩士・戊辰戦争従軍",
       "factionId": "new-government",
-      "stance": "東北方面の戦闘・占領実務に関与する。",
-      "importance": "維新後の軍・警察経歴につながる。",
+      "stance": "1868年、戊辰戦争に従軍する。",
+      "importance": "東北方面での具体的な所属と行動は、現在の出典では確認できない。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "jacar_kawaji_detail"
         ],
         "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "note": "アジア歴史資料センターで1868年の戊辰戦争従軍は確認できるが、東北戦線での所属・行動を特定できないため needs_review を維持。「戦闘・占領実務」は根拠がないため削除。"
       }
     },
     {
@@ -2151,17 +2150,16 @@
       "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "displayName": "川路利良",
-      "role": "新政府軍事・行政人材",
-      "factionId": "new-government",
-      "stance": "戊辰戦争後、新政府の軍事・警察組織へ活動領域を移す。",
-      "importance": "幕末人物の経歴が明治国家制度へ接続する例。",
+      "role": "薩摩藩兵具奉行",
+      "factionId": "satsuma",
+      "stance": "1869年、薩摩藩の兵具奉行となる。",
+      "importance": "東京府の官職へ移るのは1871年である。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "jacar_kawaji_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1869年の兵具奉行就任と1871年の東京府大属・権典事・典事就任を確認。1869年時点で新政府の警察組織へ移ったとの従来記述は時期が早いため訂正。"
       }
     },
     {
@@ -2225,17 +2223,16 @@
       "startSceneId": "1868-tohoku",
       "endSceneId": "1868-tohoku",
       "displayName": "黒田了介",
-      "role": "北越・会津征討参謀",
+      "role": "北越征討参謀",
       "factionId": "new-government",
-      "stance": "北越・東北戦線で軍事指揮と交渉を担う。",
-      "importance": "薩摩の若手軍事参謀として台頭する。",
+      "stance": "北越征討参謀として戊辰戦争に従軍する。",
+      "importance": "箱館征討参謀を務めるのは翌1869年である。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "archives_kuroda"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立公文書館で北越征討参謀を務めたことを確認。会津征討参謀、東北戦線での交渉、台頭という評価は当該出典が直接支えないため表示しない。"
       }
     },
     {
@@ -2244,17 +2241,16 @@
       "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "displayName": "黒田清隆",
-      "role": "新政府軍参謀",
+      "role": "箱館征討参謀",
       "factionId": "new-government",
-      "stance": "箱館戦争で降伏交渉に関わり、榎本武揚の助命を求める。",
-      "importance": "旧幕府人材の後の登用につながる橋渡しをした。",
+      "stance": "箱館征討参謀として戦い、旧幕府軍主将の榎本武揚の助命に尽力する。",
+      "importance": "後に榎本を対ロシア政策へ活用した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "archives_kuroda"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立公文書館で1869年の箱館征討参謀としての戦功、榎本武揚の助命と後の対ロシア政策への登用を確認。「降伏交渉」の具体的役割は当該出典が直接支えないため表示しない。"
       }
     },
     {
@@ -3266,17 +3262,17 @@
       "startSceneId": "1868-edo",
       "endSceneId": "1868-edo",
       "displayName": "大村益次郎",
-      "role": "軍防事務局判事級",
+      "role": "軍防事務局判事",
       "factionId": "new-government",
-      "stance": "上野戦争など関東の軍事作戦を指揮する。",
-      "importance": "江戸開城後の抗戦派鎮圧を担った。",
+      "stance": "新政府の軍防事務局判事となり、彰義隊の鎮圧にあたる。",
+      "importance": "5月には軍務官判事へ就任した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "yamaguchi_omura_1869",
+          "ndl_omura_papers"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "山口市で軍防事務局判事就任と彰義隊鎮圧、国立国会図書館で1868年2月の軍防事務局入りと5月の軍務官判事就任を確認。「判事級」という曖昧な表現を正式役職へ訂正。"
       }
     },
     {
@@ -3285,17 +3281,16 @@
       "startSceneId": "1868-tohoku",
       "endSceneId": "1868-tohoku",
       "displayName": "大村益次郎",
-      "role": "兵部大輔級の軍事指導者",
+      "role": "軍務官判事、のち副知事",
       "factionId": "new-government",
-      "stance": "北越・東北戦線を含む新政府軍の作戦と制度を統括する。",
-      "importance": "新政府中央軍制の基礎を作る。",
+      "stance": "5月に軍務官判事、10月に軍務官副知事へ就任する。",
+      "importance": "兵部大輔へ就任するのは翌1869年7月である。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_omura_papers"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で1868年5月の軍務官判事、10月の軍務官副知事、翌年7月の兵部大輔就任を確認。「兵部大輔級」は時期が早く、北越・東北作戦の統括も当該出典が支えないため訂正。"
       }
     },
     {
@@ -3304,17 +3299,17 @@
       "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "displayName": "大村益次郎",
-      "role": "新政府軍制責任者",
+      "role": "兵部大輔",
       "factionId": "new-government",
-      "stance": "藩兵中心の軍から中央軍への改革を進める。",
-      "importance": "同年襲撃され、翌年の徴兵制を直接見ることなく死去した。",
+      "stance": "7月に兵部大輔へ就任し、陸海軍の制度改革に取り組む。",
+      "importance": "9月に襲撃され、その傷がもとで11月5日に死去した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "yamaguchi_omura_1869",
+          "ndl_omura_papers"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "山口市で1869年の兵部大輔就任、陸海軍制度改革、9月の襲撃と11月の死去を確認し、国立国会図書館で7月の就任日と11月5日の死亡を照合。翌年の徴兵制という従来記述は時系列・根拠とも不正確なため削除。"
       }
     },
     {
@@ -3437,17 +3432,16 @@
       "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "displayName": "山県有朋",
-      "role": "新政府軍人",
+      "role": "欧州軍制視察中",
       "factionId": "new-government",
-      "stance": "戦後の軍制研究・改革へ移る。",
-      "importance": "戊辰戦争経験が後の陸軍制度へつながる。",
+      "stance": "3月、西郷従道と長崎を出航し、欧州各国で兵制を中心とする制度を調査する。",
+      "importance": "ドイツやフランスの徴兵制度などを研究し、1870年8月に帰国した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "archives_yamagata_europe_1869"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立公文書館で1869年3月の西郷従道との長崎出航、英仏独露などの視察、徴兵制度を中心とする研究、1870年8月の帰国を確認。抽象的な戦後軍制改革ではなく、この時点の行動へ訂正。"
       }
     },
     {
@@ -5036,17 +5030,17 @@
       "startSceneId": "1868-tohoku",
       "endSceneId": "1868-tohoku",
       "displayName": "板垣退助",
-      "role": "新政府軍参謀・会津方面指揮",
+      "role": "土佐藩兵を率いる新政府軍",
       "factionId": "new-government",
-      "stance": "東北へ進軍し、会津戦争に参加する。",
-      "importance": "土佐藩の戊辰戦争での役割を代表する。",
+      "stance": "土佐藩兵を率いて東進し、会津若松城の攻略にあたる。",
+      "importance": "戊辰戦争での功績により、土佐藩の家老格へ昇進した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "kochi_tosa_bakumatsu",
+          "kochi_itagaki_profile"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "高知城歴史博物館で板垣率いる土佐藩兵の東進と会津若松城攻略、高知市で戊辰戦争の功績による家老格昇進を確認。「新政府軍参謀」という役職は当該出典が直接支えないため表示しない。"
       }
     },
     {
@@ -5055,17 +5049,16 @@
       "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "displayName": "板垣退助",
-      "role": "新政府官僚・土佐藩指導者",
-      "factionId": "new-government",
-      "stance": "戦後の藩政・政府活動へ移る。",
-      "importance": "後の民権運動以前は軍事・政府人材だった。",
+      "role": "戊辰戦争後の土佐藩士",
+      "factionId": "tosa",
+      "stance": "戊辰戦争の功績により土佐藩の家老格へ昇進するが、その時期は現在の出典では特定できない。",
+      "importance": "箱館戦線への直接関与を示す根拠は確認できない。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "kochi_itagaki_profile"
         ],
         "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "note": "高知市で戊辰戦争の功績による家老格昇進は確認できるが、昇進時期と1869年の具体的な役職・行動を特定できないため needs_review を維持。抽象的な「新政府官僚」は表示しない。"
       }
     },
     {

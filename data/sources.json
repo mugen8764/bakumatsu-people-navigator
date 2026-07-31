@@ -503,7 +503,7 @@
       "id": "yamaguchi_omura_1869",
       "title": "山口市「大村益次郎関係資料」",
       "url": "https://www.city.yamaguchi.lg.jp/rs/rekibunshigen/r1253.html",
-      "note": "大村益次郎が1860年に萩藩士となって軍制改革へ取り組み、四境戦争で石州口・芸州口を指揮した経歴。"
+      "note": "大村益次郎の萩藩軍制改革、四境戦争での指揮、明治政府の軍防事務局判事としての彰義隊鎮圧、1869年の兵部大輔就任と陸海軍制度改革、同年の襲撃と死去。"
     },
     {
       "id": "ndl_modern_opening",
@@ -893,7 +893,7 @@
       "id": "kochi_tosa_bakumatsu",
       "title": "高知県立高知城歴史博物館「土佐藩の歴史・幕末維新期」",
       "url": "https://www.kochi-johaku.jp/column/4529/",
-      "note": "山内容堂と土佐勤王党の方針不一致、朝廷から尊王攘夷派が一掃された後の武市半平太ら勤王党員の捕縛。"
+      "note": "山内容堂と土佐勤王党の方針不一致、武市半平太ら勤王党員の捕縛、戊辰戦争で板垣退助率いる土佐藩兵が東進して会津若松城攻略にあたったこと。"
     },
     {
       "id": "kochi_takechi_imprisonment",
@@ -1128,6 +1128,18 @@
       "title": "福島県「近・現代」",
       "url": "https://www.pref.fukushima.lg.jp/site/ken-no-sugata/kingendai.html",
       "note": "1868年9月に会津藩主松平容保が若松城を明け渡し、福島県域の戊辰戦争が終結したこと。"
+    },
+    {
+      "id": "kochi_itagaki_profile",
+      "title": "高知市「板垣退助」",
+      "url": "https://www.city.kochi.kochi.jp/site/kanko/taisuke.html",
+      "note": "板垣退助が戊辰戦争の功績により土佐藩の家老格へ昇進し、後に明治政府の参議となった経歴。"
+    },
+    {
+      "id": "archives_yamagata_europe_1869",
+      "title": "国立公文書館「山県有朋露仏2国に差遣し地理形勢を視察せしむ（明治2年）」",
+      "url": "https://www.archives.go.jp/exhibition/digital/2007_01/aritomo_yamagata/archive01_01.html",
+      "note": "山県有朋が1869年3月に西郷従道と長崎を出航し、欧州で徴兵制度などを調査して1870年8月に帰国したこと。"
     }
   ]
 }

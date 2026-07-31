@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.36",
+    "version": "1.0.37",
     "updated": "2026-07-31"
   },
   "sources": {
@@ -423,7 +423,7 @@
     "yamaguchi_omura_1869": {
       "title": "山口市「大村益次郎関係資料」",
       "url": "https://www.city.yamaguchi.lg.jp/rs/rekibunshigen/r1253.html",
-      "note": "大村益次郎が1860年に萩藩士となって軍制改革へ取り組み、四境戦争で石州口・芸州口を指揮した経歴。"
+      "note": "大村益次郎の萩藩軍制改革、四境戦争での指揮、明治政府の軍防事務局判事としての彰義隊鎮圧、1869年の兵部大輔就任と陸海軍制度改革、同年の襲撃と死去。"
     },
     "ndl_modern_opening": {
       "title": "国立国会図書館「開国―近代の幕開け」",
@@ -748,7 +748,7 @@
     "kochi_tosa_bakumatsu": {
       "title": "高知県立高知城歴史博物館「土佐藩の歴史・幕末維新期」",
       "url": "https://www.kochi-johaku.jp/column/4529/",
-      "note": "山内容堂と土佐勤王党の方針不一致、朝廷から尊王攘夷派が一掃された後の武市半平太ら勤王党員の捕縛。"
+      "note": "山内容堂と土佐勤王党の方針不一致、武市半平太ら勤王党員の捕縛、戊辰戦争で板垣退助率いる土佐藩兵が東進して会津若松城攻略にあたったこと。"
     },
     "kochi_takechi_imprisonment": {
       "title": "高知市「史跡 武市半平太旧宅及び墓」",
@@ -944,6 +944,16 @@
       "title": "福島県「近・現代」",
       "url": "https://www.pref.fukushima.lg.jp/site/ken-no-sugata/kingendai.html",
       "note": "1868年9月に会津藩主松平容保が若松城を明け渡し、福島県域の戊辰戦争が終結したこと。"
+    },
+    "kochi_itagaki_profile": {
+      "title": "高知市「板垣退助」",
+      "url": "https://www.city.kochi.kochi.jp/site/kanko/taisuke.html",
+      "note": "板垣退助が戊辰戦争の功績により土佐藩の家老格へ昇進し、後に明治政府の参議となった経歴。"
+    },
+    "archives_yamagata_europe_1869": {
+      "title": "国立公文書館「山県有朋露仏2国に差遣し地理形勢を視察せしむ（明治2年）」",
+      "url": "https://www.archives.go.jp/exhibition/digital/2007_01/aritomo_yamagata/archive01_01.html",
+      "note": "山県有朋が1869年3月に西郷従道と長崎を出航し、欧州で徴兵制度などを調査して1870年8月に帰国したこと。"
     }
   },
   "factions": {
@@ -4791,30 +4801,27 @@
         },
         "1868-tohoku": {
           "display": "川路利良",
-          "role": "新政府軍薩摩藩兵",
+          "role": "薩摩藩士・戊辰戦争従軍",
           "faction": "新政府",
-          "stance": "東北方面の戦闘・占領実務に関与する。",
-          "importance": "維新後の軍・警察経歴につながる。",
+          "stance": "1868年、戊辰戦争に従軍する。",
+          "importance": "東北方面での具体的な所属と行動は、現在の出典では確認できない。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "jacar_kawaji_detail"
             ],
             "reviewStatus": "needs_review"
           }
         },
         "1869-hakodate": {
           "display": "川路利良",
-          "role": "新政府軍事・行政人材",
-          "faction": "新政府",
-          "stance": "戊辰戦争後、新政府の軍事・警察組織へ活動領域を移す。",
-          "importance": "幕末人物の経歴が明治国家制度へ接続する例。",
+          "role": "薩摩藩兵具奉行",
+          "stance": "1869年、薩摩藩の兵具奉行となる。",
+          "importance": "東京府の官職へ移るのは1871年である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "jacar_kawaji_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         }
       }
@@ -4890,30 +4897,28 @@
         },
         "1868-tohoku": {
           "display": "黒田了介",
-          "role": "北越・会津征討参謀",
+          "role": "北越征討参謀",
           "faction": "新政府",
-          "stance": "北越・東北戦線で軍事指揮と交渉を担う。",
-          "importance": "薩摩の若手軍事参謀として台頭する。",
+          "stance": "北越征討参謀として戊辰戦争に従軍する。",
+          "importance": "箱館征討参謀を務めるのは翌1869年である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "archives_kuroda"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1869-hakodate": {
           "display": "黒田清隆",
-          "role": "新政府軍参謀",
+          "role": "箱館征討参謀",
           "faction": "新政府",
-          "stance": "箱館戦争で降伏交渉に関わり、榎本武揚の助命を求める。",
-          "importance": "旧幕府人材の後の登用につながる橋渡しをした。",
+          "stance": "箱館征討参謀として戦い、旧幕府軍主将の榎本武揚の助命に尽力する。",
+          "importance": "後に榎本を対ロシア政策へ活用した。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "archives_kuroda"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         }
       }
@@ -5858,44 +5863,43 @@
         },
         "1868-edo": {
           "display": "大村益次郎",
-          "role": "軍防事務局判事級",
+          "role": "軍防事務局判事",
           "faction": "新政府",
-          "stance": "上野戦争など関東の軍事作戦を指揮する。",
-          "importance": "江戸開城後の抗戦派鎮圧を担った。",
+          "stance": "新政府の軍防事務局判事となり、彰義隊の鎮圧にあたる。",
+          "importance": "5月には軍務官判事へ就任した。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "yamaguchi_omura_1869",
+              "ndl_omura_papers"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-tohoku": {
           "display": "大村益次郎",
-          "role": "兵部大輔級の軍事指導者",
+          "role": "軍務官判事、のち副知事",
           "faction": "新政府",
-          "stance": "北越・東北戦線を含む新政府軍の作戦と制度を統括する。",
-          "importance": "新政府中央軍制の基礎を作る。",
+          "stance": "5月に軍務官判事、10月に軍務官副知事へ就任する。",
+          "importance": "兵部大輔へ就任するのは翌1869年7月である。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "ndl_omura_papers"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1869-hakodate": {
           "display": "大村益次郎",
-          "role": "新政府軍制責任者",
+          "role": "兵部大輔",
           "faction": "新政府",
-          "stance": "藩兵中心の軍から中央軍への改革を進める。",
-          "importance": "同年襲撃され、翌年の徴兵制を直接見ることなく死去した。",
+          "stance": "7月に兵部大輔へ就任し、陸海軍の制度改革に取り組む。",
+          "importance": "9月に襲撃され、その傷がもとで11月5日に死去した。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "yamaguchi_omura_1869",
+              "ndl_omura_papers"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         }
       }
@@ -6015,16 +6019,15 @@
         },
         "1869-hakodate": {
           "display": "山県有朋",
-          "role": "新政府軍人",
+          "role": "欧州軍制視察中",
           "faction": "新政府",
-          "stance": "戦後の軍制研究・改革へ移る。",
-          "importance": "戊辰戦争経験が後の陸軍制度へつながる。",
+          "stance": "3月、西郷従道と長崎を出航し、欧州各国で兵制を中心とする制度を調査する。",
+          "importance": "ドイツやフランスの徴兵制度などを研究し、1870年8月に帰国した。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "archives_yamagata_europe_1869"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         }
       }
@@ -7478,28 +7481,26 @@
         },
         "1868-tohoku": {
           "display": "板垣退助",
-          "role": "新政府軍参謀・会津方面指揮",
+          "role": "土佐藩兵を率いる新政府軍",
           "faction": "新政府",
-          "stance": "東北へ進軍し、会津戦争に参加する。",
-          "importance": "土佐藩の戊辰戦争での役割を代表する。",
+          "stance": "土佐藩兵を率いて東進し、会津若松城の攻略にあたる。",
+          "importance": "戊辰戦争での功績により、土佐藩の家老格へ昇進した。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "kochi_tosa_bakumatsu",
+              "kochi_itagaki_profile"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1869-hakodate": {
           "display": "板垣退助",
-          "role": "新政府官僚・土佐藩指導者",
-          "faction": "新政府",
-          "stance": "戦後の藩政・政府活動へ移る。",
-          "importance": "後の民権運動以前は軍事・政府人材だった。",
+          "role": "戊辰戦争後の土佐藩士",
+          "stance": "戊辰戦争の功績により土佐藩の家老格へ昇進するが、その時期は現在の出典では特定できない。",
+          "importance": "箱館戦線への直接関与を示す根拠は確認できない。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "kochi_itagaki_profile"
             ],
             "reviewStatus": "needs_review"
           }
