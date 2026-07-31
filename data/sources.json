@@ -233,7 +233,7 @@
       "id": "hakodate_war_history",
       "title": "函館市「五稜郭の歴史（箱館戦争から現在）」",
       "url": "https://www.city.hakodate.hokkaido.jp/docs/2014011700789/",
-      "note": "旧幕府脱走軍の五稜郭占拠、土方歳三の戦死、榎本武揚らの降伏。"
+      "note": "榎本武揚率いる旧幕府脱走艦隊の1868年10月20日の蝦夷地到着、五稜郭占拠、榎本を総裁とする蝦夷地仮政権、土方歳三の1869年5月11日の戦死、5月18日の榎本らの降伏。"
     },
     {
       "id": "gsi_maps_coordinates",
@@ -989,13 +989,13 @@
       "id": "ndl_portrait_katamori_detail",
       "title": "国立国会図書館「近代日本人の肖像・松平容保」",
       "url": "https://www.ndl.go.jp/portrait/datas/334/",
-      "note": "松平容保の京都守護職就任、京都の治安と公武合体への関与、八月十八日の政変、禁門の変、征長強硬論、1867年の免職。"
+      "note": "松平容保の京都守護職就任、京都の治安と公武合体への関与、八月十八日の政変、禁門の変、征長強硬論、1867年の免職、1868年の鳥羽・伏見敗戦後の会津での謹慎と降伏。"
     },
     {
       "id": "hino_hijikata_profile",
       "title": "日野市「土方歳三」",
       "url": "https://www.city.hino.lg.jp/shisei/keywords/1014641/1014642.html",
-      "note": "土方歳三が新選組で副長を務めた経歴。"
+      "note": "土方歳三が新選組副長を務め、1868年の近藤勇死後に新選組を率い、1869年5月の箱館の戦いで戦死した経歴。"
     },
     {
       "id": "hino_honjin_shinsengumi",
@@ -1061,13 +1061,13 @@
       "id": "ndl_portrait_kondo_detail",
       "title": "国立国会図書館「近代日本人の肖像・近藤勇」",
       "url": "https://www.ndl.go.jp/portrait/datas/269",
-      "note": "近藤勇の新選組局長就任、京都守護職松平容保の下での京都治安維持、1867年の見廻組頭取・幕臣就任。"
+      "note": "近藤勇の新選組局長就任、京都守護職松平容保の下での京都治安維持、1867年の見廻組頭取・幕臣就任、鳥羽・伏見後の甲陽鎮撫隊組織、流山での捕縛と斬首。"
     },
     {
       "id": "ndl_portrait_hijikata_detail",
       "title": "国立国会図書館「近代日本人の肖像・土方歳三」",
       "url": "https://www.ndl.go.jp/portrait/datas/316",
-      "note": "土方歳三の新選組副長就任、京都守護職松平容保の下での京都治安維持、1867年の見廻組肝煎格・幕臣就任。"
+      "note": "土方歳三の新選組副長就任、京都守護職松平容保の下での京都治安維持、1867年の見廻組肝煎格・幕臣就任、鳥羽・伏見後の宇都宮・会津転戦と箱館五稜郭での戦死。"
     },
     {
       "id": "kyoto_shinsengumi_1865",
@@ -1085,7 +1085,7 @@
       "id": "archives_enomoto_1867",
       "title": "国立公文書館「旗本御家人・榎本釜次郎脱艦一件書並仏人ブリユウネ等所罰方」",
       "url": "https://www.archives.go.jp/exhibition/digital/hatamotogokenin/contents/56.html",
-      "note": "榎本武揚のオランダ留学と、帰国後の1867年における軍艦役・軍艦頭並就任。"
+      "note": "榎本武揚のオランダ留学、帰国後の1867年における軍艦役・軍艦頭並就任、江戸城明け渡し後の軍艦引き渡し拒否、1868年8月19日夜の開陽丸ほか計8隻による品川沖出航。"
     },
     {
       "id": "ndl_enomoto_papers",
@@ -1116,6 +1116,18 @@
       "title": "国立国会図書館「近代日本人の肖像・和宮」",
       "url": "https://www.ndl.go.jp/portrait/datas/6156",
       "note": "1866年の家茂死去後の出家と静寛院宮号、戊辰戦争期の江戸攻撃中止・徳川家存続への尽力。"
+    },
+    {
+      "id": "nagareyama_shinsengumi_1868",
+      "title": "流山市立博物館「新選組と流山」",
+      "url": "https://www.city.nagareyama.chiba.jp/tourism/1013070/1013074.html",
+      "note": "甲陽鎮撫隊の1868年3月1日の江戸出発と勝沼敗走、4月3日の近藤勇出頭、4月25日の板橋宿での処刑、4月12日の土方歳三による大鳥圭介軍参加。"
+    },
+    {
+      "id": "fukushima_modern_history",
+      "title": "福島県「近・現代」",
+      "url": "https://www.pref.fukushima.lg.jp/site/ken-no-sugata/kingendai.html",
+      "note": "1868年9月に会津藩主松平容保が若松城を明け渡し、福島県域の戊辰戦争が終結したこと。"
     }
   ]
 }

@@ -706,17 +706,17 @@
       "startSceneId": "1868-edo",
       "endSceneId": "1868-edo",
       "displayName": "榎本武揚",
-      "role": "旧幕府海軍指揮官",
+      "role": "旧幕府海軍副総裁",
       "factionId": "former-bakufu",
-      "stance": "軍艦引き渡しに抵抗し、徳川家臣を率いる新天地を模索する。",
-      "importance": "江戸開城後も旧幕府の軍事抵抗が続く理由の一つ。",
+      "stance": "江戸城明け渡し後、新政府への軍艦引き渡しを拒む。",
+      "importance": "艦隊を率いて品川沖を脱走するのは同年8月19日である。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "ndl_enomoto_papers",
+          "archives_enomoto_1867"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で1868年1月の海軍副総裁就任、国立公文書館で江戸城明け渡し後の軍艦引き渡し拒否と同年8月19日の出航を確認。「徳川家臣を率いる新天地を模索」は直接根拠がないため削除。"
       }
     },
     {
@@ -725,17 +725,17 @@
       "startSceneId": "1868-tohoku",
       "endSceneId": "1868-tohoku",
       "displayName": "榎本武揚",
-      "role": "旧幕府艦隊司令",
+      "role": "旧幕府脱走艦隊指揮",
       "factionId": "former-bakufu",
-      "stance": "艦隊を率いて奥羽諸藩を経由し、蝦夷地へ向かう。",
-      "importance": "東北戦争と箱館戦争を海上でつなぐ。",
+      "stance": "8月19日夜、開陽丸ほか計8隻の艦隊を率いて品川沖を出航し、10月20日に蝦夷地へ到着する。",
+      "importance": "旧幕府脱走軍は10月26日に五稜郭を占拠した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "archives_enomoto_1867",
+          "hakodate_war_history"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立公文書館で1868年8月19日夜の品川沖出航と艦隊構成、函館市で10月20日の蝦夷地到着と10月26日の五稜郭占拠を確認。根拠が不明確だった「奥羽諸藩を経由」は表示しない。"
       }
     },
     {
@@ -744,17 +744,17 @@
       "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "displayName": "榎本武揚",
-      "role": "箱館旧幕府軍政権総裁",
+      "role": "蝦夷地仮政権総裁",
       "factionId": "former-bakufu",
-      "stance": "五稜郭を拠点に抵抗するが、新政府軍へ降伏する。",
-      "importance": "戊辰戦争最後の旧幕府側指導者。",
+      "stance": "五稜郭を拠点に新政府軍へ抵抗し、5月18日に旧幕府脱走軍とともに降伏する。",
+      "importance": "降伏により、7か月に及んだ箱館戦争が終結した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "hakodate_war_history",
+          "ndl_enomoto_papers"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "函館市で1868年12月15日の蝦夷地仮政権総裁就任、1869年5月18日の降伏と箱館戦争終結を確認し、国立国会図書館の関係文書解説でも同年5月の降伏を照合。「最後の旧幕府側指導者」という評価表現は削除。"
       }
     },
     {
@@ -4245,17 +4245,16 @@
       "startSceneId": "1868-edo",
       "endSceneId": "1868-edo",
       "displayName": "松平容保",
-      "role": "会津藩主",
+      "role": "会津藩主・謹慎中",
       "factionId": "former-bakufu",
-      "stance": "会津へ戻り、新政府への謝罪・嘆願と防衛準備を進める。",
-      "importance": "慶喜が恭順しても会津処分問題は解決しなかった。",
+      "stance": "鳥羽・伏見の戦いで敗れた後、会津で謹慎する。",
+      "importance": "その後、新政府軍の攻撃を受けて9月の降伏へ至る。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_katamori_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で鳥羽・伏見敗戦後の会津での謹慎、新政府軍の攻撃と降伏を確認。謝罪・嘆願、防衛準備、慶喜の恭順との関係は当該出典が直接支えないため表示しない。"
       }
     },
     {
@@ -4264,17 +4263,18 @@
       "startSceneId": "1868-tohoku",
       "endSceneId": "1868-tohoku",
       "displayName": "松平容保",
-      "role": "会津藩主・籠城側指導者",
+      "role": "会津藩主・籠城側",
       "factionId": "former-bakufu",
-      "stance": "鶴ヶ城で新政府軍へ抗戦し、降伏する。",
-      "importance": "奥羽越列藩同盟の争点となった人物。",
+      "stance": "新政府軍の攻撃を受け、9月22日に若松城を開城して降伏する。",
+      "importance": "開城により会津戦争は終結した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_portrait_katamori_detail",
+          "aizuwakamatsu_surrender",
+          "fukushima_modern_history"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で新政府軍の攻撃と降伏、会津若松市で籠城と9月22日の降伏、福島県で容保による若松城明け渡しと県域の戊辰戦争終結を確認。「奥羽越列藩同盟の争点」という解釈は削除。"
       }
     },
     {
@@ -5227,17 +5227,17 @@
       "startSceneId": "1868-edo",
       "endSceneId": "1868-edo",
       "displayName": "近藤勇",
-      "role": "甲陽鎮撫隊指揮・捕縛",
+      "role": "甲陽鎮撫隊指揮・流山で出頭",
       "factionId": "former-bakufu",
-      "stance": "甲州方面で戦うが敗れ、流山で捕縛され処刑される。",
-      "importance": "慶喜の恭順と新選組の抗戦は一致しなかった。",
+      "stance": "3月1日に甲陽鎮撫隊を率いて江戸を出発し、勝沼で敗走した後、4月3日に流山で出頭する。",
+      "importance": "捕らえられ、4月25日に板橋宿で処刑された。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "nagareyama_shinsengumi_1868",
+          "ndl_portrait_kondo_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "流山市立博物館の解説で甲陽鎮撫隊の江戸出発、勝沼敗走、流山での出頭、板橋宿での処刑を確認し、国立国会図書館の略歴でも甲陽鎮撫隊、流山での捕縛と斬首を照合。慶喜の恭順との比較は根拠がないため削除。"
       }
     },
     {
@@ -5342,17 +5342,17 @@
       "startSceneId": "1868-edo",
       "endSceneId": "1868-edo",
       "displayName": "土方歳三",
-      "role": "旧幕府軍指揮官",
+      "role": "新選組副長・旧幕府軍参加",
       "factionId": "former-bakufu",
-      "stance": "宇都宮・会津方面へ転戦する。",
-      "importance": "近藤死後も抗戦を継続する。",
+      "stance": "4月12日、国府台で大鳥圭介の軍に参加する。",
+      "importance": "鳥羽・伏見の戦い後、宇都宮・会津などへ転戦した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "nagareyama_shinsengumi_1868",
+          "ndl_portrait_hijikata_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "流山市立博物館の年表で1868年4月12日の大鳥圭介軍参加、国立国会図書館で鳥羽・伏見後の宇都宮・会津転戦を確認。役割を直接確認できない「旧幕府軍指揮官」は避けた。"
       }
     },
     {
@@ -5361,17 +5361,18 @@
       "startSceneId": "1868-tohoku",
       "endSceneId": "1868-tohoku",
       "displayName": "土方歳三",
-      "role": "旧幕府軍指揮官",
+      "role": "新選組を率いる旧幕府側",
       "factionId": "former-bakufu",
-      "stance": "会津・仙台を経て榎本艦隊と蝦夷地へ向かう。",
-      "importance": "東北戦争と箱館戦争をつなぐ人物。",
+      "stance": "宇都宮・会津などを転戦し、その後、箱館へ向かう。",
+      "importance": "箱館で戦死するのは翌1869年5月11日である。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "ndl_portrait_hijikata_detail",
+          "hino_hijikata_profile",
+          "hakodate_war_history"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で宇都宮・会津転戦と箱館五稜郭での戦死、日野市と函館市で1869年5月の箱館戦死を確認。仙台経由と榎本艦隊への合流は当該出典が直接支えないため表示しない。"
       }
     },
     {
@@ -5380,17 +5381,17 @@
       "startSceneId": "1869-hakodate",
       "endSceneId": "1869-hakodate",
       "displayName": "土方歳三",
-      "role": "箱館旧幕府軍陸軍奉行並",
+      "role": "旧幕府脱走軍・新選組副長",
       "factionId": "former-bakufu",
-      "stance": "箱館防衛を指揮し、降伏前に戦死する。",
-      "importance": "旧幕府軍の最後の抵抗を象徴する。",
+      "stance": "5月11日の箱館総攻撃時、弁天岬台場の救援へ向かう途中で銃弾を受けて戦死する。",
+      "importance": "その7日後、榎本武揚以下の旧幕府脱走軍が降伏した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "hakodate_war_history",
+          "hino_hijikata_profile"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "函館市で1869年5月11日の総攻撃時に弁天岬台場救援へ向かって戦死した経緯と5月18日の脱走軍降伏を確認し、日野市でも同年5月の箱館戦死を照合。正式役職「陸軍奉行並」と象徴性の評価は直接根拠がないため表示しない。"
       }
     },
     {
