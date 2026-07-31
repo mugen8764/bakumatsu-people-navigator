@@ -4275,17 +4275,18 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "山内容堂",
-      "role": "前土佐藩主・大政奉還建白者",
+      "role": "前土佐藩主・大政奉還建白を採用",
       "factionId": "tosa",
-      "stance": "後藤の建言を採用し、慶喜へ大政奉還を勧める。",
-      "importance": "徳川家を含む平和的政権再編を目指した。",
+      "stance": "7月8日、後藤象二郎から大政奉還の建白を受ける。",
+      "importance": "土佐藩はこの政体案を基に、10月3日に幕府へ建白書を提出した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_ryoma_political_plan",
+          "kochi_taisei_hokan",
+          "kochi_yodo_timeline"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館と高知市で後藤から容堂への大政奉還進言・建白と土佐藩による幕府への建白書提出を確認。徳川家を含む平和的再編という意図評価は直接確認できないため削除。"
       }
     },
     {
@@ -4579,17 +4580,18 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "坂本龍馬",
-      "role": "海援隊長・政権構想者",
+      "role": "海援隊を結成・政体案の起草者",
       "factionId": "tosa",
-      "stance": "後藤象二郎と大政奉還・新政府構想を議論し、京都で暗殺される。",
-      "importance": "薩長倒幕と土佐の平和移行論の間をつないだ。",
+      "stance": "6月、後藤象二郎と海路上京する船中で政体案をまとめ、11月に中岡慎太郎と京都で暗殺される。",
+      "importance": "大政奉還を含む政体案と、その後の新政府綱領八策を起草した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_ryoma_political_plan",
+          "ndl_portrait_ryoma_detail",
+          "nakaoka_museum_profile"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で1867年6月の後藤との政体案作成、新政府綱領八策起草、11月の中岡との暗殺を確認。薩長倒幕と土佐の平和移行論をつないだという抽象評価は削除。"
       }
     },
     {
@@ -4636,17 +4638,17 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "後藤象二郎",
-      "role": "土佐藩参政・大政奉還建言者",
+      "role": "土佐藩士・大政奉還を進言",
       "factionId": "tosa",
-      "stance": "龍馬らの構想を山内容堂へ進言し、慶喜への建白を進める。",
-      "importance": "個人構想を藩の公式政策へ変換した。",
+      "stance": "坂本龍馬と相談した政体案を基に、山内容堂へ大政奉還を進言する。",
+      "importance": "福岡孝弟とともに、10月3日に幕府老中へ土佐藩の建白書を提出した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "ndl_ryoma_political_plan",
+          "kochi_taisei_hokan"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立国会図書館と高知市で龍馬との政体案作成、容堂への大政奉還進言、福岡孝弟との幕府への建白書提出を確認。「参政」という役職は当該出典で確認できないため表示しない。"
       }
     },
     {
@@ -4769,15 +4771,15 @@
       "displayName": "中岡慎太郎",
       "role": "陸援隊長",
       "factionId": "tosa",
-      "stance": "武力倒幕を準備し、近江屋で坂本龍馬とともに襲撃され死去する。",
-      "importance": "大政奉還後も武力対決が消えていなかったことを示す。",
+      "stance": "1867年に陸援隊を結成し、京都近江屋で坂本龍馬との会談中に襲撃され死去する。",
+      "importance": "同年には大政奉還を目指す薩土盟約の締結にも関わった。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "nakaoka_museum_profile",
+          "ndl_portrait_ryoma_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "中岡慎太郎館で1867年の薩土盟約・陸援隊結成と近江屋での襲撃死、国立国会図書館で龍馬とともに京都で暗殺されたことを確認。武力倒幕の準備という具体的意図は断定しない。"
       }
     },
     {
@@ -4822,17 +4824,16 @@
       "startSceneId": "1867-taisei",
       "endSceneId": "1867-taisei",
       "displayName": "乾退助",
-      "role": "土佐藩軍事責任者",
+      "role": "土佐藩の兵制改革を担当",
       "factionId": "tosa",
-      "stance": "藩の新政局参加と軍備を支える。",
-      "importance": "後藤の政論と並行して軍事面を担う。",
+      "stance": "1867年、土佐藩の兵制改革を手がける。",
+      "importance": "前年に江戸で騎兵を学んだ後、藩の軍制改革に進んだ。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "kochi_itagaki_book"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "高知市立自由民権記念館の年表で1866年の騎兵修行と1867年の土佐藩兵制改革を確認。根拠のない「軍事責任者」役職と後藤との対比評価は削除。"
       }
     },
     {

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.24",
+    "version": "1.0.25",
     "updated": "2026-07-31"
   },
   "sources": {
@@ -133,7 +133,7 @@
     "ndl_ryoma_political_plan": {
       "title": "国立国会図書館「坂本龍馬の政体構想」",
       "url": "https://www.ndl.go.jp/modern/cha1/description02.html",
-      "note": "後藤象二郎による山内容堂への大政奉還建白と坂本龍馬の政体構想。"
+      "note": "1867年6月の後藤象二郎による山内容堂への大政奉還進言、坂本龍馬が後藤と相談して作成した政体案、10月の土佐藩による幕府への建白と11月の新政府綱領八策。"
     },
     "archives_toba_fushimi": {
       "title": "国立公文書館「鳥羽・伏見の戦い」",
@@ -198,7 +198,7 @@
     "kochi_taisei_hokan": {
       "title": "高知市「大政奉還150年」",
       "url": "https://www.city.kochi.kochi.jp/akarui/naiwa/nw1703.htm",
-      "note": "土佐藩の後藤象二郎・山内容堂らによる大政奉還推進。"
+      "note": "1867年6月の坂本龍馬・後藤象二郎らによる大政奉還協議、7月8日の後藤から山内容堂への建白、10月3日の土佐藩による幕府への建白書提出。"
     },
     "nagasaki_kameyama_company": {
       "title": "長崎市「亀山社中」",
@@ -568,7 +568,7 @@
     "ndl_portrait_ryoma_detail": {
       "title": "国立国会図書館「近代日本人の肖像・坂本竜馬」",
       "url": "https://www.ndl.go.jp/portrait/datas/89",
-      "note": "坂本竜馬の土佐藩郷士としての出自、1861年の土佐勤王党参加、1862年の脱藩と勝海舟門下入り。"
+      "note": "坂本竜馬の土佐勤王党参加・脱藩・勝海舟門下入り、1867年6月の後藤象二郎との船中での政体案作成、同年11月の中岡慎太郎との京都での暗殺。"
     },
     "fukui_yoshinobu_shungaku_1862": {
       "title": "福井市立郷土歴史博物館「一橋徳川家と将軍慶喜にまつわる品々」",
@@ -748,7 +748,7 @@
     "nakaoka_museum_profile": {
       "title": "中岡慎太郎館「中岡慎太郎とは」",
       "url": "https://www.nakaokashintarokan.jp/about.html",
-      "note": "中岡慎太郎の26歳での脱藩、長州藩下での活動、坂本龍馬と両藩代表を説得して1866年の薩長連合へ至った経緯、1867年の陸援隊結成。"
+      "note": "中岡慎太郎の脱藩と長州藩下での活動、1866年の薩長連合仲介、1867年の薩土盟約・陸援隊結成と京都近江屋での襲撃による死去。"
     },
     "ndl_portrait_katamori_detail": {
       "title": "国立国会図書館「近代日本人の肖像・松平容保」",
@@ -6688,15 +6688,16 @@
         },
         "1867-taisei": {
           "display": "山内容堂",
-          "role": "前土佐藩主・大政奉還建白者",
-          "stance": "後藤の建言を採用し、慶喜へ大政奉還を勧める。",
-          "importance": "徳川家を含む平和的政権再編を目指した。",
+          "role": "前土佐藩主・大政奉還建白を採用",
+          "stance": "7月8日、後藤象二郎から大政奉還の建白を受ける。",
+          "importance": "土佐藩はこの政体案を基に、10月3日に幕府へ建白書を提出した。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "ndl_ryoma_political_plan",
+              "kochi_taisei_hokan",
+              "kochi_yodo_timeline"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-toba": {
@@ -6962,15 +6963,16 @@
         },
         "1867-taisei": {
           "display": "坂本龍馬",
-          "role": "海援隊長・政権構想者",
-          "stance": "後藤象二郎と大政奉還・新政府構想を議論し、京都で暗殺される。",
-          "importance": "薩長倒幕と土佐の平和移行論の間をつないだ。",
+          "role": "海援隊を結成・政体案の起草者",
+          "stance": "6月、後藤象二郎と海路上京する船中で政体案をまとめ、11月に中岡慎太郎と京都で暗殺される。",
+          "importance": "大政奉還を含む政体案と、その後の新政府綱領八策を起草した。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "ndl_ryoma_political_plan",
+              "ndl_portrait_ryoma_detail",
+              "nakaoka_museum_profile"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         }
       }
@@ -7031,15 +7033,15 @@
         },
         "1867-taisei": {
           "display": "後藤象二郎",
-          "role": "土佐藩参政・大政奉還建言者",
-          "stance": "龍馬らの構想を山内容堂へ進言し、慶喜への建白を進める。",
-          "importance": "個人構想を藩の公式政策へ変換した。",
+          "role": "土佐藩士・大政奉還を進言",
+          "stance": "坂本龍馬と相談した政体案を基に、山内容堂へ大政奉還を進言する。",
+          "importance": "福岡孝弟とともに、10月3日に幕府老中へ土佐藩の建白書を提出した。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "ndl_ryoma_political_plan",
+              "kochi_taisei_hokan"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-toba": {
@@ -7155,14 +7157,14 @@
         "1867-taisei": {
           "display": "中岡慎太郎",
           "role": "陸援隊長",
-          "stance": "武力倒幕を準備し、近江屋で坂本龍馬とともに襲撃され死去する。",
-          "importance": "大政奉還後も武力対決が消えていなかったことを示す。",
+          "stance": "1867年に陸援隊を結成し、京都近江屋で坂本龍馬との会談中に襲撃され死去する。",
+          "importance": "同年には大政奉還を目指す薩土盟約の締結にも関わった。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "nakaoka_museum_profile",
+              "ndl_portrait_ryoma_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         }
       }
@@ -7222,15 +7224,14 @@
         },
         "1867-taisei": {
           "display": "乾退助",
-          "role": "土佐藩軍事責任者",
-          "stance": "藩の新政局参加と軍備を支える。",
-          "importance": "後藤の政論と並行して軍事面を担う。",
+          "role": "土佐藩の兵制改革を担当",
+          "stance": "1867年、土佐藩の兵制改革を手がける。",
+          "importance": "前年に江戸で騎兵を学んだ後、藩の軍制改革に進んだ。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "kochi_itagaki_book"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-toba": {
