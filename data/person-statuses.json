@@ -2060,7 +2060,7 @@
       "startSceneId": "1862-bunkyu",
       "endSceneId": "1863-aug18",
       "displayName": "川路正之進",
-      "role": "薩摩藩士（兵具方歴任）",
+      "role": "薩摩藩士（1862年の職務は未確認）",
       "factionId": "satsuma",
       "stance": "1850年の兵具方与力附就任は確認できるが、1862年の具体的な任務は確認できない。",
       "importance": "兵具方一番小隊長・学兵隊長となるのは1867年で、後年の軍事・警察職をこの時点へ遡らせない。",
@@ -2078,16 +2078,17 @@
       "startSceneId": "1864-kinmon",
       "endSceneId": "1866-satcho",
       "displayName": "川路正之進",
-      "role": "薩摩藩士（1864年の職務は未確認）",
+      "role": "薩摩藩士・禁門の変従軍者",
       "factionId": "satsuma",
-      "stance": "1850年の兵具方与力附就任は確認できるが、1864年の役職・行動は確認できない。",
-      "importance": "兵具方一番小隊長・学兵隊長となるのは1867年で、禁門の変への参加を示す根拠は未確認。",
+      "stance": "1864年の禁門の変で薩摩藩士として戦い、西郷隆盛に認められたとされる。",
+      "importance": "この戦闘参加が後の登用につながるが、兵具方一番小隊長・学兵隊長となるのは1867年。",
       "evidence": {
         "sourceIds": [
-          "jacar_kawaji_detail"
+          "kagoshima_cci_kawaji",
+          "kwansei_kawaji_letter"
         ],
-        "reviewStatus": "needs_review",
-        "note": "アジア歴史資料センターの職歴は1850年の兵具方与力附と1867年の兵具方一番小隊長・学兵隊長を示すが、1864年の任務を示さない。従来の禁門の変参戦記述は根拠未確認のため削除し、追加史料の確認待ちとする。"
+        "reviewStatus": "verified",
+        "note": "鹿児島商工会議所と関西学院大学図書館の解説で、1864年の禁門の変への参加と、その働きを西郷隆盛に認められた経緯を確認。個別の戦闘経過や討ち取った相手は画面上で断定しない。"
       }
     },
     {
@@ -2096,7 +2097,7 @@
       "startSceneId": "1866-expedition",
       "endSceneId": "1867-taisei",
       "displayName": "川路正之進",
-      "role": "薩摩藩兵具方与力附（1850年就任）",
+      "role": "薩摩藩士（1866年の職務は未確認）",
       "factionId": "satsuma",
       "stance": "1867年の兵具方一番小隊長・学兵隊長就任は確認できるが、1866年の役職と行動は確認中。",
       "importance": "従来の「軍事担当」「軍制整備」は時点を直接支える根拠がない。",
@@ -2132,7 +2133,7 @@
       "startSceneId": "1868-tohoku",
       "endSceneId": "1868-tohoku",
       "displayName": "川路利良",
-      "role": "薩摩藩士・戊辰戦争従軍",
+      "role": "薩摩藩士・戊辰戦争従軍者",
       "factionId": "new-government",
       "stance": "1868年、戊辰戦争に従軍する。",
       "importance": "東北方面での具体的な所属と行動は、現在の出典では確認できない。",

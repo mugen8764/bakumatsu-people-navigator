@@ -634,8 +634,20 @@
     {
       "id": "jacar_kawaji_detail",
       "title": "アジア歴史資料センター「川路利良」",
-      "url": "https://www.jacar.go.jp/dictionary/02_item.html?id=00025247",
-      "note": "川路利良の1850年の兵具方与力附、1867年の兵具方一番小隊長・学兵隊長就任と抜刀隊組織、1868年の戊辰戦争従軍。"
+      "url": "https://www.jacar.archives.go.jp/das/term/00000414",
+      "note": "川路利良の1850年の兵具方与力附、1867年の兵具方一番小隊長・学兵隊長就任と抜刀隊組織、1868年の戊辰戦争従軍、1869年の兵具奉行就任。"
+    },
+    {
+      "id": "kagoshima_cci_kawaji",
+      "title": "鹿児島商工会議所「川路利良」",
+      "url": "https://www.kagoshima-cci.or.jp/?page_id=23600",
+      "note": "川路利良が1864年の禁門の変で働きを見せ、西郷隆盛に見出され、3年後に兵具隊長となった経緯。"
+    },
+    {
+      "id": "kwansei_kawaji_letter",
+      "title": "関西学院大学図書館「安田定則宛川路利良書翰」",
+      "url": "https://library.kwansei.ac.jp/archives/meijiseiji/pages/26980_TC-4_42.html",
+      "note": "所蔵書簡の人物解説に記された、川路利良の1864年禁門の変での戦闘と1869年兵具奉行任命。"
     },
     {
       "id": "jacar_kido_detail",

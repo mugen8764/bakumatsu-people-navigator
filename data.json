@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.42",
+    "version": "1.0.43",
     "updated": "2026-07-31"
   },
   "sources": {
@@ -532,8 +532,18 @@
     },
     "jacar_kawaji_detail": {
       "title": "アジア歴史資料センター「川路利良」",
-      "url": "https://www.jacar.go.jp/dictionary/02_item.html?id=00025247",
-      "note": "川路利良の1850年の兵具方与力附、1867年の兵具方一番小隊長・学兵隊長就任と抜刀隊組織、1868年の戊辰戦争従軍。"
+      "url": "https://www.jacar.archives.go.jp/das/term/00000414",
+      "note": "川路利良の1850年の兵具方与力附、1867年の兵具方一番小隊長・学兵隊長就任と抜刀隊組織、1868年の戊辰戦争従軍、1869年の兵具奉行就任。"
+    },
+    "kagoshima_cci_kawaji": {
+      "title": "鹿児島商工会議所「川路利良」",
+      "url": "https://www.kagoshima-cci.or.jp/?page_id=23600",
+      "note": "川路利良が1864年の禁門の変で働きを見せ、西郷隆盛に見出され、3年後に兵具隊長となった経緯。"
+    },
+    "kwansei_kawaji_letter": {
+      "title": "関西学院大学図書館「安田定則宛川路利良書翰」",
+      "url": "https://library.kwansei.ac.jp/archives/meijiseiji/pages/26980_TC-4_42.html",
+      "note": "所蔵書簡の人物解説に記された、川路利良の1864年禁門の変での戦闘と1869年兵具奉行任命。"
     },
     "jacar_kido_detail": {
       "title": "アジア歴史資料センター「木戸孝允」",
@@ -4815,7 +4825,7 @@
         },
         "1862-bunkyu": {
           "display": "川路正之進",
-          "role": "薩摩藩士（兵具方歴任）",
+          "role": "薩摩藩士（1862年の職務は未確認）",
           "stance": "1850年の兵具方与力附就任は確認できるが、1862年の具体的な任務は確認できない。",
           "importance": "兵具方一番小隊長・学兵隊長となるのは1867年で、後年の軍事・警察職をこの時点へ遡らせない。",
           "evidence": {
@@ -4827,19 +4837,20 @@
         },
         "1864-kinmon": {
           "display": "川路正之進",
-          "role": "薩摩藩士（1864年の職務は未確認）",
-          "stance": "1850年の兵具方与力附就任は確認できるが、1864年の役職・行動は確認できない。",
-          "importance": "兵具方一番小隊長・学兵隊長となるのは1867年で、禁門の変への参加を示す根拠は未確認。",
+          "role": "薩摩藩士・禁門の変従軍者",
+          "stance": "1864年の禁門の変で薩摩藩士として戦い、西郷隆盛に認められたとされる。",
+          "importance": "この戦闘参加が後の登用につながるが、兵具方一番小隊長・学兵隊長となるのは1867年。",
           "evidence": {
             "sourceIds": [
-              "jacar_kawaji_detail"
+              "kagoshima_cci_kawaji",
+              "kwansei_kawaji_letter"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1866-expedition": {
           "display": "川路正之進",
-          "role": "薩摩藩兵具方与力附（1850年就任）",
+          "role": "薩摩藩士（1866年の職務は未確認）",
           "stance": "1867年の兵具方一番小隊長・学兵隊長就任は確認できるが、1866年の役職と行動は確認中。",
           "importance": "従来の「軍事担当」「軍制整備」は時点を直接支える根拠がない。",
           "evidence": {
@@ -4864,7 +4875,7 @@
         },
         "1868-tohoku": {
           "display": "川路利良",
-          "role": "薩摩藩士・戊辰戦争従軍",
+          "role": "薩摩藩士・戊辰戦争従軍者",
           "faction": "新政府",
           "stance": "1868年、戊辰戦争に従軍する。",
           "importance": "東北方面での具体的な所属と行動は、現在の出典では確認できない。",
