@@ -83,7 +83,9 @@
       "id": "sumida_katsu_edo_surrender",
       "title": "墨田区「勝海舟　幕末・明治を生きた巨人」",
       "url": "https://www.city.sumida.lg.jp/sisetu_info/siryou/kyoudobunka/sonota/tenzi/h15/kikakuten_katukaisyuu.html",
-      "note": "徳川慶喜から勝海舟への事後処理委任、3月9日の山岡鉄舟・西郷隆盛会談、13・14日の勝・西郷会談、総攻撃中止、4月11日の江戸城引き渡し。"
+      "note": "徳川慶喜から勝海舟への事後処理委任、3月9日の山岡鉄舟・西郷隆盛会談、13・14日の勝・西郷会談、総攻撃中止、4月11日の江戸城引き渡し。",
+      "locator": "「解説パネルから」内「江戸無血開城」の段落",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "chiyoda_edo_surrender_petitions",
@@ -143,7 +145,9 @@
       "id": "yamaguchi_library_kinmon",
       "title": "山口県立山口図書館「禁門の変、勃発」",
       "url": "https://library.pref.yamaguchi.lg.jp/meijiishin/201407/",
-      "note": "八月十八日の政変後の長州藩、池田屋事件、禁門の変の経緯。"
+      "note": "八月十八日の政変後の長州藩、池田屋事件、禁門の変の経緯。",
+      "locator": "「禁門の変、勃発」冒頭3段落",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "kyoto_kinmon",
@@ -155,7 +159,9 @@
       "id": "yamaguchi_choshu_reform",
       "title": "山口県立山口図書館「四境戦争～時代の流れを変えた戦い～」",
       "url": "https://library.pref.yamaguchi.lg.jp/meijiishin/201607/",
-      "note": "長州藩内戦後の武備恭順への転換、西洋軍制導入と軍事組織整備。"
+      "note": "長州藩内戦後の武備恭順への転換、西洋軍制導入と軍事組織整備。",
+      "locator": "本文冒頭（元治の内訌から四境戦争まで）の3段落",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "yamaguchi_archives_ota_edo",
@@ -179,7 +185,9 @@
       "id": "archives_toba_fushimi",
       "title": "国立公文書館「鳥羽・伏見の戦い」",
       "url": "https://www.archives.go.jp/ayumi/kobetsu/m01_1868_01.html",
-      "note": "新政府軍と幕府軍の衝突、新政府軍の勝利、戊辰戦争の範囲。"
+      "note": "新政府軍と幕府軍の衝突、新政府軍の勝利、戊辰戦争の範囲。",
+      "locator": "「解説」の段落",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "jacar_yoshinobu_punitive_order",
@@ -209,13 +217,17 @@
       "id": "akita_ouu_alliance",
       "title": "秋田県公文書館「奥羽列藩同盟約書写」",
       "url": "https://www.pref.akita.lg.jp/pages/archive/67634",
-      "note": "仙台・米沢両藩の呼びかけと会津・庄内両藩への寛典要求。"
+      "note": "仙台・米沢両藩の呼びかけと会津・庄内両藩への寛典要求。",
+      "locator": "資料名「奥羽列藩同盟約書写」直下の解説",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "hakodate_war_history",
       "title": "函館市「五稜郭の歴史（箱館戦争から現在）」",
       "url": "https://www.city.hakodate.hokkaido.jp/docs/2014011700789/",
-      "note": "榎本武揚率いる旧幕府脱走艦隊の1868年10月20日の蝦夷地到着、五稜郭占拠、榎本を総裁とする蝦夷地仮政権、土方歳三の1869年5月11日の戦死、5月18日の榎本らの降伏。"
+      "note": "榎本武揚率いる旧幕府脱走艦隊の1868年10月20日の蝦夷地到着、五稜郭占拠、榎本を総裁とする蝦夷地仮政権、土方歳三の1869年5月11日の戦死、5月18日の榎本らの降伏。",
+      "locator": "「箱館戦争」の節",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "gsi_maps_coordinates",
@@ -257,7 +269,9 @@
       "id": "kochi_taisei_hokan",
       "title": "高知市「大政奉還150年」",
       "url": "https://www.city.kochi.kochi.jp/akarui/naiwa/nw1703.htm",
-      "note": "1867年6月の坂本龍馬・後藤象二郎らによる大政奉還協議、7月8日の後藤から山内容堂への建白、10月3日の土佐藩による幕府への建白書提出。"
+      "note": "1867年6月の坂本龍馬・後藤象二郎らによる大政奉還協議、7月8日の後藤から山内容堂への建白、10月3日の土佐藩による幕府への建白書提出。",
+      "locator": "「大政奉還150年」本文の慶応3年6月9日から10月15日までの段落",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "nagasaki_kameyama_company",
@@ -335,7 +349,9 @@
       "id": "kagoshima_teradaya",
       "title": "鹿児島県「寺田屋事件」",
       "url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/teradaya.html",
-      "note": "島津久光の雄藩連合・公武合体構想と寺田屋に集結した薩摩藩急進派の鎮撫。"
+      "note": "島津久光の雄藩連合・公武合体構想と寺田屋に集結した薩摩藩急進派の鎮撫。",
+      "locator": "「寺田屋事件」本文の全4段落",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "ndl_portrait_ohara",
@@ -353,7 +369,9 @@
       "id": "kagoshima_satsuei",
       "title": "鹿児島県「薩英戦争」",
       "url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/satuei.html",
-      "note": "生麦事件後の英国要求、鹿児島来攻、薩英戦争、薩摩藩論の開国への転換。"
+      "note": "生麦事件後の英国要求、鹿児島来攻、薩英戦争、薩摩藩論の開国への転換。",
+      "locator": "「薩英戦争」本文の段落",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "kyoto_shinsengumi_history",
@@ -395,7 +413,9 @@
       "id": "ndl_katsu_1866_diary",
       "title": "国立国会図書館「勝海舟・慶応2年9月2日の日記」",
       "url": "https://www.ndl.go.jp/nikki/citeid/katsu_18660902/",
-      "note": "将軍家茂死去後の第二次長州征討停止と勝海舟による休戦交渉。"
+      "note": "将軍家茂死去後の第二次長州征討停止と勝海舟による休戦交渉。",
+      "locator": "「長州征伐の停戦交渉」の本文・解説",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "ndl_authority_komei",
@@ -497,13 +517,17 @@
       "id": "yokosuka_perry_blackships",
       "title": "横須賀市「ペリーの黒船」",
       "url": "https://www.city.yokosuka.kanagawa.jp/2752/uraga_walk/kurohune.html",
-      "note": "東インド艦隊司令長官ペリーの浦賀来航、米国大統領国書、艦隊による示威。"
+      "note": "東インド艦隊司令長官ペリーの浦賀来航、米国大統領国書、艦隊による示威。",
+      "locator": "「ペリーの黒船」の嘉永6年（1853）の項",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "mofa_treaty_1854",
       "title": "外務省「日米和親条約（複製）」",
       "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/04.html",
-      "note": "1854年のペリー再来航、幕府代表との調印、日米和親条約の主要条項。"
+      "note": "1854年のペリー再来航、幕府代表との調印、日米和親条約の主要条項。",
+      "locator": "「4．日米和親条約（複製）」本文第1段落",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "hiroshima_abe_opening",
@@ -551,7 +575,9 @@
       "id": "mofa_treaty_1858",
       "title": "外務省「日米修好通商条約」",
       "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/09.html",
-      "note": "ハリスと幕府全権の交渉、井伊直弼による無勅許調印、条約の主要条項。"
+      "note": "ハリスと幕府全権の交渉、井伊直弼による無勅許調印、条約の主要条項。",
+      "locator": "「9．日米修好通商条約（重要文化財）」本文の段落",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "fukui_bakumatsu_chronicle",
@@ -705,7 +731,9 @@
       "id": "ibaraki_sakuradamon",
       "title": "茨城県立歴史館「桜田門外の変」",
       "url": "https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/sakuradamonngainohen.htm",
-      "note": "1860年3月3日、水戸浪士17名と薩摩藩士有村次左衛門が江戸城桜田門外で井伊直弼を襲撃した経緯。"
+      "note": "1860年3月3日、水戸浪士17名と薩摩藩士有村次左衛門が江戸城桜田門外で井伊直弼を襲撃した経緯。",
+      "locator": "「桜田門外の変」本文第1・2段落",
+      "contentCheckedAt": "2026-07-31"
     },
     {
       "id": "ibaraki_nariaki_death",

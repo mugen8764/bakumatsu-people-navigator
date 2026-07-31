@@ -18,7 +18,8 @@
       "evidence": {
         "sourceIds": [
           "archives_timeline",
-          "ndl_modern_timeline"
+          "ndl_modern_timeline",
+          "yokosuka_perry_blackships"
         ],
         "reviewStatus": "verified",
         "note": "国立公文書館年表で来航、国書受領、台場築造、大船建造解禁、ロシア使節来航を確認。"
@@ -429,7 +430,8 @@
       "evidence": {
         "sourceIds": [
           "archives_timeline",
-          "ndl_modern_timeline"
+          "ndl_modern_timeline",
+          "mofa_treaty_1854"
         ],
         "reviewStatus": "verified"
       }
@@ -529,7 +531,8 @@
         "sourceIds": [
           "archives_timeline",
           "ndl_modern_timeline",
-          "ndl_handwriting"
+          "ndl_handwriting",
+          "mofa_treaty_1858"
         ],
         "reviewStatus": "verified"
       }
@@ -570,7 +573,8 @@
       "evidence": {
         "sourceIds": [
           "archives_timeline",
-          "ndl_handwriting"
+          "ndl_handwriting",
+          "ibaraki_sakuradamon"
         ],
         "reviewStatus": "verified"
       }
@@ -624,7 +628,8 @@
       "evidence": {
         "sourceIds": [
           "archives_timeline",
-          "ndl_handwriting"
+          "ndl_handwriting",
+          "kagoshima_teradaya"
         ],
         "reviewStatus": "verified"
       }
@@ -669,7 +674,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "archives_timeline"
+          "archives_timeline",
+          "kagoshima_satsuei"
         ],
         "reviewStatus": "verified"
       }
@@ -722,7 +728,8 @@
       "evidence": {
         "sourceIds": [
           "archives_timeline",
-          "ndl_modern_timeline"
+          "ndl_modern_timeline",
+          "yamaguchi_library_kinmon"
         ],
         "reviewStatus": "verified"
       }
@@ -776,7 +783,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "archives_timeline"
+          "archives_timeline",
+          "yamaguchi_library_kinmon"
         ],
         "reviewStatus": "verified"
       }
@@ -821,7 +829,8 @@
       "evidence": {
         "sourceIds": [
           "jacar_dictionary",
-          "ndl_handwriting"
+          "ndl_handwriting",
+          "yamaguchi_choshu_reform"
         ],
         "reviewStatus": "verified"
       }
@@ -868,7 +877,8 @@
       "evidence": {
         "sourceIds": [
           "ndl_modern_timeline",
-          "ndl_handwriting"
+          "ndl_handwriting",
+          "kagoshima_satcho_alliance"
         ],
         "reviewStatus": "verified"
       }
@@ -917,7 +927,9 @@
       "evidence": {
         "sourceIds": [
           "archives_timeline",
-          "ndl_handwriting"
+          "ndl_handwriting",
+          "yamaguchi_choshu_reform",
+          "ndl_katsu_1866_diary"
         ],
         "reviewStatus": "verified"
       }
@@ -969,7 +981,8 @@
       "evidence": {
         "sourceIds": [
           "ndl_modern_timeline",
-          "ndl_handwriting"
+          "ndl_handwriting",
+          "kochi_taisei_hokan"
         ],
         "reviewStatus": "verified"
       }
@@ -1023,7 +1036,8 @@
       "evidence": {
         "sourceIds": [
           "ndl_modern_timeline",
-          "ndl_handwriting"
+          "ndl_handwriting",
+          "archives_toba_fushimi"
         ],
         "reviewStatus": "verified"
       }
@@ -1068,7 +1082,8 @@
       "evidence": {
         "sourceIds": [
           "ndl_handwriting",
-          "jacar_dictionary"
+          "jacar_dictionary",
+          "sumida_katsu_edo_surrender"
         ],
         "reviewStatus": "verified"
       }
@@ -1117,7 +1132,8 @@
       "evidence": {
         "sourceIds": [
           "jacar_dictionary",
-          "ndl_handwriting"
+          "ndl_handwriting",
+          "akita_ouu_alliance"
         ],
         "reviewStatus": "verified"
       }
@@ -1158,7 +1174,8 @@
       "evidence": {
         "sourceIds": [
           "jacar_dictionary",
-          "ndl_handwriting"
+          "ndl_handwriting",
+          "hakodate_war_history"
         ],
         "reviewStatus": "verified"
       }
