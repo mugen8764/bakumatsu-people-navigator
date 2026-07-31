@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.29",
+    "version": "1.0.30",
     "updated": "2026-07-31"
   },
   "sources": {
@@ -358,7 +358,7 @@
     "kagoshima_boshin": {
       "title": "鹿児島県「戊辰戦争」",
       "url": "https://www.pref.kagoshima.jp/reimeikan/josetsu/theme/gendai/boshin/index.html",
-      "note": "薩摩・長州兵による官軍編成、江戸城無血開城、北越・東北・箱館への進軍。"
+      "note": "王政復古後の1868年、薩摩・長州兵4500人の官軍と旧幕府軍15000人が鳥羽・伏見で戦い、戊辰戦争が始まった経緯。"
     },
     "kochi_itagaki_boshin": {
       "title": "高知県「龍馬関連情報・板垣退助生誕地」",
@@ -373,7 +373,7 @@
     "archives_kuroda": {
       "title": "国立公文書館「明治宰相列伝・黒田清隆」",
       "url": "https://www.archives.go.jp/exhibition/digital/2007_01/kiyotaka_kuroda/",
-      "note": "黒田清隆の北越・函館征討参謀としての戦功と榎本武揚助命。"
+      "note": "黒田了介の1868年鳥羽・伏見従軍、北越征討参謀、1869年箱館征討参謀としての戦功と榎本武揚助命。"
     },
     "yamaguchi_omura_1869": {
       "title": "山口市「大村益次郎関係資料」",
@@ -468,7 +468,7 @@
     "jacar_saigo_detail": {
       "title": "アジア歴史資料センター「西郷隆盛」",
       "url": "https://www.jacar.archives.go.jp/das/term/00000385",
-      "note": "西郷隆盛の1857年徒目付就任、1859年の奄美大島配流などの職歴。"
+      "note": "西郷隆盛の徒目付・軍賦役兼諸藩応接係・側役・大番頭等の職歴、1867年の参与就任、1868年の東征大総督下参謀と江戸城開城。"
     },
     "kagoshima_saigo_moon": {
       "title": "鹿児島県「西郷・月照入水の後始末書」",
@@ -488,7 +488,7 @@
     "jacar_kawaji_detail": {
       "title": "アジア歴史資料センター「川路利良」",
       "url": "https://www.jacar.go.jp/dictionary/02_item.html?id=00025247",
-      "note": "川路利良の1850年の兵具方与力附就任と、1867年の兵具方一番小隊長・学兵隊長就任。"
+      "note": "川路利良の1850年の兵具方与力附、1867年の兵具方一番小隊長・学兵隊長就任と抜刀隊組織、1868年の戊辰戦争従軍。"
     },
     "jacar_kido_detail": {
       "title": "アジア歴史資料センター「木戸孝允」",
@@ -558,7 +558,7 @@
     "jacar_okubo_detail": {
       "title": "アジア歴史資料センター「大久保利通」",
       "url": "https://www.jacar.go.jp/dictionary/02_item.html?id=00000312",
-      "note": "大久保利通の1857年徒目付、1861年小納戸役、1863年御側役などの職歴、大久保一蔵の別名、1866年の薩長盟約実現への関与。"
+      "note": "大久保利通の徒目付・小納戸役・御側役等の職歴、1866年の薩長盟約、1867年の参与、1868年の徴士・内国事務掛・総裁局顧問・鎮将府参与。"
     },
     "kochi_tosa_timeline": {
       "title": "高知県立高知城歴史博物館「土佐藩の歴史―年表―」",
@@ -713,7 +713,7 @@
     "jacar_kuroda_detail": {
       "title": "アジア歴史資料センター「黒田清隆」",
       "url": "https://www.jacar.go.jp/dictionary/02_item.html?id=00000581",
-      "note": "黒田了介が1863年に韮山塾へ入門して砲術を学んだ経歴。"
+      "note": "黒田了介の韮山塾での砲術修学、1866年薩長盟約への協力、1868年の戊辰戦争従軍・薩摩藩小銃隊一番隊長・奥羽および北越征討参謀等の職歴。"
     },
     "yamaguchi_ito_guide": {
       "title": "山口県立山口図書館「伊藤博文・人物調べ方案内」",
@@ -3901,14 +3901,14 @@
           "display": "島津久光",
           "role": "薩摩藩国父",
           "faction": "新政府",
-          "stance": "薩摩藩を新政府の中核勢力として支える。",
-          "importance": "前線指揮より藩の政治的後ろ盾を担った。",
+          "stance": "藩主島津忠義を後見し、薩摩藩政の実権を握る。",
+          "importance": "鳥羽・伏見では薩摩・長州兵を中心とする官軍が旧幕府軍と戦った。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kagoshima_library_hisamitsu_saigo",
+              "kagoshima_boshin"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-edo": {
@@ -4128,16 +4128,16 @@
         },
         "1868-toba": {
           "display": "西郷隆盛",
-          "role": "新政府軍参謀",
+          "role": "新政府参与・東征大総督下参謀",
           "faction": "新政府",
-          "stance": "鳥羽・伏見の戦いと東征軍の軍事・政治指揮を担う。",
-          "importance": "新政府の軍事的勝利を支えた中心人物。",
+          "stance": "1867年に参与となり、1868年には東征大総督下参謀として江戸へ進む。",
+          "importance": "東征過程で勝海舟と交渉し、江戸城開城に関わった。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "jacar_saigo_detail",
+              "ndl_portrait_saigo_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-edo": {
@@ -4351,16 +4351,15 @@
         },
         "1868-toba": {
           "display": "大久保利通",
-          "role": "新政府参与",
+          "role": "新政府徴士・内国事務掛",
           "faction": "新政府",
-          "stance": "新政府の制度・財政・徳川処分方針をまとめる。",
-          "importance": "軍事前線の西郷に対し中央政治を担う。",
+          "stance": "1868年、徴士・内国事務掛・総裁局顧問を務める。",
+          "importance": "同年、鎮将府参与にも就任した。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "jacar_okubo_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-edo": {
@@ -4546,14 +4545,13 @@
         },
         "1868-toba": {
           "display": "小松帯刀",
-          "role": "新政府参与",
+          "role": "薩摩藩家老",
           "faction": "新政府",
-          "stance": "病を抱えながら新政府に参加する。",
-          "importance": "薩摩の藩政責任者が新政府へ移行した。",
+          "stance": "前年、討幕の密勅を受けて西郷・大久保と帰藩し、討幕挙兵へ向けて動く。",
+          "importance": "1868年の正式な新政府役職は、現在の項目別出典では確認できていない。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "ndl_handwriting"
+              "kagoshima_komatsu_1862"
             ],
             "reviewStatus": "needs_review"
           }
@@ -4656,16 +4654,15 @@
         },
         "1868-toba": {
           "display": "川路利良",
-          "role": "薩摩藩小隊長級・新政府軍",
+          "role": "薩摩藩兵具方一番小隊長・学兵隊長",
           "faction": "新政府",
-          "stance": "鳥羽・伏見から戊辰戦争の軍事行動に参加する。",
-          "importance": "倒幕指導者ではなく現場軍事実務を担う人物。",
+          "stance": "1867年に両隊長となり、1868年に戊辰戦争へ従軍する。",
+          "importance": "前年には比志島抜刀隊も組織していた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "jacar_kawaji_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-tohoku": {
@@ -4755,16 +4752,16 @@
         },
         "1868-toba": {
           "display": "黒田了介",
-          "role": "新政府軍薩摩隊指揮官",
+          "role": "薩摩藩小銃隊一番隊長",
           "faction": "新政府",
-          "stance": "戊辰戦争へ薩摩藩兵を率いて参加する。",
-          "importance": "現場指揮官として新政府軍を支える。",
+          "stance": "1868年、鳥羽・伏見の戦いに従い、その後も戊辰戦争へ従軍する。",
+          "importance": "奥羽征討参謀・北越征討参謀なども務めた。",
           "evidence": {
             "sourceIds": [
-              "ndl_portrait",
-              "jacar_dictionary"
+              "archives_kuroda",
+              "jacar_kuroda_detail"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "verified"
           }
         },
         "1868-tohoku": {

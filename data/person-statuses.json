@@ -1215,15 +1215,15 @@
       "displayName": "島津久光",
       "role": "薩摩藩国父",
       "factionId": "new-government",
-      "stance": "薩摩藩を新政府の中核勢力として支える。",
-      "importance": "前線指揮より藩の政治的後ろ盾を担った。",
+      "stance": "藩主島津忠義を後見し、薩摩藩政の実権を握る。",
+      "importance": "鳥羽・伏見では薩摩・長州兵を中心とする官軍が旧幕府軍と戦った。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kagoshima_library_hisamitsu_saigo",
+          "kagoshima_boshin"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "鹿児島県立図書館で国父として忠義を後見し藩政の実権を握ったこと、鹿児島県で薩摩・長州兵を中心とする官軍の鳥羽・伏見参戦を確認。久光個人の前線指揮や新政府支援の具体的行動は断定しない。"
       }
     },
     {
@@ -1480,17 +1480,17 @@
       "startSceneId": "1868-toba",
       "endSceneId": "1868-toba",
       "displayName": "西郷隆盛",
-      "role": "新政府軍参謀",
+      "role": "新政府参与・東征大総督下参謀",
       "factionId": "new-government",
-      "stance": "鳥羽・伏見の戦いと東征軍の軍事・政治指揮を担う。",
-      "importance": "新政府の軍事的勝利を支えた中心人物。",
+      "stance": "1867年に参与となり、1868年には東征大総督下参謀として江戸へ進む。",
+      "importance": "東征過程で勝海舟と交渉し、江戸城開城に関わった。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_saigo_detail",
+          "ndl_portrait_saigo_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターで1867年の参与、1868年の東征大総督下参謀と江戸城開城を確認し、国立国会図書館で勝海舟との開城交渉を照合。鳥羽・伏見での個別指揮は当該出典が直接支えないため表示しない。"
       }
     },
     {
@@ -1745,17 +1745,16 @@
       "startSceneId": "1868-toba",
       "endSceneId": "1868-toba",
       "displayName": "大久保利通",
-      "role": "新政府参与",
+      "role": "新政府徴士・内国事務掛",
       "factionId": "new-government",
-      "stance": "新政府の制度・財政・徳川処分方針をまとめる。",
-      "importance": "軍事前線の西郷に対し中央政治を担う。",
+      "stance": "1868年、徴士・内国事務掛・総裁局顧問を務める。",
+      "importance": "同年、鎮将府参与にも就任した。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "jacar_okubo_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターの公開人物辞典で1867年の参与、1868年の徴士・内国事務掛・総裁局顧問・鎮将府参与を確認。制度・財政・徳川処分方針をまとめたという抽象的な担当範囲は表示しない。"
       }
     },
     {
@@ -1972,17 +1971,16 @@
       "startSceneId": "1868-toba",
       "endSceneId": "1868-tohoku",
       "displayName": "小松帯刀",
-      "role": "新政府参与",
+      "role": "薩摩藩家老",
       "factionId": "new-government",
-      "stance": "病を抱えながら新政府に参加する。",
-      "importance": "薩摩の藩政責任者が新政府へ移行した。",
+      "stance": "前年、討幕の密勅を受けて西郷・大久保と帰藩し、討幕挙兵へ向けて動く。",
+      "importance": "1868年の正式な新政府役職は、現在の項目別出典では確認できていない。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "ndl_handwriting"
+          "kagoshima_komatsu_1862"
         ],
         "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "note": "鹿児島県観光連盟で家老就任と1867年の密勅受領後の帰藩は確認。従来の「新政府参与」と病を抱えた参加は当該出典が直接支えないため削除し、1868年の正式役職確認まで校正待ちを維持。"
       }
     },
     {
@@ -2082,17 +2080,16 @@
       "startSceneId": "1868-toba",
       "endSceneId": "1868-edo",
       "displayName": "川路利良",
-      "role": "薩摩藩小隊長級・新政府軍",
+      "role": "薩摩藩兵具方一番小隊長・学兵隊長",
       "factionId": "new-government",
-      "stance": "鳥羽・伏見から戊辰戦争の軍事行動に参加する。",
-      "importance": "倒幕指導者ではなく現場軍事実務を担う人物。",
+      "stance": "1867年に両隊長となり、1868年に戊辰戦争へ従軍する。",
+      "importance": "前年には比志島抜刀隊も組織していた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "jacar_kawaji_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "アジア歴史資料センターの公開人物辞典で1867年の兵具方一番小隊長・学兵隊長と比志島抜刀隊組織、1868年の戊辰戦争従軍を確認。「小隊長級」という曖昧な役職名を訂正し、鳥羽・伏見での個別行動は断定しない。"
       }
     },
     {
@@ -2175,17 +2172,17 @@
       "startSceneId": "1868-toba",
       "endSceneId": "1868-edo",
       "displayName": "黒田了介",
-      "role": "新政府軍薩摩隊指揮官",
+      "role": "薩摩藩小銃隊一番隊長",
       "factionId": "new-government",
-      "stance": "戊辰戦争へ薩摩藩兵を率いて参加する。",
-      "importance": "現場指揮官として新政府軍を支える。",
+      "stance": "1868年、鳥羽・伏見の戦いに従い、その後も戊辰戦争へ従軍する。",
+      "importance": "奥羽征討参謀・北越征討参謀なども務めた。",
       "evidence": {
         "sourceIds": [
-          "ndl_portrait",
-          "jacar_dictionary"
+          "archives_kuroda",
+          "jacar_kuroda_detail"
         ],
-        "reviewStatus": "needs_review",
-        "note": "人物単位の出典から、状態ごとの確認へ細分化する必要がある。"
+        "reviewStatus": "verified",
+        "note": "国立公文書館で1868年の鳥羽・伏見従軍と北越征討参謀、アジア歴史資料センターで薩摩藩小銃隊一番隊長・奥羽および北越征討参謀等を確認。抽象的な「薩摩隊指揮官」を正式な役職へ訂正。"
       }
     },
     {
