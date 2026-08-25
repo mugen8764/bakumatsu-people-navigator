@@ -47,21 +47,24 @@
       <div id="sceneCounts" class="counts"></div>
     </div>
     <div class="progress"><div id="sceneProgress"></div></div>
-    <section id="sceneChanges" class="scene-changes" aria-labelledby="sceneChangesHeading">
+    <details id="sceneDetails" class="scene-details">
+      <summary><span><strong>人物・勢力と時点の変化</strong><small>主要人物、勢力、前の時点からの変化を確認</small></span><span class="scene-details-action"><span class="details-closed-copy">詳しく見る</span><span class="details-open-copy">閉じる</span></span></summary>
+      <section id="sceneChanges" class="scene-changes" aria-labelledby="sceneChangesHeading">
       <div class="scene-changes-heading"><div><span class="eyebrow">時点の変化</span><h3 id="sceneChangesHeading">前の時点から</h3></div><span id="sceneChangesPeriod"></span></div>
       <div id="sceneChangeGroups" class="scene-change-groups" tabindex="0" aria-label="前の時点からの変化の詳細"></div>
-    </section>
-    <div class="scene-lenses">
-      <section class="scene-lens" aria-labelledby="scenePeopleHeading">
-        <div class="lens-heading"><div><span class="eyebrow">人物と勢力</span><h3 id="scenePeopleHeading">この場面の主役</h3></div><span>選ぶと詳しい立場へ</span></div>
-        <div id="scenePeople" class="scene-people"></div>
-        <div id="sceneFactions" class="scene-factions"></div>
       </section>
-      <section class="scene-lens" aria-labelledby="sceneInsightsHeading">
-        <div class="lens-heading"><div><span class="eyebrow">転換点</span><h3 id="sceneInsightsHeading">押さえる3点</h3></div></div>
-        <div id="sceneInsights" class="insights"></div>
-      </section>
-    </div>
+      <div class="scene-lenses">
+        <section class="scene-lens" aria-labelledby="scenePeopleHeading">
+          <div class="lens-heading"><div><span class="eyebrow">人物と勢力</span><h3 id="scenePeopleHeading">この場面の主役</h3></div><span>選ぶと詳しい立場へ</span></div>
+          <div id="scenePeople" class="scene-people"></div>
+          <div id="sceneFactions" class="scene-factions"></div>
+        </section>
+        <section class="scene-lens" aria-labelledby="sceneInsightsHeading">
+          <div class="lens-heading"><div><span class="eyebrow">転換点</span><h3 id="sceneInsightsHeading">押さえる3点</h3></div></div>
+          <div id="sceneInsights" class="insights"></div>
+        </section>
+      </div>
+    </details>
     <div class="global-search"><label id="globalSearchLabel" for="globalSearch">人物・勢力・事件を横断検索<input id="globalSearch" type="search" role="combobox" aria-autocomplete="list" aria-controls="searchResults" aria-expanded="false" aria-labelledby="globalSearchLabel" placeholder="例：桂小五郎、大政奉還、京都守護職、薩摩"></label><div id="searchResults" class="search-results" role="listbox" aria-label="検索結果" hidden></div></div>
   </section>
 

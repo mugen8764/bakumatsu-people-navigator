@@ -84,6 +84,30 @@ test('all primary views stay inside a 320px document viewport', async ({ page })
   }
 });
 
+test('scene details start compact and reveal context on demand', async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 720 });
+  await page.goto('/');
+
+  const details = page.locator('#sceneDetails');
+  await expect(details).not.toHaveAttribute('open', '');
+  await expect(page.locator('#sceneChanges')).toBeHidden();
+  await expect(page.locator('#scenePeople')).toBeHidden();
+  const firstCard = await page.locator('#personCards .card-button').first().boundingBox();
+  expect(firstCard.y).toBeLessThan(720);
+
+  await details.locator('summary').click();
+  await expect(details).toHaveAttribute('open', '');
+  await expect(page.locator('#sceneChanges')).toBeVisible();
+  await expect(page.locator('#scenePeople')).toBeVisible();
+  await details.locator('summary').click();
+  await expect(page.locator('#sceneChanges')).toBeHidden();
+
+  await page.setViewportSize({ width: 320, height: 780 });
+  await page.reload();
+  const mobileFirstCard = await page.locator('#personCards .card-button').first().boundingBox();
+  expect(mobileFirstCard.y).toBeLessThan(780);
+});
+
 test('alias search and timeline changes preserve the selected person', async ({ page }) => {
   await page.goto('/');
   await page.locator('#globalSearch').fill('桂小五郎');
@@ -298,6 +322,7 @@ test('right-column place names remain selectable outside the displayed map', asy
 
 test('scene board exposes the event cast and factions as direct navigation', async ({ page }) => {
   await page.goto('/#scene=1866-satcho&view=people&person=kido&faction=長州藩');
+  await page.locator('#sceneDetails summary').click();
 
   await expect(page.locator('#scenePeople [data-scene-person]')).toHaveCount(6);
   await expect(page.locator('#sceneFactions [data-scene-faction]')).toHaveCount(3);

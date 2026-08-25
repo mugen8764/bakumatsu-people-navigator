@@ -172,6 +172,7 @@
     $('#relationType').value = 'all';
     $('#globalSearch').value = '';
     $('#copyStatus').textContent = '';
+    $('#sceneDetails').open = false;
     searchController.close();
     renderAll({ historyMode: 'push' });
     window.scrollTo({ top: 0, behavior: 'auto' });
