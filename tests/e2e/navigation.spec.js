@@ -122,6 +122,11 @@ test('person, relation, map, and event views remain coordinated', async ({ page 
   const kyotoPlace = page.locator('[data-map-place-card="kyoto"]');
   await expect(kyotoPlace.locator('[data-map-person="kido"]')).toBeVisible();
   await expect(kyotoPlace.locator('[data-map-event="satcho"]')).toBeVisible();
+  const kyotoMarker = page.locator('[data-map-place="kyoto"]');
+  await kyotoMarker.focus();
+  await kyotoMarker.press('Enter');
+  await expect(kyotoPlace).toHaveClass(/selected/);
+  await expect(kyotoPlace.locator('[data-map-person="kido"]')).toBeFocused();
 
   await page.locator('[data-map-place-card="hagi"] [data-map-person="kido"]').click();
   await expect(page.locator('#view-people')).toBeVisible();

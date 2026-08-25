@@ -23,6 +23,16 @@
       return [...new Set([...(person?.places || []), ...event.places])];
     }
 
+    function focusPlace(id) {
+      const card = $(`[data-map-place-card="${id}"]`);
+      const marker = $(`[data-map-place="${id}"]`);
+      if (!card || !marker) return;
+      $$('[data-map-place-card]').forEach(item => item.classList.toggle('selected', item === card));
+      $$('[data-map-place]').forEach(item => item.classList.toggle('selected', item === marker));
+      card.scrollIntoView({ block: 'nearest' });
+      card.querySelector('.place-link')?.focus({ preventScroll: true });
+    }
+
     function renderInfo() {
       const person = domain.getPerson(state.selectedPerson);
       const status = domain.statusAt(person, state.scene);
@@ -56,11 +66,12 @@
       }
       try {
         const svg = $('#historyMap');
-        svg.innerHTML = `<g aria-hidden="true">${mapData.paths.map(path => `<path d="${path.d}" class="${path.id === 'JPN' ? 'map-japan' : 'map-land'}"></path>`).join('')}</g><g id="mapPersonLayer"></g><g id="mapEventLayer"></g><g id="mapLabelLayer"></g>`;
+        svg.innerHTML = `<g aria-hidden="true">${mapData.paths.map(path => `<path d="${path.d}" class="${path.id === 'JPN' ? 'map-japan' : 'map-land'}"></path>`).join('')}</g><g id="mapPersonLayer"></g><g id="mapEventLayer"></g><g id="mapLabelLayer"></g><g id="mapInteractionLayer"></g>`;
         state.map = {
           personLayer: $('#mapPersonLayer'),
           eventLayer: $('#mapEventLayer'),
-          labelLayer: $('#mapLabelLayer')
+          labelLayer: $('#mapLabelLayer'),
+          interactionLayer: $('#mapInteractionLayer')
         };
         state.mapReady = true;
         if (state.view === 'map') render();
@@ -78,6 +89,7 @@
       let personHtml = '';
       let eventHtml = '';
       let labelHtml = '';
+      let interactionHtml = '';
       ids.forEach((id, index) => {
         const place = data.places[id];
         if (!place) return;
@@ -93,10 +105,21 @@
         }
         if (isEvent) eventHtml += `<rect x="${x + (isPerson ? 1 : -5)}" y="${y - 5}" width="10" height="10" transform="rotate(45 ${x + (isPerson ? 6 : 0)} ${y})" class="map-event"></rect>`;
         labelHtml += `<text x="${x + 11}" y="${y - 9}" class="map-label">${place.name}</text>`;
+        interactionHtml += `<g class="map-place-marker" data-map-place="${id}" role="button" tabindex="0" aria-label="${place.name}の地点カードを表示"><circle cx="${x}" cy="${y}" r="16" class="map-place-hit"></circle></g>`;
       });
       state.map.personLayer.innerHTML = personHtml;
       state.map.eventLayer.innerHTML = eventHtml;
       state.map.labelLayer.innerHTML = labelHtml;
+      state.map.interactionLayer.innerHTML = interactionHtml;
+      $$('[data-map-place]', state.map.interactionLayer).forEach(marker => {
+        const focus = () => focusPlace(marker.dataset.mapPlace);
+        marker.addEventListener('click', focus);
+        marker.addEventListener('keydown', event => {
+          if (event.key !== 'Enter' && event.key !== ' ') return;
+          event.preventDefault();
+          focus();
+        });
+      });
     }
 
     return { init, render };
