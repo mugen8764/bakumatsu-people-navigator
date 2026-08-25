@@ -147,7 +147,7 @@
       $$('[data-map-place-name]').forEach(item => {
         item.setAttribute('aria-pressed', String(item.dataset.mapPlaceName === id));
       });
-      if (options.scroll !== false) card.scrollIntoView({ block: 'nearest' });
+      if (options.scroll !== false) card.scrollIntoView({ block: 'nearest', behavior: 'instant' });
       if (options.focusLink !== false) card.querySelector('.place-link')?.focus({ preventScroll: true });
     }
 
