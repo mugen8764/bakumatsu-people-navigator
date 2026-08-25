@@ -487,6 +487,22 @@ test('timeline transport, calendar mode, and faction selection remain usable', a
   await expect(page).toHaveURL(/faction=%E5%B9%95%E5%BA%9C/);
 });
 
+test('the current scene and selection can be copied from the scene summary', async ({ page }) => {
+  await page.goto('/');
+  await page.locator('[data-person-card="abe"]').click();
+  await page.evaluate(() => {
+    window.copiedUrl = '';
+    Object.defineProperty(navigator, 'clipboard', {
+      configurable: true,
+      value: { writeText: async value => { window.copiedUrl = value; } }
+    });
+  });
+
+  await page.locator('#sceneCopyLink').click();
+  await expect(page.locator('#sceneCopyStatus')).toContainText('コピーしました');
+  await expect.poll(() => page.evaluate(() => window.copiedUrl)).toMatch(/scene=1853-blackships&view=people&person=abe/);
+});
+
 test('changing the hash after load updates the visible state', async ({ page }) => {
   await page.goto('/');
   await page.evaluate(() => {

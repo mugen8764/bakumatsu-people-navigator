@@ -150,12 +150,12 @@
   }
 
   async function copyCurrentUrl() {
-    const status = $('#copyStatus');
+    const statuses = $$('[data-copy-status]');
     try {
       await navigator.clipboard.writeText(location.href);
-      status.textContent = '現在の表示URLをコピーしました。';
+      statuses.forEach(status => { status.textContent = '表示中の状態を共有するURLをコピーしました。'; });
     } catch {
-      status.textContent = `URL: ${location.href}`;
+      statuses.forEach(status => { status.textContent = `URL: ${location.href}`; });
     }
   }
 
@@ -172,7 +172,7 @@
     window.BM_STATE.resetState(state, data, domain);
     $('#relationType').value = 'all';
     $('#globalSearch').value = '';
-    $('#copyStatus').textContent = '';
+    $$('[data-copy-status]').forEach(status => { status.textContent = ''; });
     $('#sceneDetails').open = false;
     searchController.close();
     renderAll({ historyMode: 'push' });
@@ -275,7 +275,7 @@
     }
   });
   $('#footerSources').addEventListener('click', openSourcesFromFooter);
-  $('#copyLink').addEventListener('click', copyCurrentUrl);
+  $$('[data-copy-link]').forEach(button => button.addEventListener('click', copyCurrentUrl));
   $('#brandMarkHome').addEventListener('click', resetApp);
   $('#brandTitleHome').addEventListener('click', resetApp);
   function syncRouteFromLocation() {

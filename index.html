@@ -44,7 +44,11 @@
     <div class="scene-dashboard">
       <div class="year-box"><strong id="sceneYear"></strong><span id="sceneEra"></span></div>
       <div class="scene-copy"><span class="eyebrow">いま何が起きている？</span><h2 id="sceneTitle"></h2><p id="sceneSummary"></p></div>
-      <div id="sceneCounts" class="counts"></div>
+      <div class="scene-meta">
+        <div id="sceneCounts" class="counts"></div>
+        <button id="sceneCopyLink" class="scene-copy-link" type="button" data-copy-link>表示中の状態を共有</button>
+        <span id="sceneCopyStatus" class="scene-copy-status" data-copy-status aria-live="polite"></span>
+      </div>
     </div>
     <div class="progress"><div id="sceneProgress"></div></div>
     <details id="sceneDetails" class="scene-details">
@@ -135,7 +139,7 @@
     </div>
   </section>
 
-  <footer class="panel"><div class="footer-row"><div><strong>幕末人物・勢力ナビ 1853–1869</strong><br>史実の背景知識を、人物・勢力・事件・場所のつながりとして整理した静的サイトです。</div><div class="footer-links"><button id="footerSources" class="link-button" type="button">出典・編集方針</button><a href="https://github.com/mugen8764/bakumatsu-people-navigator">GitHub</a><button id="copyLink" class="link-button" type="button">現在の表示URLをコピー</button></div></div><div id="copyStatus" class="status-line" aria-live="polite"></div></footer>
+  <footer class="panel"><div class="footer-row"><div><strong>幕末人物・勢力ナビ 1853–1869</strong><br>史実の背景知識を、人物・勢力・事件・場所のつながりとして整理した静的サイトです。</div><div class="footer-links"><button id="footerSources" class="link-button" type="button">出典・編集方針</button><a href="https://github.com/mugen8764/bakumatsu-people-navigator">GitHub</a><button id="copyLink" class="link-button" type="button" data-copy-link>現在の表示URLをコピー</button></div></div><div id="copyStatus" class="status-line" data-copy-status aria-live="polite"></div></footer>
 </main>
 <noscript><p style="padding:20px">このサイトの表示にはJavaScriptが必要です。</p></noscript>
 <script src="map-data.js"></script>
