@@ -31,6 +31,13 @@ function digest(value) {
   return crypto.createHash('sha256').update(value).digest('hex');
 }
 
+function comparableDigest(relativePath, value) {
+  if (['.html', '.js', '.json'].includes(path.extname(relativePath))) {
+    return digest(Buffer.from(value.toString('utf8').replace(/\r\n/g, '\n'), 'utf8'));
+  }
+  return digest(value);
+}
+
 async function fetchProduction(relativePath, attempt) {
   const url = new URL(relativePath, publicUrl);
   url.searchParams.set('release-check', `${Date.now()}-${attempt}`);
@@ -51,7 +58,9 @@ async function inspect(attempt) {
     try {
       const local = fs.readFileSync(path.join(root, file));
       const { response, body } = await fetchProduction(file, attempt);
-      if (digest(local) !== digest(body)) failures.push(`${file}: production content differs from this checkout`);
+      if (comparableDigest(file, local) !== comparableDigest(file, body)) {
+        failures.push(`${file}: production content differs from this checkout`);
+      }
       const expectedCacheControl = requiredCacheControls.get(file);
       if (expectedCacheControl && !response.headers.get('cache-control')?.includes(expectedCacheControl)) {
         failures.push(`${file}: production cache-control is missing ${expectedCacheControl}`);
