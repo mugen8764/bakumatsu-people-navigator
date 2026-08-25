@@ -9,7 +9,7 @@ const { createShared } = globalThis.BM_RENDER_SHARED;
 const router = require(path.resolve(__dirname, '../../src/router.js'));
 const stateApi = require(path.resolve(__dirname, '../../src/state.js'));
 const { normalise, searchAll } = require(path.resolve(__dirname, '../../src/search.js'));
-const { projectMapCoord } = require(path.resolve(__dirname, '../../src/map.js'));
+const { layoutMapLabels, projectMapCoord } = require(path.resolve(__dirname, '../../src/map.js'));
 
 const domain = createDomain(data);
 
@@ -72,6 +72,28 @@ test('map projection remains deterministic', () => {
   const [x, y] = projectMapCoord([139.76, 35.68], projection);
   assert.ok(Math.abs(x - 462.4943589743587) < 1e-9);
   assert.ok(Math.abs(y - 416.03974128031706) < 1e-9);
+});
+
+test('map labels spread apart in the Tokyo Bay cluster', () => {
+  const points = [
+    { id: 'edo', name: '江戸／東京', x: 462.5, y: 408.1 },
+    { id: 'uraga', name: '浦賀・久里浜', x: 461.1, y: 422.3 },
+    { id: 'yokohama', name: '横浜', x: 458.4, y: 415.7 },
+    { id: 'shimoda', name: '下田', x: 434.9, y: 441 },
+    { id: 'namamugi', name: '生麦', x: 459.4, y: 414.4 }
+  ];
+  const labels = layoutMapLabels(points, { width: 720, height: 770 });
+
+  labels.forEach(label => {
+    assert.ok(label.box.left >= 8 && label.box.right <= 712);
+    assert.ok(label.box.top >= 8 && label.box.bottom <= 762);
+  });
+  labels.forEach((label, index) => labels.slice(index + 1).forEach(other => {
+    const overlaps = label.box.left < other.box.right + 4 && label.box.right + 4 > other.box.left
+      && label.box.top < other.box.bottom + 4 && label.box.bottom + 4 > other.box.top;
+    assert.equal(overlaps, false, `${label.id} overlaps ${other.id}`);
+  }));
+  assert.ok(labels.some(label => Math.abs(label.y - points.find(point => point.id === label.id).y + 10) > 0.1));
 });
 
 test('source cards preserve optional precision metadata', () => {

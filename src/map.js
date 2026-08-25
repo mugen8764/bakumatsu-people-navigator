@@ -14,6 +14,84 @@
     ];
   }
 
+  function estimateMapLabelWidth(label) {
+    return Array.from(label).reduce((width, character) => (
+      width + (/^[\x00-\xff]$/.test(character) ? 6.5 : 12)
+    ), 0);
+  }
+
+  function mapLabelBox(x, y, anchor, width) {
+    const left = anchor === 'end' ? x - width : x;
+    return { left, right: left + width, top: y - 13, bottom: y + 4 };
+  }
+
+  function boxesOverlap(a, b, gap = 0) {
+    return a.left < b.right + gap && a.right + gap > b.left
+      && a.top < b.bottom + gap && a.bottom + gap > b.top;
+  }
+
+  function labelCandidates(point) {
+    const candidates = [];
+    for (let level = 0; level < 12; level += 1) {
+      const above = -10 - level * 20;
+      const below = 20 + level * 20;
+      candidates.push(
+        { x: point.x + 13, y: point.y + above, anchor: 'start' },
+        { x: point.x - 13, y: point.y + above, anchor: 'end' },
+        { x: point.x + 13, y: point.y + below, anchor: 'start' },
+        { x: point.x - 13, y: point.y + below, anchor: 'end' }
+      );
+    }
+    return candidates;
+  }
+
+  function layoutMapLabels(points, options = {}) {
+    const width = options.width || 720;
+    const height = options.height || 770;
+    const edge = options.edge || 8;
+    const occupied = [];
+    const markerBoxes = points.map(point => ({
+      left: point.x - 9,
+      right: point.x + 9,
+      top: point.y - 9,
+      bottom: point.y + 9
+    }));
+
+    return points.map(point => {
+      const labelWidth = estimateMapLabelWidth(point.name);
+      const choices = labelCandidates(point).map((candidate, index) => {
+        const box = mapLabelBox(candidate.x, candidate.y, candidate.anchor, labelWidth);
+        const outside = Math.max(0, edge - box.left) + Math.max(0, box.right - (width - edge))
+          + Math.max(0, edge - box.top) + Math.max(0, box.bottom - (height - edge));
+        const labelCollisions = occupied.filter(other => boxesOverlap(box, other, 4)).length;
+        const markerCollisions = markerBoxes.filter(marker => boxesOverlap(box, marker, 2)).length;
+        return {
+          ...candidate,
+          box,
+          score: outside * 1000000 + labelCollisions * 100000 + markerCollisions * 10000 + index
+        };
+      });
+      const choice = choices.reduce((best, candidate) => candidate.score < best.score ? candidate : best);
+      occupied.push(choice.box);
+      const targetX = choice.x + (choice.anchor === 'end' ? 3 : -3);
+      const targetY = choice.y - 4;
+      const angle = Math.atan2(targetY - point.y, targetX - point.x);
+      return {
+        ...point,
+        x: choice.x,
+        y: choice.y,
+        anchor: choice.anchor,
+        box: choice.box,
+        leader: {
+          x1: point.x + Math.cos(angle) * 8,
+          y1: point.y + Math.sin(angle) * 8,
+          x2: targetX,
+          y2: targetY
+        }
+      };
+    });
+  }
+
   function createMapRenderer(context, mapData) {
     const { $, $$, actions, data, domain, shared, state } = context;
 
@@ -66,7 +144,7 @@
       }
       try {
         const svg = $('#historyMap');
-        svg.innerHTML = `<g aria-hidden="true">${mapData.paths.map(path => `<path d="${path.d}" class="${path.id === 'JPN' ? 'map-japan' : 'map-land'}"></path>`).join('')}</g><g id="mapPersonLayer"></g><g id="mapEventLayer"></g><g id="mapLabelLayer"></g><g id="mapInteractionLayer"></g>`;
+        svg.innerHTML = `<g aria-hidden="true">${mapData.paths.map(path => `<path d="${path.d}" class="${path.id === 'JPN' ? 'map-japan' : 'map-land'}"></path>`).join('')}</g><g id="mapPersonLayer"></g><g id="mapEventLayer"></g><g id="mapLabelLayer" aria-hidden="true"></g><g id="mapInteractionLayer"></g>`;
         state.map = {
           personLayer: $('#mapPersonLayer'),
           eventLayer: $('#mapEventLayer'),
@@ -90,21 +168,26 @@
       let eventHtml = '';
       let labelHtml = '';
       let interactionHtml = '';
-      ids.forEach((id, index) => {
+      const projection = mapData.projection;
+      const visiblePlaces = ids.map((id, index) => {
         const place = data.places[id];
-        if (!place) return;
+        if (!place) return null;
         const [longitude, latitude] = place.coord;
-        const projection = mapData.projection;
-        if (longitude < projection.lonMin || longitude > projection.lonMax || latitude < projection.latMin || latitude > projection.latMax) return;
+        if (longitude < projection.lonMin || longitude > projection.lonMax || latitude < projection.latMin || latitude > projection.latMax) return null;
         const [x, y] = projectMapCoord(place.coord, projection);
+        return { id, index, name: place.name, place, x, y };
+      }).filter(Boolean);
+      const labels = new Map(layoutMapLabels(visiblePlaces, projection).map(label => [label.id, label]));
+      const status = person ? domain.statusAt(person, state.scene) : null;
+      visiblePlaces.forEach(({ id, index, place, x, y }) => {
         const isPerson = personIds.has(id);
         const isEvent = eventIds.has(id);
         if (isPerson) {
-          const status = domain.statusAt(person, state.scene);
           personHtml += `<circle cx="${x - (isEvent ? 5 : 0)}" cy="${y}" r="7" fill="${shared.factionColor(status?.faction || person.defaultFaction)}" class="map-person ${index === 0 ? 'map-active' : ''}"></circle>`;
         }
         if (isEvent) eventHtml += `<rect x="${x + (isPerson ? 1 : -5)}" y="${y - 5}" width="10" height="10" transform="rotate(45 ${x + (isPerson ? 6 : 0)} ${y})" class="map-event"></rect>`;
-        labelHtml += `<text x="${x + 11}" y="${y - 9}" class="map-label">${place.name}</text>`;
+        const label = labels.get(id);
+        labelHtml += `<line x1="${label.leader.x1}" y1="${label.leader.y1}" x2="${label.leader.x2}" y2="${label.leader.y2}" class="map-label-leader"></line><text x="${label.x}" y="${label.y}" text-anchor="${label.anchor}" class="map-label" data-map-label="${id}">${place.name}</text>`;
         interactionHtml += `<g class="map-place-marker" data-map-place="${id}" role="button" tabindex="0" aria-label="${place.name}の地点カードを表示"><circle cx="${x}" cy="${y}" r="16" class="map-place-hit"></circle></g>`;
       });
       state.map.personLayer.innerHTML = personHtml;
@@ -125,5 +208,5 @@
     return { init, render };
   }
 
-  return { createMapRenderer, projectMapCoord };
+  return { createMapRenderer, layoutMapLabels, projectMapCoord };
 }));

@@ -139,6 +139,23 @@ test('person, relation, map, and event views remain coordinated', async ({ page 
   await expect(page.locator('#eventDetail [data-event-person="kido"]')).toBeVisible();
 });
 
+test('nearby Tokyo Bay map labels do not overlap', async ({ page }) => {
+  await page.goto('/#scene=1853-blackships&view=map&person=perry&faction=幕府');
+
+  const labels = page.locator('#mapLabelLayer .map-label');
+  expect(await labels.count()).toBeGreaterThan(3);
+  const boxes = await labels.evaluateAll(elements => elements.map(element => ({
+    id: element.dataset.mapLabel,
+    box: element.getBoundingClientRect().toJSON()
+  })));
+  boxes.forEach((label, index) => boxes.slice(index + 1).forEach(other => {
+    const gap = 1;
+    const overlaps = label.box.left < other.box.right + gap && label.box.right + gap > other.box.left
+      && label.box.top < other.box.bottom + gap && label.box.bottom + gap > other.box.top;
+    expect(overlaps, `${label.id} overlaps ${other.id}`).toBe(false);
+  }));
+});
+
 test('scene board exposes the event cast and factions as direct navigation', async ({ page }) => {
   await page.goto('/#scene=1866-satcho&view=people&person=kido&faction=長州藩');
 
