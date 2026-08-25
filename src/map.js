@@ -14,6 +14,17 @@
     ];
   }
 
+  function mapViewBoxForPoint(point, projection, zoom = 2.4) {
+    const width = projection.width / zoom;
+    const height = projection.height / zoom;
+    return {
+      x: Math.max(0, Math.min(projection.width - width, point.x - width / 2)),
+      y: Math.max(0, Math.min(projection.height - height, point.y - height / 2)),
+      width,
+      height
+    };
+  }
+
   function estimateMapLabelWidth(label) {
     return Array.from(label).reduce((width, character) => (
       width + (/^[\x00-\xff]$/.test(character) ? 6.5 : 12)
@@ -101,11 +112,31 @@
       return [...new Set([...(person?.places || []), ...event.places])];
     }
 
+    function applyMapViewport() {
+      const svg = $('#historyMap');
+      const point = state.map.placePoints.get(state.map.zoomedPlace);
+      const reset = $('#resetMapView');
+      if (!point) {
+        svg.setAttribute('viewBox', `0 0 ${mapData.projection.width} ${mapData.projection.height}`);
+        svg.setAttribute('aria-label', '人物と事件の関連地を示す日本地図');
+        reset.hidden = true;
+        return;
+      }
+      const box = mapViewBoxForPoint(point, mapData.projection);
+      svg.setAttribute('viewBox', `${box.x} ${box.y} ${box.width} ${box.height}`);
+      svg.setAttribute('aria-label', `${data.places[state.map.zoomedPlace].name}周辺を拡大した人物と事件の関連地`);
+      reset.hidden = false;
+    }
+
     function focusPlace(id, options = {}) {
       const card = $(`[data-map-place-card="${id}"]`);
       const marker = $(`[data-map-place="${id}"]`);
       if (!card) return;
       state.map.selectedPlace = id;
+      if (options.zoom !== false) {
+        state.map.zoomedPlace = marker ? id : '';
+        applyMapViewport();
+      }
       $$('[data-map-place-card]').forEach(item => item.classList.toggle('selected', item === card));
       $$('[data-map-place]').forEach(item => {
         const selected = item === marker;
@@ -126,7 +157,7 @@
       const event = data.events[shared.scene().event];
       const ids = placeIds();
       $('#mapTitle').textContent = status ? `${status.display}と「${event.title}」の関連地` : `「${event.title}」の関連地`;
-      $('#mapDescription').textContent = '緑系の丸は人物の主な関連地、菱形は事件の主要地点です。マーカー、地図上の地名、右欄の地名から地点を選べます。人物の所在地を特定日ごとに断定する表示ではありません。';
+      $('#mapDescription').textContent = '緑系の丸は人物の主な関連地、菱形は事件の主要地点です。マーカー、地図上の地名、右欄の地名から地点を選ぶと周辺を拡大します。人物の所在地を特定日ごとに断定する表示ではありません。';
       const personPlaces = new Set(person?.places || []);
       const eventPlaces = new Set(event.places);
       $('#placeList').innerHTML = ids.map(id => {
@@ -163,7 +194,9 @@
           labelLayer: $('#mapLabelLayer'),
           interactionLayer: $('#mapInteractionLayer'),
           labelLayout: new Map(),
-          selectedPlace: ''
+          placePoints: new Map(),
+          selectedPlace: '',
+          zoomedPlace: ''
         };
         const projection = mapData.projection;
         const catalogPoints = Object.keys(data.places).sort().map(id => {
@@ -173,7 +206,12 @@
           const [x, y] = projectMapCoord(place.coord, projection);
           return { id, name: place.name, x, y };
         }).filter(Boolean);
+        state.map.placePoints = new Map(catalogPoints.map(point => [point.id, point]));
         state.map.labelLayout = new Map(layoutMapLabels(catalogPoints, projection).map(label => [label.id, label]));
+        $('#resetMapView').addEventListener('click', () => {
+          state.map.zoomedPlace = '';
+          applyMapViewport();
+        });
         state.mapReady = true;
         if (state.view === 'map') render();
       } catch (error) {
@@ -232,14 +270,16 @@
         });
       });
       if (state.map.selectedPlace && $(`[data-map-place-card="${state.map.selectedPlace}"]`)) {
-        focusPlace(state.map.selectedPlace, { focusLink: false, scroll: false });
+        focusPlace(state.map.selectedPlace, { focusLink: false, scroll: false, zoom: false });
       } else {
         state.map.selectedPlace = '';
+        state.map.zoomedPlace = '';
       }
+      applyMapViewport();
     }
 
     return { init, render };
   }
 
-  return { createMapRenderer, layoutMapLabels, projectMapCoord };
+  return { createMapRenderer, layoutMapLabels, mapViewBoxForPoint, projectMapCoord };
 }));

@@ -191,23 +191,46 @@ test('map labels keep their position when the selected person changes', async ({
   expect(after).toEqual(before);
 });
 
+test('selecting a mapped place zooms its region and can return to Japan view', async ({ page }) => {
+  await page.goto('/#scene=1853-blackships&view=map&person=perry&faction=幕府');
+
+  const map = page.locator('#historyMap');
+  const reset = page.locator('#resetMapView');
+  await expect(map).toHaveAttribute('viewBox', '0 0 720 770');
+  await expect(reset).toBeHidden();
+  await page.locator('[data-map-label-trigger="uraga"]').click();
+  const zoomedViewBox = await map.getAttribute('viewBox');
+  expect(zoomedViewBox).not.toBe('0 0 720 770');
+  await expect(map).toHaveAttribute('aria-label', /浦賀・久里浜周辺を拡大/);
+  await expect(reset).toBeVisible();
+
+  await reset.click();
+  await expect(map).toHaveAttribute('viewBox', '0 0 720 770');
+  await expect(reset).toBeHidden();
+  await expect(page.locator('[data-map-place-card="uraga"]')).toHaveClass(/selected/);
+});
+
 test('map place selection survives scene and view redraws', async ({ page }) => {
   await page.goto('/#scene=1866-satcho&view=map&person=kido&faction=長州藩');
 
-  await expect(page.locator('#mapDescription')).toContainText('地図上の地名、右欄の地名から地点を選べます');
+  await expect(page.locator('#mapDescription')).toContainText('地図上の地名、右欄の地名から地点を選ぶと周辺を拡大します');
   const hagiCard = page.locator('[data-map-place-card="hagi"]');
   const hagiName = page.locator('[data-map-place-name="hagi"]');
   const hagiMarker = page.locator('[data-map-place="hagi"]');
   await hagiName.click();
+  const zoomedViewBox = await page.locator('#historyMap').getAttribute('viewBox');
+  expect(zoomedViewBox).not.toBe('0 0 720 770');
   await page.locator('#sceneSelect').selectOption('10');
   await expect(hagiCard).toHaveClass(/selected/);
   await expect(hagiName).toHaveAttribute('aria-pressed', 'true');
   await expect(hagiMarker).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('#historyMap')).toHaveAttribute('viewBox', zoomedViewBox);
 
   await page.locator('#tab-people').click();
   await page.locator('#tab-map').click();
   await expect(hagiCard).toHaveClass(/selected/);
   await expect(hagiName).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('#historyMap')).toHaveAttribute('viewBox', zoomedViewBox);
 });
 
 test('right-column place names remain selectable outside the displayed map', async ({ page }) => {
@@ -219,6 +242,8 @@ test('right-column place names remain selectable outside the displayed map', asy
   await expect(page.locator('[data-map-place-card="shanghai"]')).toHaveClass(/selected/);
   await expect(shanghaiName).toHaveAttribute('aria-pressed', 'true');
   await expect(shanghaiName).toBeFocused();
+  await expect(page.locator('#historyMap')).toHaveAttribute('viewBox', '0 0 720 770');
+  await expect(page.locator('#resetMapView')).toBeHidden();
 });
 
 test('scene board exposes the event cast and factions as direct navigation', async ({ page }) => {

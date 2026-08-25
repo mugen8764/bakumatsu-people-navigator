@@ -9,7 +9,7 @@ const { createShared } = globalThis.BM_RENDER_SHARED;
 const router = require(path.resolve(__dirname, '../../src/router.js'));
 const stateApi = require(path.resolve(__dirname, '../../src/state.js'));
 const { normalise, searchAll } = require(path.resolve(__dirname, '../../src/search.js'));
-const { layoutMapLabels, projectMapCoord } = require(path.resolve(__dirname, '../../src/map.js'));
+const { layoutMapLabels, mapViewBoxForPoint, projectMapCoord } = require(path.resolve(__dirname, '../../src/map.js'));
 
 const domain = createDomain(data);
 
@@ -72,6 +72,25 @@ test('map projection remains deterministic', () => {
   const [x, y] = projectMapCoord([139.76, 35.68], projection);
   assert.ok(Math.abs(x - 462.4943589743587) < 1e-9);
   assert.ok(Math.abs(y - 416.03974128031706) < 1e-9);
+});
+
+test('map zoom view boxes stay centered and inside the full map', () => {
+  const projection = { width: 720, height: 770 };
+  assert.deepEqual(mapViewBoxForPoint({ x: 360, y: 385 }, projection), {
+    x: 210,
+    y: 224.58333333333331,
+    width: 300,
+    height: 320.83333333333337
+  });
+  assert.deepEqual(mapViewBoxForPoint({ x: 10, y: 10 }, projection), {
+    x: 0,
+    y: 0,
+    width: 300,
+    height: 320.83333333333337
+  });
+  const bottomRight = mapViewBoxForPoint({ x: 710, y: 760 }, projection);
+  assert.equal(bottomRight.x + bottomRight.width, 720);
+  assert.equal(bottomRight.y + bottomRight.height, 770);
 });
 
 test('map labels spread apart in the Tokyo Bay cluster', () => {
