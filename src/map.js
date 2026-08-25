@@ -15,7 +15,7 @@
   }
 
   function createMapRenderer(context, mapData) {
-    const { $, data, domain, shared, state } = context;
+    const { $, $$, actions, data, domain, shared, state } = context;
 
     function placeIds() {
       const person = domain.getPerson(state.selectedPerson);
@@ -30,7 +30,22 @@
       const ids = placeIds();
       $('#mapTitle').textContent = status ? `${status.display}と「${event.title}」の関連地` : `「${event.title}」の関連地`;
       $('#mapDescription').textContent = '緑系の丸は人物の主な関連地、菱形は事件の主要地点です。人物の所在地を特定日ごとに断定する表示ではありません。';
-      $('#placeList').innerHTML = ids.map(id => data.places[id] ? `<div class="list-item"><strong>${data.places[id].name} ${shared.reviewBadge(data.places[id].evidence)}</strong><br><span class="muted">${data.places[id].note}</span>${(data.places[id].coord[0] < 125 || data.places[id].coord[0] > 146 || data.places[id].coord[1] < 24 || data.places[id].coord[1] > 46) ? '<br><small class="muted">日本地図の範囲外</small>' : ''}</div>` : '').join('');
+      const personPlaces = new Set(person?.places || []);
+      const eventPlaces = new Set(event.places);
+      $('#placeList').innerHTML = ids.map(id => {
+        const place = data.places[id];
+        if (!place) return '';
+        const personLink = person && personPlaces.has(id)
+          ? `<button type="button" class="place-link person" data-map-person="${person.id}">${status?.display || person.name}を見る</button>`
+          : '';
+        const eventLink = eventPlaces.has(id)
+          ? `<button type="button" class="place-link event" data-map-event="${shared.scene().event}">「${event.title}」を見る</button>`
+          : '';
+        const outside = place.coord[0] < 125 || place.coord[0] > 146 || place.coord[1] < 24 || place.coord[1] > 46;
+        return `<article class="list-item place-card" data-map-place-card="${id}"><div class="place-card-head"><strong>${place.name} ${shared.reviewBadge(place.evidence)}</strong><div class="place-kinds">${personPlaces.has(id) ? '<span class="person">人物</span>' : ''}${eventPlaces.has(id) ? '<span class="event">事件</span>' : ''}</div></div><p>${place.note}</p>${outside ? '<small class="muted">日本地図の範囲外</small>' : ''}<div class="place-links">${personLink}${eventLink}</div></article>`;
+      }).join('');
+      $$('[data-map-person]', $('#placeList')).forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.mapPerson, 'people')));
+      $$('[data-map-event]', $('#placeList')).forEach(button => button.addEventListener('click', () => actions.openEvent(button.dataset.mapEvent)));
       return { event, ids, person };
     }
 

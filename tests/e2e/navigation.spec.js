@@ -119,8 +119,17 @@ test('person, relation, map, and event views remain coordinated', async ({ page 
   await page.locator('.tab[data-view="map"]').click();
   await expect(page.locator('#historyMap .map-japan')).toHaveCount(1);
   expect(await page.locator('#placeList .list-item').count()).toBeGreaterThan(0);
+  const kyotoPlace = page.locator('[data-map-place-card="kyoto"]');
+  await expect(kyotoPlace.locator('[data-map-person="kido"]')).toBeVisible();
+  await expect(kyotoPlace.locator('[data-map-event="satcho"]')).toBeVisible();
 
-  await page.locator('.tab[data-view="events"]').click();
+  await page.locator('[data-map-place-card="hagi"] [data-map-person="kido"]').click();
+  await expect(page.locator('#view-people')).toBeVisible();
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('木戸準一郎');
+
+  await page.locator('.tab[data-view="map"]').click();
+  await page.locator('[data-map-place-card="nagasaki"] [data-map-event="satcho"]').click();
+  await expect(page.locator('#view-events')).toBeVisible();
   await expect(page.locator('#eventDetail .detail-title')).not.toBeEmpty();
   await expect(page.locator('#eventDetail [data-event-person="kido"]')).toBeVisible();
 });
