@@ -126,7 +126,20 @@ test('person, relation, map, and event views remain coordinated', async ({ page 
   await kyotoMarker.focus();
   await kyotoMarker.press('Enter');
   await expect(kyotoPlace).toHaveClass(/selected/);
+  await expect(kyotoMarker).toHaveAttribute('aria-pressed', 'true');
   await expect(kyotoPlace.locator('[data-map-person="kido"]')).toBeFocused();
+
+  await page.locator('[data-map-label-trigger="kyoto"]').click();
+  await expect(kyotoPlace).toHaveClass(/selected/);
+  await expect(page.locator('[data-map-label="kyoto"]')).toHaveClass(/selected/);
+  await expect(kyotoPlace.locator('[data-map-person="kido"]')).toBeFocused();
+
+  const hagiName = page.locator('[data-map-place-name="hagi"]');
+  await hagiName.click();
+  await expect(page.locator('[data-map-place-card="hagi"]')).toHaveClass(/selected/);
+  await expect(page.locator('[data-map-place="hagi"]')).toHaveAttribute('aria-pressed', 'true');
+  await expect(hagiName).toHaveAttribute('aria-pressed', 'true');
+  await expect(hagiName).toBeFocused();
 
   await page.locator('[data-map-place-card="hagi"] [data-map-person="kido"]').click();
   await expect(page.locator('#view-people')).toBeVisible();
@@ -154,6 +167,17 @@ test('nearby Tokyo Bay map labels do not overlap', async ({ page }) => {
       && label.box.top < other.box.bottom + gap && label.box.bottom + gap > other.box.top;
     expect(overlaps, `${label.id} overlaps ${other.id}`).toBe(false);
   }));
+});
+
+test('right-column place names remain selectable outside the displayed map', async ({ page }) => {
+  await page.goto('/#scene=1865-choshu&view=map&person=takasugi&faction=長州藩');
+
+  const shanghaiName = page.locator('[data-map-place-name="shanghai"]');
+  await expect(page.locator('[data-map-place="shanghai"]')).toHaveCount(0);
+  await shanghaiName.click();
+  await expect(page.locator('[data-map-place-card="shanghai"]')).toHaveClass(/selected/);
+  await expect(shanghaiName).toHaveAttribute('aria-pressed', 'true');
+  await expect(shanghaiName).toBeFocused();
 });
 
 test('scene board exposes the event cast and factions as direct navigation', async ({ page }) => {

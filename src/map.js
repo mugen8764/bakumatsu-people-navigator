@@ -101,14 +101,22 @@
       return [...new Set([...(person?.places || []), ...event.places])];
     }
 
-    function focusPlace(id) {
+    function focusPlace(id, options = {}) {
       const card = $(`[data-map-place-card="${id}"]`);
       const marker = $(`[data-map-place="${id}"]`);
-      if (!card || !marker) return;
+      if (!card) return;
       $$('[data-map-place-card]').forEach(item => item.classList.toggle('selected', item === card));
-      $$('[data-map-place]').forEach(item => item.classList.toggle('selected', item === marker));
+      $$('[data-map-place]').forEach(item => {
+        const selected = item === marker;
+        item.classList.toggle('selected', selected);
+        item.setAttribute('aria-pressed', String(selected));
+      });
+      $$('[data-map-label]').forEach(item => item.classList.toggle('selected', item.dataset.mapLabel === id));
+      $$('[data-map-place-name]').forEach(item => {
+        item.setAttribute('aria-pressed', String(item.dataset.mapPlaceName === id));
+      });
       card.scrollIntoView({ block: 'nearest' });
-      card.querySelector('.place-link')?.focus({ preventScroll: true });
+      if (options.focusLink !== false) card.querySelector('.place-link')?.focus({ preventScroll: true });
     }
 
     function renderInfo() {
@@ -130,8 +138,11 @@
           ? `<button type="button" class="place-link event" data-map-event="${shared.scene().event}">「${event.title}」を見る</button>`
           : '';
         const outside = place.coord[0] < 125 || place.coord[0] > 146 || place.coord[1] < 24 || place.coord[1] > 46;
-        return `<article class="list-item place-card" data-map-place-card="${id}"><div class="place-card-head"><strong>${place.name} ${shared.reviewBadge(place.evidence)}</strong><div class="place-kinds">${personPlaces.has(id) ? '<span class="person">人物</span>' : ''}${eventPlaces.has(id) ? '<span class="event">事件</span>' : ''}</div></div><p>${place.note}</p>${outside ? '<small class="muted">日本地図の範囲外</small>' : ''}<div class="place-links">${personLink}${eventLink}</div></article>`;
+        return `<article class="list-item place-card" data-map-place-card="${id}"><div class="place-card-head"><button type="button" class="place-name" data-map-place-name="${id}" aria-pressed="false">${place.name} ${shared.reviewBadge(place.evidence)}</button><div class="place-kinds">${personPlaces.has(id) ? '<span class="person">人物</span>' : ''}${eventPlaces.has(id) ? '<span class="event">事件</span>' : ''}</div></div><p>${place.note}</p>${outside ? '<small class="muted">日本地図の範囲外</small>' : ''}<div class="place-links">${personLink}${eventLink}</div></article>`;
       }).join('');
+      $$('[data-map-place-name]', $('#placeList')).forEach(button => button.addEventListener('click', () => {
+        focusPlace(button.dataset.mapPlaceName, { focusLink: false });
+      }));
       $$('[data-map-person]', $('#placeList')).forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.mapPerson, 'people')));
       $$('[data-map-event]', $('#placeList')).forEach(button => button.addEventListener('click', () => actions.openEvent(button.dataset.mapEvent)));
       return { event, ids, person };
@@ -187,13 +198,18 @@
         }
         if (isEvent) eventHtml += `<rect x="${x + (isPerson ? 1 : -5)}" y="${y - 5}" width="10" height="10" transform="rotate(45 ${x + (isPerson ? 6 : 0)} ${y})" class="map-event"></rect>`;
         const label = labels.get(id);
-        labelHtml += `<line x1="${label.leader.x1}" y1="${label.leader.y1}" x2="${label.leader.x2}" y2="${label.leader.y2}" class="map-label-leader"></line><text x="${label.x}" y="${label.y}" text-anchor="${label.anchor}" class="map-label" data-map-label="${id}">${place.name}</text>`;
-        interactionHtml += `<g class="map-place-marker" data-map-place="${id}" role="button" tabindex="0" aria-label="${place.name}の地点カードを表示"><circle cx="${x}" cy="${y}" r="16" class="map-place-hit"></circle></g>`;
+        const hitWidth = label.box.right - label.box.left + 4;
+        const hitHeight = label.box.bottom - label.box.top + 4;
+        labelHtml += `<g class="map-label-trigger" data-map-label-trigger="${id}"><line x1="${label.leader.x1}" y1="${label.leader.y1}" x2="${label.leader.x2}" y2="${label.leader.y2}" class="map-label-leader"></line><rect x="${label.box.left - 2}" y="${label.box.top - 2}" width="${hitWidth}" height="${hitHeight}" rx="3" class="map-label-hit"></rect><text x="${label.x}" y="${label.y}" text-anchor="${label.anchor}" class="map-label" data-map-label="${id}">${place.name}</text></g>`;
+        interactionHtml += `<g class="map-place-marker" data-map-place="${id}" role="button" tabindex="0" aria-pressed="false" aria-label="${place.name}の地点カードを表示"><circle cx="${x}" cy="${y}" r="16" class="map-place-hit"></circle></g>`;
       });
       state.map.personLayer.innerHTML = personHtml;
       state.map.eventLayer.innerHTML = eventHtml;
       state.map.labelLayer.innerHTML = labelHtml;
       state.map.interactionLayer.innerHTML = interactionHtml;
+      $$('[data-map-label-trigger]', state.map.labelLayer).forEach(label => {
+        label.addEventListener('click', () => focusPlace(label.dataset.mapLabelTrigger));
+      });
       $$('[data-map-place]', state.map.interactionLayer).forEach(marker => {
         const focus = () => focusPlace(marker.dataset.mapPlace);
         marker.addEventListener('click', focus);
