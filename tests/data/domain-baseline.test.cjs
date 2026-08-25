@@ -43,6 +43,26 @@ test('a sparse status carries forward until the next explicit status', () => {
   assert.equal(domain.statusAt(kido, 15).display, '木戸孝允');
 });
 
+test('scene changes expose status and relation transitions without inventing new records', () => {
+  const origin = domain.sceneChangesAt(0);
+  assert.equal(origin.isOrigin, true);
+  assert.equal(origin.peopleUpdated.length, 0);
+  assert.equal(origin.relationsStarted.length, 0);
+
+  const satcho = domain.sceneChangesAt(9);
+  assert.equal(satcho.previousIndex, 8);
+  assert.equal(satcho.relationsStarted.length, 6);
+  assert.equal(satcho.relationsEnded.length, 5);
+  const kido = satcho.peopleUpdated.find(change => change.person.id === 'kido');
+  assert.deepEqual(kido.fields, ['display', 'role']);
+  assert.equal(kido.before.display, '桂小五郎');
+  assert.equal(kido.after.display, '木戸準一郎');
+
+  const kidoRelations = domain.relationChangesFor('kido', 9);
+  assert.deepEqual(kidoRelations.started.map(relation => relation.label), ['薩長同盟の締結', '合意内容の確認']);
+  assert.deepEqual(kidoRelations.ended, []);
+});
+
 test('a person is not displayed outside activeRange', () => {
   const perry = data.people.find(person => person.id === 'perry');
   const kondo = data.people.find(person => person.id === 'kondo');

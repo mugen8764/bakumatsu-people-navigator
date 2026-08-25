@@ -84,6 +84,55 @@
       return data.factionRelations.filter(relation => relation.start <= sceneIndex && relation.end >= sceneIndex);
     }
 
+    function sceneChangesAt(sceneIndex) {
+      const previousIndex = sceneIndex - 1;
+      const changes = {
+        isOrigin: previousIndex < 0,
+        previousIndex,
+        peopleEntered: [],
+        peopleExited: [],
+        peopleUpdated: [],
+        relationsStarted: [],
+        relationsEnded: [],
+        factionRelationsStarted: [],
+        factionRelationsEnded: []
+      };
+      if (changes.isOrigin) return changes;
+
+      data.people.forEach(person => {
+        const before = statusAt(person, previousIndex);
+        const after = statusAt(person, sceneIndex);
+        if (!before && after) {
+          changes.peopleEntered.push({ person, after });
+          return;
+        }
+        if (before && !after) {
+          changes.peopleExited.push({ person, before });
+          return;
+        }
+        if (!before || !after) return;
+        const fields = ['display', 'faction', 'role'].filter(field => before[field] !== after[field]);
+        if (fields.length) changes.peopleUpdated.push({ person, before, after, fields });
+      });
+
+      changes.relationsStarted = data.relations.filter(relation => relation.start === sceneIndex);
+      changes.relationsEnded = data.relations.filter(relation => relation.end === previousIndex);
+      changes.factionRelationsStarted = data.factionRelations.filter(relation => relation.start === sceneIndex);
+      changes.factionRelationsEnded = data.factionRelations.filter(relation => relation.end === previousIndex);
+      return changes;
+    }
+
+    function relationChangesFor(personId, sceneIndex, relationType = 'all') {
+      const changes = sceneChangesAt(sceneIndex);
+      const matches = relation => (relation.a === personId || relation.b === personId)
+        && (relationType === 'all' || relation.type === relationType);
+      return {
+        isOrigin: changes.isOrigin,
+        started: changes.relationsStarted.filter(matches),
+        ended: changes.relationsEnded.filter(matches)
+      };
+    }
+
     function nearestSceneForPerson(person, sceneIndex) {
       if (withinRange(person, sceneIndex)) return sceneIndex;
       if (sceneIndex < person.activeRange[0]) return person.activeRange[0];
@@ -113,7 +162,9 @@
       nearestSceneForFaction,
       nearestSceneForPerson,
       personFactionNames,
+      relationChangesFor,
       relationsFor,
+      sceneChangesAt,
       sceneById,
       statusAt,
       withinRange

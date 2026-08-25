@@ -27,6 +27,28 @@
         .sort((a, b) => a.distance - b.distance || a.index - b.index)[0] || null;
     }
 
+    function relationChangeItem(relation, sceneIndex) {
+      const otherId = relation.a === state.selectedPerson ? relation.b : relation.a;
+      const other = domain.getPerson(otherId);
+      const display = domain.statusAt(other, sceneIndex)?.display || other?.name || otherId;
+      return `<li><strong>${display}</strong><span>${relation.label}</span></li>`;
+    }
+
+    function renderRelationChanges(person) {
+      const changes = domain.relationChangesFor(person.id, state.scene, state.relationType);
+      if (changes.isOrigin) {
+        $('#relationChanges').innerHTML = '<span class="eyebrow">関係の変化</span><p>最初の時点です。ここに表示される関係を起点としてたどります。</p>';
+        return;
+      }
+      const previousScene = data.scenes[state.scene - 1];
+      const started = changes.started.slice(0, 3).map(relation => relationChangeItem(relation, state.scene)).join('');
+      const ended = changes.ended.slice(0, 3).map(relation => relationChangeItem(relation, state.scene - 1)).join('');
+      const content = started || ended
+        ? `${started ? `<section><h3><i class="change-dot started"></i>この時点から <b>${changes.started.length}</b></h3><ul>${started}</ul></section>` : ''}${ended ? `<section><h3><i class="change-dot ended"></i>前の時点まで <b>${changes.ended.length}</b></h3><ul>${ended}</ul></section>` : ''}`
+        : '<p>この人物の関係に増減はありません。</p>';
+      $('#relationChanges').innerHTML = `<div class="relation-changes-heading"><span class="eyebrow">関係の変化</span><small>${previousScene.year} → ${shared.scene().year}</small></div>${content}`;
+    }
+
     function emptyMessage(person, status) {
       const nearest = nearestSceneWithRelations(person.id);
       if (!nearest) return `<div class="relation-empty"><strong>${status.display}の関係はまだ登録されていません</strong><span>人物画面から同じ事件の関係者を確認できます。</span></div>`;
@@ -40,6 +62,7 @@
       if (!person || !status) {
         svg.innerHTML = '<text x="410" y="295" text-anchor="middle" class="node-label">人物を選択してください</text>';
         $('#relationMobile').innerHTML = '<div class="relation-empty">人物を選択してください。</div>';
+        $('#relationChanges').innerHTML = '';
         return;
       }
       const relations = domain.relationsFor(person.id, state.scene, state.relationType);
@@ -78,16 +101,19 @@
       $('#metricPeople').textContent = others.length + 1;
       $('#metricRelations').textContent = relations.length;
       $('#metricFactions').textContent = legendFactions.length;
+      renderRelationChanges(person);
       const relationItems = relations.map(relation => {
         const other = domain.getPerson(relation.a === person.id ? relation.b : relation.a);
         const otherStatus = domain.statusAt(other, state.scene);
-        return `<div class="rel"><button type="button" data-graph-other="${other.id}">${otherStatus.display}</button> — <span class="relation-kind ${relationClass(relation.type)}">${relation.label}</span> ${shared.reviewBadge(relation.evidence)}<br><span class="muted">${relation.text}</span></div>`;
+        const changeBadge = relation.start === state.scene && state.scene > 0 ? '<span class="relation-change-badge">この時点から</span>' : '';
+        return `<div class="rel"><button type="button" data-graph-other="${other.id}">${otherStatus.display}</button> — <span class="relation-kind ${relationClass(relation.type)}">${relation.label}</span> ${changeBadge} ${shared.reviewBadge(relation.evidence)}<br><span class="muted">${relation.text}</span></div>`;
       }).join('');
       $('#graphExplanation').innerHTML = relationItems || emptyMessage(person, status);
       $('#relationMobile').innerHTML = `<div class="relation-mobile-center"><span class="scene-person-avatar" style="background:${shared.factionColor(status.faction)}">${shared.factionShort(status.faction)}</span><span><small>中心人物</small><strong>${status.display}</strong><em>${status.role}</em></span></div>${relations.length ? relations.map(relation => {
         const other = domain.getPerson(relation.a === person.id ? relation.b : relation.a);
         const otherStatus = domain.statusAt(other, state.scene);
-        return `<button type="button" class="relation-mobile-card ${relationClass(relation.type)}" data-mobile-relation-person="${other.id}"><span class="relation-mobile-line"><i></i><b>${relation.label}</b></span><span class="scene-person-avatar" style="background:${shared.factionColor(otherStatus.faction)}">${shared.factionShort(otherStatus.faction)}</span><span><strong>${otherStatus.display}</strong><small>${relation.text}</small></span></button>`;
+        const changeBadge = relation.start === state.scene && state.scene > 0 ? '<em class="relation-change-badge">この時点から</em>' : '';
+        return `<button type="button" class="relation-mobile-card ${relationClass(relation.type)}" data-mobile-relation-person="${other.id}"><span class="relation-mobile-line"><i></i><b>${relation.label}</b></span><span class="scene-person-avatar" style="background:${shared.factionColor(otherStatus.faction)}">${shared.factionShort(otherStatus.faction)}</span><span><strong>${otherStatus.display}</strong>${changeBadge}<small>${relation.text}</small></span></button>`;
       }).join('') : emptyMessage(person, status)}`;
       $$('[data-graph-other]').forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.graphOther, 'relations')));
       $$('[data-mobile-relation-person]').forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.mobileRelationPerson, 'relations')));

@@ -47,6 +47,10 @@
       <div id="sceneCounts" class="counts"></div>
     </div>
     <div class="progress"><div id="sceneProgress"></div></div>
+    <section id="sceneChanges" class="scene-changes" aria-labelledby="sceneChangesHeading">
+      <div class="scene-changes-heading"><div><span class="eyebrow">時点の変化</span><h3 id="sceneChangesHeading">前の時点から</h3></div><span id="sceneChangesPeriod"></span></div>
+      <div id="sceneChangeGroups" class="scene-change-groups" tabindex="0" aria-label="前の時点からの変化の詳細"></div>
+    </section>
     <div class="scene-lenses">
       <section class="scene-lens" aria-labelledby="scenePeopleHeading">
         <div class="lens-heading"><div><span class="eyebrow">人物と勢力</span><h3 id="scenePeopleHeading">この場面の主役</h3></div><span>選ぶと詳しい立場へ</span></div>
@@ -91,7 +95,7 @@
   <section id="view-relations" class="view" role="tabpanel" aria-labelledby="tab-relations" hidden>
     <div class="layout">
       <div class="panel visual"><svg id="relationGraph" viewBox="0 0 820 590" role="group" aria-label="選択人物を中心とした人物相関図"></svg><div id="relationMobile" class="relation-mobile" aria-label="選択人物の関係一覧"></div></div>
-      <aside class="panel side"><h2>時点で変わる相関図</h2><p class="muted">選択人物を中心に、その時点で意味のある関係だけを表示します。</p><div class="metrics"><div class="metric"><b id="metricPeople">0</b><span>図の人物</span></div><div class="metric"><b id="metricRelations">0</b><span>この人物の関係</span></div><div class="metric"><b id="metricFactions">0</b><span>関係勢力</span></div></div><label>関係の種類<select id="relationType"><option value="all">すべて</option><option value="主従・登用">主従・登用</option><option value="政治協力">政治協力</option><option value="対立">対立</option><option value="師弟・同志">師弟・同志</option><option value="組織">組織</option><option value="仲介・交渉">仲介・交渉</option><option value="親族">親族</option></select></label><div id="graphExplanation" class="relations graph-explanation"></div><div id="graphLegend" class="legend"></div></aside>
+      <aside class="panel side"><h2>時点で変わる相関図</h2><p class="muted">選択人物を中心に、その時点で意味のある関係だけを表示します。</p><div class="metrics"><div class="metric"><b id="metricPeople">0</b><span>図の人物</span></div><div class="metric"><b id="metricRelations">0</b><span>この人物の関係</span></div><div class="metric"><b id="metricFactions">0</b><span>関係勢力</span></div></div><div id="relationChanges" class="relation-changes" aria-live="polite"></div><label>関係の種類<select id="relationType"><option value="all">すべて</option><option value="主従・登用">主従・登用</option><option value="政治協力">政治協力</option><option value="対立">対立</option><option value="師弟・同志">師弟・同志</option><option value="組織">組織</option><option value="仲介・交渉">仲介・交渉</option><option value="親族">親族</option></select></label><div id="graphExplanation" class="relations graph-explanation"></div><div id="graphLegend" class="legend"></div></aside>
     </div>
   </section>
 

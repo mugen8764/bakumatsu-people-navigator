@@ -131,6 +131,13 @@ test('scene board exposes the event cast and factions as direct navigation', asy
   await expect(page.locator('#scenePeople [data-scene-person]')).toHaveCount(6);
   await expect(page.locator('#sceneFactions [data-scene-faction]')).toHaveCount(3);
   await expect(page.locator('#sceneInsights .insight')).toHaveCount(3);
+  await expect(page.locator('#sceneChangesHeading')).toHaveText('前の時点から');
+  await expect(page.locator('#sceneChangesPeriod')).toContainText('1865「長州藩政の転換」 → 1866');
+  await expect(page.locator('[data-scene-change-group="updated"] .scene-change-group-heading span')).toHaveText('5');
+  await expect(page.locator('[data-scene-change-group="updated"]')).toContainText('桂小五郎 → 木戸準一郎');
+  await expect(page.locator('[data-scene-change-group="started"] .scene-change-group-heading span')).toHaveText('6');
+  await expect(page.locator('[data-scene-change-group="started"]')).toContainText('薩長同盟で協力');
+  await expect(page.locator('[data-scene-change-group="ended"]')).toContainText('海軍構想の師弟');
 
   await page.locator('[data-scene-person="ryoma"]').click();
   await expect(page.locator('#personDetail .detail-title')).toHaveText('坂本龍馬');
@@ -139,6 +146,17 @@ test('scene board exposes the event cast and factions as direct navigation', asy
   await page.locator('[data-scene-faction="薩摩藩"]').click();
   await expect(page.locator('#factionDetail .detail-title')).toHaveText('薩摩藩');
   await expect(page).toHaveURL(/view=factions/);
+});
+
+test('relation view distinguishes newly started and recently ended ties', async ({ page }) => {
+  await page.goto('/#scene=1867-taisei&view=relations&person=yoshinobu&faction=幕府');
+
+  await expect(page.locator('#relationChanges')).toContainText('1866 → 1867');
+  await expect(page.locator('#relationChanges')).toContainText('この時点から');
+  await expect(page.locator('#relationChanges')).toContainText('辞官・納地処分');
+  await expect(page.locator('#relationChanges')).toContainText('前の時点まで');
+  await expect(page.locator('#relationChanges')).toContainText('将軍家の継承競争と補佐');
+  await expect(page.locator('#graphExplanation .relation-change-badge')).toHaveCount(2);
 });
 
 test('mobile relation view uses readable cards instead of a scaled graph', async ({ page }) => {
@@ -187,9 +205,12 @@ test('keyboard focus remains visible at 320px in dark mode', async ({ page }) =>
 test('timeline transport, calendar mode, and faction selection remain usable', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator('#sceneSelect')).toHaveValue('0');
+  await expect(page.locator('#sceneChangesHeading')).toHaveText('ここからたどる');
+  await expect(page.locator('#sceneChangeGroups')).toContainText('「黒船来航」から全16場面をたどります');
 
   await page.locator('#nextScene').click();
   await expect(page.locator('#sceneSelect')).toHaveValue('1');
+  await expect(page.locator('#sceneChangesHeading')).toHaveText('前の時点から');
   await page.locator('#calendarMode').selectOption('japanese');
   await expect(page.locator('#sceneYear')).toHaveText('嘉永7年／安政元年');
 
