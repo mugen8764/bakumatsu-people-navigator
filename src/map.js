@@ -160,8 +160,18 @@
           personLayer: $('#mapPersonLayer'),
           eventLayer: $('#mapEventLayer'),
           labelLayer: $('#mapLabelLayer'),
-          interactionLayer: $('#mapInteractionLayer')
+          interactionLayer: $('#mapInteractionLayer'),
+          labelLayout: new Map()
         };
+        const projection = mapData.projection;
+        const catalogPoints = Object.keys(data.places).sort().map(id => {
+          const place = data.places[id];
+          const [longitude, latitude] = place.coord;
+          if (longitude < projection.lonMin || longitude > projection.lonMax || latitude < projection.latMin || latitude > projection.latMax) return null;
+          const [x, y] = projectMapCoord(place.coord, projection);
+          return { id, name: place.name, x, y };
+        }).filter(Boolean);
+        state.map.labelLayout = new Map(layoutMapLabels(catalogPoints, projection).map(label => [label.id, label]));
         state.mapReady = true;
         if (state.view === 'map') render();
       } catch (error) {
@@ -188,7 +198,7 @@
         const [x, y] = projectMapCoord(place.coord, projection);
         return { id, index, name: place.name, place, x, y };
       }).filter(Boolean);
-      const labels = new Map(layoutMapLabels(visiblePlaces, projection).map(label => [label.id, label]));
+      const labels = state.map.labelLayout;
       const status = person ? domain.statusAt(person, state.scene) : null;
       visiblePlaces.forEach(({ id, index, place, x, y }) => {
         const isPerson = personIds.has(id);

@@ -169,6 +169,28 @@ test('nearby Tokyo Bay map labels do not overlap', async ({ page }) => {
   }));
 });
 
+test('map labels keep their position when the selected person changes', async ({ page }) => {
+  await page.goto('/#scene=1868-toba&view=map&person=katsu&faction=幕府');
+
+  const osaka = page.locator('[data-map-label="osaka"]');
+  const before = await osaka.evaluate(element => ({
+    x: element.getAttribute('x'),
+    y: element.getAttribute('y'),
+    anchor: element.getAttribute('text-anchor')
+  }));
+  await page.evaluate(() => {
+    location.hash = 'scene=1868-toba&view=map&person=enomoto&faction=幕府';
+  });
+  await expect(page.locator('#mapTitle')).toContainText('榎本武揚');
+  const after = await osaka.evaluate(element => ({
+    x: element.getAttribute('x'),
+    y: element.getAttribute('y'),
+    anchor: element.getAttribute('text-anchor')
+  }));
+
+  expect(after).toEqual(before);
+});
+
 test('right-column place names remain selectable outside the displayed map', async ({ page }) => {
   await page.goto('/#scene=1865-choshu&view=map&person=takasugi&faction=長州藩');
 
