@@ -122,7 +122,12 @@
         reset.hidden = true;
         return;
       }
-      const box = mapViewBoxForPoint(point, mapData.projection);
+      const label = state.map.labelLayout.get(state.map.zoomedPlace);
+      const focusPoint = label ? {
+        x: (Math.min(point.x - 20, label.box.left - 8) + Math.max(point.x + 20, label.box.right + 8)) / 2,
+        y: (Math.min(point.y - 20, label.box.top - 8) + Math.max(point.y + 20, label.box.bottom + 8)) / 2
+      } : point;
+      const box = mapViewBoxForPoint(focusPoint, mapData.projection);
       svg.setAttribute('viewBox', `${box.x} ${box.y} ${box.width} ${box.height}`);
       svg.setAttribute('aria-label', `${data.places[state.map.zoomedPlace].name}周辺を拡大した人物と事件の関連地`);
       reset.hidden = false;
@@ -144,6 +149,9 @@
         item.setAttribute('aria-pressed', String(selected));
       });
       $$('[data-map-label]').forEach(item => item.classList.toggle('selected', item.dataset.mapLabel === id));
+      $$('[data-map-label-trigger]').forEach(item => {
+        item.setAttribute('aria-pressed', String(item.dataset.mapLabelTrigger === id));
+      });
       $$('[data-map-place-name]').forEach(item => {
         item.setAttribute('aria-pressed', String(item.dataset.mapPlaceName === id));
       });
@@ -228,7 +236,8 @@
       let personHtml = '';
       let eventHtml = '';
       let labelHtml = '';
-      let interactionHtml = '';
+      let markerInteractionHtml = '';
+      let labelInteractionHtml = '';
       const projection = mapData.projection;
       const visiblePlaces = ids.map((id, index) => {
         const place = data.places[id];
@@ -250,15 +259,27 @@
         const label = labels.get(id);
         const hitWidth = label.box.right - label.box.left + 4;
         const hitHeight = label.box.bottom - label.box.top + 4;
-        labelHtml += `<g class="map-label-trigger" data-map-label-trigger="${id}"><line x1="${label.leader.x1}" y1="${label.leader.y1}" x2="${label.leader.x2}" y2="${label.leader.y2}" class="map-label-leader"></line><rect x="${label.box.left - 2}" y="${label.box.top - 2}" width="${hitWidth}" height="${hitHeight}" rx="3" class="map-label-hit"></rect><text x="${label.x}" y="${label.y}" text-anchor="${label.anchor}" class="map-label" data-map-label="${id}">${place.name}</text></g>`;
-        interactionHtml += `<g class="map-place-marker" data-map-place="${id}" role="button" tabindex="0" aria-pressed="false" aria-label="${place.name}の地点カードを表示"><circle cx="${x}" cy="${y}" r="16" class="map-place-hit"></circle></g>`;
+        labelHtml += `<g class="map-label-group"><line x1="${label.leader.x1}" y1="${label.leader.y1}" x2="${label.leader.x2}" y2="${label.leader.y2}" class="map-label-leader"></line><rect x="${label.box.left - 2}" y="${label.box.top - 2}" width="${hitWidth}" height="${hitHeight}" rx="3" class="map-label-hit"></rect><text x="${label.x}" y="${label.y}" text-anchor="${label.anchor}" class="map-label" data-map-label="${id}">${place.name}</text></g>`;
+        markerInteractionHtml += `<g class="map-place-marker" data-map-place="${id}" role="button" tabindex="0" aria-pressed="false" aria-label="${place.name}の地点カードを表示"><circle cx="${x}" cy="${y}" r="16" class="map-place-hit"></circle></g>`;
+        labelInteractionHtml += `<rect x="${label.box.left - 2}" y="${label.box.top - 2}" width="${hitWidth}" height="${hitHeight}" rx="3" class="map-label-interaction" data-map-label-trigger="${id}" role="button" tabindex="0" aria-pressed="false" aria-label="${place.name}の地点カードを表示"></rect>`;
       });
       state.map.personLayer.innerHTML = personHtml;
       state.map.eventLayer.innerHTML = eventHtml;
       state.map.labelLayer.innerHTML = labelHtml;
-      state.map.interactionLayer.innerHTML = interactionHtml;
-      $$('[data-map-label-trigger]', state.map.labelLayer).forEach(label => {
-        label.addEventListener('click', () => focusPlace(label.dataset.mapLabelTrigger));
+      state.map.interactionLayer.innerHTML = markerInteractionHtml + labelInteractionHtml;
+      $$('[data-map-label-trigger]', state.map.interactionLayer).forEach(label => {
+        const visibleLabel = $(`[data-map-label="${label.dataset.mapLabelTrigger}"]`, state.map.labelLayer);
+        const focus = () => focusPlace(label.dataset.mapLabelTrigger);
+        label.addEventListener('click', focus);
+        label.addEventListener('keydown', event => {
+          if (event.key !== 'Enter' && event.key !== ' ') return;
+          event.preventDefault();
+          focus();
+        });
+        label.addEventListener('mouseenter', () => visibleLabel?.classList.add('hover'));
+        label.addEventListener('mouseleave', () => visibleLabel?.classList.remove('hover'));
+        label.addEventListener('focus', () => visibleLabel?.classList.add('hover'));
+        label.addEventListener('blur', () => visibleLabel?.classList.remove('hover'));
       });
       $$('[data-map-place]', state.map.interactionLayer).forEach(marker => {
         const focus = () => focusPlace(marker.dataset.mapPlace);

@@ -203,7 +203,10 @@ test('person, relation, map, and event views remain coordinated', async ({ page 
   await expect(kyotoMarker).toHaveAttribute('aria-pressed', 'true');
   await expect(kyotoPlace.locator('[data-map-person="kido"]')).toBeFocused();
 
-  await page.locator('[data-map-label-trigger="kyoto"]').click();
+  const kyotoLabel = page.locator('[data-map-label-trigger="kyoto"]');
+  await expect(kyotoLabel).toHaveAttribute('role', 'button');
+  await expect(kyotoLabel).toHaveAttribute('tabindex', '0');
+  await kyotoLabel.click();
   await expect(kyotoPlace).toHaveClass(/selected/);
   await expect(page.locator('[data-map-label="kyoto"]')).toHaveClass(/selected/);
   await expect(kyotoPlace.locator('[data-map-person="kido"]')).toBeFocused();
@@ -272,7 +275,9 @@ test('selecting a mapped place zooms its region and can return to Japan view', a
   const reset = page.locator('#resetMapView');
   await expect(map).toHaveAttribute('viewBox', '0 0 720 770');
   await expect(reset).toBeHidden();
-  await page.locator('[data-map-label-trigger="uraga"]').click();
+  const uragaLabel = page.locator('[data-map-label-trigger="uraga"]');
+  await uragaLabel.focus();
+  await uragaLabel.press('Enter');
   const zoomedViewBox = await map.getAttribute('viewBox');
   expect(zoomedViewBox).not.toBe('0 0 720 770');
   await expect(map).toHaveAttribute('aria-label', /浦賀・久里浜周辺を拡大/);
