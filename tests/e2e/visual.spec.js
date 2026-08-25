@@ -60,3 +60,17 @@ test('map 320px mobile dark appearance stays stable', async ({ page }) => {
   await prepareMap(page, { width: 320, height: 780, colorScheme: 'dark' });
   await expect(page.locator('#view-map')).toHaveScreenshot('map-mobile-320-dark.png', { animations: 'disabled' });
 });
+
+test('zoomed Tokyo Bay map stays readable on desktop', async ({ page }) => {
+  await prepareMap(page, { width: 1280, height: 900, colorScheme: 'light' });
+  await page.locator('[data-map-label-trigger="uraga"]').click();
+  await expect(page.locator('#resetMapView')).toBeVisible();
+  await expect(page.locator('#view-map')).toHaveScreenshot('map-zoomed-tokyo-desktop.png', { animations: 'disabled' });
+});
+
+test('zoomed Tokyo Bay map stays readable at 320px', async ({ page }) => {
+  await prepareMap(page, { width: 320, height: 780, colorScheme: 'light' });
+  await page.locator('[data-map-label-trigger="uraga"]').click();
+  await expect(page.locator('#resetMapView')).toBeVisible();
+  await expect(page.locator('#view-map')).toHaveScreenshot('map-zoomed-tokyo-mobile-320.png', { animations: 'disabled' });
+});
