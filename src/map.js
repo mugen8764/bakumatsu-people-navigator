@@ -105,6 +105,7 @@
       const card = $(`[data-map-place-card="${id}"]`);
       const marker = $(`[data-map-place="${id}"]`);
       if (!card) return;
+      state.map.selectedPlace = id;
       $$('[data-map-place-card]').forEach(item => item.classList.toggle('selected', item === card));
       $$('[data-map-place]').forEach(item => {
         const selected = item === marker;
@@ -115,7 +116,7 @@
       $$('[data-map-place-name]').forEach(item => {
         item.setAttribute('aria-pressed', String(item.dataset.mapPlaceName === id));
       });
-      card.scrollIntoView({ block: 'nearest' });
+      if (options.scroll !== false) card.scrollIntoView({ block: 'nearest' });
       if (options.focusLink !== false) card.querySelector('.place-link')?.focus({ preventScroll: true });
     }
 
@@ -125,7 +126,7 @@
       const event = data.events[shared.scene().event];
       const ids = placeIds();
       $('#mapTitle').textContent = status ? `${status.display}と「${event.title}」の関連地` : `「${event.title}」の関連地`;
-      $('#mapDescription').textContent = '緑系の丸は人物の主な関連地、菱形は事件の主要地点です。人物の所在地を特定日ごとに断定する表示ではありません。';
+      $('#mapDescription').textContent = '緑系の丸は人物の主な関連地、菱形は事件の主要地点です。マーカー、地図上の地名、右欄の地名から地点を選べます。人物の所在地を特定日ごとに断定する表示ではありません。';
       const personPlaces = new Set(person?.places || []);
       const eventPlaces = new Set(event.places);
       $('#placeList').innerHTML = ids.map(id => {
@@ -161,7 +162,8 @@
           eventLayer: $('#mapEventLayer'),
           labelLayer: $('#mapLabelLayer'),
           interactionLayer: $('#mapInteractionLayer'),
-          labelLayout: new Map()
+          labelLayout: new Map(),
+          selectedPlace: ''
         };
         const projection = mapData.projection;
         const catalogPoints = Object.keys(data.places).sort().map(id => {
@@ -229,6 +231,11 @@
           focus();
         });
       });
+      if (state.map.selectedPlace && $(`[data-map-place-card="${state.map.selectedPlace}"]`)) {
+        focusPlace(state.map.selectedPlace, { focusLink: false, scroll: false });
+      } else {
+        state.map.selectedPlace = '';
+      }
     }
 
     return { init, render };

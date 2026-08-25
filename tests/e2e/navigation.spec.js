@@ -191,6 +191,25 @@ test('map labels keep their position when the selected person changes', async ({
   expect(after).toEqual(before);
 });
 
+test('map place selection survives scene and view redraws', async ({ page }) => {
+  await page.goto('/#scene=1866-satcho&view=map&person=kido&faction=長州藩');
+
+  await expect(page.locator('#mapDescription')).toContainText('地図上の地名、右欄の地名から地点を選べます');
+  const hagiCard = page.locator('[data-map-place-card="hagi"]');
+  const hagiName = page.locator('[data-map-place-name="hagi"]');
+  const hagiMarker = page.locator('[data-map-place="hagi"]');
+  await hagiName.click();
+  await page.locator('#sceneSelect').selectOption('10');
+  await expect(hagiCard).toHaveClass(/selected/);
+  await expect(hagiName).toHaveAttribute('aria-pressed', 'true');
+  await expect(hagiMarker).toHaveAttribute('aria-pressed', 'true');
+
+  await page.locator('#tab-people').click();
+  await page.locator('#tab-map').click();
+  await expect(hagiCard).toHaveClass(/selected/);
+  await expect(hagiName).toHaveAttribute('aria-pressed', 'true');
+});
+
 test('right-column place names remain selectable outside the displayed map', async ({ page }) => {
   await page.goto('/#scene=1865-choshu&view=map&person=takasugi&faction=長州藩');
 
