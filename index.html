@@ -68,14 +68,18 @@
     <div class="global-search"><label id="globalSearchLabel" for="globalSearch">人物・勢力・事件を横断検索<input id="globalSearch" type="search" role="combobox" aria-autocomplete="list" aria-controls="searchResults" aria-expanded="false" aria-labelledby="globalSearchLabel" placeholder="例：桂小五郎、大政奉還、京都守護職、薩摩"></label><div id="searchResults" class="search-results" role="listbox" aria-label="検索結果" hidden></div></div>
   </section>
 
-  <nav class="tabs" role="tablist" aria-label="表示切替">
-    <button id="tab-people" class="tab active" data-view="people" type="button" role="tab" aria-controls="view-people" aria-selected="true">人物</button>
-    <button id="tab-factions" class="tab" data-view="factions" type="button" role="tab" aria-controls="view-factions" aria-selected="false" tabindex="-1">勢力</button>
-    <button id="tab-relations" class="tab" data-view="relations" type="button" role="tab" aria-controls="view-relations" aria-selected="false" tabindex="-1">相関図</button>
-    <button id="tab-map" class="tab" data-view="map" type="button" role="tab" aria-controls="view-map" aria-selected="false" tabindex="-1">地図</button>
-    <button id="tab-events" class="tab" data-view="events" type="button" role="tab" aria-controls="view-events" aria-selected="false" tabindex="-1">事件の因果</button>
-    <button id="tab-sources" class="tab tab-secondary" data-view="sources" type="button" role="tab" aria-controls="view-sources" aria-selected="false" tabindex="-1">出典・方針</button>
-  </nav>
+  <div class="tabs-shell">
+    <button id="previousTabs" class="tab-scroll-control previous" type="button" aria-label="前の表示タブを見る" aria-controls="primaryTabs" hidden>‹</button>
+    <nav id="primaryTabs" class="tabs" role="tablist" aria-label="表示切替">
+      <button id="tab-people" class="tab active" data-view="people" type="button" role="tab" aria-controls="view-people" aria-selected="true">人物</button>
+      <button id="tab-factions" class="tab" data-view="factions" type="button" role="tab" aria-controls="view-factions" aria-selected="false" tabindex="-1">勢力</button>
+      <button id="tab-relations" class="tab" data-view="relations" type="button" role="tab" aria-controls="view-relations" aria-selected="false" tabindex="-1">相関図</button>
+      <button id="tab-map" class="tab" data-view="map" type="button" role="tab" aria-controls="view-map" aria-selected="false" tabindex="-1">地図</button>
+      <button id="tab-events" class="tab" data-view="events" type="button" role="tab" aria-controls="view-events" aria-selected="false" tabindex="-1">事件の因果</button>
+      <button id="tab-sources" class="tab tab-secondary" data-view="sources" type="button" role="tab" aria-controls="view-sources" aria-selected="false" tabindex="-1">出典・方針</button>
+    </nav>
+    <button id="nextTabs" class="tab-scroll-control next" type="button" aria-label="次の表示タブを見る" aria-controls="primaryTabs" hidden>›</button>
+  </div>
 
   <section id="view-people" class="view active" role="tabpanel" aria-labelledby="tab-people">
     <div class="main-grid">

@@ -17,7 +17,7 @@ async function prepareMap(page, { width, height, colorScheme }) {
   await page.addInitScript(() => localStorage.clear());
   await page.goto('/#scene=1853-blackships&view=map&person=perry&faction=幕府');
   await page.addStyleTag({
-    content: '*,*::before,*::after{animation:none!important;transition:none!important;caret-color:transparent!important}.tabs{position:static!important}'
+    content: '*,*::before,*::after{animation:none!important;transition:none!important;caret-color:transparent!important}.tabs-shell{position:static!important}'
   });
   await expect(page.locator('#mapTitle')).toContainText('ペリー');
 }

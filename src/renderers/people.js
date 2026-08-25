@@ -31,7 +31,14 @@
         const nameNote = laterName ? `後の名：${laterName}` : (status.display === person.name ? (person.aliases[0] || '') : '');
         return `<button type="button" class="card-button ${person.id === state.selectedPerson ? 'selected' : ''}" data-person-card="${person.id}" aria-pressed="${person.id === state.selectedPerson}"><div class="avatar" style="background:${shared.factionColor(faction)}">${shared.factionShort(faction)}</div><div class="name">${status.display}</div>${nameNote ? `<div class="later-name">${nameNote}</div>` : ''}<div class="role">${status.role}</div><div class="card-foot"><span>${faction}</span><span>詳細 →</span></div></button>`;
       }).join('') || '<div class="notice">この条件で表示できる人物はいません。</div>';
-      $$('[data-person-card]').forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.personCard)));
+      $$('[data-person-card]').forEach(button => button.addEventListener('click', () => {
+        const showDetail = window.matchMedia('(max-width: 920px)').matches;
+        actions.selectPerson(button.dataset.personCard);
+        if (showDetail) requestAnimationFrame(() => {
+          $('#personDetail').scrollIntoView({ block: 'start', behavior: 'auto' });
+          $('#personBackToList')?.focus({ preventScroll: true });
+        });
+      }));
       renderDetail();
     }
 
@@ -51,7 +58,7 @@
         .map(([sceneId, value]) => ({ scene: domain.sceneById.get(sceneId), value }))
         .filter(item => item.scene)
         .sort((a, b) => a.scene.index - b.scene.index);
-      box.innerHTML = `<div class="detail-head"><div class="avatar" style="background:${shared.factionColor(status.faction)}">${shared.factionShort(status.faction)}</div><div><div class="detail-title">${status.display}</div>${laterName ? `<div class="aliases">後の名前：${laterName}</div>` : ''}<div class="badges"><span class="badge">${status.faction}</span><span class="badge">${status.role}</span><span class="badge">${person.born}</span></div></div></div>
+      box.innerHTML = `<button type="button" class="button detail-back" id="personBackToList">← 人物一覧へ</button><div class="detail-head"><div class="avatar" style="background:${shared.factionColor(status.faction)}">${shared.factionShort(status.faction)}</div><div><div class="detail-title">${status.display}</div>${laterName ? `<div class="aliases">後の名前：${laterName}</div>` : ''}<div class="badges"><span class="badge">${status.faction}</span><span class="badge">${status.role}</span><span class="badge">${person.born}</span></div></div></div>
       <div class="snapshot"><strong>${shared.dateLabel(shared.scene())}の位置づけ ${shared.reviewBadge(status.evidence)}</strong>${status.importance}</div>
       <div class="section"><h3>この時点の行動・立場</h3><p>${status.stance}</p></div>
       <div class="section"><h3>一言で</h3><p>${person.oneLine}</p></div>
@@ -69,6 +76,11 @@
       $$('[data-event-peer]', box).forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.eventPeer)));
       $$('[data-open-event]', box).forEach(button => button.addEventListener('click', () => actions.openEvent(button.dataset.openEvent)));
       $$('[data-history-scene]', box).forEach(button => button.addEventListener('click', () => actions.setScene(button.dataset.historyScene)));
+      $('#personBackToList').addEventListener('click', () => {
+        const selectedCard = $(`[data-person-card="${person.id}"]`);
+        selectedCard?.scrollIntoView({ block: 'start', behavior: 'auto' });
+        selectedCard?.focus({ preventScroll: true });
+      });
       $('#personToGraph').addEventListener('click', () => actions.setView('relations'));
       $('#personToMap').addEventListener('click', () => actions.setView('map'));
     }

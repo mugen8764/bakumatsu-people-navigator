@@ -82,6 +82,7 @@
     sceneRenderer.renderTabs();
     renderActiveView();
     window.BM_ROUTER.writeRoute(state, scene(), environment, options);
+    requestAnimationFrame(revealActiveTab);
   }
 
   function setScene(sceneIndex, options = {}) {
@@ -211,6 +212,36 @@
     relationsRenderer.render();
   });
   const tabs = $$('.tab');
+  const tabStrip = $('#primaryTabs');
+  const previousTabs = $('#previousTabs');
+  const nextTabs = $('#nextTabs');
+  const narrowTabs = window.matchMedia('(max-width: 680px)');
+
+  function updateTabScrollControls() {
+    const overflow = narrowTabs.matches && tabStrip.scrollWidth > tabStrip.clientWidth + 2;
+    previousTabs.hidden = !overflow || tabStrip.scrollLeft <= 2;
+    nextTabs.hidden = !overflow || tabStrip.scrollLeft >= tabStrip.scrollWidth - tabStrip.clientWidth - 2;
+  }
+
+  function scrollTabsTo(left) {
+    tabStrip.scrollTo({
+      left,
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+    });
+  }
+
+  function revealActiveTab() {
+    const activeTab = tabs.find(button => button.dataset.view === state.view);
+    if (narrowTabs.matches && activeTab) {
+      scrollTabsTo(activeTab.offsetLeft - (tabStrip.clientWidth - activeTab.offsetWidth) / 2);
+    }
+    updateTabScrollControls();
+  }
+
+  previousTabs.addEventListener('click', () => scrollTabsTo(tabStrip.scrollLeft - tabStrip.clientWidth * 0.72));
+  nextTabs.addEventListener('click', () => scrollTabsTo(tabStrip.scrollLeft + tabStrip.clientWidth * 0.72));
+  tabStrip.addEventListener('scroll', updateTabScrollControls, { passive: true });
+  window.addEventListener('resize', revealActiveTab);
   tabs.forEach((button, index) => {
     button.addEventListener('click', () => setView(button.dataset.view));
     button.addEventListener('keydown', event => {

@@ -84,6 +84,48 @@ test('all primary views stay inside a 320px document viewport', async ({ page })
   }
 });
 
+test('mobile view tabs expose overflow controls and keep the active tab visible', async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 780 });
+  await page.goto('/');
+
+  const strip = page.locator('#primaryTabs');
+  await expect(page.locator('#previousTabs')).toBeHidden();
+  await expect(page.locator('#nextTabs')).toBeVisible();
+  await page.locator('#nextTabs').click();
+  await expect.poll(() => strip.evaluate(element => element.scrollLeft)).toBeGreaterThan(0);
+  await expect(page.locator('#previousTabs')).toBeVisible();
+
+  await page.locator('#tab-people').focus();
+  await page.locator('#tab-people').press('End');
+  await expect(page.locator('#view-sources')).toBeVisible();
+  await expect(page.locator('#nextTabs')).toBeHidden();
+  const activeTabIsVisible = await page.locator('#tab-sources').evaluate((tab, tabs) => {
+    const tabBox = tab.getBoundingClientRect();
+    const tabsBox = tabs.getBoundingClientRect();
+    return tabBox.left >= tabsBox.left - 2 && tabBox.right <= tabsBox.right + 2;
+  }, await strip.elementHandle());
+  expect(activeTabIsVisible).toBe(true);
+});
+
+test('mobile person cards open details and can return focus to the selected card', async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 780 });
+  await page.goto('/#scene=1867-taisei&view=people&person=kido&faction=長州藩');
+
+  const card = page.locator('[data-person-card="katamori"]');
+  await card.click();
+  const back = page.locator('#personBackToList');
+  await expect(back).toBeVisible();
+  await expect(back).toBeFocused();
+  const detailBox = await page.locator('#personDetail').boundingBox();
+  expect(detailBox.y).toBeLessThan(780);
+
+  await back.click();
+  await expect(card).toBeFocused();
+  const cardBox = await card.boundingBox();
+  expect(cardBox.y).toBeGreaterThanOrEqual(0);
+  expect(cardBox.y).toBeLessThan(780);
+});
+
 test('scene details start compact and reveal context on demand', async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 720 });
   await page.goto('/');
