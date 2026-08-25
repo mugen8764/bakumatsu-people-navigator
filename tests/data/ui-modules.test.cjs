@@ -84,6 +84,27 @@ test('route persistence is optional in restricted environments', () => {
   }));
 });
 
+test('route writes add history only for deliberate navigation', () => {
+  const calls = [];
+  const state = stateApi.createState(data, domain, { scene: 0 });
+  const environment = {
+    history: {
+      pushState(_state, _title, url) { calls.push(['push', url]); },
+      replaceState(_state, _title, url) { calls.push(['replace', url]); }
+    },
+    location: { pathname: '/index.html', search: '', hash: '#previous' },
+    storage: null
+  };
+
+  router.writeRoute(state, data.scenes[0], environment, { historyMode: 'push' });
+  assert.equal(calls[0][0], 'push');
+  assert.match(calls[0][1], /scene=1853-blackships&view=people&person=abe/);
+
+  environment.location.hash = `#${calls[0][1].split('#')[1]}`;
+  router.writeRoute(state, data.scenes[0], environment, { historyMode: 'push' });
+  assert.equal(calls[1][0], 'replace');
+});
+
 test('map projection remains deterministic', () => {
   const projection = {
     width: 720,

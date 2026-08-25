@@ -101,6 +101,27 @@ test('alias search and timeline changes preserve the selected person', async ({ 
   await expect(page.locator('#sceneSelect')).toHaveValue('11');
 });
 
+test('browser back and forward revisit deliberate person and view selections', async ({ page }) => {
+  await page.goto('/');
+  await page.locator('#globalSearch').fill('桂小五郎');
+  await page.locator('.search-result', { hasText: '木戸孝允' }).click();
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('桂小五郎');
+
+  await page.locator('#tab-relations').click();
+  await expect(page.locator('#view-relations')).toBeVisible();
+
+  await page.goBack();
+  await expect(page.locator('#view-people')).toBeVisible();
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('桂小五郎');
+
+  await page.goBack();
+  await expect(page.locator('#view-people')).toBeVisible();
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('阿部正弘');
+
+  await page.goForward();
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('桂小五郎');
+});
+
 test('person filters follow displayed affiliations and later-name labels follow chronology', async ({ page }) => {
   await page.goto('/#scene=1853-blackships&view=people&person=perry&faction=幕府');
 

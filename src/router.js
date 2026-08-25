@@ -52,13 +52,16 @@
     return route;
   }
 
-  function writeRoute(state, scene, environment) {
+  function writeRoute(state, scene, environment, options = {}) {
     const { history, location, storage } = environment;
     const query = new URLSearchParams({ scene: scene.id, view: state.view });
     if (state.selectedPerson) query.set('person', state.selectedPerson);
     if (state.selectedFaction) query.set('faction', state.selectedFaction);
+    const url = `${location.pathname}${location.search}#${query}`;
+    const currentUrl = `${location.pathname}${location.search}${location.hash || ''}`;
     try {
-      history?.replaceState(null, '', `${location.pathname}${location.search}#${query}`);
+      if (options.historyMode === 'push' && currentUrl !== url) history?.pushState(null, '', url);
+      else history?.replaceState(null, '', url);
     } catch {
       // URL sharing is optional in restricted contexts such as some file:// browsers.
     }

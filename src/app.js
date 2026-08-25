@@ -76,18 +76,18 @@
     renderers[state.view]();
   }
 
-  function renderAll() {
+  function renderAll(options = {}) {
     window.BM_STATE.ensureSelections(state, data, domain);
     sceneRenderer.renderScene();
     sceneRenderer.renderTabs();
     renderActiveView();
-    window.BM_ROUTER.writeRoute(state, scene(), environment);
+    window.BM_ROUTER.writeRoute(state, scene(), environment, options);
   }
 
   function setScene(sceneIndex, options = {}) {
     window.BM_STATE.setScene(state, data, sceneIndex);
     window.BM_STATE.ensureSelections(state, data, domain);
-    renderAll();
+    renderAll({ historyMode: options.historyMode || 'push' });
     if (options.scroll) $('.card-button.selected')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
 
@@ -97,20 +97,20 @@
     state.scene = domain.nearestSceneForPerson(person, state.scene);
     state.selectedPerson = id;
     if (nextView) state.view = nextView;
-    renderAll();
+    renderAll({ historyMode: 'push' });
   }
 
   function selectFaction(name, nextView = 'factions') {
     state.scene = domain.nearestSceneForFaction(name, state.scene);
     state.selectedFaction = name;
     state.view = nextView;
-    renderAll();
+    renderAll({ historyMode: 'push' });
   }
 
   function setView(view) {
     if (!window.BM_STATE.views.has(view)) return;
     state.view = view;
-    renderAll();
+    renderAll({ historyMode: 'push' });
   }
 
   function openEvent(id) {
@@ -119,7 +119,7 @@
     state.scene = index;
     state.view = 'events';
     window.BM_STATE.ensureSelections(state, data, domain);
-    renderAll();
+    renderAll({ historyMode: 'push' });
   }
 
   Object.assign(actions, { openEvent, selectFaction, selectPerson, setScene, setView });
@@ -173,18 +173,21 @@
     $('#globalSearch').value = '';
     $('#copyStatus').textContent = '';
     searchController.close();
-    renderAll();
+    renderAll({ historyMode: 'push' });
     window.scrollTo({ top: 0, behavior: 'auto' });
   }
 
+  let sceneRangeChanging = false;
   $('#sceneSelect').addEventListener('change', event => {
     stopPlayback();
     setScene(event.target.value);
   });
   $('#sceneRange').addEventListener('input', event => {
     stopPlayback();
-    setScene(event.target.value);
+    setScene(event.target.value, { historyMode: sceneRangeChanging ? 'replace' : 'push' });
+    sceneRangeChanging = true;
   });
+  $('#sceneRange').addEventListener('change', () => { sceneRangeChanging = false; });
   $('#calendarMode').addEventListener('change', event => {
     state.calendar = event.target.value;
     renderAll();
@@ -243,12 +246,15 @@
   $('#copyLink').addEventListener('click', copyCurrentUrl);
   $('#brandMarkHome').addEventListener('click', resetApp);
   $('#brandTitleHome').addEventListener('click', resetApp);
-  window.addEventListener('hashchange', () => {
+  function syncRouteFromLocation() {
+    stopPlayback();
     const route = window.BM_ROUTER.readHashRoute(domain, window.location);
     window.BM_STATE.applyRoute(state, data, route);
     window.BM_STATE.ensureSelections(state, data, domain);
     renderAll();
-  });
+  }
+  window.addEventListener('hashchange', syncRouteFromLocation);
+  window.addEventListener('popstate', syncRouteFromLocation);
 
   renderAll();
   mapRenderer.init();
