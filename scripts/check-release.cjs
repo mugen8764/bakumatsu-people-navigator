@@ -79,6 +79,9 @@ const headers = read('_headers');
 for (const header of ['Content-Security-Policy', 'Permissions-Policy', 'Referrer-Policy', 'X-Content-Type-Options']) {
   if (!headers.includes(`${header}:`)) failures.push(`Missing security header: ${header}`);
 }
+for (const directive of ['/data.js', 'max-age=3600', '/og-image.png', 'max-age=86400']) {
+  if (!headers.includes(directive)) failures.push(`Missing cache policy directive: ${directive}`);
+}
 const inlineScript = notFoundHtml.match(/<script>([\s\S]*?)<\/script>/)?.[1];
 if (!inlineScript) failures.push('404.html must include its base-path recovery script.');
 else {

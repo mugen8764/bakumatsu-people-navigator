@@ -10,7 +10,9 @@ const intervalMs = 10_000;
 const files = [
   'index.html',
   'data/manifest.json',
+  'data.js',
   'data.json',
+  'og-image.png',
   'src/domain.js',
   'src/renderers/people.js'
 ];
@@ -20,6 +22,10 @@ const requiredHeaders = [
   'referrer-policy',
   'x-content-type-options'
 ];
+const requiredCacheControls = new Map([
+  ['data.js', 'max-age=3600'],
+  ['og-image.png', 'max-age=86400']
+]);
 
 function digest(value) {
   return crypto.createHash('sha256').update(value).digest('hex');
@@ -44,8 +50,12 @@ async function inspect(attempt) {
   for (const file of files) {
     try {
       const local = fs.readFileSync(path.join(root, file));
-      const { body } = await fetchProduction(file, attempt);
+      const { response, body } = await fetchProduction(file, attempt);
       if (digest(local) !== digest(body)) failures.push(`${file}: production content differs from this checkout`);
+      const expectedCacheControl = requiredCacheControls.get(file);
+      if (expectedCacheControl && !response.headers.get('cache-control')?.includes(expectedCacheControl)) {
+        failures.push(`${file}: production cache-control is missing ${expectedCacheControl}`);
+      }
     } catch (error) {
       failures.push(error.message);
     }
@@ -69,7 +79,7 @@ async function inspect(attempt) {
     lastFailures = await inspect(attempt);
     if (!lastFailures.length) {
       const manifest = JSON.parse(fs.readFileSync(path.join(root, 'data/manifest.json'), 'utf8'));
-      console.log(`Production matches content ${manifest.contentVersion}: ${files.length} files and ${requiredHeaders.length} security headers.`);
+      console.log(`Production matches content ${manifest.contentVersion}: ${files.length} files, ${requiredHeaders.length} security headers, and ${requiredCacheControls.size} cache policies.`);
       return;
     }
     if (attempt < attempts) {
