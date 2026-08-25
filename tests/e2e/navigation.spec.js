@@ -125,6 +125,37 @@ test('person, relation, map, and event views remain coordinated', async ({ page 
   await expect(page.locator('#eventDetail [data-event-person="kido"]')).toBeVisible();
 });
 
+test('scene board exposes the event cast and factions as direct navigation', async ({ page }) => {
+  await page.goto('/#scene=1866-satcho&view=people&person=kido&faction=長州藩');
+
+  await expect(page.locator('#scenePeople [data-scene-person]')).toHaveCount(6);
+  await expect(page.locator('#sceneFactions [data-scene-faction]')).toHaveCount(3);
+  await expect(page.locator('#sceneInsights .insight')).toHaveCount(3);
+
+  await page.locator('[data-scene-person="ryoma"]').click();
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('坂本龍馬');
+  await expect(page).toHaveURL(/person=ryoma/);
+
+  await page.locator('[data-scene-faction="薩摩藩"]').click();
+  await expect(page.locator('#factionDetail .detail-title')).toHaveText('薩摩藩');
+  await expect(page).toHaveURL(/view=factions/);
+});
+
+test('mobile relation view uses readable cards instead of a scaled graph', async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 780 });
+  await page.goto('/#scene=1866-satcho&view=relations&person=kido&faction=長州藩');
+
+  await expect(page.locator('#relationGraph')).toBeHidden();
+  await expect(page.locator('#relationMobile')).toBeVisible();
+  await expect(page.locator('#relationMobile [data-mobile-relation-person]')).toHaveCount(3);
+  await expect(page.locator('#relationMobile')).toContainText('高杉晋作');
+  await expect(page.locator('#relationMobile')).toContainText('長州改革派');
+
+  await page.locator('[data-mobile-relation-person="saigo"]').click();
+  await expect(page).toHaveURL(/person=saigo/);
+  await expect(page.locator('.relation-mobile-center')).toContainText('西郷吉之助');
+});
+
 test('keyboard shortcut focuses and dismisses global search', async ({ page }) => {
   await page.goto('/');
   await page.keyboard.press('/');

@@ -30,7 +30,13 @@ if (path.dirname(output) !== root || path.basename(output) !== 'dist') {
 fs.rmSync(output, { recursive: true, force: true });
 fs.mkdirSync(output, { recursive: true });
 for (const entry of entries) {
-  fs.cpSync(path.join(root, entry), path.join(output, entry), { recursive: true });
+  const source = path.join(root, entry);
+  const destination = path.join(output, entry);
+  if (entry === '404.html') {
+    fs.writeFileSync(destination, fs.readFileSync(source, 'utf8').replace(/\r\n/g, '\n'), 'utf8');
+  } else {
+    fs.cpSync(source, destination, { recursive: true });
+  }
 }
 
 execFileSync(process.execPath, [path.join(__dirname, 'check-release.cjs'), '--root=dist'], {

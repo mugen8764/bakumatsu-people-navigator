@@ -4,7 +4,23 @@
   'use strict';
 
   function createSceneRenderer(context) {
-    const { $, $$, data, domain, shared, state } = context;
+    const { $, $$, actions, data, domain, shared, state } = context;
+
+    function renderScenePeople(event) {
+      const people = event.people.map(id => {
+        const person = domain.getPerson(id);
+        const status = domain.statusAt(person, state.scene);
+        return person && status ? { person, status } : null;
+      }).filter(Boolean).slice(0, 6);
+      $('#scenePeople').innerHTML = people.map(({ person, status }) => `<button type="button" class="scene-person" data-scene-person="${person.id}"><span class="scene-person-avatar" style="background:${shared.factionColor(status.faction)}">${shared.factionShort(status.faction)}</span><span><strong>${status.display}</strong><small>${status.role}</small></span></button>`).join('');
+      $$('[data-scene-person]').forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.scenePerson, 'people')));
+    }
+
+    function renderSceneFactions(event) {
+      const states = data.factionStates[shared.scene().id] || {};
+      $('#sceneFactions').innerHTML = event.factions.filter(name => states[name]).map(name => `<button type="button" class="scene-faction" data-scene-faction="${name}"><i style="background:${shared.factionColor(name)}"></i><span><strong>${name}</strong><small>${states[name].position}</small></span></button>`).join('');
+      $$('[data-scene-faction]').forEach(button => button.addEventListener('click', () => actions.selectFaction(button.dataset.sceneFaction)));
+    }
 
     function renderScene() {
       const scene = shared.scene();
@@ -21,6 +37,8 @@
       const event = data.events[scene.event];
       $('#sceneCounts').innerHTML = `<span class="count">人物 ${domain.activePeople(state.scene).length}</span><span class="count">勢力 ${domain.activeFactionNames(state.scene).length}</span><span class="count">関係 ${domain.activeRelations(state.scene, state.relationType).length}</span><span class="count">${event.category}</span>${shared.reviewBadge(scene.evidence)}`;
       $('#sceneInsights').innerHTML = scene.insights.map(insight => `<div class="insight">${insight}</div>`).join('');
+      renderScenePeople(event);
+      renderSceneFactions(event);
       $('#prevScene').disabled = state.scene === 0;
       $('#nextScene').disabled = state.scene === data.scenes.length - 1;
       $('#playScenes').textContent = state.timer ? 'Ⅱ 一時停止' : '▶ 再生';

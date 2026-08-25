@@ -30,25 +30,35 @@
 <main class="page">
   <div id="appStatus" class="panel app-status" role="alert" hidden></div>
   <header class="hero">
-    <div class="brand"><div class="mark" aria-hidden="true">幕</div><div><h1>幕末人物・勢力ナビ</h1><p class="lead">黒船来航から箱館戦争終結まで。人物を生涯の経歴ではなく、選択した時点の名前・役職・所属・関係から理解します。</p></div></div>
-    <span class="version">v1 · 出典校正中</span>
+    <div class="brand"><div class="mark" aria-hidden="true">幕</div><div><h1>幕末人物・勢力ナビ</h1><p class="lead">作品で出会った人物の「その時」を、事件・勢力・関係からすばやくつかむ史実ガイド。</p></div></div>
+    <span class="version">1853–1869 · 鑑賞のための史実ガイド</span>
   </header>
 
   <section class="panel top" aria-label="年代と検索">
-    <div class="control-grid">
+    <div class="scene-controls">
       <label>表示時点<select id="sceneSelect"></select></label>
-      <label>時系列<input id="sceneRange" type="range" min="0" value="0"></label>
-      <label>年代表示<select id="calendarMode"><option value="both">西暦＋元号</option><option value="western">西暦のみ</option><option value="japanese">元号のみ</option></select></label>
+      <label class="timeline-control">時系列<input id="sceneRange" type="range" min="0" value="0"></label>
       <div class="transport" aria-label="時系列操作"><button id="prevScene" class="icon-button" type="button" aria-label="前の時点">←</button><button id="playScenes" class="button primary" type="button">▶ 再生</button><button id="nextScene" class="icon-button" type="button" aria-label="次の時点">→</button></div>
+      <label class="calendar-control">年代表示<select id="calendarMode"><option value="both">西暦＋元号</option><option value="western">西暦のみ</option><option value="japanese">元号のみ</option></select></label>
     </div>
-    <div class="scene-row">
+    <div class="scene-dashboard">
       <div class="year-box"><strong id="sceneYear"></strong><span id="sceneEra"></span></div>
-      <div class="scene-copy"><h2 id="sceneTitle"></h2><p id="sceneSummary"></p></div>
+      <div class="scene-copy"><span class="eyebrow">いま何が起きている？</span><h2 id="sceneTitle"></h2><p id="sceneSummary"></p></div>
       <div id="sceneCounts" class="counts"></div>
     </div>
     <div class="progress"><div id="sceneProgress"></div></div>
-    <div id="sceneInsights" class="insights"></div>
-    <div class="global-search" style="margin-top:11px"><label id="globalSearchLabel" for="globalSearch">人物・勢力・事件を横断検索<input id="globalSearch" type="search" role="combobox" aria-autocomplete="list" aria-controls="searchResults" aria-expanded="false" aria-labelledby="globalSearchLabel" placeholder="例：桂小五郎、大政奉還、京都守護職、薩摩"></label><div id="searchResults" class="search-results" role="listbox" aria-label="検索結果" hidden></div></div>
+    <div class="scene-lenses">
+      <section class="scene-lens" aria-labelledby="scenePeopleHeading">
+        <div class="lens-heading"><div><span class="eyebrow">人物と勢力</span><h3 id="scenePeopleHeading">この場面の主役</h3></div><span>選ぶと詳しい立場へ</span></div>
+        <div id="scenePeople" class="scene-people"></div>
+        <div id="sceneFactions" class="scene-factions"></div>
+      </section>
+      <section class="scene-lens" aria-labelledby="sceneInsightsHeading">
+        <div class="lens-heading"><div><span class="eyebrow">転換点</span><h3 id="sceneInsightsHeading">押さえる3点</h3></div></div>
+        <div id="sceneInsights" class="insights"></div>
+      </section>
+    </div>
+    <div class="global-search"><label id="globalSearchLabel" for="globalSearch">人物・勢力・事件を横断検索<input id="globalSearch" type="search" role="combobox" aria-autocomplete="list" aria-controls="searchResults" aria-expanded="false" aria-labelledby="globalSearchLabel" placeholder="例：桂小五郎、大政奉還、京都守護職、薩摩"></label><div id="searchResults" class="search-results" role="listbox" aria-label="検索結果" hidden></div></div>
   </section>
 
   <nav class="tabs" role="tablist" aria-label="表示切替">
@@ -57,7 +67,7 @@
     <button id="tab-relations" class="tab" data-view="relations" type="button" role="tab" aria-controls="view-relations" aria-selected="false" tabindex="-1">相関図</button>
     <button id="tab-map" class="tab" data-view="map" type="button" role="tab" aria-controls="view-map" aria-selected="false" tabindex="-1">地図</button>
     <button id="tab-events" class="tab" data-view="events" type="button" role="tab" aria-controls="view-events" aria-selected="false" tabindex="-1">事件の因果</button>
-    <button id="tab-sources" class="tab" data-view="sources" type="button" role="tab" aria-controls="view-sources" aria-selected="false" tabindex="-1">出典・方針</button>
+    <button id="tab-sources" class="tab tab-secondary" data-view="sources" type="button" role="tab" aria-controls="view-sources" aria-selected="false" tabindex="-1">出典・方針</button>
   </nav>
 
   <section id="view-people" class="view active" role="tabpanel" aria-labelledby="tab-people">
@@ -80,8 +90,8 @@
 
   <section id="view-relations" class="view" role="tabpanel" aria-labelledby="tab-relations" hidden>
     <div class="layout">
-      <div class="panel visual"><svg id="relationGraph" viewBox="0 0 820 590" role="group" aria-label="選択人物を中心とした人物相関図"></svg></div>
-      <aside class="panel side"><h2>時点で変わる相関図</h2><p class="muted">選択人物を中央に置き、その時点で意味のある関係だけを表示します。破線は対立関係です。</p><div class="metrics"><div class="metric"><b id="metricPeople">0</b><span>表示人物</span></div><div class="metric"><b id="metricRelations">0</b><span>全関係</span></div><div class="metric"><b id="metricFactions">0</b><span>活動勢力</span></div></div><label>関係の種類<select id="relationType"><option value="all">すべて</option><option value="主従・登用">主従・登用</option><option value="政治協力">政治協力</option><option value="対立">対立</option><option value="師弟・同志">師弟・同志</option><option value="組織">組織</option><option value="仲介・交渉">仲介・交渉</option><option value="親族">親族</option></select></label><div id="graphExplanation" class="relations" style="margin-top:12px"></div><div id="graphLegend" class="legend"></div></aside>
+      <div class="panel visual"><svg id="relationGraph" viewBox="0 0 820 590" role="group" aria-label="選択人物を中心とした人物相関図"></svg><div id="relationMobile" class="relation-mobile" aria-label="選択人物の関係一覧"></div></div>
+      <aside class="panel side"><h2>時点で変わる相関図</h2><p class="muted">選択人物を中心に、その時点で意味のある関係だけを表示します。</p><div class="metrics"><div class="metric"><b id="metricPeople">0</b><span>図の人物</span></div><div class="metric"><b id="metricRelations">0</b><span>この人物の関係</span></div><div class="metric"><b id="metricFactions">0</b><span>関係勢力</span></div></div><label>関係の種類<select id="relationType"><option value="all">すべて</option><option value="主従・登用">主従・登用</option><option value="政治協力">政治協力</option><option value="対立">対立</option><option value="師弟・同志">師弟・同志</option><option value="組織">組織</option><option value="仲介・交渉">仲介・交渉</option><option value="親族">親族</option></select></label><div id="graphExplanation" class="relations graph-explanation"></div><div id="graphLegend" class="legend"></div></aside>
     </div>
   </section>
 

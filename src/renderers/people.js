@@ -64,7 +64,7 @@
       <div class="section"><h3>関連事件</h3><div class="tags">${person.events.map(id => data.events[id] ? `<button type="button" class="tag" data-open-event="${id}">${data.events[id].title}</button>` : '').join('')}</div></div>
       <div class="section"><h3>人物の変化</h3><div class="history-list">${history.map(item => `<div class="history-item ${item.scene.index === state.scene ? 'current' : ''}"><button type="button" data-history-scene="${item.scene.index}"><b>${item.scene.year}年 ${item.value.display} ${shared.reviewBadge(item.value.evidence)}</b>${item.value.role}</button></div>`).join('')}</div></div>
       <div class="actions"><button type="button" class="button" id="personToGraph">相関図</button><button type="button" class="button" id="personToMap">地図</button></div>
-      <div class="section"><h3>参考資料</h3><div class="source-list">${shared.sourceLinks(person.sources)}</div></div>`;
+      <details class="source-disclosure section"><summary>参考資料を見る</summary><div class="source-list">${shared.sourceLinks(person.sources)}</div></details>`;
       $$('[data-other-person]', box).forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.otherPerson)));
       $$('[data-event-peer]', box).forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.eventPeer)));
       $$('[data-open-event]', box).forEach(button => button.addEventListener('click', () => actions.openEvent(button.dataset.openEvent)));

@@ -82,7 +82,8 @@ for (const header of ['Content-Security-Policy', 'Permissions-Policy', 'Referrer
 const inlineScript = notFoundHtml.match(/<script>([\s\S]*?)<\/script>/)?.[1];
 if (!inlineScript) failures.push('404.html must include its base-path recovery script.');
 else {
-  const hash = crypto.createHash('sha256').update(inlineScript).digest('base64');
+  const normalizedScript = inlineScript.replace(/\r\n/g, '\n');
+  const hash = crypto.createHash('sha256').update(normalizedScript).digest('base64');
   if (!headers.includes(`'sha256-${hash}'`)) failures.push('Content-Security-Policy does not allow the exact 404 recovery script.');
 }
 

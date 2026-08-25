@@ -27,7 +27,7 @@
       <div class="event-block"><h3>関係勢力</h3><div class="tags">${event.factions.map(name => `<button type="button" class="tag" data-event-faction="${name}">${name}</button>`).join('')}</div></div>
       <div class="event-block"><h3>結果・次への影響</h3><ul>${event.results.map(result => `<li>${result}</li>`).join('')}</ul></div>
       <div class="actions"><button type="button" class="button" id="eventToMap">地図で見る</button></div>
-      <div class="section"><h3>参考資料</h3><div class="source-list">${shared.sourceLinks(event.sources)}</div></div>`;
+      <details class="source-disclosure section"><summary>参考資料を見る</summary><div class="source-list">${shared.sourceLinks(event.sources)}</div></details>`;
       $$('[data-event-person]').forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.eventPerson, 'people')));
       $$('[data-event-faction]').forEach(button => button.addEventListener('click', () => actions.selectFaction(button.dataset.eventFaction)));
       $('#eventToMap').addEventListener('click', () => actions.setView('map'));
