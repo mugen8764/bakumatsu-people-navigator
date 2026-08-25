@@ -41,6 +41,35 @@ test('footer links expose reader-facing publication information', async ({ page 
   await expect(page.locator('footer a[href="SOURCES.md"]')).toHaveCount(0);
 });
 
+test('brand icon and title restore the complete initial state', async ({ page }) => {
+  await page.goto('/#scene=1867-taisei&view=relations&person=kido&faction=長州藩');
+  await page.locator('#calendarMode').selectOption('japanese');
+  await page.locator('#relationType').selectOption('対立');
+  await page.locator('#globalSearch').fill('大政奉還');
+  await expect(page.locator('#searchResults')).toBeVisible();
+
+  await page.locator('#brandTitleHome').click();
+
+  await expect(page.locator('#sceneSelect')).toHaveValue('0');
+  await expect(page.locator('#tab-people')).toHaveAttribute('aria-selected', 'true');
+  await expect(page.locator('#view-people')).toBeVisible();
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('阿部正弘');
+  await expect(page.locator('[data-person-filter="すべて"]')).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('#calendarMode')).toHaveValue('both');
+  await expect(page.locator('#relationType')).toHaveValue('all');
+  await expect(page.locator('#globalSearch')).toHaveValue('');
+  await expect(page.locator('#searchResults')).toBeHidden();
+  await expect(page).toHaveURL(/#scene=1853-blackships&view=people&person=abe&faction=%E5%B9%95%E5%BA%9C$/);
+
+  await page.locator('#nextScene').click();
+  await page.locator('#brandMarkHome').click();
+  await expect(page.locator('#sceneSelect')).toHaveValue('0');
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('阿部正弘');
+  await page.reload();
+  await expect(page.locator('#sceneSelect')).toHaveValue('0');
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('阿部正弘');
+});
+
 test('all primary views stay inside a 320px document viewport', async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 780 });
   await page.goto('/');

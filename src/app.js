@@ -165,6 +165,18 @@
     sourcesView.scrollIntoView({ block: 'start' });
   }
 
+  function resetApp(event) {
+    event.preventDefault();
+    stopPlayback();
+    window.BM_STATE.resetState(state, data, domain);
+    $('#relationType').value = 'all';
+    $('#globalSearch').value = '';
+    $('#copyStatus').textContent = '';
+    searchController.close();
+    renderAll();
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }
+
   $('#sceneSelect').addEventListener('change', event => {
     stopPlayback();
     setScene(event.target.value);
@@ -229,6 +241,8 @@
   });
   $('#footerSources').addEventListener('click', openSourcesFromFooter);
   $('#copyLink').addEventListener('click', copyCurrentUrl);
+  $('#brandMarkHome').addEventListener('click', resetApp);
+  $('#brandTitleHome').addEventListener('click', resetApp);
   window.addEventListener('hashchange', () => {
     const route = window.BM_ROUTER.readHashRoute(domain, window.location);
     window.BM_STATE.applyRoute(state, data, route);

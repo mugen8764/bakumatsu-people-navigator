@@ -51,5 +51,20 @@
     if (route.calendar !== undefined && calendars.has(route.calendar)) state.calendar = route.calendar;
   }
 
-  return { applyRoute, calendars, createState, ensureSelections, setScene, views };
+  function resetState(state, data, domain) {
+    setScene(state, data, 0);
+    state.view = 'people';
+    state.selectedPerson = 'abe';
+    state.selectedFaction = '幕府';
+    state.personFactionFilter = 'すべて';
+    state.relationType = 'all';
+    state.calendar = 'both';
+    if (state.map) {
+      state.map.selectedPlace = '';
+      state.map.zoomedPlace = '';
+    }
+    ensureSelections(state, data, domain);
+  }
+
+  return { applyRoute, calendars, createState, ensureSelections, resetState, setScene, views };
 }));

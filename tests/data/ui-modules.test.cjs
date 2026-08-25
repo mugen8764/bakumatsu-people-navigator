@@ -50,6 +50,31 @@ test('state rejects invalid view and calendar values', () => {
   assert.equal(state.selectedFaction, '幕府');
 });
 
+test('state reset restores every selectable control to its initial value', () => {
+  const state = stateApi.createState(data, domain, {
+    scene: 11,
+    view: 'relations',
+    selectedPerson: 'kido',
+    selectedFaction: '長州藩',
+    calendar: 'japanese'
+  });
+  state.personFactionFilter = '長州藩';
+  state.relationType = '対立';
+  state.map = { selectedPlace: 'edo', zoomedPlace: 'edo' };
+
+  stateApi.resetState(state, data, domain);
+
+  assert.equal(state.scene, 0);
+  assert.equal(state.view, 'people');
+  assert.equal(state.selectedPerson, 'abe');
+  assert.equal(state.selectedFaction, '幕府');
+  assert.equal(state.personFactionFilter, 'すべて');
+  assert.equal(state.relationType, 'all');
+  assert.equal(state.calendar, 'both');
+  assert.equal(state.map.selectedPlace, '');
+  assert.equal(state.map.zoomedPlace, '');
+});
+
 test('route persistence is optional in restricted environments', () => {
   const state = stateApi.createState(data, domain, { scene: 0 });
   assert.doesNotThrow(() => router.writeRoute(state, data.scenes[0], {
