@@ -38,7 +38,7 @@
     <div class="scene-controls">
       <label>表示時点<select id="sceneSelect"></select></label>
       <label class="timeline-control">時系列<input id="sceneRange" type="range" min="0" value="0"></label>
-      <div class="transport" aria-label="時系列操作"><button id="prevScene" class="icon-button" type="button" aria-label="前の時点">←</button><button id="playScenes" class="button primary" type="button">▶ 再生</button><button id="nextScene" class="icon-button" type="button" aria-label="次の時点">→</button></div>
+      <div class="transport" aria-label="時系列操作"><button id="prevScene" class="button timeline-step" type="button">← 前へ</button><button id="nextScene" class="button timeline-step" type="button">次へ →</button></div>
       <label class="calendar-control">年代表示<select id="calendarMode"><option value="both">西暦＋元号</option><option value="western">西暦のみ</option><option value="japanese">元号のみ</option></select></label>
     </div>
     <div class="scene-dashboard">
@@ -46,7 +46,7 @@
       <div class="scene-copy"><span class="eyebrow">いま何が起きている？</span><h2 id="sceneTitle"></h2><p id="sceneSummary"></p></div>
       <div class="scene-meta">
         <div id="sceneCounts" class="counts"></div>
-        <button id="sceneCopyLink" class="scene-copy-link" type="button" data-copy-link>表示中の状態を共有</button>
+        <button id="sceneCopyLink" class="scene-copy-link" type="button" data-copy-link aria-describedby="sceneCopyStatus">表示中の状態を共有</button>
         <span id="sceneCopyStatus" class="scene-copy-status" data-copy-status aria-live="polite"></span>
       </div>
     </div>
@@ -139,7 +139,7 @@
     </div>
   </section>
 
-  <footer class="panel"><div class="footer-row"><div><strong>幕末人物・勢力ナビ 1853–1869</strong><br>史実の背景知識を、人物・勢力・事件・場所のつながりとして整理した静的サイトです。</div><div class="footer-links"><button id="footerSources" class="link-button" type="button">出典・編集方針</button><a href="https://github.com/mugen8764/bakumatsu-people-navigator">GitHub</a><button id="copyLink" class="link-button" type="button" data-copy-link>現在の表示URLをコピー</button></div></div><div id="copyStatus" class="status-line" data-copy-status aria-live="polite"></div></footer>
+  <footer class="panel"><div class="footer-row"><div><strong>幕末人物・勢力ナビ 1853–1869</strong><br>史実の背景知識を、人物・勢力・事件・場所のつながりとして整理した静的サイトです。</div><div class="footer-links"><button id="footerSources" class="link-button" type="button">出典・編集方針</button><a href="https://github.com/mugen8764/bakumatsu-people-navigator">GitHub</a><button id="copyLink" class="link-button" type="button" data-copy-link aria-describedby="copyStatus">現在の表示URLをコピー</button></div></div><div id="copyStatus" class="status-line" data-copy-status aria-live="polite"></div></footer>
 </main>
 <noscript><p style="padding:20px">このサイトの表示にはJavaScriptが必要です。</p></noscript>
 <script src="map-data.js"></script>

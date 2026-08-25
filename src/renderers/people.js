@@ -50,7 +50,7 @@
         box.innerHTML = '<div class="detail-empty">人物を選択してください。</div>';
         return;
       }
-      const relations = domain.relationsFor(person.id, state.scene, state.relationType);
+      const relations = domain.relationsFor(person.id, state.scene);
       const event = data.events[shared.scene().event];
       const eventPeers = domain.eventPeersFor(person.id, state.scene);
       const laterName = domain.laterNameAt(person, state.scene);

@@ -1,14 +1,23 @@
 const { expect, test } = require('@playwright/test');
 
+async function settle(page) {
+  await page.evaluate(async () => {
+    await document.fonts.ready;
+    await new Promise(resolve => requestAnimationFrame(resolve));
+    await new Promise(resolve => requestAnimationFrame(resolve));
+  });
+}
+
 async function prepare(page, { width, height, colorScheme }) {
   await page.setViewportSize({ width, height });
   await page.emulateMedia({ colorScheme, reducedMotion: 'reduce' });
   await page.addInitScript(() => localStorage.clear());
   await page.goto('/#scene=1867-taisei&view=people&person=kido&faction=長州藩');
   await page.addStyleTag({
-    content: '*,*::before,*::after{animation:none!important;transition:none!important;caret-color:transparent!important}'
+    content: '*,*::before,*::after{animation:none!important;transition:none!important;caret-color:transparent!important}.tabs-shell{transform:translateZ(0)!important}'
   });
   await expect(page.locator('#personDetail .detail-title')).toHaveText('木戸孝允');
+  await settle(page);
 }
 
 async function prepareMap(page, { width, height, colorScheme }) {
@@ -20,6 +29,7 @@ async function prepareMap(page, { width, height, colorScheme }) {
     content: '*,*::before,*::after{animation:none!important;transition:none!important;caret-color:transparent!important}.tabs-shell{position:static!important}'
   });
   await expect(page.locator('#mapTitle')).toContainText('ペリー');
+  await settle(page);
 }
 
 test('desktop light appearance stays stable', async ({ page }) => {
@@ -65,6 +75,7 @@ test('zoomed Tokyo Bay map stays readable on desktop', async ({ page }) => {
   await prepareMap(page, { width: 1280, height: 900, colorScheme: 'light' });
   await page.locator('[data-map-label-trigger="uraga"]').click();
   await expect(page.locator('#resetMapView')).toBeVisible();
+  await settle(page);
   await expect(page.locator('#view-map')).toHaveScreenshot('map-zoomed-tokyo-desktop.png', { animations: 'disabled' });
 });
 
@@ -72,5 +83,6 @@ test('zoomed Tokyo Bay map stays readable at 320px', async ({ page }) => {
   await prepareMap(page, { width: 320, height: 780, colorScheme: 'light' });
   await page.locator('[data-map-label-trigger="uraga"]').click();
   await expect(page.locator('#resetMapView')).toBeVisible();
+  await settle(page);
   await expect(page.locator('#view-map')).toHaveScreenshot('map-zoomed-tokyo-mobile-320.png', { animations: 'disabled' });
 });

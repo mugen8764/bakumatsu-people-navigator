@@ -38,7 +38,7 @@
       view: hash.get('view') || safeGet(storage, 'bm.view') || 'people',
       selectedPerson: hash.get('person') || safeGet(storage, 'bm.person') || 'abe',
       selectedFaction: hash.get('faction') || safeGet(storage, 'bm.faction') || '幕府',
-      calendar: safeGet(storage, 'bm.calendar') || 'both'
+      calendar: hash.get('calendar') || safeGet(storage, 'bm.calendar') || 'both'
     };
   }
 
@@ -49,6 +49,7 @@
     if (hash.has('view')) route.view = hash.get('view');
     if (hash.has('person')) route.selectedPerson = hash.get('person');
     if (hash.has('faction')) route.selectedFaction = hash.get('faction');
+    if (hash.has('calendar')) route.calendar = hash.get('calendar');
     return route;
   }
 
@@ -57,6 +58,7 @@
     const query = new URLSearchParams({ scene: scene.id, view: state.view });
     if (state.selectedPerson) query.set('person', state.selectedPerson);
     if (state.selectedFaction) query.set('faction', state.selectedFaction);
+    query.set('calendar', state.calendar);
     const url = `${location.pathname}${location.search}#${query}`;
     const currentUrl = `${location.pathname}${location.search}${location.hash || ''}`;
     try {

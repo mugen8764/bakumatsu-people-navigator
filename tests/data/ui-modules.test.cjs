@@ -30,7 +30,7 @@ test('search highlighting preserves text safely', () => {
 test('initial route prefers valid hash values and tolerates blocked storage', () => {
   const blockedStorage = { getItem() { throw new Error('blocked'); } };
   const route = router.readInitialRoute(data, domain, {
-    location: { hash: '#scene=1867-taisei&view=relations&person=kido&faction=長州藩' },
+    location: { hash: '#scene=1867-taisei&view=relations&person=kido&faction=長州藩&calendar=japanese' },
     storage: blockedStorage
   });
   assert.deepEqual(route, {
@@ -38,7 +38,7 @@ test('initial route prefers valid hash values and tolerates blocked storage', ()
     view: 'relations',
     selectedPerson: 'kido',
     selectedFaction: '長州藩',
-    calendar: 'both'
+    calendar: 'japanese'
   });
 });
 
@@ -81,6 +81,23 @@ test('state reset restores every selectable control to its initial value', () =>
   assert.equal(state.map.zoomedPlace, '');
 });
 
+test('person and faction selection transitions stay consistent', () => {
+  const state = stateApi.createState(data, domain, {
+    scene: 9,
+    selectedPerson: 'kido',
+    selectedFaction: '長州藩'
+  });
+
+  assert.equal(stateApi.selectPerson(state, data, domain, 'saigo'), true);
+  assert.equal(state.selectedPerson, 'saigo');
+  assert.equal(state.selectedFaction, '薩摩藩');
+
+  assert.equal(stateApi.selectFaction(state, data, domain, '長州藩'), true);
+  assert.equal(state.selectedPerson, 'kido');
+  assert.equal(state.selectedFaction, '長州藩');
+  assert.equal(stateApi.selectFaction(state, data, domain, '存在しない勢力'), false);
+});
+
 test('route persistence is optional in restricted environments', () => {
   const state = stateApi.createState(data, domain, { scene: 0 });
   assert.doesNotThrow(() => router.writeRoute(state, data.scenes[0], {
@@ -104,7 +121,7 @@ test('route writes add history only for deliberate navigation', () => {
 
   router.writeRoute(state, data.scenes[0], environment, { historyMode: 'push' });
   assert.equal(calls[0][0], 'push');
-  assert.match(calls[0][1], /scene=1853-blackships&view=people&person=abe/);
+  assert.match(calls[0][1], /scene=1853-blackships&view=people&person=abe.*calendar=both/);
 
   environment.location.hash = `#${calls[0][1].split('#')[1]}`;
   router.writeRoute(state, data.scenes[0], environment, { historyMode: 'push' });

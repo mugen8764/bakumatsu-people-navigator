@@ -77,6 +77,7 @@
   }
 
   function renderAll(options = {}) {
+    clearCopyStatuses();
     window.BM_STATE.ensureSelections(state, data, domain);
     sceneRenderer.renderScene();
     sceneRenderer.renderTabs();
@@ -93,17 +94,13 @@
   }
 
   function selectPerson(id, nextView = null) {
-    const person = domain.getPerson(id);
-    if (!person) return;
-    state.scene = domain.nearestSceneForPerson(person, state.scene);
-    state.selectedPerson = id;
+    if (!window.BM_STATE.selectPerson(state, data, domain, id)) return;
     if (nextView) state.view = nextView;
     renderAll({ historyMode: 'push' });
   }
 
   function selectFaction(name, nextView = 'factions') {
-    state.scene = domain.nearestSceneForFaction(name, state.scene);
-    state.selectedFaction = name;
+    if (!window.BM_STATE.selectFaction(state, data, domain, name)) return;
     state.view = nextView;
     renderAll({ historyMode: 'push' });
   }
@@ -125,37 +122,18 @@
 
   Object.assign(actions, { openEvent, selectFaction, selectPerson, setScene, setView });
 
-  function stopPlayback() {
-    if (!state.timer) return;
-    clearInterval(state.timer);
-    state.timer = null;
-    sceneRenderer.renderScene();
+  function clearCopyStatuses() {
+    $$('[data-copy-status]').forEach(status => { status.textContent = ''; });
   }
 
-  function togglePlayback() {
-    if (state.timer) {
-      stopPlayback();
-      return;
-    }
-    state.timer = setInterval(() => {
-      if (state.scene >= data.scenes.length - 1) {
-        stopPlayback();
-        return;
-      }
-      state.scene += 1;
-      window.BM_STATE.ensureSelections(state, data, domain);
-      renderAll();
-    }, 2200);
-    sceneRenderer.renderScene();
-  }
-
-  async function copyCurrentUrl() {
-    const statuses = $$('[data-copy-status]');
+  async function copyCurrentUrl(event) {
+    clearCopyStatuses();
+    const status = event.currentTarget.id === 'sceneCopyLink' ? $('#sceneCopyStatus') : $('#copyStatus');
     try {
       await navigator.clipboard.writeText(location.href);
-      statuses.forEach(status => { status.textContent = '表示中の状態を共有するURLをコピーしました。'; });
+      status.textContent = '表示中の状態を共有するURLをコピーしました。';
     } catch {
-      statuses.forEach(status => { status.textContent = `URL: ${location.href}`; });
+      status.textContent = `URL: ${location.href}`;
     }
   }
 
@@ -168,11 +146,9 @@
 
   function resetApp(event) {
     event.preventDefault();
-    stopPlayback();
     window.BM_STATE.resetState(state, data, domain);
     $('#relationType').value = 'all';
     $('#globalSearch').value = '';
-    $$('[data-copy-status]').forEach(status => { status.textContent = ''; });
     $('#sceneDetails').open = false;
     searchController.close();
     renderAll({ historyMode: 'push' });
@@ -181,11 +157,9 @@
 
   let sceneRangeChanging = false;
   $('#sceneSelect').addEventListener('change', event => {
-    stopPlayback();
     setScene(event.target.value);
   });
   $('#sceneRange').addEventListener('input', event => {
-    stopPlayback();
     setScene(event.target.value, { historyMode: sceneRangeChanging ? 'replace' : 'push' });
     sceneRangeChanging = true;
   });
@@ -195,20 +169,18 @@
     renderAll();
   });
   $('#prevScene').addEventListener('click', () => {
-    stopPlayback();
     setScene(state.scene - 1);
   });
   $('#nextScene').addEventListener('click', () => {
-    stopPlayback();
     setScene(state.scene + 1);
   });
-  $('#playScenes').addEventListener('click', togglePlayback);
   $('#clearPersonFilter').addEventListener('click', () => {
     state.personFactionFilter = 'すべて';
     peopleRenderer.render();
   });
   $('#relationType').addEventListener('change', event => {
     state.relationType = event.target.value;
+    clearCopyStatuses();
     relationsRenderer.render();
   });
   const tabs = $$('.tab');
@@ -279,7 +251,6 @@
   $('#brandMarkHome').addEventListener('click', resetApp);
   $('#brandTitleHome').addEventListener('click', resetApp);
   function syncRouteFromLocation() {
-    stopPlayback();
     const route = window.BM_ROUTER.readHashRoute(domain, window.location);
     window.BM_STATE.applyRoute(state, data, route);
     window.BM_STATE.ensureSelections(state, data, domain);

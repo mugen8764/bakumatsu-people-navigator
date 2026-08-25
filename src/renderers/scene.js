@@ -5,6 +5,8 @@
 
   function createSceneRenderer(context) {
     const { $, $$, actions, data, domain, shared, state } = context;
+    let sceneControlsInitialized = false;
+    let sourcesRendered = false;
 
     function renderScenePeople(event) {
       const people = event.people.map(id => {
@@ -101,9 +103,12 @@
 
     function renderScene() {
       const scene = shared.scene();
-      $('#sceneSelect').innerHTML = data.scenes.map((item, index) => `<option value="${index}">${item.year} ${item.title}</option>`).join('');
+      if (!sceneControlsInitialized) {
+        $('#sceneSelect').innerHTML = data.scenes.map((item, index) => `<option value="${index}">${item.year} ${item.title}</option>`).join('');
+        $('#sceneRange').max = data.scenes.length - 1;
+        sceneControlsInitialized = true;
+      }
       $('#sceneSelect').value = state.scene;
-      $('#sceneRange').max = data.scenes.length - 1;
       $('#sceneRange').value = state.scene;
       $('#calendarMode').value = state.calendar;
       $('#sceneYear').textContent = state.calendar === 'japanese' ? scene.era : scene.year;
@@ -112,15 +117,13 @@
       $('#sceneSummary').textContent = scene.summary;
       $('#sceneProgress').style.width = `${(state.scene + 1) / data.scenes.length * 100}%`;
       const event = data.events[scene.event];
-      $('#sceneCounts').innerHTML = `<span class="count">人物 ${domain.activePeople(state.scene).length}</span><span class="count">勢力 ${domain.activeFactionNames(state.scene).length}</span><span class="count">関係 ${domain.activeRelations(state.scene, state.relationType).length}</span><span class="count">${event.category}</span>${shared.reviewBadge(scene.evidence)}`;
+      $('#sceneCounts').innerHTML = `<span class="count">人物 ${domain.activePeople(state.scene).length}</span><span class="count">勢力 ${domain.activeFactionNames(state.scene).length}</span><span class="count">関係 ${domain.activeRelations(state.scene).length}</span><span class="count">${event.category}</span>${shared.reviewBadge(scene.evidence)}`;
       $('#sceneInsights').innerHTML = scene.insights.map(insight => `<div class="insight">${insight}</div>`).join('');
       renderSceneChanges(event);
       renderScenePeople(event);
       renderSceneFactions(event);
       $('#prevScene').disabled = state.scene === 0;
       $('#nextScene').disabled = state.scene === data.scenes.length - 1;
-      $('#playScenes').textContent = state.timer ? 'Ⅱ 一時停止' : '▶ 再生';
-      $('#playScenes').setAttribute('aria-pressed', String(Boolean(state.timer)));
     }
 
     function renderTabs() {
@@ -138,8 +141,10 @@
     }
 
     function renderSources() {
+      if (sourcesRendered) return;
       $('#dataStats').innerHTML = `<div class="stat"><b>${data.people.length}</b><span>人物</span></div><div class="stat"><b>${Object.keys(data.factions).length}</b><span>勢力</span></div><div class="stat"><b>${data.scenes.length}</b><span>時点・事件</span></div><div class="stat"><b>${data.relations.length}</b><span>人物関係</span></div>`;
       $('#sourceCatalog').innerHTML = Object.values(data.sources).map(shared.sourceCard).join('');
+      sourcesRendered = true;
     }
 
     return { renderScene, renderSources, renderTabs };

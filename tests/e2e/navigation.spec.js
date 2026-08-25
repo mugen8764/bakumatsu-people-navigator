@@ -59,7 +59,7 @@ test('brand icon and title restore the complete initial state', async ({ page })
   await expect(page.locator('#relationType')).toHaveValue('all');
   await expect(page.locator('#globalSearch')).toHaveValue('');
   await expect(page.locator('#searchResults')).toBeHidden();
-  await expect(page).toHaveURL(/#scene=1853-blackships&view=people&person=abe&faction=%E5%B9%95%E5%BA%9C$/);
+  await expect(page).toHaveURL(/#scene=1853-blackships&view=people&person=abe&faction=%E5%B9%95%E5%BA%9C&calendar=both$/);
 
   await page.locator('#nextScene').click();
   await page.locator('#brandMarkHome').click();
@@ -475,11 +475,9 @@ test('timeline transport, calendar mode, and faction selection remain usable', a
   await page.locator('#calendarMode').selectOption('japanese');
   await expect(page.locator('#sceneYear')).toHaveText('嘉永7年／安政元年');
 
-  await page.locator('#playScenes').click();
-  await expect(page.locator('#playScenes')).toContainText('一時停止');
-  await expect.poll(() => page.locator('#sceneSelect').inputValue(), { timeout: 4_000 }).not.toBe('1');
-  await page.locator('#playScenes').click();
-  await expect(page.locator('#playScenes')).toContainText('再生');
+  await page.locator('#prevScene').click();
+  await expect(page.locator('#sceneSelect')).toHaveValue('0');
+  await expect(page.locator('#prevScene')).toBeDisabled();
 
   await page.locator('.tab[data-view="factions"]').click();
   await page.locator('[data-faction-card="幕府"]').click();
@@ -490,6 +488,7 @@ test('timeline transport, calendar mode, and faction selection remain usable', a
 test('the current scene and selection can be copied from the scene summary', async ({ page }) => {
   await page.goto('/');
   await page.locator('[data-person-card="abe"]').click();
+  await page.locator('#calendarMode').selectOption('japanese');
   await page.evaluate(() => {
     window.copiedUrl = '';
     Object.defineProperty(navigator, 'clipboard', {
@@ -500,16 +499,45 @@ test('the current scene and selection can be copied from the scene summary', asy
 
   await page.locator('#sceneCopyLink').click();
   await expect(page.locator('#sceneCopyStatus')).toContainText('コピーしました');
-  await expect.poll(() => page.evaluate(() => window.copiedUrl)).toMatch(/scene=1853-blackships&view=people&person=abe/);
+  await expect(page.locator('#copyStatus')).toHaveText('');
+  await expect.poll(() => page.evaluate(() => window.copiedUrl)).toMatch(/scene=1853-blackships&view=people&person=abe.*calendar=japanese/);
+
+  await page.locator('#nextScene').click();
+  await expect(page.locator('#sceneCopyStatus')).toHaveText('');
+});
+
+test('relation filtering stays local to the relations view', async ({ page }) => {
+  await page.goto('/#scene=1866-satcho&view=relations&person=kido&faction=長州藩');
+  const totalCounts = await page.locator('#sceneCounts').textContent();
+
+  await page.locator('#relationType').selectOption('仲介・交渉');
+  await page.locator('.tab[data-view="people"]').click();
+
+  await expect(page.locator('#sceneCounts')).toHaveText(totalCounts);
+  await expect(page.locator('#personDetail')).toContainText('長州改革派');
+  await expect(page.locator('#personDetail')).toContainText('合意内容の確認');
+});
+
+test('person and faction selections remain mutually consistent', async ({ page }) => {
+  await page.goto('/#scene=1866-satcho&view=people&person=kido&faction=長州藩');
+
+  await page.locator('[data-person-card="saigo"]').click();
+  await expect(page).toHaveURL(/person=saigo&faction=%E8%96%A9%E6%91%A9%E8%97%A9/);
+  await page.locator('.tab[data-view="factions"]').click();
+  await expect(page.locator('#factionDetail .detail-title')).toHaveText('薩摩藩');
+
+  await page.locator('[data-faction-card="長州藩"]').click();
+  await expect(page).toHaveURL(/person=kido&faction=%E9%95%B7%E5%B7%9E%E8%97%A9/);
 });
 
 test('changing the hash after load updates the visible state', async ({ page }) => {
   await page.goto('/');
   await page.evaluate(() => {
-    location.hash = 'scene=1867-taisei&view=relations&person=kido&faction=長州藩';
+    location.hash = 'scene=1867-taisei&view=relations&person=kido&faction=長州藩&calendar=japanese';
   });
   await expect(page.locator('#view-relations')).toBeVisible();
   await expect(page.locator('#sceneSelect')).toHaveValue('11');
+  await expect(page.locator('#calendarMode')).toHaveValue('japanese');
   await expect(page.locator('#relationGraph .node.selected')).toHaveAttribute('data-graph-person', 'kido');
 });
 

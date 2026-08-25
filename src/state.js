@@ -17,7 +17,6 @@
       personFactionFilter: 'すべて',
       relationType: 'all',
       calendar: calendars.has(initial.calendar) ? initial.calendar : 'both',
-      timer: null,
       mapReady: false,
       map: null
     };
@@ -51,6 +50,30 @@
     if (route.calendar !== undefined && calendars.has(route.calendar)) state.calendar = route.calendar;
   }
 
+  function selectPerson(state, data, domain, id) {
+    const person = domain.getPerson(id);
+    if (!person) return false;
+    state.scene = domain.nearestSceneForPerson(person, state.scene);
+    state.selectedPerson = id;
+    const faction = domain.statusAt(person, state.scene)?.faction;
+    if (domain.activeFactionNames(state.scene).includes(faction)) state.selectedFaction = faction;
+    ensureSelections(state, data, domain);
+    return true;
+  }
+
+  function selectFaction(state, data, domain, name) {
+    if (!data.factions[name]) return false;
+    state.scene = domain.nearestSceneForFaction(name, state.scene);
+    state.selectedFaction = name;
+    const selectedPerson = domain.getPerson(state.selectedPerson);
+    if (!selectedPerson || domain.factionAt(selectedPerson, state.scene) !== name) {
+      state.selectedPerson = domain.activePeople(state.scene)
+        .find(person => domain.factionAt(person, state.scene) === name)?.id || state.selectedPerson;
+    }
+    ensureSelections(state, data, domain);
+    return true;
+  }
+
   function resetState(state, data, domain) {
     setScene(state, data, 0);
     state.view = 'people';
@@ -66,5 +89,5 @@
     ensureSelections(state, data, domain);
   }
 
-  return { applyRoute, calendars, createState, ensureSelections, resetState, setScene, views };
+  return { applyRoute, calendars, createState, ensureSelections, resetState, selectFaction, selectPerson, setScene, views };
 }));
