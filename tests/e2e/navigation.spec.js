@@ -428,6 +428,24 @@ test('keyboard shortcut focuses and dismisses global search', async ({ page }) =
   await expect(page.locator('#globalSearch')).toHaveValue('');
 });
 
+test('broad search results stay grouped and highlight visible matches', async ({ page }) => {
+  await page.goto('/');
+  const search = page.locator('#globalSearch');
+  await search.fill('幕府');
+
+  await expect(page.locator('#searchResults .search-group')).toHaveCount(3);
+  await expect(page.locator('#search-group-people')).toContainText('人物');
+  await expect(page.locator('#search-group-factions')).toContainText('勢力');
+  await expect(page.locator('#search-group-events')).toContainText('事件');
+  await expect(page.locator('#searchResults mark', { hasText: '幕府' }).first()).toBeVisible();
+  await expect(page.locator('#searchResults .search-result')).toHaveCount(14);
+
+  await search.press('ArrowUp');
+  await expect(search).toHaveAttribute('aria-activedescendant', 'search-result-13');
+  await search.press('Enter');
+  await expect(page.locator('#view-events')).toBeVisible();
+});
+
 test('keyboard focus remains visible at 320px in dark mode', async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 780 });
   await page.emulateMedia({ colorScheme: 'dark', reducedMotion: 'reduce' });

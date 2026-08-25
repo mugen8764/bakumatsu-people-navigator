@@ -8,7 +8,7 @@ require(path.resolve(__dirname, '../../src/renderers/shared.js'));
 const { createShared } = globalThis.BM_RENDER_SHARED;
 const router = require(path.resolve(__dirname, '../../src/router.js'));
 const stateApi = require(path.resolve(__dirname, '../../src/state.js'));
-const { normalise, searchAll } = require(path.resolve(__dirname, '../../src/search.js'));
+const { highlightMatch, normalise, searchAll } = require(path.resolve(__dirname, '../../src/search.js'));
 const { layoutMapLabels, mapViewBoxForPoint, projectMapCoord } = require(path.resolve(__dirname, '../../src/map.js'));
 
 const domain = createDomain(data);
@@ -18,7 +18,13 @@ test('search normalization and aliases retain current behavior', () => {
   assert.equal(searchAll(data, '桂小五郎')[0].id, 'kido');
   assert.equal(searchAll(data, '木戸孝允').find(result => result.id === 'kido').title, '木戸孝允');
   assert.equal(searchAll(data, '大政奉還').find(result => result.type === '事件').id, 'taisei');
+  assert.deepEqual([...new Set(searchAll(data, '幕府').map(result => result.type))], ['人物', '勢力', '事件']);
   assert.equal(searchAll(data, '').length, 0);
+});
+
+test('search highlighting preserves text safely', () => {
+  assert.equal(highlightMatch('桂小五郎／木戸孝允', '桂小五郎'), '<mark>桂小五郎</mark>／木戸孝允');
+  assert.equal(highlightMatch('<script>桂小五郎</script>', '桂小五郎'), '&lt;script&gt;<mark>桂小五郎</mark>&lt;/script&gt;');
 });
 
 test('initial route prefers valid hash values and tolerates blocked storage', () => {
