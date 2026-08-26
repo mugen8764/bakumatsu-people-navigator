@@ -1,11 +1,9 @@
 const { defineConfig, devices } = require('@playwright/test');
 const fullBrowserMatrix = Boolean(process.env.CI || process.env.PLAYWRIGHT_ALL_BROWSERS);
-// Pixel snapshots are intentionally canonicalized on the local Windows
-// development environment. Linux CI still runs the cross-browser layout,
-// interaction, accessibility, touch, and performance checks, which are not
-// affected by operating-system font rasterization. Set the override when a
-// Linux baseline is being reviewed deliberately.
-const runVisualSnapshots = !process.env.CI || process.env.PLAYWRIGHT_VISUAL_SNAPSHOTS === '1';
+// Pixel snapshots use Windows as their single canonical rendering platform.
+// CI and other operating systems run the platform-independent layout,
+// interaction, accessibility, touch, and performance checks instead.
+const runVisualSnapshots = process.platform === 'win32' && !process.env.CI;
 
 module.exports = defineConfig({
   testDir: './tests/e2e',
