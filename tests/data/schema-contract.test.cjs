@@ -65,7 +65,8 @@ test('verified records cannot omit sources', () => {
 
 test('source precision metadata stays paired and cannot postdate the content version', () => {
   const missingDate = projectLegacyData(data);
-  missingDate.sources.sources[0].locator = '本文';
+  const unreviewedSource = missingDate.sources.sources.find(source => !source.locator);
+  unreviewedSource.locator = '本文';
   assert.throws(() => validateV2Documents(missingDate), /must have property contentCheckedAt/);
 
   const futureDate = projectLegacyData(data);

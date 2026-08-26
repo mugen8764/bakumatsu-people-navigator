@@ -30,7 +30,7 @@ test('search highlighting preserves text safely', () => {
 test('initial route prefers valid hash values and tolerates blocked storage', () => {
   const blockedStorage = { getItem() { throw new Error('blocked'); } };
   const route = router.readInitialRoute(data, domain, {
-    location: { hash: '#scene=1867-taisei&view=relations&person=kido&faction=長州藩&calendar=japanese' },
+    location: { hash: '#scene=1867-taisei&view=relations&person=kido&faction=長州藩&calendar=japanese&place=kyoto' },
     storage: blockedStorage
   });
   assert.deepEqual(route, {
@@ -38,7 +38,8 @@ test('initial route prefers valid hash values and tolerates blocked storage', ()
     view: 'relations',
     selectedPerson: 'kido',
     selectedFaction: '長州藩',
-    calendar: 'japanese'
+    calendar: 'japanese',
+    selectedPlace: 'kyoto'
   });
 });
 
@@ -54,6 +55,7 @@ test('state rejects invalid view and calendar values', () => {
   assert.equal(state.calendar, 'both');
   assert.equal(state.selectedPerson, 'perry');
   assert.equal(state.selectedFaction, '幕府');
+  assert.equal(state.selectedPlace, '');
 });
 
 test('state reset restores every selectable control to its initial value', () => {
@@ -66,7 +68,8 @@ test('state reset restores every selectable control to its initial value', () =>
   });
   state.personFactionFilter = '長州藩';
   state.relationType = '対立';
-  state.map = { selectedPlace: 'edo', zoomedPlace: 'edo' };
+  state.selectedPlace = 'edo';
+  state.map = { zoomedPlace: 'edo' };
 
   stateApi.resetState(state, data, domain);
 
@@ -77,7 +80,7 @@ test('state reset restores every selectable control to its initial value', () =>
   assert.equal(state.personFactionFilter, 'すべて');
   assert.equal(state.relationType, 'all');
   assert.equal(state.calendar, 'both');
-  assert.equal(state.map.selectedPlace, '');
+  assert.equal(state.selectedPlace, '');
   assert.equal(state.map.zoomedPlace, '');
 });
 
@@ -190,6 +193,6 @@ test('source cards preserve optional precision metadata', () => {
   assert.match(markup, /該当箇所: 目次144頁（0110\.jp2）/);
   assert.match(markup, /内容確認日: 2026-07-31/);
 
-  const ordinaryMarkup = shared.sourceLinks(['archives_timeline']);
+  const ordinaryMarkup = shared.sourceLinks(['ndl_handwriting']);
   assert.doesNotMatch(ordinaryMarkup, /source-meta/);
 });

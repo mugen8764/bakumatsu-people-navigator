@@ -1,19 +1,23 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.55",
-    "updated": "2026-07-31"
+    "version": "1.0.56",
+    "updated": "2026-08-26"
   },
   "sources": {
     "archives_timeline": {
       "title": "国立公文書館「激動幕末・年表」",
       "url": "https://www.archives.go.jp/exhibition/digital/bakumatsu/history.html",
-      "note": "幕末の主要事件と公文書資料への入口。"
+      "note": "幕末の主要事件と公文書資料への入口。",
+      "locator": "「年表」嘉永6年（1853）～明治2年（1869）の各項",
+      "contentCheckedAt": "2026-08-26"
     },
     "ndl_modern_timeline": {
       "title": "国立国会図書館「史料にみる日本の近代・年表」",
       "url": "https://www.ndl.go.jp/modern/utility/chronology.html",
-      "note": "黒船来航、大政奉還、王政復古などの主要年表。"
+      "note": "黒船来航、大政奉還、王政復古などの主要年表。",
+      "locator": "「主要年表」嘉永～慶応の項",
+      "contentCheckedAt": "2026-08-26"
     },
     "ndl_handwriting": {
       "title": "国立国会図書館「あの人の直筆・人物一覧」",
@@ -28,7 +32,9 @@
     "ndl_history_satcho": {
       "title": "国際子ども図書館「薩長同盟」",
       "url": "https://www.kodomo.go.jp/yareki/theme/theme_04.html",
-      "note": "薩長同盟の成立、坂本龍馬・中岡慎太郎による仲介と龍馬の裏書。"
+      "note": "薩長同盟の成立、坂本龍馬・中岡慎太郎による仲介と龍馬の裏書。",
+      "locator": "「薩長同盟 4」「薩長同盟 5」",
+      "contentCheckedAt": "2026-08-26"
     },
     "kyohaku_kido_ryoma_letter": {
       "title": "京都国立博物館「坂本龍馬関係書状　木戸孝允書状ほか」",
@@ -45,7 +51,9 @@
     "ndl_portrait_katsu_detail": {
       "title": "国立国会図書館「近代日本人の肖像・勝海舟」",
       "url": "https://www.ndl.go.jp/portrait/datas/51/index.html",
-      "note": "西郷隆盛との交渉による江戸城無血開城を含む勝海舟の略歴。"
+      "note": "西郷隆盛との交渉による江戸城無血開城を含む勝海舟の略歴。",
+      "locator": "「解説」",
+      "contentCheckedAt": "2026-08-26"
     },
     "tokyo_archive_katsu_yamaoka_letter": {
       "title": "東京都立図書館「勝海舟書簡　山岡鉄舟あて」",
@@ -84,12 +92,16 @@
     "ndl_treaty_1854_text": {
       "title": "国立国会図書館「日米和親条約写」",
       "url": "https://www.ndl.go.jp/modern/img_t/002/002-003tx.html",
-      "note": "下田・箱館への米国船来航、薪水・食料供給などを定めた条約本文。"
+      "note": "下田・箱館への米国船来航、薪水・食料供給などを定めた条約本文。",
+      "locator": "「日米和親条約写」第二ヶ条",
+      "contentCheckedAt": "2026-08-26"
     },
     "ndl_nichiran_opening": {
       "title": "国立国会図書館「日本の開国と日蘭関係」",
       "url": "https://www.ndl.go.jp/nichiran/s1/s1_4.html",
-      "note": "日米和親条約による下田・箱館開港と長崎海軍伝習所。"
+      "note": "日米和親条約による下田・箱館開港と長崎海軍伝習所。",
+      "locator": "第1部4「（2）開国」",
+      "contentCheckedAt": "2026-08-26"
     },
     "ndl_handwriting_bakumatsu_people": {
       "title": "国立国会図書館「あの人の直筆・幕末を生きた人々」",
@@ -106,12 +118,16 @@
     "kyoto_teradaya_1862": {
       "title": "京都市「寺田屋」",
       "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hu040.html",
-      "note": "1862年の寺田屋騒動における薩摩藩急進派の集結と藩による鎮圧。"
+      "note": "1862年の寺田屋騒動における薩摩藩急進派の集結と藩による鎮圧。",
+      "locator": "「寺田屋」本文冒頭",
+      "contentCheckedAt": "2026-08-26"
     },
     "kyoto_shugoshoku_site": {
       "title": "京都市「京都守護職屋敷址」",
       "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/ka016.html",
-      "note": "京都守護職の設置目的と松平容保の就任。"
+      "note": "京都守護職の設置目的と松平容保の就任。",
+      "locator": "「京都守護職屋敷址」本文冒頭",
+      "contentCheckedAt": "2026-08-26"
     },
     "shimonoseki_joi_bombardment": {
       "title": "下関市「市報しものせき・歴史の舞台で現代に伝える砲術」",
@@ -133,7 +149,9 @@
     "kyoto_kinmon": {
       "title": "京都市上京区「幕末動乱と禁門の変」",
       "url": "https://www.city.kyoto.lg.jp/kamigyo/page/0000012502.html",
-      "note": "池田屋事件から禁門の変に至る経緯と京都での戦闘。"
+      "note": "池田屋事件から禁門の変に至る経緯と京都での戦闘。",
+      "locator": "「幕末動乱と禁門の変」第5～6段落",
+      "contentCheckedAt": "2026-08-26"
     },
     "yamaguchi_choshu_reform": {
       "title": "山口県立山口図書館「四境戦争～時代の流れを変えた戦い～」",
@@ -452,7 +470,9 @@
     "ndl_modern_opening": {
       "title": "国立国会図書館「開国―近代の幕開け」",
       "url": "https://www.ndl.go.jp/modern/cha1/description01.html",
-      "note": "1853年のペリー艦隊来航と国書授受要求、1854年の再来航と幕府代表との交渉。"
+      "note": "1853年のペリー艦隊来航と国書授受要求、1854年の再来航と幕府代表との交渉。",
+      "locator": "「1-1 開国―近代の幕開け」本文第1段落",
+      "contentCheckedAt": "2026-08-26"
     },
     "yokosuka_perry_blackships": {
       "title": "横須賀市「ペリーの黒船」",
