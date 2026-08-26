@@ -55,7 +55,7 @@
   }
 
   function createSearchController(context) {
-    const { $, $$, actions, data } = context;
+    const { $, $$, actions, data, state } = context;
     let activeIndex = -1;
     let currentResults = [];
 
@@ -70,12 +70,29 @@
       input.removeAttribute('aria-activedescendant');
     }
 
+    function clearStatus() {
+      const status = $('#navigationStatus');
+      status.textContent = '';
+      status.hidden = true;
+    }
+
+    function announceSceneMove(result, previousScene) {
+      if (state.scene === previousScene) return;
+      const from = data.scenes[previousScene];
+      const to = data.scenes[state.scene];
+      const status = $('#navigationStatus');
+      status.textContent = `検索結果「${result.title}」に合わせて、${from.year}年から${to.year}年「${to.title}」へ移動しました。`;
+      status.hidden = false;
+    }
+
     function selectResult(result) {
+      const previousScene = state.scene;
       close();
       $('#globalSearch').value = '';
       if (result.type === '人物') actions.selectPerson(result.id, 'people');
       else if (result.type === '勢力') actions.selectFaction(result.id);
       else actions.openEvent(result.id);
+      announceSceneMove(result, previousScene);
     }
 
     function setActive(index) {
@@ -133,7 +150,7 @@
       return false;
     }
 
-    return { close, handleKeydown, render };
+    return { clearStatus, close, handleKeydown, render };
   }
 
   return { createSearchController, highlightMatch, normalise, searchAll };

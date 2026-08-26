@@ -13,7 +13,7 @@ test('all six primary views render without a page error', async ({ page }) => {
   await expect(page.locator('#personCards .card-button')).toHaveCount(7);
 
   for (const view of ['people', 'factions', 'relations', 'map', 'events', 'sources']) {
-    await page.locator(`.tab[data-view="${view}"]`).click();
+  await page.locator(`.tab[data-view="${view}"]`).click();
     await expect(page.locator(`#view-${view}`)).toBeVisible();
   }
 
@@ -156,9 +156,11 @@ test('alias search and timeline changes preserve the selected person', async ({ 
   await page.locator('.search-result', { hasText: '木戸孝允' }).click();
 
   await expect(page.locator('#personDetail .detail-title')).toHaveText('桂小五郎');
+  await expect(page.locator('#navigationStatus')).toContainText('1853年から1858年「通商条約・将軍継嗣・安政の大獄」へ移動しました');
   await expect(page).toHaveURL(/person=kido/);
 
   await page.locator('#sceneSelect').selectOption('11');
+  await expect(page.locator('#navigationStatus')).toBeHidden();
   await expect(page.locator('#personDetail .detail-title')).toHaveText('木戸孝允');
   await expect(page).toHaveURL(/scene=1867-taisei/);
 
@@ -239,6 +241,7 @@ test('person, relation, map, and event views remain coordinated', async ({ page 
   await expect(kyotoPlace.locator('[data-map-person="kido"]')).toBeVisible();
   await expect(kyotoPlace.locator('[data-map-event="satcho"]')).toBeVisible();
   const kyotoMarker = page.locator('[data-map-place="kyoto"]');
+  await expect(kyotoMarker).toHaveAttribute('aria-label', '京都の地図マーカーを選択');
   await kyotoMarker.focus();
   await kyotoMarker.press('Enter');
   await expect(kyotoPlace).toHaveClass(/selected/);
@@ -248,6 +251,7 @@ test('person, relation, map, and event views remain coordinated', async ({ page 
   const kyotoLabel = page.locator('[data-map-label-trigger="kyoto"]');
   await expect(kyotoLabel).toHaveAttribute('role', 'button');
   await expect(kyotoLabel).toHaveAttribute('tabindex', '0');
+  await expect(kyotoLabel).toHaveAttribute('aria-label', '京都の地名ラベルを選択');
   await kyotoLabel.click();
   await expect(kyotoPlace).toHaveClass(/selected/);
   await expect(page.locator('[data-map-label="kyoto"]')).toHaveClass(/selected/);
@@ -324,11 +328,17 @@ test('selecting a mapped place zooms its region and can return to Japan view', a
   expect(zoomedViewBox).not.toBe('0 0 720 770');
   await expect(map).toHaveAttribute('aria-label', /浦賀・久里浜周辺を拡大/);
   await expect(reset).toBeVisible();
+  await expect(page).toHaveURL(/place=uraga/);
+
+  await page.reload();
+  await expect(map).toHaveAttribute('aria-label', /浦賀・久里浜周辺を拡大/);
+  await expect(page.locator('[data-map-place-card="uraga"]')).toHaveClass(/selected/);
 
   await reset.click();
   await expect(map).toHaveAttribute('viewBox', '0 0 720 770');
   await expect(reset).toBeHidden();
-  await expect(page.locator('[data-map-place-card="uraga"]')).toHaveClass(/selected/);
+  await expect(page.locator('[data-map-place-card="uraga"]')).not.toHaveClass(/selected/);
+  await expect(page).not.toHaveURL(/place=/);
 });
 
 test('map place selection survives scene and view redraws', async ({ page }) => {
@@ -339,6 +349,7 @@ test('map place selection survives scene and view redraws', async ({ page }) => 
   const hagiName = page.locator('[data-map-place-name="hagi"]');
   const hagiMarker = page.locator('[data-map-place="hagi"]');
   await hagiName.click();
+  await expect(page).toHaveURL(/place=hagi/);
   const zoomedViewBox = await page.locator('#historyMap').getAttribute('viewBox');
   expect(zoomedViewBox).not.toBe('0 0 720 770');
   await page.locator('#sceneSelect').selectOption('10');

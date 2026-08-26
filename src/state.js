@@ -17,6 +17,7 @@
       personFactionFilter: 'すべて',
       relationType: 'all',
       calendar: calendars.has(initial.calendar) ? initial.calendar : 'both',
+      selectedPlace: data.places[initial.selectedPlace] ? initial.selectedPlace : '',
       mapReady: false,
       map: null
     };
@@ -48,6 +49,7 @@
     if (route.selectedPerson !== undefined) state.selectedPerson = route.selectedPerson;
     if (route.selectedFaction !== undefined) state.selectedFaction = route.selectedFaction;
     if (route.calendar !== undefined && calendars.has(route.calendar)) state.calendar = route.calendar;
+    if (route.selectedPlace !== undefined) state.selectedPlace = data.places[route.selectedPlace] ? route.selectedPlace : '';
   }
 
   function selectPerson(state, data, domain, id) {
@@ -82,8 +84,8 @@
     state.personFactionFilter = 'すべて';
     state.relationType = 'all';
     state.calendar = 'both';
+    state.selectedPlace = '';
     if (state.map) {
-      state.map.selectedPlace = '';
       state.map.zoomedPlace = '';
     }
     ensureSelections(state, data, domain);

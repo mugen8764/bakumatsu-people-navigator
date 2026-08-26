@@ -3,6 +3,7 @@
 
   function showFatalError(error) {
     console.error(error);
+    document.documentElement.classList.remove('app-loading');
     const status = document.querySelector('#appStatus');
     if (!status) return;
     document.querySelectorAll('.page > :not(#appStatus)').forEach(element => { element.hidden = true; });
@@ -87,6 +88,7 @@
   }
 
   function setScene(sceneIndex, options = {}) {
+    searchController.clearStatus();
     window.BM_STATE.setScene(state, data, sceneIndex);
     window.BM_STATE.ensureSelections(state, data, domain);
     renderAll({ historyMode: options.historyMode || 'push' });
@@ -94,12 +96,14 @@
   }
 
   function selectPerson(id, nextView = null) {
+    searchController.clearStatus();
     if (!window.BM_STATE.selectPerson(state, data, domain, id)) return;
     if (nextView) state.view = nextView;
     renderAll({ historyMode: 'push' });
   }
 
   function selectFaction(name, nextView = 'factions') {
+    searchController.clearStatus();
     if (!window.BM_STATE.selectFaction(state, data, domain, name)) return;
     state.view = nextView;
     renderAll({ historyMode: 'push' });
@@ -107,6 +111,7 @@
 
   function setView(view) {
     if (!window.BM_STATE.views.has(view)) return;
+    searchController.clearStatus();
     state.view = view;
     renderAll({ historyMode: 'push' });
   }
@@ -114,13 +119,18 @@
   function openEvent(id) {
     const index = domain.eventScene.get(id);
     if (index === undefined) return;
+    searchController.clearStatus();
     state.scene = index;
     state.view = 'events';
     window.BM_STATE.ensureSelections(state, data, domain);
     renderAll({ historyMode: 'push' });
   }
 
-  Object.assign(actions, { openEvent, selectFaction, selectPerson, setScene, setView });
+  function syncRoute(historyMode = 'replace') {
+    window.BM_ROUTER.writeRoute(state, scene(), environment, { historyMode });
+  }
+
+  Object.assign(actions, { openEvent, selectFaction, selectPerson, setScene, setView, syncRoute });
 
   function clearCopyStatuses() {
     $$('[data-copy-status]').forEach(status => { status.textContent = ''; });
@@ -151,6 +161,7 @@
     $('#globalSearch').value = '';
     $('#sceneDetails').open = false;
     searchController.close();
+    searchController.clearStatus();
     renderAll({ historyMode: 'push' });
     window.scrollTo({ top: 0, behavior: 'auto' });
   }
@@ -251,6 +262,7 @@
   $('#brandMarkHome').addEventListener('click', resetApp);
   $('#brandTitleHome').addEventListener('click', resetApp);
   function syncRouteFromLocation() {
+    searchController.clearStatus();
     const route = window.BM_ROUTER.readHashRoute(domain, window.location);
     window.BM_STATE.applyRoute(state, data, route);
     window.BM_STATE.ensureSelections(state, data, domain);
@@ -261,5 +273,6 @@
 
   renderAll();
   mapRenderer.init();
+  requestAnimationFrame(() => document.documentElement.classList.remove('app-loading'));
   }
 })();

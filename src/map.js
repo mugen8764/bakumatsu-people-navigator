@@ -137,7 +137,7 @@
       const card = $(`[data-map-place-card="${id}"]`);
       const marker = $(`[data-map-place="${id}"]`);
       if (!card) return;
-      state.map.selectedPlace = id;
+      state.selectedPlace = id;
       if (options.zoom !== false) {
         state.map.zoomedPlace = marker ? id : '';
         applyMapViewport();
@@ -157,6 +157,7 @@
       });
       if (options.scroll !== false) card.scrollIntoView({ block: 'nearest', behavior: 'instant' });
       if (options.focusLink !== false) card.querySelector('.place-link')?.focus({ preventScroll: true });
+      if (options.updateRoute !== false) actions.syncRoute('push');
     }
 
     function renderInfo() {
@@ -203,7 +204,6 @@
           interactionLayer: $('#mapInteractionLayer'),
           labelLayout: new Map(),
           placePoints: new Map(),
-          selectedPlace: '',
           zoomedPlace: ''
         };
         const projection = mapData.projection;
@@ -217,8 +217,12 @@
         state.map.placePoints = new Map(catalogPoints.map(point => [point.id, point]));
         state.map.labelLayout = new Map(layoutMapLabels(catalogPoints, projection).map(label => [label.id, label]));
         $('#resetMapView').addEventListener('click', () => {
+          state.selectedPlace = '';
           state.map.zoomedPlace = '';
           applyMapViewport();
+          $$('[data-map-place-card]').forEach(item => item.classList.remove('selected'));
+          $$('[aria-pressed="true"]', $('#view-map')).forEach(item => item.setAttribute('aria-pressed', 'false'));
+          actions.syncRoute('push');
         });
         state.mapReady = true;
         if (state.view === 'map') render();
@@ -260,8 +264,8 @@
         const hitWidth = label.box.right - label.box.left + 4;
         const hitHeight = label.box.bottom - label.box.top + 4;
         labelHtml += `<g class="map-label-group"><line x1="${label.leader.x1}" y1="${label.leader.y1}" x2="${label.leader.x2}" y2="${label.leader.y2}" class="map-label-leader"></line><rect x="${label.box.left - 2}" y="${label.box.top - 2}" width="${hitWidth}" height="${hitHeight}" rx="3" class="map-label-hit"></rect><text x="${label.x}" y="${label.y}" text-anchor="${label.anchor}" class="map-label" data-map-label="${id}">${place.name}</text></g>`;
-        markerInteractionHtml += `<g class="map-place-marker" data-map-place="${id}" role="button" tabindex="0" aria-pressed="false" aria-label="${place.name}の地点カードを表示"><circle cx="${x}" cy="${y}" r="16" class="map-place-hit"></circle></g>`;
-        labelInteractionHtml += `<rect x="${label.box.left - 2}" y="${label.box.top - 2}" width="${hitWidth}" height="${hitHeight}" rx="3" class="map-label-interaction" data-map-label-trigger="${id}" role="button" tabindex="0" aria-pressed="false" aria-label="${place.name}の地点カードを表示"></rect>`;
+        markerInteractionHtml += `<g class="map-place-marker" data-map-place="${id}" role="button" tabindex="0" aria-pressed="false" aria-label="${place.name}の地図マーカーを選択"><circle cx="${x}" cy="${y}" r="16" class="map-place-hit"></circle></g>`;
+        labelInteractionHtml += `<rect x="${label.box.left - 2}" y="${label.box.top - 2}" width="${hitWidth}" height="${hitHeight}" rx="3" class="map-label-interaction" data-map-label-trigger="${id}" role="button" tabindex="0" aria-pressed="false" aria-label="${place.name}の地名ラベルを選択"></rect>`;
       });
       state.map.personLayer.innerHTML = personHtml;
       state.map.eventLayer.innerHTML = eventHtml;
@@ -290,10 +294,12 @@
           focus();
         });
       });
-      if (state.map.selectedPlace && $(`[data-map-place-card="${state.map.selectedPlace}"]`)) {
-        focusPlace(state.map.selectedPlace, { focusLink: false, scroll: false, zoom: false });
+      if (state.selectedPlace && $(`[data-map-place-card="${state.selectedPlace}"]`)) {
+        const selectedMarker = $(`[data-map-place="${state.selectedPlace}"]`);
+        state.map.zoomedPlace = selectedMarker ? state.selectedPlace : '';
+        focusPlace(state.selectedPlace, { focusLink: false, scroll: false, updateRoute: false, zoom: false });
       } else {
-        state.map.selectedPlace = '';
+        state.selectedPlace = '';
         state.map.zoomedPlace = '';
       }
       applyMapViewport();
