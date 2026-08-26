@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "license": "SEE LICENSE IN LICENSE",
+  "engines": {
+    "node": ">=24 <25"
+  },
   "scripts": {
     "test": "npm run test:data && npm run test:e2e",
     "build:data": "node scripts/build-data.cjs",

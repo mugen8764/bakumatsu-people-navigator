@@ -96,7 +96,7 @@ npm run build:sources
 
 ## 自動テスト
 
-Node.js 20以降を使用します。初回のみ依存パッケージとChromiumを準備してください。
+Node.js 24を使用します（`.node-version` と `package.json` で固定）。初回のみ依存パッケージとChromiumを準備してください。
 
 ```sh
 npm ci
