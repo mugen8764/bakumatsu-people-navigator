@@ -20,7 +20,9 @@
     "validate:data": "node scripts/validate-data.cjs",
     "test:data": "npm run validate:data && npm run check:data && npm run check:source-precision && node --test tests/data/*.test.cjs",
     "test:e2e": "playwright test",
-    "test:e2e:update": "playwright test --update-snapshots"
+    "test:e2e:update": "playwright test --update-snapshots",
+    "test:e2e:visual": "playwright test tests/e2e/visual.spec.js --project=chromium",
+    "test:e2e:visual:update": "playwright test tests/e2e/visual.spec.js --project=chromium --update-snapshots"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.12.1",
