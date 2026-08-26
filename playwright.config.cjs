@@ -37,11 +37,13 @@ module.exports = defineConfig({
       {
         name: 'firefox',
         testIgnore: /visual\.spec\.js/,
+        grep: /@cross-browser/,
         use: { ...devices['Desktop Firefox'] }
       },
       {
         name: 'webkit',
         testIgnore: /visual\.spec\.js/,
+        grep: /@cross-browser/,
         use: { ...devices['Desktop Safari'] }
       }
     ] : [])

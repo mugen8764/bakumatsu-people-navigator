@@ -1,10 +1,11 @@
 const { expect, test } = require('@playwright/test');
+const crossBrowser = { tag: '@cross-browser' };
 
 test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => localStorage.clear());
 });
 
-test('all six primary views render without a page error', async ({ page }) => {
+test('all six primary views render without a page error', crossBrowser, async ({ page }) => {
   const pageErrors = [];
   page.on('pageerror', error => pageErrors.push(error.message));
   await page.goto('/');
@@ -70,7 +71,7 @@ test('brand icon and title restore the complete initial state', async ({ page })
   await expect(page.locator('#personDetail .detail-title')).toHaveText('阿部正弘');
 });
 
-test('all primary views stay inside a 320px document viewport', async ({ page }) => {
+test('all primary views stay inside a 320px document viewport', crossBrowser, async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 780 });
   await page.goto('/');
 
@@ -84,7 +85,7 @@ test('all primary views stay inside a 320px document viewport', async ({ page })
   }
 });
 
-test('mobile view tabs expose overflow controls and keep the active tab visible', async ({ page }) => {
+test('mobile view tabs expose overflow controls and keep the active tab visible', crossBrowser, async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 780 });
   await page.goto('/');
 
@@ -150,7 +151,7 @@ test('scene details start compact and reveal context on demand', async ({ page }
   expect(mobileFirstCard.y).toBeLessThan(780);
 });
 
-test('alias search and timeline changes preserve the selected person', async ({ page }) => {
+test('alias search and timeline changes preserve the selected person', crossBrowser, async ({ page }) => {
   await page.goto('/');
   await page.locator('#globalSearch').fill('桂小五郎');
   await page.locator('.search-result', { hasText: '木戸孝允' }).click();
@@ -169,7 +170,7 @@ test('alias search and timeline changes preserve the selected person', async ({ 
   await expect(page.locator('#sceneSelect')).toHaveValue('11');
 });
 
-test('browser back and forward revisit deliberate person and view selections', async ({ page }) => {
+test('browser back and forward revisit deliberate person and view selections', crossBrowser, async ({ page }) => {
   await page.goto('/');
   await page.locator('#globalSearch').fill('桂小五郎');
   await page.locator('.search-result', { hasText: '木戸孝允' }).click();
@@ -215,7 +216,7 @@ test('person filters follow displayed affiliations and later-name labels follow 
   await expect(page.locator('#personDetail .aliases').first()).toHaveText('後の名前：山内容堂');
 });
 
-test('person, relation, map, and event views remain coordinated', async ({ page }) => {
+test('person, relation, map, and event views remain coordinated', crossBrowser, async ({ page }) => {
   await page.goto('/#scene=1866-satcho&view=people&person=kido&faction=長州藩');
   await expect(page.locator('#personDetail .detail-title')).toHaveText('木戸準一郎');
   await expect(page.locator('#personDetail .event-peers')).toContainText('直接の人物関係を示すものではありません');
@@ -275,7 +276,7 @@ test('person, relation, map, and event views remain coordinated', async ({ page 
   await expect(page.locator('#eventDetail [data-event-person="kido"]')).toBeVisible();
 });
 
-test('nearby Tokyo Bay map labels do not overlap', async ({ page }) => {
+test('nearby Tokyo Bay map labels do not overlap', crossBrowser, async ({ page }) => {
   await page.goto('/#scene=1853-blackships&view=map&person=perry&faction=幕府');
 
   const labels = page.locator('#mapLabelLayer .map-label');
@@ -552,7 +553,7 @@ test('changing the hash after load updates the visible state', async ({ page }) 
   await expect(page.locator('#relationGraph .node.selected')).toHaveAttribute('data-graph-person', 'kido');
 });
 
-test('tabs, search results, and relation nodes support keyboard operation', async ({ page }) => {
+test('tabs, search results, and relation nodes support keyboard operation', crossBrowser, async ({ page }) => {
   await page.goto('/');
 
   const peopleTab = page.locator('#tab-people');

@@ -1,4 +1,5 @@
 const { expect, test } = require('@playwright/test');
+const crossBrowser = { tag: '@cross-browser' };
 
 test.use({
   hasTouch: true,
@@ -9,7 +10,7 @@ test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => localStorage.clear());
 });
 
-test('primary mobile journeys work with touch input', async ({ page }) => {
+test('primary mobile journeys work with touch input', crossBrowser, async ({ page }) => {
   await page.goto('/');
 
   await page.locator('#nextScene').tap();
