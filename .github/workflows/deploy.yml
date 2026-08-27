@@ -44,14 +44,17 @@ jobs:
         shell: bash
         run: test -f dist/index.html && test -f dist/data.json && test -f dist/_headers
 
-      - name: Deploy tested artifact
-        uses: cloudflare/wrangler-action@v3
+      - name: Use Node.js 24
+        uses: actions/setup-node@v6
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: >-
-            pages deploy dist
-            --project-name=bakumatsu-people-navigator
-            --branch=main
-            --commit-hash=${{ github.event.workflow_run.head_sha }}
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          node-version: 24
+
+      - name: Deploy tested artifact
+        run: >-
+          npx --yes wrangler@4.126.0 pages deploy dist
+          --project-name=bakumatsu-people-navigator
+          --branch=main
+          --commit-hash=${{ github.event.workflow_run.head_sha }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
