@@ -59,6 +59,17 @@ npm run check:release
 
 `_headers` はNetlifyとCloudflare Pages向けです。セキュリティヘッダーに加え、HTMLは再検証し、静的データ・スクリプトは短時間、画像は1日キャッシュする方針を定義しています。GitHub Pagesなど、このファイルを解釈しない配信先では同等のHTTPヘッダーをCDNまたはリバースプロキシ側で設定してください。
 
+### Cloudflare認証情報のローテーション
+
+デプロイ用トークンは少なくとも年1回、または漏えいの疑い・管理者変更があった時点で交換します。
+
+1. Cloudflareで、このアカウントだけを対象に `Pages Write` のみを許可したアカウントAPIトークンを作成する。
+2. GitHub Actionsの `CLOUDFLARE_API_TOKEN` と `CLOUDFLARE_ACCOUNT_ID` を新しい値で更新する。値はリポジトリ、Issue、Actionsログへ記載しない。
+3. GitHub Actionsで直近の「Deploy to Cloudflare Pages」を再実行し、続く「Production smoke」まで成功することを確認する。
+4. 新しいトークンでの公開成功後に、Cloudflareで旧トークンを失効させる。
+
+交換中も旧トークンを先に失効させず、公開経路の停止と復旧不能を避けます。
+
 ## データ編集
 
 - `data/*.json`: 人物・勢力・時点・事件・関係・地点の正本データ
