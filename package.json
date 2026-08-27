@@ -27,8 +27,8 @@
     "test:e2e:visual:update": "playwright test tests/e2e/visual.spec.js --project=chromium --update-snapshots"
   },
   "devDependencies": {
-    "@axe-core/playwright": "4.12.1",
-    "@playwright/test": "1.62.0",
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.62.1",
     "ajv": "8.20.0",
     "ajv-formats": "3.0.1"
   }
