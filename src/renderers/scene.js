@@ -8,12 +8,16 @@
     let sceneControlsInitialized = false;
     let sourcesRendered = false;
 
-    function renderScenePeople(event) {
-      const people = event.people.map(id => {
+    function eventPeopleAtCurrentScene(event, limit = Infinity) {
+      return event.people.map(id => {
         const person = domain.getPerson(id);
         const status = domain.statusAt(person, state.scene);
         return person && status ? { person, status } : null;
-      }).filter(Boolean).slice(0, 6);
+      }).filter(Boolean).slice(0, limit);
+    }
+
+    function renderScenePeople(event) {
+      const people = eventPeopleAtCurrentScene(event, 6);
       $('#scenePeople').innerHTML = people.map(({ person, status }) => `<button type="button" class="scene-person" data-scene-person="${person.id}"><span class="scene-person-avatar" style="background:${shared.factionColor(status.faction)}">${shared.factionShort(status.faction)}</span><span><strong>${status.display}</strong><small>${status.role}</small></span></button>`).join('');
       $$('[data-scene-person]').forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.scenePerson, 'people')));
     }
@@ -22,6 +26,21 @@
       const states = data.factionStates[shared.scene().id] || {};
       $('#sceneFactions').innerHTML = event.factions.filter(name => states[name]).map(name => `<button type="button" class="scene-faction" data-scene-faction="${name}"><i style="background:${shared.factionColor(name)}"></i><span><strong>${name}</strong><small>${states[name].position}</small></span></button>`).join('');
       $$('[data-scene-faction]').forEach(button => button.addEventListener('click', () => actions.selectFaction(button.dataset.sceneFaction)));
+    }
+
+    function renderSceneAtGlance(event, scene) {
+      const activePeople = eventPeopleAtCurrentScene(event);
+      const people = activePeople.slice(0, 3);
+      const factionStates = data.factionStates[scene.id] || {};
+      const activeFactions = event.factions.filter(name => factionStates[name]);
+      const factions = activeFactions.slice(0, 3);
+      const peopleMore = activePeople.length > 1 ? `<span class="scene-quick-more">ほか${activePeople.length - 1}人</span>` : '';
+      const factionsMore = activeFactions.length > 1 ? `<span class="scene-quick-more">ほか${activeFactions.length - 1}勢力</span>` : '';
+      $('#sceneQuickPeople').innerHTML = `${people.map(({ person, status }) => `<button type="button" class="scene-quick-link" data-scene-quick-person="${person.id}"><i style="background:${shared.factionColor(status.faction)}"></i><span>${status.display}</span></button>`).join('')}${peopleMore}`;
+      $('#sceneQuickFactions').innerHTML = `${factions.map(name => `<button type="button" class="scene-quick-link" data-scene-quick-faction="${name}"><i style="background:${shared.factionColor(name)}"></i><span>${name}</span></button>`).join('')}${factionsMore}`;
+      $('#sceneQuickInsight').textContent = scene.insights[0] || 'この時点の変化を詳細欄で確認できます。';
+      $$('[data-scene-quick-person]').forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.sceneQuickPerson, 'people')));
+      $$('[data-scene-quick-faction]').forEach(button => button.addEventListener('click', () => actions.selectFaction(button.dataset.sceneQuickFaction)));
     }
 
     function personChangeCopy(change) {
@@ -119,6 +138,7 @@
       const event = data.events[scene.event];
       $('#sceneCounts').innerHTML = `<span class="count">人物 ${domain.activePeople(state.scene).length}</span><span class="count">勢力 ${domain.activeFactionNames(state.scene).length}</span><span class="count">関係 ${domain.activeRelations(state.scene).length}</span><span class="count">${event.category}</span>${shared.reviewBadge(scene.evidence)}`;
       $('#sceneInsights').innerHTML = scene.insights.map(insight => `<div class="insight">${insight}</div>`).join('');
+      renderSceneAtGlance(event, scene);
       renderSceneChanges(event);
       renderScenePeople(event);
       renderSceneFactions(event);

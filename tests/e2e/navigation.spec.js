@@ -381,6 +381,10 @@ test('right-column place names remain selectable outside the displayed map', asy
 
 test('scene board exposes the event cast and factions as direct navigation', async ({ page }) => {
   await page.goto('/#scene=1866-satcho&view=people&person=kido&faction=長州藩');
+
+  await expect(page.locator('#sceneQuickPeople [data-scene-quick-person]')).toHaveCount(3);
+  await expect(page.locator('#sceneQuickFactions [data-scene-quick-faction]')).toHaveCount(3);
+  await expect(page.locator('#sceneQuickInsight')).not.toBeEmpty();
   await page.locator('#sceneDetails summary').click();
 
   await expect(page.locator('#scenePeople [data-scene-person]')).toHaveCount(6);
@@ -394,11 +398,11 @@ test('scene board exposes the event cast and factions as direct navigation', asy
   await expect(page.locator('[data-scene-change-group="started"]')).toContainText('薩長同盟で協力');
   await expect(page.locator('[data-scene-change-group="ended"]')).toContainText('海軍構想の師弟');
 
-  await page.locator('[data-scene-person="ryoma"]').click();
-  await expect(page.locator('#personDetail .detail-title')).toHaveText('坂本龍馬');
-  await expect(page).toHaveURL(/person=ryoma/);
+  await page.locator('[data-scene-quick-person="saigo"]').click();
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('西郷吉之助');
+  await expect(page).toHaveURL(/person=saigo/);
 
-  await page.locator('[data-scene-faction="薩摩藩"]').click();
+  await page.locator('[data-scene-quick-faction="薩摩藩"]').click();
   await expect(page.locator('#factionDetail .detail-title')).toHaveText('薩摩藩');
   await expect(page).toHaveURL(/view=factions/);
 });
