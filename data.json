@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.56",
-    "updated": "2026-08-26"
+    "version": "1.0.57",
+    "updated": "2026-08-27"
   },
   "sources": {
     "archives_timeline": {
@@ -1203,6 +1203,13 @@
       "note": "慶応3年12月16日・18日、岩倉具視が松平慶永らへ徳川慶喜の処分方針と奏状案を示し、慶喜に実行させるため協議したこと。",
       "locator": "「内容」欄（慶応3年12月16日・18日条）",
       "contentCheckedAt": "2026-07-31"
+    },
+    "yamaguchi_archives_rikishitai_3": {
+      "title": "山口県文書館「幕末の諸隊 力士隊と山分勝五郎（3）～力士隊、戦場へ～」",
+      "url": "https://archives.pref.yamaguchi.lg.jp/user_data/upload/File/archivesexhibition/AW16bugeitaiiku/12.pdf",
+      "note": "元治元年9月29日に伊藤俊輔が力士隊（角力隊）の管轄となり、同年12月（1865年1月）の高杉晋作による功山寺決起に同隊を率いて参加した経緯。",
+      "locator": "1頁「功山寺決起と力士隊」",
+      "contentCheckedAt": "2026-08-27"
     }
   },
   "factions": {
@@ -5843,12 +5850,13 @@
         },
         "1865-choshu": {
           "display": "伊藤俊輔",
-          "role": "高杉晋作の挙兵参加者",
-          "stance": "高杉らの下関挙兵に参加し、藩政府に対する主張を掲げた「討奸檄」を清書したとされる。",
+          "role": "力士隊管轄・高杉晋作の挙兵参加者",
+          "stance": "力士隊を率いて高杉晋作の功山寺決起に加わり、藩政府に対する主張を掲げた「討奸檄」を清書したとされる。",
           "importance": "広範な藩政改革を担ったとの抽象的評価ではなく、確認できる挙兵時の行動を表示する。",
           "evidence": {
             "sourceIds": [
-              "yamaguchi_tokankeki"
+              "yamaguchi_tokankeki",
+              "yamaguchi_archives_rikishitai_3"
             ],
             "reviewStatus": "verified"
           }
