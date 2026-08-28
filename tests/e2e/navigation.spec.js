@@ -127,6 +127,22 @@ test('mobile person cards open details and can return focus to the selected card
   expect(cardBox.y).toBeLessThan(780);
 });
 
+test('mobile person search opens the selected detail and preserves the list return path', async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 780 });
+  await page.goto('/');
+  await page.locator('#globalSearch').fill('桂小五郎');
+  await page.locator('.search-result', { hasText: '木戸孝允' }).click();
+
+  const back = page.locator('#personBackToList');
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('桂小五郎');
+  await expect(back).toBeFocused();
+  const detailBox = await page.locator('#personDetail').boundingBox();
+  expect(detailBox.y).toBeLessThan(780);
+
+  await back.click();
+  await expect(page.locator('[data-person-card="kido"]')).toBeFocused();
+});
+
 test('scene details start compact and reveal context on demand', async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 720 });
   await page.goto('/');
@@ -382,7 +398,9 @@ test('right-column place names remain selectable outside the displayed map', asy
 test('scene board exposes the event cast and factions as direct navigation', async ({ page }) => {
   await page.goto('/#scene=1866-satcho&view=people&person=kido&faction=長州藩');
 
-  await expect(page.locator('#sceneQuickPeople [data-scene-quick-person]')).toHaveCount(3);
+  const quickPeople = page.locator('#sceneQuickPeople [data-scene-quick-person]');
+  await expect(quickPeople).toHaveCount(3);
+  await expect.poll(() => quickPeople.evaluateAll(items => items.map(item => item.dataset.sceneQuickPerson))).toEqual(['saigo', 'kido', 'ryoma']);
   await expect(page.locator('#sceneQuickFactions [data-scene-quick-faction]')).toHaveCount(3);
   await expect(page.locator('#sceneQuickInsight')).not.toBeEmpty();
   await page.locator('#sceneDetails summary').click();
@@ -410,6 +428,8 @@ test('scene board exposes the event cast and factions as direct navigation', asy
 test('relation view distinguishes newly started and recently ended ties', async ({ page }) => {
   await page.goto('/#scene=1867-taisei&view=relations&person=yoshinobu&faction=幕府');
 
+  await expect(page.locator('#relationGraph .graph-person.selected .node-center-label')).toHaveText('中心人物');
+  await expect(page.locator('#relationGraph .node-center-label')).toHaveCount(1);
   await expect(page.locator('#relationChanges')).toContainText('1866 → 1867');
   await expect(page.locator('#relationChanges')).toContainText('この時点から');
   await expect(page.locator('#relationChanges')).toContainText('辞官・納地処分');

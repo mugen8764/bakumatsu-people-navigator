@@ -102,6 +102,14 @@
     renderAll({ historyMode: 'push' });
   }
 
+  function revealPersonDetail() {
+    if (!window.matchMedia('(max-width: 920px)').matches) return;
+    requestAnimationFrame(() => {
+      $('#personDetail').scrollIntoView({ block: 'start', behavior: 'auto' });
+      $('#personBackToList')?.focus({ preventScroll: true });
+    });
+  }
+
   function selectFaction(name, nextView = 'factions') {
     searchController.clearStatus();
     if (!window.BM_STATE.selectFaction(state, data, domain, name)) return;
@@ -130,7 +138,7 @@
     window.BM_ROUTER.writeRoute(state, scene(), environment, { historyMode });
   }
 
-  Object.assign(actions, { openEvent, selectFaction, selectPerson, setScene, setView, syncRoute });
+  Object.assign(actions, { openEvent, revealPersonDetail, selectFaction, selectPerson, setScene, setView, syncRoute });
 
   function clearCopyStatuses() {
     $$('[data-copy-status]').forEach(status => { status.textContent = ''; });

@@ -16,6 +16,21 @@
       }).filter(Boolean).slice(0, limit);
     }
 
+    function representativePeople(people, limit) {
+      const representatives = [];
+      const representedFactions = new Set();
+      people.forEach(item => {
+        if (representatives.length >= limit || representedFactions.has(item.status.faction)) return;
+        representatives.push(item);
+        representedFactions.add(item.status.faction);
+      });
+      people.forEach(item => {
+        if (representatives.length >= limit || representatives.includes(item)) return;
+        representatives.push(item);
+      });
+      return representatives;
+    }
+
     function renderScenePeople(event) {
       const people = eventPeopleAtCurrentScene(event, 6);
       $('#scenePeople').innerHTML = people.map(({ person, status }) => `<button type="button" class="scene-person" data-scene-person="${person.id}"><span class="scene-person-avatar" style="background:${shared.factionColor(status.faction)}">${shared.factionShort(status.faction)}</span><span><strong>${status.display}</strong><small>${status.role}</small></span></button>`).join('');
@@ -30,7 +45,7 @@
 
     function renderSceneAtGlance(event, scene) {
       const activePeople = eventPeopleAtCurrentScene(event);
-      const people = activePeople.slice(0, 3);
+      const people = representativePeople(activePeople, 3);
       const factionStates = data.factionStates[scene.id] || {};
       const activeFactions = event.factions.filter(name => factionStates[name]);
       const factions = activeFactions.slice(0, 3);

@@ -89,7 +89,10 @@
       const previousScene = state.scene;
       close();
       $('#globalSearch').value = '';
-      if (result.type === '人物') actions.selectPerson(result.id, 'people');
+      if (result.type === '人物') {
+        actions.selectPerson(result.id, 'people');
+        actions.revealPersonDetail();
+      }
       else if (result.type === '勢力') actions.selectFaction(result.id);
       else actions.openEvent(result.id);
       announceSceneMove(result, previousScene);

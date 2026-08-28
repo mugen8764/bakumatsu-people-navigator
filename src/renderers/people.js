@@ -32,12 +32,8 @@
         return `<button type="button" class="card-button ${person.id === state.selectedPerson ? 'selected' : ''}" data-person-card="${person.id}" aria-pressed="${person.id === state.selectedPerson}"><div class="avatar" style="background:${shared.factionColor(faction)}">${shared.factionShort(faction)}</div><div class="name">${status.display}</div>${nameNote ? `<div class="later-name">${nameNote}</div>` : ''}<div class="role">${status.role}</div><div class="card-foot"><span>${faction}</span><span>詳細 →</span></div></button>`;
       }).join('') || '<div class="notice">この条件で表示できる人物はいません。</div>';
       $$('[data-person-card]').forEach(button => button.addEventListener('click', () => {
-        const showDetail = window.matchMedia('(max-width: 920px)').matches;
         actions.selectPerson(button.dataset.personCard);
-        if (showDetail) requestAnimationFrame(() => {
-          $('#personDetail').scrollIntoView({ block: 'start', behavior: 'auto' });
-          $('#personBackToList')?.focus({ preventScroll: true });
-        });
+        actions.revealPersonDetail();
       }));
       renderDetail();
     }

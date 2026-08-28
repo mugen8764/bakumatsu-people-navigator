@@ -18,7 +18,8 @@
       const height = selected ? 78 : 68;
       const left = -width / 2;
       const top = -height / 2;
-      return `<g transform="translate(${x} ${y})" class="node graph-person ${selected ? 'selected' : ''}" data-graph-person="${person.id}" role="button" tabindex="0" aria-label="${status.display}を選択"><rect class="node-card" x="${left}" y="${top}" width="${width}" height="${height}" rx="18"></rect><rect class="node-stripe" x="${left}" y="${top}" width="10" height="${height}" rx="5" fill="${shared.factionColor(status.faction)}"></rect><text x="0" y="-4" text-anchor="middle" class="node-label">${status.display}</text><text x="0" y="17" text-anchor="middle" class="node-faction">${status.faction}</text></g>`;
+      const centerLabel = selected ? '<text x="0" y="-23" text-anchor="middle" class="node-center-label">中心人物</text>' : '';
+      return `<g transform="translate(${x} ${y})" class="node graph-person ${selected ? 'selected' : ''}" data-graph-person="${person.id}" role="button" tabindex="0" aria-label="${status.display}を選択"><rect class="node-card" x="${left}" y="${top}" width="${width}" height="${height}" rx="18"></rect><rect class="node-stripe" x="${left}" y="${top}" width="10" height="${height}" rx="5" fill="${shared.factionColor(status.faction)}"></rect>${centerLabel}<text x="0" y="-4" text-anchor="middle" class="node-label">${status.display}</text><text x="0" y="17" text-anchor="middle" class="node-faction">${status.faction}</text></g>`;
     }
 
     function nearestSceneWithRelations(personId) {
