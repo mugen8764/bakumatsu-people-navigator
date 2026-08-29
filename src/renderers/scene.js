@@ -144,9 +144,8 @@
       }
       $('#sceneSelect').value = state.scene;
       $('#sceneRange').value = state.scene;
-      $('#calendarMode').value = state.calendar;
-      $('#sceneYear').textContent = state.calendar === 'japanese' ? scene.era : scene.year;
-      $('#sceneEra').textContent = state.calendar === 'both' ? scene.era : '';
+      $('#sceneYear').textContent = scene.year;
+      $('#sceneEra').textContent = scene.era;
       $('#sceneTitle').textContent = scene.title;
       $('#sceneSummary').textContent = scene.summary;
       $('#sceneProgress').style.width = `${(state.scene + 1) / data.scenes.length * 100}%`;

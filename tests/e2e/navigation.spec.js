@@ -43,8 +43,7 @@ test('footer links expose reader-facing publication information', async ({ page 
 });
 
 test('brand icon and title restore the complete initial state', async ({ page }) => {
-  await page.goto('/#scene=1867-taisei&view=relations&person=kido&faction=長州藩');
-  await page.locator('#calendarMode').selectOption('japanese');
+  await page.goto('/#scene=1867-taisei&view=relations&person=kido&faction=長州藩&calendar=japanese');
   await page.locator('#relationType').selectOption('対立');
   await page.locator('#globalSearch').fill('大政奉還');
   await expect(page.locator('#searchResults')).toBeVisible();
@@ -56,11 +55,10 @@ test('brand icon and title restore the complete initial state', async ({ page })
   await expect(page.locator('#view-people')).toBeVisible();
   await expect(page.locator('#personDetail .detail-title')).toHaveText('阿部正弘');
   await expect(page.locator('[data-person-filter="すべて"]')).toHaveAttribute('aria-pressed', 'true');
-  await expect(page.locator('#calendarMode')).toHaveValue('both');
   await expect(page.locator('#relationType')).toHaveValue('all');
   await expect(page.locator('#globalSearch')).toHaveValue('');
   await expect(page.locator('#searchResults')).toBeHidden();
-  await expect(page).toHaveURL(/#scene=1853-blackships&view=people&person=abe&faction=%E5%B9%95%E5%BA%9C&calendar=both$/);
+  await expect(page).toHaveURL(/#scene=1853-blackships&view=people&person=abe&faction=%E5%B9%95%E5%BA%9C$/);
 
   await page.locator('#nextScene').click();
   await page.locator('#brandMarkHome').click();
@@ -499,7 +497,7 @@ test('keyboard focus remains visible at 320px in dark mode', async ({ page }) =>
   await expect(page.locator('#personDetail .detail-title')).toHaveText('桂小五郎');
 });
 
-test('timeline transport, calendar mode, and faction selection remain usable', async ({ page }) => {
+test('timeline transport and faction selection remain usable', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator('#sceneSelect')).toHaveValue('0');
   await expect(page.locator('#sceneChangesHeading')).toHaveText('ここからたどる');
@@ -508,8 +506,8 @@ test('timeline transport, calendar mode, and faction selection remain usable', a
   await page.locator('#nextScene').click();
   await expect(page.locator('#sceneSelect')).toHaveValue('1');
   await expect(page.locator('#sceneChangesHeading')).toHaveText('前の時点から');
-  await page.locator('#calendarMode').selectOption('japanese');
-  await expect(page.locator('#sceneYear')).toHaveText('嘉永7年／安政元年');
+  await expect(page.locator('#sceneYear')).toHaveText('1854');
+  await expect(page.locator('#sceneEra')).toHaveText('嘉永7年／安政元年');
 
   await page.locator('#prevScene').click();
   await expect(page.locator('#sceneSelect')).toHaveValue('0');
@@ -524,7 +522,6 @@ test('timeline transport, calendar mode, and faction selection remain usable', a
 test('the current scene and selection can be copied from the scene summary', async ({ page }) => {
   await page.goto('/');
   await page.locator('[data-person-card="abe"]').click();
-  await page.locator('#calendarMode').selectOption('japanese');
   await page.evaluate(() => {
     window.copiedUrl = '';
     Object.defineProperty(navigator, 'clipboard', {
@@ -536,7 +533,8 @@ test('the current scene and selection can be copied from the scene summary', asy
   await page.locator('#sceneCopyLink').click();
   await expect(page.locator('#sceneCopyStatus')).toContainText('コピーしました');
   await expect(page.locator('#copyStatus')).toHaveText('');
-  await expect.poll(() => page.evaluate(() => window.copiedUrl)).toMatch(/scene=1853-blackships&view=people&person=abe.*calendar=japanese/);
+  await expect.poll(() => page.evaluate(() => window.copiedUrl)).toMatch(/scene=1853-blackships&view=people&person=abe/);
+  await expect.poll(() => page.evaluate(() => window.copiedUrl)).not.toMatch(/calendar=/);
 
   await page.locator('#nextScene').click();
   await expect(page.locator('#sceneCopyStatus')).toHaveText('');
@@ -573,7 +571,9 @@ test('changing the hash after load updates the visible state', async ({ page }) 
   });
   await expect(page.locator('#view-relations')).toBeVisible();
   await expect(page.locator('#sceneSelect')).toHaveValue('11');
-  await expect(page.locator('#calendarMode')).toHaveValue('japanese');
+  await expect(page.locator('#sceneYear')).toHaveText('1867');
+  await expect(page.locator('#sceneEra')).toHaveText('慶応3年');
+  await expect(page).not.toHaveURL(/calendar=/);
   await expect(page.locator('#relationGraph .node.selected')).toHaveAttribute('data-graph-person', 'kido');
 });
 

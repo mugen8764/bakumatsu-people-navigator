@@ -19,8 +19,6 @@
     }
 
     function dateLabel(value) {
-      if (state.calendar === 'western') return `${value.year}年`;
-      if (state.calendar === 'japanese') return value.era;
       return `${value.year}年（${value.era}）`;
     }
 

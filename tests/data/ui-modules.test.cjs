@@ -38,21 +38,18 @@ test('initial route prefers valid hash values and tolerates blocked storage', ()
     view: 'relations',
     selectedPerson: 'kido',
     selectedFaction: '長州藩',
-    calendar: 'japanese',
     selectedPlace: 'kyoto'
   });
 });
 
-test('state rejects invalid view and calendar values', () => {
+test('state rejects invalid view values', () => {
   const state = stateApi.createState(data, domain, {
     scene: 0,
     view: 'unknown',
     selectedPerson: 'missing',
-    selectedFaction: 'missing',
-    calendar: 'unknown'
+    selectedFaction: 'missing'
   });
   assert.equal(state.view, 'people');
-  assert.equal(state.calendar, 'both');
   assert.equal(state.selectedPerson, 'perry');
   assert.equal(state.selectedFaction, '幕府');
   assert.equal(state.selectedPlace, '');
@@ -63,8 +60,7 @@ test('state reset restores every selectable control to its initial value', () =>
     scene: 11,
     view: 'relations',
     selectedPerson: 'kido',
-    selectedFaction: '長州藩',
-    calendar: 'japanese'
+    selectedFaction: '長州藩'
   });
   state.personFactionFilter = '長州藩';
   state.relationType = '対立';
@@ -79,7 +75,6 @@ test('state reset restores every selectable control to its initial value', () =>
   assert.equal(state.selectedFaction, '幕府');
   assert.equal(state.personFactionFilter, 'すべて');
   assert.equal(state.relationType, 'all');
-  assert.equal(state.calendar, 'both');
   assert.equal(state.selectedPlace, '');
   assert.equal(state.map.zoomedPlace, '');
 });
@@ -124,7 +119,8 @@ test('route writes add history only for deliberate navigation', () => {
 
   router.writeRoute(state, data.scenes[0], environment, { historyMode: 'push' });
   assert.equal(calls[0][0], 'push');
-  assert.match(calls[0][1], /scene=1853-blackships&view=people&person=abe.*calendar=both/);
+  assert.match(calls[0][1], /scene=1853-blackships&view=people&person=abe&faction=/);
+  assert.doesNotMatch(calls[0][1], /calendar=/);
 
   environment.location.hash = `#${calls[0][1].split('#')[1]}`;
   router.writeRoute(state, data.scenes[0], environment, { historyMode: 'push' });

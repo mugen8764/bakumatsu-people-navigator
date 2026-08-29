@@ -183,10 +183,6 @@
     sceneRangeChanging = true;
   });
   $('#sceneRange').addEventListener('change', () => { sceneRangeChanging = false; });
-  $('#calendarMode').addEventListener('change', event => {
-    state.calendar = event.target.value;
-    renderAll();
-  });
   $('#prevScene').addEventListener('click', () => {
     setScene(state.scene - 1);
   });

@@ -6,7 +6,6 @@
   'use strict';
 
   const views = new Set(['people', 'factions', 'relations', 'map', 'events', 'sources']);
-  const calendars = new Set(['both', 'western', 'japanese']);
 
   function createState(data, domain, initial = {}) {
     const state = {
@@ -16,7 +15,6 @@
       selectedFaction: initial.selectedFaction || '幕府',
       personFactionFilter: 'すべて',
       relationType: 'all',
-      calendar: calendars.has(initial.calendar) ? initial.calendar : 'both',
       selectedPlace: data.places[initial.selectedPlace] ? initial.selectedPlace : '',
       mapReady: false,
       map: null
@@ -48,7 +46,6 @@
     if (route.view !== undefined && views.has(route.view)) state.view = route.view;
     if (route.selectedPerson !== undefined) state.selectedPerson = route.selectedPerson;
     if (route.selectedFaction !== undefined) state.selectedFaction = route.selectedFaction;
-    if (route.calendar !== undefined && calendars.has(route.calendar)) state.calendar = route.calendar;
     if (route.selectedPlace !== undefined) state.selectedPlace = data.places[route.selectedPlace] ? route.selectedPlace : '';
   }
 
@@ -83,7 +80,6 @@
     state.selectedFaction = '幕府';
     state.personFactionFilter = 'すべて';
     state.relationType = 'all';
-    state.calendar = 'both';
     state.selectedPlace = '';
     if (state.map) {
       state.map.zoomedPlace = '';
@@ -91,5 +87,5 @@
     ensureSelections(state, data, domain);
   }
 
-  return { applyRoute, calendars, createState, ensureSelections, resetState, selectFaction, selectPerson, setScene, views };
+  return { applyRoute, createState, ensureSelections, resetState, selectFaction, selectPerson, setScene, views };
 }));
