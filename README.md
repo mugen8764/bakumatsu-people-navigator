@@ -57,7 +57,7 @@ npm run build:site
 npm run check:release
 ```
 
-`_headers` はNetlifyとCloudflare Pages向けです。セキュリティヘッダーに加え、HTMLは再検証し、静的データ・スクリプトは短時間、画像は1日キャッシュする方針を定義しています。GitHub Pagesなど、このファイルを解釈しない配信先では同等のHTTPヘッダーをCDNまたはリバースプロキシ側で設定してください。
+`_headers` はNetlifyとCloudflare Pages向けです。セキュリティヘッダーに加え、HTML・静的データ・スクリプトは更新を再検証し、画像は1日キャッシュする方針を定義しています。GitHub Pagesなど、このファイルを解釈しない配信先では同等のHTTPヘッダーをCDNまたはリバースプロキシ側で設定してください。
 
 ### Cloudflare認証情報のローテーション
 

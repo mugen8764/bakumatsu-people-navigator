@@ -12,19 +12,19 @@
   Cache-Control: no-cache
 
 /src/*
-  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+  Cache-Control: no-cache
 
 /data/*
-  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+  Cache-Control: no-cache
 
 /data.js
-  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+  Cache-Control: no-cache
 
 /data.json
-  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+  Cache-Control: no-cache
 
 /map-data.js
-  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+  Cache-Control: no-cache
 
 /favicon.svg
   Cache-Control: public, max-age=86400

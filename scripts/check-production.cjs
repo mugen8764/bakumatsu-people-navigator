@@ -13,6 +13,7 @@ const files = [
   'data.js',
   'data.json',
   'og-image.png',
+  'src/app.js',
   'src/domain.js',
   'src/renderers/people.js'
 ];
@@ -23,7 +24,8 @@ const requiredHeaders = [
   'x-content-type-options'
 ];
 const requiredCacheControls = new Map([
-  ['data.js', 'max-age=3600'],
+  ['data.js', 'no-cache'],
+  ['src/app.js', 'no-cache'],
   ['og-image.png', 'max-age=86400']
 ]);
 

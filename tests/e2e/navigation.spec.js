@@ -609,7 +609,7 @@ test('tabs, search results, and relation nodes support keyboard operation', cros
 test('missing generated data shows a recovery message instead of a blank page', async ({ page }) => {
   const pageErrors = [];
   page.on('pageerror', error => pageErrors.push(error.message));
-  await page.route('**/data.js', route => route.fulfill({
+  await page.route(/\/data\.js(?:\?.*)?$/, route => route.fulfill({
     contentType: 'text/javascript',
     body: 'window.BM_DATA = null;'
   }));
@@ -641,7 +641,7 @@ test('404 page recovers the correct site root from a nested path', async ({ page
 });
 
 test('review status follows item-level calibration', async ({ page }) => {
-  await page.route('**/data.js', async route => {
+  await page.route(/\/data\.js(?:\?.*)?$/, async route => {
     const response = await route.fetch();
     const script = await response.text();
     const data = JSON.parse(script.replace(/^window\.BM_DATA=/, '').replace(/;\s*$/, ''));

@@ -9,7 +9,7 @@ test('delayed historical data does not cause a large initial layout shift', asyn
       }
     }).observe({ type: 'layout-shift', buffered: true });
   });
-  await page.route('**/data.js', async route => {
+  await page.route(/\/data\.js(?:\?.*)?$/, async route => {
     const response = await route.fetch();
     await new Promise(resolve => setTimeout(resolve, 750));
     await route.fulfill({ response });
