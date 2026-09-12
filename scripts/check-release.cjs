@@ -55,6 +55,20 @@ const assetReferences = [
 ].filter(reference => !/^(?:https?:|\/\/|#)/.test(reference));
 assetReferences.forEach(reference => requireFile(reference.split(/[?#]/, 1)[0]));
 
+// Scripts and the stylesheet share one cache-busting token. A half-updated set
+// would let a browser pair a new data file with a renderer it no longer matches.
+const versionedReferences = [
+  ...[...html.matchAll(/<script[^>]+src="([^"]+)"/g)].map(match => match[1]),
+  ...[...html.matchAll(/<link[^>]+rel="stylesheet"[^>]+href="([^"]+)"/g)].map(match => match[1])
+].filter(reference => !/^(?:https?:|\/\/|#)/.test(reference));
+const assetVersions = new Set(versionedReferences.map(
+  reference => new URLSearchParams(reference.split('?')[1] || '').get('v')
+));
+if (!versionedReferences.length) failures.push('index.html references no local script or stylesheet.');
+else if (assetVersions.size !== 1 || assetVersions.has(null)) {
+  failures.push(`Local scripts and the stylesheet must share one ?v= token, found: ${[...assetVersions].map(String).join(', ')}`);
+}
+
 const socialImage = fs.readFileSync(path.join(root, 'og-image.png'));
 const pngSignature = Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]);
 if (!socialImage.subarray(0, 8).equals(pngSignature)) failures.push('og-image.png is not a PNG image.');
@@ -104,5 +118,5 @@ if (failures.length) {
   failures.forEach(failure => console.error(`- ${failure}`));
   process.exitCode = 1;
 } else {
-  console.log(`Release artifacts valid: ${requiredFiles.length} required files, ${assetReferences.length + notFoundAssets.length} local assets.`);
+  console.log(`Release artifacts valid: ${requiredFiles.length} required files, ${assetReferences.length + notFoundAssets.length} local assets, asset version ${[...assetVersions][0]}.`);
 }
