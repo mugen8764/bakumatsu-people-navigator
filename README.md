@@ -82,6 +82,7 @@ npm run check:release
 - `src/renderers/`: 人物・勢力・相関図・事件などの画面描画
 - `src/styles.css`: レイアウトと配色
 - `map-data.js`: Natural Earth由来の低解像度地理形状を、このサイト用に投影・変換したSVGパス
+- `og-image.svg`: OGP画像の作図原本。公開するのは書き出した `og-image.png`（1200×630）だけで、`og-image.svg` は `dist/` に含めません。図を変更した場合は同じ寸法でPNGを書き出し直してください。
 
 人物の状態は `data/person-statuses.json` に追加します。表示期間には `startSceneId` と `endSceneId` を指定し、勢力などの参照には表示名ではなく安定IDを使います。
 
@@ -164,7 +165,7 @@ npm run report:sources
 ```
 
 GitHub Actionsでは、プッシュとプルリクエストごとにactionlintでワークフローを静的検査し、READMEの掲載件数と主要事件の精密出典網羅も含む `dist/` 検査を行います。ChromiumではOS非依存テストをすべて実行し、FirefoxとWebKitでは `@cross-browser` を付けた主要な画面遷移、320px表示、地図連動、キーボード・タッチ操作を確認します。画像スナップショットはWindowsでの公開前検査として実行します。
-`main` のCI成功後は、CIが生成した `public-site` artifactをCloudflare Pagesへ配置します。配信成功後、本番の主要5ファイルが同じコミットの内容になったことと、4種のセキュリティヘッダーを自動確認します。
+`main` のCI成功後は、CIが生成した `public-site` artifactをCloudflare Pagesへ配置します。配信成功後、本番の主要8ファイルが同じコミットの内容になったことと、4種のセキュリティヘッダー、3件のキャッシュ方針を自動確認します。
 必要に応じてGitHub Actionsの「Production smoke」を手動実行するか、ローカルで `npm run check:production` を実行して同じ検査を再実行できます。
 登録済みの公式出典URLは週1回 `npm run check:links` で到達性を確認します。外部サイト側の一時障害を通常のプッシュ検査へ波及させないため、リンク検査は独立した定期ジョブです。
 

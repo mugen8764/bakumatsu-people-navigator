@@ -84,23 +84,27 @@ async function inspect(attempt) {
   return failures;
 }
 
-(async () => {
-  let lastFailures = [];
-  for (let attempt = 1; attempt <= attempts; attempt += 1) {
-    lastFailures = await inspect(attempt);
-    if (!lastFailures.length) {
-      const manifest = JSON.parse(fs.readFileSync(path.join(root, 'data/manifest.json'), 'utf8'));
-      console.log(`Production matches content ${manifest.contentVersion}: ${files.length} files, ${requiredHeaders.length} security headers, and ${requiredCacheControls.size} cache policies.`);
-      return;
+if (require.main === module) {
+  (async () => {
+    let lastFailures = [];
+    for (let attempt = 1; attempt <= attempts; attempt += 1) {
+      lastFailures = await inspect(attempt);
+      if (!lastFailures.length) {
+        const manifest = JSON.parse(fs.readFileSync(path.join(root, 'data/manifest.json'), 'utf8'));
+        console.log(`Production matches content ${manifest.contentVersion}: ${files.length} files, ${requiredHeaders.length} security headers, and ${requiredCacheControls.size} cache policies.`);
+        return;
+      }
+      if (attempt < attempts) {
+        console.log(`Production not current yet (${attempt}/${attempts}); retrying in ${intervalMs / 1000}s.`);
+        await new Promise(resolve => setTimeout(resolve, intervalMs));
+      }
     }
-    if (attempt < attempts) {
-      console.log(`Production not current yet (${attempt}/${attempts}); retrying in ${intervalMs / 1000}s.`);
-      await new Promise(resolve => setTimeout(resolve, intervalMs));
-    }
-  }
-  lastFailures.forEach(failure => console.error(`- ${failure}`));
-  process.exitCode = 1;
-})().catch(error => {
-  console.error(`- Production check failed: ${error.message}`);
-  process.exitCode = 1;
-});
+    lastFailures.forEach(failure => console.error(`- ${failure}`));
+    process.exitCode = 1;
+  })().catch(error => {
+    console.error(`- Production check failed: ${error.message}`);
+    process.exitCode = 1;
+  });
+}
+
+module.exports = { files, requiredCacheControls, requiredHeaders };

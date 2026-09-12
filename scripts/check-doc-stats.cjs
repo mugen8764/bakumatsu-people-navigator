@@ -8,6 +8,7 @@ const factions = readJson('factions.json').factions;
 const { scenes } = readJson('events.json');
 const { personRelations, factionRelations } = readJson('relations.json');
 const places = readJson('places.json').places;
+const production = require('./check-production.cjs');
 const readme = fs.readFileSync(path.join(root, 'README.md'), 'utf8');
 
 const expectedLines = [
@@ -16,7 +17,11 @@ const expectedLines = [
   `- 時点・主要事件: ${scenes.length}`,
   `- 人物関係: ${personRelations.length}`,
   `- 勢力関係: ${factionRelations.length}`,
-  `- 地点: ${places.length}`
+  `- 地点: ${places.length}`,
+  // The production smoke summary is quoted in prose; keep it tied to the checker.
+  `本番の主要${production.files.length}ファイル`,
+  `${production.requiredHeaders.length}種のセキュリティヘッダー`,
+  `${production.requiredCacheControls.size}件のキャッシュ方針`
 ];
 const missing = expectedLines.filter(line => !readme.includes(line));
 

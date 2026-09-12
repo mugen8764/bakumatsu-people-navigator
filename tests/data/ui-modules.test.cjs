@@ -208,7 +208,7 @@ test('markup characters in the data are escaped before they reach markup', () =>
 });
 
 test('source cards preserve optional precision metadata', () => {
-  const shared = createShared({ data, state: { calendar: 'both', scene: 0 } });
+  const shared = createShared({ data, state: { scene: 0 } });
   const markup = shared.sourceLinks(['ndl_kido_iwakura_proposal_1869']);
   assert.match(markup, /該当箇所: 目次144頁（0110\.jp2）/);
   assert.match(markup, /内容確認日: 2026-07-31/);
