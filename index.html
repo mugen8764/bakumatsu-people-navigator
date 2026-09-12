@@ -77,6 +77,7 @@
     </div>
     <div class="global-search"><label id="globalSearchLabel" for="globalSearch">人物・勢力・事件を横断検索<input id="globalSearch" type="search" role="combobox" aria-autocomplete="list" aria-controls="searchResults" aria-expanded="false" aria-labelledby="globalSearchLabel" placeholder="例：桂小五郎、大政奉還、京都守護職、薩摩"></label><div id="searchResults" class="search-results" role="listbox" aria-label="検索結果" hidden></div></div>
     <div id="navigationStatus" class="navigation-status" role="status" aria-live="polite" hidden></div>
+    <div id="sceneStatus" class="visually-hidden" role="status" aria-live="polite"></div>
   </section>
 
   <div class="tabs-shell">
@@ -99,21 +100,21 @@
         <div class="notice">カードは選択時点で一般的に使われる名前を優先します。「桂小五郎」「木戸孝允」のように、どの時期の名前でも検索できます。</div>
         <div id="personCards" class="cards"></div>
       </div>
-      <aside id="personDetail" class="panel detail" aria-live="polite"></aside>
+      <aside id="personDetail" class="panel detail"></aside>
     </div>
   </section>
 
   <section id="view-factions" class="view" role="tabpanel" aria-labelledby="tab-factions" hidden>
     <div class="main-grid">
       <div><div class="notice">勢力は固定した「味方・敵」ではありません。薩摩と長州のように、同じ期間内でも敵対から提携へ変化します。</div><div id="factionCards" class="faction-grid"></div></div>
-      <aside id="factionDetail" class="panel detail" aria-live="polite"></aside>
+      <aside id="factionDetail" class="panel detail"></aside>
     </div>
   </section>
 
   <section id="view-relations" class="view" role="tabpanel" aria-labelledby="tab-relations" hidden>
     <div class="layout">
       <div class="panel visual"><svg id="relationGraph" viewBox="0 0 820 590" role="group" aria-label="選択人物を中心とした人物相関図"></svg><div id="relationMobile" class="relation-mobile" aria-label="選択人物の関係一覧"></div></div>
-      <aside class="panel side"><h2>時点で変わる相関図</h2><p class="muted">選択人物を中心に、その時点で意味のある関係だけを表示します。</p><div class="metrics"><div class="metric"><b id="metricPeople">0</b><span>図の人物</span></div><div class="metric"><b id="metricRelations">0</b><span>この人物の関係</span></div><div class="metric"><b id="metricFactions">0</b><span>関係勢力</span></div></div><div id="relationChanges" class="relation-changes" aria-live="polite"></div><label>関係の種類<select id="relationType"><option value="all">すべて</option><option value="主従・登用">主従・登用</option><option value="政治協力">政治協力</option><option value="対立">対立</option><option value="師弟・同志">師弟・同志</option><option value="組織">組織</option><option value="仲介・交渉">仲介・交渉</option><option value="親族">親族</option></select></label><div id="graphExplanation" class="relations graph-explanation"></div><div id="graphLegend" class="legend"></div></aside>
+      <aside class="panel side"><h2>時点で変わる相関図</h2><p class="muted">選択人物を中心に、その時点で意味のある関係だけを表示します。</p><div class="metrics"><div class="metric"><b id="metricPeople">0</b><span>図の人物</span></div><div class="metric"><b id="metricRelations">0</b><span>この人物の関係</span></div><div class="metric"><b id="metricFactions">0</b><span>関係勢力</span></div></div><div id="relationChanges" class="relation-changes"></div><label>関係の種類<select id="relationType"><option value="all">すべて</option><option value="主従・登用">主従・登用</option><option value="政治協力">政治協力</option><option value="対立">対立</option><option value="師弟・同志">師弟・同志</option><option value="組織">組織</option><option value="仲介・交渉">仲介・交渉</option><option value="親族">親族</option></select></label><div id="graphExplanation" class="relations graph-explanation"></div><div id="graphLegend" class="legend"></div></aside>
     </div>
   </section>
 
@@ -127,7 +128,7 @@
   <section id="view-events" class="view" role="tabpanel" aria-labelledby="tab-events" hidden>
     <div class="timeline-layout">
       <div class="panel side"><h2>事件の因果タイムライン</h2><p class="muted">事件名だけでなく、原因・争点・結果をつないで読みます。</p><div id="causalTimeline" class="chain"></div></div>
-      <aside id="eventDetail" class="panel detail" aria-live="polite"></aside>
+      <aside id="eventDetail" class="panel detail"></aside>
     </div>
   </section>
 

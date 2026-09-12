@@ -144,6 +144,7 @@
       }
       $('#sceneSelect').value = state.scene;
       $('#sceneRange').value = state.scene;
+      $('#sceneRange').setAttribute('aria-valuetext', `${scene.year}年 ${scene.title}`);
       $('#sceneYear').textContent = scene.year;
       $('#sceneEra').textContent = scene.era;
       $('#sceneTitle').textContent = scene.title;
@@ -156,6 +157,11 @@
       renderSceneChanges(event);
       renderScenePeople(event);
       renderSceneFactions(event);
+      // The detail panels are not live regions, so the scene change is the one
+      // redraw worth announcing, and only when it actually differs.
+      const sceneStatus = $('#sceneStatus');
+      const sceneSummary = `${scene.year}年（${scene.era}）「${scene.title}」`;
+      if (sceneStatus.textContent !== sceneSummary) sceneStatus.textContent = sceneSummary;
       $('#prevScene').disabled = state.scene === 0;
       $('#nextScene').disabled = state.scene === data.scenes.length - 1;
     }
