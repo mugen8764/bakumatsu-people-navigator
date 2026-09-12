@@ -1,3 +1,8 @@
+// Projects the generated legacy shape back into v2 documents. This is the
+// reverse of scripts/lib/assemble-legacy-data.cjs and is not part of the build:
+// tests/data/schema-contract.test.cjs uses it to derive contract fixtures from
+// the full published catalog, so the schema rules are exercised against real
+// data rather than hand-written samples.
 const mappings = require('../../schema/v2/id-mappings.json');
 
 function evidence(sourceIds = [], reviewStatus = sourceIds.length ? 'verified' : 'needs_review', note) {
