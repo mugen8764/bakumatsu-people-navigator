@@ -3,7 +3,9 @@ const AxeBuilder = require('@axe-core/playwright').default;
 
 for (const [id, title, person, term] of [
   ['commercial-treaty-1858', '日米修好通商条約の調印', 'kawaji-toshiakira', '勅許'],
-  ['august18-coup', '八月十八日の政変', 'asahiko', '公武合体']
+  ['august18-coup', '八月十八日の政変', 'asahiko', '公武合体'],
+  ['taisei-hokan', '大政奉還の上表', 'goto', '公武合体'],
+  ['aizu-siege', '会津戦争・若松城の籠城', 'yae', '京都守護職']
 ]) {
   test(`${id} keeps context through search, person, reload and map`, { tag: '@cross-browser' }, async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 850 });

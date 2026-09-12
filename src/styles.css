@@ -42,8 +42,8 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
    placeholder test in tests/e2e/performance.spec.js compare each reservation
    against the height the loaded page actually takes. */
 .app-loading .top{min-height:396px}
-.app-loading #view-people{min-height:1190px}
-.app-loading #personCards{min-height:513px;background:repeating-linear-gradient(135deg,var(--card) 0 18px,var(--panel) 18px 36px);border-radius:14px;opacity:.55}
+.app-loading #view-people{min-height:1272px}
+.app-loading #personCards{min-height:687px;background:repeating-linear-gradient(135deg,var(--card) 0 18px,var(--panel) 18px 36px);border-radius:14px;opacity:.55}
 .app-loading #personDetail{min-height:610px}
 .hero{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;margin-bottom:14px}
 .brand{display:flex;gap:11px;align-items:flex-start}
@@ -294,8 +294,8 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
 }
 @media(max-width:680px){
   .app-loading .top{min-height:522px}
-  .app-loading #view-people{min-height:2123px}
-  .app-loading #personCards{min-height:860px}
+  .app-loading #view-people{min-height:2533px}
+  .app-loading #personCards{min-height:1207px}
 }
 @media(max-width:430px){
   .cards{grid-template-columns:1fr}
@@ -304,8 +304,8 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
 }
 @media(max-width:430px){
   .app-loading .top{min-height:552px}
-  .app-loading #view-people{min-height:3037px}
-  .app-loading #personCards{min-height:1681px}
+  .app-loading #view-people{min-height:3641px}
+  .app-loading #personCards{min-height:2202px}
 }
 .review-status{border-color:var(--danger);color:var(--danger);background:transparent;font-size:.62rem;white-space:nowrap}
 .review-status.disputed{border-color:var(--accent);color:var(--accent)}

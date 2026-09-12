@@ -160,7 +160,7 @@
         const group = results.map((result, index) => ({ result, index })).filter(item => item.result.type === type);
         if (!group.length) return '';
         const groupId = `search-group-${type === '人物' ? 'people' : type === '勢力' ? 'factions' : 'events'}`;
-        return `<section class="search-group" role="group" aria-labelledby="${groupId}"><div id="${groupId}" class="search-group-title"><strong>${type}</strong><span>${group.length}件</span></div>${group.map(({ result, index }) => `<button id="search-result-${index}" type="button" class="search-result" data-search-index="${index}" role="option" aria-selected="false" tabindex="-1"><span><strong>${highlightMatch(result.title, value)}</strong>${result.sub ? `<small>${highlightMatch(result.sub, value)}</small>` : ''}</span></button>`).join('')}</section>`;
+        return `<section class="search-group" role="group" aria-labelledby="${groupId}"><div id="${groupId}" class="search-group-title"><strong>${type === '勢力' ? '勢力・分野' : type}</strong><span>${group.length}件</span></div>${group.map(({ result, index }) => `<button id="search-result-${index}" type="button" class="search-result" data-search-index="${index}" role="option" aria-selected="false" tabindex="-1"><span><strong>${highlightMatch(result.title, value)}</strong>${result.sub ? `<small>${highlightMatch(result.sub, value)}</small>` : ''}</span></button>`).join('')}</section>`;
       }).join('') : '<div class="notice" style="margin:0">該当する項目がありません。</div>';
       $$('[data-search-index]', box).forEach(button => button.addEventListener('click', () => {
         const result = results[Number(button.dataset.searchIndex)];

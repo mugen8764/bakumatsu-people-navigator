@@ -16,6 +16,8 @@ const files = [
   'src/app.js',
   'src/domain.js',
   'src/renderers/people.js',
+  'src/renderers/factions.js',
+  'src/renderers/relations.js',
   'src/state.js',
   'src/router.js',
   'src/search.js',

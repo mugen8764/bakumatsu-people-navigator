@@ -154,7 +154,7 @@
       $('#sceneSummary').textContent = scene.summary;
       $('#sceneProgress').style.width = `${(state.scene + 1) / data.scenes.length * 100}%`;
       const event = data.events[scene.event];
-      $('#sceneCounts').innerHTML = `<span class="count">人物 ${domain.activePeople(state.scene).length}</span><span class="count">勢力 ${domain.activeFactionNames(state.scene).length}</span><span class="count">関係 ${domain.activeRelations(state.scene).length}</span><span class="count">${esc(event.category)}</span>${shared.reviewBadge(scene.evidence)}`;
+      $('#sceneCounts').innerHTML = `<span class="count">人物 ${domain.activePeople(state.scene).length}</span><span class="count">勢力・分野 ${domain.activeFactionNames(state.scene).length}</span><span class="count">関係 ${domain.activeRelations(state.scene).length}</span><span class="count">${esc(event.category)}</span>${shared.reviewBadge(scene.evidence)}`;
       $('#sceneInsights').innerHTML = scene.insights.map(insight => `<div class="insight">${esc(insight)}</div>`).join('');
       renderSceneAtGlance(event, scene);
       const incidents = domain.incidentsAt(state.scene);
@@ -189,7 +189,7 @@
 
     function renderSources() {
       if (sourcesRendered) return;
-      $('#dataStats').innerHTML = `<div class="stat"><b>${data.people.length}</b><span>人物</span></div><div class="stat"><b>${Object.keys(data.factions).length}</b><span>勢力</span></div><div class="stat"><b>${data.scenes.length}</b><span>時点・事件</span></div><div class="stat"><b>${data.relations.length}</b><span>人物関係</span></div>`;
+      $('#dataStats').innerHTML = `<div class="stat"><b>${data.people.length}</b><span>人物</span></div><div class="stat"><b>${Object.keys(data.factions).length}</b><span>勢力・分野</span></div><div class="stat"><b>${data.scenes.length}</b><span>時点・事件</span></div><div class="stat"><b>${data.relations.length}</b><span>人物関係</span></div>`;
       $('#sourceCatalog').innerHTML = Object.values(data.sources).map(shared.sourceCard).join('');
       sourcesRendered = true;
     }

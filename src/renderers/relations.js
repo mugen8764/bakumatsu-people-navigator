@@ -120,7 +120,7 @@
       $$('[data-graph-other]').forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.graphOther, 'relations')));
       $$('[data-mobile-relation-person]').forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.mobileRelationPerson, 'relations')));
       $$('[data-relation-scene]').forEach(button => button.addEventListener('click', () => actions.setScene(button.dataset.relationScene)));
-      $('#graphLegend').innerHTML = `<div class="legend-group"><strong>関係</strong><span><i class="line-sample cooperation"></i>協力・交渉</span><span><i class="line-sample conflict"></i>対立</span><span><i class="line-sample organization"></i>組織・登用</span><span><i class="line-sample personal"></i>同志・親族</span></div><div class="legend-group"><strong>勢力</strong>${legendFactions.map(name => `<span><i class="dot" style="background:${esc(shared.factionColor(name))}"></i>${esc(name)}</span>`).join('')}</div>`;
+      $('#graphLegend').innerHTML = `<div class="legend-group"><strong>関係</strong><span><i class="line-sample cooperation"></i>協力・交渉</span><span><i class="line-sample conflict"></i>対立</span><span><i class="line-sample organization"></i>組織・登用</span><span><i class="line-sample personal"></i>同志・親族</span></div><div class="legend-group"><strong>勢力・分野</strong>${legendFactions.map(name => `<span><i class="dot" style="background:${esc(shared.factionColor(name))}"></i>${esc(name)}</span>`).join('')}</div>`;
     }
 
     return { render };

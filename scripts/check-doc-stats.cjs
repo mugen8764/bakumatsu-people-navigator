@@ -13,7 +13,8 @@ const readme = fs.readFileSync(path.join(root, 'README.md'), 'utf8');
 
 const expectedLines = [
   `- 人物: ${people.length}名`,
-  `- 勢力: ${factions.length}`,
+  `- 勢力: ${factions.filter(faction => faction.kind !== 'field').length}`,
+  `- 活動分野: ${factions.filter(faction => faction.kind === 'field').length}`,
   `- 時点・主要事件: ${scenes.length}`,
   `- 個別事件: ${incidents.length}`,
   `- 人物関係: ${personRelations.length}`,

@@ -10,7 +10,7 @@
     function renderFilters() {
       const names = ['すべて', ...domain.personFactionNames(state.scene)];
       if (!names.includes(state.personFactionFilter)) state.personFactionFilter = 'すべて';
-      $('#personFilters').innerHTML = names.map(name => `<button type="button" class="chip ${state.personFactionFilter === name ? 'active' : ''}" data-person-filter="${esc(name)}" aria-pressed="${state.personFactionFilter === name}">${esc(name)}</button>`).join('');
+      $('#personFilters').innerHTML = names.map(name => `<button type="button" class="chip ${state.personFactionFilter === name ? 'active' : ''}" data-person-filter="${esc(name)}" aria-pressed="${state.personFactionFilter === name}">${data.factions[name]?.kind === 'field' ? '分野：' : ''}${esc(name)}</button>`).join('');
       $$('[data-person-filter]').forEach(button => button.addEventListener('click', () => {
         state.personFactionFilter = button.dataset.personFilter;
         render();
@@ -30,7 +30,7 @@
         const faction = status.faction;
         const laterName = domain.laterNameAt(person, state.scene);
         const nameNote = laterName ? `後の名：${laterName}` : (status.display === person.name ? (person.aliases[0] || '') : '');
-        return `<button type="button" class="card-button ${person.id === state.selectedPerson ? 'selected' : ''}" data-person-card="${esc(person.id)}" aria-pressed="${person.id === state.selectedPerson}">${shared.avatar(person, faction, status.display)}<div class="name">${esc(status.display)}</div>${nameNote ? `<div class="later-name">${esc(nameNote)}</div>` : ''}<div class="role">${esc(status.role)}</div><div class="card-foot"><span>${esc(faction)}</span><span>詳細 →</span></div></button>`;
+        return `<button type="button" class="card-button ${person.id === state.selectedPerson ? 'selected' : ''}" data-person-card="${esc(person.id)}" aria-pressed="${person.id === state.selectedPerson}">${shared.avatar(person, faction, status.display)}<div class="name">${esc(status.display)}</div>${nameNote ? `<div class="later-name">${esc(nameNote)}</div>` : ''}<div class="role">${esc(status.role)}</div><div class="card-foot"><span>${data.factions[faction]?.kind === 'field' ? '分野：' : ''}${esc(faction)}</span><span>詳細 →</span></div></button>`;
       }).join('') || '<div class="notice">この条件で表示できる人物はいません。</div>';
       $$('[data-person-card]').forEach(button => button.addEventListener('click', () => {
         actions.selectPerson(button.dataset.personCard);
@@ -66,7 +66,7 @@
         const other = domain.getPerson(relation.a === person.id ? relation.b : relation.a);
         return `<section class="section" data-relation-sources="${esc(other.id)}"><h4>${esc(domain.statusAt(other, state.scene).display)} — ${esc(relation.label)} ${shared.reviewBadge(relation.evidence)}</h4><div class="source-list">${evidenceLinks(relation.evidence)}</div></section>`;
       }).join('');
-      box.innerHTML = `<button type="button" class="button detail-back" id="personBackToList">← 人物一覧へ</button><div class="detail-head">${shared.avatar(person, status.faction, status.display)}<div><div class="detail-title">${esc(status.display)}</div>${laterName ? `<div class="aliases">後の名前：${esc(laterName)}</div>` : ''}<div class="badges"><span class="badge">${esc(status.faction)}</span><span class="badge">${esc(status.role)}</span><span class="badge">${esc(person.born)}</span></div></div></div>
+      box.innerHTML = `<button type="button" class="button detail-back" id="personBackToList">← 人物一覧へ</button><div class="detail-head">${shared.avatar(person, status.faction, status.display)}<div><div class="detail-title">${esc(status.display)}</div>${laterName ? `<div class="aliases">後の名前：${esc(laterName)}</div>` : ''}<div class="badges"><span class="badge">${data.factions[status.faction]?.kind === 'field' ? '活動分野：' : ''}${esc(status.faction)}</span><span class="badge">${esc(status.role)}</span><span class="badge">${esc(person.born)}</span></div></div></div>
       ${incidentContext}${person.portrait ? `<p class="portrait-note">${esc(person.portrait.dateNote)}</p>${shared.portraitCredit(person)}` : ''}
       <div class="snapshot"><strong>${shared.dateLabel(shared.scene())}の位置づけ ${shared.reviewBadge(status.evidence)}</strong>${esc(status.importance)}</div>
       <div class="section"><h3>この時点の行動・立場</h3><p>${esc(status.stance)}</p></div>

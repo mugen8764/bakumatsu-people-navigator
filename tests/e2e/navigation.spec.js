@@ -1,3 +1,9 @@
+const vm = require('node:vm');
+function readBrowserData(script) {
+  const context = { window: {} };
+  vm.runInNewContext(script, context);
+  return JSON.parse(JSON.stringify(context.window.BM_DATA));
+}
 const { expect, test } = require('@playwright/test');
 const crossBrowser = { tag: '@cross-browser' };
 
@@ -11,14 +17,14 @@ test('all six primary views render without a page error', crossBrowser, async ({
   await page.goto('/');
 
   await expect(page.locator('h1')).toHaveText('幕末人物・勢力ナビ');
-  await expect(page.locator('#personCards .card-button')).toHaveCount(10);
+  await expect(page.locator('#personCards .card-button')).toHaveCount(13);
 
   for (const view of ['people', 'factions', 'relations', 'map', 'events', 'sources']) {
   await page.locator(`.tab[data-view="${view}"]`).click();
     await expect(page.locator(`#view-${view}`)).toBeVisible();
   }
 
-  await expect(page.locator('#sourceCatalog .source')).toHaveCount(234);
+  await expect(page.locator('#sourceCatalog .source')).toHaveCount(253);
   const preciseSource = page.locator('#sourceCatalog .source', { hasText: '木戸孝允遺文集' });
   await expect(preciseSource.locator('.source-meta')).toContainText('該当箇所: 目次144頁（0110.jp2）');
   await expect(preciseSource.locator('.source-meta')).toContainText('内容確認日: 2026-07-31');
@@ -669,7 +675,7 @@ test('review status follows item-level calibration', async ({ page }) => {
   await page.route(/\/data\.js(?:\?.*)?$/, async route => {
     const response = await route.fetch();
     const script = await response.text();
-    const data = JSON.parse(script.replace(/^window\.BM_DATA=/, '').replace(/;\s*$/, ''));
+    const data = readBrowserData(script);
     const relation = data.relations.find(item => item.a === 'kido' && item.b === 'takasugi');
     relation.evidence.reviewStatus = 'needs_review';
     await route.fulfill({
@@ -695,7 +701,7 @@ test('data that looks like markup is displayed as text', async ({ page }) => {
   await page.route(/\/data\.js(?:\?.*)?$/, async route => {
     const response = await route.fetch();
     const script = await response.text();
-    const data = JSON.parse(script.replace(/^window\.BM_DATA=/, '').replace(/;\s*$/, ''));
+    const data = readBrowserData(script);
     const person = data.people.find(item => item.id === 'kido');
     person.name = rawName;
     Object.values(person.statuses).forEach(status => { status.display = rawName; });
@@ -742,7 +748,7 @@ test('a disputed item is labelled 諸説あり rather than 出典校正中', asy
   await page.route(/\/data\.js(?:\?.*)?$/, async route => {
     const response = await route.fetch();
     const script = await response.text();
-    const data = JSON.parse(script.replace(/^window\.BM_DATA=/, '').replace(/;\s*$/, ''));
+    const data = readBrowserData(script);
     data.relations.find(item => item.a === 'kido' && item.b === 'takasugi').evidence.reviewStatus = 'disputed';
     data.people.find(item => item.id === 'kido').statuses['1866-satcho'].evidence.reviewStatus = 'disputed';
     await route.fulfill({
