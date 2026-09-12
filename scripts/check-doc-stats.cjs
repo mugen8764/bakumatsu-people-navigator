@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const readJson = file => JSON.parse(fs.readFileSync(path.join(root, 'data', file), 'utf8'));
 const people = readJson('people.json').people;
 const factions = readJson('factions.json').factions;
-const { scenes, incidents = [] } = readJson('events.json');
+const { scenes, incidents = [], terms = [] } = readJson('events.json');
 const { personRelations, factionRelations } = readJson('relations.json');
 const places = readJson('places.json').places;
 const production = require('./check-production.cjs');
@@ -19,6 +19,8 @@ const expectedLines = [
   `- 人物関係: ${personRelations.length}`,
   `- 勢力関係: ${factionRelations.length}`,
   `- 地点: ${places.length}`,
+  `- 背景解説: ${terms.length}項目`,
+  `- 史料肖像: ${people.filter(person => person.portrait).length}点`,
   // The production smoke summary is quoted in prose; keep it tied to the checker.
   `本番の主要${production.files.length}ファイル`,
   `${production.requiredHeaders.length}種のセキュリティヘッダー`,

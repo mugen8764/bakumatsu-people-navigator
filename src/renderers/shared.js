@@ -47,7 +47,7 @@
 
     function avatar(person, faction, name = person.name, nameFallback = false) {
       const portrait = person.portrait;
-      return `<span class="avatar ${portrait ? 'has-portrait' : ''}" style="background:${escapeHtml(factionColor(faction))}"><span aria-hidden="true">${escapeHtml(portrait || nameFallback ? name.slice(0, 2) : factionShort(faction))}</span>${portrait ? `<img data-portrait src="${escapeHtml(portrait.src)}" alt="${escapeHtml(portrait.alt)}" width="80" height="100" loading="lazy">` : ''}</span>`;
+      return `<span class="avatar ${portrait ? 'has-portrait' : ''}" style="background-color:${escapeHtml(factionColor(faction))}"><span aria-hidden="true">${escapeHtml(portrait || nameFallback ? name.slice(0, 2) : factionShort(faction))}</span>${portrait ? `<img data-portrait src="${escapeHtml(portrait.src)}" alt="${escapeHtml(portrait.alt)}" width="80" height="100" loading="lazy">` : ''}</span>`;
     }
 
     function bindPortraits(container) {
@@ -72,7 +72,13 @@
       return '<span class="badge review-status" title="項目単位の出典を確認中です">出典校正中</span>';
     }
 
-    return { avatar, bindPortraits, portraitCredit, dateLabel, escapeHtml, factionColor, factionShort, reviewBadge, scene, sourceCard, sourceLinks };
+    function backgroundTerms(ids = []) {
+      const terms = ids.map(id => data.terms?.[id]).filter(Boolean);
+      if (!terms.length) return '';
+      return `<section class="background-terms section"><h3>背景を知る</h3><div class="term-list">${terms.map(term => `<details class="background-term"><summary>${escapeHtml(term.title)}<span class="term-reading">${escapeHtml(term.kana)}</span></summary><p>${escapeHtml(term.meaning)} ${reviewBadge(term.evidence)}</p><p class="term-context">${escapeHtml(term.context)}</p><div class="source-list">${sourceLinks(term.evidence.sourceIds)}</div></details>`).join('')}</div></section>`;
+    }
+
+    return { avatar, backgroundTerms, bindPortraits, portraitCredit, dateLabel, escapeHtml, factionColor, factionShort, reviewBadge, scene, sourceCard, sourceLinks };
   }
 
   return { createShared, escapeHtml };

@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bakumatsu-people-navigator.local/schema/term.schema.json",
+  "title": "短い背景解説",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "kana",
+    "meaning",
+    "context",
+    "evidence"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "#/$defs/id"
+    },
+    "title": {
+      "$ref": "#/$defs/text"
+    },
+    "kana": {
+      "$ref": "#/$defs/text"
+    },
+    "meaning": {
+      "$ref": "#/$defs/text"
+    },
+    "context": {
+      "$ref": "#/$defs/text"
+    },
+    "evidence": {
+      "$ref": "#/$defs/evidence"
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]*$"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceIds",
+        "reviewStatus"
+      ],
+      "properties": {
+        "sourceIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "reviewStatus": {
+          "enum": [
+            "verified",
+            "needs_review",
+            "disputed"
+          ]
+        },
+        "note": {
+          "$ref": "#/$defs/text"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "reviewStatus": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "reviewStatus"
+            ]
+          },
+          "then": {
+            "properties": {
+              "sourceIds": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

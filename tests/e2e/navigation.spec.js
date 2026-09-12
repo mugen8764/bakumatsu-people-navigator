@@ -11,14 +11,14 @@ test('all six primary views render without a page error', crossBrowser, async ({
   await page.goto('/');
 
   await expect(page.locator('h1')).toHaveText('幕末人物・勢力ナビ');
-  await expect(page.locator('#personCards .card-button')).toHaveCount(7);
+  await expect(page.locator('#personCards .card-button')).toHaveCount(10);
 
   for (const view of ['people', 'factions', 'relations', 'map', 'events', 'sources']) {
   await page.locator(`.tab[data-view="${view}"]`).click();
     await expect(page.locator(`#view-${view}`)).toBeVisible();
   }
 
-  await expect(page.locator('#sourceCatalog .source')).toHaveCount(213);
+  await expect(page.locator('#sourceCatalog .source')).toHaveCount(234);
   const preciseSource = page.locator('#sourceCatalog .source', { hasText: '木戸孝允遺文集' });
   await expect(preciseSource.locator('.source-meta')).toContainText('該当箇所: 目次144頁（0110.jp2）');
   await expect(preciseSource.locator('.source-meta')).toContainText('内容確認日: 2026-07-31');
@@ -730,8 +730,8 @@ test('the scene at-a-glance total does not depend on how many chips fit', async 
   await expect.poll(async () => (await counts()).peopleLabel).toBe(narrow.peopleLabel);
   const wide = await counts();
 
-  // 1858-ansei lists 11 event people and 5 active factions at this scene.
-  expect(narrow).toEqual({ peopleLabel: '全11人', factionLabel: '全5勢力' });
+  // 1858-ansei lists 12 event people and 5 active factions at this scene.
+  expect(narrow).toEqual({ peopleLabel: '全12人', factionLabel: '全5勢力' });
   expect(wide).toEqual(narrow);
 });
 

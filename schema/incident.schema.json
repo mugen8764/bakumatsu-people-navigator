@@ -8,6 +8,8 @@
   "properties": {
     "id": { "$ref": "#/$defs/id" },
     "sceneId": { "type": "string", "pattern": "^[0-9]{4}-[a-z0-9-]+$" },
+    "scope": { "$ref": "#/$defs/text" },
+    "termIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
     "title": { "$ref": "#/$defs/text" },
     "date": { "$ref": "#/$defs/text" },
     "summary": { "$ref": "#/$defs/text" },
@@ -21,6 +23,7 @@
         "properties": {
           "personId": { "$ref": "#/$defs/id" },
           "displayName": { "$ref": "#/$defs/text" },
+          "side": { "$ref": "#/$defs/text" },
           "role": { "$ref": "#/$defs/text" },
           "involvement": { "enum": ["onsite", "decision", "context"] },
           "summary": { "$ref": "#/$defs/text" },
@@ -37,6 +40,7 @@
           "id": { "$ref": "#/$defs/id" },
           "aPersonId": { "$ref": "#/$defs/id" },
           "bPersonId": { "$ref": "#/$defs/id" },
+          "direction": { "enum": ["none", "forward", "both"] },
           "label": { "$ref": "#/$defs/text" },
           "description": { "$ref": "#/$defs/text" },
           "evidence": { "$ref": "#/$defs/evidence" }

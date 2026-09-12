@@ -29,7 +29,7 @@ test('data.js is an exact browser wrapper of data.json', () => {
   vm.runInNewContext(fs.readFileSync(path.join(root, 'data.js'), 'utf8'), context);
   assert.deepEqual(JSON.parse(JSON.stringify(context.window.BM_DATA)), data);
 });
-test('the published collection sizes stay at the Ikedaya release baseline', () => {
+test('the published collection sizes stay at the balanced expansion release baseline', () => {
   assert.deepEqual({
     people: data.people.length,
     factions: Object.keys(data.factions).length,
@@ -40,14 +40,14 @@ test('the published collection sizes stay at the Ikedaya release baseline', () =
     places: Object.keys(data.places).length,
     sources: Object.keys(data.sources).length
   }, {
-    people: 44,
+    people: 52,
     factions: 11,
     scenes: 16,
     events: 16,
-    relations: 65,
+    relations: 75,
     factionRelations: 17,
     places: 27,
-    sources: 213
+    sources: 234
   });
 });
 
@@ -177,6 +177,7 @@ test('the source catalog has one used entry per URL', () => {
     scenes: data.scenes,
     events: data.events,
     incidents: data.incidents,
+    terms: data.terms,
     relations: data.relations,
     factionRelations: data.factionRelations,
     places: data.places

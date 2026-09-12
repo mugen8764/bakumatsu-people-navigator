@@ -22,7 +22,7 @@ test('incident search, people, map, reload and history retain the event context'
   await page.locator('.search-result strong', { hasText: /^池田屋事件$/ }).click();
   await expect(page.locator('#eventDetailTitle')).toHaveText('池田屋事件');
   await expect(page.locator('#eventDetailTitle')).toBeFocused();
-  await expect(page.locator('.onsite [data-event-person]')).toHaveCount(3);
+  await expect(page.locator('.onsite [data-event-person]')).toHaveCount(4);
   await expect(page.locator('.context [data-event-person="katamori"]')).toBeVisible();
   await page.locator('[data-event-person="okita"]').click();
   await expect(page.locator('#personDetail .detail-title')).toHaveText('沖田総司');

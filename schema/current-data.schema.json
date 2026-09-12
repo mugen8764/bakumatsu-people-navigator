@@ -46,6 +46,7 @@
       "propertyNames": { "$ref": "#/$defs/dataId" },
       "additionalProperties": { "$ref": "#/$defs/place" }
     },
+    "terms": { "type": "object", "propertyNames": { "$ref": "#/$defs/dataId" }, "additionalProperties": { "$ref": "https://bakumatsu-people-navigator.local/schema/term.schema.json" } },
     "incidents": {
       "type": "object",
       "propertyNames": { "$ref": "#/$defs/dataId" },
@@ -225,6 +226,7 @@
         "kana": { "$ref": "#/$defs/nonEmptyString" },
         "aliases": { "$ref": "#/$defs/stringList" },
         "born": { "$ref": "#/$defs/nonEmptyString" },
+        "termIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/dataId" } },
         "portrait": { "$ref": "https://bakumatsu-people-navigator.local/schema/portrait.schema.json" },
         "defaultFaction": { "$ref": "#/$defs/nonEmptyString" },
         "activeRange": {

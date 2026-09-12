@@ -28,6 +28,7 @@ function createAjv() {
   addFormats(ajv);
   ajv.addSchema(readJson('schema/incident.schema.json'));
   ajv.addSchema(readJson('schema/portrait.schema.json'));
+  ajv.addSchema(readJson('schema/term.schema.json'));
   return ajv;
 }
 
@@ -216,6 +217,12 @@ function validateV2References(documents) {
     requireReference(personIds, relation.bPersonId, `${relation.id}.bPersonId`);
     validateSceneRange(relation, sceneOrder, relation.id);
     allEvidence.push(relation.evidence);
+  }
+  const terms = documents.events.terms || [];
+  const termIds = uniqueIds(terms, 'terms');
+  for (const term of terms) allEvidence.push(term.evidence);
+  for (const item of [...documents.people.people, ...(documents.events.incidents || [])]) {
+    (item.termIds || []).forEach(id => requireReference(termIds, id, item.id + '.termIds'));
   }
   const incidents = documents.events.incidents || [];
   const incidentIds = uniqueIds(incidents, 'incidents');

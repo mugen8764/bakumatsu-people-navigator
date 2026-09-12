@@ -112,6 +112,7 @@ function assembleLegacyData(documents) {
       places: [...person.placeIds],
       events: [...person.eventIds],
       sources: [...person.evidence.sourceIds],
+      ...(person.termIds ? { termIds: [...person.termIds] } : {}),
       ...(person.portrait ? { portrait: structuredClone(person.portrait) } : {}),
       statuses: Object.fromEntries(statusEntries)
     };
@@ -166,6 +167,7 @@ function assembleLegacyData(documents) {
     factions: legacyFactions,
     scenes: legacyScenes,
     events,
+    terms: toObject(documents.events.terms || [], term => structuredClone(term)),
     incidents: toObject(documents.events.incidents || [], incident => structuredClone(incident)),
     places,
     people,

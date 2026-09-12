@@ -70,6 +70,7 @@
       ${incidentContext}${person.portrait ? `<p class="portrait-note">${esc(person.portrait.dateNote)}</p>${shared.portraitCredit(person)}` : ''}
       <div class="snapshot"><strong>${shared.dateLabel(shared.scene())}の位置づけ ${shared.reviewBadge(status.evidence)}</strong>${esc(status.importance)}</div>
       <div class="section"><h3>この時点の行動・立場</h3><p>${esc(status.stance)}</p></div>
+      ${shared.backgroundTerms(person.termIds)}
       <div class="section"><h3>一言で</h3><p>${esc(person.oneLine)}</p></div>
       <div class="section"><h3>名前・通称</h3><div class="tags">${[person.name, ...person.aliases].map(alias => `<span class="tag">${esc(alias)}</span>`).join('')}</div></div>
       <div class="section"><h3>この時点の主要関係</h3><div class="relations">${relations.length ? relations.map(relation => {

@@ -140,6 +140,8 @@
     renderAll({ historyMode: 'push' });
     const heading = $('#eventDetailTitle');
     if (heading) {
+      // The sticky tabs wrap at narrow widths and when text is enlarged.
+      heading.style.scrollMarginTop = `${$('.tabs-shell').getBoundingClientRect().height + 16}px`;
       heading.scrollIntoView({ block: 'start', behavior: 'auto' });
       heading.focus({ preventScroll: true });
     }
