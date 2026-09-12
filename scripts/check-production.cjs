@@ -15,8 +15,19 @@ const files = [
   'og-image.png',
   'src/app.js',
   'src/domain.js',
-  'src/renderers/people.js'
+  'src/renderers/people.js',
+  'src/state.js',
+  'src/router.js',
+  'src/search.js',
+  'src/map.js',
+  'src/renderers/shared.js',
+  'src/renderers/scene.js',
+  'src/renderers/events.js',
+  'src/styles.css'
 ];
+const portraits = JSON.parse(fs.readFileSync(path.join(root, 'data.json'), 'utf8')).people
+  .filter(person => person.portrait).map(person => person.portrait.src);
+files.push(...new Set(portraits));
 const requiredHeaders = [
   'content-security-policy',
   'permissions-policy',
@@ -28,6 +39,7 @@ const requiredCacheControls = new Map([
   ['src/app.js', 'no-cache'],
   ['og-image.png', 'max-age=86400']
 ]);
+portraits.forEach(file => requiredCacheControls.set(file, 'no-cache'));
 
 function digest(value) {
   return crypto.createHash('sha256').update(value).digest('hex');

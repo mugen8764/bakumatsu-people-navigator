@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const readJson = file => JSON.parse(fs.readFileSync(path.join(root, 'data', file), 'utf8'));
 const people = readJson('people.json').people;
 const factions = readJson('factions.json').factions;
-const { scenes } = readJson('events.json');
+const { scenes, incidents = [] } = readJson('events.json');
 const { personRelations, factionRelations } = readJson('relations.json');
 const places = readJson('places.json').places;
 const production = require('./check-production.cjs');
@@ -15,6 +15,7 @@ const expectedLines = [
   `- 人物: ${people.length}名`,
   `- 勢力: ${factions.length}`,
   `- 時点・主要事件: ${scenes.length}`,
+  `- 個別事件: ${incidents.length}`,
   `- 人物関係: ${personRelations.length}`,
   `- 勢力関係: ${factionRelations.length}`,
   `- 地点: ${places.length}`,

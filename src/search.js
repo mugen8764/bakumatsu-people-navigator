@@ -67,6 +67,11 @@
         results.push({ type: '勢力', title: name, sub: faction.summary, id: name });
       }
     });
+    Object.values(data.incidents || {}).forEach(incident => {
+      if (normalise([incident.title, incident.summary, ...incident.participants.map(item => item.displayName)].join(' ')).includes(normalizedQuery)) {
+        results.push({ type: '事件', title: incident.title, sub: incident.date, id: incident.id, rank: -1 });
+      }
+    });
     Object.entries(data.events).forEach(([id, event]) => {
       if (normalise([event.title, event.description, ...event.issues, ...event.causes, ...event.results].join(' ')).includes(normalizedQuery)) {
         results.push({ type: '事件', title: event.title, sub: event.date, id });

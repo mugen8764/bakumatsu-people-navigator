@@ -45,6 +45,25 @@
         .join('');
     }
 
+    function avatar(person, faction, name = person.name, nameFallback = false) {
+      const portrait = person.portrait;
+      return `<span class="avatar ${portrait ? 'has-portrait' : ''}" style="background:${escapeHtml(factionColor(faction))}"><span aria-hidden="true">${escapeHtml(portrait || nameFallback ? name.slice(0, 2) : factionShort(faction))}</span>${portrait ? `<img data-portrait src="${escapeHtml(portrait.src)}" alt="${escapeHtml(portrait.alt)}" width="80" height="100" loading="lazy">` : ''}</span>`;
+    }
+
+    function bindPortraits(container) {
+      container.querySelectorAll('img[data-portrait]').forEach(img => {
+        const fallback = () => { img.hidden = true; };
+        img.addEventListener('error', fallback, { once: true });
+        if (img.complete && !img.naturalWidth) fallback();
+      });
+    }
+
+    function portraitCredit(person) {
+      const portrait = person.portrait;
+      if (!portrait) return '';
+      return `<details class="source-disclosure portrait-credit"><summary>${escapeHtml(person.name)}の肖像：出典・利用条件</summary><p>${escapeHtml(portrait.credit)}</p><p>${escapeHtml(portrait.identityNote)}</p><p>${escapeHtml(portrait.dateNote)}</p><p>原資料：${escapeHtml(portrait.originalSource || '書誌未確認')}</p><p>${escapeHtml(portrait.rightsNote)}</p><div class="source-list">${sourceLinks([portrait.sourceId, portrait.rightsSourceId])}</div></details>`;
+    }
+
     function reviewBadge(evidence) {
       if (!evidence || evidence.reviewStatus === 'verified') return '';
       if (evidence.reviewStatus === 'disputed') {
@@ -53,7 +72,7 @@
       return '<span class="badge review-status" title="項目単位の出典を確認中です">出典校正中</span>';
     }
 
-    return { dateLabel, escapeHtml, factionColor, factionShort, reviewBadge, scene, sourceCard, sourceLinks };
+    return { avatar, bindPortraits, portraitCredit, dateLabel, escapeHtml, factionColor, factionShort, reviewBadge, scene, sourceCard, sourceLinks };
   }
 
   return { createShared, escapeHtml };

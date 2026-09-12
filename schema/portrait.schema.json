@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bakumatsu-people-navigator.local/schema/portrait.schema.json",
+  "title": "史料肖像の掲載情報",
+  "type": "object", "additionalProperties": false,
+  "required": ["src", "alt", "sourceId", "rightsSourceId", "credit", "originalSource", "dateNote", "identityNote", "rightsNote", "checkedAt"],
+  "properties": {
+    "src": { "type": "string", "pattern": "^assets/portraits/[a-z0-9-]+\\.(jpg|png|webp)$" },
+    "alt": { "type": "string", "minLength": 1 },
+    "sourceId": { "type": "string", "pattern": "^[a-z][a-z0-9_-]*$" },
+    "rightsSourceId": { "type": "string", "pattern": "^[a-z][a-z0-9_-]*$" },
+    "credit": { "type": "string", "minLength": 1 },
+    "originalSource": { "type": ["string", "null"], "minLength": 1 },
+    "dateNote": { "type": "string", "minLength": 1 },
+    "identityNote": { "type": "string", "minLength": 1 },
+    "rightsNote": { "type": "string", "minLength": 1 },
+    "checkedAt": { "type": "string", "format": "date" }
+  }
+}

@@ -14,6 +14,9 @@
 /src/*
   Cache-Control: no-cache
 
+/assets/portraits/*
+  Cache-Control: no-cache
+
 /data/*
   Cache-Control: no-cache
 

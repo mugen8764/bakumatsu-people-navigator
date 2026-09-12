@@ -99,7 +99,7 @@ test('initial route prefers valid hash values and tolerates blocked storage', ()
     view: 'relations',
     selectedPerson: 'kido',
     selectedFaction: '長州藩',
-    selectedPlace: 'kyoto'
+    selectedPlace: 'kyoto', selectedIncident: ''
   });
 });
 

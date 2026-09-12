@@ -34,7 +34,7 @@ test('the release check still accepts the repository itself', () => {
 });
 
 const releaseEntries = [
-  '404.html', 'LICENSE', 'README.md', 'SOURCES.md', '_headers', 'data', 'data.js', 'data.json',
+  '404.html', 'LICENSE', 'README.md', 'SOURCES.md', '_headers', 'assets', 'data', 'data.js', 'data.json',
   'favicon.svg', 'index.html', 'map-data.js', 'og-image.png', 'robots.txt', 'schema', 'sitemap.xml', 'src'
 ];
 

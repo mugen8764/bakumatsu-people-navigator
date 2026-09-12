@@ -26,6 +26,8 @@ function readJson(relativePath) {
 function createAjv() {
   const ajv = new Ajv2020({ allErrors: true, strict: true, strictTypes: false });
   addFormats(ajv);
+  ajv.addSchema(readJson('schema/incident.schema.json'));
+  ajv.addSchema(readJson('schema/portrait.schema.json'));
   return ajv;
 }
 
@@ -180,6 +182,11 @@ function validateV2References(documents) {
     }
     person.placeIds.forEach(id => requireReference(placeIds, id, `${person.id}.placeIds`));
     person.eventIds.forEach(id => requireReference(eventIds, id, `${person.id}.eventIds`));
+    if (person.portrait) {
+      requireReference(sourceIds, person.portrait.sourceId, `${person.id}.portrait.sourceId`);
+      requireReference(sourceIds, person.portrait.rightsSourceId, `${person.id}.portrait.rightsSourceId`);
+      if (person.portrait.checkedAt > documents.manifest.updated) throw new Error(`${person.id}.portrait.checkedAt is later than manifest.updated`);
+    }
     allEvidence.push(person.evidence);
   }
   for (const status of documents.personStatuses.statuses) {
@@ -209,6 +216,38 @@ function validateV2References(documents) {
     requireReference(personIds, relation.bPersonId, `${relation.id}.bPersonId`);
     validateSceneRange(relation, sceneOrder, relation.id);
     allEvidence.push(relation.evidence);
+  }
+  const incidents = documents.events.incidents || [];
+  const incidentIds = uniqueIds(incidents, 'incidents');
+  for (const id of incidentIds) if (eventIds.has(id)) throw new Error(`incident ID conflicts with scene event: ${id}`);
+  const peopleById = new Map(documents.people.people.map(person => [person.id, person]));
+  for (const incident of incidents) {
+    requireReference(sceneIds, incident.sceneId, `${incident.id}.sceneId`);
+    const cast = new Set(incident.participants.map(participant => participant.personId));
+    if (cast.size !== incident.participants.length) throw new Error(`${incident.id} contains duplicate participants`);
+    allEvidence.push(incident.evidence);
+    incident.placeIds.forEach(id => requireReference(placeIds, id, `${incident.id}.placeIds`));
+    for (const participant of incident.participants) {
+      requireReference(personIds, participant.personId, `${incident.id}.participants`);
+      const person = peopleById.get(participant.personId);
+      const index = sceneOrder.get(incident.sceneId);
+      if (index < sceneOrder.get(person.activeStartSceneId) || index > sceneOrder.get(person.activeEndSceneId)) {
+        throw new Error(`${incident.id} participant outside active range: ${person.id}`);
+      }
+      if (![person.name, ...person.aliases].includes(participant.displayName)) throw new Error(`${incident.id} displayName is not registered for ${person.id}`);
+      allEvidence.push(participant.evidence);
+    }
+    uniqueIds(incident.relations, `${incident.id} relations`);
+    const pairs = new Set();
+    for (const relation of incident.relations) {
+      requireReference(cast, relation.aPersonId, `${relation.id}.aPersonId`);
+      requireReference(cast, relation.bPersonId, `${relation.id}.bPersonId`);
+      if (relation.aPersonId === relation.bPersonId) throw new Error(`${relation.id} has the same person at both ends`);
+      const pair = [relation.aPersonId, relation.bPersonId].sort().join('|');
+      if (pairs.has(pair)) throw new Error(`${incident.id} contains duplicate relation pair: ${pair}`);
+      pairs.add(pair);
+      allEvidence.push(relation.evidence);
+    }
   }
   for (const relation of documents.relations.factionRelations) {
     requireReference(factionIds, relation.aFactionId, `${relation.id}.aFactionId`);

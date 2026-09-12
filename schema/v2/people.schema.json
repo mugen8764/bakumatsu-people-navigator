@@ -15,6 +15,7 @@
         "required": ["id", "name", "kana", "aliases", "lifespan", "defaultFactionId", "activeStartSceneId", "activeEndSceneId", "oneLine", "placeIds", "eventIds", "evidence"],
         "properties": {
           "id": { "$ref": "definitions.schema.json#/$defs/stableId" },
+          "portrait": { "$ref": "https://bakumatsu-people-navigator.local/schema/portrait.schema.json" },
           "name": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
           "kana": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
           "aliases": { "$ref": "definitions.schema.json#/$defs/stringList" },

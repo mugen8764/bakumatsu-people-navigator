@@ -128,13 +128,21 @@
   }
 
   function openEvent(id) {
-    const index = domain.eventScene.get(id);
+    const incident = Object.hasOwn(data.incidents || {}, id) ? data.incidents[id] : null;
+    const index = incident ? domain.sceneById.get(incident.sceneId)?.index : domain.eventScene.get(id);
     if (index === undefined) return;
     searchController.clearStatus();
     state.scene = index;
+    state.selectedIncident = incident?.id || '';
+    if (incident && !incident.participants.some(item => item.personId === state.selectedPerson)) state.selectedPerson = incident.participants[0].personId;
     state.view = 'events';
     window.BM_STATE.ensureSelections(state, data, domain);
     renderAll({ historyMode: 'push' });
+    const heading = $('#eventDetailTitle');
+    if (heading) {
+      heading.scrollIntoView({ block: 'start', behavior: 'auto' });
+      heading.focus({ preventScroll: true });
+    }
   }
 
   function syncRoute(historyMode = 'replace') {

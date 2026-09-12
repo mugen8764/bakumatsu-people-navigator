@@ -29,7 +29,7 @@ test('data.js is an exact browser wrapper of data.json', () => {
   vm.runInNewContext(fs.readFileSync(path.join(root, 'data.js'), 'utf8'), context);
   assert.deepEqual(JSON.parse(JSON.stringify(context.window.BM_DATA)), data);
 });
-test('the published collection sizes stay at the stage-one baseline', () => {
+test('the published collection sizes stay at the Ikedaya release baseline', () => {
   assert.deepEqual({
     people: data.people.length,
     factions: Object.keys(data.factions).length,
@@ -40,14 +40,14 @@ test('the published collection sizes stay at the stage-one baseline', () => {
     places: Object.keys(data.places).length,
     sources: Object.keys(data.sources).length
   }, {
-    people: 42,
+    people: 44,
     factions: 11,
     scenes: 16,
     events: 16,
     relations: 65,
     factionRelations: 17,
     places: 27,
-    sources: 208
+    sources: 213
   });
 });
 
@@ -163,6 +163,8 @@ test('the source catalog has one used entry per URL', () => {
     for (const [key, child] of Object.entries(value)) {
       if ((key === 'sourceIds' || key === 'sources') && Array.isArray(child)) {
         child.forEach(sourceId => usedSourceIds.add(sourceId));
+      } else if (key === 'sourceId' || key === 'rightsSourceId') {
+        usedSourceIds.add(child);
       } else {
         collectSourceIds(child);
       }
@@ -174,6 +176,7 @@ test('the source catalog has one used entry per URL', () => {
     factionStates: data.factionStates,
     scenes: data.scenes,
     events: data.events,
+    incidents: data.incidents,
     relations: data.relations,
     factionRelations: data.factionRelations,
     places: data.places

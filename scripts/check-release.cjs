@@ -110,6 +110,22 @@ else {
 }
 
 const manifest = JSON.parse(read('data/manifest.json'));
+const publishedData = JSON.parse(read('data.json'));
+for (const person of publishedData.people) {
+  if (!person.portrait) continue;
+  const { src } = person.portrait;
+  if (!/^assets\/portraits\/[a-z0-9-]+\.(jpg|png|webp)$/.test(src)) {
+    failures.push(`Unsafe portrait path for ${person.id}: ${src}`);
+    continue;
+  }
+  requireFile(src);
+  if (!fs.existsSync(path.join(root, src))) continue;
+  const bytes = fs.readFileSync(path.join(root, src));
+  const valid = src.endsWith('.jpg') ? bytes.subarray(0, 3).equals(Buffer.from([255, 216, 255]))
+    : src.endsWith('.png') ? bytes.subarray(0, 8).equals(pngSignature)
+      : bytes.subarray(0, 4).toString() === 'RIFF' && bytes.subarray(8, 12).toString() === 'WEBP';
+  if (!valid || bytes.length > 1024 * 1024) failures.push(`Portrait must be a valid image under 1 MiB: ${src}`);
+}
 if (!/^\d{4}-\d{2}-\d{2}$/.test(manifest.updated)) failures.push('data/manifest.json updated must be YYYY-MM-DD.');
 if (!/^\d+\.\d+\.\d+$/.test(manifest.contentVersion)) failures.push('data/manifest.json contentVersion must be semantic versioning.');
 if (!sitemap.includes(`<lastmod>${manifest.updated}</lastmod>`)) failures.push('sitemap.xml lastmod does not match data/manifest.json updated.');

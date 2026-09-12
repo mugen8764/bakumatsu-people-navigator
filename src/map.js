@@ -109,7 +109,8 @@
 
     function placeIds() {
       const person = domain.getPerson(state.selectedPerson);
-      const event = data.events[shared.scene().event];
+      const incident = domain.incidentAt(state);
+      const event = incident ? { title: incident.title, places: incident.placeIds } : data.events[shared.scene().event];
       return [...new Set([...(person?.places || []), ...event.places])];
     }
 
@@ -169,7 +170,8 @@
     function renderInfo() {
       const person = domain.getPerson(state.selectedPerson);
       const status = domain.statusAt(person, state.scene);
-      const event = data.events[shared.scene().event];
+      const incident = domain.incidentAt(state);
+      const event = incident ? { title: incident.title, places: incident.placeIds } : data.events[shared.scene().event];
       const ids = placeIds();
       $('#mapTitle').textContent = status ? `${status.display}と「${event.title}」の関連地` : `「${event.title}」の関連地`;
       $('#mapDescription').textContent = '緑系の丸は人物の主な関連地、菱形は事件の主要地点です。マーカー、地図上の地名、右欄の地名から地点を選ぶと周辺を拡大します。人物の所在地を特定日ごとに断定する表示ではありません。';
@@ -182,7 +184,7 @@
           ? `<button type="button" class="place-link person" data-map-person="${esc(person.id)}">${esc(status?.display || person.name)}を見る</button>`
           : '';
         const eventLink = eventPlaces.has(id)
-          ? `<button type="button" class="place-link event" data-map-event="${esc(shared.scene().event)}">「${esc(event.title)}」を見る</button>`
+          ? `<button type="button" class="place-link event" data-map-event="${esc(state.selectedIncident || shared.scene().event)}">「${esc(event.title)}」を見る</button>`
           : '';
         const outside = place.coord[0] < 125 || place.coord[0] > 146 || place.coord[1] < 24 || place.coord[1] > 46;
         return `<article class="list-item place-card" data-map-place-card="${esc(id)}"><div class="place-card-head"><button type="button" class="place-name" data-map-place-name="${esc(id)}" aria-pressed="false">${esc(place.name)} ${shared.reviewBadge(place.evidence)}</button><div class="place-kinds">${personPlaces.has(id) ? '<span class="person">人物</span>' : ''}${eventPlaces.has(id) ? '<span class="event">事件</span>' : ''}</div></div><p>${esc(place.note)}</p>${outside ? '<small class="muted">日本地図の範囲外</small>' : ''}<div class="place-links">${personLink}${eventLink}</div></article>`;

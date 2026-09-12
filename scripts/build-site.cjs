@@ -10,6 +10,7 @@ const entries = [
   'README.md',
   'SOURCES.md',
   '_headers',
+  'assets',
   'data',
   'data.js',
   'data.json',

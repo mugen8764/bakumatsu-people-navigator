@@ -22,6 +22,7 @@
       personFactionFilter: 'すべて',
       relationType: 'all',
       selectedPlace: hasEntry(data.places, initial.selectedPlace) ? initial.selectedPlace : '',
+      selectedIncident: hasEntry(data.incidents || {}, initial.selectedIncident) ? initial.selectedIncident : '',
       mapReady: false,
       map: null
     };
@@ -31,6 +32,8 @@
   }
 
   function ensureSelections(state, data, domain) {
+    const incident = domain.incidentAt(state);
+    if (!incident || !incident.participants.some(item => item.personId === state.selectedPerson)) state.selectedIncident = '';
     let person = domain.getPerson(state.selectedPerson);
     if (!person || !domain.statusAt(person, state.scene)) {
       person = domain.activePeople(state.scene)[0];
@@ -57,6 +60,7 @@
     if (route.scene !== undefined) setScene(state, data, route.scene);
     if (route.view !== undefined && views.has(route.view)) state.view = route.view;
     if (route.selectedPerson !== undefined) state.selectedPerson = route.selectedPerson;
+    if (route.selectedIncident !== undefined) state.selectedIncident = hasEntry(data.incidents || {}, route.selectedIncident) ? route.selectedIncident : '';
     if (route.selectedFaction !== undefined) state.selectedFaction = route.selectedFaction;
     if (route.selectedPlace !== undefined) state.selectedPlace = hasEntry(data.places, route.selectedPlace) ? route.selectedPlace : '';
   }
@@ -93,6 +97,7 @@
     state.personFactionFilter = 'すべて';
     state.relationType = 'all';
     state.selectedPlace = '';
+    state.selectedIncident = '';
     if (state.map) {
       state.map.zoomedPlace = '';
     }

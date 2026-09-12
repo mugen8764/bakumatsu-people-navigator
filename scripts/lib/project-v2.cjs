@@ -66,6 +66,7 @@ function projectLegacyData(data) {
       oneLine: person.oneLine,
       placeIds: [...person.places],
       eventIds: [...person.events],
+      ...(person.portrait ? { portrait: structuredClone(person.portrait) } : {}),
       evidence: evidence(person.sources)
     }))
   };
@@ -119,6 +120,7 @@ function projectLegacyData(data) {
 
   const events = {
     schemaVersion: 2,
+    incidents: Object.values(data.incidents || {}).map(incident => structuredClone(incident)),
     scenes: data.scenes.map((scene, order) => ({
       id: scene.id,
       order,

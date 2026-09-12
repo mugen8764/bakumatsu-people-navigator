@@ -9,6 +9,19 @@
     const personById = new Map(data.people.map(person => [person.id, person]));
     const sceneById = new Map(data.scenes.map((scene, index) => [scene.id, { ...scene, index }]));
     const eventScene = new Map(data.scenes.map((scene, index) => [scene.event, index]));
+    const incidents = Object.values(data.incidents || {});
+
+    function getIncident(id) {
+      return incidents.find(incident => incident.id === id) || null;
+    }
+
+    function incidentsAt(sceneIndex) {
+      return incidents.filter(incident => incident.sceneId === data.scenes[sceneIndex]?.id);
+    }
+
+    function incidentAt(state) {
+      return incidentsAt(state.scene).find(incident => incident.id === state.selectedIncident) || null;
+    }
 
     function getPerson(id) {
       return personById.get(id);
@@ -158,6 +171,9 @@
       eventScene,
       factionAt,
       getPerson,
+      incidentsAt,
+      getIncident,
+      incidentAt,
       laterNameAt,
       nearestSceneForFaction,
       nearestSceneForPerson,

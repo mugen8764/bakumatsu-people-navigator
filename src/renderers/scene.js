@@ -157,6 +157,10 @@
       $('#sceneCounts').innerHTML = `<span class="count">人物 ${domain.activePeople(state.scene).length}</span><span class="count">勢力 ${domain.activeFactionNames(state.scene).length}</span><span class="count">関係 ${domain.activeRelations(state.scene).length}</span><span class="count">${esc(event.category)}</span>${shared.reviewBadge(scene.evidence)}`;
       $('#sceneInsights').innerHTML = scene.insights.map(insight => `<div class="insight">${esc(insight)}</div>`).join('');
       renderSceneAtGlance(event, scene);
+      const incidents = domain.incidentsAt(state.scene);
+      $('#sceneIncidents').hidden = !incidents.length;
+      $('#sceneIncidents').innerHTML = '<span>この時期の事件</span>' + incidents.map(item => `<button type="button" class="button" data-scene-incident="${esc(item.id)}">${esc(item.title)} <span aria-hidden="true">→</span></button>`).join('');
+      $$('[data-scene-incident]').forEach(button => button.addEventListener('click', () => actions.openEvent(button.dataset.sceneIncident)));
       renderSceneChanges(event);
       renderScenePeople(event);
       renderSceneFactions(event);

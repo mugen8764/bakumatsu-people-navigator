@@ -6,6 +6,8 @@
 
 - `current-data.schema.json`: 互換生成物 `data.json` を厳格に検証するSchema
 - `v2/*.schema.json`: 正本である `data/*.json` のSchema
+- `incident.schema.json`: 大きな時点に属する個別事件、人物ごとの役割・関与区分・関係・根拠
+- `portrait.schema.json`: 任意の史料肖像と、人物同定・撮影時期・原資料・権利・確認日の記録
 - `v2/id-mappings.json`: 表示名から独立した勢力ID・関係種別ID
 
 検証には JSON Schema Draft 2020-12 と Ajv を使用します。
