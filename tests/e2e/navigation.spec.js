@@ -715,3 +715,22 @@ test('data that looks like markup is displayed as text', async ({ page }) => {
   await expect(page.locator('#relationGraph .node-label').first()).toHaveText(rawName);
   await expect(page.locator('#relationGraph b')).toHaveCount(0);
 });
+
+test('the scene at-a-glance total does not depend on how many chips fit', async ({ page }) => {
+  const counts = async () => page.evaluate(() => ({
+    peopleLabel: document.querySelector('#sceneQuickPeople .scene-quick-more')?.textContent ?? '',
+    factionLabel: document.querySelector('#sceneQuickFactions .scene-quick-more')?.textContent ?? ''
+  }));
+
+  await page.setViewportSize({ width: 320, height: 780 });
+  await page.goto('/#scene=1858-ansei&view=people&person=ii&faction=幕府');
+  const narrow = await counts();
+
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await expect.poll(async () => (await counts()).peopleLabel).toBe(narrow.peopleLabel);
+  const wide = await counts();
+
+  // 1858-ansei lists 11 event people and 5 active factions at this scene.
+  expect(narrow).toEqual({ peopleLabel: '全11人', factionLabel: '全5勢力' });
+  expect(wide).toEqual(narrow);
+});
