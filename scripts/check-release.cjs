@@ -37,6 +37,11 @@ const requiredFiles = [
   'src/styles.css'
 ];
 requiredFiles.forEach(requireFile);
+if (failures.length) {
+  // Every later check reads one of these files, so report the gap instead of crashing on it.
+  failures.forEach(failure => console.error(`- ${failure}`));
+  process.exit(1);
+}
 
 const html = read('index.html');
 if (!html.includes(`<link rel="canonical" href="${publicUrl}">`)) failures.push('Canonical URL does not match the production URL.');
