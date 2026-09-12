@@ -689,3 +689,29 @@ test('review status follows item-level calibration', async ({ page }) => {
   await page.locator('#tab-map').click();
   await expect(page.locator('#placeList .review-status')).toHaveCount(0);
 });
+
+test('data that looks like markup is displayed as text', async ({ page }) => {
+  const rawName = '木戸 <b>"孝允"</b> & Co.';
+  await page.route(/\/data\.js(?:\?.*)?$/, async route => {
+    const response = await route.fetch();
+    const script = await response.text();
+    const data = JSON.parse(script.replace(/^window\.BM_DATA=/, '').replace(/;\s*$/, ''));
+    const person = data.people.find(item => item.id === 'kido');
+    person.name = rawName;
+    Object.values(person.statuses).forEach(status => { status.display = rawName; });
+    await route.fulfill({
+      response,
+      contentType: 'application/javascript',
+      body: `window.BM_DATA=${JSON.stringify(data)};`
+    });
+  });
+
+  await page.goto('/#scene=1867-taisei&view=people&person=kido&faction=長州藩');
+  await expect(page.locator('#personDetail .detail-title')).toHaveText(rawName);
+  await expect(page.locator('#personDetail .detail-title b')).toHaveCount(0);
+  await expect(page.locator(`#personCards [data-person-card="kido"] .name`)).toHaveText(rawName);
+
+  await page.locator('#tab-relations').click();
+  await expect(page.locator('#relationGraph .node-label').first()).toHaveText(rawName);
+  await expect(page.locator('#relationGraph b')).toHaveCount(0);
+});

@@ -5,11 +5,12 @@
 
   function createPeopleRenderer(context) {
     const { $, $$, actions, data, domain, shared, state } = context;
+    const esc = shared.escapeHtml;
 
     function renderFilters() {
       const names = ['すべて', ...domain.personFactionNames(state.scene)];
       if (!names.includes(state.personFactionFilter)) state.personFactionFilter = 'すべて';
-      $('#personFilters').innerHTML = names.map(name => `<button type="button" class="chip ${state.personFactionFilter === name ? 'active' : ''}" data-person-filter="${name}" aria-pressed="${state.personFactionFilter === name}">${name}</button>`).join('');
+      $('#personFilters').innerHTML = names.map(name => `<button type="button" class="chip ${state.personFactionFilter === name ? 'active' : ''}" data-person-filter="${esc(name)}" aria-pressed="${state.personFactionFilter === name}">${esc(name)}</button>`).join('');
       $$('[data-person-filter]').forEach(button => button.addEventListener('click', () => {
         state.personFactionFilter = button.dataset.personFilter;
         render();
@@ -29,7 +30,7 @@
         const faction = status.faction;
         const laterName = domain.laterNameAt(person, state.scene);
         const nameNote = laterName ? `後の名：${laterName}` : (status.display === person.name ? (person.aliases[0] || '') : '');
-        return `<button type="button" class="card-button ${person.id === state.selectedPerson ? 'selected' : ''}" data-person-card="${person.id}" aria-pressed="${person.id === state.selectedPerson}"><div class="avatar" style="background:${shared.factionColor(faction)}">${shared.factionShort(faction)}</div><div class="name">${status.display}</div>${nameNote ? `<div class="later-name">${nameNote}</div>` : ''}<div class="role">${status.role}</div><div class="card-foot"><span>${faction}</span><span>詳細 →</span></div></button>`;
+        return `<button type="button" class="card-button ${person.id === state.selectedPerson ? 'selected' : ''}" data-person-card="${esc(person.id)}" aria-pressed="${person.id === state.selectedPerson}"><div class="avatar" style="background:${esc(shared.factionColor(faction))}">${esc(shared.factionShort(faction))}</div><div class="name">${esc(status.display)}</div>${nameNote ? `<div class="later-name">${esc(nameNote)}</div>` : ''}<div class="role">${esc(status.role)}</div><div class="card-foot"><span>${esc(faction)}</span><span>詳細 →</span></div></button>`;
       }).join('') || '<div class="notice">この条件で表示できる人物はいません。</div>';
       $$('[data-person-card]').forEach(button => button.addEventListener('click', () => {
         actions.selectPerson(button.dataset.personCard);
@@ -54,18 +55,18 @@
         .map(([sceneId, value]) => ({ scene: domain.sceneById.get(sceneId), value }))
         .filter(item => item.scene)
         .sort((a, b) => a.scene.index - b.scene.index);
-      box.innerHTML = `<button type="button" class="button detail-back" id="personBackToList">← 人物一覧へ</button><div class="detail-head"><div class="avatar" style="background:${shared.factionColor(status.faction)}">${shared.factionShort(status.faction)}</div><div><div class="detail-title">${status.display}</div>${laterName ? `<div class="aliases">後の名前：${laterName}</div>` : ''}<div class="badges"><span class="badge">${status.faction}</span><span class="badge">${status.role}</span><span class="badge">${person.born}</span></div></div></div>
-      <div class="snapshot"><strong>${shared.dateLabel(shared.scene())}の位置づけ ${shared.reviewBadge(status.evidence)}</strong>${status.importance}</div>
-      <div class="section"><h3>この時点の行動・立場</h3><p>${status.stance}</p></div>
-      <div class="section"><h3>一言で</h3><p>${person.oneLine}</p></div>
-      <div class="section"><h3>名前・通称</h3><div class="tags">${[person.name, ...person.aliases].map(alias => `<span class="tag">${alias}</span>`).join('')}</div></div>
+      box.innerHTML = `<button type="button" class="button detail-back" id="personBackToList">← 人物一覧へ</button><div class="detail-head"><div class="avatar" style="background:${esc(shared.factionColor(status.faction))}">${esc(shared.factionShort(status.faction))}</div><div><div class="detail-title">${esc(status.display)}</div>${laterName ? `<div class="aliases">後の名前：${esc(laterName)}</div>` : ''}<div class="badges"><span class="badge">${esc(status.faction)}</span><span class="badge">${esc(status.role)}</span><span class="badge">${esc(person.born)}</span></div></div></div>
+      <div class="snapshot"><strong>${shared.dateLabel(shared.scene())}の位置づけ ${shared.reviewBadge(status.evidence)}</strong>${esc(status.importance)}</div>
+      <div class="section"><h3>この時点の行動・立場</h3><p>${esc(status.stance)}</p></div>
+      <div class="section"><h3>一言で</h3><p>${esc(person.oneLine)}</p></div>
+      <div class="section"><h3>名前・通称</h3><div class="tags">${[person.name, ...person.aliases].map(alias => `<span class="tag">${esc(alias)}</span>`).join('')}</div></div>
       <div class="section"><h3>この時点の主要関係</h3><div class="relations">${relations.length ? relations.map(relation => {
         const other = domain.getPerson(relation.a === person.id ? relation.b : relation.a);
-        return `<div class="rel"><button type="button" data-other-person="${other.id}">${domain.statusAt(other, state.scene).display}</button> — ${relation.label} ${shared.reviewBadge(relation.evidence)}<br><span class="muted">${relation.text}</span></div>`;
+        return `<div class="rel"><button type="button" data-other-person="${esc(other.id)}">${esc(domain.statusAt(other, state.scene).display)}</button> — ${esc(relation.label)} ${shared.reviewBadge(relation.evidence)}<br><span class="muted">${esc(relation.text)}</span></div>`;
       }).join('') : '<span class="muted">登録済みの主要関係はありません。</span>'}</div></div>
-      ${eventPeers.length ? `<div class="section event-peers"><h3>同じ事件の関係者</h3><p class="muted">「${event.title}」の関係人物のうち、上の主要関係には含まれない人物です。直接の人物関係を示すものではありません。</p><div class="tags">${eventPeers.map(other => `<button type="button" class="tag" data-event-peer="${other.id}">${domain.statusAt(other, state.scene).display}</button>`).join('')}</div></div>` : ''}
-      <div class="section"><h3>関連事件</h3><div class="tags">${person.events.map(id => data.events[id] ? `<button type="button" class="tag" data-open-event="${id}">${data.events[id].title}</button>` : '').join('')}</div></div>
-      <div class="section"><h3>人物の変化</h3><div class="history-list">${history.map(item => `<div class="history-item ${item.scene.index === state.scene ? 'current' : ''}"><button type="button" data-history-scene="${item.scene.index}"><b>${item.scene.year}年 ${item.value.display} ${shared.reviewBadge(item.value.evidence)}</b>${item.value.role}</button></div>`).join('')}</div></div>
+      ${eventPeers.length ? `<div class="section event-peers"><h3>同じ事件の関係者</h3><p class="muted">「${esc(event.title)}」の関係人物のうち、上の主要関係には含まれない人物です。直接の人物関係を示すものではありません。</p><div class="tags">${eventPeers.map(other => `<button type="button" class="tag" data-event-peer="${esc(other.id)}">${esc(domain.statusAt(other, state.scene).display)}</button>`).join('')}</div></div>` : ''}
+      <div class="section"><h3>関連事件</h3><div class="tags">${person.events.map(id => data.events[id] ? `<button type="button" class="tag" data-open-event="${esc(id)}">${esc(data.events[id].title)}</button>` : '').join('')}</div></div>
+      <div class="section"><h3>人物の変化</h3><div class="history-list">${history.map(item => `<div class="history-item ${item.scene.index === state.scene ? 'current' : ''}"><button type="button" data-history-scene="${item.scene.index}"><b>${esc(item.scene.year)}年 ${esc(item.value.display)} ${shared.reviewBadge(item.value.evidence)}</b>${esc(item.value.role)}</button></div>`).join('')}</div></div>
       <div class="actions"><button type="button" class="button" id="personToGraph">相関図</button><button type="button" class="button" id="personToMap">地図</button></div>
       <details class="source-disclosure section"><summary>参考資料を見る</summary><div class="source-list">${shared.sourceLinks(person.sources)}</div></details>`;
       $$('[data-other-person]', box).forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.otherPerson)));

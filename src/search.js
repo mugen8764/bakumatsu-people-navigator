@@ -9,8 +9,11 @@
     return String(value || '').toLowerCase().replace(/[\s・･]/g, '');
   }
 
+  // Search loads before the renderer helpers and stays independently testable,
+  // so it keeps its own copy of BM_RENDER_SHARED.escapeHtml. A unit test asserts
+  // the two stay identical.
   function escapeHtml(value) {
-    return String(value || '').replace(/[&<>"']/g, character => ({
+    return String(value ?? '').replace(/[&<>"']/g, character => ({
       '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
     })[character]);
   }
@@ -156,5 +159,5 @@
     return { clearStatus, close, handleKeydown, render };
   }
 
-  return { createSearchController, highlightMatch, normalise, searchAll };
+  return { createSearchController, escapeHtml, highlightMatch, normalise, searchAll };
 }));

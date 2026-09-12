@@ -8,7 +8,8 @@ require(path.resolve(__dirname, '../../src/renderers/shared.js'));
 const { createShared } = globalThis.BM_RENDER_SHARED;
 const router = require(path.resolve(__dirname, '../../src/router.js'));
 const stateApi = require(path.resolve(__dirname, '../../src/state.js'));
-const { highlightMatch, normalise, searchAll } = require(path.resolve(__dirname, '../../src/search.js'));
+const search = require(path.resolve(__dirname, '../../src/search.js'));
+const { highlightMatch, normalise, searchAll } = search;
 const { layoutMapLabels, mapViewBoxForPoint, projectMapCoord } = require(path.resolve(__dirname, '../../src/map.js'));
 
 const domain = createDomain(data);
@@ -192,6 +193,18 @@ test('map labels spread apart in the Tokyo Bay cluster', () => {
     assert.equal(overlaps, false, `${label.id} overlaps ${other.id}`);
   }));
   assert.ok(labels.some(label => Math.abs(label.y - points.find(point => point.id === label.id).y + 10) > 0.1));
+});
+
+test('markup characters in the data are escaped before they reach markup', () => {
+  const { escapeHtml } = globalThis.BM_RENDER_SHARED;
+  assert.equal(escapeHtml('<b>"a" & \'b\'</b>'), '&lt;b&gt;&quot;a&quot; &amp; &#39;b&#39;&lt;/b&gt;');
+  assert.equal(escapeHtml(undefined), '');
+  assert.equal(escapeHtml(0), '0');
+
+  // Search keeps a standalone copy; it must not drift from the renderer one.
+  for (const value of ['<script>', 'a&b', '"q"', "it's", '', undefined, null, 0, 1853]) {
+    assert.equal(search.escapeHtml(value), escapeHtml(value), `escaping differs for ${String(value)}`);
+  }
 });
 
 test('source cards preserve optional precision metadata', () => {

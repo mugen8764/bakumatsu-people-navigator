@@ -3,6 +3,14 @@
 }(typeof globalThis !== 'undefined' ? globalThis : this, () => {
   'use strict';
 
+  const htmlEntities = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+
+  // Every renderer builds markup with template strings, so any value that comes
+  // from the data files has to pass through this before it reaches innerHTML.
+  function escapeHtml(value) {
+    return String(value ?? '').replace(/[&<>"']/g, character => htmlEntities[character]);
+  }
+
   function createShared(context) {
     const { data, state } = context;
 
@@ -19,14 +27,14 @@
     }
 
     function dateLabel(value) {
-      return `${value.year}年（${value.era}）`;
+      return `${escapeHtml(value.year)}年（${escapeHtml(value.era)}）`;
     }
 
     function sourceCard(source) {
       const precision = source.locator
-        ? `<span class="source-meta"><span>該当箇所: ${source.locator}</span><span>内容確認日: ${source.contentCheckedAt}</span></span>`
+        ? `<span class="source-meta"><span>該当箇所: ${escapeHtml(source.locator)}</span><span>内容確認日: ${escapeHtml(source.contentCheckedAt)}</span></span>`
         : '';
-      return `<a class="source" href="${source.url}" target="_blank" rel="noopener"><strong>${source.title}</strong><span class="muted">${source.note}</span>${precision}</a>`;
+      return `<a class="source" href="${escapeHtml(source.url)}" target="_blank" rel="noopener"><strong>${escapeHtml(source.title)}</strong><span class="muted">${escapeHtml(source.note)}</span>${precision}</a>`;
     }
 
     function sourceLinks(ids) {
@@ -45,8 +53,8 @@
       return '<span class="badge review-status" title="項目単位の出典を確認中です">出典校正中</span>';
     }
 
-    return { dateLabel, factionColor, factionShort, reviewBadge, scene, sourceCard, sourceLinks };
+    return { dateLabel, escapeHtml, factionColor, factionShort, reviewBadge, scene, sourceCard, sourceLinks };
   }
 
-  return { createShared };
+  return { createShared, escapeHtml };
 }));
