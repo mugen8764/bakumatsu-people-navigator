@@ -734,3 +734,30 @@ test('the scene at-a-glance total does not depend on how many chips fit', async 
   expect(narrow).toEqual({ peopleLabel: '全11人', factionLabel: '全5勢力' });
   expect(wide).toEqual(narrow);
 });
+
+test('a disputed item is labelled 諸説あり rather than 出典校正中', async ({ page }) => {
+  // No record carries this status today, so the badge only stays working if a
+  // test drives it. Marking real records disputed is an editorial decision that
+  // needs a source documenting the competing views.
+  await page.route(/\/data\.js(?:\?.*)?$/, async route => {
+    const response = await route.fetch();
+    const script = await response.text();
+    const data = JSON.parse(script.replace(/^window\.BM_DATA=/, '').replace(/;\s*$/, ''));
+    data.relations.find(item => item.a === 'kido' && item.b === 'takasugi').evidence.reviewStatus = 'disputed';
+    data.people.find(item => item.id === 'kido').statuses['1866-satcho'].evidence.reviewStatus = 'disputed';
+    await route.fulfill({
+      response,
+      contentType: 'application/javascript',
+      body: `window.BM_DATA=${JSON.stringify(data)};`
+    });
+  });
+
+  await page.goto('/#scene=1866-satcho&view=people&person=kido&faction=長州藩');
+  const snapshotBadge = page.locator('#personDetail .snapshot .review-status');
+  await expect(snapshotBadge).toHaveText('諸説あり');
+  await expect(snapshotBadge).toHaveClass(/disputed/);
+  await expect(snapshotBadge).toHaveAttribute('title', '複数の見解がある項目です');
+
+  await page.locator('#tab-relations').click();
+  await expect(page.locator('#graphExplanation .review-status').first()).toHaveText('諸説あり');
+});
