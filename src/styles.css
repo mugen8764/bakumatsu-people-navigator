@@ -33,9 +33,17 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
 .page{width:min(1360px,calc(100% - 28px));margin:auto;padding:22px 0 48px}
 .panel{border:1px solid var(--border);background:var(--panel);border-radius:18px;box-shadow:var(--shadow)}
 .muted{color:var(--muted)}
-.app-loading .top{min-height:381px}
+/* First-paint placeholders. data.js and the renderers run after the HTML is
+   parsed, so these reserve the height the loaded page takes and keep late data
+   from shifting the layout. Each value is the measured height at the reference
+   width of its range: 1280px here, 600px and 320px in the two media queries
+   below. Re-measure after a layout change by loading the page and reading
+   document.querySelector(SELECTOR).getBoundingClientRect().height, and let the
+   placeholder test in tests/e2e/performance.spec.js compare each reservation
+   against the height the loaded page actually takes. */
+.app-loading .top{min-height:396px}
 .app-loading #view-people{min-height:1190px}
-.app-loading #personCards{min-height:322px;background:repeating-linear-gradient(135deg,var(--card) 0 18px,var(--panel) 18px 36px);border-radius:14px;opacity:.55}
+.app-loading #personCards{min-height:340px;background:repeating-linear-gradient(135deg,var(--card) 0 18px,var(--panel) 18px 36px);border-radius:14px;opacity:.55}
 .app-loading #personDetail{min-height:610px}
 .hero{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;margin-bottom:14px}
 .brand{display:flex;gap:11px;align-items:flex-start}
@@ -224,9 +232,9 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
   .footer-links{margin-top:8px}
 }
 @media(max-width:680px){
-  .app-loading .top{min-height:521px}
-  .app-loading #view-people{min-height:2482px}
-  .app-loading #personCards{min-height:630px}
+  .app-loading .top{min-height:522px}
+  .app-loading #view-people{min-height:1950px}
+  .app-loading #personCards{min-height:687px}
 }
 @media(max-width:430px){
   .cards{grid-template-columns:1fr}
@@ -236,7 +244,7 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
 @media(max-width:430px){
   .app-loading .top{min-height:552px}
   .app-loading #view-people{min-height:2548px}
-  .app-loading #personCards{min-height:1098px}
+  .app-loading #personCards{min-height:1192px}
 }
 .review-status{border-color:var(--danger);color:var(--danger);background:transparent;font-size:.62rem;white-space:nowrap}
 .review-status.disputed{border-color:var(--accent);color:var(--accent)}
