@@ -513,7 +513,8 @@
         "sho-in",
         "nariakira",
         "saigo",
-        "komei"
+        "komei",
+        "kawaji-toshiakira"
       ],
       "factionIds": [
         "foreign-powers",
@@ -533,7 +534,8 @@
           "archives_timeline",
           "ndl_modern_timeline",
           "ndl_handwriting",
-          "mofa_treaty_1858"
+          "mofa_treaty_1858",
+          "chiba_kawaji_career"
         ],
         "reviewStatus": "verified"
       }
@@ -612,7 +614,8 @@
         "saigo",
         "yodo",
         "takechi",
-        "ryoma"
+        "ryoma",
+        "kaieda"
       ],
       "factionIds": [
         "satsuma",
@@ -630,7 +633,8 @@
         "sourceIds": [
           "archives_timeline",
           "ndl_handwriting",
-          "kagoshima_teradaya"
+          "kagoshima_teradaya",
+          "ndl_portrait_kaieda_detail"
         ],
         "reviewStatus": "verified"
       }
@@ -713,7 +717,8 @@
         "kusaka",
         "takasugi",
         "kondo",
-        "hijikata"
+        "hijikata",
+        "asahiko"
       ],
       "factionIds": [
         "imperial-court",
@@ -730,7 +735,8 @@
         "sourceIds": [
           "archives_timeline",
           "ndl_modern_timeline",
-          "yamaguchi_library_kinmon"
+          "yamaguchi_library_kinmon",
+          "tondabayashi_aug18"
         ],
         "reviewStatus": "verified"
       }
@@ -766,7 +772,8 @@
         "kido",
         "kusaka",
         "takasugi",
-        "omura"
+        "omura",
+        "yoshida-toshimaro"
       ],
       "factionIds": [
         "shinsengumi",
@@ -785,7 +792,8 @@
       "evidence": {
         "sourceIds": [
           "archives_timeline",
-          "yamaguchi_library_kinmon"
+          "yamaguchi_library_kinmon",
+          "yamaguchi_yoshida_toshimaro"
         ],
         "reviewStatus": "verified"
       }
@@ -1018,7 +1026,8 @@
         "yoshinobu",
         "katamori",
         "kondo",
-        "hijikata"
+        "hijikata",
+        "yamamoto-kakuma"
       ],
       "factionIds": [
         "new-government",
@@ -1038,7 +1047,8 @@
         "sourceIds": [
           "ndl_modern_timeline",
           "ndl_handwriting",
-          "archives_toba_fushimi"
+          "archives_toba_fushimi",
+          "doshisha_yamamoto_kakuma"
         ],
         "reviewStatus": "verified"
       }
@@ -1071,7 +1081,8 @@
         "yoshinobu",
         "tenshoin",
         "kazunomiya",
-        "enomoto"
+        "enomoto",
+        "kaieda"
       ],
       "factionIds": [
         "new-government",
@@ -1084,7 +1095,8 @@
         "sourceIds": [
           "ndl_handwriting",
           "jacar_dictionary",
-          "sumida_katsu_edo_surrender"
+          "sumida_katsu_edo_surrender",
+          "ndl_portrait_kaieda_detail"
         ],
         "reviewStatus": "verified"
       }
@@ -1203,7 +1215,8 @@
               "php_ikedaya_participants"
             ],
             "reviewStatus": "verified"
-          }
+          },
+          "side": "新選組側"
         },
         {
           "personId": "okita",
@@ -1216,7 +1229,8 @@
               "php_ikedaya_participants"
             ],
             "reviewStatus": "verified"
-          }
+          },
+          "side": "新選組側"
         },
         {
           "personId": "nagakura",
@@ -1227,6 +1241,21 @@
           "evidence": {
             "sourceIds": [
               "php_ikedaya_participants"
+            ],
+            "reviewStatus": "verified"
+          },
+          "side": "新選組側"
+        },
+        {
+          "personId": "yoshida-toshimaro",
+          "displayName": "吉田稔麿",
+          "role": "事件で命を落とした長州藩士",
+          "involvement": "onsite",
+          "side": "襲撃された側",
+          "summary": "池田屋事件で死去。当日の細かな移動や、誰と交戦したかは断定しない。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_yoshida_toshimaro"
             ],
             "reviewStatus": "verified"
           }
@@ -1242,7 +1271,8 @@
               "php_ikedaya_participants"
             ],
             "reviewStatus": "verified"
-          }
+          },
+          "side": "新選組側"
         },
         {
           "personId": "katamori",
@@ -1255,7 +1285,8 @@
               "ndl_portrait_kondo_detail"
             ],
             "reviewStatus": "verified"
-          }
+          },
+          "side": "京都守護職"
         }
       ],
       "relations": [
@@ -1270,7 +1301,8 @@
               "ndl_portrait_kondo_detail"
             ],
             "reviewStatus": "verified"
-          }
+          },
+          "direction": "forward"
         },
         {
           "id": "ikedaya-kondo-hijikata",
@@ -1284,7 +1316,8 @@
               "ndl_portrait_hijikata_detail"
             ],
             "reviewStatus": "verified"
-          }
+          },
+          "direction": "none"
         },
         {
           "id": "ikedaya-kondo-okita",
@@ -1297,7 +1330,8 @@
               "hino_okita"
             ],
             "reviewStatus": "verified"
-          }
+          },
+          "direction": "forward"
         }
       ],
       "placeIds": [
@@ -1307,7 +1341,370 @@
         "sourceIds": [
           "php_ikedaya_participants",
           "yamaguchi_library_kinmon",
-          "kyoto_kinmon"
+          "kyoto_kinmon",
+          "yamaguchi_yoshida_toshimaro"
+        ],
+        "reviewStatus": "verified"
+      },
+      "scope": "新選組側・長州側と京都の治安体制",
+      "termIds": [
+        "joi",
+        "kyoto-shugoshoku"
+      ]
+    },
+    {
+      "id": "commercial-treaty-1858",
+      "sceneId": "1858-ansei",
+      "title": "日米修好通商条約の調印",
+      "date": "1858年7月29日（安政5年6月19日・旧暦）",
+      "scope": "米国の交渉・幕府の決定・朝廷の勅許",
+      "summary": "ハリスとの通商条約を、幕府は天皇の勅許を得ないまま結んだ。日本側の署名者は井上清直・岩瀬忠震。",
+      "stakes": "外国との貿易をどう始めるか。同時に、条約を誰が認めるのかが国内の争点になった。",
+      "turningPoint": "英・仏・露・蘭とも条約を締結。開港へ進む一方、未勅許の調印をめぐる幕府批判が強まった。",
+      "participants": [
+        {
+          "personId": "harris",
+          "displayName": "タウンゼント・ハリス",
+          "role": "交渉と米国側の署名",
+          "involvement": "onsite",
+          "side": "米国",
+          "summary": "自由貿易を求めて交渉し、米国側の調印書に署名した。",
+          "evidence": {
+            "sourceIds": [
+              "mofa_treaty_1858",
+              "bunka_commercial_signers"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "ii",
+          "displayName": "井伊直弼",
+          "role": "未勅許での調印を決断",
+          "involvement": "decision",
+          "side": "幕府",
+          "summary": "大老として、勅許が得られない中で調印に踏み切った。署名者とは区別する。",
+          "evidence": {
+            "sourceIds": [
+              "mofa_treaty_1858"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "komei",
+          "displayName": "孝明天皇",
+          "role": "条約への勅許を与えず",
+          "involvement": "decision",
+          "side": "朝廷",
+          "summary": "幕府から求められた条約の許可は得られず、そのまま調印が行われた。",
+          "evidence": {
+            "sourceIds": [
+              "mofa_treaty_1858",
+              "ndl_joi_background"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "kawaji-toshiakira",
+          "displayName": "川路聖謨",
+          "role": "調印に先立つ勅許奏請の補佐",
+          "involvement": "context",
+          "side": "幕府の実務",
+          "summary": "老中堀田正睦の上京を補佐した幕臣。条約当日の署名者ではない。",
+          "evidence": {
+            "sourceIds": [
+              "chiba_kawaji_career"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "commercial-ii-komei",
+          "aPersonId": "ii",
+          "bPersonId": "komei",
+          "label": "勅許のない調印",
+          "description": "天皇の許可を得られないまま、井伊の下で幕府が調印した。直接対面の交渉を示すものではない。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "mofa_treaty_1858"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "yokohama",
+        "edo",
+        "kyoto"
+      ],
+      "termIds": [
+        "chokkyo",
+        "kaiko",
+        "tsuji"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "mofa_treaty_1858",
+          "bunka_commercial_signers",
+          "ndl_joi_background"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "august18-coup",
+      "sceneId": "1863-aug18",
+      "title": "八月十八日の政変",
+      "date": "1863年9月30日（文久3年8月18日・旧暦）",
+      "scope": "朝廷内の決定・会津の警備・退京した長州側",
+      "summary": "御所を会津・薩摩などの藩兵が固め、長州藩の警備を解任。三条実美ら尊攘派の公家と長州藩士が京都を離れた。",
+      "stakes": "天皇の名でどの政治方針を進めるのか。朝廷内の立場の違いと、御所の警備を担う藩の力が結び付いた。",
+      "turningPoint": "長州側は京都での立場を失った。翌1864年には京都への復帰を求める動きが禁門の変へつながる。",
+      "participants": [
+        {
+          "personId": "asahiko",
+          "displayName": "中川宮朝彦親王",
+          "role": "早朝に参内し政変に関与",
+          "involvement": "decision",
+          "side": "公武融和の側",
+          "summary": "朝廷へ入り、長州藩や尊攘派公家を排除する政変に関与した。",
+          "evidence": {
+            "sourceIds": [
+              "tondabayashi_aug18"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "katamori",
+          "displayName": "松平容保",
+          "role": "会津藩兵の警備を指揮",
+          "involvement": "decision",
+          "side": "京都守護職",
+          "summary": "容保の指揮する会津藩兵らが御所に入り、門の警備を固めた。",
+          "evidence": {
+            "sourceIds": [
+              "tondabayashi_aug18"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "sanjo",
+          "displayName": "三条実美",
+          "role": "参内を止められ長州へ",
+          "involvement": "onsite",
+          "side": "退京した側",
+          "summary": "参内を禁じられ、ほかの公家や長州藩士と京都から長州へ向かった。",
+          "evidence": {
+            "sourceIds": [
+              "tondabayashi_aug18"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "kusaka",
+          "displayName": "久坂玄瑞",
+          "role": "長州側として退京",
+          "involvement": "onsite",
+          "side": "退京した側",
+          "summary": "三条ら七卿、長州藩兵とともに京都を離れた。",
+          "evidence": {
+            "sourceIds": [
+              "tondabayashi_aug18"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "komei",
+          "displayName": "孝明天皇",
+          "role": "政変後の方針を支持",
+          "involvement": "context",
+          "side": "朝廷",
+          "summary": "8月26日（旧暦）、政変以後の意思表示が自身の意向であると諸藩へ示した。",
+          "evidence": {
+            "sourceIds": [
+              "tondabayashi_aug18"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "aug18-asahiko-komei",
+          "aPersonId": "asahiko",
+          "bPersonId": "komei",
+          "label": "天皇を補佐",
+          "description": "朝彦親王は孝明天皇の信頼を受け、公武融和を支えた。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "mlit_asahiko"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "aug18-asahiko-katamori",
+          "aPersonId": "asahiko",
+          "bPersonId": "katamori",
+          "label": "参内と御所警備",
+          "description": "朝彦親王の参内と、容保らによる御所の警備が政変を進めた。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "tondabayashi_aug18"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "aug18-sanjo-kusaka",
+          "aPersonId": "sanjo",
+          "bPersonId": "kusaka",
+          "label": "京都から長州へ",
+          "description": "三条ら七卿と久坂ら長州藩士は京都を離れた。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "tondabayashi_aug18"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "kyoto",
+        "hagi"
+      ],
+      "termIds": [
+        "kobugattai",
+        "joi",
+        "kyoto-shugoshoku"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "tondabayashi_aug18",
+          "mlit_asahiko",
+          "yamaguchi_library_kinmon"
+        ],
+        "reviewStatus": "verified"
+      }
+    }
+  ],
+  "terms": [
+    {
+      "id": "kobugattai",
+      "title": "公武合体",
+      "kana": "こうぶがったい",
+      "meaning": "朝廷と幕府が協力して政治を立て直そうとする考え。",
+      "context": "朝廷の人物がすべて倒幕を求めたわけではなく、幕府との協調を求める立場もあった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_joi_background"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "joi",
+      "title": "尊王攘夷",
+      "kana": "そんのうじょうい",
+      "meaning": "天皇を尊ぶ考えと、外国勢力を追い払う考えが結び付いたもの。",
+      "context": "同じ言葉を掲げる人々でも、藩や朝廷内での立場、選ぶ行動は異なった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_joi_background",
+          "tondabayashi_aug18"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "kyoto-shugoshoku",
+      "title": "京都守護職",
+      "kana": "きょうとしゅごしょく",
+      "meaning": "京都の治安維持を担う幕府の役職。会津藩主松平容保が就いた。",
+      "context": "新選組の取締りや、会津藩の御所警備を、その上位の体制と結び付けて見る。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_katamori_detail",
+          "ndl_portrait_kondo_detail"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "chokkyo",
+      "title": "勅許",
+      "kana": "ちょっきょ",
+      "meaning": "天皇が与える許可。",
+      "context": "1858年の通商条約では、外国との交渉だけでなく、朝廷の許可が得られるかも争点になった。",
+      "evidence": {
+        "sourceIds": [
+          "mofa_treaty_1858",
+          "mofa_parkes"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "kaiko",
+      "title": "開港",
+      "kana": "かいこう",
+      "meaning": "条約などにより、外国船の来航や貿易のために港を開くこと。",
+      "context": "条約ごとに開く港と認める活動が異なる。1858年の通商条約は貿易を認めた。",
+      "evidence": {
+        "sourceIds": [
+          "mofa_russia_1855",
+          "mofa_treaty_1858"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "tsuji",
+      "title": "通詞",
+      "kana": "つうじ",
+      "meaning": "外国語を通訳し、貿易交渉などを支えた人々。",
+      "context": "外交官や奉行だけでなく、言葉を取り次ぐ実務者が交渉を支えていた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_kawaji_lifespan"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "rangaku",
+      "title": "蘭学",
+      "kana": "らんがく",
+      "meaning": "オランダ語を通じて学んだ西洋の学問や技術。",
+      "context": "医学だけでなく、天文学や地理などにも広がる。幕末の洋学・軍事教育を知る手がかりになる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_kawaji_lifespan"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "dappan",
+      "title": "脱藩",
+      "kana": "だっぱん",
+      "meaning": "藩の許可を得ずに藩外へ出ること。",
+      "context": "藩士が藩外にいる場合も、公務・許可された遊学・脱藩を区別して読む。",
+      "evidence": {
+        "sourceIds": [
+          "ryoma_dappan"
         ],
         "reviewStatus": "verified"
       }

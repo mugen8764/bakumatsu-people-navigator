@@ -56,8 +56,8 @@
       "title": "国立国会図書館「近代日本人の肖像・勝海舟」",
       "url": "https://www.ndl.go.jp/portrait/datas/51/index.html",
       "note": "西郷隆盛との交渉による江戸城無血開城を含む勝海舟の略歴。",
-      "locator": "「解説」",
-      "contentCheckedAt": "2026-08-26"
+      "locator": "「解説」、肖像1枚目",
+      "contentCheckedAt": "2026-09-12"
     },
     {
       "id": "tokyo_archive_katsu_yamaoka_letter",
@@ -367,7 +367,9 @@
       "id": "ndl_portrait_yoshinobu_detail",
       "title": "国立国会図書館「近代日本人の肖像・徳川慶喜」",
       "url": "https://www.ndl.go.jp/portrait/datas/147/index.html",
-      "note": "一橋慶喜の将軍継嗣擁立、井伊直弼との対立、安政の大獄での処分、1862年の将軍後見職、1866年の第15代将軍就任。"
+      "note": "一橋慶喜の将軍継嗣擁立、井伊直弼との対立、安政の大獄での処分、1862年の将軍後見職、1866年の第15代将軍就任。",
+      "locator": "人物略歴・肖像1枚目",
+      "contentCheckedAt": "2026-09-12"
     },
     {
       "id": "kagoshima_teradaya",
@@ -621,9 +623,9 @@
       "id": "mofa_treaty_1858",
       "title": "外務省「日米修好通商条約」",
       "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/09.html",
-      "note": "ハリスと幕府全権の交渉、井伊直弼による無勅許調印、条約の主要条項。",
-      "locator": "「9．日米修好通商条約（重要文化財）」本文の段落",
-      "contentCheckedAt": "2026-07-31"
+      "note": "ハリス、堀田・井上・岩瀬の交渉、勅許問題、井伊の決断、調印日と条約の内容。",
+      "locator": "展示史料9「日米修好通商条約」",
+      "contentCheckedAt": "2026-09-12"
     },
     {
       "id": "fukui_bakumatsu_chronicle",
@@ -734,8 +736,8 @@
       "title": "国立国会図書館「近代日本人の肖像・木戸孝允」",
       "url": "https://www.ndl.go.jp/portrait/datas/65/",
       "note": "桂小五郎の別称、江戸での剣術・西洋兵学修学、長州藩の重職、1866年の薩長連合、五箇条の御誓文草案起草、参与就任と版籍奉還への尽力、1870年6月の参議就任。",
-      "locator": "生没年・別称・「解説」",
-      "contentCheckedAt": "2026-07-31"
+      "locator": "生没年・別称・「解説」、肖像1枚目",
+      "contentCheckedAt": "2026-09-12"
     },
     {
       "id": "hagi_takasugi_sonjuku",
@@ -774,8 +776,8 @@
       "title": "国立国会図書館「近代日本人の肖像・岩倉具視」",
       "url": "https://www.ndl.go.jp/portrait/datas/23/index.html",
       "note": "岩倉具視の侍従就任、条約勅許奏請阻止、公武合体策、1867年までの幽居と同年12月の王政復古政変計画、その後の新政府参与・議定就任。",
-      "locator": "「解説」",
-      "contentCheckedAt": "2026-07-31"
+      "locator": "「解説」、肖像1枚目",
+      "contentCheckedAt": "2026-09-12"
     },
     {
       "id": "kochi_yodo_timeline",
@@ -1116,8 +1118,8 @@
       "title": "国立国会図書館「近代日本人の肖像・松平容保」",
       "url": "https://www.ndl.go.jp/portrait/datas/334/",
       "note": "松平容保の京都守護職就任、京都の治安と公武合体への関与、八月十八日の政変、禁門の変、征長強硬論、1867年の免職、1868年の鳥羽・伏見敗戦後の会津での謹慎と降伏。",
-      "locator": "「解説」",
-      "contentCheckedAt": "2026-07-31"
+      "locator": "「解説」、肖像1枚目",
+      "contentCheckedAt": "2026-09-12"
     },
     {
       "id": "hino_hijikata_profile",
@@ -1270,8 +1272,8 @@
       "title": "国立国会図書館「近代日本人の肖像・和宮」",
       "url": "https://www.ndl.go.jp/portrait/datas/6156",
       "note": "仁孝天皇第8皇女、14代将軍徳川家茂への降嫁、1866年の家茂死去後の出家と静寛院宮号、戊辰戦争期の江戸攻撃中止・徳川家存続への尽力。",
-      "locator": "生没年・別称・「解説」",
-      "contentCheckedAt": "2026-07-31"
+      "locator": "生没年・別称・「解説」、肖像1枚目",
+      "contentCheckedAt": "2026-09-12"
     },
     {
       "id": "nagareyama_shinsengumi_1868",
@@ -1455,6 +1457,174 @@
       "url": "https://www.ndl.go.jp/portrait/about",
       "note": "掲載肖像の著作権保護期間満了、転載手続き不要、出典明示の条件を確認。",
       "locator": "掲載資料／コンテンツの転載",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "mofa_russia_1855",
+      "title": "外務省「日露関係史」幕末期",
+      "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/j_russia_2005/2_1.html",
+      "note": "川路聖謨らとプチャーチンによる交渉・日魯通好条約。",
+      "locator": "日魯通好条約の解説",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "chiba_kawaji_career",
+      "title": "千葉市図書館「歴史人物を描いた文学作品」人物紹介：川路聖謨",
+      "url": "https://www.library.city.chiba.jp/news/pdf/201901hanadan.pdf",
+      "note": "勘定奉行、1858年の勅許奏請補佐と失脚、1863年の外国奉行就任・辞任。没日と新旧暦の表記には注意し、その部分は採用しない。",
+      "locator": "p.2「10．川路聖謨」人物紹介（作品のあらすじは使用しない）",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "ndl_kawaji_lifespan",
+      "title": "国立国会図書館「江戸時代の日蘭交流」蘭学者の活躍",
+      "url": "https://www.ndl.go.jp/nichiran/s2/s2_2.html",
+      "note": "蘭学・通詞の説明と、蛮社遭厄小記の解説中にある川路聖謨の生没年。",
+      "locator": "冒頭、通詞たち、渡辺崋山「蛮社遭厄小記」",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "tondabayashi_aug18",
+      "title": "富田林市史 第二巻「八月一八日の政変」",
+      "url": "https://adeac.jp/tondabayashi-city/texthtml/d000020/cp000002/ht000371",
+      "note": "参内、御所の警備、長州藩の警備解任、三条実美・久坂玄瑞らの退京、政変後の孝明天皇の意思表明。",
+      "locator": "pp.1038–1039「八月一八日の政変」",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "mlit_asahiko",
+      "title": "環境省京都御苑管理事務所「賀陽宮邸跡」解説（国土交通省掲載）",
+      "url": "https://www.mlit.go.jp/tagengo-db/H30-00815.html",
+      "note": "朝彦親王の公武融和、孝明天皇との関係、1868年の広島追放。",
+      "locator": "日本語解説「賀陽宮邸跡」・英語解説の生没年",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "apj_asahiko_names",
+      "title": "国立アートリサーチセンター 日本アーティスト事典「並河靖之」",
+      "url": "https://artplatform.go.jp/ja/artists/A1728",
+      "note": "宮家に仕えた並河靖之の伝記中の朝彦親王の改名・処遇。",
+      "locator": "青蓮院門主・朝彦親王の説明（1863年中川宮、1864年賀陽宮、1868年蟄居）",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "ndl_portrait_kaieda_detail",
+      "title": "国立国会図書館「近代日本人の肖像」海江田信義",
+      "url": "https://www.ndl.go.jp/portrait/datas/6093/",
+      "note": "生没年、別称、生麦事件と戊辰戦争の役割、肖像。",
+      "locator": "解説、別称、肖像1枚目、肖像1枚目",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "kagoshima_kaieda_name",
+      "title": "鹿児島大学掲載「女性たちの明治維新」有村れん書状",
+      "url": "https://ir.kagoshima-u.ac.jp/record/14412/files/BB25184174.pdf",
+      "note": "1861年12月の婚姻・婿養子と海江田信義への改名。",
+      "locator": "冊子p.19（PDF21ページ）「有村れん書状」",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "kanagawa_saigo_arimura",
+      "title": "神奈川県立公文書館「山口コレクションの明治維新」",
+      "url": "https://archives.pref.kanagawa.jp/exhibition/exhibition/r06-webtenji.html",
+      "note": "1860年3月25日付西郷書簡の宛先に大久保・有村俊斉らが含まれる。",
+      "locator": "菊池源吾（西郷隆盛）書簡、資料ID2199400332",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "yamaguchi_yoshida_toshimaro",
+      "title": "山口県立山口図書館「吉田稔麿」明治維新人物調べ方案内No.16",
+      "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/yoshida_toshimaro/",
+      "note": "松陰への入門、脱藩と帰国、1863年の改名・任務、池田屋事件での死去。",
+      "locator": "人物紹介",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "kochi_yoshida_toyo",
+      "title": "高知市「吉田東洋殉難の地」",
+      "url": "https://www.city.kochi.kochi.jp/site/kanko/yoshidatouyoujunnannochi.html",
+      "note": "山内容堂による登用、後藤象二郎・板垣退助らの教育、1862年の暗殺。",
+      "locator": "吉田東洋の人物紹介",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "doshisha_yamamoto_kakuma",
+      "title": "同志社大学「山本覚馬」",
+      "url": "https://www.doshisha.ac.jp/information/neesima/kakuma/index.html",
+      "note": "会津藩の洋学・軍事教育、松平容保との関係、鳥羽・伏見後の拘束と建白。京都府顧問の就任年は他資料と異なり、今回の時点情報には採用しない。",
+      "locator": "山本覚馬の略歴（京都での活動・鳥羽伏見・管見）",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "nakatsugawa_takeda",
+      "title": "中津川市中山道歴史資料館「水戸天狗党との関わり」",
+      "url": "https://www.city.nakatsugawa.lg.jp/museum/n/nakatsugawa_juku/4842.html",
+      "note": "天狗党の西上、武田耕雲斎と徳川斉昭・一橋慶喜、降伏と処刑。",
+      "locator": "「天狗党、京都に向かう」「武田耕雲斎」",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "ishikawa_takeda",
+      "title": "石川県立歴史博物館「武田耕雲斎等天狗党員筆跡巻」",
+      "url": "https://www.ishikawa-rekihaku.jp/collection/detail.php?cd=GI00181",
+      "note": "耕雲斎の生没年と敦賀での幽閉。冒頭の和暦対応は採用しない。",
+      "locator": "所蔵品解説（生没年1803–1865、敦賀での幽閉）",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "mofa_parkes",
+      "title": "外務省「明治維新期の日英交流」",
+      "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/j_uk/03.html",
+      "note": "1865年のパークス着任、通商要求、幕府と薩長への接触、戊辰戦争中の中立と新政府承認。",
+      "locator": "概説（着任の日付は採用せず年のみ使用）",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "npg_parkes_lifespan",
+      "title": "National Portrait Gallery: Sir Harry Smith Parkes",
+      "url": "https://www.npg.org.uk/collections/search/person/mp79902/sir-harry-smith-parkes",
+      "note": "パークスの生没年と外交官としての人物同定。画像は転載していない。",
+      "locator": "人物見出し「1828–1885, Diplomat」",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "mofa_parkes_escort",
+      "title": "外務省「外交史料Q&A 幕末期」パークス襲撃",
+      "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/qa/bakumatsu_01.html",
+      "note": "1868年3月23日の襲撃、後藤象二郎らの護衛、天皇謁見。",
+      "locator": "「1868年、駐日英国公使パークスが京都で日本人に襲われた事件」",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "bunka_commercial_signers",
+      "title": "文化遺産オンライン収録「日米修好通商条約」（ジャパンサーチ）",
+      "url": "https://jpsearch.go.jp/item/bunka-135547",
+      "note": "和文調印書の井上清直・岩瀬忠震、英文のハリスの署名と調印場所。",
+      "locator": "解説：調印書の署名と神奈川沖の米艦ポーハタン号",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "ndl_joi_background",
+      "title": "国立国会図書館 国際子ども図書館「尊王攘夷運動」",
+      "url": "https://www.kodomo.go.jp/yareki/theme/theme_03.html",
+      "note": "尊王・攘夷・公武合体の意味と、1858年の条約から京都の政局へ至る背景。",
+      "locator": "テーマ解説1〜3",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "ryoma_dappan",
+      "title": "高知県立坂本龍馬記念館「龍馬について」",
+      "url": "https://ryoma-kinenkan.jp/feat/",
+      "note": "藩外への移動には許可が必要で、脱藩は無許可の離脱である。",
+      "locator": "脱藩の説明",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "ndl_portrait_goto_detail",
+      "title": "国立国会図書館「近代日本人の肖像」後藤象二郎",
+      "url": "https://www.ndl.go.jp/portrait/datas/78/",
+      "note": "人物略歴と史料肖像。",
+      "locator": "人物略歴・肖像1枚目",
       "contentCheckedAt": "2026-09-12"
     }
   ]

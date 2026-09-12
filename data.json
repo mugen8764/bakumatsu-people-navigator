@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.59",
+    "version": "1.0.60",
     "updated": "2026-09-12"
   },
   "sources": {
@@ -52,8 +52,8 @@
       "title": "国立国会図書館「近代日本人の肖像・勝海舟」",
       "url": "https://www.ndl.go.jp/portrait/datas/51/index.html",
       "note": "西郷隆盛との交渉による江戸城無血開城を含む勝海舟の略歴。",
-      "locator": "「解説」",
-      "contentCheckedAt": "2026-08-26"
+      "locator": "「解説」、肖像1枚目",
+      "contentCheckedAt": "2026-09-12"
     },
     "tokyo_archive_katsu_yamaoka_letter": {
       "title": "東京都立図書館「勝海舟書簡　山岡鉄舟あて」",
@@ -317,7 +317,9 @@
     "ndl_portrait_yoshinobu_detail": {
       "title": "国立国会図書館「近代日本人の肖像・徳川慶喜」",
       "url": "https://www.ndl.go.jp/portrait/datas/147/index.html",
-      "note": "一橋慶喜の将軍継嗣擁立、井伊直弼との対立、安政の大獄での処分、1862年の将軍後見職、1866年の第15代将軍就任。"
+      "note": "一橋慶喜の将軍継嗣擁立、井伊直弼との対立、安政の大獄での処分、1862年の将軍後見職、1866年の第15代将軍就任。",
+      "locator": "人物略歴・肖像1枚目",
+      "contentCheckedAt": "2026-09-12"
     },
     "kagoshima_teradaya": {
       "title": "鹿児島県「寺田屋事件」",
@@ -534,9 +536,9 @@
     "mofa_treaty_1858": {
       "title": "外務省「日米修好通商条約」",
       "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/09.html",
-      "note": "ハリスと幕府全権の交渉、井伊直弼による無勅許調印、条約の主要条項。",
-      "locator": "「9．日米修好通商条約（重要文化財）」本文の段落",
-      "contentCheckedAt": "2026-07-31"
+      "note": "ハリス、堀田・井上・岩瀬の交渉、勅許問題、井伊の決断、調印日と条約の内容。",
+      "locator": "展示史料9「日米修好通商条約」",
+      "contentCheckedAt": "2026-09-12"
     },
     "fukui_bakumatsu_chronicle": {
       "title": "福井市立郷土歴史博物館「幕末かけあし年表」",
@@ -631,8 +633,8 @@
       "title": "国立国会図書館「近代日本人の肖像・木戸孝允」",
       "url": "https://www.ndl.go.jp/portrait/datas/65/",
       "note": "桂小五郎の別称、江戸での剣術・西洋兵学修学、長州藩の重職、1866年の薩長連合、五箇条の御誓文草案起草、参与就任と版籍奉還への尽力、1870年6月の参議就任。",
-      "locator": "生没年・別称・「解説」",
-      "contentCheckedAt": "2026-07-31"
+      "locator": "生没年・別称・「解説」、肖像1枚目",
+      "contentCheckedAt": "2026-09-12"
     },
     "hagi_takasugi_sonjuku": {
       "title": "萩市「高杉晋作 参上」",
@@ -665,8 +667,8 @@
       "title": "国立国会図書館「近代日本人の肖像・岩倉具視」",
       "url": "https://www.ndl.go.jp/portrait/datas/23/index.html",
       "note": "岩倉具視の侍従就任、条約勅許奏請阻止、公武合体策、1867年までの幽居と同年12月の王政復古政変計画、その後の新政府参与・議定就任。",
-      "locator": "「解説」",
-      "contentCheckedAt": "2026-07-31"
+      "locator": "「解説」、肖像1枚目",
+      "contentCheckedAt": "2026-09-12"
     },
     "kochi_yodo_timeline": {
       "title": "高知県立高知城歴史博物館「土佐藩歴代藩主紹介」",
@@ -957,8 +959,8 @@
       "title": "国立国会図書館「近代日本人の肖像・松平容保」",
       "url": "https://www.ndl.go.jp/portrait/datas/334/",
       "note": "松平容保の京都守護職就任、京都の治安と公武合体への関与、八月十八日の政変、禁門の変、征長強硬論、1867年の免職、1868年の鳥羽・伏見敗戦後の会津での謹慎と降伏。",
-      "locator": "「解説」",
-      "contentCheckedAt": "2026-07-31"
+      "locator": "「解説」、肖像1枚目",
+      "contentCheckedAt": "2026-09-12"
     },
     "hino_hijikata_profile": {
       "title": "日野市「土方歳三」",
@@ -1088,8 +1090,8 @@
       "title": "国立国会図書館「近代日本人の肖像・和宮」",
       "url": "https://www.ndl.go.jp/portrait/datas/6156",
       "note": "仁孝天皇第8皇女、14代将軍徳川家茂への降嫁、1866年の家茂死去後の出家と静寛院宮号、戊辰戦争期の江戸攻撃中止・徳川家存続への尽力。",
-      "locator": "生没年・別称・「解説」",
-      "contentCheckedAt": "2026-07-31"
+      "locator": "生没年・別称・「解説」、肖像1枚目",
+      "contentCheckedAt": "2026-09-12"
     },
     "nagareyama_shinsengumi_1868": {
       "title": "流山市立博物館「新選組と流山」",
@@ -1246,6 +1248,153 @@
       "url": "https://www.ndl.go.jp/portrait/about",
       "note": "掲載肖像の著作権保護期間満了、転載手続き不要、出典明示の条件を確認。",
       "locator": "掲載資料／コンテンツの転載",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "mofa_russia_1855": {
+      "title": "外務省「日露関係史」幕末期",
+      "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/j_russia_2005/2_1.html",
+      "note": "川路聖謨らとプチャーチンによる交渉・日魯通好条約。",
+      "locator": "日魯通好条約の解説",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "chiba_kawaji_career": {
+      "title": "千葉市図書館「歴史人物を描いた文学作品」人物紹介：川路聖謨",
+      "url": "https://www.library.city.chiba.jp/news/pdf/201901hanadan.pdf",
+      "note": "勘定奉行、1858年の勅許奏請補佐と失脚、1863年の外国奉行就任・辞任。没日と新旧暦の表記には注意し、その部分は採用しない。",
+      "locator": "p.2「10．川路聖謨」人物紹介（作品のあらすじは使用しない）",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "ndl_kawaji_lifespan": {
+      "title": "国立国会図書館「江戸時代の日蘭交流」蘭学者の活躍",
+      "url": "https://www.ndl.go.jp/nichiran/s2/s2_2.html",
+      "note": "蘭学・通詞の説明と、蛮社遭厄小記の解説中にある川路聖謨の生没年。",
+      "locator": "冒頭、通詞たち、渡辺崋山「蛮社遭厄小記」",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "tondabayashi_aug18": {
+      "title": "富田林市史 第二巻「八月一八日の政変」",
+      "url": "https://adeac.jp/tondabayashi-city/texthtml/d000020/cp000002/ht000371",
+      "note": "参内、御所の警備、長州藩の警備解任、三条実美・久坂玄瑞らの退京、政変後の孝明天皇の意思表明。",
+      "locator": "pp.1038–1039「八月一八日の政変」",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "mlit_asahiko": {
+      "title": "環境省京都御苑管理事務所「賀陽宮邸跡」解説（国土交通省掲載）",
+      "url": "https://www.mlit.go.jp/tagengo-db/H30-00815.html",
+      "note": "朝彦親王の公武融和、孝明天皇との関係、1868年の広島追放。",
+      "locator": "日本語解説「賀陽宮邸跡」・英語解説の生没年",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "apj_asahiko_names": {
+      "title": "国立アートリサーチセンター 日本アーティスト事典「並河靖之」",
+      "url": "https://artplatform.go.jp/ja/artists/A1728",
+      "note": "宮家に仕えた並河靖之の伝記中の朝彦親王の改名・処遇。",
+      "locator": "青蓮院門主・朝彦親王の説明（1863年中川宮、1864年賀陽宮、1868年蟄居）",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "ndl_portrait_kaieda_detail": {
+      "title": "国立国会図書館「近代日本人の肖像」海江田信義",
+      "url": "https://www.ndl.go.jp/portrait/datas/6093/",
+      "note": "生没年、別称、生麦事件と戊辰戦争の役割、肖像。",
+      "locator": "解説、別称、肖像1枚目、肖像1枚目",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "kagoshima_kaieda_name": {
+      "title": "鹿児島大学掲載「女性たちの明治維新」有村れん書状",
+      "url": "https://ir.kagoshima-u.ac.jp/record/14412/files/BB25184174.pdf",
+      "note": "1861年12月の婚姻・婿養子と海江田信義への改名。",
+      "locator": "冊子p.19（PDF21ページ）「有村れん書状」",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "kanagawa_saigo_arimura": {
+      "title": "神奈川県立公文書館「山口コレクションの明治維新」",
+      "url": "https://archives.pref.kanagawa.jp/exhibition/exhibition/r06-webtenji.html",
+      "note": "1860年3月25日付西郷書簡の宛先に大久保・有村俊斉らが含まれる。",
+      "locator": "菊池源吾（西郷隆盛）書簡、資料ID2199400332",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "yamaguchi_yoshida_toshimaro": {
+      "title": "山口県立山口図書館「吉田稔麿」明治維新人物調べ方案内No.16",
+      "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/yoshida_toshimaro/",
+      "note": "松陰への入門、脱藩と帰国、1863年の改名・任務、池田屋事件での死去。",
+      "locator": "人物紹介",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "kochi_yoshida_toyo": {
+      "title": "高知市「吉田東洋殉難の地」",
+      "url": "https://www.city.kochi.kochi.jp/site/kanko/yoshidatouyoujunnannochi.html",
+      "note": "山内容堂による登用、後藤象二郎・板垣退助らの教育、1862年の暗殺。",
+      "locator": "吉田東洋の人物紹介",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "doshisha_yamamoto_kakuma": {
+      "title": "同志社大学「山本覚馬」",
+      "url": "https://www.doshisha.ac.jp/information/neesima/kakuma/index.html",
+      "note": "会津藩の洋学・軍事教育、松平容保との関係、鳥羽・伏見後の拘束と建白。京都府顧問の就任年は他資料と異なり、今回の時点情報には採用しない。",
+      "locator": "山本覚馬の略歴（京都での活動・鳥羽伏見・管見）",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "nakatsugawa_takeda": {
+      "title": "中津川市中山道歴史資料館「水戸天狗党との関わり」",
+      "url": "https://www.city.nakatsugawa.lg.jp/museum/n/nakatsugawa_juku/4842.html",
+      "note": "天狗党の西上、武田耕雲斎と徳川斉昭・一橋慶喜、降伏と処刑。",
+      "locator": "「天狗党、京都に向かう」「武田耕雲斎」",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "ishikawa_takeda": {
+      "title": "石川県立歴史博物館「武田耕雲斎等天狗党員筆跡巻」",
+      "url": "https://www.ishikawa-rekihaku.jp/collection/detail.php?cd=GI00181",
+      "note": "耕雲斎の生没年と敦賀での幽閉。冒頭の和暦対応は採用しない。",
+      "locator": "所蔵品解説（生没年1803–1865、敦賀での幽閉）",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "mofa_parkes": {
+      "title": "外務省「明治維新期の日英交流」",
+      "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/j_uk/03.html",
+      "note": "1865年のパークス着任、通商要求、幕府と薩長への接触、戊辰戦争中の中立と新政府承認。",
+      "locator": "概説（着任の日付は採用せず年のみ使用）",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "npg_parkes_lifespan": {
+      "title": "National Portrait Gallery: Sir Harry Smith Parkes",
+      "url": "https://www.npg.org.uk/collections/search/person/mp79902/sir-harry-smith-parkes",
+      "note": "パークスの生没年と外交官としての人物同定。画像は転載していない。",
+      "locator": "人物見出し「1828–1885, Diplomat」",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "mofa_parkes_escort": {
+      "title": "外務省「外交史料Q&A 幕末期」パークス襲撃",
+      "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/qa/bakumatsu_01.html",
+      "note": "1868年3月23日の襲撃、後藤象二郎らの護衛、天皇謁見。",
+      "locator": "「1868年、駐日英国公使パークスが京都で日本人に襲われた事件」",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "bunka_commercial_signers": {
+      "title": "文化遺産オンライン収録「日米修好通商条約」（ジャパンサーチ）",
+      "url": "https://jpsearch.go.jp/item/bunka-135547",
+      "note": "和文調印書の井上清直・岩瀬忠震、英文のハリスの署名と調印場所。",
+      "locator": "解説：調印書の署名と神奈川沖の米艦ポーハタン号",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "ndl_joi_background": {
+      "title": "国立国会図書館 国際子ども図書館「尊王攘夷運動」",
+      "url": "https://www.kodomo.go.jp/yareki/theme/theme_03.html",
+      "note": "尊王・攘夷・公武合体の意味と、1858年の条約から京都の政局へ至る背景。",
+      "locator": "テーマ解説1〜3",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "ryoma_dappan": {
+      "title": "高知県立坂本龍馬記念館「龍馬について」",
+      "url": "https://ryoma-kinenkan.jp/feat/",
+      "note": "藩外への移動には許可が必要で、脱藩は無許可の離脱である。",
+      "locator": "脱藩の説明",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "ndl_portrait_goto_detail": {
+      "title": "国立国会図書館「近代日本人の肖像」後藤象二郎",
+      "url": "https://www.ndl.go.jp/portrait/datas/78/",
+      "note": "人物略歴と史料肖像。",
+      "locator": "人物略歴・肖像1枚目",
       "contentCheckedAt": "2026-09-12"
     }
   },
@@ -1910,7 +2059,8 @@
         "sho-in",
         "nariakira",
         "saigo",
-        "komei"
+        "komei",
+        "kawaji-toshiakira"
       ],
       "factions": [
         "外国勢力",
@@ -1929,14 +2079,16 @@
         "archives_timeline",
         "ndl_modern_timeline",
         "ndl_handwriting",
-        "mofa_treaty_1858"
+        "mofa_treaty_1858",
+        "chiba_kawaji_career"
       ],
       "evidence": {
         "sourceIds": [
           "archives_timeline",
           "ndl_modern_timeline",
           "ndl_handwriting",
-          "mofa_treaty_1858"
+          "mofa_treaty_1858",
+          "chiba_kawaji_career"
         ],
         "reviewStatus": "verified"
       }
@@ -2018,7 +2170,8 @@
         "saigo",
         "yodo",
         "takechi",
-        "ryoma"
+        "ryoma",
+        "kaieda"
       ],
       "factions": [
         "薩摩藩",
@@ -2035,13 +2188,15 @@
       "sources": [
         "archives_timeline",
         "ndl_handwriting",
-        "kagoshima_teradaya"
+        "kagoshima_teradaya",
+        "ndl_portrait_kaieda_detail"
       ],
       "evidence": {
         "sourceIds": [
           "archives_timeline",
           "ndl_handwriting",
-          "kagoshima_teradaya"
+          "kagoshima_teradaya",
+          "ndl_portrait_kaieda_detail"
         ],
         "reviewStatus": "verified"
       }
@@ -2126,7 +2281,8 @@
         "kusaka",
         "takasugi",
         "kondo",
-        "hijikata"
+        "hijikata",
+        "asahiko"
       ],
       "factions": [
         "朝廷",
@@ -2142,13 +2298,15 @@
       "sources": [
         "archives_timeline",
         "ndl_modern_timeline",
-        "yamaguchi_library_kinmon"
+        "yamaguchi_library_kinmon",
+        "tondabayashi_aug18"
       ],
       "evidence": {
         "sourceIds": [
           "archives_timeline",
           "ndl_modern_timeline",
-          "yamaguchi_library_kinmon"
+          "yamaguchi_library_kinmon",
+          "tondabayashi_aug18"
         ],
         "reviewStatus": "verified"
       }
@@ -2183,7 +2341,8 @@
         "kido",
         "kusaka",
         "takasugi",
-        "omura"
+        "omura",
+        "yoshida-toshimaro"
       ],
       "factions": [
         "新選組",
@@ -2201,12 +2360,14 @@
       ],
       "sources": [
         "archives_timeline",
-        "yamaguchi_library_kinmon"
+        "yamaguchi_library_kinmon",
+        "yamaguchi_yoshida_toshimaro"
       ],
       "evidence": {
         "sourceIds": [
           "archives_timeline",
-          "yamaguchi_library_kinmon"
+          "yamaguchi_library_kinmon",
+          "yamaguchi_yoshida_toshimaro"
         ],
         "reviewStatus": "verified"
       }
@@ -2455,7 +2616,8 @@
         "yoshinobu",
         "katamori",
         "kondo",
-        "hijikata"
+        "hijikata",
+        "yamamoto-kakuma"
       ],
       "factions": [
         "新政府",
@@ -2474,13 +2636,15 @@
       "sources": [
         "ndl_modern_timeline",
         "ndl_handwriting",
-        "archives_toba_fushimi"
+        "archives_toba_fushimi",
+        "doshisha_yamamoto_kakuma"
       ],
       "evidence": {
         "sourceIds": [
           "ndl_modern_timeline",
           "ndl_handwriting",
-          "archives_toba_fushimi"
+          "archives_toba_fushimi",
+          "doshisha_yamamoto_kakuma"
         ],
         "reviewStatus": "verified"
       }
@@ -2512,7 +2676,8 @@
         "yoshinobu",
         "tenshoin",
         "kazunomiya",
-        "enomoto"
+        "enomoto",
+        "kaieda"
       ],
       "factions": [
         "新政府",
@@ -2524,13 +2689,15 @@
       "sources": [
         "ndl_handwriting",
         "jacar_dictionary",
-        "sumida_katsu_edo_surrender"
+        "sumida_katsu_edo_surrender",
+        "ndl_portrait_kaieda_detail"
       ],
       "evidence": {
         "sourceIds": [
           "ndl_handwriting",
           "jacar_dictionary",
-          "sumida_katsu_edo_surrender"
+          "sumida_katsu_edo_surrender",
+          "ndl_portrait_kaieda_detail"
         ],
         "reviewStatus": "verified"
       }
@@ -2636,6 +2803,116 @@
       }
     }
   },
+  "terms": {
+    "kobugattai": {
+      "id": "kobugattai",
+      "title": "公武合体",
+      "kana": "こうぶがったい",
+      "meaning": "朝廷と幕府が協力して政治を立て直そうとする考え。",
+      "context": "朝廷の人物がすべて倒幕を求めたわけではなく、幕府との協調を求める立場もあった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_joi_background"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "joi": {
+      "id": "joi",
+      "title": "尊王攘夷",
+      "kana": "そんのうじょうい",
+      "meaning": "天皇を尊ぶ考えと、外国勢力を追い払う考えが結び付いたもの。",
+      "context": "同じ言葉を掲げる人々でも、藩や朝廷内での立場、選ぶ行動は異なった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_joi_background",
+          "tondabayashi_aug18"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "kyoto-shugoshoku": {
+      "id": "kyoto-shugoshoku",
+      "title": "京都守護職",
+      "kana": "きょうとしゅごしょく",
+      "meaning": "京都の治安維持を担う幕府の役職。会津藩主松平容保が就いた。",
+      "context": "新選組の取締りや、会津藩の御所警備を、その上位の体制と結び付けて見る。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_katamori_detail",
+          "ndl_portrait_kondo_detail"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "chokkyo": {
+      "id": "chokkyo",
+      "title": "勅許",
+      "kana": "ちょっきょ",
+      "meaning": "天皇が与える許可。",
+      "context": "1858年の通商条約では、外国との交渉だけでなく、朝廷の許可が得られるかも争点になった。",
+      "evidence": {
+        "sourceIds": [
+          "mofa_treaty_1858",
+          "mofa_parkes"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "kaiko": {
+      "id": "kaiko",
+      "title": "開港",
+      "kana": "かいこう",
+      "meaning": "条約などにより、外国船の来航や貿易のために港を開くこと。",
+      "context": "条約ごとに開く港と認める活動が異なる。1858年の通商条約は貿易を認めた。",
+      "evidence": {
+        "sourceIds": [
+          "mofa_russia_1855",
+          "mofa_treaty_1858"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "tsuji": {
+      "id": "tsuji",
+      "title": "通詞",
+      "kana": "つうじ",
+      "meaning": "外国語を通訳し、貿易交渉などを支えた人々。",
+      "context": "外交官や奉行だけでなく、言葉を取り次ぐ実務者が交渉を支えていた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_kawaji_lifespan"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "rangaku": {
+      "id": "rangaku",
+      "title": "蘭学",
+      "kana": "らんがく",
+      "meaning": "オランダ語を通じて学んだ西洋の学問や技術。",
+      "context": "医学だけでなく、天文学や地理などにも広がる。幕末の洋学・軍事教育を知る手がかりになる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_kawaji_lifespan"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "dappan": {
+      "id": "dappan",
+      "title": "脱藩",
+      "kana": "だっぱん",
+      "meaning": "藩の許可を得ずに藩外へ出ること。",
+      "context": "藩士が藩外にいる場合も、公務・許可された遊学・脱藩を区別して読む。",
+      "evidence": {
+        "sourceIds": [
+          "ryoma_dappan"
+        ],
+        "reviewStatus": "verified"
+      }
+    }
+  },
   "incidents": {
     "ikedaya": {
       "id": "ikedaya",
@@ -2657,7 +2934,8 @@
               "php_ikedaya_participants"
             ],
             "reviewStatus": "verified"
-          }
+          },
+          "side": "新選組側"
         },
         {
           "personId": "okita",
@@ -2670,7 +2948,8 @@
               "php_ikedaya_participants"
             ],
             "reviewStatus": "verified"
-          }
+          },
+          "side": "新選組側"
         },
         {
           "personId": "nagakura",
@@ -2681,6 +2960,21 @@
           "evidence": {
             "sourceIds": [
               "php_ikedaya_participants"
+            ],
+            "reviewStatus": "verified"
+          },
+          "side": "新選組側"
+        },
+        {
+          "personId": "yoshida-toshimaro",
+          "displayName": "吉田稔麿",
+          "role": "事件で命を落とした長州藩士",
+          "involvement": "onsite",
+          "side": "襲撃された側",
+          "summary": "池田屋事件で死去。当日の細かな移動や、誰と交戦したかは断定しない。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_yoshida_toshimaro"
             ],
             "reviewStatus": "verified"
           }
@@ -2696,7 +2990,8 @@
               "php_ikedaya_participants"
             ],
             "reviewStatus": "verified"
-          }
+          },
+          "side": "新選組側"
         },
         {
           "personId": "katamori",
@@ -2709,7 +3004,8 @@
               "ndl_portrait_kondo_detail"
             ],
             "reviewStatus": "verified"
-          }
+          },
+          "side": "京都守護職"
         }
       ],
       "relations": [
@@ -2724,7 +3020,8 @@
               "ndl_portrait_kondo_detail"
             ],
             "reviewStatus": "verified"
-          }
+          },
+          "direction": "forward"
         },
         {
           "id": "ikedaya-kondo-hijikata",
@@ -2738,7 +3035,8 @@
               "ndl_portrait_hijikata_detail"
             ],
             "reviewStatus": "verified"
-          }
+          },
+          "direction": "none"
         },
         {
           "id": "ikedaya-kondo-okita",
@@ -2751,7 +3049,8 @@
               "hino_okita"
             ],
             "reviewStatus": "verified"
-          }
+          },
+          "direction": "forward"
         }
       ],
       "placeIds": [
@@ -2761,7 +3060,260 @@
         "sourceIds": [
           "php_ikedaya_participants",
           "yamaguchi_library_kinmon",
-          "kyoto_kinmon"
+          "kyoto_kinmon",
+          "yamaguchi_yoshida_toshimaro"
+        ],
+        "reviewStatus": "verified"
+      },
+      "scope": "新選組側・長州側と京都の治安体制",
+      "termIds": [
+        "joi",
+        "kyoto-shugoshoku"
+      ]
+    },
+    "commercial-treaty-1858": {
+      "id": "commercial-treaty-1858",
+      "sceneId": "1858-ansei",
+      "title": "日米修好通商条約の調印",
+      "date": "1858年7月29日（安政5年6月19日・旧暦）",
+      "scope": "米国の交渉・幕府の決定・朝廷の勅許",
+      "summary": "ハリスとの通商条約を、幕府は天皇の勅許を得ないまま結んだ。日本側の署名者は井上清直・岩瀬忠震。",
+      "stakes": "外国との貿易をどう始めるか。同時に、条約を誰が認めるのかが国内の争点になった。",
+      "turningPoint": "英・仏・露・蘭とも条約を締結。開港へ進む一方、未勅許の調印をめぐる幕府批判が強まった。",
+      "participants": [
+        {
+          "personId": "harris",
+          "displayName": "タウンゼント・ハリス",
+          "role": "交渉と米国側の署名",
+          "involvement": "onsite",
+          "side": "米国",
+          "summary": "自由貿易を求めて交渉し、米国側の調印書に署名した。",
+          "evidence": {
+            "sourceIds": [
+              "mofa_treaty_1858",
+              "bunka_commercial_signers"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "ii",
+          "displayName": "井伊直弼",
+          "role": "未勅許での調印を決断",
+          "involvement": "decision",
+          "side": "幕府",
+          "summary": "大老として、勅許が得られない中で調印に踏み切った。署名者とは区別する。",
+          "evidence": {
+            "sourceIds": [
+              "mofa_treaty_1858"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "komei",
+          "displayName": "孝明天皇",
+          "role": "条約への勅許を与えず",
+          "involvement": "decision",
+          "side": "朝廷",
+          "summary": "幕府から求められた条約の許可は得られず、そのまま調印が行われた。",
+          "evidence": {
+            "sourceIds": [
+              "mofa_treaty_1858",
+              "ndl_joi_background"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "kawaji-toshiakira",
+          "displayName": "川路聖謨",
+          "role": "調印に先立つ勅許奏請の補佐",
+          "involvement": "context",
+          "side": "幕府の実務",
+          "summary": "老中堀田正睦の上京を補佐した幕臣。条約当日の署名者ではない。",
+          "evidence": {
+            "sourceIds": [
+              "chiba_kawaji_career"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "commercial-ii-komei",
+          "aPersonId": "ii",
+          "bPersonId": "komei",
+          "label": "勅許のない調印",
+          "description": "天皇の許可を得られないまま、井伊の下で幕府が調印した。直接対面の交渉を示すものではない。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "mofa_treaty_1858"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "yokohama",
+        "edo",
+        "kyoto"
+      ],
+      "termIds": [
+        "chokkyo",
+        "kaiko",
+        "tsuji"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "mofa_treaty_1858",
+          "bunka_commercial_signers",
+          "ndl_joi_background"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "august18-coup": {
+      "id": "august18-coup",
+      "sceneId": "1863-aug18",
+      "title": "八月十八日の政変",
+      "date": "1863年9月30日（文久3年8月18日・旧暦）",
+      "scope": "朝廷内の決定・会津の警備・退京した長州側",
+      "summary": "御所を会津・薩摩などの藩兵が固め、長州藩の警備を解任。三条実美ら尊攘派の公家と長州藩士が京都を離れた。",
+      "stakes": "天皇の名でどの政治方針を進めるのか。朝廷内の立場の違いと、御所の警備を担う藩の力が結び付いた。",
+      "turningPoint": "長州側は京都での立場を失った。翌1864年には京都への復帰を求める動きが禁門の変へつながる。",
+      "participants": [
+        {
+          "personId": "asahiko",
+          "displayName": "中川宮朝彦親王",
+          "role": "早朝に参内し政変に関与",
+          "involvement": "decision",
+          "side": "公武融和の側",
+          "summary": "朝廷へ入り、長州藩や尊攘派公家を排除する政変に関与した。",
+          "evidence": {
+            "sourceIds": [
+              "tondabayashi_aug18"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "katamori",
+          "displayName": "松平容保",
+          "role": "会津藩兵の警備を指揮",
+          "involvement": "decision",
+          "side": "京都守護職",
+          "summary": "容保の指揮する会津藩兵らが御所に入り、門の警備を固めた。",
+          "evidence": {
+            "sourceIds": [
+              "tondabayashi_aug18"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "sanjo",
+          "displayName": "三条実美",
+          "role": "参内を止められ長州へ",
+          "involvement": "onsite",
+          "side": "退京した側",
+          "summary": "参内を禁じられ、ほかの公家や長州藩士と京都から長州へ向かった。",
+          "evidence": {
+            "sourceIds": [
+              "tondabayashi_aug18"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "kusaka",
+          "displayName": "久坂玄瑞",
+          "role": "長州側として退京",
+          "involvement": "onsite",
+          "side": "退京した側",
+          "summary": "三条ら七卿、長州藩兵とともに京都を離れた。",
+          "evidence": {
+            "sourceIds": [
+              "tondabayashi_aug18"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "komei",
+          "displayName": "孝明天皇",
+          "role": "政変後の方針を支持",
+          "involvement": "context",
+          "side": "朝廷",
+          "summary": "8月26日（旧暦）、政変以後の意思表示が自身の意向であると諸藩へ示した。",
+          "evidence": {
+            "sourceIds": [
+              "tondabayashi_aug18"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "aug18-asahiko-komei",
+          "aPersonId": "asahiko",
+          "bPersonId": "komei",
+          "label": "天皇を補佐",
+          "description": "朝彦親王は孝明天皇の信頼を受け、公武融和を支えた。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "mlit_asahiko"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "aug18-asahiko-katamori",
+          "aPersonId": "asahiko",
+          "bPersonId": "katamori",
+          "label": "参内と御所警備",
+          "description": "朝彦親王の参内と、容保らによる御所の警備が政変を進めた。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "tondabayashi_aug18"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "aug18-sanjo-kusaka",
+          "aPersonId": "sanjo",
+          "bPersonId": "kusaka",
+          "label": "京都から長州へ",
+          "description": "三条ら七卿と久坂ら長州藩士は京都を離れた。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "tondabayashi_aug18"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "kyoto",
+        "hagi"
+      ],
+      "termIds": [
+        "kobugattai",
+        "joi",
+        "kyoto-shugoshoku"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "tondabayashi_aug18",
+          "mlit_asahiko",
+          "yamaguchi_library_kinmon"
         ],
         "reviewStatus": "verified"
       }
@@ -3270,6 +3822,10 @@
         "mofa_harris_credentials",
         "mofa_treaty_1858"
       ],
+      "termIds": [
+        "kaiko",
+        "tsuji"
+      ],
       "statuses": {
         "1858-ansei": {
           "display": "ハリス",
@@ -3554,6 +4110,18 @@
         "matsudo_yoshinobu_timeline",
         "fukui_yoshinobu_shungaku_1862"
       ],
+      "portrait": {
+        "src": "assets/portraits/yoshinobu-ndl.jpg",
+        "alt": "徳川慶喜の史料肖像",
+        "sourceId": "ndl_portrait_yoshinobu_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が徳川慶喜の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
+      },
       "statuses": {
         "1858-ansei": {
           "display": "一橋慶喜",
@@ -3732,6 +4300,21 @@
         "archives_katsu_kaibo",
         "sumida_katsu_edo_surrender"
       ],
+      "termIds": [
+        "rangaku"
+      ],
+      "portrait": {
+        "src": "assets/portraits/katsu-ndl.jpg",
+        "alt": "勝海舟の史料肖像",
+        "sourceId": "ndl_portrait_katsu_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が勝海舟の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
+      },
       "statuses": {
         "1853-blackships": {
           "display": "勝麟太郎",
@@ -5521,6 +6104,18 @@
         "kyoto_kido_1862",
         "kagoshima_satcho_alliance"
       ],
+      "portrait": {
+        "src": "assets/portraits/kido-ndl.jpg",
+        "alt": "木戸孝允の史料肖像",
+        "sourceId": "ndl_portrait_kido_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が木戸孝允の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
+      },
       "statuses": {
         "1858-ansei": {
           "display": "桂小五郎",
@@ -6538,6 +7133,10 @@
         "iwaki_kazunomiya",
         "ndl_portrait_katamori_detail"
       ],
+      "termIds": [
+        "chokkyo",
+        "kobugattai"
+      ],
       "statuses": {
         "1858-ansei": {
           "display": "孝明天皇",
@@ -6802,6 +7401,18 @@
       "sources": [
         "ndl_portrait_iwakura_detail"
       ],
+      "portrait": {
+        "src": "assets/portraits/iwakura-ndl.jpg",
+        "alt": "岩倉具視の史料肖像",
+        "sourceId": "ndl_portrait_iwakura_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が岩倉具視の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
+      },
       "statuses": {
         "1858-ansei": {
           "display": "岩倉具視",
@@ -7102,6 +7713,21 @@
       "sources": [
         "ndl_portrait_katamori_detail"
       ],
+      "termIds": [
+        "kyoto-shugoshoku"
+      ],
+      "portrait": {
+        "src": "assets/portraits/katamori-ndl.jpg",
+        "alt": "松平容保の史料肖像",
+        "sourceId": "ndl_portrait_katamori_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": "幕末明治文化変遷史【210.6-To591b2-t】",
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が松平容保の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
+      },
       "statuses": {
         "1862-bunkyu": {
           "display": "松平容保",
@@ -7534,6 +8160,9 @@
         "ndl_portrait_ryoma_detail",
         "kochi_taisei_hokan"
       ],
+      "termIds": [
+        "dappan"
+      ],
       "statuses": {
         "1860-sakurada": {
           "display": "坂本龍馬",
@@ -7670,6 +8299,18 @@
       "sources": [
         "kochi_taisei_hokan"
       ],
+      "portrait": {
+        "src": "assets/portraits/goto-ndl.jpg",
+        "alt": "後藤象二郎の史料肖像",
+        "sourceId": "ndl_portrait_goto_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が後藤象二郎の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
+      },
       "statuses": {
         "1865-choshu": {
           "display": "後藤象二郎",
@@ -8009,6 +8650,10 @@
       ],
       "sources": [
         "ndl_portrait_kondo_detail"
+      ],
+      "termIds": [
+        "kyoto-shugoshoku",
+        "joi"
       ],
       "portrait": {
         "src": "assets/portraits/kondo-ndl.jpg",
@@ -8438,6 +9083,21 @@
         "ndl_portrait_kazunomiya_detail",
         "iwaki_kazunomiya"
       ],
+      "termIds": [
+        "kobugattai"
+      ],
+      "portrait": {
+        "src": "assets/portraits/kazunomiya-ndl.jpg",
+        "alt": "和宮親子内親王の史料肖像",
+        "sourceId": "ndl_portrait_kazunomiya_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が和宮親子内親王の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
+      },
       "statuses": {
         "1860-sakurada": {
           "display": "和宮",
@@ -8654,6 +9314,663 @@
           "evidence": {
             "sourceIds": [
               "kodansha_nagakura"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "kawaji-toshiakira",
+      "name": "川路聖謨",
+      "kana": "かわじ としあきら",
+      "aliases": [
+        "川路三左衛門"
+      ],
+      "born": "1801–1868",
+      "defaultFaction": "幕府",
+      "activeRange": [
+        0,
+        13
+      ],
+      "oneLine": "ロシアとの条約交渉に当たった幕臣。1858年には朝廷への条約勅許の働きかけを補佐した。",
+      "places": [
+        "edo",
+        "nagasaki",
+        "shimoda",
+        "kyoto"
+      ],
+      "events": [
+        "ansei"
+      ],
+      "sources": [
+        "mofa_russia_1855",
+        "chiba_kawaji_career",
+        "ndl_kawaji_lifespan"
+      ],
+      "termIds": [
+        "chokkyo",
+        "kaiko"
+      ],
+      "statuses": {
+        "1853-blackships": {
+          "display": "川路聖謨",
+          "role": "勘定奉行・海防掛",
+          "stance": "ロシア使節プチャーチンとの交渉を担当。長崎、続いて下田での交渉は、1855年2月の日魯通好条約へつながる。",
+          "importance": "ペリーへの応対と並行して進む、ロシアとの外交交渉を担う。",
+          "evidence": {
+            "sourceIds": [
+              "mofa_russia_1855",
+              "chiba_kawaji_career"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1858-ansei": {
+          "display": "川路聖謨",
+          "role": "勅許奏請を補佐、のち失脚",
+          "stance": "1858年、条約への勅許を求めて上京した老中堀田正睦を補佐したが、井伊直弼の大老就任後に失脚した。",
+          "importance": "交渉実務を担う幕臣も、条約と将軍継嗣をめぐる政治変動の影響を受けた。",
+          "evidence": {
+            "sourceIds": [
+              "chiba_kawaji_career"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1862-bunkyu": {
+          "display": "川路聖謨",
+          "role": "失脚後の幕臣",
+          "stance": "1858年に失脚した後の時期。1862年の個別の活動・役職は確認中。",
+          "importance": "勅許奏請を担った幕臣の、文久期の動向をたどる。",
+          "evidence": {
+            "sourceIds": [
+              "chiba_kawaji_career"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        },
+        "1863-joi": {
+          "display": "川路聖謨",
+          "role": "外国奉行に復帰、同年辞任",
+          "stance": "1863年に外国奉行となるが、数か月で辞任した。",
+          "importance": "外交官僚としての復帰は長く続かなかった。",
+          "evidence": {
+            "sourceIds": [
+              "chiba_kawaji_career"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1864-kinmon": {
+          "display": "川路聖謨",
+          "role": "外国奉行退任後",
+          "stance": "1863年の外国奉行辞任後。以後の個別の活動は確認中。",
+          "importance": "条約交渉を担った幕臣の、その後の動向をたどる人物。",
+          "evidence": {
+            "sourceIds": [
+              "chiba_kawaji_career"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        },
+        "1868-edo": {
+          "display": "川路聖謨",
+          "role": "1868年に死去",
+          "stance": "1868年に死去。",
+          "importance": "幕府の終わりと同じ年に生涯を終えた。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_kawaji_lifespan"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "asahiko",
+      "name": "中川宮朝彦親王",
+      "kana": "なかがわのみや あさひこしんのう",
+      "aliases": [
+        "朝彦親王",
+        "賀陽宮朝彦親王",
+        "朝彦",
+        "久邇宮朝彦親王"
+      ],
+      "born": "1824–1891",
+      "defaultFaction": "朝廷",
+      "activeRange": [
+        6,
+        15
+      ],
+      "oneLine": "孝明天皇を補佐し、公武融和を進めた皇族。八月十八日の政変で朝廷の勢力転換に関わった。",
+      "places": [
+        "kyoto"
+      ],
+      "events": [
+        "aug18"
+      ],
+      "sources": [
+        "tondabayashi_aug18",
+        "mlit_asahiko",
+        "apj_asahiko_names"
+      ],
+      "termIds": [
+        "kobugattai",
+        "joi"
+      ],
+      "statuses": {
+        "1863-aug18": {
+          "display": "中川宮朝彦親王",
+          "role": "孝明天皇の補佐",
+          "stance": "八月十八日の政変で参内。朝廷では長州藩の警備解任や三条実美らの参内停止が決まった。",
+          "importance": "朝廷の内部にも、公武融和を求める立場があった。",
+          "evidence": {
+            "sourceIds": [
+              "tondabayashi_aug18",
+              "mlit_asahiko"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1864-kinmon": {
+          "display": "賀陽宮朝彦親王",
+          "role": "公武融和を求める皇族",
+          "stance": "1864年から賀陽宮。朝廷と幕府の融和を支持した。",
+          "importance": "朝廷の政治方針をめぐる対立を、天皇と公家の区別も含めて見る入口。",
+          "evidence": {
+            "sourceIds": [
+              "apj_asahiko_names",
+              "mlit_asahiko"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-toba": {
+          "display": "賀陽宮朝彦親王",
+          "role": "政変後の皇族",
+          "stance": "王政復古後の処遇が変化する時期。1868年前半の個別の役職は確認中。",
+          "importance": "王政復古で、公武融和を担った皇族の立場も変わった。",
+          "evidence": {
+            "sourceIds": [
+              "apj_asahiko_names"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        },
+        "1868-tohoku": {
+          "display": "朝彦",
+          "role": "広島で蟄居",
+          "stance": "1868年、親王の身分を失い、広島で蟄居となった。京都への帰還は1870年末。",
+          "importance": "新政府成立により、公武融和を支えた皇族の処遇も変わった。",
+          "evidence": {
+            "sourceIds": [
+              "apj_asahiko_names",
+              "mlit_asahiko"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "kaieda",
+      "name": "海江田信義",
+      "kana": "かいえだ のぶよし",
+      "aliases": [
+        "有村俊斎",
+        "有村俊斉"
+      ],
+      "born": "1832–1906",
+      "defaultFaction": "薩摩藩",
+      "activeRange": [
+        2,
+        13
+      ],
+      "oneLine": "西郷隆盛らと交流した薩摩藩士。生麦事件に関与し、戊辰戦争では新政府の参謀を務めた。",
+      "places": [
+        "kagoshima",
+        "namamugi",
+        "edo"
+      ],
+      "events": [
+        "bunkyu",
+        "edo_surrender"
+      ],
+      "sources": [
+        "ndl_portrait_kaieda_detail",
+        "kagoshima_kaieda_name",
+        "kanagawa_saigo_arimura"
+      ],
+      "termIds": [
+        "joi"
+      ],
+      "portrait": {
+        "src": "assets/portraits/kaieda-ndl.jpg",
+        "alt": "海江田信義の史料肖像",
+        "sourceId": "ndl_portrait_kaieda_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が海江田信義の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
+      },
+      "statuses": {
+        "1858-ansei": {
+          "display": "有村俊斎",
+          "role": "薩摩藩士",
+          "stance": "西郷隆盛らと井伊の幕政に対抗する動きを図ったが、挫折して帰藩した。",
+          "importance": "薩摩の政治活動を、指導者を取り巻く藩士の側から見る人物。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_kaieda_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1860-sakurada": {
+          "display": "有村俊斎",
+          "role": "西郷と文通する藩士",
+          "stance": "奄美大島にいる西郷隆盛へ、大久保利通らと連絡した。1860年3月25日（旧暦）付の西郷の返書が残る。",
+          "importance": "離れた場所にいる藩士たちを結んだ書簡の交流。",
+          "evidence": {
+            "sourceIds": [
+              "kanagawa_saigo_arimura"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1862-bunkyu": {
+          "display": "海江田信義",
+          "role": "生麦事件に関与",
+          "stance": "1861年12月（旧暦）に海江田信義と改名。翌1862年、生麦事件でイギリス人の殺傷に関与した。",
+          "importance": "藩士の行動が、薩摩とイギリスの外交問題につながった。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_kaieda_detail",
+              "kagoshima_kaieda_name"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1863-joi": {
+          "display": "海江田信義",
+          "role": "薩摩藩士",
+          "stance": "生麦事件後の薩摩藩士。各年の役職と具体的な活動は確認中。",
+          "importance": "薩摩藩への所属と、個別事件での役割を分けて見る。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_kaieda_detail"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        },
+        "1868-toba": {
+          "display": "海江田信義",
+          "role": "新政府の参謀",
+          "faction": "新政府",
+          "stance": "戊辰戦争で新政府の参謀となり、江戸へ進駐した。",
+          "importance": "薩摩藩士から、新政府の軍事行動を担う立場へ。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_kaieda_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "yoshida-toshimaro",
+      "name": "吉田稔麿",
+      "kana": "よしだ としまろ",
+      "aliases": [
+        "吉田栄太郎",
+        "吉田年麻呂",
+        "吉田年麿"
+      ],
+      "born": "1841–1864",
+      "defaultFaction": "長州藩",
+      "activeRange": [
+        1,
+        7
+      ],
+      "oneLine": "松陰門下で学び、脱藩と帰国を経験した長州藩士。池田屋事件で命を落とした。",
+      "places": [
+        "hagi",
+        "edo",
+        "kyoto"
+      ],
+      "events": [
+        "kinmon"
+      ],
+      "sources": [
+        "yamaguchi_yoshida_toshimaro"
+      ],
+      "termIds": [
+        "joi",
+        "dappan"
+      ],
+      "statuses": {
+        "1854-treaty": {
+          "display": "吉田栄太郎",
+          "role": "萩で学ぶ若者",
+          "stance": "1848年から吉田松陰の外叔父、久保五郎左衛門に学んだ。松陰に入門するのは1856年。",
+          "importance": "まだ松陰門下での活動に入る前の学習期。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_yoshida_toshimaro"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1858-ansei": {
+          "display": "吉田栄太郎",
+          "role": "松陰門下・自宅謹慎",
+          "stance": "1856年に松陰へ入門。1858年の松陰再投獄に反対して自宅謹慎となり、塾と距離を置いた。",
+          "importance": "同じ門下でも、師との距離や行動は一様ではない。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_yoshida_toshimaro"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1860-sakurada": {
+          "display": "吉田栄太郎",
+          "role": "脱藩して江戸へ",
+          "stance": "1860年に脱藩し、江戸に潜伏。変名を使い旗本に仕えた。",
+          "importance": "藩を離れた時期を、通常の藩務と区別する。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_yoshida_toshimaro"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1862-bunkyu": {
+          "display": "吉田栄太郎",
+          "role": "脱藩を許され帰国",
+          "stance": "1862年、脱藩の罪を許され長州へ帰国した。",
+          "importance": "藩外での活動から、再び藩内での活動へ移る。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_yoshida_toshimaro"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1863-joi": {
+          "display": "吉田稔麿",
+          "role": "長州藩士",
+          "stance": "1863年に士雇・屠勇取立方となり、栄太郎から年麻呂（稔麿）へ改名した。",
+          "importance": "松陰門下の学習期から、藩の任務を担う時期へ。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_yoshida_toshimaro"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1864-kinmon": {
+          "display": "吉田稔麿",
+          "role": "池田屋事件で死去",
+          "stance": "1864年、池田屋事件で死去した。事件当日の詳しい動きや最期の場所はここでは断定しない。",
+          "importance": "事件によって失われた長州側の人物。以後の戦闘には参加していない。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_yoshida_toshimaro"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "yoshida-toyo",
+      "name": "吉田東洋",
+      "kana": "よしだ とうよう",
+      "aliases": [],
+      "born": "1816–1862",
+      "defaultFaction": "土佐藩",
+      "activeRange": [
+        0,
+        4
+      ],
+      "oneLine": "山内容堂に登用された土佐藩の参政。後藤象二郎・板垣退助らを教え、1862年に暗殺された。",
+      "places": [
+        "kochi"
+      ],
+      "events": [],
+      "sources": [
+        "kochi_yoshida_toyo"
+      ],
+      "termIds": [
+        "kobugattai"
+      ],
+      "statuses": {
+        "1853-blackships": {
+          "display": "吉田東洋",
+          "role": "土佐藩政を担う人物",
+          "stance": "郡奉行・船奉行を経て山内容堂に抜擢され参政を務めた。長浜の塾では後藤象二郎や板垣退助らを教えた。",
+          "importance": "藩主の方針を実務に結び付け、次の世代を育てた。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_yoshida_toyo"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        },
+        "1862-bunkyu": {
+          "display": "吉田東洋",
+          "role": "1862年4月（旧暦）に暗殺",
+          "stance": "1862年4月（旧暦）、土佐勤王党員に暗殺された。",
+          "importance": "土佐の藩内政治の対立で、参政を務めた人物が失われた。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_yoshida_toyo"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "yamamoto-kakuma",
+      "name": "山本覚馬",
+      "kana": "やまもと かくま",
+      "aliases": [],
+      "born": "1828–1892",
+      "defaultFaction": "会津藩",
+      "activeRange": [
+        4,
+        15
+      ],
+      "oneLine": "会津藩で洋学と軍事教育に携わり、鳥羽・伏見後の拘束中に建白「管見」をまとめた。",
+      "places": [
+        "aizu",
+        "kyoto"
+      ],
+      "events": [
+        "toba"
+      ],
+      "sources": [
+        "doshisha_yamamoto_kakuma"
+      ],
+      "termIds": [
+        "rangaku",
+        "kyoto-shugoshoku"
+      ],
+      "statuses": {
+        "1862-bunkyu": {
+          "display": "山本覚馬",
+          "role": "会津藩士・洋学と軍事教育",
+          "stance": "会津藩主松平容保の下で、西洋式の軍隊調練や洋学所の運営に携わった。",
+          "importance": "京都で活動する会津藩を、兵士の教育と知識の導入から支えた。",
+          "evidence": {
+            "sourceIds": [
+              "doshisha_yamamoto_kakuma"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-toba": {
+          "display": "山本覚馬",
+          "role": "薩摩側の拘束下",
+          "stance": "鳥羽・伏見の戦いで薩摩藩に捕らわれた。幽閉中に建白「管見」を口述した。",
+          "importance": "軍事教育の経験から、今後の社会への提案へと活動が変わる。",
+          "evidence": {
+            "sourceIds": [
+              "doshisha_yamamoto_kakuma"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1869-hakodate": {
+          "display": "山本覚馬",
+          "role": "建白後の時期",
+          "stance": "建白「管見」をまとめた後の時期。京都府での正式な職名・就任年は確認中。",
+          "importance": "旧藩の軍務と、維新後の活動を切り分けて見る。",
+          "evidence": {
+            "sourceIds": [
+              "doshisha_yamamoto_kakuma"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        }
+      }
+    },
+    {
+      "id": "takeda-kounsai",
+      "name": "武田耕雲斎",
+      "kana": "たけだ こううんさい",
+      "aliases": [],
+      "born": "1803–1865",
+      "defaultFaction": "水戸藩",
+      "activeRange": [
+        0,
+        8
+      ],
+      "oneLine": "水戸藩の改革派として藩政に関わり、1864年に天狗党を率いて京都へ向かった。",
+      "places": [
+        "mito"
+      ],
+      "events": [],
+      "sources": [
+        "nakatsugawa_takeda",
+        "ishikawa_takeda"
+      ],
+      "termIds": [
+        "joi"
+      ],
+      "statuses": {
+        "1853-blackships": {
+          "display": "武田耕雲斎",
+          "role": "水戸藩の改革派",
+          "stance": "徳川斉昭の藩主擁立に尽くし、改革派の中心として藩政に参加した。各年の役職は確認中。",
+          "importance": "水戸藩内にも立場の違いがあり、藩全体を一つの意思とみなせない。",
+          "evidence": {
+            "sourceIds": [
+              "nakatsugawa_takeda"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        },
+        "1864-kinmon": {
+          "display": "武田耕雲斎",
+          "role": "天狗党の総大将",
+          "stance": "1864年11月（旧暦）、天狗党の総大将として西上。一橋慶喜を通じて朝廷へ志を伝えようとしたが、途中で加賀藩に降伏した。",
+          "importance": "京都での政変と同じころ、水戸の尊攘運動も藩外へ広がっていた。",
+          "evidence": {
+            "sourceIds": [
+              "nakatsugawa_takeda"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1865-choshu": {
+          "display": "武田耕雲斎",
+          "role": "敦賀で処刑",
+          "stance": "元治2年（1865）2月4日（旧暦）、敦賀で処刑された。",
+          "importance": "天狗党の西上は、京都への到達を果たさず終わった。",
+          "evidence": {
+            "sourceIds": [
+              "nakatsugawa_takeda",
+              "ishikawa_takeda"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "parkes",
+      "name": "ハリー・パークス",
+      "kana": "はりー ぱーくす",
+      "aliases": [
+        "パークス",
+        "ハリー・スミス・パークス",
+        "Harry Smith Parkes"
+      ],
+      "born": "1828–1885",
+      "defaultFaction": "外国勢力",
+      "activeRange": [
+        8,
+        15
+      ],
+      "oneLine": "1865年に着任した駐日英国公使。通商を求め、幕府・薩長・新政府の間で外交を進めた。",
+      "places": [
+        "edo",
+        "kyoto"
+      ],
+      "events": [],
+      "sources": [
+        "mofa_parkes",
+        "npg_parkes_lifespan",
+        "mofa_parkes_escort"
+      ],
+      "termIds": [
+        "kaiko",
+        "chokkyo",
+        "tsuji"
+      ],
+      "statuses": {
+        "1865-choshu": {
+          "display": "ハリー・パークス",
+          "role": "駐日英国公使",
+          "stance": "1865年に着任。開港、条約への勅許、関税引下げを要求し、幕府との関係を保ちながら薩長にも接近した。",
+          "importance": "外国勢力にも国ごとの政策があり、英国の外交方針を担った。",
+          "evidence": {
+            "sourceIds": [
+              "mofa_parkes"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-toba": {
+          "display": "ハリー・パークス",
+          "role": "駐日英国公使",
+          "stance": "戊辰戦争では局外中立を提唱し、列国の介入を抑えようとした。",
+          "importance": "日本国内の戦争と、外国の公式な外交方針を分けて見る。",
+          "evidence": {
+            "sourceIds": [
+              "mofa_parkes"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-edo": {
+          "display": "ハリー・パークス",
+          "role": "新政府と交渉する英国公使",
+          "stance": "1868年、京都での襲撃を経て天皇に謁見。英国の新政府承認に関わり、その後も駐日公使を務めた。",
+          "importance": "外交の相手が幕府から新政府へ移る転換期。",
+          "evidence": {
+            "sourceIds": [
+              "mofa_parkes",
+              "mofa_parkes_escort"
             ],
             "reviewStatus": "verified"
           }
@@ -9699,6 +11016,156 @@
         "sourceIds": [
           "archives_kuroda",
           "hakodate_war_history"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "ii",
+      "b": "kawaji-toshiakira",
+      "start": 2,
+      "end": 2,
+      "type": "対立",
+      "label": "井伊就任後に失脚",
+      "text": "1858年、井伊直弼の大老就任後に川路は失脚した。",
+      "evidence": {
+        "sourceIds": [
+          "chiba_kawaji_career"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "komei",
+      "b": "asahiko",
+      "start": 6,
+      "end": 10,
+      "type": "政治協力",
+      "label": "公武融和・天皇補佐",
+      "text": "朝彦親王は孝明天皇の信頼を受け、朝廷と幕府の融和を支えた。",
+      "evidence": {
+        "sourceIds": [
+          "mlit_asahiko"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "katamori",
+      "b": "asahiko",
+      "start": 6,
+      "end": 6,
+      "type": "政治協力",
+      "label": "八月十八日の政変",
+      "text": "朝彦親王が参内し、容保の指揮する会津藩兵らが御所の警備に入った。",
+      "evidence": {
+        "sourceIds": [
+          "tondabayashi_aug18"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "saigo",
+      "b": "kaieda",
+      "start": 3,
+      "end": 3,
+      "type": "政治協力",
+      "label": "書簡による連絡",
+      "text": "1860年3月25日付西郷の返書は、有村俊斉（海江田）・大久保らの来書に答えたもの。",
+      "evidence": {
+        "sourceIds": [
+          "kanagawa_saigo_arimura"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "sho-in",
+      "b": "yoshida-toshimaro",
+      "start": 2,
+      "end": 2,
+      "type": "師弟・同志",
+      "label": "松陰門下と距離の変化",
+      "text": "1856年に入門したが、1858年の松陰再投獄をめぐる行動で謹慎となり、塾と距離を置いた。",
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_yoshida_toshimaro"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "yodo",
+      "b": "yoshida-toyo",
+      "start": 2,
+      "end": 3,
+      "type": "主従・登用",
+      "label": "藩政への登用",
+      "text": "山内容堂が東洋の学才を認めて抜擢し、東洋は参政を務めた。",
+      "evidence": {
+        "sourceIds": [
+          "kochi_yoshida_toyo"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "katamori",
+      "b": "yamamoto-kakuma",
+      "start": 4,
+      "end": 11,
+      "type": "組織",
+      "label": "会津藩の洋学・軍事教育",
+      "text": "容保の下で山本覚馬が西洋式の調練や洋学所の運営を担った。",
+      "evidence": {
+        "sourceIds": [
+          "doshisha_yamamoto_kakuma"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "nariaki",
+      "b": "takeda-kounsai",
+      "start": 0,
+      "end": 3,
+      "type": "政治協力",
+      "label": "水戸の改革派",
+      "text": "耕雲斎は斉昭の藩主擁立に尽くし、藩政の改革派に属した。",
+      "evidence": {
+        "sourceIds": [
+          "nakatsugawa_takeda"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "takeda-kounsai",
+      "b": "yoshinobu",
+      "start": 7,
+      "end": 7,
+      "type": "仲介・交渉",
+      "label": "慶喜への訴えを目指す",
+      "text": "天狗党は一橋慶喜を通じて朝廷へ志を伝えようと京都へ向かった。面会成立や協力関係を示す線ではない。",
+      "evidence": {
+        "sourceIds": [
+          "nakatsugawa_takeda"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "goto",
+      "b": "parkes",
+      "start": 13,
+      "end": 13,
+      "type": "組織",
+      "label": "京都での護衛",
+      "text": "1868年3月23日、パークスの参内行列が襲撃された際、後藤象二郎らが護衛に当たった。",
+      "evidence": {
+        "sourceIds": [
+          "mofa_parkes_escort"
         ],
         "reviewStatus": "verified"
       }

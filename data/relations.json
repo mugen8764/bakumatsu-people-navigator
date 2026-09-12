@@ -799,7 +799,10 @@
       "label": "薩長同盟の締結",
       "text": "西郷と木戸は、敵対していた薩摩・長州の間で薩長同盟を結んだ。",
       "evidence": {
-        "sourceIds": ["ndl_history_satcho", "ndl_portrait_saigo_detail"],
+        "sourceIds": [
+          "ndl_history_satcho",
+          "ndl_portrait_saigo_detail"
+        ],
         "reviewStatus": "verified",
         "note": "1866年の薩長同盟締結を公的機関の解説で確認。"
       }
@@ -814,7 +817,10 @@
       "label": "薩長同盟の仲介",
       "text": "龍馬は中岡慎太郎とともに、西郷と木戸の薩長同盟締結を仲介した。",
       "evidence": {
-        "sourceIds": ["ndl_history_satcho", "ndl_portrait_saigo_detail"],
+        "sourceIds": [
+          "ndl_history_satcho",
+          "ndl_portrait_saigo_detail"
+        ],
         "reviewStatus": "verified",
         "note": "1866年の薩長同盟仲介を公的機関の解説で確認。"
       }
@@ -829,7 +835,10 @@
       "label": "合意内容の確認",
       "text": "木戸は薩長同盟の内容を記した書簡を龍馬へ送り、裏書による確認を求めた。",
       "evidence": {
-        "sourceIds": ["ndl_history_satcho", "kyohaku_kido_ryoma_letter"],
+        "sourceIds": [
+          "ndl_history_satcho",
+          "kyohaku_kido_ryoma_letter"
+        ],
         "reviewStatus": "verified",
         "note": "木戸書状と龍馬の裏書が残る資料を確認。"
       }
@@ -844,7 +853,9 @@
       "label": "薩長同盟の仲介",
       "text": "中岡は坂本龍馬とともに、西郷と木戸の薩長同盟締結を仲介した。",
       "evidence": {
-        "sourceIds": ["ndl_history_satcho"],
+        "sourceIds": [
+          "ndl_history_satcho"
+        ],
         "reviewStatus": "verified",
         "note": "1866年の薩長同盟仲介を公的機関の解説で確認。"
       }
@@ -1005,7 +1016,9 @@
       "label": "恭順と江戸防衛",
       "text": "鳥羽・伏見の戦い後、慶喜は事後処理を勝へ委ね、勝は恭順と戦争回避へ徳川方をまとめた。",
       "evidence": {
-        "sourceIds": ["sumida_katsu_edo_surrender"],
+        "sourceIds": [
+          "sumida_katsu_edo_surrender"
+        ],
         "reviewStatus": "verified",
         "note": "慶喜から勝への事後処理委任と、勝の恭順・戦争回避方針を確認。"
       }
@@ -1020,7 +1033,10 @@
       "label": "江戸開城の事前交渉",
       "text": "山岡が西郷との事前交渉を行い、勝との会談へ道を開いた。",
       "evidence": {
-        "sourceIds": ["tokyo_archive_katsu_yamaoka_letter", "sumida_katsu_edo_surrender"],
+        "sourceIds": [
+          "tokyo_archive_katsu_yamaoka_letter",
+          "sumida_katsu_edo_surrender"
+        ],
         "reviewStatus": "verified",
         "note": "山岡と西郷の事前交渉が勝・西郷会談に先行したことを確認。"
       }
@@ -1035,7 +1051,11 @@
       "label": "江戸城引き渡し交渉",
       "text": "両者は徳川家の処遇を交渉し、江戸総攻撃の中止と江戸城の引き渡しへつなげた。",
       "evidence": {
-        "sourceIds": ["ndl_portrait_saigo_detail", "ndl_portrait_katsu_detail", "sumida_katsu_edo_surrender"],
+        "sourceIds": [
+          "ndl_portrait_saigo_detail",
+          "ndl_portrait_katsu_detail",
+          "sumida_katsu_edo_surrender"
+        ],
         "reviewStatus": "verified",
         "note": "勝・西郷会談、総攻撃中止、江戸城引き渡しの経緯を確認。"
       }
@@ -1050,7 +1070,10 @@
       "label": "駿府会談",
       "text": "山岡は駿府で西郷と会談し、徳川家の処遇と戦闘回避の条件を協議した。",
       "evidence": {
-        "sourceIds": ["tokyo_archive_katsu_yamaoka_letter", "sumida_katsu_edo_surrender"],
+        "sourceIds": [
+          "tokyo_archive_katsu_yamaoka_letter",
+          "sumida_katsu_edo_surrender"
+        ],
         "reviewStatus": "verified",
         "note": "駿府会談と徳川家処遇をめぐる事前交渉を確認。"
       }
@@ -1147,6 +1170,166 @@
         ],
         "reviewStatus": "verified",
         "note": "国立公文書館で黒田による榎本の降伏説得と助命、函館市で榎本軍の降伏を確認。"
+      }
+    },
+    {
+      "id": "person-relation-ii-kawaji-toshiakira-1858-ansei-conflict",
+      "aPersonId": "ii",
+      "bPersonId": "kawaji-toshiakira",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "typeId": "conflict",
+      "label": "井伊就任後に失脚",
+      "text": "1858年、井伊直弼の大老就任後に川路は失脚した。",
+      "evidence": {
+        "sourceIds": [
+          "chiba_kawaji_career"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-komei-asahiko-1863-aug18-political-cooperation",
+      "aPersonId": "komei",
+      "bPersonId": "asahiko",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1866-expedition",
+      "typeId": "political-cooperation",
+      "label": "公武融和・天皇補佐",
+      "text": "朝彦親王は孝明天皇の信頼を受け、朝廷と幕府の融和を支えた。",
+      "evidence": {
+        "sourceIds": [
+          "mlit_asahiko"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-katamori-asahiko-1863-aug18-political-cooperation",
+      "aPersonId": "katamori",
+      "bPersonId": "asahiko",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "typeId": "political-cooperation",
+      "label": "八月十八日の政変",
+      "text": "朝彦親王が参内し、容保の指揮する会津藩兵らが御所の警備に入った。",
+      "evidence": {
+        "sourceIds": [
+          "tondabayashi_aug18"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-saigo-kaieda-1860-sakurada-political-cooperation",
+      "aPersonId": "saigo",
+      "bPersonId": "kaieda",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "typeId": "political-cooperation",
+      "label": "書簡による連絡",
+      "text": "1860年3月25日付西郷の返書は、有村俊斉（海江田）・大久保らの来書に答えたもの。",
+      "evidence": {
+        "sourceIds": [
+          "kanagawa_saigo_arimura"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-sho-in-yoshida-toshimaro-1858-ansei-mentorship-or-comradeship",
+      "aPersonId": "sho-in",
+      "bPersonId": "yoshida-toshimaro",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "typeId": "mentorship-or-comradeship",
+      "label": "松陰門下と距離の変化",
+      "text": "1856年に入門したが、1858年の松陰再投獄をめぐる行動で謹慎となり、塾と距離を置いた。",
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_yoshida_toshimaro"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-yodo-yoshida-toyo-1858-ansei-appointment",
+      "aPersonId": "yodo",
+      "bPersonId": "yoshida-toyo",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1860-sakurada",
+      "typeId": "appointment",
+      "label": "藩政への登用",
+      "text": "山内容堂が東洋の学才を認めて抜擢し、東洋は参政を務めた。",
+      "evidence": {
+        "sourceIds": [
+          "kochi_yoshida_toyo"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-katamori-yamamoto-kakuma-1862-bunkyu-organization",
+      "aPersonId": "katamori",
+      "bPersonId": "yamamoto-kakuma",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1867-taisei",
+      "typeId": "organization",
+      "label": "会津藩の洋学・軍事教育",
+      "text": "容保の下で山本覚馬が西洋式の調練や洋学所の運営を担った。",
+      "evidence": {
+        "sourceIds": [
+          "doshisha_yamamoto_kakuma"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-nariaki-takeda-kounsai-1853-blackships-political-cooperation",
+      "aPersonId": "nariaki",
+      "bPersonId": "takeda-kounsai",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1860-sakurada",
+      "typeId": "political-cooperation",
+      "label": "水戸の改革派",
+      "text": "耕雲斎は斉昭の藩主擁立に尽くし、藩政の改革派に属した。",
+      "evidence": {
+        "sourceIds": [
+          "nakatsugawa_takeda"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-takeda-kounsai-yoshinobu-1864-kinmon-mediation-or-negotiation",
+      "aPersonId": "takeda-kounsai",
+      "bPersonId": "yoshinobu",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "typeId": "mediation-or-negotiation",
+      "label": "慶喜への訴えを目指す",
+      "text": "天狗党は一橋慶喜を通じて朝廷へ志を伝えようと京都へ向かった。面会成立や協力関係を示す線ではない。",
+      "evidence": {
+        "sourceIds": [
+          "nakatsugawa_takeda"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-goto-parkes-1868-edo-organization",
+      "aPersonId": "goto",
+      "bPersonId": "parkes",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "typeId": "organization",
+      "label": "京都での護衛",
+      "text": "1868年3月23日、パークスの参内行列が襲撃された際、後藤象二郎らが護衛に当たった。",
+      "evidence": {
+        "sourceIds": [
+          "mofa_parkes_escort"
+        ],
+        "reviewStatus": "verified"
       }
     }
   ],

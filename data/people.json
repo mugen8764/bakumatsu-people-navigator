@@ -58,7 +58,11 @@
           "mofa_treaty_1858"
         ],
         "reviewStatus": "verified"
-      }
+      },
+      "termIds": [
+        "kaiko",
+        "tsuji"
+      ]
     },
     {
       "id": "abe",
@@ -192,6 +196,18 @@
           "fukui_yoshinobu_shungaku_1862"
         ],
         "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/yoshinobu-ndl.jpg",
+        "alt": "徳川慶喜の史料肖像",
+        "sourceId": "ndl_portrait_yoshinobu_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が徳川慶喜の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
       }
     },
     {
@@ -224,6 +240,21 @@
           "sumida_katsu_edo_surrender"
         ],
         "reviewStatus": "verified"
+      },
+      "termIds": [
+        "rangaku"
+      ],
+      "portrait": {
+        "src": "assets/portraits/katsu-ndl.jpg",
+        "alt": "勝海舟の史料肖像",
+        "sourceId": "ndl_portrait_katsu_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が勝海舟の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
       }
     },
     {
@@ -689,6 +720,18 @@
           "kagoshima_satcho_alliance"
         ],
         "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/kido-ndl.jpg",
+        "alt": "木戸孝允の史料肖像",
+        "sourceId": "ndl_portrait_kido_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が木戸孝允の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
       }
     },
     {
@@ -917,7 +960,11 @@
           "ndl_portrait_katamori_detail"
         ],
         "reviewStatus": "verified"
-      }
+      },
+      "termIds": [
+        "chokkyo",
+        "kobugattai"
+      ]
     },
     {
       "id": "meiji",
@@ -979,6 +1026,18 @@
           "ndl_portrait_iwakura_detail"
         ],
         "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/iwakura-ndl.jpg",
+        "alt": "岩倉具視の史料肖像",
+        "sourceId": "ndl_portrait_iwakura_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が岩倉具視の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
       }
     },
     {
@@ -1042,6 +1101,21 @@
           "ndl_portrait_katamori_detail"
         ],
         "reviewStatus": "verified"
+      },
+      "termIds": [
+        "kyoto-shugoshoku"
+      ],
+      "portrait": {
+        "src": "assets/portraits/katamori-ndl.jpg",
+        "alt": "松平容保の史料肖像",
+        "sourceId": "ndl_portrait_katamori_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": "幕末明治文化変遷史【210.6-To591b2-t】",
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が松平容保の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
       }
     },
     {
@@ -1136,7 +1210,10 @@
           "kochi_taisei_hokan"
         ],
         "reviewStatus": "verified"
-      }
+      },
+      "termIds": [
+        "dappan"
+      ]
     },
     {
       "id": "goto",
@@ -1164,6 +1241,18 @@
           "kochi_taisei_hokan"
         ],
         "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/goto-ndl.jpg",
+        "alt": "後藤象二郎の史料肖像",
+        "sourceId": "ndl_portrait_goto_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が後藤象二郎の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
       }
     },
     {
@@ -1265,7 +1354,11 @@
         "identityNote": "国立国会図書館が近藤勇の肖像として掲載。",
         "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。",
         "checkedAt": "2026-09-12"
-      }
+      },
+      "termIds": [
+        "kyoto-shugoshoku",
+        "joi"
+      ]
     },
     {
       "id": "hijikata",
@@ -1371,6 +1464,21 @@
           "iwaki_kazunomiya"
         ],
         "reviewStatus": "verified"
+      },
+      "termIds": [
+        "kobugattai"
+      ],
+      "portrait": {
+        "src": "assets/portraits/kazunomiya-ndl.jpg",
+        "alt": "和宮親子内親王の史料肖像",
+        "sourceId": "ndl_portrait_kazunomiya_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が和宮親子内親王の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
       }
     },
     {
@@ -1425,6 +1533,263 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "kawaji-toshiakira",
+      "name": "川路聖謨",
+      "kana": "かわじ としあきら",
+      "aliases": [
+        "川路三左衛門"
+      ],
+      "lifespan": "1801–1868",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1853-blackships",
+      "activeEndSceneId": "1868-edo",
+      "oneLine": "ロシアとの条約交渉に当たった幕臣。1858年には朝廷への条約勅許の働きかけを補佐した。",
+      "placeIds": [
+        "edo",
+        "nagasaki",
+        "shimoda",
+        "kyoto"
+      ],
+      "eventIds": [
+        "ansei"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "mofa_russia_1855",
+          "chiba_kawaji_career",
+          "ndl_kawaji_lifespan"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "chokkyo",
+        "kaiko"
+      ]
+    },
+    {
+      "id": "asahiko",
+      "name": "中川宮朝彦親王",
+      "kana": "なかがわのみや あさひこしんのう",
+      "aliases": [
+        "朝彦親王",
+        "賀陽宮朝彦親王",
+        "朝彦",
+        "久邇宮朝彦親王"
+      ],
+      "lifespan": "1824–1891",
+      "defaultFactionId": "imperial-court",
+      "activeStartSceneId": "1863-aug18",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "孝明天皇を補佐し、公武融和を進めた皇族。八月十八日の政変で朝廷の勢力転換に関わった。",
+      "placeIds": [
+        "kyoto"
+      ],
+      "eventIds": [
+        "aug18"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "tondabayashi_aug18",
+          "mlit_asahiko",
+          "apj_asahiko_names"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "kobugattai",
+        "joi"
+      ]
+    },
+    {
+      "id": "kaieda",
+      "name": "海江田信義",
+      "kana": "かいえだ のぶよし",
+      "aliases": [
+        "有村俊斎",
+        "有村俊斉"
+      ],
+      "lifespan": "1832–1906",
+      "defaultFactionId": "satsuma",
+      "activeStartSceneId": "1858-ansei",
+      "activeEndSceneId": "1868-edo",
+      "oneLine": "西郷隆盛らと交流した薩摩藩士。生麦事件に関与し、戊辰戦争では新政府の参謀を務めた。",
+      "placeIds": [
+        "kagoshima",
+        "namamugi",
+        "edo"
+      ],
+      "eventIds": [
+        "bunkyu",
+        "edo_surrender"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_kaieda_detail",
+          "kagoshima_kaieda_name",
+          "kanagawa_saigo_arimura"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "joi"
+      ],
+      "portrait": {
+        "src": "assets/portraits/kaieda-ndl.jpg",
+        "alt": "海江田信義の史料肖像",
+        "sourceId": "ndl_portrait_kaieda_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が海江田信義の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
+      }
+    },
+    {
+      "id": "yoshida-toshimaro",
+      "name": "吉田稔麿",
+      "kana": "よしだ としまろ",
+      "aliases": [
+        "吉田栄太郎",
+        "吉田年麻呂",
+        "吉田年麿"
+      ],
+      "lifespan": "1841–1864",
+      "defaultFactionId": "choshu",
+      "activeStartSceneId": "1854-treaty",
+      "activeEndSceneId": "1864-kinmon",
+      "oneLine": "松陰門下で学び、脱藩と帰国を経験した長州藩士。池田屋事件で命を落とした。",
+      "placeIds": [
+        "hagi",
+        "edo",
+        "kyoto"
+      ],
+      "eventIds": [
+        "kinmon"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_yoshida_toshimaro"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "joi",
+        "dappan"
+      ]
+    },
+    {
+      "id": "yoshida-toyo",
+      "name": "吉田東洋",
+      "kana": "よしだ とうよう",
+      "aliases": [],
+      "lifespan": "1816–1862",
+      "defaultFactionId": "tosa",
+      "activeStartSceneId": "1853-blackships",
+      "activeEndSceneId": "1862-bunkyu",
+      "oneLine": "山内容堂に登用された土佐藩の参政。後藤象二郎・板垣退助らを教え、1862年に暗殺された。",
+      "placeIds": [
+        "kochi"
+      ],
+      "eventIds": [],
+      "evidence": {
+        "sourceIds": [
+          "kochi_yoshida_toyo"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "kobugattai"
+      ]
+    },
+    {
+      "id": "yamamoto-kakuma",
+      "name": "山本覚馬",
+      "kana": "やまもと かくま",
+      "aliases": [],
+      "lifespan": "1828–1892",
+      "defaultFactionId": "aizu",
+      "activeStartSceneId": "1862-bunkyu",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "会津藩で洋学と軍事教育に携わり、鳥羽・伏見後の拘束中に建白「管見」をまとめた。",
+      "placeIds": [
+        "aizu",
+        "kyoto"
+      ],
+      "eventIds": [
+        "toba"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "doshisha_yamamoto_kakuma"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "rangaku",
+        "kyoto-shugoshoku"
+      ]
+    },
+    {
+      "id": "takeda-kounsai",
+      "name": "武田耕雲斎",
+      "kana": "たけだ こううんさい",
+      "aliases": [],
+      "lifespan": "1803–1865",
+      "defaultFactionId": "mito",
+      "activeStartSceneId": "1853-blackships",
+      "activeEndSceneId": "1865-choshu",
+      "oneLine": "水戸藩の改革派として藩政に関わり、1864年に天狗党を率いて京都へ向かった。",
+      "placeIds": [
+        "mito"
+      ],
+      "eventIds": [],
+      "evidence": {
+        "sourceIds": [
+          "nakatsugawa_takeda",
+          "ishikawa_takeda"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "joi"
+      ]
+    },
+    {
+      "id": "parkes",
+      "name": "ハリー・パークス",
+      "kana": "はりー ぱーくす",
+      "aliases": [
+        "パークス",
+        "ハリー・スミス・パークス",
+        "Harry Smith Parkes"
+      ],
+      "lifespan": "1828–1885",
+      "defaultFactionId": "foreign-powers",
+      "activeStartSceneId": "1865-choshu",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "1865年に着任した駐日英国公使。通商を求め、幕府・薩長・新政府の間で外交を進めた。",
+      "placeIds": [
+        "edo",
+        "kyoto"
+      ],
+      "eventIds": [],
+      "evidence": {
+        "sourceIds": [
+          "mofa_parkes",
+          "npg_parkes_lifespan",
+          "mofa_parkes_escort"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "kaiko",
+        "chokkyo",
+        "tsuji"
+      ]
     }
   ]
 }
