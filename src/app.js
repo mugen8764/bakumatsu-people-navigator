@@ -248,14 +248,7 @@
     });
   });
   $('#globalSearch').addEventListener('input', searchController.render);
-  $('#globalSearch').addEventListener('keydown', event => {
-    if (searchController.handleKeydown(event)) return;
-    if (event.key === 'Escape') {
-      event.currentTarget.value = '';
-      searchController.close();
-      event.currentTarget.blur();
-    }
-  });
+  $('#globalSearch').addEventListener('keydown', searchController.handleKeydown);
   document.addEventListener('click', event => {
     if (!event.target.closest('.global-search')) searchController.close();
   });

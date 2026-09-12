@@ -564,7 +564,7 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
 .search-group .search-result{grid-template-columns:1fr;padding-left:10px;border-left:3px solid transparent}
 .search-group .search-result:hover,.search-group .search-result.active{border-left-color:var(--accent)}
 .search-result mark{border-radius:3px;background:var(--accent-soft);color:var(--text);padding:0 2px;font-weight:850}
-.search-result small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.search-result small{display:block;white-space:normal;overflow-wrap:anywhere}
 @media(max-width:680px){
   .search-results{max-height:min(370px,55vh)}
 }

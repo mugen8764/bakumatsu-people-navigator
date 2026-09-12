@@ -38,6 +38,12 @@
     }
     const factions = domain.activeFactionNames(state.scene);
     if (!factions.includes(state.selectedFaction)) state.selectedFaction = factions[0] || '幕府';
+    // Navigation must leave a visible return destination. Explicit filter clicks
+    // render the list directly, so readers can still browse a different faction.
+    if (state.personFactionFilter !== 'すべて'
+      && domain.factionAt(person, state.scene) !== state.personFactionFilter) {
+      state.personFactionFilter = 'すべて';
+    }
   }
 
   function setScene(state, data, sceneIndex) {

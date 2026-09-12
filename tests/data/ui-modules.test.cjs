@@ -28,6 +28,66 @@ test('search highlighting preserves text safely', () => {
   assert.equal(highlightMatch('<script>桂小五郎</script>', '桂小五郎'), '&lt;script&gt;<mark>桂小五郎</mark>&lt;/script&gt;');
 });
 
+test('every registered person name wins over mentions in other biographies', () => {
+  for (const person of data.people) {
+    assert.equal(searchAll(data, person.name)[0]?.id, person.id, person.name);
+  }
+  assert.equal(searchAll(data, '西郷')[0].id, 'saigo');
+  assert.equal(searchAll(data, 'かつかいしゅう')[0].id, 'katsu');
+});
+
+test('search ranks exact names, partial names, roles and descriptions before applying limits', () => {
+  const makePerson = (id, name, role = '', stance = '') => ({
+    id, name, kana: '', aliases: [], oneLine: '', statuses: { scene: { display: name, role, stance } }
+  });
+  const sample = {
+    scenes: [{ id: 'scene', year: 1864, title: '試験時点' }], factions: {}, events: {},
+    people: [
+      ...Array.from({ length: 9 }, (_, index) => makePerson(`mention-${index}`, `説明${index}`, '', '対象との交渉')),
+      makePerson('role', '役職の人物', '対象の役職'),
+      makePerson('partial', '対象の別名'),
+      makePerson('exact', '対象')
+    ]
+  };
+  const results = searchAll(sample, '対象');
+  assert.deepEqual(results.slice(0, 3).map(result => result.id), ['exact', 'partial', 'role']);
+  assert.equal(results.length, 8);
+  assert.match(results[2].sub, /1864年.*対象の役職/);
+  assert.match(results[3].sub, /1864年.*対象との交渉/);
+});
+
+test('standalone search controller ignores composing navigation keys without touching the UI', () => {
+  const fail = () => assert.fail('composition must not touch the UI');
+  const elements = {
+    '#globalSearch': { value: '桂小五郎', setAttribute() {}, removeAttribute() {} },
+    '#searchResults': {}
+  };
+  let primed = false;
+  const controller = search.createSearchController({
+    $: selector => primed ? fail() : elements[selector],
+    $$: () => primed ? fail() : [], actions: {}, data, state: {}
+  });
+  controller.render();
+  primed = true;
+  for (const key of ['ArrowDown', 'ArrowUp', 'Enter', 'Escape']) {
+    assert.equal(controller.handleKeydown({ key, isComposing: true, preventDefault: fail }), false);
+    assert.equal(controller.handleKeydown({ key, keyCode: 229, preventDefault: fail }), false);
+  }
+});
+
+test('navigation reconciles hidden selections but keeps a compatible person filter', () => {
+  const state = stateApi.createState(data, domain, { scene: 0 });
+  state.personFactionFilter = '幕府';
+  stateApi.selectPerson(state, data, domain, 'abe');
+  assert.equal(state.personFactionFilter, '幕府');
+  stateApi.selectPerson(state, data, domain, 'saigo');
+  assert.equal(state.personFactionFilter, 'すべて');
+  state.personFactionFilter = '幕府';
+  stateApi.applyRoute(state, data, { selectedPerson: 'saigo' });
+  stateApi.ensureSelections(state, data, domain);
+  assert.equal(state.personFactionFilter, 'すべて');
+});
+
 test('initial route prefers valid hash values and tolerates blocked storage', () => {
   const blockedStorage = { getItem() { throw new Error('blocked'); } };
   const route = router.readInitialRoute(data, domain, {

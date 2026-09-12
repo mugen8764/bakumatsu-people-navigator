@@ -55,6 +55,12 @@
         .map(([sceneId, value]) => ({ scene: domain.sceneById.get(sceneId), value }))
         .filter(item => item.scene)
         .sort((a, b) => a.scene.index - b.scene.index);
+      const evidenceLinks = evidence => shared.sourceLinks(evidence?.sourceIds)
+        || '<p class="muted">この項目の出典は確認中です。</p>';
+      const relationSources = relations.map(relation => {
+        const other = domain.getPerson(relation.a === person.id ? relation.b : relation.a);
+        return `<section class="section" data-relation-sources="${esc(other.id)}"><h4>${esc(domain.statusAt(other, state.scene).display)} — ${esc(relation.label)} ${shared.reviewBadge(relation.evidence)}</h4><div class="source-list">${evidenceLinks(relation.evidence)}</div></section>`;
+      }).join('');
       box.innerHTML = `<button type="button" class="button detail-back" id="personBackToList">← 人物一覧へ</button><div class="detail-head"><div class="avatar" style="background:${esc(shared.factionColor(status.faction))}">${esc(shared.factionShort(status.faction))}</div><div><div class="detail-title">${esc(status.display)}</div>${laterName ? `<div class="aliases">後の名前：${esc(laterName)}</div>` : ''}<div class="badges"><span class="badge">${esc(status.faction)}</span><span class="badge">${esc(status.role)}</span><span class="badge">${esc(person.born)}</span></div></div></div>
       <div class="snapshot"><strong>${shared.dateLabel(shared.scene())}の位置づけ ${shared.reviewBadge(status.evidence)}</strong>${esc(status.importance)}</div>
       <div class="section"><h3>この時点の行動・立場</h3><p>${esc(status.stance)}</p></div>
@@ -68,15 +74,19 @@
       <div class="section"><h3>関連事件</h3><div class="tags">${person.events.map(id => data.events[id] ? `<button type="button" class="tag" data-open-event="${esc(id)}">${esc(data.events[id].title)}</button>` : '').join('')}</div></div>
       <div class="section"><h3>人物の変化</h3><div class="history-list">${history.map(item => `<div class="history-item ${item.scene.index === state.scene ? 'current' : ''}"><button type="button" data-history-scene="${item.scene.index}"><b>${esc(item.scene.year)}年 ${esc(item.value.display)} ${shared.reviewBadge(item.value.evidence)}</b>${esc(item.value.role)}</button></div>`).join('')}</div></div>
       <div class="actions"><button type="button" class="button" id="personToGraph">相関図</button><button type="button" class="button" id="personToMap">地図</button></div>
-      <details class="source-disclosure section"><summary>参考資料を見る</summary><div class="source-list">${shared.sourceLinks(person.sources)}</div></details>`;
+      <details class="source-disclosure section"><summary>参考資料を見る</summary>
+        <section class="section" data-person-sources="basic"><h3>人物の基本情報</h3><div class="source-list">${shared.sourceLinks(person.sources)}</div></section>
+        <section class="section" data-person-sources="status"><h3>この時点の行動・立場 ${shared.reviewBadge(status.evidence)}</h3><p class="muted">${shared.dateLabel(shared.scene())}の位置づけと行動・立場の根拠です。</p><div class="source-list">${evidenceLinks(status.evidence)}</div></section>
+        ${relations.length ? `<section class="section" data-person-sources="relations"><h3>この関係の根拠</h3>${relationSources}</section>` : ''}
+      </details>`;
       $$('[data-other-person]', box).forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.otherPerson)));
       $$('[data-event-peer]', box).forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.eventPeer)));
       $$('[data-open-event]', box).forEach(button => button.addEventListener('click', () => actions.openEvent(button.dataset.openEvent)));
       $$('[data-history-scene]', box).forEach(button => button.addEventListener('click', () => actions.setScene(button.dataset.historyScene)));
       $('#personBackToList').addEventListener('click', () => {
-        const selectedCard = $(`[data-person-card="${person.id}"]`);
-        selectedCard?.scrollIntoView({ block: 'start', behavior: 'auto' });
-        selectedCard?.focus({ preventScroll: true });
+        const destination = $(`[data-person-card="${person.id}"]`) || $('#clearPersonFilter');
+        destination.scrollIntoView({ block: 'start', behavior: 'auto' });
+        destination.focus({ preventScroll: true });
       });
       $('#personToGraph').addEventListener('click', () => actions.setView('relations'));
       $('#personToMap').addEventListener('click', () => actions.setView('map'));

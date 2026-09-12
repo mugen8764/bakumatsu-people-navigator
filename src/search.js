@@ -31,17 +31,36 @@
     const normalizedQuery = normalise(query);
     if (!normalizedQuery) return [];
     const results = [];
+    const scenes = new Map(data.scenes.map(scene => [scene.id, scene]));
     data.people.forEach(person => {
-      const haystack = normalise([
-        person.name,
-        person.kana,
-        ...person.aliases,
-        person.oneLine,
-        ...Object.values(person.statuses).flatMap(status => [status.display, status.role, status.stance])
-      ].join(' '));
-      if (haystack.includes(normalizedQuery)) {
-        results.push({ type: '人物', title: person.name, sub: person.aliases.slice(0, 3).join('／'), id: person.id });
+      const statuses = Object.entries(person.statuses);
+      const names = [person.name, person.kana, ...person.aliases, ...statuses.map(([, status]) => status.display)];
+      const matches = value => normalise(value).includes(normalizedQuery);
+      const matchStatus = field => statuses.find(([, status]) => matches(status[field]));
+      const statusReason = (entry, field, label) => {
+        const [sceneId, status] = entry;
+        const scene = scenes.get(sceneId);
+        return `${scene ? `${scene.year}年「${scene.title}」の` : ''}${label}：${status[field]}`;
+      };
+      let rank;
+      let sub = person.aliases.slice(0, 3).join('／');
+      if (names.some(name => normalise(name) === normalizedQuery)) rank = 0;
+      else if (names.some(matches)) rank = 1;
+      else {
+        const role = matchStatus('role');
+        const stance = matchStatus('stance');
+        if (role) {
+          rank = 2;
+          sub = statusReason(role, 'role', '役職');
+        } else if (matches(person.oneLine)) {
+          rank = 3;
+          sub = `人物紹介：${person.oneLine}`;
+        } else if (stance) {
+          rank = 3;
+          sub = statusReason(stance, 'stance', '行動・立場');
+        } else return;
       }
+      results.push({ type: '人物', title: person.name, sub, id: person.id, rank });
     });
     Object.entries(data.factions).forEach(([name, faction]) => {
       if (normalise([name, ...faction.aliases, faction.summary].join(' ')).includes(normalizedQuery)) {
@@ -54,7 +73,11 @@
       }
     });
     const limits = { '人物': 8, '勢力': 3, '事件': 3 };
-    return ['人物', '勢力', '事件'].flatMap(type => results.filter(result => result.type === type).slice(0, limits[type]));
+    return ['人物', '勢力', '事件'].flatMap(type => results
+      .filter(result => result.type === type)
+      .sort((a, b) => (a.rank ?? 0) - (b.rank ?? 0))
+      .slice(0, limits[type])
+      .map(({ rank, ...result }) => result));
   }
 
   function createSearchController(context) {
@@ -141,6 +164,8 @@
     }
 
     function handleKeydown(event) {
+      // keyCode 229 also covers IMEs that finish composition before keydown.
+      if (event.isComposing || event.keyCode === 229) return false;
       if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
         if (!currentResults.length) return false;
         event.preventDefault();
@@ -151,6 +176,13 @@
       if (event.key === 'Enter' && activeIndex >= 0) {
         event.preventDefault();
         selectResult(currentResults[activeIndex]);
+        return true;
+      }
+      if (event.key === 'Escape') {
+        const input = $('#globalSearch');
+        input.value = '';
+        close();
+        input.blur();
         return true;
       }
       return false;

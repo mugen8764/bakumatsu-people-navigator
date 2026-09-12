@@ -114,6 +114,7 @@
     }
 
     function applyMapViewport() {
+      if (!state.mapReady) return;
       const svg = $('#historyMap');
       const point = state.map.placePoints.get(state.map.zoomedPlace);
       const reset = $('#resetMapView');
@@ -139,13 +140,20 @@
       const marker = $(`[data-map-place="${id}"]`);
       if (!card) return;
       state.selectedPlace = id;
-      if (options.zoom !== false) {
+      if (state.mapReady && options.zoom !== false) {
         state.map.zoomedPlace = marker ? id : '';
         applyMapViewport();
       }
-      $$('[data-map-place-card]').forEach(item => item.classList.toggle('selected', item === card));
+      updatePlaceSelection(id);
+      if (options.scroll !== false) card.scrollIntoView({ block: 'nearest', behavior: 'instant' });
+      if (options.focusLink !== false) card.querySelector('.place-link')?.focus({ preventScroll: true });
+      if (options.updateRoute !== false) actions.syncRoute('push');
+    }
+
+    function updatePlaceSelection(id) {
+      $$('[data-map-place-card]').forEach(item => item.classList.toggle('selected', item.dataset.mapPlaceCard === id));
       $$('[data-map-place]').forEach(item => {
-        const selected = item === marker;
+        const selected = item.dataset.mapPlace === id;
         item.classList.toggle('selected', selected);
         item.setAttribute('aria-pressed', String(selected));
       });
@@ -156,9 +164,6 @@
       $$('[data-map-place-name]').forEach(item => {
         item.setAttribute('aria-pressed', String(item.dataset.mapPlaceName === id));
       });
-      if (options.scroll !== false) card.scrollIntoView({ block: 'nearest', behavior: 'instant' });
-      if (options.focusLink !== false) card.querySelector('.place-link')?.focus({ preventScroll: true });
-      if (options.updateRoute !== false) actions.syncRoute('push');
     }
 
     function renderInfo() {
@@ -221,13 +226,14 @@
           state.selectedPlace = '';
           state.map.zoomedPlace = '';
           applyMapViewport();
-          $$('[data-map-place-card]').forEach(item => item.classList.remove('selected'));
-          $$('[aria-pressed="true"]', $('#view-map')).forEach(item => item.setAttribute('aria-pressed', 'false'));
+          updatePlaceSelection('');
           actions.syncRoute('push');
         });
         state.mapReady = true;
         if (state.view === 'map') render();
       } catch (error) {
+        state.mapReady = false;
+        state.map = null;
         $('#mapStatus').textContent = '地図を描画できませんでした。地点一覧は利用できます。';
         console.error(error);
       }
@@ -235,7 +241,11 @@
 
     function render() {
       const { event, ids, person } = renderInfo();
-      if (!state.mapReady) return;
+      if (!ids.includes(state.selectedPlace)) state.selectedPlace = '';
+      if (!state.mapReady) {
+        updatePlaceSelection(state.selectedPlace);
+        return;
+      }
       const personIds = new Set((person?.places || []).filter(id => ids.includes(id)));
       const eventIds = new Set(event.places.filter(id => ids.includes(id)));
       let personHtml = '';
