@@ -1181,5 +1181,136 @@
         "reviewStatus": "verified"
       }
     }
+  ],
+  "incidents": [
+    {
+      "id": "ikedaya",
+      "sceneId": "1864-kinmon",
+      "title": "池田屋事件",
+      "date": "1864年7月8日（元治元年6月5日・旧暦）",
+      "summary": "京都の池田屋で会合していた尊攘派志士を、新選組が襲撃した。",
+      "stakes": "京都の治安を取り締まる新選組と、尊王攘夷を掲げて活動する志士たちが衝突した。",
+      "turningPoint": "事件を受けて長州藩内の京都進発論が強まり、禁門の変へ向かう動きにつながった。",
+      "participants": [
+        {
+          "personId": "kondo",
+          "displayName": "近藤勇",
+          "role": "探索隊を率いて突入",
+          "involvement": "onsite",
+          "summary": "近藤隊を率い、沖田・永倉らと池田屋へ突入した。",
+          "evidence": {
+            "sourceIds": [
+              "php_ikedaya_participants"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "okita",
+          "displayName": "沖田総司",
+          "role": "近藤隊として突入",
+          "involvement": "onsite",
+          "summary": "近藤勇、永倉新八らと池田屋の建物へ入った。",
+          "evidence": {
+            "sourceIds": [
+              "php_ikedaya_participants"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "nagakura",
+          "displayName": "永倉新八",
+          "role": "近藤隊として突入",
+          "involvement": "onsite",
+          "summary": "近藤勇、沖田総司らと池田屋の建物へ入った。",
+          "evidence": {
+            "sourceIds": [
+              "php_ikedaya_participants"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "hijikata",
+          "displayName": "土方歳三",
+          "role": "別隊の探索を指揮",
+          "involvement": "decision",
+          "summary": "近藤隊とは別の探索隊を統括した。",
+          "evidence": {
+            "sourceIds": [
+              "php_ikedaya_participants"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "katamori",
+          "displayName": "松平容保",
+          "role": "京都守護職",
+          "involvement": "context",
+          "summary": "新選組を預かる京都守護職。ここでは治安維持の体制を理解するために示す。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_kondo_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "ikedaya-katamori-kondo",
+          "aPersonId": "katamori",
+          "bPersonId": "kondo",
+          "label": "預かり・治安維持",
+          "description": "京都守護職の松平容保が新選組を預かり、近藤はその局長を務めた。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_kondo_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "ikedaya-kondo-hijikata",
+          "aPersonId": "kondo",
+          "bPersonId": "hijikata",
+          "label": "局長と副長",
+          "description": "新選組の局長・近藤勇と、副長・土方歳三。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_kondo_detail",
+              "ndl_portrait_hijikata_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "ikedaya-kondo-okita",
+          "aPersonId": "kondo",
+          "bPersonId": "okita",
+          "label": "剣術の師弟",
+          "description": "沖田総司は近藤勇に剣術を学んだ。",
+          "evidence": {
+            "sourceIds": [
+              "hino_okita"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "kyoto"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "php_ikedaya_participants",
+          "yamaguchi_library_kinmon",
+          "kyoto_kinmon"
+        ],
+        "reviewStatus": "verified"
+      }
+    }
   ]
 }

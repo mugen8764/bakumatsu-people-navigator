@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.58",
+    "version": "1.0.59",
     "updated": "2026-09-12"
   },
   "sources": {
@@ -794,7 +794,9 @@
     "hino_shinsengumi_2003": {
       "title": "日野市「広報ひの・新選組誕生前夜」",
       "url": "https://www.lib.city.hino.lg.jp/hinocity/digital/folder/sfsg4/kouhou15.4.1.pdf",
-      "note": "近藤勇の1861年の天然理心流四代目継承、近藤・土方の1863年の浪士組参加、土方による上洛前の家伝薬販売の手伝い。"
+      "note": "近藤勇の1861年の天然理心流四代目継承、近藤・土方の1863年の浪士組参加、土方による上洛前の家伝薬販売の手伝い。",
+      "locator": "2003年4月1日号 2頁「新選組史跡めぐり」沖田総司の紹介欄",
+      "contentCheckedAt": "2026-09-12"
     },
     "fukui_pref_timeline": {
       "title": "福井県文書館「福井県史年表（1861年～1870年）」",
@@ -1210,6 +1212,41 @@
       "note": "元治元年9月29日に伊藤俊輔が力士隊（角力隊）の管轄となり、同年12月（1865年1月）の高杉晋作による功山寺決起に同隊を率いて参加した経緯。",
       "locator": "1頁「功山寺決起と力士隊」",
       "contentCheckedAt": "2026-08-27"
+    },
+    "hino_okita": {
+      "title": "日野市 沖田総司",
+      "url": "https://www.city.hino.lg.jp/shisei/keywords/1014641/1014672.html",
+      "note": "近藤勇との剣術の師弟関係と、新選組での活動を確認。",
+      "locator": "本文「沖田総司」の人物紹介",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "hokkaido_nagakura": {
+      "title": "北海道博物館 新選組永倉新八と会津藩士栗田鉄馬",
+      "url": "https://www.hm.pref.hokkaido.lg.jp/exhibition/special/20856/",
+      "note": "生没年、松前藩家臣の家に生まれたこと、明治期の杉村義衛への改名を確認。",
+      "locator": "永倉新八（1839～1915）の人物紹介",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "kodansha_nagakura": {
+      "title": "講談社 日本人名大辞典+Plus 永倉新八",
+      "url": "https://kotobank.jp/word/%E6%B0%B8%E5%80%89%E6%96%B0%E5%85%AB-1096350",
+      "note": "池田屋への参加、慶応4年の近藤との離別と靖共隊、今市・会津での戦闘を確認。",
+      "locator": "デジタル版 日本人名大辞典+Plus「永倉新八」の本文",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "php_ikedaya_participants": {
+      "title": "PHP歴史街道 池田屋事件と新選組",
+      "url": "https://rekishikaido.php.co.jp/detail/3972",
+      "note": "菊地明『新選組 謎とき88話』を基にした記事。事件の日付、探索の分担、近藤・沖田・永倉らの突入を確認。",
+      "locator": "「今日は何の日 元治元年6月5日」本文の探索隊編成と近藤隊突入",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "ndl_portrait_usage": {
+      "title": "国立国会図書館 近代日本人の肖像 この電子展示会について",
+      "url": "https://www.ndl.go.jp/portrait/about",
+      "note": "掲載肖像の著作権保護期間満了、転載手続き不要、出典明示の条件を確認。",
+      "locator": "掲載資料／コンテンツの転載",
+      "contentCheckedAt": "2026-09-12"
     }
   },
   "factions": {
@@ -2594,6 +2631,137 @@
           "jacar_dictionary",
           "ndl_handwriting",
           "hakodate_war_history"
+        ],
+        "reviewStatus": "verified"
+      }
+    }
+  },
+  "incidents": {
+    "ikedaya": {
+      "id": "ikedaya",
+      "sceneId": "1864-kinmon",
+      "title": "池田屋事件",
+      "date": "1864年7月8日（元治元年6月5日・旧暦）",
+      "summary": "京都の池田屋で会合していた尊攘派志士を、新選組が襲撃した。",
+      "stakes": "京都の治安を取り締まる新選組と、尊王攘夷を掲げて活動する志士たちが衝突した。",
+      "turningPoint": "事件を受けて長州藩内の京都進発論が強まり、禁門の変へ向かう動きにつながった。",
+      "participants": [
+        {
+          "personId": "kondo",
+          "displayName": "近藤勇",
+          "role": "探索隊を率いて突入",
+          "involvement": "onsite",
+          "summary": "近藤隊を率い、沖田・永倉らと池田屋へ突入した。",
+          "evidence": {
+            "sourceIds": [
+              "php_ikedaya_participants"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "okita",
+          "displayName": "沖田総司",
+          "role": "近藤隊として突入",
+          "involvement": "onsite",
+          "summary": "近藤勇、永倉新八らと池田屋の建物へ入った。",
+          "evidence": {
+            "sourceIds": [
+              "php_ikedaya_participants"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "nagakura",
+          "displayName": "永倉新八",
+          "role": "近藤隊として突入",
+          "involvement": "onsite",
+          "summary": "近藤勇、沖田総司らと池田屋の建物へ入った。",
+          "evidence": {
+            "sourceIds": [
+              "php_ikedaya_participants"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "hijikata",
+          "displayName": "土方歳三",
+          "role": "別隊の探索を指揮",
+          "involvement": "decision",
+          "summary": "近藤隊とは別の探索隊を統括した。",
+          "evidence": {
+            "sourceIds": [
+              "php_ikedaya_participants"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "katamori",
+          "displayName": "松平容保",
+          "role": "京都守護職",
+          "involvement": "context",
+          "summary": "新選組を預かる京都守護職。ここでは治安維持の体制を理解するために示す。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_kondo_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "ikedaya-katamori-kondo",
+          "aPersonId": "katamori",
+          "bPersonId": "kondo",
+          "label": "預かり・治安維持",
+          "description": "京都守護職の松平容保が新選組を預かり、近藤はその局長を務めた。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_kondo_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "ikedaya-kondo-hijikata",
+          "aPersonId": "kondo",
+          "bPersonId": "hijikata",
+          "label": "局長と副長",
+          "description": "新選組の局長・近藤勇と、副長・土方歳三。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_kondo_detail",
+              "ndl_portrait_hijikata_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "ikedaya-kondo-okita",
+          "aPersonId": "kondo",
+          "bPersonId": "okita",
+          "label": "剣術の師弟",
+          "description": "沖田総司は近藤勇に剣術を学んだ。",
+          "evidence": {
+            "sourceIds": [
+              "hino_okita"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "kyoto"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "php_ikedaya_participants",
+          "yamaguchi_library_kinmon",
+          "kyoto_kinmon"
         ],
         "reviewStatus": "verified"
       }
@@ -7842,6 +8010,18 @@
       "sources": [
         "ndl_portrait_kondo_detail"
       ],
+      "portrait": {
+        "src": "assets/portraits/kondo-ndl.jpg",
+        "alt": "近藤勇の史料肖像",
+        "sourceId": "ndl_portrait_kondo_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が近藤勇の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。",
+        "checkedAt": "2026-09-12"
+      },
       "statuses": {
         "1862-bunkyu": {
           "display": "近藤勇",
@@ -7997,6 +8177,18 @@
       "sources": [
         "ndl_portrait_hijikata_detail"
       ],
+      "portrait": {
+        "src": "assets/portraits/hijikata-ndl.jpg",
+        "alt": "土方歳三の史料肖像",
+        "sourceId": "ndl_portrait_hijikata_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が土方歳三の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。",
+        "checkedAt": "2026-09-12"
+      },
       "statuses": {
         "1862-bunkyu": {
           "display": "土方歳三",
@@ -8319,6 +8511,149 @@
             "sourceIds": [
               "chiyoda_edo_surrender_petitions",
               "ndl_portrait_kazunomiya_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "okita",
+      "name": "沖田総司",
+      "kana": "おきた そうじ",
+      "aliases": [],
+      "born": "1868年没",
+      "defaultFaction": "新選組",
+      "activeRange": [
+        5,
+        13
+      ],
+      "oneLine": "近藤勇に剣術を学び、新選組で一番隊長を務めた剣士。",
+      "places": [
+        "kyoto",
+        "edo"
+      ],
+      "events": [
+        "kinmon"
+      ],
+      "sources": [
+        "hino_okita",
+        "hino_shinsengumi_2003"
+      ],
+      "statuses": {
+        "1863-joi": {
+          "display": "沖田総司",
+          "role": "浪士組から新選組へ",
+          "stance": "1863年、近藤勇らと浪士組に加わって京都へ上る。",
+          "importance": "近藤らと行動を共にした剣士の一人。",
+          "evidence": {
+            "sourceIds": [
+              "hino_shinsengumi_2003",
+              "ndl_portrait_kondo_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1864-kinmon": {
+          "display": "沖田総司",
+          "role": "新選組隊士",
+          "stance": "池田屋事件では近藤勇、永倉新八らと建物へ突入した。",
+          "importance": "池田屋での突入に参加した人物として見ることができる。",
+          "evidence": {
+            "sourceIds": [
+              "php_ikedaya_participants"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1865-choshu": {
+          "display": "沖田総司",
+          "role": "新選組隊士",
+          "stance": "新選組で一番隊長を務めた。役職の就任時期や、この期間の個々の動向は校正中。",
+          "importance": "池田屋での行動と、その後の役職・動向は分けて確認する。",
+          "evidence": {
+            "sourceIds": [
+              "hino_okita",
+              "hino_shinsengumi_2003"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        },
+        "1868-toba": {
+          "display": "沖田総司",
+          "role": "療養中",
+          "stance": "病気療養のため鳥羽・伏見や勝沼の戦いには参加せず、1868年5月に江戸で病没した。",
+          "importance": "戦場で活動する隊士として扱わず、療養中の状況を区別する。",
+          "evidence": {
+            "sourceIds": [
+              "hino_shinsengumi_2003"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "nagakura",
+      "name": "永倉新八",
+      "kana": "ながくら しんぱち",
+      "aliases": [
+        "杉村義衛"
+      ],
+      "born": "1839–1915",
+      "defaultFaction": "新選組",
+      "activeRange": [
+        7,
+        14
+      ],
+      "oneLine": "池田屋事件に参加した新選組の剣士。明治期には杉村義衛と名を変え、後世に新選組の活動を伝えた。",
+      "places": [
+        "kyoto",
+        "aizu"
+      ],
+      "events": [
+        "kinmon",
+        "tohoku"
+      ],
+      "sources": [
+        "hokkaido_nagakura",
+        "kodansha_nagakura"
+      ],
+      "statuses": {
+        "1864-kinmon": {
+          "display": "永倉新八",
+          "role": "新選組隊士",
+          "stance": "池田屋事件では近藤勇、沖田総司らと建物へ突入した。",
+          "importance": "池田屋での行動を確認できる新選組隊士の一人。",
+          "evidence": {
+            "sourceIds": [
+              "php_ikedaya_participants",
+              "kodansha_nagakura"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1865-choshu": {
+          "display": "永倉新八",
+          "role": "新選組隊士",
+          "stance": "新選組で二番隊組長を務めた。役職の就任時期や、この期間の個々の動向は校正中。",
+          "importance": "後年の著名度と、この時期の役職・行動を分けて見る。",
+          "evidence": {
+            "sourceIds": [
+              "kodansha_nagakura"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        },
+        "1868-edo": {
+          "display": "永倉新八",
+          "role": "靖共隊",
+          "faction": "旧幕府勢力",
+          "stance": "1868年、近藤勇と別れて靖共隊を結成し、今市や会津などで戦った。",
+          "importance": "近藤・土方と同じ部隊で戦い続けた人物とは区別する。",
+          "evidence": {
+            "sourceIds": [
+              "kodansha_nagakura"
             ],
             "reviewStatus": "verified"
           }

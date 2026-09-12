@@ -53,3 +53,10 @@ data. Natural Earth does not require attribution; its terms are available at
 https://www.naturalearthdata.com/about/terms-of-use/.
 
 Names, logos, and trademarks remain the property of their respective owners.
+
+The portraits in assets/portraits/kondo-ndl.jpg and hijikata-ndl.jpg are from
+the National Diet Library's "Portraits of Modern Japanese Historical Figures"
+(国立国会図書館「近代日本人の肖像」). That exhibition states that the copyright
+protection periods of its portrait images have expired and requests source
+attribution on reuse: https://www.ndl.go.jp/portrait/about . Individual source
+pages and the terms check date are recorded in data/people.json.

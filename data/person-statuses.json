@@ -5631,6 +5631,128 @@
         "reviewStatus": "verified",
         "note": "千代田区立日比谷図書文化館で皇女和宮が天皇家へ嘆願したこと、国立国会図書館で家茂死後に静寛院宮と号したことを確認。公武合体婚姻の効果という解釈を表示文から外した。"
       }
+    },
+    {
+      "id": "person-status-okita-1863-joi",
+      "personId": "okita",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "displayName": "沖田総司",
+      "role": "浪士組から新選組へ",
+      "factionId": "shinsengumi",
+      "stance": "1863年、近藤勇らと浪士組に加わって京都へ上る。",
+      "importance": "近藤らと行動を共にした剣士の一人。",
+      "evidence": {
+        "sourceIds": [
+          "hino_shinsengumi_2003",
+          "ndl_portrait_kondo_detail"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-okita-1864-kinmon",
+      "personId": "okita",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "沖田総司",
+      "role": "新選組隊士",
+      "factionId": "shinsengumi",
+      "stance": "池田屋事件では近藤勇、永倉新八らと建物へ突入した。",
+      "importance": "池田屋での突入に参加した人物として見ることができる。",
+      "evidence": {
+        "sourceIds": [
+          "php_ikedaya_participants"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-okita-1865-choshu",
+      "personId": "okita",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1867-taisei",
+      "displayName": "沖田総司",
+      "role": "新選組隊士",
+      "factionId": "shinsengumi",
+      "stance": "新選組で一番隊長を務めた。役職の就任時期や、この期間の個々の動向は校正中。",
+      "importance": "池田屋での行動と、その後の役職・動向は分けて確認する。",
+      "evidence": {
+        "sourceIds": [
+          "hino_okita",
+          "hino_shinsengumi_2003"
+        ],
+        "reviewStatus": "needs_review"
+      }
+    },
+    {
+      "id": "person-status-okita-1868-toba",
+      "personId": "okita",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-edo",
+      "displayName": "沖田総司",
+      "role": "療養中",
+      "factionId": "shinsengumi",
+      "stance": "病気療養のため鳥羽・伏見や勝沼の戦いには参加せず、1868年5月に江戸で病没した。",
+      "importance": "戦場で活動する隊士として扱わず、療養中の状況を区別する。",
+      "evidence": {
+        "sourceIds": [
+          "hino_shinsengumi_2003"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-nagakura-1864-kinmon",
+      "personId": "nagakura",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "永倉新八",
+      "role": "新選組隊士",
+      "factionId": "shinsengumi",
+      "stance": "池田屋事件では近藤勇、沖田総司らと建物へ突入した。",
+      "importance": "池田屋での行動を確認できる新選組隊士の一人。",
+      "evidence": {
+        "sourceIds": [
+          "php_ikedaya_participants",
+          "kodansha_nagakura"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-nagakura-1865-choshu",
+      "personId": "nagakura",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1868-toba",
+      "displayName": "永倉新八",
+      "role": "新選組隊士",
+      "factionId": "shinsengumi",
+      "stance": "新選組で二番隊組長を務めた。役職の就任時期や、この期間の個々の動向は校正中。",
+      "importance": "後年の著名度と、この時期の役職・行動を分けて見る。",
+      "evidence": {
+        "sourceIds": [
+          "kodansha_nagakura"
+        ],
+        "reviewStatus": "needs_review"
+      }
+    },
+    {
+      "id": "person-status-nagakura-1868-edo",
+      "personId": "nagakura",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-tohoku",
+      "displayName": "永倉新八",
+      "role": "靖共隊",
+      "factionId": "former-bakufu",
+      "stance": "1868年、近藤勇と別れて靖共隊を結成し、今市や会津などで戦った。",
+      "importance": "近藤・土方と同じ部隊で戦い続けた人物とは区別する。",
+      "evidence": {
+        "sourceIds": [
+          "kodansha_nagakura"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

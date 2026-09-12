@@ -1253,6 +1253,18 @@
           "ndl_portrait_kondo_detail"
         ],
         "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/kondo-ndl.jpg",
+        "alt": "近藤勇の史料肖像",
+        "sourceId": "ndl_portrait_kondo_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が近藤勇の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。",
+        "checkedAt": "2026-09-12"
       }
     },
     {
@@ -1287,6 +1299,18 @@
           "ndl_portrait_hijikata_detail"
         ],
         "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/hijikata-ndl.jpg",
+        "alt": "土方歳三の史料肖像",
+        "sourceId": "ndl_portrait_hijikata_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が土方歳三の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。",
+        "checkedAt": "2026-09-12"
       }
     },
     {
@@ -1345,6 +1369,59 @@
         "sourceIds": [
           "ndl_portrait_kazunomiya_detail",
           "iwaki_kazunomiya"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "okita",
+      "name": "沖田総司",
+      "kana": "おきた そうじ",
+      "aliases": [],
+      "lifespan": "1868年没",
+      "defaultFactionId": "shinsengumi",
+      "activeStartSceneId": "1863-joi",
+      "activeEndSceneId": "1868-edo",
+      "oneLine": "近藤勇に剣術を学び、新選組で一番隊長を務めた剣士。",
+      "placeIds": [
+        "kyoto",
+        "edo"
+      ],
+      "eventIds": [
+        "kinmon"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "hino_okita",
+          "hino_shinsengumi_2003"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "nagakura",
+      "name": "永倉新八",
+      "kana": "ながくら しんぱち",
+      "aliases": [
+        "杉村義衛"
+      ],
+      "lifespan": "1839–1915",
+      "defaultFactionId": "shinsengumi",
+      "activeStartSceneId": "1864-kinmon",
+      "activeEndSceneId": "1868-tohoku",
+      "oneLine": "池田屋事件に参加した新選組の剣士。明治期には杉村義衛と名を変え、後世に新選組の活動を伝えた。",
+      "placeIds": [
+        "kyoto",
+        "aizu"
+      ],
+      "eventIds": [
+        "kinmon",
+        "tohoku"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "hokkaido_nagakura",
+          "kodansha_nagakura"
         ],
         "reviewStatus": "verified"
       }

@@ -925,7 +925,9 @@
       "id": "hino_shinsengumi_2003",
       "title": "日野市「広報ひの・新選組誕生前夜」",
       "url": "https://www.lib.city.hino.lg.jp/hinocity/digital/folder/sfsg4/kouhou15.4.1.pdf",
-      "note": "近藤勇の1861年の天然理心流四代目継承、近藤・土方の1863年の浪士組参加、土方による上洛前の家伝薬販売の手伝い。"
+      "note": "近藤勇の1861年の天然理心流四代目継承、近藤・土方の1863年の浪士組参加、土方による上洛前の家伝薬販売の手伝い。",
+      "locator": "2003年4月1日号 2頁「新選組史跡めぐり」沖田総司の紹介欄",
+      "contentCheckedAt": "2026-09-12"
     },
     {
       "id": "fukui_pref_timeline",
@@ -1414,6 +1416,46 @@
       "note": "元治元年9月29日に伊藤俊輔が力士隊（角力隊）の管轄となり、同年12月（1865年1月）の高杉晋作による功山寺決起に同隊を率いて参加した経緯。",
       "locator": "1頁「功山寺決起と力士隊」",
       "contentCheckedAt": "2026-08-27"
+    },
+    {
+      "id": "hino_okita",
+      "title": "日野市 沖田総司",
+      "url": "https://www.city.hino.lg.jp/shisei/keywords/1014641/1014672.html",
+      "note": "近藤勇との剣術の師弟関係と、新選組での活動を確認。",
+      "locator": "本文「沖田総司」の人物紹介",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "hokkaido_nagakura",
+      "title": "北海道博物館 新選組永倉新八と会津藩士栗田鉄馬",
+      "url": "https://www.hm.pref.hokkaido.lg.jp/exhibition/special/20856/",
+      "note": "生没年、松前藩家臣の家に生まれたこと、明治期の杉村義衛への改名を確認。",
+      "locator": "永倉新八（1839～1915）の人物紹介",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "kodansha_nagakura",
+      "title": "講談社 日本人名大辞典+Plus 永倉新八",
+      "url": "https://kotobank.jp/word/%E6%B0%B8%E5%80%89%E6%96%B0%E5%85%AB-1096350",
+      "note": "池田屋への参加、慶応4年の近藤との離別と靖共隊、今市・会津での戦闘を確認。",
+      "locator": "デジタル版 日本人名大辞典+Plus「永倉新八」の本文",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "php_ikedaya_participants",
+      "title": "PHP歴史街道 池田屋事件と新選組",
+      "url": "https://rekishikaido.php.co.jp/detail/3972",
+      "note": "菊地明『新選組 謎とき88話』を基にした記事。事件の日付、探索の分担、近藤・沖田・永倉らの突入を確認。",
+      "locator": "「今日は何の日 元治元年6月5日」本文の探索隊編成と近藤隊突入",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "ndl_portrait_usage",
+      "title": "国立国会図書館 近代日本人の肖像 この電子展示会について",
+      "url": "https://www.ndl.go.jp/portrait/about",
+      "note": "掲載肖像の著作権保護期間満了、転載手続き不要、出典明示の条件を確認。",
+      "locator": "掲載資料／コンテンツの転載",
+      "contentCheckedAt": "2026-09-12"
     }
   ]
 }
