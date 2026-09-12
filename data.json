@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.60",
+    "version": "1.0.61",
     "updated": "2026-09-12"
   },
   "sources": {
@@ -1396,6 +1396,139 @@
       "note": "人物略歴と史料肖像。",
       "locator": "人物略歴・肖像1枚目",
       "contentCheckedAt": "2026-09-12"
+    },
+    "ndl_portrait_oguri": {
+      "title": "国立国会図書館「小栗忠順」",
+      "url": "https://www.ndl.go.jp/portrait/datas/248/",
+      "note": "渡米、財政・軍備改革、罷免と処刑、肖像を確認。",
+      "locator": "生没年・別称・解説・肖像",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "yamaguchi_mori": {
+      "title": "山口県立山口図書館「毛利敬親」",
+      "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/mouri_takachika/",
+      "note": "藩主就任、財政改革、禁門の変後の謹慎、版籍奉還と隠居を確認。",
+      "locator": "人物紹介",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "yamahaku_mori_name": {
+      "title": "山口県立山口博物館「奇兵隊の軍服と袖印」",
+      "url": "https://www.yamahaku.pref.yamaguchi.lg.jp/pdf/kenkyuhoukoku/44-41-60.pdf",
+      "note": "毛利慶親が1864年11月4日に敬親へ改名した日付を確認。",
+      "locator": "研究報告44号（2018年）56頁（8）元森熊次郎書簡",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "doshisha_yae": {
+      "title": "同志社大学「新島八重」",
+      "url": "https://www.doshisha.ac.jp/information/neesima/yae/index.html",
+      "note": "兄覚馬との関係と会津籠城を確認。離縁時期は本文と年表で説明が異なるため日付を確定しない。",
+      "locator": "生涯／八重のあゆみ 1845・1865・1868・1871・1876年",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "ndl_portrait_yae": {
+      "title": "国立国会図書館「新島八重」",
+      "url": "https://www.ndl.go.jp/portrait/datas/6038/",
+      "note": "生没年、山本姓、会津籠城、肖像を確認。",
+      "locator": "生没年・別称・解説・肖像",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "ndl_nabeshima": {
+      "title": "国立国会図書館「鍋島直正」",
+      "url": "https://www.ndl.go.jp/portrait/datas/154/",
+      "note": "佐賀藩主、洋式大砲、公武合体への関与を確認。生年月日は西暦換算で1815年、旧暦で1814年。",
+      "locator": "生没年・別称・解説",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "saga_nabeshima": {
+      "title": "佐賀市観光協会「鍋島直正」",
+      "url": "https://www.sagabai.com/main.php/3767.html",
+      "note": "藩政改革、洋学・医療教育、軍備、1861年の隠居と閑叟の号を確認。",
+      "locator": "あらゆる方面へ及ぶ藩政改革／最先端の軍事技術で明治維新へ／年表／敵か？味方か？",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "nagaoka_kawai": {
+      "title": "長岡市「河井継之助の足跡」",
+      "url": "https://www.city.nagaoka.niigata.jp/kankou/rekishi/ijin/jinbutu6.html",
+      "note": "生没年、藩政改革、中立交渉後の抗戦、長岡城奪還と死去を確認。",
+      "locator": "河井継之助の足跡 本文",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "nagaoka_kawai_reform": {
+      "title": "長岡観光ナビ「河井継之助の叶わぬ夢」",
+      "url": "https://nagaoka-navi.or.jp/feature/samurai/kawai",
+      "note": "1865年の郡奉行就任、小千谷会談、北越の戦い、1868年8月16日の死去を確認。推測された動機や台詞は採用しない。",
+      "locator": "小千谷会談／次々と改革に着手する継之助／長岡の発展を夢み",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "embassy_roches": {
+      "title": "在フランス日本国大使館「第二代駐日フランス全権公使・レオン・ロッシュ」",
+      "url": "https://www.fr.emb-japan.go.jp/files/100479000.pdf",
+      "note": "1864年の着任と幕府への技術・軍事支援を確認。",
+      "locator": "1頁 1864年着任／横須賀・横浜・軍事顧問団",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "mof_roches_departure": {
+      "title": "財務省 ファイナンス2019年1月号「ロシュ第2代駐日フランス公使」",
+      "url": "https://www.mof.go.jp/public_relations/finance/denshi/201901/pageindices/index24.html",
+      "note": "1864年着任、幕府支援と1868年6月の帰国を確認。",
+      "locator": "19頁 ロシュ第2代駐日フランス公使の墓地探し",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "mof_yokosuka": {
+      "title": "財務省「路線価でひもとく街の歴史 第48回 神奈川県横須賀市」",
+      "url": "https://www.mof.go.jp/public_relations/finance/202402/202402r.html",
+      "note": "小栗の起案、ロッシュへの支援依頼、1865年の横須賀製鉄所起工を確認。",
+      "locator": "幕府が遺した産業遺産「横須賀造船所」",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "ndl_portrait_ine": {
+      "title": "国立国会図書館「楠本イネ」",
+      "url": "https://www.ndl.go.jp/portrait/datas/6229/",
+      "note": "蘭方産科医としての経歴、師、1861年の長崎での診療と受講、別称、肖像を確認。",
+      "locator": "生没年・別称・解説・肖像",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "seiyo_ine_timeline": {
+      "title": "西予市「楠本イネの生涯について」",
+      "url": "https://www.city.seiyo.ehime.jp/material/files/group/7/ine.pdf",
+      "note": "1854〜57年の学習、長崎帰郷、伊篤への改名、1866年の産科学習を確認。幼少期の修学年は後年の市の調査と異なるため採用しない。",
+      "locator": "2頁 1854〜57年／1858〜59年／1864年／1866年",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "nagasaki_ine_practice": {
+      "title": "長崎市「ナガジン 楠本イネ開業地跡」",
+      "url": "https://www.city.nagasaki.lg.jp/nagazine/hakken0509/index1.html",
+      "note": "1859年の長崎帰郷と開業を確認。",
+      "locator": "楠本イネ開業地跡 MAP7",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "tosashimizu_manjiro": {
+      "title": "土佐清水市「ジョン万次郎の歴史」",
+      "url": "https://www.city.tosashimizu.kochi.jp/kanko/g01_jyonman03.html",
+      "note": "1853年の幕府召喚、航海教育、咸臨丸、薩摩の開成所を確認。年表の年欄と本文にずれがある箇所は断定しない。",
+      "locator": "1853・1855〜57・1860・1861・1866・1869年",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "ndl_manjiro": {
+      "title": "国立国会図書館「中浜万次郎」",
+      "url": "https://www.ndl.go.jp/portrait/datas/6123/",
+      "note": "生没年、漂流と渡米、帰国、通訳・教育の経歴を確認。",
+      "locator": "生没年・別称・解説",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "kyoto_taisei_process": {
+      "title": "京都市「大政奉還150周年記念 幕末維新スタンプラリー」",
+      "url": "https://www.city.kyoto.lg.jp/bunshi/cmsfiles/contents/0000233/233968/zennkokurarry.pdf",
+      "note": "土佐の建白、慶喜の上表と勅許の順序を確認。船中八策の成立経緯は断定しない。",
+      "locator": "14〜16頁 船中八策／大政奉還／龍馬死す",
+      "contentCheckedAt": "2026-09-12"
+    },
+    "tsurugajo_siege": {
+      "title": "若松城管理事務所「幕末・戊辰戦争」",
+      "url": "https://www.tsurugajo.com/tsurugajo/aizu-history/bakumatsu/",
+      "note": "1868年8月23日の城下侵入、籠城、9月22日の容保の降伏を確認。略年表の禁門の変の年の誤記は採用しない。",
+      "locator": "会津の悲劇／一ヶ月に及ぶ籠城",
+      "contentCheckedAt": "2026-09-12"
     }
   },
   "factions": {
@@ -1566,6 +1699,56 @@
           "archives_toba_fushimi",
           "archives_boshin_war",
           "hakodate_war_history"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "佐賀藩": {
+      "short": "佐",
+      "color": "#476779",
+      "summary": "鍋島家の藩。直正のもとで財政改革、洋学・医療教育、軍備整備を進めた。",
+      "aliases": [
+        "佐賀",
+        "肥前藩"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_nabeshima",
+          "saga_nabeshima"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "長岡藩": {
+      "short": "長岡",
+      "color": "#715274",
+      "summary": "越後の藩。河井継之助らの改革と近代武装を経て、戊辰戦争では中立交渉から抗戦へ移った。",
+      "aliases": [
+        "長岡",
+        "越後長岡藩"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "nagaoka_kawai"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "医療・学問": {
+      "short": "学",
+      "kind": "field",
+      "color": "#566c60",
+      "summary": "医療・語学・航海術などの活動から人物を探すための分野。共通の政治方針を持つ組織や藩への所属を表すものではない。",
+      "aliases": [
+        "医療",
+        "医学",
+        "学問",
+        "教育"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_ine",
+          "ndl_manjiro"
         ],
         "reviewStatus": "verified"
       }
@@ -2342,7 +2525,9 @@
         "kusaka",
         "takasugi",
         "omura",
-        "yoshida-toshimaro"
+        "yoshida-toshimaro",
+        "mori-takachika",
+        "roches"
       ],
       "factions": [
         "新選組",
@@ -2361,13 +2546,17 @@
       "sources": [
         "archives_timeline",
         "yamaguchi_library_kinmon",
-        "yamaguchi_yoshida_toshimaro"
+        "yamaguchi_yoshida_toshimaro",
+        "yamaguchi_mori",
+        "mof_roches_departure"
       ],
       "evidence": {
         "sourceIds": [
           "archives_timeline",
           "yamaguchi_library_kinmon",
-          "yamaguchi_yoshida_toshimaro"
+          "yamaguchi_yoshida_toshimaro",
+          "yamaguchi_mori",
+          "mof_roches_departure"
         ],
         "reviewStatus": "verified"
       }
@@ -2729,29 +2918,37 @@
         "kuroda",
         "saigo",
         "hijikata",
-        "enomoto"
+        "enomoto",
+        "yae",
+        "kawai-tsuginosuke"
       ],
       "factions": [
         "新政府",
         "旧幕府勢力",
-        "会津藩"
+        "会津藩",
+        "長岡藩"
       ],
       "places": [
         "aizu",
         "sendai",
         "niigata",
-        "edo"
+        "edo",
+        "nagaoka"
       ],
       "sources": [
         "jacar_dictionary",
         "ndl_handwriting",
-        "akita_ouu_alliance"
+        "akita_ouu_alliance",
+        "doshisha_yae",
+        "nagaoka_kawai"
       ],
       "evidence": {
         "sourceIds": [
           "jacar_dictionary",
           "ndl_handwriting",
-          "akita_ouu_alliance"
+          "akita_ouu_alliance",
+          "doshisha_yae",
+          "nagaoka_kawai"
         ],
         "reviewStatus": "verified"
       }
@@ -3317,6 +3514,267 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    "taisei-hokan": {
+      "id": "taisei-hokan",
+      "sceneId": "1867-taisei",
+      "title": "大政奉還の上表",
+      "date": "1867年10月14日（旧暦）上表、翌15日に勅許",
+      "summary": "土佐藩の建白を受け、徳川慶喜は政権を朝廷に返すことを上表した。新しい政治の担い手をめぐる争いは、その後も続く。",
+      "stakes": "土佐側の働きかけ、将軍の決定、朝廷の受け入れを分けて読む。",
+      "turningPoint": "政権返上は認められたが、12月の王政復古は別の政変。大政奉還の日に新政府が完成したわけではない。",
+      "scope": "10月の建白から勅許までを中心に、事前の構想を背景として掲載。龍馬を上表の使者や二条城の会議出席者としては扱わない。",
+      "termIds": [
+        "kobugattai",
+        "chokkyo"
+      ],
+      "placeIds": [
+        "kyoto",
+        "kochi"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kyoto_taisei_process",
+          "ndl_ryoma_political_plan"
+        ],
+        "reviewStatus": "verified"
+      },
+      "participants": [
+        {
+          "personId": "yoshinobu",
+          "displayName": "徳川慶喜",
+          "role": "政権返上を決定・上表",
+          "involvement": "decision",
+          "side": "幕府",
+          "summary": "土佐藩の建白を受け入れ、10月14日に大政奉還を上表した。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_taisei_process"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "yodo",
+          "displayName": "山内容堂",
+          "role": "土佐藩の建白を支える",
+          "involvement": "decision",
+          "side": "土佐側",
+          "summary": "後藤象二郎の進言を受け、署名した建白書が幕府へ提出された。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_taisei_process",
+              "ndl_ryoma_political_plan"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "goto",
+          "displayName": "後藤象二郎",
+          "role": "建白書の提出に関わる",
+          "involvement": "onsite",
+          "side": "土佐側",
+          "summary": "10月3日、容堂の署名した建白書を老中板倉勝静に提出した。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_taisei_process"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "ryoma",
+          "displayName": "坂本龍馬",
+          "role": "大政奉還と政体構想を推進",
+          "involvement": "context",
+          "side": "土佐出身",
+          "summary": "後藤とともに大政奉還を進めた。ここでは事前の構想に関わる人物として示す。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_tosa_bakumatsu",
+              "ndl_ryoma_political_plan"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "taisei-goto-yodo",
+          "aPersonId": "goto",
+          "bPersonId": "yodo",
+          "label": "大政奉還を進言",
+          "description": "後藤は6月に容堂へ大政奉還を進言。10月の土佐藩の建白へつながった。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "ndl_ryoma_political_plan"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "taisei-yodo-yoshinobu",
+          "aPersonId": "yodo",
+          "bPersonId": "yoshinobu",
+          "label": "建白と受け入れ",
+          "description": "容堂の署名した建白を幕府へ届け、慶喜が大政奉還を決断した。本人同士の直接会談を表す線ではない。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_taisei_process"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "taisei-ryoma-goto",
+          "aPersonId": "ryoma",
+          "bPersonId": "goto",
+          "label": "構想を推進",
+          "description": "龍馬と後藤は大政奉還を進めた。船中八策の成立経緯や伏字の人物は確定しない。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "kochi_tosa_bakumatsu",
+              "ndl_ryoma_political_plan"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
+    },
+    "aizu-siege": {
+      "id": "aizu-siege",
+      "sceneId": "1868-tohoku",
+      "title": "会津戦争・若松城の籠城",
+      "date": "1868年8月23日〜9月22日（旧暦）を中心に",
+      "summary": "新政府軍が若松城下へ入り、城では約1か月の籠城戦となった。銃を手に戦った八重、降伏を決断した容保、攻撃側の指揮者を区別する。",
+      "stakes": "戦争は指導者だけでなく、城内外の人々の生活にも及んだ。",
+      "turningPoint": "砲撃と籠城の末、9月22日に容保は降伏を決断した。",
+      "scope": "若松城の籠城が中心。北越戦争を前段として示し、京都にいた覚馬や、籠城前に亡くなった河井を城内の参加者と混同しない。",
+      "termIds": [
+        "kyoto-shugoshoku"
+      ],
+      "placeIds": [
+        "aizu",
+        "nagaoka"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "tsurugajo_siege",
+          "doshisha_yae",
+          "kochi_tosa_bakumatsu",
+          "nagaoka_kawai_reform"
+        ],
+        "reviewStatus": "verified"
+      },
+      "participants": [
+        {
+          "personId": "yae",
+          "displayName": "八重",
+          "role": "銃を持って籠城",
+          "involvement": "onsite",
+          "side": "籠城側",
+          "summary": "8月23日に入城し、銃を手に戦った。戦後の新島姓ではなく八重と表示する。",
+          "evidence": {
+            "sourceIds": [
+              "doshisha_yae"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "katamori",
+          "displayName": "松平容保",
+          "role": "籠城し、降伏を決断",
+          "involvement": "decision",
+          "side": "籠城側",
+          "summary": "約1か月の籠城と砲撃の末、9月22日に降伏した。",
+          "evidence": {
+            "sourceIds": [
+              "tsurugajo_siege"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "itakagi",
+          "displayName": "板垣退助",
+          "role": "土佐藩兵を率いて攻略",
+          "involvement": "decision",
+          "side": "新政府軍側",
+          "summary": "新政府側で土佐藩兵を率い、若松城の攻略にあたった。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_tosa_bakumatsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "yamamoto-kakuma",
+          "displayName": "山本覚馬",
+          "role": "京都にいた八重の兄",
+          "involvement": "context",
+          "side": "京都",
+          "summary": "薩摩藩に捕らえられ、京都で建白「管見」をまとめた。若松城内の指揮者ではない。",
+          "evidence": {
+            "sourceIds": [
+              "doshisha_yamamoto_kakuma"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "kawai-tsuginosuke",
+          "displayName": "河井継之助",
+          "role": "前段の北越戦争を指揮",
+          "involvement": "context",
+          "side": "北越からの退却",
+          "summary": "長岡で負傷し、会津領への退却後に8月16日死去。若松城の籠城が始まる前の人物として示す。",
+          "evidence": {
+            "sourceIds": [
+              "nagaoka_kawai",
+              "nagaoka_kawai_reform"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "aizu-brother-sister",
+          "aPersonId": "yamamoto-kakuma",
+          "bPersonId": "yae",
+          "label": "別の場所にいた兄妹",
+          "description": "覚馬は京都、八重は会津の籠城にいた。親族関係の線で、戦場での指揮関係ではない。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "doshisha_yae",
+              "doshisha_yamamoto_kakuma"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "aizu-opposing-sides",
+          "aPersonId": "katamori",
+          "bPersonId": "itakagi",
+          "label": "籠城側と攻略側",
+          "description": "容保が籠城した若松城の攻略に、板垣率いる土佐藩兵が参加した。個人同士の直接対決を示す線ではない。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "tsurugajo_siege",
+              "kochi_tosa_bakumatsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     }
   },
   "places": {
@@ -3732,6 +4190,36 @@
           "natural_earth_populated_places",
           "hagi_choshu_five",
           "hagi_choshu_five_london"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "saga": {
+      "name": "佐賀",
+      "coord": [
+        130.303,
+        33.245
+      ],
+      "note": "鍋島家の佐賀藩の本拠。財政・洋学・医療教育・軍備整備を進めた。",
+      "evidence": {
+        "sourceIds": [
+          "gsi_maps_coordinates",
+          "saga_nabeshima"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "nagaoka": {
+      "name": "長岡",
+      "coord": [
+        138.851,
+        37.447
+      ],
+      "note": "長岡藩の本拠。1868年の北越戦争で城下が戦場となった。",
+      "evidence": {
+        "sourceIds": [
+          "gsi_maps_coordinates",
+          "nagaoka_kawai"
         ],
         "reviewStatus": "verified"
       }
@@ -9976,6 +10464,751 @@
           }
         }
       }
+    },
+    {
+      "id": "oguri",
+      "name": "小栗忠順",
+      "kana": "おぐり ただまさ",
+      "aliases": [
+        "小栗上野介",
+        "小栗豊後介",
+        "小栗又一"
+      ],
+      "born": "1827–1868",
+      "defaultFaction": "幕府",
+      "activeRange": [
+        3,
+        13
+      ],
+      "oneLine": "渡米の経験をもとに、幕府の財政・軍備改革と横須賀製鉄所の建設を担った。",
+      "places": [
+        "edo"
+      ],
+      "events": [],
+      "sources": [
+        "ndl_portrait_oguri",
+        "mof_yokosuka"
+      ],
+      "termIds": [
+        "kaiko"
+      ],
+      "portrait": {
+        "src": "assets/portraits/oguri-ndl.jpg",
+        "alt": "小栗忠順の史料肖像",
+        "sourceId": "ndl_portrait_oguri",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が小栗忠順の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
+      },
+      "statuses": {
+        "1860-sakurada": {
+          "display": "小栗忠順",
+          "role": "批准書交換使節の目付",
+          "stance": "日米修好通商条約の批准書交換のため、使節団の一員として米国へ渡った。",
+          "importance": "海外への使節と国内の制度改革をつなぐ人物。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_oguri"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1862-bunkyu": {
+          "display": "小栗忠順",
+          "role": "幕府の財政・軍備を担う実務者",
+          "stance": "帰国後に勘定奉行・軍艦奉行などを歴任。各時点の現職と在任期間は確認中。",
+          "importance": "幕府を支えた財政・軍備の実務を知る入口。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_oguri"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        },
+        "1865-choshu": {
+          "display": "小栗忠順",
+          "role": "横須賀製鉄所の建設を推進",
+          "stance": "フランスの技術支援を受ける製鉄所の建設を進めた。1865年に起工し、軍備の国産化を支える。",
+          "importance": "開国後の技術導入と幕府の軍備整備を結ぶ。",
+          "evidence": {
+            "sourceIds": [
+              "mof_yokosuka"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-toba": {
+          "display": "小栗忠順",
+          "role": "抗戦論を主張し罷免",
+          "stance": "戊辰戦争に際して強硬な抗戦を主張したが罷免され、幕府の職を離れた。",
+          "importance": "同じ幕府側でも抗戦か恭順かで意見が分かれる。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_oguri"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-edo": {
+          "display": "小栗忠順",
+          "role": "権田村へ退き、処刑される",
+          "stance": "上州の権田村に隠棲。新政府軍に捕らえられ、閏4月6日（5月27日）に処刑された。",
+          "importance": "幕府の終わりに実務者がたどった経過を示す。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_oguri"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "mori-takachika",
+      "name": "毛利敬親",
+      "kana": "もうり たかちか",
+      "aliases": [
+        "毛利慶親"
+      ],
+      "born": "1819–1871",
+      "defaultFaction": "長州藩",
+      "activeRange": [
+        0,
+        15
+      ],
+      "oneLine": "長州藩主として財政改革に取り組み、禁門の変後の処分と藩の転換期を経験した。",
+      "places": [
+        "hagi",
+        "yamaguchi"
+      ],
+      "events": [
+        "kinmon"
+      ],
+      "sources": [
+        "yamaguchi_mori",
+        "yamahaku_mori_name"
+      ],
+      "termIds": [],
+      "statuses": {
+        "1853-blackships": {
+          "display": "毛利慶親",
+          "role": "長州藩主",
+          "stance": "1837年から藩主を務め、村田清風らを登用して財政の立て直しを進めてきた。",
+          "importance": "藩主の判断と藩士の活動を区別するための人物。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_mori"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1864-kinmon": {
+          "display": "毛利慶親",
+          "role": "禁門の変後に謹慎",
+          "stance": "禁門の変で朝敵とされ萩に謹慎。この期間の11月4日には、名前を慶親から敬親へ戻す。",
+          "importance": "長州藩が受けた政治的処分を藩主の側から見る。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_mori",
+              "yamahaku_mori_name"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1865-choshu": {
+          "display": "毛利敬親",
+          "role": "長州藩主",
+          "stance": "禁門の変後の処分を経た藩主。藩内の方針の変化は、高杉晋作や木戸孝允ら実務者の動きと併せてたどる。",
+          "importance": "藩主と実務者の役割を分けて長州の変化を読む。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_mori"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1869-hakodate": {
+          "display": "毛利敬親",
+          "role": "版籍奉還を申し出て隠居",
+          "stance": "版籍奉還を申し出た後、隠居した。",
+          "importance": "藩を単位とする政治の転換をたどる入口。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_mori"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "yae",
+      "name": "新島八重",
+      "kana": "にいじま やえ",
+      "aliases": [
+        "山本八重",
+        "川崎八重",
+        "八重",
+        "新島八重子"
+      ],
+      "born": "1845–1932",
+      "defaultFaction": "会津藩",
+      "activeRange": [
+        14,
+        15
+      ],
+      "oneLine": "山本覚馬の妹。会津戦争では若松城に籠もり、銃を手に戦った。新島姓は1876年の結婚後。",
+      "places": [
+        "aizu"
+      ],
+      "events": [
+        "tohoku"
+      ],
+      "sources": [
+        "ndl_portrait_yae",
+        "doshisha_yae"
+      ],
+      "termIds": [],
+      "portrait": {
+        "src": "assets/portraits/yae-ndl.jpg",
+        "alt": "新島八重の史料肖像",
+        "sourceId": "ndl_portrait_yae",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が新島八重の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
+      },
+      "statuses": {
+        "1868-tohoku": {
+          "display": "八重",
+          "role": "若松城に籠城",
+          "stance": "銃を持って籠城戦に参加した。新島姓は後年の名。婚姻・離縁の時期を踏まえ、ここでは八重と表示する。",
+          "importance": "籠城に参加した人の側から会津戦争を見る。",
+          "evidence": {
+            "sourceIds": [
+              "doshisha_yae",
+              "ndl_portrait_yae"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1869-hakodate": {
+          "display": "八重",
+          "role": "会津戦争後の生活",
+          "stance": "籠城を生き延びた山本覚馬の妹。この時点の居所・活動の細部は確認中。",
+          "importance": "戦闘の後にも続く生活の変化を考える入口。",
+          "evidence": {
+            "sourceIds": [
+              "doshisha_yae"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        }
+      }
+    },
+    {
+      "id": "nabeshima",
+      "name": "鍋島直正",
+      "kana": "なべしま なおまさ",
+      "aliases": [
+        "鍋島閑叟",
+        "閑叟"
+      ],
+      "born": "1815–1871（旧暦1814年生）",
+      "defaultFaction": "佐賀藩",
+      "activeRange": [
+        0,
+        15
+      ],
+      "oneLine": "佐賀藩の財政、洋学・医療教育、軍備を整えた藩主。1861年に隠居して閑叟と号した。",
+      "places": [
+        "saga",
+        "nagasaki"
+      ],
+      "events": [],
+      "sources": [
+        "ndl_nabeshima",
+        "saga_nabeshima"
+      ],
+      "termIds": [
+        "rangaku",
+        "kobugattai"
+      ],
+      "statuses": {
+        "1853-blackships": {
+          "display": "鍋島直正",
+          "role": "佐賀藩主",
+          "stance": "財政改革と洋学・医療教育を進め、1852年には洋式鉄製大砲の製造を実現していた。",
+          "importance": "薩長以外の藩が進めた技術・教育の整備を知る。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_nabeshima",
+              "saga_nabeshima"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1862-bunkyu": {
+          "display": "鍋島閑叟",
+          "role": "前佐賀藩主",
+          "stance": "1861年に隠居。藩主時代に整えた教育・技術・軍備が、幕末の佐賀藩の基盤となる。",
+          "importance": "現藩主と隠居した前藩主を区別する。",
+          "evidence": {
+            "sourceIds": [
+              "saga_nabeshima"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-toba": {
+          "display": "鍋島閑叟",
+          "role": "維新政府に関わる前藩主",
+          "stance": "維新政府の議定職などを歴任する。時点ごとの在職日は確認中のため、具体的な現職は表示しない。",
+          "importance": "地方の人材と維新政府のつながりをたどる。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_nabeshima"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        }
+      }
+    },
+    {
+      "id": "kawai-tsuginosuke",
+      "name": "河井継之助",
+      "kana": "かわい つぎのすけ",
+      "aliases": [],
+      "born": "1827–1868",
+      "defaultFaction": "長岡藩",
+      "activeRange": [
+        8,
+        14
+      ],
+      "oneLine": "長岡藩の改革と軍備を担った。戊辰戦争では中立を求めた交渉の後、新政府軍と戦った。",
+      "places": [
+        "nagaoka",
+        "nagasaki"
+      ],
+      "events": [
+        "tohoku"
+      ],
+      "sources": [
+        "nagaoka_kawai",
+        "nagaoka_kawai_reform"
+      ],
+      "termIds": [],
+      "statuses": {
+        "1865-choshu": {
+          "display": "河井継之助",
+          "role": "長岡藩郡奉行",
+          "stance": "郡奉行に登用され、山田方谷から学んだ考えをもとに藩政改革に取り組む。",
+          "importance": "地方の藩政改革を担った実務者を知る。",
+          "evidence": {
+            "sourceIds": [
+              "nagaoka_kawai_reform"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1866-satcho": {
+          "display": "河井継之助",
+          "role": "長岡藩の改革を担う実務者",
+          "stance": "財政・流通・軍備の改革を進める。昇進に伴う各時点の現職は確認中。",
+          "importance": "財政・流通と軍備の関係をたどる。",
+          "evidence": {
+            "sourceIds": [
+              "nagaoka_kawai",
+              "nagaoka_kawai_reform"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        },
+        "1868-toba": {
+          "display": "河井継之助",
+          "role": "長岡藩の改革を担う実務者",
+          "stance": "藩政改革と軍備整備に携わってきた。この時点の現職は確認中。5月の中立交渉とは分けて表示する。",
+          "importance": "戦争の前に交渉を試みた藩の動きを知る。",
+          "evidence": {
+            "sourceIds": [
+              "nagaoka_kawai",
+              "nagaoka_kawai_reform"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        },
+        "1868-edo": {
+          "display": "河井継之助",
+          "role": "長岡藩家老・中立を模索",
+          "stance": "戊辰戦争への参戦を避けようとする。5月2日の小千谷での新政府軍との交渉は成立しなかった。",
+          "importance": "戦争の前に交渉を試みた藩の動きを知る。",
+          "evidence": {
+            "sourceIds": [
+              "nagaoka_kawai",
+              "nagaoka_kawai_reform"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-tohoku": {
+          "display": "河井継之助",
+          "role": "北越戦争の軍事総督",
+          "stance": "長岡城を一度奪還するが負傷。退却先の会津領塩沢村で8月16日に死去。若松城の籠城には参加していない。",
+          "importance": "北越の戦いと会津の籠城を時系列で分ける。",
+          "evidence": {
+            "sourceIds": [
+              "nagaoka_kawai",
+              "nagaoka_kawai_reform"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "roches",
+      "name": "レオン・ロッシュ",
+      "kana": "れおん ろっしゅ",
+      "aliases": [
+        "ロッシュ",
+        "ロシュ",
+        "レオン・ロシュ",
+        "Léon Roches"
+      ],
+      "born": "1809–1900",
+      "defaultFaction": "外国勢力",
+      "activeRange": [
+        7,
+        13
+      ],
+      "oneLine": "駐日フランス公使。幕府の依頼で技術者や軍事顧問団の派遣を支えた。",
+      "places": [
+        "edo",
+        "yokohama"
+      ],
+      "events": [
+        "kinmon"
+      ],
+      "sources": [
+        "embassy_roches",
+        "mof_roches_departure"
+      ],
+      "termIds": [
+        "kaiko"
+      ],
+      "statuses": {
+        "1864-kinmon": {
+          "display": "レオン・ロッシュ",
+          "role": "駐日フランス公使",
+          "stance": "1864年に着任。四国艦隊の下関攻撃に加わり、年末には幕府から技術援助を求められた。",
+          "importance": "外国側も複数の外交官・政府から成ると分かる。",
+          "evidence": {
+            "sourceIds": [
+              "mof_roches_departure"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1865-choshu": {
+          "display": "レオン・ロッシュ",
+          "role": "幕府の技術・軍備整備を支援",
+          "stance": "横須賀製鉄所や横浜仏語伝習所、軍事顧問団の派遣を支えた。外交官としてフランスと幕府をつなぐ。",
+          "importance": "外交と技術導入が結び付く事例。",
+          "evidence": {
+            "sourceIds": [
+              "embassy_roches",
+              "mof_yokosuka"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-toba": {
+          "display": "レオン・ロッシュ",
+          "role": "幕府支援を進めたフランス公使",
+          "stance": "支援していた幕府軍が新政府軍に敗れる。支援事業と政権の交代が重なる局面。",
+          "importance": "政権交代が対外関係に及ぼした変化を知る。",
+          "evidence": {
+            "sourceIds": [
+              "mof_roches_departure"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-edo": {
+          "display": "レオン・ロッシュ",
+          "role": "離任して帰国",
+          "stance": "1868年6月（新暦）に日本を離れた。この後の外交に現職公使としては登場しない。",
+          "importance": "帰国後まで公使として表示しないための区切り。",
+          "evidence": {
+            "sourceIds": [
+              "mof_roches_departure"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "ine",
+      "name": "楠本イネ",
+      "kana": "くすもと いね",
+      "aliases": [
+        "おイネ",
+        "楠本伊篤",
+        "伊篤"
+      ],
+      "born": "1827–1903",
+      "defaultFaction": "医療・学問",
+      "activeRange": [
+        1,
+        15
+      ],
+      "oneLine": "二宮敬作らに医学を学び、長崎で蘭方産科の診療にあたった。藩や外交組織への所属ではなく、医療の活動からたどる。",
+      "places": [
+        "nagasaki"
+      ],
+      "events": [],
+      "sources": [
+        "ndl_portrait_ine",
+        "seiyo_ine_timeline",
+        "nagasaki_ine_practice"
+      ],
+      "termIds": [
+        "rangaku"
+      ],
+      "portrait": {
+        "src": "assets/portraits/ine-ndl.jpg",
+        "alt": "楠本イネの史料肖像",
+        "sourceId": "ndl_portrait_ine",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が楠本イネの肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
+      },
+      "statuses": {
+        "1854-treaty": {
+          "display": "楠本イネ",
+          "role": "医学・蘭学を学ぶ",
+          "stance": "卯之町の二宮敬作や宇和島の村田蔵六（後の大村益次郎）のもとで学ぶ。",
+          "importance": "政治や軍事以外にも広がる蘭学の学習を知る。",
+          "evidence": {
+            "sourceIds": [
+              "seiyo_ine_timeline",
+              "ndl_portrait_ine"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1858-ansei": {
+          "display": "楠本イネ",
+          "role": "医学の学習を続ける",
+          "stance": "1858〜59年に二宮敬作らと長崎へ戻る。帰郷の月日は確認中。",
+          "importance": "開港地の医療と国際交流をたどる。",
+          "evidence": {
+            "sourceIds": [
+              "seiyo_ine_timeline",
+              "nagasaki_ine_practice"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        },
+        "1860-sakurada": {
+          "display": "楠本イネ",
+          "role": "長崎に戻り診療へ",
+          "stance": "前年1859年に長崎で開業し、父シーボルトと再会した。",
+          "importance": "開港地の医療と国際交流をたどる。",
+          "evidence": {
+            "sourceIds": [
+              "seiyo_ine_timeline",
+              "nagasaki_ine_practice"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1862-bunkyu": {
+          "display": "楠本イネ",
+          "role": "長崎で診療・医学を研鑽",
+          "stance": "開業しながら、長崎養生所のポンペらの講義で学んだ。",
+          "importance": "診療と学習を重ねた医師の活動を見る。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_ine"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        },
+        "1864-kinmon": {
+          "display": "楠本イネ",
+          "role": "蘭方産科医",
+          "stance": "医学を学び診療にあたる。この年に伊篤という名へ改めたとされる。月日は確認中。",
+          "importance": "イネと伊篤という名前を同じ人物として探せる。",
+          "evidence": {
+            "sourceIds": [
+              "seiyo_ine_timeline"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        },
+        "1865-choshu": {
+          "display": "楠本伊篤",
+          "role": "蘭方産科医",
+          "stance": "楠本イネとして知られる医師。伊篤という名での具体的な活動時期は確認中。",
+          "importance": "史料によって異なる名前の表記をつなぐ。",
+          "evidence": {
+            "sourceIds": [
+              "seiyo_ine_timeline",
+              "ndl_portrait_ine"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        },
+        "1866-satcho": {
+          "display": "楠本伊篤",
+          "role": "産科医学を研鑽",
+          "stance": "1866年にはオランダ人医師マンスフェルトに産科を学んだ。",
+          "importance": "医学の学習を通じた外国人との接点を見る。",
+          "evidence": {
+            "sourceIds": [
+              "seiyo_ine_timeline"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1867-taisei": {
+          "display": "楠本伊篤",
+          "role": "蘭方産科医",
+          "stance": "幕末から明治にかけて医療に携わる。時点ごとの居所や診療の細部は確認中。",
+          "importance": "政局の変化と並行する医療活動への入口。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_ine",
+              "seiyo_ine_timeline"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        }
+      }
+    },
+    {
+      "id": "manjiro",
+      "name": "中浜万次郎",
+      "kana": "なかはま まんじろう",
+      "aliases": [
+        "ジョン万次郎",
+        "万次郎",
+        "John Mung"
+      ],
+      "born": "1827–1898",
+      "defaultFaction": "幕府",
+      "activeRange": [
+        0,
+        15
+      ],
+      "oneLine": "漂流後に米国で学んだ経験を生かし、通訳、航海術の教育、海外渡航に携わった。",
+      "places": [
+        "edo",
+        "kochi",
+        "hakodate",
+        "kagoshima"
+      ],
+      "events": [],
+      "sources": [
+        "ndl_manjiro",
+        "tosashimizu_manjiro"
+      ],
+      "termIds": [
+        "tsuji"
+      ],
+      "statuses": {
+        "1853-blackships": {
+          "display": "中浜万次郎",
+          "role": "幕府に召し出された帰国者",
+          "stance": "米国で学び帰国。1853年に阿部正弘の召喚を受け、幕府直参となって中浜姓を名乗った。",
+          "importance": "渡航経験が開国期の幕府に求められたことを知る。",
+          "evidence": {
+            "sourceIds": [
+              "tosashimizu_manjiro",
+              "ndl_manjiro"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1858-ansei": {
+          "display": "中浜万次郎",
+          "role": "航海・捕鯨術を教える",
+          "stance": "1857年に軍艦教授所教授となり、捕鯨術を教えるため箱館へも赴いた。",
+          "importance": "海外の経験を国内の技術教育に結ぶ。",
+          "evidence": {
+            "sourceIds": [
+              "tosashimizu_manjiro"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1860-sakurada": {
+          "display": "中浜万次郎",
+          "role": "咸臨丸の通訳",
+          "stance": "勝海舟らと咸臨丸で渡米し、通訳を担った。",
+          "importance": "通訳の役割を使節団の政治的な役割と分けて見る。",
+          "evidence": {
+            "sourceIds": [
+              "tosashimizu_manjiro",
+              "ndl_manjiro"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1862-bunkyu": {
+          "display": "中浜万次郎",
+          "role": "航海・海外知識を伝える実務者",
+          "stance": "帰国後は小笠原諸島の調査などに携わった。時点ごとの現職は確認中。",
+          "importance": "軍事だけに限られない航海技術の使われ方を知る。",
+          "evidence": {
+            "sourceIds": [
+              "tosashimizu_manjiro",
+              "ndl_manjiro"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        },
+        "1866-satcho": {
+          "display": "中浜万次郎",
+          "role": "薩摩の開成所で教授",
+          "faction": "薩摩藩",
+          "stance": "航海・造船・測量・英語を教えた。土佐の開成館や後藤象二郎の活動にも関わる。",
+          "importance": "藩の枠を越えて技術を伝えた人物として読む。",
+          "evidence": {
+            "sourceIds": [
+              "tosashimizu_manjiro"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1867-taisei": {
+          "display": "中浜万次郎",
+          "role": "航海術・英語を伝える教育者",
+          "faction": "医療・学問",
+          "stance": "幕末から明治にかけて教育に携わる。勤務先と任命日の細部は確認中。",
+          "importance": "政権への所属を断定せず教育活動からたどる。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_manjiro",
+              "tosashimizu_manjiro"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        }
+      }
     }
   ],
   "relations": [
@@ -11169,6 +12402,82 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "a": "oguri",
+      "b": "roches",
+      "start": 8,
+      "end": 11,
+      "type": "政治協力",
+      "label": "製鉄所建設の協力",
+      "text": "小栗が起案した横須賀製鉄所の建設で、幕府はロッシュにフランスの技術支援を求めた。",
+      "evidence": {
+        "sourceIds": [
+          "mof_yokosuka"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "yamamoto-kakuma",
+      "b": "yae",
+      "start": 14,
+      "end": 15,
+      "type": "親族",
+      "label": "兄と妹",
+      "text": "覚馬と八重は兄妹。会津戦争時には、八重は若松城、覚馬は京都という異なる場所にいた。",
+      "evidence": {
+        "sourceIds": [
+          "doshisha_yae",
+          "doshisha_yamamoto_kakuma"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "abe",
+      "b": "manjiro",
+      "start": 0,
+      "end": 1,
+      "type": "主従・登用",
+      "label": "幕府へ召喚",
+      "text": "阿部正弘が1853年に万次郎を召し出し、万次郎は幕府直参となった。",
+      "evidence": {
+        "sourceIds": [
+          "tosashimizu_manjiro"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "katsu",
+      "b": "manjiro",
+      "start": 3,
+      "end": 3,
+      "type": "組織",
+      "label": "咸臨丸で渡米",
+      "text": "1860年、勝海舟と中浜万次郎は咸臨丸に乗り、万次郎は通訳を担当した。",
+      "evidence": {
+        "sourceIds": [
+          "tosashimizu_manjiro"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "goto",
+      "b": "manjiro",
+      "start": 9,
+      "end": 10,
+      "type": "政治協力",
+      "label": "土佐の開成館と海外調達",
+      "text": "万次郎は土佐の開成館設立に関わり、後藤象二郎と上海での藩船購入にも携わった。",
+      "evidence": {
+        "sourceIds": [
+          "tosashimizu_manjiro"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ],
   "factionRelations": [
@@ -11442,6 +12751,21 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "a": "長岡藩",
+      "b": "新政府",
+      "start": 14,
+      "end": 14,
+      "label": "北越戦争",
+      "text": "中立を求めた交渉の後、長岡藩は新政府軍と戦った。長岡城の攻防を経て降伏する。",
+      "evidence": {
+        "sourceIds": [
+          "nagaoka_kawai",
+          "nagaoka_kawai_reform"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ],
   "factionStates": {
@@ -11482,6 +12806,16 @@
         "evidence": {
           "sourceIds": [
             "kagoshima_nariakira"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "佐賀藩": {
+        "goal": "財政と教育・技術の基盤を整える。",
+        "position": "長崎警備と西洋技術の導入。鍋島直正のもとで、教育・技術・軍備を整える。",
+        "evidence": {
+          "sourceIds": [
+            "saga_nabeshima"
           ],
           "reviewStatus": "verified"
         }
@@ -11526,6 +12860,27 @@
         "evidence": {
           "sourceIds": [
             "ndl_portrait_shoin_detail"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "佐賀藩": {
+        "goal": "財政と教育・技術の基盤を整える。",
+        "position": "長崎警備と西洋技術の導入。鍋島直正のもとで、教育・技術・軍備を整える。",
+        "evidence": {
+          "sourceIds": [
+            "saga_nabeshima"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "医療・学問": {
+        "goal": "蘭方医学を学び、診療に携わる人物を掲載。",
+        "position": "楠本イネの医学の学習と診療を、人物の活動としてたどる。",
+        "evidence": {
+          "sourceIds": [
+            "ndl_portrait_ine",
+            "seiyo_ine_timeline"
           ],
           "reviewStatus": "verified"
         }
@@ -11582,6 +12937,27 @@
           ],
           "reviewStatus": "verified"
         }
+      },
+      "佐賀藩": {
+        "goal": "財政と教育・技術の基盤を整える。",
+        "position": "長崎警備と西洋技術の導入。鍋島直正のもとで、教育・技術・軍備を整える。",
+        "evidence": {
+          "sourceIds": [
+            "saga_nabeshima"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "医療・学問": {
+        "goal": "蘭方医学を学び、診療に携わる人物を掲載。",
+        "position": "楠本イネの医学の学習と診療を、人物の活動としてたどる。",
+        "evidence": {
+          "sourceIds": [
+            "ndl_portrait_ine",
+            "seiyo_ine_timeline"
+          ],
+          "reviewStatus": "verified"
+        }
       }
     },
     "1860-sakurada": {
@@ -11622,6 +12998,27 @@
           "sourceIds": [
             "ndl_portrait_saigo_detail",
             "kagoshima_amami_saigo"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "佐賀藩": {
+        "goal": "財政と教育・技術の基盤を整える。",
+        "position": "長崎警備と西洋技術の導入。鍋島直正のもとで、教育・技術・軍備を整える。",
+        "evidence": {
+          "sourceIds": [
+            "saga_nabeshima"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "医療・学問": {
+        "goal": "蘭方医学を学び、診療に携わる人物を掲載。",
+        "position": "楠本イネの医学の学習と診療を、人物の活動としてたどる。",
+        "evidence": {
+          "sourceIds": [
+            "ndl_portrait_ine",
+            "seiyo_ine_timeline"
           ],
           "reviewStatus": "verified"
         }
@@ -11677,6 +13074,27 @@
         "evidence": {
           "sourceIds": [
             "ndl_portrait_ohara"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "佐賀藩": {
+        "goal": "財政と教育・技術の基盤を整える。",
+        "position": "長崎警備と西洋技術の導入。藩主直正は1861年に隠居し、閑叟と号する。",
+        "evidence": {
+          "sourceIds": [
+            "saga_nabeshima"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "医療・学問": {
+        "goal": "蘭方医学を学び、診療に携わる人物を掲載。",
+        "position": "楠本イネの医学の学習と診療を、人物の活動としてたどる。",
+        "evidence": {
+          "sourceIds": [
+            "ndl_portrait_ine",
+            "seiyo_ine_timeline"
           ],
           "reviewStatus": "verified"
         }
@@ -11736,6 +13154,27 @@
           ],
           "reviewStatus": "verified"
         }
+      },
+      "佐賀藩": {
+        "goal": "財政と教育・技術の基盤を整える。",
+        "position": "長崎警備と西洋技術の導入。藩主直正は1861年に隠居し、閑叟と号する。",
+        "evidence": {
+          "sourceIds": [
+            "saga_nabeshima"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "医療・学問": {
+        "goal": "蘭方医学を学び、診療に携わる人物を掲載。",
+        "position": "楠本イネの医学の学習と診療を、人物の活動としてたどる。",
+        "evidence": {
+          "sourceIds": [
+            "ndl_portrait_ine",
+            "seiyo_ine_timeline"
+          ],
+          "reviewStatus": "verified"
+        }
       }
     },
     "1863-aug18": {
@@ -11792,6 +13231,27 @@
           ],
           "reviewStatus": "verified"
         }
+      },
+      "佐賀藩": {
+        "goal": "財政と教育・技術の基盤を整える。",
+        "position": "長崎警備と西洋技術の導入。藩主直正は1861年に隠居し、閑叟と号する。",
+        "evidence": {
+          "sourceIds": [
+            "saga_nabeshima"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "医療・学問": {
+        "goal": "蘭方医学を学び、診療に携わる人物を掲載。",
+        "position": "楠本イネの医学の学習と診療を、人物の活動としてたどる。",
+        "evidence": {
+          "sourceIds": [
+            "ndl_portrait_ine",
+            "seiyo_ine_timeline"
+          ],
+          "reviewStatus": "verified"
+        }
       }
     },
     "1864-kinmon": {
@@ -11845,6 +13305,27 @@
           ],
           "reviewStatus": "verified"
         }
+      },
+      "佐賀藩": {
+        "goal": "財政と教育・技術の基盤を整える。",
+        "position": "長崎警備と西洋技術の導入。藩主直正は1861年に隠居し、閑叟と号する。",
+        "evidence": {
+          "sourceIds": [
+            "saga_nabeshima"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "医療・学問": {
+        "goal": "蘭方医学を学び、診療に携わる人物を掲載。",
+        "position": "楠本イネの医学の学習と診療を、人物の活動としてたどる。",
+        "evidence": {
+          "sourceIds": [
+            "ndl_portrait_ine",
+            "seiyo_ine_timeline"
+          ],
+          "reviewStatus": "verified"
+        }
       }
     },
     "1865-choshu": {
@@ -11886,6 +13367,38 @@
           "sourceIds": [
             "ndl_history_satcho",
             "ndl_satcho_alliance_research"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "佐賀藩": {
+        "goal": "財政と教育・技術の基盤を整える。",
+        "position": "長崎警備と西洋技術の導入。藩主直正は1861年に隠居し、閑叟と号する。",
+        "evidence": {
+          "sourceIds": [
+            "saga_nabeshima"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "長岡藩": {
+        "goal": "財政・流通を改め、軍備を整える。",
+        "position": "河井継之助らが藩政改革を進める。",
+        "evidence": {
+          "sourceIds": [
+            "nagaoka_kawai",
+            "nagaoka_kawai_reform"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "医療・学問": {
+        "goal": "蘭方医学を学び、診療に携わる人物を掲載。",
+        "position": "楠本イネの医学の学習と診療を、人物の活動としてたどる。",
+        "evidence": {
+          "sourceIds": [
+            "ndl_portrait_ine",
+            "seiyo_ine_timeline"
           ],
           "reviewStatus": "verified"
         }
@@ -11945,6 +13458,38 @@
           ],
           "reviewStatus": "verified"
         }
+      },
+      "佐賀藩": {
+        "goal": "財政と教育・技術の基盤を整える。",
+        "position": "長崎警備と西洋技術の導入。藩主直正は1861年に隠居し、閑叟と号する。",
+        "evidence": {
+          "sourceIds": [
+            "saga_nabeshima"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "長岡藩": {
+        "goal": "財政・流通を改め、軍備を整える。",
+        "position": "河井継之助らが藩政改革を進める。",
+        "evidence": {
+          "sourceIds": [
+            "nagaoka_kawai",
+            "nagaoka_kawai_reform"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "医療・学問": {
+        "goal": "蘭方医学を学び、診療に携わる人物を掲載。",
+        "position": "楠本イネの医学の学習と診療を、人物の活動としてたどる。",
+        "evidence": {
+          "sourceIds": [
+            "ndl_portrait_ine",
+            "seiyo_ine_timeline"
+          ],
+          "reviewStatus": "verified"
+        }
       }
     },
     "1866-expedition": {
@@ -11989,6 +13534,38 @@
           "sourceIds": [
             "ndl_satcho_alliance_research",
             "ndl_authority_komei"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "佐賀藩": {
+        "goal": "財政と教育・技術の基盤を整える。",
+        "position": "長崎警備と西洋技術の導入。藩主直正は1861年に隠居し、閑叟と号する。",
+        "evidence": {
+          "sourceIds": [
+            "saga_nabeshima"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "長岡藩": {
+        "goal": "財政・流通を改め、軍備を整える。",
+        "position": "河井継之助らが藩政改革を進める。",
+        "evidence": {
+          "sourceIds": [
+            "nagaoka_kawai",
+            "nagaoka_kawai_reform"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "医療・学問": {
+        "goal": "蘭方医学を学び、診療に携わる人物を掲載。",
+        "position": "楠本イネの医学の学習と診療を、人物の活動としてたどる。",
+        "evidence": {
+          "sourceIds": [
+            "ndl_portrait_ine",
+            "seiyo_ine_timeline"
           ],
           "reviewStatus": "verified"
         }
@@ -12048,6 +13625,38 @@
           ],
           "reviewStatus": "verified"
         }
+      },
+      "佐賀藩": {
+        "goal": "財政と教育・技術の基盤を整える。",
+        "position": "長崎警備と西洋技術の導入。藩主直正は1861年に隠居し、閑叟と号する。",
+        "evidence": {
+          "sourceIds": [
+            "saga_nabeshima"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "長岡藩": {
+        "goal": "財政・流通を改め、軍備を整える。",
+        "position": "河井継之助らが藩政改革を進める。",
+        "evidence": {
+          "sourceIds": [
+            "nagaoka_kawai",
+            "nagaoka_kawai_reform"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "医療・学問": {
+        "goal": "医療と、語学・航海術の教育に携わる人物を掲載。",
+        "position": "楠本イネや中浜万次郎の活動を、それぞれの人物から確認する。",
+        "evidence": {
+          "sourceIds": [
+            "ndl_portrait_ine",
+            "ndl_manjiro"
+          ],
+          "reviewStatus": "verified"
+        }
       }
     },
     "1868-toba": {
@@ -12104,6 +13713,38 @@
           ],
           "reviewStatus": "verified"
         }
+      },
+      "佐賀藩": {
+        "goal": "蓄積した軍事力と人材で維新に参加する。",
+        "position": "新政府側に参加。佐賀で育まれた技術と人材が維新期の活動を支える。",
+        "evidence": {
+          "sourceIds": [
+            "saga_nabeshima"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "長岡藩": {
+        "goal": "藩の財政と軍備を支える。",
+        "position": "河井継之助らが改革を担う。戊辰戦争開始時の方針の細部は確認中。",
+        "evidence": {
+          "sourceIds": [
+            "nagaoka_kawai",
+            "nagaoka_kawai_reform"
+          ],
+          "reviewStatus": "needs_review"
+        }
+      },
+      "医療・学問": {
+        "goal": "医療と、語学・航海術の教育に携わる人物を掲載。",
+        "position": "楠本イネや中浜万次郎の活動を、それぞれの人物から確認する。",
+        "evidence": {
+          "sourceIds": [
+            "ndl_portrait_ine",
+            "ndl_manjiro"
+          ],
+          "reviewStatus": "verified"
+        }
       }
     },
     "1868-edo": {
@@ -12146,6 +13787,38 @@
         "evidence": {
           "sourceIds": [
             "hino_koyo_chinbutai"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "佐賀藩": {
+        "goal": "蓄積した軍事力と人材で維新に参加する。",
+        "position": "新政府側に参加。佐賀で育まれた技術と人材が維新期の活動を支える。",
+        "evidence": {
+          "sourceIds": [
+            "saga_nabeshima"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "長岡藩": {
+        "goal": "新政府軍との戦闘を避ける道を探る。",
+        "position": "河井継之助が中立を求めるが、小千谷での交渉は成立しなかった。",
+        "evidence": {
+          "sourceIds": [
+            "nagaoka_kawai",
+            "nagaoka_kawai_reform"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "医療・学問": {
+        "goal": "医療と、語学・航海術の教育に携わる人物を掲載。",
+        "position": "楠本イネや中浜万次郎の活動を、それぞれの人物から確認する。",
+        "evidence": {
+          "sourceIds": [
+            "ndl_portrait_ine",
+            "ndl_manjiro"
           ],
           "reviewStatus": "verified"
         }
@@ -12213,6 +13886,38 @@
           ],
           "reviewStatus": "verified"
         }
+      },
+      "佐賀藩": {
+        "goal": "蓄積した軍事力と人材で維新に参加する。",
+        "position": "新政府側に参加。佐賀で育まれた技術と人材が維新期の活動を支える。",
+        "evidence": {
+          "sourceIds": [
+            "saga_nabeshima"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "長岡藩": {
+        "goal": "北越で新政府軍と戦う。",
+        "position": "長岡城の攻防を経て退却。河井継之助は負傷後に死去し、藩も降伏へ至る。",
+        "evidence": {
+          "sourceIds": [
+            "nagaoka_kawai",
+            "nagaoka_kawai_reform"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "医療・学問": {
+        "goal": "医療と、語学・航海術の教育に携わる人物を掲載。",
+        "position": "楠本イネや中浜万次郎の活動を、それぞれの人物から確認する。",
+        "evidence": {
+          "sourceIds": [
+            "ndl_portrait_ine",
+            "ndl_manjiro"
+          ],
+          "reviewStatus": "verified"
+        }
       }
     },
     "1869-hakodate": {
@@ -12253,6 +13958,27 @@
         "evidence": {
           "sourceIds": [
             "yamaguchi_omura_1869"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "佐賀藩": {
+        "goal": "蓄積した軍事力と人材で維新に参加する。",
+        "position": "新政府側に参加。佐賀で育まれた技術と人材が維新期の活動を支える。",
+        "evidence": {
+          "sourceIds": [
+            "saga_nabeshima"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "医療・学問": {
+        "goal": "医療と、語学・航海術の教育に携わる人物を掲載。",
+        "position": "楠本イネや中浜万次郎の活動を、それぞれの人物から確認する。",
+        "evidence": {
+          "sourceIds": [
+            "ndl_portrait_ine",
+            "ndl_manjiro"
           ],
           "reviewStatus": "verified"
         }

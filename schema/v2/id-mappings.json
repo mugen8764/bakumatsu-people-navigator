@@ -10,7 +10,10 @@
     "新選組": "shinsengumi",
     "土佐藩": "tosa",
     "旧幕府勢力": "former-bakufu",
-    "新政府": "new-government"
+    "新政府": "new-government",
+    "佐賀藩": "saga",
+    "長岡藩": "nagaoka",
+    "医療・学問": "medicine-learning"
   },
   "personRelationTypes": {
     "主従・登用": "appointment",

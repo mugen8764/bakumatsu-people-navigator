@@ -6311,6 +6311,657 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-status-oguri-1860-sakurada",
+      "personId": "oguri",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "小栗忠順",
+      "role": "批准書交換使節の目付",
+      "factionId": "bakufu",
+      "stance": "日米修好通商条約の批准書交換のため、使節団の一員として米国へ渡った。",
+      "importance": "海外への使節と国内の制度改革をつなぐ人物。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_oguri"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-oguri-1862-bunkyu",
+      "personId": "oguri",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1864-kinmon",
+      "displayName": "小栗忠順",
+      "role": "幕府の財政・軍備を担う実務者",
+      "factionId": "bakufu",
+      "stance": "帰国後に勘定奉行・軍艦奉行などを歴任。各時点の現職と在任期間は確認中。",
+      "importance": "幕府を支えた財政・軍備の実務を知る入口。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_oguri"
+        ],
+        "reviewStatus": "needs_review"
+      }
+    },
+    {
+      "id": "person-status-oguri-1865-choshu",
+      "personId": "oguri",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1867-taisei",
+      "displayName": "小栗忠順",
+      "role": "横須賀製鉄所の建設を推進",
+      "factionId": "bakufu",
+      "stance": "フランスの技術支援を受ける製鉄所の建設を進めた。1865年に起工し、軍備の国産化を支える。",
+      "importance": "開国後の技術導入と幕府の軍備整備を結ぶ。",
+      "evidence": {
+        "sourceIds": [
+          "mof_yokosuka"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-oguri-1868-toba",
+      "personId": "oguri",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "小栗忠順",
+      "role": "抗戦論を主張し罷免",
+      "factionId": "bakufu",
+      "stance": "戊辰戦争に際して強硬な抗戦を主張したが罷免され、幕府の職を離れた。",
+      "importance": "同じ幕府側でも抗戦か恭順かで意見が分かれる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_oguri"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-oguri-1868-edo",
+      "personId": "oguri",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "小栗忠順",
+      "role": "権田村へ退き、処刑される",
+      "factionId": "bakufu",
+      "stance": "上州の権田村に隠棲。新政府軍に捕らえられ、閏4月6日（5月27日）に処刑された。",
+      "importance": "幕府の終わりに実務者がたどった経過を示す。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_oguri"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-mori-takachika-1853-blackships",
+      "personId": "mori-takachika",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1863-aug18",
+      "displayName": "毛利慶親",
+      "role": "長州藩主",
+      "factionId": "choshu",
+      "stance": "1837年から藩主を務め、村田清風らを登用して財政の立て直しを進めてきた。",
+      "importance": "藩主の判断と藩士の活動を区別するための人物。",
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_mori"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-mori-takachika-1864-kinmon",
+      "personId": "mori-takachika",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "毛利慶親",
+      "role": "禁門の変後に謹慎",
+      "factionId": "choshu",
+      "stance": "禁門の変で朝敵とされ萩に謹慎。この期間の11月4日には、名前を慶親から敬親へ戻す。",
+      "importance": "長州藩が受けた政治的処分を藩主の側から見る。",
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_mori",
+          "yamahaku_mori_name"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-mori-takachika-1865-choshu",
+      "personId": "mori-takachika",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1868-tohoku",
+      "displayName": "毛利敬親",
+      "role": "長州藩主",
+      "factionId": "choshu",
+      "stance": "禁門の変後の処分を経た藩主。藩内の方針の変化は、高杉晋作や木戸孝允ら実務者の動きと併せてたどる。",
+      "importance": "藩主と実務者の役割を分けて長州の変化を読む。",
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_mori"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-mori-takachika-1869-hakodate",
+      "personId": "mori-takachika",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "displayName": "毛利敬親",
+      "role": "版籍奉還を申し出て隠居",
+      "factionId": "choshu",
+      "stance": "版籍奉還を申し出た後、隠居した。",
+      "importance": "藩を単位とする政治の転換をたどる入口。",
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_mori"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-yae-1868-tohoku",
+      "personId": "yae",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "八重",
+      "role": "若松城に籠城",
+      "factionId": "aizu",
+      "stance": "銃を持って籠城戦に参加した。新島姓は後年の名。婚姻・離縁の時期を踏まえ、ここでは八重と表示する。",
+      "importance": "籠城に参加した人の側から会津戦争を見る。",
+      "evidence": {
+        "sourceIds": [
+          "doshisha_yae",
+          "ndl_portrait_yae"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-yae-1869-hakodate",
+      "personId": "yae",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "displayName": "八重",
+      "role": "会津戦争後の生活",
+      "factionId": "aizu",
+      "stance": "籠城を生き延びた山本覚馬の妹。この時点の居所・活動の細部は確認中。",
+      "importance": "戦闘の後にも続く生活の変化を考える入口。",
+      "evidence": {
+        "sourceIds": [
+          "doshisha_yae"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "会津藩は出身と戦争時の背景を示す。後年の教職・看護活動を先取りしない。"
+      }
+    },
+    {
+      "id": "person-status-nabeshima-1853-blackships",
+      "personId": "nabeshima",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1860-sakurada",
+      "displayName": "鍋島直正",
+      "role": "佐賀藩主",
+      "factionId": "saga",
+      "stance": "財政改革と洋学・医療教育を進め、1852年には洋式鉄製大砲の製造を実現していた。",
+      "importance": "薩長以外の藩が進めた技術・教育の整備を知る。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_nabeshima",
+          "saga_nabeshima"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-nabeshima-1862-bunkyu",
+      "personId": "nabeshima",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1867-taisei",
+      "displayName": "鍋島閑叟",
+      "role": "前佐賀藩主",
+      "factionId": "saga",
+      "stance": "1861年に隠居。藩主時代に整えた教育・技術・軍備が、幕末の佐賀藩の基盤となる。",
+      "importance": "現藩主と隠居した前藩主を区別する。",
+      "evidence": {
+        "sourceIds": [
+          "saga_nabeshima"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-nabeshima-1868-toba",
+      "personId": "nabeshima",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1869-hakodate",
+      "displayName": "鍋島閑叟",
+      "role": "維新政府に関わる前藩主",
+      "factionId": "saga",
+      "stance": "維新政府の議定職などを歴任する。時点ごとの在職日は確認中のため、具体的な現職は表示しない。",
+      "importance": "地方の人材と維新政府のつながりをたどる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_nabeshima"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "1869年の開拓使長官は、箱館戦争終結の時点より後なので表示しない。"
+      }
+    },
+    {
+      "id": "person-status-kawai-tsuginosuke-1865-choshu",
+      "personId": "kawai-tsuginosuke",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "河井継之助",
+      "role": "長岡藩郡奉行",
+      "factionId": "nagaoka",
+      "stance": "郡奉行に登用され、山田方谷から学んだ考えをもとに藩政改革に取り組む。",
+      "importance": "地方の藩政改革を担った実務者を知る。",
+      "evidence": {
+        "sourceIds": [
+          "nagaoka_kawai_reform"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-kawai-tsuginosuke-1866-satcho",
+      "personId": "kawai-tsuginosuke",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1867-taisei",
+      "displayName": "河井継之助",
+      "role": "長岡藩の改革を担う実務者",
+      "factionId": "nagaoka",
+      "stance": "財政・流通・軍備の改革を進める。昇進に伴う各時点の現職は確認中。",
+      "importance": "財政・流通と軍備の関係をたどる。",
+      "evidence": {
+        "sourceIds": [
+          "nagaoka_kawai",
+          "nagaoka_kawai_reform"
+        ],
+        "reviewStatus": "needs_review"
+      }
+    },
+    {
+      "id": "person-status-kawai-tsuginosuke-1868-toba",
+      "personId": "kawai-tsuginosuke",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "河井継之助",
+      "role": "長岡藩の改革を担う実務者",
+      "factionId": "nagaoka",
+      "stance": "藩政改革と軍備整備に携わってきた。この時点の現職は確認中。5月の中立交渉とは分けて表示する。",
+      "importance": "戦争の前に交渉を試みた藩の動きを知る。",
+      "evidence": {
+        "sourceIds": [
+          "nagaoka_kawai",
+          "nagaoka_kawai_reform"
+        ],
+        "reviewStatus": "needs_review"
+      }
+    },
+    {
+      "id": "person-status-kawai-tsuginosuke-1868-edo",
+      "personId": "kawai-tsuginosuke",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "河井継之助",
+      "role": "長岡藩家老・中立を模索",
+      "factionId": "nagaoka",
+      "stance": "戊辰戦争への参戦を避けようとする。5月2日の小千谷での新政府軍との交渉は成立しなかった。",
+      "importance": "戦争の前に交渉を試みた藩の動きを知る。",
+      "evidence": {
+        "sourceIds": [
+          "nagaoka_kawai",
+          "nagaoka_kawai_reform"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-kawai-tsuginosuke-1868-tohoku",
+      "personId": "kawai-tsuginosuke",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "河井継之助",
+      "role": "北越戦争の軍事総督",
+      "factionId": "nagaoka",
+      "stance": "長岡城を一度奪還するが負傷。退却先の会津領塩沢村で8月16日に死去。若松城の籠城には参加していない。",
+      "importance": "北越の戦いと会津の籠城を時系列で分ける。",
+      "evidence": {
+        "sourceIds": [
+          "nagaoka_kawai",
+          "nagaoka_kawai_reform"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-roches-1864-kinmon",
+      "personId": "roches",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "レオン・ロッシュ",
+      "role": "駐日フランス公使",
+      "factionId": "foreign-powers",
+      "stance": "1864年に着任。四国艦隊の下関攻撃に加わり、年末には幕府から技術援助を求められた。",
+      "importance": "外国側も複数の外交官・政府から成ると分かる。",
+      "evidence": {
+        "sourceIds": [
+          "mof_roches_departure"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-roches-1865-choshu",
+      "personId": "roches",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1867-taisei",
+      "displayName": "レオン・ロッシュ",
+      "role": "幕府の技術・軍備整備を支援",
+      "factionId": "foreign-powers",
+      "stance": "横須賀製鉄所や横浜仏語伝習所、軍事顧問団の派遣を支えた。外交官としてフランスと幕府をつなぐ。",
+      "importance": "外交と技術導入が結び付く事例。",
+      "evidence": {
+        "sourceIds": [
+          "embassy_roches",
+          "mof_yokosuka"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-roches-1868-toba",
+      "personId": "roches",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "レオン・ロッシュ",
+      "role": "幕府支援を進めたフランス公使",
+      "factionId": "foreign-powers",
+      "stance": "支援していた幕府軍が新政府軍に敗れる。支援事業と政権の交代が重なる局面。",
+      "importance": "政権交代が対外関係に及ぼした変化を知る。",
+      "evidence": {
+        "sourceIds": [
+          "mof_roches_departure"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-roches-1868-edo",
+      "personId": "roches",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "レオン・ロッシュ",
+      "role": "離任して帰国",
+      "factionId": "foreign-powers",
+      "stance": "1868年6月（新暦）に日本を離れた。この後の外交に現職公使としては登場しない。",
+      "importance": "帰国後まで公使として表示しないための区切り。",
+      "evidence": {
+        "sourceIds": [
+          "mof_roches_departure"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-ine-1854-treaty",
+      "personId": "ine",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1854-treaty",
+      "displayName": "楠本イネ",
+      "role": "医学・蘭学を学ぶ",
+      "factionId": "medicine-learning",
+      "stance": "卯之町の二宮敬作や宇和島の村田蔵六（後の大村益次郎）のもとで学ぶ。",
+      "importance": "政治や軍事以外にも広がる蘭学の学習を知る。",
+      "evidence": {
+        "sourceIds": [
+          "seiyo_ine_timeline",
+          "ndl_portrait_ine"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-ine-1858-ansei",
+      "personId": "ine",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "楠本イネ",
+      "role": "医学の学習を続ける",
+      "factionId": "medicine-learning",
+      "stance": "1858〜59年に二宮敬作らと長崎へ戻る。帰郷の月日は確認中。",
+      "importance": "開港地の医療と国際交流をたどる。",
+      "evidence": {
+        "sourceIds": [
+          "seiyo_ine_timeline",
+          "nagasaki_ine_practice"
+        ],
+        "reviewStatus": "needs_review"
+      }
+    },
+    {
+      "id": "person-status-ine-1860-sakurada",
+      "personId": "ine",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "楠本イネ",
+      "role": "長崎に戻り診療へ",
+      "factionId": "medicine-learning",
+      "stance": "前年1859年に長崎で開業し、父シーボルトと再会した。",
+      "importance": "開港地の医療と国際交流をたどる。",
+      "evidence": {
+        "sourceIds": [
+          "seiyo_ine_timeline",
+          "nagasaki_ine_practice"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-ine-1862-bunkyu",
+      "personId": "ine",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1863-aug18",
+      "displayName": "楠本イネ",
+      "role": "長崎で診療・医学を研鑽",
+      "factionId": "medicine-learning",
+      "stance": "開業しながら、長崎養生所のポンペらの講義で学んだ。",
+      "importance": "診療と学習を重ねた医師の活動を見る。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_ine"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "1861年の受講は確認できるが、各時点の受講期間は未確定。"
+      }
+    },
+    {
+      "id": "person-status-ine-1864-kinmon",
+      "personId": "ine",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "楠本イネ",
+      "role": "蘭方産科医",
+      "factionId": "medicine-learning",
+      "stance": "医学を学び診療にあたる。この年に伊篤という名へ改めたとされる。月日は確認中。",
+      "importance": "イネと伊篤という名前を同じ人物として探せる。",
+      "evidence": {
+        "sourceIds": [
+          "seiyo_ine_timeline"
+        ],
+        "reviewStatus": "needs_review"
+      }
+    },
+    {
+      "id": "person-status-ine-1865-choshu",
+      "personId": "ine",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "楠本伊篤",
+      "role": "蘭方産科医",
+      "factionId": "medicine-learning",
+      "stance": "楠本イネとして知られる医師。伊篤という名での具体的な活動時期は確認中。",
+      "importance": "史料によって異なる名前の表記をつなぐ。",
+      "evidence": {
+        "sourceIds": [
+          "seiyo_ine_timeline",
+          "ndl_portrait_ine"
+        ],
+        "reviewStatus": "needs_review"
+      }
+    },
+    {
+      "id": "person-status-ine-1866-satcho",
+      "personId": "ine",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-expedition",
+      "displayName": "楠本伊篤",
+      "role": "産科医学を研鑽",
+      "factionId": "medicine-learning",
+      "stance": "1866年にはオランダ人医師マンスフェルトに産科を学んだ。",
+      "importance": "医学の学習を通じた外国人との接点を見る。",
+      "evidence": {
+        "sourceIds": [
+          "seiyo_ine_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-ine-1867-taisei",
+      "personId": "ine",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1869-hakodate",
+      "displayName": "楠本伊篤",
+      "role": "蘭方産科医",
+      "factionId": "medicine-learning",
+      "stance": "幕末から明治にかけて医療に携わる。時点ごとの居所や診療の細部は確認中。",
+      "importance": "政局の変化と並行する医療活動への入口。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_ine",
+          "seiyo_ine_timeline"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "1870年以後の東京での開業や宮中の仕事を、この期間の現職として扱わない。"
+      }
+    },
+    {
+      "id": "person-status-manjiro-1853-blackships",
+      "personId": "manjiro",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1854-treaty",
+      "displayName": "中浜万次郎",
+      "role": "幕府に召し出された帰国者",
+      "factionId": "bakufu",
+      "stance": "米国で学び帰国。1853年に阿部正弘の召喚を受け、幕府直参となって中浜姓を名乗った。",
+      "importance": "渡航経験が開国期の幕府に求められたことを知る。",
+      "evidence": {
+        "sourceIds": [
+          "tosashimizu_manjiro",
+          "ndl_manjiro"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-manjiro-1858-ansei",
+      "personId": "manjiro",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "中浜万次郎",
+      "role": "航海・捕鯨術を教える",
+      "factionId": "bakufu",
+      "stance": "1857年に軍艦教授所教授となり、捕鯨術を教えるため箱館へも赴いた。",
+      "importance": "海外の経験を国内の技術教育に結ぶ。",
+      "evidence": {
+        "sourceIds": [
+          "tosashimizu_manjiro"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-manjiro-1860-sakurada",
+      "personId": "manjiro",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "中浜万次郎",
+      "role": "咸臨丸の通訳",
+      "factionId": "bakufu",
+      "stance": "勝海舟らと咸臨丸で渡米し、通訳を担った。",
+      "importance": "通訳の役割を使節団の政治的な役割と分けて見る。",
+      "evidence": {
+        "sourceIds": [
+          "tosashimizu_manjiro",
+          "ndl_manjiro"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-manjiro-1862-bunkyu",
+      "personId": "manjiro",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1865-choshu",
+      "displayName": "中浜万次郎",
+      "role": "航海・海外知識を伝える実務者",
+      "factionId": "bakufu",
+      "stance": "帰国後は小笠原諸島の調査などに携わった。時点ごとの現職は確認中。",
+      "importance": "軍事だけに限られない航海技術の使われ方を知る。",
+      "evidence": {
+        "sourceIds": [
+          "tosashimizu_manjiro",
+          "ndl_manjiro"
+        ],
+        "reviewStatus": "needs_review"
+      }
+    },
+    {
+      "id": "person-status-manjiro-1866-satcho",
+      "personId": "manjiro",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-expedition",
+      "displayName": "中浜万次郎",
+      "role": "薩摩の開成所で教授",
+      "factionId": "satsuma",
+      "stance": "航海・造船・測量・英語を教えた。土佐の開成館や後藤象二郎の活動にも関わる。",
+      "importance": "藩の枠を越えて技術を伝えた人物として読む。",
+      "evidence": {
+        "sourceIds": [
+          "tosashimizu_manjiro"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-manjiro-1867-taisei",
+      "personId": "manjiro",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1869-hakodate",
+      "displayName": "中浜万次郎",
+      "role": "航海術・英語を伝える教育者",
+      "factionId": "medicine-learning",
+      "stance": "幕末から明治にかけて教育に携わる。勤務先と任命日の細部は確認中。",
+      "importance": "政権への所属を断定せず教育活動からたどる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_manjiro",
+          "tosashimizu_manjiro"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "所属を推定せず活動分野に分類。1869年の開成学校就任を箱館戦争終結時の現職とは断定しない。"
+      }
     }
   ]
 }

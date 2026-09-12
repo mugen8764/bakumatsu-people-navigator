@@ -168,6 +168,62 @@
         "reviewStatus": "verified",
         "note": "国立公文書館と函館市の解説で鳥羽・伏見から東北・箱館までの旧幕府側勢力を確認。"
       }
+    },
+    {
+      "id": "saga",
+      "name": "佐賀藩",
+      "shortName": "佐",
+      "color": "#476779",
+      "summary": "鍋島家の藩。直正のもとで財政改革、洋学・医療教育、軍備整備を進めた。",
+      "aliases": [
+        "佐賀",
+        "肥前藩"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_nabeshima",
+          "saga_nabeshima"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "nagaoka",
+      "name": "長岡藩",
+      "shortName": "長岡",
+      "color": "#715274",
+      "summary": "越後の藩。河井継之助らの改革と近代武装を経て、戊辰戦争では中立交渉から抗戦へ移った。",
+      "aliases": [
+        "長岡",
+        "越後長岡藩"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "nagaoka_kawai"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "medicine-learning",
+      "name": "医療・学問",
+      "shortName": "学",
+      "color": "#566c60",
+      "summary": "医療・語学・航海術などの活動から人物を探すための分野。共通の政治方針を持つ組織や藩への所属を表すものではない。",
+      "aliases": [
+        "医療",
+        "医学",
+        "学問",
+        "教育"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_ine",
+          "ndl_manjiro"
+        ],
+        "reviewStatus": "verified"
+      },
+      "kind": "field"
     }
   ],
   "states": [
@@ -1131,6 +1187,138 @@
         "sourceIds": ["yamaguchi_omura_1869"],
         "reviewStatus": "verified",
         "note": "山口市の大村益次郎関係資料解説で明治2年の兵部大輔就任と陸海軍制度改革を確認。"
+      }
+    },
+    {
+      "id": "faction-state-saga-1853-blackships",
+      "factionId": "saga",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1860-sakurada",
+      "goal": "財政と教育・技術の基盤を整える。",
+      "position": "長崎警備と西洋技術の導入。鍋島直正のもとで、教育・技術・軍備を整える。",
+      "evidence": {
+        "sourceIds": [
+          "saga_nabeshima"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "faction-state-saga-1862-bunkyu",
+      "factionId": "saga",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1867-taisei",
+      "goal": "財政と教育・技術の基盤を整える。",
+      "position": "長崎警備と西洋技術の導入。藩主直正は1861年に隠居し、閑叟と号する。",
+      "evidence": {
+        "sourceIds": [
+          "saga_nabeshima"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "faction-state-saga-1868-toba",
+      "factionId": "saga",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1869-hakodate",
+      "goal": "蓄積した軍事力と人材で維新に参加する。",
+      "position": "新政府側に参加。佐賀で育まれた技術と人材が維新期の活動を支える。",
+      "evidence": {
+        "sourceIds": [
+          "saga_nabeshima"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "faction-state-nagaoka-1865-choshu",
+      "factionId": "nagaoka",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1867-taisei",
+      "goal": "財政・流通を改め、軍備を整える。",
+      "position": "河井継之助らが藩政改革を進める。",
+      "evidence": {
+        "sourceIds": [
+          "nagaoka_kawai",
+          "nagaoka_kawai_reform"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "faction-state-nagaoka-1868-toba",
+      "factionId": "nagaoka",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "goal": "藩の財政と軍備を支える。",
+      "position": "河井継之助らが改革を担う。戊辰戦争開始時の方針の細部は確認中。",
+      "evidence": {
+        "sourceIds": [
+          "nagaoka_kawai",
+          "nagaoka_kawai_reform"
+        ],
+        "reviewStatus": "needs_review"
+      }
+    },
+    {
+      "id": "faction-state-nagaoka-1868-edo",
+      "factionId": "nagaoka",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "goal": "新政府軍との戦闘を避ける道を探る。",
+      "position": "河井継之助が中立を求めるが、小千谷での交渉は成立しなかった。",
+      "evidence": {
+        "sourceIds": [
+          "nagaoka_kawai",
+          "nagaoka_kawai_reform"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "faction-state-nagaoka-1868-tohoku",
+      "factionId": "nagaoka",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "goal": "北越で新政府軍と戦う。",
+      "position": "長岡城の攻防を経て退却。河井継之助は負傷後に死去し、藩も降伏へ至る。",
+      "evidence": {
+        "sourceIds": [
+          "nagaoka_kawai",
+          "nagaoka_kawai_reform"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "faction-state-medicine-learning-1854-treaty",
+      "factionId": "medicine-learning",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1866-expedition",
+      "goal": "蘭方医学を学び、診療に携わる人物を掲載。",
+      "position": "楠本イネの医学の学習と診療を、人物の活動としてたどる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_ine",
+          "seiyo_ine_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "faction-state-medicine-learning-1867-taisei",
+      "factionId": "medicine-learning",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1869-hakodate",
+      "goal": "医療と、語学・航海術の教育に携わる人物を掲載。",
+      "position": "楠本イネや中浜万次郎の活動を、それぞれの人物から確認する。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_ine",
+          "ndl_manjiro"
+        ],
+        "reviewStatus": "verified"
       }
     }
   ]

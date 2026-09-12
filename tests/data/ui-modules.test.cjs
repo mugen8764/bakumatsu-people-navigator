@@ -18,7 +18,7 @@ test('search normalization and aliases retain current behavior', () => {
   assert.equal(normalise(' 桂・小 五郎 '), '桂小五郎');
   assert.equal(searchAll(data, '桂小五郎')[0].id, 'kido');
   assert.equal(searchAll(data, '木戸孝允').find(result => result.id === 'kido').title, '木戸孝允');
-  assert.equal(searchAll(data, '大政奉還').find(result => result.type === '事件').id, 'taisei');
+  assert.equal(searchAll(data, '大政奉還').find(result => result.type === '事件').id, 'taisei-hokan');
   assert.deepEqual([...new Set(searchAll(data, '幕府').map(result => result.type))], ['人物', '勢力', '事件']);
   assert.equal(searchAll(data, '').length, 0);
 });

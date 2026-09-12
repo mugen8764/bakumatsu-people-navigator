@@ -1331,6 +1331,87 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-relation-oguri-roches-1865-choshu-political-cooperation",
+      "aPersonId": "oguri",
+      "bPersonId": "roches",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1867-taisei",
+      "typeId": "political-cooperation",
+      "label": "製鉄所建設の協力",
+      "text": "小栗が起案した横須賀製鉄所の建設で、幕府はロッシュにフランスの技術支援を求めた。",
+      "evidence": {
+        "sourceIds": [
+          "mof_yokosuka"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-yamamoto-kakuma-yae-1868-tohoku-kinship",
+      "aPersonId": "yamamoto-kakuma",
+      "bPersonId": "yae",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1869-hakodate",
+      "typeId": "kinship",
+      "label": "兄と妹",
+      "text": "覚馬と八重は兄妹。会津戦争時には、八重は若松城、覚馬は京都という異なる場所にいた。",
+      "evidence": {
+        "sourceIds": [
+          "doshisha_yae",
+          "doshisha_yamamoto_kakuma"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-abe-manjiro-1853-blackships-appointment",
+      "aPersonId": "abe",
+      "bPersonId": "manjiro",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1854-treaty",
+      "typeId": "appointment",
+      "label": "幕府へ召喚",
+      "text": "阿部正弘が1853年に万次郎を召し出し、万次郎は幕府直参となった。",
+      "evidence": {
+        "sourceIds": [
+          "tosashimizu_manjiro"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-katsu-manjiro-1860-sakurada-organization",
+      "aPersonId": "katsu",
+      "bPersonId": "manjiro",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "typeId": "organization",
+      "label": "咸臨丸で渡米",
+      "text": "1860年、勝海舟と中浜万次郎は咸臨丸に乗り、万次郎は通訳を担当した。",
+      "evidence": {
+        "sourceIds": [
+          "tosashimizu_manjiro"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-goto-manjiro-1866-satcho-political-cooperation",
+      "aPersonId": "goto",
+      "bPersonId": "manjiro",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-expedition",
+      "typeId": "political-cooperation",
+      "label": "土佐の開成館と海外調達",
+      "text": "万次郎は土佐の開成館設立に関わり、後藤象二郎と上海での藩船購入にも携わった。",
+      "evidence": {
+        "sourceIds": [
+          "tosashimizu_manjiro"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ],
   "factionRelations": [
@@ -1637,6 +1718,22 @@
         ],
         "reviewStatus": "verified",
         "note": "高知県とアジア歴史資料センターで板垣・土佐藩兵の戊辰戦争参加、国立国会図書館とアジア歴史資料センターで後藤・板垣の新政府参与を確認。"
+      }
+    },
+    {
+      "id": "faction-relation-nagaoka-new-government-1868-tohoku",
+      "aFactionId": "nagaoka",
+      "bFactionId": "new-government",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "label": "北越戦争",
+      "text": "中立を求めた交渉の後、長岡藩は新政府軍と戦った。長岡城の攻防を経て降伏する。",
+      "evidence": {
+        "sourceIds": [
+          "nagaoka_kawai",
+          "nagaoka_kawai_reform"
+        ],
+        "reviewStatus": "verified"
       }
     }
   ]

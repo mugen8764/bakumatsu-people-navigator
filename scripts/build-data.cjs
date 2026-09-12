@@ -6,6 +6,31 @@ const { validateCurrentData, validateV2Documents } = require('./validate-data.cj
 
 const root = path.resolve(__dirname, '..');
 
+// Repeated scene states and evidence share their serialized text, then regain
+// independent objects. The public BM_DATA shape and data.json stay unchanged.
+function browserWrapper(data) {
+  const unique = [];
+  const indexes = new Map();
+  const evidence = [];
+  const evidenceIndexes = new Map();
+  function packEvidence(key, value) {
+    if (key !== 'evidence') return value;
+    const text = JSON.stringify(value);
+    if (!evidenceIndexes.has(text)) { evidenceIndexes.set(text, evidence.length); evidence.push(value); }
+    return evidenceIndexes.get(text);
+  }
+  const states = Object.fromEntries(Object.entries(data.factionStates).map(([scene, factions]) => [
+    scene, Object.fromEntries(Object.entries(factions).map(([name, state]) => {
+      const text = JSON.stringify(state);
+      if (!indexes.has(text)) { indexes.set(text, unique.length); unique.push(state); }
+      return [name, indexes.get(text)];
+    }))
+  ]));
+  const packedData = JSON.stringify({ ...data, factionStates: states }, packEvidence);
+  const packedStates = JSON.stringify(unique, packEvidence);
+  return `window.BM_DATA=(()=>{const d=${packedData},s=${packedStates},e=${JSON.stringify(evidence)},copy=v=>JSON.parse(JSON.stringify(v));for(const f of Object.values(d.factionStates))for(const n of Object.keys(f))f[n]=copy(s[f[n]]);function restore(v){if(v&&typeof v==="object")for(const k of Object.keys(v))if(k==="evidence")v[k]=copy(e[v[k]]);else restore(v[k])}restore(d);return d})();\n`;
+}
+
 function expectedOutputs() {
   const documents = loadV2Documents(root);
   validateV2Documents(documents);
@@ -13,7 +38,7 @@ function expectedOutputs() {
   validateCurrentData(legacyData);
   return {
     'data.json': JSON.stringify(legacyData, null, 2),
-    'data.js': `window.BM_DATA=${JSON.stringify(legacyData)};\n`
+    'data.js': browserWrapper(legacyData)
   };
 }
 
@@ -39,4 +64,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { checkOutputs, expectedOutputs };
+module.exports = { browserWrapper, checkOutputs, expectedOutputs };

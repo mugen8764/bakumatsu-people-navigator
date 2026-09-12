@@ -35,6 +35,7 @@ function assembleLegacyData(documents) {
 
   const factions = toObject(documents.factions.factions, faction => ({
     short: faction.shortName,
+    ...(faction.kind ? { kind: faction.kind } : {}),
     color: faction.color,
     summary: faction.summary,
     aliases: [...faction.aliases],

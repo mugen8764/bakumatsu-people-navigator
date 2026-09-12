@@ -103,6 +103,7 @@ function projectLegacyData(data) {
       id: factionId(name),
       name,
       shortName: faction.short,
+      ...(faction.kind ? { kind: faction.kind } : {}),
       color: faction.color,
       summary: faction.summary,
       aliases: [...faction.aliases],

@@ -139,6 +139,7 @@
       "required": ["short", "color", "summary", "aliases", "evidence"],
       "properties": {
         "short": { "$ref": "#/$defs/nonEmptyString" },
+        "kind": { "enum": ["political", "field"] },
         "color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
         "summary": { "$ref": "#/$defs/nonEmptyString" },
         "aliases": { "$ref": "#/$defs/stringList" },

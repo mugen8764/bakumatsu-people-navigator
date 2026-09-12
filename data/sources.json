@@ -1626,6 +1626,158 @@
       "note": "人物略歴と史料肖像。",
       "locator": "人物略歴・肖像1枚目",
       "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "ndl_portrait_oguri",
+      "title": "国立国会図書館「小栗忠順」",
+      "url": "https://www.ndl.go.jp/portrait/datas/248/",
+      "note": "渡米、財政・軍備改革、罷免と処刑、肖像を確認。",
+      "locator": "生没年・別称・解説・肖像",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "yamaguchi_mori",
+      "title": "山口県立山口図書館「毛利敬親」",
+      "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/mouri_takachika/",
+      "note": "藩主就任、財政改革、禁門の変後の謹慎、版籍奉還と隠居を確認。",
+      "locator": "人物紹介",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "yamahaku_mori_name",
+      "title": "山口県立山口博物館「奇兵隊の軍服と袖印」",
+      "url": "https://www.yamahaku.pref.yamaguchi.lg.jp/pdf/kenkyuhoukoku/44-41-60.pdf",
+      "note": "毛利慶親が1864年11月4日に敬親へ改名した日付を確認。",
+      "locator": "研究報告44号（2018年）56頁（8）元森熊次郎書簡",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "doshisha_yae",
+      "title": "同志社大学「新島八重」",
+      "url": "https://www.doshisha.ac.jp/information/neesima/yae/index.html",
+      "note": "兄覚馬との関係と会津籠城を確認。離縁時期は本文と年表で説明が異なるため日付を確定しない。",
+      "locator": "生涯／八重のあゆみ 1845・1865・1868・1871・1876年",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "ndl_portrait_yae",
+      "title": "国立国会図書館「新島八重」",
+      "url": "https://www.ndl.go.jp/portrait/datas/6038/",
+      "note": "生没年、山本姓、会津籠城、肖像を確認。",
+      "locator": "生没年・別称・解説・肖像",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "ndl_nabeshima",
+      "title": "国立国会図書館「鍋島直正」",
+      "url": "https://www.ndl.go.jp/portrait/datas/154/",
+      "note": "佐賀藩主、洋式大砲、公武合体への関与を確認。生年月日は西暦換算で1815年、旧暦で1814年。",
+      "locator": "生没年・別称・解説",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "saga_nabeshima",
+      "title": "佐賀市観光協会「鍋島直正」",
+      "url": "https://www.sagabai.com/main.php/3767.html",
+      "note": "藩政改革、洋学・医療教育、軍備、1861年の隠居と閑叟の号を確認。",
+      "locator": "あらゆる方面へ及ぶ藩政改革／最先端の軍事技術で明治維新へ／年表／敵か？味方か？",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "nagaoka_kawai",
+      "title": "長岡市「河井継之助の足跡」",
+      "url": "https://www.city.nagaoka.niigata.jp/kankou/rekishi/ijin/jinbutu6.html",
+      "note": "生没年、藩政改革、中立交渉後の抗戦、長岡城奪還と死去を確認。",
+      "locator": "河井継之助の足跡 本文",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "nagaoka_kawai_reform",
+      "title": "長岡観光ナビ「河井継之助の叶わぬ夢」",
+      "url": "https://nagaoka-navi.or.jp/feature/samurai/kawai",
+      "note": "1865年の郡奉行就任、小千谷会談、北越の戦い、1868年8月16日の死去を確認。推測された動機や台詞は採用しない。",
+      "locator": "小千谷会談／次々と改革に着手する継之助／長岡の発展を夢み",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "embassy_roches",
+      "title": "在フランス日本国大使館「第二代駐日フランス全権公使・レオン・ロッシュ」",
+      "url": "https://www.fr.emb-japan.go.jp/files/100479000.pdf",
+      "note": "1864年の着任と幕府への技術・軍事支援を確認。",
+      "locator": "1頁 1864年着任／横須賀・横浜・軍事顧問団",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "mof_roches_departure",
+      "title": "財務省 ファイナンス2019年1月号「ロシュ第2代駐日フランス公使」",
+      "url": "https://www.mof.go.jp/public_relations/finance/denshi/201901/pageindices/index24.html",
+      "note": "1864年着任、幕府支援と1868年6月の帰国を確認。",
+      "locator": "19頁 ロシュ第2代駐日フランス公使の墓地探し",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "mof_yokosuka",
+      "title": "財務省「路線価でひもとく街の歴史 第48回 神奈川県横須賀市」",
+      "url": "https://www.mof.go.jp/public_relations/finance/202402/202402r.html",
+      "note": "小栗の起案、ロッシュへの支援依頼、1865年の横須賀製鉄所起工を確認。",
+      "locator": "幕府が遺した産業遺産「横須賀造船所」",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "ndl_portrait_ine",
+      "title": "国立国会図書館「楠本イネ」",
+      "url": "https://www.ndl.go.jp/portrait/datas/6229/",
+      "note": "蘭方産科医としての経歴、師、1861年の長崎での診療と受講、別称、肖像を確認。",
+      "locator": "生没年・別称・解説・肖像",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "seiyo_ine_timeline",
+      "title": "西予市「楠本イネの生涯について」",
+      "url": "https://www.city.seiyo.ehime.jp/material/files/group/7/ine.pdf",
+      "note": "1854〜57年の学習、長崎帰郷、伊篤への改名、1866年の産科学習を確認。幼少期の修学年は後年の市の調査と異なるため採用しない。",
+      "locator": "2頁 1854〜57年／1858〜59年／1864年／1866年",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "nagasaki_ine_practice",
+      "title": "長崎市「ナガジン 楠本イネ開業地跡」",
+      "url": "https://www.city.nagasaki.lg.jp/nagazine/hakken0509/index1.html",
+      "note": "1859年の長崎帰郷と開業を確認。",
+      "locator": "楠本イネ開業地跡 MAP7",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "tosashimizu_manjiro",
+      "title": "土佐清水市「ジョン万次郎の歴史」",
+      "url": "https://www.city.tosashimizu.kochi.jp/kanko/g01_jyonman03.html",
+      "note": "1853年の幕府召喚、航海教育、咸臨丸、薩摩の開成所を確認。年表の年欄と本文にずれがある箇所は断定しない。",
+      "locator": "1853・1855〜57・1860・1861・1866・1869年",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "ndl_manjiro",
+      "title": "国立国会図書館「中浜万次郎」",
+      "url": "https://www.ndl.go.jp/portrait/datas/6123/",
+      "note": "生没年、漂流と渡米、帰国、通訳・教育の経歴を確認。",
+      "locator": "生没年・別称・解説",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "kyoto_taisei_process",
+      "title": "京都市「大政奉還150周年記念 幕末維新スタンプラリー」",
+      "url": "https://www.city.kyoto.lg.jp/bunshi/cmsfiles/contents/0000233/233968/zennkokurarry.pdf",
+      "note": "土佐の建白、慶喜の上表と勅許の順序を確認。船中八策の成立経緯は断定しない。",
+      "locator": "14〜16頁 船中八策／大政奉還／龍馬死す",
+      "contentCheckedAt": "2026-09-12"
+    },
+    {
+      "id": "tsurugajo_siege",
+      "title": "若松城管理事務所「幕末・戊辰戦争」",
+      "url": "https://www.tsurugajo.com/tsurugajo/aizu-history/bakumatsu/",
+      "note": "1868年8月23日の城下侵入、籠城、9月22日の容保の降伏を確認。略年表の禁門の変の年の誤記は採用しない。",
+      "locator": "会津の悲劇／一ヶ月に及ぶ籠城",
+      "contentCheckedAt": "2026-09-12"
     }
   ]
 }

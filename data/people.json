@@ -1790,6 +1790,280 @@
         "chokkyo",
         "tsuji"
       ]
+    },
+    {
+      "id": "oguri",
+      "name": "小栗忠順",
+      "kana": "おぐり ただまさ",
+      "aliases": [
+        "小栗上野介",
+        "小栗豊後介",
+        "小栗又一"
+      ],
+      "lifespan": "1827–1868",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1860-sakurada",
+      "activeEndSceneId": "1868-edo",
+      "oneLine": "渡米の経験をもとに、幕府の財政・軍備改革と横須賀製鉄所の建設を担った。",
+      "placeIds": [
+        "edo"
+      ],
+      "eventIds": [],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_oguri",
+          "mof_yokosuka"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "kaiko"
+      ],
+      "portrait": {
+        "src": "assets/portraits/oguri-ndl.jpg",
+        "alt": "小栗忠順の史料肖像",
+        "sourceId": "ndl_portrait_oguri",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が小栗忠順の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
+      }
+    },
+    {
+      "id": "mori-takachika",
+      "name": "毛利敬親",
+      "kana": "もうり たかちか",
+      "aliases": [
+        "毛利慶親"
+      ],
+      "lifespan": "1819–1871",
+      "defaultFactionId": "choshu",
+      "activeStartSceneId": "1853-blackships",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "長州藩主として財政改革に取り組み、禁門の変後の処分と藩の転換期を経験した。",
+      "placeIds": [
+        "hagi",
+        "yamaguchi"
+      ],
+      "eventIds": [
+        "kinmon"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_mori",
+          "yamahaku_mori_name"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": []
+    },
+    {
+      "id": "yae",
+      "name": "新島八重",
+      "kana": "にいじま やえ",
+      "aliases": [
+        "山本八重",
+        "川崎八重",
+        "八重",
+        "新島八重子"
+      ],
+      "lifespan": "1845–1932",
+      "defaultFactionId": "aizu",
+      "activeStartSceneId": "1868-tohoku",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "山本覚馬の妹。会津戦争では若松城に籠もり、銃を手に戦った。新島姓は1876年の結婚後。",
+      "placeIds": [
+        "aizu"
+      ],
+      "eventIds": [
+        "tohoku"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_yae",
+          "doshisha_yae"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [],
+      "portrait": {
+        "src": "assets/portraits/yae-ndl.jpg",
+        "alt": "新島八重の史料肖像",
+        "sourceId": "ndl_portrait_yae",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が新島八重の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
+      }
+    },
+    {
+      "id": "nabeshima",
+      "name": "鍋島直正",
+      "kana": "なべしま なおまさ",
+      "aliases": [
+        "鍋島閑叟",
+        "閑叟"
+      ],
+      "lifespan": "1815–1871（旧暦1814年生）",
+      "defaultFactionId": "saga",
+      "activeStartSceneId": "1853-blackships",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "佐賀藩の財政、洋学・医療教育、軍備を整えた藩主。1861年に隠居して閑叟と号した。",
+      "placeIds": [
+        "saga",
+        "nagasaki"
+      ],
+      "eventIds": [],
+      "evidence": {
+        "sourceIds": [
+          "ndl_nabeshima",
+          "saga_nabeshima"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "rangaku",
+        "kobugattai"
+      ]
+    },
+    {
+      "id": "kawai-tsuginosuke",
+      "name": "河井継之助",
+      "kana": "かわい つぎのすけ",
+      "aliases": [],
+      "lifespan": "1827–1868",
+      "defaultFactionId": "nagaoka",
+      "activeStartSceneId": "1865-choshu",
+      "activeEndSceneId": "1868-tohoku",
+      "oneLine": "長岡藩の改革と軍備を担った。戊辰戦争では中立を求めた交渉の後、新政府軍と戦った。",
+      "placeIds": [
+        "nagaoka",
+        "nagasaki"
+      ],
+      "eventIds": [
+        "tohoku"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "nagaoka_kawai",
+          "nagaoka_kawai_reform"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": []
+    },
+    {
+      "id": "roches",
+      "name": "レオン・ロッシュ",
+      "kana": "れおん ろっしゅ",
+      "aliases": [
+        "ロッシュ",
+        "ロシュ",
+        "レオン・ロシュ",
+        "Léon Roches"
+      ],
+      "lifespan": "1809–1900",
+      "defaultFactionId": "foreign-powers",
+      "activeStartSceneId": "1864-kinmon",
+      "activeEndSceneId": "1868-edo",
+      "oneLine": "駐日フランス公使。幕府の依頼で技術者や軍事顧問団の派遣を支えた。",
+      "placeIds": [
+        "edo",
+        "yokohama"
+      ],
+      "eventIds": [
+        "kinmon"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "embassy_roches",
+          "mof_roches_departure"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "kaiko"
+      ]
+    },
+    {
+      "id": "ine",
+      "name": "楠本イネ",
+      "kana": "くすもと いね",
+      "aliases": [
+        "おイネ",
+        "楠本伊篤",
+        "伊篤"
+      ],
+      "lifespan": "1827–1903",
+      "defaultFactionId": "medicine-learning",
+      "activeStartSceneId": "1854-treaty",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "二宮敬作らに医学を学び、長崎で蘭方産科の診療にあたった。藩や外交組織への所属ではなく、医療の活動からたどる。",
+      "placeIds": [
+        "nagasaki"
+      ],
+      "eventIds": [],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_ine",
+          "seiyo_ine_timeline",
+          "nagasaki_ine_practice"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "rangaku"
+      ],
+      "portrait": {
+        "src": "assets/portraits/ine-ndl.jpg",
+        "alt": "楠本イネの史料肖像",
+        "sourceId": "ndl_portrait_ine",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が楠本イネの肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-12"
+      }
+    },
+    {
+      "id": "manjiro",
+      "name": "中浜万次郎",
+      "kana": "なかはま まんじろう",
+      "aliases": [
+        "ジョン万次郎",
+        "万次郎",
+        "John Mung"
+      ],
+      "lifespan": "1827–1898",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1853-blackships",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "漂流後に米国で学んだ経験を生かし、通訳、航海術の教育、海外渡航に携わった。",
+      "placeIds": [
+        "edo",
+        "kochi",
+        "hakodate",
+        "kagoshima"
+      ],
+      "eventIds": [],
+      "evidence": {
+        "sourceIds": [
+          "ndl_manjiro",
+          "tosashimizu_manjiro"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "tsuji"
+      ]
     }
   ]
 }

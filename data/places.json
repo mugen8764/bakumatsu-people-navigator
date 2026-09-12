@@ -324,6 +324,36 @@
         "reviewStatus": "verified",
         "note": "表示用概略座標と長州五傑の英国留学を確認。"
       }
+    },
+    {
+      "id": "saga",
+      "name": "佐賀",
+      "longitude": 130.303,
+      "latitude": 33.245,
+      "note": "鍋島家の佐賀藩の本拠。財政・洋学・医療教育・軍備整備を進めた。",
+      "evidence": {
+        "sourceIds": [
+          "gsi_maps_coordinates",
+          "saga_nabeshima"
+        ],
+        "reviewStatus": "verified",
+        "note": "地理院地図住所検索の佐賀城公園・新潟県長岡市で表示用概略座標を確認。"
+      }
+    },
+    {
+      "id": "nagaoka",
+      "name": "長岡",
+      "longitude": 138.851,
+      "latitude": 37.447,
+      "note": "長岡藩の本拠。1868年の北越戦争で城下が戦場となった。",
+      "evidence": {
+        "sourceIds": [
+          "gsi_maps_coordinates",
+          "nagaoka_kawai"
+        ],
+        "reviewStatus": "verified",
+        "note": "地理院地図住所検索の佐賀城公園・新潟県長岡市で表示用概略座標を確認。"
+      }
     }
   ]
 }

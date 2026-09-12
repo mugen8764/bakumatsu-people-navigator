@@ -773,7 +773,9 @@
         "kusaka",
         "takasugi",
         "omura",
-        "yoshida-toshimaro"
+        "yoshida-toshimaro",
+        "mori-takachika",
+        "roches"
       ],
       "factionIds": [
         "shinsengumi",
@@ -793,7 +795,9 @@
         "sourceIds": [
           "archives_timeline",
           "yamaguchi_library_kinmon",
-          "yamaguchi_yoshida_toshimaro"
+          "yamaguchi_yoshida_toshimaro",
+          "yamaguchi_mori",
+          "mof_roches_departure"
         ],
         "reviewStatus": "verified"
       }
@@ -1129,24 +1133,30 @@
         "kuroda",
         "saigo",
         "hijikata",
-        "enomoto"
+        "enomoto",
+        "yae",
+        "kawai-tsuginosuke"
       ],
       "factionIds": [
         "new-government",
         "former-bakufu",
-        "aizu"
+        "aizu",
+        "nagaoka"
       ],
       "placeIds": [
         "aizu",
         "sendai",
         "niigata",
-        "edo"
+        "edo",
+        "nagaoka"
       ],
       "evidence": {
         "sourceIds": [
           "jacar_dictionary",
           "ndl_handwriting",
-          "akita_ouu_alliance"
+          "akita_ouu_alliance",
+          "doshisha_yae",
+          "nagaoka_kawai"
         ],
         "reviewStatus": "verified"
       }
@@ -1598,6 +1608,267 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "taisei-hokan",
+      "sceneId": "1867-taisei",
+      "title": "大政奉還の上表",
+      "date": "1867年10月14日（旧暦）上表、翌15日に勅許",
+      "summary": "土佐藩の建白を受け、徳川慶喜は政権を朝廷に返すことを上表した。新しい政治の担い手をめぐる争いは、その後も続く。",
+      "stakes": "土佐側の働きかけ、将軍の決定、朝廷の受け入れを分けて読む。",
+      "turningPoint": "政権返上は認められたが、12月の王政復古は別の政変。大政奉還の日に新政府が完成したわけではない。",
+      "scope": "10月の建白から勅許までを中心に、事前の構想を背景として掲載。龍馬を上表の使者や二条城の会議出席者としては扱わない。",
+      "termIds": [
+        "kobugattai",
+        "chokkyo"
+      ],
+      "placeIds": [
+        "kyoto",
+        "kochi"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kyoto_taisei_process",
+          "ndl_ryoma_political_plan"
+        ],
+        "reviewStatus": "verified"
+      },
+      "participants": [
+        {
+          "personId": "yoshinobu",
+          "displayName": "徳川慶喜",
+          "role": "政権返上を決定・上表",
+          "involvement": "decision",
+          "side": "幕府",
+          "summary": "土佐藩の建白を受け入れ、10月14日に大政奉還を上表した。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_taisei_process"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "yodo",
+          "displayName": "山内容堂",
+          "role": "土佐藩の建白を支える",
+          "involvement": "decision",
+          "side": "土佐側",
+          "summary": "後藤象二郎の進言を受け、署名した建白書が幕府へ提出された。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_taisei_process",
+              "ndl_ryoma_political_plan"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "goto",
+          "displayName": "後藤象二郎",
+          "role": "建白書の提出に関わる",
+          "involvement": "onsite",
+          "side": "土佐側",
+          "summary": "10月3日、容堂の署名した建白書を老中板倉勝静に提出した。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_taisei_process"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "ryoma",
+          "displayName": "坂本龍馬",
+          "role": "大政奉還と政体構想を推進",
+          "involvement": "context",
+          "side": "土佐出身",
+          "summary": "後藤とともに大政奉還を進めた。ここでは事前の構想に関わる人物として示す。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_tosa_bakumatsu",
+              "ndl_ryoma_political_plan"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "taisei-goto-yodo",
+          "aPersonId": "goto",
+          "bPersonId": "yodo",
+          "label": "大政奉還を進言",
+          "description": "後藤は6月に容堂へ大政奉還を進言。10月の土佐藩の建白へつながった。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "ndl_ryoma_political_plan"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "taisei-yodo-yoshinobu",
+          "aPersonId": "yodo",
+          "bPersonId": "yoshinobu",
+          "label": "建白と受け入れ",
+          "description": "容堂の署名した建白を幕府へ届け、慶喜が大政奉還を決断した。本人同士の直接会談を表す線ではない。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_taisei_process"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "taisei-ryoma-goto",
+          "aPersonId": "ryoma",
+          "bPersonId": "goto",
+          "label": "構想を推進",
+          "description": "龍馬と後藤は大政奉還を進めた。船中八策の成立経緯や伏字の人物は確定しない。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "kochi_tosa_bakumatsu",
+              "ndl_ryoma_political_plan"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aizu-siege",
+      "sceneId": "1868-tohoku",
+      "title": "会津戦争・若松城の籠城",
+      "date": "1868年8月23日〜9月22日（旧暦）を中心に",
+      "summary": "新政府軍が若松城下へ入り、城では約1か月の籠城戦となった。銃を手に戦った八重、降伏を決断した容保、攻撃側の指揮者を区別する。",
+      "stakes": "戦争は指導者だけでなく、城内外の人々の生活にも及んだ。",
+      "turningPoint": "砲撃と籠城の末、9月22日に容保は降伏を決断した。",
+      "scope": "若松城の籠城が中心。北越戦争を前段として示し、京都にいた覚馬や、籠城前に亡くなった河井を城内の参加者と混同しない。",
+      "termIds": [
+        "kyoto-shugoshoku"
+      ],
+      "placeIds": [
+        "aizu",
+        "nagaoka"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "tsurugajo_siege",
+          "doshisha_yae",
+          "kochi_tosa_bakumatsu",
+          "nagaoka_kawai_reform"
+        ],
+        "reviewStatus": "verified"
+      },
+      "participants": [
+        {
+          "personId": "yae",
+          "displayName": "八重",
+          "role": "銃を持って籠城",
+          "involvement": "onsite",
+          "side": "籠城側",
+          "summary": "8月23日に入城し、銃を手に戦った。戦後の新島姓ではなく八重と表示する。",
+          "evidence": {
+            "sourceIds": [
+              "doshisha_yae"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "katamori",
+          "displayName": "松平容保",
+          "role": "籠城し、降伏を決断",
+          "involvement": "decision",
+          "side": "籠城側",
+          "summary": "約1か月の籠城と砲撃の末、9月22日に降伏した。",
+          "evidence": {
+            "sourceIds": [
+              "tsurugajo_siege"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "itakagi",
+          "displayName": "板垣退助",
+          "role": "土佐藩兵を率いて攻略",
+          "involvement": "decision",
+          "side": "新政府軍側",
+          "summary": "新政府側で土佐藩兵を率い、若松城の攻略にあたった。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_tosa_bakumatsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "yamamoto-kakuma",
+          "displayName": "山本覚馬",
+          "role": "京都にいた八重の兄",
+          "involvement": "context",
+          "side": "京都",
+          "summary": "薩摩藩に捕らえられ、京都で建白「管見」をまとめた。若松城内の指揮者ではない。",
+          "evidence": {
+            "sourceIds": [
+              "doshisha_yamamoto_kakuma"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "kawai-tsuginosuke",
+          "displayName": "河井継之助",
+          "role": "前段の北越戦争を指揮",
+          "involvement": "context",
+          "side": "北越からの退却",
+          "summary": "長岡で負傷し、会津領への退却後に8月16日死去。若松城の籠城が始まる前の人物として示す。",
+          "evidence": {
+            "sourceIds": [
+              "nagaoka_kawai",
+              "nagaoka_kawai_reform"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "aizu-brother-sister",
+          "aPersonId": "yamamoto-kakuma",
+          "bPersonId": "yae",
+          "label": "別の場所にいた兄妹",
+          "description": "覚馬は京都、八重は会津の籠城にいた。親族関係の線で、戦場での指揮関係ではない。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "doshisha_yae",
+              "doshisha_yamamoto_kakuma"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "aizu-opposing-sides",
+          "aPersonId": "katamori",
+          "bPersonId": "itakagi",
+          "label": "籠城側と攻略側",
+          "description": "容保が籠城した若松城の攻略に、板垣率いる土佐藩兵が参加した。個人同士の直接対決を示す線ではない。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "tsurugajo_siege",
+              "kochi_tosa_bakumatsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     }
   ],
   "terms": [

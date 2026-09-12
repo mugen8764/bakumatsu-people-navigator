@@ -17,6 +17,7 @@
           "id": { "$ref": "definitions.schema.json#/$defs/stableId" },
           "name": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
           "shortName": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
+          "kind": { "enum": ["political", "field"] },
           "color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
           "summary": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
           "aliases": { "$ref": "definitions.schema.json#/$defs/stringList" },
