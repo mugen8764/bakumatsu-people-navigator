@@ -205,6 +205,31 @@ test('browser back and forward revisit deliberate person and view selections', c
   await expect(page.locator('#personDetail .detail-title')).toHaveText('桂小五郎');
 });
 
+test('one history traversal redraws the page only once', async ({ page }) => {
+  await page.goto('/');
+  await page.evaluate(() => {
+    window.__redraws = 0;
+    new MutationObserver(() => { window.__redraws += 1; })
+      .observe(document.querySelector('#sceneChangeGroups'), { childList: true });
+  });
+
+  await page.locator('#nextScene').click();
+  await expect(page.locator('#sceneSelect')).toHaveValue('1');
+  await expect.poll(() => page.evaluate(() => window.__redraws)).toBe(1);
+
+  await page.goBack();
+  await expect(page.locator('#sceneSelect')).toHaveValue('0');
+  await page.waitForTimeout(200);
+  expect(await page.evaluate(() => window.__redraws)).toBe(2);
+
+  await page.evaluate(() => {
+    location.hash = 'scene=1867-taisei&view=people&person=kido&faction=長州藩';
+  });
+  await expect(page.locator('#sceneSelect')).toHaveValue('11');
+  await page.waitForTimeout(200);
+  expect(await page.evaluate(() => window.__redraws)).toBe(3);
+});
+
 test('person filters follow displayed affiliations and later-name labels follow chronology', async ({ page }) => {
   await page.goto('/#scene=1853-blackships&view=people&person=perry&faction=幕府');
 

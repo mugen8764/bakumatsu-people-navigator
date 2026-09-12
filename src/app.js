@@ -77,6 +77,8 @@
     renderers[state.view]();
   }
 
+  let appliedLocation = '';
+
   function renderAll(options = {}) {
     clearCopyStatuses();
     window.BM_STATE.ensureSelections(state, data, domain);
@@ -84,6 +86,7 @@
     sceneRenderer.renderTabs();
     renderActiveView();
     window.BM_ROUTER.writeRoute(state, scene(), environment, options);
+    appliedLocation = window.location.href;
     requestAnimationFrame(revealActiveTab);
   }
 
@@ -136,6 +139,7 @@
 
   function syncRoute(historyMode = 'replace') {
     window.BM_ROUTER.writeRoute(state, scene(), environment, { historyMode });
+    appliedLocation = window.location.href;
   }
 
   Object.assign(actions, { openEvent, revealPersonDetail, selectFaction, selectPerson, setScene, setView, syncRoute });
@@ -266,6 +270,8 @@
   $('#brandMarkHome').addEventListener('click', resetApp);
   $('#brandTitleHome').addEventListener('click', resetApp);
   function syncRouteFromLocation() {
+    // One history traversal fires both popstate and hashchange; render it once.
+    if (window.location.href === appliedLocation) return;
     searchController.clearStatus();
     const route = window.BM_ROUTER.readHashRoute(domain, window.location);
     window.BM_STATE.applyRoute(state, data, route);
