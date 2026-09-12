@@ -7,6 +7,12 @@
 
   const views = new Set(['people', 'factions', 'relations', 'map', 'events', 'sources']);
 
+  // Route values arrive from the URL hash and local storage, so inherited
+  // property names such as 'constructor' must not pass as registered records.
+  function hasEntry(collection, key) {
+    return typeof key === 'string' && Object.hasOwn(collection, key);
+  }
+
   function createState(data, domain, initial = {}) {
     const state = {
       scene: Number.isInteger(initial.scene) ? initial.scene : 0,
@@ -15,7 +21,7 @@
       selectedFaction: initial.selectedFaction || '幕府',
       personFactionFilter: 'すべて',
       relationType: 'all',
-      selectedPlace: data.places[initial.selectedPlace] ? initial.selectedPlace : '',
+      selectedPlace: hasEntry(data.places, initial.selectedPlace) ? initial.selectedPlace : '',
       mapReady: false,
       map: null
     };
@@ -46,7 +52,7 @@
     if (route.view !== undefined && views.has(route.view)) state.view = route.view;
     if (route.selectedPerson !== undefined) state.selectedPerson = route.selectedPerson;
     if (route.selectedFaction !== undefined) state.selectedFaction = route.selectedFaction;
-    if (route.selectedPlace !== undefined) state.selectedPlace = data.places[route.selectedPlace] ? route.selectedPlace : '';
+    if (route.selectedPlace !== undefined) state.selectedPlace = hasEntry(data.places, route.selectedPlace) ? route.selectedPlace : '';
   }
 
   function selectPerson(state, data, domain, id) {
@@ -61,7 +67,7 @@
   }
 
   function selectFaction(state, data, domain, name) {
-    if (!data.factions[name]) return false;
+    if (!hasEntry(data.factions, name)) return false;
     state.scene = domain.nearestSceneForFaction(name, state.scene);
     state.selectedFaction = name;
     const selectedPerson = domain.getPerson(state.selectedPerson);

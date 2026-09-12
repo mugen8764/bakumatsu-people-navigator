@@ -96,6 +96,17 @@ test('person and faction selection transitions stay consistent', () => {
   assert.equal(stateApi.selectFaction(state, data, domain, '存在しない勢力'), false);
 });
 
+test('inherited property names are not accepted as registered records', () => {
+  const state = stateApi.createState(data, domain, { scene: 0, selectedPlace: 'constructor' });
+  assert.equal(state.selectedPlace, '');
+
+  stateApi.applyRoute(state, data, { selectedPlace: 'toString' });
+  assert.equal(state.selectedPlace, '');
+
+  assert.equal(stateApi.selectFaction(state, data, domain, 'toString'), false);
+  assert.equal(stateApi.selectFaction(state, data, domain, 'constructor'), false);
+});
+
 test('route persistence is optional in restricted environments', () => {
   const state = stateApi.createState(data, domain, { scene: 0 });
   assert.doesNotThrow(() => router.writeRoute(state, data.scenes[0], {
