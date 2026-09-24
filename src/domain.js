@@ -44,6 +44,23 @@
       return statusAt(person, sceneIndex)?.faction || person?.defaultFaction;
     }
 
+    // Only authored, sourced comparisons are turning points. Text differences
+    // between status summaries do not establish a historical change.
+    function turningPointAt(person, sceneIndex) {
+      const point = person?.turningPoints?.find(item => item.toSceneId === data.scenes[sceneIndex]?.id);
+      if (!point) return null;
+      const fromScene = sceneById.get(point.fromSceneId);
+      const toScene = sceneById.get(point.toSceneId);
+      if (!fromScene || toScene.index !== fromScene.index + 1) return null;
+      const beforeStatus = statusAt(person, fromScene.index);
+      const afterStatus = statusAt(person, toScene.index);
+      return beforeStatus && afterStatus ? { ...point, fromScene, toScene, beforeStatus, afterStatus } : null;
+    }
+
+    function officeTermsFor(role) {
+      return Object.values(data.terms || {}).filter(term => term.kind === 'office' && role.includes(term.title));
+    }
+
     function activePeople(sceneIndex) {
       return data.people.filter(person => statusAt(person, sceneIndex));
     }
@@ -178,6 +195,8 @@
       nearestSceneForFaction,
       nearestSceneForPerson,
       personFactionNames,
+      officeTermsFor,
+      turningPointAt,
       relationChangesFor,
       relationsFor,
       sceneChangesAt,

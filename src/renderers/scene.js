@@ -136,6 +136,18 @@
         changeGroup('始まった関係', started.length, started, 'started', '新しく始まった主要関係なし'),
         changeGroup('終わった関係', ended.length, ended, 'ended', 'この間に終わった主要関係なし')
       ].join('');
+      const turningPeople = data.people.filter(person => domain.turningPointAt(person, state.scene));
+      if (turningPeople.length) {
+        $('#sceneChangeGroups').insertAdjacentHTML('beforeend', `<div class="scene-turning-links"><span>人物の転換点を比べる</span>${turningPeople.map(person => `<button type="button" class="turning-link" data-turning-person="${esc(person.id)}">${esc(domain.statusAt(person, state.scene).display)} →</button>`).join('')}</div>`);
+        $$('[data-turning-person]').forEach(button => button.addEventListener('click', () => {
+          actions.selectPerson(button.dataset.turningPerson, 'people');
+          requestAnimationFrame(() => {
+            const target = $('#personTurningPoint');
+            target.scrollIntoView({ block: 'start', behavior: 'auto' });
+            target.focus({ preventScroll: true });
+          });
+        }));
+      }
     }
 
     function renderScene() {
