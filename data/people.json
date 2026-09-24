@@ -208,7 +208,24 @@
         "identityNote": "国立国会図書館が徳川慶喜の肖像として掲載。",
         "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
         "checkedAt": "2026-09-12"
-      }
+      },
+      "turningPoints": [
+        {
+          "fromSceneId": "1866-expedition",
+          "toSceneId": "1867-taisei",
+          "title": "将軍就任から、政権返上へ",
+          "before": "第15代将軍に就任し、幕府を率いる。",
+          "after": "土佐藩の建白を受け、朝廷へ政権返上を申し出る。",
+          "context": "1867年10月14日（旧暦）に大政奉還を上表。同年12月の王政復古とは別の出来事。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_yoshinobu_detail",
+              "ndl_taisei_background"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "katsu",
@@ -514,7 +531,23 @@
           "jacar_saigo_detail"
         ],
         "reviewStatus": "verified"
-      }
+      },
+      "turningPoints": [
+        {
+          "fromSceneId": "1864-kinmon",
+          "toSceneId": "1865-choshu",
+          "title": "長州を討つ側から、支える側へ",
+          "before": "第一次長州征討に参加し、長州の謝罪を取り付ける。",
+          "after": "再征への出兵を断り、長州の武器・汽船購入を取り次ぐ。",
+          "context": "征討への協力から長州支援へ転じ、のちの薩長提携につながる。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_tobaku_transition"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "okubo",
@@ -732,7 +765,23 @@
         "identityNote": "国立国会図書館が木戸孝允の肖像として掲載。",
         "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
         "checkedAt": "2026-09-12"
-      }
+      },
+      "turningPoints": [
+        {
+          "fromSceneId": "1864-kinmon",
+          "toSceneId": "1865-choshu",
+          "title": "潜伏から、藩政の立て直しへ",
+          "before": "禁門の変後、京都に潜み、但馬へ逃れる。",
+          "after": "長州へ戻って政務を担い、大村益次郎に軍事改革を任せる。",
+          "context": "幕府との再戦に備える長州で、藩の政治と軍備を立て直す役割へ移った。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_kido_1862"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "takasugi",

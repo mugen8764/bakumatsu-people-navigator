@@ -29,6 +29,7 @@ function createAjv() {
   ajv.addSchema(readJson('schema/incident.schema.json'));
   ajv.addSchema(readJson('schema/portrait.schema.json'));
   ajv.addSchema(readJson('schema/term.schema.json'));
+  ajv.addSchema(readJson('schema/turning-point.schema.json'));
   return ajv;
 }
 
@@ -189,6 +190,20 @@ function validateV2References(documents) {
       if (person.portrait.checkedAt > documents.manifest.updated) throw new Error(`${person.id}.portrait.checkedAt is later than manifest.updated`);
     }
     allEvidence.push(person.evidence);
+    const turningScenes = new Set();
+    for (const point of person.turningPoints || []) {
+      requireReference(sceneIds, point.fromSceneId, `${person.id}.turningPoints.fromSceneId`);
+      requireReference(sceneIds, point.toSceneId, `${person.id}.turningPoints.toSceneId`);
+      const from = sceneOrder.get(point.fromSceneId);
+      const to = sceneOrder.get(point.toSceneId);
+      if (to !== from + 1) throw new Error(`${person.id} turning point must compare adjacent scenes`);
+      if (from < sceneOrder.get(person.activeStartSceneId) || to > sceneOrder.get(person.activeEndSceneId)) {
+        throw new Error(`${person.id} turning point extends outside active range`);
+      }
+      if (turningScenes.has(point.toSceneId)) throw new Error(`${person.id} has duplicate turning point scenes`);
+      turningScenes.add(point.toSceneId);
+      allEvidence.push(point.evidence);
+    }
   }
   for (const status of documents.personStatuses.statuses) {
     requireReference(personIds, status.personId, `${status.id}.personId`);

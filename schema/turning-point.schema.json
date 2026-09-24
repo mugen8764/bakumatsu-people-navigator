@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bakumatsu-people-navigator.local/schema/turning-point.schema.json",
+  "title": "人物の転換点",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["fromSceneId", "toSceneId", "title", "before", "after", "context", "evidence"],
+  "properties": {
+    "fromSceneId": { "type": "string", "pattern": "^[0-9]{4}-[a-z0-9-]+$" },
+    "toSceneId": { "type": "string", "pattern": "^[0-9]{4}-[a-z0-9-]+$" },
+    "title": { "$ref": "term.schema.json#/$defs/text" },
+    "before": { "$ref": "term.schema.json#/$defs/text" },
+    "after": { "$ref": "term.schema.json#/$defs/text" },
+    "context": { "$ref": "term.schema.json#/$defs/text" },
+    "evidence": { "$ref": "term.schema.json#/$defs/evidence" }
+  }
+}

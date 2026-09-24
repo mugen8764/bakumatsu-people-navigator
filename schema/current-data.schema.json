@@ -229,6 +229,7 @@
         "born": { "$ref": "#/$defs/nonEmptyString" },
         "termIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/dataId" } },
         "portrait": { "$ref": "https://bakumatsu-people-navigator.local/schema/portrait.schema.json" },
+        "turningPoints": { "type": "array", "minItems": 1, "items": { "$ref": "https://bakumatsu-people-navigator.local/schema/turning-point.schema.json" } },
         "defaultFaction": { "$ref": "#/$defs/nonEmptyString" },
         "activeRange": {
           "type": "array",

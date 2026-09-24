@@ -68,6 +68,7 @@ function projectLegacyData(data) {
       eventIds: [...person.events],
       ...(person.termIds ? { termIds: [...person.termIds] } : {}),
       ...(person.portrait ? { portrait: structuredClone(person.portrait) } : {}),
+      ...(person.turningPoints ? { turningPoints: structuredClone(person.turningPoints) } : {}),
       evidence: evidence(person.sources)
     }))
   };

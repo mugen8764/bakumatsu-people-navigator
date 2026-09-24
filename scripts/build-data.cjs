@@ -6,14 +6,30 @@ const { validateCurrentData, validateV2Documents } = require('./validate-data.cj
 
 const root = path.resolve(__dirname, '..');
 
-// Repeated scene states and evidence share their serialized text, then regain
+// Repeated scene states, status text and evidence share serialized text, then regain
 // independent objects. The public BM_DATA shape and data.json stay unchanged.
 function browserWrapper(data) {
   const unique = [];
   const indexes = new Map();
   const evidence = [];
   const evidenceIndexes = new Map();
+  const textKeys = ['display', 'role', 'stance', 'importance', 'faction', 'defaultFaction', 'label', 'title', 'name', 'summary', 'text', 'rightsNote', 'dateNote', 'credit', 'contentCheckedAt', 'type'];
+  const textCounts = new Map();
+  const texts = [];
+  const textIndexes = new Map();
+  function countText(value) {
+    if (!value || typeof value !== 'object') return;
+    for (const [key, child] of Object.entries(value)) {
+      if (textKeys.includes(key) && typeof child === 'string') textCounts.set(child, (textCounts.get(child) || 0) + 1);
+      else countText(child);
+    }
+  }
+  countText(data);
+  for (const [text, count] of textCounts) {
+    if (count > 1) { textIndexes.set(text, texts.length); texts.push(text); }
+  }
   function packEvidence(key, value) {
+    if (textKeys.includes(key) && textIndexes.has(value)) return textIndexes.get(value);
     if (key !== 'evidence') return value;
     const text = JSON.stringify(value);
     if (!evidenceIndexes.has(text)) { evidenceIndexes.set(text, evidence.length); evidence.push(value); }
@@ -28,7 +44,7 @@ function browserWrapper(data) {
   ]));
   const packedData = JSON.stringify({ ...data, factionStates: states }, packEvidence);
   const packedStates = JSON.stringify(unique, packEvidence);
-  return `window.BM_DATA=(()=>{const d=${packedData},s=${packedStates},e=${JSON.stringify(evidence)},copy=v=>JSON.parse(JSON.stringify(v));for(const f of Object.values(d.factionStates))for(const n of Object.keys(f))f[n]=copy(s[f[n]]);function restore(v){if(v&&typeof v==="object")for(const k of Object.keys(v))if(k==="evidence")v[k]=copy(e[v[k]]);else restore(v[k])}restore(d);return d})();\n`;
+  return `window.BM_DATA=(()=>{const d=${packedData},s=${packedStates},e=${JSON.stringify(evidence)},t=${JSON.stringify(texts)},keys=${JSON.stringify(textKeys)},copy=v=>JSON.parse(JSON.stringify(v));for(const f of Object.values(d.factionStates))for(const n of Object.keys(f))f[n]=copy(s[f[n]]);function restore(v){if(v&&typeof v==="object")for(const k of Object.keys(v))if(k==="evidence")v[k]=copy(e[v[k]]);else if(typeof v[k]==="number"&&keys.includes(k))v[k]=t[v[k]];else restore(v[k])}restore(d);return d})();\n`;
 }
 
 function expectedOutputs() {

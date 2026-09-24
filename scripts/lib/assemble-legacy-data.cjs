@@ -115,6 +115,7 @@ function assembleLegacyData(documents) {
       sources: [...person.evidence.sourceIds],
       ...(person.termIds ? { termIds: [...person.termIds] } : {}),
       ...(person.portrait ? { portrait: structuredClone(person.portrait) } : {}),
+      ...(person.turningPoints ? { turningPoints: structuredClone(person.turningPoints) } : {}),
       statuses: Object.fromEntries(statusEntries)
     };
   });

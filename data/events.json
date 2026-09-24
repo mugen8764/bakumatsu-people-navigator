@@ -1979,6 +1979,63 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "roju",
+      "kind": "office",
+      "title": "老中",
+      "kana": "ろうじゅう",
+      "meaning": "将軍のもとで幕府の政治を担う重職。",
+      "context": "法令や制度、朝廷への対応など、幕府としての方針を読む手がかりになる。",
+      "evidence": {
+        "sourceIds": [
+          "sekiyado_roju_office"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "kanjo-bugyo",
+      "kind": "office",
+      "title": "勘定奉行",
+      "kana": "かんじょうぶぎょう",
+      "meaning": "幕府の財政や直轄領の支配を担当する役職。",
+      "context": "金銭の出納だけでなく、領地の行政にも関わる。担当分野を人物の具体的な行動と合わせて読む。",
+      "evidence": {
+        "sourceIds": [
+          "yamanashi_kanjo_office"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "hanshu",
+      "kind": "office",
+      "title": "藩主",
+      "kana": "はんしゅ",
+      "meaning": "藩の領地と家臣を支配する大名。",
+      "context": "藩主の立場と、家老などが担う政治の実務を分けて見る。",
+      "evidence": {
+        "sourceIds": [
+          "tokushima_han_structure"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "karo",
+      "kind": "office",
+      "title": "家老",
+      "kana": "かろう",
+      "meaning": "藩主を支え、藩の重要な政治や人事を担う重臣。",
+      "context": "藩主が国元を離れている間も政務を担った。役割や人数は藩・時期によって異なる。",
+      "evidence": {
+        "sourceIds": [
+          "hikone_karo_office",
+          "tokushima_han_structure"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

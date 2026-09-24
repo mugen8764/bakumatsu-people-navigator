@@ -13,6 +13,7 @@
     "evidence"
   ],
   "properties": {
+    "kind": { "enum": ["office"] },
     "id": {
       "$ref": "#/$defs/id"
     },
