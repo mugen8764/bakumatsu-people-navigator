@@ -6,45 +6,40 @@ const { validateCurrentData, validateV2Documents } = require('./validate-data.cj
 
 const root = path.resolve(__dirname, '..');
 
-// Repeated scene states, status text and evidence share serialized text, then regain
-// independent objects. The public BM_DATA shape and data.json stay unchanged.
+// Serialize object shapes and repeated strings once. Array tags make the format
+// unambiguous even when original arrays contain negative numbers. Restoration
+// creates independent objects and leaves the public BM_DATA contract unchanged.
 function browserWrapper(data) {
-  const unique = [];
-  const indexes = new Map();
-  const evidence = [];
-  const evidenceIndexes = new Map();
-  const textKeys = ['display', 'role', 'stance', 'importance', 'faction', 'defaultFaction', 'label', 'title', 'name', 'summary', 'text', 'rightsNote', 'dateNote', 'credit', 'contentCheckedAt', 'type'];
-  const textCounts = new Map();
-  const texts = [];
-  const textIndexes = new Map();
-  function countText(value) {
-    if (!value || typeof value !== 'object') return;
-    for (const [key, child] of Object.entries(value)) {
-      if (textKeys.includes(key) && typeof child === 'string') textCounts.set(child, (textCounts.get(child) || 0) + 1);
-      else countText(child);
+  const counts = new Map();
+  function countStrings(value) {
+    if (typeof value === 'string') counts.set(value, (counts.get(value) || 0) + 1);
+    else if (value && typeof value === 'object') Object.values(value).forEach(countStrings);
+  }
+  countStrings(data);
+  const strings = [...counts]
+    .filter(([value, count]) => count > 1 && Buffer.byteLength(JSON.stringify(value)) >= 12)
+    .map(([value]) => value);
+  const stringIndexes = new Map(strings.map((value, index) => [value, index]));
+  const shapes = [];
+  const shapeIndexes = new Map();
+  function pack(value) {
+    if (typeof value === 'string' && stringIndexes.has(value)) return [-2, stringIndexes.get(value)];
+    if (Array.isArray(value)) return [-1, ...value.map(pack)];
+    if (value && typeof value === 'object') {
+      const keys = Object.keys(value);
+      const shape = JSON.stringify(keys);
+      if (!shapeIndexes.has(shape)) {
+        shapeIndexes.set(shape, shapes.length);
+        shapes.push(keys);
+      }
+      return [shapeIndexes.get(shape), ...keys.map(key => pack(value[key]))];
     }
+    return value;
   }
-  countText(data);
-  for (const [text, count] of textCounts) {
-    if (count > 1) { textIndexes.set(text, texts.length); texts.push(text); }
-  }
-  function packEvidence(key, value) {
-    if (textKeys.includes(key) && textIndexes.has(value)) return textIndexes.get(value);
-    if (key !== 'evidence') return value;
-    const text = JSON.stringify(value);
-    if (!evidenceIndexes.has(text)) { evidenceIndexes.set(text, evidence.length); evidence.push(value); }
-    return evidenceIndexes.get(text);
-  }
-  const states = Object.fromEntries(Object.entries(data.factionStates).map(([scene, factions]) => [
-    scene, Object.fromEntries(Object.entries(factions).map(([name, state]) => {
-      const text = JSON.stringify(state);
-      if (!indexes.has(text)) { indexes.set(text, unique.length); unique.push(state); }
-      return [name, indexes.get(text)];
-    }))
-  ]));
-  const packedData = JSON.stringify({ ...data, factionStates: states }, packEvidence);
-  const packedStates = JSON.stringify(unique, packEvidence);
-  return `window.BM_DATA=(()=>{const d=${packedData},s=${packedStates},e=${JSON.stringify(evidence)},t=${JSON.stringify(texts)},keys=${JSON.stringify(textKeys)},copy=v=>JSON.parse(JSON.stringify(v));for(const f of Object.values(d.factionStates))for(const n of Object.keys(f))f[n]=copy(s[f[n]]);function restore(v){if(v&&typeof v==="object")for(const k of Object.keys(v))if(k==="evidence")v[k]=copy(e[v[k]]);else if(typeof v[k]==="number"&&keys.includes(k))v[k]=t[v[k]];else restore(v[k])}restore(d);return d})();\n`;
+  const packed = pack(data);
+  return 'window.BM_DATA=(()=>{const d=' + JSON.stringify(packed)
+    + ',s=' + JSON.stringify(shapes) + ',t=' + JSON.stringify(strings)
+    + ';function restore(v){if(!Array.isArray(v))return v;if(v[0]===-2)return t[v[1]];if(v[0]===-1)return v.slice(1).map(restore);return Object.fromEntries(s[v[0]].map((k,i)=>[k,restore(v[i+1])]))}return restore(d)})();\n';
 }
 
 function expectedOutputs() {
