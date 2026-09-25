@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.68",
+    "version": "1.0.69",
     "updated": "2026-09-25"
   },
   "sources": {
@@ -798,7 +798,9 @@
     "kochi_yodo_1862": {
       "title": "高知県立坂本龍馬記念館「天誅―土佐藩の奔走―」展開催要項",
       "url": "https://www.pref.kochi.lg.jp/press1/2025021300098/files/file_20252134191656_1.pdf",
-      "note": "1862年の吉田東洋暗殺後に行われた下手人探索と、江戸在府の山内容堂への逐次報告。"
+      "note": "1862年の吉田東洋暗殺後に行われた下手人探索と、江戸在府の山内容堂への逐次報告。",
+      "locator": "1頁「趣旨」第2段落（暗殺者探索と江戸在府の容堂への報告）",
+      "contentCheckedAt": "2026-09-25"
     },
     "kochi_ryoma_1862": {
       "title": "高知市「龍馬、勝海舟の門人になる」",
@@ -879,15 +881,15 @@
       "title": "高知県立高知城歴史博物館「土佐藩の歴史・幕末維新期」",
       "url": "https://www.kochi-johaku.jp/column/4529/",
       "note": "山内容堂と土佐勤王党の方針不一致、武市半平太ら勤王党員の捕縛、戊辰戦争で板垣退助率いる土佐藩兵が東進して会津若松城攻略にあたったこと。",
-      "locator": "「公武合体の周旋と国力増強」「大政奉還の建白と倒幕」",
-      "contentCheckedAt": "2026-07-31"
+      "locator": "「黒船来航と15代豊信（容堂）の政治」「公武合体の周旋と国力増強」",
+      "contentCheckedAt": "2026-09-25"
     },
     "kochi_takechi_imprisonment": {
       "title": "高知市「史跡 武市半平太旧宅及び墓」",
       "url": "https://www.city.kochi.kochi.jp/soshiki/90/cas-state-1600100.html",
       "note": "武市半平太の土佐勤王党結成、京都留守居加役就任と帰国、八月十八日の政変後の弾圧、1863年9月21日の投獄、1865年閏5月11日の切腹命令と死去。",
-      "locator": "「解説」",
-      "contentCheckedAt": "2026-07-31"
+      "locator": "解説（1861年8月の土佐勤王党盟約書と党主、吉田東洋との方針の対立）",
+      "contentCheckedAt": "2026-09-25"
     },
     "archives_kinmon_aftermath": {
       "title": "国立公文書館「激動幕末・元治甲子長州附属諸国脱走変名大略」",
@@ -1957,6 +1959,20 @@
       "note": "出生を天保7年12月25日と記す箇所を参照し、画面の生年は天保7年で表示する。本文には日付の誤記や作品からの引用が混在するため、航海日程・人物評・台詞は採用しない。",
       "locator": "冒頭の出生年月日と末尾の1916年の死去",
       "contentCheckedAt": "2026-09-25"
+    },
+    "kochi_tenchu_exhibition": {
+      "title": "高知県立坂本龍馬記念館「天誅―土佐藩の奔走―」展",
+      "url": "https://ryoma-kinenkan.jp/exhibition/2024/12/post-24.html",
+      "note": "東洋暗殺前後の体制変化と暗殺者探索を説明する企画展。展示概要を確認し、原本全体の確認とはしない。",
+      "locator": "第一章概要（1862年4月8日の暗殺と体制変化）、第二章概要（即時の探索開始）",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "kochi_toyo_assassination_2024": {
+      "title": "高知市・歴史万華鏡「吉田東洋と天誅事件」（2024年4月号）",
+      "url": "https://www.city.kochi.kochi.jp/soshiki/80/man2404.html",
+      "note": "坂本龍馬記念館学芸員による解説。暗殺日・仕置役の肩書き・実行者の区別に用いる。後段の中岡に関する風聞や凄惨な細部は採用しない。",
+      "locator": "冒頭2段落（4月8日の東洋暗殺、那須信吾・安岡嘉助・大石団蔵、武市との方針の違い）",
+      "contentCheckedAt": "2026-09-25"
     }
   },
   "factions": {
@@ -2774,7 +2790,8 @@
       "results": [
         "京都守護職設置と松平容保の就任",
         "一橋慶喜・松平春嶽の幕政復帰",
-        "薩英戦争の原因形成"
+        "薩英戦争の原因形成",
+        "土佐では吉田東洋が暗殺され、武市を中心に尊王攘夷の動きが強まる"
       ],
       "people": [
         "hisamitsu",
@@ -2789,7 +2806,8 @@
         "ryoma",
         "kaieda",
         "richardson",
-        "neale"
+        "neale",
+        "yoshida-toyo"
       ],
       "factions": [
         "薩摩藩",
@@ -2802,7 +2820,8 @@
         "kagoshima",
         "kyoto",
         "edo",
-        "namamugi"
+        "namamugi",
+        "kochi"
       ],
       "sources": [
         "archives_timeline",
@@ -2810,7 +2829,9 @@
         "kagoshima_teradaya",
         "ndl_portrait_kaieda_detail",
         "yokohama_namamugi_exhibition",
-        "frus_namamugi_demands"
+        "frus_namamugi_demands",
+        "kochi_tenchu_exhibition",
+        "kochi_tosa_bakumatsu"
       ],
       "evidence": {
         "sourceIds": [
@@ -2819,7 +2840,9 @@
           "kagoshima_teradaya",
           "ndl_portrait_kaieda_detail",
           "yokohama_namamugi_exhibition",
-          "frus_namamugi_demands"
+          "frus_namamugi_demands",
+          "kochi_tenchu_exhibition",
+          "kochi_tosa_bakumatsu"
         ],
         "reviewStatus": "verified"
       }
@@ -3788,6 +3811,20 @@
         "sourceIds": [
           "mofa_treaty_1858",
           "taisho_treaty_articles"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "tosa-kinno": {
+      "id": "tosa-kinno",
+      "title": "土佐勤王党",
+      "kana": "とさきんのうとう",
+      "meaning": "1861年、武市半平太らが結成し、土佐藩全体で勤王の方針をとることを求めた組織。",
+      "context": "土佐藩全体と同じ組織ではない。藩政を担う東洋や前藩主容堂と方針が対立し、その後に弾圧された。",
+      "evidence": {
+        "sourceIds": [
+          "kochi_takechi_imprisonment",
+          "kochi_tosa_bakumatsu"
         ],
         "reviewStatus": "verified"
       }
@@ -6119,6 +6156,114 @@
           "hakodate_surrender1869"
         ],
         "reviewStatus": "verified"
+      }
+    },
+    "tosa-politics-1862": {
+      "id": "tosa-politics-1862",
+      "sceneId": "1862-bunkyu",
+      "title": "吉田東洋暗殺と土佐藩の政局",
+      "date": "1861年の結成〜1862年4月8日の暗殺とその後（旧暦）",
+      "scope": "土佐勤王党の結成、藩内の方針対立、東洋暗殺後の政局",
+      "summary": "武市半平太らが土佐勤王党を結成し、藩政改革を担う吉田東洋と方針が対立。1862年4月8日に東洋が暗殺されると、武市を中心とする尊王攘夷の動きが強まった。",
+      "stakes": "土佐藩としてどの政治方針をとるか。東洋を失った藩では、政局の変化と暗殺者の探索が同時に進んだ。",
+      "turningPoint": "暗殺の実行者は那須信吾・安岡嘉助・大石団蔵。藩は直ちに探索を始め、江戸の容堂にも経過を報告した。",
+      "participants": [
+        {
+          "personId": "yoshida-toyo",
+          "displayName": "吉田東洋",
+          "role": "仕置役・藩政改革を担い、暗殺される",
+          "involvement": "onsite",
+          "side": "土佐藩",
+          "summary": "藩政改革を担ったが、4月8日の夜、高知城下で帰宅中に襲われた。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_tenchu_exhibition",
+              "kochi_toyo_assassination_2024"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "takechi",
+          "displayName": "武市半平太",
+          "role": "土佐勤王党盟主・藩の方針を変えようとする",
+          "involvement": "decision",
+          "side": "土佐勤王党",
+          "summary": "前年に勤王党を結成。東洋と方針を異にし、東洋暗殺後は尊王攘夷の動きを強める中心となった。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_takechi_imprisonment",
+              "kochi_tosa_bakumatsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "yodo",
+          "displayName": "山内容堂",
+          "role": "前土佐藩主・江戸で探索の報告を受ける",
+          "involvement": "context",
+          "side": "土佐藩",
+          "summary": "東洋を改革に起用した前藩主。暗殺後、江戸在府中に下手人探索の経過を逐次報告された。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_tosa_bakumatsu",
+              "kochi_yodo_1862"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "tosa-takechi-toyo",
+          "aPersonId": "takechi",
+          "bPersonId": "yoshida-toyo",
+          "label": "藩の方針で対立",
+          "description": "武市は土佐藩全体での勤王を求めたが、東洋は受け入れなかった。この線は方針の対立を示す。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "kochi_takechi_imprisonment",
+              "kochi_toyo_assassination_2024"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "tosa-yodo-toyo",
+          "aPersonId": "yodo",
+          "bPersonId": "yoshida-toyo",
+          "label": "改革を担う人物として登用",
+          "description": "容堂は東洋を仕置役（参政）に起用して藩政改革を進めた。東洋は容堂の隠居・謹慎後も改革を引き継いだ。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "kochi_tosa_bakumatsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "kochi",
+        "edo"
+      ],
+      "termIds": [
+        "tosa-kinno",
+        "kobugattai",
+        "joi"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kochi_takechi_imprisonment",
+          "kochi_tosa_bakumatsu",
+          "kochi_tenchu_exhibition",
+          "kochi_toyo_assassination_2024",
+          "kochi_yodo_1862"
+        ],
+        "reviewStatus": "verified",
+        "note": "政治的対立と暗殺実行を区別。武市を現場の実行者として表示せず、暗殺命令の関係線を生成しない。"
       }
     }
   },
@@ -11257,6 +11402,9 @@
         ],
         "reviewStatus": "verified"
       },
+      "termIds": [
+        "tosa-kinno"
+      ],
       "statuses": {
         "1858-ansei": {
           "display": "山内豊信",
@@ -11412,6 +11560,9 @@
         ],
         "reviewStatus": "verified"
       },
+      "termIds": [
+        "tosa-kinno"
+      ],
       "statuses": {
         "1860-sakurada": {
           "display": "武市半平太",
@@ -13224,7 +13375,8 @@
         "reviewStatus": "verified"
       },
       "termIds": [
-        "kobugattai"
+        "kobugattai",
+        "tosa-kinno"
       ],
       "statuses": {
         "1853-blackships": {
@@ -13241,12 +13393,14 @@
         },
         "1862-bunkyu": {
           "display": "吉田東洋",
-          "role": "1862年4月（旧暦）に暗殺",
-          "stance": "1862年4月（旧暦）、土佐勤王党員に暗殺された。",
-          "importance": "土佐の藩内政治の対立で、参政を務めた人物が失われた。",
+          "role": "土佐藩仕置役・4月8日に暗殺",
+          "stance": "藩政改革を担ったが、4月8日の夜、高知城下で帰宅中に暗殺された（旧暦）。",
+          "importance": "東洋暗殺後、武市半平太を中心に土佐藩の尊王攘夷の動きが強まった。",
           "evidence": {
             "sourceIds": [
-              "kochi_yoshida_toyo"
+              "kochi_tenchu_exhibition",
+              "kochi_toyo_assassination_2024",
+              "kochi_tosa_bakumatsu"
             ],
             "reviewStatus": "verified"
           }
@@ -16531,7 +16685,7 @@
     {
       "a": "takechi",
       "b": "ryoma",
-      "start": 3,
+      "start": 4,
       "end": 4,
       "type": "師弟・同志",
       "label": "土佐勤王党と脱藩",
@@ -17562,6 +17716,22 @@
           "nagareyama_shinsengumi_1868",
           "hakodate_army_organization",
           "hakodate_front1869"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "takechi",
+      "b": "yoshida-toyo",
+      "start": 4,
+      "end": 4,
+      "type": "対立",
+      "label": "藩の方針で対立",
+      "text": "武市は土佐藩全体での勤王を求めたが、東洋は受け入れなかった。東洋は1862年4月8日に暗殺された。",
+      "evidence": {
+        "sourceIds": [
+          "kochi_takechi_imprisonment",
+          "kochi_toyo_assassination_2024"
         ],
         "reviewStatus": "verified"
       }

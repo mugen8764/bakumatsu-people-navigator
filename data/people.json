@@ -1421,7 +1421,10 @@
           "kochi_yodo_timeline"
         ],
         "reviewStatus": "verified"
-      }
+      },
+      "termIds": [
+        "tosa-kinno"
+      ]
     },
     {
       "id": "takechi",
@@ -1450,7 +1453,10 @@
           "kochi_takechi_imprisonment"
         ],
         "reviewStatus": "verified"
-      }
+      },
+      "termIds": [
+        "tosa-kinno"
+      ]
     },
     {
       "id": "ryoma",
@@ -1987,7 +1993,8 @@
         "reviewStatus": "verified"
       },
       "termIds": [
-        "kobugattai"
+        "kobugattai",
+        "tosa-kinno"
       ]
     },
     {

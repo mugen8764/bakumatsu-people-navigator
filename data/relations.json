@@ -734,10 +734,10 @@
       }
     },
     {
-      "id": "person-relation-takechi-ryoma-1860-sakurada-mentorship-or-comradeship",
+      "id": "person-relation-takechi-ryoma-1862-bunkyu-mentorship-or-comradeship",
       "aPersonId": "takechi",
       "bPersonId": "ryoma",
-      "startSceneId": "1860-sakurada",
+      "startSceneId": "1862-bunkyu",
       "endSceneId": "1862-bunkyu",
       "typeId": "mentorship-or-comradeship",
       "label": "土佐勤王党と脱藩",
@@ -1857,6 +1857,23 @@
           "nagareyama_shinsengumi_1868",
           "hakodate_army_organization",
           "hakodate_front1869"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-takechi-yoshida-toyo-1862-bunkyu-conflict",
+      "aPersonId": "takechi",
+      "bPersonId": "yoshida-toyo",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "typeId": "conflict",
+      "label": "藩の方針で対立",
+      "text": "武市は土佐藩全体での勤王を求めたが、東洋は受け入れなかった。東洋は1862年4月8日に暗殺された。",
+      "evidence": {
+        "sourceIds": [
+          "kochi_takechi_imprisonment",
+          "kochi_toyo_assassination_2024"
         ],
         "reviewStatus": "verified"
       }

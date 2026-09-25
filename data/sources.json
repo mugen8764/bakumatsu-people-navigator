@@ -927,7 +927,9 @@
       "id": "kochi_yodo_1862",
       "title": "高知県立坂本龍馬記念館「天誅―土佐藩の奔走―」展開催要項",
       "url": "https://www.pref.kochi.lg.jp/press1/2025021300098/files/file_20252134191656_1.pdf",
-      "note": "1862年の吉田東洋暗殺後に行われた下手人探索と、江戸在府の山内容堂への逐次報告。"
+      "note": "1862年の吉田東洋暗殺後に行われた下手人探索と、江戸在府の山内容堂への逐次報告。",
+      "locator": "1頁「趣旨」第2段落（暗殺者探索と江戸在府の容堂への報告）",
+      "contentCheckedAt": "2026-09-25"
     },
     {
       "id": "kochi_ryoma_1862",
@@ -1022,16 +1024,16 @@
       "title": "高知県立高知城歴史博物館「土佐藩の歴史・幕末維新期」",
       "url": "https://www.kochi-johaku.jp/column/4529/",
       "note": "山内容堂と土佐勤王党の方針不一致、武市半平太ら勤王党員の捕縛、戊辰戦争で板垣退助率いる土佐藩兵が東進して会津若松城攻略にあたったこと。",
-      "locator": "「公武合体の周旋と国力増強」「大政奉還の建白と倒幕」",
-      "contentCheckedAt": "2026-07-31"
+      "locator": "「黒船来航と15代豊信（容堂）の政治」「公武合体の周旋と国力増強」",
+      "contentCheckedAt": "2026-09-25"
     },
     {
       "id": "kochi_takechi_imprisonment",
       "title": "高知市「史跡 武市半平太旧宅及び墓」",
       "url": "https://www.city.kochi.kochi.jp/soshiki/90/cas-state-1600100.html",
       "note": "武市半平太の土佐勤王党結成、京都留守居加役就任と帰国、八月十八日の政変後の弾圧、1863年9月21日の投獄、1865年閏5月11日の切腹命令と死去。",
-      "locator": "「解説」",
-      "contentCheckedAt": "2026-07-31"
+      "locator": "解説（1861年8月の土佐勤王党盟約書と党主、吉田東洋との方針の対立）",
+      "contentCheckedAt": "2026-09-25"
     },
     {
       "id": "archives_kinmon_aftermath",
@@ -2263,6 +2265,22 @@
       "url": "https://www.zaidan-hakodate.com/jimbutsu/04_ta/04-takamatsu.html",
       "note": "出生を天保7年12月25日と記す箇所を参照し、画面の生年は天保7年で表示する。本文には日付の誤記や作品からの引用が混在するため、航海日程・人物評・台詞は採用しない。",
       "locator": "冒頭の出生年月日と末尾の1916年の死去",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "kochi_tenchu_exhibition",
+      "title": "高知県立坂本龍馬記念館「天誅―土佐藩の奔走―」展",
+      "url": "https://ryoma-kinenkan.jp/exhibition/2024/12/post-24.html",
+      "note": "東洋暗殺前後の体制変化と暗殺者探索を説明する企画展。展示概要を確認し、原本全体の確認とはしない。",
+      "locator": "第一章概要（1862年4月8日の暗殺と体制変化）、第二章概要（即時の探索開始）",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "kochi_toyo_assassination_2024",
+      "title": "高知市・歴史万華鏡「吉田東洋と天誅事件」（2024年4月号）",
+      "url": "https://www.city.kochi.kochi.jp/soshiki/80/man2404.html",
+      "note": "坂本龍馬記念館学芸員による解説。暗殺日・仕置役の肩書き・実行者の区別に用いる。後段の中岡に関する風聞や凄惨な細部は採用しない。",
+      "locator": "冒頭2段落（4月8日の東洋暗殺、那須信吾・安岡嘉助・大石団蔵、武市との方針の違い）",
       "contentCheckedAt": "2026-09-25"
     }
   ]

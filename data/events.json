@@ -607,7 +607,8 @@
       "results": [
         "京都守護職設置と松平容保の就任",
         "一橋慶喜・松平春嶽の幕政復帰",
-        "薩英戦争の原因形成"
+        "薩英戦争の原因形成",
+        "土佐では吉田東洋が暗殺され、武市を中心に尊王攘夷の動きが強まる"
       ],
       "personIds": [
         "hisamitsu",
@@ -622,7 +623,8 @@
         "ryoma",
         "kaieda",
         "richardson",
-        "neale"
+        "neale",
+        "yoshida-toyo"
       ],
       "factionIds": [
         "satsuma",
@@ -635,7 +637,8 @@
         "kagoshima",
         "kyoto",
         "edo",
-        "namamugi"
+        "namamugi",
+        "kochi"
       ],
       "evidence": {
         "sourceIds": [
@@ -644,7 +647,9 @@
           "kagoshima_teradaya",
           "ndl_portrait_kaieda_detail",
           "yokohama_namamugi_exhibition",
-          "frus_namamugi_demands"
+          "frus_namamugi_demands",
+          "kochi_tenchu_exhibition",
+          "kochi_tosa_bakumatsu"
         ],
         "reviewStatus": "verified"
       }
@@ -3566,6 +3571,114 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "tosa-politics-1862",
+      "sceneId": "1862-bunkyu",
+      "title": "吉田東洋暗殺と土佐藩の政局",
+      "date": "1861年の結成〜1862年4月8日の暗殺とその後（旧暦）",
+      "scope": "土佐勤王党の結成、藩内の方針対立、東洋暗殺後の政局",
+      "summary": "武市半平太らが土佐勤王党を結成し、藩政改革を担う吉田東洋と方針が対立。1862年4月8日に東洋が暗殺されると、武市を中心とする尊王攘夷の動きが強まった。",
+      "stakes": "土佐藩としてどの政治方針をとるか。東洋を失った藩では、政局の変化と暗殺者の探索が同時に進んだ。",
+      "turningPoint": "暗殺の実行者は那須信吾・安岡嘉助・大石団蔵。藩は直ちに探索を始め、江戸の容堂にも経過を報告した。",
+      "participants": [
+        {
+          "personId": "yoshida-toyo",
+          "displayName": "吉田東洋",
+          "role": "仕置役・藩政改革を担い、暗殺される",
+          "involvement": "onsite",
+          "side": "土佐藩",
+          "summary": "藩政改革を担ったが、4月8日の夜、高知城下で帰宅中に襲われた。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_tenchu_exhibition",
+              "kochi_toyo_assassination_2024"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "takechi",
+          "displayName": "武市半平太",
+          "role": "土佐勤王党盟主・藩の方針を変えようとする",
+          "involvement": "decision",
+          "side": "土佐勤王党",
+          "summary": "前年に勤王党を結成。東洋と方針を異にし、東洋暗殺後は尊王攘夷の動きを強める中心となった。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_takechi_imprisonment",
+              "kochi_tosa_bakumatsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "yodo",
+          "displayName": "山内容堂",
+          "role": "前土佐藩主・江戸で探索の報告を受ける",
+          "involvement": "context",
+          "side": "土佐藩",
+          "summary": "東洋を改革に起用した前藩主。暗殺後、江戸在府中に下手人探索の経過を逐次報告された。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_tosa_bakumatsu",
+              "kochi_yodo_1862"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "tosa-takechi-toyo",
+          "aPersonId": "takechi",
+          "bPersonId": "yoshida-toyo",
+          "label": "藩の方針で対立",
+          "description": "武市は土佐藩全体での勤王を求めたが、東洋は受け入れなかった。この線は方針の対立を示す。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "kochi_takechi_imprisonment",
+              "kochi_toyo_assassination_2024"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "tosa-yodo-toyo",
+          "aPersonId": "yodo",
+          "bPersonId": "yoshida-toyo",
+          "label": "改革を担う人物として登用",
+          "description": "容堂は東洋を仕置役（参政）に起用して藩政改革を進めた。東洋は容堂の隠居・謹慎後も改革を引き継いだ。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "kochi_tosa_bakumatsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "kochi",
+        "edo"
+      ],
+      "termIds": [
+        "tosa-kinno",
+        "kobugattai",
+        "joi"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kochi_takechi_imprisonment",
+          "kochi_tosa_bakumatsu",
+          "kochi_tenchu_exhibition",
+          "kochi_toyo_assassination_2024",
+          "kochi_yodo_1862"
+        ],
+        "reviewStatus": "verified",
+        "note": "政治的対立と暗殺実行を区別。武市を現場の実行者として表示せず、暗殺命令の関係線を生成しない。"
+      }
     }
   ],
   "terms": [
@@ -3880,6 +3993,20 @@
         "sourceIds": [
           "mofa_treaty_1858",
           "taisho_treaty_articles"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "tosa-kinno",
+      "title": "土佐勤王党",
+      "kana": "とさきんのうとう",
+      "meaning": "1861年、武市半平太らが結成し、土佐藩全体で勤王の方針をとることを求めた組織。",
+      "context": "土佐藩全体と同じ組織ではない。藩政を担う東洋や前藩主容堂と方針が対立し、その後に弾圧された。",
+      "evidence": {
+        "sourceIds": [
+          "kochi_takechi_imprisonment",
+          "kochi_tosa_bakumatsu"
         ],
         "reviewStatus": "verified"
       }

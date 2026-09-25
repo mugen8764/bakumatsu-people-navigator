@@ -6149,13 +6149,15 @@
       "startSceneId": "1862-bunkyu",
       "endSceneId": "1862-bunkyu",
       "displayName": "吉田東洋",
-      "role": "1862年4月（旧暦）に暗殺",
+      "role": "土佐藩仕置役・4月8日に暗殺",
       "factionId": "tosa",
-      "stance": "1862年4月（旧暦）、土佐勤王党員に暗殺された。",
-      "importance": "土佐の藩内政治の対立で、参政を務めた人物が失われた。",
+      "stance": "藩政改革を担ったが、4月8日の夜、高知城下で帰宅中に暗殺された（旧暦）。",
+      "importance": "東洋暗殺後、武市半平太を中心に土佐藩の尊王攘夷の動きが強まった。",
       "evidence": {
         "sourceIds": [
-          "kochi_yoshida_toyo"
+          "kochi_tenchu_exhibition",
+          "kochi_toyo_assassination_2024",
+          "kochi_tosa_bakumatsu"
         ],
         "reviewStatus": "verified"
       }

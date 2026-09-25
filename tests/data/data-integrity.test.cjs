@@ -44,10 +44,10 @@ test('the published collection sizes stay at the balanced expansion release base
     factions: 14,
     scenes: 16,
     events: 16,
-    relations: 107,
+    relations: 108,
     factionRelations: 18,
     places: 30,
-    sources: 311
+    sources: 313
   });
 });
 
