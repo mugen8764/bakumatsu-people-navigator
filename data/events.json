@@ -1159,7 +1159,8 @@
         "hijikata",
         "enomoto",
         "yae",
-        "kawai-tsuginosuke"
+        "kawai-tsuginosuke",
+        "iwamura-takatoshi"
       ],
       "factionIds": [
         "new-government",
@@ -1172,7 +1173,8 @@
         "sendai",
         "niigata",
         "edo",
-        "nagaoka"
+        "nagaoka",
+        "ojiya"
       ],
       "evidence": {
         "sourceIds": [
@@ -1180,7 +1182,9 @@
           "ndl_handwriting",
           "akita_ouu_alliance",
           "doshisha_yae",
-          "nagaoka_kawai"
+          "nagaoka_kawai",
+          "ojiya_meeting",
+          "joetsu_hokuetsu"
         ],
         "reviewStatus": "verified"
       }
@@ -3266,6 +3270,125 @@
           "mlit_bakan_peace",
           "satow_diplomat",
           "frus_shimonoseki_indemnity"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "hokuetsu-1868",
+      "sceneId": "1868-tohoku",
+      "title": "小千谷会談と北越の戦い",
+      "date": "1868年5月2日の会談〜8月の河井死去（慶応4年・旧暦）",
+      "scope": "小千谷の交渉と、その後の長岡城の攻防・退却",
+      "summary": "北越で戦闘が始まる中、長岡藩の河井は小千谷で新政府軍の岩村と交渉したが決裂。長岡藩は抗戦し、城の攻防を経て河井は負傷・退却した。",
+      "stakes": "長岡の戦争回避の要求と、新政府軍の会津追討方針が折り合わなかった。周辺の宿や村にも、軍需品の運搬や物資供出の負担がかかった。",
+      "turningPoint": "5月に落城した長岡城を同盟軍が7月に奪い返したが、再び新政府軍の手に渡る。河井は退却先で8月16日に死去し、その後の若松城籠城には加わっていない（いずれも旧暦）。",
+      "participants": [
+        {
+          "personId": "kawai-tsuginosuke",
+          "displayName": "河井継之助",
+          "role": "長岡藩家老・戦争回避の交渉",
+          "involvement": "onsite",
+          "side": "長岡藩",
+          "summary": "慈眼寺で岩村と会談。決裂後は長岡の抗戦を担い、城の攻防で負傷した。",
+          "evidence": {
+            "sourceIds": [
+              "ojiya_meeting",
+              "nagaoka_roots8"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "iwamura-takatoshi",
+          "displayName": "岩村精一郎",
+          "role": "新政府軍軍監・会談の相手",
+          "involvement": "onsite",
+          "side": "新政府軍・山道軍",
+          "summary": "小千谷で河井の交渉を受けた軍監。高田から内陸を進んだ山道軍を指揮した。",
+          "evidence": {
+            "sourceIds": [
+              "ojiya_meeting",
+              "joetsu_hokuetsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "yamagata",
+          "displayName": "山県狂介",
+          "role": "海道軍の指揮を担う参謀",
+          "involvement": "decision",
+          "side": "新政府軍・海道軍",
+          "summary": "黒田とともに海沿いの進路を取る部隊を指揮。小千谷の会談当事者とは分けて見る。",
+          "evidence": {
+            "sourceIds": [
+              "joetsu_hokuetsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "kuroda",
+          "displayName": "黒田了介",
+          "role": "海道軍の指揮を担う参謀",
+          "involvement": "decision",
+          "side": "新政府軍・海道軍",
+          "summary": "北越征討参謀。山県と同じ海道軍の指揮を担い、長岡方面へ進んだ。",
+          "evidence": {
+            "sourceIds": [
+              "archives_kuroda",
+              "joetsu_hokuetsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "hokuetsu-kawai-iwamura",
+          "aPersonId": "kawai-tsuginosuke",
+          "bPersonId": "iwamura-takatoshi",
+          "label": "小千谷で会談、合意に至らず",
+          "description": "5月2日（旧暦）、河井と岩村は慈眼寺で会談した。長岡の戦争回避を求める河井と、会津追討を進める新政府側の間で合意は成立しなかった。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "ojiya_meeting",
+              "nagaoka_roots8"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "hokuetsu-yamagata-kuroda",
+          "aPersonId": "yamagata",
+          "bPersonId": "kuroda",
+          "label": "海道軍をともに指揮",
+          "description": "閏4月（旧暦）、山県と黒田は高田から海道を進む部隊を指揮した。岩村の山道軍とは別の進路であり、二人を小千谷会談の出席者とはしない。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "joetsu_hokuetsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "ojiya",
+        "nagaoka",
+        "niigata"
+      ],
+      "termIds": [
+        "boshin-war",
+        "karo"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ojiya_meeting",
+          "nagaoka_roots8",
+          "joetsu_hokuetsu"
         ],
         "reviewStatus": "verified"
       }

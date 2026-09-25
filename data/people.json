@@ -1151,7 +1151,8 @@
         "hagi",
         "shimonoseki",
         "yamaguchi",
-        "aizu"
+        "aizu",
+        "niigata"
       ],
       "eventIds": [
         "kinmon",
@@ -1161,7 +1162,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "yamaguchi_yamagata_guide"
+          "yamaguchi_yamagata_guide",
+          "joetsu_hokuetsu"
         ],
         "reviewStatus": "verified"
       }
@@ -2210,7 +2212,8 @@
       "oneLine": "長岡藩の改革と軍備を担った。戊辰戦争では中立を求めた交渉の後、新政府軍と戦った。",
       "placeIds": [
         "nagaoka",
-        "nagasaki"
+        "nagasaki",
+        "ojiya"
       ],
       "eventIds": [
         "tohoku"
@@ -2218,11 +2221,30 @@
       "evidence": {
         "sourceIds": [
           "nagaoka_kawai",
-          "nagaoka_kawai_reform"
+          "nagaoka_kawai_reform",
+          "ojiya_meeting"
         ],
         "reviewStatus": "verified"
       },
-      "termIds": []
+      "termIds": [],
+      "turningPoints": [
+        {
+          "fromSceneId": "1868-edo",
+          "toSceneId": "1868-tohoku",
+          "title": "小千谷での交渉から長岡城の攻防へ",
+          "before": "5月2日、長岡藩の戦争回避を求めて岩村精一郎と会談したが、合意できなかった（旧暦）。",
+          "after": "長岡藩は抗戦へ進み、河井は長岡城の攻防で負傷。退却先の塩沢村で8月16日に死去した（旧暦）。",
+          "context": "会談より前から北越では戦闘が起きていた。河井の死去は若松城の籠城より前で、会津城内の指揮には加わっていない。",
+          "evidence": {
+            "sourceIds": [
+              "ojiya_meeting",
+              "nagaoka_roots8",
+              "joetsu_hokuetsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "roches",
@@ -2792,6 +2814,38 @@
           "ndl_satow",
           "tsu_alcock_leave",
           "frus_shimonoseki_policy"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "iwamura-takatoshi",
+      "name": "岩村高俊",
+      "kana": "いわむら たかとし",
+      "aliases": [
+        "岩村精一郎",
+        "精一郎"
+      ],
+      "lifespan": "1845–1906",
+      "defaultFactionId": "new-government",
+      "activeStartSceneId": "1868-edo",
+      "activeEndSceneId": "1868-tohoku",
+      "oneLine": "土佐出身の新政府軍軍監。小千谷で河井継之助と会談し、北越戦線で山道軍を指揮した。",
+      "placeIds": [
+        "ojiya",
+        "niigata"
+      ],
+      "eventIds": [
+        "tohoku"
+      ],
+      "termIds": [
+        "boshin-war"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "sukumo_iwamura",
+          "ojiya_meeting",
+          "joetsu_hokuetsu"
         ],
         "reviewStatus": "verified"
       }

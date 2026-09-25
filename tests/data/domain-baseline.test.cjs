@@ -28,8 +28,8 @@ test('scene-level counts stay at the current display baseline', () => {
     { scene: '1866-expedition', people: 49, factions: 7, relations: 20 },
     { scene: '1867-taisei', people: 49, factions: 8, relations: 18 },
     { scene: '1868-toba', people: 45, factions: 8, relations: 16 },
-    { scene: '1868-edo', people: 45, factions: 7, relations: 15 },
-    { scene: '1868-tohoku', people: 34, factions: 9, relations: 7 },
+    { scene: '1868-edo', people: 46, factions: 7, relations: 17 },
+    { scene: '1868-tohoku', people: 35, factions: 9, relations: 9 },
     { scene: '1869-hakodate', people: 28, factions: 6, relations: 6 }
   ]);
 });

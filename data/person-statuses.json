@@ -2228,14 +2228,15 @@
       "displayName": "黒田了介",
       "role": "北越征討参謀",
       "factionId": "new-government",
-      "stance": "北越征討参謀として戊辰戦争に従軍する。",
-      "importance": "箱館征討参謀を務めるのは翌1869年である。",
+      "stance": "北越征討参謀として従軍。閏4月には山県狂介とともに海道軍を指揮した（旧暦）。",
+      "importance": "小千谷で河井と会談した岩村は山道軍の軍監。新政府軍の中でも部隊と担当を分けて見る。",
       "evidence": {
         "sourceIds": [
-          "archives_kuroda"
+          "archives_kuroda",
+          "joetsu_hokuetsu"
         ],
         "reviewStatus": "verified",
-        "note": "国立公文書館で北越征討参謀を務めたことを確認。会津征討参謀、東北戦線での交渉、台頭という評価は当該出典が直接支えないため表示しない。"
+        "note": "国立公文書館で北越征討参謀、上越市公文書センターで海道軍の共同指揮を確認。小千谷会談への出席は示さない。"
       }
     },
     {
@@ -3437,15 +3438,16 @@
       "displayName": "山県狂介",
       "role": "越後口総督参謀",
       "factionId": "new-government",
-      "stance": "北越戦線へ出張し、7月にいったん参謀を免じられる。",
+      "stance": "閏4月に黒田了介と海道軍を指揮。7月にはいったん参謀を免じられる（旧暦）。",
       "importance": "同月、越後口参謀として引き続き尽力するよう総督から求められた。",
       "evidence": {
         "sourceIds": [
           "jacar_yamagata_1868_career",
-          "jacar_yamagata_detail"
+          "jacar_yamagata_detail",
+          "joetsu_hokuetsu"
         ],
         "reviewStatus": "verified",
-        "note": "山県有朋の履歴書で旧名「狂介」、北越出張、1868年7月6日の参謀免職、7月17日の総督からの尽力要請を確認し、人物辞典で越後口総督参謀の職歴を照合。「参謀級」という曖昧な表現を正式な役職へ改めた。"
+        "note": "山県有朋の履歴書で旧名「狂介」、北越出張、1868年7月6日の参謀免職、7月17日の総督からの尽力要請を確認し、人物辞典で越後口総督参謀の職歴を照合。「参謀級」という曖昧な表現を正式な役職へ改めた。 上越市公文書センターで閏4月の黒田との海道軍指揮を確認。"
       }
     },
     {
@@ -6616,12 +6618,12 @@
       "displayName": "河井継之助",
       "role": "長岡藩家老・中立を模索",
       "factionId": "nagaoka",
-      "stance": "戊辰戦争への参戦を避けようとする。5月2日の小千谷での新政府軍との交渉は成立しなかった。",
-      "importance": "戦争の前に交渉を試みた藩の動きを知る。",
+      "stance": "長岡藩の参戦を避けようとし、5月2日に小千谷の慈眼寺で岩村精一郎と会談したが、合意には至らなかった（旧暦）。",
+      "importance": "江戸城の引き渡し後も、北越では交渉と戦闘が続いていた。",
       "evidence": {
         "sourceIds": [
-          "nagaoka_kawai",
-          "nagaoka_kawai_reform"
+          "ojiya_meeting",
+          "nagaoka_roots8"
         ],
         "reviewStatus": "verified"
       }
@@ -6632,14 +6634,16 @@
       "startSceneId": "1868-tohoku",
       "endSceneId": "1868-tohoku",
       "displayName": "河井継之助",
-      "role": "北越戦争の軍事総督",
+      "role": "長岡藩軍事総督",
       "factionId": "nagaoka",
-      "stance": "長岡城を一度奪還するが負傷。退却先の会津領塩沢村で8月16日に死去。若松城の籠城には参加していない。",
+      "stance": "長岡城の奪還をめぐる戦闘で負傷し、退却先の会津領塩沢村で8月16日に死去（旧暦）。若松城の籠城には参加していない。",
       "importance": "北越の戦いと会津の籠城を時系列で分ける。",
       "evidence": {
         "sourceIds": [
           "nagaoka_kawai",
-          "nagaoka_kawai_reform"
+          "nagaoka_roots8",
+          "ojiya_meeting",
+          "joetsu_hokuetsu"
         ],
         "reviewStatus": "verified"
       }
@@ -7982,6 +7986,46 @@
           "frus_shimonoseki_policy"
         ],
         "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-iwamura-takatoshi-1868-edo",
+      "personId": "iwamura-takatoshi",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "岩村精一郎",
+      "role": "新政府軍・山道軍の軍監",
+      "factionId": "new-government",
+      "stance": "閏4月に高田から山道軍を率いて進み、5月2日、小千谷の慈眼寺で河井継之助と会談したが合意には至らなかった（旧暦）。",
+      "importance": "海道軍を率いた山県・黒田とは部隊を分けて、長岡方面へ進んだ。",
+      "evidence": {
+        "sourceIds": [
+          "sukumo_iwamura",
+          "ojiya_meeting",
+          "joetsu_hokuetsu"
+        ],
+        "reviewStatus": "verified",
+        "note": "幕末の通称「精一郎」を表示。確認した北越戦線の活動を掲載し、後年の地方長官の役職を持ち込まない。"
+      }
+    },
+    {
+      "id": "person-status-iwamura-takatoshi-1868-tohoku",
+      "personId": "iwamura-takatoshi",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "岩村精一郎",
+      "role": "新政府軍・山道軍の軍監",
+      "factionId": "new-government",
+      "stance": "小千谷会談後も北越戦線に従軍する。長岡城をめぐる戦闘が続いた。",
+      "importance": "会談の相手としての役割と、山道軍の指揮をつなげて見る。",
+      "evidence": {
+        "sourceIds": [
+          "sukumo_iwamura",
+          "ojiya_meeting",
+          "joetsu_hokuetsu"
+        ],
+        "reviewStatus": "verified",
+        "note": "幕末の通称「精一郎」を表示。確認した北越戦線の活動を掲載し、後年の地方長官の役職を持ち込まない。"
       }
     }
   ]

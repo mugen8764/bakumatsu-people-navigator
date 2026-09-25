@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.66",
+    "version": "1.0.67",
     "updated": "2026-09-25"
   },
   "sources": {
@@ -1864,6 +1864,34 @@
       "note": "後年の賠償協議に提出された日本使節の覚書で、協定日・当事者・額を確認。1864年9月の現地講和と区別する。",
       "locator": "1873年2月10日ソーントン書簡の添付1冒頭（p.408）：1864年10月22日の300万ドル協定",
       "contentCheckedAt": "2026-09-25"
+    },
+    "sukumo_iwamura": {
+      "title": "宿毛市・宿毛歴史館「岩村高俊」",
+      "url": "https://www.city.sukumo.kochi.jp/docs-26/p0108040611.html",
+      "note": "生没年、1867年の陸援隊入隊、戊辰戦争での軍監としての北越従軍を確認。後年の県令・知事を幕末の役職へ流用しない。",
+      "locator": "人物解説冒頭と略年譜（1845年・1867年・1868年・1906年）",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "ojiya_meeting": {
+      "title": "小千谷市「岩村・河井会見の処」",
+      "url": "https://www.city.ojiya.niigata.jp/soshiki/nigiwai/iwamura-kawaikaikennotokoro.html",
+      "note": "旧暦5月2日の慈眼寺での会談、河井と岩村の役割、旧暦8月16日の河井死去と所在地を確認。岩村の態度や会談時間による人物評は採用しない。",
+      "locator": "本文第1〜2段落、所在地「小千谷市平成2丁目3-35」",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "nagaoka_roots8": {
+      "title": "長岡市「ROOTS400 第8号・小千谷談判の真相」",
+      "url": "https://www.city.nagaoka.niigata.jp/dpage/nagaoka400/pdf/kaifu400-08_2.pdf",
+      "note": "長岡側の戦争回避の方針、新政府側の会津追討方針、会談の決裂を確認。台詞の直接引用や人物の性格を原因とする説明はしない。",
+      "locator": "紙面6〜7頁（PDF4頁）「小千谷談判の真相」。文字抽出が崩れるため紙面画像で確認",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "joetsu_hokuetsu": {
+      "title": "上越市公文書センター「戊辰戦争と高田藩」",
+      "url": "https://www.city.joetsu.niigata.jp/uploaded/attachment/148761.pdf",
+      "note": "海道軍と山道軍の指揮者、会談前からの戦闘、長岡城の攻防、周辺地域の軍需品の運搬・物資負担を確認。表と本文で異なる米沢降伏日など、今回使わない細部は採用しない。",
+      "locator": "1〜2頁「北越戊辰戦争の概要」・関連年表、3〜4頁「北越戊辰戦争による民衆の負担」",
+      "contentCheckedAt": "2026-09-25"
     }
   },
   "factions": {
@@ -3287,7 +3315,8 @@
         "hijikata",
         "enomoto",
         "yae",
-        "kawai-tsuginosuke"
+        "kawai-tsuginosuke",
+        "iwamura-takatoshi"
       ],
       "factions": [
         "新政府",
@@ -3300,14 +3329,17 @@
         "sendai",
         "niigata",
         "edo",
-        "nagaoka"
+        "nagaoka",
+        "ojiya"
       ],
       "sources": [
         "jacar_dictionary",
         "ndl_handwriting",
         "akita_ouu_alliance",
         "doshisha_yae",
-        "nagaoka_kawai"
+        "nagaoka_kawai",
+        "ojiya_meeting",
+        "joetsu_hokuetsu"
       ],
       "evidence": {
         "sourceIds": [
@@ -3315,7 +3347,9 @@
           "ndl_handwriting",
           "akita_ouu_alliance",
           "doshisha_yae",
-          "nagaoka_kawai"
+          "nagaoka_kawai",
+          "ojiya_meeting",
+          "joetsu_hokuetsu"
         ],
         "reviewStatus": "verified"
       }
@@ -5725,6 +5759,125 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    "hokuetsu-1868": {
+      "id": "hokuetsu-1868",
+      "sceneId": "1868-tohoku",
+      "title": "小千谷会談と北越の戦い",
+      "date": "1868年5月2日の会談〜8月の河井死去（慶応4年・旧暦）",
+      "scope": "小千谷の交渉と、その後の長岡城の攻防・退却",
+      "summary": "北越で戦闘が始まる中、長岡藩の河井は小千谷で新政府軍の岩村と交渉したが決裂。長岡藩は抗戦し、城の攻防を経て河井は負傷・退却した。",
+      "stakes": "長岡の戦争回避の要求と、新政府軍の会津追討方針が折り合わなかった。周辺の宿や村にも、軍需品の運搬や物資供出の負担がかかった。",
+      "turningPoint": "5月に落城した長岡城を同盟軍が7月に奪い返したが、再び新政府軍の手に渡る。河井は退却先で8月16日に死去し、その後の若松城籠城には加わっていない（いずれも旧暦）。",
+      "participants": [
+        {
+          "personId": "kawai-tsuginosuke",
+          "displayName": "河井継之助",
+          "role": "長岡藩家老・戦争回避の交渉",
+          "involvement": "onsite",
+          "side": "長岡藩",
+          "summary": "慈眼寺で岩村と会談。決裂後は長岡の抗戦を担い、城の攻防で負傷した。",
+          "evidence": {
+            "sourceIds": [
+              "ojiya_meeting",
+              "nagaoka_roots8"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "iwamura-takatoshi",
+          "displayName": "岩村精一郎",
+          "role": "新政府軍軍監・会談の相手",
+          "involvement": "onsite",
+          "side": "新政府軍・山道軍",
+          "summary": "小千谷で河井の交渉を受けた軍監。高田から内陸を進んだ山道軍を指揮した。",
+          "evidence": {
+            "sourceIds": [
+              "ojiya_meeting",
+              "joetsu_hokuetsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "yamagata",
+          "displayName": "山県狂介",
+          "role": "海道軍の指揮を担う参謀",
+          "involvement": "decision",
+          "side": "新政府軍・海道軍",
+          "summary": "黒田とともに海沿いの進路を取る部隊を指揮。小千谷の会談当事者とは分けて見る。",
+          "evidence": {
+            "sourceIds": [
+              "joetsu_hokuetsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "kuroda",
+          "displayName": "黒田了介",
+          "role": "海道軍の指揮を担う参謀",
+          "involvement": "decision",
+          "side": "新政府軍・海道軍",
+          "summary": "北越征討参謀。山県と同じ海道軍の指揮を担い、長岡方面へ進んだ。",
+          "evidence": {
+            "sourceIds": [
+              "archives_kuroda",
+              "joetsu_hokuetsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "hokuetsu-kawai-iwamura",
+          "aPersonId": "kawai-tsuginosuke",
+          "bPersonId": "iwamura-takatoshi",
+          "label": "小千谷で会談、合意に至らず",
+          "description": "5月2日（旧暦）、河井と岩村は慈眼寺で会談した。長岡の戦争回避を求める河井と、会津追討を進める新政府側の間で合意は成立しなかった。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "ojiya_meeting",
+              "nagaoka_roots8"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "hokuetsu-yamagata-kuroda",
+          "aPersonId": "yamagata",
+          "bPersonId": "kuroda",
+          "label": "海道軍をともに指揮",
+          "description": "閏4月（旧暦）、山県と黒田は高田から海道を進む部隊を指揮した。岩村の山道軍とは別の進路であり、二人を小千谷会談の出席者とはしない。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "joetsu_hokuetsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "ojiya",
+        "nagaoka",
+        "niigata"
+      ],
+      "termIds": [
+        "boshin-war",
+        "karo"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ojiya_meeting",
+          "nagaoka_roots8",
+          "joetsu_hokuetsu"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   },
   "places": {
@@ -6170,6 +6323,21 @@
         "sourceIds": [
           "gsi_maps_coordinates",
           "nagaoka_kawai"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "ojiya": {
+      "name": "小千谷・慈眼寺",
+      "coord": [
+        138.794,
+        37.308
+      ],
+      "note": "1868年5月2日（旧暦）、河井継之助と岩村精一郎が会談した場所。現在の小千谷市平成2丁目。",
+      "evidence": {
+        "sourceIds": [
+          "ojiya_meeting",
+          "gsi_maps_coordinates"
         ],
         "reviewStatus": "verified"
       }
@@ -8533,11 +8701,12 @@
           "display": "黒田了介",
           "role": "北越征討参謀",
           "faction": "新政府",
-          "stance": "北越征討参謀として戊辰戦争に従軍する。",
-          "importance": "箱館征討参謀を務めるのは翌1869年である。",
+          "stance": "北越征討参謀として従軍。閏4月には山県狂介とともに海道軍を指揮した（旧暦）。",
+          "importance": "小千谷で河井と会談した岩村は山道軍の軍監。新政府軍の中でも部隊と担当を分けて見る。",
           "evidence": {
             "sourceIds": [
-              "archives_kuroda"
+              "archives_kuroda",
+              "joetsu_hokuetsu"
             ],
             "reviewStatus": "verified"
           }
@@ -9657,7 +9826,8 @@
         "hagi",
         "shimonoseki",
         "yamaguchi",
-        "aizu"
+        "aizu",
+        "niigata"
       ],
       "events": [
         "kinmon",
@@ -9666,7 +9836,8 @@
         "tohoku"
       ],
       "sources": [
-        "yamaguchi_yamagata_guide"
+        "yamaguchi_yamagata_guide",
+        "joetsu_hokuetsu"
       ],
       "statuses": {
         "1863-joi": {
@@ -9754,12 +9925,13 @@
           "display": "山県狂介",
           "role": "越後口総督参謀",
           "faction": "新政府",
-          "stance": "北越戦線へ出張し、7月にいったん参謀を免じられる。",
+          "stance": "閏4月に黒田了介と海道軍を指揮。7月にはいったん参謀を免じられる（旧暦）。",
           "importance": "同月、越後口参謀として引き続き尽力するよう総督から求められた。",
           "evidence": {
             "sourceIds": [
               "jacar_yamagata_1868_career",
-              "jacar_yamagata_detail"
+              "jacar_yamagata_detail",
+              "joetsu_hokuetsu"
             ],
             "reviewStatus": "verified"
           }
@@ -13012,16 +13184,36 @@
       "oneLine": "長岡藩の改革と軍備を担った。戊辰戦争では中立を求めた交渉の後、新政府軍と戦った。",
       "places": [
         "nagaoka",
-        "nagasaki"
+        "nagasaki",
+        "ojiya"
       ],
       "events": [
         "tohoku"
       ],
       "sources": [
         "nagaoka_kawai",
-        "nagaoka_kawai_reform"
+        "nagaoka_kawai_reform",
+        "ojiya_meeting"
       ],
       "termIds": [],
+      "turningPoints": [
+        {
+          "fromSceneId": "1868-edo",
+          "toSceneId": "1868-tohoku",
+          "title": "小千谷での交渉から長岡城の攻防へ",
+          "before": "5月2日、長岡藩の戦争回避を求めて岩村精一郎と会談したが、合意できなかった（旧暦）。",
+          "after": "長岡藩は抗戦へ進み、河井は長岡城の攻防で負傷。退却先の塩沢村で8月16日に死去した（旧暦）。",
+          "context": "会談より前から北越では戦闘が起きていた。河井の死去は若松城の籠城より前で、会津城内の指揮には加わっていない。",
+          "evidence": {
+            "sourceIds": [
+              "ojiya_meeting",
+              "nagaoka_roots8",
+              "joetsu_hokuetsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
       "statuses": {
         "1865-choshu": {
           "display": "河井継之助",
@@ -13064,25 +13256,27 @@
         "1868-edo": {
           "display": "河井継之助",
           "role": "長岡藩家老・中立を模索",
-          "stance": "戊辰戦争への参戦を避けようとする。5月2日の小千谷での新政府軍との交渉は成立しなかった。",
-          "importance": "戦争の前に交渉を試みた藩の動きを知る。",
+          "stance": "長岡藩の参戦を避けようとし、5月2日に小千谷の慈眼寺で岩村精一郎と会談したが、合意には至らなかった（旧暦）。",
+          "importance": "江戸城の引き渡し後も、北越では交渉と戦闘が続いていた。",
           "evidence": {
             "sourceIds": [
-              "nagaoka_kawai",
-              "nagaoka_kawai_reform"
+              "ojiya_meeting",
+              "nagaoka_roots8"
             ],
             "reviewStatus": "verified"
           }
         },
         "1868-tohoku": {
           "display": "河井継之助",
-          "role": "北越戦争の軍事総督",
-          "stance": "長岡城を一度奪還するが負傷。退却先の会津領塩沢村で8月16日に死去。若松城の籠城には参加していない。",
+          "role": "長岡藩軍事総督",
+          "stance": "長岡城の奪還をめぐる戦闘で負傷し、退却先の会津領塩沢村で8月16日に死去（旧暦）。若松城の籠城には参加していない。",
           "importance": "北越の戦いと会津の籠城を時系列で分ける。",
           "evidence": {
             "sourceIds": [
               "nagaoka_kawai",
-              "nagaoka_kawai_reform"
+              "nagaoka_roots8",
+              "ojiya_meeting",
+              "joetsu_hokuetsu"
             ],
             "reviewStatus": "verified"
           }
@@ -14634,6 +14828,67 @@
             "sourceIds": [
               "tsu_alcock_leave",
               "frus_shimonoseki_policy"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "iwamura-takatoshi",
+      "name": "岩村高俊",
+      "kana": "いわむら たかとし",
+      "aliases": [
+        "岩村精一郎",
+        "精一郎"
+      ],
+      "born": "1845–1906",
+      "defaultFaction": "新政府",
+      "activeRange": [
+        13,
+        14
+      ],
+      "oneLine": "土佐出身の新政府軍軍監。小千谷で河井継之助と会談し、北越戦線で山道軍を指揮した。",
+      "places": [
+        "ojiya",
+        "niigata"
+      ],
+      "events": [
+        "tohoku"
+      ],
+      "sources": [
+        "sukumo_iwamura",
+        "ojiya_meeting",
+        "joetsu_hokuetsu"
+      ],
+      "termIds": [
+        "boshin-war"
+      ],
+      "statuses": {
+        "1868-edo": {
+          "display": "岩村精一郎",
+          "role": "新政府軍・山道軍の軍監",
+          "stance": "閏4月に高田から山道軍を率いて進み、5月2日、小千谷の慈眼寺で河井継之助と会談したが合意には至らなかった（旧暦）。",
+          "importance": "海道軍を率いた山県・黒田とは部隊を分けて、長岡方面へ進んだ。",
+          "evidence": {
+            "sourceIds": [
+              "sukumo_iwamura",
+              "ojiya_meeting",
+              "joetsu_hokuetsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-tohoku": {
+          "display": "岩村精一郎",
+          "role": "新政府軍・山道軍の軍監",
+          "stance": "小千谷会談後も北越戦線に従軍する。長岡城をめぐる戦闘が続いた。",
+          "importance": "会談の相手としての役割と、山道軍の指揮をつなげて見る。",
+          "evidence": {
+            "sourceIds": [
+              "sukumo_iwamura",
+              "ojiya_meeting",
+              "joetsu_hokuetsu"
             ],
             "reviewStatus": "verified"
           }
@@ -16245,6 +16500,37 @@
       "evidence": {
         "sourceIds": [
           "satow_diplomat"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "kawai-tsuginosuke",
+      "b": "iwamura-takatoshi",
+      "start": 13,
+      "end": 14,
+      "type": "仲介・交渉",
+      "label": "小千谷で会談、合意に至らず",
+      "text": "5月2日（旧暦）、河井と岩村は慈眼寺で会談した。長岡の戦争回避を求める河井と、会津追討を進める新政府側の間で合意は成立しなかった。",
+      "evidence": {
+        "sourceIds": [
+          "ojiya_meeting",
+          "nagaoka_roots8"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "yamagata",
+      "b": "kuroda",
+      "start": 13,
+      "end": 14,
+      "type": "組織",
+      "label": "海道軍をともに指揮",
+      "text": "閏4月（旧暦）、山県と黒田は高田から海道を進む部隊を指揮した。岩村の山道軍とは別の進路であり、二人を小千谷会談の出席者とはしない。",
+      "evidence": {
+        "sourceIds": [
+          "joetsu_hokuetsu"
         ],
         "reviewStatus": "verified"
       }

@@ -1774,6 +1774,39 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-relation-kawai-tsuginosuke-iwamura-takatoshi-1868-edo-mediation-or-negotiation",
+      "aPersonId": "kawai-tsuginosuke",
+      "bPersonId": "iwamura-takatoshi",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-tohoku",
+      "typeId": "mediation-or-negotiation",
+      "label": "小千谷で会談、合意に至らず",
+      "text": "5月2日（旧暦）、河井と岩村は慈眼寺で会談した。長岡の戦争回避を求める河井と、会津追討を進める新政府側の間で合意は成立しなかった。",
+      "evidence": {
+        "sourceIds": [
+          "ojiya_meeting",
+          "nagaoka_roots8"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-yamagata-kuroda-1868-edo-organization",
+      "aPersonId": "yamagata",
+      "bPersonId": "kuroda",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-tohoku",
+      "typeId": "organization",
+      "label": "海道軍をともに指揮",
+      "text": "閏4月（旧暦）、山県と黒田は高田から海道を進む部隊を指揮した。岩村の山道軍とは別の進路であり、二人を小千谷会談の出席者とはしない。",
+      "evidence": {
+        "sourceIds": [
+          "joetsu_hokuetsu"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ],
   "factionRelations": [
