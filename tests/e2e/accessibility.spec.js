@@ -5,6 +5,19 @@ test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => localStorage.clear());
 });
 
+for (const colorScheme of ['light', 'dark']) {
+  test(`incident role evidence meets contrast requirements in ${colorScheme}`, async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 850 });
+    await page.emulateMedia({ colorScheme });
+    await page.goto('/#event=ikedaya&view=people&person=okita');
+    const evidence = page.locator('.person-incident .source-disclosure summary');
+    await evidence.scrollIntoViewIfNeeded();
+    await expect(evidence).toHaveText('この役割の根拠');
+    const results = await new AxeBuilder({ page }).include('.person-incident').withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze();
+    expect(results.violations).toEqual([]);
+  });
+}
+
 for (const view of ['people', 'factions', 'relations', 'map', 'events', 'sources']) {
   test(`${view} view has no automatically detectable WCAG A/AA violations`, async ({ page }) => {
     await page.goto(`/#scene=1867-taisei&view=${view}&person=kido&faction=長州藩`);

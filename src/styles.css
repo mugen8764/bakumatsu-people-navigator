@@ -97,6 +97,7 @@ input[type=range]{width:100%;accent-color:var(--accent)}
 .portrait-credit{margin:8px 0;font-size:.8rem}
 .person-incident{padding:16px;border:1px solid var(--accent);border-radius:12px;background:var(--accent-soft);margin:16px 0}
 .person-incident h3{margin-bottom:4px}
+.person-incident .source-disclosure summary{color:var(--text)}
 .scene-incidents{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:10px 0;padding:10px 12px;border:1px solid var(--border);border-radius:10px;background:var(--card)}
 .scene-incidents>span{font-size:.8rem;color:var(--muted)}
 #view-events.incident-open .timeline-layout{grid-template-columns:minmax(0,1fr)}
