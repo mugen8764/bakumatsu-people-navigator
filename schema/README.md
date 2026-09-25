@@ -1,60 +1,60 @@
 # データ契約
 
-## 目的
+`data/*.json` が正本、ルートの `data.json` と `data.js` が互換形式の生成物です。v2は運用中の正本形式であり、未導入の移行案ではありません。編集手順は [data/README.md](../data/README.md) を参照してください。
 
-このディレクトリは、現行表示を維持したまま `data/*.json` を管理するための契約を定義します。
+## スキーマ一覧
 
-- `current-data.schema.json`: 互換生成物 `data.json` を厳格に検証するSchema
-- `v2/*.schema.json`: 正本である `data/*.json` のSchema
-- `incident.schema.json`: 大きな時点に属する個別事件、人物ごとの役割・関与区分・関係・根拠
-- `portrait.schema.json`: 任意の史料肖像と、人物同定・撮影時期・原資料・権利・確認日の記録
-- `v2/id-mappings.json`: 表示名から独立した勢力ID・関係種別ID
+| 契約 | 対象 |
+| --- | --- |
+| [v2/manifest.schema.json](v2/manifest.schema.json) | サイト名・内容版・更新日 |
+| [v2/people.schema.json](v2/people.schema.json) | 人物の基本情報・収録範囲・任意の肖像と転換点 |
+| [v2/person-statuses.schema.json](v2/person-statuses.schema.json) | 時点別の人物状態 |
+| [v2/factions.schema.json](v2/factions.schema.json) | 勢力・活動分野と時点別状態 |
+| [v2/relations.schema.json](v2/relations.schema.json) | 人物関係・勢力関係 |
+| [v2/events.schema.json](v2/events.schema.json) | 時点・主要事件・個別事件・用語 |
+| [v2/places.schema.json](v2/places.schema.json) | 地点と概略座標 |
+| [v2/sources.schema.json](v2/sources.schema.json) | 出典カタログ |
+| [incident.schema.json](incident.schema.json) | 個別事件の人物・関与区分・関係・根拠 |
+| [portrait.schema.json](portrait.schema.json) | 肖像の同定・時期・原資料・利用条件 |
+| [term.schema.json](term.schema.json) | 背景解説・役職解説 |
+| [turning-point.schema.json](turning-point.schema.json) | 人物の前後比較と根拠 |
+| [v2/definitions.schema.json](v2/definitions.schema.json) | ID・期間・根拠などの共通定義 |
+| [current-data.schema.json](current-data.schema.json) | 生成する互換データ |
+| [v2/id-mappings.json](v2/id-mappings.json) | 正本の勢力・関係種別IDと互換形式の対応 |
 
-検証には JSON Schema Draft 2020-12 と Ajv を使用します。
+JSON Schema Draft 2020-12とAjvで型・必須項目を検査し、参照や期間の横断検証は `scripts/validate-data.cjs` で行います。
 
-## v2の原則
+## IDと参照
 
-### 安定ID
+- 正本の参照は表示名ではなく安定IDを使う。表示名を変えてもIDを変えない。
+- 人物の時点別表示名・事件での表示名は、人物の登録名または別名に含める。
+- 主要事件と個別事件はIDを重複させない。人物の `eventIds` は主要事件を参照する。
+- 個別事件の参加者は重複させず、関係の両端を参加者に限定する。同一人物の自己関係・同じ人物ペアの重複は許さない。
+- 人物・個別事件の `termIds` と、肖像の `sourceId`・`rightsSourceId` も登録先を参照する。
 
-- 人物、勢力、事件、地点、出典、関係、状態は変更しないIDを持ちます。
-- 勢力の表示名は `name`、参照には `id` を使用します。
-- 既存の人物・事件・地点・出典IDは、表示名から独立しているため原則維持します。
-- 関係IDは両端のID、開始シーンID、関係種別IDから一意に決定します。
+## 期間
 
-### 期間
+正本ではシーンIDを使い、互換形式の配列番号 `start`・`end`・`activeRange` を直接書き込みません。年代順は `events.json` の `scenes[].order` で決め、開始・終了の両端を含みます。
 
-- 配列インデックスによる `start` / `end` と `activeRange` は使用しません。
-- `startSceneId` / `endSceneId` は両端を含む期間です。
-- シーンの年代順は `events.json` 内の `scenes[].order` で定義します。
-- 人物状態と勢力状態は、同一人物・勢力内で期間を重複させません。
+人物状態は人物の収録範囲を空白・重複なく覆います。勢力状態も同一勢力内で期間を重複させません。人物関係と個別事件の参加者は、関連人物の収録範囲内に限ります。転換点は隣接時点間の比較で、同じ人物の到達時点を重複させません。
 
-### 出典とレビュー状態
+収録範囲は生存期間の代用ではありません。自動検証が通っても、死亡・離隊・役職変更後の記述が史料に合うかは編集時に確認します。
 
-歴史的主張を含むレコードは `evidence` を持ちます。
+## 根拠と校正状態
 
-- `verified`: 項目を裏づける `sourceIds` が1件以上必要
-- `disputed`: 諸説があり、出典と注記を併記する対象
-- `needs_review`: 項目単位の出典確認が未完了
+歴史的主張を含む項目は `evidence.sourceIds` と `evidence.reviewStatus` を持ちます。`verified` には当該内容を直接支える出典が必要で、スキーマは少なくとも1件の出典参照を要求します。`needs_review`・`disputed` を生成時に落としたり、自動的に確定扱いへ変えたりしません。
 
-現行データに項目別出典がない場合、移行処理は出典を推測せず `needs_review` とします。人物・事件に付いている広範な出典を、個々の関係や状態の確定根拠へ自動昇格させません。
+出典本文の該当箇所 `locator` と内容確認日 `contentCheckedAt` は対で記録します。到達性確認日とは別です。人物単位の広範な略歴を、個別の役職・関係の根拠へ自動昇格させません。
 
-`sources.json` では、本文を実際に確認した出典に限り `locator` と `contentCheckedAt` を対で登録できます。`locator` は見出し・頁・コマなどの該当箇所、`contentCheckedAt` は内容確認日です。リンクの到達確認日は内容確認日として扱いません。
+## 検証コマンドの違い
 
-## 分割ファイル
+| コマンド | 確認すること |
+| --- | --- |
+| `npm run validate:data` | 正本のスキーマと横断制約、互換JSON・ブラウザーデータとの意味上の一致 |
+| `npm run check:data` | 現行の生成処理が出力する文字列と、生成済みファイルの完全一致 |
+| `npm run test:data` | 上記に加え、出典精密情報とデータ・ドメイン・生成処理などの回帰検査 |
+| `npm run check:release` | データ・生成物・出典一覧・README統計・公開ファイル・校正状態の検査 |
 
-- `people.json`: 人物の不変情報と活動期間
-- `person-statuses.json`: 時点別の表示名・役職・所属・立場・位置づけ
-- `factions.json`: 勢力の不変情報と時点別状態
-- `relations.json`: 人物関係と勢力関係
-- `events.json`: シーン順序と事件
-- `places.json`: 地点と座標
-- `sources.json`: 出典カタログ
-- `manifest.json`: サイト名、コンテンツ版、更新日
+正本を変更したら `npm run build:data` で再生成してから検査します。エラーを消すために生成物を先に修正しません。出典一覧は `npm run build:sources` で生成します。
 
-## 検証
-
-```sh
-npm run validate:data
-```
-
-このコマンドは正本である `data/*.json` に対して、全v2 Schema、IDの一意性、参照先、期間順序、状態期間の非重複を検証します。その後、互換形式へ組み立てた結果がルートの `data.json` と `data.js` に一致することも確認します。
+ブラウザー検査と公開方法は [開発・運用手順](https://github.com/mugen8764/bakumatsu-people-navigator/blob/main/docs/maintenance.md) を参照してください。
