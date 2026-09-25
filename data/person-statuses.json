@@ -8212,6 +8212,164 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-status-iesada-1854-treaty",
+      "personId": "iesada",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1854-treaty",
+      "displayName": "徳川家定",
+      "role": "第13代将軍",
+      "factionId": "bakufu",
+      "stance": "1853年に将軍職を継ぎ、阿部正弘らが政務を補佐した。",
+      "importance": "条約を交渉する実務者と、将軍の役割を区別する。",
+      "evidence": {
+        "sourceIds": [
+          "dictionary_iesada"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-iesada-1858-ansei",
+      "personId": "iesada",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "徳川家定",
+      "role": "第13代将軍（7月6日死去・旧暦）",
+      "factionId": "bakufu",
+      "stance": "子がなく継嗣問題が起こり、慶福を後継者に定めた。同年7月に死去した。",
+      "importance": "後継者を選ぶ争いの出発点にいた将軍。",
+      "evidence": {
+        "sourceIds": [
+          "dictionary_iesada"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-seki-1860-sakurada",
+      "personId": "seki",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "関鉄之介",
+      "role": "水戸浪士・桜田門外の襲撃隊を指揮",
+      "factionId": "mito",
+      "stance": "井伊直弼襲撃を指揮。事件後は逃亡し、のちに捕らえられ1862年に処刑された。",
+      "importance": "水戸藩内の反対派と、襲撃の実行者を分けて見る。",
+      "evidence": {
+        "sourceIds": [
+          "dictionary_seki",
+          "ibaraki_sakuradamon"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-arimura-1860-sakurada",
+      "personId": "arimura",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "有村次左衛門",
+      "role": "薩摩脱藩者・桜田門外の襲撃に参加",
+      "factionId": "satsuma",
+      "stance": "水戸浪士らと井伊直弼を襲撃し、負傷。同日に自刃した。",
+      "importance": "薩摩藩士の個人行動を、藩全体の決定と混同しない。",
+      "evidence": {
+        "sourceIds": [
+          "dictionary_arimura",
+          "ibaraki_sakuradamon"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-ando-1860-sakurada",
+      "personId": "ando",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "安藤信正",
+      "role": "老中・磐城平藩主",
+      "factionId": "bakufu",
+      "stance": "1月に老中となり、井伊の死後は和宮降嫁を推進した。",
+      "importance": "大老暗殺後の幕政と朝廷との交渉をつなぐ。",
+      "evidence": {
+        "sourceIds": [
+          "iwaki_kazunomiya"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-ando-1862-bunkyu",
+      "personId": "ando",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "安藤信正",
+      "role": "前老中・磐城平藩主を隠居",
+      "factionId": "bakufu",
+      "stance": "1月15日（旧暦）に坂下門外で襲撃され負傷。4月に老中を免じられ、8月に隠居・謹慎となった。",
+      "importance": "2月の和宮の婚儀の時点では老中。年内の失脚と分けて読む。",
+      "evidence": {
+        "sourceIds": [
+          "iwaki_kazunomiya"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-kiyokawa-1863-joi",
+      "personId": "kiyokawa",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "displayName": "清河八郎",
+      "role": "浪士組結成の提案者（帰東後に死去）",
+      "factionId": "bakufu",
+      "stance": "浪士組と上洛し尊王攘夷を唱えた。京都残留組とは分かれて江戸へ戻り、幕吏に暗殺された。",
+      "importance": "幕府募集の浪士組に関わったが、新選組の隊士ではない。",
+      "evidence": {
+        "sourceIds": [
+          "mlit_kiyokawa",
+          "kyoto_shinsengumi_history"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-verny-1865-choshu",
+      "personId": "verny",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1867-taisei",
+      "displayName": "ヴェルニー",
+      "role": "横須賀製鉄所の首長・造船技師",
+      "factionId": "foreign-powers",
+      "stance": "幕府の事業として横須賀製鉄所の建設を指揮した。",
+      "importance": "政策を進める小栗、公使ロッシュ、建設を担う技師の役割を分ける。",
+      "evidence": {
+        "sourceIds": [
+          "yokosuka_verny",
+          "mof_yokosuka"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-verny-1868-toba",
+      "personId": "verny",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1869-hakodate",
+      "displayName": "ヴェルニー",
+      "role": "横須賀製鉄所の首長・造船技師",
+      "factionId": "foreign-powers",
+      "stance": "1868年、製鉄所は明治政府へ引き継がれた。ヴェルニーは日本に残り建設事業を続けた。",
+      "importance": "政権交替をまたいで造船施設の整備が続いた。1号ドックの完成は1871年。",
+      "evidence": {
+        "sourceIds": [
+          "yokosuka_verny",
+          "mof_yokosuka"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

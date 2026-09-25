@@ -152,6 +152,21 @@
           "ibaraki_sakuradamon"
         ],
         "reviewStatus": "verified"
+      },
+      "termIds": [
+        "tairo"
+      ],
+      "portrait": {
+        "src": "assets/portraits/ii-naoyasu.jpg",
+        "alt": "井伊直安が描いた井伊直弼の肖像画",
+        "sourceId": "commons_ii_naoyasu",
+        "rightsSourceId": "commons_ii_naoyasu",
+        "credit": "豪徳寺所蔵・井伊直安筆／Wikimedia Commons",
+        "originalSource": "井伊直安筆「井伊直弼画像」（豪徳寺所蔵）",
+        "dateNote": "伝・明治中期頃。没後の肖像画であり、写真ではありません。",
+        "identityNote": "Wikimedia Commonsの作品情報で井伊直弼画像と確認。",
+        "rightsNote": "配布元は作者の没年1935年と日本・米国でのパブリックドメインを表示。配布元の500px画像を使用。",
+        "checkedAt": "2026-09-25"
       }
     },
     {
@@ -493,6 +508,18 @@
           "fukui_pref_timeline"
         ],
         "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/shungaku-ndl.jpg",
+        "alt": "松平慶永（春嶽）の史料肖像",
+        "sourceId": "ndl_portrait_shungaku",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が松平慶永の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と出典明示による転載利用を案内。提供された縮小画像を使用。",
+        "checkedAt": "2026-09-25"
       }
     },
     {
@@ -1670,7 +1697,8 @@
       },
       "termIds": [
         "kyoto-shugoshoku",
-        "joi"
+        "joi",
+        "roshigumi"
       ]
     },
     {
@@ -1717,7 +1745,10 @@
         "identityNote": "国立国会図書館が土方歳三の肖像として掲載。",
         "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。",
         "checkedAt": "2026-09-12"
-      }
+      },
+      "termIds": [
+        "roshigumi"
+      ]
     },
     {
       "id": "tenshoin",
@@ -2120,7 +2151,8 @@
       "activeEndSceneId": "1868-edo",
       "oneLine": "渡米の経験をもとに、幕府の財政・軍備改革と横須賀製鉄所の建設を担った。",
       "placeIds": [
-        "edo"
+        "edo",
+        "yokosuka"
       ],
       "eventIds": [],
       "evidence": {
@@ -2131,7 +2163,8 @@
         "reviewStatus": "verified"
       },
       "termIds": [
-        "kaiko"
+        "kaiko",
+        "seitetsujo"
       ],
       "portrait": {
         "src": "assets/portraits/oguri-ndl.jpg",
@@ -2309,7 +2342,8 @@
       "oneLine": "駐日フランス公使。幕府の依頼で技術者や軍事顧問団の派遣を支えた。",
       "placeIds": [
         "edo",
-        "yokohama"
+        "yokohama",
+        "yokosuka"
       ],
       "eventIds": [
         "kinmon"
@@ -2323,7 +2357,8 @@
         "reviewStatus": "verified"
       },
       "termIds": [
-        "kaiko"
+        "kaiko",
+        "seitetsujo"
       ]
     },
     {
@@ -2489,7 +2524,9 @@
         ],
         "reviewStatus": "verified"
       },
-      "termIds": []
+      "termIds": [
+        "roshigumi"
+      ]
     },
     {
       "id": "satow",
@@ -3035,6 +3072,179 @@
         "sourceIds": [
           "shimonoseki_miyoshi_2021",
           "shimonoseki_miyoshi_2023"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "iesada",
+      "name": "徳川家定",
+      "kana": "とくがわいえさだ",
+      "aliases": [
+        "徳川家祥",
+        "家定"
+      ],
+      "lifespan": "1824–1858",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1854-treaty",
+      "activeEndSceneId": "1858-ansei",
+      "oneLine": "第13代将軍。後継者をめぐり、慶喜を推す側と慶福を推す側が争った。",
+      "placeIds": [
+        "edo"
+      ],
+      "eventIds": [
+        "treaty1854",
+        "ansei"
+      ],
+      "termIds": [
+        "gosanke",
+        "gosankyo"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "dictionary_iesada"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "seki",
+      "name": "関鉄之介",
+      "kana": "せきてつのすけ",
+      "aliases": [],
+      "lifespan": "1824–1862",
+      "defaultFactionId": "mito",
+      "activeStartSceneId": "1860-sakurada",
+      "activeEndSceneId": "1860-sakurada",
+      "oneLine": "水戸浪士。桜田門外の変で襲撃隊を指揮した。",
+      "placeIds": [
+        "edo",
+        "mito"
+      ],
+      "eventIds": [
+        "sakurada"
+      ],
+      "termIds": [
+        "tairo"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "dictionary_seki",
+          "ibaraki_sakuradamon"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "arimura",
+      "name": "有村次左衛門",
+      "kana": "ありむらじざえもん",
+      "aliases": [],
+      "lifespan": "1839（旧暦では天保9年末）–1860",
+      "defaultFactionId": "satsuma",
+      "activeStartSceneId": "1860-sakurada",
+      "activeEndSceneId": "1860-sakurada",
+      "oneLine": "薩摩を脱藩し、桜田門外の変に加わった人物。藩の公式な出兵とは分けて見る。",
+      "placeIds": [
+        "edo"
+      ],
+      "eventIds": [
+        "sakurada"
+      ],
+      "termIds": [
+        "dappan"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "dictionary_arimura",
+          "ibaraki_sakuradamon"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "ando",
+      "name": "安藤信正",
+      "kana": "あんどうのぶまさ",
+      "aliases": [],
+      "lifespan": "1819–1871",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1860-sakurada",
+      "activeEndSceneId": "1862-bunkyu",
+      "oneLine": "老中として和宮降嫁を進めた。坂下門外で襲撃され、1862年に老中を免じられた。",
+      "placeIds": [
+        "edo",
+        "kyoto"
+      ],
+      "eventIds": [
+        "sakurada",
+        "bunkyu"
+      ],
+      "termIds": [
+        "roju",
+        "kobugattai"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "iwaki_kazunomiya"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "kiyokawa",
+      "name": "清河八郎",
+      "kana": "きよかわはちろう",
+      "aliases": [
+        "清川八郎"
+      ],
+      "lifespan": "1830–1863",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1863-joi",
+      "activeEndSceneId": "1863-joi",
+      "oneLine": "浪士組の結成を働きかけた庄内出身の志士。京都残留組とは分かれて江戸へ戻った。",
+      "placeIds": [
+        "edo",
+        "kyoto"
+      ],
+      "eventIds": [],
+      "termIds": [
+        "roshigumi"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "mlit_kiyokawa",
+          "shonai_kiyokawa",
+          "kyoto_shinsengumi_history"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "verny",
+      "name": "ヴェルニー",
+      "kana": "ゔぇるにー",
+      "aliases": [
+        "レオンス・ヴェルニー",
+        "フランソワ・レオンス・ヴェルニー",
+        "ベルニー"
+      ],
+      "lifespan": "1837–1908",
+      "defaultFactionId": "foreign-powers",
+      "activeStartSceneId": "1865-choshu",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "フランスの造船技師。横須賀製鉄所の建設を指揮し、幕府から明治政府への引継ぎ後も事業を担った。",
+      "placeIds": [
+        "yokosuka"
+      ],
+      "eventIds": [],
+      "termIds": [
+        "seitetsujo"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "yokosuka_verny",
+          "mof_yokosuka"
         ],
         "reviewStatus": "verified"
       }

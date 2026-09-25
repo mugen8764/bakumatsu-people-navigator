@@ -1877,6 +1877,155 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-relation-iesada-iemochi-1858-ansei-appointment",
+      "aPersonId": "iesada",
+      "bPersonId": "iemochi",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "typeId": "appointment",
+      "label": "後継者を決定",
+      "text": "家定の後継者に慶福が決まり、家定の死後に家茂と改名して将軍となった。",
+      "evidence": {
+        "sourceIds": [
+          "dictionary_iesada"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-iesada-tenshoin-1858-ansei-kinship",
+      "aPersonId": "iesada",
+      "bPersonId": "tenshoin",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "typeId": "kinship",
+      "label": "将軍と御台所",
+      "text": "篤姫は家定の御台所となった。この関係は家定の存命期に表示する。",
+      "evidence": {
+        "sourceIds": [
+          "dictionary_iesada"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-seki-ii-1860-sakurada-conflict",
+      "aPersonId": "seki",
+      "bPersonId": "ii",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "typeId": "conflict",
+      "label": "襲撃を指揮",
+      "text": "関鉄之介は桜田門外の変で井伊直弼襲撃を指揮した。",
+      "evidence": {
+        "sourceIds": [
+          "dictionary_seki"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-arimura-ii-1860-sakurada-conflict",
+      "aPersonId": "arimura",
+      "bPersonId": "ii",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "typeId": "conflict",
+      "label": "襲撃に参加",
+      "text": "有村次左衛門は水戸浪士らと井伊直弼を襲撃した。",
+      "evidence": {
+        "sourceIds": [
+          "dictionary_arimura",
+          "ibaraki_sakuradamon"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-seki-arimura-1860-sakurada-organization",
+      "aPersonId": "seki",
+      "bPersonId": "arimura",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "typeId": "organization",
+      "label": "同じ襲撃隊に参加",
+      "text": "水戸浪士の関と薩摩脱藩者の有村は、桜田門外の変に加わった。藩同士の同盟を示す関係ではない。",
+      "evidence": {
+        "sourceIds": [
+          "dictionary_seki",
+          "dictionary_arimura",
+          "ibaraki_sakuradamon"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-ando-kazunomiya-1860-sakurada-mediation-or-negotiation",
+      "aPersonId": "ando",
+      "bPersonId": "kazunomiya",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1862-bunkyu",
+      "typeId": "mediation-or-negotiation",
+      "label": "降嫁を推進",
+      "text": "老中安藤信正は、和宮と将軍家茂の婚姻を推進した。",
+      "evidence": {
+        "sourceIds": [
+          "iwaki_kazunomiya"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-kiyokawa-kondo-1863-joi-organization",
+      "aPersonId": "kiyokawa",
+      "bPersonId": "kondo",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "typeId": "organization",
+      "label": "浪士組から進路が分かれる",
+      "text": "2〜3月の上洛時は同じ浪士組。清河は江戸に戻り、近藤は京都に残った。",
+      "evidence": {
+        "sourceIds": [
+          "kyoto_shinsengumi_history"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-oguri-verny-1865-choshu-organization",
+      "aPersonId": "oguri",
+      "bPersonId": "verny",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1867-taisei",
+      "typeId": "organization",
+      "label": "造船所の計画と建設",
+      "text": "小栗らが推進した横須賀製鉄所の計画を、技師ヴェルニーが建設面で担った。",
+      "evidence": {
+        "sourceIds": [
+          "mof_yokosuka",
+          "yokosuka_verny"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-roches-verny-1865-choshu-organization",
+      "aPersonId": "roches",
+      "bPersonId": "verny",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1867-taisei",
+      "typeId": "organization",
+      "label": "外交支援と技術実施",
+      "text": "ロッシュが協力した横須賀製鉄所で、ヴェルニーが建設を指揮した。",
+      "evidence": {
+        "sourceIds": [
+          "mof_yokosuka",
+          "yokosuka_verny"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ],
   "factionRelations": [

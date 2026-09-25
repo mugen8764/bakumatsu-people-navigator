@@ -568,7 +568,10 @@
       ],
       "personIds": [
         "ii",
-        "nariaki"
+        "nariaki",
+        "seki",
+        "arimura",
+        "ando"
       ],
       "factionIds": [
         "bakufu",
@@ -582,7 +585,8 @@
         "sourceIds": [
           "archives_timeline",
           "ndl_handwriting",
-          "ibaraki_sakuradamon"
+          "ibaraki_sakuradamon",
+          "iwaki_kazunomiya"
         ],
         "reviewStatus": "verified"
       }
@@ -3874,6 +3878,996 @@
         "reviewStatus": "verified",
         "note": "下関市会議録は旧暦1月23日、観光庁は新暦3月9日とする。京都市の既存案内には正月21日という差があるため、画面の日付は今回月までの表示にする。救援を政治的協力や親族関係へ分類せず、事件内の関係として示す。"
       }
+    },
+    {
+      "id": "shogun-succession-1858",
+      "sceneId": "1858-ansei",
+      "title": "家定の後継をめぐる将軍継嗣問題",
+      "date": "1857〜1858年（安政4〜5年）",
+      "scope": "将軍・二人の候補・擁立を働きかけた人物",
+      "summary": "家定の後継者を、一橋慶喜と紀伊藩主の徳川慶福のどちらにするかが争点となった。井伊直弼の大老就任後、慶福が後継者に決まる。",
+      "stakes": "誰を次の将軍にするか。候補本人と、候補を推して幕政に働きかける人々を分けて見る。",
+      "turningPoint": "慶喜を推した春嶽らは処分を受けた。家定の死後、慶福は家茂と改名して将軍となった。",
+      "participants": [
+        {
+          "personId": "iesada",
+          "displayName": "徳川家定",
+          "role": "後継者を定める第13代将軍",
+          "involvement": "decision",
+          "side": "将軍家",
+          "summary": "子がなく、その後継者選びが幕政の争点になった。慶福を継嗣と定めた年に死去。",
+          "evidence": {
+            "sourceIds": [
+              "dictionary_iesada"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "iemochi",
+          "displayName": "徳川慶福",
+          "role": "紀伊藩主・継嗣候補",
+          "involvement": "context",
+          "side": "慶福を推す側",
+          "summary": "井伊らに推され、家定の後継者に決まる。後の第14代将軍家茂。",
+          "evidence": {
+            "sourceIds": [
+              "dictionary_iesada"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "yoshinobu",
+          "displayName": "一橋慶喜",
+          "role": "一橋家当主・継嗣候補",
+          "involvement": "context",
+          "side": "慶喜を推す側",
+          "summary": "斉昭・春嶽らに推されたが、この時は将軍にならなかった。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_yoshinobu_detail",
+              "fukui_sanai_shungaku"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "ii",
+          "displayName": "井伊直弼",
+          "role": "大老・慶福擁立",
+          "involvement": "decision",
+          "side": "慶福を推す側",
+          "summary": "1858年4月に大老となり、慶福を後継者とする方針を進めた。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_handwriting_bakumatsu_people",
+              "fukui_sanai_shungaku"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "nariaki",
+          "displayName": "徳川斉昭",
+          "role": "前水戸藩主・慶喜擁立",
+          "involvement": "decision",
+          "side": "慶喜を推す側",
+          "summary": "実子の慶喜を後継者に推した。",
+          "evidence": {
+            "sourceIds": [
+              "ibaraki_nariaki_succession"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "shungaku",
+          "displayName": "松平慶永",
+          "role": "福井藩主・慶喜擁立",
+          "involvement": "decision",
+          "side": "慶喜を推す側",
+          "summary": "橋本左内に、幕府要人や公家への説得を命じた。",
+          "evidence": {
+            "sourceIds": [
+              "fukui_sanai_shungaku"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "sanai",
+          "displayName": "橋本左内",
+          "role": "福井藩の交渉実務",
+          "involvement": "decision",
+          "side": "慶喜を推す側",
+          "summary": "慶永の命を受け、慶喜擁立のために要人への働きかけを担った。",
+          "evidence": {
+            "sourceIds": [
+              "fukui_sanai_shungaku"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "succession-ii-iemochi",
+          "aPersonId": "ii",
+          "bPersonId": "iemochi",
+          "label": "慶福を擁立",
+          "description": "井伊は紀伊藩主慶福を将軍家の後継者に推した。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "fukui_sanai_shungaku"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "succession-shungaku-sanai",
+          "aPersonId": "shungaku",
+          "bPersonId": "sanai",
+          "label": "擁立交渉を命じる",
+          "description": "慶永が左内に慶喜擁立の説得工作を命じた。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "fukui_sanai_shungaku"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "succession-shungaku-yoshinobu",
+          "aPersonId": "shungaku",
+          "bPersonId": "yoshinobu",
+          "label": "慶喜を擁立",
+          "description": "慶永は慶喜を将軍の後継者に推した。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "fukui_sanai_shungaku"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "succession-iesada-iemochi",
+          "aPersonId": "iesada",
+          "bPersonId": "iemochi",
+          "label": "後継者に決定",
+          "description": "家定の後継者として慶福が決まった。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "dictionary_iesada"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "edo",
+        "kyoto"
+      ],
+      "termIds": [
+        "tairo",
+        "gosanke",
+        "gosankyo"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "dictionary_iesada",
+          "ndl_handwriting_bakumatsu_people",
+          "fukui_sanai_shungaku",
+          "ndl_portrait_yoshinobu_detail",
+          "ibaraki_nariaki_succession"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "ansei-purge",
+      "sceneId": "1858-ansei",
+      "title": "安政の大獄と反対派への処分",
+      "date": "1858〜1859年（安政5〜6年）の処分",
+      "scope": "処分を進めた幕府と、処分された人物",
+      "summary": "条約調印や将軍継嗣をめぐる対立、朝廷から水戸藩に下された密勅を背景に、幕府は大名・藩士・公家らを処分した。",
+      "stakes": "反対意見や朝廷への働きかけに、幕府がどこまで処罰を加えるか。処分の内容と時期は人物ごとに異なる。",
+      "turningPoint": "1859年には橋本左内や吉田松陰が処刑され、斉昭は水戸での永蟄居、慶喜は隠居・謹慎を命じられた。",
+      "participants": [
+        {
+          "personId": "ii",
+          "displayName": "井伊直弼",
+          "role": "大老・反対派処分を主導",
+          "involvement": "decision",
+          "side": "幕府",
+          "summary": "継嗣問題や条約への反対派の処分を進めた。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_handwriting_bakumatsu_people",
+              "fukui_sanai_shungaku"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "shungaku",
+          "displayName": "松平慶永",
+          "role": "隠居・慎みを命じられる",
+          "involvement": "context",
+          "side": "処分された人物",
+          "summary": "慶喜を推した福井藩主。1858年に隠居・慎みとなった。",
+          "evidence": {
+            "sourceIds": [
+              "fukui_sanai_shungaku"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "nariaki",
+          "displayName": "徳川斉昭",
+          "role": "1859年に水戸で永蟄居",
+          "involvement": "context",
+          "side": "処分された人物",
+          "summary": "水戸藩への密勅とその返納をめぐる対立の中、厳しい処分を受けた。",
+          "evidence": {
+            "sourceIds": [
+              "ibaraki_nariaki_ansei"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "yoshinobu",
+          "displayName": "一橋慶喜",
+          "role": "1859年に隠居・謹慎",
+          "involvement": "context",
+          "side": "処分された人物",
+          "summary": "1858年の登城停止に続き、翌1859年には隠居・謹慎となった。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_yoshinobu_detail",
+              "ibaraki_nariaki_ansei"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "sanai",
+          "displayName": "橋本左内",
+          "role": "1859年10月7日（旧暦）に刑死",
+          "involvement": "context",
+          "side": "処分された人物",
+          "summary": "慶喜擁立に動いた後、1858年に藩邸で謹慎。翌年に江戸で処刑された。",
+          "evidence": {
+            "sourceIds": [
+              "fukui_sanai_shungaku"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "sho-in",
+          "displayName": "吉田松陰",
+          "role": "1859年10月27日（旧暦）に刑死",
+          "involvement": "context",
+          "side": "処分された人物",
+          "summary": "左内とは別の経緯で処分され、左内の20日後に江戸で処刑された。",
+          "evidence": {
+            "sourceIds": [
+              "fukui_sanai_shungaku",
+              "ndl_handwriting_bakumatsu_people"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "purge-ii-shungaku",
+          "aPersonId": "ii",
+          "bPersonId": "shungaku",
+          "label": "反対派の藩主を処分",
+          "description": "井伊のもとで慶永は隠居・慎みを命じられた。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "fukui_sanai_shungaku"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "purge-ii-sanai",
+          "aPersonId": "ii",
+          "bPersonId": "sanai",
+          "label": "擁立に動いた藩士を処分",
+          "description": "大獄で左内が取り調べを受け、1859年に死罪となった。直接の裁判官を井伊とする線ではない。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "fukui_sanai_shungaku"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "edo",
+        "kyoto",
+        "mito"
+      ],
+      "termIds": [
+        "tairo",
+        "chokkyo"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "fukui_sanai_shungaku",
+          "ibaraki_nariaki_ansei",
+          "ndl_handwriting_bakumatsu_people"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "sakuradamon-1860",
+      "sceneId": "1860-sakurada",
+      "title": "桜田門外の襲撃と幕政の転換",
+      "date": "1860年3月3日（安政7年・旧暦）",
+      "scope": "襲撃の現場と、水戸藩・幕府の政治的背景",
+      "summary": "関鉄之介ら水戸浪士17名と薩摩の有村次左衛門が、江戸城桜田門外で井伊直弼を襲撃し殺害した。",
+      "stakes": "水戸藩の意向と浪士たちの行動は一致しなかった。密勅を返すかという藩内の対立も、襲撃の背景にある。",
+      "turningPoint": "井伊の死後、老中安藤信正らは和宮降嫁を推進した。婚儀は2年後の1862年に行われる。",
+      "participants": [
+        {
+          "personId": "ii",
+          "displayName": "井伊直弼",
+          "role": "襲撃された大老",
+          "involvement": "onsite",
+          "side": "襲撃を受ける側",
+          "summary": "登城中に襲撃され、命を落とした。",
+          "evidence": {
+            "sourceIds": [
+              "ibaraki_sakuradamon",
+              "ndl_handwriting_bakumatsu_people"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "seki",
+          "displayName": "関鉄之介",
+          "role": "襲撃隊の指揮",
+          "involvement": "onsite",
+          "side": "襲撃する側",
+          "summary": "水戸浪士による襲撃を指揮した。",
+          "evidence": {
+            "sourceIds": [
+              "dictionary_seki",
+              "ibaraki_sakuradamon"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "arimura",
+          "displayName": "有村次左衛門",
+          "role": "襲撃に加わる薩摩脱藩者",
+          "involvement": "onsite",
+          "side": "襲撃する側",
+          "summary": "水戸浪士らと襲撃に参加し、負傷して同日自刃した。",
+          "evidence": {
+            "sourceIds": [
+              "dictionary_arimura",
+              "ibaraki_sakuradamon"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "nariaki",
+          "displayName": "徳川斉昭",
+          "role": "水戸藩内の密勅返納問題",
+          "involvement": "context",
+          "side": "水戸藩の背景",
+          "summary": "返納やむなしとしたが、反対派はその意向を異なって受け取った。襲撃の現場にはいない。",
+          "evidence": {
+            "sourceIds": [
+              "ibaraki_sakuradamon"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "ando",
+          "displayName": "安藤信正",
+          "role": "事件後に和宮降嫁を推進",
+          "involvement": "context",
+          "side": "幕政のその後",
+          "summary": "老中として井伊死後の幕政を担い、朝廷との婚姻交渉を進めた。",
+          "evidence": {
+            "sourceIds": [
+              "iwaki_kazunomiya"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "sakurada-seki-ii",
+          "aPersonId": "seki",
+          "bPersonId": "ii",
+          "label": "襲撃を指揮",
+          "description": "関が襲撃隊を指揮し、井伊は殺害された。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "dictionary_seki"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "sakurada-arimura-ii",
+          "aPersonId": "arimura",
+          "bPersonId": "ii",
+          "label": "襲撃に参加",
+          "description": "有村は水戸浪士らと井伊を襲撃した。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "dictionary_arimura",
+              "ibaraki_sakuradamon"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "edo",
+        "mito"
+      ],
+      "termIds": [
+        "tairo",
+        "dappan",
+        "kobugattai"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ibaraki_sakuradamon",
+          "dictionary_seki",
+          "dictionary_arimura",
+          "iwaki_kazunomiya"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "kazunomiya-marriage",
+      "sceneId": "1862-bunkyu",
+      "title": "和宮降嫁と公武合体",
+      "date": "1860年の申入れ〜1862年2月11日（文久2年・旧暦）の婚儀",
+      "scope": "婚姻の当事者と、朝廷・幕府の交渉",
+      "summary": "井伊死後、幕府は和宮と将軍家茂の婚姻を正式に申し入れた。和宮は1861年に江戸へ下り、翌年に婚儀が行われた。",
+      "stakes": "朝廷と幕府の関係を婚姻によって結び直す公武合体策。孝明天皇は当初反対し、交渉は一度では決まらなかった。",
+      "turningPoint": "婚儀に先立ち、推進役の安藤信正は坂下門外で襲撃された。同年4月には老中を免じられた。",
+      "participants": [
+        {
+          "personId": "kazunomiya",
+          "displayName": "和宮親子内親王",
+          "role": "江戸へ降嫁した皇女",
+          "involvement": "onsite",
+          "side": "婚姻の当事者",
+          "summary": "1861年に京都から江戸へ下り、翌年2月11日（旧暦）に家茂との婚儀が行われた。",
+          "evidence": {
+            "sourceIds": [
+              "iwaki_kazunomiya"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "iemochi",
+          "displayName": "徳川家茂",
+          "role": "第14代将軍・和宮と婚姻",
+          "involvement": "onsite",
+          "side": "婚姻の当事者",
+          "summary": "朝廷と幕府を結ぶ婚姻の当事者となった。",
+          "evidence": {
+            "sourceIds": [
+              "iwaki_kazunomiya"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "ando",
+          "displayName": "安藤信正",
+          "role": "老中・降嫁交渉を推進",
+          "involvement": "decision",
+          "side": "幕府",
+          "summary": "婚儀の時点では老中。1月に襲撃され、4月には老中を免じられる。",
+          "evidence": {
+            "sourceIds": [
+              "iwaki_kazunomiya"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "komei",
+          "displayName": "孝明天皇",
+          "role": "和宮の兄・降嫁を了承",
+          "involvement": "decision",
+          "side": "朝廷",
+          "summary": "婚約などを理由に反対したが、幕府からの要請を重ねて受け、降嫁を認めた。",
+          "evidence": {
+            "sourceIds": [
+              "iwaki_kazunomiya"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "iwakura",
+          "displayName": "岩倉具視",
+          "role": "朝廷側の交渉に関与",
+          "involvement": "decision",
+          "side": "朝廷",
+          "summary": "1861年11月、安藤信正らと面会した。",
+          "evidence": {
+            "sourceIds": [
+              "iwaki_kazunomiya"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "marriage-kazunomiya-iemochi",
+          "aPersonId": "kazunomiya",
+          "bPersonId": "iemochi",
+          "label": "1862年に婚姻",
+          "description": "1862年2月11日（旧暦）に婚儀が行われた。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "iwaki_kazunomiya"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "marriage-ando-kazunomiya",
+          "aPersonId": "ando",
+          "bPersonId": "kazunomiya",
+          "label": "降嫁を推進",
+          "description": "安藤が幕府の老中として降嫁を進めた。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "iwaki_kazunomiya"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "marriage-iwakura-ando",
+          "aPersonId": "iwakura",
+          "bPersonId": "ando",
+          "label": "朝幕の交渉",
+          "description": "1861年11月に岩倉らが安藤らに面会した。",
+          "direction": "both",
+          "evidence": {
+            "sourceIds": [
+              "iwaki_kazunomiya"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "kyoto",
+        "edo"
+      ],
+      "termIds": [
+        "kobugattai",
+        "roju"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "iwaki_kazunomiya"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "roshigumi-1863",
+      "sceneId": "1863-joi",
+      "title": "浪士組の上洛と京都残留",
+      "date": "1863年2〜3月（文久3年・旧暦）",
+      "scope": "浪士組の結成から帰東・京都残留への分岐",
+      "summary": "清河八郎の提案を受け、幕府は将軍の上洛警護のために浪士を募集した。上洛後、江戸へ戻る組と京都に残る組へ分かれる。",
+      "stakes": "同じ浪士組から出発した人々が、どこで誰の下に活動するのか。清河は京都残留組には加わらず、江戸へ戻った。",
+      "turningPoint": "近藤・芹沢らは京都守護職の預かりとなった。8月18日の政変への出動などを経て、新選組として活動する。",
+      "participants": [
+        {
+          "personId": "kiyokawa",
+          "displayName": "清河八郎",
+          "role": "結成を提案し、のち帰東",
+          "involvement": "onsite",
+          "side": "江戸へ戻る組",
+          "summary": "京都で尊王攘夷を唱えた。幕府の帰府命令を受けて江戸へ戻る組に属した。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_shinsengumi_history",
+              "mlit_kiyokawa"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "kondo",
+          "displayName": "近藤勇",
+          "role": "浪士組から京都に残留",
+          "involvement": "onsite",
+          "side": "京都に残る組",
+          "summary": "浪士組に応募して上洛。芹沢らと京都に残ることを決めた。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_shinsengumi_history"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "hijikata",
+          "displayName": "土方歳三",
+          "role": "近藤らと上洛",
+          "involvement": "onsite",
+          "side": "京都に残る組",
+          "summary": "近藤らと浪士組に加わって上洛し、京都に残る組に属した。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_shinsengumi_history",
+              "hino_shinsengumi_2003"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "serizawa",
+          "displayName": "芹沢鴨",
+          "role": "浪士組から京都に残留",
+          "involvement": "onsite",
+          "side": "京都に残る組",
+          "summary": "近藤らとともに京都残留を選び、京都守護職の預かりとなった。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_shinsengumi_history"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "katamori",
+          "displayName": "松平容保",
+          "role": "京都守護職・残留組を預かる",
+          "involvement": "decision",
+          "side": "会津藩",
+          "summary": "京都に残った浪士らを京都守護職のもとで預かり、警護や巡邏を担わせた。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_shinsengumi_history",
+              "kyoto_shugoshoku_site"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "roshigumi-kiyokawa-kondo",
+          "aPersonId": "kiyokawa",
+          "bPersonId": "kondo",
+          "label": "上洛後に進路が分かれる",
+          "description": "同じ浪士組で上洛したが、清河は帰東し、近藤は京都に残った。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_shinsengumi_history"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "roshigumi-katamori-kondo",
+          "aPersonId": "katamori",
+          "bPersonId": "kondo",
+          "label": "京都残留組を預かる",
+          "description": "京都守護職が近藤らの残留組を預かった。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_shinsengumi_history"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "roshigumi-katamori-serizawa",
+          "aPersonId": "katamori",
+          "bPersonId": "serizawa",
+          "label": "京都残留組を預かる",
+          "description": "近藤らと残留した芹沢も、京都守護職の預かりとなった。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_shinsengumi_history"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "edo",
+        "kyoto"
+      ],
+      "termIds": [
+        "roshigumi",
+        "kyoto-shugoshoku",
+        "joi"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kyoto_shinsengumi_history",
+          "mlit_kiyokawa",
+          "hino_shinsengumi_2003",
+          "kyoto_shugoshoku_site"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "embassy-kanrinmaru-1860",
+      "sceneId": "1860-sakurada",
+      "title": "遣米使節と咸臨丸の航海",
+      "date": "1860年（万延元年）",
+      "scope": "条約批准の使節と、別船で随行した咸臨丸の主要人物",
+      "summary": "日米修好通商条約の批准書交換に赴く使節は米艦ポーハタン号に乗船。勝麟太郎らは咸臨丸で太平洋を渡った。",
+      "stakes": "外交上の任務と航海・通訳・随行の役割を区別する。小栗らの使節と咸臨丸の乗員は同じ船ではない。",
+      "turningPoint": "使節は批准書を交換し、咸臨丸の一行はサンフランシスコから帰国した。渡航で得た知識はその後の翻訳や技術導入につながる。",
+      "participants": [
+        {
+          "personId": "oguri",
+          "displayName": "小栗忠順",
+          "role": "使節の監察（目付）",
+          "involvement": "onsite",
+          "side": "ポーハタン号の使節",
+          "summary": "正使新見正興・副使村垣範正とともに、批准書交換を担う使節として渡米した。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_samurai_embassies",
+              "mofa_kanrinmaru"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "katsu",
+          "displayName": "勝麟太郎",
+          "role": "咸臨丸の船将",
+          "involvement": "onsite",
+          "side": "咸臨丸の一行",
+          "summary": "使節とは別の咸臨丸で渡米。艦はサンフランシスコへ向かった。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_samurai_embassies",
+              "mofa_kanrinmaru"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "manjiro",
+          "displayName": "中浜万次郎",
+          "role": "咸臨丸の通弁方",
+          "involvement": "onsite",
+          "side": "咸臨丸の一行",
+          "summary": "咸臨丸で通訳を担った。批准書交換の正使とは役割が異なる。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_samurai_embassies"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "fukuzawa",
+          "displayName": "福沢諭吉",
+          "role": "咸臨丸の随員",
+          "involvement": "onsite",
+          "side": "咸臨丸の一行",
+          "summary": "咸臨丸で渡米した随員。米国で万次郎とともに英語辞書を購入した。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_samurai_embassies",
+              "keio_america_footsteps"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "voyage-oguri-katsu",
+          "aPersonId": "oguri",
+          "bPersonId": "katsu",
+          "label": "別々の船で渡米",
+          "description": "小栗は使節団のポーハタン号、勝は随行する咸臨丸に乗った。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "ndl_samurai_embassies",
+              "mofa_kanrinmaru"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "voyage-katsu-manjiro",
+          "aPersonId": "katsu",
+          "bPersonId": "manjiro",
+          "label": "船将と通弁方",
+          "description": "同じ咸臨丸で、それぞれ航海と通訳の役割を担った。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "ndl_samurai_embassies"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "voyage-manjiro-fukuzawa",
+          "aPersonId": "manjiro",
+          "bPersonId": "fukuzawa",
+          "label": "英語辞書を購入",
+          "description": "渡米の際、ともにウェブスター辞書を購入して持ち帰った。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "keio_america_footsteps"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "yokohama",
+        "uraga"
+      ],
+      "termIds": [
+        "ratification",
+        "tsuji"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_samurai_embassies",
+          "mofa_kanrinmaru",
+          "keio_america_footsteps"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "yokosuka-1865",
+      "sceneId": "1865-choshu",
+      "title": "横須賀製鉄所の建設開始",
+      "date": "1865年（慶応元年）",
+      "scope": "幕府の起案・フランスの支援・技師による建設",
+      "summary": "小栗忠順らが進めた造船施設の整備に、フランス公使ロッシュが協力。技師ヴェルニーのもと、横須賀製鉄所の建設が始まった。",
+      "stakes": "外国から船を買うだけでなく、国内で艦船を造り修理する拠点をどう整えるか。外交官と技術者の仕事を分ける。",
+      "turningPoint": "建設事業は1868年に明治政府へ引き継がれた。1865年は着工の年で、1号ドックの完成は1871年。",
+      "participants": [
+        {
+          "personId": "oguri",
+          "displayName": "小栗忠順",
+          "role": "幕府側で建設を推進",
+          "involvement": "decision",
+          "side": "幕府",
+          "summary": "造船施設の整備を起案し、フランス側への協力依頼に関わった。",
+          "evidence": {
+            "sourceIds": [
+              "mof_yokosuka",
+              "yokosuka_verny"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "roches",
+          "displayName": "レオン・ロッシュ",
+          "role": "フランス公使・技術支援の窓口",
+          "involvement": "decision",
+          "side": "フランス",
+          "summary": "幕府から支援を依頼され、造船施設の整備に協力した。",
+          "evidence": {
+            "sourceIds": [
+              "mof_yokosuka",
+              "yokosuka_verny"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "verny",
+          "displayName": "ヴェルニー",
+          "role": "首長・建設を指揮する技師",
+          "involvement": "onsite",
+          "side": "フランス",
+          "summary": "造船技師として施設の建設を指揮した。外交官ではない。",
+          "evidence": {
+            "sourceIds": [
+              "mof_yokosuka",
+              "yokosuka_verny"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "yokosuka-oguri-roches",
+          "aPersonId": "oguri",
+          "bPersonId": "roches",
+          "label": "造船施設の協力を依頼",
+          "description": "小栗ら幕府側が、公使ロッシュへ協力を求めた。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "yokosuka_verny"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "yokosuka-roches-verny",
+          "aPersonId": "roches",
+          "bPersonId": "verny",
+          "label": "外交支援から技術実施へ",
+          "description": "ロッシュが協力した計画で、ヴェルニーが施設建設の指揮を担った。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "mof_yokosuka",
+              "yokosuka_verny"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "yokosuka",
+        "yokohama"
+      ],
+      "termIds": [
+        "seitetsujo"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "mof_yokosuka",
+          "yokosuka_verny"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ],
   "terms": [
@@ -4216,6 +5210,78 @@
         "sourceIds": [
           "kyoto_teradaya_1862",
           "mlit_teradaya_1866"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "tairo",
+      "kind": "office",
+      "title": "大老",
+      "kana": "たいろう",
+      "meaning": "江戸幕府で、必要に応じて老中より上に置かれた重職。",
+      "context": "1858年に井伊直弼が就任し、条約調印や将軍後継者の決定に関わった。常に置かれる職ではない。",
+      "evidence": {
+        "sourceIds": [
+          "dictionary_tairo",
+          "ndl_handwriting_bakumatsu_people"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "gosanke",
+      "title": "御三家",
+      "kana": "ごさんけ",
+      "meaning": "徳川家の尾張・紀伊・水戸の三家。",
+      "context": "1858年の継嗣問題では、紀伊藩主の慶福と、水戸家から一橋家に入った慶喜が候補となった。",
+      "evidence": {
+        "sourceIds": [
+          "edo_gosankyo",
+          "ndl_portrait_yoshinobu_detail",
+          "dictionary_iesada"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "gosankyo",
+      "title": "御三卿",
+      "kana": "ごさんきょう",
+      "meaning": "徳川家の田安・一橋・清水の三家。",
+      "context": "将軍家の家族に近い位置にあり、後継者を出した。一橋慶喜の「一橋」はこの家名。御三家の水戸とは区別する。",
+      "evidence": {
+        "sourceIds": [
+          "edo_gosankyo",
+          "ndl_portrait_yoshinobu_detail"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "roshigumi",
+      "title": "浪士組",
+      "kana": "ろうしぐみ",
+      "meaning": "将軍の上洛警護などのため、幕府が浪士を募って組織した集団。",
+      "context": "1863年の上洛後に帰東組と京都残留組へ分かれた。残留した近藤・芹沢らの組織が、新選組へつながる。",
+      "evidence": {
+        "sourceIds": [
+          "kyoto_shinsengumi_history",
+          "mlit_kiyokawa"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "seitetsujo",
+      "title": "横須賀製鉄所",
+      "kana": "よこすかせいてつじょ",
+      "meaning": "幕府が1865年に建設を始めた、艦船の建造・修理を担う工場群。",
+      "context": "「製鉄所」という名称だが、鉄を造るだけの施設ではない。艦船や機械を造り修理する拠点で、明治政府へ引き継がれた。",
+      "evidence": {
+        "sourceIds": [
+          "mof_yokosuka",
+          "yokosuka_verny"
         ],
         "reviewStatus": "verified"
       }

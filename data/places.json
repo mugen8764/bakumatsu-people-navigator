@@ -369,6 +369,21 @@
         "reviewStatus": "verified",
         "note": "小千谷市の文化財所在地と、地理院住所検索「新潟県小千谷市平成二丁目」の座標138.794022,37.307846を照合。街区の表示用概略位置で、建物入口の実測値ではない。"
       }
+    },
+    {
+      "id": "yokosuka",
+      "name": "横須賀",
+      "longitude": 139.667,
+      "latitude": 35.282,
+      "note": "1865年、幕府が製鉄所の建設に着手。艦船の建造・修理を担う拠点として整備された。",
+      "evidence": {
+        "sourceIds": [
+          "gsi_yokosuka_honcho",
+          "mof_yokosuka"
+        ],
+        "reviewStatus": "verified",
+        "note": "本町の概略座標。製鉄所やドックの正確な敷地境界は示さない。"
+      }
     }
   ]
 }

@@ -52,7 +52,7 @@ test('incident cast distinguishes signing, approval and the attacked side', () =
 });
 
 test('term contracts reject missing references and unsupported verified definitions', () => {
-  assert.equal(Object.keys(data.terms).length, 25);
+  assert.equal(Object.keys(data.terms).length, 30);
   for (const mutate of [
     docs => { docs.events.terms.push(structuredClone(docs.events.terms[0])); },
     docs => { docs.events.incidents[0].termIds = ['missing']; },

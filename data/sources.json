@@ -2342,6 +2342,118 @@
       "note": "お龍による警告、龍馬と三吉の脱出、現在の建物が再建であることに用いる。人物の心情・浴場の姿・婚姻時期は採用しない。",
       "locator": "Teradaya Incident：第1段落（警告）、第2段落（脱出）、第3段落（再建）",
       "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "dictionary_iesada",
+      "title": "山川日本史小辞典・日本人名大辞典「徳川家定」（コトバンク）",
+      "url": "https://kotobank.jp/word/%E5%BE%B3%E5%B7%9D%E5%AE%B6%E5%AE%9A-104676",
+      "locator": "山川日本史小辞典・デジタル版日本人名大辞典の生没年、将軍在職、家祥の名、継嗣決定",
+      "contentCheckedAt": "2026-09-25",
+      "note": "将軍宣下の月日は辞典間で異なるため年単位にとどめ、死去と発喪を区別する。"
+    },
+    {
+      "id": "dictionary_seki",
+      "title": "日本大百科全書「関鉄之介」（コトバンク）",
+      "url": "https://kotobank.jp/word/%E9%96%A2%E9%89%84%E4%B9%8B%E4%BB%8B-18204",
+      "locator": "日本大百科全書の生没年、実行隊長、事件後の逃亡・処刑",
+      "contentCheckedAt": "2026-09-25",
+      "note": "水戸浪士としての役割を確認。水戸藩全体の決定とは区別する。"
+    },
+    {
+      "id": "dictionary_arimura",
+      "title": "デジタル版日本人名大辞典「有村次左衛門」（コトバンク）",
+      "url": "https://kotobank.jp/word/%E6%9C%89%E6%9D%91%E6%AC%A1%E5%B7%A6%E8%A1%9B%E9%96%80-28093",
+      "locator": "デジタル版日本人名大辞典の生没年、脱藩、襲撃と自刃",
+      "contentCheckedAt": "2026-09-25",
+      "note": "天保9年12月28日は西暦1839年にあたるため、年だけの換算との違いを人物欄に明記する。"
+    },
+    {
+      "id": "mlit_kiyokawa",
+      "title": "国土交通省 酒田河川国道事務所「庄内の人物・清河八郎」",
+      "url": "https://www.thr.mlit.go.jp/sakata/shonai/chiiki/jinbutsu-f.html",
+      "locator": "幕末を駆け抜けた志士、清河八郎",
+      "contentCheckedAt": "2026-09-25",
+      "note": "生没年、浪士組の結成、京都での分裂、江戸での暗殺を確認。"
+    },
+    {
+      "id": "shonai_kiyokawa",
+      "title": "庄内町観光情報「庄内町人物伝・清河八郎」",
+      "url": "https://www.navishonai.jp/history/hachiro.html",
+      "locator": "プロフィール、1.誕生と齋藤家、4.江戸遊学時代",
+      "contentCheckedAt": "2026-09-25",
+      "note": "清河の表記、幼名元司、清河八郎への改名を確認。"
+    },
+    {
+      "id": "yokosuka_verny",
+      "title": "横須賀市「横須賀とフランスの歴史」",
+      "url": "https://www.city.yokosuka.kanagawa.jp/2120/culture_info/french/yokosukaseitetuzyo.html",
+      "locator": "横須賀製鉄所への協力依頼、1865年着工、ヴェルニー、1868年の継承",
+      "contentCheckedAt": "2026-09-25",
+      "note": "生没年、造船所建設の役割、明治政府への引継ぎを確認。元治元（1865）の元号表記は本文に誤りがあり、公開年表には転用しない。"
+    },
+    {
+      "id": "ndl_samurai_embassies",
+      "title": "国立国会図書館「世界を見たサムライ達」",
+      "url": "https://www.ndl.go.jp/portrait/pickup/016",
+      "locator": "万延元（1860）年遣米使節と咸臨丸の随行者",
+      "contentCheckedAt": "2026-09-25",
+      "note": "小栗の監察、勝の船将、万次郎の通弁、福沢の随員という役割を確認。"
+    },
+    {
+      "id": "mofa_kanrinmaru",
+      "title": "外務省「咸臨丸修理に関する感謝状（複製）」",
+      "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/14.html",
+      "locator": "本文のポーハタン号・咸臨丸の役割、浦賀出航と単独航海",
+      "contentCheckedAt": "2026-09-25",
+      "note": "遣米使節を乗せた船と咸臨丸を区別し、両船の出航地の違いを確認。"
+    },
+    {
+      "id": "edo_gosankyo",
+      "title": "江戸東京博物館「徳川御三卿展」",
+      "url": "https://www.edo-tokyo-museum.or.jp/s-exhibition/tokugawa-gosankyo/",
+      "locator": "展覧会紹介冒頭の御三家・御三卿と各家の起源",
+      "contentCheckedAt": "2026-09-25",
+      "note": "尾張・紀伊・水戸と田安・一橋・清水の区別、将軍家との関係を確認。"
+    },
+    {
+      "id": "dictionary_tairo",
+      "title": "日本大百科全書・デジタル大辞泉「大老」（コトバンク）",
+      "url": "https://kotobank.jp/word/%E5%A4%A7%E8%80%81-92306",
+      "locator": "江戸幕府の大老、老中との上下関係、臨時の職",
+      "contentCheckedAt": "2026-09-25",
+      "note": "江戸幕府での職を説明し、豊臣政権の五大老とは区別する。"
+    },
+    {
+      "id": "ndl_portrait_shungaku",
+      "title": "国立国会図書館「近代日本人の肖像・松平慶永」",
+      "url": "https://www.ndl.go.jp/portrait/datas/195",
+      "locator": "生没年・解説・肖像1枚目（一覧の縮小画像も同じ図像）",
+      "contentCheckedAt": "2026-09-25",
+      "note": "人物と肖像を照合。撮影時期は未確認であり、1858年当時の写真とは表示しない。"
+    },
+    {
+      "id": "commons_ii_naoyasu",
+      "title": "Wikimedia Commons「井伊直安筆 井伊直弼画像」",
+      "url": "https://commons.wikimedia.org/wiki/File:Ii_Naosuke_Portrait_by_Ii_Naoyasu.jpg",
+      "locator": "Summary・Licensing・500px preview",
+      "contentCheckedAt": "2026-09-25",
+      "note": "豪徳寺所蔵、井伊直安筆、伝・明治中期頃、パブリックドメイン表記を確認。後世の肖像画であり写真ではない。"
+    },
+    {
+      "id": "gsi_yokosuka_honcho",
+      "title": "国土地理院 住所検索「神奈川県横須賀市本町」",
+      "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%A8%AA%E9%A0%88%E8%B3%80%E5%B8%82%E6%9C%AC%E7%94%BA",
+      "locator": "geometry.coordinates [139.666977, 35.282326]",
+      "contentCheckedAt": "2026-09-25",
+      "note": "横須賀の表示用概略座標。製鉄所敷地やドックの厳密な位置を示すものではない。"
+    },
+    {
+      "id": "keio_america_footsteps",
+      "title": "慶應義塾「アメリカにおける福澤諭吉の足跡」",
+      "url": "https://www.keio.ac.jp/ja/about/public-relations/stainedglass-1995-2010/209/",
+      "note": "1860年の咸臨丸乗船と万次郎との辞書購入を確認。1867年の再渡米とは区別する。",
+      "locator": "サンフランシスコ（1860年の航海と辞書購入）",
+      "contentCheckedAt": "2026-09-25"
     }
   ]
 }

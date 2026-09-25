@@ -6,16 +6,16 @@
 
 ## 収録内容
 
-- 人物: 79名
+- 人物: 85名
 - 勢力: 14
 - 活動分野: 2（医療・学問、暮らし・支援）
 - 時点・主要事件: 16
-- 個別事件: 20（条約交渉、京都・土佐の政局、寺田屋の救援、薩長提携、政権交替、戊辰戦争など）
-- 人物関係: 108
+- 個別事件: 27（将軍継嗣、安政の大獄、公武合体、新選組成立、条約・航海、技術導入、各地の政局・戦争など）
+- 人物関係: 117
 - 勢力関係: 18
-- 地点: 30
-- 背景解説: 25項目
-- 史料肖像: 21点
+- 地点: 31
+- 背景解説: 30項目
+- 史料肖像: 23点
 
 掲載件数は正本データと `npm run check:docs` で照合します。
 
@@ -67,7 +67,7 @@ node tests/support/static-server.cjs
 npm run build:site
 ```
 
-配置するのは生成された `dist/` の内容だけです。本番では `main` のCIが成功すると、検査済みの成果物をCloudflare Pagesへ配信します。続くProduction smokeで、本番の主要39ファイル、4種のセキュリティヘッダー、24件のキャッシュ方針を照合します。手順・コマンド・確認範囲は[開発・運用手順](https://github.com/mugen8764/bakumatsu-people-navigator/blob/main/docs/maintenance.md)を参照してください。
+配置するのは生成された `dist/` の内容だけです。本番では `main` のCIが成功すると、検査済みの成果物をCloudflare Pagesへ配信します。続くProduction smokeで、本番の主要41ファイル、4種のセキュリティヘッダー、26件のキャッシュ方針を照合します。手順・コマンド・確認範囲は[開発・運用手順](https://github.com/mugen8764/bakumatsu-people-navigator/blob/main/docs/maintenance.md)を参照してください。
 
 ## 情報の扱いとライセンス
 
