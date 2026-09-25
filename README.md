@@ -17,7 +17,7 @@
 - 背景解説: 25項目
 - 史料肖像: 21点
 
-掲載件数は正本データと `npm run check:docs` で照合します。編集の経緯は[過去の計画・作業記録](https://github.com/mugen8764/bakumatsu-people-navigator/tree/main/docs/archive)に保管しています。
+掲載件数は正本データと `npm run check:docs` で照合します。
 
 ## できること
 
