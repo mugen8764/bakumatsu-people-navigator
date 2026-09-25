@@ -224,6 +224,43 @@
         "reviewStatus": "verified"
       },
       "kind": "field"
+    },
+    {
+      "id": "chofu",
+      "name": "長府藩",
+      "shortName": "長府",
+      "color": "#4f6d5c",
+      "summary": "長府毛利家の藩。藩士の三吉慎蔵は他藩の人物と交流し、1866年の寺田屋襲撃では龍馬の救護を求めた。",
+      "aliases": [
+        "長府毛利家"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "shimonoseki_miyoshi_2021",
+          "shimonoseki_miyoshi_2023"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "life-support",
+      "name": "暮らし・支援",
+      "shortName": "支",
+      "kind": "field",
+      "color": "#73604e",
+      "summary": "生活の場での仕事や、避難・療養を支えた行動から人物を探すための分野。共通の政治方針を持つ組織への所属を表すものではない。",
+      "aliases": [
+        "生活",
+        "支援",
+        "看護"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ryoma_dappan",
+          "mlit_teradaya_1866"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ],
   "states": [
@@ -1317,6 +1354,36 @@
         "sourceIds": [
           "ndl_portrait_ine",
           "ndl_manjiro"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "faction-state-chofu-1866-satcho",
+      "factionId": "chofu",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "goal": "三吉慎蔵が京都で情報収集の藩命にあたる。",
+      "position": "長府藩士・三吉慎蔵の救援と他藩とのつながりを読む。",
+      "evidence": {
+        "sourceIds": [
+          "shimonoseki_miyoshi_2023",
+          "shimonoseki_miyoshi_2021"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "faction-state-life-support-1866-satcho",
+      "factionId": "life-support",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "goal": "お龍の寺田屋での仕事と、警告・看護による援助をたどる。",
+      "position": "藩への所属ではなく、人を支えた行動から見る分野。",
+      "evidence": {
+        "sourceIds": [
+          "ryoma_dappan",
+          "mlit_teradaya_1866"
         ],
         "reviewStatus": "verified"
       }

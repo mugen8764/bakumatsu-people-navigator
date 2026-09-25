@@ -24,7 +24,7 @@ test('scene-level counts stay at the current display baseline', () => {
     { scene: '1863-aug18', people: 49, factions: 7, relations: 30 },
     { scene: '1864-kinmon', people: 52, factions: 7, relations: 27 },
     { scene: '1865-choshu', people: 54, factions: 7, relations: 24 },
-    { scene: '1866-satcho', people: 48, factions: 8, relations: 25 },
+    { scene: '1866-satcho', people: 50, factions: 10, relations: 25 },
     { scene: '1866-expedition', people: 49, factions: 7, relations: 20 },
     { scene: '1867-taisei', people: 50, factions: 8, relations: 18 },
     { scene: '1868-toba', people: 46, factions: 8, relations: 16 },

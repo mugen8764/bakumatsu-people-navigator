@@ -1494,7 +1494,8 @@
         "edo",
         "kobe",
         "nagasaki",
-        "kyoto"
+        "kyoto",
+        "fushimi"
       ],
       "eventIds": [
         "bunkyu",
@@ -2973,6 +2974,69 @@
         ],
         "reviewStatus": "verified",
         "note": "生年は資料が記す旧暦の天保7年で表示。旧暦12月の生年月日を未確認の西暦日に置き換えない。"
+      }
+    },
+    {
+      "id": "oryo",
+      "name": "お龍",
+      "kana": "おりょう",
+      "aliases": [
+        "楢崎龍",
+        "坂本龍",
+        "坂本竜",
+        "おりょう"
+      ],
+      "lifespan": "生年確認中–1906",
+      "defaultFactionId": "life-support",
+      "activeStartSceneId": "1866-satcho",
+      "activeEndSceneId": "1866-satcho",
+      "oneLine": "寺田屋で働き、襲撃時に龍馬へ危険を知らせ、その後の看護にもあたった。",
+      "placeIds": [
+        "fushimi"
+      ],
+      "eventIds": [],
+      "termIds": [
+        "funayado"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_oryo_authority",
+          "yokosuka_oryo",
+          "ryoma_dappan",
+          "mlit_teradaya_1866"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "国会図書館典拠は1841年生。横須賀市観光情報に転載された1977年の説明板は除籍簿の別年を紹介しており、今回その相違は解消できていない。事件での行動の根拠とは分けて生年を校正中とする。"
+      }
+    },
+    {
+      "id": "miyoshi-shinzo",
+      "name": "三吉慎蔵",
+      "kana": "みよし しんぞう",
+      "aliases": [
+        "三吉慎藏",
+        "慎蔵"
+      ],
+      "lifespan": "1831–1901",
+      "defaultFactionId": "chofu",
+      "activeStartSceneId": "1866-satcho",
+      "activeEndSceneId": "1866-satcho",
+      "oneLine": "長府藩士。寺田屋から龍馬と脱出し、薩摩藩邸へ救護を求めた。",
+      "placeIds": [
+        "fushimi",
+        "kyoto",
+        "shimonoseki"
+      ],
+      "eventIds": [],
+      "termIds": [
+        "funayado"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "shimonoseki_miyoshi_2021",
+          "shimonoseki_miyoshi_2023"
+        ],
+        "reviewStatus": "verified"
       }
     }
   ]

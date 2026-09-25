@@ -3769,6 +3769,111 @@
         "reviewStatus": "verified",
         "note": "後藤の審理を武市個人との直接面談の関係線にしない。1865年時点の内側に別地域の事件として置き、長州藩政転換そのものの当事者にはしない。"
       }
+    },
+    {
+      "id": "teradaya-1866",
+      "sceneId": "1866-satcho",
+      "title": "寺田屋襲撃と龍馬の救援（1866年）",
+      "date": "1866年1月（旧暦）・襲撃とその後の保護",
+      "scope": "寺田屋からの脱出と、伏見・京都の薩摩藩邸による保護",
+      "summary": "薩長盟約の後、伏見の寺田屋で龍馬と三吉慎蔵が伏見奉行所の捕り方に襲われた。お龍の警告と三吉の救護要請が、負傷した龍馬の避難につながった。",
+      "stakes": "襲撃から逃れた龍馬を、誰がどのように安全な場所へつないだか。1862年の薩摩藩内の寺田屋騒動とは別の事件。",
+      "turningPoint": "龍馬は伏見の薩摩藩邸で保護され、お龍が看護にあたった。その後、京都の薩摩藩邸へ移った。",
+      "participants": [
+        {
+          "personId": "ryoma",
+          "displayName": "坂本龍馬",
+          "role": "寺田屋で襲撃され、負傷して避難",
+          "involvement": "onsite",
+          "side": "寺田屋からの避難",
+          "summary": "三吉とともに捕り方の襲撃を受け、負傷しながら脱出。薩摩藩邸で保護された。",
+          "evidence": {
+            "sourceIds": [
+              "shimonoseki_miyoshi_2021",
+              "ryoma_dappan"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "oryo",
+          "displayName": "お龍",
+          "role": "危険を知らせ、避難後に看護",
+          "involvement": "onsite",
+          "side": "寺田屋での支援",
+          "summary": "寺田屋で働いていたお龍は、襲撃を龍馬に知らせた。負傷した龍馬を薩摩藩邸で看護した。",
+          "evidence": {
+            "sourceIds": [
+              "mlit_teradaya_1866",
+              "ryoma_dappan"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "miyoshi-shinzo",
+          "displayName": "三吉慎蔵",
+          "role": "龍馬と脱出し、薩摩藩邸へ救護を要請",
+          "involvement": "onsite",
+          "side": "長府藩",
+          "summary": "龍馬と寺田屋を脱出した後、伏見薩摩屋敷へ走って救護を求めた。",
+          "evidence": {
+            "sourceIds": [
+              "shimonoseki_miyoshi_2021"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "teradaya-oryo-ryoma",
+          "aPersonId": "oryo",
+          "bPersonId": "ryoma",
+          "label": "危険を知らせ、看護する",
+          "description": "寺田屋での警告と、薩摩藩邸での看護を通じて龍馬を助けた。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "mlit_teradaya_1866",
+              "ryoma_dappan"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "teradaya-miyoshi-ryoma",
+          "aPersonId": "miyoshi-shinzo",
+          "bPersonId": "ryoma",
+          "label": "薩摩藩邸へ救護を求める",
+          "description": "ともに脱出した後、三吉が伏見薩摩屋敷に救護を求めた。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "shimonoseki_miyoshi_2021"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "fushimi",
+        "kyoto"
+      ],
+      "termIds": [
+        "funayado"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "mlit_teradaya_1866",
+          "ryoma_dappan",
+          "shimonoseki_miyoshi_2021",
+          "shimonoseki_miyoshi_2023",
+          "kochi_ryoma_letter_1866"
+        ],
+        "reviewStatus": "verified",
+        "note": "下関市会議録は旧暦1月23日、観光庁は新暦3月9日とする。京都市の既存案内には正月21日という差があるため、画面の日付は今回月までの表示にする。救援を政治的協力や親族関係へ分類せず、事件内の関係として示す。"
+      }
     }
   ],
   "terms": [
@@ -4097,6 +4202,20 @@
         "sourceIds": [
           "kochi_takechi_imprisonment",
           "kochi_tosa_bakumatsu"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "funayado",
+      "title": "船宿",
+      "kana": "ふなやど",
+      "meaning": "船を利用する旅人が宿泊や休憩に使う宿。",
+      "context": "伏見の寺田屋は船宿で、1862年の薩摩藩内の衝突と、1866年の龍馬襲撃の両方の舞台になった。現在の建物は再建されたもの。",
+      "evidence": {
+        "sourceIds": [
+          "kyoto_teradaya_1862",
+          "mlit_teradaya_1866"
         ],
         "reviewStatus": "verified"
       }

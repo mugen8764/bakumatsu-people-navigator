@@ -8176,6 +8176,42 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-status-oryo-1866-satcho",
+      "personId": "oryo",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "displayName": "お龍",
+      "role": "寺田屋で働く・龍馬を助ける",
+      "factionId": "life-support",
+      "stance": "寺田屋への捕り方の襲撃を龍馬に知らせた。脱出後、薩摩藩邸で負傷した龍馬の看護にあたった。",
+      "importance": "危険を知らせる行動と、避難後の世話から龍馬を支えた。",
+      "evidence": {
+        "sourceIds": [
+          "mlit_teradaya_1866",
+          "ryoma_dappan"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-miyoshi-shinzo-1866-satcho",
+      "personId": "miyoshi-shinzo",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "displayName": "三吉慎蔵",
+      "role": "長府藩士・龍馬の救護を要請",
+      "factionId": "chofu",
+      "stance": "寺田屋で龍馬とともに襲撃を受け、脱出後に伏見薩摩屋敷へ救護を求めた。その後、京都の薩摩藩邸で情報収集の藩命にあたった。",
+      "importance": "現場から逃れるだけでなく、藩邸の保護へつなぐ役割を果たした。",
+      "evidence": {
+        "sourceIds": [
+          "shimonoseki_miyoshi_2021",
+          "shimonoseki_miyoshi_2023"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

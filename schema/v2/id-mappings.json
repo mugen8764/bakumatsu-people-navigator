@@ -13,7 +13,9 @@
     "新政府": "new-government",
     "佐賀藩": "saga",
     "長岡藩": "nagaoka",
-    "医療・学問": "medicine-learning"
+    "医療・学問": "medicine-learning",
+    "長府藩": "chofu",
+    "暮らし・支援": "life-support"
   },
   "personRelationTypes": {
     "主従・登用": "appointment",

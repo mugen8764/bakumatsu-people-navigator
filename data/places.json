@@ -78,9 +78,9 @@
       "name": "鳥羽・伏見",
       "longitude": 135.75,
       "latitude": 34.94,
-      "note": "1868年1月3日、旧幕府軍と新政府軍が衝突し、戊辰戦争が始まった地域。",
+      "note": "1866年の寺田屋襲撃と薩摩藩邸による保護、1868年の鳥羽・伏見の戦いの舞台となった地域。",
       "evidence": {
-        "sourceIds": ["gsi_maps_coordinates", "archives_toba_fushimi", "kyoto_toba_fushimi_site"],
+        "sourceIds": ["gsi_maps_coordinates", "archives_toba_fushimi", "kyoto_toba_fushimi_site", "shimonoseki_miyoshi_2021"],
         "reviewStatus": "verified",
         "note": "表示用概略座標と鳥羽・伏見での開戦を確認。"
       }
