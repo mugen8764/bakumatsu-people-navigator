@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.69",
+    "version": "1.0.70",
     "updated": "2026-09-25"
   },
   "sources": {
@@ -860,7 +860,9 @@
     "kochi_takechi_1863": {
       "title": "高知県立坂本龍馬記念館「半平太と京都」",
       "url": "https://ryoma-kinenkan.jp/exhibition/2025/06/post-27.html",
-      "note": "武市半平太の上士昇格、京都留守居加役就任、1862年12月23日の帰京から1863年4月4日の離京。"
+      "note": "武市半平太の上士昇格、京都留守居加役就任、1862年12月23日の帰京から1863年4月4日の離京。",
+      "locator": "第三章「帰洛から土佐帰国まで」（上士昇格、京都留守居加役、1863年4月4日の離京）",
+      "contentCheckedAt": "2026-09-25"
     },
     "kyoto_museum_ryoma_1863": {
       "title": "京都国立博物館「坂本龍馬関係書状 文久三年三月二十日 坂本乙女あて」",
@@ -888,7 +890,7 @@
       "title": "高知市「史跡 武市半平太旧宅及び墓」",
       "url": "https://www.city.kochi.kochi.jp/soshiki/90/cas-state-1600100.html",
       "note": "武市半平太の土佐勤王党結成、京都留守居加役就任と帰国、八月十八日の政変後の弾圧、1863年9月21日の投獄、1865年閏5月11日の切腹命令と死去。",
-      "locator": "解説（1861年8月の土佐勤王党盟約書と党主、吉田東洋との方針の対立）",
+      "locator": "解説（勤王党結成と藩論対立、1863年9月21日の投獄、1865年閏5月11日の切腹命令）",
       "contentCheckedAt": "2026-09-25"
     },
     "archives_kinmon_aftermath": {
@@ -1027,7 +1029,9 @@
     "kochi_goto_1865": {
       "title": "高知県立坂本龍馬記念館「後藤象二郎誕生地」",
       "url": "https://ryoma-kinenkan.jp/place/2018/02/post-25.html",
-      "note": "後藤象二郎が1865年の土佐勤王党の獄で大監察として取り調べにあたり、1866年に開成館を開業した経歴。"
+      "note": "後藤象二郎が1865年の土佐勤王党の獄で大監察として取り調べにあたり、1866年に開成館を開業した経歴。",
+      "locator": "本文第2段落（1865年の土佐勤王党の獄における大監察、1866年の開成館）",
+      "contentCheckedAt": "2026-09-25"
     },
     "kochi_tosa_people": {
       "title": "高知県立高知城歴史博物館「土佐史の人々・幕末維新期」",
@@ -6265,6 +6269,96 @@
         "reviewStatus": "verified",
         "note": "政治的対立と暗殺実行を区別。武市を現場の実行者として表示せず、暗殺命令の関係線を生成しない。"
       }
+    },
+    "tosa-repression-1865": {
+      "id": "tosa-repression-1865",
+      "sceneId": "1865-choshu",
+      "title": "土佐勤王党の弾圧と処分",
+      "date": "1863年9月21日〜1865年閏5月11日（旧暦）",
+      "scope": "土佐での投獄、勤王党の獄の審理、武市の処分",
+      "summary": "八月十八日の政変後、土佐藩は武市半平太ら勤王党員を捕縛。獄中生活が続き、1865年に武市は切腹を命じられた。後藤象二郎は大監察として勤王党の獄の審理・処分に関わった。",
+      "stakes": "公武合体を唱える容堂と、勤王党の方針の違い。取り調べでは、吉田東洋暗殺などの事件が重大な問題として扱われた。",
+      "turningPoint": "1865年閏5月11日に武市が死去。後藤は翌1866年に開成館の責任者となり、藩の事業を担う。",
+      "participants": [
+        {
+          "personId": "takechi",
+          "displayName": "武市半平太",
+          "role": "投獄された勤王党盟主・1865年に切腹",
+          "involvement": "onsite",
+          "side": "土佐勤王党",
+          "summary": "1863年9月21日に投獄され、拘束が続いた。1865年閏5月11日に切腹を命じられた（旧暦）。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_takechi_imprisonment"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "yodo",
+          "displayName": "山内容堂",
+          "role": "前土佐藩主・公武合体の方針",
+          "involvement": "decision",
+          "side": "土佐藩",
+          "summary": "勤王党とは藩の方針が一致しなかった。京都の政局が変わると、土佐藩は武市らを捕らえた。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_tosa_bakumatsu",
+              "kochi_takechi_imprisonment"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "goto",
+          "displayName": "後藤象二郎",
+          "role": "大監察・1865年の審理と処分に関与",
+          "involvement": "decision",
+          "side": "土佐藩",
+          "summary": "1865年、土佐勤王党の獄で大監察として審理と処分にあたる。開成館の事業を担うのは翌年。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_goto_1865"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "tosa-repression-yodo-takechi",
+          "aPersonId": "yodo",
+          "bPersonId": "takechi",
+          "label": "藩論の対立と勤王党への弾圧",
+          "description": "容堂と勤王党の方針は一致せず、京都の政変後に藩は武市らを捕らえた。投獄から切腹までは年をまたいでいる。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "kochi_tosa_bakumatsu",
+              "kochi_takechi_imprisonment"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "kochi"
+      ],
+      "termIds": [
+        "tosa-kinno",
+        "kobugattai",
+        "joi"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kochi_tosa_bakumatsu",
+          "kochi_takechi_imprisonment",
+          "kochi_yodo_1862",
+          "kochi_goto_1865"
+        ],
+        "reviewStatus": "verified",
+        "note": "後藤の審理を武市個人との直接面談の関係線にしない。1865年時点の内側に別地域の事件として置き、長州藩政転換そのものの当事者にはしない。"
+      }
     }
   },
   "places": {
@@ -11471,6 +11565,19 @@
             "reviewStatus": "verified"
           }
         },
+        "1865-choshu": {
+          "display": "山内容堂",
+          "role": "前土佐藩主・公武合体を唱える",
+          "stance": "尊王攘夷を掲げる土佐勤王党とは方針が一致せず、藩による弾圧が続いた。1865年、投獄中の武市半平太は切腹を命じられた。",
+          "importance": "藩内の政治方針の対立が、武市らの捕縛と処分へ至った。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_tosa_bakumatsu",
+              "kochi_takechi_imprisonment"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
         "1866-satcho": {
           "display": "山内容堂",
           "role": "前土佐藩主",
@@ -11562,6 +11669,24 @@
       },
       "termIds": [
         "tosa-kinno"
+      ],
+      "turningPoints": [
+        {
+          "fromSceneId": "1863-joi",
+          "toSceneId": "1863-aug18",
+          "title": "京都での政治活動から、土佐での投獄へ",
+          "before": "京都留守居加役を務め、1863年4月4日に土佐へ帰るため京都を発った（旧暦）。",
+          "after": "八月十八日の政変後、9月21日に土佐藩で投獄され、以後は獄中に置かれた（旧暦）。",
+          "context": "拘束は翌1864年も続き、1865年閏5月11日に切腹を命じられた。京都での活動、投獄、死去を別々の時点として読む。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_takechi_1863",
+              "kochi_takechi_imprisonment",
+              "kochi_tosa_bakumatsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
       ],
       "statuses": {
         "1860-sakurada": {
@@ -11836,6 +11961,9 @@
         ],
         "reviewStatus": "verified"
       },
+      "termIds": [
+        "tosa-kinno"
+      ],
       "portrait": {
         "src": "assets/portraits/goto-ndl.jpg",
         "alt": "後藤象二郎の史料肖像",
@@ -11852,12 +11980,11 @@
         "1865-choshu": {
           "display": "後藤象二郎",
           "role": "土佐藩大監察",
-          "stance": "土佐勤王党の獄で、武市半平太らの取り調べと処分にあたる。",
+          "stance": "土佐勤王党の獄で、大監察として審理と処分にあたる。",
           "importance": "開成館の設立と責任者就任は翌1866年であり、この時点へ先取りしない。",
           "evidence": {
             "sourceIds": [
-              "kochi_goto_1865",
-              "kochi_tosa_people"
+              "kochi_goto_1865"
             ],
             "reviewStatus": "verified"
           }

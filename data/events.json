@@ -3679,6 +3679,96 @@
         "reviewStatus": "verified",
         "note": "政治的対立と暗殺実行を区別。武市を現場の実行者として表示せず、暗殺命令の関係線を生成しない。"
       }
+    },
+    {
+      "id": "tosa-repression-1865",
+      "sceneId": "1865-choshu",
+      "title": "土佐勤王党の弾圧と処分",
+      "date": "1863年9月21日〜1865年閏5月11日（旧暦）",
+      "scope": "土佐での投獄、勤王党の獄の審理、武市の処分",
+      "summary": "八月十八日の政変後、土佐藩は武市半平太ら勤王党員を捕縛。獄中生活が続き、1865年に武市は切腹を命じられた。後藤象二郎は大監察として勤王党の獄の審理・処分に関わった。",
+      "stakes": "公武合体を唱える容堂と、勤王党の方針の違い。取り調べでは、吉田東洋暗殺などの事件が重大な問題として扱われた。",
+      "turningPoint": "1865年閏5月11日に武市が死去。後藤は翌1866年に開成館の責任者となり、藩の事業を担う。",
+      "participants": [
+        {
+          "personId": "takechi",
+          "displayName": "武市半平太",
+          "role": "投獄された勤王党盟主・1865年に切腹",
+          "involvement": "onsite",
+          "side": "土佐勤王党",
+          "summary": "1863年9月21日に投獄され、拘束が続いた。1865年閏5月11日に切腹を命じられた（旧暦）。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_takechi_imprisonment"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "yodo",
+          "displayName": "山内容堂",
+          "role": "前土佐藩主・公武合体の方針",
+          "involvement": "decision",
+          "side": "土佐藩",
+          "summary": "勤王党とは藩の方針が一致しなかった。京都の政局が変わると、土佐藩は武市らを捕らえた。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_tosa_bakumatsu",
+              "kochi_takechi_imprisonment"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "goto",
+          "displayName": "後藤象二郎",
+          "role": "大監察・1865年の審理と処分に関与",
+          "involvement": "decision",
+          "side": "土佐藩",
+          "summary": "1865年、土佐勤王党の獄で大監察として審理と処分にあたる。開成館の事業を担うのは翌年。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_goto_1865"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "tosa-repression-yodo-takechi",
+          "aPersonId": "yodo",
+          "bPersonId": "takechi",
+          "label": "藩論の対立と勤王党への弾圧",
+          "description": "容堂と勤王党の方針は一致せず、京都の政変後に藩は武市らを捕らえた。投獄から切腹までは年をまたいでいる。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "kochi_tosa_bakumatsu",
+              "kochi_takechi_imprisonment"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "kochi"
+      ],
+      "termIds": [
+        "tosa-kinno",
+        "kobugattai",
+        "joi"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kochi_tosa_bakumatsu",
+          "kochi_takechi_imprisonment",
+          "kochi_yodo_1862",
+          "kochi_goto_1865"
+        ],
+        "reviewStatus": "verified",
+        "note": "後藤の審理を武市個人との直接面談の関係線にしない。1865年時点の内側に別地域の事件として置き、長州藩政転換そのものの当事者にはしない。"
+      }
     }
   ],
   "terms": [

@@ -1456,6 +1456,24 @@
       },
       "termIds": [
         "tosa-kinno"
+      ],
+      "turningPoints": [
+        {
+          "fromSceneId": "1863-joi",
+          "toSceneId": "1863-aug18",
+          "title": "京都での政治活動から、土佐での投獄へ",
+          "before": "京都留守居加役を務め、1863年4月4日に土佐へ帰るため京都を発った（旧暦）。",
+          "after": "八月十八日の政変後、9月21日に土佐藩で投獄され、以後は獄中に置かれた（旧暦）。",
+          "context": "拘束は翌1864年も続き、1865年閏5月11日に切腹を命じられた。京都での活動、投獄、死去を別々の時点として読む。",
+          "evidence": {
+            "sourceIds": [
+              "kochi_takechi_1863",
+              "kochi_takechi_imprisonment",
+              "kochi_tosa_bakumatsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
       ]
     },
     {
@@ -1544,7 +1562,10 @@
         "identityNote": "国立国会図書館が後藤象二郎の肖像として掲載。",
         "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
         "checkedAt": "2026-09-12"
-      }
+      },
+      "termIds": [
+        "tosa-kinno"
+      ]
     },
     {
       "id": "nakaoka",

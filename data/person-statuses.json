@@ -4378,7 +4378,7 @@
       "id": "person-status-yodo-1864-kinmon",
       "personId": "yodo",
       "startSceneId": "1864-kinmon",
-      "endSceneId": "1865-choshu",
+      "endSceneId": "1864-kinmon",
       "displayName": "山内容堂",
       "role": "前土佐藩主・藩政の実権者",
       "factionId": "tosa",
@@ -4743,15 +4743,14 @@
       "displayName": "後藤象二郎",
       "role": "土佐藩大監察",
       "factionId": "tosa",
-      "stance": "土佐勤王党の獄で、武市半平太らの取り調べと処分にあたる。",
+      "stance": "土佐勤王党の獄で、大監察として審理と処分にあたる。",
       "importance": "開成館の設立と責任者就任は翌1866年であり、この時点へ先取りしない。",
       "evidence": {
         "sourceIds": [
-          "kochi_goto_1865",
-          "kochi_tosa_people"
+          "kochi_goto_1865"
         ],
         "reviewStatus": "verified",
-        "note": "高知県立坂本龍馬記念館で1865年の土佐勤王党の獄に大監察として関わったこと、高知県立高知城歴史博物館で開成館の設立・責任者就任が1866年であることを確認。「参政」と開成館事業の年代先取りを訂正。"
+        "note": "確認した紹介本文は勤王党の獄における審理・処分を支える。武市個人との直接の尋問場面や台詞までは追加しない。"
       }
     },
     {
@@ -8156,6 +8155,24 @@
         "sourceIds": [
           "hakodate_army_organization",
           "hakodate_hospital_negotiation"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-yodo-1865-choshu",
+      "personId": "yodo",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "山内容堂",
+      "role": "前土佐藩主・公武合体を唱える",
+      "factionId": "tosa",
+      "stance": "尊王攘夷を掲げる土佐勤王党とは方針が一致せず、藩による弾圧が続いた。1865年、投獄中の武市半平太は切腹を命じられた。",
+      "importance": "藩内の政治方針の対立が、武市らの捕縛と処分へ至った。",
+      "evidence": {
+        "sourceIds": [
+          "kochi_tosa_bakumatsu",
+          "kochi_takechi_imprisonment"
         ],
         "reviewStatus": "verified"
       }
