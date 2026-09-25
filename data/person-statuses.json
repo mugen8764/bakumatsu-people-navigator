@@ -2476,10 +2476,10 @@
           "kyoto_kido_1862",
           "ndl_satcho_alliance_research",
           "kagoshima_satcho_alliance",
-          "kyohaku_kido_ryoma_letter"
+          "ndl_history_satcho"
         ],
         "reviewStatus": "verified",
-        "note": "山口県立山口図書館で藩代表としての盟約締結、京都市で前年の木戸準一郎への改名、査読論文要約で六か条の盟約、鹿児島県歴史・美術センター黎明館で会談当事者、京都国立博物館で木戸書状と龍馬の裏書を確認。"
+        "note": "山口県立山口図書館で藩代表としての盟約締結、京都市で前年の木戸準一郎への改名、査読論文要約で六か条の盟約、鹿児島県歴史・美術センター黎明館で会談当事者、国際子ども図書館で木戸書状と龍馬の裏書を確認。"
       }
     },
     {
@@ -3608,7 +3608,7 @@
       "displayName": "孝明天皇",
       "role": "天皇",
       "factionId": "imperial-court",
-      "stance": "朝廷は薩長盟約翌日の1月22日、幕府が奏請した長州処分を勅許する。",
+      "stance": "朝廷は1月22日、幕府が奏請した長州処分を勅許する。",
       "importance": "薩摩・長州間の盟約と、同時期の朝廷による長州処分の決定を区別する。",
       "evidence": {
         "sourceIds": [
@@ -4685,11 +4685,10 @@
       "evidence": {
         "sourceIds": [
           "ndl_history_satcho",
-          "kyohaku_kido_ryoma_letter",
           "nagasaki_kameyama_1865"
         ],
         "reviewStatus": "verified",
-        "note": "国際子ども図書館で龍馬・中岡の仲介、京都国立博物館で木戸書状と龍馬の朱書裏書、長崎市で亀山社中代表としての活動を確認。"
+        "note": "国際子ども図書館で龍馬・中岡の仲介と木戸書状に残る龍馬の朱書裏書、長崎市で亀山社中代表としての活動を確認。"
       }
     },
     {
@@ -6961,6 +6960,583 @@
         ],
         "reviewStatus": "needs_review",
         "note": "所属を推定せず活動分野に分類。1869年の開成学校就任を箱館戦争終結時の現職とは断定しない。"
+      }
+    },
+    {
+      "id": "person-status-saito-1863-joi",
+      "personId": "saito",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "displayName": "斎藤一",
+      "role": "壬生浪士組・新選組に参加",
+      "factionId": "shinsengumi",
+      "stance": "京都で近藤らの組織に加わり、新選組の活動を担う。",
+      "importance": "初期の役職の就任時期は確認中。後年の隊長名をこの時点に当てはめない。",
+      "evidence": {
+        "sourceIds": [
+          "aizu_shinsengumi"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "参加の経過は確認できるが、1863年内の役職開始時期を確定していない。"
+      }
+    },
+    {
+      "id": "person-status-saito-1864-kinmon",
+      "personId": "saito",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1866-expedition",
+      "displayName": "斎藤一",
+      "role": "新選組隊士",
+      "factionId": "shinsengumi",
+      "stance": "新選組で活動し、三番隊隊長を務めた。",
+      "importance": "隊長の就任時期と各事件での配置は校正中。池田屋の最初の突入者には数えない。",
+      "evidence": {
+        "sourceIds": [
+          "fukushima_saito",
+          "aizu_shinsengumi"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "この期間の個々の役職・行動を一括して確定しない。"
+      }
+    },
+    {
+      "id": "person-status-saito-1867-taisei",
+      "personId": "saito",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "斎藤一",
+      "role": "御陵衛士へ移り、のち新選組へ復帰",
+      "factionId": "shinsengumi",
+      "stance": "伊東甲子太郎らと隊を離れたのち、新選組に戻る。",
+      "importance": "離隊・復帰の経過と、密偵だったという説を区別する。",
+      "evidence": {
+        "sourceIds": [
+          "aizu_shinsengumi"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "慶応3年内の異動日・改名時期は校正中。密偵説は断定しない。"
+      }
+    },
+    {
+      "id": "person-status-saito-1868-toba",
+      "personId": "saito",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-edo",
+      "displayName": "山口二郎",
+      "role": "新選組隊士",
+      "factionId": "shinsengumi",
+      "stance": "山口二郎と名を変え、鳥羽・伏見、甲州勝沼の戦いを経て会津へ向かう。",
+      "importance": "近藤が投降した後も、部隊の戦いは続いた。",
+      "evidence": {
+        "sourceIds": [
+          "aizu_shinsengumi",
+          "fukushima_saito"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-saito-1868-tohoku",
+      "personId": "saito",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "山口二郎",
+      "role": "会津で新選組を指揮",
+      "factionId": "shinsengumi",
+      "stance": "負傷した土方に代わって隊を率い、白河方面や会津で戦う。",
+      "importance": "会津に残った隊士の動きから、箱館へ向かった土方とは別の経過をたどれる。",
+      "evidence": {
+        "sourceIds": [
+          "fukushima_saito",
+          "aizu_shinsengumi"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-yamanami-1863-joi",
+      "personId": "yamanami",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1864-kinmon",
+      "displayName": "山南敬助",
+      "role": "新選組の初期の幹部",
+      "factionId": "shinsengumi",
+      "stance": "結成時から近藤らと行動をともにし、組織を支えた。",
+      "importance": "総長として知られるが、役職の開始時期や事件当日の配置は校正中。",
+      "evidence": {
+        "sourceIds": [
+          "kyoto_shinsengumi_1865",
+          "maekawa_yamanami"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "初期役職の期間を一括して総長と断定しない。"
+      }
+    },
+    {
+      "id": "person-status-yamanami-1865-choshu",
+      "personId": "yamanami",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "山南敬助",
+      "role": "新選組総長・同年2月に死去",
+      "factionId": "shinsengumi",
+      "stance": "元治2年2月23日（旧暦）、京都で切腹した。",
+      "importance": "脱走理由には諸説があり、土方との個人的な対立を動機として断定しない。",
+      "evidence": {
+        "sourceIds": [
+          "maekawa_yamanami"
+        ],
+        "reviewStatus": "disputed",
+        "note": "切腹の時期は確認できるが、脱走の有無と理由には異なる説明がある。"
+      }
+    },
+    {
+      "id": "person-status-serizawa-1863-joi",
+      "personId": "serizawa",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "displayName": "芹沢鴨",
+      "role": "壬生浪士組の幹部",
+      "factionId": "shinsengumi",
+      "stance": "文久3年6月、近藤勇と連名の書簡で大阪での浪士取締などを報告する。",
+      "importance": "新選組の成立過程を、近藤だけでなく複数の幹部の活動から見る。",
+      "evidence": {
+        "sourceIds": [
+          "kojima_kondo_serizawa_letter"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-serizawa-1863-aug18",
+      "personId": "serizawa",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "displayName": "芹沢鴨",
+      "role": "新選組の初期局長・同年9月に死去",
+      "factionId": "shinsengumi",
+      "stance": "八月十八日の政変後も続く組織内の変化の中で、9月に殺害された。",
+      "importance": "町代日記に壬生浪士の頭らの殺害が記される。実行者や動機をこの記録だけから確定しない。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_serizawa_authority",
+          "kyoto_serizawa_diary"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-satow-1862-bunkyu",
+      "personId": "satow",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1864-kinmon",
+      "displayName": "アーネスト・サトウ",
+      "role": "英国公使館の通訳生",
+      "factionId": "foreign-powers",
+      "stance": "1862年に通訳生として来日し、日本語を学びながら公使館で働く。",
+      "importance": "英国を代表する公使とは職務が異なる。初期の昇進時期は校正中。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_satow"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "来日時の通訳生を確認。1863〜64年の正式な職名の推移は未確定。"
+      }
+    },
+    {
+      "id": "person-status-satow-1865-choshu",
+      "personId": "satow",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1868-tohoku",
+      "displayName": "アーネスト・サトウ",
+      "role": "英国公使館の通訳",
+      "factionId": "foreign-powers",
+      "stance": "公使パークスの通訳として、日本の諸藩との外交を助ける。",
+      "importance": "公使の判断と、それを支える通訳・仲介の役割を分けて見る。",
+      "evidence": {
+        "sourceIds": [
+          "atsugi_satow"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-satow-1869-hakodate",
+      "personId": "satow",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "displayName": "アーネスト・サトウ",
+      "role": "休暇で英国へ帰国",
+      "factionId": "foreign-powers",
+      "stance": "1869年2月24日、休暇を得て英国へ帰国した。",
+      "importance": "この時点では日本にいる通訳として扱わない。",
+      "evidence": {
+        "sourceIds": [
+          "satow_papers_research"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-glover-1860-sakurada",
+      "personId": "glover",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "トーマス・グラバー",
+      "role": "長崎の英国商人",
+      "factionId": "foreign-powers",
+      "stance": "1859年に長崎へ来航し、貿易の仕事に携わる。",
+      "importance": "外国人商人の取引は、公使が担う政府間の外交と役割が異なる。",
+      "evidence": {
+        "sourceIds": [
+          "glover_garden_guide",
+          "ndl_glover_gallery"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-glover-1863-joi",
+      "personId": "glover",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "displayName": "トーマス・グラバー",
+      "role": "長崎の貿易商",
+      "factionId": "foreign-powers",
+      "stance": "伊藤俊輔・井上聞多ら長州の留学生の英国渡航を助けた。",
+      "importance": "攘夷を進める長州にも、海外で学ぼうとする動きがあった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_glover_gallery",
+          "yamaguchi_inoue_1865"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-glover-1864-kinmon",
+      "personId": "glover",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "トーマス・グラバー",
+      "role": "グラバー商会の貿易商",
+      "factionId": "foreign-powers",
+      "stance": "長崎を拠点に、諸藩への武器・艦船の販売を進める。",
+      "importance": "諸藩と外国人商人との結び付きを、貿易の側から見る。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_glover_gallery"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-glover-1865-choshu",
+      "personId": "glover",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1866-expedition",
+      "displayName": "トーマス・グラバー",
+      "role": "渡航支援・武器取引を担う商人",
+      "factionId": "foreign-powers",
+      "stance": "1865年には薩摩藩士の英国渡航を支援。龍馬の亀山社中の仲介による長州への武器売却にも関わる。",
+      "importance": "藩同士の政治交渉と、武器を調達する実務を分けてたどれる。",
+      "evidence": {
+        "sourceIds": [
+          "glover_garden_guide",
+          "ndl_glover_gallery"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-glover-1867-taisei",
+      "personId": "glover",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "トーマス・グラバー",
+      "role": "長崎の貿易商",
+      "factionId": "foreign-powers",
+      "stance": "諸藩との取引を続け、英国公使パークスにも情報を提供する。",
+      "importance": "外交官ではない商人も、外交に必要な情報を運んだ。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_glover_gallery"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-glover-1868-toba",
+      "personId": "glover",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1869-hakodate",
+      "displayName": "トーマス・グラバー",
+      "role": "炭鉱・修船事業にも関わる商人",
+      "factionId": "foreign-powers",
+      "stance": "1868年には佐賀藩との高島炭鉱事業や、小松・五代らとの小菅修船場の計画に関わる。",
+      "importance": "武器取引に加え、採炭や船の修理を支える事業へ活動が広がった。",
+      "evidence": {
+        "sourceIds": [
+          "glover_garden_guide",
+          "ndl_glover_gallery"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-ogata-koan-1853-blackships",
+      "personId": "ogata-koan",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1854-treaty",
+      "displayName": "緒方洪庵",
+      "role": "蘭方医・適塾の塾主",
+      "factionId": "medicine-learning",
+      "stance": "大阪で医業と蘭学教育に取り組み、除痘館を設けて種痘の普及を進める。",
+      "importance": "人材育成と病気への対処から、幕末の変化を見る。",
+      "evidence": {
+        "sourceIds": [
+          "osaka_koan"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-ogata-koan-1858-ansei",
+      "personId": "ogata-koan",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "緒方洪庵",
+      "role": "蘭方医・治療書を刊行",
+      "factionId": "medicine-learning",
+      "stance": "コレラ流行に際し、治療書「虎狼痢治準」を緊急刊行した。",
+      "importance": "海外の医学知識を、国内での病気への対処につなげた。",
+      "evidence": {
+        "sourceIds": [
+          "osaka_koan"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-ogata-koan-1860-sakurada",
+      "personId": "ogata-koan",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "緒方洪庵",
+      "role": "適塾の塾主・種痘を推進",
+      "factionId": "medicine-learning",
+      "stance": "1860年、除痘館を尼崎一丁目へ移して拡張した。",
+      "importance": "蘭学教育と並んで、天然痘を予防する種痘の普及に携わった。",
+      "evidence": {
+        "sourceIds": [
+          "osaka_koan"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-ogata-koan-1862-bunkyu",
+      "personId": "ogata-koan",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "緒方洪庵",
+      "role": "幕府奥医師・西洋医学所頭取",
+      "factionId": "bakufu",
+      "stance": "1862年に江戸へ移り、奥医師と西洋医学所頭取を務める。",
+      "importance": "大阪での医療・教育から、幕府の医学教育を担う立場へ移った。",
+      "evidence": {
+        "sourceIds": [
+          "osaka_koan"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-ogata-koan-1863-joi",
+      "personId": "ogata-koan",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "displayName": "緒方洪庵",
+      "role": "幕府奥医師・同年6月に死去",
+      "factionId": "bakufu",
+      "stance": "江戸で医学教育を担ったが、文久3年6月10日（旧暦）に死去した。",
+      "importance": "以後の京都政変や新政府の医療行政の担当者としては扱わない。",
+      "evidence": {
+        "sourceIds": [
+          "osaka_koan",
+          "keio_fukuzawa_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-fukuzawa-1854-treaty",
+      "personId": "fukuzawa",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1854-treaty",
+      "displayName": "福沢諭吉",
+      "role": "長崎で蘭学を学ぶ",
+      "factionId": "medicine-learning",
+      "stance": "1854年に長崎で蘭学を学び、翌年には大阪の適塾へ入る。",
+      "importance": "英語や欧米の制度を教える前に、蘭学から学び始めた。",
+      "evidence": {
+        "sourceIds": [
+          "keio_fukuzawa_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-fukuzawa-1858-ansei",
+      "personId": "fukuzawa",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "福沢諭吉",
+      "role": "江戸で蘭学塾を開く",
+      "factionId": "medicine-learning",
+      "stance": "適塾で学んだ後、中津藩の命で江戸へ移り、鉄砲洲に蘭学塾を開いた。",
+      "importance": "1868年の慶應義塾の命名に先立つ、教育活動の出発点。",
+      "evidence": {
+        "sourceIds": [
+          "keio_fukuzawa_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-fukuzawa-1860-sakurada",
+      "personId": "fukuzawa",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "福沢諭吉",
+      "role": "咸臨丸で渡米・幕府翻訳方に雇用",
+      "factionId": "bakufu",
+      "stance": "咸臨丸で米国へ渡り、万次郎と英語辞書を購入。帰国後に幕府の翻訳方に雇われる。",
+      "importance": "蘭学から英語学習へ進み、海外で得た知識を翻訳へつなげた。",
+      "evidence": {
+        "sourceIds": [
+          "keio_fukuzawa_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-fukuzawa-1862-bunkyu",
+      "personId": "fukuzawa",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "福沢諭吉",
+      "role": "幕府の欧州使節随員",
+      "factionId": "bakufu",
+      "stance": "前年に随員を命じられ、1862年にフランス・英国など欧州諸国を訪れた。",
+      "importance": "外交使節に随行して、欧州の制度や社会に接した。",
+      "evidence": {
+        "sourceIds": [
+          "keio_fukuzawa_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-fukuzawa-1863-joi",
+      "personId": "fukuzawa",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "displayName": "福沢諭吉",
+      "role": "帰国後、翻訳と教育へ",
+      "factionId": "bakufu",
+      "stance": "欧州から帰国。1863年秋には鉄砲洲の住居に戻る。",
+      "importance": "海外で得た知識を伝える活動へ戻る。",
+      "evidence": {
+        "sourceIds": [
+          "keio_fukuzawa_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-fukuzawa-1864-kinmon",
+      "personId": "fukuzawa",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1865-choshu",
+      "displayName": "福沢諭吉",
+      "role": "翻訳方・塾の教育を担う",
+      "factionId": "bakufu",
+      "stance": "1864年10月に外国奉行翻訳方へ召し抱えられ、翌年には新聞・雑誌の翻訳収入を塾生の学費にも充てる。",
+      "importance": "幕府の翻訳の仕事と、塾での教育を並行した。",
+      "evidence": {
+        "sourceIds": [
+          "keio_fukuzawa_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-fukuzawa-1866-satcho",
+      "personId": "fukuzawa",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-expedition",
+      "displayName": "福沢諭吉",
+      "role": "「西洋事情」を刊行",
+      "factionId": "bakufu",
+      "stance": "1866年に「西洋事情」初編を出版し、西洋の制度や社会を紹介した。",
+      "importance": "外交の仕事で得た知識が、出版を通じて広がった。",
+      "evidence": {
+        "sourceIds": [
+          "keio_fukuzawa_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-fukuzawa-1867-taisei",
+      "personId": "fukuzawa",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "福沢諭吉",
+      "role": "軍艦受取委員の随員として再渡米",
+      "factionId": "bakufu",
+      "stance": "1867年、幕府の軍艦受取委員に随行して米国へ渡り、多数の原書を購入して帰国した。",
+      "importance": "海外渡航は学習だけでなく、幕府の実務とも結び付いていた。",
+      "evidence": {
+        "sourceIds": [
+          "keio_fukuzawa_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-fukuzawa-1868-toba",
+      "personId": "fukuzawa",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-edo",
+      "displayName": "福沢諭吉",
+      "role": "塾での教育を続ける",
+      "factionId": "bakufu",
+      "stance": "1868年4月、塾を新銭座へ移して「慶應義塾」と名付ける。",
+      "importance": "旧幕府の政権が崩れる中でも、教育活動を続けた。",
+      "evidence": {
+        "sourceIds": [
+          "keio_fukuzawa_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-fukuzawa-1868-tohoku",
+      "personId": "fukuzawa",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1869-hakodate",
+      "displayName": "福沢諭吉",
+      "role": "慶應義塾で教育を担う",
+      "factionId": "medicine-learning",
+      "stance": "1868年8月に幕臣を辞め、新政府への出仕を断って教育を続けた。1869年には塾で授業料の制度を定める。",
+      "importance": "新政府の官職に就く道とは別に、学問と教育を担った。",
+      "evidence": {
+        "sourceIds": [
+          "keio_fukuzawa_timeline"
+        ],
+        "reviewStatus": "verified"
       }
     }
   ]

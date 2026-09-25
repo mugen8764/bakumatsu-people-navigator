@@ -259,7 +259,8 @@
         "reviewStatus": "verified"
       },
       "termIds": [
-        "rangaku"
+        "rangaku",
+        "boshin-war"
       ],
       "portrait": {
         "src": "assets/portraits/katsu-ndl.jpg",
@@ -272,7 +273,24 @@
         "identityNote": "国立国会図書館が勝海舟の肖像として掲載。",
         "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
         "checkedAt": "2026-09-12"
-      }
+      },
+      "turningPoints": [
+        {
+          "fromSceneId": "1868-toba",
+          "toSceneId": "1868-edo",
+          "title": "敗戦後の陸軍総裁から、開城交渉へ",
+          "before": "鳥羽・伏見の後、陸軍総裁として旧幕府の事後処理を担う。",
+          "after": "西郷と徳川家の処分条件を協議し、江戸総攻撃の中止につなげる。",
+          "context": "交渉は3月、城の引き渡しは4月。開城後も抵抗する勢力は残った。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_katsu_timeline",
+              "sumida_katsu_edo_surrender"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "yamaoka",
@@ -331,6 +349,37 @@
           "hakodate_war_history"
         ],
         "reviewStatus": "verified"
+      },
+      "turningPoints": [
+        {
+          "fromSceneId": "1868-edo",
+          "toSceneId": "1868-tohoku",
+          "title": "軍艦引き渡しの拒否から、艦隊を率いた離脱へ",
+          "before": "江戸城の明け渡し後も、軍艦を新政府に渡すことに反対する。",
+          "after": "8月19日、8隻の艦隊を率いて品川沖を離れ、新政府への抵抗を続ける。",
+          "context": "勝や山岡に宛てた書簡が残る。同じ旧幕府側でも、開城交渉と抵抗の継続では行動が分かれた。",
+          "evidence": {
+            "sourceIds": [
+              "archives_enomoto_1867"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "termIds": [
+        "boshin-war"
+      ],
+      "portrait": {
+        "src": "assets/portraits/enomoto-ndl.jpg",
+        "alt": "榎本武揚の史料肖像",
+        "sourceId": "ndl_portrait_enomoto",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が榎本武揚の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-25"
       }
     },
     {
@@ -583,6 +632,18 @@
           "jacar_okubo_detail"
         ],
         "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/okubo-ndl.jpg",
+        "alt": "大久保利通の史料肖像",
+        "sourceId": "ndl_portrait_okubo_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が大久保利通の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-25"
       }
     },
     {
@@ -618,7 +679,28 @@
           "kagoshima_satcho_alliance"
         ],
         "reviewStatus": "verified"
-      }
+      },
+      "turningPoints": [
+        {
+          "fromSceneId": "1865-choshu",
+          "toSceneId": "1866-satcho",
+          "title": "藩政を担う家老から、盟約の当事者へ",
+          "before": "薩摩藩家老として藩政に携わる。薩摩は長州再征への出兵を拒み、長州を支援する。",
+          "after": "西郷とともに京都で木戸と会談し、両藩の提携を結ぶ。",
+          "context": "同じ家老という役職でも、この事件では藩間の合意を担う当事者となる。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_komatsu_detail",
+              "kagoshima_satcho_alliance"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "termIds": [
+        "karo",
+        "satcho-alliance"
+      ]
     },
     {
       "id": "kawaji",
@@ -813,6 +895,39 @@
           "yamaguchi_takasugi_guide"
         ],
         "reviewStatus": "verified"
+      },
+      "turningPoints": [
+        {
+          "fromSceneId": "1864-kinmon",
+          "toSceneId": "1865-choshu",
+          "title": "外国艦隊との講和から、藩内の方針転換へ",
+          "before": "四国連合艦隊の下関攻撃に際して再起用され、講和に当たる。",
+          "after": "幕府への恭順を進める藩主流派に抗して挙兵し、藩内戦を経て方針の転換を促す。",
+          "context": "挙兵は1864年末。翌年にかけての内戦後、長州は攻撃に備えて軍備を整える。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_takasugi_guide",
+              "yamaguchi_choshu_reform"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "termIds": [
+        "kiheitai",
+        "choshu-expeditions"
+      ],
+      "portrait": {
+        "src": "assets/portraits/takasugi-ndl.jpg",
+        "alt": "高杉晋作の史料肖像",
+        "sourceId": "ndl_portrait_takasugi",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が高杉晋作の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-25"
       }
     },
     {
@@ -944,7 +1059,10 @@
           "yamaguchi_omura_guide"
         ],
         "reviewStatus": "verified"
-      }
+      },
+      "termIds": [
+        "choshu-expeditions"
+      ]
     },
     {
       "id": "yamagata",
@@ -1152,7 +1270,8 @@
         "reviewStatus": "verified"
       },
       "termIds": [
-        "kyoto-shugoshoku"
+        "kyoto-shugoshoku",
+        "boshin-war"
       ],
       "portrait": {
         "src": "assets/portraits/katamori-ndl.jpg",
@@ -1165,7 +1284,23 @@
         "identityNote": "国立国会図書館が松平容保の肖像として掲載。",
         "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
         "checkedAt": "2026-09-12"
-      }
+      },
+      "turningPoints": [
+        {
+          "fromSceneId": "1867-taisei",
+          "toSceneId": "1868-toba",
+          "title": "京都を守る役職を失い、旧幕府側で敗戦",
+          "before": "京都守護職として京都の治安を担ってきた。",
+          "after": "王政復古で守護職を免じられ、翌月の鳥羽・伏見で敗れる。",
+          "context": "年をまたぐ制度変更と戦闘を一緒にせず、その後の会津での謹慎・抗戦へつなげて読む。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_katamori_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "yodo",
@@ -1262,7 +1397,19 @@
       },
       "termIds": [
         "dappan"
-      ]
+      ],
+      "portrait": {
+        "src": "assets/portraits/ryoma-ndl.jpg",
+        "alt": "坂本龍馬の史料肖像",
+        "sourceId": "ndl_portrait_ryoma_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が坂本龍馬の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-25"
+      }
     },
     {
       "id": "goto",
@@ -2113,6 +2260,231 @@
       "termIds": [
         "tsuji"
       ]
+    },
+    {
+      "id": "saito",
+      "name": "斎藤一",
+      "kana": "さいとう はじめ",
+      "aliases": [
+        "齋藤一",
+        "山口一",
+        "山口二郎",
+        "藤田五郎"
+      ],
+      "lifespan": "1844–1915",
+      "defaultFactionId": "shinsengumi",
+      "activeStartSceneId": "1863-joi",
+      "activeEndSceneId": "1868-tohoku",
+      "oneLine": "新選組の剣士。戊辰戦争では鳥羽・伏見から会津へ転戦し、負傷した土方に代わって隊を率いた。",
+      "placeIds": [
+        "kyoto",
+        "fushimi",
+        "aizu"
+      ],
+      "eventIds": [
+        "toba",
+        "tohoku"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_saito_authority",
+          "fukushima_saito",
+          "aizu_shinsengumi"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "boshin-war"
+      ]
+    },
+    {
+      "id": "yamanami",
+      "name": "山南敬助",
+      "kana": "やまなみ けいすけ",
+      "aliases": [
+        "さんなん敬助"
+      ],
+      "lifespan": "1865年没",
+      "defaultFactionId": "shinsengumi",
+      "activeStartSceneId": "1863-joi",
+      "activeEndSceneId": "1865-choshu",
+      "oneLine": "新選組結成時から近藤勇らと活動した幹部。1865年に死去し、脱走や切腹に至る動機には諸説がある。",
+      "placeIds": [
+        "kyoto"
+      ],
+      "eventIds": [
+        "aug18"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kyoto_shinsengumi_1865",
+          "maekawa_yamanami"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": []
+    },
+    {
+      "id": "serizawa",
+      "name": "芹沢鴨",
+      "kana": "せりざわ かも",
+      "aliases": [
+        "芹澤鴨"
+      ],
+      "lifespan": "1863年没",
+      "defaultFactionId": "shinsengumi",
+      "activeStartSceneId": "1863-joi",
+      "activeEndSceneId": "1863-aug18",
+      "oneLine": "新選組初期の局長。近藤勇との連名書簡が残り、1863年9月に殺害された。",
+      "placeIds": [
+        "kyoto"
+      ],
+      "eventIds": [
+        "aug18"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_serizawa_authority",
+          "kojima_kondo_serizawa_letter",
+          "kyoto_serizawa_diary"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": []
+    },
+    {
+      "id": "satow",
+      "name": "アーネスト・サトウ",
+      "kana": "あーねすと さとう",
+      "aliases": [
+        "サトウ",
+        "アーネスト・メイソン・サトウ",
+        "Ernest Satow"
+      ],
+      "lifespan": "1843–1929",
+      "defaultFactionId": "foreign-powers",
+      "activeStartSceneId": "1862-bunkyu",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "英国公使館の通訳生として来日し、パークスの外交を助けた。公使と通訳の役割の違いから外交をたどる。",
+      "placeIds": [
+        "kyoto"
+      ],
+      "eventIds": [],
+      "evidence": {
+        "sourceIds": [
+          "ndl_satow",
+          "atsugi_satow",
+          "satow_papers_research"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "tsuji"
+      ]
+    },
+    {
+      "id": "glover",
+      "name": "トーマス・グラバー",
+      "kana": "とーます ぐらばー",
+      "aliases": [
+        "グラバー",
+        "トマス・グラバー",
+        "トーマス・ブレイク・グラバー",
+        "Thomas Glover"
+      ],
+      "lifespan": "1838–1911",
+      "defaultFactionId": "foreign-powers",
+      "activeStartSceneId": "1860-sakurada",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "長崎を拠点にした英国の貿易商。留学生の渡航支援や武器取引、炭鉱・修船事業に関わった。",
+      "placeIds": [
+        "nagasaki"
+      ],
+      "eventIds": [],
+      "evidence": {
+        "sourceIds": [
+          "glover_garden_guide",
+          "ndl_glover_gallery"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "kaiko",
+        "foreign-settlement"
+      ]
+    },
+    {
+      "id": "ogata-koan",
+      "name": "緒方洪庵",
+      "kana": "おがた こうあん",
+      "aliases": [
+        "洪庵",
+        "緒方章"
+      ],
+      "lifespan": "1810–1863",
+      "defaultFactionId": "medicine-learning",
+      "activeStartSceneId": "1853-blackships",
+      "activeEndSceneId": "1863-joi",
+      "oneLine": "適塾で蘭学を教え、種痘や治療書の刊行に取り組んだ医師。晩年は江戸で幕府の医療・医学教育を担った。",
+      "placeIds": [
+        "osaka",
+        "edo"
+      ],
+      "eventIds": [],
+      "evidence": {
+        "sourceIds": [
+          "osaka_koan"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "rangaku",
+        "tekijuku"
+      ]
+    },
+    {
+      "id": "fukuzawa",
+      "name": "福沢諭吉",
+      "kana": "ふくざわ ゆきち",
+      "aliases": [
+        "福澤諭吉",
+        "諭吉"
+      ],
+      "lifespan": "1835–1901",
+      "defaultFactionId": "medicine-learning",
+      "activeStartSceneId": "1854-treaty",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "適塾で学び、海外渡航と翻訳を通じて西洋の知識を伝えた。江戸で開いた塾が慶應義塾となる。",
+      "placeIds": [
+        "nagasaki",
+        "osaka",
+        "edo",
+        "yokohama",
+        "uraga"
+      ],
+      "eventIds": [],
+      "evidence": {
+        "sourceIds": [
+          "keio_fukuzawa_timeline"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "rangaku",
+        "tekijuku"
+      ],
+      "portrait": {
+        "src": "assets/portraits/fukuzawa-ndl.jpg",
+        "alt": "福沢諭吉の史料肖像",
+        "sourceId": "ndl_portrait_fukuzawa",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が福沢諭吉の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-25"
+      }
     }
   ]
 }

@@ -840,7 +840,7 @@
           "kyohaku_kido_ryoma_letter"
         ],
         "reviewStatus": "verified",
-        "note": "木戸書状と龍馬の裏書が残る資料を確認。"
+        "note": "国際子ども図書館で木戸書状と龍馬の朱書裏書を確認。京都国立博物館の2月22日書状は裏書受領後の礼状であり、当初の確認依頼と区別する。"
       }
     },
     {
@@ -1409,6 +1409,187 @@
       "evidence": {
         "sourceIds": [
           "tosashimizu_manjiro"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-kido-omura-1865-choshu-appointment",
+      "aPersonId": "kido",
+      "bPersonId": "omura",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1866-expedition",
+      "typeId": "appointment",
+      "label": "軍事改革を担当させる",
+      "text": "藩政を担う木戸は、大村益次郎に軍事改革を任せて幕府との戦いに備えた。",
+      "evidence": {
+        "sourceIds": [
+          "kyoto_kido_1862",
+          "yamaguchi_omura_guide"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-mori-takachika-omura-1865-choshu-appointment",
+      "aPersonId": "mori-takachika",
+      "bPersonId": "omura",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "typeId": "appointment",
+      "label": "藩主の命による改姓名",
+      "text": "1865年、毛利敬親の命により、村田蔵六は大村益次郎へ改姓名した。",
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_omura_guide"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-kondo-serizawa-1863-joi-organization",
+      "aPersonId": "kondo",
+      "bPersonId": "serizawa",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "typeId": "organization",
+      "label": "連名で活動を報告",
+      "text": "1863年6月3日付の書簡は近藤・芹沢の連名で、組織初期の協働を示す。9月の芹沢の死去より後には延長しない。",
+      "evidence": {
+        "sourceIds": [
+          "kojima_kondo_serizawa_letter"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-kondo-yamanami-1863-joi-organization",
+      "aPersonId": "kondo",
+      "bPersonId": "yamanami",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1864-kinmon",
+      "typeId": "organization",
+      "label": "結成時からの同志",
+      "text": "新選組結成時から近藤らと活動した。山南の死去の動機を、この関係から推測しない。",
+      "evidence": {
+        "sourceIds": [
+          "kyoto_shinsengumi_1865"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-hijikata-saito-1868-tohoku-organization",
+      "aPersonId": "hijikata",
+      "bPersonId": "saito",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "typeId": "organization",
+      "label": "負傷後の指揮を引き継ぐ",
+      "text": "会津では、負傷した土方に代わって斎藤が新選組を率いた。",
+      "evidence": {
+        "sourceIds": [
+          "fukushima_saito",
+          "aizu_shinsengumi"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-parkes-satow-1865-choshu-organization",
+      "aPersonId": "parkes",
+      "bPersonId": "satow",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1868-tohoku",
+      "typeId": "organization",
+      "label": "公使を通訳が支える",
+      "text": "英国公使パークスの外交をサトウが通訳として助けた。1869年のサトウの帰国までを一括して日本での勤務としない。",
+      "evidence": {
+        "sourceIds": [
+          "atsugi_satow",
+          "satow_papers_research"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-glover-ito-1863-joi-mediation-or-negotiation",
+      "aPersonId": "glover",
+      "bPersonId": "ito",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "typeId": "mediation-or-negotiation",
+      "label": "英国への渡航を支援",
+      "text": "1863年の長州留学生の渡英を、商人グラバーが手引きした。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_glover_gallery",
+          "yamaguchi_inoue_1865"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-glover-inoue-1863-joi-mediation-or-negotiation",
+      "aPersonId": "glover",
+      "bPersonId": "inoue",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "typeId": "mediation-or-negotiation",
+      "label": "英国への渡航を支援",
+      "text": "1863年の長州留学生の渡英を、商人グラバーが手引きした。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_glover_gallery",
+          "yamaguchi_inoue_1865"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-glover-komatsu-1868-toba-mediation-or-negotiation",
+      "aPersonId": "glover",
+      "bPersonId": "komatsu",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-tohoku",
+      "typeId": "mediation-or-negotiation",
+      "label": "小菅修船場の計画",
+      "text": "1868年、グラバーは小松清廉・五代友厚らと小菅修船場の計画に関わった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_glover_gallery"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-ogata-koan-fukuzawa-1858-ansei-mentorship-or-comradeship",
+      "aPersonId": "ogata-koan",
+      "bPersonId": "fukuzawa",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1863-joi",
+      "typeId": "mentorship-or-comradeship",
+      "label": "適塾で学んだ師弟",
+      "text": "福沢は1855年に緒方洪庵の適塾へ入り、塾長を務めた後に江戸で開塾した。表示期間は学習の経歴を持つ師弟関係を示す。",
+      "evidence": {
+        "sourceIds": [
+          "keio_fukuzawa_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-manjiro-fukuzawa-1860-sakurada-mentorship-or-comradeship",
+      "aPersonId": "manjiro",
+      "bPersonId": "fukuzawa",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "typeId": "mentorship-or-comradeship",
+      "label": "渡米と英語辞書",
+      "text": "咸臨丸で渡米した福沢は、米国で万次郎とウェブスターの英語辞書を購入した。",
+      "evidence": {
+        "sourceIds": [
+          "keio_fukuzawa_timeline"
         ],
         "reviewStatus": "verified"
       }

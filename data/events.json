@@ -239,7 +239,7 @@
           "kyohaku_kido_ryoma_letter"
         ],
         "reviewStatus": "verified",
-        "note": "国際子ども図書館と京都国立博物館の解説で成立日、仲介者、木戸書状と龍馬の裏書を確認。"
+        "note": "国際子ども図書館で成立時期、仲介者、木戸書状と龍馬の朱書裏書を確認。京都国立博物館の書状は裏書受領後の礼状として参照する。"
       }
     },
     {
@@ -1471,7 +1471,7 @@
       "sceneId": "1863-aug18",
       "title": "八月十八日の政変",
       "date": "1863年9月30日（文久3年8月18日・旧暦）",
-      "scope": "朝廷内の決定・会津の警備・退京した長州側",
+      "scope": "朝廷内の決定・会津の警備・退京した長州側。浪士組の出動と、組織初期の幹部を背景として示す。",
       "summary": "御所を会津・薩摩などの藩兵が固め、長州藩の警備を解任。三条実美ら尊攘派の公家と長州藩士が京都を離れた。",
       "stakes": "天皇の名でどの政治方針を進めるのか。朝廷内の立場の違いと、御所の警備を担う藩の力が結び付いた。",
       "turningPoint": "長州側は京都での立場を失った。翌1864年には京都への復帰を求める動きが禁門の変へつながる。",
@@ -1545,6 +1545,49 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "personId": "kondo",
+          "displayName": "近藤勇",
+          "role": "浪士組として御所へ出動",
+          "involvement": "onsite",
+          "side": "会津藩の指揮下",
+          "summary": "会津藩預かりの壬生浪士組として政変に出動した。",
+          "evidence": {
+            "sourceIds": [
+              "aizu_shinsengumi"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "serizawa",
+          "displayName": "芹沢鴨",
+          "role": "浪士組初期の幹部",
+          "involvement": "context",
+          "side": "組織の背景",
+          "summary": "6月には近藤と連名で活動を報告していた初期幹部。政変後の9月に殺害される。政変当日の配置は示さない。",
+          "evidence": {
+            "sourceIds": [
+              "kojima_kondo_serizawa_letter",
+              "kyoto_serizawa_diary"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "yamanami",
+          "displayName": "山南敬助",
+          "role": "近藤らと結成時から活動",
+          "involvement": "context",
+          "side": "組織の背景",
+          "summary": "新選組結成時からの同志。ここでは組織の背景を示し、政変当日の配置は確定しない。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_shinsengumi_1865"
+            ],
+            "reviewStatus": "verified"
+          }
         }
       ],
       "relations": [
@@ -1586,6 +1629,34 @@
           "evidence": {
             "sourceIds": [
               "tondabayashi_aug18"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "aug18-kondo-serizawa",
+          "aPersonId": "kondo",
+          "bPersonId": "serizawa",
+          "label": "組織初期の連名書簡",
+          "description": "政変より前の6月、近藤と芹沢は連名で活動を報告した。事件当日の指揮系統を示す線ではない。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "kojima_kondo_serizawa_letter"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "aug18-kondo-yamanami",
+          "aPersonId": "kondo",
+          "bPersonId": "yamanami",
+          "label": "結成時からの同志",
+          "description": "近藤らと山南の組織上の関係。政変当日の配置を示す線ではない。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_shinsengumi_1865"
             ],
             "reviewStatus": "verified"
           }
@@ -1749,7 +1820,8 @@
       "turningPoint": "砲撃と籠城の末、9月22日に容保は降伏を決断した。",
       "scope": "若松城の籠城が中心。北越戦争を前段として示し、京都にいた覚馬や、籠城前に亡くなった河井を城内の参加者と混同しない。",
       "termIds": [
-        "kyoto-shugoshoku"
+        "kyoto-shugoshoku",
+        "boshin-war"
       ],
       "placeIds": [
         "aizu",
@@ -1835,6 +1907,21 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "personId": "saito",
+          "displayName": "山口二郎",
+          "role": "城外で戦った新選組",
+          "involvement": "context",
+          "side": "会津に残留",
+          "summary": "会津に残って戦った新選組の隊長。若松城内の籠城参加者としては扱わない。",
+          "evidence": {
+            "sourceIds": [
+              "fukushima_saito",
+              "aizu_shinsengumi"
+            ],
+            "reviewStatus": "verified"
+          }
         }
       ],
       "relations": [
@@ -1869,6 +1956,718 @@
           }
         }
       ]
+    },
+    {
+      "id": "kinmon-conflict",
+      "sceneId": "1864-kinmon",
+      "title": "禁門の変",
+      "date": "1864年7月19日（旧暦）",
+      "summary": "京都へ進んだ長州勢が御所周辺で会津・薩摩などの兵と戦い、敗れた。",
+      "stakes": "前年に京都の政治から退けられた長州の復帰をめぐる対立。長州藩内でも、進発を急ぐか慎重に行動するかで意見が分かれていた。",
+      "turningPoint": "久坂玄瑞らが命を落とし、京都では大火が起きた。長州は朝敵とされ、第一次長州征討へつながる。",
+      "scope": "長州の進発・慎重論と、京都守護職の対応",
+      "participants": [
+        {
+          "personId": "kusaka",
+          "displayName": "久坂玄瑞",
+          "side": "長州側",
+          "role": "京都へ進発した藩士",
+          "involvement": "onsite",
+          "summary": "京都の戦いで命を落とした。個々の相手との直接対決は示さない。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_library_kinmon"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "katamori",
+          "displayName": "松平容保",
+          "side": "会津側",
+          "role": "京都守護職",
+          "involvement": "decision",
+          "summary": "京都守護職として長州勢を攻撃する側に立った。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_katamori_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "kido",
+          "displayName": "桂小五郎",
+          "side": "長州側",
+          "role": "進発への慎重論",
+          "involvement": "context",
+          "summary": "上洛した長州藩士に軽挙を戒めた。敗戦後も京都に潜み、のち但馬へ逃れた。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_kido_1862"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "yoshinobu",
+          "displayName": "一橋慶喜",
+          "side": "御所を守る側",
+          "role": "諸藩の指揮",
+          "involvement": "decision",
+          "summary": "禁門の変で諸藩の兵を指揮した。",
+          "evidence": {
+            "sourceIds": [
+              "matsudo_yoshinobu_timeline"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "kinmon-kusaka-katamori",
+          "aPersonId": "kusaka",
+          "bPersonId": "katamori",
+          "label": "長州勢と京都守護職の対立",
+          "description": "久坂の属する長州勢と、容保の率いる会津側は敵対した。二人が直接戦ったという線ではない。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_library_kinmon",
+              "ndl_portrait_katamori_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "kyoto"
+      ],
+      "termIds": [
+        "kyoto-shugoshoku",
+        "choshu-expeditions"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_library_kinmon",
+          "ndl_history_satcho"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "satcho-agreement",
+      "sceneId": "1866-satcho",
+      "title": "薩長盟約",
+      "date": "1866年1月（旧暦）",
+      "summary": "京都で小松帯刀・西郷吉之助と木戸準一郎が会談し、対立していた薩摩・長州の提携を確認した。",
+      "stakes": "長州への再征が迫るなか、前年から進んでいた薩摩の出兵拒否や武器購入の支援を、藩同士の協力へ結び付ける。",
+      "turningPoint": "龍馬は木戸の書簡に裏書し、合意内容を確認した。その後の協力を考える出発点となる。",
+      "scope": "会談当事者と、仲介・内容確認を担った人物",
+      "participants": [
+        {
+          "personId": "komatsu",
+          "displayName": "小松帯刀",
+          "side": "薩摩側",
+          "role": "家老・会談当事者",
+          "involvement": "decision",
+          "summary": "京都の小松邸で、西郷とともに木戸との盟約を結んだ。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_satcho_alliance",
+              "ndl_portrait_komatsu_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "saigo",
+          "displayName": "西郷吉之助",
+          "side": "薩摩側",
+          "role": "会談当事者",
+          "involvement": "decision",
+          "summary": "小松とともに、長州側の木戸との提携に合意した。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_satcho_alliance"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "kido",
+          "displayName": "木戸準一郎",
+          "side": "長州側",
+          "role": "会談当事者",
+          "involvement": "decision",
+          "summary": "薩摩側との合意を後日書簡に記し、龍馬の確認を受けた。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_history_satcho",
+              "kyoto_kido_1862"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "ryoma",
+          "displayName": "坂本龍馬",
+          "side": "仲介",
+          "role": "仲介・合意内容の確認",
+          "involvement": "context",
+          "summary": "両藩を仲介し、木戸の書簡に朱書して合意内容を確認した。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_history_satcho"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "nakaoka",
+          "displayName": "中岡慎太郎",
+          "side": "仲介",
+          "role": "両藩の和解を仲介",
+          "involvement": "context",
+          "summary": "龍馬らとともに和解を仲介した人物。会談当日の出席者としては扱わない。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_satcho_alliance"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "satcho-komatsu-kido",
+          "aPersonId": "komatsu",
+          "bPersonId": "kido",
+          "label": "会談・提携",
+          "description": "小松と木戸は、薩摩と長州の会談当事者。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_satcho_alliance"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "satcho-saigo-kido",
+          "aPersonId": "saigo",
+          "bPersonId": "kido",
+          "label": "会談・提携",
+          "description": "西郷と木戸は、両藩の提携を確認した。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_satcho_alliance"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "satcho-ryoma-kido",
+          "aPersonId": "ryoma",
+          "bPersonId": "kido",
+          "label": "仲介と書簡の確認",
+          "description": "龍馬は木戸の記した合意内容を裏書で確認した。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "ndl_history_satcho"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "kyoto"
+      ],
+      "termIds": [
+        "satcho-alliance",
+        "choshu-expeditions"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kagoshima_satcho_alliance",
+          "ndl_history_satcho"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "second-choshu-war",
+      "sceneId": "1866-expedition",
+      "title": "第二次長州征討・四境戦争",
+      "date": "1866年6月開戦、9月に休戦交渉（旧暦）",
+      "summary": "幕府軍と長州軍が四つの方面で戦い、幕府側が敗退。家茂の死後、勝海舟が休戦交渉に当たった。",
+      "stakes": "長州は藩内戦の後、攻撃を受ければ戦う「武備恭順」の方針を取り、軍制・装備を整えていた。薩摩藩は征討に参加しなかった。",
+      "turningPoint": "幕府の軍事的な権威が低下した。戦場での勝敗と、勝による戦闘停止の交渉を分けて見る。",
+      "scope": "長州側の軍事・輸送と、幕府側の休戦交渉",
+      "participants": [
+        {
+          "personId": "takasugi",
+          "displayName": "高杉晋作",
+          "side": "長州側",
+          "role": "海軍総督",
+          "involvement": "decision",
+          "summary": "海軍総督として指揮を執り、小倉口では龍馬とともに戦った。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_takasugi_guide",
+              "yamaguchi_takasugi_1863"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "omura",
+          "displayName": "大村益次郎",
+          "side": "長州側",
+          "role": "石州口の参謀",
+          "involvement": "decision",
+          "summary": "軍政を担い、石州口で幕府軍との戦いを指揮した。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_omura_guide"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "ryoma",
+          "displayName": "坂本龍馬",
+          "side": "長州側の支援",
+          "role": "船の引き渡し・小倉口参戦",
+          "involvement": "onsite",
+          "summary": "長州が薩摩名義で買った汽船の引き渡しで下関に入り、高杉とともに参戦した。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_takasugi_1863"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "katsu",
+          "displayName": "勝海舟",
+          "side": "幕府側",
+          "role": "休戦交渉の担当者",
+          "involvement": "decision",
+          "summary": "9月2日、宮島の大願寺で広沢兵助ら長州側と休戦を交渉した。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_katsu_1866_diary"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "saigo",
+          "displayName": "西郷吉之助",
+          "side": "征討不参加の薩摩",
+          "role": "前年から長州を支援",
+          "involvement": "context",
+          "summary": "再征への出兵を拒み、武器・汽船購入を取り次いだ。長州側の戦場指揮者としては扱わない。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_tobaku_transition"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "second-choshu-takasugi-ryoma",
+          "aPersonId": "takasugi",
+          "bPersonId": "ryoma",
+          "label": "小倉口でともに参戦",
+          "description": "高杉と龍馬は、小倉口で幕府軍と戦った。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_takasugi_1863"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "shimonoseki",
+        "yamaguchi"
+      ],
+      "termIds": [
+        "choshu-expeditions",
+        "kiheitai"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_choshu_reform",
+          "ndl_katsu_1866_diary",
+          "ndl_history_satcho"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "royal-restoration",
+      "sceneId": "1868-toba",
+      "title": "王政復古の大号令",
+      "date": "1867年12月9日（旧暦）",
+      "summary": "幕府と従来の朝廷の制度を廃し、総裁・議定・参与を置く新政府の成立が宣言された。",
+      "stakes": "10月の大政奉還に続き、政治を担う制度そのものを組み替える。小御所会議では慶喜の官位辞退と領地返納が決められ、対立が深まった。",
+      "turningPoint": "京都守護職も廃止され、容保はその職を失った。大政奉還、王政復古、翌月の戦闘を同じ出来事として扱わない。",
+      "scope": "政変の計画者と、旧幕府側への影響",
+      "participants": [
+        {
+          "personId": "iwakura",
+          "displayName": "岩倉具視",
+          "side": "新政府側",
+          "role": "政変の計画者",
+          "involvement": "decision",
+          "summary": "大久保らと王政復古を計画し、新政府の参与・議定を務める。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_iwakura_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "okubo",
+          "displayName": "大久保一蔵",
+          "side": "薩摩・新政府側",
+          "role": "政変の計画者",
+          "involvement": "decision",
+          "summary": "岩倉らと王政復古の政変を計画した。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_iwakura_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "yoshinobu",
+          "displayName": "徳川慶喜",
+          "side": "徳川側",
+          "role": "政権を返上した前将軍",
+          "involvement": "context",
+          "summary": "大政奉還後も政治的立場が争点となり、官位辞退と領地返納を求められた。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_boshin",
+              "ndl_portrait_yoshinobu_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "katamori",
+          "displayName": "松平容保",
+          "side": "会津側",
+          "role": "京都守護職を免じられる",
+          "involvement": "context",
+          "summary": "王政復古により、京都の治安を担ってきた守護職を失った。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_katamori_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "restoration-iwakura-okubo",
+          "aPersonId": "iwakura",
+          "bPersonId": "okubo",
+          "label": "政変の計画で協力",
+          "description": "岩倉と大久保らが王政復古を計画した。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_iwakura_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "kyoto"
+      ],
+      "termIds": [
+        "three-offices",
+        "kyoto-shugoshoku"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_royal_restoration",
+          "kagoshima_boshin"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "toba-fushimi-battle",
+      "sceneId": "1868-toba",
+      "title": "鳥羽・伏見の戦い",
+      "date": "1868年1月3日開戦（旧暦）",
+      "summary": "京都へ向かった旧幕府軍が薩摩・長州を中心とする新政府軍と衝突し、敗れた。",
+      "stakes": "王政復古後の慶喜の処遇をめぐる対立が、軍事衝突へ移った。慶喜本人は大坂におり、前線の兵と居場所を区別する。",
+      "turningPoint": "敗報を聞いた慶喜は1月6日に大坂を離れ、海路江戸へ向かった。戦争は江戸、さらに東北・箱館へと続いた。",
+      "scope": "旧幕府側の動きと、新政府の成立という背景",
+      "participants": [
+        {
+          "personId": "yoshinobu",
+          "displayName": "徳川慶喜",
+          "side": "旧幕府側",
+          "role": "大坂にいた前将軍",
+          "involvement": "decision",
+          "summary": "薩摩を討つための上洛を決めたが、敗報を受けて大坂から江戸へ帰った。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_toba_fushimi_site",
+              "matsudo_yoshinobu_timeline"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "katamori",
+          "displayName": "松平容保",
+          "side": "旧幕府側",
+          "role": "会津藩主",
+          "involvement": "context",
+          "summary": "旧幕府側で敗れ、その後は会津に戻って謹慎する。ここでは会津への影響を示す。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_katamori_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "hijikata",
+          "displayName": "土方歳三",
+          "side": "旧幕府側",
+          "role": "新選組副長",
+          "involvement": "context",
+          "summary": "鳥羽・伏見の戦いの後も、宇都宮・会津・箱館へと転戦を続ける。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_hijikata_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "iwakura",
+          "displayName": "岩倉具視",
+          "side": "新政府側",
+          "role": "新政府の参与・議定",
+          "involvement": "context",
+          "summary": "王政復古後の新政府を担う。戦場で指揮を執った人物としては扱わない。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_iwakura_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "saito",
+          "displayName": "山口二郎",
+          "role": "新選組として参戦",
+          "involvement": "onsite",
+          "side": "旧幕府側",
+          "summary": "斎藤一は新選組復帰後に山口二郎を名乗り、鳥羽・伏見の戦いに参加した。",
+          "evidence": {
+            "sourceIds": [
+              "aizu_shinsengumi",
+              "fukushima_saito"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "toba-hijikata-saito",
+          "aPersonId": "hijikata",
+          "bPersonId": "saito",
+          "label": "新選組の副長と隊士",
+          "description": "土方と山口二郎（斎藤一）は新選組に属した。戦場での個別の命令内容を確定した線ではない。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_hijikata_detail",
+              "aizu_shinsengumi"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "fushimi",
+        "osaka"
+      ],
+      "termIds": [
+        "three-offices",
+        "boshin-war"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "archives_toba_fushimi",
+          "kyoto_toba_fushimi_site",
+          "kagoshima_boshin"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "edo-castle-surrender",
+      "sceneId": "1868-edo",
+      "title": "江戸開城の交渉と引き渡し",
+      "date": "1868年3月9〜14日交渉、4月11日引き渡し（旧暦）",
+      "summary": "山岡鉄舟の事前交渉を経て勝海舟と西郷隆盛が会談し、江戸総攻撃が中止された。翌月、江戸城が引き渡された。",
+      "stakes": "徳川家の処分や武装解除の条件を詰めながら、旧幕臣の反発と江戸での大規模な戦闘をどう避けるかが問われた。",
+      "turningPoint": "城は引き渡されたが、徳川側の全員が降伏したわけではない。榎本らの抵抗は続き、江戸開城は戊辰戦争の終結ではなかった。",
+      "scope": "駿府での事前交渉、江戸での会談、その後に残った対立",
+      "participants": [
+        {
+          "personId": "katsu",
+          "displayName": "勝海舟",
+          "side": "旧幕府側",
+          "role": "開城交渉の担当者",
+          "involvement": "decision",
+          "summary": "3月13・14日に西郷と会談し、処分案の修正を求めた。",
+          "evidence": {
+            "sourceIds": [
+              "sumida_katsu_edo_surrender"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "saigo",
+          "displayName": "西郷隆盛",
+          "side": "新政府側",
+          "role": "東征軍参謀・交渉担当",
+          "involvement": "decision",
+          "summary": "山岡・勝と条件を協議し、勝の要求をできる限り受け入れる方向で検討すると約束した。",
+          "evidence": {
+            "sourceIds": [
+              "sumida_katsu_edo_surrender"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "yamaoka",
+          "displayName": "山岡鉄舟",
+          "side": "旧幕府側",
+          "role": "事前交渉の使者",
+          "involvement": "onsite",
+          "summary": "3月9日に駿府で西郷と会い、徳川家への処分条件の提示を受けた。江戸での勝・西郷会談とは別の交渉。",
+          "evidence": {
+            "sourceIds": [
+              "sumida_katsu_edo_surrender"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "yoshinobu",
+          "displayName": "徳川慶喜",
+          "side": "徳川側",
+          "role": "恭順・謹慎する前将軍",
+          "involvement": "decision",
+          "summary": "江戸へ帰った後の処理を勝に委ね、上野寛永寺で恭順の意を示した。",
+          "evidence": {
+            "sourceIds": [
+              "sumida_katsu_edo_surrender",
+              "kagoshima_boshin"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "enomoto",
+          "displayName": "榎本武揚",
+          "side": "旧幕府側",
+          "role": "軍艦引き渡しに反対",
+          "involvement": "context",
+          "summary": "江戸城の明け渡し後も軍艦の引き渡しを拒む。開城合意の当事者とは区別する。",
+          "evidence": {
+            "sourceIds": [
+              "archives_enomoto_1867"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "edo-katsu-saigo",
+          "aPersonId": "katsu",
+          "bPersonId": "saigo",
+          "label": "開城条件を交渉",
+          "description": "勝は処分条件の修正を求め、西郷と会談した。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "sumida_katsu_edo_surrender"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "edo-yamaoka-saigo",
+          "aPersonId": "yamaoka",
+          "bPersonId": "saigo",
+          "label": "駿府での事前交渉",
+          "description": "山岡は江戸での会談に先立って、西郷と駿府で会った。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "sumida_katsu_edo_surrender"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "edo-yoshinobu-katsu",
+          "aPersonId": "yoshinobu",
+          "bPersonId": "katsu",
+          "label": "事後処理を委ねる",
+          "description": "江戸へ帰った慶喜は勝に事後処理を任せた。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "sumida_katsu_edo_surrender"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "edo"
+      ],
+      "termIds": [
+        "boshin-war"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "sumida_katsu_edo_surrender",
+          "archives_enomoto_1867"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ],
   "terms": [
@@ -2033,6 +2832,100 @@
         "sourceIds": [
           "hikone_karo_office",
           "tokushima_han_structure"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "satcho-alliance",
+      "title": "薩長盟約",
+      "kana": "さっちょうめいやく",
+      "meaning": "1866年、薩摩藩と長州藩が結んだ和解・協力の合意。薩長同盟とも呼ぶ。",
+      "context": "対立から和解へ進む過程と、会談当事者・仲介者の違いを見るための言葉。",
+      "evidence": {
+        "sourceIds": [
+          "kagoshima_satcho_alliance"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "choshu-expeditions",
+      "title": "長州征討",
+      "kana": "ちょうしゅうせいとう",
+      "meaning": "幕府が諸藩を動員して長州を攻めようとした軍事行動。1864年の第一次と、1866年に開戦した第二次がある。",
+      "context": "第一次は長州の謝罪で戦闘に至らず終わり、第二次は四つの方面で戦われた。二つを区別して読む。",
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_choshu_reform"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "kiheitai",
+      "title": "奇兵隊",
+      "kana": "きへいたい",
+      "meaning": "1863年に高杉晋作が組織した部隊。武士だけでなく農民や町人も加わった。",
+      "context": "長州の軍隊は奇兵隊だけではない。四境戦争では諸隊の整備や西洋軍制の導入も背景となる。",
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_takasugi_guide",
+          "ndl_history_satcho",
+          "yamaguchi_choshu_reform"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "three-offices",
+      "title": "総裁・議定・参与",
+      "kana": "そうさい ぎじょう さんよ",
+      "meaning": "王政復古で新政府に置かれた三つの役職。幕府に加えて摂政・関白など旧来の朝廷の制度も廃止し、新たな政治体制を作った。",
+      "context": "1867年12月の制度変更を示す。同年10月の大政奉還とは区別する。",
+      "evidence": {
+        "sourceIds": [
+          "archives_royal_restoration"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "boshin-war",
+      "title": "戊辰戦争",
+      "kana": "ぼしんせんそう",
+      "meaning": "1868年の鳥羽・伏見から、1869年の箱館まで続いた新政府と旧幕府側の戦争。",
+      "context": "江戸開城後も上野・北越・東北などで戦いが続いた。開城を戦争全体の終結と取り違えない。",
+      "evidence": {
+        "sourceIds": [
+          "archives_toba_fushimi"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "tekijuku",
+      "title": "適塾",
+      "kana": "てきじゅく",
+      "meaning": "緒方洪庵が大阪で開いた蘭学の塾。医学とともに、西洋の知識を学ぶ場となった。",
+      "context": "福沢諭吉はここで学んで塾長を務め、1858年に江戸で蘭学塾を開いた。",
+      "evidence": {
+        "sourceIds": [
+          "osaka_koan",
+          "keio_fukuzawa_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "foreign-settlement",
+      "title": "外国人居留地",
+      "kana": "がいこくじんきょりゅうち",
+      "meaning": "条約に基づき、外国人が居住し貿易を行うために設けられた区域。",
+      "context": "長崎では1859年に造成が始まり、商館や領事館、住宅が置かれた。グラバーも長崎を拠点に活動した。",
+      "evidence": {
+        "sourceIds": [
+          "glover_garden_guide"
         ],
         "reviewStatus": "verified"
       }

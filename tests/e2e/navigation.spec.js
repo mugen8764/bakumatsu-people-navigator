@@ -17,14 +17,14 @@ test('all six primary views render without a page error', crossBrowser, async ({
   await page.goto('/');
 
   await expect(page.locator('h1')).toHaveText('幕末人物・勢力ナビ');
-  await expect(page.locator('#personCards .card-button')).toHaveCount(13);
+  await expect(page.locator('#personCards .card-button')).toHaveCount(14);
 
   for (const view of ['people', 'factions', 'relations', 'map', 'events', 'sources']) {
   await page.locator(`.tab[data-view="${view}"]`).click();
     await expect(page.locator(`#view-${view}`)).toBeVisible();
   }
 
-  await expect(page.locator('#sourceCatalog .source')).toHaveCount(258);
+  await expect(page.locator('#sourceCatalog .source')).toHaveCount(275);
   const preciseSource = page.locator('#sourceCatalog .source', { hasText: '木戸孝允遺文集' });
   await expect(preciseSource.locator('.source-meta')).toContainText('該当箇所: 目次144頁（0110.jp2）');
   await expect(preciseSource.locator('.source-meta')).toContainText('内容確認日: 2026-07-31');
@@ -473,7 +473,7 @@ test('mobile relation view uses readable cards instead of a scaled graph', async
 
   await expect(page.locator('#relationGraph')).toBeHidden();
   await expect(page.locator('#relationMobile')).toBeVisible();
-  await expect(page.locator('#relationMobile [data-mobile-relation-person]')).toHaveCount(3);
+  await expect(page.locator('#relationMobile [data-mobile-relation-person]')).toHaveCount(4);
   await expect(page.locator('#relationMobile')).toContainText('高杉晋作');
   await expect(page.locator('#relationMobile')).toContainText('長州改革派');
 

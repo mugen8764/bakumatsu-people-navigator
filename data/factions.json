@@ -768,9 +768,9 @@
       "goal": "長州藩と提携し、幕府の長州処分へ対応する。",
       "position": "西郷隆盛と木戸孝允が、坂本龍馬・中岡慎太郎の仲介で薩長同盟を結ぶ。",
       "evidence": {
-        "sourceIds": ["ndl_history_satcho", "kyohaku_kido_ryoma_letter"],
+        "sourceIds": ["ndl_history_satcho"],
         "reviewStatus": "verified",
-        "note": "国際子ども図書館と京都国立博物館の解説で薩長同盟の当事者、仲介者、合意内容を確認。"
+        "note": "国際子ども図書館の解説で薩長同盟の当事者、仲介者、木戸書状への裏書を確認。"
       }
     },
     {
@@ -781,9 +781,9 @@
       "goal": "薩摩藩と提携し、幕府の長州処分へ対応する。",
       "position": "木戸孝允と西郷隆盛が、坂本龍馬・中岡慎太郎の仲介で薩長同盟を結ぶ。",
       "evidence": {
-        "sourceIds": ["ndl_history_satcho", "kyohaku_kido_ryoma_letter"],
+        "sourceIds": ["ndl_history_satcho"],
         "reviewStatus": "verified",
-        "note": "国際子ども図書館と京都国立博物館の解説で薩長同盟の当事者、仲介者、木戸書状を確認。"
+        "note": "国際子ども図書館の解説で薩長同盟の当事者、仲介者、木戸書状への裏書を確認。"
       }
     },
     {
@@ -807,9 +807,9 @@
       "goal": "土佐藩出身の脱藩者が薩長間を仲介する。",
       "position": "坂本龍馬・中岡慎太郎が西郷隆盛と木戸孝允の会談を仲介する。",
       "evidence": {
-        "sourceIds": ["ndl_history_satcho", "kyohaku_kido_ryoma_letter"],
+        "sourceIds": ["ndl_history_satcho"],
         "reviewStatus": "verified",
-        "note": "国際子ども図書館と京都国立博物館の解説で土佐出身の龍馬・中岡による仲介を確認。"
+        "note": "国際子ども図書館の解説で龍馬・中岡による仲介を確認。"
       }
     },
     {
