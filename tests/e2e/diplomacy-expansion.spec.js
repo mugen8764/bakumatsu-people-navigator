@@ -55,8 +55,13 @@ test('American portraits load with their dates, attribution and source limitatio
     await portrait.scrollIntoViewIfNeeded();
     await expect.poll(() => portrait.evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
     await page.locator('#personDetail .portrait-credit summary').click();
-    await expect(page.locator('#personDetail .portrait-credit')).toContainText('Library of Congress');
-    if (id === 'harris') await expect(page.locator('#personDetail .portrait-credit')).toContainText('未確認情報');
+    if (id === 'perry') {
+      await expect(page.locator('#personDetail .portrait-credit')).toContainText('The Metropolitan Museum of Art');
+      await expect(page.locator('#personDetail .portrait-credit')).toContainText('CC0');
+    } else {
+      await expect(page.locator('#personDetail .portrait-credit')).toContainText('Library of Congress');
+      await expect(page.locator('#personDetail .portrait-credit')).toContainText('未確認情報');
+    }
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   }
 });

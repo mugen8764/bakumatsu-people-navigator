@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.71",
+    "version": "1.0.72",
     "updated": "2026-09-25"
   },
   "sources": {
@@ -1768,11 +1768,18 @@
       "locator": "58頁「日米修好通商条約」第4・6条と現代語訳",
       "contentCheckedAt": "2026-09-25"
     },
-    "loc_portrait_perry": {
-      "title": "米国議会図書館「Commodore Matthew C. Perry」",
-      "url": "https://www.loc.gov/pictures/item/2001695235/",
-      "note": "所蔵館の掲載本文を検索サービス経由で確認。直接接続は403。掲載画像とメタデータを照合し、所蔵館提供の縮小画像を使用。",
-      "locator": "About This Item: Title, Date Created/Published, Notes, Rights Advisory",
+    "met_portrait_perry": {
+      "title": "メトロポリタン美術館「Commodore Matthew Calbraith Perry」",
+      "url": "https://www.metmuseum.org/art/collection/search/283184",
+      "note": "Mathew B. Brady撮影、1856〜1858年、作品番号2005.100.84。顔と上半身が大きく写る所蔵館提供画像を使用。作品ページと公式APIの目録・画像URLを照合。",
+      "locator": "Artwork Details: Artist, Date, Credit Line, Object Number／画像のPublic Domain表示",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "met_open_access": {
+      "title": "メトロポリタン美術館「Open Access at The Met」",
+      "url": "https://www.metmuseum.org/hubs/open-access",
+      "note": "Public Domain作品画像と基本データのCC0による公開・再利用方針。ペリー肖像は作品ページでもPublic Domainと表示されている。",
+      "locator": "冒頭のOpen Access InitiativeとCreative Commons Zero（CC0）の説明",
       "contentCheckedAt": "2026-09-25"
     },
     "loc_portrait_harris": {
@@ -7061,15 +7068,15 @@
         "ratification"
       ],
       "portrait": {
-        "src": "assets/portraits/perry-loc.jpg",
-        "alt": "マシュー・ペリーの史料肖像",
-        "sourceId": "loc_portrait_perry",
-        "rightsSourceId": "loc_portrait_perry",
-        "credit": "Library of Congress, Prints and Photographs Division",
-        "originalSource": "Mathew B. Brady撮影、E. Anthony刊。写真台紙の記載による。",
-        "dateNote": "所蔵館の年代推定：1854〜1858年。選択した時点の姿を示すものではありません。",
-        "identityNote": "所蔵館がマシュー・ペリーの写真として整理。",
-        "rightsNote": "所蔵館は公表に関する既知の制限なしと案内。所蔵館提供の150px画像を使用。",
+        "src": "assets/portraits/perry-met.jpg",
+        "alt": "軍服姿のマシュー・ペリーの肖像写真",
+        "sourceId": "met_portrait_perry",
+        "rightsSourceId": "met_open_access",
+        "credit": "The Metropolitan Museum of Art, Gilman Collection, Purchase, Joseph M. Cohen Gift, 2005",
+        "originalSource": "Mathew B. Brady撮影。作品番号2005.100.84。",
+        "dateNote": "所蔵館の年代推定：1856〜1858年。選択した時点の姿を示すものではありません。",
+        "identityNote": "所蔵館がマシュー・ペリーの肖像写真として整理。",
+        "rightsNote": "所蔵館はPublic Domainと表示し、画像をCC0で公開。所蔵館提供の縮小画像を加工せず使用。",
         "checkedAt": "2026-09-25"
       },
       "statuses": {

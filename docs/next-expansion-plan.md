@@ -176,3 +176,13 @@ LinuxのCIでは人物詳細の長い「事件へ戻る」ボタンが1行固定
 ### Cの本番反映
 
 `4dd5925` / contentVersion `1.0.66` を公開。修正後はローカル90件・ブラウザー215件、CI（36102884557）、Cloudflare Pages（36103303191）、Production smoke（36103339815）が成功。本番38ファイル・4セキュリティヘッダー・23キャッシュ方針の一致を確認。320pxのライト・ダークで下関事件から井上の詳細、再読込、事件復帰を操作し、JavaScript例外・横溢れはなかった。
+
+## ペリー肖像の差し替え（2026-09-25）
+
+利用者から、台紙と撮影用の色見本まで含む画像がノートの表紙のように見えるという指摘を受け、ペリーのみメトロポリタン美術館所蔵のMathew B. Brady撮影の肖像（作品番号2005.100.84、1856〜1858年）へ差し替えた。顔と上半身が大きく写り、台紙や色見本を含まない。人物・事件・画面構造は変更していない。
+
+[作品ページ](https://www.metmuseum.org/art/collection/search/283184)のPublic Domain表示と、[Open Access方針](https://www.metmuseum.org/hubs/open-access)のCC0による再利用条件を確認した。両ページの本文は検索サービス経由で取得できたが、自動HTTP到達確認は429だった。公式APIと画像配信はHTTP 200で、APIの人物名・制作年代・`isPublicDomain`・画像URLを照合した。本文確認とHTTP到達性は区別している。
+
+[公式API](https://collectionapi.metmuseum.org/public/collection/v1/objects/283184)の `primaryImageSmall` が示す[配信画像](https://images.metmuseum.org/CRDImages/ph/web-large/DP261079.jpg)を加工せず `assets/portraits/perry-met.jpg` に保存（536×625px、76,272バイト）。旧画像と旧画像専用の出典を置き換え、肖像の年代・所蔵・利用条件も更新した。contentVersion `1.0.72`、アセット識別子 `20260925k`。
+
+公開前にデータ103件、関連ブラウザー25件、公開用distの検査が成功。320pxのライト・ダークと1280pxの表示を目視し、横溢れなしを確認。初回読み込み量は502,498バイトで550,000バイト上限内。画像スナップショットの期待値は変更していない。コミット後はCI・配信・本番照合を確認する。

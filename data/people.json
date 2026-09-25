@@ -36,15 +36,15 @@
         "ratification"
       ],
       "portrait": {
-        "src": "assets/portraits/perry-loc.jpg",
-        "alt": "マシュー・ペリーの史料肖像",
-        "sourceId": "loc_portrait_perry",
-        "rightsSourceId": "loc_portrait_perry",
-        "credit": "Library of Congress, Prints and Photographs Division",
-        "originalSource": "Mathew B. Brady撮影、E. Anthony刊。写真台紙の記載による。",
-        "dateNote": "所蔵館の年代推定：1854〜1858年。選択した時点の姿を示すものではありません。",
-        "identityNote": "所蔵館がマシュー・ペリーの写真として整理。",
-        "rightsNote": "所蔵館は公表に関する既知の制限なしと案内。所蔵館提供の150px画像を使用。",
+        "src": "assets/portraits/perry-met.jpg",
+        "alt": "軍服姿のマシュー・ペリーの肖像写真",
+        "sourceId": "met_portrait_perry",
+        "rightsSourceId": "met_open_access",
+        "credit": "The Metropolitan Museum of Art, Gilman Collection, Purchase, Joseph M. Cohen Gift, 2005",
+        "originalSource": "Mathew B. Brady撮影。作品番号2005.100.84。",
+        "dateNote": "所蔵館の年代推定：1856〜1858年。選択した時点の姿を示すものではありません。",
+        "identityNote": "所蔵館がマシュー・ペリーの肖像写真として整理。",
+        "rightsNote": "所蔵館はPublic Domainと表示し、画像をCC0で公開。所蔵館提供の縮小画像を加工せず使用。",
         "checkedAt": "2026-09-25"
       }
     },

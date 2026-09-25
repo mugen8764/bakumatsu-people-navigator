@@ -2048,11 +2048,19 @@
       "contentCheckedAt": "2026-09-25"
     },
     {
-      "id": "loc_portrait_perry",
-      "title": "米国議会図書館「Commodore Matthew C. Perry」",
-      "url": "https://www.loc.gov/pictures/item/2001695235/",
-      "locator": "About This Item: Title, Date Created/Published, Notes, Rights Advisory",
-      "note": "所蔵館の掲載本文を検索サービス経由で確認。直接接続は403。掲載画像とメタデータを照合し、所蔵館提供の縮小画像を使用。",
+      "id": "met_portrait_perry",
+      "title": "メトロポリタン美術館「Commodore Matthew Calbraith Perry」",
+      "url": "https://www.metmuseum.org/art/collection/search/283184",
+      "locator": "Artwork Details: Artist, Date, Credit Line, Object Number／画像のPublic Domain表示",
+      "note": "Mathew B. Brady撮影、1856〜1858年、作品番号2005.100.84。顔と上半身が大きく写る所蔵館提供画像を使用。作品ページと公式APIの目録・画像URLを照合。",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "met_open_access",
+      "title": "メトロポリタン美術館「Open Access at The Met」",
+      "url": "https://www.metmuseum.org/hubs/open-access",
+      "locator": "冒頭のOpen Access InitiativeとCreative Commons Zero（CC0）の説明",
+      "note": "Public Domain作品画像と基本データのCC0による公開・再利用方針。ペリー肖像は作品ページでもPublic Domainと表示されている。",
       "contentCheckedAt": "2026-09-25"
     },
     {

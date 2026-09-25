@@ -47,7 +47,7 @@ test('the published collection sizes stay at the balanced expansion release base
     relations: 108,
     factionRelations: 18,
     places: 30,
-    sources: 319
+    sources: 320
   });
 });
 
