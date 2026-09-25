@@ -1118,13 +1118,14 @@
       "role": "薩摩藩国父",
       "factionId": "satsuma",
       "stance": "前年の久光一行通行時に起きた生麦事件をめぐり、薩摩藩は英国の要求を拒否した。",
-      "importance": "英国艦隊が6月27日に鹿児島へ来航し、7月2日に薩英戦争が起きた。",
+      "importance": "1863年8月15日（旧暦7月2日）に交戦が始まり、城下や集成館などが被害を受けた。11月には薩摩が賠償支払いに合意する。",
       "evidence": {
         "sourceIds": [
-          "kagoshima_satsuei"
+          "kagoshima_satsuei",
+          "satow_diplomat",
+          "frus_satsuma_settlement"
         ],
-        "reviewStatus": "verified",
-        "note": "鹿児島県歴史・美術センター黎明館の解説で、久光一行と生麦事件、薩摩藩の要求拒否、英国艦隊来航と開戦日を確認。久光個人が戦闘を指揮したとは断定しない。"
+        "reviewStatus": "verified"
       }
     },
     {
@@ -7129,7 +7130,7 @@
       "id": "person-status-satow-1862-bunkyu",
       "personId": "satow",
       "startSceneId": "1862-bunkyu",
-      "endSceneId": "1864-kinmon",
+      "endSceneId": "1862-bunkyu",
       "displayName": "アーネスト・サトウ",
       "role": "英国公使館の通訳生",
       "factionId": "foreign-powers",
@@ -7782,6 +7783,148 @@
         "sourceIds": [
           "chiyoda_inoue_kiyonao",
           "bakushindoko_inoue_kiyonao"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-richardson-1862-bunkyu",
+      "personId": "richardson",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "チャールズ・リチャードソン",
+      "role": "日本を訪れた英国商人",
+      "factionId": "foreign-powers",
+      "stance": "上海で生糸取引などに携わった後、帰国前に日本を訪問。9月14日、生麦で薩摩藩士に襲われ死亡した。",
+      "importance": "外交使節や艦隊の軍人ではなく、事件に遭遇した商人として見る。",
+      "evidence": {
+        "sourceIds": [
+          "yokohama_richardson_letters",
+          "yokohama_namamugi_exhibition"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-neale-1862-bunkyu",
+      "personId": "neale",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "エドワード・ニール",
+      "role": "英国代理公使",
+      "factionId": "foreign-powers",
+      "stance": "オールコック公使の一時帰国中に代理を務め、生麦事件後の外交対応を担った。",
+      "importance": "翌年には幕府と薩摩へ異なる賠償要求を示す。事件現場の同行者とは区別する。",
+      "evidence": {
+        "sourceIds": [
+          "tsu_alcock_leave",
+          "frus_namamugi_demands"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-neale-1863-joi",
+      "personId": "neale",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "displayName": "エドワード・ニール",
+      "role": "英国代理公使・賠償交渉担当",
+      "factionId": "foreign-powers",
+      "stance": "幕府への10万ポンド、薩摩への2万5千ポンドと犯人処罰を要求。鹿児島への艦隊に同行した。",
+      "importance": "交渉不調後に対応をキューパーへ委ねた。11月には薩摩が賠償金支払いに合意し、1864年3月にはオールコックが再来日する。",
+      "evidence": {
+        "sourceIds": [
+          "frus_namamugi_demands",
+          "frus_kagoshima_operations",
+          "frus_satsuma_settlement",
+          "tsu_alcock_leave"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-kuper-1863-joi",
+      "personId": "kuper",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "displayName": "オーガスタス・キューパー",
+      "role": "英国艦隊指揮官",
+      "factionId": "foreign-powers",
+      "stance": "7隻の艦隊で鹿児島へ向かう。交渉不調後に薩摩の汽船を拿捕し、砲台との交戦を指揮した。",
+      "importance": "外交要求を示すニールと、艦隊を動かす指揮官の役割を分ける。",
+      "evidence": {
+        "sourceIds": [
+          "frus_kagoshima_operations",
+          "satow_diplomat"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-kuper-1864-kinmon",
+      "personId": "kuper",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "オーガスタス・キューパー",
+      "role": "下関へ向かう英国艦隊の指揮官",
+      "factionId": "foreign-powers",
+      "stance": "英・仏・蘭・米の艦隊が下関へ向かった際、英国艦隊を指揮。サトウが通訳として旗艦に乗り込んだ。",
+      "importance": "前年の鹿児島とは、対戦相手も参加国も異なる。",
+      "evidence": {
+        "sourceIds": [
+          "satow_diplomat"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-kuper-1865-choshu",
+      "personId": "kuper",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "オーガスタス・キューパー",
+      "role": "英国へ帰国する海軍指揮官",
+      "factionId": "foreign-powers",
+      "stance": "1865年に英国へ帰国した。以後の日本での軍事行動を引き続き指揮したとは扱わない。",
+      "importance": "帰国の月日はこの表示では確定していない。",
+      "evidence": {
+        "sourceIds": [
+          "uvic_kuper"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-satow-1863-joi",
+      "personId": "satow",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "displayName": "アーネスト・サトウ",
+      "role": "鹿児島遠征に同行した公使館員",
+      "factionId": "foreign-powers",
+      "stance": "ニールら英国公使館員と艦隊に同行し、軍艦アーガスに乗船した。本人の回想に経過が残る。",
+      "importance": "公使や艦隊司令官ではない。同行の事実と、後年の回想に含まれる伝聞・評価を分ける。",
+      "evidence": {
+        "sourceIds": [
+          "satow_diplomat"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-satow-1864-kinmon",
+      "personId": "satow",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "アーネスト・サトウ",
+      "role": "下関遠征でキューパーの通訳",
+      "factionId": "foreign-powers",
+      "stance": "下関へ向かう艦隊でキューパーの通訳となり、旗艦ユーリアラスに乗り込んだ。",
+      "importance": "軍事指揮を担うキューパーと、その意思疎通を助ける通訳の役割は異なる。",
+      "evidence": {
+        "sourceIds": [
+          "satow_diplomat"
         ],
         "reviewStatus": "verified"
       }

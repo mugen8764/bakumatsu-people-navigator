@@ -1677,6 +1677,38 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-relation-neale-kuper-1863-joi-political-cooperation",
+      "aPersonId": "neale",
+      "bPersonId": "kuper",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "typeId": "political-cooperation",
+      "label": "外交要求と軍事指揮",
+      "text": "生麦事件後の要求を担当するニールと、鹿児島で軍事行動を指揮するキューパー。交渉不調後に対応を引き継いだ。",
+      "evidence": {
+        "sourceIds": [
+          "frus_kagoshima_operations"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-neale-satow-1863-joi-organization",
+      "aPersonId": "neale",
+      "bPersonId": "satow",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "typeId": "organization",
+      "label": "公使館員として同行",
+      "text": "代理公使ニールと公使館員サトウは鹿児島への艦隊に同行した。サトウを外交方針の決定者とは扱わない。",
+      "evidence": {
+        "sourceIds": [
+          "satow_diplomat"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ],
   "factionRelations": [

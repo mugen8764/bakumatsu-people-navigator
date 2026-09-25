@@ -2398,14 +2398,21 @@
       "activeEndSceneId": "1869-hakodate",
       "oneLine": "英国公使館の通訳生として来日し、パークスの外交を助けた。公使と通訳の役割の違いから外交をたどる。",
       "placeIds": [
-        "kyoto"
+        "kyoto",
+        "yokohama",
+        "kagoshima",
+        "shimonoseki"
       ],
-      "eventIds": [],
+      "eventIds": [
+        "joi1863",
+        "kinmon"
+      ],
       "evidence": {
         "sourceIds": [
           "ndl_satow",
           "atsugi_satow",
-          "satow_papers_research"
+          "satow_papers_research",
+          "satow_diplomat"
         ],
         "reviewStatus": "verified"
       },
@@ -2621,6 +2628,101 @@
         "consular-jurisdiction",
         "tariff-autonomy"
       ]
+    },
+    {
+      "id": "richardson",
+      "name": "チャールズ・リチャードソン",
+      "kana": "ちゃーるず りちゃーどそん",
+      "aliases": [
+        "リチャードソン",
+        "チャールズ・レノックス・リチャードソン",
+        "Charles Lenox Richardson"
+      ],
+      "lifespan": "1833–1862",
+      "defaultFactionId": "foreign-powers",
+      "activeStartSceneId": "1862-bunkyu",
+      "activeEndSceneId": "1862-bunkyu",
+      "oneLine": "上海で商業に携わり、帰国前に日本を訪れた英国人。生麦事件で命を落とした。",
+      "placeIds": [
+        "yokohama",
+        "namamugi"
+      ],
+      "eventIds": [
+        "bunkyu"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "yokohama_richardson_letters",
+          "yokohama_namamugi_exhibition"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "foreign-settlement"
+      ]
+    },
+    {
+      "id": "neale",
+      "name": "エドワード・ニール",
+      "kana": "えどわーど にーる",
+      "aliases": [
+        "ニール",
+        "エドワード・セント・ジョン・ニール",
+        "Edward St. John Neale"
+      ],
+      "lifespan": "1812–1866",
+      "defaultFactionId": "foreign-powers",
+      "activeStartSceneId": "1862-bunkyu",
+      "activeEndSceneId": "1863-aug18",
+      "oneLine": "オールコックの不在中に英国代理公使を務め、生麦事件後の賠償交渉を担った。",
+      "placeIds": [
+        "yokohama",
+        "kagoshima"
+      ],
+      "eventIds": [
+        "bunkyu",
+        "joi1863"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "japansociety_neale",
+          "tsu_alcock_leave",
+          "frus_namamugi_demands"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "kuper",
+      "name": "オーガスタス・キューパー",
+      "kana": "おーがすたす きゅーぱー",
+      "aliases": [
+        "キューパー",
+        "オーガスタス・レオポルド・キューパー",
+        "Augustus Leopold Kuper"
+      ],
+      "lifespan": "1809–1885",
+      "defaultFactionId": "foreign-powers",
+      "activeStartSceneId": "1863-joi",
+      "activeEndSceneId": "1865-choshu",
+      "oneLine": "英国海軍の指揮官。薩英戦争と翌年の下関攻撃に参加し、外交官とは異なる軍事指揮を担った。",
+      "placeIds": [
+        "yokohama",
+        "kagoshima",
+        "shimonoseki"
+      ],
+      "eventIds": [
+        "joi1863",
+        "kinmon"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "uvic_kuper",
+          "frus_kagoshima_operations",
+          "satow_diplomat"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

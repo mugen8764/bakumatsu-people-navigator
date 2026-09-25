@@ -620,13 +620,16 @@
         "yodo",
         "takechi",
         "ryoma",
-        "kaieda"
+        "kaieda",
+        "richardson",
+        "neale"
       ],
       "factionIds": [
         "satsuma",
         "bakufu",
         "aizu",
-        "tosa"
+        "tosa",
+        "foreign-powers"
       ],
       "placeIds": [
         "kagoshima",
@@ -639,7 +642,9 @@
           "archives_timeline",
           "ndl_handwriting",
           "kagoshima_teradaya",
-          "ndl_portrait_kaieda_detail"
+          "ndl_portrait_kaieda_detail",
+          "yokohama_namamugi_exhibition",
+          "frus_namamugi_demands"
         ],
         "reviewStatus": "verified"
       }
@@ -661,7 +666,7 @@
         "藩の軍制・産業近代化"
       ],
       "results": [
-        "薩摩と英国の接近・軍備近代化",
+        "薩摩と英国の戦後交渉、11月の賠償支払い合意",
         "高杉晋作による奇兵隊創設",
         "翌年の四国艦隊下関砲撃へ"
       ],
@@ -671,7 +676,10 @@
         "okubo",
         "takasugi",
         "kido",
-        "kusaka"
+        "kusaka",
+        "neale",
+        "kuper",
+        "satow"
       ],
       "factionIds": [
         "satsuma",
@@ -685,7 +693,10 @@
       "evidence": {
         "sourceIds": [
           "archives_timeline",
-          "kagoshima_satsuei"
+          "kagoshima_satsuei",
+          "frus_kagoshima_operations",
+          "frus_satsuma_settlement",
+          "satow_diplomat"
         ],
         "reviewStatus": "verified"
       }
@@ -2827,6 +2838,222 @@
           "ndl_treaty_1854_text",
           "mofa_treaty_1854",
           "mofa_treaty_1858"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "namamugi-1862",
+      "sceneId": "1862-bunkyu",
+      "title": "生麦事件と賠償要求",
+      "date": "1862年9月14日（文久2年8月21日・旧暦）",
+      "scope": "生麦での殺傷事件と翌年の外交要求",
+      "summary": "島津久光一行の帰路、生麦で騎馬の英国人4人が薩摩藩士に襲われ、リチャードソンが死亡、2人が負傷した。事件は幕府と薩摩への外交要求に発展する。",
+      "stakes": "英国は幕府へ謝罪と10万ポンド、薩摩へ犯人処罰と2万5千ポンドを要求した。要求先と金額を分けて見る。",
+      "turningPoint": "幕府と薩摩への対応は別々に進む。薩摩との交渉がまとまらず、翌1863年の鹿児島への艦隊派遣につながる。",
+      "participants": [
+        {
+          "personId": "richardson",
+          "displayName": "チャールズ・リチャードソン",
+          "role": "事件で死亡した商人",
+          "involvement": "onsite",
+          "side": "英国の民間人",
+          "summary": "上海で商業を営み、日本を訪れていた。同行の横浜商人2人が負傷し、女性1人は無傷だった。",
+          "evidence": {
+            "sourceIds": [
+              "yokohama_namamugi_exhibition",
+              "yokohama_richardson_letters"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "hisamitsu",
+          "displayName": "島津久光",
+          "role": "帰路の行列の中心人物",
+          "involvement": "onsite",
+          "side": "薩摩藩",
+          "summary": "幕政改革を求めて江戸へ赴き、その帰路に事件が起きた。ここでは個々の殺傷行為を命じたとは断定しない。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_namamugi"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "kaieda",
+          "displayName": "海江田信義",
+          "role": "殺傷事件に関与した藩士",
+          "involvement": "onsite",
+          "side": "薩摩藩",
+          "summary": "国会図書館の解説は生麦事件での英国人殺傷を記す。誰へのどの一撃かまではこの表示では割り当てない。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_kaieda_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "neale",
+          "displayName": "エドワード・ニール",
+          "role": "事件後の外交対応",
+          "involvement": "context",
+          "side": "英国公使館",
+          "summary": "代理公使として対応し、翌年に幕府・薩摩への要求を示す。事件の現場参加者ではない。",
+          "evidence": {
+            "sourceIds": [
+              "tsu_alcock_leave",
+              "frus_namamugi_demands"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [],
+      "placeIds": [
+        "namamugi",
+        "yokohama"
+      ],
+      "termIds": [
+        "foreign-settlement"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "yokohama_namamugi_exhibition",
+          "kagoshima_namamugi",
+          "frus_namamugi_demands",
+          "frus_kagoshima_operations"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "satsuma-britain-1863",
+      "sceneId": "1863-joi",
+      "title": "薩英戦争と戦後交渉",
+      "date": "1863年8月15〜17日（文久3年7月2〜4日・旧暦）／11月の賠償合意",
+      "scope": "鹿児島での交渉・砲撃と、その後の賠償合意",
+      "summary": "生麦事件の賠償などを求めて英国艦隊7隻が鹿児島へ来航。交渉不調後に英国側が汽船を拿捕し、薩摩の砲台との交戦で城下や集成館などが被害を受けた。",
+      "stakes": "外交要求を軍事力で履行させようとする英国と薩摩の対立。ニールの交渉とキューパーの軍事指揮を区別する。",
+      "turningPoint": "戦闘だけでは要求は解決せず、その後も交渉が続く。11月には薩摩が2万5千ポンドの支払いに合意した。",
+      "participants": [
+        {
+          "personId": "neale",
+          "displayName": "エドワード・ニール",
+          "role": "外交要求を伝える代理公使",
+          "involvement": "onsite",
+          "side": "英国公使館",
+          "summary": "艦隊に同行して薩摩へ要求を伝える。交渉がまとまらず、対応を艦隊指揮官へ委ねた。",
+          "evidence": {
+            "sourceIds": [
+              "frus_kagoshima_operations"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "kuper",
+          "displayName": "オーガスタス・キューパー",
+          "role": "艦隊の軍事行動を指揮",
+          "involvement": "onsite",
+          "side": "英国海軍",
+          "summary": "薩摩の汽船3隻の拿捕を命じた。砲台との交戦で艦隊も死傷者と損害を出した。",
+          "evidence": {
+            "sourceIds": [
+              "frus_kagoshima_operations"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "satow",
+          "displayName": "アーネスト・サトウ",
+          "role": "艦隊に同行した公使館員",
+          "involvement": "onsite",
+          "side": "英国公使館",
+          "summary": "軍艦アーガスに乗り、戦闘を経験した。本人の記録は外交官や軍人だけではない同行者の視点を伝える。",
+          "evidence": {
+            "sourceIds": [
+              "satow_diplomat"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "hisamitsu",
+          "displayName": "島津久光",
+          "role": "藩政を主導する国父",
+          "involvement": "context",
+          "side": "薩摩藩",
+          "summary": "藩主の父として薩摩藩政の実権を握る。国父の立場を、個別砲台の指揮官と同一視しない。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_library_hisamitsu_saigo"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "komatsu",
+          "displayName": "小松帯刀",
+          "role": "藩政中枢の家老",
+          "involvement": "context",
+          "side": "薩摩藩",
+          "summary": "前年に家老へ進み、薩摩の藩政を担う。ここでは本人がどの砲台を指揮したかを断定しない。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_komatsu_1862"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "satsuei-neale-kuper",
+          "aPersonId": "neale",
+          "bPersonId": "kuper",
+          "label": "交渉不調後、対応を委ねる",
+          "description": "ニールが交渉不調後にキューパーへ対応を委ね、キューパーが汽船拿捕を命じた。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "frus_kagoshima_operations"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "satsuei-neale-satow",
+          "aPersonId": "neale",
+          "bPersonId": "satow",
+          "label": "公使館員として艦隊に同行",
+          "description": "代理公使ニールと公使館員サトウが同じ遠征に同行。サトウはアーガスに乗船した。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "satow_diplomat"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "kagoshima",
+        "yokohama"
+      ],
+      "termIds": [
+        "karo",
+        "tsuji"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kagoshima_satsuei",
+          "frus_kagoshima_operations",
+          "frus_satsuma_settlement",
+          "satow_diplomat"
         ],
         "reviewStatus": "verified"
       }

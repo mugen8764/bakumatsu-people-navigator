@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.64",
+    "version": "1.0.65",
     "updated": "2026-09-25"
   },
   "sources": {
@@ -349,9 +349,9 @@
     "kagoshima_satsuei": {
       "title": "鹿児島県「薩英戦争」",
       "url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/satuei.html",
-      "note": "生麦事件後の英国要求、鹿児島来攻、薩英戦争、薩摩藩論の開国への転換。",
-      "locator": "「薩英戦争」本文の段落",
-      "contentCheckedAt": "2026-07-31"
+      "note": "戦闘の経過と被害に用いる。戦後の藩論の変化を直ちに全面的な親英・倒幕へ転じたことと同一視しない。",
+      "locator": "本文：生麦事件後の要求拒否、英国艦隊7隻、旧暦7月2日の交戦と城下・集成館の被害",
+      "contentCheckedAt": "2026-09-25"
     },
     "kyoto_shinsengumi_history": {
       "title": "京都市歴史資料館・歴史講座「浪士組から新選組」",
@@ -1312,8 +1312,8 @@
       "title": "国立国会図書館「近代日本人の肖像」海江田信義",
       "url": "https://www.ndl.go.jp/portrait/datas/6093/",
       "note": "生没年、別称、生麦事件と戊辰戦争の役割、肖像。",
-      "locator": "解説、別称、肖像1枚目、肖像1枚目",
-      "contentCheckedAt": "2026-09-12"
+      "locator": "解説：生麦事件での英国人殺傷、別称と肖像",
+      "contentCheckedAt": "2026-09-25"
     },
     "kagoshima_kaieda_name": {
       "title": "鹿児島大学掲載「女性たちの明治維新」有村れん書状",
@@ -1768,6 +1768,76 @@
       "url": "https://www.loc.gov/pictures/item/2017896747/",
       "note": "所蔵館の掲載本文を検索サービス経由で確認。直接接続は403。掲載画像とメタデータを照合し、所蔵館提供の縮小画像を使用。",
       "locator": "About This Item: Title, Date Created/Published, Notes, Rights Advisory",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "yokohama_namamugi_exhibition": {
+      "title": "横浜開港資料館「開港のひろば」117号：生麦事件展",
+      "url": "https://kaikou.yokohama-history.org/kanpou/%E3%80%8C%E9%96%8B%E6%B8%AF%E3%81%AE%E3%81%B2%E3%82%8D%E3%81%B0%E3%80%8D%E7%AC%AC117%E5%8F%B7/",
+      "note": "1862年9月14日（旧暦8月21日）。上海の商人リチャードソンが死亡、横浜の商人2人が負傷、同行女性は無傷。",
+      "locator": "企画展「生麦事件 激震、幕末日本」：事件の日付、4人の英国人と被害",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "yokohama_richardson_letters": {
+      "title": "横浜開港資料館：リチャードソンの略歴と家族の書簡",
+      "url": "https://kaikou.yokohama-history.org/kanpou/%E3%80%8C%E9%96%8B%E6%B8%AF%E3%81%AE%E3%81%B2%E3%82%8D%E3%81%B0%E3%80%8D%E7%AC%AC117%E5%8F%B7/2/",
+      "note": "家族書簡展の解説。生年は1833年。図1は父親の肖像であり本人の画像には使わない。",
+      "locator": "「リチャードソンの略歴」「リチャードソンの肖像」",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "kagoshima_namamugi": {
+      "title": "鹿児島県「生麦事件」",
+      "url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/namamugi.html",
+      "note": "事件の加害を行列の慣行で正当化しない。幕府への10万ポンドと薩摩への2万5千ポンドを区別。",
+      "locator": "本文：久光一行の帰路、幕府と薩摩それぞれへの賠償要求",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "frus_namamugi_demands": {
+      "title": "米国務省 FRUS：1863年4月10日プルーイン書簡",
+      "url": "https://history.state.gov/historicaldocuments/frus1863p2/d374",
+      "note": "当時の外交文書。ニールの職名と幕府・薩摩への要求を確認。4月の艦隊隻数を8月の鹿児島来航へ流用しない。",
+      "locator": "pp.1071–1074：英国の要求、付録ニールの4月7日書簡",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "frus_kagoshima_operations": {
+      "title": "米国務省 FRUS：1863年8月26日プルーイン書簡",
+      "url": "https://history.state.gov/historicaldocuments/frus1864p3/d451",
+      "note": "ニールから聞いた経過を報告した外交文書。英国側の動機・評価を中立的な確定事実へ置き換えない。",
+      "locator": "pp.445–447：鹿児島への派遣、ニールからキューパーへの引継ぎ、汽船拿捕と砲撃",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "frus_satsuma_settlement": {
+      "title": "米国務省 FRUS：1863年11月16日の薩摩賠償合意報告",
+      "url": "https://history.state.gov/historicaldocuments/frus1864p3/d457",
+      "note": "支払い合意の報告として用いる。実際の送金日まで確定した資料としては扱わない。",
+      "locator": "p.458：2万5千ポンド支払いへの合意と犯人引渡し要求",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "uvic_kuper": {
+      "title": "ビクトリア大学 Colonial Despatches：Augustus L. Kuper",
+      "url": "https://bcgenesis.uvic.ca/kuper.html",
+      "note": "Oxford Dictionary of National Biographyを参照した人物解説。階級の変遷はこの短い表示では断定しない。",
+      "locator": "生没年月日、1861年以降の指揮官職と1865年の帰国",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "japansociety_neale": {
+      "title": "Japan Society：Hugh Cortazzi著作紹介のニール項目",
+      "url": "https://elibrary.japansociety.org.uk/index.php?func=author&name=Cortazzi%2C+Hugh",
+      "note": "公開紹介文で1812–1866とオールコック休暇中の代理を確認。ログインが必要な章本文は未確認で、経歴の細部には用いない。",
+      "locator": "British Envoys in Japan 1859–1972：Lt Colonel Edward St John Nealeの紹介文",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "tsu_alcock_leave": {
+      "title": "山下琢巳「本学蔵東海道関係浮世絵（三）」",
+      "url": "https://www.tsu.ac.jp/media/bulletin44_05.pdf",
+      "note": "1862年3月の帰国、1864年3月の再来日を確認。生麦事件の日付には本稿の経過日数表現を用いず、横浜開港資料館の解説と照合する。",
+      "locator": "東京成徳短期大学紀要44号 p.55（PDF3ページ）：オールコックの帰国・再来日とニールの代理",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "satow_diplomat": {
+      "title": "アーネスト・サトウ A Diplomat in Japan（1921）",
+      "url": "https://www.gutenberg.org/files/43541/43541-h/43541-h.htm",
+      "note": "当事者の回想を公開翻刻で確認。本人の同行・職務と経過に用い、伝聞や推測による責任帰属は採用しない。",
+      "locator": "第VIII章 pp.84–94：鹿児島遠征への同行と8月15〜17日／第X章 p.102：キューパーの通訳",
       "contentCheckedAt": "2026-09-25"
     }
   },
@@ -2599,13 +2669,16 @@
         "yodo",
         "takechi",
         "ryoma",
-        "kaieda"
+        "kaieda",
+        "richardson",
+        "neale"
       ],
       "factions": [
         "薩摩藩",
         "幕府",
         "会津藩",
-        "土佐藩"
+        "土佐藩",
+        "外国勢力"
       ],
       "places": [
         "kagoshima",
@@ -2617,14 +2690,18 @@
         "archives_timeline",
         "ndl_handwriting",
         "kagoshima_teradaya",
-        "ndl_portrait_kaieda_detail"
+        "ndl_portrait_kaieda_detail",
+        "yokohama_namamugi_exhibition",
+        "frus_namamugi_demands"
       ],
       "evidence": {
         "sourceIds": [
           "archives_timeline",
           "ndl_handwriting",
           "kagoshima_teradaya",
-          "ndl_portrait_kaieda_detail"
+          "ndl_portrait_kaieda_detail",
+          "yokohama_namamugi_exhibition",
+          "frus_namamugi_demands"
         ],
         "reviewStatus": "verified"
       }
@@ -2645,7 +2722,7 @@
         "藩の軍制・産業近代化"
       ],
       "results": [
-        "薩摩と英国の接近・軍備近代化",
+        "薩摩と英国の戦後交渉、11月の賠償支払い合意",
         "高杉晋作による奇兵隊創設",
         "翌年の四国艦隊下関砲撃へ"
       ],
@@ -2655,7 +2732,10 @@
         "okubo",
         "takasugi",
         "kido",
-        "kusaka"
+        "kusaka",
+        "neale",
+        "kuper",
+        "satow"
       ],
       "factions": [
         "薩摩藩",
@@ -2668,12 +2748,18 @@
       ],
       "sources": [
         "archives_timeline",
-        "kagoshima_satsuei"
+        "kagoshima_satsuei",
+        "frus_kagoshima_operations",
+        "frus_satsuma_settlement",
+        "satow_diplomat"
       ],
       "evidence": {
         "sourceIds": [
           "archives_timeline",
-          "kagoshima_satsuei"
+          "kagoshima_satsuei",
+          "frus_kagoshima_operations",
+          "frus_satsuma_settlement",
+          "satow_diplomat"
         ],
         "reviewStatus": "verified"
       }
@@ -5183,6 +5269,222 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    "namamugi-1862": {
+      "id": "namamugi-1862",
+      "sceneId": "1862-bunkyu",
+      "title": "生麦事件と賠償要求",
+      "date": "1862年9月14日（文久2年8月21日・旧暦）",
+      "scope": "生麦での殺傷事件と翌年の外交要求",
+      "summary": "島津久光一行の帰路、生麦で騎馬の英国人4人が薩摩藩士に襲われ、リチャードソンが死亡、2人が負傷した。事件は幕府と薩摩への外交要求に発展する。",
+      "stakes": "英国は幕府へ謝罪と10万ポンド、薩摩へ犯人処罰と2万5千ポンドを要求した。要求先と金額を分けて見る。",
+      "turningPoint": "幕府と薩摩への対応は別々に進む。薩摩との交渉がまとまらず、翌1863年の鹿児島への艦隊派遣につながる。",
+      "participants": [
+        {
+          "personId": "richardson",
+          "displayName": "チャールズ・リチャードソン",
+          "role": "事件で死亡した商人",
+          "involvement": "onsite",
+          "side": "英国の民間人",
+          "summary": "上海で商業を営み、日本を訪れていた。同行の横浜商人2人が負傷し、女性1人は無傷だった。",
+          "evidence": {
+            "sourceIds": [
+              "yokohama_namamugi_exhibition",
+              "yokohama_richardson_letters"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "hisamitsu",
+          "displayName": "島津久光",
+          "role": "帰路の行列の中心人物",
+          "involvement": "onsite",
+          "side": "薩摩藩",
+          "summary": "幕政改革を求めて江戸へ赴き、その帰路に事件が起きた。ここでは個々の殺傷行為を命じたとは断定しない。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_namamugi"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "kaieda",
+          "displayName": "海江田信義",
+          "role": "殺傷事件に関与した藩士",
+          "involvement": "onsite",
+          "side": "薩摩藩",
+          "summary": "国会図書館の解説は生麦事件での英国人殺傷を記す。誰へのどの一撃かまではこの表示では割り当てない。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_kaieda_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "neale",
+          "displayName": "エドワード・ニール",
+          "role": "事件後の外交対応",
+          "involvement": "context",
+          "side": "英国公使館",
+          "summary": "代理公使として対応し、翌年に幕府・薩摩への要求を示す。事件の現場参加者ではない。",
+          "evidence": {
+            "sourceIds": [
+              "tsu_alcock_leave",
+              "frus_namamugi_demands"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [],
+      "placeIds": [
+        "namamugi",
+        "yokohama"
+      ],
+      "termIds": [
+        "foreign-settlement"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "yokohama_namamugi_exhibition",
+          "kagoshima_namamugi",
+          "frus_namamugi_demands",
+          "frus_kagoshima_operations"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "satsuma-britain-1863": {
+      "id": "satsuma-britain-1863",
+      "sceneId": "1863-joi",
+      "title": "薩英戦争と戦後交渉",
+      "date": "1863年8月15〜17日（文久3年7月2〜4日・旧暦）／11月の賠償合意",
+      "scope": "鹿児島での交渉・砲撃と、その後の賠償合意",
+      "summary": "生麦事件の賠償などを求めて英国艦隊7隻が鹿児島へ来航。交渉不調後に英国側が汽船を拿捕し、薩摩の砲台との交戦で城下や集成館などが被害を受けた。",
+      "stakes": "外交要求を軍事力で履行させようとする英国と薩摩の対立。ニールの交渉とキューパーの軍事指揮を区別する。",
+      "turningPoint": "戦闘だけでは要求は解決せず、その後も交渉が続く。11月には薩摩が2万5千ポンドの支払いに合意した。",
+      "participants": [
+        {
+          "personId": "neale",
+          "displayName": "エドワード・ニール",
+          "role": "外交要求を伝える代理公使",
+          "involvement": "onsite",
+          "side": "英国公使館",
+          "summary": "艦隊に同行して薩摩へ要求を伝える。交渉がまとまらず、対応を艦隊指揮官へ委ねた。",
+          "evidence": {
+            "sourceIds": [
+              "frus_kagoshima_operations"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "kuper",
+          "displayName": "オーガスタス・キューパー",
+          "role": "艦隊の軍事行動を指揮",
+          "involvement": "onsite",
+          "side": "英国海軍",
+          "summary": "薩摩の汽船3隻の拿捕を命じた。砲台との交戦で艦隊も死傷者と損害を出した。",
+          "evidence": {
+            "sourceIds": [
+              "frus_kagoshima_operations"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "satow",
+          "displayName": "アーネスト・サトウ",
+          "role": "艦隊に同行した公使館員",
+          "involvement": "onsite",
+          "side": "英国公使館",
+          "summary": "軍艦アーガスに乗り、戦闘を経験した。本人の記録は外交官や軍人だけではない同行者の視点を伝える。",
+          "evidence": {
+            "sourceIds": [
+              "satow_diplomat"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "hisamitsu",
+          "displayName": "島津久光",
+          "role": "藩政を主導する国父",
+          "involvement": "context",
+          "side": "薩摩藩",
+          "summary": "藩主の父として薩摩藩政の実権を握る。国父の立場を、個別砲台の指揮官と同一視しない。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_library_hisamitsu_saigo"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "komatsu",
+          "displayName": "小松帯刀",
+          "role": "藩政中枢の家老",
+          "involvement": "context",
+          "side": "薩摩藩",
+          "summary": "前年に家老へ進み、薩摩の藩政を担う。ここでは本人がどの砲台を指揮したかを断定しない。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_komatsu_1862"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "satsuei-neale-kuper",
+          "aPersonId": "neale",
+          "bPersonId": "kuper",
+          "label": "交渉不調後、対応を委ねる",
+          "description": "ニールが交渉不調後にキューパーへ対応を委ね、キューパーが汽船拿捕を命じた。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "frus_kagoshima_operations"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "satsuei-neale-satow",
+          "aPersonId": "neale",
+          "bPersonId": "satow",
+          "label": "公使館員として艦隊に同行",
+          "description": "代理公使ニールと公使館員サトウが同じ遠征に同行。サトウはアーガスに乗船した。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "satow_diplomat"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "kagoshima",
+        "yokohama"
+      ],
+      "termIds": [
+        "karo",
+        "tsuji"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kagoshima_satsuei",
+          "frus_kagoshima_operations",
+          "frus_satsuma_settlement",
+          "satow_diplomat"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   },
   "places": {
@@ -6986,10 +7288,12 @@
           "display": "島津久光",
           "role": "薩摩藩国父",
           "stance": "前年の久光一行通行時に起きた生麦事件をめぐり、薩摩藩は英国の要求を拒否した。",
-          "importance": "英国艦隊が6月27日に鹿児島へ来航し、7月2日に薩英戦争が起きた。",
+          "importance": "1863年8月15日（旧暦7月2日）に交戦が始まり、城下や集成館などが被害を受けた。11月には薩摩が賠償支払いに合意する。",
           "evidence": {
             "sourceIds": [
-              "kagoshima_satsuei"
+              "kagoshima_satsuei",
+              "satow_diplomat",
+              "frus_satsuma_settlement"
             ],
             "reviewStatus": "verified"
           }
@@ -13068,13 +13372,20 @@
       ],
       "oneLine": "英国公使館の通訳生として来日し、パークスの外交を助けた。公使と通訳の役割の違いから外交をたどる。",
       "places": [
-        "kyoto"
+        "kyoto",
+        "yokohama",
+        "kagoshima",
+        "shimonoseki"
       ],
-      "events": [],
+      "events": [
+        "joi1863",
+        "kinmon"
+      ],
       "sources": [
         "ndl_satow",
         "atsugi_satow",
-        "satow_papers_research"
+        "satow_papers_research",
+        "satow_diplomat"
       ],
       "termIds": [
         "tsuji"
@@ -13090,6 +13401,30 @@
               "ndl_satow"
             ],
             "reviewStatus": "needs_review"
+          }
+        },
+        "1863-joi": {
+          "display": "アーネスト・サトウ",
+          "role": "鹿児島遠征に同行した公使館員",
+          "stance": "ニールら英国公使館員と艦隊に同行し、軍艦アーガスに乗船した。本人の回想に経過が残る。",
+          "importance": "公使や艦隊司令官ではない。同行の事実と、後年の回想に含まれる伝聞・評価を分ける。",
+          "evidence": {
+            "sourceIds": [
+              "satow_diplomat"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1864-kinmon": {
+          "display": "アーネスト・サトウ",
+          "role": "下関遠征でキューパーの通訳",
+          "stance": "下関へ向かう艦隊でキューパーの通訳となり、旗艦ユーリアラスに乗り込んだ。",
+          "importance": "軍事指揮を担うキューパーと、その意思疎通を助ける通訳の役割は異なる。",
+          "evidence": {
+            "sourceIds": [
+              "satow_diplomat"
+            ],
+            "reviewStatus": "verified"
           }
         },
         "1865-choshu": {
@@ -13770,6 +14105,182 @@
             "sourceIds": [
               "chiyoda_inoue_kiyonao",
               "bakushindoko_inoue_kiyonao"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "richardson",
+      "name": "チャールズ・リチャードソン",
+      "kana": "ちゃーるず りちゃーどそん",
+      "aliases": [
+        "リチャードソン",
+        "チャールズ・レノックス・リチャードソン",
+        "Charles Lenox Richardson"
+      ],
+      "born": "1833–1862",
+      "defaultFaction": "外国勢力",
+      "activeRange": [
+        4,
+        4
+      ],
+      "oneLine": "上海で商業に携わり、帰国前に日本を訪れた英国人。生麦事件で命を落とした。",
+      "places": [
+        "yokohama",
+        "namamugi"
+      ],
+      "events": [
+        "bunkyu"
+      ],
+      "sources": [
+        "yokohama_richardson_letters",
+        "yokohama_namamugi_exhibition"
+      ],
+      "termIds": [
+        "foreign-settlement"
+      ],
+      "statuses": {
+        "1862-bunkyu": {
+          "display": "チャールズ・リチャードソン",
+          "role": "日本を訪れた英国商人",
+          "stance": "上海で生糸取引などに携わった後、帰国前に日本を訪問。9月14日、生麦で薩摩藩士に襲われ死亡した。",
+          "importance": "外交使節や艦隊の軍人ではなく、事件に遭遇した商人として見る。",
+          "evidence": {
+            "sourceIds": [
+              "yokohama_richardson_letters",
+              "yokohama_namamugi_exhibition"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "neale",
+      "name": "エドワード・ニール",
+      "kana": "えどわーど にーる",
+      "aliases": [
+        "ニール",
+        "エドワード・セント・ジョン・ニール",
+        "Edward St. John Neale"
+      ],
+      "born": "1812–1866",
+      "defaultFaction": "外国勢力",
+      "activeRange": [
+        4,
+        6
+      ],
+      "oneLine": "オールコックの不在中に英国代理公使を務め、生麦事件後の賠償交渉を担った。",
+      "places": [
+        "yokohama",
+        "kagoshima"
+      ],
+      "events": [
+        "bunkyu",
+        "joi1863"
+      ],
+      "sources": [
+        "japansociety_neale",
+        "tsu_alcock_leave",
+        "frus_namamugi_demands"
+      ],
+      "statuses": {
+        "1862-bunkyu": {
+          "display": "エドワード・ニール",
+          "role": "英国代理公使",
+          "stance": "オールコック公使の一時帰国中に代理を務め、生麦事件後の外交対応を担った。",
+          "importance": "翌年には幕府と薩摩へ異なる賠償要求を示す。事件現場の同行者とは区別する。",
+          "evidence": {
+            "sourceIds": [
+              "tsu_alcock_leave",
+              "frus_namamugi_demands"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1863-joi": {
+          "display": "エドワード・ニール",
+          "role": "英国代理公使・賠償交渉担当",
+          "stance": "幕府への10万ポンド、薩摩への2万5千ポンドと犯人処罰を要求。鹿児島への艦隊に同行した。",
+          "importance": "交渉不調後に対応をキューパーへ委ねた。11月には薩摩が賠償金支払いに合意し、1864年3月にはオールコックが再来日する。",
+          "evidence": {
+            "sourceIds": [
+              "frus_namamugi_demands",
+              "frus_kagoshima_operations",
+              "frus_satsuma_settlement",
+              "tsu_alcock_leave"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "kuper",
+      "name": "オーガスタス・キューパー",
+      "kana": "おーがすたす きゅーぱー",
+      "aliases": [
+        "キューパー",
+        "オーガスタス・レオポルド・キューパー",
+        "Augustus Leopold Kuper"
+      ],
+      "born": "1809–1885",
+      "defaultFaction": "外国勢力",
+      "activeRange": [
+        5,
+        8
+      ],
+      "oneLine": "英国海軍の指揮官。薩英戦争と翌年の下関攻撃に参加し、外交官とは異なる軍事指揮を担った。",
+      "places": [
+        "yokohama",
+        "kagoshima",
+        "shimonoseki"
+      ],
+      "events": [
+        "joi1863",
+        "kinmon"
+      ],
+      "sources": [
+        "uvic_kuper",
+        "frus_kagoshima_operations",
+        "satow_diplomat"
+      ],
+      "statuses": {
+        "1863-joi": {
+          "display": "オーガスタス・キューパー",
+          "role": "英国艦隊指揮官",
+          "stance": "7隻の艦隊で鹿児島へ向かう。交渉不調後に薩摩の汽船を拿捕し、砲台との交戦を指揮した。",
+          "importance": "外交要求を示すニールと、艦隊を動かす指揮官の役割を分ける。",
+          "evidence": {
+            "sourceIds": [
+              "frus_kagoshima_operations",
+              "satow_diplomat"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1864-kinmon": {
+          "display": "オーガスタス・キューパー",
+          "role": "下関へ向かう英国艦隊の指揮官",
+          "stance": "英・仏・蘭・米の艦隊が下関へ向かった際、英国艦隊を指揮。サトウが通訳として旗艦に乗り込んだ。",
+          "importance": "前年の鹿児島とは、対戦相手も参加国も異なる。",
+          "evidence": {
+            "sourceIds": [
+              "satow_diplomat"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1865-choshu": {
+          "display": "オーガスタス・キューパー",
+          "role": "英国へ帰国する海軍指揮官",
+          "stance": "1865年に英国へ帰国した。以後の日本での軍事行動を引き続き指揮したとは扱わない。",
+          "importance": "帰国の月日はこの表示では確定していない。",
+          "evidence": {
+            "sourceIds": [
+              "uvic_kuper"
             ],
             "reviewStatus": "verified"
           }
@@ -15290,6 +15801,36 @@
       "evidence": {
         "sourceIds": [
           "bakushindoko_inoue_kiyonao"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "neale",
+      "b": "kuper",
+      "start": 5,
+      "end": 6,
+      "type": "政治協力",
+      "label": "外交要求と軍事指揮",
+      "text": "生麦事件後の要求を担当するニールと、鹿児島で軍事行動を指揮するキューパー。交渉不調後に対応を引き継いだ。",
+      "evidence": {
+        "sourceIds": [
+          "frus_kagoshima_operations"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "neale",
+      "b": "satow",
+      "start": 5,
+      "end": 6,
+      "type": "組織",
+      "label": "公使館員として同行",
+      "text": "代理公使ニールと公使館員サトウは鹿児島への艦隊に同行した。サトウを外交方針の決定者とは扱わない。",
+      "evidence": {
+        "sourceIds": [
+          "satow_diplomat"
         ],
         "reviewStatus": "verified"
       }
