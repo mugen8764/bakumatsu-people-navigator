@@ -106,8 +106,8 @@
       "title": "国立国会図書館「日米和親条約写」",
       "url": "https://www.ndl.go.jp/modern/img_t/002/002-003tx.html",
       "note": "下田・箱館への米国船来航、薪水・食料供給などを定めた条約本文。",
-      "locator": "「日米和親条約写」第二ヶ条",
-      "contentCheckedAt": "2026-08-26"
+      "locator": "冒頭の全権名、第二・七・八・十二ヶ条、批准書と条約附録",
+      "contentCheckedAt": "2026-09-25"
     },
     {
       "id": "ndl_nichiran_opening",
@@ -557,9 +557,9 @@
       "id": "ndl_modern_opening",
       "title": "国立国会図書館「開国―近代の幕開け」",
       "url": "https://www.ndl.go.jp/modern/cha1/description01.html",
-      "note": "1853年のペリー艦隊来航と国書授受要求、1854年の再来航と幕府代表との交渉。",
-      "locator": "「1-1 開国―近代の幕開け」本文第1段落",
-      "contentCheckedAt": "2026-08-26"
+      "note": "阿部の諮問、林らとペリーの交渉、条約内容、1855年の批准書交換を確認。",
+      "locator": "「1-1 開国―近代の幕開け」本文第1・2段落",
+      "contentCheckedAt": "2026-09-25"
     },
     {
       "id": "yokosuka_perry_blackships",
@@ -1969,6 +1969,86 @@
       "url": "https://www.ndl.go.jp/portrait/datas/185",
       "note": "本人の肖像としての帰属を確認。撮影・制作時期は未確認。",
       "locator": "肖像1枚目・生没年・解説／肖像1枚目",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "yokohama_treaty_plenipotentiaries",
+      "title": "横浜市中央図書館「全権」",
+      "url": "https://www.city.yokohama.lg.jp/kurashi/kyodo-manabi/library/shiru/sakoku/kaei/zenken.html",
+      "locator": "「日本側の全権」定義と4人の氏名、林復斎の生没年",
+      "note": "和親条約の日本側全権は林・井戸・伊沢・鵜殿の4名。引用された人物評は掲載しない。",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "nishogakusha_hayashi_1858",
+      "title": "二松学舎大学附属図書館 展示図録：山田方谷書簡",
+      "url": "https://www.nishogakusha-u.ac.jp/library/pdf/kankobutu_16.pdf",
+      "locator": "冊子11頁（PDF12頁）「6 山田方谷書簡 三島（中洲）宛」",
+      "note": "1858年4月の三島中洲の林復斎への入門と昌平坂学問所入寮。林の大学頭在職・別名・生没年を確認。",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "ndl_iwase_identity",
+      "title": "国立国会図書館典拠データ「岩瀬, 忠震, 1818-1861」",
+      "url": "https://id.ndl.go.jp/auth/ndlna/00315177",
+      "locator": "標目・カナ読み・別名",
+      "note": "岩瀬忠震の読み、生没年、篤三郎などの別名を確認。",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "shinshiro_iwase_retirement",
+      "title": "新城市設楽原歴史資料館「岩瀬忠震筆『藤に芍薬』」",
+      "url": "https://www.city.shinshiro.lg.jp/mokuteki/shisetu/shiryokan/shitaragahara/fujinisyakuyaku.html",
+      "locator": "本文：安政6年8月の隠居、鴎所の号、文久元年の作品と死去",
+      "note": "1859年の隠居後は外交交渉中と表示しない。月は旧暦のため西暦の月として扱わない。",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "chiyoda_inoue_kiyonao",
+      "title": "千代田区観光協会「井上清直」",
+      "url": "https://visit-chiyoda.tokyo/app/history/detail/11",
+      "locator": "人物解説：1855年の下田奉行、1858年の調印、歴任した奉行職、1866年の町奉行",
+      "note": "生年・読み・信濃守・条約調印・役職を確認。没年の1867表記は旧暦慶応3年と区別する。",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "bakushindoko_inoue_kiyonao",
+      "title": "幕末幕臣動向「井上清直」",
+      "url": "https://bakushindoko.jp/%E3%81%82%E8%A1%8C/%E4%BA%95%E4%B8%8A%E6%B8%85%E7%9B%B4/",
+      "locator": "役職通称遍歴（1859〜1868年）、墓碑の命日、木村芥舟「幕府名士小伝」翻刻",
+      "note": "役職年表を観光協会解説と照合。慶応3年12月28日は1868年1月22日。川路聖謨の弟であることは史料翻刻による。",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "mofa_ratification_definition",
+      "title": "外務省掲載「プロテクション・ガイドライン」",
+      "url": "https://www.mofa.go.jp/mofaj/gaiko/oda/shimin/oda_ngo/shien/jindo_protection/pdfs/guideline_j.pdf",
+      "locator": "冊子2頁（PDF4頁）「条約」の説明中の批准の定義",
+      "note": "署名後に国が内容を最終確認して同意する手続の定義だけを用いる。現代の国内手続を幕末へ適用しない。",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "taisho_treaty_articles",
+      "title": "大正大学「日本史教材」日米修好通商条約",
+      "url": "https://kokokara.tais.ac.jp/common/doc/feel/oc/Japanese_history_teaching_materials.pdf",
+      "locator": "58頁「日米修好通商条約」第4・6条と現代語訳",
+      "note": "貿易章程に従う関税と、日本人に対して法を犯した米国人を米国領事裁判所が裁く規定を確認。",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "loc_portrait_perry",
+      "title": "米国議会図書館「Commodore Matthew C. Perry」",
+      "url": "https://www.loc.gov/pictures/item/2001695235/",
+      "locator": "About This Item: Title, Date Created/Published, Notes, Rights Advisory",
+      "note": "所蔵館の掲載本文を検索サービス経由で確認。直接接続は403。掲載画像とメタデータを照合し、所蔵館提供の縮小画像を使用。",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "loc_portrait_harris",
+      "title": "米国議会図書館「Hon. Townsend Harris」",
+      "url": "https://www.loc.gov/pictures/item/2017896747/",
+      "locator": "About This Item: Title, Date Created/Published, Notes, Rights Advisory",
+      "note": "所蔵館の掲載本文を検索サービス経由で確認。直接接続は403。掲載画像とメタデータを照合し、所蔵館提供の縮小画像を使用。",
       "contentCheckedAt": "2026-09-25"
     }
   ]

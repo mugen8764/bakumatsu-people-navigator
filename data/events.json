@@ -36,7 +36,7 @@
       "eventId": "treaty1854",
       "insights": [
         "条約は米国船が下田・箱館へ来航できることを定めた。",
-        "幕府は同年、英国・ロシアとも和親条約を結んだ。",
+        "幕府は1854年に英国、翌1855年にロシアとも和親条約を結んだ。",
         "翌1855年、長崎でオランダ軍人による海軍伝習が始まった。"
       ],
       "evidence": {
@@ -57,7 +57,7 @@
       "era": "安政5年",
       "date": "6月〜9月",
       "title": "通商条約・将軍継嗣・安政の大獄",
-      "summary": "大老井伊直弼は勅許を得ずに日米修好通商条約へ調印し、徳川慶福を将軍継嗣に定め、反対する大名・公家・志士らを処分した。",
+      "summary": "井伊直弼の下で幕府は勅許を得ずに通商条約を結び、井上清直・岩瀬忠震が署名した。将軍継嗣には徳川慶福が選ばれ、反対派への処分が進んだ。",
       "eventId": "ansei",
       "insights": [
         "井伊は安政5年4月に大老へ就任した。",
@@ -68,7 +68,9 @@
         "sourceIds": [
           "archives_timeline",
           "ndl_modern_timeline",
-          "ndl_handwriting_bakumatsu_people"
+          "ndl_handwriting_bakumatsu_people",
+          "mofa_treaty_1858",
+          "bunka_commercial_signers"
         ],
         "reviewStatus": "verified",
         "note": "国立国会図書館の井伊直弼解説で大老就任、無勅許調印、将軍継嗣問題、安政の大獄を確認。"
@@ -460,7 +462,8 @@
       "personIds": [
         "perry",
         "abe",
-        "sho-in"
+        "sho-in",
+        "hayashi-fukusai"
       ],
       "factionIds": [
         "foreign-powers",
@@ -485,7 +488,7 @@
       "date": "1858〜1859年（安政5〜6年）",
       "title": "通商条約・将軍継嗣・安政の大獄",
       "category": "幕政・条約",
-      "description": "井伊直弼は勅許を得ないまま日米修好通商条約を調印し、徳川家茂を将軍継嗣とした。反対した大名・公家・志士らは処分された。",
+      "description": "井伊直弼が大老を務める幕府は勅許のないまま通商条約を結び、日本側全権の井上清直・岩瀬忠震が署名した。将軍継嗣には徳川家茂が選ばれ、反対した大名・公家・志士らは処分された。",
       "causes": [
         "ハリスによる通商条約締結要求",
         "清国が列強に敗れたことへの危機感",
@@ -514,7 +517,9 @@
         "nariakira",
         "saigo",
         "komei",
-        "kawaji-toshiakira"
+        "kawaji-toshiakira",
+        "iwase-tadanari",
+        "inoue-kiyonao"
       ],
       "factionIds": [
         "foreign-powers",
@@ -1388,6 +1393,38 @@
           }
         },
         {
+          "personId": "iwase-tadanari",
+          "displayName": "岩瀬忠震",
+          "role": "目付・交渉と日本側の署名",
+          "involvement": "onsite",
+          "side": "幕府",
+          "summary": "全権としてハリスとの交渉を担い、神奈川沖の米艦ポーハタン号上で条約に署名した。",
+          "evidence": {
+            "sourceIds": [
+              "mofa_treaty_1858",
+              "bunka_commercial_signers",
+              "chiyoda_inoue_kiyonao"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "inoue-kiyonao",
+          "displayName": "井上清直",
+          "role": "下田奉行・交渉と日本側の署名",
+          "involvement": "onsite",
+          "side": "幕府",
+          "summary": "全権としてハリスとの交渉を担い、神奈川沖の米艦ポーハタン号上で条約に署名した。",
+          "evidence": {
+            "sourceIds": [
+              "mofa_treaty_1858",
+              "bunka_commercial_signers",
+              "chiyoda_inoue_kiyonao"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
           "personId": "ii",
           "displayName": "井伊直弼",
           "role": "未勅許での調印を決断",
@@ -1445,6 +1482,36 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "id": "commercial-iwase-tadanari-harris",
+          "aPersonId": "iwase-tadanari",
+          "bPersonId": "harris",
+          "label": "条約の条件を交渉",
+          "description": "幕府の全権としてハリスと条件を交渉し、日本側調印書に署名した。",
+          "direction": "both",
+          "evidence": {
+            "sourceIds": [
+              "mofa_treaty_1858",
+              "bunka_commercial_signers"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "commercial-inoue-kiyonao-harris",
+          "aPersonId": "inoue-kiyonao",
+          "bPersonId": "harris",
+          "label": "条約の条件を交渉",
+          "description": "幕府の全権としてハリスと条件を交渉し、日本側調印書に署名した。",
+          "direction": "both",
+          "evidence": {
+            "sourceIds": [
+              "mofa_treaty_1858",
+              "bunka_commercial_signers"
+            ],
+            "reviewStatus": "verified"
+          }
         }
       ],
       "placeIds": [
@@ -1455,7 +1522,10 @@
       "termIds": [
         "chokkyo",
         "kaiko",
-        "tsuji"
+        "tsuji",
+        "zenken",
+        "consular-jurisdiction",
+        "tariff-autonomy"
       ],
       "evidence": {
         "sourceIds": [
@@ -2668,6 +2738,98 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "friendship-treaty-1854",
+      "sceneId": "1854-treaty",
+      "title": "日米和親条約の交渉と調印",
+      "date": "1854年3月31日（嘉永7年3月3日・旧暦）",
+      "scope": "横浜での交渉・補給港の開放・翌年の批准書交換",
+      "summary": "林復斎ら幕府代表とペリーが横浜で交渉し、下田・箱館での補給や漂流民の保護を定めた。1858年の自由貿易を定めた条約とは段階が異なる。",
+      "stakes": "米国船への補給と人の保護をどう認めるか。横浜は調印地であり、この条約で開く港は下田・箱館だった。",
+      "turningPoint": "1855年2月21日に批准書を交換。補給などの取り決めから、ハリスとの本格的な通商交渉へ進む。",
+      "participants": [
+        {
+          "personId": "hayashi-fukusai",
+          "displayName": "林復斎",
+          "role": "日本側全権の一人",
+          "involvement": "onsite",
+          "side": "幕府",
+          "summary": "林大学頭として交渉・調印を担当。他の日本側全権は井戸対馬守・伊沢美作守・鵜殿民部少輔。",
+          "evidence": {
+            "sourceIds": [
+              "yokohama_treaty_plenipotentiaries",
+              "ndl_treaty_1854_text"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "perry",
+          "displayName": "マシュー・ペリー",
+          "role": "米国使節・交渉と署名",
+          "involvement": "onsite",
+          "side": "米国",
+          "summary": "再来航し、林ら幕府代表と横浜で交渉した。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_modern_opening",
+              "ndl_treaty_1854_text"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "abe",
+          "displayName": "阿部正弘",
+          "role": "幕府の対応を担う老中",
+          "involvement": "decision",
+          "side": "幕府",
+          "summary": "前年の国書を諸侯に示して意見を募った老中。批准書にも名を連ねるが、横浜で署名した全権とは区別する。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_modern_opening",
+              "ndl_treaty_1854_text"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "friendship-hayashi-perry",
+          "aPersonId": "hayashi-fukusai",
+          "bPersonId": "perry",
+          "label": "条件を交渉・調印",
+          "description": "林を含む日本側全権とペリーが和親条約を結んだ。林だけが日本側の署名者だったわけではない。",
+          "direction": "both",
+          "evidence": {
+            "sourceIds": [
+              "ndl_treaty_1854_text"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "yokohama",
+        "shimoda",
+        "hakodate"
+      ],
+      "termIds": [
+        "zenken",
+        "ratification",
+        "kaiko"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_modern_opening",
+          "ndl_treaty_1854_text",
+          "mofa_treaty_1854",
+          "mofa_treaty_1858"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ],
   "terms": [
@@ -2926,6 +3088,62 @@
       "evidence": {
         "sourceIds": [
           "glover_garden_guide"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "zenken",
+      "title": "全権",
+      "kana": "ぜんけん",
+      "meaning": "国を代表して交渉や条約締結を行う権限を与えられた人。",
+      "context": "和親条約では林復斎ら4人、1858年の通商条約では井上清直・岩瀬忠震が日本側の署名を担った。",
+      "evidence": {
+        "sourceIds": [
+          "yokohama_treaty_plenipotentiaries",
+          "bunka_commercial_signers"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "ratification",
+      "title": "批准",
+      "kana": "ひじゅん",
+      "meaning": "署名された条約の内容を、国として最終確認し同意する手続。",
+      "context": "和親条約は1854年に調印され、1855年2月21日に批准書を交換した。調印日と批准書交換日は別。",
+      "evidence": {
+        "sourceIds": [
+          "mofa_ratification_definition",
+          "ndl_modern_opening"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "consular-jurisdiction",
+      "title": "領事裁判権",
+      "kana": "りょうじさいばんけん",
+      "meaning": "滞在先で、自国民に関する裁判を自国の領事が行う権限。",
+      "context": "通商条約第6条では、日本人に対して法を犯した米国人を、米国の領事裁判所が米国法で裁くと定めた。",
+      "evidence": {
+        "sourceIds": [
+          "taisho_treaty_articles",
+          "mofa_treaty_1858"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "tariff-autonomy",
+      "title": "関税自主権",
+      "kana": "かんぜいじしゅけん",
+      "meaning": "輸出入にかける関税を、自国で決める権限。",
+      "context": "1858年の通商条約では関税も条約で定められ、日本が独自に変更できる仕組みではなかった。",
+      "evidence": {
+        "sourceIds": [
+          "mofa_treaty_1858",
+          "taisho_treaty_articles"
         ],
         "reviewStatus": "verified"
       }

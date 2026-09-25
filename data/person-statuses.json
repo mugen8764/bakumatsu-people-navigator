@@ -7538,6 +7538,253 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-status-hayashi-fukusai-1854-treaty",
+      "personId": "hayashi-fukusai",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1854-treaty",
+      "displayName": "林復斎",
+      "role": "大学頭・和親条約の全権",
+      "factionId": "bakufu",
+      "stance": "林大学頭として、井戸・伊沢・鵜殿らとペリーに応対。横浜で和親条約を結び、下田で附録を取り決めた。",
+      "importance": "幕府の方針を、条約の具体的な条件へまとめる交渉担当者。",
+      "evidence": {
+        "sourceIds": [
+          "yokohama_treaty_plenipotentiaries",
+          "ndl_modern_opening",
+          "ndl_treaty_1854_text"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-hayashi-fukusai-1858-ansei",
+      "personId": "hayashi-fukusai",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "林復斎",
+      "role": "大学頭",
+      "factionId": "bakufu",
+      "stance": "1858年には三島中洲が入門し、昌平坂学問所の書生寮へ入った。林は翌1859年に死去する。",
+      "importance": "和親条約の交渉後は、大学頭としての活動をたどる。",
+      "evidence": {
+        "sourceIds": [
+          "nishogakusha_hayashi_1858"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-iwase-tadanari-1858-ansei",
+      "personId": "iwase-tadanari",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "岩瀬忠震",
+      "role": "通商条約の全権",
+      "factionId": "bakufu",
+      "stance": "井上清直とともにハリスと交渉し、1858年7月29日、日米修好通商条約に署名した。",
+      "importance": "政治の決定者と、条件を交渉して署名した実務者を区別する入口。",
+      "evidence": {
+        "sourceIds": [
+          "mofa_treaty_1858",
+          "bunka_commercial_signers"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-iwase-tadanari-1860-sakurada",
+      "personId": "iwase-tadanari",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "岩瀬忠震",
+      "role": "隠居した元外交担当者",
+      "factionId": "bakufu",
+      "stance": "1859年に隠居を命じられ、江戸向島で書画に親しんだ。1861年に死去。",
+      "importance": "条約交渉を担った幕臣の失脚と、その後の暮らしをたどる。",
+      "evidence": {
+        "sourceIds": [
+          "shinshiro_iwase_retirement",
+          "ndl_iwase_identity"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-inoue-kiyonao-1858-ansei",
+      "personId": "inoue-kiyonao",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "井上清直",
+      "role": "下田奉行・通商条約の全権",
+      "factionId": "bakufu",
+      "stance": "岩瀬忠震とハリスとの交渉・調印を担当。米国との調印後、外国奉行も兼ねた。",
+      "importance": "幕府の交渉を担う井上清直。長州の井上馨とは別人物。",
+      "evidence": {
+        "sourceIds": [
+          "chiyoda_inoue_kiyonao",
+          "mofa_treaty_1858"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-inoue-kiyonao-1860-sakurada",
+      "personId": "inoue-kiyonao",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "井上清直",
+      "role": "軍艦奉行",
+      "factionId": "bakufu",
+      "stance": "1859年に小普請奉行へ転じた後、同年末から軍艦奉行を務める。",
+      "importance": "条約交渉から幕府の海軍実務へ役割が移る。",
+      "evidence": {
+        "sourceIds": [
+          "bakushindoko_inoue_kiyonao",
+          "chiyoda_inoue_kiyonao"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-inoue-kiyonao-1862-bunkyu",
+      "personId": "inoue-kiyonao",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "井上清直",
+      "role": "軍艦奉行から外国奉行へ",
+      "factionId": "bakufu",
+      "stance": "1862年9月（旧暦8月）に外国奉行へ転じた。",
+      "importance": "通商条約を結んだ後も続く、対外交渉の実務を担う。",
+      "evidence": {
+        "sourceIds": [
+          "bakushindoko_inoue_kiyonao"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-inoue-kiyonao-1863-joi",
+      "personId": "inoue-kiyonao",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "displayName": "井上清直",
+      "role": "江戸町奉行",
+      "factionId": "bakufu",
+      "stance": "1863年1月に南町奉行となり、同年7月には小笠原長行に従って大坂へ赴いた。",
+      "importance": "外交を経験した幕臣が、江戸の行政と幕府内の対応に携わる。",
+      "evidence": {
+        "sourceIds": [
+          "bakushindoko_inoue_kiyonao"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-inoue-kiyonao-1863-aug18",
+      "personId": "inoue-kiyonao",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "displayName": "井上清直",
+      "role": "町奉行を退任",
+      "factionId": "bakufu",
+      "stance": "1863年9月13日（旧暦8月1日）に役を免じられた。",
+      "importance": "八月十八日の政変の時点では、以前の町奉行職から離れている。",
+      "evidence": {
+        "sourceIds": [
+          "bakushindoko_inoue_kiyonao"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-inoue-kiyonao-1864-kinmon",
+      "personId": "inoue-kiyonao",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "井上清直",
+      "role": "秋に外国奉行へ復帰",
+      "factionId": "bakufu",
+      "stance": "1864年10月に外国奉行へ復帰し、12月には勘定奉行となった。いずれも夏の禁門の変より後。",
+      "importance": "年内の任命を、夏の事件当日の役職と取り違えない。",
+      "evidence": {
+        "sourceIds": [
+          "bakushindoko_inoue_kiyonao"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-inoue-kiyonao-1865-choshu",
+      "personId": "inoue-kiyonao",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "井上清直",
+      "role": "勘定奉行・道中奉行兼帯",
+      "factionId": "bakufu",
+      "stance": "1865年1月から道中奉行を兼ね、同年の将軍進発に随行した。",
+      "importance": "財政・行政の奉行職を務める時期。",
+      "evidence": {
+        "sourceIds": [
+          "bakushindoko_inoue_kiyonao"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-inoue-kiyonao-1866-satcho",
+      "personId": "inoue-kiyonao",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "displayName": "井上清直",
+      "role": "勘定奉行",
+      "factionId": "bakufu",
+      "stance": "勘定奉行を務め、薩長盟約の後の1866年3月10日（旧暦1月24日）には関東郡代も兼ねた。",
+      "importance": "慶応期には関東と江戸の行政に携わる。",
+      "evidence": {
+        "sourceIds": [
+          "bakushindoko_inoue_kiyonao",
+          "chiyoda_inoue_kiyonao"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-inoue-kiyonao-1866-expedition",
+      "personId": "inoue-kiyonao",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "displayName": "井上清直",
+      "role": "勘定奉行・関東郡代",
+      "factionId": "bakufu",
+      "stance": "関東郡代を兼ねる勘定奉行。1866年秋に勘定奉行を離れ、同年には町奉行にも就いた。",
+      "importance": "慶応期には関東と江戸の行政に携わる。",
+      "evidence": {
+        "sourceIds": [
+          "bakushindoko_inoue_kiyonao",
+          "chiyoda_inoue_kiyonao"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-inoue-kiyonao-1867-taisei",
+      "personId": "inoue-kiyonao",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "井上清直",
+      "role": "江戸町奉行を務めた幕臣",
+      "factionId": "bakufu",
+      "stance": "1866年に町奉行に就任。慶応3年12月28日（1868年1月22日）、鳥羽・伏見の戦いより前に死去した。",
+      "importance": "旧暦慶応3年末の死去を、西暦1867年中と取り違えない。",
+      "evidence": {
+        "sourceIds": [
+          "chiyoda_inoue_kiyonao",
+          "bakushindoko_inoue_kiyonao"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

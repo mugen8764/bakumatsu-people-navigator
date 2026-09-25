@@ -30,6 +30,22 @@
           "mofa_treaty_1854"
         ],
         "reviewStatus": "verified"
+      },
+      "termIds": [
+        "zenken",
+        "ratification"
+      ],
+      "portrait": {
+        "src": "assets/portraits/perry-loc.jpg",
+        "alt": "マシュー・ペリーの史料肖像",
+        "sourceId": "loc_portrait_perry",
+        "rightsSourceId": "loc_portrait_perry",
+        "credit": "Library of Congress, Prints and Photographs Division",
+        "originalSource": "Mathew B. Brady撮影、E. Anthony刊。写真台紙の記載による。",
+        "dateNote": "所蔵館の年代推定：1854〜1858年。選択した時点の姿を示すものではありません。",
+        "identityNote": "所蔵館がマシュー・ペリーの写真として整理。",
+        "rightsNote": "所蔵館は公表に関する既知の制限なしと案内。所蔵館提供の150px画像を使用。",
+        "checkedAt": "2026-09-25"
       }
     },
     {
@@ -61,8 +77,23 @@
       },
       "termIds": [
         "kaiko",
-        "tsuji"
-      ]
+        "tsuji",
+        "zenken",
+        "consular-jurisdiction",
+        "tariff-autonomy"
+      ],
+      "portrait": {
+        "src": "assets/portraits/harris-loc.jpg",
+        "alt": "タウンゼント・ハリスの史料肖像",
+        "sourceId": "loc_portrait_harris",
+        "rightsSourceId": "loc_portrait_harris",
+        "credit": "Brady-Handy photograph collection, Library of Congress, Prints and Photographs Division",
+        "originalSource": "Brady-Handy photograph collection",
+        "dateNote": "所蔵館の年代推定：1855〜1865年。選択した時点の姿を示すものではありません。",
+        "identityNote": "所蔵館がハリスの写真として掲載。ただし題名はネガ袋の未確認情報に基づくと注記。",
+        "rightsNote": "所蔵館は公表に関する既知の制限なしと案内。所蔵館提供の150px画像を使用。",
+        "checkedAt": "2026-09-25"
+      }
     },
     {
       "id": "abe",
@@ -2485,6 +2516,111 @@
         "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。国立国会図書館が提供する縮小画像を使用。",
         "checkedAt": "2026-09-25"
       }
+    },
+    {
+      "id": "hayashi-fukusai",
+      "name": "林復斎",
+      "kana": "はやし ふくさい",
+      "aliases": [
+        "林大学頭",
+        "林韑"
+      ],
+      "lifespan": "1800–1859",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1854-treaty",
+      "activeEndSceneId": "1858-ansei",
+      "oneLine": "日米和親条約の日本側全権の一人。ペリーとの交渉を担い、大学頭として学問にも携わった。",
+      "placeIds": [
+        "edo",
+        "yokohama",
+        "shimoda"
+      ],
+      "eventIds": [
+        "treaty1854"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "yokohama_treaty_plenipotentiaries",
+          "ndl_modern_opening",
+          "nishogakusha_hayashi_1858"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "zenken",
+        "ratification"
+      ]
+    },
+    {
+      "id": "iwase-tadanari",
+      "name": "岩瀬忠震",
+      "kana": "いわせ ただなり",
+      "aliases": [
+        "岩瀬肥後守",
+        "岩瀬篤三郎",
+        "鴎所"
+      ],
+      "lifespan": "1818–1861",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1858-ansei",
+      "activeEndSceneId": "1860-sakurada",
+      "oneLine": "井上清直とともにハリスとの交渉・条約調印を担った幕臣。1859年には隠居を命じられた。",
+      "placeIds": [
+        "edo",
+        "yokohama"
+      ],
+      "eventIds": [
+        "ansei"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_iwase_identity",
+          "mofa_treaty_1858",
+          "shinshiro_iwase_retirement"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "zenken",
+        "consular-jurisdiction",
+        "tariff-autonomy"
+      ]
+    },
+    {
+      "id": "inoue-kiyonao",
+      "name": "井上清直",
+      "kana": "いのうえ きよなお",
+      "aliases": [
+        "井上信濃守",
+        "井上新右衛門"
+      ],
+      "lifespan": "1809–1868（慶応3年末没）",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1858-ansei",
+      "activeEndSceneId": "1867-taisei",
+      "oneLine": "下田奉行として岩瀬忠震と通商条約を交渉・調印。のち海軍・財政・江戸の行政を担った。",
+      "placeIds": [
+        "shimoda",
+        "yokohama",
+        "edo",
+        "osaka"
+      ],
+      "eventIds": [
+        "ansei"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "chiyoda_inoue_kiyonao",
+          "mofa_treaty_1858",
+          "bakushindoko_inoue_kiyonao"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "zenken",
+        "consular-jurisdiction",
+        "tariff-autonomy"
+      ]
     }
   ]
 }

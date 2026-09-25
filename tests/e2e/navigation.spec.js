@@ -24,7 +24,7 @@ test('all six primary views render without a page error', crossBrowser, async ({
     await expect(page.locator(`#view-${view}`)).toBeVisible();
   }
 
-  await expect(page.locator('#sourceCatalog .source')).toHaveCount(275);
+  await expect(page.locator('#sourceCatalog .source')).toHaveCount(285);
   const preciseSource = page.locator('#sourceCatalog .source', { hasText: '木戸孝允遺文集' });
   await expect(preciseSource.locator('.source-meta')).toContainText('該当箇所: 目次144頁（0110.jp2）');
   await expect(preciseSource.locator('.source-meta')).toContainText('内容確認日: 2026-07-31');
@@ -736,8 +736,8 @@ test('the scene at-a-glance total does not depend on how many chips fit', async 
   await expect.poll(async () => (await counts()).peopleLabel).toBe(narrow.peopleLabel);
   const wide = await counts();
 
-  // 1858-ansei lists 12 event people and 5 active factions at this scene.
-  expect(narrow).toEqual({ peopleLabel: '全12人', factionLabel: '全5勢力' });
+  // 1858-ansei lists 14 event people and 5 active factions at this scene.
+  expect(narrow).toEqual({ peopleLabel: '全14人', factionLabel: '全5勢力' });
   expect(wide).toEqual(narrow);
 });
 

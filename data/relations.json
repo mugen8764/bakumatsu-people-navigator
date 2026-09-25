@@ -1593,6 +1593,90 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-relation-hayashi-fukusai-perry-1854-treaty-mediation-or-negotiation",
+      "aPersonId": "hayashi-fukusai",
+      "bPersonId": "perry",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1854-treaty",
+      "typeId": "mediation-or-negotiation",
+      "label": "和親条約の交渉",
+      "text": "林ら日本側全権とペリーが横浜で交渉し、和親条約を結んだ。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_modern_opening",
+          "ndl_treaty_1854_text"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-iwase-tadanari-harris-1858-ansei-mediation-or-negotiation",
+      "aPersonId": "iwase-tadanari",
+      "bPersonId": "harris",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "typeId": "mediation-or-negotiation",
+      "label": "通商条約の交渉",
+      "text": "岩瀬・井上清直が全権としてハリスと交渉し、日米修好通商条約を調印した。",
+      "evidence": {
+        "sourceIds": [
+          "mofa_treaty_1858",
+          "bunka_commercial_signers"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-inoue-kiyonao-harris-1858-ansei-mediation-or-negotiation",
+      "aPersonId": "inoue-kiyonao",
+      "bPersonId": "harris",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "typeId": "mediation-or-negotiation",
+      "label": "通商条約の交渉",
+      "text": "岩瀬・井上清直が全権としてハリスと交渉し、日米修好通商条約を調印した。",
+      "evidence": {
+        "sourceIds": [
+          "mofa_treaty_1858",
+          "bunka_commercial_signers"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-iwase-tadanari-inoue-kiyonao-1858-ansei-political-cooperation",
+      "aPersonId": "iwase-tadanari",
+      "bPersonId": "inoue-kiyonao",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "typeId": "political-cooperation",
+      "label": "共同で交渉・調印",
+      "text": "日本側の全権として、二人でハリスとの交渉と条約調印を担った。",
+      "evidence": {
+        "sourceIds": [
+          "mofa_treaty_1858",
+          "bunka_commercial_signers"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-kawaji-toshiakira-inoue-kiyonao-1858-ansei-kinship",
+      "aPersonId": "kawaji-toshiakira",
+      "bPersonId": "inoue-kiyonao",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1867-taisei",
+      "typeId": "kinship",
+      "label": "兄弟",
+      "text": "川路聖謨が兄、井上清直が弟。兄弟関係を示す線であり、すべての事件で共同して行動したことを示さない。",
+      "evidence": {
+        "sourceIds": [
+          "bakushindoko_inoue_kiyonao"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ],
   "factionRelations": [

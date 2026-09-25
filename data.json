@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.63",
+    "version": "1.0.64",
     "updated": "2026-09-25"
   },
   "sources": {
@@ -95,8 +95,8 @@
       "title": "国立国会図書館「日米和親条約写」",
       "url": "https://www.ndl.go.jp/modern/img_t/002/002-003tx.html",
       "note": "下田・箱館への米国船来航、薪水・食料供給などを定めた条約本文。",
-      "locator": "「日米和親条約写」第二ヶ条",
-      "contentCheckedAt": "2026-08-26"
+      "locator": "冒頭の全権名、第二・七・八・十二ヶ条、批准書と条約附録",
+      "contentCheckedAt": "2026-09-25"
     },
     "ndl_nichiran_opening": {
       "title": "国立国会図書館「日本の開国と日蘭関係」",
@@ -480,9 +480,9 @@
     "ndl_modern_opening": {
       "title": "国立国会図書館「開国―近代の幕開け」",
       "url": "https://www.ndl.go.jp/modern/cha1/description01.html",
-      "note": "1853年のペリー艦隊来航と国書授受要求、1854年の再来航と幕府代表との交渉。",
-      "locator": "「1-1 開国―近代の幕開け」本文第1段落",
-      "contentCheckedAt": "2026-08-26"
+      "note": "阿部の諮問、林らとペリーの交渉、条約内容、1855年の批准書交換を確認。",
+      "locator": "「1-1 開国―近代の幕開け」本文第1・2段落",
+      "contentCheckedAt": "2026-09-25"
     },
     "yokosuka_perry_blackships": {
       "title": "横須賀市「ペリーの黒船」",
@@ -1699,6 +1699,76 @@
       "note": "本人の肖像としての帰属を確認。撮影・制作時期は未確認。",
       "locator": "肖像1枚目・生没年・解説／肖像1枚目",
       "contentCheckedAt": "2026-09-25"
+    },
+    "yokohama_treaty_plenipotentiaries": {
+      "title": "横浜市中央図書館「全権」",
+      "url": "https://www.city.yokohama.lg.jp/kurashi/kyodo-manabi/library/shiru/sakoku/kaei/zenken.html",
+      "note": "和親条約の日本側全権は林・井戸・伊沢・鵜殿の4名。引用された人物評は掲載しない。",
+      "locator": "「日本側の全権」定義と4人の氏名、林復斎の生没年",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "nishogakusha_hayashi_1858": {
+      "title": "二松学舎大学附属図書館 展示図録：山田方谷書簡",
+      "url": "https://www.nishogakusha-u.ac.jp/library/pdf/kankobutu_16.pdf",
+      "note": "1858年4月の三島中洲の林復斎への入門と昌平坂学問所入寮。林の大学頭在職・別名・生没年を確認。",
+      "locator": "冊子11頁（PDF12頁）「6 山田方谷書簡 三島（中洲）宛」",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "ndl_iwase_identity": {
+      "title": "国立国会図書館典拠データ「岩瀬, 忠震, 1818-1861」",
+      "url": "https://id.ndl.go.jp/auth/ndlna/00315177",
+      "note": "岩瀬忠震の読み、生没年、篤三郎などの別名を確認。",
+      "locator": "標目・カナ読み・別名",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "shinshiro_iwase_retirement": {
+      "title": "新城市設楽原歴史資料館「岩瀬忠震筆『藤に芍薬』」",
+      "url": "https://www.city.shinshiro.lg.jp/mokuteki/shisetu/shiryokan/shitaragahara/fujinisyakuyaku.html",
+      "note": "1859年の隠居後は外交交渉中と表示しない。月は旧暦のため西暦の月として扱わない。",
+      "locator": "本文：安政6年8月の隠居、鴎所の号、文久元年の作品と死去",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "chiyoda_inoue_kiyonao": {
+      "title": "千代田区観光協会「井上清直」",
+      "url": "https://visit-chiyoda.tokyo/app/history/detail/11",
+      "note": "生年・読み・信濃守・条約調印・役職を確認。没年の1867表記は旧暦慶応3年と区別する。",
+      "locator": "人物解説：1855年の下田奉行、1858年の調印、歴任した奉行職、1866年の町奉行",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "bakushindoko_inoue_kiyonao": {
+      "title": "幕末幕臣動向「井上清直」",
+      "url": "https://bakushindoko.jp/%E3%81%82%E8%A1%8C/%E4%BA%95%E4%B8%8A%E6%B8%85%E7%9B%B4/",
+      "note": "役職年表を観光協会解説と照合。慶応3年12月28日は1868年1月22日。川路聖謨の弟であることは史料翻刻による。",
+      "locator": "役職通称遍歴（1859〜1868年）、墓碑の命日、木村芥舟「幕府名士小伝」翻刻",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "mofa_ratification_definition": {
+      "title": "外務省掲載「プロテクション・ガイドライン」",
+      "url": "https://www.mofa.go.jp/mofaj/gaiko/oda/shimin/oda_ngo/shien/jindo_protection/pdfs/guideline_j.pdf",
+      "note": "署名後に国が内容を最終確認して同意する手続の定義だけを用いる。現代の国内手続を幕末へ適用しない。",
+      "locator": "冊子2頁（PDF4頁）「条約」の説明中の批准の定義",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "taisho_treaty_articles": {
+      "title": "大正大学「日本史教材」日米修好通商条約",
+      "url": "https://kokokara.tais.ac.jp/common/doc/feel/oc/Japanese_history_teaching_materials.pdf",
+      "note": "貿易章程に従う関税と、日本人に対して法を犯した米国人を米国領事裁判所が裁く規定を確認。",
+      "locator": "58頁「日米修好通商条約」第4・6条と現代語訳",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "loc_portrait_perry": {
+      "title": "米国議会図書館「Commodore Matthew C. Perry」",
+      "url": "https://www.loc.gov/pictures/item/2001695235/",
+      "note": "所蔵館の掲載本文を検索サービス経由で確認。直接接続は403。掲載画像とメタデータを照合し、所蔵館提供の縮小画像を使用。",
+      "locator": "About This Item: Title, Date Created/Published, Notes, Rights Advisory",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "loc_portrait_harris": {
+      "title": "米国議会図書館「Hon. Townsend Harris」",
+      "url": "https://www.loc.gov/pictures/item/2017896747/",
+      "note": "所蔵館の掲載本文を検索サービス経由で確認。直接接続は403。掲載画像とメタデータを照合し、所蔵館提供の縮小画像を使用。",
+      "locator": "About This Item: Title, Date Created/Published, Notes, Rights Advisory",
+      "contentCheckedAt": "2026-09-25"
     }
   },
   "factions": {
@@ -1957,7 +2027,7 @@
       "event": "treaty1854",
       "insights": [
         "条約は米国船が下田・箱館へ来航できることを定めた。",
-        "幕府は同年、英国・ロシアとも和親条約を結んだ。",
+        "幕府は1854年に英国、翌1855年にロシアとも和親条約を結んだ。",
         "翌1855年、長崎でオランダ軍人による海軍伝習が始まった。"
       ],
       "evidence": {
@@ -1976,7 +2046,7 @@
       "era": "安政5年",
       "date": "6月〜9月",
       "title": "通商条約・将軍継嗣・安政の大獄",
-      "summary": "大老井伊直弼は勅許を得ずに日米修好通商条約へ調印し、徳川慶福を将軍継嗣に定め、反対する大名・公家・志士らを処分した。",
+      "summary": "井伊直弼の下で幕府は勅許を得ずに通商条約を結び、井上清直・岩瀬忠震が署名した。将軍継嗣には徳川慶福が選ばれ、反対派への処分が進んだ。",
       "event": "ansei",
       "insights": [
         "井伊は安政5年4月に大老へ就任した。",
@@ -1987,7 +2057,9 @@
         "sourceIds": [
           "archives_timeline",
           "ndl_modern_timeline",
-          "ndl_handwriting_bakumatsu_people"
+          "ndl_handwriting_bakumatsu_people",
+          "mofa_treaty_1858",
+          "bunka_commercial_signers"
         ],
         "reviewStatus": "verified"
       }
@@ -2355,7 +2427,8 @@
       "people": [
         "perry",
         "abe",
-        "sho-in"
+        "sho-in",
+        "hayashi-fukusai"
       ],
       "factions": [
         "外国勢力",
@@ -2384,7 +2457,7 @@
       "date": "1858〜1859年（安政5〜6年）",
       "title": "通商条約・将軍継嗣・安政の大獄",
       "category": "幕政・条約",
-      "description": "井伊直弼は勅許を得ないまま日米修好通商条約を調印し、徳川家茂を将軍継嗣とした。反対した大名・公家・志士らは処分された。",
+      "description": "井伊直弼が大老を務める幕府は勅許のないまま通商条約を結び、日本側全権の井上清直・岩瀬忠震が署名した。将軍継嗣には徳川家茂が選ばれ、反対した大名・公家・志士らは処分された。",
       "causes": [
         "ハリスによる通商条約締結要求",
         "清国が列強に敗れたことへの危機感",
@@ -2413,7 +2486,9 @@
         "nariakira",
         "saigo",
         "komei",
-        "kawaji-toshiakira"
+        "kawaji-toshiakira",
+        "iwase-tadanari",
+        "inoue-kiyonao"
       ],
       "factions": [
         "外国勢力",
@@ -3429,6 +3504,62 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    "zenken": {
+      "id": "zenken",
+      "title": "全権",
+      "kana": "ぜんけん",
+      "meaning": "国を代表して交渉や条約締結を行う権限を与えられた人。",
+      "context": "和親条約では林復斎ら4人、1858年の通商条約では井上清直・岩瀬忠震が日本側の署名を担った。",
+      "evidence": {
+        "sourceIds": [
+          "yokohama_treaty_plenipotentiaries",
+          "bunka_commercial_signers"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "ratification": {
+      "id": "ratification",
+      "title": "批准",
+      "kana": "ひじゅん",
+      "meaning": "署名された条約の内容を、国として最終確認し同意する手続。",
+      "context": "和親条約は1854年に調印され、1855年2月21日に批准書を交換した。調印日と批准書交換日は別。",
+      "evidence": {
+        "sourceIds": [
+          "mofa_ratification_definition",
+          "ndl_modern_opening"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "consular-jurisdiction": {
+      "id": "consular-jurisdiction",
+      "title": "領事裁判権",
+      "kana": "りょうじさいばんけん",
+      "meaning": "滞在先で、自国民に関する裁判を自国の領事が行う権限。",
+      "context": "通商条約第6条では、日本人に対して法を犯した米国人を、米国の領事裁判所が米国法で裁くと定めた。",
+      "evidence": {
+        "sourceIds": [
+          "taisho_treaty_articles",
+          "mofa_treaty_1858"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "tariff-autonomy": {
+      "id": "tariff-autonomy",
+      "title": "関税自主権",
+      "kana": "かんぜいじしゅけん",
+      "meaning": "輸出入にかける関税を、自国で決める権限。",
+      "context": "1858年の通商条約では関税も条約で定められ、日本が独自に変更できる仕組みではなかった。",
+      "evidence": {
+        "sourceIds": [
+          "mofa_treaty_1858",
+          "taisho_treaty_articles"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   },
   "incidents": {
@@ -3615,6 +3746,38 @@
           }
         },
         {
+          "personId": "iwase-tadanari",
+          "displayName": "岩瀬忠震",
+          "role": "目付・交渉と日本側の署名",
+          "involvement": "onsite",
+          "side": "幕府",
+          "summary": "全権としてハリスとの交渉を担い、神奈川沖の米艦ポーハタン号上で条約に署名した。",
+          "evidence": {
+            "sourceIds": [
+              "mofa_treaty_1858",
+              "bunka_commercial_signers",
+              "chiyoda_inoue_kiyonao"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "inoue-kiyonao",
+          "displayName": "井上清直",
+          "role": "下田奉行・交渉と日本側の署名",
+          "involvement": "onsite",
+          "side": "幕府",
+          "summary": "全権としてハリスとの交渉を担い、神奈川沖の米艦ポーハタン号上で条約に署名した。",
+          "evidence": {
+            "sourceIds": [
+              "mofa_treaty_1858",
+              "bunka_commercial_signers",
+              "chiyoda_inoue_kiyonao"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
           "personId": "ii",
           "displayName": "井伊直弼",
           "role": "未勅許での調印を決断",
@@ -3672,6 +3835,36 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "id": "commercial-iwase-tadanari-harris",
+          "aPersonId": "iwase-tadanari",
+          "bPersonId": "harris",
+          "label": "条約の条件を交渉",
+          "description": "幕府の全権としてハリスと条件を交渉し、日本側調印書に署名した。",
+          "direction": "both",
+          "evidence": {
+            "sourceIds": [
+              "mofa_treaty_1858",
+              "bunka_commercial_signers"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "commercial-inoue-kiyonao-harris",
+          "aPersonId": "inoue-kiyonao",
+          "bPersonId": "harris",
+          "label": "条約の条件を交渉",
+          "description": "幕府の全権としてハリスと条件を交渉し、日本側調印書に署名した。",
+          "direction": "both",
+          "evidence": {
+            "sourceIds": [
+              "mofa_treaty_1858",
+              "bunka_commercial_signers"
+            ],
+            "reviewStatus": "verified"
+          }
         }
       ],
       "placeIds": [
@@ -3682,7 +3875,10 @@
       "termIds": [
         "chokkyo",
         "kaiko",
-        "tsuji"
+        "tsuji",
+        "zenken",
+        "consular-jurisdiction",
+        "tariff-autonomy"
       ],
       "evidence": {
         "sourceIds": [
@@ -4895,6 +5091,98 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    "friendship-treaty-1854": {
+      "id": "friendship-treaty-1854",
+      "sceneId": "1854-treaty",
+      "title": "日米和親条約の交渉と調印",
+      "date": "1854年3月31日（嘉永7年3月3日・旧暦）",
+      "scope": "横浜での交渉・補給港の開放・翌年の批准書交換",
+      "summary": "林復斎ら幕府代表とペリーが横浜で交渉し、下田・箱館での補給や漂流民の保護を定めた。1858年の自由貿易を定めた条約とは段階が異なる。",
+      "stakes": "米国船への補給と人の保護をどう認めるか。横浜は調印地であり、この条約で開く港は下田・箱館だった。",
+      "turningPoint": "1855年2月21日に批准書を交換。補給などの取り決めから、ハリスとの本格的な通商交渉へ進む。",
+      "participants": [
+        {
+          "personId": "hayashi-fukusai",
+          "displayName": "林復斎",
+          "role": "日本側全権の一人",
+          "involvement": "onsite",
+          "side": "幕府",
+          "summary": "林大学頭として交渉・調印を担当。他の日本側全権は井戸対馬守・伊沢美作守・鵜殿民部少輔。",
+          "evidence": {
+            "sourceIds": [
+              "yokohama_treaty_plenipotentiaries",
+              "ndl_treaty_1854_text"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "perry",
+          "displayName": "マシュー・ペリー",
+          "role": "米国使節・交渉と署名",
+          "involvement": "onsite",
+          "side": "米国",
+          "summary": "再来航し、林ら幕府代表と横浜で交渉した。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_modern_opening",
+              "ndl_treaty_1854_text"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "abe",
+          "displayName": "阿部正弘",
+          "role": "幕府の対応を担う老中",
+          "involvement": "decision",
+          "side": "幕府",
+          "summary": "前年の国書を諸侯に示して意見を募った老中。批准書にも名を連ねるが、横浜で署名した全権とは区別する。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_modern_opening",
+              "ndl_treaty_1854_text"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "friendship-hayashi-perry",
+          "aPersonId": "hayashi-fukusai",
+          "bPersonId": "perry",
+          "label": "条件を交渉・調印",
+          "description": "林を含む日本側全権とペリーが和親条約を結んだ。林だけが日本側の署名者だったわけではない。",
+          "direction": "both",
+          "evidence": {
+            "sourceIds": [
+              "ndl_treaty_1854_text"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "yokohama",
+        "shimoda",
+        "hakodate"
+      ],
+      "termIds": [
+        "zenken",
+        "ratification",
+        "kaiko"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_modern_opening",
+          "ndl_treaty_1854_text",
+          "mofa_treaty_1854",
+          "mofa_treaty_1858"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   },
   "places": {
@@ -5375,6 +5663,22 @@
         "yokosuka_perry_blackships",
         "mofa_treaty_1854"
       ],
+      "termIds": [
+        "zenken",
+        "ratification"
+      ],
+      "portrait": {
+        "src": "assets/portraits/perry-loc.jpg",
+        "alt": "マシュー・ペリーの史料肖像",
+        "sourceId": "loc_portrait_perry",
+        "rightsSourceId": "loc_portrait_perry",
+        "credit": "Library of Congress, Prints and Photographs Division",
+        "originalSource": "Mathew B. Brady撮影、E. Anthony刊。写真台紙の記載による。",
+        "dateNote": "所蔵館の年代推定：1854〜1858年。選択した時点の姿を示すものではありません。",
+        "identityNote": "所蔵館がマシュー・ペリーの写真として整理。",
+        "rightsNote": "所蔵館は公表に関する既知の制限なしと案内。所蔵館提供の150px画像を使用。",
+        "checkedAt": "2026-09-25"
+      },
       "statuses": {
         "1853-blackships": {
           "display": "ペリー",
@@ -5432,8 +5736,23 @@
       ],
       "termIds": [
         "kaiko",
-        "tsuji"
+        "tsuji",
+        "zenken",
+        "consular-jurisdiction",
+        "tariff-autonomy"
       ],
+      "portrait": {
+        "src": "assets/portraits/harris-loc.jpg",
+        "alt": "タウンゼント・ハリスの史料肖像",
+        "sourceId": "loc_portrait_harris",
+        "rightsSourceId": "loc_portrait_harris",
+        "credit": "Brady-Handy photograph collection, Library of Congress, Prints and Photographs Division",
+        "originalSource": "Brady-Handy photograph collection",
+        "dateNote": "所蔵館の年代推定：1855〜1865年。選択した時点の姿を示すものではありません。",
+        "identityNote": "所蔵館がハリスの写真として掲載。ただし題名はネガ袋の未確認情報に基づくと注記。",
+        "rightsNote": "所蔵館は公表に関する既知の制限なしと案内。所蔵館提供の150px画像を使用。",
+        "checkedAt": "2026-09-25"
+      },
       "statuses": {
         "1858-ansei": {
           "display": "ハリス",
@@ -13171,6 +13490,291 @@
           }
         }
       }
+    },
+    {
+      "id": "hayashi-fukusai",
+      "name": "林復斎",
+      "kana": "はやし ふくさい",
+      "aliases": [
+        "林大学頭",
+        "林韑"
+      ],
+      "born": "1800–1859",
+      "defaultFaction": "幕府",
+      "activeRange": [
+        1,
+        2
+      ],
+      "oneLine": "日米和親条約の日本側全権の一人。ペリーとの交渉を担い、大学頭として学問にも携わった。",
+      "places": [
+        "edo",
+        "yokohama",
+        "shimoda"
+      ],
+      "events": [
+        "treaty1854"
+      ],
+      "sources": [
+        "yokohama_treaty_plenipotentiaries",
+        "ndl_modern_opening",
+        "nishogakusha_hayashi_1858"
+      ],
+      "termIds": [
+        "zenken",
+        "ratification"
+      ],
+      "statuses": {
+        "1854-treaty": {
+          "display": "林復斎",
+          "role": "大学頭・和親条約の全権",
+          "stance": "林大学頭として、井戸・伊沢・鵜殿らとペリーに応対。横浜で和親条約を結び、下田で附録を取り決めた。",
+          "importance": "幕府の方針を、条約の具体的な条件へまとめる交渉担当者。",
+          "evidence": {
+            "sourceIds": [
+              "yokohama_treaty_plenipotentiaries",
+              "ndl_modern_opening",
+              "ndl_treaty_1854_text"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1858-ansei": {
+          "display": "林復斎",
+          "role": "大学頭",
+          "stance": "1858年には三島中洲が入門し、昌平坂学問所の書生寮へ入った。林は翌1859年に死去する。",
+          "importance": "和親条約の交渉後は、大学頭としての活動をたどる。",
+          "evidence": {
+            "sourceIds": [
+              "nishogakusha_hayashi_1858"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "iwase-tadanari",
+      "name": "岩瀬忠震",
+      "kana": "いわせ ただなり",
+      "aliases": [
+        "岩瀬肥後守",
+        "岩瀬篤三郎",
+        "鴎所"
+      ],
+      "born": "1818–1861",
+      "defaultFaction": "幕府",
+      "activeRange": [
+        2,
+        3
+      ],
+      "oneLine": "井上清直とともにハリスとの交渉・条約調印を担った幕臣。1859年には隠居を命じられた。",
+      "places": [
+        "edo",
+        "yokohama"
+      ],
+      "events": [
+        "ansei"
+      ],
+      "sources": [
+        "ndl_iwase_identity",
+        "mofa_treaty_1858",
+        "shinshiro_iwase_retirement"
+      ],
+      "termIds": [
+        "zenken",
+        "consular-jurisdiction",
+        "tariff-autonomy"
+      ],
+      "statuses": {
+        "1858-ansei": {
+          "display": "岩瀬忠震",
+          "role": "通商条約の全権",
+          "stance": "井上清直とともにハリスと交渉し、1858年7月29日、日米修好通商条約に署名した。",
+          "importance": "政治の決定者と、条件を交渉して署名した実務者を区別する入口。",
+          "evidence": {
+            "sourceIds": [
+              "mofa_treaty_1858",
+              "bunka_commercial_signers"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1860-sakurada": {
+          "display": "岩瀬忠震",
+          "role": "隠居した元外交担当者",
+          "stance": "1859年に隠居を命じられ、江戸向島で書画に親しんだ。1861年に死去。",
+          "importance": "条約交渉を担った幕臣の失脚と、その後の暮らしをたどる。",
+          "evidence": {
+            "sourceIds": [
+              "shinshiro_iwase_retirement",
+              "ndl_iwase_identity"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "inoue-kiyonao",
+      "name": "井上清直",
+      "kana": "いのうえ きよなお",
+      "aliases": [
+        "井上信濃守",
+        "井上新右衛門"
+      ],
+      "born": "1809–1868（慶応3年末没）",
+      "defaultFaction": "幕府",
+      "activeRange": [
+        2,
+        11
+      ],
+      "oneLine": "下田奉行として岩瀬忠震と通商条約を交渉・調印。のち海軍・財政・江戸の行政を担った。",
+      "places": [
+        "shimoda",
+        "yokohama",
+        "edo",
+        "osaka"
+      ],
+      "events": [
+        "ansei"
+      ],
+      "sources": [
+        "chiyoda_inoue_kiyonao",
+        "mofa_treaty_1858",
+        "bakushindoko_inoue_kiyonao"
+      ],
+      "termIds": [
+        "zenken",
+        "consular-jurisdiction",
+        "tariff-autonomy"
+      ],
+      "statuses": {
+        "1858-ansei": {
+          "display": "井上清直",
+          "role": "下田奉行・通商条約の全権",
+          "stance": "岩瀬忠震とハリスとの交渉・調印を担当。米国との調印後、外国奉行も兼ねた。",
+          "importance": "幕府の交渉を担う井上清直。長州の井上馨とは別人物。",
+          "evidence": {
+            "sourceIds": [
+              "chiyoda_inoue_kiyonao",
+              "mofa_treaty_1858"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1860-sakurada": {
+          "display": "井上清直",
+          "role": "軍艦奉行",
+          "stance": "1859年に小普請奉行へ転じた後、同年末から軍艦奉行を務める。",
+          "importance": "条約交渉から幕府の海軍実務へ役割が移る。",
+          "evidence": {
+            "sourceIds": [
+              "bakushindoko_inoue_kiyonao",
+              "chiyoda_inoue_kiyonao"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1862-bunkyu": {
+          "display": "井上清直",
+          "role": "軍艦奉行から外国奉行へ",
+          "stance": "1862年9月（旧暦8月）に外国奉行へ転じた。",
+          "importance": "通商条約を結んだ後も続く、対外交渉の実務を担う。",
+          "evidence": {
+            "sourceIds": [
+              "bakushindoko_inoue_kiyonao"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1863-joi": {
+          "display": "井上清直",
+          "role": "江戸町奉行",
+          "stance": "1863年1月に南町奉行となり、同年7月には小笠原長行に従って大坂へ赴いた。",
+          "importance": "外交を経験した幕臣が、江戸の行政と幕府内の対応に携わる。",
+          "evidence": {
+            "sourceIds": [
+              "bakushindoko_inoue_kiyonao"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1863-aug18": {
+          "display": "井上清直",
+          "role": "町奉行を退任",
+          "stance": "1863年9月13日（旧暦8月1日）に役を免じられた。",
+          "importance": "八月十八日の政変の時点では、以前の町奉行職から離れている。",
+          "evidence": {
+            "sourceIds": [
+              "bakushindoko_inoue_kiyonao"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1864-kinmon": {
+          "display": "井上清直",
+          "role": "秋に外国奉行へ復帰",
+          "stance": "1864年10月に外国奉行へ復帰し、12月には勘定奉行となった。いずれも夏の禁門の変より後。",
+          "importance": "年内の任命を、夏の事件当日の役職と取り違えない。",
+          "evidence": {
+            "sourceIds": [
+              "bakushindoko_inoue_kiyonao"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1865-choshu": {
+          "display": "井上清直",
+          "role": "勘定奉行・道中奉行兼帯",
+          "stance": "1865年1月から道中奉行を兼ね、同年の将軍進発に随行した。",
+          "importance": "財政・行政の奉行職を務める時期。",
+          "evidence": {
+            "sourceIds": [
+              "bakushindoko_inoue_kiyonao"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1866-satcho": {
+          "display": "井上清直",
+          "role": "勘定奉行",
+          "stance": "勘定奉行を務め、薩長盟約の後の1866年3月10日（旧暦1月24日）には関東郡代も兼ねた。",
+          "importance": "慶応期には関東と江戸の行政に携わる。",
+          "evidence": {
+            "sourceIds": [
+              "bakushindoko_inoue_kiyonao",
+              "chiyoda_inoue_kiyonao"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1866-expedition": {
+          "display": "井上清直",
+          "role": "勘定奉行・関東郡代",
+          "stance": "関東郡代を兼ねる勘定奉行。1866年秋に勘定奉行を離れ、同年には町奉行にも就いた。",
+          "importance": "慶応期には関東と江戸の行政に携わる。",
+          "evidence": {
+            "sourceIds": [
+              "bakushindoko_inoue_kiyonao",
+              "chiyoda_inoue_kiyonao"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1867-taisei": {
+          "display": "井上清直",
+          "role": "江戸町奉行を務めた幕臣",
+          "stance": "1866年に町奉行に就任。慶応3年12月28日（1868年1月22日）、鳥羽・伏見の戦いより前に死去した。",
+          "importance": "旧暦慶応3年末の死去を、西暦1867年中と取り違えない。",
+          "evidence": {
+            "sourceIds": [
+              "chiyoda_inoue_kiyonao",
+              "bakushindoko_inoue_kiyonao"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
     }
   ],
   "relations": [
@@ -14607,6 +15211,85 @@
       "evidence": {
         "sourceIds": [
           "keio_fukuzawa_timeline"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "hayashi-fukusai",
+      "b": "perry",
+      "start": 1,
+      "end": 1,
+      "type": "仲介・交渉",
+      "label": "和親条約の交渉",
+      "text": "林ら日本側全権とペリーが横浜で交渉し、和親条約を結んだ。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_modern_opening",
+          "ndl_treaty_1854_text"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "iwase-tadanari",
+      "b": "harris",
+      "start": 2,
+      "end": 2,
+      "type": "仲介・交渉",
+      "label": "通商条約の交渉",
+      "text": "岩瀬・井上清直が全権としてハリスと交渉し、日米修好通商条約を調印した。",
+      "evidence": {
+        "sourceIds": [
+          "mofa_treaty_1858",
+          "bunka_commercial_signers"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "inoue-kiyonao",
+      "b": "harris",
+      "start": 2,
+      "end": 2,
+      "type": "仲介・交渉",
+      "label": "通商条約の交渉",
+      "text": "岩瀬・井上清直が全権としてハリスと交渉し、日米修好通商条約を調印した。",
+      "evidence": {
+        "sourceIds": [
+          "mofa_treaty_1858",
+          "bunka_commercial_signers"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "iwase-tadanari",
+      "b": "inoue-kiyonao",
+      "start": 2,
+      "end": 2,
+      "type": "政治協力",
+      "label": "共同で交渉・調印",
+      "text": "日本側の全権として、二人でハリスとの交渉と条約調印を担った。",
+      "evidence": {
+        "sourceIds": [
+          "mofa_treaty_1858",
+          "bunka_commercial_signers"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "kawaji-toshiakira",
+      "b": "inoue-kiyonao",
+      "start": 2,
+      "end": 11,
+      "type": "親族",
+      "label": "兄弟",
+      "text": "川路聖謨が兄、井上清直が弟。兄弟関係を示す線であり、すべての事件で共同して行動したことを示さない。",
+      "evidence": {
+        "sourceIds": [
+          "bakushindoko_inoue_kiyonao"
         ],
         "reviewStatus": "verified"
       }
