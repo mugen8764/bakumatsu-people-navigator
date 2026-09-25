@@ -1162,14 +1162,15 @@
       "endSceneId": "1869-hakodate",
       "typeId": "mediation-or-negotiation",
       "label": "降伏・助命",
-      "text": "黒田は箱館で榎本の降伏を促し、戦後は榎本の助命にも尽力した。",
+      "text": "5月17日、黒田は増田虎之助と榎本らの降伏条件を協議。戦後は榎本の助命にも尽力した。",
       "evidence": {
         "sourceIds": [
           "archives_kuroda",
-          "hakodate_war_history"
+          "hakodate_war_history",
+          "hakodate_surrender1869"
         ],
         "reviewStatus": "verified",
-        "note": "国立公文書館で黒田による榎本の降伏説得と助命、函館市で榎本軍の降伏を確認。"
+        "note": "函館市史で会見日・出席者・降伏条件、国立公文書館で助命を確認。"
       }
     },
     {
@@ -1804,6 +1805,58 @@
       "evidence": {
         "sourceIds": [
           "joetsu_hokuetsu"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-enomoto-otori-keisuke-1869-hakodate-organization",
+      "aPersonId": "enomoto",
+      "bPersonId": "otori-keisuke",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "typeId": "organization",
+      "label": "総裁と陸軍奉行",
+      "text": "榎本が総裁、大鳥が陸軍奉行として旧幕府軍の政権を担った。5月17日の降伏会見では大鳥も呼ばれ、松平・荒井とともに出席した。",
+      "evidence": {
+        "sourceIds": [
+          "hakodate_army_organization",
+          "hakodate_surrender1869"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-takamatsu-ryoun-enomoto-1869-hakodate-mediation-or-negotiation",
+      "aPersonId": "takamatsu-ryoun",
+      "bPersonId": "enomoto",
+      "startSceneId": "1869-hakodate",
+      "endSceneId": "1869-hakodate",
+      "typeId": "mediation-or-negotiation",
+      "label": "降伏勧告書を送る",
+      "text": "高松は小野権之丞と勧告書を作り、5月13日に五稜郭へ送った。榎本は翌日いったん拒否し、最終的な降伏は18日となった。",
+      "evidence": {
+        "sourceIds": [
+          "hakodate_hospital_negotiation",
+          "hakodate_surrender1869"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-otori-keisuke-hijikata-1868-edo-organization",
+      "aPersonId": "otori-keisuke",
+      "bPersonId": "hijikata",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1869-hakodate",
+      "typeId": "organization",
+      "label": "旧幕府陸軍で行動を共にする",
+      "text": "1868年4月、土方は国府台で大鳥の軍に合流。箱館では大鳥が陸軍奉行、土方が同並として陸上の防戦を担った。",
+      "evidence": {
+        "sourceIds": [
+          "nagareyama_shinsengumi_1868",
+          "hakodate_army_organization",
+          "hakodate_front1869"
         ],
         "reviewStatus": "verified"
       }

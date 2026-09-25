@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.67",
+    "version": "1.0.68",
     "updated": "2026-09-25"
   },
   "sources": {
@@ -218,7 +218,7 @@
       "url": "https://www.city.hakodate.hokkaido.jp/docs/2014011700789/",
       "note": "榎本武揚率いる旧幕府脱走艦隊の1868年10月20日の蝦夷地到着、五稜郭占拠、榎本を総裁とする蝦夷地仮政権、土方歳三の1869年5月11日の戦死、5月18日の榎本らの降伏。",
       "locator": "「箱館戦争」の節",
-      "contentCheckedAt": "2026-07-31"
+      "contentCheckedAt": "2026-09-25"
     },
     "gsi_maps_coordinates": {
       "title": "国土地理院「地理院地図・標高・住所の確認」",
@@ -1114,7 +1114,9 @@
     "nagareyama_shinsengumi_1868": {
       "title": "流山市立博物館「新選組と流山」",
       "url": "https://www.city.nagareyama.chiba.jp/tourism/1013070/1013074.html",
-      "note": "甲陽鎮撫隊の1868年3月1日の江戸出発と勝沼敗走、4月3日の近藤勇出頭、4月25日の板橋宿での処刑、4月12日の土方歳三による大鳥圭介軍参加。"
+      "note": "甲陽鎮撫隊の1868年3月1日の江戸出発と勝沼敗走、4月3日の近藤勇出頭、4月25日の板橋宿での処刑、4月12日の土方歳三による大鳥圭介軍参加。",
+      "locator": "新選組関係略年表：慶応4年4月12日の国府台での合流",
+      "contentCheckedAt": "2026-09-25"
     },
     "fukushima_modern_history": {
       "title": "福島県「近・現代」",
@@ -1891,6 +1893,69 @@
       "url": "https://www.city.joetsu.niigata.jp/uploaded/attachment/148761.pdf",
       "note": "海道軍と山道軍の指揮者、会談前からの戦闘、長岡城の攻防、周辺地域の軍需品の運搬・物資負担を確認。表と本文で異なる米沢降伏日など、今回使わない細部は採用しない。",
       "locator": "1〜2頁「北越戊辰戦争の概要」・関連年表、3〜4頁「北越戊辰戦争による民衆の負担」",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "ndl_portrait_otori": {
+      "title": "国立国会図書館「近代日本人の肖像・大鳥圭介」",
+      "url": "https://www.ndl.go.jp/portrait/datas/34/",
+      "note": "経歴と肖像を確認。生年は1833年と記載され、同館「日記の世界」の1832年と一致しないため確定しない。",
+      "locator": "生没年、解説、掲載肖像",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "ndl_otori_diary": {
+      "title": "国立国会図書館「日記の世界・大鳥圭介」",
+      "url": "https://www.ndl.go.jp/nikki/person/otorikeisuke",
+      "note": "会津救援、箱館での抵抗と降伏後の護送日記を確認。生年は1832年と記載され、「近代日本人の肖像」と不一致。原本日記の全文を読んだとは扱わない。",
+      "locator": "「日記の概要」「履歴」。護送日記は明治2年5月18日の五稜郭出発から",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "archives_otori_artillery": {
+      "title": "国立公文書館「激動幕末・砲科新論」",
+      "url": "https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/48.html",
+      "note": "大鳥の西洋兵学の学習、1861年の翻訳書刊行、1868年の歩兵奉行と箱館での抗戦を確認。生年は1833年表記だが、別資料との不一致を保留する。",
+      "locator": "解説第1〜2段落",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "hakodate_army_organization": {
+      "title": "函館市史 通説編2「脱走軍の軍政」",
+      "url": "https://adeac.jp/hakodate-city/texthtml/d100020/mp000010-100020/ht011030",
+      "note": "榎本の総裁、大鳥の陸軍奉行、土方の陸軍奉行並、高松の病院長を組織図で確認。図の範囲は明治2年1月頃とされる。",
+      "locator": "244〜246頁、図1-1「旧幕府脱走軍組織図」（245頁、画像t2-0245h.jpgを目視）",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "hakodate_front1869": {
+      "title": "函館市史 通説編2「新政府軍箱館へ迫る」",
+      "url": "https://adeac.jp/hakodate-city/texthtml/d100020/mp000010-100020/ht011090",
+      "note": "大鳥の木古内・矢不来方面の指揮、土方の二股口防戦、4月29日の両方面の後退を確認。旧暦日付。",
+      "locator": "252〜254頁。大鳥の転陣命令、二股の土方、4月29日の退却",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "hakodate_surrender1869": {
+      "title": "函館市史 通説編2「五稜郭開城」",
+      "url": "https://adeac.jp/hakodate-city/texthtml/d100020/mp000010-100020/ht011130",
+      "note": "5月17日の会見に榎本・松平太郎・荒井郁之助・大鳥圭介、相手に増田虎之助・黒田了介がいたこと、18日の降伏と武器引渡しを確認。旧暦日付。",
+      "locator": "259〜260頁。17日の会見、18日の出郭と武器・兵糧引渡し",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "hakodate_hospital_negotiation": {
+      "title": "函館市史 通説編2「降伏交渉開始」",
+      "url": "https://adeac.jp/hakodate-city/texthtml/d100020/mp000010-100020/ht011110",
+      "note": "高松の渡欧・帰国、両軍の負傷兵の治療、小野権之丞と作成した5月13日の降伏勧告書、榎本の14日の拒否を確認。仲介は一人だけの功績とはしない。",
+      "locator": "257〜258頁。諏訪常吉から高松・小野への依頼、凌雲の経歴、13〜14日の勧告と返答",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "ogori_takamatsu": {
+      "title": "小郡市「広報おごおり・医傑 高松凌雲」",
+      "url": "https://www.city.ogori.fukuoka.jp/application/files/5015/4684/6708/nZDSNt.pdf",
+      "note": "徳川昭武への随行、箱館病院での両軍の傷病者の治療、1916年の死去を確認。生年1836表記は旧暦年との対応に注意する。",
+      "locator": "2016年11月1日号10頁（PDF3頁）、右下「医傑・高松凌雲」を紙面画像で確認",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "zaidan_takamatsu_birth": {
+      "title": "函館市文化・スポーツ振興財団「高松凌雲」",
+      "url": "https://www.zaidan-hakodate.com/jimbutsu/04_ta/04-takamatsu.html",
+      "note": "出生を天保7年12月25日と記す箇所を参照し、画面の生年は天保7年で表示する。本文には日付の誤記や作品からの引用が混在するため、航海日程・人物評・台詞は採用しない。",
+      "locator": "冒頭の出生年月日と末尾の1916年の死去",
       "contentCheckedAt": "2026-09-25"
     }
   },
@@ -3261,7 +3326,8 @@
         "tenshoin",
         "kazunomiya",
         "enomoto",
-        "kaieda"
+        "kaieda",
+        "otori-keisuke"
       ],
       "factions": [
         "新政府",
@@ -3316,7 +3382,8 @@
         "enomoto",
         "yae",
         "kawai-tsuginosuke",
-        "iwamura-takatoshi"
+        "iwamura-takatoshi",
+        "otori-keisuke"
       ],
       "factions": [
         "新政府",
@@ -3377,7 +3444,9 @@
       "people": [
         "enomoto",
         "hijikata",
-        "kuroda"
+        "kuroda",
+        "otori-keisuke",
+        "takamatsu-ryoun"
       ],
       "factions": [
         "新政府",
@@ -3389,13 +3458,19 @@
       "sources": [
         "jacar_dictionary",
         "ndl_handwriting",
-        "hakodate_war_history"
+        "hakodate_war_history",
+        "hakodate_army_organization",
+        "hakodate_hospital_negotiation",
+        "hakodate_surrender1869"
       ],
       "evidence": {
         "sourceIds": [
           "jacar_dictionary",
           "ndl_handwriting",
-          "hakodate_war_history"
+          "hakodate_war_history",
+          "hakodate_army_organization",
+          "hakodate_hospital_negotiation",
+          "hakodate_surrender1869"
         ],
         "reviewStatus": "verified"
       }
@@ -5878,6 +5953,173 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    "hakodate-1869": {
+      "id": "hakodate-1869",
+      "sceneId": "1869-hakodate",
+      "title": "箱館の戦闘・医療・降伏",
+      "date": "1869年4月〜5月18日（明治2年・旧暦）",
+      "scope": "陸上の防戦、病院の救護、降伏勧告と五稜郭開城",
+      "summary": "新政府軍の進攻で旧幕府軍の戦線は箱館へ後退。大鳥・土方が陸上で戦い、高松は負傷者を救護した。榎本らは交渉を経て五稜郭を明け渡した。",
+      "stakes": "戦線を維持する軍事判断と、戦闘を終える交渉。箱館病院では陣営を問わず負傷者を治療し、高松らは降伏勧告の仲介も担った。",
+      "turningPoint": "5月11日に土方が戦死。17日に榎本・松平太郎らが黒田・増田虎之助らと会見し、18日に五稜郭を明け渡した（旧暦）。",
+      "participants": [
+        {
+          "personId": "takamatsu-ryoun",
+          "displayName": "高松凌雲",
+          "role": "箱館病院長・負傷者の治療と仲介",
+          "involvement": "onsite",
+          "side": "医療・学問",
+          "summary": "両軍の負傷者を治療。小野権之丞と降伏勧告書を作り、榎本らへ送った。",
+          "evidence": {
+            "sourceIds": [
+              "hakodate_army_organization",
+              "hakodate_hospital_negotiation"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "enomoto",
+          "displayName": "榎本武揚",
+          "role": "総裁・抗戦から降伏の決定へ",
+          "involvement": "decision",
+          "side": "旧幕府軍",
+          "summary": "五稜郭で抗戦した後、松平太郎らと降伏条件の協議へ赴き、18日に出郭した。",
+          "evidence": {
+            "sourceIds": [
+              "hakodate_army_organization",
+              "hakodate_surrender1869"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "otori-keisuke",
+          "displayName": "大鳥圭介",
+          "role": "陸軍奉行・木古内から箱館へ",
+          "involvement": "decision",
+          "side": "旧幕府軍",
+          "summary": "木古内・矢不来方面で指揮を執り、敗退後は五稜郭へ。降伏交渉にも出席した。",
+          "evidence": {
+            "sourceIds": [
+              "hakodate_army_organization",
+              "hakodate_front1869",
+              "hakodate_surrender1869"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "hijikata",
+          "displayName": "土方歳三",
+          "role": "陸軍奉行並・二股口の防戦",
+          "involvement": "decision",
+          "side": "旧幕府軍",
+          "summary": "二股口を守り、他方面の敗退を受けて後退。5月11日の総攻撃時に戦死した。",
+          "evidence": {
+            "sourceIds": [
+              "hakodate_army_organization",
+              "hakodate_front1869",
+              "hakodate_war_history"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "kuroda",
+          "displayName": "黒田了介",
+          "role": "新政府軍参謀・降伏条件の協議",
+          "involvement": "decision",
+          "side": "新政府軍",
+          "summary": "増田虎之助とともに榎本らと会見し、降伏の実行条件を示すよう求めた。",
+          "evidence": {
+            "sourceIds": [
+              "archives_kuroda",
+              "hakodate_surrender1869"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "hakodate-enomoto-otori",
+          "aPersonId": "enomoto",
+          "bPersonId": "otori-keisuke",
+          "label": "総裁と陸軍奉行",
+          "description": "榎本が総裁、大鳥が陸軍奉行として旧幕府軍の政権を担った。5月17日の降伏会見では大鳥も呼ばれ、松平・荒井とともに出席した。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "hakodate_army_organization",
+              "hakodate_surrender1869"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "hakodate-otori-hijikata",
+          "aPersonId": "otori-keisuke",
+          "bPersonId": "hijikata",
+          "label": "陸軍奉行と同並",
+          "description": "箱館の陸軍奉行が大鳥、同並が土方。4月には大鳥が木古内・矢不来方面、土方が二股口の防戦を担った。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "hakodate_army_organization",
+              "hakodate_front1869"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "hakodate-takamatsu-enomoto",
+          "aPersonId": "takamatsu-ryoun",
+          "bPersonId": "enomoto",
+          "label": "降伏勧告書を送る",
+          "description": "高松は小野権之丞と勧告書を作り、5月13日に五稜郭へ送った。榎本は翌日いったん拒否し、最終的な降伏は18日となった。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "hakodate_hospital_negotiation",
+              "hakodate_surrender1869"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "hakodate-enomoto-kuroda",
+          "aPersonId": "enomoto",
+          "bPersonId": "kuroda",
+          "label": "降伏条件を協議",
+          "description": "5月17日、榎本・松平らが新政府側の黒田・増田と会見。翌日の出郭と武器・兵糧の引き渡しへ進んだ。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "hakodate_surrender1869"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "hakodate"
+      ],
+      "termIds": [
+        "boshin-war",
+        "rangaku"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "hakodate_war_history",
+          "hakodate_army_organization",
+          "hakodate_front1869",
+          "hakodate_hospital_negotiation",
+          "hakodate_surrender1869"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   },
   "places": {
@@ -7274,6 +7516,23 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "fromSceneId": "1868-tohoku",
+          "toSceneId": "1869-hakodate",
+          "title": "艦隊を率いた離脱から、五稜郭の明け渡しへ",
+          "before": "1868年8月に品川沖を離れ、10月に蝦夷地へ上陸。五稜郭を拠点とした（旧暦）。",
+          "after": "新政府軍の進攻を受け、1869年5月17日に降伏を協議。翌18日に榎本らは五稜郭を出た（旧暦）。",
+          "context": "土方は5月11日に戦死した。榎本の降伏をめぐる交渉と、負傷者を救護した高松の役割も分けて見る。",
+          "evidence": {
+            "sourceIds": [
+              "archives_enomoto_1867",
+              "hakodate_war_history",
+              "hakodate_surrender1869",
+              "hakodate_hospital_negotiation"
+            ],
+            "reviewStatus": "verified"
+          }
         }
       ],
       "statuses": {
@@ -7347,12 +7606,13 @@
           "display": "榎本武揚",
           "role": "蝦夷地仮政権総裁",
           "faction": "旧幕府勢力",
-          "stance": "五稜郭を拠点に新政府軍へ抵抗し、5月18日に旧幕府脱走軍とともに降伏する。",
+          "stance": "五稜郭を拠点に抗戦した後、5月17日に松平太郎らと降伏条件を協議し、18日に明け渡す（旧暦）。",
           "importance": "降伏により、7か月に及んだ箱館戦争が終結した。",
           "evidence": {
             "sourceIds": [
               "hakodate_war_history",
-              "ndl_enomoto_papers"
+              "ndl_enomoto_papers",
+              "hakodate_surrender1869"
             ],
             "reviewStatus": "verified"
           }
@@ -8845,14 +9105,15 @@
           }
         },
         "1869-hakodate": {
-          "display": "黒田清隆",
+          "display": "黒田了介",
           "role": "箱館征討参謀",
           "faction": "新政府",
-          "stance": "箱館征討参謀として戦い、旧幕府軍主将の榎本武揚の助命に尽力する。",
-          "importance": "後に榎本を対ロシア政策へ活用した。",
+          "stance": "箱館征討参謀として戦い、5月17日に増田虎之助と榎本らの降伏条件を協議する（旧暦）。",
+          "importance": "榎本の助命にも尽力した。会見には松平太郎・荒井郁之助・大鳥圭介らも出席した。",
           "evidence": {
             "sourceIds": [
-              "archives_kuroda"
+              "archives_kuroda",
+              "hakodate_surrender1869"
             ],
             "reviewStatus": "verified"
           }
@@ -12083,14 +12344,15 @@
         },
         "1869-hakodate": {
           "display": "土方歳三",
-          "role": "旧幕府脱走軍・新選組副長",
+          "role": "陸軍奉行並",
           "faction": "旧幕府勢力",
-          "stance": "5月11日の箱館総攻撃時、弁天岬台場の救援へ向かう途中で銃弾を受けて戦死する。",
-          "importance": "その7日後、榎本武揚以下の旧幕府脱走軍が降伏した。",
+          "stance": "4月に二股口で防戦し、他方面の敗退を受け五稜郭へ退く。5月11日の箱館総攻撃時に戦死した（旧暦）。",
+          "importance": "土方の戦死は、榎本らの5月18日の降伏より7日前。",
           "evidence": {
             "sourceIds": [
-              "hakodate_war_history",
-              "hino_hijikata_profile"
+              "hakodate_army_organization",
+              "hakodate_front1869",
+              "hakodate_war_history"
             ],
             "reviewStatus": "verified"
           }
@@ -15424,6 +15686,195 @@
           }
         }
       }
+    },
+    {
+      "id": "otori-keisuke",
+      "name": "大鳥圭介",
+      "kana": "おおとり けいすけ",
+      "aliases": [],
+      "born": "1832/1833–1911（生年確認中）",
+      "defaultFaction": "旧幕府勢力",
+      "activeRange": [
+        13,
+        15
+      ],
+      "oneLine": "幕府の歩兵奉行から箱館の陸軍奉行へ。五稜郭で降伏し、その後の護送を日記に残した。",
+      "places": [
+        "edo",
+        "aizu",
+        "hakodate"
+      ],
+      "events": [
+        "edo_surrender",
+        "tohoku",
+        "hakodate"
+      ],
+      "sources": [
+        "ndl_portrait_otori",
+        "ndl_otori_diary",
+        "archives_otori_artillery",
+        "hakodate_army_organization"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_otori",
+          "ndl_otori_diary",
+          "archives_otori_artillery",
+          "hakodate_army_organization"
+        ],
+        "reviewStatus": "needs_review"
+      },
+      "termIds": [
+        "boshin-war",
+        "rangaku"
+      ],
+      "portrait": {
+        "src": "assets/portraits/otori-ndl.jpg",
+        "alt": "大鳥圭介の史料肖像",
+        "sourceId": "ndl_portrait_otori",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が大鳥圭介の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-25"
+      },
+      "statuses": {
+        "1868-edo": {
+          "display": "大鳥圭介",
+          "role": "旧幕府歩兵奉行",
+          "stance": "旧幕府軍として抗戦。4月12日、国府台で土方歳三が大鳥の軍に加わった（旧暦）。",
+          "importance": "江戸開城後も陸軍側で抵抗を続けた人物を知る。",
+          "evidence": {
+            "sourceIds": [
+              "archives_otori_artillery",
+              "nagareyama_shinsengumi_1868"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-tohoku": {
+          "display": "大鳥圭介",
+          "role": "旧幕府軍の陸軍指揮",
+          "stance": "会津救援を試みた後、箱館で榎本らと抗戦する。",
+          "importance": "箱館の陸軍奉行としての体制は、次の1869年の時点で表示する。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_otori_diary",
+              "ndl_portrait_otori"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1869-hakodate": {
+          "display": "大鳥圭介",
+          "role": "陸軍奉行",
+          "stance": "木古内・矢不来方面で指揮を執り、五稜郭へ退く。5月の降伏交渉にも出席し、18日に出郭した（旧暦）。",
+          "importance": "陸軍を指揮した後に降伏。護送中には宿泊地や戦禍を日記へ書き留めた。",
+          "evidence": {
+            "sourceIds": [
+              "hakodate_army_organization",
+              "hakodate_front1869",
+              "hakodate_surrender1869",
+              "ndl_otori_diary"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "takamatsu-ryoun",
+      "name": "高松凌雲",
+      "kana": "たかまつ りょううん",
+      "aliases": [
+        "凌雲"
+      ],
+      "born": "天保7年–1916",
+      "defaultFaction": "医療・学問",
+      "activeRange": [
+        11,
+        15
+      ],
+      "oneLine": "徳川昭武に随行して渡欧した医師。箱館で両軍の負傷者を治療し、降伏勧告の取次ぎにも携わった。",
+      "places": [
+        "edo",
+        "hakodate"
+      ],
+      "events": [
+        "hakodate"
+      ],
+      "sources": [
+        "ogori_takamatsu",
+        "zaidan_takamatsu_birth",
+        "hakodate_hospital_negotiation"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ogori_takamatsu",
+          "zaidan_takamatsu_birth",
+          "hakodate_hospital_negotiation"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "rangaku",
+        "boshin-war"
+      ],
+      "statuses": {
+        "1867-taisei": {
+          "display": "高松凌雲",
+          "role": "昭武に随行・フランスで医学研修",
+          "stance": "徳川昭武のパリ万国博覧会視察に随行し、フランスで外科医術を学ぶ。",
+          "importance": "帰国して箱館の病院を担う前の、海外で学ぶ時期。",
+          "evidence": {
+            "sourceIds": [
+              "ogori_takamatsu",
+              "hakodate_hospital_negotiation"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-edo": {
+          "display": "高松凌雲",
+          "role": "フランスから帰国した医師",
+          "stance": "5月に帰国し、その後旧幕府海軍に加わる（旧暦）。",
+          "importance": "渡欧中に学んだ医術を、のちに箱館の負傷者の治療に用いた。",
+          "evidence": {
+            "sourceIds": [
+              "hakodate_hospital_negotiation"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-tohoku": {
+          "display": "高松凌雲",
+          "role": "箱館病院で負傷者を診療",
+          "stance": "箱館へ渡り、戦闘で負傷した両軍の兵士を分け隔てなく治療する。",
+          "importance": "軍を率いる指揮官とは異なる、医師としての役割。",
+          "evidence": {
+            "sourceIds": [
+              "ogori_takamatsu",
+              "hakodate_hospital_negotiation"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1869-hakodate": {
+          "display": "高松凌雲",
+          "role": "箱館病院長",
+          "stance": "病院の医療を担い、小野権之丞とともに降伏勧告書を作成。5月13日に五稜郭などへ送り、榎本は翌日いったん拒否した（旧暦）。",
+          "importance": "負傷者の救護から、戦闘を終えるための仲介にも関わった。",
+          "evidence": {
+            "sourceIds": [
+              "hakodate_army_organization",
+              "hakodate_hospital_negotiation"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
     }
   ],
   "relations": [
@@ -16459,11 +16910,12 @@
       "end": 15,
       "type": "仲介・交渉",
       "label": "降伏・助命",
-      "text": "黒田は箱館で榎本の降伏を促し、戦後は榎本の助命にも尽力した。",
+      "text": "5月17日、黒田は増田虎之助と榎本らの降伏条件を協議。戦後は榎本の助命にも尽力した。",
       "evidence": {
         "sourceIds": [
           "archives_kuroda",
-          "hakodate_war_history"
+          "hakodate_war_history",
+          "hakodate_surrender1869"
         ],
         "reviewStatus": "verified"
       }
@@ -17061,6 +17513,55 @@
       "evidence": {
         "sourceIds": [
           "joetsu_hokuetsu"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "enomoto",
+      "b": "otori-keisuke",
+      "start": 15,
+      "end": 15,
+      "type": "組織",
+      "label": "総裁と陸軍奉行",
+      "text": "榎本が総裁、大鳥が陸軍奉行として旧幕府軍の政権を担った。5月17日の降伏会見では大鳥も呼ばれ、松平・荒井とともに出席した。",
+      "evidence": {
+        "sourceIds": [
+          "hakodate_army_organization",
+          "hakodate_surrender1869"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "takamatsu-ryoun",
+      "b": "enomoto",
+      "start": 15,
+      "end": 15,
+      "type": "仲介・交渉",
+      "label": "降伏勧告書を送る",
+      "text": "高松は小野権之丞と勧告書を作り、5月13日に五稜郭へ送った。榎本は翌日いったん拒否し、最終的な降伏は18日となった。",
+      "evidence": {
+        "sourceIds": [
+          "hakodate_hospital_negotiation",
+          "hakodate_surrender1869"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "otori-keisuke",
+      "b": "hijikata",
+      "start": 13,
+      "end": 15,
+      "type": "組織",
+      "label": "旧幕府陸軍で行動を共にする",
+      "text": "1868年4月、土方は国府台で大鳥の軍に合流。箱館では大鳥が陸軍奉行、土方が同並として陸上の防戦を担った。",
+      "evidence": {
+        "sourceIds": [
+          "nagareyama_shinsengumi_1868",
+          "hakodate_army_organization",
+          "hakodate_front1869"
         ],
         "reviewStatus": "verified"
       }

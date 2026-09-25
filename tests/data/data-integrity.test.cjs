@@ -40,14 +40,14 @@ test('the published collection sizes stay at the balanced expansion release base
     places: Object.keys(data.places).length,
     sources: Object.keys(data.sources).length
   }, {
-    people: 75,
+    people: 77,
     factions: 14,
     scenes: 16,
     events: 16,
-    relations: 104,
+    relations: 107,
     factionRelations: 18,
     places: 30,
-    sources: 302
+    sources: 311
   });
 });
 

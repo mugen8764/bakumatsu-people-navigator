@@ -395,6 +395,23 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "fromSceneId": "1868-tohoku",
+          "toSceneId": "1869-hakodate",
+          "title": "艦隊を率いた離脱から、五稜郭の明け渡しへ",
+          "before": "1868年8月に品川沖を離れ、10月に蝦夷地へ上陸。五稜郭を拠点とした（旧暦）。",
+          "after": "新政府軍の進攻を受け、1869年5月17日に降伏を協議。翌18日に榎本らは五稜郭を出た（旧暦）。",
+          "context": "土方は5月11日に戦死した。榎本の降伏をめぐる交渉と、負傷者を救護した高松の役割も分けて見る。",
+          "evidence": {
+            "sourceIds": [
+              "archives_enomoto_1867",
+              "hakodate_war_history",
+              "hakodate_surrender1869",
+              "hakodate_hospital_negotiation"
+            ],
+            "reviewStatus": "verified"
+          }
         }
       ],
       "termIds": [
@@ -2848,6 +2865,86 @@
           "joetsu_hokuetsu"
         ],
         "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "otori-keisuke",
+      "name": "大鳥圭介",
+      "kana": "おおとり けいすけ",
+      "aliases": [],
+      "lifespan": "1832/1833–1911（生年確認中）",
+      "defaultFactionId": "former-bakufu",
+      "activeStartSceneId": "1868-edo",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "幕府の歩兵奉行から箱館の陸軍奉行へ。五稜郭で降伏し、その後の護送を日記に残した。",
+      "placeIds": [
+        "edo",
+        "aizu",
+        "hakodate"
+      ],
+      "eventIds": [
+        "edo_surrender",
+        "tohoku",
+        "hakodate"
+      ],
+      "termIds": [
+        "boshin-war",
+        "rangaku"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_otori",
+          "ndl_otori_diary",
+          "archives_otori_artillery",
+          "hakodate_army_organization"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "国会図書館の肖像解説と日記解説で生年が1833年と1832年に分かれるため、基本情報の生年は確認中とする。"
+      },
+      "portrait": {
+        "src": "assets/portraits/otori-ndl.jpg",
+        "alt": "大鳥圭介の史料肖像",
+        "sourceId": "ndl_portrait_otori",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が大鳥圭介の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。国立国会図書館が提供する縮小画像を使用。",
+        "checkedAt": "2026-09-25"
+      }
+    },
+    {
+      "id": "takamatsu-ryoun",
+      "name": "高松凌雲",
+      "kana": "たかまつ りょううん",
+      "aliases": [
+        "凌雲"
+      ],
+      "lifespan": "天保7年–1916",
+      "defaultFactionId": "medicine-learning",
+      "activeStartSceneId": "1867-taisei",
+      "activeEndSceneId": "1869-hakodate",
+      "oneLine": "徳川昭武に随行して渡欧した医師。箱館で両軍の負傷者を治療し、降伏勧告の取次ぎにも携わった。",
+      "placeIds": [
+        "edo",
+        "hakodate"
+      ],
+      "eventIds": [
+        "hakodate"
+      ],
+      "termIds": [
+        "rangaku",
+        "boshin-war"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ogori_takamatsu",
+          "zaidan_takamatsu_birth",
+          "hakodate_hospital_negotiation"
+        ],
+        "reviewStatus": "verified",
+        "note": "生年は資料が記す旧暦の天保7年で表示。旧暦12月の生年月日を未確認の西暦日に置き換えない。"
       }
     }
   ]

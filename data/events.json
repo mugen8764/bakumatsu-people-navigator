@@ -1110,7 +1110,8 @@
         "tenshoin",
         "kazunomiya",
         "enomoto",
-        "kaieda"
+        "kaieda",
+        "otori-keisuke"
       ],
       "factionIds": [
         "new-government",
@@ -1160,7 +1161,8 @@
         "enomoto",
         "yae",
         "kawai-tsuginosuke",
-        "iwamura-takatoshi"
+        "iwamura-takatoshi",
+        "otori-keisuke"
       ],
       "factionIds": [
         "new-government",
@@ -1213,7 +1215,9 @@
       "personIds": [
         "enomoto",
         "hijikata",
-        "kuroda"
+        "kuroda",
+        "otori-keisuke",
+        "takamatsu-ryoun"
       ],
       "factionIds": [
         "new-government",
@@ -1226,7 +1230,10 @@
         "sourceIds": [
           "jacar_dictionary",
           "ndl_handwriting",
-          "hakodate_war_history"
+          "hakodate_war_history",
+          "hakodate_army_organization",
+          "hakodate_hospital_negotiation",
+          "hakodate_surrender1869"
         ],
         "reviewStatus": "verified"
       }
@@ -3389,6 +3396,173 @@
           "ojiya_meeting",
           "nagaoka_roots8",
           "joetsu_hokuetsu"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "hakodate-1869",
+      "sceneId": "1869-hakodate",
+      "title": "箱館の戦闘・医療・降伏",
+      "date": "1869年4月〜5月18日（明治2年・旧暦）",
+      "scope": "陸上の防戦、病院の救護、降伏勧告と五稜郭開城",
+      "summary": "新政府軍の進攻で旧幕府軍の戦線は箱館へ後退。大鳥・土方が陸上で戦い、高松は負傷者を救護した。榎本らは交渉を経て五稜郭を明け渡した。",
+      "stakes": "戦線を維持する軍事判断と、戦闘を終える交渉。箱館病院では陣営を問わず負傷者を治療し、高松らは降伏勧告の仲介も担った。",
+      "turningPoint": "5月11日に土方が戦死。17日に榎本・松平太郎らが黒田・増田虎之助らと会見し、18日に五稜郭を明け渡した（旧暦）。",
+      "participants": [
+        {
+          "personId": "takamatsu-ryoun",
+          "displayName": "高松凌雲",
+          "role": "箱館病院長・負傷者の治療と仲介",
+          "involvement": "onsite",
+          "side": "医療・学問",
+          "summary": "両軍の負傷者を治療。小野権之丞と降伏勧告書を作り、榎本らへ送った。",
+          "evidence": {
+            "sourceIds": [
+              "hakodate_army_organization",
+              "hakodate_hospital_negotiation"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "enomoto",
+          "displayName": "榎本武揚",
+          "role": "総裁・抗戦から降伏の決定へ",
+          "involvement": "decision",
+          "side": "旧幕府軍",
+          "summary": "五稜郭で抗戦した後、松平太郎らと降伏条件の協議へ赴き、18日に出郭した。",
+          "evidence": {
+            "sourceIds": [
+              "hakodate_army_organization",
+              "hakodate_surrender1869"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "otori-keisuke",
+          "displayName": "大鳥圭介",
+          "role": "陸軍奉行・木古内から箱館へ",
+          "involvement": "decision",
+          "side": "旧幕府軍",
+          "summary": "木古内・矢不来方面で指揮を執り、敗退後は五稜郭へ。降伏交渉にも出席した。",
+          "evidence": {
+            "sourceIds": [
+              "hakodate_army_organization",
+              "hakodate_front1869",
+              "hakodate_surrender1869"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "hijikata",
+          "displayName": "土方歳三",
+          "role": "陸軍奉行並・二股口の防戦",
+          "involvement": "decision",
+          "side": "旧幕府軍",
+          "summary": "二股口を守り、他方面の敗退を受けて後退。5月11日の総攻撃時に戦死した。",
+          "evidence": {
+            "sourceIds": [
+              "hakodate_army_organization",
+              "hakodate_front1869",
+              "hakodate_war_history"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "kuroda",
+          "displayName": "黒田了介",
+          "role": "新政府軍参謀・降伏条件の協議",
+          "involvement": "decision",
+          "side": "新政府軍",
+          "summary": "増田虎之助とともに榎本らと会見し、降伏の実行条件を示すよう求めた。",
+          "evidence": {
+            "sourceIds": [
+              "archives_kuroda",
+              "hakodate_surrender1869"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "hakodate-enomoto-otori",
+          "aPersonId": "enomoto",
+          "bPersonId": "otori-keisuke",
+          "label": "総裁と陸軍奉行",
+          "description": "榎本が総裁、大鳥が陸軍奉行として旧幕府軍の政権を担った。5月17日の降伏会見では大鳥も呼ばれ、松平・荒井とともに出席した。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "hakodate_army_organization",
+              "hakodate_surrender1869"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "hakodate-otori-hijikata",
+          "aPersonId": "otori-keisuke",
+          "bPersonId": "hijikata",
+          "label": "陸軍奉行と同並",
+          "description": "箱館の陸軍奉行が大鳥、同並が土方。4月には大鳥が木古内・矢不来方面、土方が二股口の防戦を担った。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "hakodate_army_organization",
+              "hakodate_front1869"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "hakodate-takamatsu-enomoto",
+          "aPersonId": "takamatsu-ryoun",
+          "bPersonId": "enomoto",
+          "label": "降伏勧告書を送る",
+          "description": "高松は小野権之丞と勧告書を作り、5月13日に五稜郭へ送った。榎本は翌日いったん拒否し、最終的な降伏は18日となった。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "hakodate_hospital_negotiation",
+              "hakodate_surrender1869"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "hakodate-enomoto-kuroda",
+          "aPersonId": "enomoto",
+          "bPersonId": "kuroda",
+          "label": "降伏条件を協議",
+          "description": "5月17日、榎本・松平らが新政府側の黒田・増田と会見。翌日の出郭と武器・兵糧の引き渡しへ進んだ。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "hakodate_surrender1869"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "hakodate"
+      ],
+      "termIds": [
+        "boshin-war",
+        "rangaku"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "hakodate_war_history",
+          "hakodate_army_organization",
+          "hakodate_front1869",
+          "hakodate_hospital_negotiation",
+          "hakodate_surrender1869"
         ],
         "reviewStatus": "verified"
       }

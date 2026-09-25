@@ -249,7 +249,7 @@
       "url": "https://www.city.hakodate.hokkaido.jp/docs/2014011700789/",
       "note": "榎本武揚率いる旧幕府脱走艦隊の1868年10月20日の蝦夷地到着、五稜郭占拠、榎本を総裁とする蝦夷地仮政権、土方歳三の1869年5月11日の戦死、5月18日の榎本らの降伏。",
       "locator": "「箱館戦争」の節",
-      "contentCheckedAt": "2026-07-31"
+      "contentCheckedAt": "2026-09-25"
     },
     {
       "id": "gsi_maps_coordinates",
@@ -1297,7 +1297,9 @@
       "id": "nagareyama_shinsengumi_1868",
       "title": "流山市立博物館「新選組と流山」",
       "url": "https://www.city.nagareyama.chiba.jp/tourism/1013070/1013074.html",
-      "note": "甲陽鎮撫隊の1868年3月1日の江戸出発と勝沼敗走、4月3日の近藤勇出頭、4月25日の板橋宿での処刑、4月12日の土方歳三による大鳥圭介軍参加。"
+      "note": "甲陽鎮撫隊の1868年3月1日の江戸出発と勝沼敗走、4月3日の近藤勇出頭、4月25日の板橋宿での処刑、4月12日の土方歳三による大鳥圭介軍参加。",
+      "locator": "新選組関係略年表：慶応4年4月12日の国府台での合流",
+      "contentCheckedAt": "2026-09-25"
     },
     {
       "id": "fukushima_modern_history",
@@ -2189,6 +2191,78 @@
       "url": "https://www.city.joetsu.niigata.jp/uploaded/attachment/148761.pdf",
       "note": "海道軍と山道軍の指揮者、会談前からの戦闘、長岡城の攻防、周辺地域の軍需品の運搬・物資負担を確認。表と本文で異なる米沢降伏日など、今回使わない細部は採用しない。",
       "locator": "1〜2頁「北越戊辰戦争の概要」・関連年表、3〜4頁「北越戊辰戦争による民衆の負担」",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "ndl_portrait_otori",
+      "title": "国立国会図書館「近代日本人の肖像・大鳥圭介」",
+      "url": "https://www.ndl.go.jp/portrait/datas/34/",
+      "note": "経歴と肖像を確認。生年は1833年と記載され、同館「日記の世界」の1832年と一致しないため確定しない。",
+      "locator": "生没年、解説、掲載肖像",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "ndl_otori_diary",
+      "title": "国立国会図書館「日記の世界・大鳥圭介」",
+      "url": "https://www.ndl.go.jp/nikki/person/otorikeisuke",
+      "note": "会津救援、箱館での抵抗と降伏後の護送日記を確認。生年は1832年と記載され、「近代日本人の肖像」と不一致。原本日記の全文を読んだとは扱わない。",
+      "locator": "「日記の概要」「履歴」。護送日記は明治2年5月18日の五稜郭出発から",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "archives_otori_artillery",
+      "title": "国立公文書館「激動幕末・砲科新論」",
+      "url": "https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/48.html",
+      "note": "大鳥の西洋兵学の学習、1861年の翻訳書刊行、1868年の歩兵奉行と箱館での抗戦を確認。生年は1833年表記だが、別資料との不一致を保留する。",
+      "locator": "解説第1〜2段落",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "hakodate_army_organization",
+      "title": "函館市史 通説編2「脱走軍の軍政」",
+      "url": "https://adeac.jp/hakodate-city/texthtml/d100020/mp000010-100020/ht011030",
+      "note": "榎本の総裁、大鳥の陸軍奉行、土方の陸軍奉行並、高松の病院長を組織図で確認。図の範囲は明治2年1月頃とされる。",
+      "locator": "244〜246頁、図1-1「旧幕府脱走軍組織図」（245頁、画像t2-0245h.jpgを目視）",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "hakodate_front1869",
+      "title": "函館市史 通説編2「新政府軍箱館へ迫る」",
+      "url": "https://adeac.jp/hakodate-city/texthtml/d100020/mp000010-100020/ht011090",
+      "note": "大鳥の木古内・矢不来方面の指揮、土方の二股口防戦、4月29日の両方面の後退を確認。旧暦日付。",
+      "locator": "252〜254頁。大鳥の転陣命令、二股の土方、4月29日の退却",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "hakodate_surrender1869",
+      "title": "函館市史 通説編2「五稜郭開城」",
+      "url": "https://adeac.jp/hakodate-city/texthtml/d100020/mp000010-100020/ht011130",
+      "note": "5月17日の会見に榎本・松平太郎・荒井郁之助・大鳥圭介、相手に増田虎之助・黒田了介がいたこと、18日の降伏と武器引渡しを確認。旧暦日付。",
+      "locator": "259〜260頁。17日の会見、18日の出郭と武器・兵糧引渡し",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "hakodate_hospital_negotiation",
+      "title": "函館市史 通説編2「降伏交渉開始」",
+      "url": "https://adeac.jp/hakodate-city/texthtml/d100020/mp000010-100020/ht011110",
+      "note": "高松の渡欧・帰国、両軍の負傷兵の治療、小野権之丞と作成した5月13日の降伏勧告書、榎本の14日の拒否を確認。仲介は一人だけの功績とはしない。",
+      "locator": "257〜258頁。諏訪常吉から高松・小野への依頼、凌雲の経歴、13〜14日の勧告と返答",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "ogori_takamatsu",
+      "title": "小郡市「広報おごおり・医傑 高松凌雲」",
+      "url": "https://www.city.ogori.fukuoka.jp/application/files/5015/4684/6708/nZDSNt.pdf",
+      "note": "徳川昭武への随行、箱館病院での両軍の傷病者の治療、1916年の死去を確認。生年1836表記は旧暦年との対応に注意する。",
+      "locator": "2016年11月1日号10頁（PDF3頁）、右下「医傑・高松凌雲」を紙面画像で確認",
+      "contentCheckedAt": "2026-09-25"
+    },
+    {
+      "id": "zaidan_takamatsu_birth",
+      "title": "函館市文化・スポーツ振興財団「高松凌雲」",
+      "url": "https://www.zaidan-hakodate.com/jimbutsu/04_ta/04-takamatsu.html",
+      "note": "出生を天保7年12月25日と記す箇所を参照し、画面の生年は天保7年で表示する。本文には日付の誤記や作品からの引用が混在するため、航海日程・人物評・台詞は採用しない。",
+      "locator": "冒頭の出生年月日と末尾の1916年の死去",
       "contentCheckedAt": "2026-09-25"
     }
   ]
