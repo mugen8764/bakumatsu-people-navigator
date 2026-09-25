@@ -20,7 +20,7 @@ test(`delayed historical data does not cause a large initial layout shift at ${l
 
   await page.goto('/');
   await expect(page.locator('html')).not.toHaveClass(/app-loading/);
-  await expect(page.locator('#personCards .card-button')).toHaveCount(13);
+  await expect(page.locator('#personCards .card-button')).toHaveCount(14);
 
   const layoutShiftScore = await page.evaluate(() => window.__layoutShiftScore);
   expect(layoutShiftScore).toBeLessThan(0.1);
@@ -69,7 +69,7 @@ for (const [label, width] of [['desktop', 1280], ['tablet', 600], ['mobile', 320
     const reserved = await measure();
 
     await expect(page.locator('html')).not.toHaveClass(/app-loading/);
-    await expect(page.locator('#personCards .card-button')).toHaveCount(13);
+    await expect(page.locator('#personCards .card-button')).toHaveCount(14);
     const loaded = await measure();
 
     for (const selector of Object.keys(loaded)) {

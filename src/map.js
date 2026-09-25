@@ -191,6 +191,7 @@
       }).join('');
       $$('[data-map-place-name]', $('#placeList')).forEach(button => button.addEventListener('click', () => {
         focusPlace(button.dataset.mapPlaceName, { focusLink: false });
+        button.focus({ preventScroll: true });
       }));
       $$('[data-map-person]', $('#placeList')).forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.mapPerson, 'people')));
       $$('[data-map-event]', $('#placeList')).forEach(button => button.addEventListener('click', () => actions.openEvent(button.dataset.mapEvent)));
