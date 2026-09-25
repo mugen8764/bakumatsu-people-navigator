@@ -94,4 +94,4 @@ npm run test:data
 
 検索から対象を開き、人物・個別事件・出典・地図・元の事件への往復を確認します。人物の前後の時点、URL再読込、キーボード操作、320pxのライト・ダーク、画像失敗時の表示も変更に応じて確認してください。
 
-利用者が役割を区別できるかは [利用者評価](https://github.com/mugen8764/bakumatsu-people-navigator/blob/main/docs/turning-points-evaluation.md) で扱います。公開手順と必要なテストは [開発・運用](https://github.com/mugen8764/bakumatsu-people-navigator/blob/main/docs/maintenance.md) を参照してください。
+公開手順と必要なテストは [開発・運用](https://github.com/mugen8764/bakumatsu-people-navigator/blob/main/docs/maintenance.md) を参照してください。

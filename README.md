@@ -53,7 +53,6 @@ node tests/support/static-server.cjs
 | 人物・事件・関係・肖像・出典を編集する | [データ編集手順](data/README.md) |
 | フィールド・参照・期間の制約を調べる | [データ契約](schema/README.md) |
 | 開発環境・テスト・公開・障害確認 | [開発・運用手順](https://github.com/mugen8764/bakumatsu-people-navigator/blob/main/docs/maintenance.md) |
-| 読みやすさや理解度を評価する | [利用者評価手順](https://github.com/mugen8764/bakumatsu-people-navigator/blob/main/docs/turning-points-evaluation.md) |
 | 作業時のプロジェクト規約 | [AGENTS.md](https://github.com/mugen8764/bakumatsu-people-navigator/blob/main/AGENTS.md) |
 
 `docs/` と開発用ファイルは公開成果物に含めません。そのため、このREADMEからそれらへのリンクはGitHubを参照します。
