@@ -333,7 +333,9 @@
       "id": "hagi_choshu_five",
       "title": "萩博物館「古写真で見る幕末明治・海外渡航者編」",
       "url": "https://www.city.hagi.lg.jp/hagihaku/event/202303_spring/index.html",
-      "note": "1863年に英国へ渡った井上馨・山尾庸三・井上勝・伊藤博文・遠藤謹助。"
+      "note": "1863年に英国へ渡った井上馨・山尾庸三・井上勝・伊藤博文・遠藤謹助。",
+      "locator": "展示紹介本文：文久3年（1863）5月に英国へ送られた5名と密航留学",
+      "contentCheckedAt": "2026-09-25"
     },
     {
       "id": "hagi_choshu_five_london",
@@ -1069,7 +1071,9 @@
       "id": "yamaguchi_bakan_war",
       "title": "山口県立山口図書館「明治維新人物ギャラリー・馬関戦争」",
       "url": "https://library.pref.yamaguchi.lg.jp/meijiishin/201408",
-      "note": "井上聞多・伊藤俊輔による下関戦争回避のための調停と、開戦後に高杉晋作が講和の正使へ起用された経緯。"
+      "note": "井上聞多・伊藤俊輔による下関戦争回避のための調停と、開戦後に高杉晋作が講和の正使へ起用された経緯。",
+      "locator": "「馬関戦争」本文前半：1863年の砲撃、翌年の調停・四国艦隊攻撃と高杉の講和正使起用",
+      "contentCheckedAt": "2026-09-25"
     },
     {
       "id": "jacar_inoue_detail",
@@ -1909,10 +1913,10 @@
     },
     {
       "id": "ndl_satow",
-      "title": "国立国会図書館「日本と西洋の登山・アーネスト・サトウ」",
+      "title": "国立国会図書館「日本と西洋の登山・オールコックとサトウ」",
       "url": "https://www.ndl.go.jp/kaleido/entry/18/1.html",
-      "note": "1843–1929。1862年の職は公使ではなく通訳生。",
-      "locator": "アーネスト・サトウ：生没年と文久2年の通訳生としての来日",
+      "note": "オールコック1809–1897、1859年の総領事としての来日と英国公使。サトウ1843–1929、1862年に通訳生として来日。登山日の換算は本データでは用いない。",
+      "locator": "ラザフォード・オールコック／アーネスト・サトウ：生没年、総領事・公使と通訳生",
       "contentCheckedAt": "2026-09-25"
     },
     {
@@ -2119,7 +2123,7 @@
       "id": "tsu_alcock_leave",
       "title": "山下琢巳「本学蔵東海道関係浮世絵（三）」",
       "url": "https://www.tsu.ac.jp/media/bulletin44_05.pdf",
-      "locator": "東京成徳短期大学紀要44号 p.55（PDF3ページ）：オールコックの帰国・再来日とニールの代理",
+      "locator": "東京成徳短期大学紀要44号 p.55（PDF3ページ）：1862年3月の帰国、1864年3月の再来日・12月の召還、ニールの代理",
       "contentCheckedAt": "2026-09-25",
       "note": "1862年3月の帰国、1864年3月の再来日を確認。生麦事件の日付には本稿の経過日数表現を用いず、横浜開港資料館の解説と照合する。"
     },
@@ -2127,9 +2131,33 @@
       "id": "satow_diplomat",
       "title": "アーネスト・サトウ A Diplomat in Japan（1921）",
       "url": "https://www.gutenberg.org/files/43541/43541-h/43541-h.htm",
-      "locator": "第VIII章 pp.84–94：鹿児島遠征への同行と8月15〜17日／第X章 p.102：キューパーの通訳",
+      "locator": "第VIII章 pp.84–94：鹿児島遠征／第IX〜XI章 pp.95–125：帰国者の調停、キューパーの通訳、9月5日の開戦・14日の講和",
       "contentCheckedAt": "2026-09-25",
       "note": "当事者の回想を公開翻刻で確認。本人の同行・職務と経過に用い、伝聞や推測による責任帰属は採用しない。"
+    },
+    {
+      "id": "frus_shimonoseki_policy",
+      "title": "米国務省 FRUS：1864年8月10日プルーイン書簡と四か国代表の覚書",
+      "url": "https://history.state.gov/historicaldocuments/frus1864p3/d494",
+      "locator": "pp.527–534：帰国した長州人による調停／添付2・1864年7月22日覚書と各国代表の署名",
+      "contentCheckedAt": "2026-09-25",
+      "note": "英国・米国・フランス・オランダの代表による共同方針。外交文書に含まれる日本側の動機の推測や軍事行動の正当化は、そのまま事実認定へ用いない。"
+    },
+    {
+      "id": "mlit_bakan_peace",
+      "title": "国土交通省 下関港湾事務所「馬関港開港秘話」",
+      "url": "https://www.pa.qsr.mlit.go.jp/shimonoseki/minato/others/pdf/shimonoseki_port_news_vol32.pdf",
+      "locator": "下関港だより第32号 p.1（PDF2ページ）：元治元年8月の戦闘・宍戸刑馬・講和条件",
+      "contentCheckedAt": "2026-09-25",
+      "note": "高杉の交渉名、旧暦8月14日の講和、海峡通航・補給・砲台再建禁止、賠償額は別途協議とする条項を確認。紙面のサトウによる人物評は採用しない。"
+    },
+    {
+      "id": "frus_shimonoseki_indemnity",
+      "title": "米国務省 FRUS：下関賠償に関する日本使節の覚書",
+      "url": "https://history.state.gov/historicaldocuments/frus1873p1v1/d182",
+      "locator": "1873年2月10日ソーントン書簡の添付1冒頭（p.408）：1864年10月22日の300万ドル協定",
+      "contentCheckedAt": "2026-09-25",
+      "note": "後年の賠償協議に提出された日本使節の覚書で、協定日・当事者・額を確認。1864年9月の現地講和と区別する。"
     }
   ]
 }

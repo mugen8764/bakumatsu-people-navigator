@@ -2908,15 +2908,15 @@
       "displayName": "伊藤俊輔",
       "role": "英国留学から帰国・対外交渉役",
       "factionId": "choshu",
-      "stance": "下関戦争の報を受けて英国から急遽帰国し、井上聞多と戦争回避の調停に努める。",
-      "importance": "戦闘を止められなかった後も、戦後処理で対外交渉にあたる。",
+      "stance": "長州の攘夷実行を知って英国から帰国し、井上聞多と四国艦隊の攻撃前に戦争回避の調停を図る。",
+      "importance": "調停は実らなかったが、戦闘後は講和交渉の場でも文書を取り次いだ。",
       "evidence": {
         "sourceIds": [
-          "yamaguchi_ito_guide",
-          "yamaguchi_bakan_war"
+          "yamaguchi_bakan_war",
+          "satow_diplomat"
         ],
         "reviewStatus": "verified",
-        "note": "山口県立山口図書館の人物案内と馬関戦争解説で、1864年の帰国、井上聞多との戦争回避調停、戦後処理での対外交渉を確認。「開国・近代化路線への転換」という解釈は表示文から除外。"
+        "note": "1863年の長州による外国船砲撃と、1864年の四国艦隊の攻撃を区別。帰国を後者の開戦後と読ませない。講和の文書取次ぎはサトウ回想第XI章。"
       }
     },
     {
@@ -6652,11 +6652,12 @@
       "displayName": "レオン・ロッシュ",
       "role": "駐日フランス公使",
       "factionId": "foreign-powers",
-      "stance": "1864年に着任。四国艦隊の下関攻撃に加わり、年末には幕府から技術援助を求められた。",
+      "stance": "1864年に着任。7月に他国代表と下関への共同対応の覚書に署名し、年末には幕府から技術援助を求められた。",
       "importance": "外国側も複数の外交官・政府から成ると分かる。",
       "evidence": {
         "sourceIds": [
-          "mof_roches_departure"
+          "mof_roches_departure",
+          "frus_shimonoseki_policy"
         ],
         "reviewStatus": "verified"
       }
@@ -7925,6 +7926,60 @@
       "evidence": {
         "sourceIds": [
           "satow_diplomat"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-alcock-1860-sakurada",
+      "personId": "alcock",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "ラザフォード・オールコック",
+      "role": "駐日英国公使",
+      "factionId": "foreign-powers",
+      "stance": "前年に総領事として来日し、英国の外交代表を務める。",
+      "importance": "開港後の英国の対日外交を担当した。後任のパークスとは別人物。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_satow"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-alcock-1862-bunkyu",
+      "personId": "alcock",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1863-aug18",
+      "displayName": "ラザフォード・オールコック",
+      "role": "休暇で英国へ帰国中の公使",
+      "factionId": "foreign-powers",
+      "stance": "1862年3月に英国へ帰国し、不在中の日本ではニールが代理公使を務める。",
+      "importance": "生麦事件後の要求と薩英戦争時の現地交渉は、ニールが担った。",
+      "evidence": {
+        "sourceIds": [
+          "tsu_alcock_leave",
+          "frus_namamugi_demands",
+          "frus_kagoshima_operations"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-alcock-1864-kinmon",
+      "personId": "alcock",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "ラザフォード・オールコック",
+      "role": "再来日した駐日英国公使",
+      "factionId": "foreign-powers",
+      "stance": "3月に再来日。7月、米国・フランス・オランダの代表と、下関の海峡通航をめぐる共同方針の覚書に署名した。",
+      "importance": "外交方針を協議する立場で、艦隊指揮官とは異なる。同年12月には召還されて離日する。",
+      "evidence": {
+        "sourceIds": [
+          "tsu_alcock_leave",
+          "frus_shimonoseki_policy"
         ],
         "reviewStatus": "verified"
       }

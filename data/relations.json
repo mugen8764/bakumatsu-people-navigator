@@ -1709,6 +1709,71 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-relation-alcock-roches-1864-kinmon-political-cooperation",
+      "aPersonId": "alcock",
+      "bPersonId": "roches",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "typeId": "political-cooperation",
+      "label": "共同方針の覚書に署名",
+      "text": "英国公使オールコックとフランス公使ロッシュは、米国・オランダの代表とともに1864年7月22日の覚書へ署名した。",
+      "evidence": {
+        "sourceIds": [
+          "frus_shimonoseki_policy"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-kuper-satow-1864-kinmon-organization",
+      "aPersonId": "kuper",
+      "bPersonId": "satow",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "typeId": "organization",
+      "label": "艦隊指揮官と通訳",
+      "text": "サトウはキューパーの通訳としてユーリアラスに乗船し、長州との講和交渉でも通訳を務めた。",
+      "evidence": {
+        "sourceIds": [
+          "satow_diplomat"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-takasugi-kuper-1864-kinmon-mediation-or-negotiation",
+      "aPersonId": "takasugi",
+      "bPersonId": "kuper",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "typeId": "mediation-or-negotiation",
+      "label": "講和条件を交渉",
+      "text": "宍戸刑馬の名で交渉に臨んだ高杉と、英国側のキューパー。ほかの長州使節・艦隊幹部も交渉に加わった。",
+      "evidence": {
+        "sourceIds": [
+          "mlit_bakan_peace",
+          "satow_diplomat"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-relation-ito-satow-1864-kinmon-mediation-or-negotiation",
+      "aPersonId": "ito",
+      "bPersonId": "satow",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "typeId": "mediation-or-negotiation",
+      "label": "講和文書の取次ぎ",
+      "text": "講和交渉で伊藤が日本語の文書を書き取り、通訳を担うサトウへ渡した。",
+      "evidence": {
+        "sourceIds": [
+          "satow_diplomat"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ],
   "factionRelations": [

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.65",
+    "version": "1.0.66",
     "updated": "2026-09-25"
   },
   "sources": {
@@ -289,7 +289,9 @@
     "hagi_choshu_five": {
       "title": "萩博物館「古写真で見る幕末明治・海外渡航者編」",
       "url": "https://www.city.hagi.lg.jp/hagihaku/event/202303_spring/index.html",
-      "note": "1863年に英国へ渡った井上馨・山尾庸三・井上勝・伊藤博文・遠藤謹助。"
+      "note": "1863年に英国へ渡った井上馨・山尾庸三・井上勝・伊藤博文・遠藤謹助。",
+      "locator": "展示紹介本文：文久3年（1863）5月に英国へ送られた5名と密航留学",
+      "contentCheckedAt": "2026-09-25"
     },
     "hagi_choshu_five_london": {
       "title": "萩市「長州ファイブ」",
@@ -919,7 +921,9 @@
     "yamaguchi_bakan_war": {
       "title": "山口県立山口図書館「明治維新人物ギャラリー・馬関戦争」",
       "url": "https://library.pref.yamaguchi.lg.jp/meijiishin/201408",
-      "note": "井上聞多・伊藤俊輔による下関戦争回避のための調停と、開戦後に高杉晋作が講和の正使へ起用された経緯。"
+      "note": "井上聞多・伊藤俊輔による下関戦争回避のための調停と、開戦後に高杉晋作が講和の正使へ起用された経緯。",
+      "locator": "「馬関戦争」本文前半：1863年の砲撃、翌年の調停・四国艦隊攻撃と高杉の講和正使起用",
+      "contentCheckedAt": "2026-09-25"
     },
     "jacar_inoue_detail": {
       "title": "アジア歴史資料センター「井上馨」",
@@ -1645,10 +1649,10 @@
       "contentCheckedAt": "2026-09-25"
     },
     "ndl_satow": {
-      "title": "国立国会図書館「日本と西洋の登山・アーネスト・サトウ」",
+      "title": "国立国会図書館「日本と西洋の登山・オールコックとサトウ」",
       "url": "https://www.ndl.go.jp/kaleido/entry/18/1.html",
-      "note": "1843–1929。1862年の職は公使ではなく通訳生。",
-      "locator": "アーネスト・サトウ：生没年と文久2年の通訳生としての来日",
+      "note": "オールコック1809–1897、1859年の総領事としての来日と英国公使。サトウ1843–1929、1862年に通訳生として来日。登山日の換算は本データでは用いない。",
+      "locator": "ラザフォード・オールコック／アーネスト・サトウ：生没年、総領事・公使と通訳生",
       "contentCheckedAt": "2026-09-25"
     },
     "atsugi_satow": {
@@ -1830,14 +1834,35 @@
       "title": "山下琢巳「本学蔵東海道関係浮世絵（三）」",
       "url": "https://www.tsu.ac.jp/media/bulletin44_05.pdf",
       "note": "1862年3月の帰国、1864年3月の再来日を確認。生麦事件の日付には本稿の経過日数表現を用いず、横浜開港資料館の解説と照合する。",
-      "locator": "東京成徳短期大学紀要44号 p.55（PDF3ページ）：オールコックの帰国・再来日とニールの代理",
+      "locator": "東京成徳短期大学紀要44号 p.55（PDF3ページ）：1862年3月の帰国、1864年3月の再来日・12月の召還、ニールの代理",
       "contentCheckedAt": "2026-09-25"
     },
     "satow_diplomat": {
       "title": "アーネスト・サトウ A Diplomat in Japan（1921）",
       "url": "https://www.gutenberg.org/files/43541/43541-h/43541-h.htm",
       "note": "当事者の回想を公開翻刻で確認。本人の同行・職務と経過に用い、伝聞や推測による責任帰属は採用しない。",
-      "locator": "第VIII章 pp.84–94：鹿児島遠征への同行と8月15〜17日／第X章 p.102：キューパーの通訳",
+      "locator": "第VIII章 pp.84–94：鹿児島遠征／第IX〜XI章 pp.95–125：帰国者の調停、キューパーの通訳、9月5日の開戦・14日の講和",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "frus_shimonoseki_policy": {
+      "title": "米国務省 FRUS：1864年8月10日プルーイン書簡と四か国代表の覚書",
+      "url": "https://history.state.gov/historicaldocuments/frus1864p3/d494",
+      "note": "英国・米国・フランス・オランダの代表による共同方針。外交文書に含まれる日本側の動機の推測や軍事行動の正当化は、そのまま事実認定へ用いない。",
+      "locator": "pp.527–534：帰国した長州人による調停／添付2・1864年7月22日覚書と各国代表の署名",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "mlit_bakan_peace": {
+      "title": "国土交通省 下関港湾事務所「馬関港開港秘話」",
+      "url": "https://www.pa.qsr.mlit.go.jp/shimonoseki/minato/others/pdf/shimonoseki_port_news_vol32.pdf",
+      "note": "高杉の交渉名、旧暦8月14日の講和、海峡通航・補給・砲台再建禁止、賠償額は別途協議とする条項を確認。紙面のサトウによる人物評は採用しない。",
+      "locator": "下関港だより第32号 p.1（PDF2ページ）：元治元年8月の戦闘・宍戸刑馬・講和条件",
+      "contentCheckedAt": "2026-09-25"
+    },
+    "frus_shimonoseki_indemnity": {
+      "title": "米国務省 FRUS：下関賠償に関する日本使節の覚書",
+      "url": "https://history.state.gov/historicaldocuments/frus1873p1v1/d182",
+      "note": "後年の賠償協議に提出された日本使節の覚書で、協定日・当事者・額を確認。1864年9月の現地講和と区別する。",
+      "locator": "1873年2月10日ソーントン書簡の添付1冒頭（p.408）：1864年10月22日の300万ドル協定",
       "contentCheckedAt": "2026-09-25"
     }
   },
@@ -2858,7 +2883,12 @@
         "omura",
         "yoshida-toshimaro",
         "mori-takachika",
-        "roches"
+        "roches",
+        "ito",
+        "inoue",
+        "kuper",
+        "satow",
+        "alcock"
       ],
       "factions": [
         "新選組",
@@ -2879,7 +2909,10 @@
         "yamaguchi_library_kinmon",
         "yamaguchi_yoshida_toshimaro",
         "yamaguchi_mori",
-        "mof_roches_departure"
+        "mof_roches_departure",
+        "yamaguchi_bakan_war",
+        "frus_shimonoseki_policy",
+        "mlit_bakan_peace"
       ],
       "evidence": {
         "sourceIds": [
@@ -2887,7 +2920,10 @@
           "yamaguchi_library_kinmon",
           "yamaguchi_yoshida_toshimaro",
           "yamaguchi_mori",
-          "mof_roches_departure"
+          "mof_roches_departure",
+          "yamaguchi_bakan_war",
+          "frus_shimonoseki_policy",
+          "mlit_bakan_peace"
         ],
         "reviewStatus": "verified"
       }
@@ -5482,6 +5518,210 @@
           "frus_kagoshima_operations",
           "frus_satsuma_settlement",
           "satow_diplomat"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "shimonoseki-1864": {
+      "id": "shimonoseki-1864",
+      "sceneId": "1864-kinmon",
+      "title": "四国艦隊の下関攻撃と講和",
+      "date": "1864年9月5日開戦〜14日講和（元治元年8月5〜14日・旧暦）",
+      "scope": "攻撃前の調停、戦闘と現地講和。その後の賠償交渉",
+      "summary": "前年に長州が外国船を砲撃した下関へ、英国・フランス・オランダ・米国の艦隊が来航。伊藤・井上の調停は実らず、長州の砲台は攻撃を受け、高杉らが講和に当たった。",
+      "stakes": "海峡の通航を求める四か国と、攘夷を続ける長州の対立。外交代表の共同判断、艦隊の軍事指揮、現地の通訳・講和を分けてたどる。",
+      "turningPoint": "9月の現地講和で海峡通航や補給、砲台再建の禁止を取り決める。賠償額は別に交渉され、10月22日に幕府と四か国が300万ドルの取り決めを結んだ。",
+      "participants": [
+        {
+          "personId": "takasugi",
+          "displayName": "宍戸刑馬",
+          "role": "長州の講和正使",
+          "involvement": "onsite",
+          "side": "長州藩",
+          "summary": "高杉晋作が攻撃後に講和正使へ起用され、交渉では宍戸刑馬の名を用いた。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_bakan_war",
+              "mlit_bakan_peace"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "ito",
+          "displayName": "伊藤俊輔",
+          "role": "攻撃前の調停と講和の取次ぎ",
+          "involvement": "onsite",
+          "side": "長州藩",
+          "summary": "井上と帰国して戦争回避を図る。講和の場では文書を書き取り、サトウへ渡した。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_bakan_war",
+              "satow_diplomat"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "inoue",
+          "displayName": "井上聞多",
+          "role": "帰国して戦争回避を働きかける",
+          "involvement": "onsite",
+          "side": "長州藩",
+          "summary": "伊藤とともに英国から帰国し、藩と外国側の間で調停を試みたが、開戦を止められなかった。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_bakan_war",
+              "frus_shimonoseki_policy"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "kuper",
+          "displayName": "オーガスタス・キューパー",
+          "role": "英国艦隊の指揮・講和交渉",
+          "involvement": "onsite",
+          "side": "英国海軍",
+          "summary": "四国艦隊の英国側指揮官として攻撃に参加。旗艦上の交渉では長州側の使者に講和条件を示した。",
+          "evidence": {
+            "sourceIds": [
+              "satow_diplomat"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "satow",
+          "displayName": "アーネスト・サトウ",
+          "role": "キューパーの通訳",
+          "involvement": "onsite",
+          "side": "英国公使館",
+          "summary": "軍艦ユーリアラスに乗り、講和交渉ではほかの通訳とともに長州側の使者とのやり取りを訳した。",
+          "evidence": {
+            "sourceIds": [
+              "satow_diplomat"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "alcock",
+          "displayName": "ラザフォード・オールコック",
+          "role": "共同方針を協議する英国公使",
+          "involvement": "decision",
+          "side": "英国公使館",
+          "summary": "7月に米・仏・蘭の代表と共同方針の覚書に署名。軍事行動を担う艦隊へ方針を伝えた。",
+          "evidence": {
+            "sourceIds": [
+              "frus_shimonoseki_policy"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "roches",
+          "displayName": "レオン・ロッシュ",
+          "role": "共同方針を協議するフランス公使",
+          "involvement": "decision",
+          "side": "フランス公使館",
+          "summary": "オールコックらと覚書に署名した外交代表。現地で砲撃を指揮する海軍軍人とは役割が異なる。",
+          "evidence": {
+            "sourceIds": [
+              "frus_shimonoseki_policy"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "shimonoseki-alcock-roches",
+          "aPersonId": "alcock",
+          "bPersonId": "roches",
+          "label": "共同方針の覚書に署名",
+          "description": "英国公使オールコックとフランス公使ロッシュは、米国・オランダの代表とともに1864年7月22日の覚書へ署名した。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "frus_shimonoseki_policy"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "shimonoseki-kuper-satow",
+          "aPersonId": "kuper",
+          "bPersonId": "satow",
+          "label": "艦隊指揮官と通訳",
+          "description": "サトウはキューパーの通訳としてユーリアラスに乗船し、長州との講和交渉でも通訳を務めた。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "satow_diplomat"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "shimonoseki-takasugi-kuper",
+          "aPersonId": "takasugi",
+          "bPersonId": "kuper",
+          "label": "講和条件を交渉",
+          "description": "宍戸刑馬の名で交渉に臨んだ高杉と、英国側のキューパー。ほかの長州使節・艦隊幹部も交渉に加わった。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "mlit_bakan_peace",
+              "satow_diplomat"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "shimonoseki-ito-satow",
+          "aPersonId": "ito",
+          "bPersonId": "satow",
+          "label": "講和文書の取次ぎ",
+          "description": "講和交渉で伊藤が日本語の文書を書き取り、通訳を担うサトウへ渡した。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "satow_diplomat"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "shimonoseki-ito-inoue",
+          "aPersonId": "ito",
+          "bPersonId": "inoue",
+          "label": "帰国して戦争回避を図る",
+          "description": "英国留学から帰国した伊藤と井上は、四国艦隊の攻撃前に共同で調停を試みた。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_bakan_war"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "shimonoseki",
+        "yokohama"
+      ],
+      "termIds": [
+        "joi",
+        "tsuji"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_bakan_war",
+          "frus_shimonoseki_policy",
+          "mlit_bakan_peace",
+          "satow_diplomat",
+          "frus_shimonoseki_indemnity"
         ],
         "reviewStatus": "verified"
       }
@@ -8662,7 +8902,8 @@
       "kana": "たかすぎ しんさく",
       "aliases": [
         "東行",
-        "谷潜蔵"
+        "谷潜蔵",
+        "宍戸刑馬"
       ],
       "born": "1839–1867",
       "defaultFaction": "長州藩",
@@ -8684,7 +8925,8 @@
         "second_choshu"
       ],
       "sources": [
-        "yamaguchi_takasugi_guide"
+        "yamaguchi_takasugi_guide",
+        "mlit_bakan_peace"
       ],
       "termIds": [
         "kiheitai",
@@ -8960,11 +9202,30 @@
         "joi1863",
         "choshu_reform",
         "second_choshu",
-        "toba"
+        "toba",
+        "kinmon"
       ],
       "sources": [
         "yamaguchi_ito_guide",
         "archives_ito"
+      ],
+      "turningPoints": [
+        {
+          "fromSceneId": "1863-aug18",
+          "toSceneId": "1864-kinmon",
+          "title": "英国留学から帰国し、戦争回避を図る",
+          "before": "1863年、長州藩から送り出された5人の一人として英国で学ぶ。",
+          "after": "井上聞多と帰国し、四国艦隊の攻撃前に調停を試みる。戦闘後は講和の場でも文書を取り次ぐ。",
+          "context": "帰国は1864年の四国艦隊の攻撃より前。前年の外国船砲撃を知ったことと、帰国後の働きかけをつなぐ。",
+          "evidence": {
+            "sourceIds": [
+              "hagi_choshu_five",
+              "yamaguchi_bakan_war",
+              "satow_diplomat"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
       ],
       "statuses": {
         "1858-ansei": {
@@ -8996,12 +9257,12 @@
         "1864-kinmon": {
           "display": "伊藤俊輔",
           "role": "英国留学から帰国・対外交渉役",
-          "stance": "下関戦争の報を受けて英国から急遽帰国し、井上聞多と戦争回避の調停に努める。",
-          "importance": "戦闘を止められなかった後も、戦後処理で対外交渉にあたる。",
+          "stance": "長州の攘夷実行を知って英国から帰国し、井上聞多と四国艦隊の攻撃前に戦争回避の調停を図る。",
+          "importance": "調停は実らなかったが、戦闘後は講和交渉の場でも文書を取り次いだ。",
           "evidence": {
             "sourceIds": [
-              "yamaguchi_ito_guide",
-              "yamaguchi_bakan_war"
+              "yamaguchi_bakan_war",
+              "satow_diplomat"
             ],
             "reviewStatus": "verified"
           }
@@ -9119,6 +9380,24 @@
       "sources": [
         "yamaguchi_inoue_1865",
         "jacar_inoue_detail"
+      ],
+      "turningPoints": [
+        {
+          "fromSceneId": "1863-aug18",
+          "toSceneId": "1864-kinmon",
+          "title": "英国留学から帰国し、戦争回避を図る",
+          "before": "1863年、長州藩から送り出された5人の一人として英国で学ぶ。",
+          "after": "伊藤俊輔と帰国し、四国艦隊の攻撃前に調停を試みる。戦争は回避できず、長州は講和へ進む。",
+          "context": "帰国は1864年の四国艦隊の攻撃より前。前年の外国船砲撃を知ったことと、帰国後の働きかけをつなぐ。",
+          "evidence": {
+            "sourceIds": [
+              "hagi_choshu_five",
+              "yamaguchi_bakan_war",
+              "satow_diplomat"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
       ],
       "statuses": {
         "1863-joi": {
@@ -12836,7 +13115,8 @@
       ],
       "sources": [
         "embassy_roches",
-        "mof_roches_departure"
+        "mof_roches_departure",
+        "frus_shimonoseki_policy"
       ],
       "termIds": [
         "kaiko"
@@ -12845,11 +13125,12 @@
         "1864-kinmon": {
           "display": "レオン・ロッシュ",
           "role": "駐日フランス公使",
-          "stance": "1864年に着任。四国艦隊の下関攻撃に加わり、年末には幕府から技術援助を求められた。",
+          "stance": "1864年に着任。7月に他国代表と下関への共同対応の覚書に署名し、年末には幕府から技術援助を求められた。",
           "importance": "外国側も複数の外交官・政府から成ると分かる。",
           "evidence": {
             "sourceIds": [
-              "mof_roches_departure"
+              "mof_roches_departure",
+              "frus_shimonoseki_policy"
             ],
             "reviewStatus": "verified"
           }
@@ -14281,6 +14562,78 @@
           "evidence": {
             "sourceIds": [
               "uvic_kuper"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "alcock",
+      "name": "ラザフォード・オールコック",
+      "kana": "らざふぉーど おーるこっく",
+      "aliases": [
+        "オールコック",
+        "Rutherford Alcock"
+      ],
+      "born": "1809–1897",
+      "defaultFaction": "外国勢力",
+      "activeRange": [
+        3,
+        7
+      ],
+      "oneLine": "初代駐日英国公使。休暇から再来日した1864年、他国代表と下関への共同対応を協議した。",
+      "places": [
+        "edo",
+        "yokohama"
+      ],
+      "events": [
+        "kinmon"
+      ],
+      "sources": [
+        "ndl_satow",
+        "tsu_alcock_leave",
+        "frus_shimonoseki_policy"
+      ],
+      "termIds": [
+        "kaiko"
+      ],
+      "statuses": {
+        "1860-sakurada": {
+          "display": "ラザフォード・オールコック",
+          "role": "駐日英国公使",
+          "stance": "前年に総領事として来日し、英国の外交代表を務める。",
+          "importance": "開港後の英国の対日外交を担当した。後任のパークスとは別人物。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_satow"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1862-bunkyu": {
+          "display": "ラザフォード・オールコック",
+          "role": "休暇で英国へ帰国中の公使",
+          "stance": "1862年3月に英国へ帰国し、不在中の日本ではニールが代理公使を務める。",
+          "importance": "生麦事件後の要求と薩英戦争時の現地交渉は、ニールが担った。",
+          "evidence": {
+            "sourceIds": [
+              "tsu_alcock_leave",
+              "frus_namamugi_demands",
+              "frus_kagoshima_operations"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1864-kinmon": {
+          "display": "ラザフォード・オールコック",
+          "role": "再来日した駐日英国公使",
+          "stance": "3月に再来日。7月、米国・フランス・オランダの代表と、下関の海峡通航をめぐる共同方針の覚書に署名した。",
+          "importance": "外交方針を協議する立場で、艦隊指揮官とは異なる。同年12月には召還されて離日する。",
+          "evidence": {
+            "sourceIds": [
+              "tsu_alcock_leave",
+              "frus_shimonoseki_policy"
             ],
             "reviewStatus": "verified"
           }
@@ -15828,6 +16181,67 @@
       "type": "組織",
       "label": "公使館員として同行",
       "text": "代理公使ニールと公使館員サトウは鹿児島への艦隊に同行した。サトウを外交方針の決定者とは扱わない。",
+      "evidence": {
+        "sourceIds": [
+          "satow_diplomat"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "alcock",
+      "b": "roches",
+      "start": 7,
+      "end": 7,
+      "type": "政治協力",
+      "label": "共同方針の覚書に署名",
+      "text": "英国公使オールコックとフランス公使ロッシュは、米国・オランダの代表とともに1864年7月22日の覚書へ署名した。",
+      "evidence": {
+        "sourceIds": [
+          "frus_shimonoseki_policy"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "kuper",
+      "b": "satow",
+      "start": 7,
+      "end": 7,
+      "type": "組織",
+      "label": "艦隊指揮官と通訳",
+      "text": "サトウはキューパーの通訳としてユーリアラスに乗船し、長州との講和交渉でも通訳を務めた。",
+      "evidence": {
+        "sourceIds": [
+          "satow_diplomat"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "takasugi",
+      "b": "kuper",
+      "start": 7,
+      "end": 7,
+      "type": "仲介・交渉",
+      "label": "講和条件を交渉",
+      "text": "宍戸刑馬の名で交渉に臨んだ高杉と、英国側のキューパー。ほかの長州使節・艦隊幹部も交渉に加わった。",
+      "evidence": {
+        "sourceIds": [
+          "mlit_bakan_peace",
+          "satow_diplomat"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "ito",
+      "b": "satow",
+      "start": 7,
+      "end": 7,
+      "type": "仲介・交渉",
+      "label": "講和文書の取次ぎ",
+      "text": "講和交渉で伊藤が日本語の文書を書き取り、通訳を担うサトウへ渡した。",
       "evidence": {
         "sourceIds": [
           "satow_diplomat"

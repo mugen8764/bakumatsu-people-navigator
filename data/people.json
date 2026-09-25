@@ -902,7 +902,8 @@
       "kana": "たかすぎ しんさく",
       "aliases": [
         "東行",
-        "谷潜蔵"
+        "谷潜蔵",
+        "宍戸刑馬"
       ],
       "lifespan": "1839–1867",
       "defaultFactionId": "choshu",
@@ -923,7 +924,8 @@
       ],
       "evidence": {
         "sourceIds": [
-          "yamaguchi_takasugi_guide"
+          "yamaguchi_takasugi_guide",
+          "mlit_bakan_peace"
         ],
         "reviewStatus": "verified"
       },
@@ -1016,7 +1018,8 @@
         "joi1863",
         "choshu_reform",
         "second_choshu",
-        "toba"
+        "toba",
+        "kinmon"
       ],
       "evidence": {
         "sourceIds": [
@@ -1024,7 +1027,25 @@
           "archives_ito"
         ],
         "reviewStatus": "verified"
-      }
+      },
+      "turningPoints": [
+        {
+          "fromSceneId": "1863-aug18",
+          "toSceneId": "1864-kinmon",
+          "title": "英国留学から帰国し、戦争回避を図る",
+          "before": "1863年、長州藩から送り出された5人の一人として英国で学ぶ。",
+          "after": "井上聞多と帰国し、四国艦隊の攻撃前に調停を試みる。戦闘後は講和の場でも文書を取り次ぐ。",
+          "context": "帰国は1864年の四国艦隊の攻撃より前。前年の外国船砲撃を知ったことと、帰国後の働きかけをつなぐ。",
+          "evidence": {
+            "sourceIds": [
+              "hagi_choshu_five",
+              "yamaguchi_bakan_war",
+              "satow_diplomat"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "inoue",
@@ -1057,7 +1078,25 @@
           "jacar_inoue_detail"
         ],
         "reviewStatus": "verified"
-      }
+      },
+      "turningPoints": [
+        {
+          "fromSceneId": "1863-aug18",
+          "toSceneId": "1864-kinmon",
+          "title": "英国留学から帰国し、戦争回避を図る",
+          "before": "1863年、長州藩から送り出された5人の一人として英国で学ぶ。",
+          "after": "伊藤俊輔と帰国し、四国艦隊の攻撃前に調停を試みる。戦争は回避できず、長州は講和へ進む。",
+          "context": "帰国は1864年の四国艦隊の攻撃より前。前年の外国船砲撃を知ったことと、帰国後の働きかけをつなぐ。",
+          "evidence": {
+            "sourceIds": [
+              "hagi_choshu_five",
+              "yamaguchi_bakan_war",
+              "satow_diplomat"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "omura",
@@ -2210,7 +2249,8 @@
       "evidence": {
         "sourceIds": [
           "embassy_roches",
-          "mof_roches_departure"
+          "mof_roches_departure",
+          "frus_shimonoseki_policy"
         ],
         "reviewStatus": "verified"
       },
@@ -2720,6 +2760,38 @@
           "uvic_kuper",
           "frus_kagoshima_operations",
           "satow_diplomat"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "alcock",
+      "name": "ラザフォード・オールコック",
+      "kana": "らざふぉーど おーるこっく",
+      "aliases": [
+        "オールコック",
+        "Rutherford Alcock"
+      ],
+      "lifespan": "1809–1897",
+      "defaultFactionId": "foreign-powers",
+      "activeStartSceneId": "1860-sakurada",
+      "activeEndSceneId": "1864-kinmon",
+      "oneLine": "初代駐日英国公使。休暇から再来日した1864年、他国代表と下関への共同対応を協議した。",
+      "placeIds": [
+        "edo",
+        "yokohama"
+      ],
+      "eventIds": [
+        "kinmon"
+      ],
+      "termIds": [
+        "kaiko"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_satow",
+          "tsu_alcock_leave",
+          "frus_shimonoseki_policy"
         ],
         "reviewStatus": "verified"
       }
