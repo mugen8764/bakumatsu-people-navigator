@@ -97,7 +97,7 @@
       <div class="section"><h3>人物の変化</h3><div class="history-list">${history.map(item => `<div class="history-item ${item.scene.index === state.scene ? 'current' : ''}"><button type="button" data-history-scene="${item.scene.index}"><b>${esc(item.scene.year)}年 ${esc(item.value.display)} ${shared.reviewBadge(item.value.evidence)}</b>${esc(item.value.role)}</button></div>`).join('')}</div></div>
       <div class="actions"><button type="button" class="button" id="personToGraph">相関図</button><button type="button" class="button" id="personToMap">地図</button></div>
       <details class="source-disclosure section"><summary>参考資料を見る</summary>
-        <section class="section" data-person-sources="basic"><h3>人物の基本情報</h3><div class="source-list">${shared.sourceLinks(person.sources)}</div></section>
+        <section class="section" data-person-sources="basic"><h3>人物の基本情報 ${shared.reviewBadge(person.evidence)}</h3><div class="source-list">${shared.sourceLinks(person.sources)}</div></section>
         <section class="section" data-person-sources="status"><h3>この時点の行動・立場 ${shared.reviewBadge(status.evidence)}</h3><p class="muted">${shared.dateLabel(shared.scene())}の位置づけと行動・立場の根拠です。</p><div class="source-list">${evidenceLinks(status.evidence)}</div></section>
         ${relations.length ? `<section class="section" data-person-sources="relations"><h3>この関係の根拠</h3>${relationSources}</section>` : ''}
       </details>`;

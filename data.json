@@ -6373,6 +6373,13 @@
         "yokosuka_perry_blackships",
         "mofa_treaty_1854"
       ],
+      "evidence": {
+        "sourceIds": [
+          "yokosuka_perry_blackships",
+          "mofa_treaty_1854"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "zenken",
         "ratification"
@@ -6444,6 +6451,13 @@
         "mofa_harris_credentials",
         "mofa_treaty_1858"
       ],
+      "evidence": {
+        "sourceIds": [
+          "mofa_harris_credentials",
+          "mofa_treaty_1858"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "kaiko",
         "tsuji",
@@ -6505,6 +6519,12 @@
       "sources": [
         "hiroshima_abe_opening"
       ],
+      "evidence": {
+        "sourceIds": [
+          "hiroshima_abe_opening"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1853-blackships": {
           "display": "阿部正弘",
@@ -6563,6 +6583,14 @@
         "mofa_treaty_1858",
         "ibaraki_sakuradamon"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_handwriting_bakumatsu_people",
+          "mofa_treaty_1858",
+          "ibaraki_sakuradamon"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1858-ansei": {
           "display": "井伊直弼",
@@ -6627,6 +6655,16 @@
         "fukui_pref_timeline",
         "ndl_katsu_1866_diary"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_authority_iemochi",
+          "fukui_bakumatsu_chronicle",
+          "iwaki_kazunomiya",
+          "fukui_pref_timeline",
+          "ndl_katsu_1866_diary"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1858-ansei": {
           "display": "徳川慶福",
@@ -6747,6 +6785,13 @@
         "matsudo_yoshinobu_timeline",
         "fukui_yoshinobu_shungaku_1862"
       ],
+      "evidence": {
+        "sourceIds": [
+          "matsudo_yoshinobu_timeline",
+          "fukui_yoshinobu_shungaku_1862"
+        ],
+        "reviewStatus": "verified"
+      },
       "portrait": {
         "src": "assets/portraits/yoshinobu-ndl.jpg",
         "alt": "徳川慶喜の史料肖像",
@@ -6954,6 +6999,13 @@
         "archives_katsu_kaibo",
         "sumida_katsu_edo_surrender"
       ],
+      "evidence": {
+        "sourceIds": [
+          "archives_katsu_kaibo",
+          "sumida_katsu_edo_surrender"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "rangaku",
         "boshin-war"
@@ -7118,6 +7170,13 @@
         "ndl_portrait_yamaoka_detail",
         "sumida_katsu_edo_surrender"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_yamaoka_detail",
+          "sumida_katsu_edo_surrender"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1868-toba": {
           "display": "山岡鉄太郎",
@@ -7179,6 +7238,13 @@
         "archives_enomoto_1867",
         "hakodate_war_history"
       ],
+      "evidence": {
+        "sourceIds": [
+          "archives_enomoto_1867",
+          "hakodate_war_history"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "boshin-war"
       ],
@@ -7322,6 +7388,13 @@
         "ibaraki_nariaki_kaibo",
         "ibaraki_nariaki_succession"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ibaraki_nariaki_kaibo",
+          "ibaraki_nariaki_succession"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1853-blackships": {
           "display": "徳川斉昭",
@@ -7407,6 +7480,14 @@
         "fukui_yoshinobu_shungaku_1862",
         "fukui_pref_timeline"
       ],
+      "evidence": {
+        "sourceIds": [
+          "fukui_sanai_shungaku",
+          "fukui_yoshinobu_shungaku_1862",
+          "fukui_pref_timeline"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1858-ansei": {
           "display": "松平慶永",
@@ -7526,6 +7607,12 @@
       "sources": [
         "fukui_sanai_shungaku"
       ],
+      "evidence": {
+        "sourceIds": [
+          "fukui_sanai_shungaku"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1858-ansei": {
           "display": "橋本左内",
@@ -7580,6 +7667,12 @@
       "sources": [
         "kagoshima_nariakira"
       ],
+      "evidence": {
+        "sourceIds": [
+          "kagoshima_nariakira"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1853-blackships": {
           "display": "島津斉彬",
@@ -7664,6 +7757,13 @@
         "kagoshima_library_hisamitsu_saigo",
         "kagoshima_teradaya"
       ],
+      "evidence": {
+        "sourceIds": [
+          "kagoshima_library_hisamitsu_saigo",
+          "kagoshima_teradaya"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1860-sakurada": {
           "display": "島津久光",
@@ -7841,6 +7941,13 @@
         "ndl_portrait_saigo_detail",
         "jacar_saigo_detail"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_saigo_detail",
+          "jacar_saigo_detail"
+        ],
+        "reviewStatus": "verified"
+      },
       "turningPoints": [
         {
           "fromSceneId": "1864-kinmon",
@@ -8106,6 +8213,12 @@
       "sources": [
         "jacar_okubo_detail"
       ],
+      "evidence": {
+        "sourceIds": [
+          "jacar_okubo_detail"
+        ],
+        "reviewStatus": "verified"
+      },
       "portrait": {
         "src": "assets/portraits/okubo-ndl.jpg",
         "alt": "大久保利通の史料肖像",
@@ -8340,6 +8453,13 @@
         "ndl_portrait_komatsu_detail",
         "kagoshima_satcho_alliance"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_komatsu_detail",
+          "kagoshima_satcho_alliance"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "karo",
         "satcho-alliance"
@@ -8538,6 +8658,13 @@
         "jacar_kawaji_detail",
         "kagoshima_cci_kawaji"
       ],
+      "evidence": {
+        "sourceIds": [
+          "jacar_kawaji_detail",
+          "kagoshima_cci_kawaji"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1858-ansei": {
           "display": "川路正之進",
@@ -8658,6 +8785,12 @@
       "sources": [
         "archives_kuroda"
       ],
+      "evidence": {
+        "sourceIds": [
+          "archives_kuroda"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1864-kinmon": {
           "display": "黒田了介",
@@ -8755,6 +8888,12 @@
       "sources": [
         "ndl_handwriting_bakumatsu_people"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_handwriting_bakumatsu_people"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1853-blackships": {
           "display": "吉田寅次郎",
@@ -8859,6 +8998,14 @@
         "kyoto_kido_1862",
         "kagoshima_satcho_alliance"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_kido_detail",
+          "kyoto_kido_1862",
+          "kagoshima_satcho_alliance"
+        ],
+        "reviewStatus": "verified"
+      },
       "portrait": {
         "src": "assets/portraits/kido-ndl.jpg",
         "alt": "木戸孝允の史料肖像",
@@ -9097,6 +9244,13 @@
         "yamaguchi_takasugi_guide",
         "mlit_bakan_peace"
       ],
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_takasugi_guide",
+          "mlit_bakan_peace"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "kiheitai",
         "choshu-expeditions"
@@ -9264,6 +9418,12 @@
       "sources": [
         "yamaguchi_kusaka_guide"
       ],
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_kusaka_guide"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1858-ansei": {
           "display": "久坂玄瑞",
@@ -9378,6 +9538,13 @@
         "yamaguchi_ito_guide",
         "archives_ito"
       ],
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_ito_guide",
+          "archives_ito"
+        ],
+        "reviewStatus": "verified"
+      },
       "turningPoints": [
         {
           "fromSceneId": "1863-aug18",
@@ -9550,6 +9717,13 @@
         "yamaguchi_inoue_1865",
         "jacar_inoue_detail"
       ],
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_inoue_1865",
+          "jacar_inoue_detail"
+        ],
+        "reviewStatus": "verified"
+      },
       "turningPoints": [
         {
           "fromSceneId": "1863-aug18",
@@ -9708,6 +9882,12 @@
       "sources": [
         "yamaguchi_omura_guide"
       ],
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_omura_guide"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "choshu-expeditions"
       ],
@@ -9839,6 +10019,13 @@
         "yamaguchi_yamagata_guide",
         "joetsu_hokuetsu"
       ],
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_yamagata_guide",
+          "joetsu_hokuetsu"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1863-joi": {
           "display": "山県狂介",
@@ -9982,6 +10169,15 @@
         "iwaki_kazunomiya",
         "ndl_portrait_katamori_detail"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_authority_komei",
+          "ibaraki_nariaki_treaty",
+          "iwaki_kazunomiya",
+          "ndl_portrait_katamori_detail"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "chokkyo",
         "kobugattai"
@@ -10149,6 +10345,14 @@
         "archives_royal_restoration",
         "archives_charter_oath"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_authority_meiji",
+          "archives_royal_restoration",
+          "archives_charter_oath"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1867-taisei": {
           "display": "明治天皇",
@@ -10250,6 +10454,12 @@
       "sources": [
         "ndl_portrait_iwakura_detail"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_iwakura_detail"
+        ],
+        "reviewStatus": "verified"
+      },
       "portrait": {
         "src": "assets/portraits/iwakura-ndl.jpg",
         "alt": "岩倉具視の史料肖像",
@@ -10426,6 +10636,12 @@
       "sources": [
         "jacar_sanjo_detail"
       ],
+      "evidence": {
+        "sourceIds": [
+          "jacar_sanjo_detail"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1863-joi": {
           "display": "三条実美",
@@ -10562,6 +10778,12 @@
       "sources": [
         "ndl_portrait_katamori_detail"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_katamori_detail"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "kyoto-shugoshoku",
         "boshin-war"
@@ -10768,6 +10990,12 @@
       "sources": [
         "kochi_yodo_timeline"
       ],
+      "evidence": {
+        "sourceIds": [
+          "kochi_yodo_timeline"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1858-ansei": {
           "display": "山内豊信",
@@ -10916,6 +11144,13 @@
         "kochi_takechi_kyoto",
         "kochi_takechi_imprisonment"
       ],
+      "evidence": {
+        "sourceIds": [
+          "kochi_takechi_kyoto",
+          "kochi_takechi_imprisonment"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1860-sakurada": {
           "display": "武市半平太",
@@ -11026,6 +11261,13 @@
         "ndl_portrait_ryoma_detail",
         "kochi_taisei_hokan"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_ryoma_detail",
+          "kochi_taisei_hokan"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "dappan"
       ],
@@ -11176,6 +11418,12 @@
       "sources": [
         "kochi_taisei_hokan"
       ],
+      "evidence": {
+        "sourceIds": [
+          "kochi_taisei_hokan"
+        ],
+        "reviewStatus": "verified"
+      },
       "portrait": {
         "src": "assets/portraits/goto-ndl.jpg",
         "alt": "後藤象二郎の史料肖像",
@@ -11313,6 +11561,12 @@
       "sources": [
         "nakaoka_museum_profile"
       ],
+      "evidence": {
+        "sourceIds": [
+          "nakaoka_museum_profile"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1864-kinmon": {
           "display": "中岡慎太郎",
@@ -11407,6 +11661,13 @@
         "kochi_tosa_bakumatsu",
         "kochi_itagaki_profile"
       ],
+      "evidence": {
+        "sourceIds": [
+          "kochi_tosa_bakumatsu",
+          "kochi_itagaki_profile"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1865-choshu": {
           "display": "乾退助",
@@ -11528,6 +11789,12 @@
       "sources": [
         "ndl_portrait_kondo_detail"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_kondo_detail"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "kyoto-shugoshoku",
         "joi"
@@ -11699,6 +11966,12 @@
       "sources": [
         "ndl_portrait_hijikata_detail"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_hijikata_detail"
+        ],
+        "reviewStatus": "verified"
+      },
       "portrait": {
         "src": "assets/portraits/hijikata-ndl.jpg",
         "alt": "土方歳三の史料肖像",
@@ -11851,6 +12124,12 @@
       "sources": [
         "kagoshima_tenshoin"
       ],
+      "evidence": {
+        "sourceIds": [
+          "kagoshima_tenshoin"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1854-treaty": {
           "display": "篤姫",
@@ -11960,6 +12239,13 @@
         "ndl_portrait_kazunomiya_detail",
         "iwaki_kazunomiya"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_kazunomiya_detail",
+          "iwaki_kazunomiya"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "kobugattai"
       ],
@@ -12077,6 +12363,13 @@
         "hino_okita",
         "hino_shinsengumi_2003"
       ],
+      "evidence": {
+        "sourceIds": [
+          "hino_okita",
+          "hino_shinsengumi_2003"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1863-joi": {
           "display": "沖田総司",
@@ -12156,6 +12449,13 @@
         "hokkaido_nagakura",
         "kodansha_nagakura"
       ],
+      "evidence": {
+        "sourceIds": [
+          "hokkaido_nagakura",
+          "kodansha_nagakura"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1864-kinmon": {
           "display": "永倉新八",
@@ -12225,6 +12525,14 @@
         "chiba_kawaji_career",
         "ndl_kawaji_lifespan"
       ],
+      "evidence": {
+        "sourceIds": [
+          "mofa_russia_1855",
+          "chiba_kawaji_career",
+          "ndl_kawaji_lifespan"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "chokkyo",
         "kaiko"
@@ -12333,6 +12641,14 @@
         "mlit_asahiko",
         "apj_asahiko_names"
       ],
+      "evidence": {
+        "sourceIds": [
+          "tondabayashi_aug18",
+          "mlit_asahiko",
+          "apj_asahiko_names"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "kobugattai",
         "joi"
@@ -12420,6 +12736,14 @@
         "kagoshima_kaieda_name",
         "kanagawa_saigo_arimura"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_kaieda_detail",
+          "kagoshima_kaieda_name",
+          "kanagawa_saigo_arimura"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "joi"
       ],
@@ -12527,6 +12851,12 @@
       "sources": [
         "yamaguchi_yoshida_toshimaro"
       ],
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_yoshida_toshimaro"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "joi",
         "dappan"
@@ -12625,6 +12955,12 @@
       "sources": [
         "kochi_yoshida_toyo"
       ],
+      "evidence": {
+        "sourceIds": [
+          "kochi_yoshida_toyo"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "kobugattai"
       ],
@@ -12677,6 +13013,12 @@
       "sources": [
         "doshisha_yamamoto_kakuma"
       ],
+      "evidence": {
+        "sourceIds": [
+          "doshisha_yamamoto_kakuma"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "rangaku",
         "kyoto-shugoshoku"
@@ -12740,6 +13082,13 @@
         "nakatsugawa_takeda",
         "ishikawa_takeda"
       ],
+      "evidence": {
+        "sourceIds": [
+          "nakatsugawa_takeda",
+          "ishikawa_takeda"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "joi"
       ],
@@ -12809,6 +13158,14 @@
         "npg_parkes_lifespan",
         "mofa_parkes_escort"
       ],
+      "evidence": {
+        "sourceIds": [
+          "mofa_parkes",
+          "npg_parkes_lifespan",
+          "mofa_parkes_escort"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "kaiko",
         "chokkyo",
@@ -12878,6 +13235,13 @@
         "ndl_portrait_oguri",
         "mof_yokosuka"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_oguri",
+          "mof_yokosuka"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "kaiko"
       ],
@@ -12981,6 +13345,13 @@
         "yamaguchi_mori",
         "yamahaku_mori_name"
       ],
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_mori",
+          "yamahaku_mori_name"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [],
       "statuses": {
         "1853-blackships": {
@@ -13061,6 +13432,13 @@
         "ndl_portrait_yae",
         "doshisha_yae"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_yae",
+          "doshisha_yae"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [],
       "portrait": {
         "src": "assets/portraits/yae-ndl.jpg",
@@ -13126,6 +13504,13 @@
         "ndl_nabeshima",
         "saga_nabeshima"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_nabeshima",
+          "saga_nabeshima"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "rangaku",
         "kobugattai"
@@ -13195,6 +13580,14 @@
         "nagaoka_kawai_reform",
         "ojiya_meeting"
       ],
+      "evidence": {
+        "sourceIds": [
+          "nagaoka_kawai",
+          "nagaoka_kawai_reform",
+          "ojiya_meeting"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [],
       "turningPoints": [
         {
@@ -13312,6 +13705,14 @@
         "mof_roches_departure",
         "frus_shimonoseki_policy"
       ],
+      "evidence": {
+        "sourceIds": [
+          "embassy_roches",
+          "mof_roches_departure",
+          "frus_shimonoseki_policy"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "kaiko"
       ],
@@ -13393,6 +13794,14 @@
         "seiyo_ine_timeline",
         "nagasaki_ine_practice"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_ine",
+          "seiyo_ine_timeline",
+          "nagasaki_ine_practice"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "rangaku"
       ],
@@ -13539,6 +13948,13 @@
         "ndl_manjiro",
         "tosashimizu_manjiro"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_manjiro",
+          "tosashimizu_manjiro"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "tsuji"
       ],
@@ -13654,6 +14070,14 @@
         "fukushima_saito",
         "aizu_shinsengumi"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_saito_authority",
+          "fukushima_saito",
+          "aizu_shinsengumi"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "boshin-war"
       ],
@@ -13747,6 +14171,13 @@
         "kyoto_shinsengumi_1865",
         "maekawa_yamanami"
       ],
+      "evidence": {
+        "sourceIds": [
+          "kyoto_shinsengumi_1865",
+          "maekawa_yamanami"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [],
       "statuses": {
         "1863-joi": {
@@ -13801,6 +14232,14 @@
         "kojima_kondo_serizawa_letter",
         "kyoto_serizawa_diary"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_serizawa_authority",
+          "kojima_kondo_serizawa_letter",
+          "kyoto_serizawa_diary"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [],
       "statuses": {
         "1863-joi": {
@@ -13862,6 +14301,15 @@
         "satow_papers_research",
         "satow_diplomat"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_satow",
+          "atsugi_satow",
+          "satow_papers_research",
+          "satow_diplomat"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "tsuji"
       ],
@@ -13953,6 +14401,13 @@
         "glover_garden_guide",
         "ndl_glover_gallery"
       ],
+      "evidence": {
+        "sourceIds": [
+          "glover_garden_guide",
+          "ndl_glover_gallery"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "kaiko",
         "foreign-settlement"
@@ -14059,6 +14514,12 @@
       "sources": [
         "osaka_koan"
       ],
+      "evidence": {
+        "sourceIds": [
+          "osaka_koan"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "rangaku",
         "tekijuku"
@@ -14155,6 +14616,12 @@
       "sources": [
         "keio_fukuzawa_timeline"
       ],
+      "evidence": {
+        "sourceIds": [
+          "keio_fukuzawa_timeline"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "rangaku",
         "tekijuku"
@@ -14329,6 +14796,14 @@
         "ndl_modern_opening",
         "nishogakusha_hayashi_1858"
       ],
+      "evidence": {
+        "sourceIds": [
+          "yokohama_treaty_plenipotentiaries",
+          "ndl_modern_opening",
+          "nishogakusha_hayashi_1858"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "zenken",
         "ratification"
@@ -14390,6 +14865,14 @@
         "mofa_treaty_1858",
         "shinshiro_iwase_retirement"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_iwase_identity",
+          "mofa_treaty_1858",
+          "shinshiro_iwase_retirement"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "zenken",
         "consular-jurisdiction",
@@ -14453,6 +14936,14 @@
         "mofa_treaty_1858",
         "bakushindoko_inoue_kiyonao"
       ],
+      "evidence": {
+        "sourceIds": [
+          "chiyoda_inoue_kiyonao",
+          "mofa_treaty_1858",
+          "bakushindoko_inoue_kiyonao"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "zenken",
         "consular-jurisdiction",
@@ -14613,6 +15104,13 @@
         "yokohama_richardson_letters",
         "yokohama_namamugi_exhibition"
       ],
+      "evidence": {
+        "sourceIds": [
+          "yokohama_richardson_letters",
+          "yokohama_namamugi_exhibition"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "foreign-settlement"
       ],
@@ -14661,6 +15159,14 @@
         "tsu_alcock_leave",
         "frus_namamugi_demands"
       ],
+      "evidence": {
+        "sourceIds": [
+          "japansociety_neale",
+          "tsu_alcock_leave",
+          "frus_namamugi_demands"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1862-bunkyu": {
           "display": "エドワード・ニール",
@@ -14722,6 +15228,14 @@
         "frus_kagoshima_operations",
         "satow_diplomat"
       ],
+      "evidence": {
+        "sourceIds": [
+          "uvic_kuper",
+          "frus_kagoshima_operations",
+          "satow_diplomat"
+        ],
+        "reviewStatus": "verified"
+      },
       "statuses": {
         "1863-joi": {
           "display": "オーガスタス・キューパー",
@@ -14789,6 +15303,14 @@
         "tsu_alcock_leave",
         "frus_shimonoseki_policy"
       ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_satow",
+          "tsu_alcock_leave",
+          "frus_shimonoseki_policy"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "kaiko"
       ],
@@ -14861,6 +15383,14 @@
         "ojiya_meeting",
         "joetsu_hokuetsu"
       ],
+      "evidence": {
+        "sourceIds": [
+          "sukumo_iwamura",
+          "ojiya_meeting",
+          "joetsu_hokuetsu"
+        ],
+        "reviewStatus": "verified"
+      },
       "termIds": [
         "boshin-war"
       ],

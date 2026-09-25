@@ -6,6 +6,20 @@ const data = require(path.resolve(__dirname, '../../data.json'));
 const mappings = require(path.resolve(__dirname, '../../schema/v2/id-mappings.json'));
 const { projectLegacyData } = require(path.resolve(__dirname, '../../scripts/lib/project-v2.cjs'));
 const { validateCurrentData, validateV2Documents } = require(path.resolve(__dirname, '../../scripts/validate-data.cjs'));
+const { assembleLegacyData } = require('../../scripts/lib/assemble-legacy-data.cjs');
+
+test('basic person evidence keeps uncertainty through generation and projection', () => {
+  for (const reviewStatus of ['needs_review', 'disputed']) {
+    const documents = projectLegacyData(data);
+    documents.people.people[0].evidence.reviewStatus = reviewStatus;
+    const generated = assembleLegacyData(documents);
+    assert.equal(generated.people[0].evidence.reviewStatus, reviewStatus);
+    assert.deepEqual(projectLegacyData(generated).people.people[0].evidence, documents.people.people[0].evidence);
+  }
+  const oldShape = structuredClone(data);
+  delete oldShape.people[0].evidence;
+  assert.deepEqual(projectLegacyData(oldShape).people.people[0].evidence.sourceIds, oldShape.people[0].sources);
+});
 
 test('current data conforms to the strict legacy schema', () => {
   assert.doesNotThrow(() => validateCurrentData(data));

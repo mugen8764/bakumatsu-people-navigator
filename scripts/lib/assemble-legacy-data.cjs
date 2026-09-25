@@ -113,6 +113,7 @@ function assembleLegacyData(documents) {
       places: [...person.placeIds],
       events: [...person.eventIds],
       sources: [...person.evidence.sourceIds],
+      evidence: evidence(person.evidence),
       ...(person.termIds ? { termIds: [...person.termIds] } : {}),
       ...(person.portrait ? { portrait: structuredClone(person.portrait) } : {}),
       ...(person.turningPoints ? { turningPoints: structuredClone(person.turningPoints) } : {}),
