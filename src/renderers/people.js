@@ -13,7 +13,7 @@
       $('#personFilters').innerHTML = names.map(name => `<button type="button" class="chip ${state.personFactionFilter === name ? 'active' : ''}" data-person-filter="${esc(name)}" aria-pressed="${state.personFactionFilter === name}">${data.factions[name]?.kind === 'field' ? '分野：' : ''}${esc(name)}</button>`).join('');
       $$('[data-person-filter]').forEach(button => button.addEventListener('click', () => {
         state.personFactionFilter = button.dataset.personFilter;
-        render();
+        shared.preserveFocus(render);
       }));
     }
 

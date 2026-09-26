@@ -137,3 +137,49 @@ test('map reset clears selection in the route, markers, labels and cards', cross
   await page.goBack();
   await expect(page.locator('[data-map-place="uraga"]')).toHaveClass(/selected/);
 });
+
+test('keyboard selection keeps focus on the redrawn control or the new detail', crossBrowser, async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.goto('/#scene=1858-ansei&view=people&person=ii&faction=幕府');
+
+  const card = page.locator('[data-person-card="nariaki"]');
+  await card.focus();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('徳川斉昭');
+  await expect(card).toBeFocused();
+
+  const chip = page.locator('[data-person-filter="幕府"]');
+  await chip.focus();
+  await page.keyboard.press('Enter');
+  await expect(chip).toHaveAttribute('aria-pressed', 'true');
+  await expect(chip).toBeFocused();
+  await page.locator('[data-person-card="ii"]').focus();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('[data-person-card="ii"]')).toBeFocused();
+
+  // The activated link names another person, whose detail replaces it.
+  await page.locator('#personDetail [data-other-person="sanai"]').focus();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('橋本左内');
+  await expect(page.locator('#personDetail .detail-title')).toBeFocused();
+
+  const history = page.locator('#personDetail [data-history-scene="3"]');
+  await history.focus();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('#sceneSelect')).toHaveValue('3');
+  await expect(history).toBeFocused();
+
+  await page.goto('/#scene=1858-ansei&view=factions&person=ii&faction=幕府');
+  const faction = page.locator('[data-faction-card="水戸藩"]');
+  await faction.focus();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('#factionDetail .detail-title')).toHaveText('水戸藩');
+  await expect(faction).toBeFocused();
+
+  await page.goto('/#scene=1858-ansei&view=relations&person=ii&faction=幕府');
+  const node = page.locator('#relationGraph [data-graph-person="nariaki"]');
+  await node.focus();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('#relationGraph .graph-person.selected')).toHaveAttribute('data-graph-person', 'nariaki');
+  await expect(page.locator('#relationGraph .graph-person.selected')).toBeFocused();
+});

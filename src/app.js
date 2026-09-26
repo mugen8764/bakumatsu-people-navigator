@@ -82,9 +82,11 @@
   function renderAll(options = {}) {
     clearCopyStatuses();
     window.BM_STATE.ensureSelections(state, data, domain);
-    sceneRenderer.renderScene();
-    sceneRenderer.renderTabs();
-    renderActiveView();
+    context.shared.preserveFocus(() => {
+      sceneRenderer.renderScene();
+      sceneRenderer.renderTabs();
+      renderActiveView();
+    });
     window.BM_ROUTER.writeRoute(state, scene(), environment, options);
     appliedLocation = window.location.href;
     requestAnimationFrame(revealActiveTab);

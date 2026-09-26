@@ -11,11 +11,52 @@
     return String(value ?? '').replace(/[&<>"']/g, character => htmlEntities[character]);
   }
 
+  // Where focus lands when the control a reader activated is not redrawn, for
+  // example after following a person link into a different detail panel.
+  const focusFallbacks = {
+    people: ['#personDetail .detail-title'],
+    factions: ['#factionDetail .detail-title'],
+    relations: ['#relationGraph .graph-person.selected', '#relationMobile .relation-mobile-center'],
+    map: ['#mapTitle'],
+    events: ['#eventDetailTitle'],
+    sources: ['#view-sources']
+  };
+
+  function isShown(element) {
+    return Boolean(element?.isConnected && element.getClientRects().length);
+  }
+
+  // Renderers replace their markup wholesale, so the element a keyboard user
+  // just activated is usually destroyed. Its data-* attribute identifies the
+  // redrawn equivalent, which receives focus again.
+  function focusKey(element) {
+    const attribute = [...(element?.attributes || [])].find(item => item.name.startsWith('data-'));
+    return attribute ? `[${attribute.name}="${CSS.escape(attribute.value)}"]` : '';
+  }
+
   function createShared(context) {
-    const { data, state } = context;
+    const { $, data, state } = context;
 
     function scene() {
       return data.scenes[state.scene];
+    }
+
+    function preserveFocus(render) {
+      const focused = document.activeElement;
+      const hadFocus = Boolean(focused && focused !== document.body);
+      const key = hadFocus ? focusKey(focused) : '';
+      render();
+      const current = document.activeElement;
+      if (!hadFocus || (current && current !== document.body && current.isConnected)) return;
+      const redrawn = key ? $(key) : null;
+      if (isShown(redrawn)) {
+        redrawn.focus({ preventScroll: true });
+        return;
+      }
+      const fallback = (focusFallbacks[state.view] || []).map(selector => $(selector)).find(isShown);
+      if (!fallback) return;
+      if (!fallback.hasAttribute('tabindex')) fallback.tabIndex = -1;
+      fallback.focus();
     }
 
     function factionColor(name) {
@@ -78,7 +119,7 @@
       return `<section class="background-terms section"><h3>背景を知る</h3><div class="term-list">${terms.map(term => `<details class="background-term"><summary>${escapeHtml(term.title)}<span class="term-reading">${escapeHtml(term.kana)}</span></summary><p>${escapeHtml(term.meaning)} ${reviewBadge(term.evidence)}</p><p class="term-context">${escapeHtml(term.context)}</p><div class="source-list">${sourceLinks(term.evidence.sourceIds)}</div></details>`).join('')}</div></section>`;
     }
 
-    return { avatar, backgroundTerms, bindPortraits, portraitCredit, dateLabel, escapeHtml, factionColor, factionShort, reviewBadge, scene, sourceCard, sourceLinks };
+    return { avatar, backgroundTerms, bindPortraits, portraitCredit, dateLabel, escapeHtml, factionColor, factionShort, preserveFocus, reviewBadge, scene, sourceCard, sourceLinks };
   }
 
   return { createShared, escapeHtml };
