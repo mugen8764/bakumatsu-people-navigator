@@ -13,6 +13,8 @@ const { highlightMatch, normalise, searchAll } = search;
 const { layoutMapLabels, mapViewBoxForPoint, projectMapCoord } = require(path.resolve(__dirname, '../../src/map.js'));
 
 const domain = createDomain(data);
+// Scenes are named by ID so inserting a scene does not shift the assertions.
+const sceneAt = id => domain.sceneById.get(id).index;
 
 test('search normalization and aliases retain current behavior', () => {
   assert.equal(normalise(' 桂・小 五郎 '), '桂小五郎');
@@ -89,7 +91,7 @@ test('navigation reconciles hidden selections but keeps a compatible person filt
 });
 
 test('a chosen person returns when the timeline comes back to their period', () => {
-  const state = stateApi.createState(data, domain, { scene: 9, selectedPerson: 'ryoma' });
+  const state = stateApi.createState(data, domain, { scene: sceneAt('1866-satcho'), selectedPerson: 'ryoma' });
   const ryoma = domain.getPerson('ryoma');
   const afterRyoma = ryoma.activeRange[1] + 1;
   stateApi.setScene(state, data, afterRyoma);
@@ -97,7 +99,7 @@ test('a chosen person returns when the timeline comes back to their period', () 
   assert.notEqual(state.selectedPerson, 'ryoma');
   assert.equal(state.preferredPerson, 'ryoma');
 
-  stateApi.setScene(state, data, 9);
+  stateApi.setScene(state, data, sceneAt('1866-satcho'));
   stateApi.ensureSelections(state, data, domain);
   assert.equal(state.selectedPerson, 'ryoma');
 
@@ -105,7 +107,7 @@ test('a chosen person returns when the timeline comes back to their period', () 
   stateApi.ensureSelections(state, data, domain);
   const standIn = state.selectedPerson;
   assert.equal(stateApi.selectPerson(state, data, domain, standIn), true);
-  stateApi.setScene(state, data, 9);
+  stateApi.setScene(state, data, sceneAt('1866-satcho'));
   stateApi.ensureSelections(state, data, domain);
   assert.equal(state.preferredPerson, standIn);
 });
@@ -117,7 +119,7 @@ test('initial route prefers valid hash values and tolerates blocked storage', ()
     storage: blockedStorage
   });
   assert.deepEqual(route, {
-    scene: 11,
+    scene: sceneAt('1867-taisei'),
     view: 'relations',
     selectedPerson: 'kido',
     selectedFaction: '長州藩',
@@ -140,7 +142,7 @@ test('state rejects invalid view values', () => {
 
 test('state reset restores every selectable control to its initial value', () => {
   const state = stateApi.createState(data, domain, {
-    scene: 11,
+    scene: sceneAt('1867-taisei'),
     view: 'relations',
     selectedPerson: 'kido',
     selectedFaction: '長州藩'
@@ -164,7 +166,7 @@ test('state reset restores every selectable control to its initial value', () =>
 
 test('person and faction selection transitions stay consistent', () => {
   const state = stateApi.createState(data, domain, {
-    scene: 9,
+    scene: sceneAt('1866-satcho'),
     selectedPerson: 'kido',
     selectedFaction: '長州藩'
   });

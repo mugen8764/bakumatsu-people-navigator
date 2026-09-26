@@ -4,6 +4,8 @@ const data = require('../../data.json');
 const { createDomain } = require('../../src/domain.js');
 const { searchAll } = require('../../src/search.js');
 const domain = createDomain(data);
+// Scenes are named by ID so inserting a scene does not shift the assertions.
+const sceneAt = id => domain.sceneById.get(id).index;
 const status = (id, index) => domain.statusAt(domain.getPerson(id), index);
 
 test('new people can be found by historical and modern names', () => {
@@ -19,7 +21,7 @@ test('deaths, return abroad, and leaving office stop earlier roles carrying forw
     assert.equal(domain.activeRelations(last + 1).some(r => r.a === id || r.b === id), false);
   }
   assert.match(status('satow', 15).role, /帰国/);
-  assert.equal(domain.activeRelations(15).some(r => r.a === 'satow' || r.b === 'satow'), false);
+  assert.equal(domain.activeRelations(sceneAt('1869-hakodate')).some(r => r.a === 'satow' || r.b === 'satow'), false);
   assert.equal(status('saito', 12).display, '山口二郎');
   assert.equal(status('saito', 11).evidence.reviewStatus, 'needs_review');
   assert.equal(status('yamanami', 8).evidence.reviewStatus, 'disputed');

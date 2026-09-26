@@ -8,16 +8,18 @@ const { searchAll } = require('../../src/search.js');
 const { projectLegacyData } = require('../../scripts/lib/project-v2.cjs');
 const { validateV2Documents } = require('../../scripts/validate-data.cjs');
 const domain = createDomain(data);
+// Scenes are named by ID so inserting a scene does not shift the assertions.
+const sceneAt = id => domain.sceneById.get(id).index;
 
 test('incident context survives participant navigation and clears outside its scene or cast', () => {
-  const state = stateApi.createState(data, domain, { scene: 7, selectedIncident: 'ikedaya', selectedPerson: 'kondo' });
+  const state = stateApi.createState(data, domain, { scene: sceneAt('1864-kinmon'), selectedIncident: 'ikedaya', selectedPerson: 'kondo' });
   stateApi.selectPerson(state, data, domain, 'okita');
   assert.equal(domain.incidentAt(state).id, 'ikedaya');
   stateApi.selectPerson(state, data, domain, 'kido');
   assert.equal(state.selectedIncident, '');
   state.selectedIncident = 'ikedaya';
   stateApi.choosePerson(state, 'okita');
-  stateApi.setScene(state, data, 8);
+  stateApi.setScene(state, data, sceneAt('1865-choshu'));
   stateApi.ensureSelections(state, data, domain);
   assert.equal(state.selectedPerson, 'okita');
   assert.equal(state.selectedIncident, '');

@@ -4,6 +4,8 @@ const data = require('../../data.json');
 const { createDomain } = require('../../src/domain.js');
 const { searchAll } = require('../../src/search.js');
 const domain = createDomain(data);
+// Scenes are named by ID so inserting a scene does not shift the assertions.
+const sceneAt = id => domain.sceneById.get(id).index;
 
 test('succession candidates, their advocates and later purge punishments stay distinct', () => {
   const succession = domain.getIncident('shogun-succession-1858');
@@ -51,8 +53,8 @@ test('voyage roles distinguish ships and Yokosuka construction continues across 
   assert.equal(yard.participants.find(p => p.personId === 'roches').involvement, 'decision');
   assert.match(yard.turningPoint, /完成は1871年/);
   const verny = domain.getPerson('verny');
-  assert.equal(domain.statusAt(verny, 7), null);
-  assert.match(domain.statusAt(verny, 15).stance, /明治政府/);
+  assert.equal(domain.statusAt(verny, sceneAt('1864-kinmon')), null);
+  assert.match(domain.statusAt(verny, sceneAt('1869-hakodate')).stance, /明治政府/);
   assert.ok(yard.placeIds.includes('yokosuka'));
 });
 

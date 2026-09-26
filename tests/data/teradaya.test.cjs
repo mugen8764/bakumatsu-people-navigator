@@ -4,6 +4,8 @@ const data = require('../../data.json');
 const { createDomain } = require('../../src/domain.js');
 const { searchAll } = require('../../src/search.js');
 const domain = createDomain(data);
+// Scenes are named by ID so inserting a scene does not shift the assertions.
+const sceneAt = id => domain.sceneById.get(id).index;
 
 test('Teradaya support has concrete directed actions without invented political affiliations', () => {
   const incident = domain.getIncident('teradaya-1866');
@@ -24,9 +26,9 @@ test('new name searches and period bounds retain factual uncertainty separately 
   for (const [id, query] of [['oryo', '楢崎龍'], ['miyoshi-shinzo', '三吉慎蔵']]) {
     assert.equal(searchAll(data, query).find(r => r.type === '人物').id, id);
     const person = domain.getPerson(id);
-    assert.equal(domain.statusAt(person, 8), null);
-    assert.equal(domain.statusAt(person, 10), null);
-    assert.equal(domain.statusAt(person, 9).evidence.reviewStatus, 'verified');
+    assert.equal(domain.statusAt(person, sceneAt('1865-choshu')), null);
+    assert.equal(domain.statusAt(person, sceneAt('1866-expedition')), null);
+    assert.equal(domain.statusAt(person, sceneAt('1866-satcho')).evidence.reviewStatus, 'verified');
   }
   assert.equal(domain.getPerson('oryo').evidence.reviewStatus, 'needs_review');
   assert.match(domain.getPerson('oryo').born, /生年確認中/);

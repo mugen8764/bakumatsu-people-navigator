@@ -3,6 +3,8 @@ const test = require('node:test');
 const data = require('../../data.json');
 const { createDomain } = require('../../src/domain.js');
 const domain = createDomain(data);
+// Scenes are named by ID so inserting a scene does not shift the assertions.
+const sceneAt = id => domain.sceneById.get(id).index;
 
 test('Hakodate distinguishes medical care, military command and the surrender parties', () => {
   const incident = domain.getIncident('hakodate-1869');
@@ -22,21 +24,21 @@ test('Otori’s uncertain birth does not erase confirmed roles or turn Takamatsu
   const doctor = domain.getPerson('takamatsu-ryoun');
   assert.match(otori.born, /1832\/1833.*生年確認中/);
   assert.equal(otori.evidence.reviewStatus, 'needs_review');
-  assert.equal(domain.statusAt(otori, 12), null);
-  assert.equal(domain.statusAt(otori, 15).role, '陸軍奉行');
-  assert.equal(domain.statusAt(otori, 15).evidence.reviewStatus, 'verified');
+  assert.equal(domain.statusAt(otori, sceneAt('1868-toba')), null);
+  assert.equal(domain.statusAt(otori, sceneAt('1869-hakodate')).role, '陸軍奉行');
+  assert.equal(domain.statusAt(otori, sceneAt('1869-hakodate')).evidence.reviewStatus, 'verified');
   assert.equal(otori.portrait.sourceId, 'ndl_portrait_otori');
   assert.match(otori.portrait.dateNote, /未確認/);
-  assert.equal(domain.statusAt(doctor, 10), null);
+  assert.equal(domain.statusAt(doctor, sceneAt('1866-expedition')), null);
   for (const scene of [11, 12]) assert.match(domain.statusAt(doctor, scene).role, /フランス/);
-  assert.equal(domain.statusAt(doctor, 15).role, '箱館病院長');
-  assert.equal(domain.factionAt(doctor, 15), '医療・学問');
+  assert.equal(domain.statusAt(doctor, sceneAt('1869-hakodate')).role, '箱館病院長');
+  assert.equal(domain.factionAt(doctor, sceneAt('1869-hakodate')), '医療・学問');
 });
 
 test('Enomoto’s two comparisons preserve fleet departure before the surrender sequence', () => {
   const person = domain.getPerson('enomoto');
-  const departure = domain.turningPointAt(person, 14);
-  const surrender = domain.turningPointAt(person, 15);
+  const departure = domain.turningPointAt(person, sceneAt('1868-tohoku'));
+  const surrender = domain.turningPointAt(person, sceneAt('1869-hakodate'));
   assert.equal(departure.fromScene.index, 13);
   assert.match(departure.after, /8月19日/);
   assert.equal(surrender.fromScene.index, 14);

@@ -5,6 +5,8 @@ const test = require('node:test');
 const data = require(path.resolve(__dirname, '../../data.json'));
 const { createDomain } = require(path.resolve(__dirname, '../../src/domain.js'));
 const domain = createDomain(data);
+// Scenes are named by ID so inserting a scene does not shift the assertions.
+const sceneAt = id => domain.sceneById.get(id).index;
 
 test('scene-level counts stay at the current display baseline', () => {
   const counts = data.scenes.map((scene, sceneIndex) => ({
@@ -35,14 +37,14 @@ test('scene-level counts stay at the current display baseline', () => {
 });
 test('a sparse status carries forward until the next explicit status', () => {
   const kido = data.people.find(person => person.id === 'kido');
-  assert.equal(domain.statusAt(kido, 2).display, '桂小五郎');
-  assert.equal(domain.statusAt(kido, 3).display, '桂小五郎');
-  assert.equal(domain.statusAt(kido, 10).display, '木戸準一郎');
-  assert.equal(domain.statusAt(kido, 11).display, '木戸準一郎');
-  assert.equal(domain.statusAt(kido, 12).faction, '新政府');
-  assert.equal(domain.statusAt(kido, 12).display, '木戸準一郎');
-  assert.equal(domain.statusAt(kido, 13).display, '木戸孝允');
-  assert.equal(domain.statusAt(kido, 15).display, '木戸孝允');
+  assert.equal(domain.statusAt(kido, sceneAt('1858-ansei')).display, '桂小五郎');
+  assert.equal(domain.statusAt(kido, sceneAt('1860-sakurada')).display, '桂小五郎');
+  assert.equal(domain.statusAt(kido, sceneAt('1866-expedition')).display, '木戸準一郎');
+  assert.equal(domain.statusAt(kido, sceneAt('1867-taisei')).display, '木戸準一郎');
+  assert.equal(domain.statusAt(kido, sceneAt('1868-toba')).faction, '新政府');
+  assert.equal(domain.statusAt(kido, sceneAt('1868-toba')).display, '木戸準一郎');
+  assert.equal(domain.statusAt(kido, sceneAt('1868-edo')).display, '木戸孝允');
+  assert.equal(domain.statusAt(kido, sceneAt('1869-hakodate')).display, '木戸孝允');
 });
 
 // A display name that returns after a different one is usually a data slip.
@@ -63,7 +65,7 @@ test('scene changes expose status and relation transitions without inventing new
   assert.equal(origin.peopleUpdated.length, 0);
   assert.equal(origin.relationsStarted.length, 0);
 
-  const satcho = domain.sceneChangesAt(9);
+  const satcho = domain.sceneChangesAt(sceneAt('1866-satcho'));
   assert.equal(satcho.previousIndex, 8);
   assert.equal(satcho.relationsStarted.length, 7);
   assert.equal(satcho.relationsEnded.length, 6);
@@ -72,7 +74,7 @@ test('scene changes expose status and relation transitions without inventing new
   assert.equal(kido.before.display, '桂小五郎');
   assert.equal(kido.after.display, '木戸準一郎');
 
-  const kidoRelations = domain.relationChangesFor('kido', 9);
+  const kidoRelations = domain.relationChangesFor('kido', sceneAt('1866-satcho'));
   assert.deepEqual(kidoRelations.started.map(relation => relation.label), ['薩長同盟の締結', '合意内容の確認']);
   assert.deepEqual(kidoRelations.ended, []);
 });
@@ -80,17 +82,17 @@ test('scene changes expose status and relation transitions without inventing new
 test('a person is not displayed outside activeRange', () => {
   const perry = data.people.find(person => person.id === 'perry');
   const kondo = data.people.find(person => person.id === 'kondo');
-  assert.equal(domain.statusAt(perry, 2), null);
-  assert.ok(domain.statusAt(kondo, 13));
-  assert.equal(domain.statusAt(kondo, 14), null);
+  assert.equal(domain.statusAt(perry, sceneAt('1858-ansei')), null);
+  assert.ok(domain.statusAt(kondo, sceneAt('1868-edo')));
+  assert.equal(domain.statusAt(kondo, sceneAt('1868-tohoku')), null);
 });
 
 test('event peers exclude the selected person and direct relations', () => {
   assert.deepEqual(
-    domain.eventPeersFor('kido', 9).map(person => person.id),
+    domain.eventPeersFor('kido', sceneAt('1866-satcho')).map(person => person.id),
     ['komatsu', 'nakaoka', 'okubo']
   );
-  assert.deepEqual(domain.eventPeersFor('takasugi', 9), []);
+  assert.deepEqual(domain.eventPeersFor('takasugi', sceneAt('1866-satcho')), []);
 });
 
 test('person filters include every faction represented by an active person', () => {
@@ -100,7 +102,7 @@ test('person filters include every faction represented by an active person', () 
     )].sort();
     assert.deepEqual([...domain.personFactionNames(sceneIndex)].sort(), represented);
   }
-  assert.ok(domain.personFactionNames(2).includes('土佐藩'));
+  assert.ok(domain.personFactionNames(sceneAt('1858-ansei')).includes('土佐藩'));
 });
 
 test('later names only appear when the canonical name occurs in a future status', () => {
