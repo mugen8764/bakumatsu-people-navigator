@@ -402,7 +402,6 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
 .edge.conflict{stroke:var(--conflict);stroke-dasharray:9 7}
 .edge.organization{stroke:var(--organization)}
 .edge.personal{stroke:var(--personal)}
-.edge-arrow{fill:context-stroke}
 .node-card{fill:var(--card);stroke:var(--border);stroke-width:2}
 .graph-person{cursor:pointer}
 .graph-person:hover .node-card,.graph-person:focus .node-card{stroke:var(--accent);stroke-width:4}

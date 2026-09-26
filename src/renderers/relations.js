@@ -23,6 +23,56 @@
       return `<g transform="translate(${x} ${y})" class="node graph-person ${selected ? 'selected' : ''}" data-graph-person="${esc(person.id)}" role="button" tabindex="0" aria-label="${esc(status.display)}を選択"><rect class="node-card" x="${left}" y="${top}" width="${width}" height="${height}" rx="18"></rect><rect class="node-stripe" x="${left}" y="${top}" width="10" height="${height}" rx="5" fill="${esc(shared.factionColor(status.faction))}"></rect>${centerLabel}<text x="0" y="-4" text-anchor="middle" class="node-label">${esc(status.display)}</text><text x="0" y="17" text-anchor="middle" class="node-faction">${esc(status.faction)}</text></g>`;
     }
 
+    // Card half-sizes match personNode: the selected card is 168×78, others 142×68.
+    const centerCard = { halfWidth: 84, halfHeight: 39 };
+    const otherCard = { halfWidth: 71, halfHeight: 34 };
+
+    // Distance from a box centre to its edge along a unit direction.
+    function reach(direction, halfWidth, halfHeight) {
+      const alongX = Math.abs(direction.x) > 1e-6 ? halfWidth / Math.abs(direction.x) : Infinity;
+      const alongY = Math.abs(direction.y) > 1e-6 ? halfHeight / Math.abs(direction.y) : Infinity;
+      return Math.min(alongX, alongY);
+    }
+
+    // A label that does not fit between two cards breaks into two lines,
+    // preferably after a separator or particle near the middle.
+    function splitLabel(text) {
+      const characters = Array.from(text);
+      const middle = Math.ceil(characters.length / 2);
+      const cut = [middle, middle + 1, middle - 1]
+        .find(index => index > 0 && index < characters.length && /[・、をのとでにへ]/.test(characters[index - 1])) ?? middle;
+      return [characters.slice(0, cut).join(''), characters.slice(cut).join('')];
+    }
+
+    function edgeLabel(from, to, text) {
+      const round = value => Math.round(value * 10) / 10;
+      const lineHeight = 12.5;
+      const length = Math.hypot(to.x - from.x, to.y - from.y) || 1;
+      const direction = { x: (to.x - from.x) / length, y: (to.y - from.y) / length };
+      // Edge labels are 10.5px; widen each card by half the label so the whole
+      // label, not only its centre, clears the cards.
+      const span = lines => {
+        const halfWidth = Math.max(...lines.map(line => Array.from(line).length)) * 10.5 / 2 + 4;
+        const halfHeight = lines.length * lineHeight / 2 + 4;
+        return {
+          lines,
+          start: reach(direction, centerCard.halfWidth + halfWidth, centerCard.halfHeight + halfHeight),
+          end: length - reach(direction, otherCard.halfWidth + halfWidth, otherCard.halfHeight + halfHeight)
+        };
+      };
+      const candidates = Array.from(text).length > 3 ? [span([text]), span(splitLabel(text))] : [span([text])];
+      const fitting = candidates.find(candidate => candidate.start <= candidate.end);
+      const placed = fitting || {
+        lines: candidates.at(-1).lines,
+        start: reach(direction, centerCard.halfWidth, centerCard.halfHeight),
+        end: length - reach(direction, otherCard.halfWidth, otherCard.halfHeight)
+      };
+      const distance = (placed.start + placed.end) / 2;
+      const x = round(from.x + direction.x * distance);
+      const firstBaseline = round(from.y + direction.y * distance - (placed.lines.length - 1) * lineHeight / 2 + 4);
+      return `<text x="${x}" y="${firstBaseline}" text-anchor="middle" class="edge-label">${placed.lines.map((line, index) => `<tspan x="${x}" dy="${index ? lineHeight : 0}">${esc(line)}</tspan>`).join('')}</text>`;
+    }
+
     function nearestSceneWithRelations(personId) {
       return data.scenes.map((scene, index) => ({ scene, index, distance: Math.abs(index - state.scene), count: domain.relationsFor(personId, index, state.relationType).length }))
         .filter(item => item.count)
@@ -70,24 +120,31 @@
       const relations = domain.relationsFor(person.id, state.scene, state.relationType);
       const others = relations.map(relation => domain.getPerson(relation.a === person.id ? relation.b : relation.a)).filter(Boolean);
       const center = { x: 410, y: 295 };
-      const radiusX = Math.min(275, 190 + others.length * 7);
+      // Wide enough that a two-line label fits between the centre and a side card.
+      const radiusX = 262;
       const radiusY = Math.min(215, 155 + others.length * 5);
       const points = others.map((other, index) => ({
         other,
         x: center.x + Math.cos((Math.PI * 2 * index / Math.max(others.length, 1)) - Math.PI / 2) * radiusX,
         y: center.y + Math.sin((Math.PI * 2 * index / Math.max(others.length, 1)) - Math.PI / 2) * radiusY
       }));
-      let html = '<defs><marker id="relationArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" class="edge-arrow"></path></marker></defs>';
+      // Relations carry no direction, so edges are plain lines. Labels go on
+      // top of the cards, centred on the stretch of line left visible between
+      // the two cards, so neither card hides them.
+      let html = '';
+      let labels = '';
       relations.forEach((relation, index) => {
         const point = points[index];
         if (!point) return;
-        html += `<line x1="${center.x}" y1="${center.y}" x2="${point.x}" y2="${point.y}" class="edge ${relationClass(relation.type)}" marker-end="url(#relationArrow)"></line><text x="${(center.x + point.x) / 2}" y="${(center.y + point.y) / 2 - 9}" text-anchor="middle" class="edge-label">${esc(relation.label)}</text>`;
+        html += `<line x1="${center.x}" y1="${center.y}" x2="${point.x}" y2="${point.y}" class="edge ${relationClass(relation.type)}"></line>`;
+        labels += edgeLabel(center, point, relation.label);
       });
       html += personNode(person, status, center.x, center.y, true);
       points.forEach(({ other, x, y }) => {
         const otherStatus = domain.statusAt(other, state.scene);
         html += personNode(other, otherStatus, x, y);
       });
+      html += labels;
       if (!points.length) html += '<text x="410" y="390" text-anchor="middle" class="edge-empty-label">この時点の主要関係はありません</text>';
       svg.innerHTML = html;
       $$('[data-graph-person]', svg).forEach(node => {

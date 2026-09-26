@@ -195,3 +195,32 @@ for (const colorScheme of ['light', 'dark']) {
     expect(accessibility.violations).toEqual([]);
   });
 }
+
+test('relation graph labels stay clear of every person card and imply no direction', async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.goto('/#view=relations');
+  await expect(page.locator('#relationGraph')).toBeVisible();
+  const result = await page.evaluate(async () => {
+    const overlap = (a, b) => a.left < b.right - 1 && a.right > b.left + 1 && a.top < b.bottom - 1 && a.bottom > b.top + 1;
+    const covered = [];
+    let graphs = 0;
+    for (const [index, scene] of window.BM_DATA.scenes.entries()) {
+      for (const person of window.BM_DATA.people) {
+        if (index < person.activeRange[0] || index > person.activeRange[1]) continue;
+        location.hash = `scene=${scene.id}&view=relations&person=${person.id}`;
+        await new Promise(resolve => setTimeout(resolve, 0));
+        const svg = document.querySelector('#relationGraph');
+        const cards = [...svg.querySelectorAll('.node-card')].map(card => card.getBoundingClientRect());
+        const labels = [...svg.querySelectorAll('.edge-label')];
+        if (labels.length) graphs += 1;
+        labels.forEach(label => {
+          if (cards.some(card => overlap(label.getBoundingClientRect(), card))) covered.push(`${person.id}@${scene.id}: ${label.textContent}`);
+        });
+      }
+    }
+    return { graphs, covered, markers: document.querySelectorAll('#relationGraph marker, #relationGraph [marker-end]').length };
+  });
+  expect(result.graphs).toBeGreaterThan(300);
+  expect(result.covered).toEqual([]);
+  expect(result.markers).toBe(0);
+});
