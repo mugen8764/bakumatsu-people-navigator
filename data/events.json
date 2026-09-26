@@ -110,7 +110,7 @@
       "summary": "薩摩藩は寺田屋に集結した藩内急進派を鎮圧した。幕府は京都守護職を設置して松平容保を任命し、同年には生麦事件が起きた。",
       "eventId": "bunkyu",
       "insights": [
-        "寺田屋では薩摩藩急進派が集結し、藩が派遣した藩士との争闘で9人が死亡した。",
+        "寺田屋では薩摩藩急進派が集結し、藩が派遣した藩士との争闘で有馬新七らが死亡した。",
         "京都守護職は京都の治安維持を目的に新設され、会津藩主松平容保が就任した。",
         "生麦事件では島津久光の行列を護衛する薩摩藩士が英国人を殺傷した。"
       ],
@@ -118,10 +118,11 @@
         "sourceIds": [
           "hyogo_bakumatsu_timeline_2",
           "kyoto_teradaya_1862",
-          "kyoto_shugoshoku_site"
+          "kyoto_shugoshoku_site",
+          "kagoshima_teradaya"
         ],
         "reviewStatus": "verified",
-        "note": "兵庫県年表と京都市の解説で寺田屋、生麦事件、京都守護職設置を確認。"
+        "note": "兵庫県年表と京都市の解説で寺田屋、生麦事件、京都守護職設置を確認。 寺田屋の死亡者数は京都市が9人、鹿児島県が有馬ら6人と記す。集計範囲を本文だけで確定できないため、画面では人数を断定しない。"
       }
     },
     {
@@ -5000,6 +5001,113 @@
           "shibusawa_paris_exposition"
         ],
         "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "teradaya-1862",
+      "sceneId": "1862-bunkyu",
+      "title": "寺田屋事件と薩摩藩内の対立（1862年）",
+      "date": "文久2年4月23日（旧暦）",
+      "scope": "伏見の寺田屋に集結した尊攘急進派と、久光が派遣した薩摩藩士",
+      "summary": "公武合体を進める島津久光に対し、有馬新七らは挙兵討幕を企て寺田屋に集結した。久光が派遣した奈良原喜八郎（繁）らとの論争は争闘に至り、有馬らが死亡した。",
+      "stakes": "同じ薩摩藩内でも、朝廷と幕府の協調を進める方針と、挙兵討幕を目指す行動が衝突した。1866年の龍馬襲撃・救援とは別の事件。",
+      "turningPoint": "久光は藩内急進派を鎮撫した。薩摩藩を一つの政治方針だけで捉えず、意思決定と現場の行動を分けて見る。",
+      "participants": [
+        {
+          "personId": "hisamitsu",
+          "displayName": "島津久光",
+          "role": "鎮撫のため藩士を派遣",
+          "involvement": "decision",
+          "side": "公武合体を進める側",
+          "summary": "公武合体を進め、寺田屋に集結した有馬らを鎮撫するため藩士を派遣した。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_teradaya",
+              "reimeikan_teradaya_sword"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "arima-shinshichi",
+          "displayName": "有馬新七",
+          "role": "挙兵討幕を企て寺田屋に集結",
+          "involvement": "onsite",
+          "side": "尊攘急進派",
+          "summary": "関白や京都所司代の殺害を計画して寺田屋に集まり、派遣された藩士との争闘で死亡した。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_teradaya",
+              "kyoto_teradaya_1862"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "narahara-shigeru",
+          "displayName": "奈良原喜八郎",
+          "role": "久光の命で鎮撫に赴く",
+          "involvement": "onsite",
+          "side": "久光が派遣した側",
+          "summary": "久光に派遣され、寺田屋で藩内急進派の鎮撫にあたった。黎明館は事件で繁が使用した刀を紹介している。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_teradaya",
+              "reimeikan_teradaya_sword",
+              "kotobank_narahara_shigeru"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "teradaya-1862-hisamitsu-narahara",
+          "aPersonId": "hisamitsu",
+          "bPersonId": "narahara-shigeru",
+          "label": "鎮撫のため派遣",
+          "description": "久光が奈良原らを寺田屋へ派遣した。久光本人の現場参加を示す線ではない。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_teradaya",
+              "reimeikan_teradaya_sword"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "teradaya-1862-hisamitsu-arima",
+          "aPersonId": "hisamitsu",
+          "bPersonId": "arima-shinshichi",
+          "label": "方針と行動の対立",
+          "description": "久光の公武合体方針に対し、有馬らは挙兵討幕を企てた。両者の直接の戦闘を示す線ではない。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_teradaya",
+              "reimeikan_teradaya_sword"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "fushimi"
+      ],
+      "termIds": [
+        "kobugattai",
+        "joi",
+        "funayado"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kagoshima_teradaya",
+          "reimeikan_teradaya_sword",
+          "kyoto_teradaya_1862"
+        ],
+        "reviewStatus": "verified",
+        "note": "県は有馬ら6人、市は有馬以下9人の死亡を記す。集計範囲が確定しないため人数は表示しない。奈良原繁を有馬の直接殺害者とは断定しない。収録する人物状態は1862年のこの時点のみで、生存期間とは区別する。"
       }
     }
   ],

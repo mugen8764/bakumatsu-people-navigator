@@ -8408,6 +8408,43 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-status-arima-shinshichi-1862-bunkyu",
+      "personId": "arima-shinshichi",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "有馬新七",
+      "role": "薩摩藩士・尊攘急進派",
+      "factionId": "satsuma",
+      "stance": "久光の上洛を機に挙兵討幕を企て、関白や京都所司代の殺害を計画して伏見の寺田屋に集結した。",
+      "importance": "同じ薩摩藩でも久光の公武合体方針とは異なる行動を選び、派遣された藩士との争闘で死亡した。",
+      "evidence": {
+        "sourceIds": [
+          "kagoshima_teradaya",
+          "kyoto_teradaya_1862"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-narahara-shigeru-1862-bunkyu",
+      "personId": "narahara-shigeru",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "奈良原喜八郎",
+      "role": "薩摩藩士・寺田屋への鎮撫使",
+      "factionId": "satsuma",
+      "stance": "久光の命で寺田屋へ派遣され、有馬新七ら藩内急進派の鎮撫にあたった。",
+      "importance": "藩内の対立が現場での争闘に至ったことを、派遣された側から見る。誰を斬ったかは断定しない。",
+      "evidence": {
+        "sourceIds": [
+          "kagoshima_teradaya",
+          "reimeikan_teradaya_sword",
+          "kotobank_narahara_shigeru"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

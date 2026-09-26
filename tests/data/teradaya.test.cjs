@@ -35,6 +35,27 @@ test('new name searches and period bounds retain factual uncertainty separately 
   const events = searchAll(data, '寺田屋').filter(r => r.type === '事件');
   assert.ok(events.some(r => r.id === 'teradaya-1866'));
   assert.ok(events.some(r => r.id === 'bunkyu'));
+  assert.ok(events.some(r => r.id === 'teradaya-1862'));
   assert.match(data.incidents['teradaya-1866'].stakes, /1862年.*別/);
   assert.match(data.terms.funayado.context, /現在の建物は再建/);
+});
+
+test('1862 Teradaya separates decision from onsite roles and bounds both new people', () => {
+  const incident = domain.getIncident('teradaya-1862');
+  assert.equal(incident.sceneId, '1862-bunkyu');
+  assert.deepEqual(incident.participants.map(p => [p.personId, p.involvement]), [
+    ['hisamitsu', 'decision'], ['arima-shinshichi', 'onsite'], ['narahara-shigeru', 'onsite']
+  ]);
+  assert.deepEqual(incident.relations.map(r => [r.aPersonId, r.bPersonId, r.direction]), [
+    ['hisamitsu', 'narahara-shigeru', 'forward'], ['hisamitsu', 'arima-shinshichi', 'none']
+  ]);
+  assert.match(incident.stakes, /1866年.*別/);
+  for (const [id, query] of [['arima-shinshichi', '有馬新七'], ['narahara-shigeru', '奈良原繁'], ['narahara-shigeru', '奈良原喜八郎']]) {
+    assert.equal(searchAll(data, query).find(r => r.type === '人物').id, id);
+    const person = domain.getPerson(id);
+    assert.equal(domain.statusAt(person, sceneAt('1860-sakurada')), null);
+    assert.equal(domain.statusAt(person, sceneAt('1863-joi')), null);
+    assert.ok(domain.statusAt(person, sceneAt('1862-bunkyu')));
+  }
+  assert.equal(domain.statusAt(domain.getPerson('narahara-shigeru'), sceneAt('1862-bunkyu')).display, '奈良原喜八郎');
 });

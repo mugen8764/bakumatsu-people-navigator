@@ -3334,6 +3334,61 @@
         "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。国立国会図書館が提供する画像を使用。",
         "checkedAt": "2026-09-26"
       }
+    },
+    {
+      "id": "arima-shinshichi",
+      "name": "有馬新七",
+      "kana": "ありま しんしち",
+      "aliases": [],
+      "lifespan": "1825–1862",
+      "defaultFactionId": "satsuma",
+      "activeStartSceneId": "1862-bunkyu",
+      "activeEndSceneId": "1862-bunkyu",
+      "oneLine": "薩摩藩の尊攘急進派。久光の公武合体方針と異なり挙兵討幕を企て、寺田屋事件で命を落とした。",
+      "placeIds": [
+        "fushimi"
+      ],
+      "eventIds": [],
+      "termIds": [
+        "joi"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kotobank_arima_shinshichi",
+          "kagoshima_teradaya",
+          "kyoto_teradaya_1862"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "narahara-shigeru",
+      "name": "奈良原繁",
+      "kana": "ならはら しげる",
+      "aliases": [
+        "奈良原喜八郎",
+        "喜八郎"
+      ],
+      "lifespan": "1834–1918",
+      "defaultFactionId": "satsuma",
+      "activeStartSceneId": "1862-bunkyu",
+      "activeEndSceneId": "1862-bunkyu",
+      "oneLine": "薩摩藩士。寺田屋事件では奈良原喜八郎として久光に派遣され、藩内急進派の鎮撫にあたった。",
+      "placeIds": [
+        "fushimi"
+      ],
+      "eventIds": [],
+      "termIds": [
+        "kobugattai"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kotobank_narahara_shigeru",
+          "kagoshima_teradaya",
+          "reimeikan_teradaya_sword"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }
