@@ -34,42 +34,52 @@
       return Math.min(alongX, alongY);
     }
 
-    // A label that does not fit between two cards breaks into two lines,
-    // preferably after a separator or particle near the middle.
-    function splitLabel(text) {
+    // Prefer a natural two-line break, with shorter lines for narrow gaps.
+    function splitLabel(text, lineCount = 2) {
       const characters = Array.from(text);
+      if (lineCount > 2) {
+        const width = Math.ceil(characters.length / lineCount);
+        return Array.from({ length: lineCount }, (_, index) => characters.slice(index * width, (index + 1) * width).join('')).filter(Boolean);
+      }
       const middle = Math.ceil(characters.length / 2);
       const cut = [middle, middle + 1, middle - 1]
         .find(index => index > 0 && index < characters.length && /[・、をのとでにへ]/.test(characters[index - 1])) ?? middle;
       return [characters.slice(0, cut).join(''), characters.slice(cut).join('')];
     }
 
-    function edgeLabel(from, to, text) {
+    function edgeLabel(from, to, text, measurement) {
       const round = value => Math.round(value * 10) / 10;
-      const lineHeight = 12.5;
+      measurement.textContent = text;
+      const lineHeight = Math.max(12.5, Math.ceil(measurement.getBBox().height) + 1);
       const length = Math.hypot(to.x - from.x, to.y - from.y) || 1;
       const direction = { x: (to.x - from.x) / length, y: (to.y - from.y) / length };
-      // Edge labels are 10.5px; widen each card by half the label so the whole
-      // label, not only its centre, clears the cards.
+      // Use the rendered font metrics: system fonts differ between platforms,
+      // and the SVG text's baseline is not its vertical centre.
       const span = lines => {
-        const halfWidth = Math.max(...lines.map(line => Array.from(line).length)) * 10.5 / 2 + 4;
-        const halfHeight = lines.length * lineHeight / 2 + 4;
+        measurement.innerHTML = lines.map((line, index) => `<tspan x="0" dy="${index ? lineHeight : 0}">${esc(line)}</tspan>`).join('');
+        const bounds = measurement.getBBox();
+        const halfWidth = bounds.width / 2 + 4;
+        const halfHeight = bounds.height / 2 + 4;
         return {
           lines,
+          baselineOffset: bounds.y + bounds.height / 2,
           start: reach(direction, centerCard.halfWidth + halfWidth, centerCard.halfHeight + halfHeight),
           end: length - reach(direction, otherCard.halfWidth + halfWidth, otherCard.halfHeight + halfHeight)
         };
       };
-      const candidates = Array.from(text).length > 3 ? [span([text]), span(splitLabel(text))] : [span([text])];
+      const candidates = Array.from(text).length > 3
+        ? [span([text]), span(splitLabel(text)), span(splitLabel(text, 3))]
+        : [span([text])];
       const fitting = candidates.find(candidate => candidate.start <= candidate.end);
       const placed = fitting || {
         lines: candidates.at(-1).lines,
+        baselineOffset: candidates.at(-1).baselineOffset,
         start: reach(direction, centerCard.halfWidth, centerCard.halfHeight),
         end: length - reach(direction, otherCard.halfWidth, otherCard.halfHeight)
       };
       const distance = (placed.start + placed.end) / 2;
       const x = round(from.x + direction.x * distance);
-      const firstBaseline = round(from.y + direction.y * distance - (placed.lines.length - 1) * lineHeight / 2 + 4);
+      const firstBaseline = round(from.y + direction.y * distance - placed.baselineOffset);
       return `<text x="${x}" y="${firstBaseline}" text-anchor="middle" class="edge-label">${placed.lines.map((line, index) => `<tspan x="${x}" dy="${index ? lineHeight : 0}">${esc(line)}</tspan>`).join('')}</text>`;
     }
 
@@ -133,12 +143,27 @@
       // the two cards, so neither card hides them.
       let html = '';
       let labels = '';
-      relations.forEach((relation, index) => {
-        const point = points[index];
-        if (!point) return;
-        html += `<line x1="${center.x}" y1="${center.y}" x2="${point.x}" y2="${point.y}" class="edge ${relationClass(relation.type)}"></line>`;
-        labels += edgeLabel(center, point, relation.label);
-      });
+      const measurement = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      measurement.setAttribute('class', 'edge-label');
+      // The graph is display:none on mobile. Measure outside it so resizing
+      // to desktop still has valid text geometry without another selection.
+      const surface = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      surface.setAttribute('aria-hidden', 'true');
+      surface.setAttribute('width', '0');
+      surface.setAttribute('height', '0');
+      surface.style.cssText = 'position:absolute;visibility:hidden;pointer-events:none';
+      surface.append(measurement);
+      document.body.append(surface);
+      try {
+        relations.forEach((relation, index) => {
+          const point = points[index];
+          if (!point) return;
+          html += `<line x1="${center.x}" y1="${center.y}" x2="${point.x}" y2="${point.y}" class="edge ${relationClass(relation.type)}"></line>`;
+          labels += edgeLabel(center, point, relation.label, measurement);
+        });
+      } finally {
+        surface.remove();
+      }
       html += personNode(person, status, center.x, center.y, true);
       points.forEach(({ other, x, y }) => {
         const otherStatus = domain.statusAt(other, state.scene);
