@@ -20,7 +20,7 @@
       selectedPerson: initial.selectedPerson || 'abe',
       // The person the reader chose. Outside that person's period another
       // active person is displayed, and the choice returns when the period does.
-      preferredPerson: initial.selectedPerson || 'abe',
+      preferredPerson: initial.preferredPerson || initial.selectedPerson || 'abe',
       selectedFaction: initial.selectedFaction || '幕府',
       personFactionFilter: 'すべて',
       relationType: 'all',
@@ -71,6 +71,7 @@
     if (route.scene !== undefined) setScene(state, data, route.scene);
     if (route.view !== undefined && views.has(route.view)) state.view = route.view;
     if (route.selectedPerson !== undefined) choosePerson(state, route.selectedPerson);
+    if (route.preferredPerson !== undefined) state.preferredPerson = route.preferredPerson;
     if (route.selectedIncident !== undefined) state.selectedIncident = hasEntry(data.incidents || {}, route.selectedIncident) ? route.selectedIncident : '';
     if (route.selectedFaction !== undefined) state.selectedFaction = route.selectedFaction;
     if (route.selectedPlace !== undefined) state.selectedPlace = hasEntry(data.places, route.selectedPlace) ? route.selectedPlace : '';

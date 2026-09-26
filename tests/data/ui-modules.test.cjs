@@ -122,9 +122,51 @@ test('initial route prefers valid hash values and tolerates blocked storage', ()
     scene: sceneAt('1867-taisei'),
     view: 'relations',
     selectedPerson: 'kido',
+    preferredPerson: 'kido',
     selectedFaction: '長州藩',
     selectedPlace: 'kyoto', selectedIncident: ''
   });
+});
+
+test('out-of-period choices survive shared URLs, stored visits and history navigation', () => {
+  const state = stateApi.createState(data, domain, { scene: sceneAt('1866-satcho'), selectedPerson: 'ryoma' });
+  stateApi.setScene(state, data, sceneAt('1868-toba'));
+  stateApi.ensureSelections(state, data, domain);
+  const displayed = state.selectedPerson;
+  const saved = new Map();
+  let url;
+  router.writeRoute(state, data.scenes[state.scene], {
+    location: { pathname: '/', search: '', hash: '' },
+    history: { replaceState(_state, _title, value) { url = new URL(value, 'https://example.test'); } },
+    storage: { setItem(key, value) { saved.set(key, value); } }
+  });
+  const params = new URLSearchParams(url.hash.slice(1));
+  assert.equal(params.get('person'), displayed);
+  assert.equal(params.get('preferred'), 'ryoma');
+  const storage = { getItem: key => saved.get(key) };
+  const routes = [
+    router.readInitialRoute(data, domain, { location: url, storage: null }),
+    router.readInitialRoute(data, domain, { location: { hash: '' }, storage }),
+    router.readHashRoute(domain, url)
+  ];
+  for (const route of routes) {
+    const restored = stateApi.createState(data, domain);
+    stateApi.applyRoute(restored, data, route);
+    stateApi.ensureSelections(restored, data, domain);
+    assert.equal(restored.selectedPerson, displayed);
+    assert.equal(restored.preferredPerson, 'ryoma');
+    stateApi.setScene(restored, data, sceneAt('1866-satcho'));
+    stateApi.ensureSelections(restored, data, domain);
+    assert.equal(restored.selectedPerson, 'ryoma');
+  }
+  for (const hash of ['#scene=1866-satcho&person=kido', '#event=ikedaya']) {
+    const route = router.readInitialRoute(data, domain, { location: { hash }, storage });
+    assert.equal(route.preferredPerson, route.selectedPerson, 'explicit links override stored choices');
+  }
+  const invalid = stateApi.createState(data, domain, router.readInitialRoute(data, domain, {
+    location: { hash: '#scene=1868-toba&person=yoshinobu&preferred=missing' }, storage
+  }));
+  assert.equal(invalid.preferredPerson, 'yoshinobu');
 });
 
 test('state rejects invalid view values', () => {

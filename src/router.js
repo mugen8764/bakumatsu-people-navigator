@@ -37,10 +37,12 @@
     const hasHash = [...hash.keys()].length > 0;
     const eventId = hasHash ? (hash.get('event') || '') : (safeGet(storage, 'bm.event') || '');
     const incident = Object.hasOwn(data.incidents || {}, eventId) ? data.incidents[eventId] : null;
+    const selectedPerson = hash.get('person') || (hasHash && incident ? incident.participants[0].personId : safeGet(storage, 'bm.person')) || 'abe';
     return {
       scene: sceneIndex(domain.sceneById, hash.get('scene') || incident?.sceneId || storedScene) ?? 0,
       view: hash.get('view') || (hasHash && incident ? 'events' : safeGet(storage, 'bm.view')) || 'people',
-      selectedPerson: hash.get('person') || (hasHash && incident ? incident.participants[0].personId : safeGet(storage, 'bm.person')) || 'abe',
+      selectedPerson,
+      preferredPerson: (hasHash ? hash.get('preferred') : safeGet(storage, 'bm.preferredPerson')) || selectedPerson,
       selectedIncident: eventId,
       selectedFaction: hash.get('faction') || safeGet(storage, 'bm.faction') || '幕府',
       selectedPlace: hash.get('place') || safeGet(storage, 'bm.place') || ''
@@ -62,6 +64,9 @@
       if (!hash.has('person')) route.selectedPerson = incident.participants[0].personId;
       if (!hash.has('view')) route.view = 'events';
     }
+    if (hash.has('preferred') || route.selectedPerson !== undefined) {
+      route.preferredPerson = hash.get('preferred') || route.selectedPerson;
+    }
     return route;
   }
 
@@ -69,6 +74,10 @@
     const { history, location, storage } = environment;
     const query = new URLSearchParams({ scene: scene.id, view: state.view });
     if (state.selectedPerson) query.set('person', state.selectedPerson);
+    // Keep the visible person in the URL and preserve an out-of-period choice
+    // separately, including when a shared link is opened without local storage.
+    const preferredPerson = state.preferredPerson || state.selectedPerson;
+    if (preferredPerson && preferredPerson !== state.selectedPerson) query.set('preferred', preferredPerson);
     if (state.selectedFaction) query.set('faction', state.selectedFaction);
     if (state.selectedPlace) query.set('place', state.selectedPlace);
     if (state.selectedIncident) query.set('event', state.selectedIncident);
@@ -83,6 +92,7 @@
     safeSet(storage, 'bm.scene', scene.id);
     safeSet(storage, 'bm.view', state.view);
     safeSet(storage, 'bm.person', state.selectedPerson);
+    safeSet(storage, 'bm.preferredPerson', preferredPerson);
     safeSet(storage, 'bm.faction', state.selectedFaction);
     safeSet(storage, 'bm.place', state.selectedPlace);
     safeSet(storage, 'bm.event', state.selectedIncident || '');

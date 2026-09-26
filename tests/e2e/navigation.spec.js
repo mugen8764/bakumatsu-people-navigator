@@ -202,9 +202,32 @@ test('the chosen person returns after the timeline leaves and re-enters their pe
   await expect(title).not.toHaveText('坂本龍馬');
   await expect(status).toContainText('選択中の坂本龍馬は1860〜1867年の時点に登場');
 
+  await expect(page).toHaveURL(/preferred=ryoma/);
+  await page.reload();
+  await expect(status).toContainText('坂本龍馬');
+  await expect(title).not.toHaveText('坂本龍馬');
+  // The main page's init script clears storage on every load. A fresh tab in
+  // the same context checks a stored visit without that test-only reset.
+  const storedVisit = await page.context().newPage();
+  try {
+    await storedVisit.goto('/');
+    await expect(storedVisit.locator('#sceneSelect')).toHaveValue('12');
+    await expect(storedVisit.locator('#selectionStatus')).toContainText('坂本龍馬');
+    await storedVisit.locator('#sceneSelect').selectOption('9');
+    await expect(storedVisit.locator('#personDetail .detail-title')).toHaveText('坂本龍馬');
+  } finally {
+    await storedVisit.close();
+  }
+
   await page.locator('#sceneSelect').selectOption('9');
   await expect(title).toHaveText('坂本龍馬');
   await expect(status).toBeHidden();
+
+  await page.goBack();
+  await expect(page.locator('#sceneSelect')).toHaveValue('12');
+  await expect(status).toContainText('坂本龍馬');
+  await page.goForward();
+  await expect(title).toHaveText('坂本龍馬');
 
   await page.locator('#sceneSelect').selectOption('14');
   await expect(status).toContainText('坂本龍馬');
@@ -214,6 +237,15 @@ test('the chosen person returns after the timeline leaves and re-enters their pe
   await expect(title).toHaveText('坂本龍馬');
   await expect(title).toBeFocused();
   await expect(status).toBeHidden();
+
+  // Choosing the displayed replacement explicitly clears the remembered person.
+  await page.locator('#sceneSelect').selectOption('12');
+  await page.locator('[data-person-card="yoshinobu"]').click();
+  await expect(status).toBeHidden();
+  await expect(page).not.toHaveURL(/preferred=/);
+  await page.reload();
+  await page.locator('#sceneSelect').selectOption('9');
+  await expect(title).not.toHaveText('坂本龍馬');
 });
 
 test('browser back and forward revisit deliberate person and view selections', crossBrowser, async ({ page }) => {
