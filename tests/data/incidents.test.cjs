@@ -16,7 +16,7 @@ test('incident context survives participant navigation and clears outside its sc
   stateApi.selectPerson(state, data, domain, 'kido');
   assert.equal(state.selectedIncident, '');
   state.selectedIncident = 'ikedaya';
-  state.selectedPerson = 'okita';
+  stateApi.choosePerson(state, 'okita');
   stateApi.setScene(state, data, 8);
   stateApi.ensureSelections(state, data, domain);
   assert.equal(state.selectedPerson, 'okita');

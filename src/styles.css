@@ -388,6 +388,7 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
 .scene-lens .insight{font-size:.75rem;padding:7px 9px}
 .top>.global-search{margin:0 15px 15px}
 .top>.navigation-status{margin:-5px 15px 15px}
+.navigation-status .link-button{color:var(--text);text-decoration:underline;text-underline-offset:3px}
 .tabs{position:sticky;top:0;z-index:12;background:var(--bg)}
 .tab-secondary{margin-left:auto}
 .source-disclosure{border-top:1px solid var(--border);padding-top:10px}

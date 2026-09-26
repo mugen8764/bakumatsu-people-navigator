@@ -86,10 +86,39 @@
       sceneRenderer.renderScene();
       sceneRenderer.renderTabs();
       renderActiveView();
+      renderSelectionStatus();
     });
     window.BM_ROUTER.writeRoute(state, scene(), environment, options);
     appliedLocation = window.location.href;
     requestAnimationFrame(revealActiveTab);
+  }
+
+  // Explains why the detail shows someone else while the chosen person is
+  // outside the selected period, and offers the nearest scene that has them.
+  function renderSelectionStatus() {
+    const status = $('#selectionStatus');
+    const preferred = domain.getPerson(state.preferredPerson);
+    if (!preferred || preferred.id === state.selectedPerson) {
+      status.hidden = true;
+      status.replaceChildren();
+      delete status.dataset.message;
+      return;
+    }
+    const nearest = domain.nearestSceneForPerson(preferred, state.scene);
+    const nearestScene = data.scenes[nearest];
+    const name = domain.statusAt(preferred, nearest).display;
+    const [firstYear, lastYear] = preferred.activeRange.map(index => data.scenes[index].year);
+    const period = firstYear === lastYear ? `${firstYear}年` : `${firstYear}〜${lastYear}年`;
+    const message = `選択中の${name}は${period}の時点に登場するため、この時点では表示していません。`;
+    if (status.dataset.message === `${message}${nearest}`) {
+      status.hidden = false;
+      return;
+    }
+    const esc = context.shared.escapeHtml;
+    status.dataset.message = `${message}${nearest}`;
+    status.innerHTML = `<span>${esc(message)}</span> <button type="button" class="link-button" data-preferred-scene="${nearest}">${esc(nearestScene.year)}年「${esc(nearestScene.title)}」の${esc(name)}へ</button>`;
+    status.querySelector('[data-preferred-scene]').addEventListener('click', event => setScene(event.currentTarget.dataset.preferredScene));
+    status.hidden = false;
   }
 
   function setScene(sceneIndex, options = {}) {
@@ -136,7 +165,11 @@
     searchController.clearStatus();
     state.scene = index;
     state.selectedIncident = incident?.id || '';
-    if (incident && !incident.participants.some(item => item.personId === state.selectedPerson)) state.selectedPerson = incident.participants[0].personId;
+    if (incident) {
+      const participantIds = new Set(incident.participants.map(item => item.personId));
+      const current = [state.preferredPerson, state.selectedPerson].find(personId => participantIds.has(personId));
+      window.BM_STATE.choosePerson(state, current || incident.participants[0].personId);
+    }
     state.view = 'events';
     window.BM_STATE.ensureSelections(state, data, domain);
     renderAll({ historyMode: 'push' });

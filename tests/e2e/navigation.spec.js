@@ -190,6 +190,32 @@ test('alias search and timeline changes preserve the selected person', crossBrow
   await expect(page.locator('#sceneSelect')).toHaveValue('11');
 });
 
+test('the chosen person returns after the timeline leaves and re-enters their period', crossBrowser, async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.goto('/#scene=1866-satcho&view=people&person=ryoma&faction=土佐藩');
+  const title = page.locator('#personDetail .detail-title');
+  const status = page.locator('#selectionStatus');
+  await expect(title).toHaveText('坂本龍馬');
+  await expect(status).toBeHidden();
+
+  await page.locator('#sceneSelect').selectOption('12');
+  await expect(title).not.toHaveText('坂本龍馬');
+  await expect(status).toContainText('選択中の坂本龍馬は1860〜1867年の時点に登場');
+
+  await page.locator('#sceneSelect').selectOption('9');
+  await expect(title).toHaveText('坂本龍馬');
+  await expect(status).toBeHidden();
+
+  await page.locator('#sceneSelect').selectOption('14');
+  await expect(status).toContainText('坂本龍馬');
+  await status.getByRole('button', { name: '1867年「大政奉還」の坂本龍馬へ' }).focus();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('#sceneSelect')).toHaveValue('11');
+  await expect(title).toHaveText('坂本龍馬');
+  await expect(title).toBeFocused();
+  await expect(status).toBeHidden();
+});
+
 test('browser back and forward revisit deliberate person and view selections', crossBrowser, async ({ page }) => {
   await page.goto('/');
   await page.locator('#globalSearch').fill('桂小五郎');

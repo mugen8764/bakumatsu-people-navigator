@@ -18,6 +18,9 @@
       scene: Number.isInteger(initial.scene) ? initial.scene : 0,
       view: views.has(initial.view) ? initial.view : 'people',
       selectedPerson: initial.selectedPerson || 'abe',
+      // The person the reader chose. Outside that person's period another
+      // active person is displayed, and the choice returns when the period does.
+      preferredPerson: initial.selectedPerson || 'abe',
       selectedFaction: initial.selectedFaction || '幕府',
       personFactionFilter: 'すべて',
       relationType: 'all',
@@ -31,7 +34,14 @@
     return state;
   }
 
+  function choosePerson(state, id) {
+    state.selectedPerson = id;
+    state.preferredPerson = id;
+  }
+
   function ensureSelections(state, data, domain) {
+    const preferred = domain.getPerson(state.preferredPerson);
+    if (preferred && domain.statusAt(preferred, state.scene)) state.selectedPerson = preferred.id;
     const incident = domain.incidentAt(state);
     if (!incident || !incident.participants.some(item => item.personId === state.selectedPerson)) state.selectedIncident = '';
     let person = domain.getPerson(state.selectedPerson);
@@ -39,6 +49,7 @@
       person = domain.activePeople(state.scene)[0];
       state.selectedPerson = person?.id || '';
     }
+    if (!preferred) state.preferredPerson = state.selectedPerson;
     const factions = domain.activeFactionNames(state.scene);
     if (!factions.includes(state.selectedFaction)) state.selectedFaction = factions[0] || '幕府';
     // Navigation must leave a visible return destination. Explicit filter clicks
@@ -59,7 +70,7 @@
   function applyRoute(state, data, route) {
     if (route.scene !== undefined) setScene(state, data, route.scene);
     if (route.view !== undefined && views.has(route.view)) state.view = route.view;
-    if (route.selectedPerson !== undefined) state.selectedPerson = route.selectedPerson;
+    if (route.selectedPerson !== undefined) choosePerson(state, route.selectedPerson);
     if (route.selectedIncident !== undefined) state.selectedIncident = hasEntry(data.incidents || {}, route.selectedIncident) ? route.selectedIncident : '';
     if (route.selectedFaction !== undefined) state.selectedFaction = route.selectedFaction;
     if (route.selectedPlace !== undefined) state.selectedPlace = hasEntry(data.places, route.selectedPlace) ? route.selectedPlace : '';
@@ -69,7 +80,7 @@
     const person = domain.getPerson(id);
     if (!person) return false;
     state.scene = domain.nearestSceneForPerson(person, state.scene);
-    state.selectedPerson = id;
+    choosePerson(state, id);
     const faction = domain.statusAt(person, state.scene)?.faction;
     if (domain.activeFactionNames(state.scene).includes(faction)) state.selectedFaction = faction;
     ensureSelections(state, data, domain);
@@ -80,10 +91,11 @@
     if (!hasEntry(data.factions, name)) return false;
     state.scene = domain.nearestSceneForFaction(name, state.scene);
     state.selectedFaction = name;
-    const selectedPerson = domain.getPerson(state.selectedPerson);
-    if (!selectedPerson || domain.factionAt(selectedPerson, state.scene) !== name) {
-      state.selectedPerson = domain.activePeople(state.scene)
-        .find(person => domain.factionAt(person, state.scene) === name)?.id || state.selectedPerson;
+    ensureSelections(state, data, domain);
+    const displayed = domain.getPerson(state.selectedPerson);
+    if (!displayed || domain.factionAt(displayed, state.scene) !== name) {
+      const member = domain.activePeople(state.scene).find(person => domain.factionAt(person, state.scene) === name);
+      if (member) choosePerson(state, member.id);
     }
     ensureSelections(state, data, domain);
     return true;
@@ -92,7 +104,7 @@
   function resetState(state, data, domain) {
     setScene(state, data, 0);
     state.view = 'people';
-    state.selectedPerson = 'abe';
+    choosePerson(state, 'abe');
     state.selectedFaction = '幕府';
     state.personFactionFilter = 'すべて';
     state.relationType = 'all';
@@ -104,5 +116,5 @@
     ensureSelections(state, data, domain);
   }
 
-  return { applyRoute, createState, ensureSelections, resetState, selectFaction, selectPerson, setScene, views };
+  return { applyRoute, choosePerson, createState, ensureSelections, resetState, selectFaction, selectPerson, setScene, views };
 }));

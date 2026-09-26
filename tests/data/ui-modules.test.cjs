@@ -88,6 +88,28 @@ test('navigation reconciles hidden selections but keeps a compatible person filt
   assert.equal(state.personFactionFilter, 'すべて');
 });
 
+test('a chosen person returns when the timeline comes back to their period', () => {
+  const state = stateApi.createState(data, domain, { scene: 9, selectedPerson: 'ryoma' });
+  const ryoma = domain.getPerson('ryoma');
+  const afterRyoma = ryoma.activeRange[1] + 1;
+  stateApi.setScene(state, data, afterRyoma);
+  stateApi.ensureSelections(state, data, domain);
+  assert.notEqual(state.selectedPerson, 'ryoma');
+  assert.equal(state.preferredPerson, 'ryoma');
+
+  stateApi.setScene(state, data, 9);
+  stateApi.ensureSelections(state, data, domain);
+  assert.equal(state.selectedPerson, 'ryoma');
+
+  stateApi.setScene(state, data, afterRyoma);
+  stateApi.ensureSelections(state, data, domain);
+  const standIn = state.selectedPerson;
+  assert.equal(stateApi.selectPerson(state, data, domain, standIn), true);
+  stateApi.setScene(state, data, 9);
+  stateApi.ensureSelections(state, data, domain);
+  assert.equal(state.preferredPerson, standIn);
+});
+
 test('initial route prefers valid hash values and tolerates blocked storage', () => {
   const blockedStorage = { getItem() { throw new Error('blocked'); } };
   const route = router.readInitialRoute(data, domain, {

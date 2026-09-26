@@ -183,3 +183,15 @@ test('keyboard selection keeps focus on the redrawn control or the new detail', 
   await expect(page.locator('#relationGraph .graph-person.selected')).toHaveAttribute('data-graph-person', 'nariaki');
   await expect(page.locator('#relationGraph .graph-person.selected')).toBeFocused();
 });
+
+for (const colorScheme of ['light', 'dark']) {
+  test(`the out-of-period selection notice is accessible at 320px (${colorScheme})`, async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 780 });
+    await page.emulateMedia({ colorScheme });
+    await page.goto('/#scene=1868-toba&view=people&person=ryoma');
+    await expect(page.locator('#selectionStatus')).toBeVisible();
+    expect(await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth)).toBe(false);
+    const accessibility = await new AxeBuilder({ page }).include('#selectionStatus').withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
+    expect(accessibility.violations).toEqual([]);
+  });
+}
