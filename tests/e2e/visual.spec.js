@@ -16,7 +16,7 @@ async function prepare(page, { width, height, colorScheme }) {
   await page.addStyleTag({
     content: '*,*::before,*::after{animation:none!important;transition:none!important;caret-color:transparent!important}.tabs-shell{transform:translateZ(0)!important}'
   });
-  await expect(page.locator('#personDetail .detail-title')).toHaveText('木戸孝允');
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('木戸準一郎');
   await settle(page);
 }
 

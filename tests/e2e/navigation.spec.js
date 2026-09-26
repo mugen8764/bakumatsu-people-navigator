@@ -180,14 +180,14 @@ test('alias search and timeline changes preserve the selected person', crossBrow
   await expect(page.locator('#navigationStatus')).toContainText('1853年から1858年「通商条約・将軍継嗣・安政の大獄」へ移動しました');
   await expect(page).toHaveURL(/person=kido/);
 
-  await page.locator('#sceneSelect').selectOption('11');
+  await page.locator('#sceneSelect').selectOption('13');
   await expect(page.locator('#navigationStatus')).toBeHidden();
   await expect(page.locator('#personDetail .detail-title')).toHaveText('木戸孝允');
-  await expect(page).toHaveURL(/scene=1867-taisei/);
+  await expect(page).toHaveURL(/scene=1868-edo/);
 
   await page.reload();
   await expect(page.locator('#personDetail .detail-title')).toHaveText('木戸孝允');
-  await expect(page.locator('#sceneSelect')).toHaveValue('11');
+  await expect(page.locator('#sceneSelect')).toHaveValue('13');
 });
 
 test('the chosen person returns after the timeline leaves and re-enters their period', crossBrowser, async ({ page }) => {

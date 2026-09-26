@@ -38,9 +38,23 @@ test('a sparse status carries forward until the next explicit status', () => {
   assert.equal(domain.statusAt(kido, 2).display, '桂小五郎');
   assert.equal(domain.statusAt(kido, 3).display, '桂小五郎');
   assert.equal(domain.statusAt(kido, 10).display, '木戸準一郎');
-  assert.equal(domain.statusAt(kido, 11).display, '木戸孝允');
+  assert.equal(domain.statusAt(kido, 11).display, '木戸準一郎');
   assert.equal(domain.statusAt(kido, 12).faction, '新政府');
+  assert.equal(domain.statusAt(kido, 12).display, '木戸準一郎');
+  assert.equal(domain.statusAt(kido, 13).display, '木戸孝允');
   assert.equal(domain.statusAt(kido, 15).display, '木戸孝允');
+});
+
+// A display name that returns after a different one is usually a data slip.
+// Only documented returns, such as Saigo's exile aliases, are allowed.
+test('display names do not return to an earlier name without a documented reason', () => {
+  const documentedReturns = new Set(['saigo']);
+  const returning = data.people.filter(person => {
+    const names = data.scenes.map((scene, index) => domain.statusAt(person, index)?.display).filter(Boolean);
+    return names.some((name, index) => index > 0 && name !== names[index - 1] && names.slice(0, index - 1).includes(name));
+  }).map(person => person.id);
+  assert.deepEqual(returning.filter(id => !documentedReturns.has(id)), []);
+  assert.ok(returning.includes('saigo'));
 });
 
 test('scene changes expose status and relation transitions without inventing new records', () => {

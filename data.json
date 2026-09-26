@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.73",
-    "updated": "2026-09-25"
+    "version": "1.0.74",
+    "updated": "2026-09-26"
   },
   "sources": {
     "archives_timeline": {
@@ -637,7 +637,9 @@
     "jacar_kido_ito_1868_appointments": {
       "title": "アジア歴史資料センター「木戸孝允外三名ヲ総裁局顧問以下ニ任命」",
       "url": "https://www.jacar.archives.go.jp/das/meta/A15070197600",
-      "note": "1868年1月25日、木戸準一郎を総裁局顧問に、伊藤俊介を徴士参与・外国事務掛に任じ、伊藤には兵庫在留を命じた太政類典の記録。"
+      "note": "1868年1月25日、木戸準一郎を総裁局顧問に、伊藤俊介を徴士参与・外国事務掛に任じ、伊藤には兵庫在留を命じた太政類典の記録。",
+      "locator": "目録の「内容」欄（木戸準一郎総裁局顧問被仰出候事）",
+      "contentCheckedAt": "2026-09-26"
     },
     "ndl_portrait_kido_detail": {
       "title": "国立国会図書館「近代日本人の肖像・木戸孝允」",
@@ -10032,7 +10034,7 @@
         },
         "1868-toba": {
           "display": "西郷隆盛",
-          "role": "新政府参与・東征大総督下参謀",
+          "role": "新政府参与",
           "faction": "新政府",
           "stance": "1867年に参与となり、1868年には東征大総督下参謀として江戸へ進む。",
           "importance": "東征過程で勝海舟と交渉し、江戸城開城に関わった。",
@@ -11051,13 +11053,14 @@
           }
         },
         "1867-taisei": {
-          "display": "木戸孝允",
-          "role": "木戸準一郎・長州藩政担当",
+          "display": "木戸準一郎",
+          "role": "長州藩政担当",
           "stance": "長州藩の重職として、藩論を討幕へ導く。",
           "importance": "前年の薩長連合後、長州藩の政務を担う立場にあった。",
           "evidence": {
             "sourceIds": [
               "kyoto_kido_1862",
+              "jacar_kido_ito_1868_appointments",
               "ndl_portrait_kido_detail",
               "yamaguchi_kido_guide"
             ],
