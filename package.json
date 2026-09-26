@@ -11,6 +11,7 @@
     "build:data": "node scripts/build-data.cjs",
     "build:sources": "node scripts/build-sources-doc.cjs",
     "build:site": "npm run check:release && node scripts/build-site.cjs",
+    "content:prepare": "node scripts/prepare-content.cjs",
     "check:data": "node scripts/build-data.cjs --check",
     "check:docs": "node scripts/check-doc-stats.cjs",
     "check:links": "node scripts/check-links.cjs",

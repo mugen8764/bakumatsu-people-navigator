@@ -16,8 +16,7 @@ function browserWrapper(data) {
   return `window.BM_DATA=JSON.parse(${JSON.stringify(JSON.stringify(data))});\n`;
 }
 
-function expectedOutputs() {
-  const documents = loadV2Documents(root);
+function expectedOutputs(documents = loadV2Documents(root)) {
   validateV2Documents(documents);
   const legacyData = assembleLegacyData(documents);
   validateCurrentData(legacyData);

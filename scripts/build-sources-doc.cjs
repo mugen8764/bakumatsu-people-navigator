@@ -37,8 +37,7 @@ function renderCatalog(sources) {
   ].join('\n');
 }
 
-function loadSources() {
-  const document = JSON.parse(fs.readFileSync(sourcesPath, 'utf8'));
+function loadSources(document = JSON.parse(fs.readFileSync(sourcesPath, 'utf8'))) {
   if (!Array.isArray(document.sources)) throw new Error('data/sources.json must contain a sources array.');
 
   for (const [index, source] of document.sources.entries()) {
@@ -95,4 +94,4 @@ function run() {
 
 if (require.main === module) run();
 
-module.exports = { expectedDocument, renderCatalog };
+module.exports = { expectedDocument, loadSources, renderCatalog };

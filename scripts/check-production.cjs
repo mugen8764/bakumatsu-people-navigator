@@ -1,47 +1,16 @@
 const fs = require('node:fs');
 const crypto = require('node:crypto');
 const path = require('node:path');
+const { productionConfig } = require('./lib/production-config.cjs');
 
 const root = path.resolve(__dirname, '..');
 const publicUrl = new URL(process.env.PRODUCTION_URL || 'https://bakumatsu-people-navigator.pages.dev/');
 const waitForDeployment = process.argv.includes('--wait');
 const attempts = waitForDeployment ? 24 : 1;
 const intervalMs = 10_000;
-const files = [
-  'index.html',
-  'data/manifest.json',
-  'data.js',
-  'data.json',
-  'og-image.png',
-  'src/app.js',
-  'src/domain.js',
-  'src/renderers/people.js',
-  'src/renderers/factions.js',
-  'src/renderers/relations.js',
-  'src/state.js',
-  'src/router.js',
-  'src/search.js',
-  'src/map.js',
-  'src/renderers/shared.js',
-  'src/renderers/scene.js',
-  'src/renderers/events.js',
-  'src/styles.css'
-];
-const portraits = JSON.parse(fs.readFileSync(path.join(root, 'data.json'), 'utf8')).people
-  .filter(person => person.portrait).map(person => person.portrait.src);
-files.push(...new Set(portraits));
-const requiredHeaders = [
-  'content-security-policy',
-  'permissions-policy',
-  'referrer-policy',
-  'x-content-type-options'
-];
-const requiredCacheControls = new Map([
-  ['data.js', 'no-cache'],
-  ['src/app.js', 'no-cache'],
-  ['og-image.png', 'max-age=86400']
-]);
-portraits.forEach(file => requiredCacheControls.set(file, 'no-cache'));
+const { files, requiredHeaders, requiredCacheControls } = productionConfig(
+  JSON.parse(fs.readFileSync(path.join(root, 'data.json'), 'utf8')).people
+);
 // data.js is plain JSON text; the transfer budget relies on HTTP compression.
 const compressedFiles = new Set(['data.js']);
 
