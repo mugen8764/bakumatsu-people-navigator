@@ -4,6 +4,33 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const definiteFailures = new Set([404, 410]);
 const retryableStatuses = new Set([408, 425, 429]);
+const usage = 'npm run check:links -- [--source SOURCE_ID ...] [--list]';
+
+function parseOptions(args) {
+  const options = { sourceIds: [], list: false, help: false };
+  for (let index = 0; index < args.length; index += 1) {
+    const [flag, inline] = args[index].split(/=(.*)/s);
+    if (flag === '--source') {
+      const id = inline ?? args[++index];
+      if (!id || id.startsWith('--')) throw new Error('--source requires a source ID.');
+      options.sourceIds.push(id);
+    } else if ((flag === '--list' || flag === '--help') && inline === undefined) {
+      options[flag.slice(2)] = true;
+    } else {
+      throw new Error(`Unknown option: ${args[index]}\n${usage}`);
+    }
+  }
+  return options;
+}
+
+function selectSources(sources, sourceIds) {
+  if (!sourceIds.length) return sources;
+  const byId = new Map(sources.map(source => [source.id, source]));
+  const ids = [...new Set(sourceIds)];
+  const unknown = ids.filter(id => !byId.has(id));
+  if (unknown.length) throw new Error(`Unknown source IDs: ${unknown.join(', ')}`);
+  return ids.map(id => byId.get(id));
+}
 
 function classifyStatus(status) {
   if (status >= 200 && status < 400) return 'ok';
@@ -80,27 +107,45 @@ async function mapWithConcurrency(items, concurrency, mapper) {
   return results;
 }
 
-async function main() {
-  const { sources } = JSON.parse(fs.readFileSync(path.join(root, 'data/sources.json'), 'utf8'));
-  const results = await mapWithConcurrency(sources, 3, checkSource);
+async function main(args = process.argv.slice(2), dependencies = {}) {
+  const options = parseOptions(args);
+  const logger = dependencies.logger || console;
+  if (options.help) {
+    logger.log(`${usage}\nOmit --source to check all sources. Repeat --source for multiple IDs.\n--list shows the selected IDs and URLs without making requests.`);
+    return 0;
+  }
+  const sources = dependencies.sources || JSON.parse(fs.readFileSync(path.join(root, 'data/sources.json'), 'utf8')).sources;
+  // Resolve every ID before making any request; typos must not expand the scope.
+  const selected = selectSources(sources, options.sourceIds);
+  if (options.list) {
+    for (const source of selected) logger.log(`SOURCE ${source.id} ${source.url}`);
+    logger.log(`Selected ${selected.length} sources. No requests made.`);
+    return 0;
+  }
+  const results = await mapWithConcurrency(selected, 3, dependencies.checkSource || checkSource);
   for (const result of results) {
     const status = result.status || '-';
     const detail = result.message || result.url;
     const label = result.outcome === 'ok' ? 'OK' : result.outcome === 'broken' ? 'BROKEN' : 'WARN';
     const output = `${label} ${status} ${result.id} ${detail}`;
-    if (result.outcome === 'ok') console.log(output);
-    else if (result.outcome === 'broken') console.error(output);
-    else console.warn(output);
+    if (result.outcome === 'ok') logger.log(output);
+    else if (result.outcome === 'broken') logger.error(output);
+    else logger.warn(output);
   }
 
   const totals = results.reduce((counts, result) => {
     counts[result.outcome] += 1;
     return counts;
   }, { ok: 0, warning: 0, broken: 0 });
-  console.log(`SUMMARY ok=${totals.ok} warning=${totals.warning} broken=${totals.broken}`);
-  if (totals.broken) process.exitCode = 1;
+  logger.log(`SUMMARY ok=${totals.ok} warning=${totals.warning} broken=${totals.broken}`);
+  return totals.broken ? 1 : 0;
 }
 
-if (require.main === module) main();
+if (require.main === module) {
+  main().then(code => { process.exitCode = code; }).catch(error => {
+    console.error(`- ${error.message}`);
+    process.exitCode = 1;
+  });
+}
 
-module.exports = { checkSource, classifyStatus, mapWithConcurrency, shouldRetry };
+module.exports = { checkSource, classifyStatus, main, mapWithConcurrency, parseOptions, selectSources, shouldRetry };
