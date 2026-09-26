@@ -1,3 +1,4 @@
+const { gzipSync } = require('node:zlib');
 const { expect, test } = require('@playwright/test');
 
 // One case per first-paint placeholder range in src/styles.css.
@@ -27,23 +28,32 @@ test(`delayed historical data does not cause a large initial layout shift at ${l
 });
 }
 
-test('initial page stays within the static asset budget', async ({ page }) => {
+test('initial page stays within the static asset budget', async ({ page, request }) => {
   await page.goto('/');
   await expect(page.locator('html')).not.toHaveClass(/app-loading/);
 
   const metrics = await page.evaluate(() => {
     const resources = performance.getEntriesByType('resource');
     return {
-      decodedBytes: resources.reduce((sum, entry) => sum + entry.decodedBodySize, 0),
-      names: resources.map(entry => new URL(entry.name).pathname),
+      urls: [location.href.split('#')[0], ...resources.map(entry => entry.name)],
       scriptCount: resources.filter(entry => entry.initiatorType === 'script').length
     };
   });
-  const dataPath = metrics.names.find(path => path.endsWith('/data.js'));
-  expect(dataPath).toBeTruthy();
-  expect(metrics.names.some(path => path.endsWith('/data.json'))).toBe(false);
+  const names = metrics.urls.map(url => new URL(url).pathname);
+  expect(names.some(path => path.endsWith('/data.js'))).toBe(true);
+  expect(names.some(path => path.endsWith('/data.json'))).toBe(false);
   expect(metrics.scriptCount).toBeLessThanOrEqual(14);
-  expect(metrics.decodedBytes).toBeLessThan(550_000);
+
+  // Static hosts send text with HTTP compression, so the budget counts what a
+  // first visit downloads: gzip bytes for text and delivered bytes for images.
+  let transferBytes = 0;
+  for (const url of metrics.urls) {
+    const response = await request.get(url);
+    const body = await response.body();
+    const compressible = /^(text\/|application\/(javascript|json)|image\/svg\+xml)/.test(response.headers()['content-type'] || '');
+    transferBytes += compressible ? gzipSync(body).length : body.length;
+  }
+  expect(transferBytes).toBeLessThan(340_000);
 });
 
 // The placeholders in src/styles.css must reserve what the loaded page takes.

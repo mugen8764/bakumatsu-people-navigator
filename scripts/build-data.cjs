@@ -6,57 +6,14 @@ const { validateCurrentData, validateV2Documents } = require('./validate-data.cj
 
 const root = path.resolve(__dirname, '..');
 
-// LZW-compress the JSON text in bounded blocks. The dictionary starts with the
-// text's UTF-16 code units, so Japanese prose compresses along with JSON keys.
-// Each code is stored as one Unicode scalar, offset past ASCII and skipping
-// surrogates: adjacent surrogate values must never merge during UTF-8 storage.
-// Resetting every 262144 units bounds codes below 65536 + 262144, comfortably
-// inside the scalar range even for input containing every UTF-16 code unit.
-// Decoding is synchronous, needs no network/decompression API, and JSON.parse
-// preserves literal arrays, __proto__ keys and independent mutable objects.
+// data.js stays a classic script so the site also opens from file:// without
+// fetch. The JSON text is embedded as a string literal for JSON.parse, which
+// engines parse faster than an equivalent object literal and which keeps JSON
+// semantics: an own "__proto__" key stays data and no objects are shared.
+// Transfer size is left to the host's HTTP compression (gzip/brotli), which
+// shrinks plain JSON further than any pre-encoding the browser must undo.
 function browserWrapper(data) {
-  const text = JSON.stringify(data);
-  const symbols = [...new Set(text.split(''))];
-  const blocks = [];
-  for (let offset = 0; offset < text.length; offset += 262144) {
-    const input = text.slice(offset, offset + 262144);
-    const dictionary = new Map(symbols.map((symbol, index) => [symbol, index]));
-    const codes = [];
-    let word = '';
-    for (let index = 0; index < input.length; index++) {
-      const symbol = input[index];
-      const next = word + symbol;
-      if (dictionary.has(next)) word = next;
-      else {
-        codes.push(dictionary.get(word));
-        dictionary.set(next, dictionary.size);
-        word = symbol;
-      }
-    }
-    if (word) codes.push(dictionary.get(word));
-    blocks.push(codes.map(code => {
-      const scalar = code + 256;
-      return String.fromCodePoint(scalar >= 0xd800 ? scalar + 2048 : scalar);
-    }).join(''));
-  }
-  function restore(alphabet, encodedBlocks) {
-    const output = [];
-    for (const block of encodedBlocks) {
-      const dictionary = alphabet.slice();
-      let word = '';
-      for (const symbol of block) {
-        const scalar = symbol.codePointAt(0);
-        const code = scalar - (scalar >= 0xe000 ? 2304 : 256);
-        const value = dictionary[code] ?? word + word[0];
-        output.push(value);
-        if (word) dictionary.push(word + value[0]);
-        word = value;
-      }
-    }
-    return JSON.parse(output.join(''));
-  }
-  return 'window.BM_DATA=(' + restore.toString() + ')('
-    + JSON.stringify(symbols) + ',' + JSON.stringify(blocks) + ');\n';
+  return `window.BM_DATA=JSON.parse(${JSON.stringify(JSON.stringify(data))});\n`;
 }
 
 function expectedOutputs() {

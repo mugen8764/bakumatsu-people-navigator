@@ -42,6 +42,8 @@ const requiredCacheControls = new Map([
   ['og-image.png', 'max-age=86400']
 ]);
 portraits.forEach(file => requiredCacheControls.set(file, 'no-cache'));
+// data.js is plain JSON text; the transfer budget relies on HTTP compression.
+const compressedFiles = new Set(['data.js']);
 
 function digest(value) {
   return crypto.createHash('sha256').update(value).digest('hex');
@@ -80,6 +82,9 @@ async function inspect(attempt) {
       const expectedCacheControl = requiredCacheControls.get(file);
       if (expectedCacheControl && !response.headers.get('cache-control')?.includes(expectedCacheControl)) {
         failures.push(`${file}: production cache-control is missing ${expectedCacheControl}`);
+      }
+      if (compressedFiles.has(file) && !response.headers.get('content-encoding')) {
+        failures.push(`${file}: production is served without HTTP compression`);
       }
     } catch (error) {
       failures.push(error.message);
