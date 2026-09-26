@@ -33,12 +33,14 @@
     const { location, storage } = environment;
     const hash = hashParams(location);
     const storedScene = safeGet(storage, 'bm.scene');
-    const eventId = hash.size ? (hash.get('event') || '') : (safeGet(storage, 'bm.event') || '');
+    // URLSearchParams.size needs Safari 17, so count the keys instead.
+    const hasHash = [...hash.keys()].length > 0;
+    const eventId = hasHash ? (hash.get('event') || '') : (safeGet(storage, 'bm.event') || '');
     const incident = Object.hasOwn(data.incidents || {}, eventId) ? data.incidents[eventId] : null;
     return {
       scene: sceneIndex(domain.sceneById, hash.get('scene') || incident?.sceneId || storedScene) ?? 0,
-      view: hash.get('view') || (hash.size && incident ? 'events' : safeGet(storage, 'bm.view')) || 'people',
-      selectedPerson: hash.get('person') || (hash.size && incident ? incident.participants[0].personId : safeGet(storage, 'bm.person')) || 'abe',
+      view: hash.get('view') || (hasHash && incident ? 'events' : safeGet(storage, 'bm.view')) || 'people',
+      selectedPerson: hash.get('person') || (hasHash && incident ? incident.participants[0].personId : safeGet(storage, 'bm.person')) || 'abe',
       selectedIncident: eventId,
       selectedFaction: hash.get('faction') || safeGet(storage, 'bm.faction') || '幕府',
       selectedPlace: hash.get('place') || safeGet(storage, 'bm.place') || ''

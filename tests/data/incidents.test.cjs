@@ -61,3 +61,24 @@ test('incident contracts reject unknown cast, incompatible chronology and invent
     assert.throws(() => validateV2Documents(documents));
   }
 });
+
+test('incident links open on browsers without URLSearchParams.size', () => {
+  // Safari before 17 lacks the size accessor; an incident link must not fall
+  // back to the stored incident there.
+  const descriptor = Object.getOwnPropertyDescriptor(URLSearchParams.prototype, 'size');
+  delete URLSearchParams.prototype.size;
+  try {
+    const storage = { getItem: key => ({ 'bm.event': 'teradaya-1866', 'bm.view': 'people', 'bm.person': 'abe' })[key] ?? null };
+    const shared = router.readInitialRoute(data, domain, {
+      location: { hash: '#scene=1864-kinmon&view=events&person=kondo&event=ikedaya' },
+      storage
+    });
+    assert.equal(shared.selectedIncident, 'ikedaya');
+    const bare = router.readInitialRoute(data, domain, { location: { hash: '#event=ikedaya' }, storage });
+    assert.equal(bare.selectedIncident, 'ikedaya');
+    assert.equal(bare.view, 'events');
+    assert.equal(bare.selectedPerson, 'kondo');
+  } finally {
+    Object.defineProperty(URLSearchParams.prototype, 'size', descriptor);
+  }
+});
