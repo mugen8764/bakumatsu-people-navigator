@@ -1,4 +1,4 @@
-const { expect, test } = require('@playwright/test');
+const { expect, test } = require('../support/test.cjs');
 
 async function settle(page) {
   await page.evaluate(async () => {

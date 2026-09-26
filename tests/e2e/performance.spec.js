@@ -1,5 +1,5 @@
 const { gzipSync } = require('node:zlib');
-const { expect, test } = require('@playwright/test');
+const { expect, test } = require('../support/test.cjs');
 
 // One case per first-paint placeholder range in src/styles.css.
 for (const [label, width] of [['desktop', 1280], ['tablet', 600], ['mobile', 320]]) {

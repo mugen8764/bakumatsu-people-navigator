@@ -1,4 +1,4 @@
-const { expect, test } = require('@playwright/test');
+const { expect, test } = require('../support/test.cjs');
 const AxeBuilder = require('@axe-core/playwright').default;
 
 test('Hokuetsu links negotiators, comparison and the distinct Ojiya meeting place', { tag: '@cross-browser' }, async ({ page }) => {

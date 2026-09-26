@@ -1,4 +1,4 @@
-const { expect, test } = require('@playwright/test');
+const { expect, test } = require('../support/test.cjs');
 const data = require('../../data.json');
 
 for (const [reviewStatus, label] of [['needs_review', '出典校正中'], ['disputed', '諸説あり']]) {

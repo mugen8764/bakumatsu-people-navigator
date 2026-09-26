@@ -1,4 +1,4 @@
-const { expect, test } = require('@playwright/test');
+const { expect, test } = require('../support/test.cjs');
 const AxeBuilder = require('@axe-core/playwright').default;
 
 test('Shimonoseki connects aliases, event roles, comparisons, reload and map', { tag: '@cross-browser' }, async ({ page }) => {

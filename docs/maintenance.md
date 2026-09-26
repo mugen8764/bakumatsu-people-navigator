@@ -70,6 +70,8 @@ Bashでは `STATIC_SITE_ROOT=dist PLAYWRIGHT_ALL_BROWSERS=1 npm test` と指定�
 
 Chromiumは対象の全検査、Firefox・WebKitは `@cross-browser` の主要操作を実行します。設定の正本は [playwright.config.cjs](../playwright.config.cjs) です。CIではLinux上で3ブラウザーを準備し、`STATIC_SITE_ROOT=dist` を指定します。
 
+ブラウザー検査は `@playwright/test` ではなく [tests/support/test.cjs](../tests/support/test.cjs) から `test` と `expect` を読み込みます。未捕捉のページエラーでテストを失敗させ、失敗時にはコンソールエラーを添付します。アプリは起動時の例外を捕捉して共通のエラー表示にするため、原因はこの添付で確認します。
+
 ### 画像・アクセシビリティ・容量
 
 画像スナップショットの正本はWindowsです。差分画像を見て意図した変更と確認できた場合だけ更新します。

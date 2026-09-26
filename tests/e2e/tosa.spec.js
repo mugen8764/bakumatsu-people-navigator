@@ -1,4 +1,4 @@
-const { expect, test } = require('@playwright/test');
+const { expect, test } = require('../support/test.cjs');
 const AxeBuilder = require('@axe-core/playwright').default;
 
 test('Tosa imprisonment connects the trial roles with an earlier turning point', { tag: '@cross-browser' }, async ({ page }) => {

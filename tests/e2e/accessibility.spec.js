@@ -1,5 +1,5 @@
 const AxeBuilder = require('@axe-core/playwright').default;
-const { expect, test } = require('@playwright/test');
+const { expect, test } = require('../support/test.cjs');
 
 test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => localStorage.clear());

@@ -1,4 +1,4 @@
-const { expect, test } = require('@playwright/test');
+const { expect, test } = require('../support/test.cjs');
 const AxeBuilder = require('@axe-core/playwright').default;
 
 test('Hakodate connects military and medical roles, uncertain biography, map and comparisons', { tag: '@cross-browser' }, async ({ page }) => {

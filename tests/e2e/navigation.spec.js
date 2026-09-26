@@ -4,7 +4,7 @@ function readBrowserData(script) {
   vm.runInNewContext(script, context);
   return JSON.parse(JSON.stringify(context.window.BM_DATA));
 }
-const { expect, test } = require('@playwright/test');
+const { expect, test } = require('../support/test.cjs');
 const crossBrowser = { tag: '@cross-browser' };
 
 test.beforeEach(async ({ page }) => {

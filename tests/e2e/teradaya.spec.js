@@ -1,4 +1,4 @@
-const { expect, test } = require('@playwright/test');
+const { expect, test } = require('../support/test.cjs');
 const AxeBuilder = require('@axe-core/playwright').default;
 
 test('Teradaya search separates two years and preserves help, sources and map context', { tag: '@cross-browser' }, async ({ page }) => {
