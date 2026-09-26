@@ -724,8 +724,8 @@ test('data that looks like markup is displayed as text', async ({ page }) => {
 
 test('the scene at-a-glance total does not depend on how many chips fit', async ({ page }) => {
   const counts = async () => page.evaluate(() => ({
-    peopleLabel: document.querySelector('#sceneQuickPeople .scene-quick-more')?.textContent ?? '',
-    factionLabel: document.querySelector('#sceneQuickFactions .scene-quick-more')?.textContent ?? ''
+    peopleLabel: document.querySelector('#sceneQuickPeopleTotal')?.textContent ?? '',
+    factionLabel: document.querySelector('#sceneQuickFactionsTotal')?.textContent ?? ''
   }));
 
   await page.setViewportSize({ width: 320, height: 780 });
@@ -740,6 +740,28 @@ test('the scene at-a-glance total does not depend on how many chips fit', async 
   expect(narrow).toEqual({ peopleLabel: '全14人', factionLabel: '全5勢力' });
   expect(wide).toEqual(narrow);
 });
+
+for (const width of [320, 1024]) {
+  test(`every scene shows its at-a-glance names in full at ${width}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 780 });
+    await page.goto('/');
+    await expect(page.locator('html')).not.toHaveClass(/app-loading/);
+    const sceneIds = await page.evaluate(() => window.BM_DATA.scenes.map(scene => scene.id));
+    for (const sceneId of sceneIds) {
+      await page.evaluate(id => { location.hash = `scene=${id}&view=people`; }, sceneId);
+      await expect(page.locator('#sceneSelect option:checked')).toHaveAttribute('value', String(sceneIds.indexOf(sceneId)));
+      const hidden = await page.locator('.scene-quick-link').evaluateAll(chips => chips
+        .filter(chip => {
+          const label = chip.querySelector('span');
+          const chipBox = chip.getBoundingClientRect();
+          const rowBox = chip.parentElement.getBoundingClientRect();
+          return !chip.checkVisibility() || label.scrollWidth > label.clientWidth || chipBox.right > rowBox.right + 1;
+        })
+        .map(chip => chip.textContent));
+      expect(hidden, sceneId).toEqual([]);
+    }
+  });
+}
 
 test('a disputed item is labelled 諸説あり rather than 出典校正中', async ({ page }) => {
   // No record carries this status today, so the badge only stays working if a

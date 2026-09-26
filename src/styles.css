@@ -318,7 +318,7 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
   .footer-links{margin-top:8px}
 }
 @media(max-width:680px){
-  .app-loading .top{min-height:522px}
+  .app-loading .top{min-height:527px}
   .app-loading #view-people{min-height:2582px}
   .app-loading #personCards{min-height:1207px}
 }
@@ -328,7 +328,7 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
   .counts{grid-column:auto}
 }
 @media(max-width:430px){
-  .app-loading .top{min-height:552px}
+  .app-loading .top{min-height:574px}
   .app-loading #view-people{min-height:3864px}
   .app-loading #personCards{min-height:2376px}
 }
@@ -350,17 +350,22 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
 .eyebrow{display:block;color:var(--accent);font-size:.67rem;font-weight:850;letter-spacing:.12em;text-transform:uppercase}
 .scene-overview{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:8px;margin:8px 15px 0;align-items:start}
 .scene-incidents{grid-column:1/-1;grid-row:2}
-.scene-at-glance{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr) minmax(260px,1.15fr);gap:8px}
-.scene-at-glance-group{min-width:0;border:1px solid var(--border);border-radius:12px;background:var(--card);padding:7px 9px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;align-items:center}
-.scene-at-glance-label{color:var(--accent);font-size:.65rem;font-weight:850;letter-spacing:.08em;white-space:nowrap}
-.scene-quick-links{min-width:0;display:flex;gap:5px;overflow:hidden}
-.scene-quick-link{min-width:24px;min-height:24px;border:0;border-radius:999px;background:var(--accent-soft);padding:3px 7px;display:flex;align-items:center;gap:5px;font-size:.69rem;font-weight:800}
+/* Labelled rows keep every name whole: chips wrap instead of shrinking. Wide
+   screens pair the cast with the factions so the list still starts on screen. */
+.scene-at-glance{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border:1px solid var(--border);border-radius:12px;background:var(--card)}
+.scene-at-glance-group{min-width:0;padding:6px 10px;display:grid;grid-template-columns:3.4rem minmax(0,1fr);gap:8px;align-items:center}
+.scene-at-glance-group+.scene-at-glance-group{border-left:1px solid var(--border)}
+.scene-at-glance .scene-quick-turn{grid-column:1/-1;border-left:0;border-top:1px solid var(--border)}
+.scene-at-glance-label{display:grid;gap:1px;color:var(--accent);font-size:.68rem;font-weight:850;line-height:1.2;letter-spacing:.08em;white-space:nowrap}
+.scene-quick-links{min-width:0;display:flex;flex-wrap:wrap;align-items:center;gap:5px}
+.scene-quick-link{max-width:100%;min-width:24px;min-height:24px;border:0;border-radius:999px;background:var(--accent-soft);padding:3px 8px;display:flex;align-items:center;gap:5px;font-size:.76rem;font-weight:800}
 .scene-quick-link i{width:7px;height:7px;border-radius:999px;flex:none}
 .scene-quick-link span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .scene-quick-link:hover{box-shadow:inset 0 0 0 1px var(--accent)}
 .scene-quick-link:focus-visible{position:relative;z-index:1}
-.scene-quick-more{display:none;color:var(--muted);font-size:.59rem;white-space:nowrap}
-.scene-quick-turn p{display:-webkit-box;overflow:hidden;margin:0;font-size:.72rem;line-height:1.45;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.scene-quick-more{color:var(--muted);font-size:.62rem;font-weight:600;letter-spacing:0}
+.scene-quick-more:empty{display:none}
+.scene-quick-turn p{display:-webkit-box;overflow:hidden;margin:0;font-size:.78rem;line-height:1.45;-webkit-box-orient:vertical;-webkit-line-clamp:2}
 .top>.progress{margin:8px 15px 0}
 .scene-lenses{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(300px,.75fr);gap:10px;padding:12px 15px}
 .scene-lens{min-width:0;border:1px solid var(--border);background:var(--card);border-radius:14px;padding:11px}
@@ -426,6 +431,8 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
 .line-sample.personal{background:var(--personal)}
 
 @media(max-width:1120px){
+  .scene-at-glance{grid-template-columns:minmax(0,1fr)}
+  .scene-at-glance-group+.scene-at-glance-group{border-left:0;border-top:1px solid var(--border)}
   .scene-controls{grid-template-columns:190px minmax(190px,1fr) auto}
   .scene-people{grid-template-columns:repeat(2,minmax(0,1fr))}
   .scene-lenses{grid-template-columns:minmax(0,1fr) minmax(280px,.7fr)}
@@ -447,6 +454,9 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
   .scene-controls{grid-template-columns:minmax(0,1fr);gap:8px;padding:11px}
   .scene-controls>label:first-child{grid-column:1}
   .timeline-control{grid-column:1;grid-row:2}
+  /* Directly under the scene select, the slider reads as the same timeline, so
+     its name stays for assistive technology while the board keeps its height. */
+  .timeline-label{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
   .scene-controls .transport{grid-column:1;grid-row:3}
   .scene-controls .timeline-step{flex:1}
   .scene-dashboard{grid-template-columns:82px minmax(0,1fr);gap:10px;padding:12px 11px 5px}
@@ -457,24 +467,25 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
   .scene-meta{flex-wrap:wrap}
   .scene-meta .counts{flex:1}
   .scene-copy-status{order:3;width:100%;max-width:none;text-align:left}
-  .scene-overview{display:block;position:relative;margin:8px 11px 0}
-  .scene-at-glance{grid-template-columns:minmax(0,.9fr) minmax(0,.9fr) minmax(0,1.4fr);gap:5px}
-  .scene-at-glance-group{display:block;padding:5px 6px}
-  .scene-at-glance-label{display:block;margin-bottom:3px;font-size:.58rem}
-  .scene-quick-links{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:3px;align-items:center}
-  .scene-quick-link{width:100%;padding:2px 5px;font-size:.61rem}
-  .scene-quick-link:nth-child(n+2){display:none}
-  .scene-quick-more{display:block}
-  .scene-quick-turn{padding-right:34px}
-  .scene-quick-turn p{font-size:.61rem;line-height:1.3;-webkit-line-clamp:2}
-  .scene-details:not([open]){position:absolute;top:5px;right:5px;border:0;background:transparent;overflow:visible}
+  .scene-overview{grid-template-columns:minmax(0,1fr);gap:0;margin:8px 11px 0}
+  .scene-at-glance{grid-row:1;grid-column:1}
+  .scene-at-glance-group{grid-template-columns:3.1rem minmax(0,1fr);gap:5px;padding:5px 7px}
+  /* The collapsed details toggle overlaps the end of the turning-point row. */
+  .scene-quick-turn{padding-right:36px}
+  .scene-at-glance-label{font-size:.65rem}
+  .scene-quick-links{gap:3px}
+  .scene-quick-link{gap:4px;padding:2px 6px;font-size:.72rem}
+  .scene-quick-more{font-size:.58rem}
+  .scene-quick-turn p{font-size:.74rem;line-height:1.4}
+  .scene-details:not([open]){grid-row:1;grid-column:1;align-self:end;justify-self:end;margin:0 6px 6px 0;border:0;background:transparent;overflow:visible}
   .scene-details:not([open])>summary{padding:0}
   .scene-details:not([open])>summary>span:first-child{display:none}
   .scene-details:not([open]) .scene-details-action{width:24px;height:24px;padding:0;display:grid;place-items:center}
   .scene-details:not([open]) .details-closed-copy{font-size:0}
   .scene-details:not([open]) .details-closed-copy:after{content:"＋";font-size:.78rem}
-  .scene-details[open]{position:static;margin-top:8px}
-  .top>.progress{margin-inline:11px}
+  .scene-details[open]{margin-top:8px}
+  /* The timeline slider directly above already shows the position. */
+  .top>.progress{display:none}
   .scene-lenses{padding:10px 11px}
   .scene-people{display:flex;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:3px}
   .scene-person{min-width:168px;scroll-snap-align:start}

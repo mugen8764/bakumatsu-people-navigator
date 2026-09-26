@@ -50,12 +50,12 @@
       const factionStates = data.factionStates[scene.id] || {};
       const activeFactions = event.factions.filter(name => factionStates[name]);
       const factions = activeFactions.slice(0, 3);
-      // How many chips stay visible depends on the viewport, so the label states
-      // the whole count instead of a difference against a width-specific total.
-      const peopleMore = activePeople.length > 1 ? `<span class="scene-quick-more">全${activePeople.length}人</span>` : '';
-      const factionsMore = activeFactions.length > 1 ? `<span class="scene-quick-more">全${activeFactions.length}勢力</span>` : '';
-      $('#sceneQuickPeople').innerHTML = `${people.map(({ person, status }) => `<button type="button" class="scene-quick-link" data-scene-quick-person="${esc(person.id)}"><i style="background:${esc(shared.factionColor(status.faction))}"></i><span>${esc(status.display)}</span></button>`).join('')}${peopleMore}`;
-      $('#sceneQuickFactions').innerHTML = `${factions.map(name => `<button type="button" class="scene-quick-link" data-scene-quick-faction="${esc(name)}"><i style="background:${esc(shared.factionColor(name))}"></i><span>${esc(name)}</span></button>`).join('')}${factionsMore}`;
+      // The chips show at most three representatives, so the label under each
+      // heading states the whole cast rather than how many chips were omitted.
+      $('#sceneQuickPeopleTotal').textContent = activePeople.length > 1 ? `全${activePeople.length}人` : '';
+      $('#sceneQuickFactionsTotal').textContent = activeFactions.length > 1 ? `全${activeFactions.length}勢力` : '';
+      $('#sceneQuickPeople').innerHTML = people.map(({ person, status }) => `<button type="button" class="scene-quick-link" data-scene-quick-person="${esc(person.id)}"><i style="background:${esc(shared.factionColor(status.faction))}"></i><span>${esc(status.display)}</span></button>`).join('');
+      $('#sceneQuickFactions').innerHTML = factions.map(name => `<button type="button" class="scene-quick-link" data-scene-quick-faction="${esc(name)}"><i style="background:${esc(shared.factionColor(name))}"></i><span>${esc(name)}</span></button>`).join('');
       $('#sceneQuickInsight').textContent = scene.insights[0] || 'この時点の変化を詳細欄で確認できます。';
       $$('[data-scene-quick-person]').forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.sceneQuickPerson, 'people')));
       $$('[data-scene-quick-faction]').forEach(button => button.addEventListener('click', () => actions.selectFaction(button.dataset.sceneQuickFaction)));
