@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.74",
+    "version": "1.0.75",
     "updated": "2026-09-26"
   },
   "sources": {
@@ -2126,6 +2126,41 @@
       "note": "1860年の咸臨丸乗船と万次郎との辞書購入を確認。1867年の再渡米とは区別する。",
       "locator": "サンフランシスコ（1860年の航海と辞書購入）",
       "contentCheckedAt": "2026-09-25"
+    },
+    "mofa_paris_exposition": {
+      "title": "外務省外交史料館 特別展示「マッサンと呼ばれた外交官」",
+      "url": "https://www.mofa.go.jp/mofaj/files/000194546.pdf",
+      "note": "1867年のパリ万博への日本初参加、慶喜が弟昭武を名代として派遣したこと、留学を望んだことを確認。",
+      "locator": "21頁「3-1 パリ万国博覧会：徳川慶喜の国書案」",
+      "contentCheckedAt": "2026-09-26"
+    },
+    "ndl_shibusawa_france": {
+      "title": "国立国会図書館「近代日本とフランス―実業家たちの日仏交流」",
+      "url": "https://www.ndl.go.jp/france/jp/part1/s2_3.html",
+      "note": "昭武が慶喜の名代として万博へ出席し、渋沢が随行・会計を担ったこと、欧州歴訪と帰国までの範囲を確認。",
+      "locator": "「実業家たちの日仏交流」冒頭・「航西日記」解説",
+      "contentCheckedAt": "2026-09-26"
+    },
+    "shibusawa_paris_exposition": {
+      "title": "渋沢史料館「渋沢栄一、パリ万国博覧会へ行く」",
+      "url": "https://www.shibusawa.or.jp/museum/newsletter/401.html",
+      "note": "昭武の将軍名代、渋沢の庶務・経理、万博視察、日本側の出品主体と展示の背景を確認。",
+      "locator": "「パリ万国博覧会」「渋沢栄一が見たパリ万博」",
+      "contentCheckedAt": "2026-09-26"
+    },
+    "ndl_portrait_akitake": {
+      "title": "国立国会図書館「近代日本人の肖像・徳川昭武」",
+      "url": "https://www.ndl.go.jp/portrait/datas/146",
+      "note": "人物と肖像を照合し、1867年のパリ万博派遣とその後のフランス留学を確認。肖像の撮影時期は未確認。",
+      "locator": "生没年・解説・肖像1枚目",
+      "contentCheckedAt": "2026-09-26"
+    },
+    "ndl_portrait_shibusawa": {
+      "title": "国立国会図書館「近代日本人の肖像・渋沢栄一」",
+      "url": "https://www.ndl.go.jp/portrait/datas/104",
+      "note": "人物と肖像を照合し、一橋家・幕臣・昭武随行の経歴を確認。使用画像は晩年の肖像で、1867年当時の姿ではない。",
+      "locator": "生没年・解説・肖像1枚目",
+      "contentCheckedAt": "2026-09-26"
     }
   },
   "factions": {
@@ -4102,6 +4137,20 @@
         "sourceIds": [
           "mof_yokosuka",
           "yokosuka_verny"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "world-exposition": {
+      "id": "world-exposition",
+      "title": "万国博覧会",
+      "kana": "ばんこくはくらんかい",
+      "meaning": "各国が産業・技術・美術や産物を出品し、多くの人に公開する国際的な催し。",
+      "context": "1867年のパリ万博には幕府のほか薩摩藩・佐賀藩・江戸の商人も出品した。昭武の使節は幕府側の公式参加を担った。",
+      "evidence": {
+        "sourceIds": [
+          "mofa_paris_exposition",
+          "shibusawa_paris_exposition"
         ],
         "reviewStatus": "verified"
       }
@@ -7727,6 +7776,139 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    "paris-exposition-1867": {
+      "id": "paris-exposition-1867",
+      "sceneId": "1867-taisei",
+      "title": "パリ万国博覧会と幕府使節",
+      "date": "1867年（慶応3年）",
+      "scope": "将軍名代・使節の実務・随行医・派遣を決めた将軍",
+      "summary": "徳川慶喜は弟の昭武を名代としてパリ万国博覧会へ派遣。渋沢篤太夫や高松凌雲らが随行した。",
+      "stakes": "国内で政権の行方が動く同じ年、幕府は何を海外へ示し、随員は欧州で何を担ったのか。名代・実務・医療の役割を分ける。",
+      "turningPoint": "昭武は万博後もフランスに留学し、渋沢は欧州の産業・制度を見聞した。使節は幕府崩壊を受けて帰国へ向かう。",
+      "participants": [
+        {
+          "personId": "tokugawa-akitake",
+          "displayName": "徳川昭武",
+          "role": "将軍名代・使節代表",
+          "involvement": "onsite",
+          "side": "幕府使節",
+          "summary": "兄の慶喜を名代として、パリ万博に赴いた。万博後もフランスに留学した。",
+          "evidence": {
+            "sourceIds": [
+              "mofa_paris_exposition",
+              "ndl_portrait_akitake"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "shibusawa",
+          "displayName": "渋沢篤太夫",
+          "role": "随員・庶務と会計",
+          "involvement": "onsite",
+          "side": "幕府使節",
+          "summary": "昭武に随行し、一行の庶務・会計を担当。万博視察や欧州歴訪にも同行した。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_shibusawa_france",
+              "shibusawa_paris_exposition"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "takamatsu-ryoun",
+          "displayName": "高松凌雲",
+          "role": "随行医",
+          "involvement": "onsite",
+          "side": "幕府使節",
+          "summary": "昭武の随員として渡欧した医師。使節の代表や会計担当とは役割が異なる。",
+          "evidence": {
+            "sourceIds": [
+              "shibusawa_paris_exposition",
+              "ogori_takamatsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "yoshinobu",
+          "displayName": "徳川慶喜",
+          "role": "弟を名代として派遣",
+          "involvement": "decision",
+          "side": "幕府",
+          "summary": "自身の名代として弟昭武を派遣し、フランス皇帝への国書で昭武らへの配慮を求めた。現地参加者ではない。",
+          "evidence": {
+            "sourceIds": [
+              "mofa_paris_exposition"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "paris-yoshinobu-akitake",
+          "aPersonId": "yoshinobu",
+          "bPersonId": "tokugawa-akitake",
+          "label": "将軍名代として派遣",
+          "description": "慶喜は弟昭武を自身の名代としてパリ万博へ派遣した。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "mofa_paris_exposition",
+              "ndl_portrait_akitake"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "paris-akitake-shibusawa",
+          "aPersonId": "tokugawa-akitake",
+          "bPersonId": "shibusawa",
+          "label": "名代と庶務・会計担当",
+          "description": "昭武が使節を代表し、渋沢は随員として一行の庶務・会計を担った。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "ndl_shibusawa_france",
+              "shibusawa_paris_exposition"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "paris-akitake-takamatsu",
+          "aPersonId": "tokugawa-akitake",
+          "bPersonId": "takamatsu-ryoun",
+          "label": "名代と随行医",
+          "description": "高松は医師として昭武の使節に随行した。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "shibusawa_paris_exposition",
+              "ogori_takamatsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "yokohama",
+        "paris"
+      ],
+      "termIds": [
+        "world-exposition"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "mofa_paris_exposition",
+          "ndl_shibusawa_france",
+          "shibusawa_paris_exposition"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   },
   "places": {
@@ -8203,6 +8385,21 @@
         "sourceIds": [
           "gsi_yokosuka_honcho",
           "mof_yokosuka"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "paris": {
+      "name": "パリ",
+      "coord": [
+        2.35,
+        48.86
+      ],
+      "note": "1867年の万国博覧会が開かれ、徳川昭武の使節が訪れたフランスの首都。地図では日本外のため一覧のみ表示。",
+      "evidence": {
+        "sourceIds": [
+          "natural_earth_populated_places",
+          "mofa_paris_exposition"
         ],
         "reviewStatus": "verified"
       }
@@ -18013,6 +18210,136 @@
             "sourceIds": [
               "yokosuka_verny",
               "mof_yokosuka"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "tokugawa-akitake",
+      "name": "徳川昭武",
+      "kana": "とくがわ あきたけ",
+      "aliases": [
+        "昭武",
+        "徳川民部大輔"
+      ],
+      "born": "1853–1910",
+      "defaultFaction": "幕府",
+      "activeRange": [
+        11,
+        11
+      ],
+      "oneLine": "徳川慶喜の弟。将軍名代として1867年のパリ万国博覧会へ赴き、その後フランスで留学した。",
+      "places": [
+        "edo",
+        "yokohama",
+        "paris"
+      ],
+      "events": [],
+      "sources": [
+        "ndl_portrait_akitake",
+        "mofa_paris_exposition"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_akitake",
+          "mofa_paris_exposition"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "world-exposition"
+      ],
+      "portrait": {
+        "src": "assets/portraits/tokugawa-akitake-ndl.jpg",
+        "alt": "徳川昭武の史料肖像",
+        "sourceId": "ndl_portrait_akitake",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が徳川昭武の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。国立国会図書館が提供する画像を使用。",
+        "checkedAt": "2026-09-26"
+      },
+      "statuses": {
+        "1867-taisei": {
+          "display": "徳川昭武",
+          "role": "将軍名代・パリ万博使節",
+          "stance": "兄の将軍徳川慶喜の名代としてパリ万国博覧会へ赴き、閉幕後もフランスで留学生活を送った。",
+          "importance": "大政奉還へ向かう国内政局と同じ年に、幕府が欧州へ公式使節を送り、学習の機会も設けていたことを示す。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_akitake",
+              "mofa_paris_exposition",
+              "ndl_shibusawa_france"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "shibusawa",
+      "name": "渋沢栄一",
+      "kana": "しぶさわ えいいち",
+      "aliases": [
+        "渋沢篤太夫",
+        "篤太夫",
+        "渋澤栄一"
+      ],
+      "born": "1840–1931",
+      "defaultFaction": "幕府",
+      "activeRange": [
+        11,
+        11
+      ],
+      "oneLine": "一橋家から幕臣となり、徳川昭武のパリ万博使節に随行して庶務・会計を担った。",
+      "places": [
+        "edo",
+        "yokohama",
+        "paris"
+      ],
+      "events": [],
+      "sources": [
+        "ndl_shibusawa_france",
+        "shibusawa_paris_exposition",
+        "ndl_portrait_shibusawa"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_shibusawa_france",
+          "shibusawa_paris_exposition",
+          "ndl_portrait_shibusawa"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "world-exposition"
+      ],
+      "portrait": {
+        "src": "assets/portraits/shibusawa-ndl.jpg",
+        "alt": "渋沢栄一の史料肖像",
+        "sourceId": "ndl_portrait_shibusawa",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "晩年の肖像。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が渋沢栄一の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。国立国会図書館が提供する画像を使用。",
+        "checkedAt": "2026-09-26"
+      },
+      "statuses": {
+        "1867-taisei": {
+          "display": "渋沢篤太夫",
+          "role": "昭武随員・庶務と会計を担当",
+          "stance": "徳川昭武に随行してパリ万国博覧会と欧州諸国を見聞し、一行の庶務・会計を担った。",
+          "importance": "使節の名代と、随行して運営実務を担う幕臣の役割を分けて見る。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_shibusawa_france",
+              "shibusawa_paris_exposition"
             ],
             "reviewStatus": "verified"
           }

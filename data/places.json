@@ -384,6 +384,21 @@
         "reviewStatus": "verified",
         "note": "本町の概略座標。製鉄所やドックの正確な敷地境界は示さない。"
       }
+    },
+    {
+      "id": "paris",
+      "name": "パリ",
+      "longitude": 2.35,
+      "latitude": 48.86,
+      "note": "1867年の万国博覧会が開かれ、徳川昭武の使節が訪れたフランスの首都。地図では日本外のため一覧のみ表示。",
+      "evidence": {
+        "sourceIds": [
+          "natural_earth_populated_places",
+          "mofa_paris_exposition"
+        ],
+        "reviewStatus": "verified",
+        "note": "Natural Earthの都市データによる表示用概略座標。万博会場の厳密な位置を示すものではない。"
+      }
     }
   ]
 }

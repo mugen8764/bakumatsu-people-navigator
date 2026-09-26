@@ -4868,6 +4868,139 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "paris-exposition-1867",
+      "sceneId": "1867-taisei",
+      "title": "パリ万国博覧会と幕府使節",
+      "date": "1867年（慶応3年）",
+      "scope": "将軍名代・使節の実務・随行医・派遣を決めた将軍",
+      "summary": "徳川慶喜は弟の昭武を名代としてパリ万国博覧会へ派遣。渋沢篤太夫や高松凌雲らが随行した。",
+      "stakes": "国内で政権の行方が動く同じ年、幕府は何を海外へ示し、随員は欧州で何を担ったのか。名代・実務・医療の役割を分ける。",
+      "turningPoint": "昭武は万博後もフランスに留学し、渋沢は欧州の産業・制度を見聞した。使節は幕府崩壊を受けて帰国へ向かう。",
+      "participants": [
+        {
+          "personId": "tokugawa-akitake",
+          "displayName": "徳川昭武",
+          "role": "将軍名代・使節代表",
+          "involvement": "onsite",
+          "side": "幕府使節",
+          "summary": "兄の慶喜を名代として、パリ万博に赴いた。万博後もフランスに留学した。",
+          "evidence": {
+            "sourceIds": [
+              "mofa_paris_exposition",
+              "ndl_portrait_akitake"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "shibusawa",
+          "displayName": "渋沢篤太夫",
+          "role": "随員・庶務と会計",
+          "involvement": "onsite",
+          "side": "幕府使節",
+          "summary": "昭武に随行し、一行の庶務・会計を担当。万博視察や欧州歴訪にも同行した。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_shibusawa_france",
+              "shibusawa_paris_exposition"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "takamatsu-ryoun",
+          "displayName": "高松凌雲",
+          "role": "随行医",
+          "involvement": "onsite",
+          "side": "幕府使節",
+          "summary": "昭武の随員として渡欧した医師。使節の代表や会計担当とは役割が異なる。",
+          "evidence": {
+            "sourceIds": [
+              "shibusawa_paris_exposition",
+              "ogori_takamatsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "yoshinobu",
+          "displayName": "徳川慶喜",
+          "role": "弟を名代として派遣",
+          "involvement": "decision",
+          "side": "幕府",
+          "summary": "自身の名代として弟昭武を派遣し、フランス皇帝への国書で昭武らへの配慮を求めた。現地参加者ではない。",
+          "evidence": {
+            "sourceIds": [
+              "mofa_paris_exposition"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "paris-yoshinobu-akitake",
+          "aPersonId": "yoshinobu",
+          "bPersonId": "tokugawa-akitake",
+          "label": "将軍名代として派遣",
+          "description": "慶喜は弟昭武を自身の名代としてパリ万博へ派遣した。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "mofa_paris_exposition",
+              "ndl_portrait_akitake"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "paris-akitake-shibusawa",
+          "aPersonId": "tokugawa-akitake",
+          "bPersonId": "shibusawa",
+          "label": "名代と庶務・会計担当",
+          "description": "昭武が使節を代表し、渋沢は随員として一行の庶務・会計を担った。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "ndl_shibusawa_france",
+              "shibusawa_paris_exposition"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "paris-akitake-takamatsu",
+          "aPersonId": "tokugawa-akitake",
+          "bPersonId": "takamatsu-ryoun",
+          "label": "名代と随行医",
+          "description": "高松は医師として昭武の使節に随行した。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "shibusawa_paris_exposition",
+              "ogori_takamatsu"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "yokohama",
+        "paris"
+      ],
+      "termIds": [
+        "world-exposition"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "mofa_paris_exposition",
+          "ndl_shibusawa_france",
+          "shibusawa_paris_exposition"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ],
   "terms": [
@@ -5282,6 +5415,20 @@
         "sourceIds": [
           "mof_yokosuka",
           "yokosuka_verny"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "world-exposition",
+      "title": "万国博覧会",
+      "kana": "ばんこくはくらんかい",
+      "meaning": "各国が産業・技術・美術や産物を出品し、多くの人に公開する国際的な催し。",
+      "context": "1867年のパリ万博には幕府のほか薩摩藩・佐賀藩・江戸の商人も出品した。昭武の使節は幕府側の公式参加を担った。",
+      "evidence": {
+        "sourceIds": [
+          "mofa_paris_exposition",
+          "shibusawa_paris_exposition"
         ],
         "reviewStatus": "verified"
       }

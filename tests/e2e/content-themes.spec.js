@@ -6,6 +6,7 @@ const incidents = [
   ['satcho-agreement', '薩長盟約', 'komatsu'],
   ['second-choshu-war', '第二次長州征討・四境戦争', 'omura'],
   ['royal-restoration', '王政復古の大号令', 'iwakura'],
+  ['paris-exposition-1867', 'パリ万国博覧会と幕府使節', 'shibusawa'],
   ['toba-fushimi-battle', '鳥羽・伏見の戦い', 'saito'],
   ['edo-castle-surrender', '江戸開城の交渉と引き渡し', 'yamaoka']
 ];
@@ -42,7 +43,7 @@ for (const [id, title, person] of incidents) {
 }
 
 test('new names expose sourced roles and preserve person selection when time changes', { tag: '@cross-browser' }, async ({ page }) => {
-  for (const [query, id] of [['藤田五郎', 'saito'], ['山南敬助', 'yamanami'], ['芹澤鴨', 'serizawa'], ['サトウ', 'satow'], ['グラバー', 'glover'], ['緒方洪庵', 'ogata-koan'], ['福澤諭吉', 'fukuzawa']]) {
+  for (const [query, id] of [['藤田五郎', 'saito'], ['山南敬助', 'yamanami'], ['芹澤鴨', 'serizawa'], ['サトウ', 'satow'], ['グラバー', 'glover'], ['緒方洪庵', 'ogata-koan'], ['福澤諭吉', 'fukuzawa'], ['徳川民部大輔', 'tokugawa-akitake'], ['渋沢篤太夫', 'shibusawa']]) {
     await page.goto('/');
     await page.locator('#globalSearch').fill(query);
     await page.locator('.search-result').first().click();
@@ -64,7 +65,7 @@ test('all added comparisons and portrait credits render on mobile', async ({ pag
     await expect(page.locator('#personTurningPoint .turning-side')).toHaveCount(2);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   }
-  for (const [id, scene] of [['takasugi', '1865-choshu'], ['ryoma', '1866-satcho'], ['okubo', '1868-toba'], ['enomoto', '1868-tohoku'], ['fukuzawa', '1869-hakodate']]) {
+  for (const [id, scene] of [['takasugi', '1865-choshu'], ['ryoma', '1866-satcho'], ['shibusawa', '1867-taisei'], ['tokugawa-akitake', '1867-taisei'], ['okubo', '1868-toba'], ['enomoto', '1868-tohoku'], ['fukuzawa', '1869-hakodate']]) {
     await page.goto(`/#scene=${scene}&view=people&person=${id}`);
     const portrait = page.locator('#personDetail img').first();
     await portrait.scrollIntoViewIfNeeded();

@@ -29,7 +29,7 @@ test('data.js is an exact browser wrapper of data.json', () => {
   vm.runInNewContext(fs.readFileSync(path.join(root, 'data.js'), 'utf8'), context);
   assert.deepEqual(JSON.parse(JSON.stringify(context.window.BM_DATA)), data);
 });
-test('the published collection sizes stay at the balanced expansion release baseline', () => {
+test('the published collection sizes stay at the current release baseline', () => {
   assert.deepEqual({
     people: data.people.length,
     factions: Object.keys(data.factions).length,
@@ -40,14 +40,14 @@ test('the published collection sizes stay at the balanced expansion release base
     places: Object.keys(data.places).length,
     sources: Object.keys(data.sources).length
   }, {
-    people: 85,
+    people: 87,
     factions: 16,
     scenes: 16,
     events: 16,
     relations: 117,
     factionRelations: 18,
-    places: 31,
-    sources: 334
+    places: 32,
+    sources: 339
   });
 });
 

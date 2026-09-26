@@ -8371,6 +8371,43 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-status-tokugawa-akitake-1867-taisei",
+      "personId": "tokugawa-akitake",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "徳川昭武",
+      "role": "将軍名代・パリ万博使節",
+      "factionId": "bakufu",
+      "stance": "兄の将軍徳川慶喜の名代としてパリ万国博覧会へ赴き、閉幕後もフランスで留学生活を送った。",
+      "importance": "大政奉還へ向かう国内政局と同じ年に、幕府が欧州へ公式使節を送り、学習の機会も設けていたことを示す。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_akitake",
+          "mofa_paris_exposition",
+          "ndl_shibusawa_france"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-shibusawa-1867-taisei",
+      "personId": "shibusawa",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "渋沢篤太夫",
+      "role": "昭武随員・庶務と会計を担当",
+      "factionId": "bakufu",
+      "stance": "徳川昭武に随行してパリ万国博覧会と欧州諸国を見聞し、一行の庶務・会計を担った。",
+      "importance": "使節の名代と、随行して運営実務を担う幕臣の役割を分けて見る。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_shibusawa_france",
+          "shibusawa_paris_exposition"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

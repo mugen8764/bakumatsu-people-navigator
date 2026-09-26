@@ -3248,6 +3248,92 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "tokugawa-akitake",
+      "name": "徳川昭武",
+      "kana": "とくがわ あきたけ",
+      "aliases": [
+        "昭武",
+        "徳川民部大輔"
+      ],
+      "lifespan": "1853–1910",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1867-taisei",
+      "activeEndSceneId": "1867-taisei",
+      "oneLine": "徳川慶喜の弟。将軍名代として1867年のパリ万国博覧会へ赴き、その後フランスで留学した。",
+      "placeIds": [
+        "edo",
+        "yokohama",
+        "paris"
+      ],
+      "eventIds": [],
+      "termIds": [
+        "world-exposition"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_akitake",
+          "mofa_paris_exposition"
+        ],
+        "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/tokugawa-akitake-ndl.jpg",
+        "alt": "徳川昭武の史料肖像",
+        "sourceId": "ndl_portrait_akitake",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が徳川昭武の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。国立国会図書館が提供する画像を使用。",
+        "checkedAt": "2026-09-26"
+      }
+    },
+    {
+      "id": "shibusawa",
+      "name": "渋沢栄一",
+      "kana": "しぶさわ えいいち",
+      "aliases": [
+        "渋沢篤太夫",
+        "篤太夫",
+        "渋澤栄一"
+      ],
+      "lifespan": "1840–1931",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1867-taisei",
+      "activeEndSceneId": "1867-taisei",
+      "oneLine": "一橋家から幕臣となり、徳川昭武のパリ万博使節に随行して庶務・会計を担った。",
+      "placeIds": [
+        "edo",
+        "yokohama",
+        "paris"
+      ],
+      "eventIds": [],
+      "termIds": [
+        "world-exposition"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_shibusawa_france",
+          "shibusawa_paris_exposition",
+          "ndl_portrait_shibusawa"
+        ],
+        "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/shibusawa-ndl.jpg",
+        "alt": "渋沢栄一の史料肖像",
+        "sourceId": "ndl_portrait_shibusawa",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」",
+        "originalSource": null,
+        "dateNote": "晩年の肖像。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が渋沢栄一の肖像として掲載。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。国立国会図書館が提供する画像を使用。",
+        "checkedAt": "2026-09-26"
+      }
     }
   ]
 }
