@@ -9040,6 +9040,24 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-status-matsudaira-sadaaki-1865-choshu",
+      "personId": "matsudaira-sadaaki",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "松平定敬",
+      "role": "桑名藩主・京都所司代",
+      "factionId": "kuwana",
+      "stance": "条約勅許と兵庫の先期開港をめぐり、慶喜・容保と関白二条斉敬らとの協議に参加した。",
+      "importance": "協議の結果は条約のみの勅許で、兵庫の先期開港は認められなかった。",
+      "evidence": {
+        "sourceIds": [
+          "keio_nijo_treaty1865",
+          "keio_sadaaki_kuwana"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

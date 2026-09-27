@@ -5580,6 +5580,86 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "treaty-imperial-approval-1865",
+      "sceneId": "1865-choshu",
+      "title": "条約の勅許と兵庫開港をめぐる協議",
+      "date": "1865年（慶応元年）9月（旧暦）",
+      "scope": "京都での条約勅許と兵庫の先期開港をめぐる協議。",
+      "summary": "英米仏蘭の艦隊が兵庫沖に来航し、条約勅許と兵庫の先期開港を要求。慶喜・容保・定敬は関白二条斉敬らと協議した。",
+      "stakes": "すでに結ばれた修好通商条約への天皇の許可と、兵庫を予定より早く開港する要求が争点となった。",
+      "turningPoint": "条約のみ勅許となり、兵庫の先期開港は認められなかった。",
+      "participants": [
+        {
+          "personId": "yoshinobu",
+          "displayName": "一橋慶喜",
+          "role": "禁裏守衛総督・関白らとの協議",
+          "involvement": "decision",
+          "side": "幕府側",
+          "summary": "禁裏守衛総督として容保・定敬と共に関白らと協議した。",
+          "evidence": {
+            "sourceIds": [
+              "keio_nijo_treaty1865"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "katamori",
+          "displayName": "松平容保",
+          "role": "京都守護職・関白らとの協議",
+          "involvement": "decision",
+          "side": "会津藩・幕府役職",
+          "summary": "会津藩主・京都守護職として条約勅許と兵庫開港の協議に参加した。",
+          "evidence": {
+            "sourceIds": [
+              "keio_nijo_treaty1865"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "matsudaira-sadaaki",
+          "displayName": "松平定敬",
+          "role": "京都所司代・関白らとの協議",
+          "involvement": "decision",
+          "side": "桑名藩・幕府役職",
+          "summary": "桑名藩主・京都所司代として条約勅許と兵庫開港の協議に参加した。",
+          "evidence": {
+            "sourceIds": [
+              "keio_nijo_treaty1865"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "treaty-katamori-sadaaki-consultation",
+          "aPersonId": "katamori",
+          "bPersonId": "matsudaira-sadaaki",
+          "label": "条約勅許をめぐる協議",
+          "description": "容保と定敬は、慶喜と共に関白らとの協議に参加した。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "keio_nijo_treaty1865"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "kyoto"
+      ],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "keio_nijo_treaty1865"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ],
   "terms": [

@@ -17,7 +17,8 @@
     "長府藩": "chofu",
     "暮らし・支援": "life-support",
     "御陵衛士": "goryo-eji",
-    "航海・交易": "navigation-trade"
+    "航海・交易": "navigation-trade",
+    "桑名藩": "kuwana"
   },
   "personRelationTypes": {
     "主従・登用": "appointment",

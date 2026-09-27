@@ -298,6 +298,21 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "kuwana",
+      "name": "桑名藩",
+      "shortName": "桑",
+      "color": "#786a9b",
+      "summary": "松平定敬が藩主を務めた藩。定敬は京都所司代として朝廷との協議に携わった。",
+      "aliases": [],
+      "evidence": {
+        "sourceIds": [
+          "keio_sadaaki_kuwana",
+          "keio_nijo_treaty1865"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ],
   "states": [
@@ -1482,6 +1497,20 @@
         "sourceIds": [
           "nagasaki_shachu_kaientai",
           "ryoma_mutsu_kaientai"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "faction-state-kuwana-1865-choshu",
+      "factionId": "kuwana",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "goal": "藩主定敬が京都所司代として条約勅許・兵庫開港をめぐる協議に参加する。",
+      "position": "慶喜と会津藩主容保、桑名藩主定敬が、それぞれの幕府役職を持って関白らと協議した。",
+      "evidence": {
+        "sourceIds": [
+          "keio_nijo_treaty1865"
         ],
         "reviewStatus": "verified"
       }

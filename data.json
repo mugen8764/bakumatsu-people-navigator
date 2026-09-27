@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.88",
+    "version": "1.0.89",
     "updated": "2026-09-27"
   },
   "sources": {
@@ -2459,6 +2459,27 @@
       "note": "画像型PDF本文を目視確認。1867年の通称の根拠であり、常民の改名年は断定しない。",
       "locator": "印刷頁2（PDF2頁）「はじめに」第1段落：1867年万博へ佐野栄寿左衛門（常民）らと同行",
       "contentCheckedAt": "2026-09-27"
+    },
+    "keio_nijo_treaty1865": {
+      "title": "慶應義塾大学文学部古文書室「幕末を記録する―二条家文書の世界」展示品解説",
+      "url": "https://kmj.flet.keio.ac.jp/exhibition/2015/kaisetsu.pdf",
+      "note": "展示解説本文を確認し、日記画像を独自に翻刻したものではない。9月25日は展示日記の日付で、勅許決定日には固定しない。",
+      "locator": "PDF9頁・展示資料17「条約勅許・兵庫開港問題（御側日記）」：慶応元年9月、慶喜・容保・定敬と関白の協議、条約のみ勅許",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "keio_sadaaki_kuwana": {
+      "title": "慶應義塾大学文学部古文書室「展示資料2スポット解説」桑名城",
+      "url": "https://kmj.flet.keio.ac.jp/exhibition/2016/spot.pdf",
+      "note": "生没年・桑名藩主と兄弟関係を確認。後年の転戦を1865年の役割へ含めない。",
+      "locator": "PDF7〜8頁「勢州桑名郡 桑名城」：松平定敬1847–1908、桑名藩主、兄は松平容保",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "kashiwazaki_sadaaki": {
+      "title": "柏崎市WEBミュージアム「松平 定敬」",
+      "url": "https://jmapps.ne.jp/kashiwazaki/sakka_det.html?list_count=10&person_id=40",
+      "note": "読みと役職の根拠。生年欄1846は採用せず、慶應古文書室2資料の西暦1847年に拠る。",
+      "locator": "じんぶつ名（ヨミ）と略歴冒頭：1864年京都所司代任命、1867年12月解任",
+      "contentCheckedAt": "2026-09-27"
     }
   },
   "factions": {
@@ -2745,6 +2766,19 @@
       "evidence": {
         "sourceIds": [
           "nagasaki_shachu_kaientai"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "桑名藩": {
+      "short": "桑",
+      "color": "#786a9b",
+      "summary": "松平定敬が藩主を務めた藩。定敬は京都所司代として朝廷との協議に携わった。",
+      "aliases": [],
+      "evidence": {
+        "sourceIds": [
+          "keio_sadaaki_kuwana",
+          "keio_nijo_treaty1865"
         ],
         "reviewStatus": "verified"
       }
@@ -8816,6 +8850,86 @@
         "sourceIds": [
           "saga_figures_okuma_sano",
           "waseda_okuma_handwriting_24"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "treaty-imperial-approval-1865": {
+      "id": "treaty-imperial-approval-1865",
+      "sceneId": "1865-choshu",
+      "title": "条約の勅許と兵庫開港をめぐる協議",
+      "date": "1865年（慶応元年）9月（旧暦）",
+      "scope": "京都での条約勅許と兵庫の先期開港をめぐる協議。",
+      "summary": "英米仏蘭の艦隊が兵庫沖に来航し、条約勅許と兵庫の先期開港を要求。慶喜・容保・定敬は関白二条斉敬らと協議した。",
+      "stakes": "すでに結ばれた修好通商条約への天皇の許可と、兵庫を予定より早く開港する要求が争点となった。",
+      "turningPoint": "条約のみ勅許となり、兵庫の先期開港は認められなかった。",
+      "participants": [
+        {
+          "personId": "yoshinobu",
+          "displayName": "一橋慶喜",
+          "role": "禁裏守衛総督・関白らとの協議",
+          "involvement": "decision",
+          "side": "幕府側",
+          "summary": "禁裏守衛総督として容保・定敬と共に関白らと協議した。",
+          "evidence": {
+            "sourceIds": [
+              "keio_nijo_treaty1865"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "katamori",
+          "displayName": "松平容保",
+          "role": "京都守護職・関白らとの協議",
+          "involvement": "decision",
+          "side": "会津藩・幕府役職",
+          "summary": "会津藩主・京都守護職として条約勅許と兵庫開港の協議に参加した。",
+          "evidence": {
+            "sourceIds": [
+              "keio_nijo_treaty1865"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "matsudaira-sadaaki",
+          "displayName": "松平定敬",
+          "role": "京都所司代・関白らとの協議",
+          "involvement": "decision",
+          "side": "桑名藩・幕府役職",
+          "summary": "桑名藩主・京都所司代として条約勅許と兵庫開港の協議に参加した。",
+          "evidence": {
+            "sourceIds": [
+              "keio_nijo_treaty1865"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "treaty-katamori-sadaaki-consultation",
+          "aPersonId": "katamori",
+          "bPersonId": "matsudaira-sadaaki",
+          "label": "条約勅許をめぐる協議",
+          "description": "容保と定敬は、慶喜と共に関白らとの協議に参加した。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "keio_nijo_treaty1865"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "kyoto"
+      ],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "keio_nijo_treaty1865"
         ],
         "reviewStatus": "verified"
       }
@@ -20451,6 +20565,52 @@
           }
         }
       }
+    },
+    {
+      "id": "matsudaira-sadaaki",
+      "name": "松平定敬",
+      "kana": "まつだいら さだあき",
+      "aliases": [],
+      "born": "1847–1908",
+      "defaultFaction": "桑名藩",
+      "activeRange": [
+        8,
+        8
+      ],
+      "oneLine": "容保の弟。桑名藩主・京都所司代として、条約勅許と兵庫開港をめぐる朝廷との協議に参加した。",
+      "places": [
+        "kyoto"
+      ],
+      "events": [],
+      "sources": [
+        "keio_nijo_treaty1865",
+        "keio_sadaaki_kuwana",
+        "kashiwazaki_sadaaki"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "keio_nijo_treaty1865",
+          "keio_sadaaki_kuwana",
+          "kashiwazaki_sadaaki"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [],
+      "statuses": {
+        "1865-choshu": {
+          "display": "松平定敬",
+          "role": "桑名藩主・京都所司代",
+          "stance": "条約勅許と兵庫の先期開港をめぐり、慶喜・容保と関白二条斉敬らとの協議に参加した。",
+          "importance": "協議の結果は条約のみの勅許で、兵庫の先期開港は認められなかった。",
+          "evidence": {
+            "sourceIds": [
+              "keio_nijo_treaty1865",
+              "keio_sadaaki_kuwana"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
     }
   ],
   "relations": [
@@ -23274,6 +23434,16 @@
           "sourceIds": [
             "nagasaki_shachu_kaientai",
             "ryoma_kondo_chojiro"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "桑名藩": {
+        "goal": "藩主定敬が京都所司代として条約勅許・兵庫開港をめぐる協議に参加する。",
+        "position": "慶喜と会津藩主容保、桑名藩主定敬が、それぞれの幕府役職を持って関白らと協議した。",
+        "evidence": {
+          "sourceIds": [
+            "keio_nijo_treaty1865"
           ],
           "reviewStatus": "verified"
         }

@@ -3945,6 +3945,30 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "matsudaira-sadaaki",
+      "name": "松平定敬",
+      "kana": "まつだいら さだあき",
+      "aliases": [],
+      "lifespan": "1847–1908",
+      "defaultFactionId": "kuwana",
+      "activeStartSceneId": "1865-choshu",
+      "activeEndSceneId": "1865-choshu",
+      "oneLine": "容保の弟。桑名藩主・京都所司代として、条約勅許と兵庫開港をめぐる朝廷との協議に参加した。",
+      "placeIds": [
+        "kyoto"
+      ],
+      "eventIds": [],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "keio_nijo_treaty1865",
+          "keio_sadaaki_kuwana",
+          "kashiwazaki_sadaaki"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }
