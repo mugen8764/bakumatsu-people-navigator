@@ -5294,7 +5294,7 @@
       "title": "海援隊と出身藩を越えた活動",
       "date": "1867年（慶応3年）",
       "scope": "1867年の海援隊の活動と構成員。",
-      "summary": "亀山社中から発展した海援隊は、輸送・商取引や土佐藩の応援を目的とした。紀伊出身の陸奥陽之助も隊士として名簿に見える。",
+      "summary": "亀山社中から発展した海援隊は、輸送・商取引や土佐藩の応援を目的とした。紀伊出身の陸奥陽之助も隊士として名簿に見える。書記の長岡謙吉は文書の作成を担った。",
       "stakes": "輸送・商取引を担い、土佐藩を援護する組織に、他藩出身者も加わった。",
       "turningPoint": "亀山社中が1867年に海援隊へ発展し、龍馬が隊長となった。",
       "participants": [
@@ -5325,6 +5325,21 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "personId": "nagaoka-kenkichi",
+          "displayName": "長岡謙吉",
+          "role": "海援隊書記・文書の作成",
+          "involvement": "context",
+          "side": "海援隊",
+          "summary": "1867年に海援隊へ加入し、文書の作成などを手掛けて文官的な役割を果たした。",
+          "evidence": {
+            "sourceIds": [
+              "ryoma_nagaoka_kenkichi",
+              "ryoma_mutsu_kaientai"
+            ],
+            "reviewStatus": "verified"
+          }
         }
       ],
       "relations": [],
@@ -5335,7 +5350,8 @@
       "evidence": {
         "sourceIds": [
           "nagasaki_shachu_kaientai",
-          "ryoma_mutsu_kaientai"
+          "ryoma_mutsu_kaientai",
+          "ryoma_nagaoka_kenkichi"
         ],
         "reviewStatus": "verified"
       }

@@ -8952,6 +8952,24 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-status-nagaoka-kenkichi-1867-taisei",
+      "personId": "nagaoka-kenkichi",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "長岡謙吉",
+      "role": "海援隊書記",
+      "factionId": "navigation-trade",
+      "stance": "1867年に海援隊へ加わり、龍馬と行動を共にして文書の作成を進めた。",
+      "importance": "輸送や商取引に取り組む海援隊には、文書を担う書記もいた。",
+      "evidence": {
+        "sourceIds": [
+          "ryoma_nagaoka_kenkichi",
+          "ryoma_mutsu_kaientai"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

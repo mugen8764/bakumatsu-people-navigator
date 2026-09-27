@@ -3811,6 +3811,31 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "nagaoka-kenkichi",
+      "name": "長岡謙吉",
+      "kana": "ながおか けんきち",
+      "aliases": [],
+      "lifespan": "1834–1872",
+      "defaultFactionId": "navigation-trade",
+      "activeStartSceneId": "1867-taisei",
+      "activeEndSceneId": "1867-taisei",
+      "oneLine": "海援隊の書記として、龍馬と行動を共にし文書の作成を担った。",
+      "placeIds": [
+        "kochi",
+        "nagasaki"
+      ],
+      "eventIds": [],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "ryoma_nagaoka_kenkichi",
+          "kotobank_nagaoka_kenkichi",
+          "ryoma_mutsu_kaientai"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

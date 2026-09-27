@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.85",
+    "version": "1.0.86",
     "updated": "2026-09-27"
   },
   "sources": {
@@ -2331,7 +2331,7 @@
       "title": "高知県立坂本龍馬記念館「龍馬FAQ」海援隊構成員",
       "url": "https://ryoma-kinenkan.jp/feat/faq/",
       "note": "この回答は亀山社中の正確な名簿がないと明記。陸奥の1865年所属・姓名を直接証明するものとしては使わない。",
-      "locator": "「亀山社中の構成員は何人ですか」回答：後身の海援隊名簿を用いる旨、紀伊欄の陸奥宗光（当時は陸奥陽之助）",
+      "locator": "「亀山社中の構成員は何人ですか」回答：後身の海援隊名簿を用いる旨、紀伊欄の陸奥宗光（当時は陸奥陽之助）、土佐藩欄の長岡謙吉（海援隊書記、龍馬の死後海援隊隊長）",
       "contentCheckedAt": "2026-09-27"
     },
     "nagasaki_shachu_kaientai": {
@@ -2395,6 +2395,20 @@
       "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hi005.html",
       "note": "組織成立と生没の根拠。個々の暗殺実行者や各人物の動機、死亡日の西暦換算は表示しない。",
       "locator": "解説本文：伊東甲子太郎の生没年（1835～67）、慶応3年3月新選組離隊、6月月真院屯所、11月死去",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "ryoma_nagaoka_kenkichi": {
+      "title": "高知県立坂本龍馬記念館「長岡謙吉邸跡」",
+      "url": "https://ryoma-kinenkan.jp/place/2018/02/post-21.html",
+      "note": "1867年の文書作成の役割を採用。船中八策の成立・起草者や遠縁の具体的関係は今回の根拠に使わない。1868年隊長職は1867年状態へ含めない。",
+      "locator": "本文第2段落：1866年頃長崎で龍馬と会い、1867年海援隊加入、文書作成と文官的役割。第3段落：1868年4月海援隊長、1872年没",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "kotobank_nagaoka_kenkichi": {
+      "title": "講談社『デジタル版 日本人名大辞典+Plus』長岡謙吉",
+      "url": "https://kotobank.jp/word/%E9%95%B7%E5%B2%A1%E8%AC%99%E5%90%89-1096098",
+      "note": "基本情報の読みと生没年を確認。船中八策の起草に関する記述は今回採用しない。",
+      "locator": "「デジタル版 日本人名大辞典+Plus」長岡謙吉の見出し読み・1834–1872の生没年・海援隊書記",
       "contentCheckedAt": "2026-09-27"
     }
   },
@@ -8470,7 +8484,7 @@
       "title": "海援隊と出身藩を越えた活動",
       "date": "1867年（慶応3年）",
       "scope": "1867年の海援隊の活動と構成員。",
-      "summary": "亀山社中から発展した海援隊は、輸送・商取引や土佐藩の応援を目的とした。紀伊出身の陸奥陽之助も隊士として名簿に見える。",
+      "summary": "亀山社中から発展した海援隊は、輸送・商取引や土佐藩の応援を目的とした。紀伊出身の陸奥陽之助も隊士として名簿に見える。書記の長岡謙吉は文書の作成を担った。",
       "stakes": "輸送・商取引を担い、土佐藩を援護する組織に、他藩出身者も加わった。",
       "turningPoint": "亀山社中が1867年に海援隊へ発展し、龍馬が隊長となった。",
       "participants": [
@@ -8501,6 +8515,21 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "personId": "nagaoka-kenkichi",
+          "displayName": "長岡謙吉",
+          "role": "海援隊書記・文書の作成",
+          "involvement": "context",
+          "side": "海援隊",
+          "summary": "1867年に海援隊へ加入し、文書の作成などを手掛けて文官的な役割を果たした。",
+          "evidence": {
+            "sourceIds": [
+              "ryoma_nagaoka_kenkichi",
+              "ryoma_mutsu_kaientai"
+            ],
+            "reviewStatus": "verified"
+          }
         }
       ],
       "relations": [],
@@ -8511,7 +8540,8 @@
       "evidence": {
         "sourceIds": [
           "nagasaki_shachu_kaientai",
-          "ryoma_mutsu_kaientai"
+          "ryoma_mutsu_kaientai",
+          "ryoma_nagaoka_kenkichi"
         ],
         "reviewStatus": "verified"
       }
@@ -20030,6 +20060,53 @@
             "sourceIds": [
               "kyoto_goryo_eji_todo",
               "kyoto_ishibumi_goryo_ito"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "nagaoka-kenkichi",
+      "name": "長岡謙吉",
+      "kana": "ながおか けんきち",
+      "aliases": [],
+      "born": "1834–1872",
+      "defaultFaction": "航海・交易",
+      "activeRange": [
+        11,
+        11
+      ],
+      "oneLine": "海援隊の書記として、龍馬と行動を共にし文書の作成を担った。",
+      "places": [
+        "kochi",
+        "nagasaki"
+      ],
+      "events": [],
+      "sources": [
+        "ryoma_nagaoka_kenkichi",
+        "kotobank_nagaoka_kenkichi",
+        "ryoma_mutsu_kaientai"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ryoma_nagaoka_kenkichi",
+          "kotobank_nagaoka_kenkichi",
+          "ryoma_mutsu_kaientai"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [],
+      "statuses": {
+        "1867-taisei": {
+          "display": "長岡謙吉",
+          "role": "海援隊書記",
+          "stance": "1867年に海援隊へ加わり、龍馬と行動を共にして文書の作成を進めた。",
+          "importance": "輸送や商取引に取り組む海援隊には、文書を担う書記もいた。",
+          "evidence": {
+            "sourceIds": [
+              "ryoma_nagaoka_kenkichi",
+              "ryoma_mutsu_kaientai"
             ],
             "reviewStatus": "verified"
           }
