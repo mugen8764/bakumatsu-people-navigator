@@ -1535,7 +1535,19 @@
       },
       "termIds": [
         "tosa-kinno"
-      ]
+      ],
+      "portrait": {
+        "src": "assets/portraits/yodo-ndl.jpg",
+        "alt": "山内容堂の史料肖像",
+        "sourceId": "ndl_portrait_yodo",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」（縮小）",
+        "originalSource": "『近世名士写真 其2』近世名士写真頒布会、1935年",
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が山内豊信（別称・容堂）として掲載する肖像。1935年は採録資料の刊行年で、原図の撮影・制作年ではありません。個別の媒体・撮影者・制作時期は未確認。配信用に幅160pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
+        "rightsNote": "NDL肖像展示の掲載画像は著作権保護期間満了。出典を明示すれば申請不要。",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "takechi",
@@ -1585,7 +1597,19 @@
             "reviewStatus": "verified"
           }
         }
-      ]
+      ],
+      "portrait": {
+        "src": "assets/portraits/takechi-kyoto.jpg",
+        "alt": "武市瑞山の史料肖像",
+        "sourceId": "kyoto_portrait_takechi",
+        "rightsSourceId": "kyoto_archive_reuse",
+        "credit": "京都大学附属図書館所蔵「武市瑞山自画讃肖像」（一部・縮小）",
+        "originalSource": "「武市瑞山自画讃肖像」、石版、京都大学附属図書館（尊/軸81）",
+        "dateNote": "制作時期未確認の肖像。選択した時点の姿を示すものではありません。",
+        "identityNote": "京都大学の書誌は武市瑞山の自画讃肖像、尊/軸89の石版と記載。写真ではありません。原画・石版の制作年月は未確認。公式IIIFから肖像部分を取得し、幅160pxへ縮小・JPEG圧縮。肖像部分の構図・色調は変更していません。掛軸全体・自讃全体・台紙は含みません。",
+        "rightsNote": "京都大学附属図書館の二次利用自由画像。所蔵・資料名・公開ページへのリンク、部分利用と縮小を明示。",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "ryoma",
@@ -2373,7 +2397,19 @@
       "termIds": [
         "rangaku",
         "kobugattai"
-      ]
+      ],
+      "portrait": {
+        "src": "assets/portraits/nabeshima-ndl.jpg",
+        "alt": "鍋島直正の史料肖像",
+        "sourceId": "ndl_nabeshima",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」（縮小）",
+        "originalSource": "『近世名士写真 其2』近世名士写真頒布会、1935年",
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が鍋島直正として掲載する肖像。1935年は採録資料の刊行年で、原図の撮影・制作年ではありません。個別の媒体・撮影者・制作時期は未確認。配信用に幅160pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
+        "rightsNote": "NDL肖像展示の掲載画像は著作権保護期間満了。出典を明示すれば申請不要。",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "kawai-tsuginosuke",
