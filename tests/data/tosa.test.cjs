@@ -36,7 +36,7 @@ test('Toyo’s death ends his political relation while the party remains distinc
 test('Tosa repression separates imprisonment, court roles and later reform', () => {
   const incident = domain.getIncident('tosa-repression-1865');
   assert.equal(incident.sceneId, '1865-choshu');
-  assert.deepEqual(incident.participants.map(p => p.personId), ['takechi', 'yodo', 'goto']);
+  assert.deepEqual(incident.participants.map(p => p.personId), ['takechi', 'yodo', 'goto', 'okada-izo']);
   assert.match(incident.date, /1863年9月21日.*1865年閏5月11日.*旧暦/);
   assert.match(incident.participants.find(p => p.personId === 'goto').summary, /1865年.*大監察.*翌年/);
   assert.ok(!incident.relations.some(r => [r.aPersonId, r.bPersonId].includes('goto')));

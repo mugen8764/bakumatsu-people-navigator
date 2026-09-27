@@ -11,6 +11,18 @@ const domain = createDomain(data);
 // Scenes are named by ID so inserting a scene does not shift the assertions.
 const sceneAt = id => domain.sceneById.get(id).index;
 
+test('Izo retains uncertain arrest chronology, ends at execution and is not a Toyo assassin', () => {
+  const izo = domain.getPerson('okada-izo');
+  assert.equal(domain.statusAt(izo, sceneAt('1860-sakurada')), null);
+  assert.equal(domain.statusAt(izo, sceneAt('1863-aug18')).evidence.reviewStatus, 'disputed');
+  assert.match(domain.statusAt(izo, sceneAt('1864-kinmon')).stance, /この年までに/);
+  assert.match(domain.statusAt(izo, sceneAt('1865-choshu')).role, /斬首/);
+  assert.equal(domain.statusAt(izo, sceneAt('1866-satcho')), null);
+  assert.ok(data.incidents['tosa-repression-1865'].participants.some(p => p.personId === izo.id && p.involvement === 'onsite'));
+  assert.ok(!data.incidents['tosa-politics-1862'].participants.some(p => p.personId === izo.id));
+  assert.equal(searchAll(data, '人斬り以蔵').find(item => item.type === '人物').id, izo.id);
+});
+
 test('incident context survives participant navigation and clears outside its scene or cast', () => {
   const state = stateApi.createState(data, domain, { scene: sceneAt('1864-kinmon'), selectedIncident: 'ikedaya', selectedPerson: 'kondo' });
   stateApi.selectPerson(state, data, domain, 'okita');

@@ -8445,6 +8445,99 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-status-okada-izo-1862-bunkyu",
+      "personId": "okada-izo",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "岡田以蔵",
+      "role": "土佐藩郷士・土佐勤王党に参加",
+      "factionId": "tosa",
+      "stance": "武市瑞山に剣術を学び、土佐勤王党の運動に加わる。1862年には藩主豊範に従って京都へ上った。",
+      "importance": "京都で同志と組み、暗殺に関与した。",
+      "evidence": {
+        "sourceIds": [
+          "ryoma_izo_faq",
+          "ryoma_izo_grave",
+          "kochi_takechi_dojo"
+        ],
+        "reviewStatus": "verified",
+        "note": "上京先は墓の解説による。個別暗殺の実行や命令系統は追加しない。"
+      }
+    },
+    {
+      "id": "person-status-okada-izo-1863-joi",
+      "personId": "okada-izo",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "displayName": "岡田以蔵",
+      "role": "土佐勤王党に関わる郷士・龍馬と交流",
+      "factionId": "tosa",
+      "stance": "1863年、神戸の海軍塾にいた坂本龍馬と交流があった。",
+      "importance": "勤王党の活動だけでなく、龍馬との接点も持つ。",
+      "evidence": {
+        "sourceIds": [
+          "ryoma_izo_faq"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-okada-izo-1863-aug18",
+      "personId": "okada-izo",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "displayName": "岡田以蔵",
+      "role": "勤王党への弾圧が進む時期",
+      "factionId": "tosa",
+      "stance": "八月十八日の政変後、土佐勤王党への弾圧が進む。",
+      "importance": "捕縛年は坂本龍馬記念館の解説に1863年・1864年の差があり、この時点での拘束状況は確定できない。",
+      "evidence": {
+        "sourceIds": [
+          "ryoma_izo_faq",
+          "ryoma_izo_grave"
+        ],
+        "reviewStatus": "disputed",
+        "note": "政変後の勤王党弾圧はFAQで確認。以蔵本人の捕縛年はFAQと墓の解説で異なり、この時点の拘束状況は未確定。"
+      }
+    },
+    {
+      "id": "person-status-okada-izo-1864-kinmon",
+      "personId": "okada-izo",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "岡田以蔵",
+      "role": "土佐藩に拘束・取り調べを受ける",
+      "factionId": "tosa",
+      "stance": "この年までに土佐藩に捕らえられ、取り調べを受ける。",
+      "importance": "勤王党への弾圧で拘束され、翌年に処刑された。",
+      "evidence": {
+        "sourceIds": [
+          "ryoma_izo_faq",
+          "ryoma_izo_grave"
+        ],
+        "reviewStatus": "verified",
+        "note": "FAQは1864年、墓の解説は1863年に捕縛としており、1864年までに拘束され、1865年に処刑された点は共通。捕縛年・月日・移送経路は確定しない。"
+      }
+    },
+    {
+      "id": "person-status-okada-izo-1865-choshu",
+      "personId": "okada-izo",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "岡田以蔵",
+      "role": "1865年閏5月11日に斬首",
+      "factionId": "tosa",
+      "stance": "勤王党への弾圧の末、1865年閏5月11日に斬首された（旧暦）。",
+      "importance": "武市瑞山が切腹した日と同日に処刑された。",
+      "evidence": {
+        "sourceIds": [
+          "ryoma_izo_faq",
+          "ryoma_izo_grave"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

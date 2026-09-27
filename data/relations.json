@@ -2026,6 +2026,41 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-relation-takechi-okada-izo-1862-bunkyu-mentorship-or-comradeship",
+      "aPersonId": "takechi",
+      "bPersonId": "okada-izo",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1863-joi",
+      "typeId": "mentorship-or-comradeship",
+      "label": "武市道場の師弟",
+      "text": "岡田以蔵は武市瑞山の道場で剣術を学び、土佐勤王党の運動に加わった。",
+      "evidence": {
+        "sourceIds": [
+          "kochi_takechi_dojo",
+          "ryoma_izo_faq"
+        ],
+        "reviewStatus": "verified",
+        "note": "師弟と勤王党との関わりを表示し、個別暗殺の命令関係にはしない。"
+      }
+    },
+    {
+      "id": "person-relation-ryoma-okada-izo-1863-joi-mentorship-or-comradeship",
+      "aPersonId": "ryoma",
+      "bPersonId": "okada-izo",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "typeId": "mentorship-or-comradeship",
+      "label": "1863年に交流",
+      "text": "1863年、神戸の海軍塾にいた坂本龍馬と岡田以蔵に交流があった。",
+      "evidence": {
+        "sourceIds": [
+          "ryoma_izo_faq"
+        ],
+        "reviewStatus": "verified",
+        "note": "交流が確認できる1863年の時点だけに置き、幼少期からの親友などとは表示しない。"
+      }
     }
   ],
   "factionRelations": [

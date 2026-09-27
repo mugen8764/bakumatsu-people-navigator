@@ -3437,6 +3437,57 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "okada-izo",
+      "name": "岡田以蔵",
+      "kana": "おかだ いぞう",
+      "aliases": [
+        "以蔵",
+        "人斬り以蔵"
+      ],
+      "lifespan": "1838–1865",
+      "defaultFactionId": "tosa",
+      "activeStartSceneId": "1862-bunkyu",
+      "activeEndSceneId": "1865-choshu",
+      "oneLine": "武市瑞山に剣術を学び、土佐勤王党の運動に加わった。党への弾圧で捕らえられ、1865年に処刑された。",
+      "placeIds": [
+        "kochi",
+        "kyoto",
+        "kobe"
+      ],
+      "eventIds": [],
+      "termIds": [
+        "tosa-kinno",
+        "joi"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ryoma_izo_faq",
+          "ryoma_izo_grave",
+          "kochi_takechi_dojo"
+        ],
+        "reviewStatus": "verified",
+        "note": "出生・別称・勤王党との関わりはFAQ、京都での活動と処刑日は墓の解説、武市門下は市の道場解説でも確認。血盟者名簿への署名は断定しない。"
+      },
+      "turningPoints": [
+        {
+          "fromSceneId": "1864-kinmon",
+          "toSceneId": "1865-choshu",
+          "title": "拘束・取り調べから、処刑へ",
+          "before": "土佐勤王党への弾圧で捕らえられ、取り調べを受ける。",
+          "after": "1865年閏5月11日、武市瑞山の切腹と同日に斬首された（旧暦）。",
+          "context": "捕縛年は坂本龍馬記念館のFAQが1864年、墓の解説が1863年としており、ここでは確定しない。",
+          "evidence": {
+            "sourceIds": [
+              "ryoma_izo_faq",
+              "ryoma_izo_grave"
+            ],
+            "reviewStatus": "verified",
+            "note": "共通して確認できる拘束・処刑と、墓の解説の処刑日を表示。捕縛年の差は未解消として本文に明記。"
+          }
+        }
+      ]
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.77",
+    "version": "1.0.78",
     "updated": "2026-09-27"
   },
   "sources": {
@@ -2195,6 +2195,27 @@
       "url": "https://www.ndl.go.jp/portrait/datas/97/",
       "note": "本人の肖像と原資料「近世名士写真 其1（近世名士写真頒布会、1935年）」を確認。撮影時期は未確認。",
       "locator": "肖像1枚目・出典欄",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "ryoma_izo_faq": {
+      "title": "高知県立坂本龍馬記念館「龍馬FAQ・岡田以蔵と龍馬の関係」",
+      "url": "https://ryoma-kinenkan.jp/feat/faq/cat2/",
+      "note": "出生、土佐勤王党との関わり、1863年の龍馬との交流、1865年閏5月の処刑。捕縛年を1864年とするが、同館の墓の解説は1863年としており、差は未解消。",
+      "locator": "「岡田以蔵と龍馬の関係を教えてください。」全2段落",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "ryoma_izo_grave": {
+      "title": "高知県立坂本龍馬記念館「岡田以蔵の墓」",
+      "url": "https://ryoma-kinenkan.jp/place/2018/02/post-18.html",
+      "note": "土佐勤王党同志人名録、剣術修業、1862年の上京、1865年閏5月11日の斬首。捕縛年を1863年とするが、同館FAQは1864年としており、差は未解消。",
+      "locator": "「岡田以蔵の墓」本文の同志人名録、武市道場、文久2年の上京、慶応元年閏5月11日の処刑の段落",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "kochi_takechi_dojo": {
+      "title": "高知市「武市瑞山道場跡」",
+      "url": "https://www.city.kochi.kochi.jp/site/kanko/takechizuizandoujyoato.html",
+      "note": "岡田以蔵が武市道場の門人であったことを確認。",
+      "locator": "本文第1段落（武市道場の開設と中岡慎太郎・岡田以蔵の入門）",
       "contentCheckedAt": "2026-09-27"
     }
   },
@@ -6633,10 +6654,10 @@
       "sceneId": "1865-choshu",
       "title": "土佐勤王党の弾圧と処分",
       "date": "1863年9月21日〜1865年閏5月11日（旧暦）",
-      "scope": "土佐での投獄、勤王党の獄の審理、武市の処分",
-      "summary": "八月十八日の政変後、土佐藩は武市半平太ら勤王党員を捕縛。獄中生活が続き、1865年に武市は切腹を命じられた。後藤象二郎は大監察として勤王党の獄の審理・処分に関わった。",
+      "scope": "土佐での投獄、勤王党の獄の審理、武市・以蔵の処分",
+      "summary": "八月十八日の政変後、土佐藩は武市半平太ら勤王党員を捕縛。獄中生活が続き、1865年に武市は切腹を命じられた。後藤象二郎は大監察として勤王党の獄の審理・処分に関わった。岡田以蔵も捕らえられ、武市の切腹と同日に斬首された。",
       "stakes": "公武合体を唱える容堂と、勤王党の方針の違い。取り調べでは、吉田東洋暗殺などの事件が重大な問題として扱われた。",
-      "turningPoint": "1865年閏5月11日に武市が死去。後藤は翌1866年に開成館の責任者となり、藩の事業を担う。",
+      "turningPoint": "1865年閏5月11日に武市が切腹、以蔵が斬首された。後藤は翌1866年に開成館の責任者となり、藩の事業を担う。",
       "participants": [
         {
           "personId": "takechi",
@@ -6680,6 +6701,22 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "personId": "okada-izo",
+          "displayName": "岡田以蔵",
+          "role": "拘束された勤王党関係者・1865年に斬首",
+          "involvement": "onsite",
+          "side": "土佐勤王党",
+          "summary": "勤王党への弾圧で土佐藩に捕らえられた。1865年閏5月11日、武市の切腹と同日に斬首された（旧暦）。",
+          "evidence": {
+            "sourceIds": [
+              "ryoma_izo_faq",
+              "ryoma_izo_grave"
+            ],
+            "reviewStatus": "verified",
+            "note": "捕縛年はFAQが1864年、墓の解説が1863年としており未確定。共通する拘束と処刑、墓の解説の処刑日を表示。"
+          }
         }
       ],
       "relations": [
@@ -6712,7 +6749,9 @@
           "kochi_tosa_bakumatsu",
           "kochi_takechi_imprisonment",
           "kochi_yodo_1862",
-          "kochi_goto_1865"
+          "kochi_goto_1865",
+          "ryoma_izo_faq",
+          "ryoma_izo_grave"
         ],
         "reviewStatus": "verified",
         "note": "後藤の審理を武市個人との直接面談の関係線にしない。1865年時点の内側に別地域の事件として置き、長州藩政転換そのものの当事者にはしない。"
@@ -18636,6 +18675,130 @@
           }
         }
       }
+    },
+    {
+      "id": "okada-izo",
+      "name": "岡田以蔵",
+      "kana": "おかだ いぞう",
+      "aliases": [
+        "以蔵",
+        "人斬り以蔵"
+      ],
+      "born": "1838–1865",
+      "defaultFaction": "土佐藩",
+      "activeRange": [
+        4,
+        8
+      ],
+      "oneLine": "武市瑞山に剣術を学び、土佐勤王党の運動に加わった。党への弾圧で捕らえられ、1865年に処刑された。",
+      "places": [
+        "kochi",
+        "kyoto",
+        "kobe"
+      ],
+      "events": [],
+      "sources": [
+        "ryoma_izo_faq",
+        "ryoma_izo_grave",
+        "kochi_takechi_dojo"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ryoma_izo_faq",
+          "ryoma_izo_grave",
+          "kochi_takechi_dojo"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "tosa-kinno",
+        "joi"
+      ],
+      "turningPoints": [
+        {
+          "fromSceneId": "1864-kinmon",
+          "toSceneId": "1865-choshu",
+          "title": "拘束・取り調べから、処刑へ",
+          "before": "土佐勤王党への弾圧で捕らえられ、取り調べを受ける。",
+          "after": "1865年閏5月11日、武市瑞山の切腹と同日に斬首された（旧暦）。",
+          "context": "捕縛年は坂本龍馬記念館のFAQが1864年、墓の解説が1863年としており、ここでは確定しない。",
+          "evidence": {
+            "sourceIds": [
+              "ryoma_izo_faq",
+              "ryoma_izo_grave"
+            ],
+            "reviewStatus": "verified",
+            "note": "共通して確認できる拘束・処刑と、墓の解説の処刑日を表示。捕縛年の差は未解消として本文に明記。"
+          }
+        }
+      ],
+      "statuses": {
+        "1862-bunkyu": {
+          "display": "岡田以蔵",
+          "role": "土佐藩郷士・土佐勤王党に参加",
+          "stance": "武市瑞山に剣術を学び、土佐勤王党の運動に加わる。1862年には藩主豊範に従って京都へ上った。",
+          "importance": "京都で同志と組み、暗殺に関与した。",
+          "evidence": {
+            "sourceIds": [
+              "ryoma_izo_faq",
+              "ryoma_izo_grave",
+              "kochi_takechi_dojo"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1863-joi": {
+          "display": "岡田以蔵",
+          "role": "土佐勤王党に関わる郷士・龍馬と交流",
+          "stance": "1863年、神戸の海軍塾にいた坂本龍馬と交流があった。",
+          "importance": "勤王党の活動だけでなく、龍馬との接点も持つ。",
+          "evidence": {
+            "sourceIds": [
+              "ryoma_izo_faq"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1863-aug18": {
+          "display": "岡田以蔵",
+          "role": "勤王党への弾圧が進む時期",
+          "stance": "八月十八日の政変後、土佐勤王党への弾圧が進む。",
+          "importance": "捕縛年は坂本龍馬記念館の解説に1863年・1864年の差があり、この時点での拘束状況は確定できない。",
+          "evidence": {
+            "sourceIds": [
+              "ryoma_izo_faq",
+              "ryoma_izo_grave"
+            ],
+            "reviewStatus": "disputed"
+          }
+        },
+        "1864-kinmon": {
+          "display": "岡田以蔵",
+          "role": "土佐藩に拘束・取り調べを受ける",
+          "stance": "この年までに土佐藩に捕らえられ、取り調べを受ける。",
+          "importance": "勤王党への弾圧で拘束され、翌年に処刑された。",
+          "evidence": {
+            "sourceIds": [
+              "ryoma_izo_faq",
+              "ryoma_izo_grave"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1865-choshu": {
+          "display": "岡田以蔵",
+          "role": "1865年閏5月11日に斬首",
+          "stance": "勤王党への弾圧の末、1865年閏5月11日に斬首された（旧暦）。",
+          "importance": "武市瑞山が切腹した日と同日に処刑された。",
+          "evidence": {
+            "sourceIds": [
+              "ryoma_izo_faq",
+              "ryoma_izo_grave"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
     }
   ],
   "relations": [
@@ -20479,6 +20642,37 @@
         "sourceIds": [
           "mof_yokosuka",
           "yokosuka_verny"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "takechi",
+      "b": "okada-izo",
+      "start": 4,
+      "end": 5,
+      "type": "師弟・同志",
+      "label": "武市道場の師弟",
+      "text": "岡田以蔵は武市瑞山の道場で剣術を学び、土佐勤王党の運動に加わった。",
+      "evidence": {
+        "sourceIds": [
+          "kochi_takechi_dojo",
+          "ryoma_izo_faq"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "ryoma",
+      "b": "okada-izo",
+      "start": 5,
+      "end": 5,
+      "type": "師弟・同志",
+      "label": "1863年に交流",
+      "text": "1863年、神戸の海軍塾にいた坂本龍馬と岡田以蔵に交流があった。",
+      "evidence": {
+        "sourceIds": [
+          "ryoma_izo_faq"
         ],
         "reviewStatus": "verified"
       }

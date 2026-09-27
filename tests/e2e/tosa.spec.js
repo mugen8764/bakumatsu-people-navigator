@@ -6,7 +6,7 @@ test('Tosa imprisonment connects the trial roles with an earlier turning point',
   await page.goto('/');
   await page.locator('#globalSearch').fill('土佐勤王党の弾圧');
   await page.locator('.search-result strong', { hasText: '土佐勤王党の弾圧と処分' }).first().click();
-  await expect(page.locator('.onsite [data-event-person]')).toHaveCount(1);
+  await expect(page.locator('.onsite [data-event-person]')).toHaveCount(2);
   await expect(page.locator('.decision [data-event-person]')).toHaveCount(2);
   await page.locator('[data-event-person="goto"]').focus();
   await page.keyboard.press('Enter');

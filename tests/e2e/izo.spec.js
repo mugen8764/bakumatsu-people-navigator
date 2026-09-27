@@ -1,0 +1,30 @@
+const { expect, test } = require('../support/test.cjs');
+
+test('Izo search leads to repression, sources and map without carrying his role after execution', async ({ page }) => {
+  await page.addInitScript(() => localStorage.clear());
+  await page.goto('/');
+  await page.locator('#globalSearch').fill('人斬り以蔵');
+  await page.locator('.search-result strong', { hasText: /^岡田以蔵$/ }).click();
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('岡田以蔵');
+  await page.goto('/#event=tosa-repression-1865');
+  await page.locator('[data-event-person="okada-izo"]').click();
+  await expect(page.locator('#personDetail')).toContainText('斬首');
+  await expect(page.locator('.person-incident')).toContainText('土佐勤王党の弾圧と処分');
+  await page.locator('.person-incident summary').click();
+  await expect(page.locator('.person-incident a[href="https://ryoma-kinenkan.jp/place/2018/02/post-18.html"]')).toBeVisible();
+  await page.locator('.person-incident [data-open-event]').click();
+  await page.locator('#eventToMap').click();
+  await expect(page.locator('#mapTitle')).toContainText('土佐勤王党の弾圧と処分');
+  await page.locator('[data-map-event="tosa-repression-1865"]').first().click();
+  await expect(page.locator('#eventDetailTitle')).toHaveText('土佐勤王党の弾圧と処分');
+  await page.goto('/#scene=1863-aug18&view=people&person=okada-izo');
+  await expect(page.locator('#personDetail')).toContainText('1863年・1864年');
+  await expect(page.locator('#personDetail')).toContainText('諸説');
+  await page.goto('/#scene=1865-choshu&view=people&person=okada-izo');
+  await expect(page.locator('#personCards [data-person-card="okada-izo"]')).toHaveCount(1);
+  await page.locator('#nextScene').click();
+  await expect(page.locator('#personCards [data-person-card="okada-izo"]')).toHaveCount(0);
+  await expect(page.locator('#personDetail .detail-title')).not.toHaveText('岡田以蔵');
+  await page.locator('#prevScene').click();
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('岡田以蔵');
+});
