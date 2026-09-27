@@ -8970,6 +8970,40 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-status-sufu-masanosuke-1864-kinmon",
+      "personId": "sufu-masanosuke",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "麻田公輔",
+      "role": "長州藩士・謹慎中の藩政指導者",
+      "factionId": "choshu",
+      "stance": "藩内の武力決起派を抑えていたが、高杉晋作を野山獄に訪ねた件で謹慎となった。その間に禁門の変が起きた。",
+      "importance": "長州藩内にも武力決起を抑える立場があった。",
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_library_sufu"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-irie-kuichi-1864-kinmon",
+      "personId": "irie-kuichi",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "入江九一",
+      "role": "禁門の変に参加した長州藩士",
+      "factionId": "choshu",
+      "stance": "前年に奇兵隊創設へ加わり、禁門の変では重傷を負って自決した。",
+      "importance": "足軽の家に生まれ、1863年に士雇となって武士の身分を得た。",
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_library_irie"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

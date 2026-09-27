@@ -3836,6 +3836,60 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "sufu-masanosuke",
+      "name": "周布政之助",
+      "kana": "すふ まさのすけ",
+      "aliases": [
+        "麻田公輔",
+        "周布兼翼"
+      ],
+      "lifespan": "1823–1864",
+      "defaultFactionId": "choshu",
+      "activeStartSceneId": "1864-kinmon",
+      "activeEndSceneId": "1864-kinmon",
+      "oneLine": "長州の藩政に携わり、藩内の武力決起派を抑えた。",
+      "placeIds": [
+        "hagi",
+        "yamaguchi"
+      ],
+      "eventIds": [],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_library_sufu"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "irie-kuichi",
+      "name": "入江九一",
+      "kana": "いりえ くいち",
+      "aliases": [
+        "入江杉蔵",
+        "河島小太郎",
+        "入江弘致",
+        "入江弘毅"
+      ],
+      "lifespan": "1837–1864",
+      "defaultFactionId": "choshu",
+      "activeStartSceneId": "1864-kinmon",
+      "activeEndSceneId": "1864-kinmon",
+      "oneLine": "松下村塾に学び、奇兵隊創設に参加。禁門の変で命を落とした。",
+      "placeIds": [
+        "hagi",
+        "kyoto"
+      ],
+      "eventIds": [],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_library_irie"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

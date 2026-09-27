@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.86",
+    "version": "1.0.87",
     "updated": "2026-09-27"
   },
   "sources": {
@@ -2409,6 +2409,20 @@
       "url": "https://kotobank.jp/word/%E9%95%B7%E5%B2%A1%E8%AC%99%E5%90%89-1096098",
       "note": "基本情報の読みと生没年を確認。船中八策の起草に関する記述は今回採用しない。",
       "locator": "「デジタル版 日本人名大辞典+Plus」長岡謙吉の見出し読み・1834–1872の生没年・海援隊書記",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "yamaguchi_library_sufu": {
+      "title": "山口県立山口図書館「周布政之助」",
+      "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/sufu_masanosuke/",
+      "note": "死亡の政治的心理は推測しない。禁門現場参加や直接指揮は記述しない。",
+      "locator": "人物紹介：読み・生没・別名、1862年復帰と麻田公輔への改名、1864年武力決起派抑制・高杉訪問で謹慎・9月26日自刃",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "yamaguchi_library_irie": {
+      "title": "山口県立山口図書館「入江九一」",
+      "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/irie_kuichi/",
+      "note": "個別の突入門・指揮職・対戦相手は未確認。",
+      "locator": "人物紹介：読み・生没・諱/通称/変名、1858松下村塾、1863士雇と奇兵隊創設参加、1864年7月19日禁門で重傷・自決",
       "contentCheckedAt": "2026-09-27"
     }
   },
@@ -5385,6 +5399,34 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "personId": "sufu-masanosuke",
+          "displayName": "麻田公輔",
+          "role": "藩内の武力決起を抑える立場",
+          "involvement": "context",
+          "side": "長州藩内の慎重な立場",
+          "summary": "藩内の武力決起派を抑えていたが、高杉を訪ねた件で謹慎となり、その間に禁門の変が起きた。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_library_sufu"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "irie-kuichi",
+          "displayName": "入江九一",
+          "role": "京都で戦った藩士",
+          "involvement": "onsite",
+          "side": "長州側",
+          "summary": "禁門の変で重傷を負い、自決した。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_library_irie"
+            ],
+            "reviewStatus": "verified"
+          }
         }
       ],
       "relations": [
@@ -5414,7 +5456,9 @@
       "evidence": {
         "sourceIds": [
           "yamaguchi_library_kinmon",
-          "ndl_history_satcho"
+          "ndl_history_satcho",
+          "yamaguchi_library_sufu",
+          "yamaguchi_library_irie"
         ],
         "reviewStatus": "verified"
       }
@@ -20107,6 +20151,98 @@
             "sourceIds": [
               "ryoma_nagaoka_kenkichi",
               "ryoma_mutsu_kaientai"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "sufu-masanosuke",
+      "name": "周布政之助",
+      "kana": "すふ まさのすけ",
+      "aliases": [
+        "麻田公輔",
+        "周布兼翼"
+      ],
+      "born": "1823–1864",
+      "defaultFaction": "長州藩",
+      "activeRange": [
+        7,
+        7
+      ],
+      "oneLine": "長州の藩政に携わり、藩内の武力決起派を抑えた。",
+      "places": [
+        "hagi",
+        "yamaguchi"
+      ],
+      "events": [],
+      "sources": [
+        "yamaguchi_library_sufu"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_library_sufu"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [],
+      "statuses": {
+        "1864-kinmon": {
+          "display": "麻田公輔",
+          "role": "長州藩士・謹慎中の藩政指導者",
+          "stance": "藩内の武力決起派を抑えていたが、高杉晋作を野山獄に訪ねた件で謹慎となった。その間に禁門の変が起きた。",
+          "importance": "長州藩内にも武力決起を抑える立場があった。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_library_sufu"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "irie-kuichi",
+      "name": "入江九一",
+      "kana": "いりえ くいち",
+      "aliases": [
+        "入江杉蔵",
+        "河島小太郎",
+        "入江弘致",
+        "入江弘毅"
+      ],
+      "born": "1837–1864",
+      "defaultFaction": "長州藩",
+      "activeRange": [
+        7,
+        7
+      ],
+      "oneLine": "松下村塾に学び、奇兵隊創設に参加。禁門の変で命を落とした。",
+      "places": [
+        "hagi",
+        "kyoto"
+      ],
+      "events": [],
+      "sources": [
+        "yamaguchi_library_irie"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "yamaguchi_library_irie"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [],
+      "statuses": {
+        "1864-kinmon": {
+          "display": "入江九一",
+          "role": "禁門の変に参加した長州藩士",
+          "stance": "前年に奇兵隊創設へ加わり、禁門の変では重傷を負って自決した。",
+          "importance": "足軽の家に生まれ、1863年に士雇となって武士の身分を得た。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_library_irie"
             ],
             "reviewStatus": "verified"
           }

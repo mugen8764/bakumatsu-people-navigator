@@ -2195,6 +2195,34 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "personId": "sufu-masanosuke",
+          "displayName": "麻田公輔",
+          "role": "藩内の武力決起を抑える立場",
+          "involvement": "context",
+          "side": "長州藩内の慎重な立場",
+          "summary": "藩内の武力決起派を抑えていたが、高杉を訪ねた件で謹慎となり、その間に禁門の変が起きた。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_library_sufu"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "irie-kuichi",
+          "displayName": "入江九一",
+          "role": "京都で戦った藩士",
+          "involvement": "onsite",
+          "side": "長州側",
+          "summary": "禁門の変で重傷を負い、自決した。",
+          "evidence": {
+            "sourceIds": [
+              "yamaguchi_library_irie"
+            ],
+            "reviewStatus": "verified"
+          }
         }
       ],
       "relations": [
@@ -2224,7 +2252,9 @@
       "evidence": {
         "sourceIds": [
           "yamaguchi_library_kinmon",
-          "ndl_history_satcho"
+          "ndl_history_satcho",
+          "yamaguchi_library_sufu",
+          "yamaguchi_library_irie"
         ],
         "reviewStatus": "verified"
       }
