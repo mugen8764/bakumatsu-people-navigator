@@ -9004,6 +9004,42 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-status-okuma-shigenobu-1867-taisei",
+      "personId": "okuma-shigenobu",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "大隈八太郎",
+      "role": "長崎で英学を学び教える佐賀藩士",
+      "factionId": "saga",
+      "stance": "長崎の蕃学稽古所でフルベッキに学び、塾生の指導にも当たった。",
+      "importance": "海外知識の吸収は、国内での英学教育にも広がっていた。",
+      "evidence": {
+        "sourceIds": [
+          "saga_figures_okuma_sano",
+          "waseda_okuma_handwriting_24"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-sano-tsunetami-1867-taisei",
+      "personId": "sano-tsunetami",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "佐野栄寿左衛門",
+      "role": "パリ万博佐賀藩使節団長",
+      "factionId": "saga",
+      "stance": "佐賀藩の使節団長としてパリ万博へ赴き、特産品の出品や西洋文明の吸収に取り組んだ。",
+      "importance": "蒸気軍艦の購入交渉という特命も受けていた。",
+      "evidence": {
+        "sourceIds": [
+          "saga_paris1867_delegation",
+          "saga_museum_kanpo91_paris"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

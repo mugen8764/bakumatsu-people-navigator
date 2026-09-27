@@ -6,7 +6,7 @@ const incidents = [
   ['satcho-agreement', '薩長盟約', 'komatsu'],
   ['second-choshu-war', '第二次長州征討・四境戦争', 'omura'],
   ['royal-restoration', '王政復古の大号令', 'iwakura'],
-  ['paris-exposition-1867', 'パリ万国博覧会と幕府使節', 'shibusawa'],
+  ['paris-exposition-1867', 'パリ万国博覧会と幕府・佐賀の使節', 'shibusawa'],
   ['toba-fushimi-battle', '鳥羽・伏見の戦い', 'saito'],
   ['edo-castle-surrender', '江戸開城の交渉と引き渡し', 'yamaoka']
 ];

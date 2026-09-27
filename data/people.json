@@ -3890,6 +3890,61 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "okuma-shigenobu",
+      "name": "大隈重信",
+      "kana": "おおくま しげのぶ",
+      "aliases": [
+        "大隈八太郎"
+      ],
+      "lifespan": "1838–1922",
+      "defaultFactionId": "saga",
+      "activeStartSceneId": "1867-taisei",
+      "activeEndSceneId": "1867-taisei",
+      "oneLine": "佐賀藩士として長崎で英学を学び、塾生の指導にも当たった。",
+      "placeIds": [
+        "saga",
+        "nagasaki"
+      ],
+      "eventIds": [],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "saga_figures_okuma_sano",
+          "waseda_okuma_handwriting_24"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "sano-tsunetami",
+      "name": "佐野常民",
+      "kana": "さの つねたみ",
+      "aliases": [
+        "佐野栄寿左衛門"
+      ],
+      "lifespan": "1823–1902",
+      "defaultFactionId": "saga",
+      "activeStartSceneId": "1867-taisei",
+      "activeEndSceneId": "1867-taisei",
+      "oneLine": "佐賀藩のパリ万博使節団を率い、特産品の出品や西洋の技術・制度の吸収に取り組んだ。",
+      "placeIds": [
+        "saga",
+        "paris"
+      ],
+      "eventIds": [],
+      "termIds": [
+        "world-exposition"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_sano_lifespan",
+          "saga_paris1867_delegation",
+          "saga_museum_kanpo91_paris"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

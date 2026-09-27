@@ -4999,11 +4999,11 @@
     {
       "id": "paris-exposition-1867",
       "sceneId": "1867-taisei",
-      "title": "パリ万国博覧会と幕府使節",
+      "title": "パリ万国博覧会と幕府・佐賀の使節",
       "date": "1867年（慶応3年）",
-      "scope": "将軍名代・使節の実務・随行医・派遣を決めた将軍",
-      "summary": "徳川慶喜は弟の昭武を名代としてパリ万国博覧会へ派遣。渋沢篤太夫や高松凌雲らが随行した。",
-      "stakes": "国内で政権の行方が動く同じ年、幕府は何を海外へ示し、随員は欧州で何を担ったのか。名代・実務・医療の役割を分ける。",
+      "scope": "幕府と佐賀藩それぞれの派遣決定、使節の代表・実務・医療の役割。",
+      "summary": "徳川慶喜は弟の昭武を名代としてパリ万国博覧会へ派遣。渋沢篤太夫や高松凌雲らが随行した。佐賀藩も佐野栄寿左衛門を団長とする使節を送り、特産品の出品と西洋の技術・制度の吸収に取り組んだ。",
+      "stakes": "幕府と佐賀藩がそれぞれ使節を派遣し、海外への発信と知識・技術の吸収を進めた。",
       "turningPoint": "昭武は万博後もフランスに留学し、渋沢は欧州の産業・制度を見聞した。使節は幕府崩壊を受けて帰国へ向かう。",
       "participants": [
         {
@@ -5061,6 +5061,35 @@
           "evidence": {
             "sourceIds": [
               "mofa_paris_exposition"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "sano-tsunetami",
+          "displayName": "佐野栄寿左衛門",
+          "role": "佐賀藩使節団長",
+          "involvement": "onsite",
+          "side": "佐賀藩使節",
+          "summary": "佐賀藩使節団を率い、特産品の出品と西洋の技術・制度の吸収に取り組んだ。蒸気軍艦購入交渉の特命も受けた。",
+          "evidence": {
+            "sourceIds": [
+              "saga_paris1867_delegation",
+              "saga_museum_kanpo91_paris"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "nabeshima",
+          "displayName": "鍋島閑叟",
+          "role": "前佐賀藩主・万博参加を決定",
+          "involvement": "decision",
+          "side": "佐賀藩",
+          "summary": "幕府からの参加要請を受け、佐賀藩のパリ万博参加を決めた。",
+          "evidence": {
+            "sourceIds": [
+              "saga_paris1867_delegation"
             ],
             "reviewStatus": "verified"
           }
@@ -5124,7 +5153,9 @@
         "sourceIds": [
           "mofa_paris_exposition",
           "ndl_shibusawa_france",
-          "shibusawa_paris_exposition"
+          "shibusawa_paris_exposition",
+          "saga_paris1867_delegation",
+          "saga_museum_kanpo91_paris"
         ],
         "reviewStatus": "verified"
       }
@@ -5507,6 +5538,45 @@
         "sourceIds": [
           "kyoto_goryo_eji_todo",
           "kyoto_ishibumi_goryo_ito"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "nagasaki-english-study-1867",
+      "sceneId": "1867-taisei",
+      "title": "長崎での英学と佐賀藩の人材育成",
+      "date": "1867年（慶応3年）",
+      "scope": "長崎での英学の学習と塾生指導。",
+      "summary": "大隈八太郎は長崎の蕃学稽古所でフルベッキから英学を学び、塾生の指導にも当たった。",
+      "stakes": "海外の知識を学ぶ藩士が、次の学習者を育てる役割も担った。",
+      "turningPoint": "英学を学ぶ場で、大隈らは教師を助けて塾生を指導した。",
+      "participants": [
+        {
+          "personId": "okuma-shigenobu",
+          "displayName": "大隈八太郎",
+          "role": "英学の学習と塾生指導",
+          "involvement": "onsite",
+          "side": "佐賀藩",
+          "summary": "長崎でフルベッキに学び、塾生の指導に携わった。",
+          "evidence": {
+            "sourceIds": [
+              "saga_figures_okuma_sano",
+              "waseda_okuma_handwriting_24"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [],
+      "placeIds": [
+        "nagasaki"
+      ],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "saga_figures_okuma_sano",
+          "waseda_okuma_handwriting_24"
         ],
         "reviewStatus": "verified"
       }

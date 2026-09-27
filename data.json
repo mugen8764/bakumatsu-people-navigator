@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.87",
+    "version": "1.0.88",
     "updated": "2026-09-27"
   },
   "sources": {
@@ -2423,6 +2423,41 @@
       "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/irie_kuichi/",
       "note": "個別の突入門・指揮職・対戦相手は未確認。",
       "locator": "人物紹介：読み・生没・諱/通称/変名、1858松下村塾、1863士雇と奇兵隊創設参加、1864年7月19日禁門で重傷・自決",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "saga_figures_okuma_sano": {
+      "title": "佐賀県「佐賀が生んだ偉人」",
+      "url": "https://sagaishin-kokorozashi.jp/figures/",
+      "note": "学習・指導と大隈の基本情報に使用。学校設立年・教頭任命は断定せず、佐野の生年は旧暦と西暦の対応を示すNDLに拠る。",
+      "locator": "「大隈重信」人物欄：読み・1838–1922・1867年長崎でフルベッキに学び塾生指導",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "saga_paris1867_delegation": {
+      "title": "佐賀県立佐賀城本丸歴史館「1867年パリ万博と佐賀藩の挑戦」",
+      "url": "https://saga-museum.jp/sagajou/exhibition/limited/2017/08/001618.html",
+      "note": "昭武を名代とする幕府使節とは別の佐賀藩使節の根拠。個別の任命関係線や現地での人物間交流を補わない。",
+      "locator": "冒頭第2〜5段落：前藩主直正の参加決定、佐野団長、派遣目的と蒸気軍艦購入交渉",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "ndl_sano_lifespan": {
+      "title": "国立国会図書館「近代日本人の肖像・佐野常民」",
+      "url": "https://www.ndl.go.jp/portrait/datas/94",
+      "note": "西暦の生没表示は1823–1902。旧暦文政5年を西暦1822年の誕生日と取り違えない。",
+      "locator": "生没年月日・読み：文政5年12月28日＝1823年2月8日、1902年12月7日没",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "waseda_okuma_handwriting_24": {
+      "title": "早稲田大学會津八一記念博物館研究紀要24号「大隈重信の手跡」",
+      "url": "https://waseda.repo.nii.ac.jp/record/78052/files/AizuMuseumKenkyuKiyo_24_11.pdf",
+      "note": "大学博物館の研究本文を確認。原書簡の読解ではない。後段の回想の校長表現を常任役職として採用しない。",
+      "locator": "印刷頁93（PDF7頁）：慶応3年長崎の蕃学稽古所、副島次郎（種臣）・大隈八太郎（重信）の説明",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "saga_museum_kanpo91_paris": {
+      "title": "佐賀県立博物館・美術館報91号「パリ万国博覧会から 深川長右衛門が持ち帰った品物」",
+      "url": "https://saga-museum.jp/museum/files/kanpo091.pdf",
+      "note": "画像型PDF本文を目視確認。1867年の通称の根拠であり、常民の改名年は断定しない。",
+      "locator": "印刷頁2（PDF2頁）「はじめに」第1段落：1867年万博へ佐野栄寿左衛門（常民）らと同行",
       "contentCheckedAt": "2026-09-27"
     }
   },
@@ -8203,11 +8238,11 @@
     "paris-exposition-1867": {
       "id": "paris-exposition-1867",
       "sceneId": "1867-taisei",
-      "title": "パリ万国博覧会と幕府使節",
+      "title": "パリ万国博覧会と幕府・佐賀の使節",
       "date": "1867年（慶応3年）",
-      "scope": "将軍名代・使節の実務・随行医・派遣を決めた将軍",
-      "summary": "徳川慶喜は弟の昭武を名代としてパリ万国博覧会へ派遣。渋沢篤太夫や高松凌雲らが随行した。",
-      "stakes": "国内で政権の行方が動く同じ年、幕府は何を海外へ示し、随員は欧州で何を担ったのか。名代・実務・医療の役割を分ける。",
+      "scope": "幕府と佐賀藩それぞれの派遣決定、使節の代表・実務・医療の役割。",
+      "summary": "徳川慶喜は弟の昭武を名代としてパリ万国博覧会へ派遣。渋沢篤太夫や高松凌雲らが随行した。佐賀藩も佐野栄寿左衛門を団長とする使節を送り、特産品の出品と西洋の技術・制度の吸収に取り組んだ。",
+      "stakes": "幕府と佐賀藩がそれぞれ使節を派遣し、海外への発信と知識・技術の吸収を進めた。",
       "turningPoint": "昭武は万博後もフランスに留学し、渋沢は欧州の産業・制度を見聞した。使節は幕府崩壊を受けて帰国へ向かう。",
       "participants": [
         {
@@ -8265,6 +8300,35 @@
           "evidence": {
             "sourceIds": [
               "mofa_paris_exposition"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "sano-tsunetami",
+          "displayName": "佐野栄寿左衛門",
+          "role": "佐賀藩使節団長",
+          "involvement": "onsite",
+          "side": "佐賀藩使節",
+          "summary": "佐賀藩使節団を率い、特産品の出品と西洋の技術・制度の吸収に取り組んだ。蒸気軍艦購入交渉の特命も受けた。",
+          "evidence": {
+            "sourceIds": [
+              "saga_paris1867_delegation",
+              "saga_museum_kanpo91_paris"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "nabeshima",
+          "displayName": "鍋島閑叟",
+          "role": "前佐賀藩主・万博参加を決定",
+          "involvement": "decision",
+          "side": "佐賀藩",
+          "summary": "幕府からの参加要請を受け、佐賀藩のパリ万博参加を決めた。",
+          "evidence": {
+            "sourceIds": [
+              "saga_paris1867_delegation"
             ],
             "reviewStatus": "verified"
           }
@@ -8328,7 +8392,9 @@
         "sourceIds": [
           "mofa_paris_exposition",
           "ndl_shibusawa_france",
-          "shibusawa_paris_exposition"
+          "shibusawa_paris_exposition",
+          "saga_paris1867_delegation",
+          "saga_museum_kanpo91_paris"
         ],
         "reviewStatus": "verified"
       }
@@ -8711,6 +8777,45 @@
         "sourceIds": [
           "kyoto_goryo_eji_todo",
           "kyoto_ishibumi_goryo_ito"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "nagasaki-english-study-1867": {
+      "id": "nagasaki-english-study-1867",
+      "sceneId": "1867-taisei",
+      "title": "長崎での英学と佐賀藩の人材育成",
+      "date": "1867年（慶応3年）",
+      "scope": "長崎での英学の学習と塾生指導。",
+      "summary": "大隈八太郎は長崎の蕃学稽古所でフルベッキから英学を学び、塾生の指導にも当たった。",
+      "stakes": "海外の知識を学ぶ藩士が、次の学習者を育てる役割も担った。",
+      "turningPoint": "英学を学ぶ場で、大隈らは教師を助けて塾生を指導した。",
+      "participants": [
+        {
+          "personId": "okuma-shigenobu",
+          "displayName": "大隈八太郎",
+          "role": "英学の学習と塾生指導",
+          "involvement": "onsite",
+          "side": "佐賀藩",
+          "summary": "長崎でフルベッキに学び、塾生の指導に携わった。",
+          "evidence": {
+            "sourceIds": [
+              "saga_figures_okuma_sano",
+              "waseda_okuma_handwriting_24"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [],
+      "placeIds": [
+        "nagasaki"
+      ],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "saga_figures_okuma_sano",
+          "waseda_okuma_handwriting_24"
         ],
         "reviewStatus": "verified"
       }
@@ -20243,6 +20348,104 @@
           "evidence": {
             "sourceIds": [
               "yamaguchi_library_irie"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "okuma-shigenobu",
+      "name": "大隈重信",
+      "kana": "おおくま しげのぶ",
+      "aliases": [
+        "大隈八太郎"
+      ],
+      "born": "1838–1922",
+      "defaultFaction": "佐賀藩",
+      "activeRange": [
+        11,
+        11
+      ],
+      "oneLine": "佐賀藩士として長崎で英学を学び、塾生の指導にも当たった。",
+      "places": [
+        "saga",
+        "nagasaki"
+      ],
+      "events": [],
+      "sources": [
+        "saga_figures_okuma_sano",
+        "waseda_okuma_handwriting_24"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "saga_figures_okuma_sano",
+          "waseda_okuma_handwriting_24"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [],
+      "statuses": {
+        "1867-taisei": {
+          "display": "大隈八太郎",
+          "role": "長崎で英学を学び教える佐賀藩士",
+          "stance": "長崎の蕃学稽古所でフルベッキに学び、塾生の指導にも当たった。",
+          "importance": "海外知識の吸収は、国内での英学教育にも広がっていた。",
+          "evidence": {
+            "sourceIds": [
+              "saga_figures_okuma_sano",
+              "waseda_okuma_handwriting_24"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "sano-tsunetami",
+      "name": "佐野常民",
+      "kana": "さの つねたみ",
+      "aliases": [
+        "佐野栄寿左衛門"
+      ],
+      "born": "1823–1902",
+      "defaultFaction": "佐賀藩",
+      "activeRange": [
+        11,
+        11
+      ],
+      "oneLine": "佐賀藩のパリ万博使節団を率い、特産品の出品や西洋の技術・制度の吸収に取り組んだ。",
+      "places": [
+        "saga",
+        "paris"
+      ],
+      "events": [],
+      "sources": [
+        "ndl_sano_lifespan",
+        "saga_paris1867_delegation",
+        "saga_museum_kanpo91_paris"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_sano_lifespan",
+          "saga_paris1867_delegation",
+          "saga_museum_kanpo91_paris"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "world-exposition"
+      ],
+      "statuses": {
+        "1867-taisei": {
+          "display": "佐野栄寿左衛門",
+          "role": "パリ万博佐賀藩使節団長",
+          "stance": "佐賀藩の使節団長としてパリ万博へ赴き、特産品の出品や西洋文明の吸収に取り組んだ。",
+          "importance": "蒸気軍艦の購入交渉という特命も受けていた。",
+          "evidence": {
+            "sourceIds": [
+              "saga_paris1867_delegation",
+              "saga_museum_kanpo91_paris"
             ],
             "reviewStatus": "verified"
           }
