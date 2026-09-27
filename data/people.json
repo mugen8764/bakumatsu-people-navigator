@@ -44,7 +44,7 @@
         "originalSource": "Mathew B. Brady撮影。作品番号2005.100.84。",
         "dateNote": "所蔵館の年代推定：1856〜1858年。選択した時点の姿を示すものではありません。",
         "identityNote": "所蔵館がマシュー・ペリーの肖像写真として整理。",
-        "rightsNote": "所蔵館はPublic Domainと表示し、画像をCC0で公開。所蔵館提供の縮小画像を加工せず使用。",
+        "rightsNote": "所蔵館はPublic Domainと表示し、画像をCC0で公開。所蔵館提供画像を配信用に縮小・JPEG圧縮し、構図・色調は変更していません。",
         "checkedAt": "2026-09-25"
       }
     },
@@ -204,6 +204,18 @@
           "ndl_katsu_1866_diary"
         ],
         "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/iemochi-commons.jpg",
+        "alt": "徳川家茂の史料肖像",
+        "sourceId": "commons_portrait_iemochi_mochinaga",
+        "rightsSourceId": "commons_iemochi_pd_art",
+        "credit": "徳川茂徳筆「徳川家茂像」（徳川記念財団所蔵）／Wikimedia Commons",
+        "originalSource": "徳川茂徳筆「徳川家茂像」、1866–1867年、徳川記念財団所蔵（画像提供元の資料情報による）",
+        "dateNote": "1866–1867年の肖像画。選択した時点の姿を示すものではありません。",
+        "identityNote": "画像提供元が徳川家茂像として掲載。作者・年代・所蔵は画像提供元の資料情報によります。写真ではなく肖像画です。",
+        "rightsNote": "画像提供元のPD-Art表示による、著作権保護期間満了の平面作品の複製画像。",
+        "checkedAt": "2026-09-27"
       }
     },
     {
@@ -589,6 +601,18 @@
           "kagoshima_nariakira"
         ],
         "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/nariakira-ndl.jpg",
+        "alt": "島津斉彬の史料肖像",
+        "sourceId": "ndl_portrait_nariakira",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」（縮小）",
+        "originalSource": "『幕末、明治、大正回顧八十年史 第1輯』東洋文化協会編、1933年",
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が島津斉彬として掲載する肖像。1933年は採録資料の刊行年で、原図の撮影・制作年ではありません。写真・絵画の別と原図の制作時期は個別確認できていません。掲載用に幅160pxへ縮小・JPEG圧縮。構図・色調は変更していません。",
+        "rightsNote": "NDL肖像展示の掲載画像は著作権保護期間満了。出典を明示すれば申請不要。",
+        "checkedAt": "2026-09-27"
       }
     },
     {
@@ -683,7 +707,19 @@
             "reviewStatus": "verified"
           }
         }
-      ]
+      ],
+      "portrait": {
+        "src": "assets/portraits/saigo-ndl.jpg",
+        "alt": "西郷隆盛の史料肖像",
+        "sourceId": "ndl_portrait_saigo_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」（縮小）",
+        "originalSource": "『近世名士写真 其1』近世名士写真頒布会、1935年",
+        "dateNote": "制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が西郷隆盛として掲載する肖像。掲載図像は描画された肖像で、本人を撮影した写真として扱いません。1935年は採録資料の刊行年で、原図の制作年ではありません。原図の作者・制作年は個別根拠確認中。掲載用に幅160pxへ縮小・JPEG圧縮。構図・色調は変更していません。",
+        "rightsNote": "NDL肖像展示の掲載画像は著作権保護期間満了。出典を明示すれば申請不要。",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "okubo",
@@ -894,6 +930,18 @@
           "ndl_handwriting_bakumatsu_people"
         ],
         "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/sho-in-kyoto.jpg",
+        "alt": "吉田松陰の史料肖像",
+        "sourceId": "kyoto_portrait_shoin",
+        "rightsSourceId": "kyoto_archive_reuse",
+        "credit": "京都大学附属図書館所蔵「吉田松陰画像附松陰自賛」（一部・縮小）",
+        "originalSource": "松浦松洞筆・吉田松陰賛「吉田松陰画像附松陰自賛」、1859年、京都大学附属図書館（尊/軸149/貴）",
+        "dateNote": "1859年の肖像画。選択した時点の姿を示すものではありません。",
+        "identityNote": "京都大学の書誌・解説は松浦松洞が描いた吉田松陰像と本人の自賛と同定。安政6年5月21日（1859年）は自賛の年月日。公式IIIFから肖像部分を取得し縮小した画像で、掛軸全体・自賛・台紙は含みません。掲載用に幅160pxへ縮小・JPEG圧縮。肖像部分の構図・色調は変更していません。",
+        "rightsNote": "京都大学附属図書館の二次利用自由画像。所蔵と資料名、公開ページへのリンク、部分利用・縮小を明示。",
+        "checkedAt": "2026-09-27"
       }
     },
     {

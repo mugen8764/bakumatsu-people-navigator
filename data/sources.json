@@ -49,9 +49,9 @@
       "id": "ndl_portrait_saigo_detail",
       "title": "国立国会図書館「近代日本人の肖像・西郷隆盛」",
       "url": "https://www.ndl.go.jp/portrait/datas/85/index.html",
-      "note": "島津斉彬による登用、薩長連合、江戸城無血開城を含む西郷隆盛の略歴。",
-      "locator": "生没年・別称・「解説」",
-      "contentCheckedAt": "2026-07-31"
+      "note": "島津斉彬による登用、薩長連合、江戸城無血開城を含む西郷隆盛の略歴。肖像画像と出典資料「近世名士写真 其1」を確認。掲載画像は幅160pxに縮小・JPEG圧縮。",
+      "locator": "生没年・別称・「解説」／肖像画像・出典「近世名士写真 其1」",
+      "contentCheckedAt": "2026-09-27"
     },
     {
       "id": "ndl_portrait_katsu_detail",
@@ -2716,6 +2716,46 @@
       "locator": "生没年・別称・解説：1854年連座と松代蟄居、1862年赦免、1864年幕命による上洛・開国論・暗殺",
       "contentCheckedAt": "2026-09-27",
       "note": "1811年3月22日〜1864年8月12日（旧暦7月11日）。1862年赦免の月日はこの解説では確定しない。"
+    },
+    {
+      "id": "ndl_portrait_nariakira",
+      "title": "国立国会図書館「近代日本人の肖像・島津斉彬」",
+      "url": "https://www.ndl.go.jp/portrait/datas/6091/",
+      "note": "島津斉彬として掲載された肖像と採録資料を確認。掲載画像は公式提供画像を幅160pxに縮小・JPEG圧縮。原画像は保存し、構図・色調は変更していない。",
+      "locator": "肖像画像／出典「幕末、明治、大正回顧八十年史 第1輯」",
+      "contentCheckedAt": "2026-09-27"
+    },
+    {
+      "id": "kyoto_portrait_shoin",
+      "title": "京都大学貴重資料デジタルアーカイブ「吉田松陰画像附松陰自賛」",
+      "url": "https://rmda.kulib.kyoto-u.ac.jp/item/rb00014105",
+      "note": "松浦松洞筆・吉田松陰賛、1859年、附属図書館所蔵と資料解説を確認。掲載画像は公式IIIFの肖像部分画像を幅160pxに縮小・JPEG圧縮。原画像を保存。",
+      "locator": "著者・出版年・請求記号／内容記述／二次利用方法・所蔵",
+      "contentCheckedAt": "2026-09-27"
+    },
+    {
+      "id": "kyoto_archive_reuse",
+      "title": "京都大学貴重資料デジタルアーカイブ「コンテンツの二次利用」",
+      "url": "https://rmda.kulib.kyoto-u.ac.jp/reuse",
+      "note": "保護期間満了資料の公開画像は申請不要で二次利用・加工可。所蔵・資料名・リンク・加工明示を確認。",
+      "locator": "2. コンテンツの二次利用条件（京都大学附属図書館）",
+      "contentCheckedAt": "2026-09-27"
+    },
+    {
+      "id": "commons_portrait_iemochi_mochinaga",
+      "title": "Wikimedia Commons「File:Toku14-2.jpg（徳川家茂像）」",
+      "url": "https://commons.wikimedia.org/wiki/File:Toku14-2.jpg",
+      "note": "徳川茂徳筆、1866–1867年、徳川記念財団所蔵と記載。画像提供元は宇治主水。公式所蔵原資料本文は未確認。",
+      "locator": "Summary：Artist／Title／Date／Collection／Source",
+      "contentCheckedAt": "2026-09-27"
+    },
+    {
+      "id": "commons_iemochi_pd_art",
+      "title": "Wikimedia Commons「徳川家茂像・画像の利用条件」",
+      "url": "https://commons.wikimedia.org/wiki/File:Toku14-2.jpg#Licensing",
+      "note": "画像単位のPD-Art（PD-old-auto-expired）、作者1884年没の表記を確認。平面絵画の忠実な複製。",
+      "locator": "Licensing：PD-Art／作者1884年没／PD-old-auto-expired",
+      "contentCheckedAt": "2026-09-27"
     }
   ]
 }
