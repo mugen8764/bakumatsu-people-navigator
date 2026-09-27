@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.82",
+    "version": "1.0.83",
     "updated": "2026-09-27"
   },
   "sources": {
@@ -308,7 +308,9 @@
     "ndl_portrait_shoin_detail": {
       "title": "国立国会図書館「近代日本人の肖像・吉田松陰」",
       "url": "https://www.ndl.go.jp/portrait/datas/217/index.html",
-      "note": "1854年の下田での海外密航未遂、松下村塾での門人教育、1859年の安政の大獄による刑死。"
+      "note": "1854年の下田での海外密航未遂、松下村塾での門人教育、1859年の安政の大獄による刑死。",
+      "locator": "解説：佐久間象山に砲術・蘭学を学ぶ、1854年下田米艦への乗り込み拒絶と投獄、1859年安政の大獄で刑死",
+      "contentCheckedAt": "2026-09-27"
     },
     "iwaki_kazunomiya": {
       "title": "いわき市「安藤信正生誕200年・公武合体策と和宮降嫁」",
@@ -529,7 +531,9 @@
     "hagi_shoin_timeline": {
       "title": "萩市「吉田松陰・文 略年譜」",
       "url": "https://www.city.hagi.lg.jp/site/humi-hanamoyu/h9366.html",
-      "note": "吉田松陰の士籍削除、1853年の黒船目撃、1854年の下田密航未遂と野山獄収容。"
+      "note": "吉田松陰の士籍削除、1853年の黒船目撃、1854年の下田密航未遂と野山獄収容。",
+      "locator": "年譜1851年佐久間象山入門、1854年3月27日金子重之助と下田米艦乗り込み失敗・10月24日野山獄収容",
+      "contentCheckedAt": "2026-09-27"
     },
     "ibusuki_atsuhime": {
       "title": "指宿市観光協会「天璋院篤姫について」",
@@ -2335,6 +2339,20 @@
       "url": "https://www.at-nagasaki.jp/spot/1047",
       "note": "本文は小銃・ユニオン号購入を1866年とする。長次郎の解説は取引年を特定しないため、事件は1865年の社中結成から1866年旧暦1月の長次郎死去までの期間を示す。",
       "locator": "本文冒頭の1865年結成・武器取引・輸送・航海訓練、および「海援隊」節の1867年設立と約規・隊士陸奥陽之助",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "nagano_zozan_museum_profile": {
+      "title": "長野市立象山記念館「2024年9月18日〜12月28日 展示資料一覧」",
+      "url": "https://www.sanadahoumotsukan.com/up_images/pla/pla_184948dc.pdf",
+      "note": "1854年の松陰渡航未遂連座を1858年の安政の大獄と混同しない。個々の門人の入門年月はこの資料で確定しない。",
+      "locator": "PDF1頁下部の佐久間象山略歴（2頁冒頭へ続く）：松代藩・江戸砲術塾・松陰等の門人・1854年連座・1864年上洛・7月11日暗殺",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "ndl_sakuma_profile": {
+      "title": "国立国会図書館「近代日本人の肖像・佐久間象山」",
+      "url": "https://www.ndl.go.jp/portrait/datas/91/",
+      "note": "1811年3月22日〜1864年8月12日（旧暦7月11日）。1862年赦免の月日はこの解説では確定しない。",
+      "locator": "生没年・別称・解説：1854年連座と松代蟄居、1862年赦免、1864年幕命による上洛・開国論・暗殺",
       "contentCheckedAt": "2026-09-27"
     }
   },
@@ -8452,6 +8470,78 @@
         "sourceIds": [
           "nagasaki_shachu_kaientai",
           "ryoma_mutsu_kaientai"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "shoin-voyage-attempt-1854": {
+      "id": "shoin-voyage-attempt-1854",
+      "sceneId": "1854-treaty",
+      "title": "松陰の渡航未遂と象山の処分",
+      "date": "1854年（嘉永7年）3月27日（旧暦）／その後の処分",
+      "scope": "下田での吉田松陰の海外渡航未遂と、教師佐久間象山への処分。1858年以降の安政の大獄とは別。",
+      "summary": "松陰は下田の米国軍艦へ乗り込んで海外へ渡ろうとしたが拒絶され、投獄された。教師の象山も連座して松代で蟄居した。",
+      "stakes": "海外へ出て知識を得ようとした行動が、弟子と教師それぞれの処分へどうつながったか。",
+      "turningPoint": "松陰は萩の野山獄へ移され、象山は松代で蟄居。象山の赦免は1862年、松陰の安政の大獄での刑死は1859年と、別々の経過をたどる。",
+      "participants": [
+        {
+          "personId": "sho-in",
+          "displayName": "吉田松陰",
+          "role": "米艦での海外渡航を企図",
+          "involvement": "onsite",
+          "side": "渡航を企てた側",
+          "summary": "金子重之助と下田で米艦への乗り込みを試みたが拒絶され、投獄された。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_shoin_detail",
+              "hagi_shoin_timeline"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "sakuma-shozan",
+          "displayName": "佐久間象山",
+          "role": "松陰の教師・事件に連座",
+          "involvement": "context",
+          "side": "処分を受けた教師",
+          "summary": "松陰に砲術と蘭学を教えていた。渡航未遂事件に連座し、松代に蟄居した。",
+          "evidence": {
+            "sourceIds": [
+              "nagano_zozan_museum_profile",
+              "ndl_portrait_shoin_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "shoin-voyage-sakuma-shoin",
+          "aPersonId": "sakuma-shozan",
+          "bPersonId": "sho-in",
+          "label": "砲術・蘭学の師弟",
+          "description": "松陰は象山のもとで砲術と蘭学を学んだ。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_shoin_detail",
+              "hagi_shoin_timeline"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "shimoda",
+        "hagi"
+      ],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "nagano_zozan_museum_profile",
+          "ndl_portrait_shoin_detail",
+          "hagi_shoin_timeline"
         ],
         "reviewStatus": "verified"
       }
@@ -19671,6 +19761,92 @@
           }
         }
       }
+    },
+    {
+      "id": "sakuma-shozan",
+      "name": "佐久間象山",
+      "kana": "さくま しょうざん",
+      "aliases": [
+        "佐久間国忠",
+        "佐久間啓"
+      ],
+      "born": "1811–1864",
+      "defaultFaction": "医療・学問",
+      "activeRange": [
+        1,
+        7
+      ],
+      "oneLine": "松代藩士として西洋の知識を研究し、江戸の砲術塾で松陰らを教えた。",
+      "places": [
+        "edo",
+        "kyoto"
+      ],
+      "events": [],
+      "sources": [
+        "nagano_zozan_museum_profile",
+        "ndl_sakuma_profile"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "nagano_zozan_museum_profile",
+          "ndl_sakuma_profile"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [],
+      "statuses": {
+        "1854-treaty": {
+          "display": "佐久間象山",
+          "role": "松代で蟄居中の学者",
+          "stance": "弟子の吉田松陰の海外渡航未遂に連座し、1854年から松代で蟄居した。",
+          "importance": "海外の知識を求めた弟子の渡航未遂が、教師自身の処分にもつながった。",
+          "evidence": {
+            "sourceIds": [
+              "nagano_zozan_museum_profile",
+              "ndl_sakuma_profile"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1862-bunkyu": {
+          "display": "佐久間象山",
+          "role": "松代で蟄居していた学者",
+          "stance": "松代での蟄居は文久2年（1862）に赦免された。",
+          "importance": "1854年の渡航未遂に連座した処分が、この年に解かれた。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_sakuma_profile"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1863-joi": {
+          "display": "佐久間象山",
+          "role": "松代藩士・西洋知識を研究する学者",
+          "stance": "1862年に赦免された。松代藩士として海外事情や西洋の知識を研究してきた。",
+          "importance": "海外事情の研究や砲術・蘭学の教育を担ってきた学者が、赦免後の時期を迎えた。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_sakuma_profile",
+              "nagano_zozan_museum_profile"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1864-kinmon": {
+          "display": "佐久間象山",
+          "role": "幕命で上洛した松代藩の学者",
+          "stance": "幕府の命で京都へ赴き、開国と公武一和を説いた。旧暦7月11日に暗殺され、禁門の変が起きる前に死亡した。",
+          "importance": "攘夷が争点となる京都で、開国と公武一和を説いた。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_sakuma_profile",
+              "nagano_zozan_museum_profile"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
     }
   ],
   "relations": [
@@ -21945,12 +22121,14 @@
         }
       },
       "医療・学問": {
-        "goal": "蘭方医学を学び、診療に携わる人物を掲載。",
-        "position": "楠本イネの医学の学習と診療を、人物の活動としてたどる。",
+        "goal": "蘭方医学や、西洋の知識・砲術を学び研究する。",
+        "position": "楠本イネの医学の学習と診療、象山の海外事情研究や砲術・蘭学の教育をたどる。",
         "evidence": {
           "sourceIds": [
             "ndl_portrait_ine",
-            "seiyo_ine_timeline"
+            "seiyo_ine_timeline",
+            "nagano_zozan_museum_profile",
+            "ndl_sakuma_profile"
           ],
           "reviewStatus": "verified"
         }
@@ -22019,12 +22197,14 @@
         }
       },
       "医療・学問": {
-        "goal": "蘭方医学を学び、診療に携わる人物を掲載。",
-        "position": "楠本イネの医学の学習と診療を、人物の活動としてたどる。",
+        "goal": "蘭方医学や、西洋の知識・砲術を学び研究する。",
+        "position": "楠本イネの医学の学習と診療、象山の海外事情研究や砲術・蘭学の教育をたどる。",
         "evidence": {
           "sourceIds": [
             "ndl_portrait_ine",
-            "seiyo_ine_timeline"
+            "seiyo_ine_timeline",
+            "nagano_zozan_museum_profile",
+            "ndl_sakuma_profile"
           ],
           "reviewStatus": "verified"
         }
@@ -22083,12 +22263,14 @@
         }
       },
       "医療・学問": {
-        "goal": "蘭方医学を学び、診療に携わる人物を掲載。",
-        "position": "楠本イネの医学の学習と診療を、人物の活動としてたどる。",
+        "goal": "蘭方医学や、西洋の知識・砲術を学び研究する。",
+        "position": "楠本イネの医学の学習と診療、象山の海外事情研究や砲術・蘭学の教育をたどる。",
         "evidence": {
           "sourceIds": [
             "ndl_portrait_ine",
-            "seiyo_ine_timeline"
+            "seiyo_ine_timeline",
+            "nagano_zozan_museum_profile",
+            "ndl_sakuma_profile"
           ],
           "reviewStatus": "verified"
         }
@@ -22159,12 +22341,14 @@
         }
       },
       "医療・学問": {
-        "goal": "蘭方医学を学び、診療に携わる人物を掲載。",
-        "position": "楠本イネの医学の学習と診療を、人物の活動としてたどる。",
+        "goal": "蘭方医学や、西洋の知識・砲術を学び研究する。",
+        "position": "楠本イネの医学の学習と診療、象山の海外事情研究や砲術・蘭学の教育をたどる。",
         "evidence": {
           "sourceIds": [
             "ndl_portrait_ine",
-            "seiyo_ine_timeline"
+            "seiyo_ine_timeline",
+            "nagano_zozan_museum_profile",
+            "ndl_sakuma_profile"
           ],
           "reviewStatus": "verified"
         }
@@ -22236,12 +22420,14 @@
         }
       },
       "医療・学問": {
-        "goal": "蘭方医学を学び、診療に携わる人物を掲載。",
-        "position": "楠本イネの医学の学習と診療を、人物の活動としてたどる。",
+        "goal": "蘭方医学や、西洋の知識・砲術を学び研究する。",
+        "position": "楠本イネの医学の学習と診療、象山の海外事情研究や砲術・蘭学の教育をたどる。",
         "evidence": {
           "sourceIds": [
             "ndl_portrait_ine",
-            "seiyo_ine_timeline"
+            "seiyo_ine_timeline",
+            "nagano_zozan_museum_profile",
+            "ndl_sakuma_profile"
           ],
           "reviewStatus": "verified"
         }
@@ -22313,12 +22499,14 @@
         }
       },
       "医療・学問": {
-        "goal": "蘭方医学を学び、診療に携わる人物を掲載。",
-        "position": "楠本イネの医学の学習と診療を、人物の活動としてたどる。",
+        "goal": "蘭方医学や、西洋の知識・砲術を学び研究する。",
+        "position": "楠本イネの医学の学習と診療、象山の海外事情研究や砲術・蘭学の教育をたどる。",
         "evidence": {
           "sourceIds": [
             "ndl_portrait_ine",
-            "seiyo_ine_timeline"
+            "seiyo_ine_timeline",
+            "nagano_zozan_museum_profile",
+            "ndl_sakuma_profile"
           ],
           "reviewStatus": "verified"
         }
@@ -22387,12 +22575,14 @@
         }
       },
       "医療・学問": {
-        "goal": "蘭方医学を学び、診療に携わる人物を掲載。",
-        "position": "楠本イネの医学の学習と診療を、人物の活動としてたどる。",
+        "goal": "蘭方医学や、西洋の知識・砲術を学び研究する。",
+        "position": "楠本イネの医学の学習と診療、象山の海外事情研究や砲術・蘭学の教育をたどる。",
         "evidence": {
           "sourceIds": [
             "ndl_portrait_ine",
-            "seiyo_ine_timeline"
+            "seiyo_ine_timeline",
+            "nagano_zozan_museum_profile",
+            "ndl_sakuma_profile"
           ],
           "reviewStatus": "verified"
         }

@@ -3712,6 +3712,33 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "sakuma-shozan",
+      "name": "佐久間象山",
+      "kana": "さくま しょうざん",
+      "aliases": [
+        "佐久間国忠",
+        "佐久間啓"
+      ],
+      "lifespan": "1811–1864",
+      "defaultFactionId": "medicine-learning",
+      "activeStartSceneId": "1854-treaty",
+      "activeEndSceneId": "1864-kinmon",
+      "oneLine": "松代藩士として西洋の知識を研究し、江戸の砲術塾で松陰らを教えた。",
+      "placeIds": [
+        "edo",
+        "kyoto"
+      ],
+      "eventIds": [],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "nagano_zozan_museum_profile",
+          "ndl_sakuma_profile"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

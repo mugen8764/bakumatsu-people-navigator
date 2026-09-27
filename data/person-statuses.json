@@ -8863,6 +8863,77 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-status-sakuma-shozan-1854-treaty",
+      "personId": "sakuma-shozan",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1860-sakurada",
+      "displayName": "佐久間象山",
+      "role": "松代で蟄居中の学者",
+      "factionId": "medicine-learning",
+      "stance": "弟子の吉田松陰の海外渡航未遂に連座し、1854年から松代で蟄居した。",
+      "importance": "海外の知識を求めた弟子の渡航未遂が、教師自身の処分にもつながった。",
+      "evidence": {
+        "sourceIds": [
+          "nagano_zozan_museum_profile",
+          "ndl_sakuma_profile"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-sakuma-shozan-1862-bunkyu",
+      "personId": "sakuma-shozan",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "佐久間象山",
+      "role": "松代で蟄居していた学者",
+      "factionId": "medicine-learning",
+      "stance": "松代での蟄居は文久2年（1862）に赦免された。",
+      "importance": "1854年の渡航未遂に連座した処分が、この年に解かれた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_sakuma_profile"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-sakuma-shozan-1863-joi",
+      "personId": "sakuma-shozan",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-aug18",
+      "displayName": "佐久間象山",
+      "role": "松代藩士・西洋知識を研究する学者",
+      "factionId": "medicine-learning",
+      "stance": "1862年に赦免された。松代藩士として海外事情や西洋の知識を研究してきた。",
+      "importance": "海外事情の研究や砲術・蘭学の教育を担ってきた学者が、赦免後の時期を迎えた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_sakuma_profile",
+          "nagano_zozan_museum_profile"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-sakuma-shozan-1864-kinmon",
+      "personId": "sakuma-shozan",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "佐久間象山",
+      "role": "幕命で上洛した松代藩の学者",
+      "factionId": "medicine-learning",
+      "stance": "幕府の命で京都へ赴き、開国と公武一和を説いた。旧暦7月11日に暗殺され、禁門の変が起きる前に死亡した。",
+      "importance": "攘夷が争点となる京都で、開国と公武一和を説いた。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_sakuma_profile",
+          "nagano_zozan_museum_profile"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

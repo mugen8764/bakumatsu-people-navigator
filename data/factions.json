@@ -1369,6 +1369,23 @@
       "id": "faction-state-medicine-learning-1854-treaty",
       "factionId": "medicine-learning",
       "startSceneId": "1854-treaty",
+      "endSceneId": "1864-kinmon",
+      "goal": "蘭方医学や、西洋の知識・砲術を学び研究する。",
+      "position": "楠本イネの医学の学習と診療、象山の海外事情研究や砲術・蘭学の教育をたどる。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_ine",
+          "seiyo_ine_timeline",
+          "nagano_zozan_museum_profile",
+          "ndl_sakuma_profile"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "faction-state-medicine-learning-1865-choshu",
+      "factionId": "medicine-learning",
+      "startSceneId": "1865-choshu",
       "endSceneId": "1866-expedition",
       "goal": "蘭方医学を学び、診療に携わる人物を掲載。",
       "position": "楠本イネの医学の学習と診療を、人物の活動としてたどる。",
