@@ -5205,6 +5205,140 @@
         "reviewStatus": "verified",
         "note": "県は有馬ら6人、市は有馬以下9人の死亡を記す。集計範囲が確定しないため人数は表示しない。奈良原繁を有馬の直接殺害者とは断定しない。収録する人物状態は1862年のこの時点のみで、生存期間とは区別する。"
       }
+    },
+    {
+      "id": "kameyama-shachu-procurement",
+      "sceneId": "1865-choshu",
+      "title": "亀山社中と武器・船の調達",
+      "date": "1865年の社中結成から1866年旧暦1月の長次郎死去まで",
+      "scope": "1865年の亀山社中結成から、慶応2年（1866）旧暦1月の近藤長次郎死去までの調達活動。",
+      "summary": "龍馬らが長崎に亀山社中を結成。周旋役の長次郎は長州向けにグラバーから小銃を買い付け、ユニオン号購入にも尽力した。",
+      "stakes": "政治交渉を支えた武器や船は、誰が商人との取引を進めて調達したのか。",
+      "turningPoint": "小銃や船の調達を周旋した長次郎は、慶応2年（1866）旧暦1月14日に亡くなった。",
+      "participants": [
+        {
+          "personId": "ryoma",
+          "displayName": "坂本龍馬",
+          "role": "亀山社中を結成",
+          "involvement": "decision",
+          "side": "亀山社中",
+          "summary": "同志と亀山社中を結成し、銃器取引・輸送・航海訓練などを進めた。",
+          "evidence": {
+            "sourceIds": [
+              "nagasaki_shachu_kaientai"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "kondo-chojiro",
+          "displayName": "近藤長次郎",
+          "role": "小銃・船の調達を周旋",
+          "involvement": "onsite",
+          "side": "亀山社中",
+          "summary": "長州向けにグラバーから小銃を買い付け、ユニオン号購入にも尽力した。",
+          "evidence": {
+            "sourceIds": [
+              "ryoma_kondo_chojiro"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "glover",
+          "displayName": "トーマス・グラバー",
+          "role": "小銃の取引相手",
+          "involvement": "onsite",
+          "side": "外国商人",
+          "summary": "長次郎が長州向けに小銃を買い付けた英商人。",
+          "evidence": {
+            "sourceIds": [
+              "ryoma_kondo_chojiro"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "shachu-chojiro-glover",
+          "aPersonId": "kondo-chojiro",
+          "bPersonId": "glover",
+          "label": "小銃を買い付け",
+          "description": "長次郎が長州向けの小銃をグラバーから買い付けた。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "ryoma_kondo_chojiro"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "nagasaki"
+      ],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "ryoma_kondo_chojiro",
+          "nagasaki_shachu_kaientai"
+        ],
+        "reviewStatus": "verified",
+        "note": "事件内の日付は社中結成から長次郎死去までの期間。親scene1865へ個別取引完了年を固定しない。"
+      }
+    },
+    {
+      "id": "kaientai-activities-1867",
+      "sceneId": "1867-taisei",
+      "title": "海援隊と出身藩を越えた活動",
+      "date": "1867年（慶応3年）",
+      "scope": "1867年の海援隊の活動と構成員。",
+      "summary": "亀山社中から発展した海援隊は、輸送・商取引や土佐藩の応援を目的とした。紀伊出身の陸奥陽之助も隊士として名簿に見える。",
+      "stakes": "輸送・商取引を担い、土佐藩を援護する組織に、他藩出身者も加わった。",
+      "turningPoint": "亀山社中が1867年に海援隊へ発展し、龍馬が隊長となった。",
+      "participants": [
+        {
+          "personId": "ryoma",
+          "displayName": "坂本龍馬",
+          "role": "海援隊長",
+          "involvement": "decision",
+          "side": "海援隊",
+          "summary": "海援隊の隊長として組織を率いた。",
+          "evidence": {
+            "sourceIds": [
+              "nagasaki_shachu_kaientai"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "mutsu-munemitsu",
+          "displayName": "陸奥陽之助",
+          "role": "海援隊士",
+          "involvement": "context",
+          "side": "海援隊・紀伊出身",
+          "summary": "海援隊の名簿に、紀伊出身の隊士として記録される。",
+          "evidence": {
+            "sourceIds": [
+              "ryoma_mutsu_kaientai"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [],
+      "placeIds": [
+        "nagasaki"
+      ],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "nagasaki_shachu_kaientai",
+          "ryoma_mutsu_kaientai"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ],
   "terms": [

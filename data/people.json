@@ -3660,6 +3660,58 @@
         "reviewStatus": "needs_review",
         "note": "出生1830はNDL典拠とPHP歴史街道で一致。没年はPHP歴史街道が1903、NDL典拠00624599が1905と記し、差が未解消のため確定しない。1868年の白河口指揮・帰会津・離脱は別に確認。"
       }
+    },
+    {
+      "id": "kondo-chojiro",
+      "name": "近藤長次郎",
+      "kana": "こんどう ちょうじろう",
+      "aliases": [
+        "饅頭屋長次郎"
+      ],
+      "lifespan": "1838–1866",
+      "defaultFactionId": "navigation-trade",
+      "activeStartSceneId": "1865-choshu",
+      "activeEndSceneId": "1865-choshu",
+      "oneLine": "亀山社中の周旋役として、長州向けの小銃や船の調達を担った。",
+      "placeIds": [
+        "kochi",
+        "nagasaki"
+      ],
+      "eventIds": [],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "ryoma_kondo_chojiro"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "mutsu-munemitsu",
+      "name": "陸奥宗光",
+      "kana": "むつ むねみつ",
+      "aliases": [
+        "陸奥陽之助",
+        "伊達源二郎"
+      ],
+      "lifespan": "1844–1897",
+      "defaultFactionId": "navigation-trade",
+      "activeStartSceneId": "1867-taisei",
+      "activeEndSceneId": "1867-taisei",
+      "oneLine": "紀伊出身で勝海舟に学び、龍馬の亀山社中・海援隊に参加した。",
+      "placeIds": [
+        "kobe",
+        "nagasaki"
+      ],
+      "eventIds": [],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "wakayama_mutsu_profile",
+          "ryoma_mutsu_kaientai"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

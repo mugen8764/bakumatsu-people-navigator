@@ -8827,6 +8827,42 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-status-kondo-chojiro-1865-choshu",
+      "personId": "kondo-chojiro",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "近藤長次郎",
+      "role": "亀山社中の周旋役",
+      "factionId": "navigation-trade",
+      "stance": "亀山社中の周旋役として活動した。",
+      "importance": "社中の活動を支えた武器・船の調達を担い、慶応2年（1866）旧暦1月14日に亡くなった。",
+      "evidence": {
+        "sourceIds": [
+          "ryoma_kondo_chojiro"
+        ],
+        "reviewStatus": "verified",
+        "note": "社中結成から1866年旧暦1月の死去までの生前活動を表示する。周旋役の就任日と個々の取引完了年は確定しない。"
+      }
+    },
+    {
+      "id": "person-status-mutsu-munemitsu-1867-taisei",
+      "personId": "mutsu-munemitsu",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "陸奥陽之助",
+      "role": "紀伊出身の海援隊士",
+      "factionId": "navigation-trade",
+      "stance": "紀伊出身の人物として、龍馬率いる海援隊に属した。",
+      "importance": "海援隊には土佐以外の出身者も参加していた。",
+      "evidence": {
+        "sourceIds": [
+          "ryoma_mutsu_kaientai",
+          "nagasaki_shachu_kaientai"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

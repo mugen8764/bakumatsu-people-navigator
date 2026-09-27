@@ -278,6 +278,26 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "navigation-trade",
+      "name": "航海・交易",
+      "shortName": "航",
+      "kind": "field",
+      "color": "#426c7a",
+      "summary": "航海・輸送・商取引に携わる人物の活動分野。",
+      "aliases": [
+        "航海",
+        "交易",
+        "輸送",
+        "商取引"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "nagasaki_shachu_kaientai"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ],
   "states": [
@@ -1415,6 +1435,36 @@
       "evidence": {
         "sourceIds": [
           "kyoto_goryo_eji_todo"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "faction-state-navigation-trade-1865-choshu",
+      "factionId": "navigation-trade",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "goal": "亀山社中が銃器取引・輸送・航海訓練に取り組む。",
+      "position": "長崎を拠点に、長次郎が小銃や船の調達を周旋した。",
+      "evidence": {
+        "sourceIds": [
+          "nagasaki_shachu_kaientai",
+          "ryoma_kondo_chojiro"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "faction-state-navigation-trade-1867-taisei",
+      "factionId": "navigation-trade",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "goal": "海援隊が輸送・商取引や土佐藩の応援を進める。",
+      "position": "龍馬を隊長とし、紀伊など他藩出身の隊士も参加した。",
+      "evidence": {
+        "sourceIds": [
+          "nagasaki_shachu_kaientai",
+          "ryoma_mutsu_kaientai"
         ],
         "reviewStatus": "verified"
       }
