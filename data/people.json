@@ -3520,6 +3520,85 @@
       "termIds": [
         "boshin-war"
       ]
+    },
+    {
+      "id": "todo-heisuke",
+      "name": "藤堂平助",
+      "kana": "とうどう へいすけ",
+      "aliases": [],
+      "lifespan": "1844–1867",
+      "defaultFactionId": "shinsengumi",
+      "activeStartSceneId": "1864-kinmon",
+      "activeEndSceneId": "1867-taisei",
+      "oneLine": "池田屋へ近藤隊として突入した新選組隊士。1867年に御陵衛士となり、油小路の変で死去した。",
+      "placeIds": [
+        "kyoto",
+        "edo"
+      ],
+      "eventIds": [],
+      "termIds": [
+        "kyoto-shugoshoku"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kotobank_todo_heisuke",
+          "php_ikedaya_participants",
+          "kyoto_goryo_eji_todo",
+          "kasumigaura_aburanokoji_todo"
+        ],
+        "reviewStatus": "verified"
+      },
+      "turningPoints": [
+        {
+          "fromSceneId": "1866-expedition",
+          "toSceneId": "1867-taisei",
+          "title": "新選組から、御陵衛士へ",
+          "before": "新選組隊士として活動していた。",
+          "after": "1867年3月、伊東甲子太郎らと新選組を離れ、御陵衛士となった。",
+          "context": "御陵衛士は月真院を屯所とした。藤堂は同年11月18日、油小路の変で命を落とした（旧暦）。",
+          "evidence": {
+            "sourceIds": [
+              "kotobank_todo_heisuke",
+              "kyoto_goryo_eji_todo",
+              "kasumigaura_aburanokoji_todo"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
+    },
+    {
+      "id": "harada-sanosuke",
+      "name": "原田左之助",
+      "kana": "はらだ さのすけ",
+      "aliases": [
+        "忠一",
+        "原田佐之助"
+      ],
+      "lifespan": "1840–1868",
+      "defaultFactionId": "shinsengumi",
+      "activeStartSceneId": "1864-kinmon",
+      "activeEndSceneId": "1868-toba",
+      "oneLine": "池田屋事件へ出動した新選組隊士。1868年には鳥羽・伏見に従軍し、その後は江戸で別の部隊に加わった。",
+      "placeIds": [
+        "kyoto",
+        "edo"
+      ],
+      "eventIds": [
+        "toba"
+      ],
+      "termIds": [
+        "boshin-war"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_authority_harada",
+          "archives_ikedaya_rewards",
+          "ehime_history_harada"
+        ],
+        "reviewStatus": "verified",
+        "note": "基本表記・別名・生没はNDL典拠。県史は新選組での活動と戊辰期の経路に限定し、龍馬暗殺推測は採用しない。"
+      }
     }
   ]
 }

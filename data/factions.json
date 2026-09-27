@@ -261,6 +261,23 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "goryo-eji",
+      "name": "御陵衛士",
+      "shortName": "衛",
+      "color": "#806151",
+      "summary": "伊東甲子太郎らが新選組を離れ、孝明天皇の御陵守衛として活動した集団。",
+      "aliases": [
+        "高台寺党",
+        "御陵衞士"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kyoto_goryo_eji_todo"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ],
   "states": [
@@ -1384,6 +1401,20 @@
         "sourceIds": [
           "ryoma_dappan",
           "mlit_teradaya_1866"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "faction-state-goryo-eji-1867-taisei",
+      "factionId": "goryo-eji",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "goal": "孝明天皇の御陵守衛を担い、勤王を説く。",
+      "position": "伊東甲子太郎らが新選組を離れ、1867年6月から11月まで月真院を屯所とした。",
+      "evidence": {
+        "sourceIds": [
+          "kyoto_goryo_eji_todo"
         ],
         "reviewStatus": "verified"
       }

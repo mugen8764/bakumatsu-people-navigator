@@ -1342,6 +1342,34 @@
             "reviewStatus": "verified"
           },
           "side": "京都守護職"
+        },
+        {
+          "personId": "todo-heisuke",
+          "displayName": "藤堂平助",
+          "role": "近藤隊として突入",
+          "involvement": "onsite",
+          "side": "新選組側",
+          "summary": "近藤勇、沖田総司、永倉新八と池田屋へ入った。",
+          "evidence": {
+            "sourceIds": [
+              "php_ikedaya_participants"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "harada-sanosuke",
+          "displayName": "原田左之助",
+          "role": "事件に出動した隊士",
+          "involvement": "onsite",
+          "side": "新選組側",
+          "summary": "池田屋事件への出動後、褒賞の対象となった。",
+          "evidence": {
+            "sourceIds": [
+              "archives_ikedaya_rewards"
+            ],
+            "reviewStatus": "verified"
+          }
         }
       ],
       "relations": [
@@ -1397,7 +1425,8 @@
           "php_ikedaya_participants",
           "yamaguchi_library_kinmon",
           "kyoto_kinmon",
-          "yamaguchi_yoshida_toshimaro"
+          "yamaguchi_yoshida_toshimaro",
+          "archives_ikedaya_rewards"
         ],
         "reviewStatus": "verified"
       },

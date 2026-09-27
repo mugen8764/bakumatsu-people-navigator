@@ -8589,6 +8589,208 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-status-todo-heisuke-1864-kinmon",
+      "personId": "todo-heisuke",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "藤堂平助",
+      "role": "新選組隊士",
+      "factionId": "shinsengumi",
+      "stance": "近藤勇、沖田総司、永倉新八と池田屋へ突入した。",
+      "importance": "池田屋への出動で褒賞の対象となった。",
+      "evidence": {
+        "sourceIds": [
+          "php_ikedaya_participants",
+          "archives_ikedaya_rewards"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-todo-heisuke-1865-choshu",
+      "personId": "todo-heisuke",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "藤堂平助",
+      "role": "新選組隊士",
+      "factionId": "shinsengumi",
+      "stance": "新選組の隊士として活動する。",
+      "importance": "1867年に伊東甲子太郎らと隊を離れ、御陵衛士となる。",
+      "evidence": {
+        "sourceIds": [
+          "kotobank_todo_heisuke"
+        ],
+        "reviewStatus": "verified",
+        "note": "隊士の在籍期間に限定し、八番隊組長の任命年や行軍案の役職は表示しない。"
+      }
+    },
+    {
+      "id": "person-status-todo-heisuke-1866-satcho",
+      "personId": "todo-heisuke",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "displayName": "藤堂平助",
+      "role": "新選組隊士",
+      "factionId": "shinsengumi",
+      "stance": "新選組の隊士として活動する。",
+      "importance": "1867年に伊東甲子太郎らと隊を離れ、御陵衛士となる。",
+      "evidence": {
+        "sourceIds": [
+          "kotobank_todo_heisuke"
+        ],
+        "reviewStatus": "verified",
+        "note": "隊士の在籍期間に限定し、八番隊組長の任命年や行軍案の役職は表示しない。"
+      }
+    },
+    {
+      "id": "person-status-todo-heisuke-1866-expedition",
+      "personId": "todo-heisuke",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "displayName": "藤堂平助",
+      "role": "新選組隊士",
+      "factionId": "shinsengumi",
+      "stance": "新選組の隊士として活動する。",
+      "importance": "1867年に伊東甲子太郎らと隊を離れ、御陵衛士となる。",
+      "evidence": {
+        "sourceIds": [
+          "kotobank_todo_heisuke"
+        ],
+        "reviewStatus": "verified",
+        "note": "隊士の在籍期間に限定し、八番隊組長の任命年や行軍案の役職は表示しない。"
+      }
+    },
+    {
+      "id": "person-status-todo-heisuke-1867-taisei",
+      "personId": "todo-heisuke",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "藤堂平助",
+      "role": "御陵衛士",
+      "factionId": "goryo-eji",
+      "stance": "1867年3月、伊東甲子太郎らと新選組を離れ、御陵衛士となった。",
+      "importance": "同年11月18日、油小路の変で死去した（旧暦）。",
+      "evidence": {
+        "sourceIds": [
+          "kyoto_goryo_eji_todo",
+          "kotobank_todo_heisuke",
+          "kasumigaura_aburanokoji_todo"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-harada-sanosuke-1864-kinmon",
+      "personId": "harada-sanosuke",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "原田左之助",
+      "role": "新選組隊士",
+      "factionId": "shinsengumi",
+      "stance": "池田屋事件へ出動し、褒賞の対象となった。",
+      "importance": "褒賞文書に原田左之助の名が記されている。",
+      "evidence": {
+        "sourceIds": [
+          "archives_ikedaya_rewards",
+          "ndl_authority_harada"
+        ],
+        "reviewStatus": "verified",
+        "note": "褒賞文書は出動を支えるが、屋内突入隊や時刻は登録しない。"
+      }
+    },
+    {
+      "id": "person-status-harada-sanosuke-1865-choshu",
+      "personId": "harada-sanosuke",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "原田左之助",
+      "role": "新選組隊士",
+      "factionId": "shinsengumi",
+      "stance": "新選組の隊士として活動する。",
+      "importance": "京都での隊士としての活動を続ける。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_authority_harada",
+          "ehime_history_harada"
+        ],
+        "reviewStatus": "verified",
+        "note": "県史の隊士活動と1867年幕臣編入、1868年鳥羽伏見従軍の時系列に限定。行軍案の役職は表示しない。"
+      }
+    },
+    {
+      "id": "person-status-harada-sanosuke-1866-satcho",
+      "personId": "harada-sanosuke",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "displayName": "原田左之助",
+      "role": "新選組隊士",
+      "factionId": "shinsengumi",
+      "stance": "新選組の隊士として活動する。",
+      "importance": "京都での隊士としての活動を続ける。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_authority_harada",
+          "ehime_history_harada"
+        ],
+        "reviewStatus": "verified",
+        "note": "県史の隊士活動と1867年幕臣編入、1868年鳥羽伏見従軍の時系列に限定。行軍案の役職は表示しない。"
+      }
+    },
+    {
+      "id": "person-status-harada-sanosuke-1866-expedition",
+      "personId": "harada-sanosuke",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "displayName": "原田左之助",
+      "role": "新選組隊士",
+      "factionId": "shinsengumi",
+      "stance": "新選組の隊士として活動する。",
+      "importance": "京都での隊士としての活動を続ける。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_authority_harada",
+          "ehime_history_harada"
+        ],
+        "reviewStatus": "verified",
+        "note": "県史の隊士活動と1867年幕臣編入、1868年鳥羽伏見従軍の時系列に限定。行軍案の役職は表示しない。"
+      }
+    },
+    {
+      "id": "person-status-harada-sanosuke-1867-taisei",
+      "personId": "harada-sanosuke",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "原田左之助",
+      "role": "新選組隊士・幕臣に編入",
+      "factionId": "shinsengumi",
+      "stance": "1867年6月、新選組の隊士とともに幕臣に編入された。",
+      "importance": "翌年の鳥羽・伏見の戦いにも従軍した。",
+      "evidence": {
+        "sourceIds": [
+          "ehime_history_harada"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-harada-sanosuke-1868-toba",
+      "personId": "harada-sanosuke",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "原田左之助",
+      "role": "新選組隊士",
+      "factionId": "shinsengumi",
+      "stance": "鳥羽・伏見の戦いに従軍し、その後江戸へ戻った。",
+      "importance": "江戸では甲陽鎮撫隊に加わり、甲府で戦った。",
+      "evidence": {
+        "sourceIds": [
+          "ehime_history_harada"
+        ],
+        "reviewStatus": "verified",
+        "note": "この場面の後は別部隊での活動へ移るため、1868-edo以降に新選組の状態を持ち越さない。"
+      }
     }
   ]
 }

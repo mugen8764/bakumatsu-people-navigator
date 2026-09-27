@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.79",
+    "version": "1.0.80",
     "updated": "2026-09-27"
   },
   "sources": {
@@ -1270,8 +1270,8 @@
       "title": "PHP歴史街道 池田屋事件と新選組",
       "url": "https://rekishikaido.php.co.jp/detail/3972",
       "note": "菊地明『新選組 謎とき88話』を基にした記事。事件の日付、探索の分担、近藤・沖田・永倉らの突入を確認。",
-      "locator": "「今日は何の日 元治元年6月5日」本文の探索隊編成と近藤隊突入",
-      "contentCheckedAt": "2026-09-12"
+      "locator": "「3隊に分かれて御用改め」近藤隊10名の編成と、近藤・沖田・永倉・藤堂の屋内突入を記した段落",
+      "contentCheckedAt": "2026-09-27"
     },
     "ndl_portrait_usage": {
       "title": "国立国会図書館 近代日本人の肖像 この電子展示会について",
@@ -2224,6 +2224,48 @@
       "note": "鹿児島市教育委員会『鹿児島市の史跡めぐり人物編』（平成2年）を出典とする紹介。生没年、中村半次郎の名、1868年の鳥羽・伏見、東海道先鋒としての江戸入り、会津若松城攻略を確認。",
       "locator": "「1838（天保9）年～1877（明治10）年」本文：中村半次郎の名、1862年の上洛、戊辰の役の従軍",
       "contentCheckedAt": "2026-09-27"
+    },
+    "archives_ikedaya_rewards": {
+      "title": "国立公文書館「新選組隊長近藤勇以下三十名御手当之儀書上ほか」",
+      "url": "https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/43.html",
+      "note": "解説本文と褒賞文書の原画像で藤堂平助・原田左之助を確認。池田屋出動と褒賞対象の根拠。個々の突入位置・時刻・交戦相手の根拠にはしない。",
+      "locator": "請求番号多024400『新選組隊長近藤勇以下三十名御手当之儀書上』原田左之助欄・藤堂平助欄（画像原本確認）",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "kotobank_todo_heisuke": {
+      "title": "講談社『デジタル版 日本人名大辞典+Plus』藤堂平助",
+      "url": "https://kotobank.jp/word/%E8%97%A4%E5%A0%82%E5%B9%B3%E5%8A%A9-1093791",
+      "note": "生没、隊士としての活動、新選組離脱と御陵衛士、油小路での死去を確認。八番隊組長の就任年は本文だけでは確定しない。",
+      "locator": "「デジタル版 日本人名大辞典+Plus」藤堂平助の解説",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "kyoto_goryo_eji_todo": {
+      "title": "京都市駒札「御陵衛士屯所跡」",
+      "url": "https://ja.kyoto.travel/tourism/single02.php?category_id=9&tourism_id=222",
+      "note": "慶応3年3月の新選組離脱、藤堂平助の参加、月真院を屯所とした活動を確認。",
+      "locator": "京都市駒札本文：慶応3年3月の分離と藤堂平助の名を含む段落",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "kasumigaura_aburanokoji_todo": {
+      "title": "かすみがうら市歴史博物館「伊東甲子太郎と油小路の変」企画展解説",
+      "url": "https://www.city.kasumigaura.lg.jp/page/page017798.html",
+      "note": "藤堂平助が油小路の変で死亡したことを確認。原史料の発見を述べる展示解説であり、原史料自体の閲覧ではない。",
+      "locator": "企画展本文「近年、油小路の変の現場検証の記録」段落",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "ndl_authority_harada": {
+      "title": "国立国会図書館典拠「原田, 左之助, 1840-1868」",
+      "url": "https://id.ndl.go.jp/auth/ndlna/01160391",
+      "note": "表記、読み、別名忠一、生没、新選組隊士を確認。個別事件や役職年の根拠には使わない。",
+      "locator": "詳細情報：名称・別名・生年・没年・経歴",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "ehime_history_harada": {
+      "title": "愛媛県生涯学習センター『愛媛県史 人物』原田佐之助",
+      "url": "https://www.i-manabi.jp/system/regionals/regionals/ecode:2/57/view/7518",
+      "note": "隊士としての活動、池田屋参加、戊辰期の移動と死亡を確認。古い項目が含む龍馬暗殺犯人推測と評価語は採用しない。池田屋の隊分担・屋内突入は当該本文では確認できない。",
+      "locator": "「原田 佐之助」隊士としての活動・池田屋・戊辰期の経路と死亡",
+      "contentCheckedAt": "2026-09-27"
     }
   },
   "factions": {
@@ -2477,6 +2519,21 @@
         "sourceIds": [
           "ryoma_dappan",
           "mlit_teradaya_1866"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "御陵衛士": {
+      "short": "衛",
+      "color": "#806151",
+      "summary": "伊東甲子太郎らが新選組を離れ、孝明天皇の御陵守衛として活動した集団。",
+      "aliases": [
+        "高台寺党",
+        "御陵衞士"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kyoto_goryo_eji_todo"
         ],
         "reviewStatus": "verified"
       }
@@ -4313,6 +4370,34 @@
             "reviewStatus": "verified"
           },
           "side": "京都守護職"
+        },
+        {
+          "personId": "todo-heisuke",
+          "displayName": "藤堂平助",
+          "role": "近藤隊として突入",
+          "involvement": "onsite",
+          "side": "新選組側",
+          "summary": "近藤勇、沖田総司、永倉新八と池田屋へ入った。",
+          "evidence": {
+            "sourceIds": [
+              "php_ikedaya_participants"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "harada-sanosuke",
+          "displayName": "原田左之助",
+          "role": "事件に出動した隊士",
+          "involvement": "onsite",
+          "side": "新選組側",
+          "summary": "池田屋事件への出動後、褒賞の対象となった。",
+          "evidence": {
+            "sourceIds": [
+              "archives_ikedaya_rewards"
+            ],
+            "reviewStatus": "verified"
+          }
         }
       ],
       "relations": [
@@ -4368,7 +4453,8 @@
           "php_ikedaya_participants",
           "yamaguchi_library_kinmon",
           "kyoto_kinmon",
-          "yamaguchi_yoshida_toshimaro"
+          "yamaguchi_yoshida_toshimaro",
+          "archives_ikedaya_rewards"
         ],
         "reviewStatus": "verified"
       },
@@ -18896,6 +18982,243 @@
           }
         }
       }
+    },
+    {
+      "id": "todo-heisuke",
+      "name": "藤堂平助",
+      "kana": "とうどう へいすけ",
+      "aliases": [],
+      "born": "1844–1867",
+      "defaultFaction": "新選組",
+      "activeRange": [
+        7,
+        11
+      ],
+      "oneLine": "池田屋へ近藤隊として突入した新選組隊士。1867年に御陵衛士となり、油小路の変で死去した。",
+      "places": [
+        "kyoto",
+        "edo"
+      ],
+      "events": [],
+      "sources": [
+        "kotobank_todo_heisuke",
+        "php_ikedaya_participants",
+        "kyoto_goryo_eji_todo",
+        "kasumigaura_aburanokoji_todo"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kotobank_todo_heisuke",
+          "php_ikedaya_participants",
+          "kyoto_goryo_eji_todo",
+          "kasumigaura_aburanokoji_todo"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "kyoto-shugoshoku"
+      ],
+      "turningPoints": [
+        {
+          "fromSceneId": "1866-expedition",
+          "toSceneId": "1867-taisei",
+          "title": "新選組から、御陵衛士へ",
+          "before": "新選組隊士として活動していた。",
+          "after": "1867年3月、伊東甲子太郎らと新選組を離れ、御陵衛士となった。",
+          "context": "御陵衛士は月真院を屯所とした。藤堂は同年11月18日、油小路の変で命を落とした（旧暦）。",
+          "evidence": {
+            "sourceIds": [
+              "kotobank_todo_heisuke",
+              "kyoto_goryo_eji_todo",
+              "kasumigaura_aburanokoji_todo"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "statuses": {
+        "1864-kinmon": {
+          "display": "藤堂平助",
+          "role": "新選組隊士",
+          "stance": "近藤勇、沖田総司、永倉新八と池田屋へ突入した。",
+          "importance": "池田屋への出動で褒賞の対象となった。",
+          "evidence": {
+            "sourceIds": [
+              "php_ikedaya_participants",
+              "archives_ikedaya_rewards"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1865-choshu": {
+          "display": "藤堂平助",
+          "role": "新選組隊士",
+          "stance": "新選組の隊士として活動する。",
+          "importance": "1867年に伊東甲子太郎らと隊を離れ、御陵衛士となる。",
+          "evidence": {
+            "sourceIds": [
+              "kotobank_todo_heisuke"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1866-satcho": {
+          "display": "藤堂平助",
+          "role": "新選組隊士",
+          "stance": "新選組の隊士として活動する。",
+          "importance": "1867年に伊東甲子太郎らと隊を離れ、御陵衛士となる。",
+          "evidence": {
+            "sourceIds": [
+              "kotobank_todo_heisuke"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1866-expedition": {
+          "display": "藤堂平助",
+          "role": "新選組隊士",
+          "stance": "新選組の隊士として活動する。",
+          "importance": "1867年に伊東甲子太郎らと隊を離れ、御陵衛士となる。",
+          "evidence": {
+            "sourceIds": [
+              "kotobank_todo_heisuke"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1867-taisei": {
+          "display": "藤堂平助",
+          "role": "御陵衛士",
+          "faction": "御陵衛士",
+          "stance": "1867年3月、伊東甲子太郎らと新選組を離れ、御陵衛士となった。",
+          "importance": "同年11月18日、油小路の変で死去した（旧暦）。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_goryo_eji_todo",
+              "kotobank_todo_heisuke",
+              "kasumigaura_aburanokoji_todo"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "harada-sanosuke",
+      "name": "原田左之助",
+      "kana": "はらだ さのすけ",
+      "aliases": [
+        "忠一",
+        "原田佐之助"
+      ],
+      "born": "1840–1868",
+      "defaultFaction": "新選組",
+      "activeRange": [
+        7,
+        12
+      ],
+      "oneLine": "池田屋事件へ出動した新選組隊士。1868年には鳥羽・伏見に従軍し、その後は江戸で別の部隊に加わった。",
+      "places": [
+        "kyoto",
+        "edo"
+      ],
+      "events": [
+        "toba"
+      ],
+      "sources": [
+        "ndl_authority_harada",
+        "archives_ikedaya_rewards",
+        "ehime_history_harada"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_authority_harada",
+          "archives_ikedaya_rewards",
+          "ehime_history_harada"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "boshin-war"
+      ],
+      "statuses": {
+        "1864-kinmon": {
+          "display": "原田左之助",
+          "role": "新選組隊士",
+          "stance": "池田屋事件へ出動し、褒賞の対象となった。",
+          "importance": "褒賞文書に原田左之助の名が記されている。",
+          "evidence": {
+            "sourceIds": [
+              "archives_ikedaya_rewards",
+              "ndl_authority_harada"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1865-choshu": {
+          "display": "原田左之助",
+          "role": "新選組隊士",
+          "stance": "新選組の隊士として活動する。",
+          "importance": "京都での隊士としての活動を続ける。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_authority_harada",
+              "ehime_history_harada"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1866-satcho": {
+          "display": "原田左之助",
+          "role": "新選組隊士",
+          "stance": "新選組の隊士として活動する。",
+          "importance": "京都での隊士としての活動を続ける。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_authority_harada",
+              "ehime_history_harada"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1866-expedition": {
+          "display": "原田左之助",
+          "role": "新選組隊士",
+          "stance": "新選組の隊士として活動する。",
+          "importance": "京都での隊士としての活動を続ける。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_authority_harada",
+              "ehime_history_harada"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1867-taisei": {
+          "display": "原田左之助",
+          "role": "新選組隊士・幕臣に編入",
+          "stance": "1867年6月、新選組の隊士とともに幕臣に編入された。",
+          "importance": "翌年の鳥羽・伏見の戦いにも従軍した。",
+          "evidence": {
+            "sourceIds": [
+              "ehime_history_harada"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-toba": {
+          "display": "原田左之助",
+          "role": "新選組隊士",
+          "stance": "鳥羽・伏見の戦いに従軍し、その後江戸へ戻った。",
+          "importance": "江戸では甲陽鎮撫隊に加わり、甲府で戦った。",
+          "evidence": {
+            "sourceIds": [
+              "ehime_history_harada"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
     }
   ],
   "relations": [
@@ -21968,6 +22291,16 @@
           "sourceIds": [
             "ndl_portrait_ine",
             "ndl_manjiro"
+          ],
+          "reviewStatus": "verified"
+        }
+      },
+      "御陵衛士": {
+        "goal": "孝明天皇の御陵守衛を担い、勤王を説く。",
+        "position": "伊東甲子太郎らが新選組を離れ、1867年6月から11月まで月真院を屯所とした。",
+        "evidence": {
+          "sourceIds": [
+            "kyoto_goryo_eji_todo"
           ],
           "reviewStatus": "verified"
         }

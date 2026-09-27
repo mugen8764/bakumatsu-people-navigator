@@ -15,7 +15,8 @@
     "長岡藩": "nagaoka",
     "医療・学問": "medicine-learning",
     "長府藩": "chofu",
-    "暮らし・支援": "life-support"
+    "暮らし・支援": "life-support",
+    "御陵衛士": "goryo-eji"
   },
   "personRelationTypes": {
     "主従・登用": "appointment",
