@@ -2530,7 +2530,7 @@
       "summary": "京都へ向かった旧幕府軍が薩摩・長州を中心とする新政府軍と衝突し、敗れた。",
       "stakes": "王政復古後の慶喜の処遇をめぐる対立が、軍事衝突へ移った。慶喜本人は大坂におり、前線の兵と居場所を区別する。",
       "turningPoint": "敗報を聞いた慶喜は1月6日に大坂を離れ、海路江戸へ向かった。戦争は江戸、さらに東北・箱館へと続いた。",
-      "scope": "旧幕府側の動きと、新政府の成立という背景",
+      "scope": "旧幕府側の動き、新政府側の従軍者と成立の背景",
       "participants": [
         {
           "personId": "yoshinobu",
@@ -2603,6 +2603,20 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "personId": "kirino-toshiaki",
+          "displayName": "中村半次郎",
+          "role": "薩摩藩士として従軍",
+          "involvement": "onsite",
+          "side": "新政府側",
+          "summary": "薩摩藩士として鳥羽・伏見の戦いに従軍した。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_kirino_profile"
+            ],
+            "reviewStatus": "verified"
+          }
         }
       ],
       "relations": [
@@ -2634,7 +2648,8 @@
         "sourceIds": [
           "archives_toba_fushimi",
           "kyoto_toba_fushimi_site",
-          "kagoshima_boshin"
+          "kagoshima_boshin",
+          "kagoshima_kirino_profile"
         ],
         "reviewStatus": "verified"
       }

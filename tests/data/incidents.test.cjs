@@ -11,6 +11,22 @@ const domain = createDomain(data);
 // Scenes are named by ID so inserting a scene does not shift the assertions.
 const sceneAt = id => domain.sceneById.get(id).index;
 
+test('Nakamura Hanjiro keeps his wartime name and documented 1868 coverage', () => {
+  const person = domain.getPerson('kirino-toshiaki');
+  assert.equal(domain.statusAt(person, sceneAt('1867-taisei')), null);
+  for (const scene of ['1868-toba', '1868-edo', '1868-tohoku']) {
+    assert.equal(domain.statusAt(person, sceneAt(scene)).display, '中村半次郎');
+  }
+  assert.match(domain.statusAt(person, sceneAt('1868-edo')).role, /東海道先鋒/);
+  assert.match(domain.statusAt(person, sceneAt('1868-tohoku')).stance, /会津若松城/);
+  assert.equal(domain.statusAt(person, sceneAt('1869-hakodate')), null);
+  const cast = data.incidents['toba-fushimi-battle'].participants.find(p => p.personId === person.id);
+  assert.equal(cast.involvement, 'onsite');
+  assert.equal(cast.side, '新政府側');
+  assert.equal(searchAll(data, '桐野利秋').find(item => item.type === '人物').id, person.id);
+  assert.ok(!data.relations.some(r => (r.a === person.id && r.b === 'saigo') || (r.b === person.id && r.a === 'saigo')));
+});
+
 test('Izo retains uncertain arrest chronology, ends at execution and is not a Toyo assassin', () => {
   const izo = domain.getPerson('okada-izo');
   assert.equal(domain.statusAt(izo, sceneAt('1860-sakurada')), null);

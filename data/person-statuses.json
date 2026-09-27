@@ -8538,6 +8538,57 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-status-kirino-toshiaki-1868-toba",
+      "personId": "kirino-toshiaki",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "中村半次郎",
+      "role": "薩摩藩士",
+      "factionId": "satsuma",
+      "stance": "鳥羽・伏見の戦いに従軍する。",
+      "importance": "鳥羽・伏見では新政府側の薩摩藩士として戦った。",
+      "evidence": {
+        "sourceIds": [
+          "kagoshima_kirino_profile"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-kirino-toshiaki-1868-edo",
+      "personId": "kirino-toshiaki",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "中村半次郎",
+      "role": "薩摩藩士・東海道先鋒",
+      "factionId": "satsuma",
+      "stance": "東海道の先鋒として江戸へ進む。",
+      "importance": "鳥羽・伏見の後、東海道を進み江戸に入った。",
+      "evidence": {
+        "sourceIds": [
+          "kagoshima_kirino_profile"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-kirino-toshiaki-1868-tohoku",
+      "personId": "kirino-toshiaki",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "中村半次郎",
+      "role": "薩摩藩士",
+      "factionId": "satsuma",
+      "stance": "奥羽へ進み、会津若松城攻略に加わる。",
+      "importance": "江戸への進軍に続いて、会津まで従軍した。",
+      "evidence": {
+        "sourceIds": [
+          "kagoshima_kirino_profile"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

@@ -1,0 +1,30 @@
+const { expect, test } = require('../support/test.cjs');
+
+test('Kirino alias opens Hanjiro with incident and source links inside his 1868 range', async ({ page }) => {
+  await page.addInitScript(() => localStorage.clear());
+  await page.goto('/');
+  await page.locator('#globalSearch').fill('桐野利秋');
+  await page.locator('.search-result strong', { hasText: /^中村半次郎$/ }).click();
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('中村半次郎');
+  await expect(page.locator('#personCards [data-person-card="kirino-toshiaki"]')).toHaveCount(1);
+  await page.locator('#prevScene').click();
+  await expect(page.locator('#personCards [data-person-card="kirino-toshiaki"]')).toHaveCount(0);
+  await page.locator('#nextScene').click();
+  await expect(page.locator('#personDetail .detail-title')).toHaveText('中村半次郎');
+  await page.goto('/#event=toba-fushimi-battle');
+  await expect(page.locator('.onsite [data-event-person="kirino-toshiaki"]')).toContainText('薩摩藩士');
+  await page.locator('[data-event-person="kirino-toshiaki"]').click();
+  await expect(page.locator('.person-incident')).toContainText('鳥羽・伏見の戦い');
+  await page.locator('.person-incident summary').click();
+  await expect(page.locator('.person-incident a[href="https://www.kagoshima-yokanavi.jp/spot/10108"]')).toBeVisible();
+  await page.locator('.person-incident [data-open-event]').click();
+  await page.locator('#eventToMap').click();
+  await expect(page.locator('#mapTitle')).toContainText('鳥羽・伏見の戦い');
+  await page.goto('/#scene=1868-edo&view=people&person=kirino-toshiaki');
+  await expect(page.locator('#personDetail')).toContainText('東海道先鋒');
+  await page.locator('#nextScene').click();
+  await expect(page.locator('#personDetail')).toContainText('会津若松城攻略');
+  await expect(page.locator('#personCards [data-person-card="kirino-toshiaki"]')).toHaveCount(1);
+  await page.locator('#nextScene').click();
+  await expect(page.locator('#personCards [data-person-card="kirino-toshiaki"]')).toHaveCount(0);
+});

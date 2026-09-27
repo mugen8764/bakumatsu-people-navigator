@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.78",
+    "version": "1.0.79",
     "updated": "2026-09-27"
   },
   "sources": {
@@ -2216,6 +2216,13 @@
       "url": "https://www.city.kochi.kochi.jp/site/kanko/takechizuizandoujyoato.html",
       "note": "岡田以蔵が武市道場の門人であったことを確認。",
       "locator": "本文第1段落（武市道場の開設と中岡慎太郎・岡田以蔵の入門）",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "kagoshima_kirino_profile": {
+      "title": "鹿児島市公式観光ナビ「桐野利秋」",
+      "url": "https://www.kagoshima-yokanavi.jp/spot/10108",
+      "note": "鹿児島市教育委員会『鹿児島市の史跡めぐり人物編』（平成2年）を出典とする紹介。生没年、中村半次郎の名、1868年の鳥羽・伏見、東海道先鋒としての江戸入り、会津若松城攻略を確認。",
+      "locator": "「1838（天保9）年～1877（明治10）年」本文：中村半次郎の名、1862年の上洛、戊辰の役の従軍",
       "contentCheckedAt": "2026-09-27"
     }
   },
@@ -5494,7 +5501,7 @@
       "summary": "京都へ向かった旧幕府軍が薩摩・長州を中心とする新政府軍と衝突し、敗れた。",
       "stakes": "王政復古後の慶喜の処遇をめぐる対立が、軍事衝突へ移った。慶喜本人は大坂におり、前線の兵と居場所を区別する。",
       "turningPoint": "敗報を聞いた慶喜は1月6日に大坂を離れ、海路江戸へ向かった。戦争は江戸、さらに東北・箱館へと続いた。",
-      "scope": "旧幕府側の動きと、新政府の成立という背景",
+      "scope": "旧幕府側の動き、新政府側の従軍者と成立の背景",
       "participants": [
         {
           "personId": "yoshinobu",
@@ -5567,6 +5574,20 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "personId": "kirino-toshiaki",
+          "displayName": "中村半次郎",
+          "role": "薩摩藩士として従軍",
+          "involvement": "onsite",
+          "side": "新政府側",
+          "summary": "薩摩藩士として鳥羽・伏見の戦いに従軍した。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_kirino_profile"
+            ],
+            "reviewStatus": "verified"
+          }
         }
       ],
       "relations": [
@@ -5598,7 +5619,8 @@
         "sourceIds": [
           "archives_toba_fushimi",
           "kyoto_toba_fushimi_site",
-          "kagoshima_boshin"
+          "kagoshima_boshin",
+          "kagoshima_kirino_profile"
         ],
         "reviewStatus": "verified"
       }
@@ -18794,6 +18816,81 @@
             "sourceIds": [
               "ryoma_izo_faq",
               "ryoma_izo_grave"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "kirino-toshiaki",
+      "name": "中村半次郎",
+      "kana": "なかむら はんじろう",
+      "aliases": [
+        "桐野利秋"
+      ],
+      "born": "1838–1877",
+      "defaultFaction": "薩摩藩",
+      "activeRange": [
+        12,
+        14
+      ],
+      "oneLine": "薩摩藩士。鳥羽・伏見から東海道、会津へ従軍した。",
+      "places": [
+        "kagoshima",
+        "fushimi",
+        "edo",
+        "aizu"
+      ],
+      "events": [
+        "toba",
+        "tohoku"
+      ],
+      "sources": [
+        "kagoshima_kirino_profile"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kagoshima_kirino_profile"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "boshin-war"
+      ],
+      "statuses": {
+        "1868-toba": {
+          "display": "中村半次郎",
+          "role": "薩摩藩士",
+          "stance": "鳥羽・伏見の戦いに従軍する。",
+          "importance": "鳥羽・伏見では新政府側の薩摩藩士として戦った。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_kirino_profile"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-edo": {
+          "display": "中村半次郎",
+          "role": "薩摩藩士・東海道先鋒",
+          "stance": "東海道の先鋒として江戸へ進む。",
+          "importance": "鳥羽・伏見の後、東海道を進み江戸に入った。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_kirino_profile"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-tohoku": {
+          "display": "中村半次郎",
+          "role": "薩摩藩士",
+          "stance": "奥羽へ進み、会津若松城攻略に加わる。",
+          "importance": "江戸への進軍に続いて、会津まで従軍した。",
+          "evidence": {
+            "sourceIds": [
+              "kagoshima_kirino_profile"
             ],
             "reviewStatus": "verified"
           }
