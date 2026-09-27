@@ -15,7 +15,7 @@
 - 勢力関係: 18
 - 地点: 32
 - 背景解説: 31項目
-- 史料肖像: 25点
+- 史料肖像: 29点
 
 掲載件数は正本データと `npm run check:docs` で照合します。
 
@@ -67,7 +67,7 @@ node tests/support/static-server.cjs
 npm run build:site
 ```
 
-配置するのは生成された `dist/` の内容だけです。本番では `main` のCIが成功すると、検査済みの成果物をCloudflare Pagesへ配信します。続くProduction smokeで、本番の主要43ファイル、4種のセキュリティヘッダー、28件のキャッシュ方針を照合します。手順・コマンド・確認範囲は[開発・運用手順](https://github.com/mugen8764/bakumatsu-people-navigator/blob/main/docs/maintenance.md)を参照してください。
+配置するのは生成された `dist/` の内容だけです。本番では `main` のCIが成功すると、検査済みの成果物をCloudflare Pagesへ配信します。続くProduction smokeで、本番の主要47ファイル、4種のセキュリティヘッダー、32件のキャッシュ方針を照合します。手順・コマンド・確認範囲は[開発・運用手順](https://github.com/mugen8764/bakumatsu-people-navigator/blob/main/docs/maintenance.md)を参照してください。
 
 ## 情報の扱いとライセンス
 

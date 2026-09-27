@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.76",
-    "updated": "2026-09-26"
+    "version": "1.0.77",
+    "updated": "2026-09-27"
   },
   "sources": {
     "archives_timeline": {
@@ -65,9 +65,9 @@
     "ndl_portrait_yamaoka_detail": {
       "title": "国立国会図書館「近代日本人の肖像・山岡鉄太郎」",
       "url": "https://www.ndl.go.jp/portrait/datas/207/",
-      "note": "山岡鉄太郎が1868年に徳川慶喜の警固役として精鋭隊頭となり、同年3月に駿府で西郷隆盛と談判した経歴。",
-      "locator": "生没年・別称・「解説」",
-      "contentCheckedAt": "2026-07-31"
+      "note": "山岡鉄太郎が1868年に徳川慶喜の警固役として精鋭隊頭となり、同年3月に駿府で西郷隆盛と談判した経歴。 肖像1枚目の原資料は「近世名士写真 其2（近世名士写真頒布会、1935年）」。撮影時期は未確認。",
+      "locator": "生没年・別称・「解説」／肖像1枚目・出典欄",
+      "contentCheckedAt": "2026-09-27"
     },
     "ndl_katsu_papers": {
       "title": "国立国会図書館「勝海舟関係文書」",
@@ -1193,9 +1193,9 @@
     "ndl_portrait_komatsu_detail": {
       "title": "国立国会図書館「近代日本人の肖像・小松帯刀」",
       "url": "https://www.ndl.go.jp/portrait/datas/82/",
-      "note": "小松帯刀の薩摩藩家老就任、1866年の薩長連合締結、大政奉還進言、新政府での総裁局顧問就任。",
-      "locator": "「解説」：家老・1866年1月の薩長連合",
-      "contentCheckedAt": "2026-09-25"
+      "note": "小松帯刀の薩摩藩家老就任、1866年の薩長連合締結、大政奉還進言、新政府での総裁局顧問就任。 肖像1枚目の原資料は「近世名士写真 其2（近世名士写真頒布会、1935年）」。撮影時期は未確認。",
+      "locator": "「解説」：家老・1866年1月の薩長連合／肖像1枚目・出典欄",
+      "contentCheckedAt": "2026-09-27"
     },
     "ndl_shungaku_papers": {
       "title": "国立国会図書館リサーチ・ナビ「松平春嶽関係文書」",
@@ -1278,7 +1278,7 @@
       "url": "https://www.ndl.go.jp/portrait/about",
       "note": "掲載肖像の著作権保護期間満了、転載手続き不要、出典明示の条件を確認。",
       "locator": "掲載資料／コンテンツの転載",
-      "contentCheckedAt": "2026-09-25"
+      "contentCheckedAt": "2026-09-27"
     },
     "mofa_russia_1855": {
       "title": "外務省「日露関係史」幕末期",
@@ -2182,6 +2182,20 @@
       "note": "読みと生没年を確認。寺田屋事件の参加人数・死者数の断定には用いない。",
       "locator": "日本大百科全書（ニッポニカ）「有馬新七」",
       "contentCheckedAt": "2026-09-26"
+    },
+    "ndl_portrait_nakaoka": {
+      "title": "国立国会図書館「近代日本人の肖像・中岡慎太郎」",
+      "url": "https://www.ndl.go.jp/portrait/datas/149/",
+      "note": "本人の肖像と原資料「中岡慎太郎（尾崎卓爾著、陽明社印刷所、1926年）」を確認。撮影時期は未確認。",
+      "locator": "肖像1枚目・出典欄",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "ndl_portrait_sanjo": {
+      "title": "国立国会図書館「近代日本人の肖像・三条実美」",
+      "url": "https://www.ndl.go.jp/portrait/datas/97/",
+      "note": "本人の肖像と原資料「近世名士写真 其1（近世名士写真頒布会、1935年）」を確認。撮影時期は未確認。",
+      "locator": "肖像1枚目・出典欄",
+      "contentCheckedAt": "2026-09-27"
     }
   },
   "factions": {
@@ -9383,6 +9397,18 @@
         ],
         "reviewStatus": "verified"
       },
+      "portrait": {
+        "src": "assets/portraits/yamaoka-ndl.jpg",
+        "alt": "山岡鉄舟の史料肖像",
+        "sourceId": "ndl_portrait_yamaoka_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」所蔵資料より",
+        "originalSource": "近世名士写真 其2（近世名士写真頒布会、1935年）",
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が山岡鉄舟（鉄太郎）の肖像として掲載。 原資料の刊行年は撮影・制作年ではありません。写真・絵画の別は原資料で未確認。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。国立国会図書館が提供する縮小画像を加工せず使用。",
+        "checkedAt": "2026-09-27"
+      },
       "statuses": {
         "1868-toba": {
           "display": "山岡鉄太郎",
@@ -10700,6 +10726,18 @@
         "karo",
         "satcho-alliance"
       ],
+      "portrait": {
+        "src": "assets/portraits/komatsu-ndl.jpg",
+        "alt": "小松帯刀の史料肖像",
+        "sourceId": "ndl_portrait_komatsu_detail",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」所蔵資料より",
+        "originalSource": "近世名士写真 其2（近世名士写真頒布会、1935年）",
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が小松帯刀の肖像として掲載。 原資料の刊行年は撮影・制作年ではありません。写真・絵画の別は原資料で未確認。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。国立国会図書館が提供する縮小画像を加工せず使用。",
+        "checkedAt": "2026-09-27"
+      },
       "turningPoints": [
         {
           "fromSceneId": "1865-choshu",
@@ -12880,6 +12918,18 @@
         ],
         "reviewStatus": "verified"
       },
+      "portrait": {
+        "src": "assets/portraits/sanjo-ndl.jpg",
+        "alt": "三条実美の史料肖像",
+        "sourceId": "ndl_portrait_sanjo",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」所蔵資料より",
+        "originalSource": "近世名士写真 其1（近世名士写真頒布会、1935年）",
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が三条実美の肖像として掲載。 原資料の刊行年は撮影・制作年ではありません。写真・絵画の別は原資料で未確認。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。国立国会図書館が提供する縮小画像を加工せず使用。",
+        "checkedAt": "2026-09-27"
+      },
       "statuses": {
         "1863-joi": {
           "display": "三条実美",
@@ -13844,6 +13894,18 @@
           "nakaoka_museum_profile"
         ],
         "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/nakaoka-ndl.jpg",
+        "alt": "中岡慎太郎の史料肖像",
+        "sourceId": "ndl_portrait_nakaoka",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」所蔵資料より",
+        "originalSource": "中岡慎太郎（尾崎卓爾著、陽明社印刷所、1926年）",
+        "dateNote": "撮影・制作時期未確認。選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が中岡慎太郎の肖像として掲載。 原資料の刊行年は撮影・制作年ではありません。写真・絵画の別は原資料で未確認。",
+        "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。国立国会図書館が提供する縮小画像を加工せず使用。",
+        "checkedAt": "2026-09-27"
       },
       "statuses": {
         "1864-kinmon": {
