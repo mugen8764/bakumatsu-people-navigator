@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.89",
+    "version": "1.0.90",
     "updated": "2026-09-27"
   },
   "sources": {
@@ -521,7 +521,7 @@
       "url": "https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/kaibousannyosyuunin.htm",
       "note": "徳川斉昭への黒船対応諮問、海防参与就任、大砲献上、ペリー再来航時の進言。",
       "locator": "「徳川斉昭の生涯・海防参与就任」本文",
-      "contentCheckedAt": "2026-07-31"
+      "contentCheckedAt": "2026-09-27"
     },
     "kagoshima_saigo_youth": {
       "title": "鹿児島市・西郷南洲顕彰館「西郷隆盛ゆかりの品」",
@@ -2479,6 +2479,48 @@
       "url": "https://jmapps.ne.jp/kashiwazaki/sakka_det.html?list_count=10&person_id=40",
       "note": "読みと役職の根拠。生年欄1846は採用せず、慶應古文書室2資料の西暦1847年に拠る。",
       "locator": "じんぶつ名（ヨミ）と略歴冒頭：1864年京都所司代任命、1867年12月解任",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "ndl_fujita_toko_letters": {
+      "title": "国立国会図書館「あの人の直筆 水戸藩儒」",
+      "url": "https://www.ndl.go.jp/jikihitsu/part1/s1_4",
+      "note": "所蔵機関の解説を確認。直筆画像の原文を独自に翻刻したものではない。",
+      "locator": "藤田東湖1806–1855の略歴と13「藤田東湖書簡」安政元年9月14日（WA25-30）の解説",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "kashiwa_fujita_father_son": {
+      "title": "柏市歴史デジタルミュージアム「第九回 水戸学の大成者―藤田東湖―」",
+      "url": "https://www.city.kashiwa.lg.jp/bunka/about_kashiwa/culture/rekishi/rekishihakken/dai9kai.html",
+      "note": "引用発言や救母逸話は採用しない。",
+      "locator": "藤田東湖の斉昭補佐・海防問題、1855年地震死、子小四郎の読みと1842–1865",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "ibaraki_tenguto_event": {
+      "title": "茨城県立歴史館「天狗党事件」",
+      "url": "https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/tenngutoujikenn.htm",
+      "note": "初期の首領と西上の総裁を区別。処刑人数は採用しない。",
+      "locator": "本文：1864年3月の小四郎らの筑波挙兵・田丸首領、10月那珂湊、11月西上と武田総裁",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "archives_tenguto_records": {
+      "title": "国立公文書館「41.常野浮浪徒一件」",
+      "url": "https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/41.html",
+      "note": "展示解説の確認。史料名簿や日記原文を独自に読解したものではない。",
+      "locator": "展示解説第1〜2段落：武田・小四郎の再編と西上、元治元年12月投降、翌2月処刑",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "ibaraki_tsukubasan_map": {
+      "title": "観光いばらき「筑波山神社」",
+      "url": "https://www.ibarakiguide.jp/spot.php?code=942&mode=detail",
+      "note": "筑波山側の地域代表点。挙兵現場の精密座標ではない。",
+      "locator": "「地図」Google Mapsリンク転送先の座標36.2250067,140.1063546",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "tsuruga_takeda_grave_map": {
+      "title": "港都つるが観光協会「武田耕雲斎等の墓」",
+      "url": "https://tsuruga-kanko.jp/spot/history_culture/takedakounsai-grave/",
+      "note": "処刑後の墓所付近の地域代表点。新保の降伏現場とは区別する。",
+      "locator": "住所「福井県敦賀市松島町」と埋込Google Maps中心座標35.6511955316216,136.05496947679927",
       "contentCheckedAt": "2026-09-27"
     }
   },
@@ -8933,6 +8975,144 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    "mito-coastal-defense-1853": {
+      "id": "mito-coastal-defense-1853",
+      "sceneId": "1853-blackships",
+      "title": "黒船来航後の水戸の海防と斉昭の補佐",
+      "date": "1853年から1854年の海防対応",
+      "scope": "水戸と江戸での海防対応と斉昭への補佐。",
+      "summary": "黒船来航後、斉昭は海防参与に任命された。藤田東湖は斉昭を補佐して海防問題に取り組んだ。",
+      "stakes": "外国艦隊の来航に、幕府がどのように対応するかが問われた。",
+      "turningPoint": "1853年7月3日（旧暦）、斉昭が海防参与に就任。翌年も幕府へ対応策を進言した。",
+      "participants": [
+        {
+          "personId": "nariaki",
+          "displayName": "徳川斉昭",
+          "role": "海防参与",
+          "involvement": "decision",
+          "side": "水戸藩",
+          "summary": "海防参与として幕府へ意見を述べ、大砲を献上した。",
+          "evidence": {
+            "sourceIds": [
+              "ibaraki_nariaki_kaibo"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "fujita-toko",
+          "displayName": "藤田東湖",
+          "role": "斉昭の海防補佐",
+          "involvement": "context",
+          "side": "水戸藩",
+          "summary": "斉昭を補佐して海防問題に取り組んだ。",
+          "evidence": {
+            "sourceIds": [
+              "kashiwa_fujita_father_son"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "mito-toko-nariaki-support",
+          "aPersonId": "fujita-toko",
+          "bPersonId": "nariaki",
+          "label": "海防対応の補佐",
+          "description": "東湖は海防参与となった斉昭を補佐した。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "kashiwa_fujita_father_son"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "mito",
+        "edo"
+      ],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "ibaraki_nariaki_kaibo",
+          "kashiwa_fujita_father_son"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "tenguto-uprising-westward": {
+      "id": "tenguto-uprising-westward",
+      "sceneId": "1864-kinmon",
+      "title": "天狗党の挙兵と西上",
+      "date": "1864年3月の挙兵から翌1865年2月の処刑まで（旧暦）",
+      "scope": "筑波山の挙兵、京都を目指す西上、越前での降伏と敦賀での処分。地図は筑波山・敦賀の地域代表点。",
+      "summary": "藤田小四郎らは田丸稲之衛門を首領として筑波山で挙兵した。那珂湊での敗戦後、武田耕雲斎・小四郎らが天狗党を再編し、11月（旧暦）に武田を総裁として京都を目指した。",
+      "stakes": "幕府に攘夷の実行を求める動きが、水戸藩内の対立と幕府による追討へ広がった。",
+      "turningPoint": "1864年12月（旧暦）に越前新保（現・敦賀市）で投降。翌年2月（旧暦）、敦賀で武田・小四郎らが処刑された。",
+      "participants": [
+        {
+          "personId": "fujita-koshiro",
+          "displayName": "藤田小四郎",
+          "role": "筑波山の挙兵と西上",
+          "involvement": "onsite",
+          "side": "水戸藩",
+          "summary": "筑波山での挙兵を担い、那珂湊の戦いの後に武田らと再編して西上した。",
+          "evidence": {
+            "sourceIds": [
+              "ibaraki_tenguto_event",
+              "archives_tenguto_records"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "takeda-kounsai",
+          "displayName": "武田耕雲斎",
+          "role": "11月からの西上総裁",
+          "involvement": "onsite",
+          "side": "水戸藩",
+          "summary": "那珂湊での敗戦後に小四郎らと天狗党を再編し、西上の総裁となった。",
+          "evidence": {
+            "sourceIds": [
+              "ibaraki_tenguto_event",
+              "archives_tenguto_records"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "tenguto-takeda-koshiro-westward",
+          "aPersonId": "takeda-kounsai",
+          "bPersonId": "fujita-koshiro",
+          "label": "天狗党を再編して西上",
+          "description": "那珂湊の戦いの後、武田と小四郎らは天狗党を再編して京都を目指した。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "archives_tenguto_records"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "tsukuba",
+        "tsuruga"
+      ],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "ibaraki_tenguto_event",
+          "archives_tenguto_records"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   },
   "places": {
@@ -9424,6 +9604,36 @@
         "sourceIds": [
           "natural_earth_populated_places",
           "mofa_paris_exposition"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "tsukuba": {
+      "name": "筑波山",
+      "coord": [
+        140.106355,
+        36.225007
+      ],
+      "note": "1864年の天狗党挙兵の地域。地図は筑波山神社付近を代表点として示す。",
+      "evidence": {
+        "sourceIds": [
+          "ibaraki_tenguto_event",
+          "ibaraki_tsukubasan_map"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    "tsuruga": {
+      "name": "敦賀",
+      "coord": [
+        136.054969,
+        35.651196
+      ],
+      "note": "天狗党が越前で降伏した後、1865年に処刑された地域。地図は松島町の墓所付近を代表点として示す。",
+      "evidence": {
+        "sourceIds": [
+          "archives_tenguto_records",
+          "tsuruga_takeda_grave_map"
         ],
         "reviewStatus": "verified"
       }
@@ -20606,6 +20816,117 @@
             "sourceIds": [
               "keio_nijo_treaty1865",
               "keio_sadaaki_kuwana"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "fujita-toko",
+      "name": "藤田東湖",
+      "kana": "ふじた とうこ",
+      "aliases": [
+        "藤田虎之介",
+        "藤田誠之進"
+      ],
+      "born": "1806–1855",
+      "defaultFaction": "水戸藩",
+      "activeRange": [
+        0,
+        1
+      ],
+      "oneLine": "水戸藩の儒学者。斉昭を支えて藩政改革と海防に取り組み、1855年の安政地震で亡くなった。",
+      "places": [
+        "mito",
+        "edo"
+      ],
+      "events": [],
+      "sources": [
+        "ndl_fujita_toko_letters",
+        "kashiwa_fujita_father_son"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_fujita_toko_letters",
+          "kashiwa_fujita_father_son"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [],
+      "statuses": {
+        "1853-blackships": {
+          "display": "藤田東湖",
+          "role": "斉昭を補佐した水戸藩士・儒学者",
+          "stance": "黒船来航後、海防参与となった斉昭を補佐して海防問題に取り組む。",
+          "importance": "水戸の藩政改革を支えた儒学者が、幕府の海防対応にも関わった。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_fujita_toko_letters",
+              "kashiwa_fujita_father_son",
+              "ibaraki_nariaki_kaibo"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1854-treaty": {
+          "display": "藤田東湖",
+          "role": "斉昭を補佐した水戸藩士・儒学者",
+          "stance": "斉昭を補佐し、日英約定の情報を青山延光・会沢へ書簡で伝えた。",
+          "importance": "1854年9月14日（旧暦）の書簡では、開港と日英約定への評価を記している。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_fujita_toko_letters",
+              "kashiwa_fujita_father_son",
+              "ibaraki_nariaki_kaibo"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "fujita-koshiro",
+      "name": "藤田小四郎",
+      "kana": "ふじた こしろう",
+      "aliases": [],
+      "born": "1842–1865",
+      "defaultFaction": "水戸藩",
+      "activeRange": [
+        7,
+        7
+      ],
+      "oneLine": "藤田東湖の子。筑波山の挙兵と天狗党の西上を担い、敦賀で処刑された。",
+      "places": [
+        "mito",
+        "tsukuba",
+        "tsuruga"
+      ],
+      "events": [],
+      "sources": [
+        "kashiwa_fujita_father_son",
+        "ibaraki_tenguto_event",
+        "archives_tenguto_records"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kashiwa_fujita_father_son",
+          "ibaraki_tenguto_event",
+          "archives_tenguto_records"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [],
+      "statuses": {
+        "1864-kinmon": {
+          "display": "藤田小四郎",
+          "role": "天狗党の挙兵と西上を担った水戸藩士",
+          "stance": "1864年3月（旧暦）、筑波山の挙兵を担い、その後は武田耕雲斎らと天狗党を再編して京都を目指した。",
+          "importance": "水戸藩内の対立と幕府の追討を受け、天狗党は西上の途上で越前に至った。",
+          "evidence": {
+            "sourceIds": [
+              "ibaraki_tenguto_event",
+              "archives_tenguto_records"
             ],
             "reviewStatus": "verified"
           }

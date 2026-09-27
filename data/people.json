@@ -3969,6 +3969,59 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "fujita-toko",
+      "name": "藤田東湖",
+      "kana": "ふじた とうこ",
+      "aliases": [
+        "藤田虎之介",
+        "藤田誠之進"
+      ],
+      "lifespan": "1806–1855",
+      "defaultFactionId": "mito",
+      "activeStartSceneId": "1853-blackships",
+      "activeEndSceneId": "1854-treaty",
+      "oneLine": "水戸藩の儒学者。斉昭を支えて藩政改革と海防に取り組み、1855年の安政地震で亡くなった。",
+      "placeIds": [
+        "mito",
+        "edo"
+      ],
+      "eventIds": [],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "ndl_fujita_toko_letters",
+          "kashiwa_fujita_father_son"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "fujita-koshiro",
+      "name": "藤田小四郎",
+      "kana": "ふじた こしろう",
+      "aliases": [],
+      "lifespan": "1842–1865",
+      "defaultFactionId": "mito",
+      "activeStartSceneId": "1864-kinmon",
+      "activeEndSceneId": "1864-kinmon",
+      "oneLine": "藤田東湖の子。筑波山の挙兵と天狗党の西上を担い、敦賀で処刑された。",
+      "placeIds": [
+        "mito",
+        "tsukuba",
+        "tsuruga"
+      ],
+      "eventIds": [],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "kashiwa_fujita_father_son",
+          "ibaraki_tenguto_event",
+          "archives_tenguto_records"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

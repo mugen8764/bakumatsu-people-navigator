@@ -603,7 +603,7 @@
       "url": "https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/kaibousannyosyuunin.htm",
       "note": "徳川斉昭への黒船対応諮問、海防参与就任、大砲献上、ペリー再来航時の進言。",
       "locator": "「徳川斉昭の生涯・海防参与就任」本文",
-      "contentCheckedAt": "2026-07-31"
+      "contentCheckedAt": "2026-09-27"
     },
     {
       "id": "kagoshima_saigo_youth",
@@ -2860,6 +2860,54 @@
       "locator": "じんぶつ名（ヨミ）と略歴冒頭：1864年京都所司代任命、1867年12月解任",
       "contentCheckedAt": "2026-09-27",
       "note": "読みと役職の根拠。生年欄1846は採用せず、慶應古文書室2資料の西暦1847年に拠る。"
+    },
+    {
+      "id": "ndl_fujita_toko_letters",
+      "title": "国立国会図書館「あの人の直筆 水戸藩儒」",
+      "url": "https://www.ndl.go.jp/jikihitsu/part1/s1_4",
+      "locator": "藤田東湖1806–1855の略歴と13「藤田東湖書簡」安政元年9月14日（WA25-30）の解説",
+      "contentCheckedAt": "2026-09-27",
+      "note": "所蔵機関の解説を確認。直筆画像の原文を独自に翻刻したものではない。"
+    },
+    {
+      "id": "kashiwa_fujita_father_son",
+      "title": "柏市歴史デジタルミュージアム「第九回 水戸学の大成者―藤田東湖―」",
+      "url": "https://www.city.kashiwa.lg.jp/bunka/about_kashiwa/culture/rekishi/rekishihakken/dai9kai.html",
+      "locator": "藤田東湖の斉昭補佐・海防問題、1855年地震死、子小四郎の読みと1842–1865",
+      "contentCheckedAt": "2026-09-27",
+      "note": "引用発言や救母逸話は採用しない。"
+    },
+    {
+      "id": "ibaraki_tenguto_event",
+      "title": "茨城県立歴史館「天狗党事件」",
+      "url": "https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/tenngutoujikenn.htm",
+      "locator": "本文：1864年3月の小四郎らの筑波挙兵・田丸首領、10月那珂湊、11月西上と武田総裁",
+      "contentCheckedAt": "2026-09-27",
+      "note": "初期の首領と西上の総裁を区別。処刑人数は採用しない。"
+    },
+    {
+      "id": "archives_tenguto_records",
+      "title": "国立公文書館「41.常野浮浪徒一件」",
+      "url": "https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/41.html",
+      "locator": "展示解説第1〜2段落：武田・小四郎の再編と西上、元治元年12月投降、翌2月処刑",
+      "contentCheckedAt": "2026-09-27",
+      "note": "展示解説の確認。史料名簿や日記原文を独自に読解したものではない。"
+    },
+    {
+      "id": "ibaraki_tsukubasan_map",
+      "title": "観光いばらき「筑波山神社」",
+      "url": "https://www.ibarakiguide.jp/spot.php?code=942&mode=detail",
+      "locator": "「地図」Google Mapsリンク転送先の座標36.2250067,140.1063546",
+      "contentCheckedAt": "2026-09-27",
+      "note": "筑波山側の地域代表点。挙兵現場の精密座標ではない。"
+    },
+    {
+      "id": "tsuruga_takeda_grave_map",
+      "title": "港都つるが観光協会「武田耕雲斎等の墓」",
+      "url": "https://tsuruga-kanko.jp/spot/history_culture/takedakounsai-grave/",
+      "locator": "住所「福井県敦賀市松島町」と埋込Google Maps中心座標35.6511955316216,136.05496947679927",
+      "contentCheckedAt": "2026-09-27",
+      "note": "処刑後の墓所付近の地域代表点。新保の降伏現場とは区別する。"
     }
   ]
 }

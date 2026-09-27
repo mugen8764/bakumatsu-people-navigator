@@ -263,7 +263,7 @@
 
 86. [茨城県立歴史館「海防参与就任」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/kaibousannyosyuunin.htm) — 徳川斉昭への黒船対応諮問、海防参与就任、大砲献上、ペリー再来航時の進言。
    - 該当箇所: 「徳川斉昭の生涯・海防参与就任」本文
-   - 内容確認日: 2026-07-31
+   - 内容確認日: 2026-09-27
 
 87. [鹿児島市・西郷南洲顕彰館「西郷隆盛ゆかりの品」](https://www.city.kagoshima.lg.jp/kyoiku/kyoiku/syogaigaku/shisetsu/kanko/documents/saigou_digital-museum.pdf) — 西郷隆盛の郡方書役助時代、1854年の中御小姓江戸詰と庭方役就任。
 
@@ -1327,6 +1327,30 @@
 
 384. [柏崎市WEBミュージアム「松平 定敬」](https://jmapps.ne.jp/kashiwazaki/sakka_det.html?list_count=10&person_id=40) — 読みと役職の根拠。生年欄1846は採用せず、慶應古文書室2資料の西暦1847年に拠る。
    - 該当箇所: じんぶつ名（ヨミ）と略歴冒頭：1864年京都所司代任命、1867年12月解任
+   - 内容確認日: 2026-09-27
+
+385. [国立国会図書館「あの人の直筆 水戸藩儒」](https://www.ndl.go.jp/jikihitsu/part1/s1_4) — 所蔵機関の解説を確認。直筆画像の原文を独自に翻刻したものではない。
+   - 該当箇所: 藤田東湖1806–1855の略歴と13「藤田東湖書簡」安政元年9月14日（WA25-30）の解説
+   - 内容確認日: 2026-09-27
+
+386. [柏市歴史デジタルミュージアム「第九回 水戸学の大成者―藤田東湖―」](https://www.city.kashiwa.lg.jp/bunka/about_kashiwa/culture/rekishi/rekishihakken/dai9kai.html) — 引用発言や救母逸話は採用しない。
+   - 該当箇所: 藤田東湖の斉昭補佐・海防問題、1855年地震死、子小四郎の読みと1842–1865
+   - 内容確認日: 2026-09-27
+
+387. [茨城県立歴史館「天狗党事件」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/tenngutoujikenn.htm) — 初期の首領と西上の総裁を区別。処刑人数は採用しない。
+   - 該当箇所: 本文：1864年3月の小四郎らの筑波挙兵・田丸首領、10月那珂湊、11月西上と武田総裁
+   - 内容確認日: 2026-09-27
+
+388. [国立公文書館「41.常野浮浪徒一件」](https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/41.html) — 展示解説の確認。史料名簿や日記原文を独自に読解したものではない。
+   - 該当箇所: 展示解説第1〜2段落：武田・小四郎の再編と西上、元治元年12月投降、翌2月処刑
+   - 内容確認日: 2026-09-27
+
+389. [観光いばらき「筑波山神社」](https://www.ibarakiguide.jp/spot.php?code=942&mode=detail) — 筑波山側の地域代表点。挙兵現場の精密座標ではない。
+   - 該当箇所: 「地図」Google Mapsリンク転送先の座標36.2250067,140.1063546
+   - 内容確認日: 2026-09-27
+
+390. [港都つるが観光協会「武田耕雲斎等の墓」](https://tsuruga-kanko.jp/spot/history_culture/takedakounsai-grave/) — 処刑後の墓所付近の地域代表点。新保の降伏現場とは区別する。
+   - 該当箇所: 住所「福井県敦賀市松島町」と埋込Google Maps中心座標35.6511955316216,136.05496947679927
    - 内容確認日: 2026-09-27
 
 <!-- END GENERATED SOURCE CATALOG -->

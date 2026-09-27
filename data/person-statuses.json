@@ -9058,6 +9058,62 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-status-fujita-toko-1853-blackships",
+      "personId": "fujita-toko",
+      "startSceneId": "1853-blackships",
+      "endSceneId": "1853-blackships",
+      "displayName": "藤田東湖",
+      "role": "斉昭を補佐した水戸藩士・儒学者",
+      "factionId": "mito",
+      "stance": "黒船来航後、海防参与となった斉昭を補佐して海防問題に取り組む。",
+      "importance": "水戸の藩政改革を支えた儒学者が、幕府の海防対応にも関わった。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_fujita_toko_letters",
+          "kashiwa_fujita_father_son",
+          "ibaraki_nariaki_kaibo"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-fujita-toko-1854-treaty",
+      "personId": "fujita-toko",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1854-treaty",
+      "displayName": "藤田東湖",
+      "role": "斉昭を補佐した水戸藩士・儒学者",
+      "factionId": "mito",
+      "stance": "斉昭を補佐し、日英約定の情報を青山延光・会沢へ書簡で伝えた。",
+      "importance": "1854年9月14日（旧暦）の書簡では、開港と日英約定への評価を記している。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_fujita_toko_letters",
+          "kashiwa_fujita_father_son",
+          "ibaraki_nariaki_kaibo"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-fujita-koshiro-1864-kinmon",
+      "personId": "fujita-koshiro",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "藤田小四郎",
+      "role": "天狗党の挙兵と西上を担った水戸藩士",
+      "factionId": "mito",
+      "stance": "1864年3月（旧暦）、筑波山の挙兵を担い、その後は武田耕雲斎らと天狗党を再編して京都を目指した。",
+      "importance": "水戸藩内の対立と幕府の追討を受け、天狗党は西上の途上で越前に至った。",
+      "evidence": {
+        "sourceIds": [
+          "ibaraki_tenguto_event",
+          "archives_tenguto_records"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

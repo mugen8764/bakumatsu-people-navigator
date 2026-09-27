@@ -399,6 +399,36 @@
         "reviewStatus": "verified",
         "note": "Natural Earthの都市データによる表示用概略座標。万博会場の厳密な位置を示すものではない。"
       }
+    },
+    {
+      "id": "tsukuba",
+      "name": "筑波山",
+      "longitude": 140.106355,
+      "latitude": 36.225007,
+      "note": "1864年の天狗党挙兵の地域。地図は筑波山神社付近を代表点として示す。",
+      "evidence": {
+        "sourceIds": [
+          "ibaraki_tenguto_event",
+          "ibaraki_tsukubasan_map"
+        ],
+        "reviewStatus": "verified",
+        "note": "公式観光地図による概略座標。挙兵現場の一点を特定するものではない。"
+      }
+    },
+    {
+      "id": "tsuruga",
+      "name": "敦賀",
+      "longitude": 136.054969,
+      "latitude": 35.651196,
+      "note": "天狗党が越前で降伏した後、1865年に処刑された地域。地図は松島町の墓所付近を代表点として示す。",
+      "evidence": {
+        "sourceIds": [
+          "archives_tenguto_records",
+          "tsuruga_takeda_grave_map"
+        ],
+        "reviewStatus": "verified",
+        "note": "公式観光地図の墓所の概略座標。新保の降伏現場とは異なる。"
+      }
     }
   ]
 }

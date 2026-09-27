@@ -17,14 +17,14 @@ test('all six primary views render without a page error', crossBrowser, async ({
   await page.goto('/');
 
   await expect(page.locator('h1')).toHaveText('幕末人物・勢力ナビ');
-  await expect(page.locator('#personCards .card-button')).toHaveCount(14);
+  await expect(page.locator('#personCards .card-button')).toHaveCount(15);
 
   for (const view of ['people', 'factions', 'relations', 'map', 'events', 'sources']) {
   await page.locator(`.tab[data-view="${view}"]`).click();
     await expect(page.locator(`#view-${view}`)).toBeVisible();
   }
 
-  await expect(page.locator('#sourceCatalog .source')).toHaveCount(384);
+  await expect(page.locator('#sourceCatalog .source')).toHaveCount(390);
   const preciseSource = page.locator('#sourceCatalog .source', { hasText: '木戸孝允遺文集' });
   await expect(preciseSource.locator('.source-meta')).toContainText('該当箇所: 目次144頁（0110.jp2）');
   await expect(preciseSource.locator('.source-meta')).toContainText('内容確認日: 2026-07-31');
