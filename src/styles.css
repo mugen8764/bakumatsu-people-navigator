@@ -41,7 +41,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
    document.querySelector(SELECTOR).getBoundingClientRect().height, and let the
    placeholder test in tests/e2e/performance.spec.js compare each reservation
    against the height the loaded page actually takes. */
-.app-loading .top{min-height:396px}
+.app-loading .top{min-height:429px}
 .app-loading #view-people{min-height:1321px}
 .app-loading #personCards{min-height:687px;background:repeating-linear-gradient(135deg,var(--card) 0 18px,var(--panel) 18px 36px);border-radius:14px;opacity:.55}
 .app-loading #personDetail{min-height:610px}
@@ -99,7 +99,8 @@ input[type=range]{width:100%;accent-color:var(--accent)}
 .person-incident>.button,.scene-incidents>.button{max-width:100%;white-space:normal;text-align:left}
 .person-incident h3{margin-bottom:4px}
 .person-incident .source-disclosure summary{color:var(--text)}
-.scene-incidents{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:10px 0;padding:10px 12px;border:1px solid var(--border);border-radius:10px;background:var(--card)}
+.scene-incidents{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0;padding:0}
+.scene-incidents>.button{min-height:24px;padding:3px 8px;font-size:.76rem;line-height:1.45}
 .scene-incidents>span{font-size:.8rem;color:var(--muted)}
 #view-events.incident-open .timeline-layout{grid-template-columns:minmax(0,1fr)}
 .incident-open .timeline-layout>.side{display:none}
@@ -318,9 +319,9 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
   .footer-links{margin-top:8px}
 }
 @media(max-width:680px){
-  .app-loading .top{min-height:527px}
-  .app-loading #view-people{min-height:2582px}
-  .app-loading #personCards{min-height:1207px}
+  .app-loading .top{min-height:552px}
+  .app-loading #view-people{min-height:2756px}
+  .app-loading #personCards{min-height:1381px}
 }
 @media(max-width:430px){
   .cards{grid-template-columns:1fr}
@@ -328,9 +329,9 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
   .counts{grid-column:auto}
 }
 @media(max-width:430px){
-  .app-loading .top{min-height:574px}
-  .app-loading #view-people{min-height:3864px}
-  .app-loading #personCards{min-height:2376px}
+  .app-loading .top{min-height:600px}
+  .app-loading #view-people{min-height:4070px}
+  .app-loading #personCards{min-height:2550px}
 }
 .review-status{border-color:var(--danger);color:var(--danger);background:transparent;font-size:.62rem;white-space:nowrap}
 .review-status.disputed{border-color:var(--accent);color:var(--accent)}
@@ -468,6 +469,7 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
   .scene-meta .counts{flex:1}
   .scene-copy-status{order:3;width:100%;max-width:none;text-align:left}
   .scene-overview{grid-template-columns:minmax(0,1fr);gap:0;margin:8px 11px 0}
+  .scene-incidents>span{display:none}
   .scene-at-glance{grid-row:1;grid-column:1}
   .scene-at-glance-group{grid-template-columns:3.1rem minmax(0,1fr);gap:5px;padding:5px 7px}
   /* The collapsed details toggle overlaps the end of the turning-point row. */
