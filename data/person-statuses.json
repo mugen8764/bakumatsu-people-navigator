@@ -8934,6 +8934,24 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-status-ito-kashitaro-1867-taisei",
+      "personId": "ito-kashitaro",
+      "startSceneId": "1867-taisei",
+      "endSceneId": "1867-taisei",
+      "displayName": "伊東甲子太郎",
+      "role": "御陵衛士隊長",
+      "factionId": "goryo-eji",
+      "stance": "慶応3年（1867）3月、新選組を離れ、孝明天皇の御陵守衛を担う御陵衛士となった。",
+      "importance": "月真院を拠点に勤王を説いた。同年旧暦11月18日、油小路で命を落とした。",
+      "evidence": {
+        "sourceIds": [
+          "kyoto_goryo_eji_todo",
+          "kyoto_ishibumi_goryo_ito"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

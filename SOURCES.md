@@ -1277,6 +1277,10 @@
    - 該当箇所: Licensing：PD-Art／作者1884年没／PD-old-auto-expired
    - 内容確認日: 2026-09-27
 
+372. [京都市「京都のいしぶみ」御陵衛士屯所跡（HI005）](https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hi005.html) — 組織成立と生没の根拠。個々の暗殺実行者や各人物の動機、死亡日の西暦換算は表示しない。
+   - 該当箇所: 解説本文：伊東甲子太郎の生没年（1835～67）、慶応3年3月新選組離隊、6月月真院屯所、11月死去
+   - 内容確認日: 2026-09-27
+
 <!-- END GENERATED SOURCE CATALOG -->
 
 ## 情報の分類

@@ -5411,6 +5411,59 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "goryo-eji-formation-1867",
+      "sceneId": "1867-taisei",
+      "title": "新選組から御陵衛士へ",
+      "date": "1867年（慶応3年）旧暦3月の離隊〜6月の月真院移転",
+      "scope": "伊東甲子太郎らの新選組離隊と、孝明天皇の御陵守衛を担う集団の成立。",
+      "summary": "伊東甲子太郎らは新選組を離れ、孝明天皇の御陵衛士となった。藤堂平助も参加し、6月には高台寺の月真院を屯所とした。",
+      "stakes": "新選組から分かれた集団が、天皇の御陵守衛という役割を持って活動を始めた。",
+      "turningPoint": "3月の離隊後は長円寺へ移り、6月に月真院を拠点とした。伊東らは勤王を説く活動を進めた。",
+      "participants": [
+        {
+          "personId": "ito-kashitaro",
+          "displayName": "伊東甲子太郎",
+          "role": "離隊し御陵衛士を率いる",
+          "involvement": "decision",
+          "side": "御陵衛士",
+          "summary": "同志と新選組を離れ、孝明天皇の御陵衛士となり、月真院を屯所とした。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_goryo_eji_todo",
+              "kyoto_ishibumi_goryo_ito"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "todo-heisuke",
+          "displayName": "藤堂平助",
+          "role": "新選組を離れ御陵衛士に参加",
+          "involvement": "onsite",
+          "side": "御陵衛士",
+          "summary": "伊東らと新選組を離れ、御陵衛士となった隊士の一人。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_goryo_eji_todo"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [],
+      "placeIds": [
+        "kyoto"
+      ],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "kyoto_goryo_eji_todo",
+          "kyoto_ishibumi_goryo_ito"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ],
   "terms": [

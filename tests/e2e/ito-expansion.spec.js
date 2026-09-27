@@ -1,0 +1,30 @@
+const { expect, test } = require('../support/test.cjs');
+
+test('Ito search connects the formation to Todo, source evidence and Kyoto', async ({ page }) => {
+  await page.addInitScript(() => localStorage.clear());
+  await page.goto('/');
+  await page.locator('#globalSearch').fill('いとうかしたろう');
+  await page.locator('.search-result strong', { hasText: /^伊東甲子太郎$/ }).click();
+  await expect(page.locator('#personDetail')).toContainText('御陵衛士隊長');
+  await expect(page.locator('#personCards [data-person-card="ito-kashitaro"]')).toHaveCount(1);
+  await page.locator('#prevScene').click();
+  await expect(page.locator('#personCards [data-person-card="ito-kashitaro"]')).toHaveCount(0);
+  await page.locator('#nextScene').click();
+  await page.locator('#personCards [data-person-card="ito-kashitaro"]').click();
+  await page.locator('#personDetail [data-open-event="goryo-eji-formation-1867"]').click();
+  await expect(page.locator('#eventDetail')).toContainText('旧暦3月');
+  await expect(page.locator('[data-event-person="todo-heisuke"]')).toBeVisible();
+  await expect(page.locator('[data-event-person="kondo"]')).toHaveCount(0);
+  await expect(page.locator('[data-event-person="hijikata"]')).toHaveCount(0);
+  await page.locator('[data-event-person="ito-kashitaro"]').click();
+  await expect(page.locator('.person-incident')).toContainText('離隊し御陵衛士を率いる');
+  await page.locator('.person-incident summary').click();
+  await expect(page.locator('.person-incident a').first()).toBeVisible();
+  await page.locator('.person-incident [data-open-event]').click();
+  await page.locator('#eventToMap').click();
+  await expect(page.locator('#mapTitle')).toContainText('新選組から御陵衛士へ');
+  await expect(page.locator('#placeList')).toContainText('京都');
+  await page.locator('.tab[data-view="people"]').click();
+  await page.locator('#nextScene').click();
+  await expect(page.locator('#personCards [data-person-card="ito-kashitaro"]')).toHaveCount(0);
+});

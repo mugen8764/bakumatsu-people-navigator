@@ -3787,6 +3787,30 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "ito-kashitaro",
+      "name": "伊東甲子太郎",
+      "kana": "いとう かしたろう",
+      "aliases": [],
+      "lifespan": "1835–1867",
+      "defaultFactionId": "goryo-eji",
+      "activeStartSceneId": "1867-taisei",
+      "activeEndSceneId": "1867-taisei",
+      "oneLine": "新選組の参謀を務めたのち、1867年に藤堂平助らと離隊し、孝明天皇の御陵衛士を率いた。",
+      "placeIds": [
+        "edo",
+        "kyoto"
+      ],
+      "eventIds": [],
+      "termIds": [],
+      "evidence": {
+        "sourceIds": [
+          "kyoto_goryo_eji_todo",
+          "kyoto_ishibumi_goryo_ito"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }
