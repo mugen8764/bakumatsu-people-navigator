@@ -103,7 +103,7 @@ input[type=range]{width:100%;accent-color:var(--accent)}
 .scene-incidents>span{font-size:.8rem;color:var(--muted)}
 #view-events.incident-open .timeline-layout{grid-template-columns:minmax(0,1fr)}
 .incident-open .timeline-layout>.side{display:none}
-.incident-open #eventDetail{width:100%;max-width:1040px;justify-self:center;position:static}
+.incident-open #eventDetail{width:100%;position:static}
 .incident-heading{margin:24px 0}
 .incident-heading h2{font-size:2rem;margin:0;scroll-margin-top:16px}
 .incident-date{color:var(--muted);font-size:.85rem;margin:4px 0 12px}

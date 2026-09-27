@@ -2,17 +2,24 @@ const { expect, test } = require('../support/test.cjs');
 const AxeBuilder = require('@axe-core/playwright').default;
 const crossBrowser = { tag: '@cross-browser' };
 
-test('desktop incident cards use the main width and keep commands apart from the scene overview', async ({ page }) => {
-  await page.setViewportSize({ width: 1280, height: 900 });
-  await page.goto('/#scene=1864-kinmon&view=people&person=kondo');
-  await page.locator('[data-scene-incident="ikedaya"]').click();
-  const detail = await page.locator('#eventDetail').boundingBox();
-  expect(detail.width).toBeGreaterThan(900);
-  const kondo = await page.locator('[data-event-person="kondo"]').boundingBox();
-  const okita = await page.locator('[data-event-person="okita"]').boundingBox();
-  expect(Math.abs(kondo.y - okita.y)).toBeLessThan(2);
-  await page.locator('[data-open-overview]').click();
-  await expect(page.locator('#causalTimeline')).toBeVisible();
+test('desktop incident cards use the main width and keep commands apart from the scene overview', crossBrowser, async ({ page }) => {
+  for (const width of [1280, 1920]) {
+    for (const colorScheme of ['light', 'dark']) {
+      await page.setViewportSize({ width, height: 900 });
+      await page.emulateMedia({ colorScheme });
+      await page.goto('/#scene=1864-kinmon&view=people&person=kondo');
+      await page.locator('[data-scene-incident="ikedaya"]').click();
+      const overview = await page.locator('.top').boundingBox();
+      const detail = await page.locator('#eventDetail').boundingBox();
+      expect(Math.abs(detail.x - overview.x), `${width}px ${colorScheme}: left edge`).toBeLessThan(1);
+      expect(Math.abs(detail.width - overview.width), `${width}px ${colorScheme}: width`).toBeLessThan(1);
+      const kondo = await page.locator('[data-event-person="kondo"]').boundingBox();
+      const okita = await page.locator('[data-event-person="okita"]').boundingBox();
+      expect(Math.abs(kondo.y - okita.y)).toBeLessThan(2);
+      await page.locator('[data-open-overview]').click();
+      await expect(page.locator('#causalTimeline')).toBeVisible();
+    }
+  }
 });
 
 test('incident search, people, map, reload and history retain the event context', crossBrowser, async ({ page }) => {
