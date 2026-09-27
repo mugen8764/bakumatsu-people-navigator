@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.80",
+    "version": "1.0.81",
     "updated": "2026-09-27"
   },
   "sources": {
@@ -2265,6 +2265,48 @@
       "url": "https://www.i-manabi.jp/system/regionals/regionals/ecode:2/57/view/7518",
       "note": "隊士としての活動、池田屋参加、戊辰期の移動と死亡を確認。古い項目が含む龍馬暗殺犯人推測と評価語は採用しない。池田屋の隊分担・屋内突入は当該本文では確認できない。",
       "locator": "「原田 佐之助」隊士としての活動・池田屋・戊辰期の経路と死亡",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "fukushima_nakano_takeko": {
+      "title": "福島県「中野竹子」",
+      "url": "https://www.yae-mottoshiritai.jp/ashiato/nakano-takeko.html",
+      "note": "弘化4年江戸生まれ、会津への帰還、娘子軍での戦い、柳橋付近での戦死を確認。英雄的評価や逸話は掲載しない。",
+      "locator": "「中野竹子」本文：弘化4年出生・慶応3年会津帰還・娘子軍と柳橋付近の戦死",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "aizubange_nakano_takeko": {
+      "title": "会津坂下町「中野竹子（多言語ページ）」",
+      "url": "https://www.town.aizubange.fukushima.jp/soshiki/29/11156.html",
+      "note": "英文本文で鶴ヶ城へ向かう途中に戦い、銃撃を受け死亡したことを確認。娘子隊は後の名称と記す。",
+      "locator": "English「Grave of Nakano Takeko」女性部隊と鶴ヶ城へ向かう途中の戦死",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "aizu_saigo_tanomo_residence": {
+      "title": "会津若松観光ビューロー「西郷頼母邸跡」",
+      "url": "https://www.aizukanko.com/spot/143",
+      "note": "容保への京都守護職辞退進言と解任、戊辰期の復職と白河口総督、白河敗戦後の帰会津、息子を伴った会津離脱を確認。",
+      "locator": "西郷頼母邸跡の本文：守護職辞退進言から戊辰期の白河・帰会津・会津離脱",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "shirakawa_saigo_tanomo": {
+      "title": "白河市「戊辰戦争と白河」",
+      "url": "https://www.city.shirakawa.fukushima.jp/page/page010530.html",
+      "note": "稲荷山の解説で会津藩家老西郷頼母が白河口総督であったことを確認。作品名の説明は掲載しない。",
+      "locator": "「白河の戊辰戦争ゆかりの場所・人／激戦地・稲荷山」西郷頼母歌碑の解説",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "php_saigo_tanomo": {
+      "title": "PHP歴史街道「西郷頼母と幕末の会津藩」",
+      "url": "https://rekishikaido.php.co.jp/detail/3819",
+      "note": "1830年出生と1903年死去を記す。NDL典拠の没年1905と異なるため、生没の差を記録する資料として使用。本文の推測や引用は採用しない。",
+      "locator": "「今日は何の日 明治36年4月28日」冒頭の1903年死去、次段落の1830年出生",
+      "contentCheckedAt": "2026-09-27"
+    },
+    "ndl_authority_saigo_tanomo": {
+      "title": "国立国会図書館典拠「西郷, 頼母, 1830-1905」",
+      "url": "https://id.ndl.go.jp/auth/ndlna/00624599",
+      "note": "名称・読み・1830年出生を確認。没年1905の記載はPHP歴史街道の1903と異なるため未解消。",
+      "locator": "詳細情報：名称/タイトル・カナ読み・生年・没年",
       "contentCheckedAt": "2026-09-27"
     }
   },
@@ -4999,7 +5041,11 @@
           "tsurugajo_siege",
           "doshisha_yae",
           "kochi_tosa_bakumatsu",
-          "nagaoka_kawai_reform"
+          "nagaoka_kawai_reform",
+          "fukushima_nakano_takeko",
+          "aizubange_nakano_takeko",
+          "aizu_saigo_tanomo_residence",
+          "shirakawa_saigo_tanomo"
         ],
         "reviewStatus": "verified"
       },
@@ -5086,6 +5132,36 @@
             "sourceIds": [
               "fukushima_saito",
               "aizu_shinsengumi"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "nakano-takeko",
+          "displayName": "中野竹子",
+          "role": "城外の柳橋付近で戦った人物",
+          "involvement": "context",
+          "side": "城外の会津側",
+          "summary": "女性たちと若松城へ向かう途中、城外の柳橋付近で戦い、命を落とした。",
+          "evidence": {
+            "sourceIds": [
+              "fukushima_nakano_takeko",
+              "aizubange_nakano_takeko"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "saigo-tanomo",
+          "displayName": "西郷頼母",
+          "role": "前段の白河口を指揮",
+          "involvement": "context",
+          "side": "会津側",
+          "summary": "白河口総督として戦い、敗戦後は会津へ戻った。その後、長男を伴って会津を離れた。",
+          "evidence": {
+            "sourceIds": [
+              "aizu_saigo_tanomo_residence",
+              "shirakawa_saigo_tanomo"
             ],
             "reviewStatus": "verified"
           }
@@ -19214,6 +19290,110 @@
           "evidence": {
             "sourceIds": [
               "ehime_history_harada"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "nakano-takeko",
+      "name": "中野竹子",
+      "kana": "なかの たけこ",
+      "aliases": [],
+      "born": "1847–1868",
+      "defaultFaction": "会津藩",
+      "activeRange": [
+        14,
+        14
+      ],
+      "oneLine": "会津戦争で女性たちと城外の柳橋付近で戦い、命を落とした。",
+      "places": [
+        "edo",
+        "aizu"
+      ],
+      "events": [
+        "tohoku"
+      ],
+      "sources": [
+        "fukushima_nakano_takeko",
+        "aizubange_nakano_takeko"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "fukushima_nakano_takeko",
+          "aizubange_nakano_takeko"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "boshin-war"
+      ],
+      "statuses": {
+        "1868-tohoku": {
+          "display": "中野竹子",
+          "role": "会津の女性部隊で戦った人物",
+          "stance": "女性たちと鶴ヶ城へ向かう途中、城外の柳橋付近で戦い、戦死した。",
+          "importance": "会津側の戦いは、城内の籠城だけでなく城外にも広がっていた。",
+          "evidence": {
+            "sourceIds": [
+              "fukushima_nakano_takeko",
+              "aizubange_nakano_takeko"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "saigo-tanomo",
+      "name": "西郷頼母",
+      "kana": "さいごう たのも",
+      "aliases": [
+        "西郷近悳"
+      ],
+      "born": "1830–没年確認中",
+      "defaultFaction": "会津藩",
+      "activeRange": [
+        14,
+        14
+      ],
+      "oneLine": "会津藩で容保に京都守護職辞退を進言し、戊辰戦争では白河口を指揮した。",
+      "places": [
+        "aizu"
+      ],
+      "events": [
+        "tohoku"
+      ],
+      "sources": [
+        "aizu_saigo_tanomo_residence",
+        "shirakawa_saigo_tanomo",
+        "php_saigo_tanomo",
+        "ndl_authority_saigo_tanomo"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "aizu_saigo_tanomo_residence",
+          "shirakawa_saigo_tanomo",
+          "php_saigo_tanomo",
+          "ndl_authority_saigo_tanomo"
+        ],
+        "reviewStatus": "needs_review"
+      },
+      "termIds": [
+        "kyoto-shugoshoku",
+        "boshin-war"
+      ],
+      "statuses": {
+        "1868-tohoku": {
+          "display": "西郷頼母",
+          "role": "会津藩士・白河口の前指揮者",
+          "stance": "白河口総督として戦い、敗戦後は会津へ戻った。その後、長男を伴って会津を離れた。",
+          "importance": "会津藩内には、容保の京都守護職就任に異を唱えた重臣もいた。",
+          "evidence": {
+            "sourceIds": [
+              "aizu_saigo_tanomo_residence",
+              "shirakawa_saigo_tanomo"
             ],
             "reviewStatus": "verified"
           }

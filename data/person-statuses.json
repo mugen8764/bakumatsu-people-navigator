@@ -8791,6 +8791,42 @@
         "reviewStatus": "verified",
         "note": "この場面の後は別部隊での活動へ移るため、1868-edo以降に新選組の状態を持ち越さない。"
       }
+    },
+    {
+      "id": "person-status-nakano-takeko-1868-tohoku",
+      "personId": "nakano-takeko",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "中野竹子",
+      "role": "会津の女性部隊で戦った人物",
+      "factionId": "aizu",
+      "stance": "女性たちと鶴ヶ城へ向かう途中、城外の柳橋付近で戦い、戦死した。",
+      "importance": "会津側の戦いは、城内の籠城だけでなく城外にも広がっていた。",
+      "evidence": {
+        "sourceIds": [
+          "fukushima_nakano_takeko",
+          "aizubange_nakano_takeko"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "person-status-saigo-tanomo-1868-tohoku",
+      "personId": "saigo-tanomo",
+      "startSceneId": "1868-tohoku",
+      "endSceneId": "1868-tohoku",
+      "displayName": "西郷頼母",
+      "role": "会津藩士・白河口の前指揮者",
+      "factionId": "aizu",
+      "stance": "白河口総督として戦い、敗戦後は会津へ戻った。その後、長男を伴って会津を離れた。",
+      "importance": "会津藩内には、容保の京都守護職就任に異を唱えた重臣もいた。",
+      "evidence": {
+        "sourceIds": [
+          "aizu_saigo_tanomo_residence",
+          "shirakawa_saigo_tanomo"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ]
 }

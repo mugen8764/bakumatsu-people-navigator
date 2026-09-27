@@ -1971,7 +1971,11 @@
           "tsurugajo_siege",
           "doshisha_yae",
           "kochi_tosa_bakumatsu",
-          "nagaoka_kawai_reform"
+          "nagaoka_kawai_reform",
+          "fukushima_nakano_takeko",
+          "aizubange_nakano_takeko",
+          "aizu_saigo_tanomo_residence",
+          "shirakawa_saigo_tanomo"
         ],
         "reviewStatus": "verified"
       },
@@ -2058,6 +2062,36 @@
             "sourceIds": [
               "fukushima_saito",
               "aizu_shinsengumi"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "nakano-takeko",
+          "displayName": "中野竹子",
+          "role": "城外の柳橋付近で戦った人物",
+          "involvement": "context",
+          "side": "城外の会津側",
+          "summary": "女性たちと若松城へ向かう途中、城外の柳橋付近で戦い、命を落とした。",
+          "evidence": {
+            "sourceIds": [
+              "fukushima_nakano_takeko",
+              "aizubange_nakano_takeko"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "saigo-tanomo",
+          "displayName": "西郷頼母",
+          "role": "前段の白河口を指揮",
+          "involvement": "context",
+          "side": "会津側",
+          "summary": "白河口総督として戦い、敗戦後は会津へ戻った。その後、長男を伴って会津を離れた。",
+          "evidence": {
+            "sourceIds": [
+              "aizu_saigo_tanomo_residence",
+              "shirakawa_saigo_tanomo"
             ],
             "reviewStatus": "verified"
           }

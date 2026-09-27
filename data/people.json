@@ -3599,6 +3599,67 @@
         "reviewStatus": "verified",
         "note": "基本表記・別名・生没はNDL典拠。県史は新選組での活動と戊辰期の経路に限定し、龍馬暗殺推測は採用しない。"
       }
+    },
+    {
+      "id": "nakano-takeko",
+      "name": "中野竹子",
+      "kana": "なかの たけこ",
+      "aliases": [],
+      "lifespan": "1847–1868",
+      "defaultFactionId": "aizu",
+      "activeStartSceneId": "1868-tohoku",
+      "activeEndSceneId": "1868-tohoku",
+      "oneLine": "会津戦争で女性たちと城外の柳橋付近で戦い、命を落とした。",
+      "placeIds": [
+        "edo",
+        "aizu"
+      ],
+      "eventIds": [
+        "tohoku"
+      ],
+      "termIds": [
+        "boshin-war"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "fukushima_nakano_takeko",
+          "aizubange_nakano_takeko"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "saigo-tanomo",
+      "name": "西郷頼母",
+      "kana": "さいごう たのも",
+      "aliases": [
+        "西郷近悳"
+      ],
+      "lifespan": "1830–没年確認中",
+      "defaultFactionId": "aizu",
+      "activeStartSceneId": "1868-tohoku",
+      "activeEndSceneId": "1868-tohoku",
+      "oneLine": "会津藩で容保に京都守護職辞退を進言し、戊辰戦争では白河口を指揮した。",
+      "placeIds": [
+        "aizu"
+      ],
+      "eventIds": [
+        "tohoku"
+      ],
+      "termIds": [
+        "kyoto-shugoshoku",
+        "boshin-war"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "aizu_saigo_tanomo_residence",
+          "shirakawa_saigo_tanomo",
+          "php_saigo_tanomo",
+          "ndl_authority_saigo_tanomo"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "出生1830はNDL典拠とPHP歴史街道で一致。没年はPHP歴史街道が1903、NDL典拠00624599が1905と記し、差が未解消のため確定しない。1868年の白河口指揮・帰会津・離脱は別に確認。"
+      }
     }
   ]
 }
