@@ -66,7 +66,7 @@ node --test tests/data/incidents.test.cjs
 npx playwright test tests/e2e/incidents.spec.js --project=chromium
 ```
 
-共通の操作経路は既存テストを使い、追加データのID・役割・年代など既存テストで保証できない完成条件を確認します。画面を目視・操作した結果と、自動テストが通った結果は区別して報告します。
+共通の操作経路は既存テストを使い、追加データのID・役割・年代など既存テストで保証できない完成条件を確認します。全個別事件の表示・参加者・人物詳細との往復・地図は [incident-coverage.spec.js](../tests/e2e/incident-coverage.spec.js) がデータから自動で確認するため、事件を追加しても同じ経路のブラウザー検査を書き足す必要はありません。ブラウザー検査の期待件数は [tests/support/catalog.cjs](../tests/support/catalog.cjs) で `data.json` から求め、数値を直接書きません。画面を目視・操作した結果と、自動テストが通った結果は区別して報告します。
 
 `npm test` はデータ検査とブラウザー検査を実行します。ローカルの既定はChromiumです。Firefox・WebKitも含めて公開用distを検査する場合（PowerShell）:
 

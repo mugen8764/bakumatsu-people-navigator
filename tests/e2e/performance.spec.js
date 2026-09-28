@@ -1,5 +1,6 @@
 const { gzipSync } = require('node:zlib');
 const { expect, test } = require('../support/test.cjs');
+const { activePeopleAt } = require('../support/catalog.cjs');
 
 // One case per first-paint placeholder range in src/styles.css.
 for (const [label, width] of [['desktop', 1280], ['tablet', 600], ['mobile', 320]]) {
@@ -21,7 +22,7 @@ test(`delayed historical data does not cause a large initial layout shift at ${l
 
   await page.goto('/');
   await expect(page.locator('html')).not.toHaveClass(/app-loading/);
-  await expect(page.locator('#personCards .card-button')).toHaveCount(15);
+  await expect(page.locator('#personCards .card-button')).toHaveCount(activePeopleAt(0).length);
 
   const layoutShiftScore = await page.evaluate(() => window.__layoutShiftScore);
   expect(layoutShiftScore).toBeLessThan(0.1);
@@ -79,7 +80,7 @@ for (const [label, width] of [['desktop', 1280], ['tablet', 600], ['mobile', 320
     const reserved = await measure();
 
     await expect(page.locator('html')).not.toHaveClass(/app-loading/);
-    await expect(page.locator('#personCards .card-button')).toHaveCount(15);
+    await expect(page.locator('#personCards .card-button')).toHaveCount(activePeopleAt(0).length);
     const loaded = await measure();
 
     for (const selector of Object.keys(loaded)) {

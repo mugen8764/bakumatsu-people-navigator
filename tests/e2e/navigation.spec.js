@@ -5,6 +5,7 @@ function readBrowserData(script) {
   return JSON.parse(JSON.stringify(context.window.BM_DATA));
 }
 const { expect, test } = require('../support/test.cjs');
+const { activePeopleAt, catalog } = require('../support/catalog.cjs');
 const crossBrowser = { tag: '@cross-browser' };
 
 test.beforeEach(async ({ page }) => {
@@ -17,14 +18,14 @@ test('all six primary views render without a page error', crossBrowser, async ({
   await page.goto('/');
 
   await expect(page.locator('h1')).toHaveText('幕末人物・勢力ナビ');
-  await expect(page.locator('#personCards .card-button')).toHaveCount(15);
+  await expect(page.locator('#personCards .card-button')).toHaveCount(activePeopleAt(0).length);
 
   for (const view of ['people', 'factions', 'relations', 'map', 'events', 'sources']) {
   await page.locator(`.tab[data-view="${view}"]`).click();
     await expect(page.locator(`#view-${view}`)).toBeVisible();
   }
 
-  await expect(page.locator('#sourceCatalog .source')).toHaveCount(392);
+  await expect(page.locator('#sourceCatalog .source')).toHaveCount(Object.keys(catalog.sources).length);
   const preciseSource = page.locator('#sourceCatalog .source', { hasText: '木戸孝允遺文集' });
   await expect(preciseSource.locator('.source-meta')).toContainText('該当箇所: 目次144頁（0110.jp2）');
   await expect(preciseSource.locator('.source-meta')).toContainText('内容確認日: 2026-07-31');
