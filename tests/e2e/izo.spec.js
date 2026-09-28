@@ -4,8 +4,13 @@ test('Izo search leads to repression, sources and map without carrying his role 
   await page.addInitScript(() => localStorage.clear());
   await page.goto('/');
   await page.locator('#globalSearch').fill('人斬り以蔵');
-  await page.locator('.search-result strong', { hasText: /^岡田以蔵$/ }).click();
+  const result = page.locator('.search-result', { has: page.locator('strong', { hasText: /^岡田以蔵$/ }) });
+  await expect(result.locator('small')).toHaveText('後世の呼び名：人斬り以蔵');
+  await result.click();
   await expect(page.locator('#personDetail .detail-title')).toHaveText('岡田以蔵');
+  // The later epithet is not listed among the names used at the time.
+  const names = page.locator('#personDetail .section', { has: page.locator('h3', { hasText: '名前・通称' }) });
+  await expect(names.locator('.tag')).toHaveText(['岡田以蔵', '以蔵']);
   await page.goto('/#event=tosa-repression-1865');
   await page.locator('[data-event-person="okada-izo"]').click();
   await expect(page.locator('#personDetail')).toContainText('斬首');

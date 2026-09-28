@@ -36,7 +36,10 @@ test('Izo retains uncertain arrest chronology, ends at execution and is not a To
   assert.equal(domain.statusAt(izo, sceneAt('1866-satcho')), null);
   assert.ok(data.incidents['tosa-repression-1865'].participants.some(p => p.personId === izo.id && p.involvement === 'onsite'));
   assert.ok(!data.incidents['tosa-politics-1862'].participants.some(p => p.personId === izo.id));
-  assert.equal(searchAll(data, '人斬り以蔵').find(item => item.type === '人物').id, izo.id);
+  const epithet = searchAll(data, '人斬り以蔵').find(item => item.type === '人物');
+  assert.equal(epithet.id, izo.id);
+  assert.equal(epithet.sub, '後世の呼び名：人斬り以蔵');
+  assert.ok(!izo.aliases.includes('人斬り以蔵'));
 });
 
 test('incident context survives participant navigation and clears outside its scene or cast', () => {

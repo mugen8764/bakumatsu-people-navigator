@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.91",
-    "updated": "2026-09-27"
+    "version": "1.0.92",
+    "updated": "2026-09-28"
   },
   "sources": {
     "archives_timeline": {
@@ -19831,7 +19831,9 @@
       "name": "岡田以蔵",
       "kana": "おかだ いぞう",
       "aliases": [
-        "以蔵",
+        "以蔵"
+      ],
+      "laterNames": [
         "人斬り以蔵"
       ],
       "born": "1838–1865",
