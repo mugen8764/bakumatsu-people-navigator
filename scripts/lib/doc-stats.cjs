@@ -29,6 +29,12 @@ function updateDocStats(current, documents) {
     // Replace only the number, preserving units, explanations and line endings.
     updated = updated.slice(0, match.index) + match[1] + count + (match[2] || '') + updated.slice(match.index + match[0].length);
   }
+  // The field count is followed by the field names, which must list them all.
+  const fieldNames = factions.filter(faction => faction.kind === 'field').map(faction => faction.name);
+  const fieldLine = [...updated.matchAll(/^(- 活動分野: \d+)（[^）\r\n]*）/gm)];
+  if (fieldLine.length !== 1) throw new Error('README.md must name the activity fields in parentheses after their count.');
+  const [line] = fieldLine;
+  updated = updated.slice(0, line.index) + `${line[1]}（${fieldNames.join('、')}）` + updated.slice(line.index + line[0].length);
   return updated;
 }
 

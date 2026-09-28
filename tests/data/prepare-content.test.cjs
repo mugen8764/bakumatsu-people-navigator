@@ -64,7 +64,10 @@ test('preparation updates derived files, preserves editorial data and is repeata
   assert.equal(manifest.updated, options.date);
   assert.match(read('sitemap.xml'), /<lastmod>2028-02-29<\/lastmod>/);
   assert.ok(read('README.md').includes(`- 史料肖像: ${documents.people.people.filter(person => person.portrait).length}点`));
-  assert.ok(read('README.md').includes('（医療・学問、暮らし・支援）'));
+  // Field names are generated; the incident summary stays editorial text.
+  const fieldNames = documents.factions.factions.filter(faction => faction.kind === 'field').map(faction => faction.name);
+  assert.ok(read('README.md').includes(`（${fieldNames.join('、')}）`));
+  assert.ok(read('README.md').includes('（将軍継嗣、安政の大獄'));
   assert.match(read('SOURCES.md'), /準備コマンドのテスト資料/);
   const runtime = JSON.parse(read('data.json'));
   assert.equal(runtime.sources.test_preparation.title, '準備コマンドのテスト資料');
@@ -125,4 +128,16 @@ test('asset identifiers ignore line endings, preserve other URL parts and react 
   assert.deepEqual(updateAssetVersions(result.html, file => files[file]), result);
   assert.deepEqual(updateAssetVersions(html, file => files[file].replaceAll('\n', '\r\n')), result);
   assert.notEqual(updateAssetVersions(html, file => files[file] + '\n// changed').version, result.version);
+});
+
+test('README activity fields list every field by name, not only the count', () => {
+  const { updateDocStats } = require('../../scripts/lib/doc-stats.cjs');
+  const documents = loadV2Documents(root);
+  const readme = fs.readFileSync(path.join(root, 'README.md'), 'utf8');
+  const fields = documents.factions.factions.filter(faction => faction.kind === 'field').map(faction => faction.name);
+  const stale = readme.replace(/^(- 活動分野: \d+)（[^）\r\n]*）/m, '$1（古い一覧）');
+  assert.notEqual(stale, readme);
+  const updated = updateDocStats(stale, documents);
+  assert.ok(updated.includes(`- 活動分野: ${fields.length}（${fields.join('、')}）`));
+  assert.throws(() => updateDocStats(readme.replace(/^(- 活動分野: \d+)（[^）\r\n]*）/m, '$1'), documents), /name the activity fields/);
 });
