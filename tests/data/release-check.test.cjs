@@ -72,3 +72,19 @@ test('a half-updated asset version token fails the release check', () => {
     fs.rmSync(staged, { recursive: true, force: true });
   }
 });
+
+test('an oversized portrait fails the release check', () => {
+  const staged = stageRelease();
+  try {
+    const { people } = JSON.parse(fs.readFileSync(path.join(staged, 'data.json'), 'utf8'));
+    const src = people.find(person => person.portrait?.src.endsWith('.jpg')).portrait.src;
+    // A JPEG start-of-frame header declaring 1000x1000 pixels.
+    const header = Buffer.from([0xff, 0xd8, 0xff, 0xc0, 0x00, 0x11, 0x08, 0x03, 0xe8, 0x03, 0xe8, 0x03]);
+    fs.writeFileSync(path.join(staged, src), Buffer.concat([header, Buffer.alloc(32)]));
+    const result = runCheck(staged);
+    assert.equal(result.status, 1);
+    assert.match(result.output, /is 1000x1000 and \d+ bytes; keep it within 320px and 64 KiB/);
+  } finally {
+    fs.rmSync(staged, { recursive: true, force: true });
+  }
+});

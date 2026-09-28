@@ -17,6 +17,38 @@ function requireFile(relativePath) {
   if (!fs.existsSync(path.join(root, relativePath))) failures.push(`Missing release file: ${relativePath}`);
 }
 
+// Portraits display at most 80x108 CSS pixels; 320px still covers 3x screens.
+const maxPortraitSide = 320;
+const maxPortraitBytes = 64 * 1024;
+
+function imageSize(bytes, format) {
+  if (format === 'png') return { width: bytes.readUInt32BE(16), height: bytes.readUInt32BE(20) };
+  if (format === 'webp') {
+    const chunk = bytes.subarray(12, 16).toString();
+    if (chunk === 'VP8X') return { width: 1 + bytes.readUIntLE(24, 3), height: 1 + bytes.readUIntLE(27, 3) };
+    if (chunk === 'VP8L') {
+      const bits = bytes.readUInt32LE(21);
+      return { width: (bits & 0x3fff) + 1, height: ((bits >> 14) & 0x3fff) + 1 };
+    }
+    if (chunk === 'VP8 ') return { width: bytes.readUInt16LE(26) & 0x3fff, height: bytes.readUInt16LE(28) & 0x3fff };
+    return null;
+  }
+  // JPEG: walk the marker segments to the first start-of-frame.
+  let offset = 2;
+  while (offset + 9 < bytes.length && bytes[offset] === 0xff) {
+    const marker = bytes[offset + 1];
+    if (marker === 0xff) {
+      offset += 1;
+      continue;
+    }
+    if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) {
+      return { width: bytes.readUInt16BE(offset + 7), height: bytes.readUInt16BE(offset + 5) };
+    }
+    offset += 2 + bytes.readUInt16BE(offset + 2);
+  }
+  return null;
+}
+
 const requiredFiles = [
   '404.html',
   'LICENSE',
@@ -121,10 +153,15 @@ for (const person of publishedData.people) {
   requireFile(src);
   if (!fs.existsSync(path.join(root, src))) continue;
   const bytes = fs.readFileSync(path.join(root, src));
-  const valid = src.endsWith('.jpg') ? bytes.subarray(0, 3).equals(Buffer.from([255, 216, 255]))
-    : src.endsWith('.png') ? bytes.subarray(0, 8).equals(pngSignature)
+  const format = path.extname(src).slice(1);
+  const valid = format === 'jpg' ? bytes.subarray(0, 3).equals(Buffer.from([255, 216, 255]))
+    : format === 'png' ? bytes.subarray(0, 8).equals(pngSignature)
       : bytes.subarray(0, 4).toString() === 'RIFF' && bytes.subarray(8, 12).toString() === 'WEBP';
-  if (!valid || bytes.length > 1024 * 1024) failures.push(`Portrait must be a valid image under 1 MiB: ${src}`);
+  const size = valid ? imageSize(bytes, format) : null;
+  if (!size) failures.push(`Portrait must be a valid JPEG, PNG or WebP image: ${src}`);
+  else if (bytes.length > maxPortraitBytes || size.width > maxPortraitSide || size.height > maxPortraitSide) {
+    failures.push(`Portrait ${src} is ${size.width}x${size.height} and ${bytes.length} bytes; keep it within ${maxPortraitSide}px and ${maxPortraitBytes / 1024} KiB.`);
+  }
 }
 if (!/^\d{4}-\d{2}-\d{2}$/.test(manifest.updated)) failures.push('data/manifest.json updated must be YYYY-MM-DD.');
 if (!/^\d+\.\d+\.\d+$/.test(manifest.contentVersion)) failures.push('data/manifest.json contentVersion must be semantic versioning.');
