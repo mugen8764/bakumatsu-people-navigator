@@ -163,6 +163,12 @@ test('out-of-period choices survive shared URLs, stored visits and history navig
     const route = router.readInitialRoute(data, domain, { location: { hash }, storage });
     assert.equal(route.preferredPerson, route.selectedPerson, 'explicit links override stored choices');
   }
+  // A link without a person keeps both the stored person and the stored choice.
+  for (const hash of ['#scene=1866-satcho', '#view=map']) {
+    const route = router.readInitialRoute(data, domain, { location: { hash }, storage });
+    assert.equal(route.selectedPerson, saved.get('bm.person'));
+    assert.equal(route.preferredPerson, 'ryoma');
+  }
   const invalid = stateApi.createState(data, domain, router.readInitialRoute(data, domain, {
     location: { hash: '#scene=1868-toba&person=yoshinobu&preferred=missing' }, storage
   }));

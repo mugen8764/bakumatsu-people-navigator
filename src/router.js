@@ -37,12 +37,15 @@
     const hasHash = [...hash.keys()].length > 0;
     const eventId = hasHash ? (hash.get('event') || '') : (safeGet(storage, 'bm.event') || '');
     const incident = Object.hasOwn(data.incidents || {}, eventId) ? data.incidents[eventId] : null;
+    const personFromLink = hash.has('person') || Boolean(hasHash && incident);
     const selectedPerson = hash.get('person') || (hasHash && incident ? incident.participants[0].personId : safeGet(storage, 'bm.person')) || 'abe';
+    // The remembered choice comes from wherever the displayed person came from.
+    const storedChoice = personFromLink ? null : safeGet(storage, 'bm.preferredPerson');
     return {
       scene: sceneIndex(domain.sceneById, hash.get('scene') || incident?.sceneId || storedScene) ?? 0,
       view: hash.get('view') || (hasHash && incident ? 'events' : safeGet(storage, 'bm.view')) || 'people',
       selectedPerson,
-      preferredPerson: (hasHash ? hash.get('preferred') : safeGet(storage, 'bm.preferredPerson')) || selectedPerson,
+      preferredPerson: hash.get('preferred') || storedChoice || selectedPerson,
       selectedIncident: eventId,
       selectedFaction: hash.get('faction') || safeGet(storage, 'bm.faction') || '幕府',
       selectedPlace: hash.get('place') || safeGet(storage, 'bm.place') || ''
