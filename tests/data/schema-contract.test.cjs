@@ -131,3 +131,17 @@ test('display names stay registered and relations stay inside valid chronology',
   selfRelation.relations.personRelations[0].bPersonId = selfRelation.relations.personRelations[0].aPersonId;
   assert.throws(() => validateV2Documents(selfRelation), /same person at both ends/);
 });
+
+test('later names survive generation and may not repeat a period name', () => {
+  const documents = projectLegacyData(data);
+  const person = documents.people.people[0];
+  person.laterNames = ['後世の呼び名の例'];
+  assert.doesNotThrow(() => validateV2Documents(documents));
+  const generated = assembleLegacyData(documents);
+  assert.deepEqual(generated.people[0].laterNames, ['後世の呼び名の例']);
+  assert.doesNotThrow(() => validateCurrentData(generated));
+  assert.deepEqual(projectLegacyData(generated).people.people[0].laterNames, ['後世の呼び名の例']);
+
+  person.laterNames = [person.aliases[0] || person.name];
+  assert.throws(() => validateV2Documents(documents), /laterNames repeats a period name/);
+});

@@ -59,6 +59,7 @@ function projectLegacyData(data) {
       name: person.name,
       kana: person.kana,
       aliases: [...person.aliases],
+      ...(person.laterNames ? { laterNames: [...person.laterNames] } : {}),
       lifespan: person.born,
       defaultFactionId: factionId(person.defaultFaction),
       activeStartSceneId: data.scenes[person.activeRange[0]].id,

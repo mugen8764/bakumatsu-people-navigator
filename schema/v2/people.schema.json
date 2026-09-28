@@ -21,6 +21,7 @@
           "name": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
           "kana": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
           "aliases": { "$ref": "definitions.schema.json#/$defs/stringList" },
+          "laterNames": { "allOf": [{ "$ref": "definitions.schema.json#/$defs/stringList" }], "minItems": 1 },
           "lifespan": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
           "defaultFactionId": { "$ref": "definitions.schema.json#/$defs/stableId" },
           "activeStartSceneId": { "$ref": "definitions.schema.json#/$defs/sceneId" },

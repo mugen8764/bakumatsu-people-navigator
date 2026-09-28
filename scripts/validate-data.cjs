@@ -106,6 +106,12 @@ function validatePersonStatusCoverage(documents, sceneOrder) {
 
 function validatePersonStatusNames(documents) {
   const personById = new Map(documents.people.people.map(person => [person.id, person]));
+  // Later names are search terms only; they must not double as period names.
+  for (const person of documents.people.people) {
+    const periodNames = new Set([person.name, ...person.aliases]);
+    const overlap = (person.laterNames || []).filter(name => periodNames.has(name));
+    if (overlap.length) throw new Error(`${person.id}.laterNames repeats a period name: ${overlap.join(', ')}`);
+  }
   for (const status of documents.personStatuses.statuses) {
     const person = personById.get(status.personId);
     const knownNames = new Set([person.name, ...person.aliases]);

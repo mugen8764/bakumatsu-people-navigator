@@ -226,6 +226,7 @@
         "name": { "$ref": "#/$defs/nonEmptyString" },
         "kana": { "$ref": "#/$defs/nonEmptyString" },
         "aliases": { "$ref": "#/$defs/stringList" },
+        "laterNames": { "allOf": [{ "$ref": "#/$defs/stringList" }], "minItems": 1 },
         "born": { "$ref": "#/$defs/nonEmptyString" },
         "evidence": { "$ref": "#/$defs/evidence" },
         "termIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/dataId" } },

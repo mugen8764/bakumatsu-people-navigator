@@ -106,6 +106,7 @@ function assembleLegacyData(documents) {
       name: person.name,
       kana: person.kana,
       aliases: [...person.aliases],
+      ...(person.laterNames ? { laterNames: [...person.laterNames] } : {}),
       born: person.lifespan,
       defaultFaction: requiredMapping(factionNameById, person.defaultFactionId, 'faction name'),
       activeRange: [sceneIndex.get(person.activeStartSceneId), sceneIndex.get(person.activeEndSceneId)],
