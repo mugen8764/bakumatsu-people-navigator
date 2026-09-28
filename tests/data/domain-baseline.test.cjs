@@ -95,6 +95,27 @@ test('event peers exclude the selected person and direct relations', () => {
   assert.deepEqual(domain.eventPeersFor('takasugi', sceneAt('1866-satcho')), []);
 });
 
+test('event peer groups add incident co-participants once and never direct relations', () => {
+  const ids = groups => groups.map(group => [group.id, group.people.map(person => person.id)]);
+  // Kido's incident partners are already event peers or direct relations.
+  assert.deepEqual(ids(domain.eventPeerGroupsFor('kido', sceneAt('1866-satcho'))), [
+    ['satcho', ['komatsu', 'nakaoka', 'okubo']]
+  ]);
+  // A person known only through an incident still reaches its other participants.
+  assert.deepEqual(ids(domain.eventPeerGroupsFor('todo-heisuke', sceneAt('1867-taisei'))), [
+    ['goryo-eji-formation-1867', ['ito-kashitaro']]
+  ]);
+  assert.deepEqual(domain.eventPeerGroupsFor('todo-heisuke', sceneAt('1866-expedition')), []);
+  for (const [index] of data.scenes.entries()) {
+    for (const person of domain.activePeople(index)) {
+      const peers = domain.eventPeerGroupsFor(person.id, index).flatMap(group => group.people.map(other => other.id));
+      const related = domain.relationsFor(person.id, index).map(relation => (relation.a === person.id ? relation.b : relation.a));
+      assert.equal(new Set(peers).size, peers.length, `${person.id} peers repeat at ${index}`);
+      assert.ok(!peers.includes(person.id) && peers.every(id => !related.includes(id)), `${person.id} peers overlap relations at ${index}`);
+    }
+  }
+});
+
 test('person filters include every faction represented by an active person', () => {
   for (let sceneIndex = 0; sceneIndex < data.scenes.length; sceneIndex += 1) {
     const represented = [...new Set(

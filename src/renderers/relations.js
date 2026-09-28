@@ -111,10 +111,24 @@
       $('#relationChanges').innerHTML = `<div class="relation-changes-heading"><span class="eyebrow">関係の変化</span><small>${esc(previousScene.year)} → ${esc(shared.scene().year)}</small></div>${content}`;
     }
 
+    // Without a registered relation, people who shared an event at this scene
+    // are the next step. They are labelled as co-participants, not as ties.
+    function sharedEventPeers(person) {
+      const groups = domain.eventPeerGroupsFor(person.id, state.scene);
+      if (!groups.length) return '';
+      return `<div class="relation-peers"><span>同じ事件の関係者（直接の関係ではありません）</span>${groups.map(group => `<div><small>${esc(group.title)}</small><div class="tags">${group.people.map(other => `<button type="button" class="tag" data-relation-peer="${esc(other.id)}">${esc(domain.statusAt(other, state.scene).display)}</button>`).join('')}</div></div>`).join('')}</div>`;
+    }
+
     function emptyMessage(person, status) {
       const nearest = nearestSceneWithRelations(person.id);
-      if (!nearest) return `<div class="relation-empty"><strong>${esc(status.display)}の関係はまだ登録されていません</strong><span>人物画面から同じ事件の関係者を確認できます。</span></div>`;
-      return `<div class="relation-empty"><strong>この時点の主要関係はありません</strong><span>${esc(nearest.scene.year)}年「${esc(nearest.scene.title)}」では関係を表示できます。</span><button type="button" class="button subtle" data-relation-scene="${nearest.index}">その時点を見る</button></div>`;
+      const peers = sharedEventPeers(person);
+      if (!nearest) {
+        const incident = peers ? null : Object.values(data.incidents || {})
+          .find(item => item.participants.some(member => member.personId === person.id));
+        const incidentLink = incident ? `<button type="button" class="button subtle" data-relation-incident="${esc(incident.id)}">「${esc(incident.title)}」の関係者を見る</button>` : '';
+        return `<div class="relation-empty"><strong>${esc(status.display)}の関係はまだ登録されていません</strong>${peers}${incidentLink}</div>`;
+      }
+      return `<div class="relation-empty"><strong>この時点の主要関係はありません</strong><span>${esc(nearest.scene.year)}年「${esc(nearest.scene.title)}」では関係を表示できます。</span><button type="button" class="button subtle" data-relation-scene="${nearest.index}">その時点を見る</button>${peers}</div>`;
     }
 
     function render() {
@@ -202,6 +216,8 @@
       $$('[data-graph-other]').forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.graphOther, 'relations')));
       $$('[data-mobile-relation-person]').forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.mobileRelationPerson, 'relations')));
       $$('[data-relation-scene]').forEach(button => button.addEventListener('click', () => actions.setScene(button.dataset.relationScene)));
+      $$('[data-relation-peer]').forEach(button => button.addEventListener('click', () => actions.selectPerson(button.dataset.relationPeer, 'relations')));
+      $$('[data-relation-incident]').forEach(button => button.addEventListener('click', () => actions.openEvent(button.dataset.relationIncident)));
       $('#graphLegend').innerHTML = `<div class="legend-group"><strong>関係</strong><span><i class="line-sample cooperation"></i>協力・交渉</span><span><i class="line-sample conflict"></i>対立</span><span><i class="line-sample organization"></i>組織・登用</span><span><i class="line-sample personal"></i>同志・親族</span></div><div class="legend-group"><strong>勢力・分野</strong>${legendFactions.map(name => `<span><i class="dot" style="background:${esc(shared.factionColor(name))}"></i>${esc(name)}</span>`).join('')}</div>`;
     }
 

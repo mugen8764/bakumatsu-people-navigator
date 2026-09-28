@@ -110,6 +110,33 @@
         .filter(person => statusAt(person, sceneIndex));
     }
 
+    // People who share the scene's main event or one of its incidents with the
+    // person, grouped by that event. Shared participation is not a relation, so
+    // registered relations are excluded and each person is listed once.
+    function eventPeerGroupsFor(personId, sceneIndex) {
+      const directlyRelated = new Set(relationsFor(personId, sceneIndex, 'all').map(
+        relation => (relation.a === personId ? relation.b : relation.a)
+      ));
+      const listed = new Set([personId, ...directlyRelated]);
+      const group = (id, title, personIds) => {
+        const people = [...new Set(personIds)]
+          .filter(otherId => !listed.has(otherId))
+          .map(getPerson)
+          .filter(person => statusAt(person, sceneIndex));
+        people.forEach(person => listed.add(person.id));
+        return { id, title, people };
+      };
+      const groups = [];
+      const eventId = data.scenes[sceneIndex]?.event;
+      const event = data.events[eventId];
+      if (event?.people?.includes(personId)) groups.push(group(eventId, event.title, event.people));
+      incidentsAt(sceneIndex).forEach(incident => {
+        const participantIds = incident.participants.map(item => item.personId);
+        if (participantIds.includes(personId)) groups.push(group(incident.id, incident.title, participantIds));
+      });
+      return groups.filter(item => item.people.length);
+    }
+
     function activeFactionRelations(sceneIndex) {
       return data.factionRelations.filter(relation => relation.start <= sceneIndex && relation.end >= sceneIndex);
     }
@@ -184,6 +211,7 @@
       activeFactionRelations,
       activePeople,
       activeRelations,
+      eventPeerGroupsFor,
       eventPeersFor,
       eventScene,
       factionAt,
