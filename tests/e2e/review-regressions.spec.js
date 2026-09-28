@@ -277,3 +277,24 @@ test('people known only through incidents lead to their co-participants, not a d
   const accessibility = await new AxeBuilder({ page }).include('#relationMobile').withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
   expect(accessibility.violations).toEqual([]);
 });
+
+test('long scenes open the person list with the main cast and stay compact on phones', async ({ page }) => {
+  const sceneIndex = data.scenes.findIndex(scene => scene.id === '1867-taisei');
+  const scene = data.scenes[sceneIndex];
+  const active = new Set(data.people
+    .filter(person => sceneIndex >= person.activeRange[0] && sceneIndex <= person.activeRange[1])
+    .map(person => person.id));
+  const cast = data.events[scene.event].people.filter(id => active.has(id));
+  expect(active.size).toBeGreaterThan(50);
+
+  await page.setViewportSize({ width: 375, height: 812 });
+  await page.goto(`/#scene=${scene.id}&view=people&person=${cast[0]}`);
+  const cards = page.locator('#personCards .card-button');
+  await expect(cards).toHaveCount(active.size);
+  const order = await cards.evaluateAll(items => items.map(item => item.dataset.personCard));
+  expect(order.slice(0, cast.length)).toEqual(cast);
+  await expect(page.locator('#personCards .card-cast')).toHaveCount(cast.length);
+  const heights = await cards.evaluateAll(items => items.map(item => item.getBoundingClientRect().height));
+  expect(Math.max(...heights)).toBeLessThan(110);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth)).toBe(false);
+});

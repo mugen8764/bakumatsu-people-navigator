@@ -23,14 +23,19 @@
       if (state.personFactionFilter !== 'すべて') {
         people = people.filter(person => domain.factionAt(person, state.scene) === state.personFactionFilter);
       }
-      people.sort((a, b) => domain.factionAt(a, state.scene).localeCompare(domain.factionAt(b, state.scene), 'ja')
+      // The scene's main cast leads the list in event order, so a long scene
+      // still opens with the people the overview names; the rest follow by faction.
+      const cast = new Map((data.events[shared.scene().event]?.people || []).map((id, index) => [id, index]));
+      const castRank = person => (cast.has(person.id) ? cast.get(person.id) : cast.size);
+      people.sort((a, b) => castRank(a) - castRank(b)
+        || domain.factionAt(a, state.scene).localeCompare(domain.factionAt(b, state.scene), 'ja')
         || domain.statusAt(a, state.scene).display.localeCompare(domain.statusAt(b, state.scene).display, 'ja'));
       $('#personCards').innerHTML = people.map(person => {
         const status = domain.statusAt(person, state.scene);
         const faction = status.faction;
         const laterName = domain.laterNameAt(person, state.scene);
         const nameNote = laterName ? `後の名：${laterName}` : (status.display === person.name ? (person.aliases[0] || '') : '');
-        return `<button type="button" class="card-button ${person.id === state.selectedPerson ? 'selected' : ''}" data-person-card="${esc(person.id)}" aria-pressed="${person.id === state.selectedPerson}">${shared.avatar(person, faction, status.display)}<div class="name">${esc(status.display)}</div>${nameNote ? `<div class="later-name">${esc(nameNote)}</div>` : ''}<div class="role">${esc(status.role)}</div><div class="card-foot"><span>${data.factions[faction]?.kind === 'field' ? '分野：' : ''}${esc(faction)}</span><span>詳細 →</span></div></button>`;
+        return `<button type="button" class="card-button ${person.id === state.selectedPerson ? 'selected' : ''}" data-person-card="${esc(person.id)}" aria-pressed="${person.id === state.selectedPerson}">${shared.avatar(person, faction, status.display)}${cast.has(person.id) ? '<span class="card-cast">主役</span>' : ''}<div class="name">${esc(status.display)}</div>${nameNote ? `<div class="later-name">${esc(nameNote)}</div>` : ''}<div class="role">${esc(status.role)}</div><div class="card-foot"><span>${data.factions[faction]?.kind === 'field' ? '分野：' : ''}${esc(faction)}</span><span>詳細 →</span></div></button>`;
       }).join('') || '<div class="notice">この条件で表示できる人物はいません。</div>';
       $$('[data-person-card]').forEach(button => button.addEventListener('click', () => {
         actions.selectPerson(button.dataset.personCard);
