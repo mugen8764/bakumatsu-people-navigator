@@ -15,6 +15,10 @@ for (const colorScheme of ['light', 'dark']) {
     await expect(evidence).toHaveText('この役割の根拠');
     const results = await new AxeBuilder({ page }).include('.person-incident').withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze();
     expect(results.violations).toEqual([]);
+    await evidence.click();
+    await expect(page.locator('.person-incident .source-disclosure')).toHaveAttribute('open', '');
+    const expanded = await new AxeBuilder({ page }).include('.person-incident').withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze();
+    expect(expanded.violations).toEqual([]);
   });
 }
 
