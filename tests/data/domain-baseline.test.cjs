@@ -24,11 +24,11 @@ test('scene-level counts stay at the current display baseline', () => {
     { scene: '1862-bunkyu', people: 49, factions: 7, relations: 25 },
     { scene: '1863-joi', people: 56, factions: 7, relations: 36 },
     { scene: '1863-aug18', people: 55, factions: 7, relations: 32 },
-    { scene: '1864-kinmon', people: 63, factions: 7, relations: 30 },
-    { scene: '1865-choshu', people: 64, factions: 9, relations: 29 },
-    { scene: '1866-satcho', people: 58, factions: 10, relations: 31 },
-    { scene: '1866-expedition', people: 56, factions: 7, relations: 25 },
-    { scene: '1867-taisei', people: 63, factions: 10, relations: 22 },
+    { scene: '1864-kinmon', people: 63, factions: 7, relations: 31 },
+    { scene: '1865-choshu', people: 65, factions: 9, relations: 31 },
+    { scene: '1866-satcho', people: 59, factions: 10, relations: 33 },
+    { scene: '1866-expedition', people: 57, factions: 7, relations: 27 },
+    { scene: '1867-taisei', people: 63, factions: 10, relations: 24 },
     { scene: '1868-toba', people: 51, factions: 8, relations: 16 },
     { scene: '1868-edo', people: 51, factions: 7, relations: 19 },
     { scene: '1868-tohoku', people: 41, factions: 9, relations: 10 },
@@ -102,8 +102,8 @@ test('event peer groups add incident co-participants once and never direct relat
     ['satcho', ['komatsu', 'nakaoka', 'okubo']]
   ]);
   // A person known only through an incident still reaches its other participants.
-  assert.deepEqual(ids(domain.eventPeerGroupsFor('todo-heisuke', sceneAt('1867-taisei'))), [
-    ['goryo-eji-formation-1867', ['ito-kashitaro']]
+  assert.deepEqual(ids(domain.eventPeerGroupsFor('mutsu-munemitsu', sceneAt('1867-taisei'))), [
+    ['kaientai-activities-1867', ['ryoma', 'nagaoka-kenkichi']]
   ]);
   assert.deepEqual(domain.eventPeerGroupsFor('todo-heisuke', sceneAt('1866-expedition')), []);
   for (const [index] of data.scenes.entries()) {

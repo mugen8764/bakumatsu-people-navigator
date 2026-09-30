@@ -248,22 +248,22 @@ test('relation graph labels remain clear when resizing from mobile to desktop @c
 
 test('people known only through incidents lead to their co-participants, not a dead end', async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 900 });
-  await page.goto('/#scene=1867-taisei&view=relations&person=todo-heisuke');
+  await page.goto('/#scene=1867-taisei&view=relations&person=mutsu-munemitsu');
   const empty = page.locator('#graphExplanation .relation-empty');
-  await expect(empty).toContainText('藤堂平助の関係はまだ登録されていません');
+  await expect(empty).toContainText('陸奥陽之助の関係はまだ登録されていません');
   await expect(empty).toContainText('直接の関係ではありません');
   await expect(empty).not.toContainText('人物画面から');
-  await empty.locator('[data-relation-peer="ito-kashitaro"]').click();
-  await expect(page.locator('#relationGraph .graph-person.selected')).toHaveAttribute('data-graph-person', 'ito-kashitaro');
+  await empty.locator('[data-relation-peer="nagaoka-kenkichi"]').click();
+  await expect(page.locator('#relationGraph .graph-person.selected')).toHaveAttribute('data-graph-person', 'nagaoka-kenkichi');
 
-  await page.goto('/#scene=1867-taisei&view=people&person=todo-heisuke');
+  await page.goto('/#scene=1867-taisei&view=people&person=mutsu-munemitsu');
   await page.reload();
   const peers = page.locator('#personDetail .event-peers');
-  await expect(peers.locator('.event-peer-group h4')).toHaveText('新選組から御陵衛士へ');
-  await expect(peers.locator('[data-event-peer="ito-kashitaro"]')).toBeVisible();
+  await expect(peers.locator('.event-peer-group h4')).toHaveText('海援隊と出身藩を越えた活動');
+  await expect(peers.locator('[data-event-peer="nagaoka-kenkichi"]')).toBeVisible();
 
   // Outside any incident scene, the empty graph offers the person's incident.
-  await page.goto('/#scene=1866-expedition&view=relations&person=todo-heisuke');
+  await page.goto('/#scene=1866-expedition&view=relations&person=harada-sanosuke');
   await page.reload();
   const incidentLink = page.locator('#graphExplanation [data-relation-incident]');
   await expect(incidentLink).toHaveText('「池田屋事件」の関係者を見る');
@@ -271,9 +271,9 @@ test('people known only through incidents lead to their co-participants, not a d
   await expect(page.locator('#eventDetailTitle')).toHaveText('池田屋事件');
 
   await page.setViewportSize({ width: 320, height: 780 });
-  await page.goto('/#scene=1867-taisei&view=relations&person=todo-heisuke');
+  await page.goto('/#scene=1867-taisei&view=relations&person=mutsu-munemitsu');
   await page.reload();
-  await expect(page.locator('#relationMobile [data-relation-peer="ito-kashitaro"]')).toBeVisible();
+  await expect(page.locator('#relationMobile [data-relation-peer="nagaoka-kenkichi"]')).toBeVisible();
   const accessibility = await new AxeBuilder({ page }).include('#relationMobile').withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
   expect(accessibility.violations).toEqual([]);
 });

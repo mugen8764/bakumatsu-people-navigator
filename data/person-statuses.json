@@ -8936,6 +8936,24 @@
       }
     },
     {
+      "id": "person-status-ito-kashitaro-1865-choshu",
+      "personId": "ito-kashitaro",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1866-expedition",
+      "displayName": "伊東甲子太郎",
+      "role": "新選組参謀",
+      "factionId": "shinsengumi",
+      "stance": "1864年に入隊し、新選組の参謀として活動する。",
+      "importance": "1867年旧暦3月、藤堂平助らと離隊して御陵衛士となる。",
+      "evidence": {
+        "sourceIds": [
+          "kyoto_goryo_eji_todo"
+        ],
+        "reviewStatus": "verified",
+        "note": "1864年の入隊・参謀就任と1867年3月の離隊を駒札本文で確認。池田屋当日の在籍と混同しないよう、分離前の収録は1865年からとする。"
+      }
+    },
+    {
       "id": "person-status-ito-kashitaro-1867-taisei",
       "personId": "ito-kashitaro",
       "startSceneId": "1867-taisei",

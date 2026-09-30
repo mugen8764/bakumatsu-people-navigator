@@ -1233,7 +1233,7 @@
       "url": "https://www.ndl.go.jp/portrait/datas/269",
       "note": "近藤勇の新選組局長就任、京都守護職松平容保の下での京都治安維持、1867年の見廻組頭取・幕臣就任、鳥羽・伏見後の甲陽鎮撫隊組織、流山での捕縛と斬首。",
       "locator": "生没年・別称・「解説」",
-      "contentCheckedAt": "2026-07-31"
+      "contentCheckedAt": "2026-09-30"
     },
     {
       "id": "ndl_portrait_hijikata_detail",
@@ -2595,9 +2595,9 @@
       "id": "kyoto_goryo_eji_todo",
       "title": "京都市駒札「御陵衛士屯所跡」",
       "url": "https://ja.kyoto.travel/tourism/single02.php?category_id=9&tourism_id=222",
-      "note": "慶応3年3月の新選組離脱、藤堂平助の参加、月真院を屯所とした活動を確認。",
-      "locator": "京都市駒札本文：慶応3年3月の分離と藤堂平助の名を含む段落",
-      "contentCheckedAt": "2026-09-27"
+      "note": "分離前の参謀・局長と隊士の関係、伊東らの離隊と藤堂の御陵衛士参加を確認。具体的な離隊許可の手続、個々の戦闘・暗殺の命令、師弟関係や動機は根拠にしない。",
+      "locator": "駒札本文第2段落：1864年入隊・参謀就任、近藤勇・土方歳三との意見の違い、1867年3月の離隊と藤堂平助の参加",
+      "contentCheckedAt": "2026-09-30"
     },
     {
       "id": "kasumigaura_aburanokoji_todo",
@@ -2764,7 +2764,7 @@
       "title": "京都市「京都のいしぶみ」御陵衛士屯所跡（HI005）",
       "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hi005.html",
       "locator": "解説本文：伊東甲子太郎の生没年（1835～67）、慶応3年3月新選組離隊、6月月真院屯所、11月死去",
-      "contentCheckedAt": "2026-09-27",
+      "contentCheckedAt": "2026-09-30",
       "note": "組織成立と生没の根拠。個々の暗殺実行者や各人物の動機、死亡日の西暦換算は表示しない。"
     },
     {

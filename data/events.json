@@ -5697,9 +5697,55 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "personId": "kondo",
+          "displayName": "近藤勇",
+          "role": "分離元の新選組局長",
+          "involvement": "context",
+          "side": "新選組",
+          "summary": "伊東が意見を異にした新選組側の局長。離隊後の伊東・藤堂の所属先とは区別する。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_goryo_eji_todo",
+              "ndl_portrait_kondo_detail"
+            ],
+            "reviewStatus": "verified",
+            "note": "分離の背景を示す人物として登録し、現場への同席や離隊許可の手続は断定しない。"
+          }
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "id": "goryo-eji-formation-ito-todo",
+          "aPersonId": "ito-kashitaro",
+          "bPersonId": "todo-heisuke",
+          "label": "御陵衛士の隊長と隊士",
+          "description": "伊東が率いる離隊者に藤堂が加わり、御陵衛士として活動した。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_goryo_eji_todo",
+              "kyoto_ishibumi_goryo_ito"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "goryo-eji-formation-kondo-ito",
+          "aPersonId": "kondo",
+          "bPersonId": "ito-kashitaro",
+          "label": "意見の違いから分離",
+          "description": "伊東は近藤・土方らと意見を異にして新選組を離れた。直接の戦闘や離隊の手続を示す線ではない。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_goryo_eji_todo"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
       "placeIds": [
         "kyoto"
       ],
@@ -5707,7 +5753,8 @@
       "evidence": {
         "sourceIds": [
           "kyoto_goryo_eji_todo",
-          "kyoto_ishibumi_goryo_ito"
+          "kyoto_ishibumi_goryo_ito",
+          "ndl_portrait_kondo_detail"
         ],
         "reviewStatus": "verified"
       }

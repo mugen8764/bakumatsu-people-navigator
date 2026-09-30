@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.97",
+    "version": "1.0.98",
     "updated": "2026-09-30"
   },
   "sources": {
@@ -1061,7 +1061,7 @@
       "url": "https://www.ndl.go.jp/portrait/datas/269",
       "note": "近藤勇の新選組局長就任、京都守護職松平容保の下での京都治安維持、1867年の見廻組頭取・幕臣就任、鳥羽・伏見後の甲陽鎮撫隊組織、流山での捕縛と斬首。",
       "locator": "生没年・別称・「解説」",
-      "contentCheckedAt": "2026-07-31"
+      "contentCheckedAt": "2026-09-30"
     },
     "ndl_portrait_hijikata_detail": {
       "title": "国立国会図書館「近代日本人の肖像・土方歳三」",
@@ -2248,9 +2248,9 @@
     "kyoto_goryo_eji_todo": {
       "title": "京都市駒札「御陵衛士屯所跡」",
       "url": "https://ja.kyoto.travel/tourism/single02.php?category_id=9&tourism_id=222",
-      "note": "慶応3年3月の新選組離脱、藤堂平助の参加、月真院を屯所とした活動を確認。",
-      "locator": "京都市駒札本文：慶応3年3月の分離と藤堂平助の名を含む段落",
-      "contentCheckedAt": "2026-09-27"
+      "note": "分離前の参謀・局長と隊士の関係、伊東らの離隊と藤堂の御陵衛士参加を確認。具体的な離隊許可の手続、個々の戦闘・暗殺の命令、師弟関係や動機は根拠にしない。",
+      "locator": "駒札本文第2段落：1864年入隊・参謀就任、近藤勇・土方歳三との意見の違い、1867年3月の離隊と藤堂平助の参加",
+      "contentCheckedAt": "2026-09-30"
     },
     "kasumigaura_aburanokoji_todo": {
       "title": "かすみがうら市歴史博物館「伊東甲子太郎と油小路の変」企画展解説",
@@ -2397,7 +2397,7 @@
       "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hi005.html",
       "note": "組織成立と生没の根拠。個々の暗殺実行者や各人物の動機、死亡日の西暦換算は表示しない。",
       "locator": "解説本文：伊東甲子太郎の生没年（1835～67）、慶応3年3月新選組離隊、6月月真院屯所、11月死去",
-      "contentCheckedAt": "2026-09-27"
+      "contentCheckedAt": "2026-09-30"
     },
     "ryoma_nagaoka_kenkichi": {
       "title": "高知県立坂本龍馬記念館「長岡謙吉邸跡」",
@@ -9164,9 +9164,55 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "personId": "kondo",
+          "displayName": "近藤勇",
+          "role": "分離元の新選組局長",
+          "involvement": "context",
+          "side": "新選組",
+          "summary": "伊東が意見を異にした新選組側の局長。離隊後の伊東・藤堂の所属先とは区別する。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_goryo_eji_todo",
+              "ndl_portrait_kondo_detail"
+            ],
+            "reviewStatus": "verified",
+            "note": "分離の背景を示す人物として登録し、現場への同席や離隊許可の手続は断定しない。"
+          }
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "id": "goryo-eji-formation-ito-todo",
+          "aPersonId": "ito-kashitaro",
+          "bPersonId": "todo-heisuke",
+          "label": "御陵衛士の隊長と隊士",
+          "description": "伊東が率いる離隊者に藤堂が加わり、御陵衛士として活動した。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_goryo_eji_todo",
+              "kyoto_ishibumi_goryo_ito"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "goryo-eji-formation-kondo-ito",
+          "aPersonId": "kondo",
+          "bPersonId": "ito-kashitaro",
+          "label": "意見の違いから分離",
+          "description": "伊東は近藤・土方らと意見を異にして新選組を離れた。直接の戦闘や離隊の手続を示す線ではない。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_goryo_eji_todo"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
       "placeIds": [
         "kyoto"
       ],
@@ -9174,7 +9220,8 @@
       "evidence": {
         "sourceIds": [
           "kyoto_goryo_eji_todo",
-          "kyoto_ishibumi_goryo_ito"
+          "kyoto_ishibumi_goryo_ito",
+          "ndl_portrait_kondo_detail"
         ],
         "reviewStatus": "verified"
       }
@@ -21070,7 +21117,7 @@
       "born": "1835–1867",
       "defaultFaction": "御陵衛士",
       "activeRange": [
-        11,
+        8,
         11
       ],
       "oneLine": "新選組の参謀を務めたのち、1867年に藤堂平助らと離隊し、孝明天皇の御陵衛士を率いた。",
@@ -21091,7 +21138,37 @@
         "reviewStatus": "verified"
       },
       "termIds": [],
+      "turningPoints": [
+        {
+          "fromSceneId": "1866-expedition",
+          "toSceneId": "1867-taisei",
+          "title": "新選組の参謀から、御陵衛士の隊長へ",
+          "before": "近藤勇が局長を務める新選組で、参謀として活動した。",
+          "after": "1867年旧暦3月、藤堂平助らと新選組を離れ、御陵衛士を率いた。",
+          "context": "近藤・土方らと意見を異にして離隊した。御陵守衛を担う集団は長円寺へ移り、6月に月真院を屯所とした。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_goryo_eji_todo",
+              "kyoto_ishibumi_goryo_ito"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
       "statuses": {
+        "1865-choshu": {
+          "display": "伊東甲子太郎",
+          "role": "新選組参謀",
+          "faction": "新選組",
+          "stance": "1864年に入隊し、新選組の参謀として活動する。",
+          "importance": "1867年旧暦3月、藤堂平助らと離隊して御陵衛士となる。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_goryo_eji_todo"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
         "1867-taisei": {
           "display": "伊東甲子太郎",
           "role": "御陵衛士隊長",
@@ -23867,6 +23944,69 @@
       "evidence": {
         "sourceIds": [
           "mlit_teradaya_otose"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "kondo",
+      "b": "todo-heisuke",
+      "start": 7,
+      "end": 10,
+      "type": "組織",
+      "label": "新選組の局長と隊士",
+      "text": "藤堂平助は近藤勇が局長を務める新選組の隊士だった。1867年3月の離隊後には、この所属関係を持ち越さない。",
+      "evidence": {
+        "sourceIds": [
+          "kyoto_goryo_eji_todo",
+          "ndl_portrait_kondo_detail"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "kondo",
+      "b": "ito-kashitaro",
+      "start": 8,
+      "end": 10,
+      "type": "組織",
+      "label": "新選組の局長と参謀",
+      "text": "近藤勇が局長を務める新選組で、伊東甲子太郎は参謀として活動した。1867年3月に伊東らは隊を離れた。",
+      "evidence": {
+        "sourceIds": [
+          "kyoto_goryo_eji_todo",
+          "ndl_portrait_kondo_detail"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "ito-kashitaro",
+      "b": "todo-heisuke",
+      "start": 11,
+      "end": 11,
+      "type": "組織",
+      "label": "御陵衛士の隊長と隊士",
+      "text": "1867年3月、伊東甲子太郎は同志を連れて新選組を離れた。藤堂平助はその一人として、伊東を隊長とする御陵衛士に参加した。",
+      "evidence": {
+        "sourceIds": [
+          "kyoto_goryo_eji_todo",
+          "kyoto_ishibumi_goryo_ito"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "kondo",
+      "b": "ito-kashitaro",
+      "start": 11,
+      "end": 11,
+      "type": "対立",
+      "label": "意見の違いから分離",
+      "text": "伊東甲子太郎は近藤勇・土方歳三らと意見を異にし、1867年3月に新選組を離れた。以後、近藤の新選組と伊東の御陵衛士は別の組織となる。",
+      "evidence": {
+        "sourceIds": [
+          "kyoto_goryo_eji_todo"
         ],
         "reviewStatus": "verified"
       }
