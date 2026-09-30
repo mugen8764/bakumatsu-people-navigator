@@ -33,7 +33,9 @@
 
   function mapLabelBox(x, y, anchor, width) {
     const left = anchor === 'end' ? x - width : x;
-    return { left, right: left + width, top: y - 13, bottom: y + 4 };
+    // Japanese fallback fonts have different ascents and descents across
+    // browsers. Reserve space around the 11.5px text before placing neighbours.
+    return { left, right: left + width, top: y - 16, bottom: y + 6 };
   }
 
   function boxesOverlap(a, b, gap = 0) {
