@@ -30,6 +30,8 @@ for (const colorScheme of ['light', 'dark']) {
     await expect(page.locator('.person-incident a[href="https://knmdb.kyohaku.go.jp/477.html"]')).toBeVisible();
     await page.locator('#personDetail').getByText('参考資料を見る', { exact: true }).click();
     await expect(page.locator('[data-person-sources="basic"]')).toContainText('出典校正中');
+    await expect(page.locator('#personDetail')).toContainText('生年確認中–1879');
+    await expect(page.locator('[data-person-sources="basic"] a[href="https://ryoma-kinenkan.jp/exhibition/2021/03/post-15.html"]')).toBeVisible();
     await expect(page.locator('[data-person-sources="status"]')).not.toContainText('出典校正中');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze()).violations).toEqual([]);

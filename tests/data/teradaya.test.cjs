@@ -10,6 +10,11 @@ const sceneAt = id => domain.sceneById.get(id).index;
 test('Teradaya support has concrete directed actions without invented political affiliations', () => {
   const incident = domain.getIncident('teradaya-1866');
   assert.equal(incident.sceneId, '1866-satcho');
+  assert.equal(incident.evidence.reviewStatus, 'disputed');
+  assert.equal(incident.date, '1866年1月（旧暦）・襲撃とその後の保護');
+  assert.ok(incident.evidence.sourceIds.includes('ndl_teradaya_letter_copy'));
+  assert.ok(incident.participants.every(p => p.evidence.reviewStatus === 'verified'));
+  assert.ok(incident.relations.every(r => r.evidence.reviewStatus === 'verified'));
   assert.deepEqual(incident.participants.filter(p => p.involvement === 'onsite').map(p => p.personId), ['ryoma', 'oryo', 'miyoshi-shinzo']);
   assert.deepEqual(incident.relations.filter(r => r.bPersonId === 'ryoma').map(r => [r.aPersonId, r.bPersonId, r.direction]), [
     ['oryo', 'ryoma', 'forward'], ['miyoshi-shinzo', 'ryoma', 'forward']

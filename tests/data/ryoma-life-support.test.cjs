@@ -21,7 +21,8 @@ test('Otose and Otome are searchable with bounded support roles and separate unc
       assert.equal(status.evidence.reviewStatus, 'verified');
     }
   }
-  assert.match(domain.getPerson('sakamoto-otome').born, /確認中/);
+  assert.equal(domain.getPerson('sakamoto-otome').born, '生年確認中–1879');
+  assert.ok(domain.getPerson('sakamoto-otome').evidence.sourceIds.includes('ryoma_takamatsu_exhibition_2021'));
   assert.equal(domain.getPerson('sakamoto-otome').evidence.reviewStatus, 'needs_review');
   assert.match(domain.statusAt(domain.getPerson('sakamoto-otome'), at('1865-choshu')).stance, /実際の送付.*確定しない/);
 });

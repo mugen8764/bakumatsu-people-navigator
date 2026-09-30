@@ -4214,7 +4214,7 @@
       "aliases": [
         "乙女"
       ],
-      "lifespan": "生没年確認中",
+      "lifespan": "生年確認中–1879",
       "defaultFactionId": "life-support",
       "activeStartSceneId": "1863-joi",
       "activeEndSceneId": "1866-expedition",
@@ -4227,10 +4227,11 @@
         "sourceIds": [
           "kyoto_museum_ryoma_1863",
           "kyohaku_otome_letter_1865",
-          "kyohaku_otome_letter_1866"
+          "kyohaku_otome_letter_1866",
+          "ryoma_takamatsu_exhibition_2021"
         ],
         "reviewStatus": "needs_review",
-        "note": "姉弟関係と書簡の宛先を館の解説で確認。生没年・婚姻や改名の年代は今回の資料で確定せず、収録期間を生涯の活動期間としない。"
+        "note": "姉弟関係と書簡の宛先を京都国立博物館の解説で確認。高知県立坂本龍馬記念館の所蔵書簡紹介は明治12年の乙女の容体と8月31日の死去を記すため、没年1879年のみ反映した。生年・婚姻・改名時期は確認中。年齢差だけから生年を逆算せず、書簡・家系図・墓碑などの該当箇所で年月を確認できた場合に再校正する。収録期間を生涯の活動期間としない。"
       }
     }
   ]

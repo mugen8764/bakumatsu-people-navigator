@@ -76,6 +76,8 @@ for (const colorScheme of ['light', 'dark']) {
     await page.emulateMedia({ colorScheme });
     await page.goto('/#event=teradaya-1866');
     await expect(page.locator('#eventDetailTitle')).toContainText('1866年');
+    await expect(page.locator('.incident-date')).toContainText('1866年1月（旧暦）');
+    await expect(page.locator('.incident-date .review-status')).toHaveText('諸説あり');
     await page.locator('.background-term summary', { hasText: '船宿' }).click();
     await expect(page.locator('.background-term[open]')).toContainText('現在の建物は再建');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
