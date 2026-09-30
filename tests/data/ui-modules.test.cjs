@@ -349,7 +349,7 @@ test('source cards preserve optional precision metadata', () => {
   assert.doesNotMatch(ordinaryMarkup, /source-meta/);
 });
 
-test('later names find the person but are labelled as later names', () => {
+test('search-only names find the person without assigning an origin period', () => {
   const catalog = {
     scenes: [],
     factions: {},
@@ -357,6 +357,6 @@ test('later names find the person but are labelled as later names', () => {
     events: {},
     people: [{ id: 'sample', name: '見本太郎', kana: 'みほん たろう', aliases: ['見本'], laterNames: ['後世の見本'], statuses: {}, oneLine: '説明' }]
   };
-  assert.deepEqual(searchAll(catalog, '後世の見本'), [{ type: '人物', title: '見本太郎', sub: '後世の呼び名：後世の見本', id: 'sample' }]);
+  assert.deepEqual(searchAll(catalog, '後世の見本'), [{ type: '人物', title: '見本太郎', sub: '検索用の呼び名：後世の見本', id: 'sample' }]);
   assert.equal(searchAll(catalog, '見本')[0].sub, '見本');
 });

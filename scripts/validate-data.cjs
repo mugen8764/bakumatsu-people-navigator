@@ -106,7 +106,7 @@ function validatePersonStatusCoverage(documents, sceneOrder) {
 
 function validatePersonStatusNames(documents) {
   const personById = new Map(documents.people.people.map(person => [person.id, person]));
-  // Later names are search terms only; they must not double as period names.
+  // Search-only names must not double as period names, regardless of their origin.
   for (const person of documents.people.people) {
     const periodNames = new Set([person.name, ...person.aliases]);
     const overlap = (person.laterNames || []).filter(name => periodNames.has(name));

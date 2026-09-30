@@ -226,7 +226,7 @@
         "name": { "$ref": "#/$defs/nonEmptyString" },
         "kana": { "$ref": "#/$defs/nonEmptyString" },
         "aliases": { "$ref": "#/$defs/stringList" },
-        "laterNames": { "allOf": [{ "$ref": "#/$defs/stringList" }], "minItems": 1 },
+        "laterNames": { "description": "検索専用の呼び名。互換性のためのフィールド名であり、成立時期を示さず、当時の表示名には使わない。", "allOf": [{ "$ref": "#/$defs/stringList" }], "minItems": 1 },
         "born": { "$ref": "#/$defs/nonEmptyString" },
         "evidence": { "$ref": "#/$defs/evidence" },
         "termIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/dataId" } },

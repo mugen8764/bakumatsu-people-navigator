@@ -42,7 +42,7 @@
         const scene = scenes.get(sceneId);
         return `${scene ? `${scene.year}年「${scene.title}」の` : ''}${label}：${status[field]}`;
       };
-      // Names coined after the period stay searchable but are shown as such.
+      // Search-only names do not establish when a name came into use.
       const laterName = (person.laterNames || []).find(matches);
       let rank;
       let sub = person.aliases.slice(0, 3).join('／');
@@ -50,7 +50,7 @@
       else if (names.some(matches)) rank = 1;
       else if (laterName) {
         rank = normalise(laterName) === normalizedQuery ? 0 : 1;
-        sub = `後世の呼び名：${laterName}`;
+        sub = `検索用の呼び名：${laterName}`;
       } else {
         const role = matchStatus('role');
         const stance = matchStatus('stance');
