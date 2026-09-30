@@ -1,4 +1,5 @@
 const { expect, test } = require('../support/test.cjs');
+const { catalog } = require('../support/catalog.cjs');
 const AxeBuilder = require('@axe-core/playwright').default;
 const crossBrowser = { tag: '@cross-browser' };
 
@@ -29,7 +30,7 @@ test('incident search, people, map, reload and history retain the event context'
   await page.locator('.search-result strong', { hasText: /^池田屋事件$/ }).click();
   await expect(page.locator('#eventDetailTitle')).toHaveText('池田屋事件');
   await expect(page.locator('#eventDetailTitle')).toBeFocused();
-  await expect(page.locator('.onsite [data-event-person]')).toHaveCount(6);
+  await expect(page.locator('.onsite [data-event-person]')).toHaveCount(catalog.incidents.ikedaya.participants.filter(p => p.involvement === 'onsite').length);
   await expect(page.locator('.context [data-event-person="katamori"]')).toBeVisible();
   await page.locator('[data-event-person="okita"]').click();
   await expect(page.locator('#personDetail .detail-title')).toHaveText('沖田総司');

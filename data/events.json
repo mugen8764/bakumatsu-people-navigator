@@ -1372,6 +1372,21 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "personId": "inoue-genzaburo",
+          "displayName": "井上源三郎",
+          "role": "事件に出動した隊士",
+          "involvement": "onsite",
+          "side": "新選組側",
+          "summary": "出動と褒賞対象であることを文書で確認できる。屋内への突入位置・時刻は確定しない。",
+          "evidence": {
+            "sourceIds": [
+              "archives_ikedaya_rewards",
+              "hino_inoue_exhibition"
+            ],
+            "reviewStatus": "verified"
+          }
         }
       ],
       "relations": [
@@ -1428,7 +1443,8 @@
           "yamaguchi_library_kinmon",
           "kyoto_kinmon",
           "yamaguchi_yoshida_toshimaro",
-          "archives_ikedaya_rewards"
+          "archives_ikedaya_rewards",
+          "hino_inoue_exhibition"
         ],
         "reviewStatus": "verified"
       },
@@ -2712,6 +2728,20 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "personId": "inoue-genzaburo",
+          "displayName": "井上源三郎",
+          "role": "戦闘に参加し戦死",
+          "involvement": "onsite",
+          "side": "旧幕府側",
+          "summary": "新選組隊士として戦い、1月5日に戦死した（旧暦）。",
+          "evidence": {
+            "sourceIds": [
+              "hino_inoue_museum"
+            ],
+            "reviewStatus": "verified"
+          }
         }
       ],
       "relations": [
@@ -2744,7 +2774,8 @@
           "archives_toba_fushimi",
           "kyoto_toba_fushimi_site",
           "kagoshima_boshin",
-          "kagoshima_kirino_profile"
+          "kagoshima_kirino_profile",
+          "hino_inoue_museum"
         ],
         "reviewStatus": "verified"
       }
@@ -4731,6 +4762,35 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "personId": "inoue-genzaburo",
+          "displayName": "井上源三郎",
+          "role": "近藤・土方らと上洛",
+          "involvement": "onsite",
+          "side": "京都に残る組",
+          "summary": "日野の佐藤道場で剣術を学び、近藤勇・土方歳三らと上洛して新選組を構成した。",
+          "evidence": {
+            "sourceIds": [
+              "hino_inoue_exhibition"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "sato-hikogoro",
+          "displayName": "佐藤彦五郎",
+          "role": "日野に留まった支援者",
+          "involvement": "context",
+          "side": "日野からの支援",
+          "summary": "名主として日野に留まり、土方歳三を送り出した。近藤への資金協力や隊士の世話を担い、上洛した隊士と区別する。",
+          "evidence": {
+            "sourceIds": [
+              "sato_museum_timeline",
+              "hino_sato_museum"
+            ],
+            "reviewStatus": "verified"
+          }
         }
       ],
       "relations": [
@@ -4775,6 +4835,20 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "id": "roshigumi-sato-hijikata",
+          "aPersonId": "sato-hikogoro",
+          "bPersonId": "hijikata",
+          "label": "義兄と、送り出された義弟",
+          "description": "彦五郎は土方の姉ノブの夫。自身は日野に留まり、土方を近藤らとともに送り出した。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "hino_sato_museum"
+            ],
+            "reviewStatus": "verified"
+          }
         }
       ],
       "placeIds": [
@@ -4791,7 +4865,10 @@
           "kyoto_shinsengumi_history",
           "mlit_kiyokawa",
           "hino_shinsengumi_2003",
-          "kyoto_shugoshoku_site"
+          "kyoto_shugoshoku_site",
+          "hino_inoue_exhibition",
+          "sato_museum_timeline",
+          "hino_sato_museum"
         ],
         "reviewStatus": "verified"
       }

@@ -4091,6 +4091,57 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "sato-hikogoro",
+      "name": "佐藤彦五郎",
+      "kana": "さとう ひこごろう",
+      "aliases": [],
+      "lifespan": "1827–1902",
+      "defaultFactionId": "life-support",
+      "activeStartSceneId": "1863-joi",
+      "activeEndSceneId": "1867-taisei",
+      "oneLine": "日野宿の名主。土方歳三の義兄で、道場と資金面から新選組を支えた。",
+      "placeIds": [],
+      "eventIds": [],
+      "evidence": {
+        "sourceIds": [
+          "hino_sato_hikogoro",
+          "sato_museum_timeline",
+          "hino_sato_museum"
+        ],
+        "reviewStatus": "verified",
+        "note": "上洛支援から1867年までを収録する。末尾は死亡・離脱時期ではなく、1868年以降の別の活動をこの登録範囲に含めない。"
+      }
+    },
+    {
+      "id": "inoue-genzaburo",
+      "name": "井上源三郎",
+      "kana": "いのうえ げんざぶろう",
+      "aliases": [],
+      "lifespan": "1829–1868",
+      "defaultFactionId": "shinsengumi",
+      "activeStartSceneId": "1863-joi",
+      "activeEndSceneId": "1868-toba",
+      "oneLine": "日野の佐藤道場で剣術を学び、近藤・土方らと上洛した新選組隊士。六番隊組長を務め、鳥羽・伏見で戦死した。",
+      "placeIds": [
+        "kyoto",
+        "fushimi"
+      ],
+      "eventIds": [],
+      "termIds": [
+        "roshigumi",
+        "boshin-war"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "hino_inoue_genzaburo",
+          "hino_inoue_exhibition",
+          "hino_inoue_museum"
+        ],
+        "reviewStatus": "verified",
+        "note": "六番隊組長の就任時期は未確認。時点別役職には就任年を推測して入れない。"
+      }
     }
   ]
 }

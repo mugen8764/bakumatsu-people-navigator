@@ -2078,6 +2078,42 @@
         "reviewStatus": "verified",
         "note": "確認できる1868年の江戸開城時点に限定し、師弟関係や恒常的な協力期間へ拡張しない。"
       }
+    },
+    {
+      "id": "person-relation-sato-hikogoro-hijikata-1863-joi-kinship",
+      "aPersonId": "sato-hikogoro",
+      "bPersonId": "hijikata",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1867-taisei",
+      "typeId": "kinship",
+      "label": "土方歳三の義兄",
+      "text": "佐藤彦五郎の妻ノブは土方歳三の姉。佐藤は日野から新選組を支えた。",
+      "evidence": {
+        "sourceIds": [
+          "hino_sato_hikogoro",
+          "hino_sato_museum"
+        ],
+        "reviewStatus": "verified",
+        "note": "表示期間は人物の収録範囲であり、親族関係の成立・解消時期ではない。"
+      }
+    },
+    {
+      "id": "person-relation-kondo-inoue-genzaburo-1864-kinmon-organization",
+      "aPersonId": "kondo",
+      "bPersonId": "inoue-genzaburo",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1867-taisei",
+      "typeId": "organization",
+      "label": "新選組の局長と隊士",
+      "text": "近藤勇が局長を務めた新選組に井上源三郎が属した。個々の戦闘での命令関係を表す線ではない。",
+      "evidence": {
+        "sourceIds": [
+          "hino_honjin_shinsengumi",
+          "hino_inoue_exhibition",
+          "hino_inoue_museum"
+        ],
+        "reviewStatus": "verified"
+      }
     }
   ],
   "factionRelations": [

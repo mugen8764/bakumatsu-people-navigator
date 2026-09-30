@@ -1,9 +1,10 @@
 const { expect, test } = require('../support/test.cjs');
+const { catalog } = require('../support/catalog.cjs');
 
 test('Ikedaya exposes distinct Todo and Harada roles with readable sources', async ({ page }) => {
   await page.addInitScript(() => localStorage.clear());
   await page.goto('/#event=ikedaya');
-  await expect(page.locator('.onsite [data-event-person]')).toHaveCount(6);
+  await expect(page.locator('.onsite [data-event-person]')).toHaveCount(catalog.incidents.ikedaya.participants.filter(p => p.involvement === 'onsite').length);
   await expect(page.locator('[data-event-person="todo-heisuke"]')).toContainText('近藤隊として突入');
   await expect(page.locator('[data-event-person="harada-sanosuke"]')).toContainText('事件に出動した隊士');
   await page.locator('[data-event-person="harada-sanosuke"]').click();

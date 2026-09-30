@@ -32,5 +32,5 @@ test('Ikedaya distinguishes Todo entering with Kondo from Harada documented in t
   assert.equal(harada.role, '事件に出動した隊士');
   assert.deepEqual(harada.evidence.sourceIds, ['archives_ikedaya_rewards']);
   assert.ok(!/突入|土方隊|時/.test(harada.summary));
-  assert.equal(cast.length, 8);
+  assert.equal(cast.length, 9);
 });
