@@ -5968,6 +5968,52 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "omiya-1867",
+      "sceneId": "1867-taisei",
+      "title": "近江屋事件",
+      "date": "慶応3年11月15日夜（旧暦）／1867年12月10日",
+      "scope": "襲撃当日の二人、直後の状況、証言と実行者説の留保",
+      "summary": "大政奉還の約1か月後、京都・河原町の近江屋で坂本龍馬と中岡慎太郎が刺客に襲われた。襲撃の経過と、実行者・指示者について確定できない点を分けて読む。",
+      "stakes": "海援隊長の龍馬と陸援隊長の慎太郎が、新しい政治体制への移行期に襲撃された。龍馬記念館は見廻組説を有力とするが、実行者・指示者を断定できる決定的な資料はないと説明する。",
+      "turningPoint": "龍馬は11月15日の襲撃で亡くなり、慎太郎は負傷後も生存して状況を語ったが、2日後の11月17日に亡くなった（旧暦）。二人は京都・東山の霊山墓地に葬られた。",
+      "participants": [
+        {
+          "personId": "ryoma",
+          "displayName": "坂本龍馬",
+          "role": "海援隊長・近江屋で襲撃され死去",
+          "involvement": "onsite",
+          "side": "近江屋の二人",
+          "summary": "11月15日夜、慎太郎といた近江屋で襲撃され、その夜に亡くなった。最期の発言は記録に違いがあり、ここでは確定しない。",
+          "evidence": {
+            "sourceIds": ["kyoto_omiya_site", "ryoma_dappan", "ryoma_omiya_testimony"],
+            "reviewStatus": "verified",
+            "note": "役職・現場での被害・死去日を確認。最期の発言や実行者を確定する根拠にはしない。"
+          }
+        },
+        {
+          "personId": "nakaoka",
+          "displayName": "中岡慎太郎",
+          "role": "陸援隊長・襲撃後の状況を伝える",
+          "involvement": "onsite",
+          "side": "近江屋の二人",
+          "summary": "龍馬との会談中に襲撃された。記念館によれば、駆けつけた人に状況を語り、11月17日に亡くなった。伝わる証言の内容の一致までは保証されない。",
+          "evidence": {
+            "sourceIds": ["kyoto_omiya_site", "nakaoka_museum_profile", "ryoma_omiya_testimony"],
+            "reviewStatus": "verified",
+            "note": "当日の参加、襲撃後の生存・証言、死去日を確認。後年の記録をそのまま確定した現場描写にしない。"
+          }
+        }
+      ],
+      "relations": [],
+      "placeIds": ["kyoto"],
+      "termIds": ["omiya-testimony", "omiya-perpetrator-caveat"],
+      "evidence": {
+        "sourceIds": ["kyoto_omiya_site", "nakaoka_museum_profile", "ryoma_dappan", "ryoma_omiya_testimony"],
+        "reviewStatus": "disputed",
+        "note": "襲撃・役職・死去時点は確認できる範囲を採用。実行者・指示者の説明には留保があり、証言・後年の記録・伝承を区別する。新規人物や推測の関係線は追加せず、地図は京都の概略地点へつなぐ。"
+      }
     }
   ],
   "terms": [
@@ -6398,6 +6444,30 @@
           "shibusawa_paris_exposition"
         ],
         "reviewStatus": "verified"
+      }
+    },
+    {
+      "id": "omiya-testimony",
+      "title": "襲撃直後の証言と後年の記録",
+      "kana": "しょうげきちょくごのしょうげんとこうねんのきろく",
+      "meaning": "龍馬記念館は、襲撃後も生存した慎太郎が、駆けつけた人に状況を語ったと説明する。その話は『谷干城遺稿』（明治45年）など後年の記録を通じて伝わる。現場での体験と、後年に書き残された説明を分けて読む。",
+      "context": "記念館は最期の言葉を伝える記録にも違いがあると説明する。ここでは発言を引用・確定しない。軍鶏の買い出しの話も、後年の峰吉の話を材料とする伝承として紹介され、龍馬の好物だった確証はないとされる。",
+      "evidence": {
+        "sourceIds": ["ryoma_omiya_testimony", "ryoma_omiya_tradition"],
+        "reviewStatus": "disputed",
+        "note": "記念館による史料紹介を確認。紹介された原本の直接確認とは区別し、証言の個々の内容は確定しない。"
+      }
+    },
+    {
+      "id": "omiya-perpetrator-caveat",
+      "title": "実行者・指示者の留保",
+      "kana": "じっこうしゃ・しじしゃのりゅうほ",
+      "meaning": "龍馬記念館は京都見廻組説を有力とする一方、今井信郎・渡辺篤・慎太郎の証言が食い違い、実行犯や黒幕を断定できる決定的な資料はないと説明する。",
+      "context": "見廻組説は同館が紹介する有力説として読む。実行した人物と指示した人物は別の問題であり、個々の実行者・指示者・動機はこの説明だけでは確定せず、疑いと確認された関与を区別する。新選組説などの存在も、関与が確認されたことを意味しない。",
+      "evidence": {
+        "sourceIds": ["ryoma_omiya_testimony", "ryoma_dappan"],
+        "reviewStatus": "disputed",
+        "note": "実行者説と指示者の未確定を分け、verifiedな人物関係には変換しない。"
       }
     }
   ]

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.96",
+    "version": "1.0.97",
     "updated": "2026-09-30"
   },
   "sources": {
@@ -980,8 +980,8 @@
       "title": "中岡慎太郎館「中岡慎太郎とは」",
       "url": "https://www.nakaokashintarokan.jp/about.html",
       "note": "中岡慎太郎の脱藩と長州藩下での活動、1866年の薩長連合仲介、1867年の薩土盟約・陸援隊結成と京都近江屋での襲撃による死去。",
-      "locator": "「中岡慎太郎とは」「慎太郎の生涯」",
-      "contentCheckedAt": "2026-07-31"
+      "locator": "「中岡慎太郎とは」生没日／「慎太郎の生涯」内「陸援隊結成、無念の死」（1867年の結成、龍馬との会談中の襲撃）",
+      "contentCheckedAt": "2026-09-30"
     },
     "ndl_portrait_katamori_detail": {
       "title": "国立国会図書館「近代日本人の肖像・松平容保」",
@@ -1422,9 +1422,9 @@
     "ryoma_dappan": {
       "title": "高知県立坂本龍馬記念館「龍馬について」",
       "url": "https://ryoma-kinenkan.jp/feat/",
-      "note": "脱藩の意味と、寺田屋でのお龍・三吉による援助、薩摩藩邸での保護とお龍の看護を確認。動機・婚姻時期などを自動的に採用しない。",
-      "locator": "「脱藩」の説明／「亀山社中時代」内「寺田屋事件と新婚旅行」",
-      "contentCheckedAt": "2026-09-25"
+      "note": "脱藩の意味と、寺田屋でのお龍・三吉による援助、薩摩藩邸での保護とお龍の看護を確認。「謎多き龍馬の死」は近江屋での死去日と西暦換算、見廻組説が有力で指示者は未確定という留保に用いる。動機・婚姻時期などを自動的に採用しない。",
+      "locator": "「脱藩」の説明／「亀山社中時代」内「寺田屋事件と新婚旅行」／「謎多き龍馬の死」（11月15日、太陽暦12月10日、実行犯説と黒幕の留保）",
+      "contentCheckedAt": "2026-09-30"
     },
     "ndl_portrait_goto_detail": {
       "title": "国立国会図書館「近代日本人の肖像」後藤象二郎",
@@ -2621,6 +2621,27 @@
       "url": "https://knmdb.kyohaku.go.jp/477.html",
       "note": "土佐の姉乙女への年間の報告、寺田屋襲撃とその後の療養、お龍の紹介を館の解説で確認。乙女の現場参加や救援の根拠にはしない。襲撃日を一月二十四日未明とする箇所は既存資料と差があるため採用せず、月表示を維持する。原本の判読とは区別する。",
       "locator": "作品情報 M甲157-5：画像下の解説第1〜2段落（書簡日・土佐の姉乙女・襲撃と療養の報告）",
+      "contentCheckedAt": "2026-09-30"
+    },
+    "kyoto_omiya_site": {
+      "title": "京都市「坂本龍馬・中岡慎太郎遭難地」",
+      "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/na011.html",
+      "note": "慶応3年11月15日夜の近江屋襲撃、海援隊長・陸援隊長という役割、河原町通蛸薬師下るの所在地を確認。二人が同時に死亡したという根拠にはせず、慎太郎の死去日は慎太郎館と龍馬記念館で別に確認する。地図は既存の京都の概略地点を使い、現場座標を追加しない。",
+      "locator": "NA011 冒頭解説（襲撃日・二人の役職）／所在地欄",
+      "contentCheckedAt": "2026-09-30"
+    },
+    "ryoma_omiya_testimony": {
+      "title": "高知県立坂本龍馬記念館「龍馬FAQ・近江屋の証言と実行犯説」",
+      "url": "https://ryoma-kinenkan.jp/feat/faq/cat/",
+      "note": "龍馬と慎太郎の死去時点の違い、慎太郎の話を伝える後年の記録、実行犯説と証言の食い違い、霊山墓地への埋葬を館の解説で確認。紹介された遺稿・自叙伝の原本を直接読んだとはしない。最期の発言の引用、刺客の人数・個人の確定、黒幕・動機の断定は採用しない。",
+      "locator": "「龍馬が近江屋で中岡慎太郎をいたところを刺客に襲われ…最後の言葉…」／「龍馬は誰に殺されたのですか。」／「龍馬の死後、遺体はどのように、どこへ搬送されたのですか。」",
+      "contentCheckedAt": "2026-09-30"
+    },
+    "ryoma_omiya_tradition": {
+      "title": "高知県立坂本龍馬記念館「龍馬FAQ・軍鶏鍋の伝承」",
+      "url": "https://ryoma-kinenkan.jp/feat/faq/cat4/",
+      "note": "軍鶏の買い出しの話は後年の峰吉の話を材料とすると考えられ、好物だった確証はないという解説を確認。伝承を確定した現場描写や動機へ変換しない。",
+      "locator": "「龍馬が生前食べたかったものとして軍鶏鍋が挙げられるそうですが、軍鶏鍋が好物なのでしょうか。」",
       "contentCheckedAt": "2026-09-30"
     }
   },
@@ -4664,6 +4685,36 @@
           "shibusawa_paris_exposition"
         ],
         "reviewStatus": "verified"
+      }
+    },
+    "omiya-testimony": {
+      "id": "omiya-testimony",
+      "title": "襲撃直後の証言と後年の記録",
+      "kana": "しょうげきちょくごのしょうげんとこうねんのきろく",
+      "meaning": "龍馬記念館は、襲撃後も生存した慎太郎が、駆けつけた人に状況を語ったと説明する。その話は『谷干城遺稿』（明治45年）など後年の記録を通じて伝わる。現場での体験と、後年に書き残された説明を分けて読む。",
+      "context": "記念館は最期の言葉を伝える記録にも違いがあると説明する。ここでは発言を引用・確定しない。軍鶏の買い出しの話も、後年の峰吉の話を材料とする伝承として紹介され、龍馬の好物だった確証はないとされる。",
+      "evidence": {
+        "sourceIds": [
+          "ryoma_omiya_testimony",
+          "ryoma_omiya_tradition"
+        ],
+        "reviewStatus": "disputed",
+        "note": "記念館による史料紹介を確認。紹介された原本の直接確認とは区別し、証言の個々の内容は確定しない。"
+      }
+    },
+    "omiya-perpetrator-caveat": {
+      "id": "omiya-perpetrator-caveat",
+      "title": "実行者・指示者の留保",
+      "kana": "じっこうしゃ・しじしゃのりゅうほ",
+      "meaning": "龍馬記念館は京都見廻組説を有力とする一方、今井信郎・渡辺篤・慎太郎の証言が食い違い、実行犯や黒幕を断定できる決定的な資料はないと説明する。",
+      "context": "見廻組説は同館が紹介する有力説として読む。実行した人物と指示した人物は別の問題であり、個々の実行者・指示者・動機はこの説明だけでは確定せず、疑いと確認された関与を区別する。新選組説などの存在も、関与が確認されたことを意味しない。",
+      "evidence": {
+        "sourceIds": [
+          "ryoma_omiya_testimony",
+          "ryoma_dappan"
+        ],
+        "reviewStatus": "disputed",
+        "note": "実行者説と指示者の未確定を分け、verifiedな人物関係には変換しない。"
       }
     }
   },
@@ -9383,6 +9434,70 @@
           "archives_tenguto_records"
         ],
         "reviewStatus": "verified"
+      }
+    },
+    "omiya-1867": {
+      "id": "omiya-1867",
+      "sceneId": "1867-taisei",
+      "title": "近江屋事件",
+      "date": "慶応3年11月15日夜（旧暦）／1867年12月10日",
+      "scope": "襲撃当日の二人、直後の状況、証言と実行者説の留保",
+      "summary": "大政奉還の約1か月後、京都・河原町の近江屋で坂本龍馬と中岡慎太郎が刺客に襲われた。襲撃の経過と、実行者・指示者について確定できない点を分けて読む。",
+      "stakes": "海援隊長の龍馬と陸援隊長の慎太郎が、新しい政治体制への移行期に襲撃された。龍馬記念館は見廻組説を有力とするが、実行者・指示者を断定できる決定的な資料はないと説明する。",
+      "turningPoint": "龍馬は11月15日の襲撃で亡くなり、慎太郎は負傷後も生存して状況を語ったが、2日後の11月17日に亡くなった（旧暦）。二人は京都・東山の霊山墓地に葬られた。",
+      "participants": [
+        {
+          "personId": "ryoma",
+          "displayName": "坂本龍馬",
+          "role": "海援隊長・近江屋で襲撃され死去",
+          "involvement": "onsite",
+          "side": "近江屋の二人",
+          "summary": "11月15日夜、慎太郎といた近江屋で襲撃され、その夜に亡くなった。最期の発言は記録に違いがあり、ここでは確定しない。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_omiya_site",
+              "ryoma_dappan",
+              "ryoma_omiya_testimony"
+            ],
+            "reviewStatus": "verified",
+            "note": "役職・現場での被害・死去日を確認。最期の発言や実行者を確定する根拠にはしない。"
+          }
+        },
+        {
+          "personId": "nakaoka",
+          "displayName": "中岡慎太郎",
+          "role": "陸援隊長・襲撃後の状況を伝える",
+          "involvement": "onsite",
+          "side": "近江屋の二人",
+          "summary": "龍馬との会談中に襲撃された。記念館によれば、駆けつけた人に状況を語り、11月17日に亡くなった。伝わる証言の内容の一致までは保証されない。",
+          "evidence": {
+            "sourceIds": [
+              "kyoto_omiya_site",
+              "nakaoka_museum_profile",
+              "ryoma_omiya_testimony"
+            ],
+            "reviewStatus": "verified",
+            "note": "当日の参加、襲撃後の生存・証言、死去日を確認。後年の記録をそのまま確定した現場描写にしない。"
+          }
+        }
+      ],
+      "relations": [],
+      "placeIds": [
+        "kyoto"
+      ],
+      "termIds": [
+        "omiya-testimony",
+        "omiya-perpetrator-caveat"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "kyoto_omiya_site",
+          "nakaoka_museum_profile",
+          "ryoma_dappan",
+          "ryoma_omiya_testimony"
+        ],
+        "reviewStatus": "disputed",
+        "note": "襲撃・役職・死去時点は確認できる範囲を採用。実行者・指示者の説明には留保があり、証言・後年の記録・伝承を区別する。新規人物や推測の関係線は追加せず、地図は京都の概略地点へつなぐ。"
       }
     }
   },
