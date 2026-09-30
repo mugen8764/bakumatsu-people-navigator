@@ -5366,15 +5366,16 @@
       "displayName": "土方歳三",
       "role": "新選組副長・旧幕府軍参加",
       "factionId": "former-bakufu",
-      "stance": "4月12日、国府台で大鳥圭介の軍に参加する。",
+      "stance": "3月に近藤らと甲州へ向かい、勝沼敗戦後は隊士を率いて五兵衛新田へ入る。4月12日、国府台で大鳥圭介の軍に参加する。",
       "importance": "鳥羽・伏見の戦い後、宇都宮・会津などへ転戦した。",
       "evidence": {
         "sourceIds": [
           "nagareyama_shinsengumi_1868",
-          "ndl_portrait_hijikata_detail"
+          "ndl_portrait_hijikata_detail",
+          "hino_honjin_koyo"
         ],
         "reviewStatus": "verified",
-        "note": "流山市立博物館の年表で1868年4月12日の大鳥圭介軍参加、国立国会図書館で鳥羽・伏見後の宇都宮・会津転戦を確認。役割を直接確認できない「旧幕府軍指揮官」は避けた。"
+        "note": "日野市で甲州行きの際の日野宿本陣への立ち寄り、流山市立博物館で3月の五兵衛新田への隊士引率と4月12日の大鳥圭介軍参加、国立国会図書館で宇都宮・会津転戦を確認。勝沼当日の配置や援軍要請は確定しない。"
       }
     },
     {

@@ -170,6 +170,21 @@
       }
     },
     {
+      "id": "katsunuma",
+      "name": "勝沼（甲州）",
+      "longitude": 138.73,
+      "latitude": 35.66,
+      "note": "1868年3月6日（旧暦）、甲陽鎮撫隊が新政府軍と戦い敗れた地域。座標は現在の勝沼町勝沼の概略位置で、戦場の範囲や陣地を示さない。",
+      "evidence": {
+        "sourceIds": [
+          "nagareyama_shinsengumi_1868",
+          "gsi_katsunuma_address"
+        ],
+        "reviewStatus": "verified",
+        "note": "国土地理院の住所検索で山梨県甲州市勝沼町勝沼の代表点（経度138.728012・緯度35.663177）を確認し、小数第2位へ丸めた。"
+      }
+    },
+    {
       "id": "aizu",
       "name": "会津若松",
       "longitude": 139.93,

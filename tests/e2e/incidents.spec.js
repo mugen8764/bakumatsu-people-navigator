@@ -3,6 +3,25 @@ const { catalog } = require('../support/catalog.cjs');
 const AxeBuilder = require('@axe-core/playwright').default;
 const crossBrowser = { tag: '@cross-browser' };
 
+for (const colorScheme of ['light', 'dark']) {
+  test(`Katsunuma roles and caveats remain readable at 320px in ${colorScheme}`, async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 780 });
+    await page.emulateMedia({ colorScheme });
+    await page.goto('/#event=koshu-katsunuma');
+    await expect(page.locator('#eventDetailTitle')).toHaveText('甲州勝沼の戦い');
+    await expect(page.locator('.decision [data-event-person="itakagi"]')).toContainText('東山道征討軍参謀');
+    await expect(page.locator('.onsite [data-event-person="saito"]')).toContainText('山口二郎');
+    await expect(page.locator('.context [data-event-person="hijikata"]')).toContainText('当日の戦場配置');
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    await page.locator('[data-event-person="saito"]').focus();
+    await page.keyboard.press('Enter');
+    await expect(page.locator('.person-incident')).toContainText('具体的な配置');
+    await page.locator('.person-incident [data-open-event]').click();
+    const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze();
+    expect(results.violations).toEqual([]);
+  });
+}
+
 test('desktop incident cards use the main width and keep commands apart from the scene overview', crossBrowser, async ({ page }) => {
   for (const width of [1280, 1920]) {
     for (const colorScheme of ['light', 'dark']) {

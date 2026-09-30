@@ -46,8 +46,8 @@ test('the published collection sizes stay at the current release baseline', () =
     events: 16,
     relations: 128,
     factionRelations: 18,
-    places: 34,
-    sources: 407
+    places: 35,
+    sources: 409
   });
 });
 

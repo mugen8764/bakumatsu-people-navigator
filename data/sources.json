@@ -252,6 +252,14 @@
       "contentCheckedAt": "2026-09-25"
     },
     {
+      "id": "gsi_katsunuma_address",
+      "title": "国土地理院「住所検索・山梨県甲州市勝沼町勝沼」",
+      "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%B1%B1%E6%A2%A8%E7%9C%8C%E7%94%B2%E5%B7%9E%E5%B8%82%E5%8B%9D%E6%B2%BC%E7%94%BA%E5%8B%9D%E6%B2%BC",
+      "note": "住所検索の代表点を概略地図表示に利用。戦場や陣地の座標ではない。",
+      "locator": "title「山梨県甲州市勝沼町勝沼」のgeometry.coordinates：138.728012, 35.663177",
+      "contentCheckedAt": "2026-09-30"
+    },
+    {
       "id": "gsi_maps_coordinates",
       "title": "国土地理院「地理院地図・標高・住所の確認」",
       "url": "https://maps.gsi.go.jp/help/intro/kinolist/2-jusho.html",
@@ -500,6 +508,14 @@
       "note": "鳥羽・伏見における幕府・会津・桑名側と薩摩・長州・土佐・安芸の新政府軍の戦闘。"
     },
     {
+      "id": "hino_honjin_koyo",
+      "title": "日野市「日野宿本陣を守り次世代へ継承するため、寄付受け付けを開始」",
+      "url": "https://www.city.hino.lg.jp/press/1023816/1023818.html",
+      "note": "慶応4年、甲州へ向かう近藤勇・土方歳三らの日野宿本陣への立ち寄りを確認。当日の戦場配置の根拠ではない。",
+      "locator": "「東京都日野市からのメッセージ」：慶応4年の甲州行きの段落",
+      "contentCheckedAt": "2026-09-30"
+    },
+    {
       "id": "hino_koyo_chinbutai",
       "title": "日野市郷土資料館「助郷史料に記されている鎮撫隊」",
       "url": "https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/024/157/rekimin160.pdf",
@@ -527,15 +543,19 @@
     },
     {
       "id": "jacar_itagaki_march_1868",
-      "title": "アジア歴史資料センター「3月 乾退助（1日より18日迄書類）」",
+      "title": "アジア歴史資料センター「辰3月 土州板垣退助〔3月1日より18日の報告書〕」",
       "url": "https://www.jacar.archives.go.jp/das/meta/C09080031100",
-      "note": "1868年3月、乾退助が率いる土佐軍を含む東山道軍の諏訪・甲府方面への進軍を記録した軍務官文書。"
+      "note": "1868年3月、乾退助が率いる土佐軍を含む東山道軍の諏訪・甲府方面への進軍を記録した軍務官文書。",
+      "locator": "詳細情報「内容」：3月1日の下諏訪着陣から4日の甲府受城協議までの翻刻（Ref.C09080031100）",
+      "contentCheckedAt": "2026-09-30"
     },
     {
       "id": "kochi_itagaki_1868_name",
       "title": "高知市「高知市歴史散歩・武田信玄と板垣退助（一）」",
       "url": "https://www.city.kochi.kochi.jp/akarui/rekishi/re0612.htm",
-      "note": "1868年3月、東山道征討軍参謀の乾退助が甲府占領時に板垣氏との系譜を名乗り、乾から板垣へ改姓した経緯。"
+      "note": "1868年3月、東山道征討軍参謀の乾退助が甲府占領時に板垣氏との系譜を名乗り、乾から板垣へ改姓した経緯。",
+      "locator": "「270 武田信玄と板垣退助（一）」：慶応四年三月の東山道征討軍参謀・甲府占領と改姓",
+      "contentCheckedAt": "2026-09-30"
     },
     {
       "id": "yamaguchi_boshin_choshu",
@@ -1312,8 +1332,8 @@
       "title": "流山市立博物館「新選組と流山」",
       "url": "https://www.city.nagareyama.chiba.jp/tourism/1013070/1013074.html",
       "note": "甲陽鎮撫隊の1868年3月1日の江戸出発と勝沼敗走、4月3日の近藤勇出頭、4月25日の板橋宿での処刑、4月12日の土方歳三による大鳥圭介軍参加。",
-      "locator": "新選組関係略年表：慶応4年4月12日の国府台での合流",
-      "contentCheckedAt": "2026-09-25"
+      "locator": "「新選組流山へ」：金子家史料による勝沼敗走と五兵衛新田・流山への移動／関係略年表：慶応4年2月28日〜4月25日",
+      "contentCheckedAt": "2026-09-30"
     },
     {
       "id": "fukushima_modern_history",
@@ -1885,7 +1905,7 @@
       "url": "https://www.yae-mottoshiritai.jp/ashiato/saitou-hajime.html",
       "note": "新選組としての転戦と会津での指揮を確認。逸話の発言は引用しない。",
       "locator": "斎藤一の人物紹介：鳥羽・伏見、甲州勝沼、会津、土方に代わる指揮",
-      "contentCheckedAt": "2026-09-25"
+      "contentCheckedAt": "2026-09-30"
     },
     {
       "id": "aizu_shinsengumi",
@@ -1893,7 +1913,7 @@
       "url": "https://www.city.aizuwakamatsu.lg.jp/docs/2022111600014/",
       "note": "結成と政変への出動、斎藤の離隊・復帰と改名、会津での指揮。斎藤の没年は本ページを採らずNDL典拠に従う。密偵説・殺人逸話は採用しない。",
       "locator": "新選組の活躍 京都編・会津編／ゆかりの人物：近藤勇・斎藤一",
-      "contentCheckedAt": "2026-09-25"
+      "contentCheckedAt": "2026-09-30"
     },
     {
       "id": "maekawa_yamanami",

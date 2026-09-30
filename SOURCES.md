@@ -115,1311 +115,1323 @@
    - 該当箇所: 「箱館戦争」の節
    - 内容確認日: 2026-09-25
 
-36. [国土地理院「地理院地図・標高・住所の確認」](https://maps.gsi.go.jp/help/intro/kinolist/2-jusho.html) — 日本国内地点の表示用概略座標を世界測地系の緯度・経度で確認。
+36. [国土地理院「住所検索・山梨県甲州市勝沼町勝沼」](https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%B1%B1%E6%A2%A8%E7%9C%8C%E7%94%B2%E5%B7%9E%E5%B8%82%E5%8B%9D%E6%B2%BC%E7%94%BA%E5%8B%9D%E6%B2%BC) — 住所検索の代表点を概略地図表示に利用。戦場や陣地の座標ではない。
+   - 該当箇所: title「山梨県甲州市勝沼町勝沼」のgeometry.coordinates：138.728012, 35.663177
+   - 内容確認日: 2026-09-30
 
-37. [Natural Earth「Populated Places」](https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-populated-places/) — 海外都市の表示用概略座標に利用する公開地理データ。
+37. [国土地理院「地理院地図・標高・住所の確認」](https://maps.gsi.go.jp/help/intro/kinolist/2-jusho.html) — 日本国内地点の表示用概略座標を世界測地系の緯度・経度で確認。
 
-38. [萩市「萩エリア～萩市の資産　松下村塾」](https://www.city.hagi.lg.jp/site/sekaiisan/h6081.html) — 萩の松下村塾、吉田松陰と塾生による人材育成。
+38. [Natural Earth「Populated Places」](https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-populated-places/) — 海外都市の表示用概略座標に利用する公開地理データ。
 
-39. [山口市「維新策源地・山口」](https://www.city.yamaguchi.lg.jp/site/rekibunshigen/124849.html) — 1863年の萩から山口への藩庁機能移転。
+39. [萩市「萩エリア～萩市の資産　松下村塾」](https://www.city.hagi.lg.jp/site/sekaiisan/h6081.html) — 萩の松下村塾、吉田松陰と塾生による人材育成。
 
-40. [防府市議会会議録・三田尻港と長州藩海軍局](https://www.city.hofu.yamaguchi.jp/uploaded/attachment/35079.pdf) — 幕末の三田尻港に置かれた長州藩海軍局。
+40. [山口市「維新策源地・山口」](https://www.city.yamaguchi.lg.jp/site/rekibunshigen/124849.html) — 1863年の萩から山口への藩庁機能移転。
 
-41. [福井市立郷土歴史博物館「橋本左内と安政の大獄」](https://history-museum.city.fukui.lg.jp/tenji/tenran/taigoku.html) — 福井藩主松平春嶽と橋本左内による将軍継嗣問題への関与。
+41. [防府市議会会議録・三田尻港と長州藩海軍局](https://www.city.hofu.yamaguchi.jp/uploaded/attachment/35079.pdf) — 幕末の三田尻港に置かれた長州藩海軍局。
+
+42. [福井市立郷土歴史博物館「橋本左内と安政の大獄」](https://history-museum.city.fukui.lg.jp/tenji/tenran/taigoku.html) — 福井藩主松平春嶽と橋本左内による将軍継嗣問題への関与。
    - 該当箇所: 展示構成「国事奔走時代の橋本左内」～「橋本左内の最期と吉田松陰」
    - 内容確認日: 2026-07-31
 
-42. [高知市「大政奉還150年」](https://www.city.kochi.kochi.jp/akarui/naiwa/nw1703.htm) — 1867年6月の坂本龍馬・後藤象二郎らによる大政奉還協議、7月8日の後藤から山内容堂への建白、10月3日の土佐藩による幕府への建白書提出。
+43. [高知市「大政奉還150年」](https://www.city.kochi.kochi.jp/akarui/naiwa/nw1703.htm) — 1867年6月の坂本龍馬・後藤象二郎らによる大政奉還協議、7月8日の後藤から山内容堂への建白、10月3日の土佐藩による幕府への建白書提出。
    - 該当箇所: 「大政奉還150年」本文の慶応3年6月9日から10月15日までの段落
    - 内容確認日: 2026-07-31
 
-43. [長崎市「亀山社中」](https://www.city.nagasaki.lg.jp/site/kodomo/61102.html) — 坂本龍馬らが長崎で結成した亀山社中と、1866年の長州向け鉄砲・汽船購入および輸送。
+44. [長崎市「亀山社中」](https://www.city.nagasaki.lg.jp/site/kodomo/61102.html) — 坂本龍馬らが長崎で結成した亀山社中と、1866年の長州向け鉄砲・汽船購入および輸送。
 
-44. [神戸市立中央図書館「神戸海軍操練所平面図」](https://www.city.kobe.lg.jp/information/institution/institution/library/arc/items/090.html) — 勝海舟の発案で幕府が開いた神戸海軍操練所。
+45. [神戸市立中央図書館「神戸海軍操練所平面図」](https://www.city.kobe.lg.jp/information/institution/institution/library/arc/items/090.html) — 勝海舟の発案で幕府が開いた神戸海軍操練所。
 
-45. [鹿児島県「西郷南州謫居跡」](https://www.pref.kagoshima.jp/suisuinavi/22253.html) — 西郷隆盛が1859年に奄美大島で暮らした謫居跡。
+46. [鹿児島県「西郷南州謫居跡」](https://www.pref.kagoshima.jp/suisuinavi/22253.html) — 西郷隆盛が1859年に奄美大島で暮らした謫居跡。
 
-46. [鹿児島県歴史・美術センター黎明館「公武合体論から討幕論へ」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/tobaku.html) — 沖永良部島からの西郷隆盛召還、島津久光の公武合体路線が支持を失った経緯、西郷による1865年の長州再征出兵拒否と武器・汽船購入の斡旋。
+47. [鹿児島県歴史・美術センター黎明館「公武合体論から討幕論へ」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/tobaku.html) — 沖永良部島からの西郷隆盛召還、島津久光の公武合体路線が支持を失った経緯、西郷による1865年の長州再征出兵拒否と武器・汽船購入の斡旋。
    - 該当箇所: 本文：第一次征討の交渉と、再征への出兵拒否・長州支援
    - 内容確認日: 2026-09-25
 
-47. [萩博物館「高杉晋作資料室」](https://www.city.hagi.lg.jp/hagihaku/hikidashi/shinsaku/index.htm) — 高杉晋作による列強支配下の上海視察。
+48. [萩博物館「高杉晋作資料室」](https://www.city.hagi.lg.jp/hagihaku/hikidashi/shinsaku/index.htm) — 高杉晋作による列強支配下の上海視察。
 
-48. [萩博物館「古写真で見る幕末明治・海外渡航者編」](https://www.city.hagi.lg.jp/hagihaku/event/202303_spring/index.html) — 1863年に英国へ渡った井上馨・山尾庸三・井上勝・伊藤博文・遠藤謹助。
+49. [萩博物館「古写真で見る幕末明治・海外渡航者編」](https://www.city.hagi.lg.jp/hagihaku/event/202303_spring/index.html) — 1863年に英国へ渡った井上馨・山尾庸三・井上勝・伊藤博文・遠藤謹助。
    - 該当箇所: 展示紹介本文：文久3年（1863）5月に英国へ送られた5名と密航留学
    - 内容確認日: 2026-09-25
 
-49. [萩市「長州ファイブ」](https://www.city.hagi.lg.jp/uploaded/attachment/5003.pdf) — 1863年にロンドンで撮影された長州五傑の写真と英国留学。
+50. [萩市「長州ファイブ」](https://www.city.hagi.lg.jp/uploaded/attachment/5003.pdf) — 1863年にロンドンで撮影された長州五傑の写真と英国留学。
 
-50. [鹿児島県「島津斉彬像」](https://www.pref.kagoshima.jp/ab23/reimeikan/josetsu/theme/kinsei/nariakira/kgs03_s6_4.html) — 島津斉彬による集成館事業、洋式造船、一橋派での将軍継嗣運動。
+51. [鹿児島県「島津斉彬像」](https://www.pref.kagoshima.jp/ab23/reimeikan/josetsu/theme/kinsei/nariakira/kgs03_s6_4.html) — 島津斉彬による集成館事業、洋式造船、一橋派での将軍継嗣運動。
    - 該当箇所: 「島津斉彬像」本文
    - 内容確認日: 2026-07-31
 
-51. [国立国会図書館「近代日本人の肖像・吉田松陰」](https://www.ndl.go.jp/portrait/datas/217/index.html) — 1854年の下田での海外密航未遂、松下村塾での門人教育、1859年の安政の大獄による刑死。
+52. [国立国会図書館「近代日本人の肖像・吉田松陰」](https://www.ndl.go.jp/portrait/datas/217/index.html) — 1854年の下田での海外密航未遂、松下村塾での門人教育、1859年の安政の大獄による刑死。
    - 該当箇所: 解説：佐久間象山に砲術・蘭学を学ぶ、1854年下田米艦への乗り込み拒絶と投獄、1859年安政の大獄で刑死
    - 内容確認日: 2026-09-27
 
-52. [いわき市「安藤信正生誕200年・公武合体策と和宮降嫁」](https://www.city.iwaki.lg.jp/www/contents/1571875265178/index.html) — 桜田門外の変後の幕府による和宮降嫁申し入れと朝廷の応諾。
+53. [いわき市「安藤信正生誕200年・公武合体策と和宮降嫁」](https://www.city.iwaki.lg.jp/www/contents/1571875265178/index.html) — 桜田門外の変後の幕府による和宮降嫁申し入れと朝廷の応諾。
    - 該当箇所: 「公武合体策と和宮降嫁」本文
    - 内容確認日: 2026-07-31
 
-53. [水戸市「歴史的風致形成の背景」](https://www.city.mito.lg.jp/uploaded/attachment/11943.pdf) — 徳川斉昭の藩政改革と幕府海防参与就任。
+54. [水戸市「歴史的風致形成の背景」](https://www.city.mito.lg.jp/uploaded/attachment/11943.pdf) — 徳川斉昭の藩政改革と幕府海防参与就任。
 
-54. [国立国会図書館「近代日本人の肖像・徳川慶喜」](https://www.ndl.go.jp/portrait/datas/147/index.html) — 一橋慶喜の将軍継嗣擁立、井伊直弼との対立、安政の大獄での処分、1862年の将軍後見職、1866年の第15代将軍就任。
+55. [国立国会図書館「近代日本人の肖像・徳川慶喜」](https://www.ndl.go.jp/portrait/datas/147/index.html) — 一橋慶喜の将軍継嗣擁立、井伊直弼との対立、安政の大獄での処分、1862年の将軍後見職、1866年の第15代将軍就任。
    - 該当箇所: 解説（1866年の将軍就任と翌年の大政奉還）
    - 内容確認日: 2026-09-24
 
-55. [鹿児島県「寺田屋事件」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/teradaya.html) — 島津久光の雄藩連合・公武合体構想と寺田屋に集結した薩摩藩急進派の鎮撫。
+56. [鹿児島県「寺田屋事件」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/teradaya.html) — 島津久光の雄藩連合・公武合体構想と寺田屋に集結した薩摩藩急進派の鎮撫。
    - 該当箇所: 「寺田屋事件」本文の全4段落
    - 内容確認日: 2026-09-26
 
-56. [国立国会図書館「近代日本人の肖像・大原重徳」](https://www.ndl.go.jp/portrait/datas/6167/) — 1862年の幕政改革勅使として島津久光と江戸へ赴いた経歴。
+57. [国立国会図書館「近代日本人の肖像・大原重徳」](https://www.ndl.go.jp/portrait/datas/6167/) — 1862年の幕政改革勅使として島津久光と江戸へ赴いた経歴。
 
-57. [高知県立坂本龍馬記念館「企画展・半平太と京都」](https://www.pref.kochi.lg.jp/press1/2025072200026/) — 尊王攘夷を掲げた土佐勤王党党首武市半平太の文久2～3年の京都での政治活動。
+58. [高知県立坂本龍馬記念館「企画展・半平太と京都」](https://www.pref.kochi.lg.jp/press1/2025072200026/) — 尊王攘夷を掲げた土佐勤王党党首武市半平太の文久2～3年の京都での政治活動。
    - 該当箇所: 「取材ポイント」
    - 内容確認日: 2026-07-31
 
-58. [鹿児島県「薩英戦争」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/satuei.html) — 戦闘の経過と被害に用いる。戦後の藩論の変化を直ちに全面的な親英・倒幕へ転じたことと同一視しない。
+59. [鹿児島県「薩英戦争」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/satuei.html) — 戦闘の経過と被害に用いる。戦後の藩論の変化を直ちに全面的な親英・倒幕へ転じたことと同一視しない。
    - 該当箇所: 本文：生麦事件後の要求拒否、英国艦隊7隻、旧暦7月2日の交戦と城下・集成館の被害
    - 内容確認日: 2026-09-25
 
-59. [京都市歴史資料館・歴史講座「浪士組から新選組」](https://www.city.kyoto.lg.jp/bunshi/cmsfiles/contents/0000233/233972/2kimura.pdf) — 会津藩預かりの壬生浪士組、八月十八日の政変への出動、新選組命名。
+60. [京都市歴史資料館・歴史講座「浪士組から新選組」](https://www.city.kyoto.lg.jp/bunshi/cmsfiles/contents/0000233/233972/2kimura.pdf) — 会津藩預かりの壬生浪士組、八月十八日の政変への出動、新選組命名。
    - 該当箇所: 1頁（全1頁）「第2回 浪士組から新選組」本文
    - 内容確認日: 2026-07-31
 
-60. [下関市「市報しものせき・外国との闘い」](https://www.city.shimonoseki.lg.jp/site/kouhou/5394.html) — 1863年の外国船砲撃と反撃、1864年の四国連合艦隊による報復攻撃。
+61. [下関市「市報しものせき・外国との闘い」](https://www.city.shimonoseki.lg.jp/site/kouhou/5394.html) — 1863年の外国船砲撃と反撃、1864年の四国連合艦隊による報復攻撃。
 
-61. [京都市「都市史25・蛤御門の変とどんどん焼け」](https://www2.city.kyoto.lg.jp/somu/rekishi/fm/nenpyou/htmlsheet/toshi25.html) — 長州藩の名誉回復・七卿赦免要求、京都出兵、会津・薩摩・幕府連合軍との戦闘。
+62. [京都市「都市史25・蛤御門の変とどんどん焼け」](https://www2.city.kyoto.lg.jp/somu/rekishi/fm/nenpyou/htmlsheet/toshi25.html) — 長州藩の名誉回復・七卿赦免要求、京都出兵、会津・薩摩・幕府連合軍との戦闘。
 
-62. [国立公文書館「激動幕末・在阪中日記」](https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/44.html) — 禁門の変後の第一次長州戦争で長州藩内の保守派が勢力を回復して幕府へ恭順した経緯と、1865年の将軍家茂の長州再征出立。
+63. [国立公文書館「激動幕末・在阪中日記」](https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/44.html) — 禁門の変後の第一次長州戦争で長州藩内の保守派が勢力を回復して幕府へ恭順した経緯と、1865年の将軍家茂の長州再征出立。
 
-63. [国立国会図書館「幕末・明治初期の商社誕生に関わった人々」](https://www.ndl.go.jp/portrait/pickup/029/) — 1865年の亀山社中設立、薩摩藩の支援、薩摩名義による長州向け小銃・蒸気船購入。
+64. [国立国会図書館「幕末・明治初期の商社誕生に関わった人々」](https://www.ndl.go.jp/portrait/pickup/029/) — 1865年の亀山社中設立、薩摩藩の支援、薩摩名義による長州向け小銃・蒸気船購入。
 
-64. [国立国会図書館サーチ「薩長同盟の展開―六ヶ条盟約の成立」](https://ndlsearch.ndl.go.jp/books/R000000004-I7488694) — 慶応元年9月の長州再征勅許と薩長提携の展開を扱う査読論文の書誌・要約。
+65. [国立国会図書館サーチ「薩長同盟の展開―六ヶ条盟約の成立」](https://ndlsearch.ndl.go.jp/books/R000000004-I7488694) — 慶応元年9月の長州再征勅許と薩長提携の展開を扱う査読論文の書誌・要約。
 
-65. [国立国会図書館「勝海舟・慶応2年9月2日の日記」](https://www.ndl.go.jp/nikki/citeid/katsu_18660902/) — 将軍家茂死去後の第二次長州征討停止と勝海舟による休戦交渉。
+66. [国立国会図書館「勝海舟・慶応2年9月2日の日記」](https://www.ndl.go.jp/nikki/citeid/katsu_18660902/) — 将軍家茂死去後の第二次長州征討停止と勝海舟による休戦交渉。
    - 該当箇所: 「長州征伐の停戦交渉」解説
    - 内容確認日: 2026-09-25
 
-66. [国立国会図書館典拠データ「孝明天皇」](https://id.ndl.go.jp/auth/ndlna/00291353) — 孝明天皇の生没年と慶応2年12月25日の崩御。
+67. [国立国会図書館典拠データ「孝明天皇」](https://id.ndl.go.jp/auth/ndlna/00291353) — 孝明天皇の生没年と慶応2年12月25日の崩御。
    - 該当箇所: 典拠詳細「生年」「没年」「別名」
    - 内容確認日: 2026-07-31
 
-67. [国立国会図書館典拠データ「明治天皇」](https://id.ndl.go.jp/auth/ndlna/00043014) — 明治天皇の人物同定と1852年から1912年の生没年。
+68. [国立国会図書館典拠データ「明治天皇」](https://id.ndl.go.jp/auth/ndlna/00043014) — 明治天皇の人物同定と1852年から1912年の生没年。
    - 該当箇所: 典拠詳細「生年」「没年」「別名」
    - 内容確認日: 2026-07-31
 
-68. [鹿児島県「討幕の密勅」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/mittyoku.html) — 1867年の薩・長・芸三藩の討幕協議、10月8日の西郷隆盛・大久保利通・小松帯刀による討幕宣旨の請願、薩摩・長州両藩への密勅。
+69. [鹿児島県「討幕の密勅」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/mittyoku.html) — 1867年の薩・長・芸三藩の討幕協議、10月8日の西郷隆盛・大久保利通・小松帯刀による討幕宣旨の請願、薩摩・長州両藩への密勅。
 
-69. [国立国会図書館レファレンス協同データベース「長州藩の朝敵取消し」](https://crd.ndl.go.jp/reference/entry/reference/show?asc=desc&dtltbs=1&fi=8_21+6_0+5_%E7%A4%BE%E4%BC%9A%E4%BA%BA+2_2+3_%E4%BA%8B%E5%AE%9F%E8%AA%BF%E6%9F%BB+4_%E9%83%B7%E5%9C%9F&id=1000242097&ldtl=1&mcmd=25&page=ref_view&st=update&state=2200000036) — 慶応3年12月8～9日の長州藩主父子の官位復旧と入京許可。
+70. [国立国会図書館レファレンス協同データベース「長州藩の朝敵取消し」](https://crd.ndl.go.jp/reference/entry/reference/show?asc=desc&dtltbs=1&fi=8_21+6_0+5_%E7%A4%BE%E4%BC%9A%E4%BA%BA+2_2+3_%E4%BA%8B%E5%AE%9F%E8%AA%BF%E6%9F%BB+4_%E9%83%B7%E5%9C%9F&id=1000242097&ldtl=1&mcmd=25&page=ref_view&st=update&state=2200000036) — 慶応3年12月8～9日の長州藩主父子の官位復旧と入京許可。
 
-70. [国立公文書館「王政復古の大号令が発せられる」](https://www.archives.go.jp/ayumi/kobetsu/k03_1867_01.html) — 1867年12月9日の王政復古宣言と摂政・関白等の廃止、総裁・議定・参与の三職設置。
+71. [国立公文書館「王政復古の大号令が発せられる」](https://www.archives.go.jp/ayumi/kobetsu/k03_1867_01.html) — 1867年12月9日の王政復古宣言と摂政・関白等の廃止、総裁・議定・参与の三職設置。
    - 該当箇所: 解説：1867年12月9日の制度廃止と三職設置
    - 内容確認日: 2026-09-25
 
-71. [京都市伏見区「江戸時代～幕末・港湾商業都市の繁栄」](https://www.city.kyoto.lg.jp/fushimi/page/0000013321.html) — 鳥羽・伏見における幕府・会津・桑名側と薩摩・長州・土佐・安芸の新政府軍の戦闘。
+72. [京都市伏見区「江戸時代～幕末・港湾商業都市の繁栄」](https://www.city.kyoto.lg.jp/fushimi/page/0000013321.html) — 鳥羽・伏見における幕府・会津・桑名側と薩摩・長州・土佐・安芸の新政府軍の戦闘。
 
-72. [日野市郷土資料館「助郷史料に記されている鎮撫隊」](https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/024/157/rekimin160.pdf) — 1868年の新選組・甲陽鎮撫隊の甲州道中進軍と勝沼での敗退。
+73. [日野市「日野宿本陣を守り次世代へ継承するため、寄付受け付けを開始」](https://www.city.hino.lg.jp/press/1023816/1023818.html) — 慶応4年、甲州へ向かう近藤勇・土方歳三らの日野宿本陣への立ち寄りを確認。当日の戦場配置の根拠ではない。
+   - 該当箇所: 「東京都日野市からのメッセージ」：慶応4年の甲州行きの段落
+   - 内容確認日: 2026-09-30
 
-73. [会津若松市「鶴ヶ城みりょく発見マップ」](https://www.city.aizuwakamatsu.fukushima.jp/docs/2024090400012/file_contents/tsurugajo_miryokuhakken_panph3.pdf) — 戊辰戦争の鶴ヶ城籠城と1868年9月22日の降伏。
+74. [日野市郷土資料館「助郷史料に記されている鎮撫隊」](https://www.city.hino.lg.jp/_res/projects/default_project/_page_/001/024/157/rekimin160.pdf) — 1868年の新選組・甲陽鎮撫隊の甲州道中進軍と勝沼での敗退。
 
-74. [鹿児島県「戊辰戦争」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/boshin.html) — 小御所会議後の対立、鳥羽・伏見、勝・西郷会談と江戸城引き渡し。
+75. [会津若松市「鶴ヶ城みりょく発見マップ」](https://www.city.aizuwakamatsu.fukushima.jp/docs/2024090400012/file_contents/tsurugajo_miryokuhakken_panph3.pdf) — 戊辰戦争の鶴ヶ城籠城と1868年9月22日の降伏。
+
+76. [鹿児島県「戊辰戦争」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/boshin.html) — 小御所会議後の対立、鳥羽・伏見、勝・西郷会談と江戸城引き渡し。
    - 該当箇所: 本文：王政復古から鳥羽・伏見、江戸城開城まで
    - 内容確認日: 2026-09-25
 
-75. [高知県「龍馬関連情報・板垣退助生誕地」](https://www.pref.kochi.lg.jp/doc/kanko-ryoma/) — 板垣退助が土佐藩兵を率いて戊辰戦争に参加した経歴。
+77. [高知県「龍馬関連情報・板垣退助生誕地」](https://www.pref.kochi.lg.jp/doc/kanko-ryoma/) — 板垣退助が土佐藩兵を率いて戊辰戦争に参加した経歴。
 
-76. [アジア歴史資料センター「3月 乾退助（1日より18日迄書類）」](https://www.jacar.archives.go.jp/das/meta/C09080031100) — 1868年3月、乾退助が率いる土佐軍を含む東山道軍の諏訪・甲府方面への進軍を記録した軍務官文書。
+78. [アジア歴史資料センター「辰3月 土州板垣退助〔3月1日より18日の報告書〕」](https://www.jacar.archives.go.jp/das/meta/C09080031100) — 1868年3月、乾退助が率いる土佐軍を含む東山道軍の諏訪・甲府方面への進軍を記録した軍務官文書。
+   - 該当箇所: 詳細情報「内容」：3月1日の下諏訪着陣から4日の甲府受城協議までの翻刻（Ref.C09080031100）
+   - 内容確認日: 2026-09-30
 
-77. [高知市「高知市歴史散歩・武田信玄と板垣退助（一）」](https://www.city.kochi.kochi.jp/akarui/rekishi/re0612.htm) — 1868年3月、東山道征討軍参謀の乾退助が甲府占領時に板垣氏との系譜を名乗り、乾から板垣へ改姓した経緯。
+79. [高知市「高知市歴史散歩・武田信玄と板垣退助（一）」](https://www.city.kochi.kochi.jp/akarui/rekishi/re0612.htm) — 1868年3月、東山道征討軍参謀の乾退助が甲府占領時に板垣氏との系譜を名乗り、乾から板垣へ改姓した経緯。
+   - 該当箇所: 「270 武田信玄と板垣退助（一）」：慶応四年三月の東山道征討軍参謀・甲府占領と改姓
+   - 内容確認日: 2026-09-30
 
-78. [山口県「維新文化財探訪・田中義一誕生地」](https://bunkazai.pref.yamaguchi.lg.jp/sp/support/theme/isinn/inaka.html) — 長州藩の西洋式軍制改革と諸隊の新政府軍主力としての戊辰戦争参加。
+80. [山口県「維新文化財探訪・田中義一誕生地」](https://bunkazai.pref.yamaguchi.lg.jp/sp/support/theme/isinn/inaka.html) — 長州藩の西洋式軍制改革と諸隊の新政府軍主力としての戊辰戦争参加。
 
-79. [国立公文書館「明治宰相列伝・黒田清隆」](https://www.archives.go.jp/exhibition/digital/2007_01/kiyotaka_kuroda/) — 黒田了介の1868年鳥羽・伏見従軍、北越征討参謀、1869年箱館征討参謀としての戦功と榎本武揚助命。
+81. [国立公文書館「明治宰相列伝・黒田清隆」](https://www.archives.go.jp/exhibition/digital/2007_01/kiyotaka_kuroda/) — 黒田了介の1868年鳥羽・伏見従軍、北越征討参謀、1869年箱館征討参謀としての戦功と榎本武揚助命。
    - 該当箇所: 「黒田清隆」人物解説第1段落
    - 内容確認日: 2026-07-31
 
-80. [山口市「大村益次郎関係資料」](https://www.city.yamaguchi.lg.jp/rs/rekibunshigen/r1253.html) — 大村益次郎の萩藩軍制改革、四境戦争での指揮、明治政府の軍防事務局判事としての彰義隊鎮圧、1869年の兵部大輔就任と陸海軍制度改革、同年の襲撃と死去。
+82. [山口市「大村益次郎関係資料」](https://www.city.yamaguchi.lg.jp/rs/rekibunshigen/r1253.html) — 大村益次郎の萩藩軍制改革、四境戦争での指揮、明治政府の軍防事務局判事としての彰義隊鎮圧、1869年の兵部大輔就任と陸海軍制度改革、同年の襲撃と死去。
 
-81. [国立国会図書館「開国―近代の幕開け」](https://www.ndl.go.jp/modern/cha1/description01.html) — 阿部の諮問、林らとペリーの交渉、条約内容、1855年の批准書交換を確認。
+83. [国立国会図書館「開国―近代の幕開け」](https://www.ndl.go.jp/modern/cha1/description01.html) — 阿部の諮問、林らとペリーの交渉、条約内容、1855年の批准書交換を確認。
    - 該当箇所: 「1-1 開国―近代の幕開け」本文第1・2段落
    - 内容確認日: 2026-09-25
 
-82. [横須賀市「ペリーの黒船」](https://www.city.yokosuka.kanagawa.jp/2752/uraga_walk/kurohune.html) — 東インド艦隊司令長官ペリーの浦賀来航、米国大統領国書、艦隊による示威。
+84. [横須賀市「ペリーの黒船」](https://www.city.yokosuka.kanagawa.jp/2752/uraga_walk/kurohune.html) — 東インド艦隊司令長官ペリーの浦賀来航、米国大統領国書、艦隊による示威。
    - 該当箇所: 「ペリーの黒船」の嘉永6年（1853）の項
    - 内容確認日: 2026-07-31
 
-83. [外務省「日米和親条約（複製）」](https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/04.html) — 1854年のペリー再来航、幕府代表との調印、日米和親条約の主要条項。
+85. [外務省「日米和親条約（複製）」](https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/04.html) — 1854年のペリー再来航、幕府代表との調印、日米和親条約の主要条項。
    - 該当箇所: 「4．日米和親条約（複製）」本文第1段落
    - 内容確認日: 2026-07-31
 
-84. [広島県教育委員会「阿部正弘」](https://www.pref.hiroshima.lg.jp/uploaded/attachment/92154.pdf) — 老中首座阿部正弘による黒船対応、諸大名・幕臣への諮問、日米和親条約締結。
+86. [広島県教育委員会「阿部正弘」](https://www.pref.hiroshima.lg.jp/uploaded/attachment/92154.pdf) — 老中首座阿部正弘による黒船対応、諸大名・幕臣への諮問、日米和親条約締結。
    - 該当箇所: 42～43頁「阿部正弘とは」「ペリーの開国要求への対応」
    - 内容確認日: 2026-07-31
 
-85. [国立公文書館「旗本御家人・勝安房等ノ動静探索書」](https://www.archives.go.jp/exhibition/digital/hatamotogokenin/contents/51.html) — 勝海舟の蘭学・西洋兵学修学、1853年の海防意見書提出とその後の幕府登用。
+87. [国立公文書館「旗本御家人・勝安房等ノ動静探索書」](https://www.archives.go.jp/exhibition/digital/hatamotogokenin/contents/51.html) — 勝海舟の蘭学・西洋兵学修学、1853年の海防意見書提出とその後の幕府登用。
    - 該当箇所: 資料51の人物解説第1・2段落
    - 内容確認日: 2026-07-31
 
-86. [茨城県立歴史館「海防参与就任」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/kaibousannyosyuunin.htm) — 徳川斉昭への黒船対応諮問、海防参与就任、大砲献上、ペリー再来航時の進言。
+88. [茨城県立歴史館「海防参与就任」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/kaibousannyosyuunin.htm) — 徳川斉昭への黒船対応諮問、海防参与就任、大砲献上、ペリー再来航時の進言。
    - 該当箇所: 「徳川斉昭の生涯・海防参与就任」本文
    - 内容確認日: 2026-09-27
 
-87. [鹿児島市・西郷南洲顕彰館「西郷隆盛ゆかりの品」](https://www.city.kagoshima.lg.jp/kyoiku/kyoiku/syogaigaku/shisetsu/kanko/documents/saigou_digital-museum.pdf) — 西郷隆盛の郡方書役助時代、1854年の中御小姓江戸詰と庭方役就任。
+89. [鹿児島市・西郷南洲顕彰館「西郷隆盛ゆかりの品」](https://www.city.kagoshima.lg.jp/kyoiku/kyoiku/syogaigaku/shisetsu/kanko/documents/saigou_digital-museum.pdf) — 西郷隆盛の郡方書役助時代、1854年の中御小姓江戸詰と庭方役就任。
 
-88. [萩市「吉田松陰・文 略年譜」](https://www.city.hagi.lg.jp/site/humi-hanamoyu/h9366.html) — 吉田松陰の士籍削除、1853年の黒船目撃、1854年の下田密航未遂と野山獄収容。
+90. [萩市「吉田松陰・文 略年譜」](https://www.city.hagi.lg.jp/site/humi-hanamoyu/h9366.html) — 吉田松陰の士籍削除、1853年の黒船目撃、1854年の下田密航未遂と野山獄収容。
    - 該当箇所: 年譜1851年佐久間象山入門、1854年3月27日金子重之助と下田米艦乗り込み失敗・10月24日野山獄収容
    - 内容確認日: 2026-09-27
 
-89. [指宿市観光協会「天璋院篤姫について」](https://www.ibusuki.or.jp/info/machiaruki/atsuhime/atsuhimeinfo/index.php) — 篤姫の斉彬養女化、1853年の鹿児島出立、近衛家養女化と1856年の家定への輿入れ。
+91. [指宿市観光協会「天璋院篤姫について」](https://www.ibusuki.or.jp/info/machiaruki/atsuhime/atsuhimeinfo/index.php) — 篤姫の斉彬養女化、1853年の鹿児島出立、近衛家養女化と1856年の家定への輿入れ。
 
-90. [外務省「ハリス信任状」](https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/10.html) — ハリスの総領事兼条約改定全権委員就任、将軍謁見と日米修好通商条約締結に向けた外交。
+92. [外務省「ハリス信任状」](https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/10.html) — ハリスの総領事兼条約改定全権委員就任、将軍謁見と日米修好通商条約締結に向けた外交。
    - 該当箇所: 「10．ハリス信任状」本文第1・2段落
    - 内容確認日: 2026-07-31
 
-91. [外務省「日米修好通商条約」](https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/09.html) — ハリス、堀田・井上・岩瀬の交渉、勅許問題、井伊の決断、調印日と条約の内容。
+93. [外務省「日米修好通商条約」](https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/09.html) — ハリス、堀田・井上・岩瀬の交渉、勅許問題、井伊の決断、調印日と条約の内容。
    - 該当箇所: 展示史料9「日米修好通商条約」
    - 内容確認日: 2026-09-12
 
-92. [福井市立郷土歴史博物館「幕末かけあし年表」](https://history-museum.city.fukui.lg.jp/gakko/for_students/bakumatsu/bakumatsu_chronicle.html) — 徳川慶福の将軍継嗣決定、松平慶永の一橋慶喜擁立運動と1858年の隠居・謹慎。
+94. [福井市立郷土歴史博物館「幕末かけあし年表」](https://history-museum.city.fukui.lg.jp/gakko/for_students/bakumatsu/bakumatsu_chronicle.html) — 徳川慶福の将軍継嗣決定、松平慶永の一橋慶喜擁立運動と1858年の隠居・謹慎。
    - 該当箇所: 安政5年（1858）6月～7月の年表
    - 内容確認日: 2026-07-31
 
-93. [国立国会図書館典拠データ「徳川家茂」](https://id.ndl.go.jp/auth/ndlna/01079959) — 徳川家茂の生没年と江戸幕府第14代将軍としての典拠。
+95. [国立国会図書館典拠データ「徳川家茂」](https://id.ndl.go.jp/auth/ndlna/01079959) — 徳川家茂の生没年と江戸幕府第14代将軍としての典拠。
    - 該当箇所: 典拠詳細「生年」「没年」「別名」「関連情報」
    - 内容確認日: 2026-07-31
 
-94. [茨城県立歴史館「通商条約締結と将軍継嗣問題」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/tuusyoujyouyaku.htm) — 南紀派と一橋派の構成、徳川斉昭・島津斉彬・松平慶永・山内豊信らによる一橋慶喜擁立。
+96. [茨城県立歴史館「通商条約締結と将軍継嗣問題」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/tuusyoujyouyaku.htm) — 南紀派と一橋派の構成、徳川斉昭・島津斉彬・松平慶永・山内豊信らによる一橋慶喜擁立。
    - 該当箇所: 「通商条約締結問題と将軍継嗣問題」本文
    - 内容確認日: 2026-07-31
 
-95. [茨城県立歴史館「日米修好通商条約調印」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/nitibeisyuukoutuusyoujyouyaku.htm) — 孝明天皇の勅許拒否、一橋派諸侯の抗議登城、1858年7月の処分と慶喜の登城禁止。
+97. [茨城県立歴史館「日米修好通商条約調印」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/nitibeisyuukoutuusyoujyouyaku.htm) — 孝明天皇の勅許拒否、一橋派諸侯の抗議登城、1858年7月の処分と慶喜の登城禁止。
    - 該当箇所: 「日米修好通商条約調印」本文
    - 内容確認日: 2026-07-31
 
-96. [茨城県立歴史館「戊午の密勅と安政の大獄」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/annseinotaigoku.htm) — 1858年8月の水戸藩への勅諚と諸藩回達命令、1859年の徳川斉昭・慶喜らへの処分。
+98. [茨城県立歴史館「戊午の密勅と安政の大獄」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/annseinotaigoku.htm) — 1858年8月の水戸藩への勅諚と諸藩回達命令、1859年の徳川斉昭・慶喜らへの処分。
 
-97. [鹿児島県立図書館「島津斉彬」](https://www.library.pref.kagoshima.jp/announcements/announcements/view/626/b235acaadfc576743c86f0a4d598ab4b) — 一橋慶喜擁立、率兵上洛の準備、天保山での練兵と1858年7月16日の急死。
+99. [鹿児島県立図書館「島津斉彬」](https://www.library.pref.kagoshima.jp/announcements/announcements/view/626/b235acaadfc576743c86f0a4d598ab4b) — 一橋慶喜擁立、率兵上洛の準備、天保山での練兵と1858年7月16日の急死。
 
-98. [アジア歴史資料センター「西郷隆盛」](https://www.jacar.archives.go.jp/das/term/00000385) — 西郷隆盛の徒目付・軍賦役兼諸藩応接係・側役・大番頭等の職歴、1867年の参与就任、1868年の東征大総督下参謀と江戸城開城。
+100. [アジア歴史資料センター「西郷隆盛」](https://www.jacar.archives.go.jp/das/term/00000385) — 西郷隆盛の徒目付・軍賦役兼諸藩応接係・側役・大番頭等の職歴、1867年の参与就任、1868年の東征大総督下参謀と江戸城開城。
    - 該当箇所: 「解説」欄
    - 内容確認日: 2026-07-31
 
-99. [鹿児島県「西郷・月照入水の後始末書」](https://www.pref.kagoshima.jp/ab23/reimeikan/josetsu/theme/gendai/toubaku/kgs04_s1_1.html) — 1858年11月16日の西郷隆盛と月照の入水、および同時代の後始末記録。
+101. [鹿児島県「西郷・月照入水の後始末書」](https://www.pref.kagoshima.jp/ab23/reimeikan/josetsu/theme/gendai/toubaku/kgs04_s1_1.html) — 1858年11月16日の西郷隆盛と月照の入水、および同時代の後始末記録。
 
-100. [鹿児島県観光連盟「西郷隆盛を取り巻く人々」](https://www.kagoshima-kankou.com/feature/segodonguide/people) — 大久保正助の御徒目付時代と精忠組での指導的立場。
+102. [鹿児島県観光連盟「西郷隆盛を取り巻く人々」](https://www.kagoshima-kankou.com/feature/segodonguide/people) — 大久保正助の御徒目付時代と精忠組での指導的立場。
 
-101. [国立歴史民俗博物館「大久保利通書簡 西郷隆盛宛」](https://khirin.rekihaku.ac.jp/pid/nmjh_collection/H-1316-4-1-1.html) — 1858年12月29日に山川港の西郷へ送られた大久保書簡と、盟中の動揺に関する記述。
+103. [国立歴史民俗博物館「大久保利通書簡 西郷隆盛宛」](https://khirin.rekihaku.ac.jp/pid/nmjh_collection/H-1316-4-1-1.html) — 1858年12月29日に山川港の西郷へ送られた大久保書簡と、盟中の動揺に関する記述。
 
-102. [アジア歴史資料センター「川路利良」](https://www.jacar.archives.go.jp/das/term/00000414) — 川路利良の1850年の兵具方与力附、1867年の兵具方一番小隊長・学兵隊長就任と抜刀隊組織、1868年の戊辰戦争従軍、1869年の兵具奉行就任。
+104. [アジア歴史資料センター「川路利良」](https://www.jacar.archives.go.jp/das/term/00000414) — 川路利良の1850年の兵具方与力附、1867年の兵具方一番小隊長・学兵隊長就任と抜刀隊組織、1868年の戊辰戦争従軍、1869年の兵具奉行就任。
    - 該当箇所: 「解説」欄
    - 内容確認日: 2026-07-31
 
-103. [鹿児島商工会議所「川路利良」](https://www.kagoshima-cci.or.jp/?page_id=23600) — 川路利良が1864年の禁門の変で働きを見せ、西郷隆盛に見出され、3年後に兵具隊長となった経緯。
+105. [鹿児島商工会議所「川路利良」](https://www.kagoshima-cci.or.jp/?page_id=23600) — 川路利良が1864年の禁門の変で働きを見せ、西郷隆盛に見出され、3年後に兵具隊長となった経緯。
    - 該当箇所: 本文「1864（元治元）年、京都禁門の変での活躍で…」の段落
    - 内容確認日: 2026-07-31
 
-104. [関西学院大学図書館「安田定則宛川路利良書翰」](https://library.kwansei.ac.jp/archives/meijiseiji/pages/26980_TC-4_42.html) — 所蔵書簡の人物解説に記された、川路利良の1864年禁門の変での戦闘と1869年兵具奉行任命。
+106. [関西学院大学図書館「安田定則宛川路利良書翰」](https://library.kwansei.ac.jp/archives/meijiseiji/pages/26980_TC-4_42.html) — 所蔵書簡の人物解説に記された、川路利良の1864年禁門の変での戦闘と1869年兵具奉行任命。
 
-105. [アジア歴史資料センター「木戸孝允」](https://www.jacar.archives.go.jp/das/term/00000381) — 桂小五郎の江戸遊学と長州藩での職歴、1868年の太政官徴士・総裁局顧問・外国事務掛・参与、1869年の版籍奉還推進・待詔院学士・待詔院出仕。
+107. [アジア歴史資料センター「木戸孝允」](https://www.jacar.archives.go.jp/das/term/00000381) — 桂小五郎の江戸遊学と長州藩での職歴、1868年の太政官徴士・総裁局顧問・外国事務掛・参与、1869年の版籍奉還推進・待詔院学士・待詔院出仕。
 
-106. [アジア歴史資料センター「木戸孝允外三名ヲ総裁局顧問以下ニ任命」](https://www.jacar.archives.go.jp/das/meta/A15070197600) — 1868年1月25日、木戸準一郎を総裁局顧問に、伊藤俊介を徴士参与・外国事務掛に任じ、伊藤には兵庫在留を命じた太政類典の記録。
+108. [アジア歴史資料センター「木戸孝允外三名ヲ総裁局顧問以下ニ任命」](https://www.jacar.archives.go.jp/das/meta/A15070197600) — 1868年1月25日、木戸準一郎を総裁局顧問に、伊藤俊介を徴士参与・外国事務掛に任じ、伊藤には兵庫在留を命じた太政類典の記録。
    - 該当箇所: 目録の「内容」欄（木戸準一郎総裁局顧問被仰出候事）
    - 内容確認日: 2026-09-26
 
-107. [国立国会図書館「近代日本人の肖像・木戸孝允」](https://www.ndl.go.jp/portrait/datas/65/) — 桂小五郎の別称、江戸での剣術・西洋兵学修学、長州藩の重職、1866年の薩長連合、五箇条の御誓文草案起草、参与就任と版籍奉還への尽力、1870年6月の参議就任。
+109. [国立国会図書館「近代日本人の肖像・木戸孝允」](https://www.ndl.go.jp/portrait/datas/65/) — 桂小五郎の別称、江戸での剣術・西洋兵学修学、長州藩の重職、1866年の薩長連合、五箇条の御誓文草案起草、参与就任と版籍奉還への尽力、1870年6月の参議就任。
    - 該当箇所: 生没年・別称・「解説」、肖像1枚目
    - 内容確認日: 2026-09-12
 
-108. [萩市「高杉晋作 参上」](https://www.city.hagi.lg.jp/soshiki/5/h9596.html) — 高杉晋作の1857年後半の松下村塾入塾と、久坂玄瑞と並ぶ門下での位置。
+110. [萩市「高杉晋作 参上」](https://www.city.hagi.lg.jp/soshiki/5/h9596.html) — 高杉晋作の1857年後半の松下村塾入塾と、久坂玄瑞と並ぶ門下での位置。
 
-109. [萩市「松陰の愛弟子 久坂玄瑞との結婚と死別」](https://www.city.hagi.lg.jp/site/humi-hanamoyu/h9203.html) — 久坂玄瑞の松下村塾での位置、安政4年末の杉文との婚姻、1858年からの江戸・京都遊学、1863年八月十八日の政変による京都追放。
+111. [萩市「松陰の愛弟子 久坂玄瑞との結婚と死別」](https://www.city.hagi.lg.jp/site/humi-hanamoyu/h9203.html) — 久坂玄瑞の松下村塾での位置、安政4年末の杉文との婚姻、1858年からの江戸・京都遊学、1863年八月十八日の政変による京都追放。
 
-110. [アジア歴史資料センター「伊藤博文」](https://www.jacar.archives.go.jp/das/term/00000372) — 伊藤俊輔の中間伊藤家への所属、松下村塾での修学、1868年の兵庫県知事就任と後年の職歴。
+112. [アジア歴史資料センター「伊藤博文」](https://www.jacar.archives.go.jp/das/term/00000372) — 伊藤俊輔の中間伊藤家への所属、松下村塾での修学、1868年の兵庫県知事就任と後年の職歴。
 
-111. [国立公文書館「明治宰相列伝・伊藤博文」](https://www.archives.go.jp/exhibition/digital/2007_01/hirobumi_ito/index.html) — 長州藩下級藩士伊藤家、松下村塾での修学、英国留学と後年の職歴。
+113. [国立公文書館「明治宰相列伝・伊藤博文」](https://www.archives.go.jp/exhibition/digital/2007_01/hirobumi_ito/index.html) — 長州藩下級藩士伊藤家、松下村塾での修学、英国留学と後年の職歴。
    - 該当箇所: 「伊藤博文」人物解説第1段落
    - 内容確認日: 2026-07-31
 
-112. [兵庫県「歴代兵庫県知事」](https://web.pref.hyogo.lg.jp/kk32/pa13_000000016.html) — 伊藤博文（俊介）が1868年5月23日から1869年4月10日まで初代兵庫県知事を務めた記録。
+114. [兵庫県「歴代兵庫県知事」](https://web.pref.hyogo.lg.jp/kk32/pa13_000000016.html) — 伊藤博文（俊介）が1868年5月23日から1869年4月10日まで初代兵庫県知事を務めた記録。
 
-113. [国立国会図書館「近代日本人の肖像・岩倉具視」](https://www.ndl.go.jp/portrait/datas/23/index.html) — 岩倉具視の侍従就任、条約勅許奏請阻止、公武合体策、1867年までの幽居と同年12月の王政復古政変計画、その後の新政府参与・議定就任。
+115. [国立国会図書館「近代日本人の肖像・岩倉具視」](https://www.ndl.go.jp/portrait/datas/23/index.html) — 岩倉具視の侍従就任、条約勅許奏請阻止、公武合体策、1867年までの幽居と同年12月の王政復古政変計画、その後の新政府参与・議定就任。
    - 該当箇所: 解説：大久保らとの王政復古の計画・新政府の役職
    - 内容確認日: 2026-09-25
 
-114. [高知県立高知城歴史博物館「土佐藩歴代藩主紹介」](https://www.kochi-johaku.jp/column/3819/) — 15代土佐藩主山内豊信の一橋慶喜擁立、1859年の隠居・謹慎、容堂号、1867年の大政奉還建白と小御所会議での徳川家擁護。
+116. [高知県立高知城歴史博物館「土佐藩歴代藩主紹介」](https://www.kochi-johaku.jp/column/3819/) — 15代土佐藩主山内豊信の一橋慶喜擁立、1859年の隠居・謹慎、容堂号、1867年の大政奉還建白と小御所会議での徳川家擁護。
    - 該当箇所: 「15代 豊信（とよしげ）」
    - 内容確認日: 2026-07-31
 
-115. [鹿児島県「郷土の偉人・天璋院篤姫」](https://www.pref.kagoshima.jp/kids/rekishi/bakumatsu.html) — 家定死後の天璋院への改名、江戸城無血開城への関与、生涯にわたる徳川家の立場と徳川家達の養育。
+117. [鹿児島県「郷土の偉人・天璋院篤姫」](https://www.pref.kagoshima.jp/kids/rekishi/bakumatsu.html) — 家定死後の天璋院への改名、江戸城無血開城への関与、生涯にわたる徳川家の立場と徳川家達の養育。
    - 該当箇所: 「天璋院篤姫」人物解説
    - 内容確認日: 2026-07-31
 
-116. [茨城県立歴史館「桜田門外の変」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/sakuradamonngainohen.htm) — 1860年3月3日、水戸浪士17名と薩摩藩士有村次左衛門が江戸城桜田門外で井伊直弼を襲撃した経緯。
+118. [茨城県立歴史館「桜田門外の変」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/sakuradamonngainohen.htm) — 1860年3月3日、水戸浪士17名と薩摩藩士有村次左衛門が江戸城桜田門外で井伊直弼を襲撃した経緯。
    - 該当箇所: 「桜田門外の変」本文第1・2段落
    - 内容確認日: 2026-07-31
 
-117. [茨城県立歴史館「斉昭薨去」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/nariakikoukyo.htm) — 徳川斉昭の万延元年（1860）8月15日の死去と、死後に水戸藩内の対立各派が斉昭の遺志を掲げた状況。
+119. [茨城県立歴史館「斉昭薨去」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/nariakikoukyo.htm) — 徳川斉昭の万延元年（1860）8月15日の死去と、死後に水戸藩内の対立各派が斉昭の遺志を掲げた状況。
 
-118. [松戸市戸定歴史館「徳川慶喜・昭武関係年表 一」](https://www.city.matsudo.chiba.jp/tojo/rekishikan_shoukai/rekishi/nenpyou/1837-1869.html) — 徳川慶喜への1859年の隠居謹慎命令、1862年の一橋家再相続・将軍後見職就任、1868年の鳥羽・伏見開戦と大坂脱出、2月12日の寛永寺謹慎、4月の水戸移動、7月19日の駿府移動。
+120. [松戸市戸定歴史館「徳川慶喜・昭武関係年表 一」](https://www.city.matsudo.chiba.jp/tojo/rekishikan_shoukai/rekishi/nenpyou/1837-1869.html) — 徳川慶喜への1859年の隠居謹慎命令、1862年の一橋家再相続・将軍後見職就任、1868年の鳥羽・伏見開戦と大坂脱出、2月12日の寛永寺謹慎、4月の水戸移動、7月19日の駿府移動。
    - 該当箇所: 元治元年7月19日、慶応3年12月9日〜慶応4年2月12日の年表
    - 内容確認日: 2026-09-25
 
-119. [鹿児島県「菊池源吾の手紙」](https://www.pref.kagoshima.jp/ab23/reimeikan/josetsu/theme/gendai/toubaku/kgs04_s1_3.html) — 西郷隆盛が入水から蘇生後に菊池源吾と改名し、奄美大島の龍郷へ潜居した経緯と1861年の書簡。
+121. [鹿児島県「菊池源吾の手紙」](https://www.pref.kagoshima.jp/ab23/reimeikan/josetsu/theme/gendai/toubaku/kgs04_s1_3.html) — 西郷隆盛が入水から蘇生後に菊池源吾と改名し、奄美大島の龍郷へ潜居した経緯と1861年の書簡。
 
-120. [アジア歴史資料センター「大久保利通」](https://www.jacar.archives.go.jp/das/term/00000377) — 大久保利通の徒目付・小納戸役・御側役等の職歴、1866年の薩長盟約、1867年の参与、1868年の徴士・内国事務掛・総裁局顧問・鎮将府参与。
+122. [アジア歴史資料センター「大久保利通」](https://www.jacar.archives.go.jp/das/term/00000377) — 大久保利通の徒目付・小納戸役・御側役等の職歴、1866年の薩長盟約、1867年の参与、1868年の徴士・内国事務掛・総裁局顧問・鎮将府参与。
    - 該当箇所: 「解説」欄
    - 内容確認日: 2026-07-31
 
-121. [高知県立高知城歴史博物館「土佐藩の歴史―年表―」](https://www.kochi-johaku.jp/column/4531/) — 武市瑞山による土佐勤王党結成が1861年であることを示す土佐藩年表。
+123. [高知県立高知城歴史博物館「土佐藩の歴史―年表―」](https://www.kochi-johaku.jp/column/4531/) — 武市瑞山による土佐勤王党結成が1861年であることを示す土佐藩年表。
 
-122. [国立国会図書館「近代日本人の肖像・坂本竜馬」](https://www.ndl.go.jp/portrait/datas/89) — 坂本竜馬の土佐勤王党参加・脱藩・勝海舟門下入り、1867年6月の後藤象二郎との船中での政体案作成、同年11月の中岡慎太郎との京都での暗殺。
+124. [国立国会図書館「近代日本人の肖像・坂本竜馬」](https://www.ndl.go.jp/portrait/datas/89) — 坂本竜馬の土佐勤王党参加・脱藩・勝海舟門下入り、1867年6月の後藤象二郎との船中での政体案作成、同年11月の中岡慎太郎との京都での暗殺。
    - 該当箇所: 生没年・「解説」／肖像1枚目
    - 内容確認日: 2026-09-25
 
-123. [福井市立郷土歴史博物館「一橋徳川家と将軍慶喜にまつわる品々」](https://history-museum.city.fukui.lg.jp/tenji/kaisetsusheets/66.pdf) — 1862年の一橋慶喜による一橋家再相続と将軍後見職就任、松平春嶽の政事総裁職就任、両者による幕府改革・公武合体の推進。
+125. [福井市立郷土歴史博物館「一橋徳川家と将軍慶喜にまつわる品々」](https://history-museum.city.fukui.lg.jp/tenji/kaisetsusheets/66.pdf) — 1862年の一橋慶喜による一橋家再相続と将軍後見職就任、松平春嶽の政事総裁職就任、両者による幕府改革・公武合体の推進。
    - 該当箇所: 2頁「徳川慶喜」人物解説
    - 内容確認日: 2026-07-31
 
-124. [国立国会図書館「日記の世界・勝海舟」](https://www.ndl.go.jp/nikki/person/katsukaishu/) — 勝海舟の1862年の軍艦頭取・軍艦奉行並就任、1866年5月の軍艦奉行就任、1868年1月の海軍奉行並・陸軍総裁就任。
+126. [国立国会図書館「日記の世界・勝海舟」](https://www.ndl.go.jp/nikki/person/katsukaishu/) — 勝海舟の1862年の軍艦頭取・軍艦奉行並就任、1866年5月の軍艦奉行就任、1868年1月の海軍奉行並・陸軍総裁就任。
    - 該当箇所: 「勝海舟について／履歴」慶応4年1月、日記「鳥羽伏見の戦いが終わって」
    - 内容確認日: 2026-09-25
 
-125. [徳之島町「奥山家（西郷松）」](https://www.tokunoshima-town.org/shakaikyoikuka/kurashi/kyoiku/bunka/bunkazai/shiseki/inokawa/okuyamake.html) — 大島三右衛門を名乗った西郷隆盛の1862年7月の徳之島上陸と、沖永良部島への再遠島命令。
+127. [徳之島町「奥山家（西郷松）」](https://www.tokunoshima-town.org/shakaikyoikuka/kurashi/kyoiku/bunka/bunkazai/shiseki/inokawa/okuyamake.html) — 大島三右衛門を名乗った西郷隆盛の1862年7月の徳之島上陸と、沖永良部島への再遠島命令。
 
-126. [鹿児島県観光連盟「小松帯刀像」](https://www.kagoshima-kankou.com/guide/70359) — 小松帯刀の1861年の側役就任、1862年の家老就任、長州再征への出兵拒否の藩論取りまとめ、1866年の小松邸での薩長間会談、1867年の討幕密勅受領後の帰藩。
+128. [鹿児島県観光連盟「小松帯刀像」](https://www.kagoshima-kankou.com/guide/70359) — 小松帯刀の1861年の側役就任、1862年の家老就任、長州再征への出兵拒否の藩論取りまとめ、1866年の小松邸での薩長間会談、1867年の討幕密勅受領後の帰藩。
 
-127. [鹿児島市「明治維新と薩摩藩」](https://meijiishin150countdown.com/topics/discovery/) — 小松帯刀の1868年1月28日の参与兼外国事務掛就任と外交案件、西郷隆盛の東北戦線から鹿児島帰国まで、大久保利通による東京奠都推進など、明治初年の薩摩関係者の動向。
+129. [鹿児島市「明治維新と薩摩藩」](https://meijiishin150countdown.com/topics/discovery/) — 小松帯刀の1868年1月28日の参与兼外国事務掛就任と外交案件、西郷隆盛の東北戦線から鹿児島帰国まで、大久保利通による東京奠都推進など、明治初年の薩摩関係者の動向。
 
-128. [京都市「木戸孝允神道碑・碑文の大意」](https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hi145_abst.html) — 1862年の朝廷周旋、禁門の変後の但馬逃走、長州帰還後の木戸準一郎への改名と政務担当、大村益次郎への軍事改革委任。
+130. [京都市「木戸孝允神道碑・碑文の大意」](https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hi145_abst.html) — 1862年の朝廷周旋、禁門の変後の但馬逃走、長州帰還後の木戸準一郎への改名と政務担当、大村益次郎への軍事改革委任。
    - 該当箇所: 元治元年7月から慶応2年6月までの段落
    - 内容確認日: 2026-09-25
 
-129. [萩市立萩図書館「高杉晋作ものしり100問」](https://hagilib.city.hagi.lg.jp/hagilib-archive/image/417.pdf) — 高杉晋作への1862年2月の上海視察命令、4月の出航、5月の上海到着と外国勢力下の現地視察。
+131. [萩市立萩図書館「高杉晋作ものしり100問」](https://hagilib.city.hagi.lg.jp/hagilib-archive/image/417.pdf) — 高杉晋作への1862年2月の上海視察命令、4月の出航、5月の上海到着と外国勢力下の現地視察。
 
-130. [萩市「市報はぎ・長井雅楽」](https://www.city.hagi.lg.jp/uploaded/attachment/10250.pdf) — 桂小五郎・久坂玄瑞らによる航海遠略策の弾劾と、1862年の長州藩是の破約攘夷への転換。
+132. [萩市「市報はぎ・長井雅楽」](https://www.city.hagi.lg.jp/uploaded/attachment/10250.pdf) — 桂小五郎・久坂玄瑞らによる航海遠略策の弾劾と、1862年の長州藩是の破約攘夷への転換。
 
-131. [山口県立山口図書館「久坂玄瑞・人物調べ方案内」](https://library.pref.yamaguchi.lg.jp/how_to_investigate/kusaka_genzui/) — 久坂玄瑞の尊王攘夷運動での指導的位置と、1864年の禁門の変での負傷・鷹司邸での自刃。
+133. [山口県立山口図書館「久坂玄瑞・人物調べ方案内」](https://library.pref.yamaguchi.lg.jp/how_to_investigate/kusaka_genzui/) — 久坂玄瑞の尊王攘夷運動での指導的位置と、1864年の禁門の変での負傷・鷹司邸での自刃。
    - 該当箇所: 「人物紹介」
    - 内容確認日: 2026-07-31
 
-132. [国立国会図書館「あの人の直筆・岩倉具視日記」](https://www.ndl.go.jp/jikihitsu/part3/s3_1) — 和宮降嫁推進を理由に幕府との内通を疑われた岩倉具視の失脚と、1862年から約5年間の洛中追放・岩倉村蟄居。
+134. [国立国会図書館「あの人の直筆・岩倉具視日記」](https://www.ndl.go.jp/jikihitsu/part3/s3_1) — 和宮降嫁推進を理由に幕府との内通を疑われた岩倉具視の失脚と、1862年から約5年間の洛中追放・岩倉村蟄居。
 
-133. [高知県立坂本龍馬記念館「天誅―土佐藩の奔走―」展開催要項](https://www.pref.kochi.lg.jp/press1/2025021300098/files/file_20252134191656_1.pdf) — 1862年の吉田東洋暗殺後に行われた下手人探索と、江戸在府の山内容堂への逐次報告。
+135. [高知県立坂本龍馬記念館「天誅―土佐藩の奔走―」展開催要項](https://www.pref.kochi.lg.jp/press1/2025021300098/files/file_20252134191656_1.pdf) — 1862年の吉田東洋暗殺後に行われた下手人探索と、江戸在府の山内容堂への逐次報告。
    - 該当箇所: 1頁「趣旨」第2段落（暗殺者探索と江戸在府の容堂への報告）
    - 内容確認日: 2026-09-25
 
-134. [高知市「龍馬、勝海舟の門人になる」](https://www.city.kochi.kochi.jp/soshiki/80/man2606.html) — 坂本龍馬の1862年の脱藩と、同年12月に勝海舟を訪ねて門人になったとされる経緯。
+136. [高知市「龍馬、勝海舟の門人になる」](https://www.city.kochi.kochi.jp/soshiki/80/man2606.html) — 坂本龍馬の1862年の脱藩と、同年12月に勝海舟を訪ねて門人になったとされる経緯。
 
-135. [日野市「広報ひの・新選組誕生前夜」](https://www.lib.city.hino.lg.jp/hinocity/digital/folder/sfsg4/kouhou15.4.1.pdf) — 近藤勇の1861年の天然理心流四代目継承、近藤・土方の1863年の浪士組参加、土方による上洛前の家伝薬販売の手伝い。
+137. [日野市「広報ひの・新選組誕生前夜」](https://www.lib.city.hino.lg.jp/hinocity/digital/folder/sfsg4/kouhou15.4.1.pdf) — 近藤勇の1861年の天然理心流四代目継承、近藤・土方の1863年の浪士組参加、土方による上洛前の家伝薬販売の手伝い。
    - 該当箇所: 2003年4月1日号 2頁「新選組史跡めぐり」沖田総司の紹介欄
    - 内容確認日: 2026-09-12
 
-136. [福井県文書館「福井県史年表（1861年～1870年）」](https://www.library-archives.pref.fukui.lg.jp/fukui/07/nenpyo/rekishi/chrn40.html) — 1863年の家茂上洛と松平春嶽の政事総裁職免職、1867年の春嶽上京・四侯会談・大政奉還論への疑念を伴う入京・王政復古当日の議定就任。
+138. [福井県文書館「福井県史年表（1861年～1870年）」](https://www.library-archives.pref.fukui.lg.jp/fukui/07/nenpyo/rekishi/chrn40.html) — 1863年の家茂上洛と松平春嶽の政事総裁職免職、1867年の春嶽上京・四侯会談・大政奉還論への疑念を伴う入京・王政復古当日の議定就任。
    - 該当箇所: 文久3年2月～3月、慶応3年4月～12月の年表
    - 内容確認日: 2026-07-31
 
-137. [福井市立郷土歴史博物館「展示解説シートNo.96」](https://history-museum.city.fukui.lg.jp/tenji/kaisetsusheets/96.pdf) — 徳川慶喜が1862年7月から1864年3月まで将軍後見職として幕政を担い、攘夷を求める朝廷への対応にあたった時期。
+139. [福井市立郷土歴史博物館「展示解説シートNo.96」](https://history-museum.city.fukui.lg.jp/tenji/kaisetsusheets/96.pdf) — 徳川慶喜が1862年7月から1864年3月まで将軍後見職として幕政を担い、攘夷を求める朝廷への対応にあたった時期。
 
-138. [伊仙町『伊仙町の文化遺産』](https://sitereports.nabunken.go.jp/files/attach/29/29636/21504_1_%E4%BC%8A%E4%BB%99%E7%94%BA%E3%81%AE%E6%96%87%E5%8C%96%E9%81%BA%E7%94%A3.pdf) — 文久3年6月2日付の大島吉之助書状と、西郷隆盛が流謫中に用いた名。
+140. [伊仙町『伊仙町の文化遺産』](https://sitereports.nabunken.go.jp/files/attach/29/29636/21504_1_%E4%BC%8A%E4%BB%99%E7%94%BA%E3%81%AE%E6%96%87%E5%8C%96%E9%81%BA%E7%94%A3.pdf) — 文久3年6月2日付の大島吉之助書状と、西郷隆盛が流謫中に用いた名。
 
-139. [山口県立山口図書館「高杉晋作・人物調べ方案内」](https://library.pref.yamaguchi.lg.jp/how_to_investigate/takasugi_shinsaku/) — 高杉晋作による1863年の奇兵隊創設、1864年の投獄と下関戦争時の再起用・講和、禁門の変後の挙兵、第二次幕長戦争での海軍総督就任と1867年4月の病没。
+141. [山口県立山口図書館「高杉晋作・人物調べ方案内」](https://library.pref.yamaguchi.lg.jp/how_to_investigate/takasugi_shinsaku/) — 高杉晋作による1863年の奇兵隊創設、1864年の投獄と下関戦争時の再起用・講和、禁門の変後の挙兵、第二次幕長戦争での海軍総督就任と1867年4月の病没。
    - 該当箇所: 「人物紹介」：奇兵隊、講和、藩内戦、四境戦争
    - 内容確認日: 2026-09-25
 
-140. [山口県立山口図書館「資料に見る 坂本龍馬と長州」](https://library.pref.yamaguchi.lg.jp/material/201005/) — 高杉晋作の奇兵隊結成、1866年の海軍総督としての第二次幕長戦争指揮、乙丑丸を引き渡した坂本龍馬の小倉口参戦。
+142. [山口県立山口図書館「資料に見る 坂本龍馬と長州」](https://library.pref.yamaguchi.lg.jp/material/201005/) — 高杉晋作の奇兵隊結成、1866年の海軍総督としての第二次幕長戦争指揮、乙丑丸を引き渡した坂本龍馬の小倉口参戦。
    - 該当箇所: 「木戸孝允と龍馬の結んだ薩長両藩」「高杉晋作と龍馬の見た戦い」
    - 内容確認日: 2026-09-25
 
-141. [京都市「長州藩士久坂玄瑞の密議の角屋」](https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/si020.html) — 上洛後の久坂玄瑞による朝廷工作などの尊王攘夷運動と、角屋での密議。
+143. [京都市「長州藩士久坂玄瑞の密議の角屋」](https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/si020.html) — 上洛後の久坂玄瑞による朝廷工作などの尊王攘夷運動と、角屋での密議。
 
-142. [アジア歴史資料センター「三條實美」](https://www.jacar.archives.go.jp/das/term/00000389) — 三条実美の1863年の官位褫奪・京都追放、1865年の太宰府移送、1867年の赦免・議定就任、1868年の議定・副総裁等、1869年の右大臣就任。
+144. [アジア歴史資料センター「三條實美」](https://www.jacar.archives.go.jp/das/term/00000389) — 三条実美の1863年の官位褫奪・京都追放、1865年の太宰府移送、1867年の赦免・議定就任、1868年の議定・副総裁等、1869年の右大臣就任。
    - 該当箇所: 「解説」欄
    - 内容確認日: 2026-07-31
 
-143. [高知県立坂本龍馬記念館「半平太と京都」](https://ryoma-kinenkan.jp/exhibition/2025/06/post-27.html) — 武市半平太の上士昇格、京都留守居加役就任、1862年12月23日の帰京から1863年4月4日の離京。
+145. [高知県立坂本龍馬記念館「半平太と京都」](https://ryoma-kinenkan.jp/exhibition/2025/06/post-27.html) — 武市半平太の上士昇格、京都留守居加役就任、1862年12月23日の帰京から1863年4月4日の離京。
    - 該当箇所: 第三章「帰洛から土佐帰国まで」（上士昇格、京都留守居加役、1863年4月4日の離京）
    - 内容確認日: 2026-09-25
 
-144. [京都国立博物館「坂本龍馬関係書状 文久三年三月二十日 坂本乙女あて」](https://knmdb.kyohaku.go.jp/479.html) — 坂本龍馬が勝海舟の門下で海軍創設に従事し、1863年3月に海軍修行中だったことを示す書状。 土佐の姉乙女宛の書簡であることも確認。史料原本の判読ではなく、館の解説に基づく。
+146. [京都国立博物館「坂本龍馬関係書状 文久三年三月二十日 坂本乙女あて」](https://knmdb.kyohaku.go.jp/479.html) — 坂本龍馬が勝海舟の門下で海軍創設に従事し、1863年3月に海軍修行中だったことを示す書状。 土佐の姉乙女宛の書簡であることも確認。史料原本の判読ではなく、館の解説に基づく。
    - 該当箇所: 作品情報 M甲157-2：画像下の解説（脱藩後、郷里の姉乙女への書簡・海軍創設）
    - 内容確認日: 2026-09-30
 
-145. [福井市立郷土歴史博物館「龍馬と福井」](https://history-museum.city.fukui.lg.jp/tenji/tenran/ryouma_fukui2021.html) — 坂本龍馬が勝海舟の門弟となり、神戸海軍操練所設立資金の援助を福井藩に求める使者となったこと。
+147. [福井市立郷土歴史博物館「龍馬と福井」](https://history-museum.city.fukui.lg.jp/tenji/tenran/ryouma_fukui2021.html) — 坂本龍馬が勝海舟の門弟となり、神戸海軍操練所設立資金の援助を福井藩に求める使者となったこと。
 
-146. [神戸市文化財保護審議会「海軍操練所跡及び神戸港第一波止場の遺構」](https://www.city.kobe.lg.jp/documents/19965/20240827hogoshinshiryo.pdf) — 勝海舟の建言を受けた1863年の神戸海軍操練所建設開始、1864年の竣工、1865年の閉所。
+148. [神戸市文化財保護審議会「海軍操練所跡及び神戸港第一波止場の遺構」](https://www.city.kobe.lg.jp/documents/19965/20240827hogoshinshiryo.pdf) — 勝海舟の建言を受けた1863年の神戸海軍操練所建設開始、1864年の竣工、1865年の閉所。
 
-147. [高知県立高知城歴史博物館「土佐藩の歴史・幕末維新期」](https://www.kochi-johaku.jp/column/4529/) — 山内容堂と土佐勤王党の方針不一致、武市半平太ら勤王党員の捕縛、戊辰戦争で板垣退助率いる土佐藩兵が東進して会津若松城攻略にあたったこと。
+149. [高知県立高知城歴史博物館「土佐藩の歴史・幕末維新期」](https://www.kochi-johaku.jp/column/4529/) — 山内容堂と土佐勤王党の方針不一致、武市半平太ら勤王党員の捕縛、戊辰戦争で板垣退助率いる土佐藩兵が東進して会津若松城攻略にあたったこと。
    - 該当箇所: 「黒船来航と15代豊信（容堂）の政治」「公武合体の周旋と国力増強」
    - 内容確認日: 2026-09-25
 
-148. [高知市「史跡 武市半平太旧宅及び墓」](https://www.city.kochi.kochi.jp/soshiki/90/cas-state-1600100.html) — 武市半平太の土佐勤王党結成、京都留守居加役就任と帰国、八月十八日の政変後の弾圧、1863年9月21日の投獄、1865年閏5月11日の切腹命令と死去。
+150. [高知市「史跡 武市半平太旧宅及び墓」](https://www.city.kochi.kochi.jp/soshiki/90/cas-state-1600100.html) — 武市半平太の土佐勤王党結成、京都留守居加役就任と帰国、八月十八日の政変後の弾圧、1863年9月21日の投獄、1865年閏5月11日の切腹命令と死去。
    - 該当箇所: 解説（勤王党結成と藩論対立、1863年9月21日の投獄、1865年閏5月11日の切腹命令）
    - 内容確認日: 2026-09-25
 
-149. [国立公文書館「激動幕末・元治甲子長州附属諸国脱走変名大略」](https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/42.html) — 池田屋事件を受けた長州藩の京都出兵、禁門の変での敗北と久坂玄瑞らの人的損失。
+151. [国立公文書館「激動幕末・元治甲子長州附属諸国脱走変名大略」](https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/42.html) — 池田屋事件を受けた長州藩の京都出兵、禁門の変での敗北と久坂玄瑞らの人的損失。
 
-150. [鹿児島県立図書館「これまでの貴重資料展・島津久光」](https://www.library.pref.kagoshima.jp/honkan/86d3f6348d59231317789859dc609bbd/page1) — 島津久光が国父として藩政の実権を握ったことと、1864年に西郷を沖永良部島から呼び戻して禁門の変・第一次長州征伐にあたらせた経緯。
+152. [鹿児島県立図書館「これまでの貴重資料展・島津久光」](https://www.library.pref.kagoshima.jp/honkan/86d3f6348d59231317789859dc609bbd/page1) — 島津久光が国父として藩政の実権を握ったことと、1864年に西郷を沖永良部島から呼び戻して禁門の変・第一次長州征伐にあたらせた経緯。
    - 該当箇所: 「斉彬と久光・忠義の時代」内「島津久光」人物解説
    - 内容確認日: 2026-07-31
 
-151. [鹿児島県歴史・美術センター黎明館『鹿児島県史料』](https://www.pref.kagoshima.jp/ab23/reimeikan/siroyu/kensi.html) — 元治元年の長州謝罪について西郷から大久保一蔵へ送られた報告と、長防征討出軍について伊地知正治から小松帯刀へ送られた届書の収録情報。
+153. [鹿児島県歴史・美術センター黎明館『鹿児島県史料』](https://www.pref.kagoshima.jp/ab23/reimeikan/siroyu/kensi.html) — 元治元年の長州謝罪について西郷から大久保一蔵へ送られた報告と、長防征討出軍について伊地知正治から小松帯刀へ送られた届書の収録情報。
 
-152. [アジア歴史資料センター「黒田清隆」](https://www.jacar.archives.go.jp/das/term/00000382) — 黒田了介の韮山塾での砲術修学、1866年薩長盟約への協力、1868年の戊辰戦争従軍・薩摩藩小銃隊一番隊長・奥羽および北越征討参謀等の職歴。
+154. [アジア歴史資料センター「黒田清隆」](https://www.jacar.archives.go.jp/das/term/00000382) — 黒田了介の韮山塾での砲術修学、1866年薩長盟約への協力、1868年の戊辰戦争従軍・薩摩藩小銃隊一番隊長・奥羽および北越征討参謀等の職歴。
 
-153. [山口県立山口図書館「伊藤博文・人物調べ方案内」](https://library.pref.yamaguchi.lg.jp/how_to_investigate/itou_hirobumi/) — 伊藤俊輔の英国密航留学、1864年の急遽帰国と下関戦争の戦後処理での対外交渉。
+155. [山口県立山口図書館「伊藤博文・人物調べ方案内」](https://library.pref.yamaguchi.lg.jp/how_to_investigate/itou_hirobumi/) — 伊藤俊輔の英国密航留学、1864年の急遽帰国と下関戦争の戦後処理での対外交渉。
    - 該当箇所: 「人物紹介」第1段落
    - 内容確認日: 2026-07-31
 
-154. [山口県立山口図書館「明治維新人物ギャラリー・馬関戦争」](https://library.pref.yamaguchi.lg.jp/meijiishin/201408) — 井上聞多・伊藤俊輔による下関戦争回避のための調停と、開戦後に高杉晋作が講和の正使へ起用された経緯。
+156. [山口県立山口図書館「明治維新人物ギャラリー・馬関戦争」](https://library.pref.yamaguchi.lg.jp/meijiishin/201408) — 井上聞多・伊藤俊輔による下関戦争回避のための調停と、開戦後に高杉晋作が講和の正使へ起用された経緯。
    - 該当箇所: 「馬関戦争」本文前半：1863年の砲撃、翌年の調停・四国艦隊攻撃と高杉の講和正使起用
    - 内容確認日: 2026-09-25
 
-155. [アジア歴史資料センター「井上馨」](https://www.jacar.archives.go.jp/das/term/00000373) — 井上聞多の1864年の帰国・講和交渉・襲撃、1867年の三条実美らの帰京随行、1868年の参与・外国事務局判事・九州鎮撫総督参謀・長崎府判事兼外国官判事・佐渡知県事。
+157. [アジア歴史資料センター「井上馨」](https://www.jacar.archives.go.jp/das/term/00000373) — 井上聞多の1864年の帰国・講和交渉・襲撃、1867年の三条実美らの帰京随行、1868年の参与・外国事務局判事・九州鎮撫総督参謀・長崎府判事兼外国官判事・佐渡知県事。
    - 該当箇所: 「解説」欄
    - 内容確認日: 2026-07-31
 
-156. [国立国会図書館「井上馨関係文書」](https://crd.ndl.go.jp/reference/entry/index.php?id=3000004893&page=col_view) — 1868年1月の参与職・外国事務掛・九州鎮撫総督参謀、2月の徴士参与職・外国事務局判事、5月の長崎府判事兼外国官判事、9月の佐渡知県事などの月別職歴。
+158. [国立国会図書館「井上馨関係文書」](https://crd.ndl.go.jp/reference/entry/index.php?id=3000004893&page=col_view) — 1868年1月の参与職・外国事務掛・九州鎮撫総督参謀、2月の徴士参与職・外国事務局判事、5月の長崎府判事兼外国官判事、9月の佐渡知県事などの月別職歴。
 
-157. [太政類典「井上馨ノ佐渡県知事ヲ罷ム」](https://www.jacar.archives.go.jp/das/meta/A03023353200) — 1868年10月17日、井上聞多を佐渡知県事から免じ、長崎府判事へ復帰させた記録。
+159. [太政類典「井上馨ノ佐渡県知事ヲ罷ム」](https://www.jacar.archives.go.jp/das/meta/A03023353200) — 1868年10月17日、井上聞多を佐渡知県事から免じ、長崎府判事へ復帰させた記録。
 
-158. [山口市「井上馨候遭難の地碑」](https://www.city.yamaguchi.lg.jp/rs/rekibunshigen/r493.html) — 井上聞多が1864年9月25日に俗論派から襲撃されて重傷を負い、所郁太郎の手当てで一命を取り留めた経緯。
+160. [山口市「井上馨候遭難の地碑」](https://www.city.yamaguchi.lg.jp/rs/rekibunshigen/r493.html) — 井上聞多が1864年9月25日に俗論派から襲撃されて重傷を負い、所郁太郎の手当てで一命を取り留めた経緯。
 
-159. [山口県立山口図書館「山縣有朋・人物調べ方案内」](https://library.pref.yamaguchi.lg.jp/how_to_investigate/yamagata_aritomo/) — 山県狂介が1863年に奇兵隊軍監へ就任し、戊辰戦争で隊や官軍を率いた経歴。
+161. [山口県立山口図書館「山縣有朋・人物調べ方案内」](https://library.pref.yamaguchi.lg.jp/how_to_investigate/yamagata_aritomo/) — 山県狂介が1863年に奇兵隊軍監へ就任し、戊辰戦争で隊や官軍を率いた経歴。
    - 該当箇所: 「人物紹介」
    - 内容確認日: 2026-07-31
 
-160. [アジア歴史資料センター「山縣有朋」](https://www.jacar.archives.go.jp/das/term/00000402) — 山県狂介の1863年の奇兵隊軍監、1864年の下関戦争、1866年の第二次幕長戦争、1868年に奇兵隊を率いた戊辰戦争従軍と越後口総督参謀。
+162. [アジア歴史資料センター「山縣有朋」](https://www.jacar.archives.go.jp/das/term/00000402) — 山県狂介の1863年の奇兵隊軍監、1864年の下関戦争、1866年の第二次幕長戦争、1868年に奇兵隊を率いた戊辰戦争従軍と越後口総督参謀。
 
-161. [アジア歴史資料センター「山県有朋」](https://www.jacar.archives.go.jp/das/meta/A06051174300) — 旧名を狂介とする山県有朋の履歴書。1868年4月の越後口総督参謀就任、7月の参謀免職と北越での尽力を記録する。
+163. [アジア歴史資料センター「山県有朋」](https://www.jacar.archives.go.jp/das/meta/A06051174300) — 旧名を狂介とする山県有朋の履歴書。1868年4月の越後口総督参謀就任、7月の参謀免職と北越での尽力を記録する。
 
-162. [中岡慎太郎館「中岡慎太郎とは」](https://www.nakaokashintarokan.jp/about.html) — 中岡慎太郎の脱藩と長州藩下での活動、1866年の薩長連合仲介、1867年の薩土盟約・陸援隊結成と京都近江屋での襲撃による死去。
+164. [中岡慎太郎館「中岡慎太郎とは」](https://www.nakaokashintarokan.jp/about.html) — 中岡慎太郎の脱藩と長州藩下での活動、1866年の薩長連合仲介、1867年の薩土盟約・陸援隊結成と京都近江屋での襲撃による死去。
    - 該当箇所: 「中岡慎太郎とは」生没日／「慎太郎の生涯」内「陸援隊結成、無念の死」（1867年の結成、龍馬との会談中の襲撃）
    - 内容確認日: 2026-09-30
 
-163. [国立国会図書館「近代日本人の肖像・松平容保」](https://www.ndl.go.jp/portrait/datas/334/) — 松平容保の京都守護職就任、京都の治安と公武合体への関与、八月十八日の政変、禁門の変、征長強硬論、1867年の免職、1868年の鳥羽・伏見敗戦後の会津での謹慎と降伏。
+165. [国立国会図書館「近代日本人の肖像・松平容保」](https://www.ndl.go.jp/portrait/datas/334/) — 松平容保の京都守護職就任、京都の治安と公武合体への関与、八月十八日の政変、禁門の変、征長強硬論、1867年の免職、1868年の鳥羽・伏見敗戦後の会津での謹慎と降伏。
    - 該当箇所: 「解説」：禁門の変から会津での降伏（八月十八日の政変の年の誤記は採用しない）
    - 内容確認日: 2026-09-25
 
-164. [日野市「土方歳三」](https://www.city.hino.lg.jp/shisei/keywords/1014641/1014642.html) — 土方歳三が新選組副長を務め、1868年の近藤勇死後に新選組を率い、1869年5月の箱館の戦いで戦死した経歴。
+166. [日野市「土方歳三」](https://www.city.hino.lg.jp/shisei/keywords/1014641/1014642.html) — 土方歳三が新選組副長を務め、1868年の近藤勇死後に新選組を率い、1869年5月の箱館の戦いで戦死した経歴。
 
-165. [日野市「日野宿本陣」](https://www.city.hino.lg.jp/shisei/profile/kokusai/note/nikki/1002355.html) — 近藤勇が新選組局長、土方歳三が新選組副長となった経歴。
+167. [日野市「日野宿本陣」](https://www.city.hino.lg.jp/shisei/profile/kokusai/note/nikki/1002355.html) — 近藤勇が新選組局長、土方歳三が新選組副長となった経歴。
 
-166. [福井県文書館研究紀要・佐々木克「松平春嶽と明治維新」](https://dl.ndl.go.jp/view/prepareDownload?contentNo=1&itemId=info%3Andljp%2Fpid%2F10325050) — 1865年の高杉晋作・木戸孝允ら長州藩改革派による藩政掌握、同年9月の長州征討勅許、大久保利通による朝廷への反対工作と「非義ノ勅命」とする薩摩藩庁への報告。
+168. [福井県文書館研究紀要・佐々木克「松平春嶽と明治維新」](https://dl.ndl.go.jp/view/prepareDownload?contentNo=1&itemId=info%3Andljp%2Fpid%2F10325050) — 1865年の高杉晋作・木戸孝允ら長州藩改革派による藩政掌握、同年9月の長州征討勅許、大久保利通による朝廷への反対工作と「非義ノ勅命」とする薩摩藩庁への報告。
 
-167. [国立国会図書館リサーチ・ナビ「広沢真臣関係文書目録」](https://ndlsearch.ndl.go.jp/file/rnavi/kensei/hirosawasaneomi/index_hirosawasaneomi.pdf) — 文久2年の島津久光書簡写にある一橋慶喜・松平春嶽の登用評決催促と、一橋慶喜の将軍後見職就任時の諭書写。
+169. [国立国会図書館リサーチ・ナビ「広沢真臣関係文書目録」](https://ndlsearch.ndl.go.jp/file/rnavi/kensei/hirosawasaneomi/index_hirosawasaneomi.pdf) — 文久2年の島津久光書簡写にある一橋慶喜・松平春嶽の登用評決催促と、一橋慶喜の将軍後見職就任時の諭書写。
 
-168. [山口県立山口図書館「木戸孝允（桂小五郎）・人物調べ方案内」](https://library.pref.yamaguchi.lg.jp/how_to_investigate/kido_takayoshi/) — 木戸孝允の但馬潜伏、長州藩政改革、藩命による木戸姓の使用、1866年の薩長同盟締結。
+170. [山口県立山口図書館「木戸孝允（桂小五郎）・人物調べ方案内」](https://library.pref.yamaguchi.lg.jp/how_to_investigate/kido_takayoshi/) — 木戸孝允の但馬潜伏、長州藩政改革、藩命による木戸姓の使用、1866年の薩長同盟締結。
 
-169. [山口県立山口図書館「明治維新人物ギャラリー・討奸檄」](https://library.pref.yamaguchi.lg.jp/meijiishin/202501/) — 高杉晋作らの功山寺決起と下関藩会所襲撃、藩政府へ掲げた檄文、伊藤博文が清書したとされる高札。
+171. [山口県立山口図書館「明治維新人物ギャラリー・討奸檄」](https://library.pref.yamaguchi.lg.jp/meijiishin/202501/) — 高杉晋作らの功山寺決起と下関藩会所襲撃、藩政府へ掲げた檄文、伊藤博文が清書したとされる高札。
    - 該当箇所: 「展示資料」内『高杉晋作小伝』の項
    - 内容確認日: 2026-07-31
 
-170. [山口県立山口図書館「没後100年 井上馨」](https://library.pref.yamaguchi.lg.jp/material/201508/) — 井上聞多の英国留学・帰国・下関での和平工作、1865年の功山寺決起への山口鴻城軍総督としての参加、1866年四境戦争での芸州口参謀。
+172. [山口県立山口図書館「没後100年 井上馨」](https://library.pref.yamaguchi.lg.jp/material/201508/) — 井上聞多の英国留学・帰国・下関での和平工作、1865年の功山寺決起への山口鴻城軍総督としての参加、1866年四境戦争での芸州口参謀。
    - 該当箇所: 本文冒頭の人物解説
    - 内容確認日: 2026-07-31
 
-171. [長崎市「歌で巡るながさき・亀山社中跡」](https://www.city.nagasaki.lg.jp/nagazine/uta/060110/) — 坂本龍馬が薩摩藩などの援助を得て1865年に亀山社中を設立し、海運を中心に活動した経緯。
+173. [長崎市「歌で巡るながさき・亀山社中跡」](https://www.city.nagasaki.lg.jp/nagazine/uta/060110/) — 坂本龍馬が薩摩藩などの援助を得て1865年に亀山社中を設立し、海運を中心に活動した経緯。
 
-172. [高知県立坂本龍馬記念館「後藤象二郎誕生地」](https://ryoma-kinenkan.jp/place/2018/02/post-25.html) — 後藤象二郎が1865年の土佐勤王党の獄で大監察として取り調べにあたり、1866年に開成館を開業した経歴。
+174. [高知県立坂本龍馬記念館「後藤象二郎誕生地」](https://ryoma-kinenkan.jp/place/2018/02/post-25.html) — 後藤象二郎が1865年の土佐勤王党の獄で大監察として取り調べにあたり、1866年に開成館を開業した経歴。
    - 該当箇所: 本文第2段落（1865年の土佐勤王党の獄における大監察、1866年の開成館）
    - 内容確認日: 2026-09-25
 
-173. [高知県立高知城歴史博物館「土佐史の人々・幕末維新期」](https://www.kochi-johaku.jp/column/4520/) — 後藤象二郎が海防・軍事関係の役職を経て重職へ進み、1866年に開成館の責任者となった経歴。
+175. [高知県立高知城歴史博物館「土佐史の人々・幕末維新期」](https://www.kochi-johaku.jp/column/4520/) — 後藤象二郎が海防・軍事関係の役職を経て重職へ進み、1866年に開成館の責任者となった経歴。
 
-174. [アジア歴史資料センター「後藤象二郎」](https://www.jacar.archives.go.jp/das/term/00000383) — 後藤象二郎の1867年の薩土盟約・大政奉還・王政復古への関与と参与就任、1868年の外国事務掛・徴士参与・外国事務局判事・大坂府知事などの職歴。
+176. [アジア歴史資料センター「後藤象二郎」](https://www.jacar.archives.go.jp/das/term/00000383) — 後藤象二郎の1867年の薩土盟約・大政奉還・王政復古への関与と参与就任、1868年の外国事務掛・徴士参与・外国事務局判事・大坂府知事などの職歴。
 
-175. [高知市立自由民権記念館『板垣退助BOOK』](https://www.city.kochi.kochi.jp/uploaded/life/182643_683933_misc.pdf) — 乾退助の1864年の町奉行・大目付就任、1866年の騎兵修行のための江戸行き、1867年の土佐藩兵制改革。
+177. [高知市立自由民権記念館『板垣退助BOOK』](https://www.city.kochi.kochi.jp/uploaded/life/182643_683933_misc.pdf) — 乾退助の1864年の町奉行・大目付就任、1866年の騎兵修行のための江戸行き、1867年の土佐藩兵制改革。
 
-176. [国立国会図書館「近代日本人の肖像・近藤勇」](https://www.ndl.go.jp/portrait/datas/269) — 近藤勇の新選組局長就任、京都守護職松平容保の下での京都治安維持、1867年の見廻組頭取・幕臣就任、鳥羽・伏見後の甲陽鎮撫隊組織、流山での捕縛と斬首。
+178. [国立国会図書館「近代日本人の肖像・近藤勇」](https://www.ndl.go.jp/portrait/datas/269) — 近藤勇の新選組局長就任、京都守護職松平容保の下での京都治安維持、1867年の見廻組頭取・幕臣就任、鳥羽・伏見後の甲陽鎮撫隊組織、流山での捕縛と斬首。
    - 該当箇所: 生没年・別称・「解説」
    - 内容確認日: 2026-09-30
 
-177. [国立国会図書館「近代日本人の肖像・土方歳三」](https://www.ndl.go.jp/portrait/datas/316) — 土方歳三の新選組副長就任、京都守護職松平容保の下での京都治安維持、1867年の見廻組肝煎格・幕臣就任、鳥羽・伏見後の宇都宮・会津転戦と箱館五稜郭での戦死。
+179. [国立国会図書館「近代日本人の肖像・土方歳三」](https://www.ndl.go.jp/portrait/datas/316) — 土方歳三の新選組副長就任、京都守護職松平容保の下での京都治安維持、1867年の見廻組肝煎格・幕臣就任、鳥羽・伏見後の宇都宮・会津転戦と箱館五稜郭での戦死。
    - 該当箇所: 解説：新選組副長・鳥羽伏見後の転戦
    - 内容確認日: 2026-09-25
 
-178. [京都市下京区役所「区内の施設案内・光縁寺」](https://www.city.kyoto.lg.jp/shimogyo/page/0000012669.html) — 新選組の西本願寺への屯所移転。山南と近藤らの関係、1865年の死去。脱走の動機は単独の説として断定しない。
+180. [京都市下京区役所「区内の施設案内・光縁寺」](https://www.city.kyoto.lg.jp/shimogyo/page/0000012669.html) — 新選組の西本願寺への屯所移転。山南と近藤らの関係、1865年の死去。脱走の動機は単独の説として断定しない。
    - 該当箇所: 光縁寺：新選組結成時からの近藤らとの関係、1865年の死去
    - 内容確認日: 2026-09-25
 
-179. [鹿児島県歴史・美術センター黎明館「薩長同盟成立」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/sattyo.html) — 1866年の薩長盟約、坂本龍馬・中岡慎太郎による仲介、京都の小松帯刀邸で小松・西郷・木戸が盟約を結んだこと。
+181. [鹿児島県歴史・美術センター黎明館「薩長同盟成立」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/sattyo.html) — 1866年の薩長盟約、坂本龍馬・中岡慎太郎による仲介、京都の小松帯刀邸で小松・西郷・木戸が盟約を結んだこと。
    - 該当箇所: 本文全3段落（和解の仲介、前年の支援、小松邸の会談）
    - 内容確認日: 2026-09-25
 
-180. [国立公文書館「旗本御家人・榎本釜次郎脱艦一件書並仏人ブリユウネ等所罰方」](https://www.archives.go.jp/exhibition/digital/hatamotogokenin/contents/56.html) — 榎本武揚のオランダ留学、帰国後の1867年における軍艦役・軍艦頭並就任、江戸城明け渡し後の軍艦引き渡し拒否、1868年8月19日夜の開陽丸ほか計8隻による品川沖出航。
+182. [国立公文書館「旗本御家人・榎本釜次郎脱艦一件書並仏人ブリユウネ等所罰方」](https://www.archives.go.jp/exhibition/digital/hatamotogokenin/contents/56.html) — 榎本武揚のオランダ留学、帰国後の1867年における軍艦役・軍艦頭並就任、江戸城明け渡し後の軍艦引き渡し拒否、1868年8月19日夜の開陽丸ほか計8隻による品川沖出航。
    - 該当箇所: 解説：江戸開城後の軍艦引き渡し拒否と8月19日の艦隊離脱
    - 内容確認日: 2026-09-25
 
-181. [国立国会図書館リサーチ・ナビ「榎本武揚関係文書」](https://ndlsearch.ndl.go.jp/rnavi/kensei/enomototakeaki) — 榎本武揚の1862年から1867年までのオランダ留学、1868年1月の海軍副総裁就任、1869年5月の五稜郭での降伏。
+183. [国立国会図書館リサーチ・ナビ「榎本武揚関係文書」](https://ndlsearch.ndl.go.jp/rnavi/kensei/enomototakeaki) — 榎本武揚の1862年から1867年までのオランダ留学、1868年1月の海軍副総裁就任、1869年5月の五稜郭での降伏。
 
-182. [山口県立山口図書館「大村益次郎・人物調べ方案内」](https://library.pref.yamaguchi.lg.jp/how_to_investigate/omura_masujiro2/) — 1866年の兵学校三兵教授役兼軍政用掛への登用、四境戦争・戊辰戦争での軍事指導、1869年の兵部大輔就任と軍政改革。
+184. [山口県立山口図書館「大村益次郎・人物調べ方案内」](https://library.pref.yamaguchi.lg.jp/how_to_investigate/omura_masujiro2/) — 1866年の兵学校三兵教授役兼軍政用掛への登用、四境戦争・戊辰戦争での軍事指導、1869年の兵部大輔就任と軍政改革。
    - 該当箇所: 「人物紹介」：木戸の働きかけ、藩主の命による改姓名、石州口
    - 内容確認日: 2026-09-25
 
-183. [国立国会図書館リサーチ・ナビ「大村家文書（大村益次郎）」](https://ndlsearch.ndl.go.jp/rnavi/kensei/oomuramasujirou) — 第二次長州征討後の軍制整備、1868年2月の軍防事務局入り、同年5月の軍務官判事、10月の軍務官副知事就任。
+185. [国立国会図書館リサーチ・ナビ「大村家文書（大村益次郎）」](https://ndlsearch.ndl.go.jp/rnavi/kensei/oomuramasujirou) — 第二次長州征討後の軍制整備、1868年2月の軍防事務局入り、同年5月の軍務官判事、10月の軍務官副知事就任。
 
-184. [山口県立山口図書館「山県有朋と高杉・西郷」](https://library.pref.yamaguchi.lg.jp/meijiishin/202102/) — 山県有朋が志士として四境戦争と戊辰戦争を戦った経歴。
+186. [山口県立山口図書館「山県有朋と高杉・西郷」](https://library.pref.yamaguchi.lg.jp/meijiishin/202102/) — 山県有朋が志士として四境戦争と戊辰戦争を戦った経歴。
 
-185. [美祢市「ぐるっと川上 大田川」](https://www2.city.mine.lg.jp/material/files/group/12/new13.pdf) — 1865年の大田・絵堂の戦いで、金麗社にいた山県有朋が奇兵隊第二銃隊へ幣振坂からの急襲を命じ、劣勢を挽回したとの現地解説。
+187. [美祢市「ぐるっと川上 大田川」](https://www2.city.mine.lg.jp/material/files/group/12/new13.pdf) — 1865年の大田・絵堂の戦いで、金麗社にいた山県有朋が奇兵隊第二銃隊へ幣振坂からの急襲を命じ、劣勢を挽回したとの現地解説。
 
-186. [国立国会図書館「近代日本人の肖像・和宮」](https://www.ndl.go.jp/portrait/datas/6156) — 仁孝天皇第8皇女、14代将軍徳川家茂への降嫁、1866年の家茂死去後の出家と静寛院宮号、戊辰戦争期の江戸攻撃中止・徳川家存続への尽力。
+188. [国立国会図書館「近代日本人の肖像・和宮」](https://www.ndl.go.jp/portrait/datas/6156) — 仁孝天皇第8皇女、14代将軍徳川家茂への降嫁、1866年の家茂死去後の出家と静寛院宮号、戊辰戦争期の江戸攻撃中止・徳川家存続への尽力。
    - 該当箇所: 生没年・別称・「解説」、肖像1枚目
    - 内容確認日: 2026-09-12
 
-187. [流山市立博物館「新選組と流山」](https://www.city.nagareyama.chiba.jp/tourism/1013070/1013074.html) — 甲陽鎮撫隊の1868年3月1日の江戸出発と勝沼敗走、4月3日の近藤勇出頭、4月25日の板橋宿での処刑、4月12日の土方歳三による大鳥圭介軍参加。
-   - 該当箇所: 新選組関係略年表：慶応4年4月12日の国府台での合流
-   - 内容確認日: 2026-09-25
+189. [流山市立博物館「新選組と流山」](https://www.city.nagareyama.chiba.jp/tourism/1013070/1013074.html) — 甲陽鎮撫隊の1868年3月1日の江戸出発と勝沼敗走、4月3日の近藤勇出頭、4月25日の板橋宿での処刑、4月12日の土方歳三による大鳥圭介軍参加。
+   - 該当箇所: 「新選組流山へ」：金子家史料による勝沼敗走と五兵衛新田・流山への移動／関係略年表：慶応4年2月28日〜4月25日
+   - 内容確認日: 2026-09-30
 
-188. [福島県「近・現代」](https://www.pref.fukushima.lg.jp/site/ken-no-sugata/kingendai.html) — 1868年9月に会津藩主松平容保が若松城を明け渡し、福島県域の戊辰戦争が終結したこと。
+190. [福島県「近・現代」](https://www.pref.fukushima.lg.jp/site/ken-no-sugata/kingendai.html) — 1868年9月に会津藩主松平容保が若松城を明け渡し、福島県域の戊辰戦争が終結したこと。
 
-189. [高知市「板垣退助」](https://www.city.kochi.kochi.jp/site/kanko/taisuke.html) — 板垣退助が戊辰戦争の功績により土佐藩の家老格へ昇進し、後に明治政府の参議となった経歴。
+191. [高知市「板垣退助」](https://www.city.kochi.kochi.jp/site/kanko/taisuke.html) — 板垣退助が戊辰戦争の功績により土佐藩の家老格へ昇進し、後に明治政府の参議となった経歴。
    - 該当箇所: 本文第1段落
    - 内容確認日: 2026-07-31
 
-190. [国立公文書館「山県有朋露仏2国に差遣し地理形勢を視察せしむ（明治2年）」](https://www.archives.go.jp/exhibition/digital/2007_01/aritomo_yamagata/archive01_01.html) — 山県有朋が1869年3月に西郷従道と長崎を出航し、欧州で徴兵制度などを調査して1870年8月に帰国したこと。
+192. [国立公文書館「山県有朋露仏2国に差遣し地理形勢を視察せしむ（明治2年）」](https://www.archives.go.jp/exhibition/digital/2007_01/aritomo_yamagata/archive01_01.html) — 山県有朋が1869年3月に西郷従道と長崎を出航し、欧州で徴兵制度などを調査して1870年8月に帰国したこと。
 
-191. [国立国会図書館「日記の世界・岩倉具視」](https://www.ndl.go.jp/nikki/person/iwakuratomomi/index.html) — 岩倉具視の1868年の副総裁・海陸軍務会計事務総督・議定兼輔相、1869年の権大納言・議定・大納言などの履歴。
+193. [国立国会図書館「日記の世界・岩倉具視」](https://www.ndl.go.jp/nikki/person/iwakuratomomi/index.html) — 岩倉具視の1868年の副総裁・海陸軍務会計事務総督・議定兼輔相、1869年の権大納言・議定・大納言などの履歴。
 
-192. [アジア歴史資料センター「太政官」](https://www.jacar.go.jp/exhibition/glossary/term3/0010-0020-0010.html) — 1869年7月8日からの三条実美の右大臣、岩倉具視の大納言など、明治初期太政官の部局長と在職期間。
+194. [アジア歴史資料センター「太政官」](https://www.jacar.go.jp/exhibition/glossary/term3/0010-0020-0010.html) — 1869年7月8日からの三条実美の右大臣、岩倉具視の大納言など、明治初期太政官の部局長と在職期間。
 
-193. [国立国会図書館「選挙と日記―マツリの記録をよむ」](https://www.ndl.go.jp/nikki/essay/03/) — 1869年5月13日の官吏公選と、大久保利通・後藤象二郎・板垣退助らの参与選出、大村益次郎の軍務官副知官事選出。
+195. [国立国会図書館「選挙と日記―マツリの記録をよむ」](https://www.ndl.go.jp/nikki/essay/03/) — 1869年5月13日の官吏公選と、大久保利通・後藤象二郎・板垣退助らの参与選出、大村益次郎の軍務官副知官事選出。
 
-194. [国立国会図書館リサーチ・ナビ「三条家文書（所蔵）」](https://ndlsearch.ndl.go.jp/rnavi/kensei/sannjouke1) — 三条実美の1868年4月の輔相、1869年4月の史局総裁、同年7月の右大臣などの履歴。
+196. [国立国会図書館リサーチ・ナビ「三条家文書（所蔵）」](https://ndlsearch.ndl.go.jp/rnavi/kensei/sannjouke1) — 三条実美の1868年4月の輔相、1869年4月の史局総裁、同年7月の右大臣などの履歴。
 
-195. [国立公文書館「五箇条の御誓文が発せられる」](https://www.archives.go.jp/ayumi/kobetsu/m01_1868_02.html) — 1868年3月14日、明治天皇が京都御所の南殿で公卿諸侯らと誓いを立て、新政府の基本方針を示したこと。
+197. [国立公文書館「五箇条の御誓文が発せられる」](https://www.archives.go.jp/ayumi/kobetsu/m01_1868_02.html) — 1868年3月14日、明治天皇が京都御所の南殿で公卿諸侯らと誓いを立て、新政府の基本方針を示したこと。
    - 該当箇所: 「五箇条の御誓文が発せられる」解説
    - 内容確認日: 2026-07-31
 
-196. [国立公文書館「江戸城を皇居と定め東京城と改称」](https://www.archives.go.jp/exhibition/digital/henbou/contents/05.html) — 明治天皇が1868年9月20日に京都を出発し、10月13日に江戸城西の丸へ到着したこと、および同日の東京城改称。
+198. [国立公文書館「江戸城を皇居と定め東京城と改称」](https://www.archives.go.jp/exhibition/digital/henbou/contents/05.html) — 明治天皇が1868年9月20日に京都を出発し、10月13日に江戸城西の丸へ到着したこと、および同日の東京城改称。
 
-197. [国立公文書館「明治天皇、東京へ再び行幸」](https://www.archives.go.jp/exhibition/digital/henbou/contents/08.html) — 明治天皇が1869年3月7日に京都を出発し、3月28日に東京城へ到着したこと、および同日の皇城改称。
+199. [国立公文書館「明治天皇、東京へ再び行幸」](https://www.archives.go.jp/exhibition/digital/henbou/contents/08.html) — 明治天皇が1869年3月7日に京都を出発し、3月28日に東京城へ到着したこと、および同日の皇城改称。
 
-198. [国立国会図書館リサーチ・ナビ「大久保利通関係文書」](https://ndlsearch.ndl.go.jp/rnavi/kensei/ookubotoshimichi1) — 大久保利通が1867年12月から1869年7月まで参与、同年7月から参議を務めた履歴。
+200. [国立国会図書館リサーチ・ナビ「大久保利通関係文書」](https://ndlsearch.ndl.go.jp/rnavi/kensei/ookubotoshimichi1) — 大久保利通が1867年12月から1869年7月まで参与、同年7月から参議を務めた履歴。
 
-199. [国立公文書館「大久保利通の大坂遷都論」](https://www.archives.go.jp/exhibition/digital/henbou/contents/01.html) — 新政府参与の大久保利通が1868年1月17日に総裁有栖川宮熾仁親王へ大坂遷都を建言したこと。
+201. [国立公文書館「大久保利通の大坂遷都論」](https://www.archives.go.jp/exhibition/digital/henbou/contents/01.html) — 新政府参与の大久保利通が1868年1月17日に総裁有栖川宮熾仁親王へ大坂遷都を建言したこと。
 
-200. [国立国会図書館「近代日本人の肖像・小松帯刀」](https://www.ndl.go.jp/portrait/datas/82/) — 小松帯刀の薩摩藩家老就任、1866年の薩長連合締結、大政奉還進言、新政府での総裁局顧問就任。 肖像1枚目の原資料は「近世名士写真 其2（近世名士写真頒布会、1935年）」。撮影時期は未確認。
+202. [国立国会図書館「近代日本人の肖像・小松帯刀」](https://www.ndl.go.jp/portrait/datas/82/) — 小松帯刀の薩摩藩家老就任、1866年の薩長連合締結、大政奉還進言、新政府での総裁局顧問就任。 肖像1枚目の原資料は「近世名士写真 其2（近世名士写真頒布会、1935年）」。撮影時期は未確認。
    - 該当箇所: 「解説」：家老・1866年1月の薩長連合／肖像1枚目・出典欄
    - 内容確認日: 2026-09-27
 
-201. [国立国会図書館リサーチ・ナビ「松平春嶽関係文書」](https://ndlsearch.ndl.go.jp/rnavi/kensei/matsudairashunngaku2) — 松平春嶽の1867年12月の議定職、1868年1月の内国事務総督、同年2月の議定職内国事務局補などの履歴。
+203. [国立国会図書館リサーチ・ナビ「松平春嶽関係文書」](https://ndlsearch.ndl.go.jp/rnavi/kensei/matsudairashunngaku2) — 松平春嶽の1867年12月の議定職、1868年1月の内国事務総督、同年2月の議定職内国事務局補などの履歴。
 
-202. [大阪府公文書館「大阪府政と歴代知事」](https://archives.pref.osaka.lg.jp/search/information.do?id=70&method=initPage) — 参与後藤象二郎が1868年7月12日に大坂府知事兼勤を命じられ、1869年2月18日に辞任したこと。
+204. [大阪府公文書館「大阪府政と歴代知事」](https://archives.pref.osaka.lg.jp/search/information.do?id=70&method=initPage) — 参与後藤象二郎が1868年7月12日に大坂府知事兼勤を命じられ、1869年2月18日に辞任したこと。
 
-203. [国立国会図書館「日記の世界・伊藤博文」](https://www.ndl.go.jp/nikki/person/itohirobumi/index.html) — 伊藤博文が1869年7月に大蔵少輔、同年8月に民部少輔兼任となった履歴。
+205. [国立国会図書館「日記の世界・伊藤博文」](https://www.ndl.go.jp/nikki/person/itohirobumi/index.html) — 伊藤博文が1869年7月に大蔵少輔、同年8月に民部少輔兼任となった履歴。
 
-204. [国立国会図書館「近代日本人の肖像・大久保利通」](https://www.ndl.go.jp/portrait/datas/32/index.html) — 大久保利通が岩倉具視らとともに1867年12月の王政復古の政変を実行したこと。
+206. [国立国会図書館「近代日本人の肖像・大久保利通」](https://www.ndl.go.jp/portrait/datas/32/index.html) — 大久保利通が岩倉具視らとともに1867年12月の王政復古の政変を実行したこと。
    - 該当箇所: 解説／肖像1枚目
    - 内容確認日: 2026-09-25
 
-205. [鹿児島県歴史資料センター黎明館「黎明館だより・天璋院篤姫講座」](https://dl.ndl.go.jp/view/prepareDownload?contentNo=1&itemId=info%3Andljp%2Fpid%2F10963596) — 江戸総攻撃を前に天璋院が官軍隊長宛てに徳川家存続を願う書状を送り、西郷吉之助が受け取ったこと。
+207. [鹿児島県歴史資料センター黎明館「黎明館だより・天璋院篤姫講座」](https://dl.ndl.go.jp/view/prepareDownload?contentNo=1&itemId=info%3Andljp%2Fpid%2F10963596) — 江戸総攻撃を前に天璋院が官軍隊長宛てに徳川家存続を願う書状を送り、西郷吉之助が受け取ったこと。
 
-206. [国立国会図書館デジタルコレクション『木戸孝允遺文集』「岩倉具視への建言」](https://lab.ndl.go.jp/dl-text/book?page=96&pid=1038118) — 『木戸孝允遺文集』に明治2年4月15日付「岩倉具視への建言」が収録され、建言の宛先と日付を確認できること。
+208. [国立国会図書館デジタルコレクション『木戸孝允遺文集』「岩倉具視への建言」](https://lab.ndl.go.jp/dl-text/book?page=96&pid=1038118) — 『木戸孝允遺文集』に明治2年4月15日付「岩倉具視への建言」が収録され、建言の宛先と日付を確認できること。
    - 該当箇所: 目次144頁（0110.jp2）
    - 内容確認日: 2026-07-31
 
-207. [太政類典「岩倉具視松平慶永等ニ慶喜処分ノ朝旨ヲ示シ其奏状ノ擬按ヲ内付ス」](https://www.jacar.archives.go.jp/das/meta/A15071465300) — 慶応3年12月16日・18日、岩倉具視が松平慶永らへ徳川慶喜の処分方針と奏状案を示し、慶喜に実行させるため協議したこと。
+209. [太政類典「岩倉具視松平慶永等ニ慶喜処分ノ朝旨ヲ示シ其奏状ノ擬按ヲ内付ス」](https://www.jacar.archives.go.jp/das/meta/A15071465300) — 慶応3年12月16日・18日、岩倉具視が松平慶永らへ徳川慶喜の処分方針と奏状案を示し、慶喜に実行させるため協議したこと。
    - 該当箇所: 「内容」欄（慶応3年12月16日・18日条）
    - 内容確認日: 2026-07-31
 
-208. [山口県文書館「幕末の諸隊 力士隊と山分勝五郎（3）～力士隊、戦場へ～」](https://archives.pref.yamaguchi.lg.jp/user_data/upload/File/archivesexhibition/AW16bugeitaiiku/12.pdf) — 元治元年9月29日に伊藤俊輔が力士隊（角力隊）の管轄となり、同年12月（1865年1月）の高杉晋作による功山寺決起に同隊を率いて参加した経緯。
+210. [山口県文書館「幕末の諸隊 力士隊と山分勝五郎（3）～力士隊、戦場へ～」](https://archives.pref.yamaguchi.lg.jp/user_data/upload/File/archivesexhibition/AW16bugeitaiiku/12.pdf) — 元治元年9月29日に伊藤俊輔が力士隊（角力隊）の管轄となり、同年12月（1865年1月）の高杉晋作による功山寺決起に同隊を率いて参加した経緯。
    - 該当箇所: 1頁「功山寺決起と力士隊」
    - 内容確認日: 2026-08-27
 
-209. [日野市 沖田総司](https://www.city.hino.lg.jp/shisei/keywords/1014641/1014672.html) — 近藤勇との剣術の師弟関係と、新選組での活動を確認。
+211. [日野市 沖田総司](https://www.city.hino.lg.jp/shisei/keywords/1014641/1014672.html) — 近藤勇との剣術の師弟関係と、新選組での活動を確認。
    - 該当箇所: 本文「沖田総司」の人物紹介
    - 内容確認日: 2026-09-12
 
-210. [北海道博物館 新選組永倉新八と会津藩士栗田鉄馬](https://www.hm.pref.hokkaido.lg.jp/exhibition/special/20856/) — 生没年、松前藩家臣の家に生まれたこと、明治期の杉村義衛への改名を確認。
+212. [北海道博物館 新選組永倉新八と会津藩士栗田鉄馬](https://www.hm.pref.hokkaido.lg.jp/exhibition/special/20856/) — 生没年、松前藩家臣の家に生まれたこと、明治期の杉村義衛への改名を確認。
    - 該当箇所: 永倉新八（1839～1915）の人物紹介
    - 内容確認日: 2026-09-12
 
-211. [講談社 日本人名大辞典+Plus 永倉新八](https://kotobank.jp/word/%E6%B0%B8%E5%80%89%E6%96%B0%E5%85%AB-1096350) — 池田屋への参加、慶応4年の近藤との離別と靖共隊、今市・会津での戦闘を確認。
+213. [講談社 日本人名大辞典+Plus 永倉新八](https://kotobank.jp/word/%E6%B0%B8%E5%80%89%E6%96%B0%E5%85%AB-1096350) — 池田屋への参加、慶応4年の近藤との離別と靖共隊、今市・会津での戦闘を確認。
    - 該当箇所: デジタル版 日本人名大辞典+Plus「永倉新八」の本文
    - 内容確認日: 2026-09-12
 
-212. [PHP歴史街道 池田屋事件と新選組](https://rekishikaido.php.co.jp/detail/3972) — 菊地明『新選組 謎とき88話』を基にした記事。事件の日付、探索の分担、近藤・沖田・永倉らの突入を確認。
+214. [PHP歴史街道 池田屋事件と新選組](https://rekishikaido.php.co.jp/detail/3972) — 菊地明『新選組 謎とき88話』を基にした記事。事件の日付、探索の分担、近藤・沖田・永倉らの突入を確認。
    - 該当箇所: 「3隊に分かれて御用改め」近藤隊10名の編成と、近藤・沖田・永倉・藤堂の屋内突入を記した段落
    - 内容確認日: 2026-09-27
 
-213. [国立国会図書館 近代日本人の肖像 この電子展示会について](https://www.ndl.go.jp/portrait/about) — 掲載肖像の著作権保護期間満了、転載手続き不要、出典明示の条件を確認。
+215. [国立国会図書館 近代日本人の肖像 この電子展示会について](https://www.ndl.go.jp/portrait/about) — 掲載肖像の著作権保護期間満了、転載手続き不要、出典明示の条件を確認。
    - 該当箇所: 掲載資料／コンテンツの転載
    - 内容確認日: 2026-09-27
 
-214. [外務省「日露関係史」幕末期](https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/j_russia_2005/2_1.html) — 川路聖謨らとプチャーチンによる交渉・日魯通好条約。
+216. [外務省「日露関係史」幕末期](https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/j_russia_2005/2_1.html) — 川路聖謨らとプチャーチンによる交渉・日魯通好条約。
    - 該当箇所: 日魯通好条約の解説
    - 内容確認日: 2026-09-12
 
-215. [千葉市図書館「歴史人物を描いた文学作品」人物紹介：川路聖謨](https://www.library.city.chiba.jp/news/pdf/201901hanadan.pdf) — 勘定奉行、1858年の勅許奏請補佐と失脚、1863年の外国奉行就任・辞任。没日と新旧暦の表記には注意し、その部分は採用しない。
+217. [千葉市図書館「歴史人物を描いた文学作品」人物紹介：川路聖謨](https://www.library.city.chiba.jp/news/pdf/201901hanadan.pdf) — 勘定奉行、1858年の勅許奏請補佐と失脚、1863年の外国奉行就任・辞任。没日と新旧暦の表記には注意し、その部分は採用しない。
    - 該当箇所: p.2「10．川路聖謨」人物紹介（作品のあらすじは使用しない）
    - 内容確認日: 2026-09-12
 
-216. [国立国会図書館「江戸時代の日蘭交流」蘭学者の活躍](https://www.ndl.go.jp/nichiran/s2/s2_2.html) — 蘭学・通詞の説明と、蛮社遭厄小記の解説中にある川路聖謨の生没年。
+218. [国立国会図書館「江戸時代の日蘭交流」蘭学者の活躍](https://www.ndl.go.jp/nichiran/s2/s2_2.html) — 蘭学・通詞の説明と、蛮社遭厄小記の解説中にある川路聖謨の生没年。
    - 該当箇所: 冒頭、通詞たち、渡辺崋山「蛮社遭厄小記」
    - 内容確認日: 2026-09-12
 
-217. [富田林市史 第二巻「八月一八日の政変」](https://adeac.jp/tondabayashi-city/texthtml/d000020/cp000002/ht000371) — 参内、御所の警備、長州藩の警備解任、三条実美・久坂玄瑞らの退京、政変後の孝明天皇の意思表明。
+219. [富田林市史 第二巻「八月一八日の政変」](https://adeac.jp/tondabayashi-city/texthtml/d000020/cp000002/ht000371) — 参内、御所の警備、長州藩の警備解任、三条実美・久坂玄瑞らの退京、政変後の孝明天皇の意思表明。
    - 該当箇所: pp.1038–1039「八月一八日の政変」
    - 内容確認日: 2026-09-12
 
-218. [環境省京都御苑管理事務所「賀陽宮邸跡」解説（国土交通省掲載）](https://www.mlit.go.jp/tagengo-db/H30-00815.html) — 朝彦親王の公武融和、孝明天皇との関係、1868年の広島追放。
+220. [環境省京都御苑管理事務所「賀陽宮邸跡」解説（国土交通省掲載）](https://www.mlit.go.jp/tagengo-db/H30-00815.html) — 朝彦親王の公武融和、孝明天皇との関係、1868年の広島追放。
    - 該当箇所: 日本語解説「賀陽宮邸跡」・英語解説の生没年
    - 内容確認日: 2026-09-12
 
-219. [国立アートリサーチセンター 日本アーティスト事典「並河靖之」](https://artplatform.go.jp/ja/artists/A1728) — 宮家に仕えた並河靖之の伝記中の朝彦親王の改名・処遇。
+221. [国立アートリサーチセンター 日本アーティスト事典「並河靖之」](https://artplatform.go.jp/ja/artists/A1728) — 宮家に仕えた並河靖之の伝記中の朝彦親王の改名・処遇。
    - 該当箇所: 青蓮院門主・朝彦親王の説明（1863年中川宮、1864年賀陽宮、1868年蟄居）
    - 内容確認日: 2026-09-12
 
-220. [国立国会図書館「近代日本人の肖像」海江田信義](https://www.ndl.go.jp/portrait/datas/6093/) — 生没年、別称、生麦事件と戊辰戦争の役割、肖像。
+222. [国立国会図書館「近代日本人の肖像」海江田信義](https://www.ndl.go.jp/portrait/datas/6093/) — 生没年、別称、生麦事件と戊辰戦争の役割、肖像。
    - 該当箇所: 解説：生麦事件での英国人殺傷、別称と肖像
    - 内容確認日: 2026-09-25
 
-221. [鹿児島大学掲載「女性たちの明治維新」有村れん書状](https://ir.kagoshima-u.ac.jp/record/14412/files/BB25184174.pdf) — 1861年12月の婚姻・婿養子と海江田信義への改名。
+223. [鹿児島大学掲載「女性たちの明治維新」有村れん書状](https://ir.kagoshima-u.ac.jp/record/14412/files/BB25184174.pdf) — 1861年12月の婚姻・婿養子と海江田信義への改名。
    - 該当箇所: 冊子p.19（PDF21ページ）「有村れん書状」
    - 内容確認日: 2026-09-12
 
-222. [神奈川県立公文書館「山口コレクションの明治維新」](https://archives.pref.kanagawa.jp/exhibition/exhibition/r06-webtenji.html) — 1860年3月25日付西郷書簡の宛先に大久保・有村俊斉らが含まれる。
+224. [神奈川県立公文書館「山口コレクションの明治維新」](https://archives.pref.kanagawa.jp/exhibition/exhibition/r06-webtenji.html) — 1860年3月25日付西郷書簡の宛先に大久保・有村俊斉らが含まれる。
    - 該当箇所: 菊池源吾（西郷隆盛）書簡、資料ID2199400332
    - 内容確認日: 2026-09-12
 
-223. [山口県立山口図書館「吉田稔麿」明治維新人物調べ方案内No.16](https://library.pref.yamaguchi.lg.jp/how_to_investigate/yoshida_toshimaro/) — 松陰への入門、脱藩と帰国、1863年の改名・任務、池田屋事件での死去。
+225. [山口県立山口図書館「吉田稔麿」明治維新人物調べ方案内No.16](https://library.pref.yamaguchi.lg.jp/how_to_investigate/yoshida_toshimaro/) — 松陰への入門、脱藩と帰国、1863年の改名・任務、池田屋事件での死去。
    - 該当箇所: 人物紹介
    - 内容確認日: 2026-09-12
 
-224. [高知市「吉田東洋殉難の地」](https://www.city.kochi.kochi.jp/site/kanko/yoshidatouyoujunnannochi.html) — 山内容堂による登用、後藤象二郎・板垣退助らの教育、1862年の暗殺。
+226. [高知市「吉田東洋殉難の地」](https://www.city.kochi.kochi.jp/site/kanko/yoshidatouyoujunnannochi.html) — 山内容堂による登用、後藤象二郎・板垣退助らの教育、1862年の暗殺。
    - 該当箇所: 吉田東洋の人物紹介
    - 内容確認日: 2026-09-12
 
-225. [同志社大学「山本覚馬」](https://www.doshisha.ac.jp/information/neesima/kakuma/index.html) — 会津藩の洋学・軍事教育、松平容保との関係、鳥羽・伏見後の拘束と建白。京都府顧問の就任年は他資料と異なり、今回の時点情報には採用しない。
+227. [同志社大学「山本覚馬」](https://www.doshisha.ac.jp/information/neesima/kakuma/index.html) — 会津藩の洋学・軍事教育、松平容保との関係、鳥羽・伏見後の拘束と建白。京都府顧問の就任年は他資料と異なり、今回の時点情報には採用しない。
    - 該当箇所: 山本覚馬の略歴（京都での活動・鳥羽伏見・管見）
    - 内容確認日: 2026-09-12
 
-226. [中津川市中山道歴史資料館「水戸天狗党との関わり」](https://www.city.nakatsugawa.lg.jp/museum/n/nakatsugawa_juku/4842.html) — 天狗党の西上、武田耕雲斎と徳川斉昭・一橋慶喜、降伏と処刑。
+228. [中津川市中山道歴史資料館「水戸天狗党との関わり」](https://www.city.nakatsugawa.lg.jp/museum/n/nakatsugawa_juku/4842.html) — 天狗党の西上、武田耕雲斎と徳川斉昭・一橋慶喜、降伏と処刑。
    - 該当箇所: 「天狗党、京都に向かう」「武田耕雲斎」
    - 内容確認日: 2026-09-12
 
-227. [石川県立歴史博物館「武田耕雲斎等天狗党員筆跡巻」](https://www.ishikawa-rekihaku.jp/collection/detail.php?cd=GI00181) — 耕雲斎の生没年と敦賀での幽閉。冒頭の和暦対応は採用しない。
+229. [石川県立歴史博物館「武田耕雲斎等天狗党員筆跡巻」](https://www.ishikawa-rekihaku.jp/collection/detail.php?cd=GI00181) — 耕雲斎の生没年と敦賀での幽閉。冒頭の和暦対応は採用しない。
    - 該当箇所: 所蔵品解説（生没年1803–1865、敦賀での幽閉）
    - 内容確認日: 2026-09-12
 
-228. [外務省「明治維新期の日英交流」](https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/j_uk/03.html) — 1865年のパークス着任、通商要求、幕府と薩長への接触、戊辰戦争中の中立と新政府承認。
+230. [外務省「明治維新期の日英交流」](https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/j_uk/03.html) — 1865年のパークス着任、通商要求、幕府と薩長への接触、戊辰戦争中の中立と新政府承認。
    - 該当箇所: 概説（着任の日付は採用せず年のみ使用）
    - 内容確認日: 2026-09-12
 
-229. [National Portrait Gallery: Sir Harry Smith Parkes](https://www.npg.org.uk/collections/search/person/mp79902/sir-harry-smith-parkes) — パークスの生没年と外交官としての人物同定。画像は転載していない。
+231. [National Portrait Gallery: Sir Harry Smith Parkes](https://www.npg.org.uk/collections/search/person/mp79902/sir-harry-smith-parkes) — パークスの生没年と外交官としての人物同定。画像は転載していない。
    - 該当箇所: 人物見出し「1828–1885, Diplomat」
    - 内容確認日: 2026-09-12
 
-230. [外務省「外交史料Q&A 幕末期」パークス襲撃](https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/qa/bakumatsu_01.html) — 1868年3月23日の襲撃、後藤象二郎らの護衛、天皇謁見。
+232. [外務省「外交史料Q&A 幕末期」パークス襲撃](https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/qa/bakumatsu_01.html) — 1868年3月23日の襲撃、後藤象二郎らの護衛、天皇謁見。
    - 該当箇所: 「1868年、駐日英国公使パークスが京都で日本人に襲われた事件」
    - 内容確認日: 2026-09-12
 
-231. [文化遺産オンライン収録「日米修好通商条約」（ジャパンサーチ）](https://jpsearch.go.jp/item/bunka-135547) — 和文調印書の井上清直・岩瀬忠震、英文のハリスの署名と調印場所。
+233. [文化遺産オンライン収録「日米修好通商条約」（ジャパンサーチ）](https://jpsearch.go.jp/item/bunka-135547) — 和文調印書の井上清直・岩瀬忠震、英文のハリスの署名と調印場所。
    - 該当箇所: 解説：調印書の署名と神奈川沖の米艦ポーハタン号
    - 内容確認日: 2026-09-12
 
-232. [国立国会図書館 国際子ども図書館「尊王攘夷運動」](https://www.kodomo.go.jp/yareki/theme/theme_03.html) — 尊王・攘夷・公武合体の意味と、1858年の条約から京都の政局へ至る背景。
+234. [国立国会図書館 国際子ども図書館「尊王攘夷運動」](https://www.kodomo.go.jp/yareki/theme/theme_03.html) — 尊王・攘夷・公武合体の意味と、1858年の条約から京都の政局へ至る背景。
    - 該当箇所: テーマ解説1〜3
    - 内容確認日: 2026-09-12
 
-233. [高知県立坂本龍馬記念館「龍馬について」](https://ryoma-kinenkan.jp/feat/) — 脱藩の意味と、寺田屋でのお龍・三吉による援助、薩摩藩邸での保護とお龍の看護を確認。「謎多き龍馬の死」は近江屋での死去日と西暦換算、見廻組説が有力で指示者は未確定という留保に用いる。動機・婚姻時期などを自動的に採用しない。
+235. [高知県立坂本龍馬記念館「龍馬について」](https://ryoma-kinenkan.jp/feat/) — 脱藩の意味と、寺田屋でのお龍・三吉による援助、薩摩藩邸での保護とお龍の看護を確認。「謎多き龍馬の死」は近江屋での死去日と西暦換算、見廻組説が有力で指示者は未確定という留保に用いる。動機・婚姻時期などを自動的に採用しない。
    - 該当箇所: 「脱藩」の説明／「亀山社中時代」内「寺田屋事件と新婚旅行」／「謎多き龍馬の死」（11月15日、太陽暦12月10日、実行犯説と黒幕の留保）
    - 内容確認日: 2026-09-30
 
-234. [国立国会図書館「近代日本人の肖像」後藤象二郎](https://www.ndl.go.jp/portrait/datas/78/) — 人物略歴と史料肖像。
+236. [国立国会図書館「近代日本人の肖像」後藤象二郎](https://www.ndl.go.jp/portrait/datas/78/) — 人物略歴と史料肖像。
    - 該当箇所: 人物略歴・肖像1枚目
    - 内容確認日: 2026-09-12
 
-235. [国立国会図書館「小栗忠順」](https://www.ndl.go.jp/portrait/datas/248/) — 渡米、財政・軍備改革、罷免と処刑、肖像を確認。
+237. [国立国会図書館「小栗忠順」](https://www.ndl.go.jp/portrait/datas/248/) — 渡米、財政・軍備改革、罷免と処刑、肖像を確認。
    - 該当箇所: 生没年・別称・解説・肖像
    - 内容確認日: 2026-09-12
 
-236. [山口県立山口図書館「毛利敬親」](https://library.pref.yamaguchi.lg.jp/how_to_investigate/mouri_takachika/) — 藩主就任、財政改革、禁門の変後の謹慎、版籍奉還と隠居を確認。
+238. [山口県立山口図書館「毛利敬親」](https://library.pref.yamaguchi.lg.jp/how_to_investigate/mouri_takachika/) — 藩主就任、財政改革、禁門の変後の謹慎、版籍奉還と隠居を確認。
    - 該当箇所: 人物紹介
    - 内容確認日: 2026-09-12
 
-237. [山口県立山口博物館「奇兵隊の軍服と袖印」](https://www.yamahaku.pref.yamaguchi.lg.jp/pdf/kenkyuhoukoku/44-41-60.pdf) — 毛利慶親が1864年11月4日に敬親へ改名した日付を確認。
+239. [山口県立山口博物館「奇兵隊の軍服と袖印」](https://www.yamahaku.pref.yamaguchi.lg.jp/pdf/kenkyuhoukoku/44-41-60.pdf) — 毛利慶親が1864年11月4日に敬親へ改名した日付を確認。
    - 該当箇所: 研究報告44号（2018年）56頁（8）元森熊次郎書簡
    - 内容確認日: 2026-09-12
 
-238. [同志社大学「新島八重」](https://www.doshisha.ac.jp/information/neesima/yae/index.html) — 兄覚馬との関係と会津籠城を確認。離縁時期は本文と年表で説明が異なるため日付を確定しない。
+240. [同志社大学「新島八重」](https://www.doshisha.ac.jp/information/neesima/yae/index.html) — 兄覚馬との関係と会津籠城を確認。離縁時期は本文と年表で説明が異なるため日付を確定しない。
    - 該当箇所: 生涯／八重のあゆみ 1845・1865・1868・1871・1876年
    - 内容確認日: 2026-09-12
 
-239. [国立国会図書館「新島八重」](https://www.ndl.go.jp/portrait/datas/6038/) — 生没年、山本姓、会津籠城、肖像を確認。
+241. [国立国会図書館「新島八重」](https://www.ndl.go.jp/portrait/datas/6038/) — 生没年、山本姓、会津籠城、肖像を確認。
    - 該当箇所: 生没年・別称・解説・肖像
    - 内容確認日: 2026-09-12
 
-240. [国立国会図書館「鍋島直正」](https://www.ndl.go.jp/portrait/datas/154/) — 佐賀藩主、洋式大砲、公武合体への関与を確認。生年月日は西暦換算で1815年、旧暦で1814年。 肖像2枚目と採録資料「近世名士写真 其2」（1935年）を確認。掲載画像は幅160pxへ縮小・JPEG圧縮し、構図・色調は変更していない。
+242. [国立国会図書館「鍋島直正」](https://www.ndl.go.jp/portrait/datas/154/) — 佐賀藩主、洋式大砲、公武合体への関与を確認。生年月日は西暦換算で1815年、旧暦で1814年。 肖像2枚目と採録資料「近世名士写真 其2」（1935年）を確認。掲載画像は幅160pxへ縮小・JPEG圧縮し、構図・色調は変更していない。
    - 該当箇所: 生没年・別称・解説／肖像2枚目／出典「近世名士写真 其2」
    - 内容確認日: 2026-09-27
 
-241. [佐賀市観光協会「鍋島直正」](https://www.sagabai.com/main.php/3767.html) — 藩政改革、洋学・医療教育、軍備、1861年の隠居と閑叟の号を確認。
+243. [佐賀市観光協会「鍋島直正」](https://www.sagabai.com/main.php/3767.html) — 藩政改革、洋学・医療教育、軍備、1861年の隠居と閑叟の号を確認。
    - 該当箇所: あらゆる方面へ及ぶ藩政改革／最先端の軍事技術で明治維新へ／年表／敵か？味方か？
    - 内容確認日: 2026-09-12
 
-242. [長岡市「河井継之助の足跡」](https://www.city.nagaoka.niigata.jp/kankou/rekishi/ijin/jinbutu6.html) — 生没年、藩政改革、中立交渉後の抗戦、長岡城奪還と死去を確認。
+244. [長岡市「河井継之助の足跡」](https://www.city.nagaoka.niigata.jp/kankou/rekishi/ijin/jinbutu6.html) — 生没年、藩政改革、中立交渉後の抗戦、長岡城奪還と死去を確認。
    - 該当箇所: 河井継之助の足跡 本文
    - 内容確認日: 2026-09-12
 
-243. [長岡観光ナビ「河井継之助の叶わぬ夢」](https://nagaoka-navi.or.jp/feature/samurai/kawai) — 1865年の郡奉行就任、小千谷会談、北越の戦い、1868年8月16日の死去を確認。推測された動機や台詞は採用しない。
+245. [長岡観光ナビ「河井継之助の叶わぬ夢」](https://nagaoka-navi.or.jp/feature/samurai/kawai) — 1865年の郡奉行就任、小千谷会談、北越の戦い、1868年8月16日の死去を確認。推測された動機や台詞は採用しない。
    - 該当箇所: 小千谷会談／次々と改革に着手する継之助／長岡の発展を夢み
    - 内容確認日: 2026-09-12
 
-244. [在フランス日本国大使館「第二代駐日フランス全権公使・レオン・ロッシュ」](https://www.fr.emb-japan.go.jp/files/100479000.pdf) — 1864年の着任と幕府への技術・軍事支援を確認。
+246. [在フランス日本国大使館「第二代駐日フランス全権公使・レオン・ロッシュ」](https://www.fr.emb-japan.go.jp/files/100479000.pdf) — 1864年の着任と幕府への技術・軍事支援を確認。
    - 該当箇所: 1頁 1864年着任／横須賀・横浜・軍事顧問団
    - 内容確認日: 2026-09-12
 
-245. [財務省 ファイナンス2019年1月号「ロシュ第2代駐日フランス公使」](https://www.mof.go.jp/public_relations/finance/denshi/201901/pageindices/index24.html) — 1864年着任、幕府支援と1868年6月の帰国を確認。
+247. [財務省 ファイナンス2019年1月号「ロシュ第2代駐日フランス公使」](https://www.mof.go.jp/public_relations/finance/denshi/201901/pageindices/index24.html) — 1864年着任、幕府支援と1868年6月の帰国を確認。
    - 該当箇所: 19頁 ロシュ第2代駐日フランス公使の墓地探し
    - 内容確認日: 2026-09-12
 
-246. [財務省「路線価でひもとく街の歴史 第48回 神奈川県横須賀市」](https://www.mof.go.jp/public_relations/finance/202402/202402r.html) — 小栗の起案、ロッシュへの支援依頼、1865年の横須賀製鉄所起工を確認。
+248. [財務省「路線価でひもとく街の歴史 第48回 神奈川県横須賀市」](https://www.mof.go.jp/public_relations/finance/202402/202402r.html) — 小栗の起案、ロッシュへの支援依頼、1865年の横須賀製鉄所起工を確認。
    - 該当箇所: 幕府が遺した産業遺産「横須賀造船所」
    - 内容確認日: 2026-09-12
 
-247. [国立国会図書館「楠本イネ」](https://www.ndl.go.jp/portrait/datas/6229/) — 蘭方産科医としての経歴、師、1861年の長崎での診療と受講、別称、肖像を確認。
+249. [国立国会図書館「楠本イネ」](https://www.ndl.go.jp/portrait/datas/6229/) — 蘭方産科医としての経歴、師、1861年の長崎での診療と受講、別称、肖像を確認。
    - 該当箇所: 生没年・別称・解説・肖像
    - 内容確認日: 2026-09-12
 
-248. [西予市「楠本イネの生涯について」](https://www.city.seiyo.ehime.jp/material/files/group/7/ine.pdf) — 1854〜57年の学習、長崎帰郷、伊篤への改名、1866年の産科学習を確認。幼少期の修学年は後年の市の調査と異なるため採用しない。
+250. [西予市「楠本イネの生涯について」](https://www.city.seiyo.ehime.jp/material/files/group/7/ine.pdf) — 1854〜57年の学習、長崎帰郷、伊篤への改名、1866年の産科学習を確認。幼少期の修学年は後年の市の調査と異なるため採用しない。
    - 該当箇所: 2頁 1854〜57年／1858〜59年／1864年／1866年
    - 内容確認日: 2026-09-12
 
-249. [長崎市「ナガジン 楠本イネ開業地跡」](https://www.city.nagasaki.lg.jp/nagazine/hakken0509/index1.html) — 1859年の長崎帰郷と開業を確認。
+251. [長崎市「ナガジン 楠本イネ開業地跡」](https://www.city.nagasaki.lg.jp/nagazine/hakken0509/index1.html) — 1859年の長崎帰郷と開業を確認。
    - 該当箇所: 楠本イネ開業地跡 MAP7
    - 内容確認日: 2026-09-12
 
-250. [土佐清水市「ジョン万次郎の歴史」](https://www.city.tosashimizu.kochi.jp/kanko/g01_jyonman03.html) — 1853年の幕府召喚、航海教育、咸臨丸、薩摩の開成所を確認。年表の年欄と本文にずれがある箇所は断定しない。
+252. [土佐清水市「ジョン万次郎の歴史」](https://www.city.tosashimizu.kochi.jp/kanko/g01_jyonman03.html) — 1853年の幕府召喚、航海教育、咸臨丸、薩摩の開成所を確認。年表の年欄と本文にずれがある箇所は断定しない。
    - 該当箇所: 1853・1855〜57・1860・1861・1866・1869年
    - 内容確認日: 2026-09-12
 
-251. [国立国会図書館「中浜万次郎」](https://www.ndl.go.jp/portrait/datas/6123/) — 生没年、漂流と渡米、帰国、通訳・教育の経歴を確認。
+253. [国立国会図書館「中浜万次郎」](https://www.ndl.go.jp/portrait/datas/6123/) — 生没年、漂流と渡米、帰国、通訳・教育の経歴を確認。
    - 該当箇所: 生没年・別称・解説
    - 内容確認日: 2026-09-12
 
-252. [京都市「大政奉還150周年記念 幕末維新スタンプラリー」](https://www.city.kyoto.lg.jp/bunshi/cmsfiles/contents/0000233/233968/zennkokurarry.pdf) — 土佐の建白、慶喜の上表と勅許の順序を確認。船中八策の成立経緯は断定しない。
+254. [京都市「大政奉還150周年記念 幕末維新スタンプラリー」](https://www.city.kyoto.lg.jp/bunshi/cmsfiles/contents/0000233/233968/zennkokurarry.pdf) — 土佐の建白、慶喜の上表と勅許の順序を確認。船中八策の成立経緯は断定しない。
    - 該当箇所: 14〜16頁 船中八策／大政奉還／龍馬死す
    - 内容確認日: 2026-09-12
 
-253. [若松城管理事務所「幕末・戊辰戦争」](https://www.tsurugajo.com/tsurugajo/aizu-history/bakumatsu/) — 1868年8月23日の城下侵入、籠城、9月22日の容保の降伏を確認。略年表の禁門の変の年の誤記は採用しない。
+255. [若松城管理事務所「幕末・戊辰戦争」](https://www.tsurugajo.com/tsurugajo/aizu-history/bakumatsu/) — 1868年8月23日の城下侵入、籠城、9月22日の容保の降伏を確認。略年表の禁門の変の年の誤記は採用しない。
    - 該当箇所: 会津の悲劇／一ヶ月に及ぶ籠城
    - 内容確認日: 2026-09-12
 
-254. [国立国会図書館「大政奉還」](https://www.kodomo.go.jp/yareki/theme/theme_05.html) — 土佐藩の建白と大政奉還、王政復古を別の出来事として確認。
+256. [国立国会図書館「大政奉還」](https://www.kodomo.go.jp/yareki/theme/theme_05.html) — 土佐藩の建白と大政奉還、王政復古を別の出来事として確認。
    - 該当箇所: 1「山内容堂は徳川慶喜に大政奉還をすすめる」、3「徳川慶喜が大政奉還を宣言する」、4「王政復古の大号令が発せられる」
    - 内容確認日: 2026-09-24
 
-255. [千葉県立関宿城博物館「関宿藩と関宿」](https://www.chiba-muse.or.jp/SEKIYADO/recommended-content/page-1519868197443/) — 老中の幕政・制度整備と朝廷への対応を確認。
+257. [千葉県立関宿城博物館「関宿藩と関宿」](https://www.chiba-muse.or.jp/SEKIYADO/recommended-content/page-1519868197443/) — 老中の幕政・制度整備と朝廷への対応を確認。
    - 該当箇所: 「久世広之の幕政参加」「久世広周と公武合体」
    - 内容確認日: 2026-09-24
 
-256. [山梨県立図書館回答「江戸時代の町奉行、勘定奉行が一覧で分かる資料が見たい。」（国立国会図書館レファレンス協同データベース）](https://crd.ndl.go.jp/reference/entry/index.php?id=1000243710&page=ref_view) — 国史大辞典などを挙げる図書館の回答から、勘定奉行の職掌を確認。
+258. [山梨県立図書館回答「江戸時代の町奉行、勘定奉行が一覧で分かる資料が見たい。」（国立国会図書館レファレンス協同データベース）](https://crd.ndl.go.jp/reference/entry/index.php?id=1000243710&page=ref_view) — 国史大辞典などを挙げる図書館の回答から、勘定奉行の職掌を確認。
    - 該当箇所: 「回答」勘定奉行の職掌（幕府財政一般・直轄領の支配）
    - 内容確認日: 2026-09-24
 
-257. [徳島県立博物館「藩政のもとで」](https://museum.bunmori.tokushima.jp/josetsuten/5.htm) — 藩の領地・支配機構と徳島藩の政治のしくみを確認。
+259. [徳島県立博物館「藩政のもとで」](https://museum.bunmori.tokushima.jp/josetsuten/5.htm) — 藩の領地・支配機構と徳島藩の政治のしくみを確認。
    - 該当箇所: 「藩のしくみ」「政治と経済のしくみ」
    - 内容確認日: 2026-09-24
 
-258. [彦根市「第35回 殿様が不在でも…」](https://www.city.hikone.lg.jp/kakuka/kikakushinko/10/4/2_2/5/1/29709.html) — 彦根藩の家老の職掌と藩主不在時の政務、時期ごとの人数の違いを確認。
+260. [彦根市「第35回 殿様が不在でも…」](https://www.city.hikone.lg.jp/kakuka/kikakushinko/10/4/2_2/5/1/29709.html) — 彦根藩の家老の職掌と藩主不在時の政務、時期ごとの人数の違いを確認。
    - 該当箇所: 本文第1〜3段落（家老の重要案件の審議と藩主不在時の政治）
    - 内容確認日: 2026-09-24
 
-259. [大阪大学適塾記念センター「緒方洪庵」](https://www.tekijuku.osaka-u.ac.jp/ja/tekijuku/koan) — 医学教育、種痘、治療書の刊行と幕府での役職を確認。
+261. [大阪大学適塾記念センター「緒方洪庵」](https://www.tekijuku.osaka-u.ac.jp/ja/tekijuku/koan) — 医学教育、種痘、治療書の刊行と幕府での役職を確認。
    - 該当箇所: 本文：適塾・除痘館、1858年の虎狼痢治準、1862年の幕府出仕、1863年の死去
    - 内容確認日: 2026-09-25
 
-260. [慶應義塾「福澤諭吉」](https://www.keio.ac.jp/ja/about/philosophy/fukuzawa/) — 適塾、江戸開塾、渡米・渡欧、翻訳、慶應義塾の命名と幕臣を辞めた時期。
+262. [慶應義塾「福澤諭吉」](https://www.keio.ac.jp/ja/about/philosophy/fukuzawa/) — 適塾、江戸開塾、渡米・渡欧、翻訳、慶應義塾の命名と幕臣を辞めた時期。
    - 該当箇所: 福澤諭吉年表：1835年、1854〜1869年、1901年
    - 内容確認日: 2026-09-25
 
-261. [国立国会図書館 典拠データ「斎藤一」](https://id.ndl.go.jp/auth/ndlna/00695102) — 1844–1915、山口一・藤田五郎の異名を確認。
+263. [国立国会図書館 典拠データ「斎藤一」](https://id.ndl.go.jp/auth/ndlna/00695102) — 1844–1915、山口一・藤田五郎の異名を確認。
    - 該当箇所: 標目、別名、生没年
    - 内容確認日: 2026-09-25
 
-262. [福島県「斎藤一の足跡」](https://www.yae-mottoshiritai.jp/ashiato/saitou-hajime.html) — 新選組としての転戦と会津での指揮を確認。逸話の発言は引用しない。
+264. [福島県「斎藤一の足跡」](https://www.yae-mottoshiritai.jp/ashiato/saitou-hajime.html) — 新選組としての転戦と会津での指揮を確認。逸話の発言は引用しない。
    - 該当箇所: 斎藤一の人物紹介：鳥羽・伏見、甲州勝沼、会津、土方に代わる指揮
-   - 内容確認日: 2026-09-25
+   - 内容確認日: 2026-09-30
 
-263. [会津若松市「会津と新選組」](https://www.city.aizuwakamatsu.lg.jp/docs/2022111600014/) — 結成と政変への出動、斎藤の離隊・復帰と改名、会津での指揮。斎藤の没年は本ページを採らずNDL典拠に従う。密偵説・殺人逸話は採用しない。
+265. [会津若松市「会津と新選組」](https://www.city.aizuwakamatsu.lg.jp/docs/2022111600014/) — 結成と政変への出動、斎藤の離隊・復帰と改名、会津での指揮。斎藤の没年は本ページを採らずNDL典拠に従う。密偵説・殺人逸話は採用しない。
    - 該当箇所: 新選組の活躍 京都編・会津編／ゆかりの人物：近藤勇・斎藤一
-   - 内容確認日: 2026-09-25
+   - 内容確認日: 2026-09-30
 
-264. [旧前川邸「山南敬助切腹之間」](https://kyu-maekawatei.com/shiseki/yamanami/) — 新選組総長と切腹の時期を確認。脱走の理由やその有無にも諸説があるため動機を断定しない。
+266. [旧前川邸「山南敬助切腹之間」](https://kyu-maekawatei.com/shiseki/yamanami/) — 新選組総長と切腹の時期を確認。脱走の理由やその有無にも諸説があるため動機を断定しない。
    - 該当箇所: 本文：元治2年2月23日と脱走理由の諸説
    - 内容確認日: 2026-09-25
 
-265. [国立国会図書館 典拠データ「芹沢鴨」](https://id.ndl.go.jp/auth/ndlna/001223230) — 芹澤鴨の異体字、1863年没、新撰組局長。生年を推測しない。
+267. [国立国会図書館 典拠データ「芹沢鴨」](https://id.ndl.go.jp/auth/ndlna/001223230) — 芹澤鴨の異体字、1863年没、新撰組局長。生年を推測しない。
    - 該当箇所: 標目、別名、没年、職業
    - 内容確認日: 2026-09-25
 
-266. [小島資料館「近藤勇・芹沢鴨書簡」（NDLサーチ）](https://ndlsearch.ndl.go.jp/books/R100000094-I224742) — 大阪での浪士取締などを報告した連名書簡。
+268. [小島資料館「近藤勇・芹沢鴨書簡」（NDLサーチ）](https://ndlsearch.ndl.go.jp/books/R100000094-I224742) — 大阪での浪士取締などを報告した連名書簡。
    - 該当箇所: 資料解説：文久3年6月3日付、近藤勇・芹沢鴨連名、近藤筆
    - 内容確認日: 2026-09-25
 
-267. [京都府「町代日記・壬生浪士頭2人ほか暗殺」](https://www.pref.kyoto.jp/net-tenran/image/k13tyoudai.html) — 芹沢らの殺害を記したとされる町代日記。実行者や動機をこの史料だけから確定しない。
+269. [京都府「町代日記・壬生浪士頭2人ほか暗殺」](https://www.pref.kyoto.jp/net-tenran/image/k13tyoudai.html) — 芹沢らの殺害を記したとされる町代日記。実行者や動機をこの史料だけから確定しない。
    - 該当箇所: 文久3年9月21日の記録と解説
    - 内容確認日: 2026-09-25
 
-268. [国立国会図書館「日本と西洋の登山・オールコックとサトウ」](https://www.ndl.go.jp/kaleido/entry/18/1.html) — オールコック1809–1897、1859年の総領事としての来日と英国公使。サトウ1843–1929、1862年に通訳生として来日。登山日の換算は本データでは用いない。
+270. [国立国会図書館「日本と西洋の登山・オールコックとサトウ」](https://www.ndl.go.jp/kaleido/entry/18/1.html) — オールコック1809–1897、1859年の総領事としての来日と英国公使。サトウ1843–1929、1862年に通訳生として来日。登山日の換算は本データでは用いない。
    - 該当箇所: ラザフォード・オールコック／アーネスト・サトウ：生没年、総領事・公使と通訳生
    - 内容確認日: 2026-09-25
 
-269. [厚木市郷土博物館「アーネスト・サトウ」](https://www.city.atsugi.kanagawa.jp/atsugicitymuseum/2/greatfiguresinhistory/47401.html) — パークス着任後の通訳としての関係に用いる。来日時からパークスに仕えたという意味には用いない。
+271. [厚木市郷土博物館「アーネスト・サトウ」](https://www.city.atsugi.kanagawa.jp/atsugicitymuseum/2/greatfiguresinhistory/47401.html) — パークス着任後の通訳としての関係に用いる。来日時からパークスに仕えたという意味には用いない。
    - 該当箇所: 人物紹介：パークスの通訳と諸藩との仲介
    - 内容確認日: 2026-09-25
 
-270. [楠家重敏「E. M. サトウ蒐集ジャパノロジー資料について」英学史研究15号](https://www.jstage.jst.go.jp/article/jeigakushi1969/1983/15/1983_15_93/_pdf/-char/ja) — 1869年の英国への一時帰国を確認。日本での通訳活動をそのまま持ち越さない。
+272. [楠家重敏「E. M. サトウ蒐集ジャパノロジー資料について」英学史研究15号](https://www.jstage.jst.go.jp/article/jeigakushi1969/1983/15/1983_15_93/_pdf/-char/ja) — 1869年の英国への一時帰国を確認。日本での通訳活動をそのまま持ち越さない。
    - 該当箇所: p.96（PDF4ページ）：京都での通訳・翻訳／p.98（PDF6ページ）：1869年2月24日の賜暇帰国
    - 内容確認日: 2026-09-25
 
-271. [グラバー園「旧グラバー住宅 ガイドテキスト」](https://glover-garden.jp/wordpress/wp-content/themes/glovergarden/assets/img/doc/guidetext.pdf) — 1859年来崎、1838–1911、1863年の住宅、1865年の渡航支援、1868年の炭鉱・修船事業。商会設立年は他資料と異なるため断定しない。
+273. [グラバー園「旧グラバー住宅 ガイドテキスト」](https://glover-garden.jp/wordpress/wp-content/themes/glovergarden/assets/img/doc/guidetext.pdf) — 1859年来崎、1838–1911、1863年の住宅、1865年の渡航支援、1868年の炭鉱・修船事業。商会設立年は他資料と異なるため断定しない。
    - 該当箇所: 冊子p.1・5・7・9（PDF2・6・5・3ページ）：居留地、人物、家系図、年表
    - 内容確認日: 2026-09-25
 
-272. [国立国会図書館 ジャパンサーチ・ギャラリー「グラバー」](https://jpsearch.go.jp/gallery/ndl-RRm2vVAOoKHAvp) — 貿易商としての活動、長州留学生への支援、龍馬の社中との取引、小松らとの修船事業を確認。
+274. [国立国会図書館 ジャパンサーチ・ギャラリー「グラバー」](https://jpsearch.go.jp/gallery/ndl-RRm2vVAOoKHAvp) — 貿易商としての活動、長州留学生への支援、龍馬の社中との取引、小松らとの修船事業を確認。
    - 該当箇所: 人物解説／坂本龍馬／高島炭坑一件／長崎 小菅修船場跡／町田久成像
    - 内容確認日: 2026-09-25
 
-273. [高杉晋作｜近代日本人の肖像（国立国会図書館）](https://www.ndl.go.jp/portrait/datas/121) — 本人の肖像としての帰属を確認。撮影・制作時期は未確認。
+275. [高杉晋作｜近代日本人の肖像（国立国会図書館）](https://www.ndl.go.jp/portrait/datas/121) — 本人の肖像としての帰属を確認。撮影・制作時期は未確認。
    - 該当箇所: 肖像1枚目・生没年・解説／肖像1枚目
    - 内容確認日: 2026-09-25
 
-274. [榎本武揚｜近代日本人の肖像（国立国会図書館）](https://www.ndl.go.jp/portrait/datas/28) — 本人の肖像としての帰属を確認。撮影・制作時期は未確認。
+276. [榎本武揚｜近代日本人の肖像（国立国会図書館）](https://www.ndl.go.jp/portrait/datas/28) — 本人の肖像としての帰属を確認。撮影・制作時期は未確認。
    - 該当箇所: 肖像1枚目・生没年・解説／肖像1枚目
    - 内容確認日: 2026-09-25
 
-275. [福沢諭吉｜近代日本人の肖像（国立国会図書館）](https://www.ndl.go.jp/portrait/datas/185) — 本人の肖像としての帰属を確認。撮影・制作時期は未確認。
+277. [福沢諭吉｜近代日本人の肖像（国立国会図書館）](https://www.ndl.go.jp/portrait/datas/185) — 本人の肖像としての帰属を確認。撮影・制作時期は未確認。
    - 該当箇所: 肖像1枚目・生没年・解説／肖像1枚目
    - 内容確認日: 2026-09-25
 
-276. [横浜市中央図書館「全権」](https://www.city.yokohama.lg.jp/kurashi/kyodo-manabi/library/shiru/sakoku/kaei/zenken.html) — 和親条約の日本側全権は林・井戸・伊沢・鵜殿の4名。引用された人物評は掲載しない。
+278. [横浜市中央図書館「全権」](https://www.city.yokohama.lg.jp/kurashi/kyodo-manabi/library/shiru/sakoku/kaei/zenken.html) — 和親条約の日本側全権は林・井戸・伊沢・鵜殿の4名。引用された人物評は掲載しない。
    - 該当箇所: 「日本側の全権」定義と4人の氏名、林復斎の生没年
    - 内容確認日: 2026-09-25
 
-277. [二松学舎大学附属図書館 展示図録：山田方谷書簡](https://www.nishogakusha-u.ac.jp/library/pdf/kankobutu_16.pdf) — 1858年4月の三島中洲の林復斎への入門と昌平坂学問所入寮。林の大学頭在職・別名・生没年を確認。
+279. [二松学舎大学附属図書館 展示図録：山田方谷書簡](https://www.nishogakusha-u.ac.jp/library/pdf/kankobutu_16.pdf) — 1858年4月の三島中洲の林復斎への入門と昌平坂学問所入寮。林の大学頭在職・別名・生没年を確認。
    - 該当箇所: 冊子11頁（PDF12頁）「6 山田方谷書簡 三島（中洲）宛」
    - 内容確認日: 2026-09-25
 
-278. [国立国会図書館典拠データ「岩瀬, 忠震, 1818-1861」](https://id.ndl.go.jp/auth/ndlna/00315177) — 岩瀬忠震の読み、生没年、篤三郎などの別名を確認。
+280. [国立国会図書館典拠データ「岩瀬, 忠震, 1818-1861」](https://id.ndl.go.jp/auth/ndlna/00315177) — 岩瀬忠震の読み、生没年、篤三郎などの別名を確認。
    - 該当箇所: 標目・カナ読み・別名
    - 内容確認日: 2026-09-25
 
-279. [新城市設楽原歴史資料館「岩瀬忠震筆『藤に芍薬』」](https://www.city.shinshiro.lg.jp/mokuteki/shisetu/shiryokan/shitaragahara/fujinisyakuyaku.html) — 1859年の隠居後は外交交渉中と表示しない。月は旧暦のため西暦の月として扱わない。
+281. [新城市設楽原歴史資料館「岩瀬忠震筆『藤に芍薬』」](https://www.city.shinshiro.lg.jp/mokuteki/shisetu/shiryokan/shitaragahara/fujinisyakuyaku.html) — 1859年の隠居後は外交交渉中と表示しない。月は旧暦のため西暦の月として扱わない。
    - 該当箇所: 本文：安政6年8月の隠居、鴎所の号、文久元年の作品と死去
    - 内容確認日: 2026-09-25
 
-280. [千代田区観光協会「井上清直」](https://visit-chiyoda.tokyo/app/history/detail/11) — 生年・読み・信濃守・条約調印・役職を確認。没年の1867表記は旧暦慶応3年と区別する。
+282. [千代田区観光協会「井上清直」](https://visit-chiyoda.tokyo/app/history/detail/11) — 生年・読み・信濃守・条約調印・役職を確認。没年の1867表記は旧暦慶応3年と区別する。
    - 該当箇所: 人物解説：1855年の下田奉行、1858年の調印、歴任した奉行職、1866年の町奉行
    - 内容確認日: 2026-09-25
 
-281. [幕末幕臣動向「井上清直」](https://bakushindoko.jp/%E3%81%82%E8%A1%8C/%E4%BA%95%E4%B8%8A%E6%B8%85%E7%9B%B4/) — 役職年表を観光協会解説と照合。慶応3年12月28日は1868年1月22日。川路聖謨の弟であることは史料翻刻による。
+283. [幕末幕臣動向「井上清直」](https://bakushindoko.jp/%E3%81%82%E8%A1%8C/%E4%BA%95%E4%B8%8A%E6%B8%85%E7%9B%B4/) — 役職年表を観光協会解説と照合。慶応3年12月28日は1868年1月22日。川路聖謨の弟であることは史料翻刻による。
    - 該当箇所: 役職通称遍歴（1859〜1868年）、墓碑の命日、木村芥舟「幕府名士小伝」翻刻
    - 内容確認日: 2026-09-25
 
-282. [外務省掲載「プロテクション・ガイドライン」](https://www.mofa.go.jp/mofaj/gaiko/oda/shimin/oda_ngo/shien/jindo_protection/pdfs/guideline_j.pdf) — 署名後に国が内容を最終確認して同意する手続の定義だけを用いる。現代の国内手続を幕末へ適用しない。
+284. [外務省掲載「プロテクション・ガイドライン」](https://www.mofa.go.jp/mofaj/gaiko/oda/shimin/oda_ngo/shien/jindo_protection/pdfs/guideline_j.pdf) — 署名後に国が内容を最終確認して同意する手続の定義だけを用いる。現代の国内手続を幕末へ適用しない。
    - 該当箇所: 冊子2頁（PDF4頁）「条約」の説明中の批准の定義
    - 内容確認日: 2026-09-25
 
-283. [大正大学「日本史教材」日米修好通商条約](https://kokokara.tais.ac.jp/common/doc/feel/oc/Japanese_history_teaching_materials.pdf) — 貿易章程に従う関税と、日本人に対して法を犯した米国人を米国領事裁判所が裁く規定を確認。
+285. [大正大学「日本史教材」日米修好通商条約](https://kokokara.tais.ac.jp/common/doc/feel/oc/Japanese_history_teaching_materials.pdf) — 貿易章程に従う関税と、日本人に対して法を犯した米国人を米国領事裁判所が裁く規定を確認。
    - 該当箇所: 58頁「日米修好通商条約」第4・6条と現代語訳
    - 内容確認日: 2026-09-25
 
-284. [メトロポリタン美術館「Commodore Matthew Calbraith Perry」](https://www.metmuseum.org/art/collection/search/283184) — Mathew B. Brady撮影、1856〜1858年、作品番号2005.100.84。顔と上半身が大きく写る所蔵館提供画像を使用。作品ページと公式APIの目録・画像URLを照合。
+286. [メトロポリタン美術館「Commodore Matthew Calbraith Perry」](https://www.metmuseum.org/art/collection/search/283184) — Mathew B. Brady撮影、1856〜1858年、作品番号2005.100.84。顔と上半身が大きく写る所蔵館提供画像を使用。作品ページと公式APIの目録・画像URLを照合。
    - 該当箇所: Artwork Details: Artist, Date, Credit Line, Object Number／画像のPublic Domain表示
    - 内容確認日: 2026-09-25
 
-285. [メトロポリタン美術館「Open Access at The Met」](https://www.metmuseum.org/hubs/open-access) — Public Domain作品画像と基本データのCC0による公開・再利用方針。ペリー肖像は作品ページでもPublic Domainと表示されている。
+287. [メトロポリタン美術館「Open Access at The Met」](https://www.metmuseum.org/hubs/open-access) — Public Domain作品画像と基本データのCC0による公開・再利用方針。ペリー肖像は作品ページでもPublic Domainと表示されている。
    - 該当箇所: 冒頭のOpen Access InitiativeとCreative Commons Zero（CC0）の説明
    - 内容確認日: 2026-09-25
 
-286. [米国議会図書館「Hon. Townsend Harris」](https://www.loc.gov/pictures/item/2017896747/) — 所蔵館の掲載本文を検索サービス経由で確認。直接接続は403。掲載画像とメタデータを照合し、所蔵館提供の縮小画像を使用。
+288. [米国議会図書館「Hon. Townsend Harris」](https://www.loc.gov/pictures/item/2017896747/) — 所蔵館の掲載本文を検索サービス経由で確認。直接接続は403。掲載画像とメタデータを照合し、所蔵館提供の縮小画像を使用。
    - 該当箇所: About This Item: Title, Date Created/Published, Notes, Rights Advisory
    - 内容確認日: 2026-09-25
 
-287. [横浜開港資料館「開港のひろば」117号：生麦事件展](https://kaikou.yokohama-history.org/kanpou/%E3%80%8C%E9%96%8B%E6%B8%AF%E3%81%AE%E3%81%B2%E3%82%8D%E3%81%B0%E3%80%8D%E7%AC%AC117%E5%8F%B7/) — 1862年9月14日（旧暦8月21日）。上海の商人リチャードソンが死亡、横浜の商人2人が負傷、同行女性は無傷。
+289. [横浜開港資料館「開港のひろば」117号：生麦事件展](https://kaikou.yokohama-history.org/kanpou/%E3%80%8C%E9%96%8B%E6%B8%AF%E3%81%AE%E3%81%B2%E3%82%8D%E3%81%B0%E3%80%8D%E7%AC%AC117%E5%8F%B7/) — 1862年9月14日（旧暦8月21日）。上海の商人リチャードソンが死亡、横浜の商人2人が負傷、同行女性は無傷。
    - 該当箇所: 企画展「生麦事件 激震、幕末日本」：事件の日付、4人の英国人と被害
    - 内容確認日: 2026-09-25
 
-288. [横浜開港資料館：リチャードソンの略歴と家族の書簡](https://kaikou.yokohama-history.org/kanpou/%E3%80%8C%E9%96%8B%E6%B8%AF%E3%81%AE%E3%81%B2%E3%82%8D%E3%81%B0%E3%80%8D%E7%AC%AC117%E5%8F%B7/2/) — 家族書簡展の解説。生年は1833年。図1は父親の肖像であり本人の画像には使わない。
+290. [横浜開港資料館：リチャードソンの略歴と家族の書簡](https://kaikou.yokohama-history.org/kanpou/%E3%80%8C%E9%96%8B%E6%B8%AF%E3%81%AE%E3%81%B2%E3%82%8D%E3%81%B0%E3%80%8D%E7%AC%AC117%E5%8F%B7/2/) — 家族書簡展の解説。生年は1833年。図1は父親の肖像であり本人の画像には使わない。
    - 該当箇所: 「リチャードソンの略歴」「リチャードソンの肖像」
    - 内容確認日: 2026-09-25
 
-289. [鹿児島県「生麦事件」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/namamugi.html) — 事件の加害を行列の慣行で正当化しない。幕府への10万ポンドと薩摩への2万5千ポンドを区別。
+291. [鹿児島県「生麦事件」](https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/namamugi.html) — 事件の加害を行列の慣行で正当化しない。幕府への10万ポンドと薩摩への2万5千ポンドを区別。
    - 該当箇所: 本文：久光一行の帰路、幕府と薩摩それぞれへの賠償要求
    - 内容確認日: 2026-09-25
 
-290. [米国務省 FRUS：1863年4月10日プルーイン書簡](https://history.state.gov/historicaldocuments/frus1863p2/d374) — 当時の外交文書。ニールの職名と幕府・薩摩への要求を確認。4月の艦隊隻数を8月の鹿児島来航へ流用しない。
+292. [米国務省 FRUS：1863年4月10日プルーイン書簡](https://history.state.gov/historicaldocuments/frus1863p2/d374) — 当時の外交文書。ニールの職名と幕府・薩摩への要求を確認。4月の艦隊隻数を8月の鹿児島来航へ流用しない。
    - 該当箇所: pp.1071–1074：英国の要求、付録ニールの4月7日書簡
    - 内容確認日: 2026-09-25
 
-291. [米国務省 FRUS：1863年8月26日プルーイン書簡](https://history.state.gov/historicaldocuments/frus1864p3/d451) — ニールから聞いた経過を報告した外交文書。英国側の動機・評価を中立的な確定事実へ置き換えない。
+293. [米国務省 FRUS：1863年8月26日プルーイン書簡](https://history.state.gov/historicaldocuments/frus1864p3/d451) — ニールから聞いた経過を報告した外交文書。英国側の動機・評価を中立的な確定事実へ置き換えない。
    - 該当箇所: pp.445–447：鹿児島への派遣、ニールからキューパーへの引継ぎ、汽船拿捕と砲撃
    - 内容確認日: 2026-09-25
 
-292. [米国務省 FRUS：1863年11月16日の薩摩賠償合意報告](https://history.state.gov/historicaldocuments/frus1864p3/d457) — 支払い合意の報告として用いる。実際の送金日まで確定した資料としては扱わない。
+294. [米国務省 FRUS：1863年11月16日の薩摩賠償合意報告](https://history.state.gov/historicaldocuments/frus1864p3/d457) — 支払い合意の報告として用いる。実際の送金日まで確定した資料としては扱わない。
    - 該当箇所: p.458：2万5千ポンド支払いへの合意と犯人引渡し要求
    - 内容確認日: 2026-09-25
 
-293. [ビクトリア大学 Colonial Despatches：Augustus L. Kuper](https://bcgenesis.uvic.ca/kuper.html) — Oxford Dictionary of National Biographyを参照した人物解説。階級の変遷はこの短い表示では断定しない。
+295. [ビクトリア大学 Colonial Despatches：Augustus L. Kuper](https://bcgenesis.uvic.ca/kuper.html) — Oxford Dictionary of National Biographyを参照した人物解説。階級の変遷はこの短い表示では断定しない。
    - 該当箇所: 生没年月日、1861年以降の指揮官職と1865年の帰国
    - 内容確認日: 2026-09-25
 
-294. [Japan Society：Hugh Cortazzi著作紹介のニール項目](https://elibrary.japansociety.org.uk/index.php?func=author&name=Cortazzi%2C+Hugh) — 公開紹介文で1812–1866とオールコック休暇中の代理を確認。ログインが必要な章本文は未確認で、経歴の細部には用いない。
+296. [Japan Society：Hugh Cortazzi著作紹介のニール項目](https://elibrary.japansociety.org.uk/index.php?func=author&name=Cortazzi%2C+Hugh) — 公開紹介文で1812–1866とオールコック休暇中の代理を確認。ログインが必要な章本文は未確認で、経歴の細部には用いない。
    - 該当箇所: British Envoys in Japan 1859–1972：Lt Colonel Edward St John Nealeの紹介文
    - 内容確認日: 2026-09-25
 
-295. [山下琢巳「本学蔵東海道関係浮世絵（三）」](https://www.tsu.ac.jp/media/bulletin44_05.pdf) — 1862年3月の帰国、1864年3月の再来日を確認。生麦事件の日付には本稿の経過日数表現を用いず、横浜開港資料館の解説と照合する。
+297. [山下琢巳「本学蔵東海道関係浮世絵（三）」](https://www.tsu.ac.jp/media/bulletin44_05.pdf) — 1862年3月の帰国、1864年3月の再来日を確認。生麦事件の日付には本稿の経過日数表現を用いず、横浜開港資料館の解説と照合する。
    - 該当箇所: 東京成徳短期大学紀要44号 p.55（PDF3ページ）：1862年3月の帰国、1864年3月の再来日・12月の召還、ニールの代理
    - 内容確認日: 2026-09-25
 
-296. [アーネスト・サトウ A Diplomat in Japan（1921）](https://www.gutenberg.org/files/43541/43541-h/43541-h.htm) — 当事者の回想を公開翻刻で確認。本人の同行・職務と経過に用い、伝聞や推測による責任帰属は採用しない。
+298. [アーネスト・サトウ A Diplomat in Japan（1921）](https://www.gutenberg.org/files/43541/43541-h/43541-h.htm) — 当事者の回想を公開翻刻で確認。本人の同行・職務と経過に用い、伝聞や推測による責任帰属は採用しない。
    - 該当箇所: 第VIII章 pp.84–94：鹿児島遠征／第IX〜XI章 pp.95–125：帰国者の調停、キューパーの通訳、9月5日の開戦・14日の講和
    - 内容確認日: 2026-09-25
 
-297. [米国務省 FRUS：1864年8月10日プルーイン書簡と四か国代表の覚書](https://history.state.gov/historicaldocuments/frus1864p3/d494) — 英国・米国・フランス・オランダの代表による共同方針。外交文書に含まれる日本側の動機の推測や軍事行動の正当化は、そのまま事実認定へ用いない。
+299. [米国務省 FRUS：1864年8月10日プルーイン書簡と四か国代表の覚書](https://history.state.gov/historicaldocuments/frus1864p3/d494) — 英国・米国・フランス・オランダの代表による共同方針。外交文書に含まれる日本側の動機の推測や軍事行動の正当化は、そのまま事実認定へ用いない。
    - 該当箇所: pp.527–534：帰国した長州人による調停／添付2・1864年7月22日覚書と各国代表の署名
    - 内容確認日: 2026-09-25
 
-298. [国土交通省 下関港湾事務所「馬関港開港秘話」](https://www.pa.qsr.mlit.go.jp/shimonoseki/minato/others/pdf/shimonoseki_port_news_vol32.pdf) — 高杉の交渉名、旧暦8月14日の講和、海峡通航・補給・砲台再建禁止、賠償額は別途協議とする条項を確認。紙面のサトウによる人物評は採用しない。
+300. [国土交通省 下関港湾事務所「馬関港開港秘話」](https://www.pa.qsr.mlit.go.jp/shimonoseki/minato/others/pdf/shimonoseki_port_news_vol32.pdf) — 高杉の交渉名、旧暦8月14日の講和、海峡通航・補給・砲台再建禁止、賠償額は別途協議とする条項を確認。紙面のサトウによる人物評は採用しない。
    - 該当箇所: 下関港だより第32号 p.1（PDF2ページ）：元治元年8月の戦闘・宍戸刑馬・講和条件
    - 内容確認日: 2026-09-25
 
-299. [米国務省 FRUS：下関賠償に関する日本使節の覚書](https://history.state.gov/historicaldocuments/frus1873p1v1/d182) — 後年の賠償協議に提出された日本使節の覚書で、協定日・当事者・額を確認。1864年9月の現地講和と区別する。
+301. [米国務省 FRUS：下関賠償に関する日本使節の覚書](https://history.state.gov/historicaldocuments/frus1873p1v1/d182) — 後年の賠償協議に提出された日本使節の覚書で、協定日・当事者・額を確認。1864年9月の現地講和と区別する。
    - 該当箇所: 1873年2月10日ソーントン書簡の添付1冒頭（p.408）：1864年10月22日の300万ドル協定
    - 内容確認日: 2026-09-25
 
-300. [宿毛市・宿毛歴史館「岩村高俊」](https://www.city.sukumo.kochi.jp/docs-26/p0108040611.html) — 生没年、1867年の陸援隊入隊、戊辰戦争での軍監としての北越従軍を確認。後年の県令・知事を幕末の役職へ流用しない。
+302. [宿毛市・宿毛歴史館「岩村高俊」](https://www.city.sukumo.kochi.jp/docs-26/p0108040611.html) — 生没年、1867年の陸援隊入隊、戊辰戦争での軍監としての北越従軍を確認。後年の県令・知事を幕末の役職へ流用しない。
    - 該当箇所: 人物解説冒頭と略年譜（1845年・1867年・1868年・1906年）
    - 内容確認日: 2026-09-25
 
-301. [小千谷市「岩村・河井会見の処」](https://www.city.ojiya.niigata.jp/soshiki/nigiwai/iwamura-kawaikaikennotokoro.html) — 旧暦5月2日の慈眼寺での会談、河井と岩村の役割、旧暦8月16日の河井死去と所在地を確認。岩村の態度や会談時間による人物評は採用しない。
+303. [小千谷市「岩村・河井会見の処」](https://www.city.ojiya.niigata.jp/soshiki/nigiwai/iwamura-kawaikaikennotokoro.html) — 旧暦5月2日の慈眼寺での会談、河井と岩村の役割、旧暦8月16日の河井死去と所在地を確認。岩村の態度や会談時間による人物評は採用しない。
    - 該当箇所: 本文第1〜2段落、所在地「小千谷市平成2丁目3-35」
    - 内容確認日: 2026-09-25
 
-302. [長岡市「ROOTS400 第8号・小千谷談判の真相」](https://www.city.nagaoka.niigata.jp/dpage/nagaoka400/pdf/kaifu400-08_2.pdf) — 長岡側の戦争回避の方針、新政府側の会津追討方針、会談の決裂を確認。台詞の直接引用や人物の性格を原因とする説明はしない。
+304. [長岡市「ROOTS400 第8号・小千谷談判の真相」](https://www.city.nagaoka.niigata.jp/dpage/nagaoka400/pdf/kaifu400-08_2.pdf) — 長岡側の戦争回避の方針、新政府側の会津追討方針、会談の決裂を確認。台詞の直接引用や人物の性格を原因とする説明はしない。
    - 該当箇所: 紙面6〜7頁（PDF4頁）「小千谷談判の真相」。文字抽出が崩れるため紙面画像で確認
    - 内容確認日: 2026-09-25
 
-303. [上越市公文書センター「戊辰戦争と高田藩」](https://www.city.joetsu.niigata.jp/uploaded/attachment/148761.pdf) — 海道軍と山道軍の指揮者、会談前からの戦闘、長岡城の攻防、周辺地域の軍需品の運搬・物資負担を確認。表と本文で異なる米沢降伏日など、今回使わない細部は採用しない。
+305. [上越市公文書センター「戊辰戦争と高田藩」](https://www.city.joetsu.niigata.jp/uploaded/attachment/148761.pdf) — 海道軍と山道軍の指揮者、会談前からの戦闘、長岡城の攻防、周辺地域の軍需品の運搬・物資負担を確認。表と本文で異なる米沢降伏日など、今回使わない細部は採用しない。
    - 該当箇所: 1〜2頁「北越戊辰戦争の概要」・関連年表、3〜4頁「北越戊辰戦争による民衆の負担」
    - 内容確認日: 2026-09-25
 
-304. [国立国会図書館「近代日本人の肖像・大鳥圭介」](https://www.ndl.go.jp/portrait/datas/34/) — 経歴と肖像を確認。生年は1833年と記載され、同館「日記の世界」の1832年と一致しないため確定しない。
+306. [国立国会図書館「近代日本人の肖像・大鳥圭介」](https://www.ndl.go.jp/portrait/datas/34/) — 経歴と肖像を確認。生年は1833年と記載され、同館「日記の世界」の1832年と一致しないため確定しない。
    - 該当箇所: 生没年、解説、掲載肖像
    - 内容確認日: 2026-09-25
 
-305. [国立国会図書館「日記の世界・大鳥圭介」](https://www.ndl.go.jp/nikki/person/otorikeisuke) — 会津救援、箱館での抵抗と降伏後の護送日記を確認。生年は1832年と記載され、「近代日本人の肖像」と不一致。原本日記の全文を読んだとは扱わない。
+307. [国立国会図書館「日記の世界・大鳥圭介」](https://www.ndl.go.jp/nikki/person/otorikeisuke) — 会津救援、箱館での抵抗と降伏後の護送日記を確認。生年は1832年と記載され、「近代日本人の肖像」と不一致。原本日記の全文を読んだとは扱わない。
    - 該当箇所: 「日記の概要」「履歴」。護送日記は明治2年5月18日の五稜郭出発から
    - 内容確認日: 2026-09-25
 
-306. [国立公文書館「激動幕末・砲科新論」](https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/48.html) — 大鳥の西洋兵学の学習、1861年の翻訳書刊行、1868年の歩兵奉行と箱館での抗戦を確認。生年は1833年表記だが、別資料との不一致を保留する。
+308. [国立公文書館「激動幕末・砲科新論」](https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/48.html) — 大鳥の西洋兵学の学習、1861年の翻訳書刊行、1868年の歩兵奉行と箱館での抗戦を確認。生年は1833年表記だが、別資料との不一致を保留する。
    - 該当箇所: 解説第1〜2段落
    - 内容確認日: 2026-09-25
 
-307. [函館市史 通説編2「脱走軍の軍政」](https://adeac.jp/hakodate-city/texthtml/d100020/mp000010-100020/ht011030) — 榎本の総裁、大鳥の陸軍奉行、土方の陸軍奉行並、高松の病院長を組織図で確認。図の範囲は明治2年1月頃とされる。
+309. [函館市史 通説編2「脱走軍の軍政」](https://adeac.jp/hakodate-city/texthtml/d100020/mp000010-100020/ht011030) — 榎本の総裁、大鳥の陸軍奉行、土方の陸軍奉行並、高松の病院長を組織図で確認。図の範囲は明治2年1月頃とされる。
    - 該当箇所: 244〜246頁、図1-1「旧幕府脱走軍組織図」（245頁、画像t2-0245h.jpgを目視）
    - 内容確認日: 2026-09-25
 
-308. [函館市史 通説編2「新政府軍箱館へ迫る」](https://adeac.jp/hakodate-city/texthtml/d100020/mp000010-100020/ht011090) — 大鳥の木古内・矢不来方面の指揮、土方の二股口防戦、4月29日の両方面の後退を確認。旧暦日付。
+310. [函館市史 通説編2「新政府軍箱館へ迫る」](https://adeac.jp/hakodate-city/texthtml/d100020/mp000010-100020/ht011090) — 大鳥の木古内・矢不来方面の指揮、土方の二股口防戦、4月29日の両方面の後退を確認。旧暦日付。
    - 該当箇所: 252〜254頁。大鳥の転陣命令、二股の土方、4月29日の退却
    - 内容確認日: 2026-09-25
 
-309. [函館市史 通説編2「五稜郭開城」](https://adeac.jp/hakodate-city/texthtml/d100020/mp000010-100020/ht011130) — 5月17日の会見に榎本・松平太郎・荒井郁之助・大鳥圭介、相手に増田虎之助・黒田了介がいたこと、18日の降伏と武器引渡しを確認。旧暦日付。
+311. [函館市史 通説編2「五稜郭開城」](https://adeac.jp/hakodate-city/texthtml/d100020/mp000010-100020/ht011130) — 5月17日の会見に榎本・松平太郎・荒井郁之助・大鳥圭介、相手に増田虎之助・黒田了介がいたこと、18日の降伏と武器引渡しを確認。旧暦日付。
    - 該当箇所: 259〜260頁。17日の会見、18日の出郭と武器・兵糧引渡し
    - 内容確認日: 2026-09-25
 
-310. [函館市史 通説編2「降伏交渉開始」](https://adeac.jp/hakodate-city/texthtml/d100020/mp000010-100020/ht011110) — 高松の渡欧・帰国、両軍の負傷兵の治療、小野権之丞と作成した5月13日の降伏勧告書、榎本の14日の拒否を確認。仲介は一人だけの功績とはしない。
+312. [函館市史 通説編2「降伏交渉開始」](https://adeac.jp/hakodate-city/texthtml/d100020/mp000010-100020/ht011110) — 高松の渡欧・帰国、両軍の負傷兵の治療、小野権之丞と作成した5月13日の降伏勧告書、榎本の14日の拒否を確認。仲介は一人だけの功績とはしない。
    - 該当箇所: 257〜258頁。諏訪常吉から高松・小野への依頼、凌雲の経歴、13〜14日の勧告と返答
    - 内容確認日: 2026-09-25
 
-311. [小郡市「広報おごおり・医傑 高松凌雲」](https://www.city.ogori.fukuoka.jp/application/files/5015/4684/6708/nZDSNt.pdf) — 徳川昭武への随行、箱館病院での両軍の傷病者の治療、1916年の死去を確認。生年1836表記は旧暦年との対応に注意する。
+313. [小郡市「広報おごおり・医傑 高松凌雲」](https://www.city.ogori.fukuoka.jp/application/files/5015/4684/6708/nZDSNt.pdf) — 徳川昭武への随行、箱館病院での両軍の傷病者の治療、1916年の死去を確認。生年1836表記は旧暦年との対応に注意する。
    - 該当箇所: 2016年11月1日号10頁（PDF3頁）、右下「医傑・高松凌雲」を紙面画像で確認
    - 内容確認日: 2026-09-25
 
-312. [函館市文化・スポーツ振興財団「高松凌雲」](https://www.zaidan-hakodate.com/jimbutsu/04_ta/04-takamatsu.html) — 出生を天保7年12月25日と記す箇所を参照し、画面の生年は天保7年で表示する。本文には日付の誤記や作品からの引用が混在するため、航海日程・人物評・台詞は採用しない。
+314. [函館市文化・スポーツ振興財団「高松凌雲」](https://www.zaidan-hakodate.com/jimbutsu/04_ta/04-takamatsu.html) — 出生を天保7年12月25日と記す箇所を参照し、画面の生年は天保7年で表示する。本文には日付の誤記や作品からの引用が混在するため、航海日程・人物評・台詞は採用しない。
    - 該当箇所: 冒頭の出生年月日と末尾の1916年の死去
    - 内容確認日: 2026-09-25
 
-313. [高知県立坂本龍馬記念館「天誅―土佐藩の奔走―」展](https://ryoma-kinenkan.jp/exhibition/2024/12/post-24.html) — 東洋暗殺前後の体制変化と暗殺者探索を説明する企画展。展示概要を確認し、原本全体の確認とはしない。
+315. [高知県立坂本龍馬記念館「天誅―土佐藩の奔走―」展](https://ryoma-kinenkan.jp/exhibition/2024/12/post-24.html) — 東洋暗殺前後の体制変化と暗殺者探索を説明する企画展。展示概要を確認し、原本全体の確認とはしない。
    - 該当箇所: 第一章概要（1862年4月8日の暗殺と体制変化）、第二章概要（即時の探索開始）
    - 内容確認日: 2026-09-25
 
-314. [高知市・歴史万華鏡「吉田東洋と天誅事件」（2024年4月号）](https://www.city.kochi.kochi.jp/soshiki/80/man2404.html) — 坂本龍馬記念館学芸員による解説。暗殺日・仕置役の肩書き・実行者の区別に用いる。後段の中岡に関する風聞や凄惨な細部は採用しない。
+316. [高知市・歴史万華鏡「吉田東洋と天誅事件」（2024年4月号）](https://www.city.kochi.kochi.jp/soshiki/80/man2404.html) — 坂本龍馬記念館学芸員による解説。暗殺日・仕置役の肩書き・実行者の区別に用いる。後段の中岡に関する風聞や凄惨な細部は採用しない。
    - 該当箇所: 冒頭2段落（4月8日の東洋暗殺、那須信吾・安岡嘉助・大石団蔵、武市との方針の違い）
    - 内容確認日: 2026-09-25
 
-315. [国立国会図書館典拠「坂本, 竜, 1841-1906」](https://id.ndl.go.jp/auth/ndlna/00999280) — 読み・別名・生没年の典拠。横須賀市の古い説明板に転載された除籍簿の生年との差は、今回解消していない。
+317. [国立国会図書館典拠「坂本, 竜, 1841-1906」](https://id.ndl.go.jp/auth/ndlna/00999280) — 読み・別名・生没年の典拠。横須賀市の古い説明板に転載された除籍簿の生年との差は、今回解消していない。
    - 該当箇所: 詳細情報：名称・読み・別名・生年・没年
    - 内容確認日: 2026-09-25
 
-316. [横須賀市観光情報「坂本龍馬の妻 お龍さんの墓」](https://www.cocoyoko.net/spot/oryou.html) — 1977年の説明板の転載には、国会図書館典拠と異なる生年が記載されている。生年の相違を記録するための参照。葬儀年など他の記述を転用しない。
+318. [横須賀市観光情報「坂本龍馬の妻 お龍さんの墓」](https://www.cocoyoko.net/spot/oryou.html) — 1977年の説明板の転載には、国会図書館典拠と異なる生年が記載されている。生年の相違を記録するための参照。葬儀年など他の記述を転用しない。
    - 該当箇所: スポットについて「横須賀風物百選 坂本龍子の墓」第2段落（生年・除籍簿）
    - 内容確認日: 2026-09-25
 
-317. [下関市「市報しものせき 2021年11月号」三吉慎蔵特集](https://www.city.shimonoseki.lg.jp/site/kouhou/50756.html) — 三吉慎蔵の生没年、長府藩士としての出自、寺田屋からの脱出と救護要請を確認。
+319. [下関市「市報しものせき 2021年11月号」三吉慎蔵特集](https://www.city.shimonoseki.lg.jp/site/kouhou/50756.html) — 三吉慎蔵の生没年、長府藩士としての出自、寺田屋からの脱出と救護要請を確認。
    - 該当箇所: 2〜3頁相当「没後120年 下関人なら知っておきたい！ 三吉慎蔵」冒頭と（1）坂本龍馬の親友
    - 内容確認日: 2026-09-25
 
-318. [下関市教育委員会会議録・三吉家資料の取得説明（2023年8月24日）](https://www.city.shimonoseki.lg.jp/uploaded/attachment/79817.pdf) — 歴史博物館長による資料説明。寺田屋襲撃後の京都薩摩藩邸滞在と、情報収集の藩命を確認。詩書原本の判読とは区別する。
+320. [下関市教育委員会会議録・三吉家資料の取得説明（2023年8月24日）](https://www.city.shimonoseki.lg.jp/uploaded/attachment/79817.pdf) — 歴史博物館長による資料説明。寺田屋襲撃後の京都薩摩藩邸滞在と、情報収集の藩命を確認。詩書原本の判読とは区別する。
    - 該当箇所: 39頁（議案第39号、西郷隆盛の詩書の説明）
    - 内容確認日: 2026-09-25
 
-319. [高知県「坂本龍馬直筆書簡について」2017年度6月補正予算資料](https://www.pref.kochi.lg.jp/doc/2021092700249/file_contents/2906hosei-kisyahappyou.pdf) — 1866年12月4日付権平家族一同宛書簡の残存部分について、内容解説と現代語訳を確認。捕縛命令に関する龍馬の伝聞を客観的な命令全文としない。
+321. [高知県「坂本龍馬直筆書簡について」2017年度6月補正予算資料](https://www.pref.kochi.lg.jp/doc/2021092700249/file_contents/2906hosei-kisyahappyou.pdf) — 1866年12月4日付権平家族一同宛書簡の残存部分について、内容解説と現代語訳を確認。捕縛命令に関する龍馬の伝聞を客観的な命令全文としない。
    - 該当箇所: 冊子9頁・PDF24頁（寺田屋襲撃後の伏見から京都の薩摩藩邸への移動）
    - 内容確認日: 2026-09-25
 
-320. [観光庁・伏見観光プロジェクトチーム「寺田屋事件」](https://www.mlit.go.jp/tagengo-db/en/R1-01296.html) — お龍による警告、龍馬と三吉の脱出、現在の建物が再建であることに用いる。人物の心情・浴場の姿・婚姻時期は採用しない。
+322. [観光庁・伏見観光プロジェクトチーム「寺田屋事件」](https://www.mlit.go.jp/tagengo-db/en/R1-01296.html) — お龍による警告、龍馬と三吉の脱出、現在の建物が再建であることに用いる。人物の心情・浴場の姿・婚姻時期は採用しない。
    - 該当箇所: Teradaya Incident：第1段落（警告）、第2段落（脱出）、第3段落（再建）
    - 内容確認日: 2026-09-25
 
-321. [山川日本史小辞典・日本人名大辞典「徳川家定」（コトバンク）](https://kotobank.jp/word/%E5%BE%B3%E5%B7%9D%E5%AE%B6%E5%AE%9A-104676) — 将軍宣下の月日は辞典間で異なるため年単位にとどめ、死去と発喪を区別する。
+323. [山川日本史小辞典・日本人名大辞典「徳川家定」（コトバンク）](https://kotobank.jp/word/%E5%BE%B3%E5%B7%9D%E5%AE%B6%E5%AE%9A-104676) — 将軍宣下の月日は辞典間で異なるため年単位にとどめ、死去と発喪を区別する。
    - 該当箇所: 山川日本史小辞典・デジタル版日本人名大辞典の生没年、将軍在職、家祥の名、継嗣決定
    - 内容確認日: 2026-09-25
 
-322. [日本大百科全書「関鉄之介」（コトバンク）](https://kotobank.jp/word/%E9%96%A2%E9%89%84%E4%B9%8B%E4%BB%8B-18204) — 水戸浪士としての役割を確認。水戸藩全体の決定とは区別する。
+324. [日本大百科全書「関鉄之介」（コトバンク）](https://kotobank.jp/word/%E9%96%A2%E9%89%84%E4%B9%8B%E4%BB%8B-18204) — 水戸浪士としての役割を確認。水戸藩全体の決定とは区別する。
    - 該当箇所: 日本大百科全書の生没年、実行隊長、事件後の逃亡・処刑
    - 内容確認日: 2026-09-25
 
-323. [デジタル版日本人名大辞典「有村次左衛門」（コトバンク）](https://kotobank.jp/word/%E6%9C%89%E6%9D%91%E6%AC%A1%E5%B7%A6%E8%A1%9B%E9%96%80-28093) — 天保9年12月28日は西暦1839年にあたるため、年だけの換算との違いを人物欄に明記する。
+325. [デジタル版日本人名大辞典「有村次左衛門」（コトバンク）](https://kotobank.jp/word/%E6%9C%89%E6%9D%91%E6%AC%A1%E5%B7%A6%E8%A1%9B%E9%96%80-28093) — 天保9年12月28日は西暦1839年にあたるため、年だけの換算との違いを人物欄に明記する。
    - 該当箇所: デジタル版日本人名大辞典の生没年、脱藩、襲撃と自刃
    - 内容確認日: 2026-09-25
 
-324. [国土交通省 酒田河川国道事務所「庄内の人物・清河八郎」](https://www.thr.mlit.go.jp/sakata/shonai/chiiki/jinbutsu-f.html) — 生没年、浪士組の結成、京都での分裂、江戸での暗殺を確認。
+326. [国土交通省 酒田河川国道事務所「庄内の人物・清河八郎」](https://www.thr.mlit.go.jp/sakata/shonai/chiiki/jinbutsu-f.html) — 生没年、浪士組の結成、京都での分裂、江戸での暗殺を確認。
    - 該当箇所: 幕末を駆け抜けた志士、清河八郎
    - 内容確認日: 2026-09-25
 
-325. [庄内町観光情報「庄内町人物伝・清河八郎」](https://www.navishonai.jp/history/hachiro.html) — 清河の表記、幼名元司、清河八郎への改名を確認。
+327. [庄内町観光情報「庄内町人物伝・清河八郎」](https://www.navishonai.jp/history/hachiro.html) — 清河の表記、幼名元司、清河八郎への改名を確認。
    - 該当箇所: プロフィール、1.誕生と齋藤家、4.江戸遊学時代
    - 内容確認日: 2026-09-25
 
-326. [横須賀市「横須賀とフランスの歴史」](https://www.city.yokosuka.kanagawa.jp/2120/culture_info/french/yokosukaseitetuzyo.html) — 生没年、造船所建設の役割、明治政府への引継ぎを確認。元治元（1865）の元号表記は本文に誤りがあり、公開年表には転用しない。
+328. [横須賀市「横須賀とフランスの歴史」](https://www.city.yokosuka.kanagawa.jp/2120/culture_info/french/yokosukaseitetuzyo.html) — 生没年、造船所建設の役割、明治政府への引継ぎを確認。元治元（1865）の元号表記は本文に誤りがあり、公開年表には転用しない。
    - 該当箇所: 横須賀製鉄所への協力依頼、1865年着工、ヴェルニー、1868年の継承
    - 内容確認日: 2026-09-25
 
-327. [国立国会図書館「世界を見たサムライ達」](https://www.ndl.go.jp/portrait/pickup/016) — 小栗の監察、勝の船将、万次郎の通弁、福沢の随員という役割を確認。
+329. [国立国会図書館「世界を見たサムライ達」](https://www.ndl.go.jp/portrait/pickup/016) — 小栗の監察、勝の船将、万次郎の通弁、福沢の随員という役割を確認。
    - 該当箇所: 万延元（1860）年遣米使節と咸臨丸の随行者
    - 内容確認日: 2026-09-25
 
-328. [外務省「咸臨丸修理に関する感謝状（複製）」](https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/14.html) — 遣米使節を乗せた船と咸臨丸を区別し、両船の出航地の違いを確認。
+330. [外務省「咸臨丸修理に関する感謝状（複製）」](https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/akebono/14.html) — 遣米使節を乗せた船と咸臨丸を区別し、両船の出航地の違いを確認。
    - 該当箇所: 本文のポーハタン号・咸臨丸の役割、浦賀出航と単独航海
    - 内容確認日: 2026-09-25
 
-329. [江戸東京博物館「徳川御三卿展」](https://www.edo-tokyo-museum.or.jp/s-exhibition/tokugawa-gosankyo/) — 尾張・紀伊・水戸と田安・一橋・清水の区別、将軍家との関係を確認。
+331. [江戸東京博物館「徳川御三卿展」](https://www.edo-tokyo-museum.or.jp/s-exhibition/tokugawa-gosankyo/) — 尾張・紀伊・水戸と田安・一橋・清水の区別、将軍家との関係を確認。
    - 該当箇所: 展覧会紹介冒頭の御三家・御三卿と各家の起源
    - 内容確認日: 2026-09-25
 
-330. [日本大百科全書・デジタル大辞泉「大老」（コトバンク）](https://kotobank.jp/word/%E5%A4%A7%E8%80%81-92306) — 江戸幕府での職を説明し、豊臣政権の五大老とは区別する。
+332. [日本大百科全書・デジタル大辞泉「大老」（コトバンク）](https://kotobank.jp/word/%E5%A4%A7%E8%80%81-92306) — 江戸幕府での職を説明し、豊臣政権の五大老とは区別する。
    - 該当箇所: 江戸幕府の大老、老中との上下関係、臨時の職
    - 内容確認日: 2026-09-25
 
-331. [国立国会図書館「近代日本人の肖像・松平慶永」](https://www.ndl.go.jp/portrait/datas/195) — 人物と肖像を照合。撮影時期は未確認であり、1858年当時の写真とは表示しない。
+333. [国立国会図書館「近代日本人の肖像・松平慶永」](https://www.ndl.go.jp/portrait/datas/195) — 人物と肖像を照合。撮影時期は未確認であり、1858年当時の写真とは表示しない。
    - 該当箇所: 生没年・解説・肖像1枚目（一覧の縮小画像も同じ図像）
    - 内容確認日: 2026-09-25
 
-332. [Wikimedia Commons「井伊直安筆 井伊直弼画像」](https://commons.wikimedia.org/wiki/File:Ii_Naosuke_Portrait_by_Ii_Naoyasu.jpg) — 豪徳寺所蔵、井伊直安筆、伝・明治中期頃、パブリックドメイン表記を確認。後世の肖像画であり写真ではない。
+334. [Wikimedia Commons「井伊直安筆 井伊直弼画像」](https://commons.wikimedia.org/wiki/File:Ii_Naosuke_Portrait_by_Ii_Naoyasu.jpg) — 豪徳寺所蔵、井伊直安筆、伝・明治中期頃、パブリックドメイン表記を確認。後世の肖像画であり写真ではない。
    - 該当箇所: Summary・Licensing・500px preview
    - 内容確認日: 2026-09-25
 
-333. [国土地理院 住所検索「神奈川県横須賀市本町」](https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%A8%AA%E9%A0%88%E8%B3%80%E5%B8%82%E6%9C%AC%E7%94%BA) — 横須賀の表示用概略座標。製鉄所敷地やドックの厳密な位置を示すものではない。
+335. [国土地理院 住所検索「神奈川県横須賀市本町」](https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%A8%AA%E9%A0%88%E8%B3%80%E5%B8%82%E6%9C%AC%E7%94%BA) — 横須賀の表示用概略座標。製鉄所敷地やドックの厳密な位置を示すものではない。
    - 該当箇所: geometry.coordinates [139.666977, 35.282326]
    - 内容確認日: 2026-09-25
 
-334. [慶應義塾「アメリカにおける福澤諭吉の足跡」](https://www.keio.ac.jp/ja/about/public-relations/stainedglass-1995-2010/209/) — 1860年の咸臨丸乗船と万次郎との辞書購入を確認。1867年の再渡米とは区別する。
+336. [慶應義塾「アメリカにおける福澤諭吉の足跡」](https://www.keio.ac.jp/ja/about/public-relations/stainedglass-1995-2010/209/) — 1860年の咸臨丸乗船と万次郎との辞書購入を確認。1867年の再渡米とは区別する。
    - 該当箇所: サンフランシスコ（1860年の航海と辞書購入）
    - 内容確認日: 2026-09-25
 
-335. [外務省外交史料館 特別展示「マッサンと呼ばれた外交官」](https://www.mofa.go.jp/mofaj/files/000194546.pdf) — 1867年のパリ万博への日本初参加、慶喜が弟昭武を名代として派遣したこと、留学を望んだことを確認。
+337. [外務省外交史料館 特別展示「マッサンと呼ばれた外交官」](https://www.mofa.go.jp/mofaj/files/000194546.pdf) — 1867年のパリ万博への日本初参加、慶喜が弟昭武を名代として派遣したこと、留学を望んだことを確認。
    - 該当箇所: 21頁「3-1 パリ万国博覧会：徳川慶喜の国書案」
    - 内容確認日: 2026-09-26
 
-336. [国立国会図書館「近代日本とフランス―実業家たちの日仏交流」](https://www.ndl.go.jp/france/jp/part1/s2_3.html) — 昭武が慶喜の名代として万博へ出席し、渋沢が随行・会計を担ったこと、欧州歴訪と帰国までの範囲を確認。
+338. [国立国会図書館「近代日本とフランス―実業家たちの日仏交流」](https://www.ndl.go.jp/france/jp/part1/s2_3.html) — 昭武が慶喜の名代として万博へ出席し、渋沢が随行・会計を担ったこと、欧州歴訪と帰国までの範囲を確認。
    - 該当箇所: 「実業家たちの日仏交流」冒頭・「航西日記」解説
    - 内容確認日: 2026-09-26
 
-337. [渋沢史料館「渋沢栄一、パリ万国博覧会へ行く」](https://www.shibusawa.or.jp/museum/newsletter/401.html) — 昭武の将軍名代、渋沢の庶務・経理、万博視察、日本側の出品主体と展示の背景を確認。
+339. [渋沢史料館「渋沢栄一、パリ万国博覧会へ行く」](https://www.shibusawa.or.jp/museum/newsletter/401.html) — 昭武の将軍名代、渋沢の庶務・経理、万博視察、日本側の出品主体と展示の背景を確認。
    - 該当箇所: 「パリ万国博覧会」「渋沢栄一が見たパリ万博」
    - 内容確認日: 2026-09-26
 
-338. [国立国会図書館「近代日本人の肖像・徳川昭武」](https://www.ndl.go.jp/portrait/datas/146) — 人物と肖像を照合し、1867年のパリ万博派遣とその後のフランス留学を確認。肖像の撮影時期は未確認。
+340. [国立国会図書館「近代日本人の肖像・徳川昭武」](https://www.ndl.go.jp/portrait/datas/146) — 人物と肖像を照合し、1867年のパリ万博派遣とその後のフランス留学を確認。肖像の撮影時期は未確認。
    - 該当箇所: 生没年・解説・肖像1枚目
    - 内容確認日: 2026-09-26
 
-339. [国立国会図書館「近代日本人の肖像・渋沢栄一」](https://www.ndl.go.jp/portrait/datas/104) — 人物と肖像を照合し、一橋家・幕臣・昭武随行の経歴を確認。使用画像は晩年の肖像で、1867年当時の姿ではない。
+341. [国立国会図書館「近代日本人の肖像・渋沢栄一」](https://www.ndl.go.jp/portrait/datas/104) — 人物と肖像を照合し、一橋家・幕臣・昭武随行の経歴を確認。使用画像は晩年の肖像で、1867年当時の姿ではない。
    - 該当箇所: 生没年・解説・肖像1枚目
    - 内容確認日: 2026-09-26
 
-340. [鹿児島県黎明館「寺田屋事件で使用された刀」](https://www.pref.kagoshima.jp/ab23/reimeikan/josetsu/theme/gendai/toubaku/kgs04_s1_4.html) — 奈良原繁の派遣と事件での刀の使用を確認。誰を斬ったかは断定しない。
+342. [鹿児島県黎明館「寺田屋事件で使用された刀」](https://www.pref.kagoshima.jp/ab23/reimeikan/josetsu/theme/gendai/toubaku/kgs04_s1_4.html) — 奈良原繁の派遣と事件での刀の使用を確認。誰を斬ったかは断定しない。
    - 該当箇所: 本文2段落（久光による派遣、奈良原繁が使用した刀）
    - 内容確認日: 2026-09-26
 
-341. [小学館・講談社「奈良原繁」（コトバンク掲載）](https://kotobank.jp/word/%E5%A5%88%E8%89%AF%E5%8E%9F%E7%B9%81-1098412) — 読み、生没年、喜八郎との同定に用いる。事件での具体的行動は鹿児島県の資料で別に確認。
+343. [小学館・講談社「奈良原繁」（コトバンク掲載）](https://kotobank.jp/word/%E5%A5%88%E8%89%AF%E5%8E%9F%E7%B9%81-1098412) — 読み、生没年、喜八郎との同定に用いる。事件での具体的行動は鹿児島県の資料で別に確認。
    - 該当箇所: 日本大百科全書（ニッポニカ）・デジタル版 日本人名大辞典+Plus「奈良原繁」
    - 内容確認日: 2026-09-26
 
-342. [小学館「有馬新七」（コトバンク掲載）](https://kotobank.jp/word/%E6%9C%89%E9%A6%AC%E6%96%B0%E4%B8%83-28084) — 読みと生没年を確認。寺田屋事件の参加人数・死者数の断定には用いない。
+344. [小学館「有馬新七」（コトバンク掲載）](https://kotobank.jp/word/%E6%9C%89%E9%A6%AC%E6%96%B0%E4%B8%83-28084) — 読みと生没年を確認。寺田屋事件の参加人数・死者数の断定には用いない。
    - 該当箇所: 日本大百科全書（ニッポニカ）「有馬新七」
    - 内容確認日: 2026-09-26
 
-343. [国立国会図書館「近代日本人の肖像・中岡慎太郎」](https://www.ndl.go.jp/portrait/datas/149/) — 本人の肖像と原資料「中岡慎太郎（尾崎卓爾著、陽明社印刷所、1926年）」を確認。撮影時期は未確認。
+345. [国立国会図書館「近代日本人の肖像・中岡慎太郎」](https://www.ndl.go.jp/portrait/datas/149/) — 本人の肖像と原資料「中岡慎太郎（尾崎卓爾著、陽明社印刷所、1926年）」を確認。撮影時期は未確認。
    - 該当箇所: 肖像1枚目・出典欄
    - 内容確認日: 2026-09-27
 
-344. [国立国会図書館「近代日本人の肖像・三条実美」](https://www.ndl.go.jp/portrait/datas/97/) — 本人の肖像と原資料「近世名士写真 其1（近世名士写真頒布会、1935年）」を確認。撮影時期は未確認。
+346. [国立国会図書館「近代日本人の肖像・三条実美」](https://www.ndl.go.jp/portrait/datas/97/) — 本人の肖像と原資料「近世名士写真 其1（近世名士写真頒布会、1935年）」を確認。撮影時期は未確認。
    - 該当箇所: 肖像1枚目・出典欄
    - 内容確認日: 2026-09-27
 
-345. [高知県立坂本龍馬記念館「龍馬FAQ・岡田以蔵と龍馬の関係」](https://ryoma-kinenkan.jp/feat/faq/cat2/) — 出生、土佐勤王党との関わり、1863年の龍馬との交流、1865年閏5月の処刑。解説中に「人斬り以蔵」を使用するが、呼称の成立時期を示す根拠は確認できない。捕縛年を1864年とするが、同館の墓の解説は1863年としており、差は未解消。
+347. [高知県立坂本龍馬記念館「龍馬FAQ・岡田以蔵と龍馬の関係」](https://ryoma-kinenkan.jp/feat/faq/cat2/) — 出生、土佐勤王党との関わり、1863年の龍馬との交流、1865年閏5月の処刑。解説中に「人斬り以蔵」を使用するが、呼称の成立時期を示す根拠は確認できない。捕縛年を1864年とするが、同館の墓の解説は1863年としており、差は未解消。
    - 該当箇所: 「岡田以蔵と龍馬の関係を教えてください。」全2段落
    - 内容確認日: 2026-09-30
 
-346. [高知県立坂本龍馬記念館「岡田以蔵の墓」](https://ryoma-kinenkan.jp/place/2018/02/post-18.html) — 土佐勤王党同志人名録、剣術修業、1862年の上京、1865年閏5月11日の斬首。捕縛年を1863年とするが、同館FAQは1864年としており、差は未解消。
+348. [高知県立坂本龍馬記念館「岡田以蔵の墓」](https://ryoma-kinenkan.jp/place/2018/02/post-18.html) — 土佐勤王党同志人名録、剣術修業、1862年の上京、1865年閏5月11日の斬首。捕縛年を1863年とするが、同館FAQは1864年としており、差は未解消。
    - 該当箇所: 「岡田以蔵の墓」本文の同志人名録、武市道場、文久2年の上京、慶応元年閏5月11日の処刑の段落
    - 内容確認日: 2026-09-27
 
-347. [高知市「武市瑞山道場跡」](https://www.city.kochi.kochi.jp/site/kanko/takechizuizandoujyoato.html) — 岡田以蔵が武市道場の門人であったことを確認。
+349. [高知市「武市瑞山道場跡」](https://www.city.kochi.kochi.jp/site/kanko/takechizuizandoujyoato.html) — 岡田以蔵が武市道場の門人であったことを確認。
    - 該当箇所: 本文第1段落（武市道場の開設と中岡慎太郎・岡田以蔵の入門）
    - 内容確認日: 2026-09-27
 
-348. [鹿児島市公式観光ナビ「桐野利秋」](https://www.kagoshima-yokanavi.jp/spot/10108) — 鹿児島市教育委員会『鹿児島市の史跡めぐり人物編』（平成2年）を出典とする紹介。生没年、中村半次郎の名、1868年の鳥羽・伏見、東海道先鋒としての江戸入り、会津若松城攻略を確認。
+350. [鹿児島市公式観光ナビ「桐野利秋」](https://www.kagoshima-yokanavi.jp/spot/10108) — 鹿児島市教育委員会『鹿児島市の史跡めぐり人物編』（平成2年）を出典とする紹介。生没年、中村半次郎の名、1868年の鳥羽・伏見、東海道先鋒としての江戸入り、会津若松城攻略を確認。
    - 該当箇所: 「1838（天保9）年～1877（明治10）年」本文：中村半次郎の名、1862年の上洛、戊辰の役の従軍
    - 内容確認日: 2026-09-27
 
-349. [国立公文書館「新選組隊長近藤勇以下三十名御手当之儀書上ほか」](https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/43.html) — 解説本文と褒賞文書の原画像で藤堂平助・原田左之助を確認。池田屋出動と褒賞対象の根拠。個々の突入位置・時刻・交戦相手の根拠にはしない。 井上源三郎の出動・褒賞も原画像の名簿で確認。
+351. [国立公文書館「新選組隊長近藤勇以下三十名御手当之儀書上ほか」](https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/43.html) — 解説本文と褒賞文書の原画像で藤堂平助・原田左之助を確認。池田屋出動と褒賞対象の根拠。個々の突入位置・時刻・交戦相手の根拠にはしない。 井上源三郎の出動・褒賞も原画像の名簿で確認。
    - 該当箇所: 請求番号多024400『新選組隊長近藤勇以下三十名御手当之儀書上』原田左之助欄・藤堂平助欄（画像原本確認）・井上源三郎欄
    - 内容確認日: 2026-09-30
 
-350. [講談社『デジタル版 日本人名大辞典+Plus』藤堂平助](https://kotobank.jp/word/%E8%97%A4%E5%A0%82%E5%B9%B3%E5%8A%A9-1093791) — 生没、隊士としての活動、新選組離脱と御陵衛士、油小路での死去を確認。八番隊組長の就任年は本文だけでは確定しない。
+352. [講談社『デジタル版 日本人名大辞典+Plus』藤堂平助](https://kotobank.jp/word/%E8%97%A4%E5%A0%82%E5%B9%B3%E5%8A%A9-1093791) — 生没、隊士としての活動、新選組離脱と御陵衛士、油小路での死去を確認。八番隊組長の就任年は本文だけでは確定しない。
    - 該当箇所: 「デジタル版 日本人名大辞典+Plus」藤堂平助の解説
    - 内容確認日: 2026-09-27
 
-351. [京都市駒札「御陵衛士屯所跡」](https://ja.kyoto.travel/tourism/single02.php?category_id=9&tourism_id=222) — 分離前の参謀・局長と隊士の関係、伊東らの離隊と藤堂の御陵衛士参加を確認。具体的な離隊許可の手続、個々の戦闘・暗殺の命令、師弟関係や動機は根拠にしない。
+353. [京都市駒札「御陵衛士屯所跡」](https://ja.kyoto.travel/tourism/single02.php?category_id=9&tourism_id=222) — 分離前の参謀・局長と隊士の関係、伊東らの離隊と藤堂の御陵衛士参加を確認。具体的な離隊許可の手続、個々の戦闘・暗殺の命令、師弟関係や動機は根拠にしない。
    - 該当箇所: 駒札本文第2段落：1864年入隊・参謀就任、近藤勇・土方歳三との意見の違い、1867年3月の離隊と藤堂平助の参加
    - 内容確認日: 2026-09-30
 
-352. [かすみがうら市歴史博物館「伊東甲子太郎と油小路の変」企画展解説](https://www.city.kasumigaura.lg.jp/page/page017798.html) — 藤堂平助が油小路の変で死亡したことを確認。原史料の発見を述べる展示解説であり、原史料自体の閲覧ではない。
+354. [かすみがうら市歴史博物館「伊東甲子太郎と油小路の変」企画展解説](https://www.city.kasumigaura.lg.jp/page/page017798.html) — 藤堂平助が油小路の変で死亡したことを確認。原史料の発見を述べる展示解説であり、原史料自体の閲覧ではない。
    - 該当箇所: 企画展本文「近年、油小路の変の現場検証の記録」段落
    - 内容確認日: 2026-09-27
 
-353. [国立国会図書館典拠「原田, 左之助, 1840-1868」](https://id.ndl.go.jp/auth/ndlna/01160391) — 表記、読み、別名忠一、生没、新選組隊士を確認。個別事件や役職年の根拠には使わない。
+355. [国立国会図書館典拠「原田, 左之助, 1840-1868」](https://id.ndl.go.jp/auth/ndlna/01160391) — 表記、読み、別名忠一、生没、新選組隊士を確認。個別事件や役職年の根拠には使わない。
    - 該当箇所: 詳細情報：名称・別名・生年・没年・経歴
    - 内容確認日: 2026-09-27
 
-354. [愛媛県生涯学習センター『愛媛県史 人物』原田佐之助](https://www.i-manabi.jp/system/regionals/regionals/ecode:2/57/view/7518) — 隊士としての活動、池田屋参加、戊辰期の移動と死亡を確認。古い項目が含む龍馬暗殺犯人推測と評価語は採用しない。池田屋の隊分担・屋内突入は当該本文では確認できない。
+356. [愛媛県生涯学習センター『愛媛県史 人物』原田佐之助](https://www.i-manabi.jp/system/regionals/regionals/ecode:2/57/view/7518) — 隊士としての活動、池田屋参加、戊辰期の移動と死亡を確認。古い項目が含む龍馬暗殺犯人推測と評価語は採用しない。池田屋の隊分担・屋内突入は当該本文では確認できない。
    - 該当箇所: 「原田 佐之助」隊士としての活動・池田屋・戊辰期の経路と死亡
    - 内容確認日: 2026-09-27
 
-355. [福島県「中野竹子」](https://www.yae-mottoshiritai.jp/ashiato/nakano-takeko.html) — 弘化4年江戸生まれ、会津への帰還、娘子軍での戦い、柳橋付近での戦死を確認。英雄的評価や逸話は掲載しない。
+357. [福島県「中野竹子」](https://www.yae-mottoshiritai.jp/ashiato/nakano-takeko.html) — 弘化4年江戸生まれ、会津への帰還、娘子軍での戦い、柳橋付近での戦死を確認。英雄的評価や逸話は掲載しない。
    - 該当箇所: 「中野竹子」本文：弘化4年出生・慶応3年会津帰還・娘子軍と柳橋付近の戦死
    - 内容確認日: 2026-09-27
 
-356. [会津坂下町「中野竹子（多言語ページ）」](https://www.town.aizubange.fukushima.jp/soshiki/29/11156.html) — 英文本文で鶴ヶ城へ向かう途中に戦い、銃撃を受け死亡したことを確認。娘子隊は後の名称と記す。
+358. [会津坂下町「中野竹子（多言語ページ）」](https://www.town.aizubange.fukushima.jp/soshiki/29/11156.html) — 英文本文で鶴ヶ城へ向かう途中に戦い、銃撃を受け死亡したことを確認。娘子隊は後の名称と記す。
    - 該当箇所: English「Grave of Nakano Takeko」女性部隊と鶴ヶ城へ向かう途中の戦死
    - 内容確認日: 2026-09-27
 
-357. [会津若松観光ビューロー「西郷頼母邸跡」](https://www.aizukanko.com/spot/143) — 容保への京都守護職辞退進言と解任、戊辰期の復職と白河口総督、白河敗戦後の帰会津、息子を伴った会津離脱を確認。
+359. [会津若松観光ビューロー「西郷頼母邸跡」](https://www.aizukanko.com/spot/143) — 容保への京都守護職辞退進言と解任、戊辰期の復職と白河口総督、白河敗戦後の帰会津、息子を伴った会津離脱を確認。
    - 該当箇所: 西郷頼母邸跡の本文：守護職辞退進言から戊辰期の白河・帰会津・会津離脱
    - 内容確認日: 2026-09-27
 
-358. [白河市「戊辰戦争と白河」](https://www.city.shirakawa.fukushima.jp/page/page010530.html) — 稲荷山の解説で会津藩家老西郷頼母が白河口総督であったことを確認。作品名の説明は掲載しない。
+360. [白河市「戊辰戦争と白河」](https://www.city.shirakawa.fukushima.jp/page/page010530.html) — 稲荷山の解説で会津藩家老西郷頼母が白河口総督であったことを確認。作品名の説明は掲載しない。
    - 該当箇所: 「白河の戊辰戦争ゆかりの場所・人／激戦地・稲荷山」西郷頼母歌碑の解説
    - 内容確認日: 2026-09-27
 
-359. [PHP歴史街道「西郷頼母と幕末の会津藩」](https://rekishikaido.php.co.jp/detail/3819) — 1830年出生と1903年死去を記す。NDL典拠の没年1905と異なるため、生没の差を記録する資料として使用。本文の推測や引用は採用しない。
+361. [PHP歴史街道「西郷頼母と幕末の会津藩」](https://rekishikaido.php.co.jp/detail/3819) — 1830年出生と1903年死去を記す。NDL典拠の没年1905と異なるため、生没の差を記録する資料として使用。本文の推測や引用は採用しない。
    - 該当箇所: 「今日は何の日 明治36年4月28日」冒頭の1903年死去、次段落の1830年出生
    - 内容確認日: 2026-09-27
 
-360. [国立国会図書館典拠「西郷, 頼母, 1830-1905」](https://id.ndl.go.jp/auth/ndlna/00624599) — 名称・読み・1830年出生を確認。没年1905の記載はPHP歴史街道の1903と異なるため未解消。
+362. [国立国会図書館典拠「西郷, 頼母, 1830-1905」](https://id.ndl.go.jp/auth/ndlna/00624599) — 名称・読み・1830年出生を確認。没年1905の記載はPHP歴史街道の1903と異なるため未解消。
    - 該当箇所: 詳細情報：名称/タイトル・カナ読み・生年・没年
    - 内容確認日: 2026-09-27
 
-361. [高知県立坂本龍馬記念館「近藤長次郎邸跡」](https://ryoma-kinenkan.jp/place/2018/02/post-37.html) — 幼少期の龍馬との親交は推測なので採用しない。死因の動機説明と伝聞の発言は採用しない。
+363. [高知県立坂本龍馬記念館「近藤長次郎邸跡」](https://ryoma-kinenkan.jp/place/2018/02/post-37.html) — 幼少期の龍馬との親交は推測なので採用しない。死因の動機説明と伝聞の発言は採用しない。
    - 該当箇所: 近藤長次郎邸跡本文：1838年出生・饅頭屋長次郎・1862年勝海舟入門・亀山社中周旋役の小銃買付とユニオン号購入・慶応2年1月14日没
    - 内容確認日: 2026-09-27
 
-362. [和歌山県文化情報アーカイブ「陸奥宗光」](https://wave.pref.wakayama.lg.jp/bunka-archive/senjin/mutu.html) — 亀山社中の加入年や陸奥姓への改名年は本文で確定しない。後年の大臣としての著名度は幕末の影響力に使用しない。
+364. [和歌山県文化情報アーカイブ「陸奥宗光」](https://wave.pref.wakayama.lg.jp/bunka-archive/senjin/mutu.html) — 亀山社中の加入年や陸奥姓への改名年は本文で確定しない。後年の大臣としての著名度は幕末の影響力に使用しない。
    - 該当箇所: 生没年と本文第1段落：姓・名前の変遷、1863年神戸海軍塾、龍馬との出会い、亀山社中・海援隊参加
    - 内容確認日: 2026-09-27
 
-363. [高知県立坂本龍馬記念館「龍馬FAQ」海援隊構成員](https://ryoma-kinenkan.jp/feat/faq/) — この回答は亀山社中の正確な名簿がないと明記。陸奥の1865年所属・姓名を直接証明するものとしては使わない。
+365. [高知県立坂本龍馬記念館「龍馬FAQ」海援隊構成員](https://ryoma-kinenkan.jp/feat/faq/) — この回答は亀山社中の正確な名簿がないと明記。陸奥の1865年所属・姓名を直接証明するものとしては使わない。
    - 該当箇所: 「亀山社中の構成員は何人ですか」回答：後身の海援隊名簿を用いる旨、紀伊欄の陸奥宗光（当時は陸奥陽之助）、土佐藩欄の長岡謙吉（海援隊書記、龍馬の死後海援隊隊長）
    - 内容確認日: 2026-09-27
 
-364. [長崎市公式観光サイト「長崎市亀山社中記念館」](https://www.at-nagasaki.jp/spot/1047) — 本文は小銃・ユニオン号購入を1866年とする。長次郎の解説は取引年を特定しないため、事件は1865年の社中結成から1866年旧暦1月の長次郎死去までの期間を示す。
+366. [長崎市公式観光サイト「長崎市亀山社中記念館」](https://www.at-nagasaki.jp/spot/1047) — 本文は小銃・ユニオン号購入を1866年とする。長次郎の解説は取引年を特定しないため、事件は1865年の社中結成から1866年旧暦1月の長次郎死去までの期間を示す。
    - 該当箇所: 本文冒頭の1865年結成・武器取引・輸送・航海訓練、および「海援隊」節の1867年設立と約規・隊士陸奥陽之助
    - 内容確認日: 2026-09-27
 
-365. [長野市立象山記念館「2024年9月18日〜12月28日 展示資料一覧」](https://www.sanadahoumotsukan.com/up_images/pla/pla_184948dc.pdf) — 1854年の松陰渡航未遂連座を1858年の安政の大獄と混同しない。個々の門人の入門年月はこの資料で確定しない。
+367. [長野市立象山記念館「2024年9月18日〜12月28日 展示資料一覧」](https://www.sanadahoumotsukan.com/up_images/pla/pla_184948dc.pdf) — 1854年の松陰渡航未遂連座を1858年の安政の大獄と混同しない。個々の門人の入門年月はこの資料で確定しない。
    - 該当箇所: PDF1頁下部の佐久間象山略歴（2頁冒頭へ続く）：松代藩・江戸砲術塾・松陰等の門人・1854年連座・1864年上洛・7月11日暗殺
    - 内容確認日: 2026-09-27
 
-366. [国立国会図書館「近代日本人の肖像・佐久間象山」](https://www.ndl.go.jp/portrait/datas/91/) — 1811年3月22日〜1864年8月12日（旧暦7月11日）。1862年赦免の月日はこの解説では確定しない。
+368. [国立国会図書館「近代日本人の肖像・佐久間象山」](https://www.ndl.go.jp/portrait/datas/91/) — 1811年3月22日〜1864年8月12日（旧暦7月11日）。1862年赦免の月日はこの解説では確定しない。
    - 該当箇所: 生没年・別称・解説：1854年連座と松代蟄居、1862年赦免、1864年幕命による上洛・開国論・暗殺
    - 内容確認日: 2026-09-27
 
-367. [国立国会図書館「近代日本人の肖像・島津斉彬」](https://www.ndl.go.jp/portrait/datas/6091/) — 島津斉彬として掲載された肖像と採録資料を確認。掲載画像は公式提供画像を幅160pxに縮小・JPEG圧縮。原画像は保存し、構図・色調は変更していない。
+369. [国立国会図書館「近代日本人の肖像・島津斉彬」](https://www.ndl.go.jp/portrait/datas/6091/) — 島津斉彬として掲載された肖像と採録資料を確認。掲載画像は公式提供画像を幅160pxに縮小・JPEG圧縮。原画像は保存し、構図・色調は変更していない。
    - 該当箇所: 肖像画像／出典「幕末、明治、大正回顧八十年史 第1輯」
    - 内容確認日: 2026-09-27
 
-368. [京都大学貴重資料デジタルアーカイブ「吉田松陰画像附松陰自賛」](https://rmda.kulib.kyoto-u.ac.jp/item/rb00014105) — 松浦松洞筆・吉田松陰賛、1859年、附属図書館所蔵と資料解説を確認。掲載画像は公式IIIFの肖像部分画像を幅160pxに縮小・JPEG圧縮。原画像を保存。
+370. [京都大学貴重資料デジタルアーカイブ「吉田松陰画像附松陰自賛」](https://rmda.kulib.kyoto-u.ac.jp/item/rb00014105) — 松浦松洞筆・吉田松陰賛、1859年、附属図書館所蔵と資料解説を確認。掲載画像は公式IIIFの肖像部分画像を幅160pxに縮小・JPEG圧縮。原画像を保存。
    - 該当箇所: 著者・出版年・請求記号／内容記述／二次利用方法・所蔵
    - 内容確認日: 2026-09-27
 
-369. [京都大学貴重資料デジタルアーカイブ「コンテンツの二次利用」](https://rmda.kulib.kyoto-u.ac.jp/reuse) — 保護期間満了資料の公開画像は申請不要で二次利用・加工可。所蔵・資料名・リンク・加工明示を確認。
+371. [京都大学貴重資料デジタルアーカイブ「コンテンツの二次利用」](https://rmda.kulib.kyoto-u.ac.jp/reuse) — 保護期間満了資料の公開画像は申請不要で二次利用・加工可。所蔵・資料名・リンク・加工明示を確認。
    - 該当箇所: 2. コンテンツの二次利用条件（京都大学附属図書館）
    - 内容確認日: 2026-09-27
 
-370. [Wikimedia Commons「File:Toku14-2.jpg（徳川家茂像）」](https://commons.wikimedia.org/wiki/File:Toku14-2.jpg) — 徳川茂徳筆、1866–1867年、徳川記念財団所蔵と記載。画像提供元は宇治主水。公式所蔵原資料本文は未確認。
+372. [Wikimedia Commons「File:Toku14-2.jpg（徳川家茂像）」](https://commons.wikimedia.org/wiki/File:Toku14-2.jpg) — 徳川茂徳筆、1866–1867年、徳川記念財団所蔵と記載。画像提供元は宇治主水。公式所蔵原資料本文は未確認。
    - 該当箇所: Summary：Artist／Title／Date／Collection／Source
    - 内容確認日: 2026-09-27
 
-371. [Wikimedia Commons「徳川家茂像・画像の利用条件」](https://commons.wikimedia.org/wiki/File:Toku14-2.jpg#Licensing) — 画像単位のPD-Art（PD-old-auto-expired）、作者1884年没の表記を確認。平面絵画の忠実な複製。
+373. [Wikimedia Commons「徳川家茂像・画像の利用条件」](https://commons.wikimedia.org/wiki/File:Toku14-2.jpg#Licensing) — 画像単位のPD-Art（PD-old-auto-expired）、作者1884年没の表記を確認。平面絵画の忠実な複製。
    - 該当箇所: Licensing：PD-Art／作者1884年没／PD-old-auto-expired
    - 内容確認日: 2026-09-27
 
-372. [京都市「京都のいしぶみ」御陵衛士屯所跡（HI005）](https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hi005.html) — 組織成立と生没の根拠。個々の暗殺実行者や各人物の動機、死亡日の西暦換算は表示しない。
+374. [京都市「京都のいしぶみ」御陵衛士屯所跡（HI005）](https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hi005.html) — 組織成立と生没の根拠。個々の暗殺実行者や各人物の動機、死亡日の西暦換算は表示しない。
    - 該当箇所: 解説本文：伊東甲子太郎の生没年（1835～67）、慶応3年3月新選組離隊、6月月真院屯所、11月死去
    - 内容確認日: 2026-09-30
 
-373. [高知県立坂本龍馬記念館「長岡謙吉邸跡」](https://ryoma-kinenkan.jp/place/2018/02/post-21.html) — 1867年の文書作成の役割を採用。船中八策の成立・起草者や遠縁の具体的関係は今回の根拠に使わない。1868年隊長職は1867年状態へ含めない。
+375. [高知県立坂本龍馬記念館「長岡謙吉邸跡」](https://ryoma-kinenkan.jp/place/2018/02/post-21.html) — 1867年の文書作成の役割を採用。船中八策の成立・起草者や遠縁の具体的関係は今回の根拠に使わない。1868年隊長職は1867年状態へ含めない。
    - 該当箇所: 本文第2段落：1866年頃長崎で龍馬と会い、1867年海援隊加入、文書作成と文官的役割。第3段落：1868年4月海援隊長、1872年没
    - 内容確認日: 2026-09-27
 
-374. [講談社『デジタル版 日本人名大辞典+Plus』長岡謙吉](https://kotobank.jp/word/%E9%95%B7%E5%B2%A1%E8%AC%99%E5%90%89-1096098) — 基本情報の読みと生没年を確認。船中八策の起草に関する記述は今回採用しない。
+376. [講談社『デジタル版 日本人名大辞典+Plus』長岡謙吉](https://kotobank.jp/word/%E9%95%B7%E5%B2%A1%E8%AC%99%E5%90%89-1096098) — 基本情報の読みと生没年を確認。船中八策の起草に関する記述は今回採用しない。
    - 該当箇所: 「デジタル版 日本人名大辞典+Plus」長岡謙吉の見出し読み・1834–1872の生没年・海援隊書記
    - 内容確認日: 2026-09-27
 
-375. [山口県立山口図書館「周布政之助」](https://library.pref.yamaguchi.lg.jp/how_to_investigate/sufu_masanosuke/) — 死亡の政治的心理は推測しない。禁門現場参加や直接指揮は記述しない。
+377. [山口県立山口図書館「周布政之助」](https://library.pref.yamaguchi.lg.jp/how_to_investigate/sufu_masanosuke/) — 死亡の政治的心理は推測しない。禁門現場参加や直接指揮は記述しない。
    - 該当箇所: 人物紹介：読み・生没・別名、1862年復帰と麻田公輔への改名、1864年武力決起派抑制・高杉訪問で謹慎・9月26日自刃
    - 内容確認日: 2026-09-27
 
-376. [山口県立山口図書館「入江九一」](https://library.pref.yamaguchi.lg.jp/how_to_investigate/irie_kuichi/) — 個別の突入門・指揮職・対戦相手は未確認。
+378. [山口県立山口図書館「入江九一」](https://library.pref.yamaguchi.lg.jp/how_to_investigate/irie_kuichi/) — 個別の突入門・指揮職・対戦相手は未確認。
    - 該当箇所: 人物紹介：読み・生没・諱/通称/変名、1858松下村塾、1863士雇と奇兵隊創設参加、1864年7月19日禁門で重傷・自決
    - 内容確認日: 2026-09-27
 
-377. [佐賀県「佐賀が生んだ偉人」](https://sagaishin-kokorozashi.jp/figures/) — 学習・指導と大隈の基本情報に使用。学校設立年・教頭任命は断定せず、佐野の生年は旧暦と西暦の対応を示すNDLに拠る。
+379. [佐賀県「佐賀が生んだ偉人」](https://sagaishin-kokorozashi.jp/figures/) — 学習・指導と大隈の基本情報に使用。学校設立年・教頭任命は断定せず、佐野の生年は旧暦と西暦の対応を示すNDLに拠る。
    - 該当箇所: 「大隈重信」人物欄：読み・1838–1922・1867年長崎でフルベッキに学び塾生指導
    - 内容確認日: 2026-09-27
 
-378. [佐賀県立佐賀城本丸歴史館「1867年パリ万博と佐賀藩の挑戦」](https://saga-museum.jp/sagajou/exhibition/limited/2017/08/001618.html) — 昭武を名代とする幕府使節とは別の佐賀藩使節の根拠。個別の任命関係線や現地での人物間交流を補わない。
+380. [佐賀県立佐賀城本丸歴史館「1867年パリ万博と佐賀藩の挑戦」](https://saga-museum.jp/sagajou/exhibition/limited/2017/08/001618.html) — 昭武を名代とする幕府使節とは別の佐賀藩使節の根拠。個別の任命関係線や現地での人物間交流を補わない。
    - 該当箇所: 冒頭第2〜5段落：前藩主直正の参加決定、佐野団長、派遣目的と蒸気軍艦購入交渉
    - 内容確認日: 2026-09-27
 
-379. [国立国会図書館「近代日本人の肖像・佐野常民」](https://www.ndl.go.jp/portrait/datas/94) — 西暦の生没表示は1823–1902。旧暦文政5年を西暦1822年の誕生日と取り違えない。
+381. [国立国会図書館「近代日本人の肖像・佐野常民」](https://www.ndl.go.jp/portrait/datas/94) — 西暦の生没表示は1823–1902。旧暦文政5年を西暦1822年の誕生日と取り違えない。
    - 該当箇所: 生没年月日・読み：文政5年12月28日＝1823年2月8日、1902年12月7日没
    - 内容確認日: 2026-09-27
 
-380. [早稲田大学會津八一記念博物館研究紀要24号「大隈重信の手跡」](https://waseda.repo.nii.ac.jp/record/78052/files/AizuMuseumKenkyuKiyo_24_11.pdf) — 大学博物館の研究本文を確認。原書簡の読解ではない。後段の回想の校長表現を常任役職として採用しない。
+382. [早稲田大学會津八一記念博物館研究紀要24号「大隈重信の手跡」](https://waseda.repo.nii.ac.jp/record/78052/files/AizuMuseumKenkyuKiyo_24_11.pdf) — 大学博物館の研究本文を確認。原書簡の読解ではない。後段の回想の校長表現を常任役職として採用しない。
    - 該当箇所: 印刷頁93（PDF7頁）：慶応3年長崎の蕃学稽古所、副島次郎（種臣）・大隈八太郎（重信）の説明
    - 内容確認日: 2026-09-27
 
-381. [佐賀県立博物館・美術館報91号「パリ万国博覧会から 深川長右衛門が持ち帰った品物」](https://saga-museum.jp/museum/files/kanpo091.pdf) — 画像型PDF本文を目視確認。1867年の通称の根拠であり、常民の改名年は断定しない。
+383. [佐賀県立博物館・美術館報91号「パリ万国博覧会から 深川長右衛門が持ち帰った品物」](https://saga-museum.jp/museum/files/kanpo091.pdf) — 画像型PDF本文を目視確認。1867年の通称の根拠であり、常民の改名年は断定しない。
    - 該当箇所: 印刷頁2（PDF2頁）「はじめに」第1段落：1867年万博へ佐野栄寿左衛門（常民）らと同行
    - 内容確認日: 2026-09-27
 
-382. [慶應義塾大学文学部古文書室「幕末を記録する―二条家文書の世界」展示品解説](https://kmj.flet.keio.ac.jp/exhibition/2015/kaisetsu.pdf) — 展示解説本文を確認し、日記画像を独自に翻刻したものではない。9月25日は展示日記の日付で、勅許決定日には固定しない。
+384. [慶應義塾大学文学部古文書室「幕末を記録する―二条家文書の世界」展示品解説](https://kmj.flet.keio.ac.jp/exhibition/2015/kaisetsu.pdf) — 展示解説本文を確認し、日記画像を独自に翻刻したものではない。9月25日は展示日記の日付で、勅許決定日には固定しない。
    - 該当箇所: PDF9頁・展示資料17「条約勅許・兵庫開港問題（御側日記）」：慶応元年9月、慶喜・容保・定敬と関白の協議、条約のみ勅許
    - 内容確認日: 2026-09-27
 
-383. [慶應義塾大学文学部古文書室「展示資料2スポット解説」桑名城](https://kmj.flet.keio.ac.jp/exhibition/2016/spot.pdf) — 生没年・桑名藩主と兄弟関係を確認。後年の転戦を1865年の役割へ含めない。
+385. [慶應義塾大学文学部古文書室「展示資料2スポット解説」桑名城](https://kmj.flet.keio.ac.jp/exhibition/2016/spot.pdf) — 生没年・桑名藩主と兄弟関係を確認。後年の転戦を1865年の役割へ含めない。
    - 該当箇所: PDF7〜8頁「勢州桑名郡 桑名城」：松平定敬1847–1908、桑名藩主、兄は松平容保
    - 内容確認日: 2026-09-27
 
-384. [柏崎市WEBミュージアム「松平 定敬」](https://jmapps.ne.jp/kashiwazaki/sakka_det.html?list_count=10&person_id=40) — 読みと役職の根拠。生年欄1846は採用せず、慶應古文書室2資料の西暦1847年に拠る。
+386. [柏崎市WEBミュージアム「松平 定敬」](https://jmapps.ne.jp/kashiwazaki/sakka_det.html?list_count=10&person_id=40) — 読みと役職の根拠。生年欄1846は採用せず、慶應古文書室2資料の西暦1847年に拠る。
    - 該当箇所: じんぶつ名（ヨミ）と略歴冒頭：1864年京都所司代任命、1867年12月解任
    - 内容確認日: 2026-09-27
 
-385. [国立国会図書館「あの人の直筆 水戸藩儒」](https://www.ndl.go.jp/jikihitsu/part1/s1_4) — 所蔵機関の解説を確認。直筆画像の原文を独自に翻刻したものではない。
+387. [国立国会図書館「あの人の直筆 水戸藩儒」](https://www.ndl.go.jp/jikihitsu/part1/s1_4) — 所蔵機関の解説を確認。直筆画像の原文を独自に翻刻したものではない。
    - 該当箇所: 藤田東湖1806–1855の略歴と13「藤田東湖書簡」安政元年9月14日（WA25-30）の解説
    - 内容確認日: 2026-09-27
 
-386. [柏市歴史デジタルミュージアム「第九回 水戸学の大成者―藤田東湖―」](https://www.city.kashiwa.lg.jp/bunka/about_kashiwa/culture/rekishi/rekishihakken/dai9kai.html) — 引用発言や救母逸話は採用しない。
+388. [柏市歴史デジタルミュージアム「第九回 水戸学の大成者―藤田東湖―」](https://www.city.kashiwa.lg.jp/bunka/about_kashiwa/culture/rekishi/rekishihakken/dai9kai.html) — 引用発言や救母逸話は採用しない。
    - 該当箇所: 藤田東湖の斉昭補佐・海防問題、1855年地震死、子小四郎の読みと1842–1865
    - 内容確認日: 2026-09-27
 
-387. [茨城県立歴史館「天狗党事件」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/tenngutoujikenn.htm) — 初期の首領と西上の総裁を区別。処刑人数は採用しない。
+389. [茨城県立歴史館「天狗党事件」](https://www.rekishikan.museum.ibk.ed.jp/06_jiten/rekisi/tenngutoujikenn.htm) — 初期の首領と西上の総裁を区別。処刑人数は採用しない。
    - 該当箇所: 本文：1864年3月の小四郎らの筑波挙兵・田丸首領、10月那珂湊、11月西上と武田総裁
    - 内容確認日: 2026-09-27
 
-388. [国立公文書館「41.常野浮浪徒一件」](https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/41.html) — 展示解説の確認。史料名簿や日記原文を独自に読解したものではない。
+390. [国立公文書館「41.常野浮浪徒一件」](https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/41.html) — 展示解説の確認。史料名簿や日記原文を独自に読解したものではない。
    - 該当箇所: 展示解説第1〜2段落：武田・小四郎の再編と西上、元治元年12月投降、翌2月処刑
    - 内容確認日: 2026-09-27
 
-389. [観光いばらき「筑波山神社」](https://www.ibarakiguide.jp/spot.php?code=942&mode=detail) — 筑波山側の地域代表点。挙兵現場の精密座標ではない。
+391. [観光いばらき「筑波山神社」](https://www.ibarakiguide.jp/spot.php?code=942&mode=detail) — 筑波山側の地域代表点。挙兵現場の精密座標ではない。
    - 該当箇所: 「地図」Google Mapsリンク転送先の座標36.2250067,140.1063546
    - 内容確認日: 2026-09-27
 
-390. [港都つるが観光協会「武田耕雲斎等の墓」](https://tsuruga-kanko.jp/spot/history_culture/takedakounsai-grave/) — 処刑後の墓所付近の地域代表点。新保の降伏現場とは区別する。
+392. [港都つるが観光協会「武田耕雲斎等の墓」](https://tsuruga-kanko.jp/spot/history_culture/takedakounsai-grave/) — 処刑後の墓所付近の地域代表点。新保の降伏現場とは区別する。
    - 該当箇所: 住所「福井県敦賀市松島町」と埋込Google Maps中心座標35.6511955316216,136.05496947679927
    - 内容確認日: 2026-09-27
 
-391. [国立国会図書館「近代日本人の肖像・山内豊信」](https://www.ndl.go.jp/portrait/datas/206/) — 本人名・別称、肖像と採録資料を確認。掲載画像を幅160pxへ縮小・JPEG圧縮。
+393. [国立国会図書館「近代日本人の肖像・山内豊信」](https://www.ndl.go.jp/portrait/datas/206/) — 本人名・別称、肖像と採録資料を確認。掲載画像を幅160pxへ縮小・JPEG圧縮。
    - 該当箇所: 生没年・別称・解説／肖像1枚目／出典「近世名士写真 其2」
    - 内容確認日: 2026-09-27
 
-392. [京都大学貴重資料デジタルアーカイブ「武市瑞山自画讃肖像」](https://rmda.kulib.kyoto-u.ac.jp/item/rb00013934) — 京都大学附属図書館所蔵、尊/軸81、尊/軸89の石版、二次利用自由表示を確認。刊行・制作年は書誌に記載なし。公式IIIFの肖像部分を取得して配信用に縮小。
+394. [京都大学貴重資料デジタルアーカイブ「武市瑞山自画讃肖像」](https://rmda.kulib.kyoto-u.ac.jp/item/rb00013934) — 京都大学附属図書館所蔵、尊/軸81、尊/軸89の石版、二次利用自由表示を確認。刊行・制作年は書誌に記載なし。公式IIIFの肖像部分を取得して配信用に縮小。
    - 該当箇所: タイトル・著者・形態・注記（尊/軸89の石版）・請求記号・所蔵・画像二次利用自由表示
    - 内容確認日: 2026-09-27
 
-393. [国立国会図書館「近代日本人の肖像：大久保一翁」](https://www.ndl.go.jp/portrait/datas/31) — 忠寛の読み、西暦換算の生没日、阿部正弘による登用、目付兼海防掛、蕃書調所総裁などの職歴、安政の大獄での罷免、1861年の再登用、1868年の会計総裁・若年寄、江戸開城への寄与。
+395. [国立国会図書館「近代日本人の肖像：大久保一翁」](https://www.ndl.go.jp/portrait/datas/31) — 忠寛の読み、西暦換算の生没日、阿部正弘による登用、目付兼海防掛、蕃書調所総裁などの職歴、安政の大獄での罷免、1861年の再登用、1868年の会計総裁・若年寄、江戸開城への寄与。
    - 該当箇所: 「生没年」「別称」「解説」
    - 内容確認日: 2026-09-30
 
-394. [国立国会図書館リサーチ・ナビ「大久保一翁関係文書」](https://ndlsearch.ndl.go.jp/rnavi/kensei/ookuboichiou) — 旧蔵者履歴にある1854年5月の目付、1856年10月の蕃書調所総裁、1857年4月の駿府町奉行、1861年10月の外国奉行、1868年2月の若年寄就任。生年の1817は旧暦表記で、西暦換算は肖像解説を参照。書簡の目録だけから個別の政治関係を推定しない。
+396. [国立国会図書館リサーチ・ナビ「大久保一翁関係文書」](https://ndlsearch.ndl.go.jp/rnavi/kensei/ookuboichiou) — 旧蔵者履歴にある1854年5月の目付、1856年10月の蕃書調所総裁、1857年4月の駿府町奉行、1861年10月の外国奉行、1868年2月の若年寄就任。生年の1817は旧暦表記で、西暦換算は肖像解説を参照。書簡の目録だけから個別の政治関係を推定しない。
    - 該当箇所: 「旧蔵者」「旧蔵者履歴」
    - 内容確認日: 2026-09-30
 
-395. [袋井市立図書館公開「湊の歌碑：大久保一翁公」](https://lib.city.fukuroi.shizuoka.jp/wysiwyg/file/download/1/233) — 1865年の隠居と一翁への改名、1868年に勝海舟と共に恭順論を唱え、徳川家救済・江戸開城に尽力したこと。PDFの画像本文を確認。没年などの基本情報は国立国会図書館に従い、この資料から流用しない。
+397. [袋井市立図書館公開「湊の歌碑：大久保一翁公」](https://lib.city.fukuroi.shizuoka.jp/wysiwyg/file/download/1/233) — 1865年の隠居と一翁への改名、1868年に勝海舟と共に恭順論を唱え、徳川家救済・江戸開城に尽力したこと。PDFの画像本文を確認。没年などの基本情報は国立国会図書館に従い、この資料から流用しない。
    - 該当箇所: PDF 3頁「詠者／大久保一翁公」第1〜3段落
    - 内容確認日: 2026-09-30
 
-396. [日野市「佐藤彦五郎」](https://www.city.hino.lg.jp/shisei/keywords/1014641/1014674.html) — 土方歳三の義兄、日野宿の名主、道場開設と新選組への金銭的支援。
+398. [日野市「佐藤彦五郎」](https://www.city.hino.lg.jp/shisei/keywords/1014641/1014674.html) — 土方歳三の義兄、日野宿の名主、道場開設と新選組への金銭的支援。
    - 該当箇所: 本文「佐藤彦五郎」
    - 内容確認日: 2026-09-30
 
-397. [佐藤彦五郎新選組資料館「佐藤彦五郎俊正 年表」](https://satoshinsen.gozaru.jp/s_0007.html) — 生没年と1863年の土方推挙・隊士の世話・近藤への資金協力を採用。年代表記に揺れがある他の条・一族赦免の時期等は採用しない。
+399. [佐藤彦五郎新選組資料館「佐藤彦五郎俊正 年表」](https://satoshinsen.gozaru.jp/s_0007.html) — 生没年と1863年の土方推挙・隊士の世話・近藤への資金協力を採用。年代表記に揺れがある他の条・一族赦免の時期等は採用しない。
    - 該当箇所: 1827年・1863年・1902年の条
    - 内容確認日: 2026-09-30
 
-398. [日野市「佐藤彦五郎新選組資料館」](https://www.city.hino.lg.jp/shisei/profile/kokusai/note/nikki/1006599.html) — 佐藤が日野に留まり、土方を送り出した経緯、道場と京都の隊士との書簡交流。史料原本ではなく市の展示紹介本文を確認。
+400. [日野市「佐藤彦五郎新選組資料館」](https://www.city.hino.lg.jp/shisei/profile/kokusai/note/nikki/1006599.html) — 佐藤が日野に留まり、土方を送り出した経緯、道場と京都の隊士との書簡交流。史料原本ではなく市の展示紹介本文を確認。
    - 該当箇所: 冒頭の道場と上洛支援、京都からの手紙の段落
    - 内容確認日: 2026-09-30
 
-399. [日野市「井上源三郎」](https://www.city.hino.lg.jp/shisei/keywords/1014641/1014670.html) — 1829年生、佐藤道場での修練、六番隊組長の経歴、1868年の鳥羽伏見での戦死。組長就任時期は記されていない。
+401. [日野市「井上源三郎」](https://www.city.hino.lg.jp/shisei/keywords/1014641/1014670.html) — 1829年生、佐藤道場での修練、六番隊組長の経歴、1868年の鳥羽伏見での戦死。組長就任時期は記されていない。
    - 該当箇所: 本文「井上源三郎」
    - 内容確認日: 2026-09-30
 
-400. [日野市「没後150年 新選組 井上源三郎」特別展案内](https://www.city.hino.lg.jp/press/h294/1006673.html) — 近藤・土方・沖田と上洛して新選組を結成し、池田屋・禁門で活動したこと。個別の突入位置や指揮内容は採用しない。
+402. [日野市「没後150年 新選組 井上源三郎」特別展案内](https://www.city.hino.lg.jp/press/h294/1006673.html) — 近藤・土方・沖田と上洛して新選組を結成し、池田屋・禁門で活動したこと。個別の突入位置や指揮内容は採用しない。
    - 該当箇所: 展示趣旨の井上源三郎の略歴（生年・上洛・池田屋事件）
    - 内容確認日: 2026-09-30
 
-401. [日野市「井上源三郎資料館と没後150年の特別展」](https://www.city.hino.lg.jp/shisei/profile/kokusai/note/nikki/1006607.html) — 土方・近藤と京都へ行って隊士となったこと、1868年1月5日の鳥羽伏見での戦死。展示紹介本文の確認であり古文書原本の閲覧ではない。
+403. [日野市「井上源三郎資料館と没後150年の特別展」](https://www.city.hino.lg.jp/shisei/profile/kokusai/note/nikki/1006607.html) — 土方・近藤と京都へ行って隊士となったこと、1868年1月5日の鳥羽伏見での戦死。展示紹介本文の確認であり古文書原本の閲覧ではない。
    - 該当箇所: 井上兄弟の進路の段落、特別展紹介の戦死の段落
    - 内容確認日: 2026-09-30
 
-402. [観光庁・伏見観光プロジェクトチーム「寺田屋 おとせ」](https://www.mlit.go.jp/tagengo-db/R1-01295.html) — 生没年、伏見での寺田屋の経営、龍馬の世話、お龍を雇い娘として迎えたこと、母への援助に用いる。人物評、薩摩の政治路線、1862年の死者数、1866年の襲撃当日の救護行動は採用しない。縁組の手続き・成立日は未確認。
+404. [観光庁・伏見観光プロジェクトチーム「寺田屋 おとせ」](https://www.mlit.go.jp/tagengo-db/R1-01295.html) — 生没年、伏見での寺田屋の経営、龍馬の世話、お龍を雇い娘として迎えたこと、母への援助に用いる。人物評、薩摩の政治路線、1862年の死者数、1866年の襲撃当日の救護行動は採用しない。縁組の手続き・成立日は未確認。
    - 該当箇所: 日本語「寺田屋:お登勢」第1〜2段落（生没年・経営）、第4段落（龍馬の世話・お龍の受け入れ・母への援助）
    - 内容確認日: 2026-09-30
 
-403. [京都国立博物館「坂本龍馬関係書状 慶応元年九月九日 坂本乙女、おやべあて」](https://knmdb.kyohaku.go.jp/476.html) — 寺田屋から土佐の姉へ送った書簡、お龍の紹介、帯か着物の送付依頼を館の解説で確認。依頼が実行されたとは断定しない。原本の判読とは区別する。
+405. [京都国立博物館「坂本龍馬関係書状 慶応元年九月九日 坂本乙女、おやべあて」](https://knmdb.kyohaku.go.jp/476.html) — 寺田屋から土佐の姉へ送った書簡、お龍の紹介、帯か着物の送付依頼を館の解説で確認。依頼が実行されたとは断定しない。原本の判読とは区別する。
    - 該当箇所: 作品情報 M甲157-4：画像下の第1段落（差出地・宛先）、詳説第3段落（乙女への帯・着物の依頼）
    - 内容確認日: 2026-09-30
 
-404. [京都国立博物館「坂本龍馬関係書状 慶応二年十二月四日 坂本乙女あて」](https://knmdb.kyohaku.go.jp/477.html) — 土佐の姉乙女への年間の報告、寺田屋襲撃とその後の療養、お龍の紹介を館の解説で確認。乙女の現場参加や救援の根拠にはしない。襲撃日を一月二十四日未明とする箇所は既存資料と差があるため採用せず、月表示を維持する。原本の判読とは区別する。
+406. [京都国立博物館「坂本龍馬関係書状 慶応二年十二月四日 坂本乙女あて」](https://knmdb.kyohaku.go.jp/477.html) — 土佐の姉乙女への年間の報告、寺田屋襲撃とその後の療養、お龍の紹介を館の解説で確認。乙女の現場参加や救援の根拠にはしない。襲撃日を一月二十四日未明とする箇所は既存資料と差があるため採用せず、月表示を維持する。原本の判読とは区別する。
    - 該当箇所: 作品情報 M甲157-5：画像下の解説第1〜2段落（書簡日・土佐の姉乙女・襲撃と療養の報告）
    - 内容確認日: 2026-09-30
 
-405. [京都市「坂本龍馬・中岡慎太郎遭難地」](https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/na011.html) — 慶応3年11月15日夜の近江屋襲撃、海援隊長・陸援隊長という役割、河原町通蛸薬師下るの所在地を確認。二人が同時に死亡したという根拠にはせず、慎太郎の死去日は慎太郎館と龍馬記念館で別に確認する。地図は既存の京都の概略地点を使い、現場座標を追加しない。
+407. [京都市「坂本龍馬・中岡慎太郎遭難地」](https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/na011.html) — 慶応3年11月15日夜の近江屋襲撃、海援隊長・陸援隊長という役割、河原町通蛸薬師下るの所在地を確認。二人が同時に死亡したという根拠にはせず、慎太郎の死去日は慎太郎館と龍馬記念館で別に確認する。地図は既存の京都の概略地点を使い、現場座標を追加しない。
    - 該当箇所: NA011 冒頭解説（襲撃日・二人の役職）／所在地欄
    - 内容確認日: 2026-09-30
 
-406. [高知県立坂本龍馬記念館「龍馬FAQ・近江屋の証言と実行犯説」](https://ryoma-kinenkan.jp/feat/faq/cat/) — 龍馬と慎太郎の死去時点の違い、慎太郎の話を伝える後年の記録、実行犯説と証言の食い違い、霊山墓地への埋葬を館の解説で確認。紹介された遺稿・自叙伝の原本を直接読んだとはしない。最期の発言の引用、刺客の人数・個人の確定、黒幕・動機の断定は採用しない。
+408. [高知県立坂本龍馬記念館「龍馬FAQ・近江屋の証言と実行犯説」](https://ryoma-kinenkan.jp/feat/faq/cat/) — 龍馬と慎太郎の死去時点の違い、慎太郎の話を伝える後年の記録、実行犯説と証言の食い違い、霊山墓地への埋葬を館の解説で確認。紹介された遺稿・自叙伝の原本を直接読んだとはしない。最期の発言の引用、刺客の人数・個人の確定、黒幕・動機の断定は採用しない。
    - 該当箇所: 「龍馬が近江屋で中岡慎太郎をいたところを刺客に襲われ…最後の言葉…」／「龍馬は誰に殺されたのですか。」／「龍馬の死後、遺体はどのように、どこへ搬送されたのですか。」
    - 内容確認日: 2026-09-30
 
-407. [高知県立坂本龍馬記念館「龍馬FAQ・軍鶏鍋の伝承」](https://ryoma-kinenkan.jp/feat/faq/cat4/) — 軍鶏の買い出しの話は後年の峰吉の話を材料とすると考えられ、好物だった確証はないという解説を確認。伝承を確定した現場描写や動機へ変換しない。
+409. [高知県立坂本龍馬記念館「龍馬FAQ・軍鶏鍋の伝承」](https://ryoma-kinenkan.jp/feat/faq/cat4/) — 軍鶏の買い出しの話は後年の峰吉の話を材料とすると考えられ、好物だった確証はないという解説を確認。伝承を確定した現場描写や動機へ変換しない。
    - 該当箇所: 「龍馬が生前食べたかったものとして軍鶏鍋が挙げられるそうですが、軍鶏鍋が好物なのでしょうか。」
    - 内容確認日: 2026-09-30
 

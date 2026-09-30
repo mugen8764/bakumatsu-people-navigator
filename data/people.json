@@ -1792,7 +1792,8 @@
       "placeIds": [
         "kochi",
         "edo",
-        "aizu"
+        "aizu",
+        "katsunuma"
       ],
       "eventIds": [
         "toba",
@@ -1821,7 +1822,8 @@
       "oneLine": "新選組局長として京都治安を担い、戊辰戦争では旧幕府側で戦った。",
       "placeIds": [
         "edo",
-        "kyoto"
+        "kyoto",
+        "katsunuma"
       ],
       "eventIds": [
         "aug18",
@@ -1850,6 +1852,23 @@
         "kyoto-shugoshoku",
         "joi",
         "roshigumi"
+      ],
+      "turningPoints": [
+        {
+          "fromSceneId": "1868-toba",
+          "toSceneId": "1868-edo",
+          "title": "甲陽鎮撫隊の敗戦から、流山での出頭へ",
+          "before": "鳥羽・伏見の戦い後、甲陽鎮撫隊を組織して新政府軍と戦う。",
+          "after": "3月に勝沼で敗走し、隊士を募って流山へ移るが、4月3日に出頭して捕らえられる。",
+          "context": "3月1日の江戸出発、3月6日の勝沼敗戦、4月3日の出頭はいずれも旧暦。4月25日に板橋宿で処刑された。江戸開城の交渉当事者ではない。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_kondo_detail",
+              "nagareyama_shinsengumi_1868"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
       ]
     },
     {
@@ -2616,7 +2635,8 @@
       "placeIds": [
         "kyoto",
         "fushimi",
-        "aizu"
+        "aizu",
+        "katsunuma"
       ],
       "eventIds": [
         "toba",

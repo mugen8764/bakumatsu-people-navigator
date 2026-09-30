@@ -2781,6 +2781,117 @@
       }
     },
     {
+      "id": "koshu-katsunuma",
+      "sceneId": "1868-edo",
+      "title": "甲州勝沼の戦い",
+      "date": "1868年3月6日（慶応4年・旧暦）",
+      "summary": "鳥羽・伏見の敗戦後、近藤勇が率いる甲陽鎮撫隊は江戸から甲府へ向かったが、勝沼で板垣退助の率いる新政府軍に敗れた。",
+      "stakes": "3月1日に江戸を出た甲陽鎮撫隊と、諏訪・甲府方面へ進む新政府軍が衝突した。江戸開城の交渉に先立つ、甲州方面での戦いである。",
+      "turningPoint": "敗走した近藤らは江戸周辺で隊士を募り、4月に流山へ移った。近藤は出頭して捕らえられ、土方や山口二郎の戦いは会津方面へ続く。江戸開城で全員の抵抗が終わったわけではない。",
+      "scope": "3月の甲陽鎮撫隊の進軍と勝沼での敗戦、流山・会津への経過",
+      "participants": [
+        {
+          "personId": "kondo",
+          "displayName": "近藤勇",
+          "role": "甲陽鎮撫隊を率いる",
+          "involvement": "decision",
+          "side": "旧幕府側",
+          "summary": "甲陽鎮撫隊を率いて甲府へ向かい、勝沼で新政府軍と戦って敗走した。4月の流山での出頭は、この敗戦の後の出来事。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_kondo_detail",
+              "nagareyama_shinsengumi_1868"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "itakagi",
+          "displayName": "板垣退助",
+          "role": "東山道征討軍参謀・新政府軍を率いる",
+          "involvement": "decision",
+          "side": "新政府側",
+          "summary": "土佐藩兵を率いて甲府方面へ進軍し、勝沼で甲陽鎮撫隊を破った。甲府占領時に乾から板垣へ改姓したと高知市の解説は記す。",
+          "evidence": {
+            "sourceIds": [
+              "nagareyama_shinsengumi_1868",
+              "kochi_itagaki_1868_name",
+              "jacar_itagaki_march_1868"
+            ],
+            "reviewStatus": "verified",
+            "note": "参謀の役職・改姓は高知市、勝沼で率いた軍の勝利は流山市立博物館の解説による。後の参議・民権運動の肩書きは持ち込まない。"
+          }
+        },
+        {
+          "personId": "saito",
+          "displayName": "山口二郎",
+          "role": "新選組として参戦",
+          "involvement": "onsite",
+          "side": "旧幕府側",
+          "summary": "斎藤一は新選組復帰後に山口二郎を名乗り、鳥羽・伏見から甲州勝沼を経て会津へ向かった。具体的な配置や戦闘中の命令は確定しない。",
+          "evidence": {
+            "sourceIds": [
+              "fukushima_saito",
+              "aizu_shinsengumi"
+            ],
+            "reviewStatus": "verified",
+            "note": "会津で土方に代わって隊を指揮する役割を、勝沼当日へ先取りしない。"
+          }
+        },
+        {
+          "personId": "hijikata",
+          "displayName": "土方歳三",
+          "role": "甲陽鎮撫隊の進軍に関与",
+          "involvement": "context",
+          "side": "旧幕府側",
+          "summary": "近藤らと甲州へ向かう途中、日野宿本陣に立ち寄った。敗戦後は隊士を率いて五兵衛新田へ入る。当日の戦場配置や援軍要請はここでは確定しない。",
+          "evidence": {
+            "sourceIds": [
+              "hino_honjin_koyo",
+              "nagareyama_shinsengumi_1868"
+            ],
+            "reviewStatus": "verified",
+            "note": "進軍時と敗戦後の関与を示す。勝沼当日の現場指揮を直接支える記述としては扱わない。"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "id": "katsunuma-kondo-itagaki",
+          "aPersonId": "kondo",
+          "bPersonId": "itakagi",
+          "label": "甲陽鎮撫隊と新政府軍",
+          "description": "近藤が率いた甲陽鎮撫隊は、板垣が率いた新政府軍に勝沼で敗れた。両者個人の直接対決を意味する線ではない。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_kondo_detail",
+              "nagareyama_shinsengumi_1868"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "placeIds": [
+        "katsunuma",
+        "edo"
+      ],
+      "termIds": [
+        "boshin-war"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "nagareyama_shinsengumi_1868",
+          "ndl_portrait_kondo_detail",
+          "kochi_itagaki_1868_name",
+          "fukushima_saito",
+          "hino_honjin_koyo"
+        ],
+        "reviewStatus": "verified",
+        "note": "日付は流山市立博物館の関係略年表の慶応4年3月6日。隊の人数や戦闘の細部、伝承的な発言は採用しない。"
+      }
+    },
+    {
       "id": "edo-castle-surrender",
       "sceneId": "1868-edo",
       "title": "江戸開城の交渉と引き渡し",

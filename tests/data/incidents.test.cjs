@@ -11,6 +11,30 @@ const domain = createDomain(data);
 // Scenes are named by ID so inserting a scene does not shift the assertions.
 const sceneAt = id => domain.sceneById.get(id).index;
 
+test('Katsunuma separates battle roles from later surrender and Aizu command', () => {
+  const incident = data.incidents['koshu-katsunuma'];
+  assert.equal(incident.sceneId, '1868-edo');
+  assert.match(incident.date, /3月6日.*旧暦/);
+  const cast = Object.fromEntries(incident.participants.map(p => [p.personId, p]));
+  assert.equal(cast.kondo.involvement, 'decision');
+  assert.equal(cast.itakagi.involvement, 'decision');
+  assert.equal(cast.saito.involvement, 'onsite');
+  assert.equal(cast.saito.displayName, '山口二郎');
+  assert.equal(cast.hijikata.involvement, 'context');
+  assert.match(cast.hijikata.summary, /当日の戦場配置.*確定しない/);
+  assert.match(cast.saito.evidence.note, /会津.*先取りしない/);
+  assert.equal(domain.statusAt(domain.getPerson('itakagi'), sceneAt('1868-toba')).display, '乾退助');
+  assert.equal(domain.statusAt(domain.getPerson('itakagi'), sceneAt('1868-edo')).display, '板垣退助');
+  assert.equal(domain.statusAt(domain.getPerson('saito'), sceneAt('1868-edo')).role, '新選組隊士');
+  assert.match(domain.statusAt(domain.getPerson('saito'), sceneAt('1868-tohoku')).role, /指揮/);
+  assert.equal(domain.statusAt(domain.getPerson('kondo'), sceneAt('1868-tohoku')), null);
+  assert.equal(searchAll(data, '甲州勝沼').find(item => item.type === '事件').id, incident.id);
+  assert.deepEqual(incident.placeIds, ['katsunuma', 'edo']);
+  assert.match(data.places.katsunuma.note, /戦場の範囲や陣地を示さない/);
+  const point = domain.getPerson('kondo').turningPoints.find(p => p.toSceneId === '1868-edo');
+  assert.match(point.after, /勝沼.*4月3日/);
+});
+
 test('Nakamura Hanjiro keeps his wartime name and documented 1868 coverage', () => {
   const person = domain.getPerson('kirino-toshiaki');
   assert.equal(domain.statusAt(person, sceneAt('1867-taisei')), null);
