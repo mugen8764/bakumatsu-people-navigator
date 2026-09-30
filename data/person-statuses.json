@@ -9542,6 +9542,132 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-status-otose-1866-satcho",
+      "personId": "otose",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "displayName": "お登勢",
+      "role": "寺田屋の女将・生活の支援者",
+      "factionId": "life-support",
+      "stance": "伏見で寺田屋を営み、龍馬の世話をした。お龍を雇い、娘として迎え、お龍の母にも経済的な援助を行った。",
+      "importance": "宿の運営や生活の支援を担う人物。襲撃時の警告や脱出後の救護とは役割を分けて読む。",
+      "evidence": {
+        "sourceIds": [
+          "mlit_teradaya_otose"
+        ],
+        "reviewStatus": "verified",
+        "note": "生活支援の個々の開始日・終了日や、襲撃当日の救護行動は確定しない。"
+      }
+    },
+    {
+      "id": "person-status-sakamoto-otome-1863-joi",
+      "personId": "sakamoto-otome",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1863-joi",
+      "displayName": "坂本乙女",
+      "role": "土佐の家族・龍馬の姉",
+      "factionId": "life-support",
+      "stance": "土佐にいる龍馬の姉。1863年3月20日付の乙女宛書状には、脱藩後の龍馬が勝海舟の門下で海軍創設に従事する様子が記されている。",
+      "importance": "家族への相談・報告というつながり。政治組織への所属や、京都の事件現場への参加を意味しない。",
+      "evidence": {
+        "sourceIds": [
+          "kyoto_museum_ryoma_1863"
+        ],
+        "reviewStatus": "verified",
+        "note": "1863年の書簡で確認した姉弟関係を収録。各時点で同じ行動が新たに起きたとするものではない。"
+      }
+    },
+    {
+      "id": "person-status-sakamoto-otome-1863-aug18",
+      "personId": "sakamoto-otome",
+      "startSceneId": "1863-aug18",
+      "endSceneId": "1863-aug18",
+      "displayName": "坂本乙女",
+      "role": "土佐の家族・龍馬の姉",
+      "factionId": "life-support",
+      "stance": "土佐にいる龍馬の姉。1863年3月20日付の乙女宛書状には、脱藩後の龍馬が勝海舟の門下で海軍創設に従事する様子が記されている。",
+      "importance": "家族への相談・報告というつながり。政治組織への所属や、京都の事件現場への参加を意味しない。",
+      "evidence": {
+        "sourceIds": [
+          "kyoto_museum_ryoma_1863"
+        ],
+        "reviewStatus": "verified",
+        "note": "1863年の書簡で確認した姉弟関係を収録。各時点で同じ行動が新たに起きたとするものではない。"
+      }
+    },
+    {
+      "id": "person-status-sakamoto-otome-1864-kinmon",
+      "personId": "sakamoto-otome",
+      "startSceneId": "1864-kinmon",
+      "endSceneId": "1864-kinmon",
+      "displayName": "坂本乙女",
+      "role": "土佐の家族・龍馬の姉",
+      "factionId": "life-support",
+      "stance": "土佐にいる龍馬の姉。1863年3月20日付の乙女宛書状には、脱藩後の龍馬が勝海舟の門下で海軍創設に従事する様子が記されている。",
+      "importance": "家族への相談・報告というつながり。政治組織への所属や、京都の事件現場への参加を意味しない。",
+      "evidence": {
+        "sourceIds": [
+          "kyoto_museum_ryoma_1863"
+        ],
+        "reviewStatus": "verified",
+        "note": "1863年の書簡で確認した姉弟関係を収録。各時点で同じ行動が新たに起きたとするものではない。"
+      }
+    },
+    {
+      "id": "person-status-sakamoto-otome-1865-choshu",
+      "personId": "sakamoto-otome",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1865-choshu",
+      "displayName": "坂本乙女",
+      "role": "土佐の家族・龍馬の姉",
+      "factionId": "life-support",
+      "stance": "1865年9月9日、龍馬は寺田屋から乙女とおやべへ手紙を送り、お龍を紹介した。乙女に、お龍へ帯か着物を贈ってほしいと依頼している。実際の送付はこの資料から確定しない。",
+      "importance": "家族への相談・報告というつながり。政治組織への所属や、京都の事件現場への参加を意味しない。",
+      "evidence": {
+        "sourceIds": [
+          "kyohaku_otome_letter_1865"
+        ],
+        "reviewStatus": "verified",
+        "note": "書簡の日付と依頼・報告の内容を区別し、未確認の送付・現場参加・動機を補わない。"
+      }
+    },
+    {
+      "id": "person-status-sakamoto-otome-1866-satcho",
+      "personId": "sakamoto-otome",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "displayName": "坂本乙女",
+      "role": "土佐の家族・龍馬の姉",
+      "factionId": "life-support",
+      "stance": "土佐の家族として龍馬と手紙でつながる姉。寺田屋襲撃の現場での警告・救護には含めない。龍馬は同年12月4日の乙女宛書状で、襲撃とその後の療養を振り返っている。",
+      "importance": "家族への相談・報告というつながり。政治組織への所属や、京都の事件現場への参加を意味しない。",
+      "evidence": {
+        "sourceIds": [
+          "kyohaku_otome_letter_1866"
+        ],
+        "reviewStatus": "verified",
+        "note": "書簡の日付と依頼・報告の内容を区別し、未確認の送付・現場参加・動機を補わない。"
+      }
+    },
+    {
+      "id": "person-status-sakamoto-otome-1866-expedition",
+      "personId": "sakamoto-otome",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "displayName": "坂本乙女",
+      "role": "土佐の家族・龍馬の姉",
+      "factionId": "life-support",
+      "stance": "1866年12月4日付の乙女宛書状に、龍馬は寺田屋での襲撃やその後の療養、お龍との暮らしを記した。事件後に土佐の家族へ報告した書簡であり、乙女が現場にいたことを示すものではない。",
+      "importance": "家族への相談・報告というつながり。政治組織への所属や、京都の事件現場への参加を意味しない。",
+      "evidence": {
+        "sourceIds": [
+          "kyohaku_otome_letter_1866"
+        ],
+        "reviewStatus": "verified",
+        "note": "書簡の日付と依頼・報告の内容を区別し、未確認の送付・現場参加・動機を補わない。"
+      }
     }
   ]
 }

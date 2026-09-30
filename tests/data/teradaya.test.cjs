@@ -10,9 +10,8 @@ const sceneAt = id => domain.sceneById.get(id).index;
 test('Teradaya support has concrete directed actions without invented political affiliations', () => {
   const incident = domain.getIncident('teradaya-1866');
   assert.equal(incident.sceneId, '1866-satcho');
-  assert.deepEqual(incident.participants.map(p => p.personId), ['ryoma', 'oryo', 'miyoshi-shinzo']);
-  assert.ok(incident.participants.every(p => p.involvement === 'onsite'));
-  assert.deepEqual(incident.relations.map(r => [r.aPersonId, r.bPersonId, r.direction]), [
+  assert.deepEqual(incident.participants.filter(p => p.involvement === 'onsite').map(p => p.personId), ['ryoma', 'oryo', 'miyoshi-shinzo']);
+  assert.deepEqual(incident.relations.filter(r => r.bPersonId === 'ryoma').map(r => [r.aPersonId, r.bPersonId, r.direction]), [
     ['oryo', 'ryoma', 'forward'], ['miyoshi-shinzo', 'ryoma', 'forward']
   ]);
   assert.equal(domain.statusAt(domain.getPerson('miyoshi-shinzo'), 9).faction, '長府藩');

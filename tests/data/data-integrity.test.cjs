@@ -40,14 +40,14 @@ test('the published collection sizes stay at the current release baseline', () =
     places: Object.keys(data.places).length,
     sources: Object.keys(data.sources).length
   }, {
-    people: 110,
+    people: 112,
     factions: 19,
     scenes: 16,
     events: 16,
-    relations: 122,
+    relations: 124,
     factionRelations: 18,
     places: 34,
-    sources: 401
+    sources: 404
   });
 });
 

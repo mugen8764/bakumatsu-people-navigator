@@ -1,0 +1,52 @@
+const { expect, test } = require('../support/test.cjs');
+const AxeBuilder = require('@axe-core/playwright').default;
+
+for (const colorScheme of ['light', 'dark']) {
+  test(`Ryoma family and household support stay distinct at 320px ${colorScheme}`, async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 850 });
+    await page.emulateMedia({ colorScheme });
+    await page.addInitScript(() => localStorage.clear());
+    await page.goto('/');
+    await page.locator('#globalSearch').fill('おとせ');
+    await page.locator('.search-result strong', { hasText: /^お登勢$/ }).click();
+    await expect(page.locator('#personDetail .detail-title')).toHaveText('お登勢');
+    await expect(page.locator('#personDetail .badges')).toContainText('活動分野：暮らし・支援');
+    await page.locator('[data-other-person="oryo"]').click();
+    await expect(page.locator('#personDetail .detail-title')).toHaveText('お龍');
+    await page.locator('[data-other-person="otose"]').click();
+    await page.locator('#personDetail [data-open-event="teradaya-1866"]').click();
+    await expect(page.locator('.onsite [data-event-person]')).toHaveCount(3);
+    await expect(page.locator('.context [data-event-person="otose"]')).toContainText('生活支援');
+    await expect(page.locator('.context [data-event-person="sakamoto-otome"]')).toContainText('現場参加ではない');
+    expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze()).violations).toEqual([]);
+    await page.locator('[data-event-person="otose"]').click();
+    await page.locator('.person-incident summary').click();
+    await expect(page.locator('.person-incident a[href="https://www.mlit.go.jp/tagengo-db/R1-01295.html"]')).toBeVisible();
+    await page.locator('.person-incident [data-open-event]').click();
+    await page.locator('[data-event-person="sakamoto-otome"]').focus();
+    await page.keyboard.press('Enter');
+    await expect(page.locator('.person-incident')).toContainText('事件後の1866年12月4日');
+    await page.locator('.person-incident summary').click();
+    await expect(page.locator('.person-incident a[href="https://knmdb.kyohaku.go.jp/477.html"]')).toBeVisible();
+    await page.locator('#personDetail').getByText('参考資料を見る', { exact: true }).click();
+    await expect(page.locator('[data-person-sources="basic"]')).toContainText('出典校正中');
+    await expect(page.locator('[data-person-sources="status"]')).not.toContainText('出典校正中');
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze()).violations).toEqual([]);
+    await page.screenshot({ path: test.info().outputPath(`otome-${colorScheme}.png`), fullPage: true });
+    await page.locator('[data-other-person="ryoma"]').click();
+    await expect(page.locator('#personDetail .detail-title')).toHaveText('坂本龍馬');
+    await page.locator('#globalSearch').fill('坂本乙女');
+    await page.locator('.search-result strong', { hasText: /^坂本乙女$/ }).click();
+    await expect(page.locator('#personDetail .detail-title')).toHaveText('坂本乙女');
+    await page.reload();
+    await expect(page.locator('#personDetail .detail-title')).toHaveText('坂本乙女');
+    await page.locator('#sceneSelect').selectOption('8');
+    await expect(page.locator('#personDetail')).toContainText('実際の送付はこの資料から確定しない');
+    await page.locator('#sceneSelect').selectOption('10');
+    await expect(page.locator('#personDetail .detail-title')).toHaveText('坂本乙女');
+    await expect(page.locator('#personDetail')).toContainText('1866年12月4日付');
+    await page.locator('#nextScene').click();
+    await expect(page.locator('#personCards [data-person-card="sakamoto-otome"]')).toHaveCount(0);
+  });
+}

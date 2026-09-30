@@ -2114,6 +2114,42 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-relation-sakamoto-otome-ryoma-1863-joi-kinship",
+      "aPersonId": "sakamoto-otome",
+      "bPersonId": "ryoma",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1866-expedition",
+      "typeId": "kinship",
+      "label": "龍馬の姉・書簡の宛先",
+      "text": "乙女は土佐にいる龍馬の姉。龍馬は海軍創設への従事や、お龍との暮らしについて手紙で知らせた。",
+      "evidence": {
+        "sourceIds": [
+          "kyoto_museum_ryoma_1863",
+          "kyohaku_otome_letter_1865",
+          "kyohaku_otome_letter_1866"
+        ],
+        "reviewStatus": "verified",
+        "note": "表示期間は今回の書簡に基づく収録範囲であり、親族関係の成立・解消時期ではない。"
+      }
+    },
+    {
+      "id": "person-relation-otose-oryo-1866-satcho-kinship",
+      "aPersonId": "otose",
+      "bPersonId": "oryo",
+      "startSceneId": "1866-satcho",
+      "endSceneId": "1866-satcho",
+      "typeId": "kinship",
+      "label": "お龍を娘として迎える",
+      "text": "寺田屋の女将お登勢は、お龍を雇い、娘として迎えた。お龍の母への経済的な援助も行った。",
+      "evidence": {
+        "sourceIds": [
+          "mlit_teradaya_otose"
+        ],
+        "reviewStatus": "verified",
+        "note": "解説の養女という表現に基づく。縁組の法的手続きや成立日までは確認していない。"
+      }
     }
   ],
   "factionRelations": [

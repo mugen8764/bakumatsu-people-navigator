@@ -22,12 +22,12 @@ test('scene-level counts stay at the current display baseline', () => {
     { scene: '1858-ansei', people: 38, factions: 7, relations: 32 },
     { scene: '1860-sakurada', people: 45, factions: 6, relations: 31 },
     { scene: '1862-bunkyu', people: 49, factions: 7, relations: 25 },
-    { scene: '1863-joi', people: 55, factions: 7, relations: 35 },
-    { scene: '1863-aug18', people: 54, factions: 7, relations: 31 },
-    { scene: '1864-kinmon', people: 62, factions: 7, relations: 29 },
-    { scene: '1865-choshu', people: 63, factions: 9, relations: 28 },
-    { scene: '1866-satcho', people: 56, factions: 10, relations: 29 },
-    { scene: '1866-expedition', people: 55, factions: 7, relations: 24 },
+    { scene: '1863-joi', people: 56, factions: 7, relations: 36 },
+    { scene: '1863-aug18', people: 55, factions: 7, relations: 32 },
+    { scene: '1864-kinmon', people: 63, factions: 7, relations: 30 },
+    { scene: '1865-choshu', people: 64, factions: 9, relations: 29 },
+    { scene: '1866-satcho', people: 58, factions: 10, relations: 31 },
+    { scene: '1866-expedition', people: 56, factions: 7, relations: 25 },
     { scene: '1867-taisei', people: 63, factions: 10, relations: 22 },
     { scene: '1868-toba', people: 51, factions: 8, relations: 16 },
     { scene: '1868-edo', people: 51, factions: 7, relations: 19 },
@@ -67,7 +67,7 @@ test('scene changes expose status and relation transitions without inventing new
 
   const satcho = domain.sceneChangesAt(sceneAt('1866-satcho'));
   assert.equal(satcho.previousIndex, 8);
-  assert.equal(satcho.relationsStarted.length, 7);
+  assert.equal(satcho.relationsStarted.length, 8);
   assert.equal(satcho.relationsEnded.length, 6);
   const kido = satcho.peopleUpdated.find(change => change.person.id === 'kido');
   assert.deepEqual(kido.fields, ['display', 'role']);

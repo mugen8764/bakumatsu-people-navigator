@@ -4142,6 +4142,59 @@
         "reviewStatus": "verified",
         "note": "六番隊組長の就任時期は未確認。時点別役職には就任年を推測して入れない。"
       }
+    },
+    {
+      "id": "otose",
+      "name": "お登勢",
+      "kana": "おとせ",
+      "aliases": [
+        "おとせ"
+      ],
+      "lifespan": "1829–1877",
+      "defaultFactionId": "life-support",
+      "activeStartSceneId": "1866-satcho",
+      "activeEndSceneId": "1866-satcho",
+      "oneLine": "伏見の船宿・寺田屋を営み、龍馬の世話やお龍の受け入れを通じて暮らしを支えた。",
+      "placeIds": [
+        "fushimi"
+      ],
+      "eventIds": [],
+      "termIds": [
+        "funayado"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "mlit_teradaya_otose"
+        ],
+        "reviewStatus": "verified",
+        "note": "収録範囲は1866年の寺田屋を読むための範囲。生涯の活動期間や支援の開始・終了時期を表さない。"
+      }
+    },
+    {
+      "id": "sakamoto-otome",
+      "name": "坂本乙女",
+      "kana": "さかもと おとめ",
+      "aliases": [
+        "乙女"
+      ],
+      "lifespan": "生没年確認中",
+      "defaultFactionId": "life-support",
+      "activeStartSceneId": "1863-joi",
+      "activeEndSceneId": "1866-expedition",
+      "oneLine": "龍馬の姉。土佐への書簡を通じて、脱藩後の活動やお龍との暮らしの報告を受けた。",
+      "placeIds": [
+        "kochi"
+      ],
+      "eventIds": [],
+      "evidence": {
+        "sourceIds": [
+          "kyoto_museum_ryoma_1863",
+          "kyohaku_otome_letter_1865",
+          "kyohaku_otome_letter_1866"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "姉弟関係と書簡の宛先を館の解説で確認。生没年・婚姻や改名の年代は今回の資料で確定せず、収録期間を生涯の活動期間としない。"
+      }
     }
   ]
 }

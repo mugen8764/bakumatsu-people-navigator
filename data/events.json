@@ -3971,9 +3971,9 @@
       "sceneId": "1866-satcho",
       "title": "寺田屋襲撃と龍馬の救援（1866年）",
       "date": "1866年1月（旧暦）・襲撃とその後の保護",
-      "scope": "寺田屋からの脱出と、伏見・京都の薩摩藩邸による保護",
+      "scope": "寺田屋からの脱出と藩邸の保護、生活の支援と後日の家族への報告",
       "summary": "薩長盟約の後、伏見の寺田屋で龍馬と三吉慎蔵が伏見奉行所の捕り方に襲われた。お龍の警告と三吉の救護要請が、負傷した龍馬の避難につながった。",
-      "stakes": "襲撃から逃れた龍馬を、誰がどのように安全な場所へつないだか。1862年の薩摩藩内の寺田屋騒動とは別の事件。",
+      "stakes": "襲撃から逃れた龍馬を、誰がどのように安全な場所へつないだか。1862年の薩摩藩内の寺田屋騒動とは別の事件。 宿での生活支援と、後日の書簡による家族への報告も、現場での警告・救護とは分けて読む。",
       "turningPoint": "龍馬は伏見の薩摩藩邸で保護され、お龍が看護にあたった。その後、京都の薩摩藩邸へ移った。",
       "participants": [
         {
@@ -4019,6 +4019,35 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "personId": "otose",
+          "displayName": "お登勢",
+          "role": "寺田屋の運営・生活支援（背景）",
+          "involvement": "context",
+          "side": "暮らしの支援",
+          "summary": "寺田屋を営み、龍馬の世話をし、お龍を雇って娘として迎えた。ここでは生活の支援という背景を示し、襲撃当日の警告・救護は断定しない。",
+          "evidence": {
+            "sourceIds": [
+              "mlit_teradaya_otose"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "sakamoto-otome",
+          "displayName": "坂本乙女",
+          "role": "後日の報告先となる姉（現場参加ではない）",
+          "involvement": "context",
+          "side": "土佐の家族への報告",
+          "summary": "龍馬は事件後の1866年12月4日付書状で、土佐の姉乙女へ寺田屋での襲撃とその後の療養を報告した。乙女の現場参加や救護を示すものではない。",
+          "evidence": {
+            "sourceIds": [
+              "kyohaku_otome_letter_1866"
+            ],
+            "reviewStatus": "verified",
+            "note": "襲撃当日の行動ではなく、後日の書簡の宛先として背景に掲載する。"
+          }
         }
       ],
       "relations": [
@@ -4050,6 +4079,34 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "id": "teradaya-otose-oryo",
+          "aPersonId": "otose",
+          "bPersonId": "oryo",
+          "label": "寺田屋で受け入れる",
+          "description": "お登勢はお龍を雇い、娘として迎えた。生活の支援を示す線で、襲撃当日の救護指示ではない。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "mlit_teradaya_otose"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "id": "teradaya-ryoma-otome",
+          "aPersonId": "ryoma",
+          "bPersonId": "sakamoto-otome",
+          "label": "事件後に手紙で報告",
+          "description": "1866年12月4日付の乙女宛書状で、龍馬が襲撃と療養を報告した。襲撃当日の連絡・救護を表す線ではない。",
+          "direction": "forward",
+          "evidence": {
+            "sourceIds": [
+              "kyohaku_otome_letter_1866"
+            ],
+            "reviewStatus": "verified"
+          }
         }
       ],
       "placeIds": [
@@ -4065,10 +4122,12 @@
           "ryoma_dappan",
           "shimonoseki_miyoshi_2021",
           "shimonoseki_miyoshi_2023",
-          "kochi_ryoma_letter_1866"
+          "kochi_ryoma_letter_1866",
+          "mlit_teradaya_otose",
+          "kyohaku_otome_letter_1866"
         ],
         "reviewStatus": "verified",
-        "note": "下関市会議録は旧暦1月23日、観光庁は新暦3月9日とする。京都市の既存案内には正月21日という差があるため、画面の日付は今回月までの表示にする。救援を政治的協力や親族関係へ分類せず、事件内の関係として示す。"
+        "note": "下関市会議録は旧暦1月23日、観光庁は新暦3月9日とする。京都市の既存案内には正月21日という差があるため、画面の日付は今回月までの表示にする。救援を政治的協力や親族関係へ分類せず、事件内の関係として示す。 お登勢の生活支援と乙女への後日の報告は背景区分。京都国立博物館の解説は襲撃を一月二十四日未明と記すため、日付の相違は未解消として月表示を維持する。"
       }
     },
     {
