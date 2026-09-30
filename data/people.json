@@ -351,6 +351,37 @@
       ]
     },
     {
+      "id": "okubo-ichio",
+      "name": "大久保一翁",
+      "kana": "おおくぼ いちおう",
+      "aliases": [
+        "大久保忠寛"
+      ],
+      "lifespan": "1818–1888",
+      "defaultFactionId": "bakufu",
+      "activeStartSceneId": "1854-treaty",
+      "activeEndSceneId": "1868-edo",
+      "oneLine": "目付・外国奉行などを経て、江戸開城では勝海舟と共に徳川家の存続を図った幕臣。",
+      "placeIds": [
+        "edo"
+      ],
+      "eventIds": [
+        "edo_surrender"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_okubo_ichio",
+          "ndl_okubo_ichio_papers",
+          "fukuroi_minato_ichio"
+        ],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館で登録名、忠寛の読み、職歴と西暦換算の生没日を確認。文化14年の生年月日は西暦1818年1月5日。袋井市立図書館の歌碑解説は1865年の隠居・改名と1868年の勝との協力に用い、同資料の没年等は流用しない。"
+      },
+      "termIds": [
+        "boshin-war"
+      ]
+    },
+    {
       "id": "yamaoka",
       "name": "山岡鉄舟",
       "kana": "やまおか てっしゅう",

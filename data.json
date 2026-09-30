@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.93",
+    "version": "1.0.94",
     "updated": "2026-09-30"
   },
   "sources": {
@@ -2536,6 +2536,27 @@
       "note": "京都大学附属図書館所蔵、尊/軸81、尊/軸89の石版、二次利用自由表示を確認。刊行・制作年は書誌に記載なし。公式IIIFの肖像部分を取得して配信用に縮小。",
       "locator": "タイトル・著者・形態・注記（尊/軸89の石版）・請求記号・所蔵・画像二次利用自由表示",
       "contentCheckedAt": "2026-09-27"
+    },
+    "ndl_portrait_okubo_ichio": {
+      "title": "国立国会図書館「近代日本人の肖像：大久保一翁」",
+      "url": "https://www.ndl.go.jp/portrait/datas/31",
+      "note": "忠寛の読み、西暦換算の生没日、阿部正弘による登用、目付兼海防掛、蕃書調所総裁などの職歴、安政の大獄での罷免、1861年の再登用、1868年の会計総裁・若年寄、江戸開城への寄与。",
+      "locator": "「生没年」「別称」「解説」",
+      "contentCheckedAt": "2026-09-30"
+    },
+    "ndl_okubo_ichio_papers": {
+      "title": "国立国会図書館リサーチ・ナビ「大久保一翁関係文書」",
+      "url": "https://ndlsearch.ndl.go.jp/rnavi/kensei/ookuboichiou",
+      "note": "旧蔵者履歴にある1854年5月の目付、1856年10月の蕃書調所総裁、1857年4月の駿府町奉行、1861年10月の外国奉行、1868年2月の若年寄就任。生年の1817は旧暦表記で、西暦換算は肖像解説を参照。書簡の目録だけから個別の政治関係を推定しない。",
+      "locator": "「旧蔵者」「旧蔵者履歴」",
+      "contentCheckedAt": "2026-09-30"
+    },
+    "fukuroi_minato_ichio": {
+      "title": "袋井市立図書館公開「湊の歌碑：大久保一翁公」",
+      "url": "https://lib.city.fukuroi.shizuoka.jp/wysiwyg/file/download/1/233",
+      "note": "1865年の隠居と一翁への改名、1868年に勝海舟と共に恭順論を唱え、徳川家救済・江戸開城に尽力したこと。PDFの画像本文を確認。没年などの基本情報は国立国会図書館に従い、この資料から流用しない。",
+      "locator": "PDF 3頁「詠者／大久保一翁公」第1〜3段落",
+      "contentCheckedAt": "2026-09-30"
     }
   },
   "factions": {
@@ -3998,7 +4019,8 @@
         "kazunomiya",
         "enomoto",
         "kaieda",
-        "otori-keisuke"
+        "otori-keisuke",
+        "okubo-ichio"
       ],
       "factions": [
         "新政府",
@@ -4011,14 +4033,16 @@
         "ndl_handwriting",
         "jacar_dictionary",
         "sumida_katsu_edo_surrender",
-        "ndl_portrait_kaieda_detail"
+        "ndl_portrait_kaieda_detail",
+        "fukuroi_minato_ichio"
       ],
       "evidence": {
         "sourceIds": [
           "ndl_handwriting",
           "jacar_dictionary",
           "sumida_katsu_edo_surrender",
-          "ndl_portrait_kaieda_detail"
+          "ndl_portrait_kaieda_detail",
+          "fukuroi_minato_ichio"
         ],
         "reviewStatus": "verified"
       }
@@ -6156,6 +6180,22 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "personId": "okubo-ichio",
+          "displayName": "大久保一翁",
+          "side": "旧幕府側",
+          "role": "若年寄・徳川家救済に尽力",
+          "involvement": "context",
+          "summary": "勝海舟と共に恭順論を唱え、徳川家の救済と江戸開城に尽力した。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_okubo_ichio_papers",
+              "fukuroi_minato_ichio"
+            ],
+            "reviewStatus": "verified",
+            "note": "開城への協力を背景的関与として掲載。3月13・14日の勝・西郷会談への同席や、具体的な会計処理を推測しない。"
+          }
         }
       ],
       "relations": [
@@ -6200,6 +6240,21 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "id": "edo-katsu-okubo-ichio",
+          "aPersonId": "katsu",
+          "bPersonId": "okubo-ichio",
+          "label": "恭順と徳川家救済",
+          "description": "両者は恭順論を唱え、徳川家救済と江戸開城に尽力した。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "fukuroi_minato_ichio"
+            ],
+            "reviewStatus": "verified",
+            "note": "袋井市立図書館の歌碑解説の「勝海舟と共に恭順論を唱え」を根拠とする。直接会談への共同出席を意味しない。"
+          }
         }
       ],
       "placeIds": [
@@ -6211,7 +6266,8 @@
       "evidence": {
         "sourceIds": [
           "sumida_katsu_edo_surrender",
-          "archives_enomoto_1867"
+          "archives_enomoto_1867",
+          "fukuroi_minato_ichio"
         ],
         "reviewStatus": "verified"
       }
@@ -10476,6 +10532,150 @@
           "evidence": {
             "sourceIds": [
               "jacar_katsu_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      }
+    },
+    {
+      "id": "okubo-ichio",
+      "name": "大久保一翁",
+      "kana": "おおくぼ いちおう",
+      "aliases": [
+        "大久保忠寛"
+      ],
+      "born": "1818–1888",
+      "defaultFaction": "幕府",
+      "activeRange": [
+        1,
+        13
+      ],
+      "oneLine": "目付・外国奉行などを経て、江戸開城では勝海舟と共に徳川家の存続を図った幕臣。",
+      "places": [
+        "edo"
+      ],
+      "events": [
+        "edo_surrender"
+      ],
+      "sources": [
+        "ndl_portrait_okubo_ichio",
+        "ndl_okubo_ichio_papers",
+        "fukuroi_minato_ichio"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_okubo_ichio",
+          "ndl_okubo_ichio_papers",
+          "fukuroi_minato_ichio"
+        ],
+        "reviewStatus": "verified"
+      },
+      "termIds": [
+        "boshin-war"
+      ],
+      "statuses": {
+        "1854-treaty": {
+          "display": "大久保忠寛",
+          "role": "幕臣・目付就任前",
+          "stance": "目付に登用されるのは同年5月。日米和親条約の調印時点では就任前である。",
+          "importance": "阿部正弘の登用で目付兼海防掛となり、その後の幕政実務を担う。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_okubo_ichio",
+              "ndl_okubo_ichio_papers"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1858-ansei": {
+          "display": "大久保忠寛",
+          "role": "幕臣・元蕃書調所総裁",
+          "stance": "1856年10月に蕃書調所総裁を兼ね、1857年4月に駿府町奉行へ転じた。",
+          "importance": "蕃書調所総裁は過去の役職。この時点の現職・在任期間は確認中。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_okubo_ichio",
+              "ndl_okubo_ichio_papers"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        },
+        "1860-sakurada": {
+          "display": "大久保忠寛",
+          "role": "罷免後の幕臣",
+          "stance": "安政の大獄で井伊直弼により罷免されている。",
+          "importance": "再登用は翌1861年である。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_okubo_ichio"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1862-bunkyu": {
+          "display": "大久保忠寛",
+          "role": "再登用された幕政実務者",
+          "stance": "1861年に再登用され、蕃書調所頭取・外国奉行を務めた。",
+          "importance": "幕府の洋学・外交実務を担った人物。この時点の現職と各役職の在任期間は確認中。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_okubo_ichio",
+              "ndl_okubo_ichio_papers"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        },
+        "1863-joi": {
+          "display": "大久保忠寛",
+          "role": "幕臣・現職確認中",
+          "stance": "蕃書調所頭取・外国奉行などを歴任したが、この期間の現職は確認中。",
+          "importance": "1865年の隠居以前の時点。現職や、この時期の個別事件への関与は資料確認中。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_okubo_ichio",
+              "fukuroi_minato_ichio"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        },
+        "1865-choshu": {
+          "display": "大久保一翁",
+          "role": "隠居した幕臣",
+          "stance": "1865年に隠居し、忠寛から一翁を称する。",
+          "importance": "隠居後の時期で、会計総裁・若年寄として再び起用されるのは1868年である。",
+          "evidence": {
+            "sourceIds": [
+              "fukuroi_minato_ichio"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        "1868-toba": {
+          "display": "大久保一翁",
+          "role": "幕臣・若年寄就任前",
+          "faction": "旧幕府勢力",
+          "stance": "1868年に会計総裁として起用される。若年寄への就任は同年2月で、この1月時点では就任前。",
+          "importance": "会計総裁の正確な就任日は確認中。江戸開城での勝海舟との協力は次の時点に分ける。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_okubo_ichio",
+              "ndl_okubo_ichio_papers",
+              "fukuroi_minato_ichio"
+            ],
+            "reviewStatus": "needs_review"
+          }
+        },
+        "1868-edo": {
+          "display": "大久保一翁",
+          "role": "若年寄・徳川家救済に尽力",
+          "faction": "旧幕府勢力",
+          "stance": "2月に若年寄となり、勝海舟と共に恭順論を唱え、徳川家救済と江戸開城に尽力した。",
+          "importance": "勝・西郷の直接会談と、徳川家の存続を図る役割を分けて見る。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_okubo_ichio_papers",
+              "fukuroi_minato_ichio"
             ],
             "reviewStatus": "verified"
           }
@@ -22858,6 +23058,21 @@
       "evidence": {
         "sourceIds": [
           "ryoma_izo_faq"
+        ],
+        "reviewStatus": "verified"
+      }
+    },
+    {
+      "a": "katsu",
+      "b": "okubo-ichio",
+      "start": 13,
+      "end": 13,
+      "type": "政治協力",
+      "label": "恭順と徳川家救済",
+      "text": "勝海舟と大久保一翁は共に恭順論を唱え、徳川家救済と江戸開城に尽力した。",
+      "evidence": {
+        "sourceIds": [
+          "fukuroi_minato_ichio"
         ],
         "reviewStatus": "verified"
       }

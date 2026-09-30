@@ -2061,6 +2061,23 @@
         "reviewStatus": "verified",
         "note": "交流が確認できる1863年の時点だけに置き、幼少期からの親友などとは表示しない。"
       }
+    },
+    {
+      "id": "person-relation-katsu-okubo-ichio-1868-edo-political-cooperation",
+      "aPersonId": "katsu",
+      "bPersonId": "okubo-ichio",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "typeId": "political-cooperation",
+      "label": "恭順と徳川家救済",
+      "text": "勝海舟と大久保一翁は共に恭順論を唱え、徳川家救済と江戸開城に尽力した。",
+      "evidence": {
+        "sourceIds": [
+          "fukuroi_minato_ichio"
+        ],
+        "reviewStatus": "verified",
+        "note": "確認できる1868年の江戸開城時点に限定し、師弟関係や恒常的な協力期間へ拡張しない。"
+      }
     }
   ],
   "factionRelations": [

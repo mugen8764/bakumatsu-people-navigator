@@ -9114,6 +9114,157 @@
         ],
         "reviewStatus": "verified"
       }
+    },
+    {
+      "id": "person-status-okubo-ichio-1854-treaty",
+      "personId": "okubo-ichio",
+      "startSceneId": "1854-treaty",
+      "endSceneId": "1854-treaty",
+      "displayName": "大久保忠寛",
+      "role": "幕臣・目付就任前",
+      "factionId": "bakufu",
+      "stance": "目付に登用されるのは同年5月。日米和親条約の調印時点では就任前である。",
+      "importance": "阿部正弘の登用で目付兼海防掛となり、その後の幕政実務を担う。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_okubo_ichio",
+          "ndl_okubo_ichio_papers"
+        ],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の履歴にある1854年5月の目付就任を、和親条約の旧暦3月3日より後と区別。条約の交渉当事者には加えない。"
+      }
+    },
+    {
+      "id": "person-status-okubo-ichio-1858-ansei",
+      "personId": "okubo-ichio",
+      "startSceneId": "1858-ansei",
+      "endSceneId": "1858-ansei",
+      "displayName": "大久保忠寛",
+      "role": "幕臣・元蕃書調所総裁",
+      "factionId": "bakufu",
+      "stance": "1856年10月に蕃書調所総裁を兼ね、1857年4月に駿府町奉行へ転じた。",
+      "importance": "蕃書調所総裁は過去の役職。この時点の現職・在任期間は確認中。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_okubo_ichio",
+          "ndl_okubo_ichio_papers"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "総裁・駿府町奉行の就任年月は確認済み。1858年の現職と転任・退任の期間は今回の資料では確定しない。"
+      }
+    },
+    {
+      "id": "person-status-okubo-ichio-1860-sakurada",
+      "personId": "okubo-ichio",
+      "startSceneId": "1860-sakurada",
+      "endSceneId": "1860-sakurada",
+      "displayName": "大久保忠寛",
+      "role": "罷免後の幕臣",
+      "factionId": "bakufu",
+      "stance": "安政の大獄で井伊直弼により罷免されている。",
+      "importance": "再登用は翌1861年である。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_okubo_ichio"
+        ],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の解説で安政の大獄による罷免と1861年の再登用を確認。"
+      }
+    },
+    {
+      "id": "person-status-okubo-ichio-1862-bunkyu",
+      "personId": "okubo-ichio",
+      "startSceneId": "1862-bunkyu",
+      "endSceneId": "1862-bunkyu",
+      "displayName": "大久保忠寛",
+      "role": "再登用された幕政実務者",
+      "factionId": "bakufu",
+      "stance": "1861年に再登用され、蕃書調所頭取・外国奉行を務めた。",
+      "importance": "幕府の洋学・外交実務を担った人物。この時点の現職と各役職の在任期間は確認中。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_okubo_ichio",
+          "ndl_okubo_ichio_papers"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "1861年の再登用と同年10月の外国奉行就任は確認済み。1862年内の転任・退任時期は確定しない。"
+      }
+    },
+    {
+      "id": "person-status-okubo-ichio-1863-joi",
+      "personId": "okubo-ichio",
+      "startSceneId": "1863-joi",
+      "endSceneId": "1864-kinmon",
+      "displayName": "大久保忠寛",
+      "role": "幕臣・現職確認中",
+      "factionId": "bakufu",
+      "stance": "蕃書調所頭取・外国奉行などを歴任したが、この期間の現職は確認中。",
+      "importance": "1865年の隠居以前の時点。現職や、この時期の個別事件への関与は資料確認中。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_okubo_ichio",
+          "fukuroi_minato_ichio"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "職歴と1865年の隠居は確認済み。1863〜1864年の個別の就任・罷免日は今回の資料では確定しない。"
+      }
+    },
+    {
+      "id": "person-status-okubo-ichio-1865-choshu",
+      "personId": "okubo-ichio",
+      "startSceneId": "1865-choshu",
+      "endSceneId": "1867-taisei",
+      "displayName": "大久保一翁",
+      "role": "隠居した幕臣",
+      "factionId": "bakufu",
+      "stance": "1865年に隠居し、忠寛から一翁を称する。",
+      "importance": "隠居後の時期で、会計総裁・若年寄として再び起用されるのは1868年である。",
+      "evidence": {
+        "sourceIds": [
+          "fukuroi_minato_ichio"
+        ],
+        "reviewStatus": "verified",
+        "note": "袋井市立図書館の歌碑解説で1865年の隠居と一翁への改名を確認。隠居の月日は確定せず、この年の変化として表示する。"
+      }
+    },
+    {
+      "id": "person-status-okubo-ichio-1868-toba",
+      "personId": "okubo-ichio",
+      "startSceneId": "1868-toba",
+      "endSceneId": "1868-toba",
+      "displayName": "大久保一翁",
+      "role": "幕臣・若年寄就任前",
+      "factionId": "former-bakufu",
+      "stance": "1868年に会計総裁として起用される。若年寄への就任は同年2月で、この1月時点では就任前。",
+      "importance": "会計総裁の正確な就任日は確認中。江戸開城での勝海舟との協力は次の時点に分ける。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_portrait_okubo_ichio",
+          "ndl_okubo_ichio_papers",
+          "fukuroi_minato_ichio"
+        ],
+        "reviewStatus": "needs_review",
+        "note": "会計総裁は国立国会図書館の人物解説が1868年、若年寄は履歴が旧暦2月と記す。会計総裁の月日や鳥羽・伏見での現場関与は推定しない。"
+      }
+    },
+    {
+      "id": "person-status-okubo-ichio-1868-edo",
+      "personId": "okubo-ichio",
+      "startSceneId": "1868-edo",
+      "endSceneId": "1868-edo",
+      "displayName": "大久保一翁",
+      "role": "若年寄・徳川家救済に尽力",
+      "factionId": "former-bakufu",
+      "stance": "2月に若年寄となり、勝海舟と共に恭順論を唱え、徳川家救済と江戸開城に尽力した。",
+      "importance": "勝・西郷の直接会談と、徳川家の存続を図る役割を分けて見る。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_okubo_ichio_papers",
+          "fukuroi_minato_ichio"
+        ],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の履歴で旧暦2月の若年寄就任、袋井市立図書館の歌碑解説で勝との恭順論・徳川家救済・江戸開城への尽力を確認。勝・西郷会談への同席や具体的な会計実務は確認できないため加えない。"
+      }
     }
   ]
 }

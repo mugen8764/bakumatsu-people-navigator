@@ -1121,7 +1121,8 @@
         "kazunomiya",
         "enomoto",
         "kaieda",
-        "otori-keisuke"
+        "otori-keisuke",
+        "okubo-ichio"
       ],
       "factionIds": [
         "new-government",
@@ -1135,7 +1136,8 @@
           "ndl_handwriting",
           "jacar_dictionary",
           "sumida_katsu_edo_surrender",
-          "ndl_portrait_kaieda_detail"
+          "ndl_portrait_kaieda_detail",
+          "fukuroi_minato_ichio"
         ],
         "reviewStatus": "verified"
       }
@@ -2827,6 +2829,22 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "personId": "okubo-ichio",
+          "displayName": "大久保一翁",
+          "side": "旧幕府側",
+          "role": "若年寄・徳川家救済に尽力",
+          "involvement": "context",
+          "summary": "勝海舟と共に恭順論を唱え、徳川家の救済と江戸開城に尽力した。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_okubo_ichio_papers",
+              "fukuroi_minato_ichio"
+            ],
+            "reviewStatus": "verified",
+            "note": "開城への協力を背景的関与として掲載。3月13・14日の勝・西郷会談への同席や、具体的な会計処理を推測しない。"
+          }
         }
       ],
       "relations": [
@@ -2871,6 +2889,21 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "id": "edo-katsu-okubo-ichio",
+          "aPersonId": "katsu",
+          "bPersonId": "okubo-ichio",
+          "label": "恭順と徳川家救済",
+          "description": "両者は恭順論を唱え、徳川家救済と江戸開城に尽力した。",
+          "direction": "none",
+          "evidence": {
+            "sourceIds": [
+              "fukuroi_minato_ichio"
+            ],
+            "reviewStatus": "verified",
+            "note": "袋井市立図書館の歌碑解説の「勝海舟と共に恭順論を唱え」を根拠とする。直接会談への共同出席を意味しない。"
+          }
         }
       ],
       "placeIds": [
@@ -2882,7 +2915,8 @@
       "evidence": {
         "sourceIds": [
           "sumida_katsu_edo_surrender",
-          "archives_enomoto_1867"
+          "archives_enomoto_1867",
+          "fukuroi_minato_ichio"
         ],
         "reviewStatus": "verified"
       }
