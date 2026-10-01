@@ -296,6 +296,8 @@
   });
   $('#globalSearch').addEventListener('input', searchController.render);
   $('#globalSearch').addEventListener('keydown', searchController.handleKeydown);
+  ['compositionstart', 'compositionupdate', 'compositionend', 'beforeinput', 'keyup', 'blur'].forEach(type =>
+    $('#globalSearch').addEventListener(type, searchController.handleIME));
   document.addEventListener('click', event => {
     if (!event.target.closest('.global-search')) searchController.close();
   });

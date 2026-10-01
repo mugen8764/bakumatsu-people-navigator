@@ -107,6 +107,22 @@ test('standalone search controller ignores composing navigation keys without tou
     assert.equal(controller.handleKeydown({ key, isComposing: true, preventDefault: fail }), false);
     assert.equal(controller.handleKeydown({ key, keyCode: 229, preventDefault: fail }), false);
   }
+  controller.handleIME({ type: 'compositionstart' });
+  controller.handleIME({ type: 'compositionupdate' });
+  controller.handleIME({ type: 'beforeinput', inputType: 'insertCompositionText' });
+  controller.render();
+  for (const key of ['ArrowDown', 'ArrowUp', 'Enter', 'Escape']) {
+    assert.equal(controller.handleKeydown({ key, isComposing: false, keyCode: 13, preventDefault: fail }), false);
+  }
+  primed = false;
+  controller.handleIME({ type: 'compositionend' });
+  primed = true;
+  controller.handleIME({ type: 'beforeinput', inputType: 'insertCompositionText' });
+  assert.equal(controller.handleKeydown({ key: 'Enter', keyCode: 13, repeat: true, preventDefault: fail }), false);
+  controller.handleIME({ type: 'beforeinput', inputType: 'insertCompositionText', isComposing: true });
+  controller.handleIME({ type: 'keyup', key: 'Enter' });
+  // compositionend rendered the committed query and cleared the old selection.
+  assert.equal(controller.handleKeydown({ key: 'Enter', keyCode: 13, preventDefault: fail }), false);
 });
 
 test('navigation reconciles hidden selections but keeps a compatible person filter', () => {

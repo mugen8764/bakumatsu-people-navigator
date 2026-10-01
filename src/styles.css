@@ -360,8 +360,6 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
 .eyebrow{display:block;color:var(--accent);font-size:.67rem;font-weight:850;letter-spacing:.12em;text-transform:uppercase}
 .scene-overview{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:8px;margin:8px 15px 0;align-items:start}
 .scene-incidents{grid-column:1/-1;grid-row:2}
-/* Labelled rows keep every name whole: chips wrap instead of shrinking. Wide
-   screens pair the cast with the factions so the list still starts on screen. */
 .scene-at-glance{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border:1px solid var(--border);border-radius:12px;background:var(--card)}
 .scene-at-glance-group{min-width:0;padding:6px 10px;display:grid;grid-template-columns:3.4rem minmax(0,1fr);gap:8px;align-items:center}
 .scene-at-glance-group+.scene-at-glance-group{border-left:1px solid var(--border)}
@@ -405,7 +403,6 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
 .source-disclosure summary{cursor:pointer;color:var(--muted);font-size:.78rem;font-weight:750}
 .source-disclosure[open] summary{margin-bottom:8px;color:var(--accent)}
 
-/* Relationship lines express meaning; nodes express people and faction at this moment. */
 #relationGraph{min-height:530px}
 .edge{stroke-width:3;opacity:.78}
 .edge.cooperation{stroke:var(--cooperation)}
@@ -538,7 +535,6 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
   #view-people .catalog-tools+.notice{display:none}
 }
 
-/* Time transitions stay close to the scene summary so the current state and its changes read together. */
 .scene-changes{display:grid;grid-template-columns:150px minmax(0,1fr);gap:11px;margin:10px 15px 0;padding:10px;border:1px solid var(--border);border-radius:14px;background:var(--accent-soft)}
 .scene-changes .eyebrow,.relation-changes .eyebrow{color:var(--text)}
 .scene-changes-heading{display:flex;flex-direction:column;justify-content:center;padding:3px 5px}
@@ -621,7 +617,6 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
 
 .node-center-label{fill:var(--accent);font-size:9px;font-weight:850;letter-spacing:.08em;paint-order:stroke;stroke:var(--accent-soft);stroke-width:3px}
 
-/* Place cards connect geographic context back to the person and event views. */
 .place-card{padding:10px}
 .place-card.selected{border-color:var(--accent);box-shadow:var(--focus)}
 .place-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
@@ -652,7 +647,6 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
   .place-link{width:100%}
 }
 
-/* Compact navigation keeps every view discoverable and preserves context on small screens. */
 .tabs-shell{position:sticky;top:0;z-index:12;background:var(--bg)}
 .tabs-shell .tabs{position:static}
 .tab-scroll-control,.detail-back{display:none}

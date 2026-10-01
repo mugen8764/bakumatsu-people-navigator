@@ -134,8 +134,20 @@
     const { $, $$, actions, data, state } = context;
     let activeIndex = -1;
     let currentResults = [];
+    // Idle, composing, then awaiting the confirmation key's release.
+    let imePhase = 0;
+
+    function handleIME(event) {
+      if (event.type.startsWith('composition')) {
+        imePhase = event.type === 'compositionend' ? 2 : 1;
+        if (imePhase === 2) render();
+      } else if (event.type === 'beforeinput') {
+        if (imePhase !== 2 && (event.isComposing || event.inputType === 'insertCompositionText')) imePhase = 1;
+      } else if (event.type === 'blur' || imePhase === 2) imePhase = 0;
+    }
 
     function close() {
+      imePhase = 0;
       const input = $('#globalSearch');
       const box = $('#searchResults');
       activeIndex = -1;
@@ -189,6 +201,7 @@
     }
 
     function render() {
+      if (imePhase === 1) return;
       const value = $('#globalSearch').value;
       const box = $('#searchResults');
       const results = searchAll(data, value);
@@ -214,8 +227,7 @@
     }
 
     function handleKeydown(event) {
-      // keyCode 229 also covers IMEs that finish composition before keydown.
-      if (event.isComposing || event.keyCode === 229) return false;
+      if (imePhase || event.isComposing || event.keyCode === 229) return false;
       if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
         if (!currentResults.length) return false;
         event.preventDefault();
@@ -238,7 +250,7 @@
       return false;
     }
 
-    return { clearStatus, close, handleKeydown, render };
+    return { clearStatus, close, handleIME, handleKeydown, render };
   }
 
   return { createSearchController, escapeHtml, highlightMatch, normalise, searchAll };
