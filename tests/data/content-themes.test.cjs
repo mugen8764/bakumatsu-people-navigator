@@ -59,6 +59,28 @@ test('Satcho roles do not carry an earlier office into the meeting or confuse me
   assert.match(cast.find(p => p.personId === 'nakaoka').summary, /会談当日の出席者としては扱わない/);
 });
 
+test('the second expedition separates battlefield support, Satsuma background and later ceasefire work', () => {
+  const scene = sceneAt('1866-expedition');
+  const katsu = status('katsu', scene);
+  assert.match(katsu.role, /休戦交渉/);
+  assert.match(katsu.stance, /1866年5月.*9月2日.*旧暦/);
+  assert.doesNotMatch(katsu.stance, /操練所|教育/);
+  assert.ok(katsu.evidence.sourceIds.includes('ndl_katsu_1866_diary'));
+  assert.ok(katsu.evidence.sourceIds.includes('ndl_katsu_timeline'));
+  assert.match(status('katsu', scene - 1).stance, /1864年/);
+  assert.doesNotMatch(status('saigo', scene).role, /御側役|大番頭/);
+  assert.ok(status('ryoma', scene).evidence.sourceIds.includes('ndl_kameyama_trade'));
+  const incident = domain.getIncident('second-choshu-war');
+  const cast = Object.fromEntries(incident.participants.map(p => [p.personId, p]));
+  assert.equal(cast.ryoma.involvement, 'onsite');
+  assert.equal(cast.katsu.involvement, 'decision');
+  assert.equal(cast.saigo.involvement, 'context');
+  assert.match(cast.omura.role, /石州口/);
+  assert.match(cast.takasugi.role, /海軍総督/);
+  assert.equal(incident.relations.length, 1);
+  assert.equal(incident.relations[0].evidence.sourceIds[0], 'yamaguchi_takasugi_1863');
+});
+
 test('the five added comparisons resolve adjacent states and keep their own evidence', () => {
   for (const [id, index] of [['takasugi', 8], ['komatsu', 9], ['katsu', 13], ['katamori', 12], ['enomoto', 14]]) {
     const point = domain.turningPointAt(domain.getPerson(id), index);

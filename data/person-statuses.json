@@ -519,7 +519,7 @@
       "id": "person-status-katsu-1864-kinmon",
       "personId": "katsu",
       "startSceneId": "1864-kinmon",
-      "endSceneId": "1866-expedition",
+      "endSceneId": "1866-satcho",
       "displayName": "勝海舟",
       "role": "軍艦奉行（1864年就任）",
       "factionId": "bakufu",
@@ -532,6 +532,25 @@
         ],
         "reviewStatus": "verified",
         "note": "国立国会図書館で1864年の軍艦奉行就任・神戸海軍操練所開設・坂本龍馬らへの教育、神戸市文化財保護審議会資料で操練所の1864年竣工を確認。尊攘派参加を疑われたとの因果関係は直接確認できないため削除。"
+      }
+    },
+    {
+      "id": "person-status-katsu-1866-expedition",
+      "personId": "katsu",
+      "startSceneId": "1866-expedition",
+      "endSceneId": "1866-expedition",
+      "displayName": "勝海舟",
+      "role": "軍艦奉行・休戦交渉担当",
+      "factionId": "bakufu",
+      "stance": "1866年5月に軍艦奉行へ就任。家茂の死去後、9月2日（旧暦）に宮島の大願寺で長州側と休戦を交渉した。",
+      "importance": "四境での戦場指揮とは役割と時期を分ける。以前の神戸海軍操練所の運営を、この時点の活動へ持ち越さない。",
+      "evidence": {
+        "sourceIds": [
+          "ndl_katsu_timeline",
+          "ndl_katsu_1866_diary"
+        ],
+        "reviewStatus": "verified",
+        "note": "国立国会図書館の履歴で1864年10月免職と1866年5月の軍艦奉行就任、同館の9月2日日記抜粋・解説で家茂死去後の休戦交渉を確認。神戸市の資料では操練所は1865年に閉所しており、1864年の海軍教育を1866年の説明に継続しない。"
       }
     },
     {
@@ -1458,10 +1477,10 @@
       "startSceneId": "1866-expedition",
       "endSceneId": "1866-expedition",
       "displayName": "西郷吉之助",
-      "role": "薩摩藩御側役",
+      "role": "薩摩藩士・前年から長州を支援",
       "factionId": "satsuma",
       "stance": "前年に第二次長州征討への出兵を断り、武器・汽船購入を取り次いだ薩摩藩は征討に参加しない。",
-      "importance": "西郷個人の戦場指揮ではなく、御側役としての立場と征討不参加へ至る行動を表示する。",
+      "importance": "西郷個人の戦場指揮ではなく、前年の支援と薩摩藩の征討不参加を表示する。",
       "evidence": {
         "sourceIds": [
           "jacar_saigo_detail",
@@ -1469,7 +1488,7 @@
           "ndl_history_satcho"
         ],
         "reviewStatus": "verified",
-        "note": "アジア歴史資料センターで御側役就任、鹿児島県歴史・美術センター黎明館で出兵拒否と購入斡旋、国際子ども図書館で薩摩藩の第二次長州征討不参加を確認。「軍事責任者」という未確認役職は使用しない。"
+        "note": "鹿児島県歴史・美術センター黎明館で前年の出兵拒否と購入斡旋、国際子ども図書館で薩摩藩の第二次長州征討不参加を確認。アジア歴史資料センターの側役は1864年の職歴であり、1866年の現職へ推測で流用しない。"
       }
     },
     {
@@ -4711,10 +4730,11 @@
       "evidence": {
         "sourceIds": [
           "yamaguchi_takasugi_1863",
-          "nagasaki_kameyama_company"
+          "nagasaki_kameyama_company",
+          "ndl_kameyama_trade"
         ],
         "reviewStatus": "verified",
-        "note": "山口県立山口図書館で乙丑丸引き渡し、小倉口での高杉との参戦、長崎市で1866年の長州向け鉄砲・汽船購入と輸送を確認。"
+        "note": "山口県立山口図書館の事件に即した展示解説で乙丑丸引き渡しと小倉口での高杉との参戦、長崎市で長州向けの購入・輸送の背景、国立国会図書館の商社解説で坂本が社中会長を務めたことを確認。各資料の確認範囲を合わせ、輸送だけから参戦を推測しない。"
       }
     },
     {
