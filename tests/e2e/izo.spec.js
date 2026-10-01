@@ -11,7 +11,7 @@ for (const colorScheme of ['light', 'dark']) {
       const result = page.locator('.search-result').first();
       await expect(result.locator('strong')).toHaveText('岡田以蔵');
       if (query === '人斬り以蔵') {
-        await expect(result.locator('small')).toHaveText('検索用の呼び名：人斬り以蔵');
+        await expect(result.locator('small')).toHaveText('別名一致 検索用の呼び名：人斬り以蔵');
       }
       await page.locator('#globalSearch').press('ArrowDown');
       await page.locator('#globalSearch').press('Enter');
@@ -41,7 +41,7 @@ test('Izo search leads to repression, sources and map without carrying his role 
   await page.goto('/');
   await page.locator('#globalSearch').fill('人斬り以蔵');
   const result = page.locator('.search-result', { has: page.locator('strong', { hasText: /^岡田以蔵$/ }) });
-  await expect(result.locator('small')).toHaveText('検索用の呼び名：人斬り以蔵');
+  await expect(result.locator('small')).toHaveText('別名一致 検索用の呼び名：人斬り以蔵');
   await result.click();
   await expect(page.locator('#personDetail .detail-title')).toHaveText('岡田以蔵');
   // The search-only epithet is not listed among the names used at the time.

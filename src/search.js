@@ -9,9 +9,7 @@
     return String(value || '').toLowerCase().replace(/[\s・･]/g, '');
   }
 
-  // Search loads before the renderer helpers and stays independently testable,
-  // so it keeps its own copy of BM_RENDER_SHARED.escapeHtml. A unit test asserts
-  // the two stay identical.
+  // Search loads before renderers; escaping must stay identical (unit-tested).
   function escapeHtml(value) {
     return String(value ?? '').replace(/[&<>"']/g, character => ({
       '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
@@ -23,68 +21,106 @@
     const needle = String(query || '').trim();
     if (!needle) return escapeHtml(text);
     const index = text.toLocaleLowerCase('ja').indexOf(needle.toLocaleLowerCase('ja'));
-    if (index < 0) return escapeHtml(text);
-    return `${escapeHtml(text.slice(0, index))}<mark>${escapeHtml(text.slice(index, index + needle.length))}</mark>${escapeHtml(text.slice(index + needle.length))}`;
+    const range = index >= 0 ? [index, index + needle.length] : normalizedMatchRange(text, needle);
+    if (!range) return escapeHtml(text);
+    return `${escapeHtml(text.slice(0, range[0]))}<mark>${escapeHtml(text.slice(range[0], range[1]))}</mark>${escapeHtml(text.slice(range[1]))}`;
+  }
+
+  function normalizedMatchRange(text, query) {
+    const needle = normalise(query);
+    const pattern = Array.from(needle, character => character.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('[\\s・･]*');
+    const match = needle && new RegExp(pattern, 'i').exec(text);
+    return match ? [match.index, match.index + match[0].length] : null;
+  }
+
+  function matchSnippet(value, query) {
+    const text = String(value || '');
+    if (text.length <= 48) return text;
+    const range = normalizedMatchRange(text, query) || [0, 0];
+    const start = Math.max(0, range[0] - 12);
+    const end = Math.min(text.length, Math.max(start + 48, range[1] + 12));
+    return `${start ? '…' : ''}${text.slice(start, end)}${end < text.length ? '…' : ''}`;
   }
 
   function searchAll(data, query) {
     const normalizedQuery = normalise(query);
     if (!normalizedQuery) return [];
     const results = [];
+    const matches = value => normalise(value).includes(normalizedQuery);
     const scenes = new Map(data.scenes.map(scene => [scene.id, scene]));
     data.people.forEach(person => {
       const statuses = Object.entries(person.statuses);
       const names = [person.name, person.kana, ...person.aliases, ...statuses.map(([, status]) => status.display),
         ...person.aliases.flatMap(name => domain.readingKanasFor(person, name))];
-      const matches = value => normalise(value).includes(normalizedQuery);
       const matchStatus = field => statuses.find(([, status]) => matches(status[field]));
-      const statusReason = (entry, field, label) => {
-        const [sceneId, status] = entry;
-        const scene = scenes.get(sceneId);
-        return `${scene ? `${scene.year}年「${scene.title}」の` : ''}${label}：${status[field]}`;
+      const statusMatchText = (entry, field) => {
+        const scene = scenes.get(entry[0]);
+        return `${scene ? `${scene.year}年｜` : ''}${matchSnippet(entry[1][field], query)}`;
       };
       // Search-only names do not establish when a name came into use.
       const laterName = (person.laterNames || []).find(matches);
       let rank;
-      let sub = person.aliases.slice(0, 3).join('／');
+      let matchReason;
+      let sub;
       if (names.some(name => normalise(name) === normalizedQuery)) rank = 0;
       else if (names.some(matches)) rank = 1;
       else if (laterName) {
         rank = normalise(laterName) === normalizedQuery ? 0 : 1;
         sub = `検索用の呼び名：${laterName}`;
+        matchReason = '別名一致';
       } else {
         const role = matchStatus('role');
         const stance = matchStatus('stance');
         if (role) {
           rank = 2;
-          sub = statusReason(role, 'role', '役職');
+          matchReason = '役職一致';
+          sub = statusMatchText(role, 'role');
         } else if (matches(person.oneLine)) {
           rank = 3;
-          sub = `人物紹介：${person.oneLine}`;
+          matchReason = '人物本文一致';
+          sub = matchSnippet(person.oneLine, query);
         } else if (stance) {
           rank = 3;
-          sub = statusReason(stance, 'stance', '行動・立場');
+          matchReason = '人物本文一致';
+          sub = statusMatchText(stance, 'stance');
         } else return;
       }
-      results.push({ type: '人物', title: person.name, sub, id: person.id, rank });
-    });
-    Object.entries(data.factions).forEach(([name, faction]) => {
-      if (normalise([name, ...faction.aliases, faction.summary].join(' ')).includes(normalizedQuery)) {
-        results.push({ type: '勢力', title: name, sub: faction.summary, id: name });
+      if (!matchReason) {
+        sub = names.find(name => normalise(name) === normalizedQuery) || names.find(matches);
+        matchReason = sub === person.name ? '基本名一致' : sub === person.kana ? '読み一致'
+          : statuses.some(([, status]) => status.display === sub) ? '当時名一致'
+          : person.aliases.includes(sub) ? '別名一致' : '読み一致';
+        const office = matchReason === '別名一致' && statuses.find(([, status]) => normalise(status.role).includes(normalise(sub)));
+        if (office) {
+          matchReason = '役職一致';
+          sub = statusMatchText(office, 'role');
+        }
       }
+      results.push({ type: '人物', title: person.name, sub, id: person.id, rank, matchReason });
+    });
+    function addResult(type, title, fields, reasons, id, date, rank) {
+      const text = fields.join(' ');
+      if (!matches(text)) return;
+      const index = fields.findIndex(matches);
+      results.push({ type, title, id, rank,
+        sub: matchSnippet(index === 0 && date ? date : fields[index] || text, query),
+        matchReason: reasons[index] || (type === '勢力' ? '勢力一致' : '事件内一致') });
+    }
+    Object.entries(data.factions).forEach(([name, faction]) => {
+      const fields = [name, ...faction.aliases, faction.summary];
+      addResult('勢力', name, fields, fields.map(() => '勢力一致'), name);
     });
     const peopleById = new Map(data.people.map(person => [person.id, person]));
     Object.values(data.incidents || {}).forEach(incident => {
-      const participantNames = incident.participants.flatMap(item => [item.displayName,
+      const names = incident.participants.flatMap(item => [item.displayName,
         ...domain.readingKanasFor(peopleById.get(item.personId), item.displayName)]);
-      if (normalise([incident.title, incident.summary, ...participantNames].join(' ')).includes(normalizedQuery)) {
-        results.push({ type: '事件', title: incident.title, sub: incident.date, id: incident.id, rank: -1 });
-      }
+      addResult('事件', incident.title, [incident.title, incident.summary, ...names],
+        ['事件名一致', '事件本文一致', ...names.map(() => '参加者一致')], incident.id, incident.date, -1);
     });
     Object.entries(data.events).forEach(([id, event]) => {
-      if (normalise([event.title, event.description, ...event.issues, ...event.causes, ...event.results].join(' ')).includes(normalizedQuery)) {
-        results.push({ type: '事件', title: event.title, sub: event.date, id });
-      }
+      const body = [event.description, ...event.issues, ...event.causes, ...event.results];
+      addResult('事件', event.title, [event.title, ...body],
+        ['事件名一致', ...body.map(() => '事件本文一致')], id, event.date);
     });
     const limits = { '人物': 8, '勢力': 3, '事件': 3 };
     return ['人物', '勢力', '事件'].flatMap(type => results
@@ -169,7 +205,7 @@
         const group = results.map((result, index) => ({ result, index })).filter(item => item.result.type === type);
         if (!group.length) return '';
         const groupId = `search-group-${type === '人物' ? 'people' : type === '勢力' ? 'factions' : 'events'}`;
-        return `<section class="search-group" role="group" aria-labelledby="${groupId}"><div id="${groupId}" class="search-group-title"><strong>${type === '勢力' ? '勢力・分野' : type}</strong><span>${group.length}件</span></div>${group.map(({ result, index }) => `<button id="search-result-${index}" type="button" class="search-result" data-search-index="${index}" role="option" aria-selected="false" tabindex="-1"><span><strong>${highlightMatch(result.title, value)}</strong>${result.sub ? `<small>${highlightMatch(result.sub, value)}</small>` : ''}</span></button>`).join('')}</section>`;
+        return `<section class="search-group" role="group" aria-labelledby="${groupId}"><div id="${groupId}" class="search-group-title"><strong>${type === '勢力' ? '勢力・分野' : type}</strong><span>${group.length}件</span></div>${group.map(({ result, index }) => `<button id="search-result-${index}" type="button" class="search-result" data-search-index="${index}" role="option" aria-selected="false" tabindex="-1"><span><strong>${highlightMatch(result.title, value)}</strong><small class="search-match-summary"><span class="search-match-reason">${escapeHtml(result.matchReason)}</span> ${highlightMatch(result.sub, value)}</small></span></button>`).join('')}</section>`;
       }).join('') : '<div class="notice" style="margin:0">該当する項目がありません。</div>';
       $$('[data-search-index]', box).forEach(button => button.addEventListener('click', () => {
         const result = results[Number(button.dataset.searchIndex)];

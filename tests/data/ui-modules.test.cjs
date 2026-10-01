@@ -28,6 +28,38 @@ test('search normalization and aliases retain current behavior', () => {
 test('search highlighting preserves text safely', () => {
   assert.equal(highlightMatch('桂小五郎／木戸孝允', '桂小五郎'), '<mark>桂小五郎</mark>／木戸孝允');
   assert.equal(highlightMatch('<script>桂小五郎</script>', '桂小五郎'), '&lt;script&gt;<mark>桂小五郎</mark>&lt;/script&gt;');
+  assert.equal(highlightMatch('かつらこごろう（桂小五郎）', 'かつら こごろう'), '<mark>かつらこごろう</mark>（桂小五郎）');
+  assert.equal(highlightMatch('<script>桂・小五郎</script>', '桂 小五郎'), '&lt;script&gt;<mark>桂・小五郎</mark>&lt;/script&gt;');
+});
+
+test('search match explanations distinguish names, readings, offices, mentions and events', () => {
+  for (const [query, id, reason] of [
+    ['桂小五郎', 'kido', '当時名一致'], ['かつら こごろう', 'kido', '読み一致'],
+    ['伊藤俊輔', 'ito', '当時名一致'], ['松平容保', 'katamori', '基本名一致'],
+    ['会津中将', 'katamori', '別名一致'], ['京都守護職', 'katamori', '役職一致']
+  ]) {
+    const result = searchAll(data, query)[0];
+    assert.equal(result.id, id);
+    assert.equal(result.matchReason, reason);
+    assert.ok(normalise(result.sub).includes(normalise(query)), query);
+  }
+  const mention = searchAll(data, '西郷').find(result => result.id === 'katsu');
+  assert.equal(mention.matchReason, '人物本文一致');
+  assert.match(mention.sub, /1868年.*西郷/);
+  assert.equal(searchAll(data, '薩摩').find(result => result.type === '勢力').matchReason, '勢力一致');
+  assert.equal(searchAll(data, '大政奉還').find(result => result.type === '事件').matchReason, '事件名一致');
+  assert.equal(searchAll(data, '伊藤俊輔').find(result => result.type === '事件').matchReason, '参加者一致');
+  assert.ok(searchAll(data, '五稜郭').some(result => result.type === '事件' && result.matchReason === '事件本文一致'));
+});
+
+test('matches across existing event fields remain available and do not claim a single matching field', () => {
+  const sample = { people: [], factions: {}, scenes: [], events: {
+    sample: { title: '試験事件', description: '説明本文', issues: [], causes: [], results: [], date: '試験用' }
+  } };
+  const result = searchAll(sample, '事件説明')[0];
+  assert.equal(result.id, 'sample');
+  assert.equal(result.matchReason, '事件内一致');
+  assert.match(highlightMatch(result.sub, '事件説明'), /<mark>事件 説明<\/mark>/);
 });
 
 test('every registered person name wins over mentions in other biographies', () => {
@@ -357,6 +389,6 @@ test('search-only names find the person without assigning an origin period', () 
     events: {},
     people: [{ id: 'sample', name: '見本太郎', kana: 'みほん たろう', aliases: ['見本'], laterNames: ['後世の見本'], statuses: {}, oneLine: '説明' }]
   };
-  assert.deepEqual(searchAll(catalog, '後世の見本'), [{ type: '人物', title: '見本太郎', sub: '検索用の呼び名：後世の見本', id: 'sample' }]);
+  assert.deepEqual(searchAll(catalog, '後世の見本'), [{ type: '人物', title: '見本太郎', sub: '検索用の呼び名：後世の見本', id: 'sample', matchReason: '別名一致' }]);
   assert.equal(searchAll(catalog, '見本')[0].sub, '見本');
 });

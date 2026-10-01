@@ -33,14 +33,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
 .page{width:min(1360px,calc(100% - 28px));margin:auto;padding:22px 0 48px}
 .panel{border:1px solid var(--border);background:var(--panel);border-radius:18px;box-shadow:var(--shadow)}
 .muted{color:var(--muted)}
-/* First-paint placeholders. data.js and the renderers run after the HTML is
-   parsed, so these reserve the height the loaded page takes and keep late data
-   from shifting the layout. Each value is the measured height at the reference
-   width of its range: 1280px here, 600px and 320px in the two media queries
-   below. Re-measure after a layout change by loading the page and reading
-   document.querySelector(SELECTOR).getBoundingClientRect().height, and let the
-   placeholder test in tests/e2e/performance.spec.js compare each reservation
-   against the height the loaded page actually takes. */
+/* First-paint reservations: see docs/maintenance.md and performance.spec.js. */
 .app-loading .top{min-height:401px}
 .app-loading #view-people{min-height:1507px}
 .app-loading #personCards{min-height:687px;background:repeating-linear-gradient(135deg,var(--card) 0 18px,var(--panel) 18px 36px);border-radius:14px;opacity:.55}
@@ -330,8 +323,6 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
 }
 @media(max-width:430px){
   .cards{grid-template-columns:1fr;gap:6px}
-  /* A scene can list about 60 people, so phones get compact rows instead of
-     tall one-column cards: portrait or badge beside the name, role and faction. */
   .card-button{min-height:0;display:grid;grid-template-columns:41px minmax(0,1fr) auto;column-gap:10px;align-content:start;padding-block:8px}
   .card-button.selected{padding-block:7px}
   .card-button>.avatar{grid-row:1/span 3;margin:0}
@@ -345,8 +336,7 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
 }
 @media(max-width:430px){
   .app-loading .top{min-height:583px}
-  /* Reserve the rows inside the summary too: an outer height alone still
-     lets the search field move when the scene text and names arrive. */
+  /* Reserve inner rows too, keeping the search field stationary. */
   .app-loading .scene-dashboard{min-height:178px}
   .app-loading .scene-at-glance{min-height:116px}
   .app-loading #view-people{min-height:3006px}
@@ -679,7 +669,6 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
   .tab-scroll-control.next{right:2px}
 }
 
-/* Search results are grouped by destination so a broad query remains easy to scan. */
 .search-group+.search-group{margin-top:6px;padding-top:6px;border-top:1px solid var(--border)}
 .search-group-title{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:3px 8px;color:var(--muted);font-size:.67rem}
 .search-group-title strong{color:var(--text);font-size:.72rem}
@@ -688,6 +677,9 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
 .search-group .search-result:hover,.search-group .search-result.active{border-left-color:var(--accent)}
 .search-result mark{border-radius:3px;background:var(--accent-soft);color:var(--text);padding:0 2px;font-weight:850}
 .search-result small{display:block;white-space:normal;overflow-wrap:anywhere}
+.search-result .search-match-summary{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:2;font-size:.76rem;line-height:1.5;margin-top:3px}
+.search-match-reason{display:inline-block;border:1px solid var(--border);border-radius:4px;padding:0 4px;color:var(--text);background:var(--card);font-size:.68rem;line-height:1.2;font-weight:750}
+.search-result:hover .search-match-summary,.search-result.active .search-match-summary{color:var(--text)}
 @media(max-width:680px){
   .search-results{max-height:min(370px,55vh)}
 }
