@@ -930,6 +930,18 @@
           "archives_kuroda"
         ],
         "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/kuroda.jpg",
+        "alt": "黒田清隆の史料肖像",
+        "sourceId": "ndl_portrait_kuroda",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」。当サイトで縮小・JPEG圧縮。",
+        "originalSource": "近世名士写真 其1（近世名士写真頒布会、1935年）、57コマ",
+        "dateNote": "撮影・制作時期未確認。原資料の刊行年は撮影・制作年を示すものではなく、選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が黒田清隆の肖像として掲載する1枚目の画像。",
+        "rightsNote": "同館の現行利用案内で、掲載肖像の著作権保護期間満了、転載申請不要、出典明示を確認。当サイトで縦216pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
+        "checkedAt": "2026-10-01"
       }
     },
     {
@@ -1192,7 +1204,19 @@
             "reviewStatus": "verified"
           }
         }
-      ]
+      ],
+      "portrait": {
+        "src": "assets/portraits/ito.jpg",
+        "alt": "伊藤博文の史料肖像",
+        "sourceId": "ndl_portrait_ito",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」。当サイトで縮小・JPEG圧縮。",
+        "originalSource": "近世名士写真 其1（近世名士写真頒布会、1935年）、21コマ",
+        "dateNote": "撮影・制作時期未確認。原資料の刊行年は撮影・制作年を示すものではなく、選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が伊藤博文の肖像として掲載する1枚目の画像。",
+        "rightsNote": "同館の現行利用案内で、掲載肖像の著作権保護期間満了、転載申請不要、出典明示を確認。当サイトで縦216pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
+        "checkedAt": "2026-10-01"
+      }
     },
     {
       "id": "inoue",
@@ -1243,7 +1267,19 @@
             "reviewStatus": "verified"
           }
         }
-      ]
+      ],
+      "portrait": {
+        "src": "assets/portraits/inoue.jpg",
+        "alt": "井上馨の史料肖像",
+        "sourceId": "ndl_portrait_inoue",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」。当サイトで縮小・JPEG圧縮。",
+        "originalSource": "近世名士写真 其1（近世名士写真頒布会、1935年）、29コマ",
+        "dateNote": "撮影・制作時期未確認。原資料の刊行年は撮影・制作年を示すものではなく、選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が井上馨の肖像として掲載する1枚目の画像。",
+        "rightsNote": "同館の現行利用案内で、掲載肖像の著作権保護期間満了、転載申請不要、出典明示を確認。当サイトで縦216pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
+        "checkedAt": "2026-10-01"
+      }
     },
     {
       "id": "omura",
@@ -1313,6 +1349,18 @@
           "joetsu_hokuetsu"
         ],
         "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/yamagata.jpg",
+        "alt": "山県有朋の史料肖像",
+        "sourceId": "ndl_portrait_yamagata",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」。当サイトで縮小・JPEG圧縮。",
+        "originalSource": "近世名士写真 其1（近世名士写真頒布会、1935年）、23コマ",
+        "dateNote": "撮影・制作時期未確認。原資料の刊行年は撮影・制作年を示すものではなく、選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が山県有朋の肖像として掲載する1枚目の画像。",
+        "rightsNote": "同館の現行利用案内で、掲載肖像の著作権保護期間満了、転載申請不要、出典明示を確認。当サイトで縦216pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
+        "checkedAt": "2026-10-01"
       }
     },
     {
@@ -1805,6 +1853,18 @@
           "kochi_itagaki_profile"
         ],
         "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/itakagi.jpg",
+        "alt": "板垣退助の史料肖像",
+        "sourceId": "ndl_portrait_itakagi",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」。当サイトで縮小・JPEG圧縮。",
+        "originalSource": "近世名士写真 其2（近世名士写真頒布会、1935年）、37コマ",
+        "dateNote": "撮影・制作時期未確認。原資料の刊行年は撮影・制作年を示すものではなく、選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が板垣退助の肖像として掲載する1枚目の画像。",
+        "rightsNote": "同館の現行利用案内で、掲載肖像の著作権保護期間満了、転載申請不要、出典明示を確認。当サイトで縦216pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
+        "checkedAt": "2026-10-01"
       }
     },
     {
@@ -2505,7 +2565,19 @@
             "reviewStatus": "verified"
           }
         }
-      ]
+      ],
+      "portrait": {
+        "src": "assets/portraits/kawai-tsuginosuke.jpg",
+        "alt": "河井継之助の史料肖像",
+        "sourceId": "ndl_portrait_kawai_tsuginosuke",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」。当サイトで縮小・JPEG圧縮。",
+        "originalSource": "河井継之助伝（今泉鐸次郎著、目黒書店、1931年）、10コマ",
+        "dateNote": "撮影・制作時期未確認。原資料の刊行年は撮影・制作年を示すものではなく、選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が河井継之助の肖像として掲載する1枚目の画像。",
+        "rightsNote": "同館の現行利用案内で、掲載肖像の著作権保護期間満了、転載申請不要、出典明示を確認。当サイトで縦216pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
+        "checkedAt": "2026-10-01"
+      }
     },
     {
       "id": "roches",
@@ -4021,6 +4093,18 @@
           "waseda_okuma_handwriting_24"
         ],
         "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/okuma-shigenobu.jpg",
+        "alt": "大隈重信の史料肖像",
+        "sourceId": "ndl_portrait_okuma_shigenobu",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」。当サイトで縮小・JPEG圧縮。",
+        "originalSource": "近世名士写真 其2（近世名士写真頒布会、1935年）、33コマ",
+        "dateNote": "撮影・制作時期未確認。原資料の刊行年は撮影・制作年を示すものではなく、選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が大隈重信の肖像として掲載する1枚目の画像。",
+        "rightsNote": "同館の現行利用案内で、掲載肖像の著作権保護期間満了、転載申請不要、出典明示を確認。当サイトで縦216pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
+        "checkedAt": "2026-10-01"
       }
     },
     {
