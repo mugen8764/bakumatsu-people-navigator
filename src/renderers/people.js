@@ -85,10 +85,13 @@
         return `<section class="section" data-relation-sources="${esc(other.id)}"><h4>${esc(domain.statusAt(other, state.scene).display)} — ${esc(relation.label)} ${shared.reviewBadge(relation.evidence)}</h4><div class="source-list">${evidenceLinks(relation.evidence)}</div></section>`;
       }).join('');
       box.innerHTML = `<button type="button" class="button detail-back" id="personBackToList">← 人物一覧へ</button><div class="detail-head">${shared.avatar(person, status.faction, status.display)}<div><div class="detail-title">${esc(status.display)}</div>${laterName ? `<div class="aliases">後の名前：${esc(laterName)}</div>` : ''}<div class="badges"><span class="badge">${data.factions[status.faction]?.kind === 'field' ? '活動分野：' : ''}${esc(status.faction)}</span>${offices.length ? `<button type="button" class="badge office-trigger" aria-controls="personOfficeHelp" aria-expanded="false">${esc(status.role)} <span aria-hidden="true">?</span></button>` : `<span class="badge">${esc(status.role)}</span>`}<span class="badge">${esc(person.born)}</span></div></div></div>
-      ${officeHelp(offices)}${incidentContext}${person.portrait ? `<p class="portrait-note">${esc(person.portrait.dateNote)}</p>${shared.portraitCredit(person)}` : ''}
+      ${person.portrait ? '<p class="portrait-note">史料肖像｜選択時点の姿とは限りません。</p>' : ''}
+      ${incidentContext}
       <div class="snapshot"><strong>${shared.dateLabel(shared.scene())}の位置づけ ${shared.reviewBadge(status.evidence)}</strong>${esc(status.importance)}</div>
+      <div class="section person-stance"><h3>この時点の行動・立場</h3><p>${esc(status.stance)}</p></div>
       ${turningPoint(person)}
-      <div class="section"><h3>この時点の行動・立場</h3><p>${esc(status.stance)}</p></div>
+      ${officeHelp(offices)}
+      ${shared.portraitCredit(person, '肖像の出典・年代・利用条件')}
       ${shared.backgroundTerms(person.termIds)}
       <div class="section"><h3>一言で</h3><p>${esc(person.oneLine)}</p></div>
       <div class="section"><h3>名前・通称</h3><div class="tags">${[person.name, ...person.aliases].map(alias => `<span class="tag">${esc(alias)}</span>`).join('')}</div></div>
@@ -109,7 +112,13 @@
       const officeTrigger = $('.office-trigger', box);
       const officePanel = $('#personOfficeHelp', box);
       if (officeTrigger) {
-        officeTrigger.addEventListener('click', () => { officePanel.open = !officePanel.open; });
+        officeTrigger.addEventListener('click', () => {
+          officePanel.open = !officePanel.open;
+          if (officePanel.open) {
+            officePanel.scrollIntoView({ block: 'start', behavior: 'auto' });
+            $('summary', officePanel).focus({ preventScroll: true });
+          }
+        });
         officePanel.addEventListener('toggle', () => officeTrigger.setAttribute('aria-expanded', String(officePanel.open)));
       }
       $$('[data-turning-scene]', box).forEach(button => button.addEventListener('click', () => {

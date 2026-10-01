@@ -99,10 +99,10 @@
       });
     }
 
-    function portraitCredit(person) {
+    function portraitCredit(person, summary = `${person.name}の肖像：出典・利用条件`) {
       const portrait = person.portrait;
       if (!portrait) return '';
-      return `<details class="source-disclosure portrait-credit"><summary>${escapeHtml(person.name)}の肖像：出典・利用条件</summary><p>${escapeHtml(portrait.credit)}</p><p>${escapeHtml(portrait.identityNote)}</p><p>${escapeHtml(portrait.dateNote)}</p><p>原資料：${escapeHtml(portrait.originalSource || '書誌未確認')}</p><p>${escapeHtml(portrait.rightsNote)}</p><div class="source-list">${sourceLinks([portrait.sourceId, portrait.rightsSourceId])}</div></details>`;
+      return `<details class="source-disclosure portrait-credit"><summary>${escapeHtml(summary)}</summary><p>${escapeHtml(portrait.credit)}</p><p>${escapeHtml(portrait.identityNote)}</p><p>${escapeHtml(portrait.dateNote)}</p><p>原資料：${escapeHtml(portrait.originalSource || '書誌未確認')}</p><p>${escapeHtml(portrait.rightsNote)}</p><div class="source-list">${sourceLinks([portrait.sourceId, portrait.rightsSourceId])}</div></details>`;
     }
 
     function reviewBadge(evidence) {
