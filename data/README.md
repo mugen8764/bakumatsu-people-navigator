@@ -2,6 +2,8 @@
 
 このディレクトリのJSONが正本です。ルートの `data.json`・`data.js` と `SOURCES.md` は生成物なので、直接編集しません。正確なフィールド制約は [データ契約](../schema/README.md)、コマンドと公開手順は [開発・運用](https://github.com/mugen8764/bakumatsu-people-navigator/blob/main/docs/maintenance.md) を参照してください。
 
+外部プロジェクトが固定コミットから読み取る場合は、[外部利用向けの意味と変更の扱い](../schema/README.md#外部プロジェクトからの読み取り) を入口にしてください。
+
 ## どのファイルを編集するか
 
 | ファイル | 内容 |
