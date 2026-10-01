@@ -320,7 +320,7 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
   .footer-links{margin-top:8px}
 }
 @media(max-width:680px){
-  .app-loading .top{min-height:524px}
+  .app-loading .top{min-height:495px}
   .app-loading #view-people{min-height:2921px}
   .app-loading #personCards{min-height:1381px}
 }
@@ -340,7 +340,7 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
   .counts{grid-column:auto}
 }
 @media(max-width:430px){
-  .app-loading .top{min-height:572px}
+  .app-loading .top{min-height:542px}
   .app-loading #view-people{min-height:3006px}
   .app-loading #personCards{min-height:1300px}
 }
@@ -470,11 +470,8 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
   .lead,.version{display:none}
   .scene-controls{grid-template-columns:minmax(0,1fr);gap:6px;padding:7px 11px}
   .scene-controls>label:first-child{grid-column:1}
-  .timeline-control{grid-column:1;grid-row:2}
-  /* Directly under the scene select, the slider reads as the same timeline, so
-     its name stays for assistive technology while the board keeps its height. */
-  .timeline-label{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
-  .scene-controls .transport{grid-column:1;grid-row:3}
+  .timeline-control{display:none}
+  .scene-controls .transport{grid-column:1;grid-row:2}
   .scene-controls .timeline-step{flex:1}
   .scene-dashboard{grid-template-columns:82px minmax(0,1fr);gap:8px;padding:8px 11px 3px}
   .scene-dashboard .year-box{text-align:center;padding:9px 5px}
@@ -503,7 +500,7 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
   .scene-details:not([open]) .details-closed-copy{font-size:0}
   .scene-details:not([open]) .details-closed-copy:after{content:"＋";font-size:.78rem}
   .scene-details[open]{margin-top:8px}
-  /* The timeline slider directly above already shows the position. */
+  /* Scene position is available through the labelled select. */
   .top>.progress{display:none}
   .scene-lenses{padding:10px 11px}
   .scene-people{display:flex;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:3px}
@@ -591,6 +588,9 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
   .scene-changes-heading>span:last-child{text-align:right}
 }
 @media(max-width:680px){
+  /* Reserve both gutters even at either end to avoid moving the tab strip. */
+  .tabs-shell{padding-inline:36px}
+  .tabs-shell .tabs{min-width:0}
   .scene-changes{margin:8px 11px 0;padding:8px}
   .scene-change-groups{display:flex;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:2px}
   .scene-change-group{min-width:226px;scroll-snap-align:start}

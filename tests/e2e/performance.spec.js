@@ -3,7 +3,7 @@ const { expect, test } = require('../support/test.cjs');
 const { activePeopleAt } = require('../support/catalog.cjs');
 
 // One case per first-paint placeholder range in src/styles.css.
-for (const [label, width] of [['desktop', 1280], ['tablet', 600], ['mobile', 320]]) {
+for (const [label, width] of [['desktop', 1280], ['tablet', 600], ['mobile', 320], ['mobile-390', 390]]) {
 test(`delayed historical data does not cause a large initial layout shift at ${label} width`, async ({ page }) => {
   await page.setViewportSize({ width, height: 900 });
   await page.addInitScript(() => {
@@ -60,7 +60,7 @@ test('initial page stays within the static asset budget', async ({ page, request
 
 // The placeholders in src/styles.css must reserve what the loaded page takes.
 // A layout-shift score alone does not catch over-reservation below the fold.
-for (const [label, width] of [['desktop', 1280], ['tablet', 600], ['mobile', 320]]) {
+for (const [label, width] of [['desktop', 1280], ['tablet', 600], ['mobile', 320], ['mobile-390', 390]]) {
   test(`first-paint placeholders match the loaded height at ${label} width`, async ({ page }) => {
     const measure = () => page.evaluate(() => Object.fromEntries(
       ['.top', '#view-people', '#personCards'].map(selector => [

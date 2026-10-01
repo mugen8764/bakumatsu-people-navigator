@@ -269,7 +269,9 @@
   function revealActiveTab() {
     const activeTab = tabs.find(button => button.dataset.view === state.view);
     if (narrowTabs.matches && activeTab) {
-      scrollTabsTo(activeTab.offsetLeft - (tabStrip.clientWidth - activeTab.offsetWidth) / 2);
+      const tabBox = activeTab.getBoundingClientRect();
+      const stripBox = tabStrip.getBoundingClientRect();
+      scrollTabsTo(tabStrip.scrollLeft + tabBox.left - stripBox.left - (stripBox.width - tabBox.width) / 2);
     }
     updateTabScrollControls();
   }
