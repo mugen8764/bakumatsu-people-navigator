@@ -51,6 +51,17 @@ for (const width of [320, 390, 1280]) {
         await expect(page).toHaveURL(initialUrl);
       }
 
+      // A pointer/programmatic commit has no confirming keyup. Normal navigation still works.
+      await input.fill('桂小五郎');
+      await emit('compositionstart');
+      await emit('compositionend', { data: '桂小五郎' });
+      await input.press('ArrowDown');
+      await expect(input).toHaveAttribute('aria-activedescendant', 'search-result-0');
+      await input.press('Enter');
+      await expect(page).toHaveURL(/person=kido/);
+      await page.goBack();
+      await expect(page).toHaveURL(initialUrl);
+
       // beforeinput supplies composition state even if compositionstart is absent.
       await input.fill('伊藤俊輔');
       await input.press('ArrowDown');

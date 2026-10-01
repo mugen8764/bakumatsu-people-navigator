@@ -227,7 +227,11 @@
     }
 
     function handleKeydown(event) {
-      if (imePhase || event.isComposing || event.keyCode === 229) return false;
+      if (imePhase === 1 || event.isComposing || event.keyCode === 229) return false;
+      if (imePhase === 2) {
+        if (event.key === 'Enter') return false;
+        imePhase = 0;
+      }
       if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
         if (!currentResults.length) return false;
         event.preventDefault();
