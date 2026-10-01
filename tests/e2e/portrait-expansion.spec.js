@@ -3,7 +3,7 @@ const { expect, test } = require('../support/test.cjs');
 const people = require('../../data/people.json').people;
 const incidents = require('../../data/events.json').incidents;
 
-const addedIds = ['ito', 'inoue', 'yamagata', 'kuroda', 'itakagi', 'okuma-shigenobu', 'kawai-tsuginosuke'];
+const addedIds = ['ito', 'inoue', 'yamagata', 'kuroda', 'itakagi', 'okuma-shigenobu', 'kawai-tsuginosuke', 'hisamitsu', 'abe', 'komei'];
 const addedPeople = addedIds.map(id => people.find(person => person.id === id));
 
 for (const colorScheme of ['light', 'dark']) {
@@ -23,7 +23,7 @@ for (const colorScheme of ['light', 'dark']) {
       await page.keyboard.press('Enter');
       await expect(detail.locator('.portrait-credit')).toHaveAttribute('open', '');
       await expect(detail.locator('.portrait-credit')).toContainText(person.portrait.originalSource);
-      await expect(detail.locator('.portrait-credit')).toContainText('撮影・制作時期未確認');
+      await expect(detail.locator('.portrait-credit')).toContainText(person.portrait.dateNote);
       await expect(detail.locator('.portrait-credit a')).toHaveCount(2);
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     }

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.101",
+    "version": "1.0.102",
     "updated": "2026-10-01"
   },
   "sources": {
@@ -2723,6 +2723,41 @@
       "url": "https://www.ndl.go.jp/portrait/datas/6122/",
       "note": "本人名、掲載肖像1枚目と採録資料を確認。撮影・制作時期は未確認。原資料の刊行年と画像の年代は区別する。",
       "locator": "本人名／肖像1枚目／出典「河井継之助伝（今泉鐸次郎著、目黒書店、1931年）、10コマ」",
+      "contentCheckedAt": "2026-10-01"
+    },
+    "ndl_portrait_hisamitsu": {
+      "title": "国立国会図書館「近代日本人の肖像・島津久光」",
+      "url": "https://www.ndl.go.jp/portrait/datas/106/",
+      "note": "本人名、肖像1枚目と採録資料・113コマへのリンクを確認。撮影・制作時期と制作形態は未確認。刊行年を画像の年代とは扱わない。",
+      "locator": "本人名／肖像1枚目／出典「近世名士写真 其2（近世名士写真頒布会、1935年）」113コマ",
+      "contentCheckedAt": "2026-10-01"
+    },
+    "ndl_portrait_abe_book": {
+      "title": "国立国会図書館デジタルコレクション「阿部正弘事蹟 : 日本開国起原史 上」",
+      "url": "https://dl.ndl.go.jp/pid/991801/1/3",
+      "note": "3コマの図版「阿部正弘肖像」「阿部家所蔵」を画像本文で照合。書誌の著者・出版者・1910年刊、公開範囲「インターネット公開（保護期間満了）」も確認。肖像画の制作時期は未確認。",
+      "locator": "3コマの図版とキャプション「阿部正弘肖像」「阿部家所蔵」／書誌「著者」「出版者」「出版年月日」／共有「公開範囲」",
+      "contentCheckedAt": "2026-10-01"
+    },
+    "ndl_digital_reproduction": {
+      "title": "国立国会図書館「ウェブサイトからのコンテンツの転載」",
+      "url": "https://www.ndl.go.jp/use/reproduction",
+      "note": "デジタルコレクションの「インターネット公開（保護期間満了）」資料は自由に利用でき、当館への申請は不要と本文確認。出典の明示、リンク先のコンテンツ利用規約・加工主体の明示も確認。",
+      "locator": "2.1 国立国会図書館デジタルコレクションに掲載されているコンテンツについて／3 ご注意とお願い（リンク先コンテンツ利用規約・PDL1.0 1.1も確認）",
+      "contentCheckedAt": "2026-10-01"
+    },
+    "colbase_portrait_komei": {
+      "title": "東京国立博物館 ColBase「孝明天皇宸影」",
+      "url": "https://colbase.nich.go.jp/collection_items/tnm/A-9575?locale=ja",
+      "note": "作品名、小山正太郎筆、明治時代・19世紀、カンバス・油彩、東京国立博物館所蔵、福羽逸人氏寄贈、管理番号A-9575と公開部分画像を確認。没後の肖像画として扱い、写真とは扱わない。",
+      "locator": "作品名／詳細情報「作者」「時代世紀」「品質形状」「寄贈者」「所蔵者」「機関管理番号」／作品画像一覧の部分画像 A-9575_C0066839.jpg",
+      "contentCheckedAt": "2026-10-01"
+    },
+    "colbase_image_usage": {
+      "title": "国立文化財機構 ColBase「利用規約」",
+      "url": "https://colbase.nich.go.jp/pages/term?locale=ja",
+      "note": "同サイト上のコンテンツについて商用を含む複製・公衆送信・加工を認め、出典と加工の明示を要求。第三者権利・適用除外とCC BY 4.0互換を確認。他の機構サイトへ自動適用しない。",
+      "locator": "冒頭「コンテンツの利用について」／1 出典の記載について／2 第三者の権利／3 適用外コンテンツ／6.3 CC BY 4.0互換",
       "contentCheckedAt": "2026-10-01"
     }
   },
@@ -10463,6 +10498,18 @@
         ],
         "reviewStatus": "verified"
       },
+      "portrait": {
+        "src": "assets/portraits/abe.jpg",
+        "alt": "阿部正弘の肖像画（1910年刊資料の図版）",
+        "sourceId": "ndl_portrait_abe_book",
+        "rightsSourceId": "ndl_digital_reproduction",
+        "credit": "国立国会図書館デジタルコレクション。図版を当サイトで切り出し・縮小・JPEG圧縮。",
+        "originalSource": "渡辺修二郎著『阿部正弘事蹟 : 日本開国起原史』上（渡辺修二郎、1910年）、3コマ、図版「阿部正弘肖像」（阿部家所蔵）",
+        "dateNote": "肖像画の制作時期未確認。本人を撮影した写真ではありません。1910年は採録資料の刊行年であり、選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館所蔵資料の3コマで、図版の「阿部正弘肖像」「阿部家所蔵」の印字と画像を照合。",
+        "rightsNote": "同館が「インターネット公開（保護期間満了）」と表示する資料で、現行転載案内2.1により申請不要で利用可能。ページ余白と文字を除き図版を切り出し、当サイトで縦216pxへ縮小・JPEG圧縮。図版内の描き足し・色調変更はしていません。",
+        "checkedAt": "2026-10-01"
+      },
       "statuses": {
         "1853-blackships": {
           "display": "阿部正弘",
@@ -11926,6 +11973,18 @@
           "kagoshima_teradaya"
         ],
         "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/hisamitsu.jpg",
+        "alt": "島津久光の史料肖像",
+        "sourceId": "ndl_portrait_hisamitsu",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」。当サイトで縮小・JPEG圧縮。",
+        "originalSource": "近世名士写真 其2（近世名士写真頒布会、1935年）、113コマ",
+        "dateNote": "撮影・制作時期と、写真か絵画の採録かは未確認。原資料の刊行年は撮影・制作年を示すものではなく、選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が島津久光の肖像として掲載する1枚目の画像。",
+        "rightsNote": "同館の現行利用案内で、掲載肖像の著作権保護期間満了、商用を含む転載申請不要、出典明示を確認。当サイトで縦216pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
+        "checkedAt": "2026-10-01"
       },
       "statuses": {
         "1860-sakurada": {
@@ -14431,6 +14490,18 @@
         "chokkyo",
         "kobugattai"
       ],
+      "portrait": {
+        "src": "assets/portraits/komei.jpg",
+        "alt": "孝明天皇の肖像画（小山正太郎筆、明治時代）",
+        "sourceId": "colbase_portrait_komei",
+        "rightsSourceId": "colbase_image_usage",
+        "credit": "東京国立博物館所蔵、ColBase。公開部分画像を当サイトで縮小・JPEG圧縮（CC BY 4.0互換）。",
+        "originalSource": "小山正太郎筆「孝明天皇宸影」（東京国立博物館、A-9575、福羽逸人氏寄贈）、カンバス・油彩。ColBase公開の部分画像 A-9575_C0066839.jpg",
+        "dateNote": "明治時代・19世紀に制作された没後の肖像画。本人を撮影した写真ではありません。具体的な制作年は未確認で、選択した時点の姿を示すものではありません。",
+        "identityNote": "東京国立博物館がColBaseで「孝明天皇宸影」として公開する小山正太郎筆の油彩画（A-9575）。所蔵元の公開部分画像を採録。",
+        "rightsNote": "ColBaseの現行利用規約で、商用を含む複製・公衆送信・加工、出典と加工主体の明示、CC BY 4.0互換を確認。当サイトで公開部分画像を縦216pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
+        "checkedAt": "2026-10-01"
+      },
       "statuses": {
         "1858-ansei": {
           "display": "孝明天皇",

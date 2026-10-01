@@ -121,6 +121,18 @@
           "hiroshima_abe_opening"
         ],
         "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/abe.jpg",
+        "alt": "阿部正弘の肖像画（1910年刊資料の図版）",
+        "sourceId": "ndl_portrait_abe_book",
+        "rightsSourceId": "ndl_digital_reproduction",
+        "credit": "国立国会図書館デジタルコレクション。図版を当サイトで切り出し・縮小・JPEG圧縮。",
+        "originalSource": "渡辺修二郎著『阿部正弘事蹟 : 日本開国起原史』上（渡辺修二郎、1910年）、3コマ、図版「阿部正弘肖像」（阿部家所蔵）",
+        "dateNote": "肖像画の制作時期未確認。本人を撮影した写真ではありません。1910年は採録資料の刊行年であり、選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館所蔵資料の3コマで、図版の「阿部正弘肖像」「阿部家所蔵」の印字と画像を照合。",
+        "rightsNote": "同館が「インターネット公開（保護期間満了）」と表示する資料で、現行転載案内2.1により申請不要で利用可能。ページ余白と文字を除き図版を切り出し、当サイトで縦216pxへ縮小・JPEG圧縮。図版内の描き足し・色調変更はしていません。",
+        "checkedAt": "2026-10-01"
       }
     },
     {
@@ -678,6 +690,18 @@
           "kagoshima_teradaya"
         ],
         "reviewStatus": "verified"
+      },
+      "portrait": {
+        "src": "assets/portraits/hisamitsu.jpg",
+        "alt": "島津久光の史料肖像",
+        "sourceId": "ndl_portrait_hisamitsu",
+        "rightsSourceId": "ndl_portrait_usage",
+        "credit": "国立国会図書館「近代日本人の肖像」。当サイトで縮小・JPEG圧縮。",
+        "originalSource": "近世名士写真 其2（近世名士写真頒布会、1935年）、113コマ",
+        "dateNote": "撮影・制作時期と、写真か絵画の採録かは未確認。原資料の刊行年は撮影・制作年を示すものではなく、選択した時点の姿を示すものではありません。",
+        "identityNote": "国立国会図書館が島津久光の肖像として掲載する1枚目の画像。",
+        "rightsNote": "同館の現行利用案内で、掲載肖像の著作権保護期間満了、商用を含む転載申請不要、出典明示を確認。当サイトで縦216pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
+        "checkedAt": "2026-10-01"
       }
     },
     {
@@ -1398,7 +1422,19 @@
       "termIds": [
         "chokkyo",
         "kobugattai"
-      ]
+      ],
+      "portrait": {
+        "src": "assets/portraits/komei.jpg",
+        "alt": "孝明天皇の肖像画（小山正太郎筆、明治時代）",
+        "sourceId": "colbase_portrait_komei",
+        "rightsSourceId": "colbase_image_usage",
+        "credit": "東京国立博物館所蔵、ColBase。公開部分画像を当サイトで縮小・JPEG圧縮（CC BY 4.0互換）。",
+        "originalSource": "小山正太郎筆「孝明天皇宸影」（東京国立博物館、A-9575、福羽逸人氏寄贈）、カンバス・油彩。ColBase公開の部分画像 A-9575_C0066839.jpg",
+        "dateNote": "明治時代・19世紀に制作された没後の肖像画。本人を撮影した写真ではありません。具体的な制作年は未確認で、選択した時点の姿を示すものではありません。",
+        "identityNote": "東京国立博物館がColBaseで「孝明天皇宸影」として公開する小山正太郎筆の油彩画（A-9575）。所蔵元の公開部分画像を採録。",
+        "rightsNote": "ColBaseの現行利用規約で、商用を含む複製・公衆送信・加工、出典と加工主体の明示、CC BY 4.0互換を確認。当サイトで公開部分画像を縦216pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
+        "checkedAt": "2026-10-01"
+      }
     },
     {
       "id": "meiji",

@@ -47,7 +47,7 @@ test('the published collection sizes stay at the current release baseline', () =
     relations: 128,
     factionRelations: 18,
     places: 35,
-    sources: 418
+    sources: 423
   });
 });
 
