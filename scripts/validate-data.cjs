@@ -28,6 +28,7 @@ function createAjv() {
   addFormats(ajv);
   ajv.addSchema(readJson('schema/incident.schema.json'));
   ajv.addSchema(readJson('schema/portrait.schema.json'));
+  ajv.addSchema(readJson('schema/name-reading.schema.json'));
   ajv.addSchema(readJson('schema/term.schema.json'));
   ajv.addSchema(readJson('schema/turning-point.schema.json'));
   return ajv;
@@ -111,6 +112,16 @@ function validatePersonStatusNames(documents) {
     const periodNames = new Set([person.name, ...person.aliases]);
     const overlap = (person.laterNames || []).filter(name => periodNames.has(name));
     if (overlap.length) throw new Error(`${person.id}.laterNames repeats a period name: ${overlap.join(', ')}`);
+    const readings = new Set();
+    for (const reading of person.nameReadings || []) {
+      if (!person.aliases.includes(reading.name) || reading.name === person.name) {
+        throw new Error(`${person.id}.nameReadings name must be a registered alias: ${reading.name}`);
+      }
+      // Space is for legibility, not a distinct pronunciation.
+      const key = `${reading.name}|${reading.kana.replace(/ /g, '')}`;
+      if (readings.has(key)) throw new Error(`${person.id}.nameReadings contains duplicate name/kana`);
+      readings.add(key);
+    }
   }
   for (const status of documents.personStatuses.statuses) {
     const person = personById.get(status.personId);
@@ -196,6 +207,7 @@ function validateV2References(documents) {
       if (person.portrait.checkedAt > documents.manifest.updated) throw new Error(`${person.id}.portrait.checkedAt is later than manifest.updated`);
     }
     allEvidence.push(person.evidence);
+    for (const reading of person.nameReadings || []) allEvidence.push(reading.evidence);
     const turningScenes = new Set();
     for (const point of person.turningPoints || []) {
       requireReference(sceneIds, point.fromSceneId, `${person.id}.turningPoints.fromSceneId`);

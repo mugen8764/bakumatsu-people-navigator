@@ -106,6 +106,7 @@ function assembleLegacyData(documents) {
       name: person.name,
       kana: person.kana,
       aliases: [...person.aliases],
+      ...(person.nameReadings ? { nameReadings: structuredClone(person.nameReadings) } : {}),
       ...(person.laterNames ? { laterNames: [...person.laterNames] } : {}),
       born: person.lifespan,
       defaultFaction: requiredMapping(factionNameById, person.defaultFactionId, 'faction name'),

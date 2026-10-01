@@ -1,8 +1,8 @@
 (function exposeSearch(root, factory) {
-  const api = factory();
+  const api = factory(typeof module === 'object' && module.exports ? require('./domain.js') : root.BM_DOMAIN);
   if (typeof module === 'object' && module.exports) module.exports = api;
   else root.BM_SEARCH = api;
-}(typeof globalThis !== 'undefined' ? globalThis : this, () => {
+}(typeof globalThis !== 'undefined' ? globalThis : this, domain => {
   'use strict';
 
   function normalise(value) {
@@ -34,7 +34,8 @@
     const scenes = new Map(data.scenes.map(scene => [scene.id, scene]));
     data.people.forEach(person => {
       const statuses = Object.entries(person.statuses);
-      const names = [person.name, person.kana, ...person.aliases, ...statuses.map(([, status]) => status.display)];
+      const names = [person.name, person.kana, ...person.aliases, ...statuses.map(([, status]) => status.display),
+        ...person.aliases.flatMap(name => domain.readingKanasFor(person, name))];
       const matches = value => normalise(value).includes(normalizedQuery);
       const matchStatus = field => statuses.find(([, status]) => matches(status[field]));
       const statusReason = (entry, field, label) => {
@@ -72,8 +73,11 @@
         results.push({ type: '勢力', title: name, sub: faction.summary, id: name });
       }
     });
+    const peopleById = new Map(data.people.map(person => [person.id, person]));
     Object.values(data.incidents || {}).forEach(incident => {
-      if (normalise([incident.title, incident.summary, ...incident.participants.map(item => item.displayName)].join(' ')).includes(normalizedQuery)) {
+      const participantNames = incident.participants.flatMap(item => [item.displayName,
+        ...domain.readingKanasFor(peopleById.get(item.personId), item.displayName)]);
+      if (normalise([incident.title, incident.summary, ...participantNames].join(' ')).includes(normalizedQuery)) {
         results.push({ type: '事件', title: incident.title, sub: incident.date, id: incident.id, rank: -1 });
       }
     });

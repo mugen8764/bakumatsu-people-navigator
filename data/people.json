@@ -1089,6 +1089,18 @@
             "reviewStatus": "verified"
           }
         }
+      ],
+      "nameReadings": [
+        {
+          "name": "桂小五郎",
+          "kana": "かつら こごろう",
+          "evidence": {
+            "sourceIds": [
+              "ndl_kido_name_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
       ]
     },
     {
@@ -1409,7 +1421,19 @@
         "identityNote": "国立国会図書館が山県有朋の肖像として掲載する1枚目の画像。",
         "rightsNote": "同館の現行利用案内で、掲載肖像の著作権保護期間満了、転載申請不要、出典明示を確認。当サイトで縦216pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
         "checkedAt": "2026-10-01"
-      }
+      },
+      "nameReadings": [
+        {
+          "name": "山県狂介",
+          "kana": "やまがた きょうすけ",
+          "evidence": {
+            "sourceIds": [
+              "heibonsha_yamagata_name_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "komei",
@@ -4099,7 +4123,19 @@
           "yamaguchi_library_sufu"
         ],
         "reviewStatus": "verified"
-      }
+      },
+      "nameReadings": [
+        {
+          "name": "麻田公輔",
+          "kana": "あさだ こうすけ",
+          "evidence": {
+            "sourceIds": [
+              "kodansha_asada_name_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "irie-kuichi",

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bakumatsu-people-navigator.local/schema/name-reading.schema.json",
+  "title": "人物の別名の読みと根拠",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "kana", "evidence"],
+  "properties": {
+    "name": { "type": "string", "minLength": 1 },
+    "kana": { "type": "string", "pattern": "^[ぁ-ゖー]+(?: [ぁ-ゖー]+)*$" },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceIds", "reviewStatus"],
+      "properties": {
+        "sourceIds": { "type": "array", "uniqueItems": true, "items": { "type": "string", "pattern": "^[a-z][a-z0-9_-]*$" } },
+        "reviewStatus": { "enum": ["verified", "needs_review", "disputed"] },
+        "note": { "type": "string", "minLength": 1 }
+      },
+      "allOf": [{ "if": { "properties": { "reviewStatus": { "const": "verified" } }, "required": ["reviewStatus"] }, "then": { "properties": { "sourceIds": { "minItems": 1 } } } }]
+    }
+  }
+}

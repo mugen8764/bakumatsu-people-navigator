@@ -9,6 +9,7 @@
 | 項目 | 意味と利用上の注意 |
 | --- | --- |
 | 人物の `laterNames` | **成立時期を断定しない検索専用の呼び名**。後世に成立したことを意味しない。当時の表示名や改名の年表には使わない。登録名・当時の別名は `name`・`aliases` を参照する。 |
+| 人物の `kana` / `nameReadings` | `kana` は基本登録名 `name` の読みだけ。任意の `nameReadings[]` は登録済み別名の `{name, kana, evidence}` で、状態・事件の表示名と完全一致する項目を参照する。同じ名前の複数の読みを許容し、根拠と校正状態を個別に保持する。欠落は未確認で、基本名の読みを別名へ流用しない。使用期間や音声エンジンの発音指定ではない。 |
 | `activeStartSceneId` / `activeEndSceneId` | このサイトの状態収録範囲。生没年や実際の活動開始・終了ではない。年代順は `scenes[].order`、両端を含む。 |
 | `person-statuses.json` の状態 | 登録された親時点での表示名・役職・所属・立場。個別事件を説明するときは、その事件の `participants[].displayName`・`role`・`side`・`summary` を優先し、親時点の状態を事件当日へ自動転用しない。参加者にない情報を親状態から補って確定扱いにしない。 |
 | factionの `kind: field` | 医療・支援などの活動分類。共通の政治方針を持つ組織への所属を意味しない。 |
@@ -39,6 +40,7 @@
 | [v2/sources.schema.json](v2/sources.schema.json) | 出典カタログ |
 | [incident.schema.json](incident.schema.json) | 個別事件の人物・関与区分・関係・根拠 |
 | [portrait.schema.json](portrait.schema.json) | 肖像の同定・時期・原資料・利用条件 |
+| [name-reading.schema.json](name-reading.schema.json) | 登録済み別名の読みと項目別の根拠 |
 | [term.schema.json](term.schema.json) | 背景解説・役職解説 |
 | [turning-point.schema.json](turning-point.schema.json) | 人物の前後比較と根拠 |
 | [v2/definitions.schema.json](v2/definitions.schema.json) | ID・期間・根拠などの共通定義 |
@@ -54,6 +56,23 @@ JSON Schema Draft 2020-12とAjvで型・必須項目を検査し、参照や期�
 - 主要事件と個別事件はIDを重複させない。人物の `eventIds` は主要事件を参照する。
 - 個別事件の参加者は重複させず、関係の両端を参加者に限定する。同一人物の自己関係・同じ人物ペアの重複は許さない。
 - 人物・個別事件の `termIds` と、肖像の `sourceId`・`rightsSourceId` も登録先を参照する。
+
+## 表示名の読みを取り出す
+
+`nameReadings` は人物内で共通管理し、`person-statuses` や事件参加者に同じ読みを手入力しません。名前の使用範囲は従来の状態期間・事件に従います。別名の読みはひらがな（区切りに半角空白可）で登録し、直接支える出典を付けます。同名・同読みの重複は禁止し、異なる読みは各根拠とともに残せます。未確認は項目を追加せず、根拠のある候補が諸説なら `disputed` を維持します。確定した読みの候補が複数ある場合も先頭を自動採用しません。
+
+正本からの抽出例（互換形式では状態の `displayName` が `display`）：
+
+```js
+const { readingKanasFor } = require('./src/domain.js');
+const person = people.people.find(item => item.id === participant.personId);
+const kanas = readingKanasFor(person, participant.displayName);
+// 桂小五郎 → ["かつら こごろう"]、未確認の宍戸刑馬 → []
+// kanas.length が1でなければ外部側で確認する。VOICEVOX設定は外部側の責務。
+const evidence = (person.nameReadings || []).filter(item => item.name === participant.displayName);
+```
+
+この関数は基本登録名と完全一致する場合のみ既存 `kana` を返し、別名では `verified` の読みをすべて返します。読み候補の校正状態を含む原データは `nameReadings` から保持してください。初期登録・全表示名の棚卸し・未確認名・設計比較は [Issue #17](https://github.com/mugen8764/bakumatsu-people-navigator/issues/17) に記録します。既存 `schemaVersion: 2` への任意項目追加で、新スキーマは従来データも受け入れます。旧スキーマで未知フィールドを拒否する外部利用者は、固定SHAの更新時にスキーマ一式も同時に更新してください。
 
 ## 期間
 

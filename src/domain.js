@@ -5,6 +5,16 @@
 }(typeof globalThis !== 'undefined' ? globalThis : this, () => {
   'use strict';
 
+  // A different display name never inherits the basic registered name's kana.
+  // Keep every verified reading; callers must not silently choose the first.
+  function readingKanasFor(person, displayName) {
+    if (!person || !displayName) return [];
+    if (displayName === person.name) return person.kana ? [person.kana] : [];
+    return [...new Set((person.nameReadings || [])
+      .filter(item => item.name === displayName && item.evidence.reviewStatus === 'verified')
+      .map(item => item.kana))];
+  }
+
   function createDomain(data) {
     const personById = new Map(data.people.map(person => [person.id, person]));
     const sceneById = new Map(data.scenes.map((scene, index) => [scene.id, { ...scene, index }]));
@@ -234,5 +244,5 @@
     };
   }
 
-  return { createDomain };
+  return { createDomain, readingKanasFor };
 }));

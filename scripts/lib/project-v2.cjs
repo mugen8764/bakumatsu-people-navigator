@@ -59,6 +59,7 @@ function projectLegacyData(data) {
       name: person.name,
       kana: person.kana,
       aliases: [...person.aliases],
+      ...(person.nameReadings ? { nameReadings: structuredClone(person.nameReadings) } : {}),
       ...(person.laterNames ? { laterNames: [...person.laterNames] } : {}),
       lifespan: person.born,
       defaultFactionId: factionId(person.defaultFaction),

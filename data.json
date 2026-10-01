@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.104",
+    "version": "1.0.105",
     "updated": "2026-10-01"
   },
   "sources": {
@@ -2774,6 +2774,27 @@
       "url": "https://www.ndl.go.jp/portrait/datas/38",
       "note": "本人肖像1枚目と、採録資料『近世名士写真』其2（1935年）25コマを確認。制作形態・撮影/制作時期は未確認で、資料刊行年や幕末の時点へ置き換えない。略歴・生年の諸説は本変更に流用しない。",
       "locator": "本人名・肖像1枚目・出典「近世名士写真 其2」へのリンク（pid/3514947/25）",
+      "contentCheckedAt": "2026-10-01"
+    },
+    "ndl_kido_name_reading": {
+      "title": "国立国会図書館典拠データ「木戸, 孝允, 1833-1877」",
+      "url": "https://id.ndl.go.jp/auth/ndlna/00030387",
+      "note": "別名「桂, 小五郎」のカナ読みを確認。名前の使用時期や役職の根拠には転用しない。",
+      "locator": "別名/別タイトル：桂, 小五郎（カツラ, コゴロウ）",
+      "contentCheckedAt": "2026-10-01"
+    },
+    "heibonsha_yamagata_name_reading": {
+      "title": "平凡社『世界大百科事典（旧版）』山県狂介（コトバンク）",
+      "url": "https://kotobank.jp/word/%E5%B1%B1%E7%9C%8C%E7%8B%82%E4%BB%8B-1429833",
+      "note": "掲載見出しの名前の読みを確認。引用される略歴を新しい役職・行動の根拠へ広げない。",
+      "locator": "見出し「山県狂介（読み）やまがたきょうすけ」／出典表示「世界大百科事典（旧版）」",
+      "contentCheckedAt": "2026-10-01"
+    },
+    "kodansha_asada_name_reading": {
+      "title": "講談社『デジタル版 日本人名大辞典+Plus』麻田公輔（コトバンク）",
+      "url": "https://kotobank.jp/word/%E9%BA%BB%E7%94%B0%E5%85%AC%E8%BC%94-1049532",
+      "note": "麻田公輔の読みと周布政之助への参照を確認。別名の使用期間や事件内の役割の根拠には転用しない。",
+      "locator": "デジタル版 日本人名大辞典+Plus「麻田公輔 あさだ-こうすけ」／周布政之助への参照",
       "contentCheckedAt": "2026-10-01"
     }
   },
@@ -13339,6 +13360,18 @@
         "桂小五郎",
         "木戸準一郎"
       ],
+      "nameReadings": [
+        {
+          "name": "桂小五郎",
+          "kana": "かつら こごろう",
+          "evidence": {
+            "sourceIds": [
+              "ndl_kido_name_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
       "born": "1833–1877",
       "defaultFaction": "長州藩",
       "activeRange": [
@@ -14402,6 +14435,18 @@
       "aliases": [
         "山県狂介",
         "狂介"
+      ],
+      "nameReadings": [
+        {
+          "name": "山県狂介",
+          "kana": "やまがた きょうすけ",
+          "evidence": {
+            "sourceIds": [
+              "heibonsha_yamagata_name_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
       ],
       "born": "1838–1922",
       "defaultFaction": "長州藩",
@@ -21723,6 +21768,18 @@
       "aliases": [
         "麻田公輔",
         "周布兼翼"
+      ],
+      "nameReadings": [
+        {
+          "name": "麻田公輔",
+          "kana": "あさだ こうすけ",
+          "evidence": {
+            "sourceIds": [
+              "kodansha_asada_name_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
       ],
       "born": "1823–1864",
       "defaultFaction": "長州藩",

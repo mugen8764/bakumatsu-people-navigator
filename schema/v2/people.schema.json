@@ -21,6 +21,11 @@
           "name": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
           "kana": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
           "aliases": { "$ref": "definitions.schema.json#/$defs/stringList" },
+          "nameReadings": {
+            "description": "登録済み別名の読み。時点・事件から名前の完全一致で共通参照する。欠落は未確認を意味し、複数の読みと項目ごとの根拠を保持する。",
+            "type": "array", "minItems": 1,
+            "items": { "$ref": "https://bakumatsu-people-navigator.local/schema/name-reading.schema.json" }
+          },
           "laterNames": { "description": "検索専用の呼び名。互換性のためのフィールド名であり、成立時期を示さず、当時の表示名には使わない。", "allOf": [{ "$ref": "definitions.schema.json#/$defs/stringList" }], "minItems": 1 },
           "lifespan": { "$ref": "definitions.schema.json#/$defs/nonEmptyString" },
           "defaultFactionId": { "$ref": "definitions.schema.json#/$defs/stableId" },
