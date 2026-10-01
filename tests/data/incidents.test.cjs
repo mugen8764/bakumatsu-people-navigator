@@ -11,6 +11,26 @@ const domain = createDomain(data);
 // Scenes are named by ID so inserting a scene does not shift the assertions.
 const sceneAt = id => domain.sceneById.get(id).index;
 
+test('Taisei and restoration keep proposal, return of power and new offices in separate stages', () => {
+  const taisei = data.incidents['taisei-hokan'];
+  const restoration = data.incidents['royal-restoration'];
+  assert.notEqual(taisei.sceneId, restoration.sceneId);
+  assert.match(taisei.date, /10月14日.*翌15日/);
+  assert.match(restoration.date, /12月9日/);
+  const cast = Object.fromEntries(taisei.participants.map(p => [p.personId, p]));
+  assert.equal(cast.yoshinobu.involvement, 'decision');
+  assert.equal(cast.goto.involvement, 'onsite');
+  assert.equal(cast.ryoma.involvement, 'context');
+  assert.match(taisei.scope, /上表の使者や二条城の会議出席者としては扱わない/);
+  for (const id of ['yoshinobu', 'katamori']) {
+    assert.equal(restoration.participants.find(p => p.personId === id).involvement, 'context');
+  }
+  assert.equal(restoration.participants.find(p => p.personId === 'okubo').displayName, '大久保一蔵');
+  assert.notEqual(domain.statusAt(domain.getPerson('okubo'), sceneAt(restoration.sceneId)).display, '大久保一蔵');
+  assert.match(restoration.summary, /総裁・議定・参与/);
+  assert.ok(restoration.evidence.sourceIds.includes('ndl_portrait_katamori_detail'));
+});
+
 test('Katsunuma separates battle roles from later surrender and Aizu command', () => {
   const incident = data.incidents['koshu-katsunuma'];
   assert.equal(incident.sceneId, '1868-edo');

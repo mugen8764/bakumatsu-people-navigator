@@ -2702,7 +2702,8 @@
       "evidence": {
         "sourceIds": [
           "archives_royal_restoration",
-          "kagoshima_boshin"
+          "kagoshima_boshin",
+          "ndl_portrait_katamori_detail"
         ],
         "reviewStatus": "verified"
       }

@@ -199,7 +199,9 @@
       "id": "ndl_ryoma_political_plan",
       "title": "国立国会図書館「坂本龍馬の政体構想」",
       "url": "https://www.ndl.go.jp/modern/cha1/description02.html",
-      "note": "1867年6月の後藤象二郎による山内容堂への大政奉還進言、坂本龍馬が後藤と相談して作成した政体案、10月の土佐藩による幕府への建白と11月の新政府綱領八策。"
+      "note": "国立国会図書館の展示解説を確認。後藤から容堂への進言と龍馬との相談、土佐藩の建白を支える。掲載原史料の全文を読んだ確認ではなく、船中八策の成立経緯・伏字の人物・建白書の唯一の起草者・上表当日の龍馬の実務は確定しない。",
+      "locator": "「1-2 坂本龍馬の政体構想」解説（1867年6月の後藤の進言、龍馬と後藤の相談、10月の土佐藩建白、11月の新政府綱領八策）",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "archives_toba_fushimi",
@@ -301,9 +303,9 @@
       "id": "kochi_taisei_hokan",
       "title": "高知市「大政奉還150年」",
       "url": "https://www.city.kochi.kochi.jp/akarui/naiwa/nw1703.htm",
-      "note": "1867年6月の坂本龍馬・後藤象二郎らによる大政奉還協議、7月8日の後藤から山内容堂への建白、10月3日の土佐藩による幕府への建白書提出。",
-      "locator": "「大政奉還150年」本文の慶応3年6月9日から10月15日までの段落",
-      "contentCheckedAt": "2026-07-31"
+      "note": "高知市広報の後世の解説。龍馬・後藤らの協議、後藤の容堂への建白、後藤と福岡孝弟による板倉勝静への建白書提出を確認。建白書原本は未発見と記載。原本の本文確認や船中八策の成立確定には使わない。",
+      "locator": "「大政奉還150年」本文（6月9日の協議、7月8日の容堂への建白、10月の提出・決定、建白書原本未発見の段落）",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "nagasaki_kameyama_company",
@@ -388,8 +390,8 @@
       "title": "国立国会図書館「近代日本人の肖像・徳川慶喜」",
       "url": "https://www.ndl.go.jp/portrait/datas/147/index.html",
       "note": "一橋慶喜の将軍継嗣擁立、井伊直弼との対立、安政の大獄での処分、1862年の将軍後見職、1866年の第15代将軍就任。",
-      "locator": "解説（1866年の将軍就任と翌年の大政奉還）",
-      "contentCheckedAt": "2026-09-24"
+      "locator": "「解説」1866年の将軍就任、翌年10月の土佐藩建白による大政奉還とその後の恭順・謹慎",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "kagoshima_teradaya",
@@ -505,9 +507,9 @@
       "id": "archives_royal_restoration",
       "title": "国立公文書館「王政復古の大号令が発せられる」",
       "url": "https://www.archives.go.jp/ayumi/kobetsu/k03_1867_01.html",
-      "note": "1867年12月9日の王政復古宣言と摂政・関白等の廃止、総裁・議定・参与の三職設置。",
-      "locator": "解説：1867年12月9日の制度廃止と三職設置",
-      "contentCheckedAt": "2026-09-25"
+      "note": "国立公文書館の展示解説を確認。掲載史料は「単行書・詔勅録・巻之一・内部上」に収められた大号令。今回は解説本文を確認した範囲で、掲載原史料全コマの翻刻確認ではない。",
+      "locator": "「解説」1867年12月9日、幕府・摂政・関白等の廃止と総裁・議定・参与の三職設置",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "kyoto_fushimi_history",
@@ -539,9 +541,9 @@
       "id": "kagoshima_boshin",
       "title": "鹿児島県「戊辰戦争」",
       "url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/boshin.html",
-      "note": "小御所会議後の対立、鳥羽・伏見、勝・西郷会談と江戸城引き渡し。",
-      "locator": "本文：王政復古から鳥羽・伏見、江戸城開城まで",
-      "contentCheckedAt": "2026-09-25"
+      "note": "鹿児島県の後世の歴史解説。王政復古による新政府樹立と小御所会議の官位辞退・領地返納決定、その後の対立を確認。戦意・武器の優劣だけを戦闘結果の唯一原因として採用しない。江戸城引き渡しと後続戦争の記載も区別する。",
+      "locator": "「戊辰戦争」本文冒頭（王政復古、小御所会議の辞官・納地）と続く江戸開城・箱館までの段落",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "kochi_itagaki_boshin",
@@ -826,16 +828,16 @@
       "title": "国立国会図書館「近代日本人の肖像・岩倉具視」",
       "url": "https://www.ndl.go.jp/portrait/datas/23/index.html",
       "note": "岩倉具視の侍従就任、条約勅許奏請阻止、公武合体策、1867年までの幽居と同年12月の王政復古政変計画、その後の新政府参与・議定就任。",
-      "locator": "解説：大久保らとの王政復古の計画・新政府の役職",
-      "contentCheckedAt": "2026-09-25"
+      "locator": "「解説」1867年12月に大久保らと王政復古を画策し、その後に参与・議定等を務める段落",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "kochi_yodo_timeline",
       "title": "高知県立高知城歴史博物館「土佐藩歴代藩主紹介」",
       "url": "https://www.kochi-johaku.jp/column/3819/",
       "note": "15代土佐藩主山内豊信の一橋慶喜擁立、1859年の隠居・謹慎、容堂号、1867年の大政奉還建白と小御所会議での徳川家擁護。",
-      "locator": "「15代 豊信（とよしげ）」",
-      "contentCheckedAt": "2026-07-31"
+      "locator": "「15代 豊信（とよしげ）」容堂号・大政奉還建白・小御所会議での徳川家擁護",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "kagoshima_tenshoin",
@@ -1073,9 +1075,9 @@
       "id": "kochi_tosa_bakumatsu",
       "title": "高知県立高知城歴史博物館「土佐藩の歴史・幕末維新期」",
       "url": "https://www.kochi-johaku.jp/column/4529/",
-      "note": "山内容堂と土佐勤王党の方針不一致、武市半平太ら勤王党員の捕縛、戊辰戦争で板垣退助率いる土佐藩兵が東進して会津若松城攻略にあたったこと。",
-      "locator": "「黒船来航と15代豊信（容堂）の政治」「公武合体の周旋と国力増強」",
-      "contentCheckedAt": "2026-09-25"
+      "note": "博物館の後世の歴史解説。龍馬と後藤が大政奉還を進め容堂を動かした範囲を確認。個別の起草分担や上表当日の現場参加は示さない。既存確認範囲の勤王党捕縛、板垣率いる土佐藩兵の会津若松城攻略も本文に記載。",
+      "locator": "「黒船来航と15代豊信（容堂）の政治」「公武合体の周旋と国力増強」「大政奉還の建白と倒幕」",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "kochi_takechi_imprisonment",
@@ -1468,8 +1470,8 @@
       "title": "国立国会図書館「近代日本人の肖像・大久保利通」",
       "url": "https://www.ndl.go.jp/portrait/datas/32/index.html",
       "note": "大久保利通が岩倉具視らとともに1867年12月の王政復古の政変を実行したこと。",
-      "locator": "解説／肖像1枚目",
-      "contentCheckedAt": "2026-09-25"
+      "locator": "「解説」1867年12月に岩倉らと王政復古の政変を実行した段落",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "reimeikan_tenshoin_saigo_petition",
@@ -1488,10 +1490,10 @@
     {
       "id": "jacar_iwakura_yoshinobu_disposition_1867",
       "title": "太政類典「岩倉具視松平慶永等ニ慶喜処分ノ朝旨ヲ示シ其奏状ノ擬按ヲ内付ス」",
-      "url": "https://www.jacar.archives.go.jp/das/meta/A15071465300",
-      "note": "慶応3年12月16日・18日、岩倉具視が松平慶永らへ徳川慶喜の処分方針と奏状案を示し、慶喜に実行させるため協議したこと。",
-      "locator": "「内容」欄（慶応3年12月16日・18日条）",
-      "contentCheckedAt": "2026-07-31"
+      "url": "https://www.jacar.archives.go.jp/das/meta/A15071465200",
+      "note": "太政類典のJACAR公開「内容」欄を確認。岩倉が松平慶永らへ慶喜処分の朝旨と奏状案を示した範囲を支える。春嶽私記を引用した記録であり、12月9日当日の直接会談や戦場指揮を示さない。原画像8コマの全文確認ではない。",
+      "locator": "A15071465200「内容」欄・慶応3年12月16日条（春嶽私記を引用する記載）",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "yamaguchi_archives_rikishitai_3",
@@ -1849,9 +1851,9 @@
       "id": "kyoto_taisei_process",
       "title": "京都市「大政奉還150周年記念 幕末維新スタンプラリー」",
       "url": "https://www.city.kyoto.lg.jp/bunshi/cmsfiles/contents/0000233/233968/zennkokurarry.pdf",
-      "note": "土佐の建白、慶喜の上表と勅許の順序を確認。船中八策の成立経緯は断定しない。",
-      "locator": "14〜16頁 船中八策／大政奉還／龍馬死す",
-      "contentCheckedAt": "2026-09-12"
+      "note": "京都市発行の後世の歴史ガイド。容堂署名の建白書を後藤らが10月3日に板倉勝静へ提出、慶喜が14日に上表、15日に勅許された順序を確認。14頁は船中八策の不存在説も紹介するため成立経緯を確定しない。",
+      "locator": "1頁「大政奉還」、14頁「船中八策」の諸説注記、15頁「山内容堂の建白を将軍慶喜が受け入れる」",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "tsurugajo_siege",

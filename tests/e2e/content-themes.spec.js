@@ -2,6 +2,7 @@ const { expect, test } = require('../support/test.cjs');
 const AxeBuilder = require('@axe-core/playwright').default;
 
 const incidents = [
+  ['taisei-hokan', '大政奉還の上表', 'goto'],
   ['kinmon-conflict', '禁門の変', 'kusaka'],
   ['satcho-agreement', '薩長盟約', 'komatsu'],
   ['second-choshu-war', '第二次長州征討・四境戦争', 'omura'],
