@@ -3,7 +3,8 @@ const { expect, test } = require('../support/test.cjs');
 const people = require('../../data/people.json').people;
 const incidents = require('../../data/events.json').incidents;
 
-const addedIds = ['ito', 'inoue', 'yamagata', 'kuroda', 'itakagi', 'okuma-shigenobu', 'kawai-tsuginosuke', 'hisamitsu', 'abe', 'komei', 'omura', 'okubo-ichio'];
+const currentIds = ['sanai', 'sakuma-shozan', 'manjiro', 'kawaji'];
+const addedIds = ['ito', 'inoue', 'yamagata', 'kuroda', 'itakagi', 'okuma-shigenobu', 'kawai-tsuginosuke', 'hisamitsu', 'abe', 'komei', 'omura', 'okubo-ichio', ...currentIds];
 const addedPeople = addedIds.map(id => people.find(person => person.id === id));
 
 for (const colorScheme of ['light', 'dark']) {
@@ -26,6 +27,10 @@ for (const colorScheme of ['light', 'dark']) {
       await expect(detail.locator('.portrait-credit')).toContainText(person.portrait.dateNote);
       await expect(detail.locator('.portrait-credit a')).toHaveCount(2);
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+      if (currentIds.includes(person.id)) {
+        const audit = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze();
+        expect(audit.violations).toEqual([]);
+      }
     }
     const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze();
     expect(results.violations).toEqual([]);
