@@ -41,6 +41,24 @@ test('incident roles distinguish mediation, separate negotiation venues, and the
   assert.equal(cast('edo-castle-surrender', 'enomoto').involvement, 'context');
 });
 
+test('Satcho roles do not carry an earlier office into the meeting or confuse mediation with agreement', () => {
+  const scene = sceneAt('1866-satcho');
+  const saigo = status('saigo', scene);
+  assert.doesNotMatch(saigo.role, /御側役|大番頭/);
+  assert.match(saigo.role, /会談当事者/);
+  assert.equal(saigo.display, '西郷吉之助');
+  assert.equal(status('kido', scene).display, '木戸準一郎');
+  assert.ok(status('ryoma', scene).evidence.sourceIds.includes('ndl_kameyama_trade'));
+  const cast = domain.getIncident('satcho-agreement').participants;
+  for (const id of ['komatsu', 'saigo', 'kido']) {
+    assert.equal(cast.find(p => p.personId === id).involvement, 'decision');
+  }
+  for (const id of ['ryoma', 'nakaoka']) {
+    assert.equal(cast.find(p => p.personId === id).involvement, 'context');
+  }
+  assert.match(cast.find(p => p.personId === 'nakaoka').summary, /会談当日の出席者としては扱わない/);
+});
+
 test('the five added comparisons resolve adjacent states and keep their own evidence', () => {
   for (const [id, index] of [['takasugi', 8], ['komatsu', 9], ['katsu', 13], ['katamori', 12], ['enomoto', 14]]) {
     const point = domain.turningPointAt(domain.getPerson(id), index);
