@@ -3,9 +3,15 @@ const { expect, test } = require('../support/test.cjs');
 const { activePeopleAt } = require('../support/catalog.cjs');
 
 // One case per first-paint placeholder range in src/styles.css.
-for (const [label, width] of [['desktop', 1280], ['tablet', 600], ['mobile', 320], ['mobile-390', 390]]) {
+for (const [label, width, fallbackFont] of [['desktop', 1280], ['tablet', 600], ['mobile', 320], ['mobile-390', 390], ['mobile-fallback-font', 320, true], ['mobile-390-fallback-font', 390, true]]) {
 test(`delayed historical data does not cause a large initial layout shift at ${label} width`, async ({ page }) => {
   await page.setViewportSize({ width, height: 900 });
+  // Exercise narrower Latin metrics with the system's Japanese fallback too.
+  // Windows and Linux can agree on the outer height while rows inside move.
+  if (fallbackFont) await page.route(/\/src\/styles\.css(?:\?.*)?$/, async route => {
+    const response = await route.fetch();
+    await route.fulfill({ response, body: (await response.text()).replace(/font-family:system-ui[^;]+;/, 'font-family:Arial,sans-serif;') });
+  });
   await page.addInitScript(() => {
     window.__layoutShiftScore = 0;
     new PerformanceObserver(list => {

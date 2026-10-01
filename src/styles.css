@@ -345,6 +345,10 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
 }
 @media(max-width:430px){
   .app-loading .top{min-height:583px}
+  /* Reserve the rows inside the summary too: an outer height alone still
+     lets the search field move when the scene text and names arrive. */
+  .app-loading .scene-dashboard{min-height:178px}
+  .app-loading .scene-at-glance{min-height:116px}
   .app-loading #view-people{min-height:3006px}
   .app-loading #personCards{min-height:1300px}
 }
