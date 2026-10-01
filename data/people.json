@@ -295,6 +295,18 @@
             "reviewStatus": "verified"
           }
         }
+      ],
+      "nameReadings": [
+        {
+          "name": "一橋慶喜",
+          "kana": "ひとつばし よしのぶ",
+          "evidence": {
+            "sourceIds": [
+              "nagaokakyo_yoshinobu_name_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
       ]
     },
     {
@@ -786,7 +798,19 @@
         "identityNote": "国立国会図書館が西郷隆盛として掲載する肖像。掲載図像は描画された肖像で、本人を撮影した写真として扱いません。1935年は採録資料の刊行年で、原図の制作年ではありません。原図の作者・制作年は個別根拠確認中。掲載用に幅160pxへ縮小・JPEG圧縮。構図・色調は変更していません。",
         "rightsNote": "NDL肖像展示の掲載画像は著作権保護期間満了。出典を明示すれば申請不要。",
         "checkedAt": "2026-09-27"
-      }
+      },
+      "nameReadings": [
+        {
+          "name": "西郷吉之助",
+          "kana": "さいごう きちのすけ",
+          "evidence": {
+            "sourceIds": [
+              "nii_saigo_name_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "okubo",
@@ -834,7 +858,19 @@
         "identityNote": "国立国会図書館が大久保利通の肖像として掲載。",
         "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。国立国会図書館が提供する縮小画像を使用。",
         "checkedAt": "2026-09-25"
-      }
+      },
+      "nameReadings": [
+        {
+          "name": "大久保一蔵",
+          "kana": "おおくぼ いちぞう",
+          "evidence": {
+            "sourceIds": [
+              "miyakonojo_okubo_name_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "komatsu",
@@ -1100,6 +1136,16 @@
             ],
             "reviewStatus": "verified"
           }
+        },
+        {
+          "name": "木戸準一郎",
+          "kana": "きど じゅんいちろう",
+          "evidence": {
+            "sourceIds": [
+              "heibonsha_kido_junichiro_name_reading"
+            ],
+            "reviewStatus": "verified"
+          }
         }
       ]
     },
@@ -1264,7 +1310,19 @@
         "identityNote": "国立国会図書館が伊藤博文の肖像として掲載する1枚目の画像。",
         "rightsNote": "同館の現行利用案内で、掲載肖像の著作権保護期間満了、転載申請不要、出典明示を確認。当サイトで縦216pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
         "checkedAt": "2026-10-01"
-      }
+      },
+      "nameReadings": [
+        {
+          "name": "伊藤俊輔",
+          "kana": "いとう しゅんすけ",
+          "evidence": {
+            "sourceIds": [
+              "ndl_ito_name_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "inoue",
@@ -1327,7 +1385,19 @@
         "identityNote": "国立国会図書館が井上馨の肖像として掲載する1枚目の画像。",
         "rightsNote": "同館の現行利用案内で、掲載肖像の著作権保護期間満了、転載申請不要、出典明示を確認。当サイトで縦216pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
         "checkedAt": "2026-10-01"
-      }
+      },
+      "nameReadings": [
+        {
+          "name": "井上聞多",
+          "kana": "いのうえ もんた",
+          "evidence": {
+            "sourceIds": [
+              "kodansha_inoue_name_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "omura",

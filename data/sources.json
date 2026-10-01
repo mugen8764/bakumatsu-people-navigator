@@ -3222,6 +3222,54 @@
       "note": "麻田公輔の読みと周布政之助への参照を確認。別名の使用期間や事件内の役割の根拠には転用しない。",
       "locator": "デジタル版 日本人名大辞典+Plus「麻田公輔 あさだ-こうすけ」／周布政之助への参照",
       "contentCheckedAt": "2026-10-01"
+    },
+    {
+      "id": "ndl_ito_name_reading",
+      "title": "国立国会図書館典拠データ「伊藤, 博文, 1841-1909」",
+      "url": "https://id.ndl.go.jp/auth/ndlna/00022658",
+      "note": "姓名全体の読みと本人の対応を確認。使用時期・役職や書籍本文の歴史的主張の根拠には転用しない。",
+      "locator": "別名/別タイトル：伊藤, 俊輔（イトウ, シュンスケ）",
+      "contentCheckedAt": "2026-10-01"
+    },
+    {
+      "id": "kodansha_inoue_name_reading",
+      "title": "講談社「デジタル版 日本人名大辞典+Plus・井上聞多」（コトバンク掲載）",
+      "url": "https://kotobank.jp/word/%E4%BA%95%E4%B8%8A%E8%81%9E%E5%A4%9A-1055978",
+      "note": "姓名全体の読みと本人の対応を確認。使用時期・役職や書籍本文の歴史的主張の根拠には転用しない。",
+      "locator": "見出し「井上聞多 いのうえ-もんた」と井上馨への参照",
+      "contentCheckedAt": "2026-10-01"
+    },
+    {
+      "id": "miyakonojo_okubo_name_reading",
+      "title": "都城市・都城島津邸「大久保一蔵外二名書状」",
+      "url": "https://www.city.miyakonojo.miyazaki.jp/site/shimazu/3464.html",
+      "note": "姓名全体の読みと本人の対応を確認。使用時期・役職や書籍本文の歴史的主張の根拠には転用しない。",
+      "locator": "表題「大久保一蔵外二名書状（おおくぼいちぞうほかにめいしょじょう）」と解説「大久保一蔵（後の利通）」",
+      "contentCheckedAt": "2026-10-01"
+    },
+    {
+      "id": "nagaokakyo_yoshinobu_name_reading",
+      "title": "長岡京市「ふるさとファイル第56号・京都守護職会津藩と長岡」",
+      "url": "https://www.city.nagaokakyo.lg.jp/cmsfiles/contents/0000005/5235/hurusatofile56.pdf",
+      "note": "姓名全体の読みと本人の対応を確認。使用時期・役職や書籍本文の歴史的主張の根拠には転用しない。",
+      "locator": "1ページ「禁門の変と会津藩領（資料②③）」、2ページ「一橋慶喜の長岡来訪（資料⑥）」：一橋慶喜に対応するふりがな「ひとつばし」「よしのぶ」",
+      "contentCheckedAt": "2026-10-01"
+    },
+    {
+      "id": "heibonsha_kido_junichiro_name_reading",
+      "title": "平凡社「世界大百科事典（旧版）・木戸準一郎」（コトバンク掲載）",
+      "url": "https://kotobank.jp/word/%E6%9C%A8%E6%88%B8%E6%BA%96%E4%B8%80%E9%83%8E-1298858",
+      "note": "姓名全体の読みと本人の対応を確認。使用時期・役職や書籍本文の歴史的主張の根拠には転用しない。",
+      "locator": "見出し「木戸準一郎（読み）きどじゅんいちろう」と「木戸孝允」からの言及",
+      "contentCheckedAt": "2026-10-01"
+    },
+    {
+      "id": "nii_saigo_name_reading",
+      "title": "国立情報学研究所・CiNii Books「道義国家を目指した西郷吉之助」",
+      "url": "https://ci.nii.ac.jp/ncid/BB26030314?l=ja",
+      "note": "姓名全体の読みと本人の対応を確認。使用時期・役職や書籍本文の歴史的主張の根拠には転用しない。",
+      "locator": "書誌事項・タイトル読み「ドウギ コッカ オ メザシタ サイゴウ キチノスケ」、内容説明・目次で西郷隆盛を扱う書籍と確認",
+      "contentCheckedAt": "2026-10-01"
     }
   ]
 }

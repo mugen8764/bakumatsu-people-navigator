@@ -9,11 +9,18 @@ for (const colorScheme of ['light', 'dark']) {
     for (const [query, id, displayName, scene, incident] of [
       ['かつらこごろう', 'kido', '桂小五郎', '1864-kinmon', 'kinmon-conflict'],
       ['やまがたきょうすけ', 'yamagata', '山県狂介', '1868-tohoku', 'hokuetsu-1868'],
-      ['あさだこうすけ', 'sufu-masanosuke', '麻田公輔', '1864-kinmon', 'kinmon-conflict']
+      ['あさだこうすけ', 'sufu-masanosuke', '麻田公輔', '1864-kinmon', 'kinmon-conflict'],
+      ['いとうしゅんすけ', 'ito', '伊藤俊輔', '1864-kinmon', 'shimonoseki-1864'],
+      ['いのうえもんた', 'inoue', '井上聞多', '1864-kinmon', 'shimonoseki-1864'],
+      ['さいごうきちのすけ', 'saigo', '西郷吉之助', '1866-satcho', 'satcho-agreement'],
+      ['きどじゅんいちろう', 'kido', '木戸準一郎', '1866-satcho', 'satcho-agreement'],
+      ['おおくぼいちぞう', 'okubo', '大久保一蔵', '1867-taisei', 'royal-restoration'],
+      ['ひとつばしよしのぶ', 'yoshinobu', '一橋慶喜', '1864-kinmon', 'kinmon-conflict']
     ]) {
       await page.goto(`/#scene=${scene}&view=people&person=${id}`);
       await page.locator('#globalSearch').fill(query);
-      await expect(page.locator('.search-result').first()).toContainText(id === 'kido' ? '木戸孝允' : id === 'yamagata' ? '山県有朋' : '周布政之助');
+      const basicName = { kido: '木戸孝允', yamagata: '山県有朋', 'sufu-masanosuke': '周布政之助', ito: '伊藤博文', inoue: '井上馨', saigo: '西郷隆盛', okubo: '大久保利通', yoshinobu: '徳川慶喜' }[id];
+      await expect(page.locator('.search-result').first()).toContainText(basicName);
       await page.locator('#globalSearch').press('ArrowDown');
       await page.locator('#globalSearch').press('Enter');
       await expect(page.locator('#personDetail .detail-title')).toHaveText(displayName);

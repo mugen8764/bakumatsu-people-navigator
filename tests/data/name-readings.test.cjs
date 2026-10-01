@@ -15,7 +15,13 @@ test('confirmed name readings resolve across sparse scene states and incident ov
   for (const [id, name, kana] of [
     ['kido', '桂小五郎', 'かつら こごろう'],
     ['yamagata', '山県狂介', 'やまがた きょうすけ'],
-    ['sufu-masanosuke', '麻田公輔', 'あさだ こうすけ']
+    ['sufu-masanosuke', '麻田公輔', 'あさだ こうすけ'],
+    ['ito', '伊藤俊輔', 'いとう しゅんすけ'],
+    ['inoue', '井上聞多', 'いのうえ もんた'],
+    ['saigo', '西郷吉之助', 'さいごう きちのすけ'],
+    ['kido', '木戸準一郎', 'きど じゅんいちろう'],
+    ['okubo', '大久保一蔵', 'おおくぼ いちぞう'],
+    ['yoshinobu', '一橋慶喜', 'ひとつばし よしのぶ']
   ]) {
     const person = domain.getPerson(id);
     const canonical = documents().people.people.find(item => item.id === id);
@@ -36,7 +42,7 @@ test('confirmed name readings resolve across sparse scene states and incident ov
 });
 
 test('unconfirmed display names do not inherit the basic name reading', () => {
-  for (const [id, name] of [['takasugi', '宍戸刑馬'], ['saito', '山口二郎'], ['kuroda', '黒田了介'], ['kido', '木戸準一郎']]) {
+  for (const [id, name] of [['takasugi', '宍戸刑馬'], ['saito', '山口二郎'], ['kuroda', '黒田了介'], ['mori-takachika', '毛利慶親'], ['iwamura-takatoshi', '岩村精一郎']]) {
     const person = data.people.find(item => item.id === id);
     assert.deepEqual(readingKanasFor(person, name), []);
     assert.deepEqual(readingKanasFor(person, person.name), [person.kana]);
