@@ -29,6 +29,12 @@ test('the four-power incident distinguishes policy makers, interpreters and the 
   assert.match(incident.turningPoint, /9月の現地講和.*10月22日.*300万ドル/);
   assert.equal(searchAll(data, '宍戸刑馬').find(item => item.type === '人物').id, 'takasugi');
   assert.equal(incident.participants.find(p => p.personId === 'takasugi').displayName, '宍戸刑馬');
+  const ito = incident.participants.find(p => p.personId === 'ito');
+  assert.match(ito.summary, /サトウの回想.*攘夷命令の写し/);
+  assert.doesNotMatch(ito.summary, /文書を書き取り/);
+  assert.match(ito.evidence.note, /講和条約の筆記・署名担当とは断定しない/);
+  assert.match(incident.relations.find(r => r.id === 'shimonoseki-ito-satow').description, /攘夷命令の写し/);
+  assert.match(incident.evidence.note, /9月の現地講和.*10月.*1873年/);
 });
 
 test('the returning students have evidence-backed comparisons before the attack', () => {

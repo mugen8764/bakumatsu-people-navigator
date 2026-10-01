@@ -3358,12 +3358,13 @@
           "role": "艦隊に同行した公使館員",
           "involvement": "onsite",
           "side": "英国公使館",
-          "summary": "軍艦アーガスに乗り、戦闘を経験した。本人の記録は外交官や軍人だけではない同行者の視点を伝える。",
+          "summary": "軍艦アーガスに乗り、戦闘を経験した。本人の後年の回想に、乗船と戦闘の様子が記されている。",
           "evidence": {
             "sourceIds": [
               "satow_diplomat"
             ],
-            "reviewStatus": "verified"
+            "reviewStatus": "verified",
+            "note": "乗船・戦闘経験は本人の1921年刊の回想による。伝聞や指揮官の動機の推測は採用しない。"
           }
         },
         {
@@ -3474,13 +3475,14 @@
           "role": "攻撃前の調停と講和の取次ぎ",
           "involvement": "onsite",
           "side": "長州藩",
-          "summary": "井上と帰国して戦争回避を図る。講和の場では文書を書き取り、サトウへ渡した。",
+          "summary": "井上と帰国して戦争回避を図る。サトウの回想では、講和交渉時に攘夷命令の写しをサトウへ渡した。",
           "evidence": {
             "sourceIds": [
               "yamaguchi_bakan_war",
               "satow_diplomat"
             ],
-            "reviewStatus": "verified"
+            "reviewStatus": "verified",
+            "note": "帰国・調停は県立図書館の解説で、文書の取次ぎはサトウ回想第XI章p.117で確認。講和条約の筆記・署名担当とは断定しない。"
           }
         },
         {
@@ -3509,7 +3511,8 @@
             "sourceIds": [
               "satow_diplomat"
             ],
-            "reviewStatus": "verified"
+            "reviewStatus": "verified",
+            "note": "艦隊上の指揮・講和条件提示はサトウの後年の回想による。外交代表の方針決定や10月の賠償額決定と区別する。"
           }
         },
         {
@@ -3523,7 +3526,8 @@
             "sourceIds": [
               "satow_diplomat"
             ],
-            "reviewStatus": "verified"
+            "reviewStatus": "verified",
+            "note": "任命・乗船・通訳は本人の後年の回想による。単独の通訳とはせず、他の通訳もいたことを保持する。"
           }
         },
         {
@@ -3604,7 +3608,7 @@
           "aPersonId": "ito",
           "bPersonId": "satow",
           "label": "講和文書の取次ぎ",
-          "description": "講和交渉で伊藤が日本語の文書を書き取り、通訳を担うサトウへ渡した。",
+          "description": "サトウの回想では、講和交渉時に伊藤が朝廷・幕府の攘夷命令の写しをサトウへ渡した。",
           "direction": "none",
           "evidence": {
             "sourceIds": [
@@ -3644,7 +3648,8 @@
           "satow_diplomat",
           "frus_shimonoseki_indemnity"
         ],
-        "reviewStatus": "verified"
+        "reviewStatus": "verified",
+        "note": "攻撃・9月の現地講和・10月の幕府との賠償協定を分ける。講和の細部はサトウ回想と後年の公的広報、賠償協定は1873年提出の日本使節覚書による。"
       }
     },
     {
