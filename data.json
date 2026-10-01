@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.102",
+    "version": "1.0.103",
     "updated": "2026-10-01"
   },
   "sources": {
@@ -384,7 +384,9 @@
     "archives_zaihan_diary": {
       "title": "国立公文書館「激動幕末・在阪中日記」",
       "url": "https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/44.html",
-      "note": "禁門の変後の第一次長州戦争で長州藩内の保守派が勢力を回復して幕府へ恭順した経緯と、1865年の将軍家茂の長州再征出立。"
+      "note": "展示解説で第一次長州戦争期の保守派の回復と恭順、高杉らによる反幕派の主導権奪回、1865年の家茂出発と1866年の第二次戦争開戦を確認。展示史料原本を精読した扱いにはしない。",
+      "locator": "冒頭の展示解説第1段落（禁門の変〜第一次の恭順〜藩内転換〜第二次開戦）",
+      "contentCheckedAt": "2026-10-01"
     },
     "ndl_kameyama_trade": {
       "title": "国立国会図書館「幕末・明治初期の商社誕生に関わった人々」",
@@ -2758,6 +2760,13 @@
       "url": "https://colbase.nich.go.jp/pages/term?locale=ja",
       "note": "同サイト上のコンテンツについて商用を含む複製・公衆送信・加工を認め、出典と加工の明示を要求。第三者権利・適用除外とCC BY 4.0互換を確認。他の機構サイトへ自動適用しない。",
       "locator": "冒頭「コンテンツの利用について」／1 出典の記載について／2 第三者の権利／3 適用外コンテンツ／6.3 CC BY 4.0互換",
+      "contentCheckedAt": "2026-10-01"
+    },
+    "fukui_first_choshu": {
+      "title": "福井県史 通史編4 近世二「第一次長州出兵と福井藩」",
+      "url": "https://www.library-archives.pref.fukui.lg.jp/fukui/07/kenshi/T4/T4-6-01-03-02-01.htm",
+      "note": "禁門の変後の諸藩動員、西郷の征長総督参謀としての関与、長州側の家老ら処分・藩主父子の謝罪、戦火を交えず元治元年12月に撤兵令が出たことを確認。本文の価値評価や五卿移出の完了時期は採用しない。",
+      "locator": "第六章 第三節 二「第一次長州出兵と福井藩」：第2〜3段落（幕府の出動命令／長州側の処分・謝罪と撤兵）",
       "contentCheckedAt": "2026-10-01"
     }
   },
@@ -5858,6 +5867,78 @@
           "yamaguchi_library_irie"
         ],
         "reviewStatus": "verified"
+      }
+    },
+    "first-choshu-expedition": {
+      "id": "first-choshu-expedition",
+      "sceneId": "1864-kinmon",
+      "title": "第一次長州征討",
+      "date": "1864年、禁門の変後〜12月の撤兵令（元治元年・旧暦）",
+      "summary": "禁門の変後、幕府は諸藩に長州征討を命じた。長州側は家老らの処分と藩主父子の謝罪で恭順を示し、幕府軍との戦闘に至らず撤兵となった。",
+      "stakes": "幕府は長州の責任を追及し、諸藩を動員した。長州藩内では幕府への恭順を主張する勢力が主導権を握り、処分と謝罪で征討への対応を図った。",
+      "turningPoint": "12月に撤兵令が出たが、藩内の対立は続き、高杉晋作らが主導権を奪回する長州藩政の転換へつながる。1866年の第二次長州征討では実際の戦闘が起きた。",
+      "scope": "征討側の処分要求と長州側の恭順。現場の戦闘や未確認の個人配置は示さない。",
+      "participants": [
+        {
+          "personId": "saigo",
+          "displayName": "西郷吉之助",
+          "side": "征討側（薩摩）",
+          "role": "征長総督の参謀",
+          "involvement": "decision",
+          "summary": "参謀として長州側の処分・謝罪による決着に関わった。第二次征討での出兵拒否とは分けて見る。",
+          "evidence": {
+            "sourceIds": [
+              "fukui_first_choshu"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "mori-takachika",
+          "displayName": "毛利慶親",
+          "side": "長州側",
+          "role": "謝罪・謹慎する藩主",
+          "involvement": "decision",
+          "summary": "藩主父子の謝罪書が提出され、本人は萩で謹慎した。この年に慶親から敬親へ戻した。戦場での指揮者としては扱わない。",
+          "evidence": {
+            "sourceIds": [
+              "fukui_first_choshu",
+              "yamaguchi_mori"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "takasugi",
+          "displayName": "高杉晋作",
+          "side": "長州藩内の政局",
+          "role": "恭順後の藩政転換への接続",
+          "involvement": "context",
+          "summary": "恭順を進めた藩内保守派に対し、高杉らが後に主導権を奪回した。征討軍との戦闘参加を示すものではない。",
+          "evidence": {
+            "sourceIds": [
+              "archives_zaihan_diary"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [],
+      "placeIds": [
+        "hagi",
+        "yamaguchi"
+      ],
+      "termIds": [
+        "choshu-expeditions"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "fukui_first_choshu",
+          "archives_zaihan_diary",
+          "ndl_history_satcho"
+        ],
+        "reviewStatus": "verified",
+        "note": "福井県史の解説で動員・参謀・処分と謝罪・戦闘なしの撤兵を確認。藩主の個別処分指示や人物間の直接交渉・現場配置は断定せず、onsiteと関係線は追加しない。藩政転換は既存主要事件choshu_reformで扱い、新しい個別事件へ広げない。"
       }
     },
     "satcho-agreement": {

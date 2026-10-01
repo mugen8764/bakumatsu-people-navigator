@@ -2278,6 +2278,78 @@
       }
     },
     {
+      "id": "first-choshu-expedition",
+      "sceneId": "1864-kinmon",
+      "title": "第一次長州征討",
+      "date": "1864年、禁門の変後〜12月の撤兵令（元治元年・旧暦）",
+      "summary": "禁門の変後、幕府は諸藩に長州征討を命じた。長州側は家老らの処分と藩主父子の謝罪で恭順を示し、幕府軍との戦闘に至らず撤兵となった。",
+      "stakes": "幕府は長州の責任を追及し、諸藩を動員した。長州藩内では幕府への恭順を主張する勢力が主導権を握り、処分と謝罪で征討への対応を図った。",
+      "turningPoint": "12月に撤兵令が出たが、藩内の対立は続き、高杉晋作らが主導権を奪回する長州藩政の転換へつながる。1866年の第二次長州征討では実際の戦闘が起きた。",
+      "scope": "征討側の処分要求と長州側の恭順。現場の戦闘や未確認の個人配置は示さない。",
+      "participants": [
+        {
+          "personId": "saigo",
+          "displayName": "西郷吉之助",
+          "side": "征討側（薩摩）",
+          "role": "征長総督の参謀",
+          "involvement": "decision",
+          "summary": "参謀として長州側の処分・謝罪による決着に関わった。第二次征討での出兵拒否とは分けて見る。",
+          "evidence": {
+            "sourceIds": [
+              "fukui_first_choshu"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "mori-takachika",
+          "displayName": "毛利慶親",
+          "side": "長州側",
+          "role": "謝罪・謹慎する藩主",
+          "involvement": "decision",
+          "summary": "藩主父子の謝罪書が提出され、本人は萩で謹慎した。この年に慶親から敬親へ戻した。戦場での指揮者としては扱わない。",
+          "evidence": {
+            "sourceIds": [
+              "fukui_first_choshu",
+              "yamaguchi_mori"
+            ],
+            "reviewStatus": "verified"
+          }
+        },
+        {
+          "personId": "takasugi",
+          "displayName": "高杉晋作",
+          "side": "長州藩内の政局",
+          "role": "恭順後の藩政転換への接続",
+          "involvement": "context",
+          "summary": "恭順を進めた藩内保守派に対し、高杉らが後に主導権を奪回した。征討軍との戦闘参加を示すものではない。",
+          "evidence": {
+            "sourceIds": [
+              "archives_zaihan_diary"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
+      "relations": [],
+      "placeIds": [
+        "hagi",
+        "yamaguchi"
+      ],
+      "termIds": [
+        "choshu-expeditions"
+      ],
+      "evidence": {
+        "sourceIds": [
+          "fukui_first_choshu",
+          "archives_zaihan_diary",
+          "ndl_history_satcho"
+        ],
+        "reviewStatus": "verified",
+        "note": "福井県史の解説で動員・参謀・処分と謝罪・戦闘なしの撤兵を確認。藩主の個別処分指示や人物間の直接交渉・現場配置は断定せず、onsiteと関係線は追加しない。藩政転換は既存主要事件choshu_reformで扱い、新しい個別事件へ広げない。"
+      }
+    },
+    {
       "id": "satcho-agreement",
       "sceneId": "1866-satcho",
       "title": "薩長盟約",

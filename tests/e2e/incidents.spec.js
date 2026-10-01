@@ -4,6 +4,35 @@ const AxeBuilder = require('@axe-core/playwright').default;
 const crossBrowser = { tag: '@cross-browser' };
 
 for (const colorScheme of ['light', 'dark']) {
+  test(`first expedition connects the Choshu sequence at 320px in ${colorScheme}`, async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 780 });
+    await page.emulateMedia({ colorScheme });
+    await page.goto('/#event=kinmon-conflict');
+    await page.locator('[data-scene-incident="first-choshu-expedition"]').click();
+    await expect(page.locator('#eventDetailTitle')).toHaveText('第一次長州征討');
+    await expect(page.locator('.incident-lead')).toContainText('戦闘に至らず撤兵');
+    await expect(page.locator('.onsite [data-event-person]')).toHaveCount(0);
+    await expect(page.locator('.decision [data-event-person="saigo"]')).toContainText('参謀');
+    await expect(page.locator('.context [data-event-person="takasugi"]')).toBeVisible();
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    await page.locator('[data-event-person="saigo"]').focus();
+    await page.keyboard.press('Enter');
+    await expect(page.locator('.person-incident')).toContainText('第一次長州征討での役割');
+    await page.locator('.person-incident [data-open-event]').click();
+    await page.locator('#eventToMap').click();
+    await expect(page.locator('#mapTitle')).toContainText('第一次長州征討');
+    await page.locator('[data-map-place-card="hagi"] [data-map-event="first-choshu-expedition"]').click();
+    const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze();
+    expect(results.violations).toEqual([]);
+    await page.locator('[data-open-overview]').click();
+    await page.locator('#nextScene').click();
+    await expect(page.locator('#eventDetailTitle')).toHaveText('長州藩政の転換');
+    await page.locator('#nextScene').click();
+    await page.locator('#nextScene').click();
+    await page.locator('[data-scene-incident="second-choshu-war"]').click();
+    await expect(page.locator('#eventDetailTitle')).toHaveText('第二次長州征討・四境戦争');
+  });
+
   test(`Katsunuma roles and caveats remain readable at 320px in ${colorScheme}`, async ({ page }) => {
     await page.setViewportSize({ width: 320, height: 780 });
     await page.emulateMedia({ colorScheme });
