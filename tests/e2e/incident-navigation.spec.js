@@ -4,21 +4,22 @@ const AxeBuilder = require('@axe-core/playwright').default;
 
 for (const width of [320, 390, 1280]) {
   for (const colorScheme of ['light', 'dark']) {
-    test(`incident section navigation at ${width}px in ${colorScheme}`, { tag: '@cross-browser' }, async ({ page }, testInfo) => {
-      await page.setViewportSize({ width, height: 900 });
-      await page.emulateMedia({ colorScheme, reducedMotion: 'reduce' });
-      const errors = [];
-      page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
-      await page.goto('/');
-      const sceneToggle = page.locator('#sceneDetails > summary');
-      await expect(sceneToggle).toHaveAccessibleName('前の時点からの変化を見る');
-      await expect(sceneToggle.locator('.details-closed-copy')).toHaveText('変化を見る');
-      await sceneToggle.press('Enter');
-      await expect(page.locator('#sceneDetails')).toHaveAttribute('open', '');
-      await sceneToggle.press('Enter');
-      await expect(page.locator('#sceneDetails')).not.toHaveAttribute('open', '');
+    // Each incident includes an axe scan and history round trip; budget them separately.
+    for (const id of ['toba-fushimi-battle', 'aizu-siege', 'hakodate-1869', 'first-choshu-expedition']) {
+      test(`${id} section navigation at ${width}px in ${colorScheme}`, { tag: '@cross-browser' }, async ({ page }, testInfo) => {
+        await page.setViewportSize({ width, height: 900 });
+        await page.emulateMedia({ colorScheme, reducedMotion: 'reduce' });
+        const errors = [];
+        page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
+        await page.goto('/');
+        const sceneToggle = page.locator('#sceneDetails > summary');
+        await expect(sceneToggle).toHaveAccessibleName('前の時点からの変化を見る');
+        await expect(sceneToggle.locator('.details-closed-copy')).toHaveText('変化を見る');
+        await sceneToggle.press('Enter');
+        await expect(page.locator('#sceneDetails')).toHaveAttribute('open', '');
+        await sceneToggle.press('Enter');
+        await expect(page.locator('#sceneDetails')).not.toHaveAttribute('open', '');
 
-      for (const id of ['toba-fushimi-battle', 'aizu-siege', 'hakodate-1869', 'first-choshu-expedition']) {
         await page.goto(`/#event=${id}`);
         const incident = catalog.incidents[id];
         await expect(page.locator('#eventDetailTitle')).toHaveText(incident.title);
@@ -74,8 +75,8 @@ for (const width of [320, 390, 1280]) {
         await expect(page.locator('#eventDetailTitle')).toHaveText(incident.title);
         await page.goForward();
         await expect(page.locator('.person-incident')).toBeVisible();
-      }
-      expect(errors).toEqual([]);
-    });
+        expect(errors).toEqual([]);
+      });
+    }
   }
 }
