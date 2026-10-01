@@ -26,6 +26,9 @@
 /data.json
   Cache-Control: no-cache
 
+/portrait-manifest.json
+  Cache-Control: no-cache
+
 /map-data.js
   Cache-Control: no-cache
 

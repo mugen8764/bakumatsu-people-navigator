@@ -1,7 +1,7 @@
 // Shared by the production checker and the README statistics generator.
 function productionConfig(people) {
   const files = [
-    'index.html', 'data/manifest.json', 'data.js', 'data.json', 'og-image.png',
+    'index.html', 'data/manifest.json', 'data.js', 'data.json', 'og-image.png', 'portrait-manifest.json',
     'src/app.js', 'src/domain.js', 'src/renderers/people.js',
     'src/renderers/factions.js', 'src/renderers/relations.js', 'src/state.js',
     'src/router.js', 'src/search.js', 'src/map.js', 'src/renderers/shared.js',
@@ -13,7 +13,7 @@ function productionConfig(people) {
     'content-security-policy', 'permissions-policy', 'referrer-policy', 'x-content-type-options'
   ];
   const requiredCacheControls = new Map([
-    ['data.js', 'no-cache'], ['src/app.js', 'no-cache'], ['og-image.png', 'max-age=86400'],
+    ['data.js', 'no-cache'], ['src/app.js', 'no-cache'], ['og-image.png', 'max-age=86400'], ['portrait-manifest.json', 'no-cache'],
     ...portraits.map(file => [file, 'no-cache'])
   ]);
   return { files, requiredHeaders, requiredCacheControls };

@@ -1,6 +1,8 @@
 const fs = require('node:fs');
 const crypto = require('node:crypto');
 const path = require('node:path');
+const { imageSize } = require('./lib/image-info.cjs');
+const { portraitManifestText } = require('./lib/portrait-manifest.cjs');
 
 const rootOption = process.argv.find(argument => argument.startsWith('--root='));
 const root = rootOption
@@ -21,34 +23,6 @@ function requireFile(relativePath) {
 const maxPortraitSide = 320;
 const maxPortraitBytes = 64 * 1024;
 
-function imageSize(bytes, format) {
-  if (format === 'png') return { width: bytes.readUInt32BE(16), height: bytes.readUInt32BE(20) };
-  if (format === 'webp') {
-    const chunk = bytes.subarray(12, 16).toString();
-    if (chunk === 'VP8X') return { width: 1 + bytes.readUIntLE(24, 3), height: 1 + bytes.readUIntLE(27, 3) };
-    if (chunk === 'VP8L') {
-      const bits = bytes.readUInt32LE(21);
-      return { width: (bits & 0x3fff) + 1, height: ((bits >> 14) & 0x3fff) + 1 };
-    }
-    if (chunk === 'VP8 ') return { width: bytes.readUInt16LE(26) & 0x3fff, height: bytes.readUInt16LE(28) & 0x3fff };
-    return null;
-  }
-  // JPEG: walk the marker segments to the first start-of-frame.
-  let offset = 2;
-  while (offset + 9 < bytes.length && bytes[offset] === 0xff) {
-    const marker = bytes[offset + 1];
-    if (marker === 0xff) {
-      offset += 1;
-      continue;
-    }
-    if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) {
-      return { width: bytes.readUInt16BE(offset + 7), height: bytes.readUInt16BE(offset + 5) };
-    }
-    offset += 2 + bytes.readUInt16BE(offset + 2);
-  }
-  return null;
-}
-
 const requiredFiles = [
   '404.html',
   'LICENSE',
@@ -56,6 +30,7 @@ const requiredFiles = [
   'SOURCES.md',
   '_headers',
   'data/manifest.json',
+  'data/people.json',
   'data/sources.json',
   'data.js',
   'data.json',
@@ -63,6 +38,7 @@ const requiredFiles = [
   'index.html',
   'map-data.js',
   'og-image.png',
+  'portrait-manifest.json',
   'robots.txt',
   'sitemap.xml',
   'src/app.js',
@@ -143,6 +119,12 @@ else {
 
 const manifest = JSON.parse(read('data/manifest.json'));
 const publishedData = JSON.parse(read('data.json'));
+try {
+  const expected = portraitManifestText({ manifest, people: JSON.parse(read('data/people.json')), sources: JSON.parse(read('data/sources.json')) }, root);
+  if (read('portrait-manifest.json') !== expected) failures.push('Portrait manifest differs from canonical data or actual images. Run npm run build:data.');
+} catch (error) {
+  failures.push(`Cannot verify portrait manifest: ${error.message}`);
+}
 for (const person of publishedData.people) {
   if (!person.portrait) continue;
   const { src } = person.portrait;

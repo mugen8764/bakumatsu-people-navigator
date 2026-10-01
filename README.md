@@ -59,7 +59,9 @@ node tests/support/static-server.cjs
 
 ## データと公開
 
-歴史データの正本は `data/*.json` です。`data.json`・`data.js`・`SOURCES.md` は生成物で、直接編集しません。内容変更後の再生成と確認は[データ編集手順](data/README.md)にまとめています。
+歴史データの正本は `data/*.json` です。`data.json`・`data.js`・`SOURCES.md`・`portrait-manifest.json` は生成物で、直接編集しません。内容変更後の再生成と確認は[データ編集手順](data/README.md)にまとめています。
+
+外部から肖像を照合する場合は、[公開肖像マニフェスト](https://bakumatsu-people-navigator.pages.dev/portrait-manifest.json)を利用できます。実画像のSHA-256・寸法・容量と出典・利用条件の情報をまとめています。[照合方法と注意点](data/README.md#肖像の機械的な照合)を参照してください。
 
 公開成果物は次のコマンドで作ります。
 
@@ -67,7 +69,7 @@ node tests/support/static-server.cjs
 npm run build:site
 ```
 
-配置するのは生成された `dist/` の内容だけです。本番では `main` のCIが成功すると、検査済みの成果物をCloudflare Pagesへ配信します。続くProduction smokeで、本番の主要64ファイル、4種のセキュリティヘッダー、49件のキャッシュ方針を照合します。手順・コマンド・確認範囲は[開発・運用手順](https://github.com/mugen8764/bakumatsu-people-navigator/blob/main/docs/maintenance.md)を参照してください。
+配置するのは生成された `dist/` の内容だけです。本番では `main` のCIが成功すると、検査済みの成果物をCloudflare Pagesへ配信します。続くProduction smokeで、本番の主要65ファイル、4種のセキュリティヘッダー、50件のキャッシュ方針を照合します。手順・コマンド・確認範囲は[開発・運用手順](https://github.com/mugen8764/bakumatsu-people-navigator/blob/main/docs/maintenance.md)を参照してください。
 
 ## 情報の扱いとライセンス
 

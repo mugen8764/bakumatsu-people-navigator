@@ -9,7 +9,7 @@ const { loadV2Documents } = require('../../scripts/lib/v2-files.cjs');
 
 const root = path.resolve(__dirname, '../..');
 const options = { version: '9.8.7', date: '2028-02-29' };
-const outputs = ['data/manifest.json', 'data.json', 'data.js', 'SOURCES.md', 'README.md', 'sitemap.xml', 'index.html'];
+const outputs = ['data/manifest.json', 'data.json', 'data.js', 'portrait-manifest.json', 'SOURCES.md', 'README.md', 'sitemap.xml', 'index.html'];
 
 function fixture(t) {
   const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'content-prepare-'));
@@ -19,7 +19,7 @@ function fixture(t) {
     fs.rmSync(directory, { recursive: true, force: true });
   });
   // Deliberately omit data.json/data.js: preparation must recreate them.
-  for (const entry of ['data', 'src', 'README.md', 'SOURCES.md', 'sitemap.xml', 'index.html', 'map-data.js']) {
+  for (const entry of ['data', 'assets/portraits', 'src', 'README.md', 'SOURCES.md', 'sitemap.xml', 'index.html', 'map-data.js']) {
     fs.cpSync(path.join(root, entry), path.join(directory, entry), { recursive: true });
   }
   return directory;

@@ -1,6 +1,6 @@
 # 歴史データの編集手順
 
-このディレクトリのJSONが正本です。ルートの `data.json`・`data.js` と `SOURCES.md` は生成物なので、直接編集しません。正確なフィールド制約は [データ契約](../schema/README.md)、コマンドと公開手順は [開発・運用](https://github.com/mugen8764/bakumatsu-people-navigator/blob/main/docs/maintenance.md) を参照してください。
+このディレクトリのJSONが正本です。ルートの `data.json`・`data.js`・`SOURCES.md`・`portrait-manifest.json` は生成物なので、直接編集しません。正確なフィールド制約は [データ契約](../schema/README.md)、コマンドと公開手順は [開発・運用](https://github.com/mugen8764/bakumatsu-people-navigator/blob/main/docs/maintenance.md) を参照してください。
 
 外部プロジェクトが固定コミットから読み取る場合は、[外部利用向けの意味と変更の扱い](../schema/README.md#外部プロジェクトからの読み取り) を入口にしてください。
 
@@ -128,6 +128,14 @@ npm run test:data
 人物の `turningPoints` は隣接する登録時点を比較し、両時点とも収録範囲内に置きます。前後の行動と文脈を出典付きで編集し、状態文の差分から思想・動機の変化を推測しません。同じ人物の同じ到達時点に複数の比較を置きません。
 
 背景解説は `events.json` の `terms` に登録し、人物・個別事件の `termIds` で参照します。意味と、その場面で知る必要がある背景を短く分けます。`kind: office` の解説は役職名に該当語が含まれる場合にも表示されます。「前藩主」への解説を、現職である根拠にしません。
+
+## 肖像の機械的な照合
+
+`npm run build:data` は `people.json`、`sources.json`、実画像からルートの `portrait-manifest.json` も生成します。`npm run check:data` は差異を検出し、`build:site` は検査済みのファイルを公開します。新しい手編集の正本ではありません。通常の初回画面では読み込みません。
+
+ルートの `manifestVersion` は出力構造の版（現在1）、`contentVersion` は元データの版です。`portraits` は人物ID順で、各項目に `personId`、基本登録名 `name`、portraitの全フィールド、実ファイルの `sha256`（小文字16進）、`width`・`height`（px）、`bytes`（バイト）、`sourceId`・`rightsSourceId` から解決した `sourceUrl`・`rightsUrl` を持ちます。`originalSource` が不明ならnullを保持し、撮影時期や本人同定の注意点も補完しません。
+
+外部利用者は人物ナビのコミットSHAを固定し、その時点の `src` の画像を変換せず取得して、バイト列のSHA-256を `sha256` と比較します。寸法・容量は補助確認に使えますが、同一性はSHAで確認します。縮小・再圧縮した画像や所蔵元の原画像は別のバイト列になるため、そのSHAをこの値と混同しません。来歴・利用条件の記録は取得承認や採用判断を意味せず、それらは利用側で管理します。
 
 ## 肖像
 

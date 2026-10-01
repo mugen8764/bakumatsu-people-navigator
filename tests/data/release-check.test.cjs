@@ -35,7 +35,7 @@ test('the release check still accepts the repository itself', () => {
 
 const releaseEntries = [
   '404.html', 'LICENSE', 'README.md', 'SOURCES.md', '_headers', 'assets', 'data', 'data.js', 'data.json',
-  'favicon.svg', 'index.html', 'map-data.js', 'og-image.png', 'robots.txt', 'schema', 'sitemap.xml', 'src'
+  'favicon.svg', 'index.html', 'map-data.js', 'og-image.png', 'portrait-manifest.json', 'robots.txt', 'schema', 'sitemap.xml', 'src'
 ];
 
 function stageRelease() {
@@ -84,6 +84,21 @@ test('an oversized portrait fails the release check', () => {
     const result = runCheck(staged);
     assert.equal(result.status, 1);
     assert.match(result.output, /is 1000x1000 and \d+ bytes; keep it within 320px and 64 KiB/);
+  } finally {
+    fs.rmSync(staged, { recursive: true, force: true });
+  }
+});
+
+test('a tampered portrait manifest fails the staged release check', () => {
+  const staged = stageRelease();
+  try {
+    const file = path.join(staged, 'portrait-manifest.json');
+    const manifest = JSON.parse(fs.readFileSync(file, 'utf8'));
+    manifest.portraits[0].sha256 = '0'.repeat(64);
+    fs.writeFileSync(file, `${JSON.stringify(manifest, null, 2)}\n`);
+    const result = runCheck(staged);
+    assert.equal(result.status, 1);
+    assert.match(result.output, /Portrait manifest differs/);
   } finally {
     fs.rmSync(staged, { recursive: true, force: true });
   }

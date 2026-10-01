@@ -156,6 +156,7 @@ git diff --check
 | --- | --- |
 | `data/manifest.json` | 指定したコンテンツ版・更新日 |
 | `data.json` / `data.js` | 正本JSONから既存の生成処理で再生成 |
+| `portrait-manifest.json` | 人物・出典の正本と実画像からSHA・寸法・来歴を再生成 |
 | `SOURCES.md` | 正本の出典カタログを反映 |
 | `README.md` | 収録件数と本番検査の件数。説明文は維持 |
 | `sitemap.xml` | 指定した更新日 |

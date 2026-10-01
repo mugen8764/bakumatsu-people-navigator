@@ -53,7 +53,7 @@ function prepareContent(root, options) {
   const documents = loadV2Documents(root);
   documents.manifest = { ...documents.manifest, contentVersion: options.version, updated: options.date };
   // Validate and calculate every output before writing any file.
-  const outputs = expectedOutputs(documents);
+  const outputs = expectedOutputs(documents, root);
   outputs['data/manifest.json'] = `${JSON.stringify(documents.manifest, null, 2)}\n`;
   outputs['SOURCES.md'] = expectedDocument(read('SOURCES.md'), loadSources(documents.sources));
   outputs['README.md'] = updateDocStats(read('README.md'), documents);

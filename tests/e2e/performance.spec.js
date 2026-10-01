@@ -43,6 +43,7 @@ test('initial page stays within the static asset budget', async ({ page, request
   const names = metrics.urls.map(url => new URL(url).pathname);
   expect(names.some(path => path.endsWith('/data.js'))).toBe(true);
   expect(names.some(path => path.endsWith('/data.json'))).toBe(false);
+  expect(names.some(path => path.endsWith('/portrait-manifest.json'))).toBe(false);
   expect(metrics.scriptCount).toBeLessThanOrEqual(14);
 
   // Static hosts send text with HTTP compression, so the budget counts what a

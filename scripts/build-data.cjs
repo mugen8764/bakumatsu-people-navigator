@@ -3,6 +3,7 @@ const path = require('node:path');
 const { assembleLegacyData } = require('./lib/assemble-legacy-data.cjs');
 const { loadV2Documents } = require('./lib/v2-files.cjs');
 const { validateCurrentData, validateV2Documents } = require('./validate-data.cjs');
+const { portraitManifestText } = require('./lib/portrait-manifest.cjs');
 
 const root = path.resolve(__dirname, '..');
 
@@ -16,13 +17,14 @@ function browserWrapper(data) {
   return `window.BM_DATA=JSON.parse(${JSON.stringify(JSON.stringify(data))});\n`;
 }
 
-function expectedOutputs(documents = loadV2Documents(root)) {
+function expectedOutputs(documents = loadV2Documents(root), imageRoot = root) {
   validateV2Documents(documents);
   const legacyData = assembleLegacyData(documents);
   validateCurrentData(legacyData);
   return {
     'data.json': JSON.stringify(legacyData, null, 2),
-    'data.js': browserWrapper(legacyData)
+    'data.js': browserWrapper(legacyData),
+    'portrait-manifest.json': portraitManifestText(documents, imageRoot)
   };
 }
 
@@ -44,7 +46,7 @@ if (require.main === module) {
     console.log('Generated data is current.');
   } else {
     writeOutputs(outputs);
-    console.log('Generated data.json and data.js from data/*.json.');
+    console.log('Generated data.json, data.js and portrait-manifest.json from canonical data and images.');
   }
 }
 

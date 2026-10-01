@@ -18,6 +18,7 @@ const entries = [
   'index.html',
   'map-data.js',
   'og-image.png',
+  'portrait-manifest.json',
   'robots.txt',
   'schema',
   'sitemap.xml',
