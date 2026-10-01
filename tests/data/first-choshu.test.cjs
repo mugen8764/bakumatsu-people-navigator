@@ -16,6 +16,8 @@ test('the first expedition separates settlement from the later war and reuses ex
   assert.equal(cast.saigo.involvement, 'decision');
   assert.equal(cast.saigo.role, '征長総督の参謀');
   assert.equal(cast['mori-takachika'].involvement, 'decision');
+  assert.ok(cast['mori-takachika'].evidence.sourceIds.includes('yamahaku_mori_name'));
+  assert.deepEqual(domainReading('mori-takachika', cast['mori-takachika'].displayName), []);
   assert.equal(cast.takasugi.involvement, 'context');
   assert.equal(first.participants.filter(p => p.involvement === 'onsite').length, 0);
   assert.equal(first.relations.length, 0);
@@ -34,4 +36,24 @@ test('the first expedition separates settlement from the later war and reuses ex
   assert.ok(before < reform && reform < after);
   assert.ok(domain.incidentsAt(before).some(p => p.id === first.id));
   assert.ok(searchAll(data, '第一次長州征討').some(p => p.id === first.id));
+});
+
+function domainReading(id, name) {
+  const { readingKanasFor } = require('../../src/domain.js');
+  return readingKanasFor(data.people.find(person => person.id === id), name);
+}
+
+test('Kinmon command does not inherit Akitake column actions from the shared timeline', () => {
+  const domain = createDomain(data);
+  const scene = domain.sceneById.get('1864-kinmon').index;
+  const yoshinobu = domain.statusAt(domain.getPerson('yoshinobu'), scene);
+  assert.match(yoshinobu.stance, /諸藩を指揮/);
+  assert.doesNotMatch(yoshinobu.stance, /日華門|床几隊/);
+  const original = require('../../data/person-statuses.json').statuses.find(s => s.id === 'person-status-yoshinobu-1864-kinmon');
+  assert.match(original.evidence.note, /昭武欄.*転用しない/);
+  const cast = Object.fromEntries(data.incidents['kinmon-conflict'].participants.map(p => [p.personId, p]));
+  assert.equal(cast.yoshinobu.involvement, 'decision');
+  assert.equal(cast.kido.involvement, 'context');
+  assert.equal(cast['sufu-masanosuke'].involvement, 'context');
+  assert.equal(cast['irie-kuichi'].involvement, 'onsite');
 });

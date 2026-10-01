@@ -33,9 +33,9 @@
       "id": "ndl_history_satcho",
       "title": "国際子ども図書館「薩長同盟」",
       "url": "https://www.kodomo.go.jp/yareki/theme/theme_04.html",
-      "note": "薩長同盟の成立、坂本龍馬・中岡慎太郎による仲介と龍馬の裏書。",
-      "locator": "薩長同盟2・4・5（禁門の変、盟約と龍馬の裏書、奇兵隊）",
-      "contentCheckedAt": "2026-09-25"
+      "note": "国際子ども図書館の教育用解説を確認。展示画像の原史料全文を精読した扱いにはしない。",
+      "locator": "薩長同盟2・4・5（禁門の変の敗北と第一次征討命令、盟約当事者・仲介・龍馬の裏書、第二次征討と薩摩不参加）",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "kyohaku_kido_ryoma_letter",
@@ -163,25 +163,25 @@
       "id": "yamaguchi_library_kinmon",
       "title": "山口県立山口図書館「禁門の変、勃発」",
       "url": "https://library.pref.yamaguchi.lg.jp/meijiishin/201407/",
-      "note": "八月十八日の政変後の長州藩、池田屋事件、禁門の変の経緯。",
-      "locator": "本文：禁門の変の経緯・長州藩内の進発論・久坂らの死",
-      "contentCheckedAt": "2026-09-25"
+      "note": "図書館の展示解説を確認。紹介される1913年の実歴談・1952年の画報の本文を精読した扱いにはしない。進発論を個々人の動機や直接指揮へ広げない。",
+      "locator": "「禁門の変、勃発」本文第1〜4段落（旧暦7月19日の戦闘、進発論・慎重論、久坂・入江の死、大火）",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "kyoto_kinmon",
       "title": "京都市上京区「幕末動乱と禁門の変」",
       "url": "https://www.city.kyoto.lg.jp/kamigyo/page/0000012502.html",
-      "note": "池田屋事件から禁門の変に至る経緯と京都での戦闘。",
-      "locator": "「幕末動乱と禁門の変」第5～6段落",
-      "contentCheckedAt": "2026-08-26"
+      "note": "自治体の後世の解説。薩摩・会津と長州の対立・戦闘の範囲を確認。久光を藩主とする表記や価値評価、政治的動機の断定は採用しない。",
+      "locator": "「幕末動乱と禁門の変」第4〜6段落（1863年の京都からの排除、元治元年7月19日の諸藩との戦闘、大火）",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "yamaguchi_choshu_reform",
       "title": "山口県立山口図書館「四境戦争～時代の流れを変えた戦い～」",
       "url": "https://library.pref.yamaguchi.lg.jp/meijiishin/201607/",
-      "note": "長州藩内戦後の武備恭順への転換、西洋軍制導入と軍事組織整備。",
-      "locator": "冒頭3段落：第一次征討、武備恭順と軍制整備、四境戦争",
-      "contentCheckedAt": "2026-09-25"
+      "note": "図書館の展示解説。第一次の恭順と後続の藩内転換・第二次開戦を分けて確認。戦争結果を単一人物や単一原因によるものとせず、紹介史料の原本を精読した扱いにはしない。",
+      "locator": "冒頭第1〜3段落：第一次の恭順と戦闘なしの終結、藩内転換・武備恭順、第二次開戦と四境の呼称",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "yamaguchi_archives_ota_edo",
@@ -781,13 +781,17 @@
       "id": "hagi_takasugi_sonjuku",
       "title": "萩市「高杉晋作 参上」",
       "url": "https://www.city.hagi.lg.jp/soshiki/5/h9596.html",
-      "note": "高杉晋作の1857年後半の松下村塾入塾と、久坂玄瑞と並ぶ門下での位置。"
+      "note": "自治体の後世の解説で同門・双璧の範囲を確認。作品の台詞・描写や心理説明を史実根拠として採用せず、禁門当日の共同行動へ広げない。",
+      "locator": "「久坂と高杉を競わせる松陰」史実説明の段落（安政4年後半の入塾、久坂と並ぶ松陰門下の双璧）",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "hagi_kusaka_1858",
       "title": "萩市「松陰の愛弟子 久坂玄瑞との結婚と死別」",
       "url": "https://www.city.hagi.lg.jp/site/humi-hanamoyu/h9203.html",
-      "note": "久坂玄瑞の松下村塾での位置、安政4年末の杉文との婚姻、1858年からの江戸・京都遊学、1863年八月十八日の政変による京都追放。"
+      "note": "自治体の後世の人物解説の同門・塾生としての位置と禁門での死を確認。作品設定・夫婦の心理・逸話を関係の根拠へ流用しない。",
+      "locator": "「久坂玄瑞と兄松陰の出会い」末段落、「玄瑞と文 若き2人の結婚」松下村塾で学ぶ説明、「わずか6年余りの結婚生活」禁門での自刃の段落",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "jacar_ito_detail",
@@ -851,9 +855,9 @@
       "id": "matsudo_yoshinobu_timeline",
       "title": "松戸市戸定歴史館「徳川慶喜・昭武関係年表 一」",
       "url": "https://www.city.matsudo.chiba.jp/tojo/rekishikan_shoukai/rekishi/nenpyou/1837-1869.html",
-      "note": "徳川慶喜への1859年の隠居謹慎命令、1862年の一橋家再相続・将軍後見職就任、1868年の鳥羽・伏見開戦と大坂脱出、2月12日の寛永寺謹慎、4月の水戸移動、7月19日の駿府移動。",
-      "locator": "元治元年7月19日、慶応3年12月9日〜慶応4年2月12日の年表",
-      "contentCheckedAt": "2026-09-25"
+      "note": "戸定歴史館が編纂した年表。今回確認した慶喜欄は禁裏御守衛総督・摂海防禦指揮の就任・辞任と禁門の変での諸藩指揮。同じ元治元年7月19日の昭武欄にある一橋家床几隊との日華門守備は慶喜へ転用しない。",
+      "locator": "年表の慶喜欄：元治元年3月25日・7月19日、慶応2年7月31日。既存確認範囲：慶応3年12月9日〜慶応4年2月12日",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "kagoshima_saigo_kikuchi",
@@ -923,9 +927,9 @@
       "id": "kyoto_kido_1862",
       "title": "京都市「木戸孝允神道碑・碑文の大意」",
       "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/hi145_abst.html",
-      "note": "1862年の朝廷周旋、禁門の変後の但馬逃走、長州帰還後の木戸準一郎への改名と政務担当、大村益次郎への軍事改革委任。",
-      "locator": "元治元年7月から慶応2年6月までの段落",
-      "contentCheckedAt": "2026-09-25"
+      "note": "京都市による後世の顕彰碑の大意。禁門前後の行動を確認したが、当日の戦闘参加・個別指揮や動機は補わない。碑文の価値評価や後年の功績を事件当時の直接記録と同一視しない。",
+      "locator": "「碑文の大意」元治元年7月の段落（軽挙への戒め、敗戦後の京都潜伏・但馬逃走、帰藩と木戸準一郎への改名）。既存確認範囲：慶応2年6月まで",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "hagi_takasugi_1862",
@@ -937,15 +941,17 @@
       "id": "hagi_choshu_policy_1862",
       "title": "萩市「市報はぎ・長井雅楽」",
       "url": "https://www.city.hagi.lg.jp/uploaded/attachment/10250.pdf",
-      "note": "桂小五郎・久坂玄瑞らによる航海遠略策の弾劾と、1862年の長州藩是の破約攘夷への転換。"
+      "note": "萩市報の後世の人物解説。1862年の政治協力を確認したが、1864年禁門当日の共同指揮・命令・進発への同意を示す関係ではない。",
+      "locator": "市報HAGI 2018年3月15日号20頁「幕末維新・萩 人物ものがたり23 長井雅楽」末段落（久坂玄瑞・木戸孝允〈桂小五郎〉らによる弾劾と文久2年の藩是転換）",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "yamaguchi_kusaka_guide",
       "title": "山口県立山口図書館「久坂玄瑞・人物調べ方案内」",
       "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/kusaka_genzui/",
-      "note": "久坂玄瑞の尊王攘夷運動での指導的位置と、1864年の禁門の変での負傷・鷹司邸での自刃。",
-      "locator": "「人物紹介」",
-      "contentCheckedAt": "2026-07-31"
+      "note": "図書館の人物紹介の該当記述を確認。禁門の個別指揮・対戦相手や心理は補わない。",
+      "locator": "「人物紹介」攘夷運動の指導的立場、元治元年禁門の変での負傷・鷹司邸での自刃、松下村塾の双璧",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "ndl_iwakura_exile",
@@ -1073,7 +1079,9 @@
       "id": "archives_kinmon_aftermath",
       "title": "国立公文書館「激動幕末・元治甲子長州附属諸国脱走変名大略」",
       "url": "https://www.archives.go.jp/exhibition/digital/bakumatsu/contents/42.html",
-      "note": "池田屋事件を受けた長州藩の京都出兵、禁門の変での敗北と久坂玄瑞らの人的損失。"
+      "note": "展示解説の人的損失の記述を確認。展示された原史料・変名一覧は精読していない。池田屋の放火計画の記述は今回の禁門校正で採用しない。",
+      "locator": "冒頭の展示解説第2段落（禁門の変での敗北と久坂ほか多数の人材の損失）",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "kagoshima_library_hisamitsu_saigo",
@@ -1169,9 +1177,9 @@
       "id": "ndl_portrait_katamori_detail",
       "title": "国立国会図書館「近代日本人の肖像・松平容保」",
       "url": "https://www.ndl.go.jp/portrait/datas/334/",
-      "note": "松平容保の京都守護職就任、京都の治安と公武合体への関与、八月十八日の政変、禁門の変、征長強硬論、1867年の免職、1868年の鳥羽・伏見敗戦後の会津での謹慎と降伏。",
-      "locator": "「解説」：禁門の変から会津での降伏（八月十八日の政変の年の誤記は採用しない）",
-      "contentCheckedAt": "2026-09-25"
+      "note": "国立国会図書館の人物略歴。京都守護職として長州勢を攻撃する側に立った範囲を確認。個人の戦場配置や久坂との直接対決は示さない。八月十八日の政変を「同年」とする年の誤記は採用しない。",
+      "locator": "「解説」京都守護職就任、元治元年禁門の変での長州勢攻撃・征長強硬論。既存確認範囲：会津での降伏まで",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "hino_hijikata_profile",
@@ -1699,17 +1707,17 @@
       "id": "yamaguchi_mori",
       "title": "山口県立山口図書館「毛利敬親」",
       "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/mouri_takachika/",
-      "note": "藩主就任、財政改革、禁門の変後の謹慎、版籍奉還と隠居を確認。",
-      "locator": "人物紹介",
-      "contentCheckedAt": "2026-09-12"
+      "note": "図書館の人物紹介で禁門後の謹慎と改名を確認。謝罪書提出は福井県史、改名の11月4日は山口博物館研究報告の解説による。藩主個人の処分指示・戦場指揮・毛利慶親の読みは補わない。",
+      "locator": "「人物紹介」元治元年禁門の変後の朝敵・萩での謹慎・慶親から敬親への改名",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "yamahaku_mori_name",
       "title": "山口県立山口博物館「奇兵隊の軍服と袖印」",
       "url": "https://www.yamahaku.pref.yamaguchi.lg.jp/pdf/kenkyuhoukoku/44-41-60.pdf",
-      "note": "毛利慶親が1864年11月4日に敬親へ改名した日付を確認。",
-      "locator": "研究報告44号（2018年）56頁（8）元森熊次郎書簡",
-      "contentCheckedAt": "2026-09-12"
+      "note": "後世の研究報告による史料解説の改名日を確認。掲載された慶応元年5月26日の元森書簡自体を、藩主の改名命令や第一次征討の謝罪書として扱わない。",
+      "locator": "山口博物館研究報告44号（2018年）56頁（PDF17頁）「（8）元森熊次郎書簡」解説の元治元年11月4日の慶親から敬親への改名",
+      "contentCheckedAt": "2026-10-01"
     },
     {
       "id": "doshisha_yae",
@@ -2811,17 +2819,17 @@
       "id": "yamaguchi_library_sufu",
       "title": "山口県立山口図書館「周布政之助」",
       "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/sufu_masanosuke/",
-      "locator": "人物紹介：読み・生没・別名、1862年復帰と麻田公輔への改名、1864年武力決起派抑制・高杉訪問で謹慎・9月26日自刃",
-      "contentCheckedAt": "2026-09-27",
-      "note": "死亡の政治的心理は推測しない。禁門現場参加や直接指揮は記述しない。"
+      "locator": "「人物紹介」別名と文久2年の麻田公輔への改名、最終段落の武力決起派抑制・高杉訪問で謹慎・謹慎中の禁門・9月26日自刃",
+      "contentCheckedAt": "2026-10-01",
+      "note": "図書館の後世の人物紹介。武力決起派抑制と謹慎中の禁門を確認。死亡の政治的心理、禁門現場参加・直接指揮は推測しない。"
     },
     {
       "id": "yamaguchi_library_irie",
       "title": "山口県立山口図書館「入江九一」",
       "url": "https://library.pref.yamaguchi.lg.jp/how_to_investigate/irie_kuichi/",
-      "locator": "人物紹介：読み・生没・諱/通称/変名、1858松下村塾、1863士雇と奇兵隊創設参加、1864年7月19日禁門で重傷・自決",
-      "contentCheckedAt": "2026-09-27",
-      "note": "個別の突入門・指揮職・対戦相手は未確認。"
+      "locator": "「人物紹介」通称・諱・変名、1858年入塾、1863年士雇・奇兵隊創設参加、最終段落の元治元年7月19日禁門で重傷・自決",
+      "contentCheckedAt": "2026-10-01",
+      "note": "図書館の後世の人物紹介で禁門の変での重傷・自決を確認。個別の突入門・指揮職・対戦相手は未確認。"
     },
     {
       "id": "saga_figures_okuma_sano",

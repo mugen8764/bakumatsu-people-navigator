@@ -2311,9 +2311,11 @@
           "evidence": {
             "sourceIds": [
               "fukui_first_choshu",
-              "yamaguchi_mori"
+              "yamaguchi_mori",
+              "yamahaku_mori_name"
             ],
-            "reviewStatus": "verified"
+            "reviewStatus": "verified",
+            "note": "処分・謝罪は福井県史、萩での謹慎は山口図書館、慶親から敬親への改名は山口博物館研究報告56頁の解説で確認。期間中の改名であり、謝罪書の署名や事件期間全体の表示名を確定するものではない。"
           }
         },
         {
