@@ -1,6 +1,6 @@
 {
   "manifestVersion": 1,
-  "contentVersion": "1.0.103",
+  "contentVersion": "1.0.104",
   "portraits": [
     {
       "personId": "abe",
@@ -583,6 +583,26 @@
       "rightsUrl": "https://www.ndl.go.jp/portrait/about"
     },
     {
+      "personId": "okubo-ichio",
+      "name": "大久保一翁",
+      "src": "assets/portraits/okubo-ichio.jpg",
+      "alt": "大久保一翁の史料肖像（刊行資料からの採録図版）",
+      "sourceId": "ndl_portrait_okubo_ichio",
+      "rightsSourceId": "ndl_portrait_usage",
+      "credit": "国立国会図書館「近代日本人の肖像」。当サイトで縮小・JPEG圧縮。",
+      "originalSource": "近世名士写真 其2（近世名士写真頒布会、1935年）、111コマ",
+      "dateNote": "1935年刊行資料からの採録図版。肖像の撮影・制作時期と原像の制作形態は未確認。刊行年は撮影・制作年を示すものではなく、本人を撮影した写真や選択した時点の姿とは断定しません。",
+      "identityNote": "国立国会図書館が大久保一翁の肖像として掲載する1枚目の画像。",
+      "rightsNote": "同館の現行利用案内で、掲載肖像の著作権保護期間満了、商用を含む転載申請不要、出典明示を確認。当サイトで縦216pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
+      "checkedAt": "2026-10-01",
+      "sha256": "377c11691ad8e6bff150dc7744637467a02f8fe8057a2ddec72190b85d396bf4",
+      "width": 166,
+      "height": 216,
+      "bytes": 5405,
+      "sourceUrl": "https://www.ndl.go.jp/portrait/datas/31",
+      "rightsUrl": "https://www.ndl.go.jp/portrait/about"
+    },
+    {
       "personId": "okuma-shigenobu",
       "name": "大隈重信",
       "src": "assets/portraits/okuma-shigenobu.jpg",
@@ -600,6 +620,26 @@
       "height": 216,
       "bytes": 8149,
       "sourceUrl": "https://www.ndl.go.jp/portrait/datas/33/",
+      "rightsUrl": "https://www.ndl.go.jp/portrait/about"
+    },
+    {
+      "personId": "omura",
+      "name": "大村益次郎",
+      "src": "assets/portraits/omura.jpg",
+      "alt": "大村益次郎の史料肖像（刊行資料からの採録図版）",
+      "sourceId": "ndl_portrait_omura",
+      "rightsSourceId": "ndl_portrait_usage",
+      "credit": "国立国会図書館「近代日本人の肖像」。当サイトで縮小・JPEG圧縮。",
+      "originalSource": "近世名士写真 其2（近世名士写真頒布会、1935年）、25コマ",
+      "dateNote": "1935年刊行資料からの採録図版。肖像の撮影・制作時期と原像の制作形態は未確認。刊行年は撮影・制作年を示すものではなく、本人を撮影した写真や選択した時点の姿とは断定しません。",
+      "identityNote": "国立国会図書館が大村益次郎の肖像として掲載する1枚目の画像。",
+      "rightsNote": "同館の現行利用案内で、掲載肖像の著作権保護期間満了、商用を含む転載申請不要、出典明示を確認。当サイトで縦216pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
+      "checkedAt": "2026-10-01",
+      "sha256": "96f399e2ce4eaa53e1f457df14f7a1884432cfbc211ad167582492503507006b",
+      "width": 166,
+      "height": 216,
+      "bytes": 5655,
+      "sourceUrl": "https://www.ndl.go.jp/portrait/datas/38",
       "rightsUrl": "https://www.ndl.go.jp/portrait/about"
     },
     {

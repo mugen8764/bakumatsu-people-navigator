@@ -3,7 +3,7 @@ const { expect, test } = require('../support/test.cjs');
 const people = require('../../data/people.json').people;
 const incidents = require('../../data/events.json').incidents;
 
-const addedIds = ['ito', 'inoue', 'yamagata', 'kuroda', 'itakagi', 'okuma-shigenobu', 'kawai-tsuginosuke', 'hisamitsu', 'abe', 'komei'];
+const addedIds = ['ito', 'inoue', 'yamagata', 'kuroda', 'itakagi', 'okuma-shigenobu', 'kawai-tsuginosuke', 'hisamitsu', 'abe', 'komei', 'omura', 'okubo-ichio'];
 const addedPeople = addedIds.map(id => people.find(person => person.id === id));
 
 for (const colorScheme of ['light', 'dark']) {
