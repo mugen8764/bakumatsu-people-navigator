@@ -10,6 +10,8 @@ test('the first expedition separates settlement from the later war and reuses ex
   assert.equal(first.sceneId, data.incidents['kinmon-conflict'].sceneId);
   assert.equal(first.sceneId, '1864-kinmon');
   assert.equal(second.sceneId, '1866-expedition');
+  assert.match(second.summary, /四つの方面（芸州口・大島口・石州口・小倉口）/);
+  assert.ok(second.evidence.sourceIds.includes('yamaguchi_choshu_reform'));
   assert.match(first.summary, /戦闘に至らず撤兵/);
   assert.match(first.turningPoint, /長州藩政の転換.*1866年.*第二次/);
   const cast = Object.fromEntries(first.participants.map(p => [p.personId, p]));

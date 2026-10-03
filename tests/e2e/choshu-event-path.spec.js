@@ -18,6 +18,7 @@ for (const width of [320, 390, 1280]) {
         const errors = [];
         page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
         await page.goto('/#event=second-choshu-war');
+        await expect(page.locator('.incident-lead')).toContainText('四つの方面（芸州口・大島口・石州口・小倉口）');
         const route = page.url();
         const nav = page.getByRole('navigation', { name: '長州征討の前後をたどる' });
         await expect(nav.locator('li')).toHaveCount(4);
