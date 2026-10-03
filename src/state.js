@@ -7,8 +7,6 @@
 
   const views = new Set(['people', 'factions', 'relations', 'map', 'events', 'sources']);
 
-  // Route values arrive from the URL hash and local storage, so inherited
-  // property names such as 'constructor' must not pass as registered records.
   function hasEntry(collection, key) {
     return typeof key === 'string' && Object.hasOwn(collection, key);
   }
@@ -18,8 +16,6 @@
       scene: Number.isInteger(initial.scene) ? initial.scene : 0,
       view: views.has(initial.view) ? initial.view : 'people',
       selectedPerson: initial.selectedPerson || 'abe',
-      // The person the reader chose. Outside that person's period another
-      // active person is displayed, and the choice returns when the period does.
       preferredPerson: initial.preferredPerson || initial.selectedPerson || 'abe',
       selectedFaction: initial.selectedFaction || '幕府',
       personFactionFilter: 'すべて',
@@ -52,8 +48,6 @@
     if (!preferred) state.preferredPerson = state.selectedPerson;
     const factions = domain.activeFactionNames(state.scene);
     if (!factions.includes(state.selectedFaction)) state.selectedFaction = factions[0] || '幕府';
-    // Navigation must leave a visible return destination. Explicit filter clicks
-    // render the list directly, so readers can still browse a different faction.
     if (state.personFactionFilter !== 'すべて'
       && domain.factionAt(person, state.scene) !== state.personFactionFilter) {
       state.personFactionFilter = 'すべて';

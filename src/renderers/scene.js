@@ -50,8 +50,6 @@
       const factionStates = data.factionStates[scene.id] || {};
       const activeFactions = event.factions.filter(name => factionStates[name]);
       const factions = activeFactions.slice(0, 3);
-      // The chips show at most three representatives, so the label under each
-      // heading states the whole cast rather than how many chips were omitted.
       $('#sceneQuickPeopleTotal').textContent = activePeople.length > 1 ? `全${activePeople.length}人` : '';
       $('#sceneQuickFactionsTotal').textContent = activeFactions.length > 1 ? `全${activeFactions.length}勢力` : '';
       $('#sceneQuickPeople').innerHTML = people.map(({ person, status }) => `<button type="button" class="scene-quick-link" data-scene-quick-person="${esc(person.id)}"><i style="background:${esc(shared.factionColor(status.faction))}"></i><span>${esc(status.display)}</span></button>`).join('');
@@ -180,8 +178,6 @@
       renderSceneChanges(event);
       renderScenePeople(event);
       renderSceneFactions(event);
-      // The detail panels are not live regions, so the scene change is the one
-      // redraw worth announcing, and only when it actually differs.
       const sceneStatus = $('#sceneStatus');
       const sceneSummary = `${scene.year}年（${scene.era}）「${scene.title}」`;
       if (sceneStatus.textContent !== sceneSummary) sceneStatus.textContent = sceneSummary;

@@ -17,7 +17,6 @@
     try {
       storage?.setItem(key, value);
     } catch {
-      // Persistence is optional; the current in-memory state remains usable.
     }
   }
 
@@ -33,13 +32,11 @@
     const { location, storage } = environment;
     const hash = hashParams(location);
     const storedScene = safeGet(storage, 'bm.scene');
-    // URLSearchParams.size needs Safari 17, so count the keys instead.
     const hasHash = [...hash.keys()].length > 0;
     const eventId = hasHash ? (hash.get('event') || '') : (safeGet(storage, 'bm.event') || '');
     const incident = Object.hasOwn(data.incidents || {}, eventId) ? data.incidents[eventId] : null;
     const personFromLink = hash.has('person') || Boolean(hasHash && incident);
     const selectedPerson = hash.get('person') || (hasHash && incident ? incident.participants[0].personId : safeGet(storage, 'bm.person')) || 'abe';
-    // The remembered choice comes from wherever the displayed person came from.
     const storedChoice = personFromLink ? null : safeGet(storage, 'bm.preferredPerson');
     return {
       scene: sceneIndex(domain.sceneById, hash.get('scene') || incident?.sceneId || storedScene) ?? 0,
@@ -77,8 +74,6 @@
     const { history, location, storage } = environment;
     const query = new URLSearchParams({ scene: scene.id, view: state.view });
     if (state.selectedPerson) query.set('person', state.selectedPerson);
-    // Keep the visible person in the URL and preserve an out-of-period choice
-    // separately, including when a shared link is opened without local storage.
     const preferredPerson = state.preferredPerson || state.selectedPerson;
     if (preferredPerson && preferredPerson !== state.selectedPerson) query.set('preferred', preferredPerson);
     if (state.selectedFaction) query.set('faction', state.selectedFaction);
@@ -90,7 +85,6 @@
       if (options.historyMode === 'push' && currentUrl !== url) history?.pushState(null, '', url);
       else history?.replaceState(null, '', url);
     } catch {
-      // URL sharing is optional in restricted contexts such as some file:// browsers.
     }
     safeSet(storage, 'bm.scene', scene.id);
     safeSet(storage, 'bm.view', state.view);
