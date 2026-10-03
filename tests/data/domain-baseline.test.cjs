@@ -79,6 +79,23 @@ test('scene changes expose status and relation transitions without inventing new
   assert.deepEqual(kidoRelations.ended, []);
 });
 
+test('agreement display records end while Satsuma-Choshu cooperation remains active', () => {
+  const satcho = sceneAt('1866-satcho');
+  const expedition = sceneAt('1866-expedition');
+  const agreement = data.relations.find(relation => relation.a === 'saigo' && relation.b === 'kido' && relation.label === '薩長同盟の締結');
+  assert.ok(agreement);
+  assert.equal(agreement.start, satcho);
+  assert.equal(agreement.end, satcho);
+  assert.ok(domain.sceneChangesAt(expedition).relationsEnded.includes(agreement));
+  assert.ok(!domain.activeRelations(expedition).includes(agreement));
+  const cooperation = data.factionRelations.find(relation => relation.a === '薩摩藩' && relation.b === '長州藩' && relation.label === '接近・提携');
+  assert.ok(cooperation);
+  assert.equal(cooperation.start, sceneAt('1865-choshu'));
+  assert.equal(cooperation.end, sceneAt('1868-toba'));
+  assert.ok(domain.activeFactionRelations(expedition).includes(cooperation));
+  assert.ok(!domain.sceneChangesAt(expedition).factionRelationsEnded.includes(cooperation));
+});
+
 test('a person is not displayed outside activeRange', () => {
   const perry = data.people.find(person => person.id === 'perry');
   const kondo = data.people.find(person => person.id === 'kondo');

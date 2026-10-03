@@ -103,6 +103,8 @@
       const scene = shared.scene();
       const changes = domain.sceneChangesAt(state.scene);
       if (changes.isOrigin) {
+        $('#sceneRelationsNote').hidden = true;
+        $('#sceneChangeGroups').removeAttribute('aria-describedby');
         $('#sceneChangesHeading').textContent = 'ここからたどる';
         $('#sceneChangesPeriod').textContent = `${scene.year} → ${data.scenes.at(-1).year}`;
         $('#sceneChangeGroups').setAttribute('aria-label', '時系列の起点と次の場面');
@@ -114,7 +116,9 @@
       const previousScene = data.scenes[changes.previousIndex];
       $('#sceneChangesHeading').textContent = '前の時点から';
       $('#sceneChangesPeriod').textContent = `${previousScene.year}「${previousScene.title}」 → ${scene.year}`;
-      $('#sceneChangeGroups').setAttribute('aria-label', '前の時点からの人物と関係の変化');
+      $('#sceneRelationsNote').hidden = false;
+      $('#sceneChangeGroups').setAttribute('aria-label', '前の時点からの人物の立場と関係の表示差分');
+      $('#sceneChangeGroups').setAttribute('aria-describedby', 'sceneRelationsNote');
       const eventPeople = new Set(event.people);
       const eventFactions = new Set(event.factions);
       const peopleById = new Map([
@@ -133,8 +137,8 @@
       ].map(item => relationChangeCopy(item, changes.previousIndex));
       $('#sceneChangeGroups').innerHTML = [
         changeGroup('人物の立場', people.length, people, 'updated', '主要人物の表示上の変化なし'),
-        changeGroup('始まった関係', started.length, started, 'started', '新しく始まった主要関係なし'),
-        changeGroup('終わった関係', ended.length, ended, 'ended', 'この間に終わった主要関係なし')
+        changeGroup('この時点から表示する関係', started.length, started, 'started', 'この時点から表示する主要関係なし'),
+        changeGroup('前の時点まで表示した関係', ended.length, ended, 'ended', '前の時点までで表示対象から外れる主要関係なし')
       ].join('');
       const turningPeople = data.people.filter(person => domain.turningPointAt(person, state.scene));
       if (turningPeople.length) {
