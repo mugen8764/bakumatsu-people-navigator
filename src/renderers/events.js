@@ -14,6 +14,23 @@
       context: '前段の事件、別地点の動き、後続の展開などを示します。現場参加を示すものではありません。'
     };
 
+    // A small reading route through existing records, separate from incident sections.
+    const choshuEventPath = ['first-choshu-expedition', 'choshu_reform', 'satcho-agreement', 'second-choshu-war'];
+
+    function relatedEventPath(currentId) {
+      if (!choshuEventPath.includes(currentId)) return '';
+      return `<nav class="related-event-path" aria-label="長州征討の前後をたどる"><span class="eyebrow">前後の事件・時点</span><ol>${choshuEventPath.map(id => {
+        const incident = domain.getIncident(id);
+        const item = incident || data.events[id];
+        const sceneIndex = incident ? domain.sceneById.get(incident.sceneId).index : domain.eventScene.get(id);
+        const year = data.scenes[sceneIndex].year;
+        const label = `${year}年 ${item.title}`;
+        return `<li>${id === currentId
+          ? `<span aria-current="step">${esc(label)}<small>現在地</small></span>`
+          : `<button type="button" data-related-event="${esc(id)}">${esc(label)}</button>`}</li>`;
+      }).join('')}</ol></nav>`;
+    }
+
     function incidentDetail(incident) {
       const people = new Map(incident.participants.map(item => [item.personId, item]));
       const navigation = [{ id: 'eventDetailTitle', label: '概要' }];
@@ -32,6 +49,7 @@
       navigation.push({ id: 'incidentSourcesTitle', label: '出典' });
       return `<button type="button" class="button" data-open-overview>← ${esc(shared.scene().year)}年の概要へ</button>
         <header class="incident-heading"><span class="eyebrow">事件を詳しく</span><h2 id="eventDetailTitle" tabindex="-1">${esc(incident.title)}</h2><p class="incident-date">${esc(incident.date)} ${shared.reviewBadge(incident.evidence)}</p><p class="incident-lead">${esc(incident.summary)}</p></header>
+        ${relatedEventPath(incident.id)}
         <nav class="incident-section-nav" aria-label="事件内の移動">${navigation.map(item => `<button type="button" data-incident-section="${item.id}">${esc(item.label)}</button>`).join('')}</nav>
         <div class="incident-overview"><section><h3>何がぶつかった？</h3><p>${esc(incident.stakes)}</p></section><section><h3>次の転換点</h3><p>${esc(incident.turningPoint)}</p></section></div>
         <section class="incident-roles" aria-labelledby="incidentRolesTitle"><div class="incident-section-heading"><h2 id="incidentRolesTitle">誰が、何をした？</h2>${incident.scope ? `<span>${esc(incident.scope)}</span>` : ''}</div><p class="muted">現場での関与・意思決定や指揮・背景や前後関係を分けています。名前を選ぶと人物詳細へ進めます。</p>${groups}</section>
@@ -59,6 +77,7 @@
         return `<button type="button" class="tag" data-event-person="${esc(id)}">${esc(status ? status.display : person.name)}</button>`;
       }).join('');
       $('#eventDetail').innerHTML = `<div class="badges"><span class="badge">${esc(event.category)}</span><span class="badge">${esc(event.date)}</span></div><div class="section"><div class="detail-title">${esc(event.title)}</div><p>${esc(event.description)}</p></div>
+      ${relatedEventPath(shared.scene().event)}
       <div class="event-block"><h3>背景・原因</h3><ul>${event.causes.map(cause => `<li>${esc(cause)}</li>`).join('')}</ul></div>
       <div class="event-block"><h3>主要な争点</h3><div class="tags">${event.issues.map(issue => `<span class="tag">${esc(issue)}</span>`).join('')}</div></div>
       <div class="event-block"><h3>関係人物</h3><div class="tags">${participantButtons}</div></div>
@@ -73,6 +92,7 @@
         title.tabIndex = -1;
       }
       shared.bindPortraits($('#eventDetail'));
+      $$('[data-related-event]').forEach(button => button.addEventListener('click', () => actions.openEvent(button.dataset.relatedEvent)));
       $$('[data-incident-section]').forEach(button => button.addEventListener('click', () => {
         const target = document.getElementById(button.dataset.incidentSection);
         if (!target) return;
