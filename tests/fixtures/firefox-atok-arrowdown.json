@@ -1,0 +1,13 @@
+{
+  "source": "Issue #35: user-observed Windows Firefox + ATOK sequence",
+  "limitations": "Partial log; compositionstart, repeat, timing and the later keydown's code were not supplied. Enter and subsequent navigation are separate synthetic probes.",
+  "events": [
+    { "type": "keydown", "key": "Process", "code": "ArrowDown", "keyCode": 229, "isComposing": true, "value": "かつら" },
+    { "type": "beforeinput", "isComposing": true, "inputType": "insertCompositionText" },
+    { "type": "input", "isComposing": true },
+    { "type": "compositionend", "data": "かつら" },
+    { "type": "input", "isComposing": false, "inputType": "insertCompositionText" },
+    { "type": "keyup", "key": "ArrowDown", "code": "ArrowDown", "keyCode": 40, "isComposing": false },
+    { "type": "keydown", "key": "ArrowDown", "keyCode": 40, "isComposing": false }
+  ]
+}
