@@ -9,6 +9,32 @@
     let sceneControlsInitialized = false;
     let sourcesRendered = false;
 
+    function initializeReadingGuide() {
+      const steps = [
+        ['scene', '1853-blackships'], ['scene', '1858-ansei'],
+        ['incident', 'kazunomiya-marriage'], ['incident', 'august18-coup'],
+        ['scene', '1864-kinmon'], ['incident', 'satcho-agreement'],
+        ['incident', 'second-choshu-war'], ['scene', '1867-taisei'],
+        ['scene', '1868-toba'], ['incident', 'edo-castle-surrender'],
+        ['scene', '1868-tohoku'], ['incident', 'hakodate-1869']
+      ];
+      $('#readingGuideSteps').innerHTML = steps.map(([kind, id]) => {
+        const item = kind === 'scene' ? domain.sceneById.get(id) : domain.getIncident(id);
+        const scene = kind === 'scene' ? item : domain.sceneById.get(item.sceneId);
+        return `<li><span class="muted">${esc(scene.year)}年 · ${kind === 'scene' ? '時点' : '事件'}</span><h2>${esc(item.title)}</h2><p>${esc(item.summary)} ${shared.reviewBadge(item.evidence)}</p><button type="button" class="button" data-guide-kind="${kind}" data-guide-id="${esc(id)}">${kind === 'scene' ? 'この時点を見る' : '事件を読む'}<span class="visually-hidden">：${esc(item.title)}</span> →</button></li>`;
+      }).join('');
+      $$('[data-guide-id]').forEach(button => button.addEventListener('click', () => {
+        $('#readingGuide').open = false;
+        if (button.dataset.guideKind === 'incident') actions.openEvent(button.dataset.guideId);
+        else {
+          actions.setScene(domain.sceneById.get(button.dataset.guideId).index, { view: 'people' });
+          const heading = $('#sceneTitle');
+          heading.scrollIntoView({ block: 'start', behavior: 'auto' });
+          heading.focus({ preventScroll: true });
+        }
+      }));
+    }
+
     function eventPeopleAtCurrentScene(event, limit = Infinity) {
       return event.people.map(id => {
         const person = domain.getPerson(id);
@@ -155,6 +181,7 @@
     function renderScene() {
       const scene = shared.scene();
       if (!sceneControlsInitialized) {
+        initializeReadingGuide();
         $('#sceneSelect').innerHTML = data.scenes.map((item, index) => `<option value="${index}">${esc(item.year)} ${esc(item.title)}</option>`).join('');
         $('#sceneRange').max = data.scenes.length - 1;
         sceneControlsInitialized = true;

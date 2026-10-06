@@ -24,14 +24,17 @@
   <meta name="twitter:image:alt" content="幕末人物・勢力ナビ。人物・勢力・事件・場所を時点ごとの関係からたどる。">
   <meta name="theme-color" content="#8b4333">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="src/styles.css?v=1746bd5138f91fdf">
+  <link rel="stylesheet" href="src/styles.css?v=194dfa10118e2575">
 </head>
 <body>
 <main class="page">
   <div id="appStatus" class="panel app-status" role="alert" hidden></div>
   <header class="hero">
     <div class="brand"><a id="brandMarkHome" class="mark brand-home" href="./" aria-label="初期状態に戻る">幕</a><div><h1><a id="brandTitleHome" class="brand-home brand-title-home" href="./">幕末人物・勢力ナビ</a></h1><p class="lead">人物の「その時」を、事件・勢力・関係の変化からすばやくつかむ歴史ナビゲーション。</p></div></div>
-    <span class="version">1853–1869 · 人物と勢力でたどる幕末</span>
+    <details id="readingGuide" class="panel reading-guide">
+    <summary>幕末の流れを読む <small>1853–1869 · 12ステップ</small></summary>
+    <div class="reading-guide-body"><p>時点はその年の概況、事件は個別の出来事です。順に開いて、人物・勢力・関係の変化をたどれます。</p><ol id="readingGuideSteps"></ol></div>
+    </details>
   </header>
 
   <section class="panel top" aria-label="年代と検索">
@@ -42,7 +45,7 @@
     </div>
     <div class="scene-dashboard">
       <div class="year-box"><strong id="sceneYear"></strong><span id="sceneEra"></span></div>
-      <div class="scene-copy"><span class="eyebrow">いま何が起きている？</span><h2 id="sceneTitle"></h2><p id="sceneSummary"></p></div>
+      <div class="scene-copy"><span class="eyebrow">いま何が起きている？</span><h2 id="sceneTitle" tabindex="-1"></h2><p id="sceneSummary"></p></div>
       <div class="scene-meta">
         <div id="sceneCounts" class="counts"></div>
         <button id="sceneCopyLink" class="scene-copy-link" type="button" data-copy-link aria-describedby="sceneCopyStatus">表示中の状態を共有</button>
@@ -153,19 +156,19 @@
   <footer class="panel"><div class="footer-row"><div><strong>幕末人物・勢力ナビ 1853–1869</strong><br>史実の背景知識を、人物・勢力・事件・場所のつながりとして整理した静的サイトです。</div><div class="footer-links"><button id="footerSources" class="link-button" type="button">出典・編集方針</button><a href="https://github.com/mugen8764/bakumatsu-people-navigator">GitHub</a><button id="copyLink" class="link-button" type="button" data-copy-link aria-describedby="copyStatus">現在の表示URLをコピー</button></div></div><div id="copyStatus" class="status-line" data-copy-status aria-live="polite"></div></footer>
 </main>
 <noscript><p style="padding:20px">このサイトの表示にはJavaScriptが必要です。</p></noscript>
-<script src="map-data.js?v=1746bd5138f91fdf"></script>
-<script src="data.js?v=1746bd5138f91fdf"></script>
-<script src="src/domain.js?v=1746bd5138f91fdf"></script>
-<script src="src/state.js?v=1746bd5138f91fdf"></script>
-<script src="src/router.js?v=1746bd5138f91fdf"></script>
-<script src="src/search.js?v=1746bd5138f91fdf"></script>
-<script src="src/map.js?v=1746bd5138f91fdf"></script>
-<script src="src/renderers/shared.js?v=1746bd5138f91fdf"></script>
-<script src="src/renderers/scene.js?v=1746bd5138f91fdf"></script>
-<script src="src/renderers/people.js?v=1746bd5138f91fdf"></script>
-<script src="src/renderers/factions.js?v=1746bd5138f91fdf"></script>
-<script src="src/renderers/relations.js?v=1746bd5138f91fdf"></script>
-<script src="src/renderers/events.js?v=1746bd5138f91fdf"></script>
-<script src="src/app.js?v=1746bd5138f91fdf"></script>
+<script src="map-data.js?v=194dfa10118e2575"></script>
+<script src="data.js?v=194dfa10118e2575"></script>
+<script src="src/domain.js?v=194dfa10118e2575"></script>
+<script src="src/state.js?v=194dfa10118e2575"></script>
+<script src="src/router.js?v=194dfa10118e2575"></script>
+<script src="src/search.js?v=194dfa10118e2575"></script>
+<script src="src/map.js?v=194dfa10118e2575"></script>
+<script src="src/renderers/shared.js?v=194dfa10118e2575"></script>
+<script src="src/renderers/scene.js?v=194dfa10118e2575"></script>
+<script src="src/renderers/people.js?v=194dfa10118e2575"></script>
+<script src="src/renderers/factions.js?v=194dfa10118e2575"></script>
+<script src="src/renderers/relations.js?v=194dfa10118e2575"></script>
+<script src="src/renderers/events.js?v=194dfa10118e2575"></script>
+<script src="src/app.js?v=194dfa10118e2575"></script>
 </body>
 </html>

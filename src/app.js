@@ -121,6 +121,10 @@
   function setScene(sceneIndex, options = {}) {
     searchController.clearStatus();
     window.BM_STATE.setScene(state, data, sceneIndex);
+    if (options.view && window.BM_STATE.views.has(options.view)) {
+      state.view = options.view;
+      state.selectedIncident = '';
+    }
     window.BM_STATE.ensureSelections(state, data, domain);
     renderAll({ historyMode: options.historyMode || 'push' });
     if (options.scroll) $('.card-button.selected')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
