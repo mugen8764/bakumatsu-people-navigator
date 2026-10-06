@@ -189,7 +189,7 @@ input[type=range]{width:100%;accent-color:var(--accent)}
 .badges,.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px}
 .badge,.tag{border:1px solid var(--border);background:var(--card);border-radius:999px;padding:3px 7px;font-size:.71rem}
 .snapshot{background:var(--accent-soft);border-left:4px solid var(--accent);border-radius:0 10px 10px 0;padding:10px 11px;margin-top:13px}
-.snapshot strong{display:block;font-size:.77rem}
+.snapshot h3{font-size:.77rem;margin:0}
 #personDetail{container-type:inline-size}
 .turning-point{scroll-margin-top:80px}
 .turning-title{font-weight:850;font-size:1rem;margin:6px 0 12px;color:var(--accent)}

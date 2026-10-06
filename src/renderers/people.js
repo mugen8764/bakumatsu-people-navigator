@@ -73,6 +73,11 @@
         return;
       }
       const relations = domain.relationsFor(person.id, state.scene);
+      const navigation = [{ id: 'personCurrentTitle', label: '現在' }];
+      if (person.turningPoints?.length) navigation.push({ id: 'personTurningPointTitle', label: '転換点' });
+      if (domain.incidentHistoryFor(person.id).length) navigation.push({ id: 'personIncidentHistoryTitle', label: '事件' });
+      if (relations.length) navigation.push({ id: 'personRelationsTitle', label: '関係' });
+      navigation.push({ id: 'personHistoryTitle', label: '変化' }, { id: 'personSourcesTitle', label: '出典' });
       const offices = domain.officeTermsFor(status.role);
       const incident = domain.incidentAt(state);
       const participant = incident?.participants.find(item => item.personId === person.id);
@@ -91,8 +96,9 @@
       }).join('');
       box.innerHTML = `<button type="button" class="button detail-back" id="personBackToList">← 人物一覧へ</button><div class="detail-head">${shared.avatar(person, status.faction, status.display)}<div><div class="detail-title">${esc(status.display)}</div>${laterName ? `<div class="aliases">後の名前：${esc(laterName)}</div>` : ''}<div class="badges"><span class="badge">${data.factions[status.faction]?.kind === 'field' ? '活動分野：' : ''}${esc(status.faction)}</span>${offices.length ? `<button type="button" class="badge office-trigger" aria-controls="personOfficeHelp" aria-expanded="false">${esc(status.role)} <span aria-hidden="true">?</span></button>` : `<span class="badge">${esc(status.role)}</span>`}<span class="badge">${esc(person.born)}</span></div></div></div>
       ${person.portrait ? '<p class="portrait-note">史料肖像｜選択時点の姿とは限りません。</p>' : ''}
+      <nav class="incident-section-nav person-section-nav" aria-label="人物内の移動">${navigation.map(item => `<button type="button" data-person-section="${item.id}">${item.label}</button>`).join('')}</nav>
       ${incidentContext}
-      <div class="snapshot"><strong>${shared.dateLabel(shared.scene())}の位置づけ ${shared.reviewBadge(status.evidence)}</strong>${esc(status.importance)}</div>
+      <div class="snapshot"><h3 id="personCurrentTitle" tabindex="-1">${shared.dateLabel(shared.scene())}の位置づけ ${shared.reviewBadge(status.evidence)}</h3>${esc(status.importance)}</div>
       <div class="section person-stance"><h3>この時点の行動・立場</h3><p>${esc(status.stance)}</p></div>
       ${turningPoint(person)}
       ${incidentHistory(person)}
@@ -101,20 +107,32 @@
       ${shared.backgroundTerms(person.termIds)}
       <div class="section"><h3>一言で</h3><p>${esc(person.oneLine)}</p></div>
       <div class="section"><h3>名前・通称</h3><div class="tags">${[person.name, ...person.aliases].map(alias => `<span class="tag">${esc(alias)}</span>`).join('')}</div></div>
-      <div class="section"><h3>この時点の主要関係</h3><div class="relations">${relations.length ? relations.map(relation => {
+      <div class="section"><h3 id="personRelationsTitle" tabindex="-1">この時点の主要関係</h3><div class="relations">${relations.length ? relations.map(relation => {
         const other = domain.getPerson(relation.a === person.id ? relation.b : relation.a);
         return `<div class="rel"><button type="button" data-other-person="${esc(other.id)}">${esc(domain.statusAt(other, state.scene).display)}</button> — ${esc(relation.label)} ${shared.reviewBadge(relation.evidence)}<br><span class="muted">${esc(relation.text)}</span></div>`;
       }).join('') : '<span class="muted">登録済みの主要関係はありません。</span>'}</div></div>
       ${eventPeerGroups.length ? `<div class="section event-peers"><h3>同じ事件の関係者</h3><p class="muted">同じ事件に関わった人物のうち、上の主要関係には含まれない人物です。直接の人物関係を示すものではありません。</p>${eventPeerGroups.map(group => `<section class="event-peer-group"><h4>${esc(group.title)}</h4><div class="tags">${group.people.map(other => `<button type="button" class="tag" data-event-peer="${esc(other.id)}">${esc(domain.statusAt(other, state.scene).display)}</button>`).join('')}</div></section>`).join('')}</div>` : ''}
       ${person.events.length ? `<div class="section"><h3>関連する年代の概要</h3><div class="tags">${person.events.map(id => data.events[id] ? `<button type="button" class="tag" data-open-event="${esc(id)}">${esc(data.events[id].title)}</button>` : '').join('')}</div></div>` : ''}
-      <div class="section"><h3>人物の変化</h3><div class="history-list">${history.map(item => `<div class="history-item ${item.scene.index === state.scene ? 'current' : ''}"><button type="button" data-history-scene="${item.scene.index}"><b>${esc(item.scene.year)}年 ${esc(item.value.display)} ${shared.reviewBadge(item.value.evidence)}</b>${esc(item.value.role)}</button></div>`).join('')}</div></div>
+      <div class="section"><h3 id="personHistoryTitle" tabindex="-1">人物の変化</h3><div class="history-list">${history.map(item => `<div class="history-item ${item.scene.index === state.scene ? 'current' : ''}"><button type="button" data-history-scene="${item.scene.index}"><b>${esc(item.scene.year)}年 ${esc(item.value.display)} ${shared.reviewBadge(item.value.evidence)}</b>${esc(item.value.role)}</button></div>`).join('')}</div></div>
       <div class="actions"><button type="button" class="button" id="personToGraph">相関図</button><button type="button" class="button" id="personToMap">地図</button></div>
-      <details class="source-disclosure section"><summary>参考資料を見る</summary>
+      <details class="source-disclosure section"><summary id="personSourcesTitle">参考資料を見る</summary>
         <section class="section" data-person-sources="basic"><h3>人物の基本情報 ${shared.reviewBadge(person.evidence)}</h3><div class="source-list">${shared.sourceLinks(person.sources)}</div></section>
         <section class="section" data-person-sources="status"><h3>この時点の行動・立場 ${shared.reviewBadge(status.evidence)}</h3><p class="muted">${shared.dateLabel(shared.scene())}の位置づけと行動・立場の根拠です。</p><div class="source-list">${evidenceLinks(status.evidence)}</div></section>
         ${relations.length ? `<section class="section" data-person-sources="relations"><h3>この関係の根拠</h3>${relationSources}</section>` : ''}
       </details>`;
       shared.bindPortraits(box);
+      const turningTitle = $('#personTurningPoint h3', box);
+      if (turningTitle) { turningTitle.id = 'personTurningPointTitle'; turningTitle.tabIndex = -1; }
+      const incidentTitle = $('#personIncidentHistoryTitle', box);
+      if (incidentTitle) incidentTitle.tabIndex = -1;
+      $$('[data-person-section]', box).forEach(button => button.addEventListener('click', () => {
+        const target = document.getElementById(button.dataset.personSection);
+        const disclosure = target.closest('details');
+        if (disclosure) disclosure.open = true;
+        target.style.scrollMarginTop = `${$('.tabs-shell').getBoundingClientRect().height + 16}px`;
+        target.scrollIntoView({ block: 'start', behavior: 'auto' });
+        target.focus({ preventScroll: true });
+      }));
       const officeTrigger = $('.office-trigger', box);
       const officePanel = $('#personOfficeHelp', box);
       if (officeTrigger) {
