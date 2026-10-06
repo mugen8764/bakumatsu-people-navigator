@@ -54,6 +54,39 @@ test('unconfirmed display names do not inherit the basic name reading', () => {
   assert.deepEqual(readingKanasFor(oldPerson, '桂小五郎'), []);
 });
 
+test('third-round full alias readings retain direct sources, search and extraction compatibility', () => {
+  const docs = documents();
+  const domain = createDomain(data);
+  for (const [id, name, kana, sourceId] of [
+    ['takechi', '武市半平太', 'たけち はんぺいた', 'kochi_pref_takechi_reading'],
+    ['shungaku', '松平春嶽', 'まつだいら しゅんがく', 'ndl_authority_shungaku_reading'],
+    ['okubo-ichio', '大久保忠寛', 'おおくぼ ただひろ', 'kotobank_okubo_tadahiro_reading'],
+    ['itakagi', '乾退助', 'いぬい たいすけ', 'kotobank_inui_taisuke_reading'],
+    ['katsu', '勝麟太郎', 'かつ りんたろう', 'ndl_authority_katsu_reading'],
+    ['iemochi', '徳川慶福', 'とくがわ よしとみ', 'ndl_kodomo_yoshitomi_reading'],
+    ['omura', '村田蔵六', 'むらた ぞうろく', 'bunka_murata_zoroku_reading']
+  ]) {
+    const canonical = docs.people.people.find(item => item.id === id);
+    const reading = canonical.nameReadings.find(item => item.name === name);
+    assert.deepEqual(reading, { name, kana, evidence: { sourceIds: [sourceId], reviewStatus: 'verified' } });
+    const source = docs.sources.sources.find(item => item.id === sourceId);
+    assert.ok(source.locator);
+    assert.equal(source.contentCheckedAt, '2026-10-06');
+    assert.deepEqual(projectLegacyData(assembleLegacyData(docs)).people.people.find(item => item.id === id).nameReadings, canonical.nameReadings);
+    const person = domain.getPerson(id);
+    assert.deepEqual(readingKanasFor(person, name), [kana]);
+    assert.ok(data.scenes.some((scene, index) => domain.statusAt(person, index)?.display === name));
+    for (const query of [name, kana.replace(/ /g, '')]) assert.ok(searchAll(data, query).some(item => item.type === '人物' && item.id === id));
+    for (const [incidentId, incident] of Object.entries(data.incidents)) if (incident.participants.some(item => item.personId === id && item.displayName === name)) {
+      assert.ok(searchAll(data, kana.replace(/ /g, '')).some(item => item.id === incidentId));
+    }
+  }
+  const okubo = domain.getPerson('okubo');
+  assert.deepEqual(readingKanasFor(okubo, '大久保正助'), []);
+  assert.ok(searchAll(data, '大久保正助').some(item => item.id === 'okubo'));
+  assert.equal(searchAll(data, 'おおくぼしょうすけ').length, 0);
+});
+
 test('multiple sourced readings and uncertain candidates survive both data formats', () => {
   const docs = documents();
   const person = docs.people.people.find(item => item.id === 'kido');

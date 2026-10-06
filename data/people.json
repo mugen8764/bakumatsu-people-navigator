@@ -228,7 +228,19 @@
         "identityNote": "画像提供元が徳川家茂像として掲載。作者・年代・所蔵は画像提供元の資料情報によります。写真ではなく肖像画です。",
         "rightsNote": "画像提供元のPD-Art表示による、著作権保護期間満了の平面作品の複製画像。",
         "checkedAt": "2026-09-27"
-      }
+      },
+      "nameReadings": [
+        {
+          "name": "徳川慶福",
+          "kana": "とくがわ よしとみ",
+          "evidence": {
+            "sourceIds": [
+              "ndl_kodomo_yoshitomi_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "yoshinobu",
@@ -372,6 +384,18 @@
             "reviewStatus": "verified"
           }
         }
+      ],
+      "nameReadings": [
+        {
+          "name": "勝麟太郎",
+          "kana": "かつ りんたろう",
+          "evidence": {
+            "sourceIds": [
+              "ndl_authority_katsu_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
       ]
     },
     {
@@ -415,7 +439,19 @@
         "identityNote": "国立国会図書館が大久保一翁の肖像として掲載する1枚目の画像。",
         "rightsNote": "同館の現行利用案内で、掲載肖像の著作権保護期間満了、商用を含む転載申請不要、出典明示を確認。当サイトで縦216pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
         "checkedAt": "2026-10-01"
-      }
+      },
+      "nameReadings": [
+        {
+          "name": "大久保忠寛",
+          "kana": "おおくぼ ただひろ",
+          "evidence": {
+            "sourceIds": [
+              "kotobank_okubo_tadahiro_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "yamaoka",
@@ -611,7 +647,19 @@
         "identityNote": "国立国会図書館が松平慶永の肖像として掲載。",
         "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と出典明示による転載利用を案内。提供された縮小画像を使用。",
         "checkedAt": "2026-09-25"
-      }
+      },
+      "nameReadings": [
+        {
+          "name": "松平春嶽",
+          "kana": "まつだいら しゅんがく",
+          "evidence": {
+            "sourceIds": [
+              "ndl_authority_shungaku_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "sanai",
@@ -1469,7 +1517,19 @@
         "identityNote": "国立国会図書館が大村益次郎の肖像として掲載する1枚目の画像。",
         "rightsNote": "同館の現行利用案内で、掲載肖像の著作権保護期間満了、商用を含む転載申請不要、出典明示を確認。当サイトで縦216pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
         "checkedAt": "2026-10-01"
-      }
+      },
+      "nameReadings": [
+        {
+          "name": "村田蔵六",
+          "kana": "むらた ぞうろく",
+          "evidence": {
+            "sourceIds": [
+              "bunka_murata_zoroku_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "yamagata",
@@ -1883,7 +1943,19 @@
         "identityNote": "京都大学の書誌は武市瑞山の自画讃肖像、尊/軸89の石版と記載。写真ではありません。原画・石版の制作年月は未確認。公式IIIFから肖像部分を取得し、幅160pxへ縮小・JPEG圧縮。肖像部分の構図・色調は変更していません。掛軸全体・自讃全体・台紙は含みません。",
         "rightsNote": "京都大学附属図書館の二次利用自由画像。所蔵・資料名・公開ページへのリンク、部分利用と縮小を明示。",
         "checkedAt": "2026-09-27"
-      }
+      },
+      "nameReadings": [
+        {
+          "name": "武市半平太",
+          "kana": "たけち はんぺいた",
+          "evidence": {
+            "sourceIds": [
+              "kochi_pref_takechi_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "ryoma",
@@ -2077,7 +2149,19 @@
         "identityNote": "国立国会図書館が板垣退助の肖像として掲載する1枚目の画像。",
         "rightsNote": "同館の現行利用案内で、掲載肖像の著作権保護期間満了、転載申請不要、出典明示を確認。当サイトで縦216pxへ縮小・JPEG圧縮し、構図・色調は変更していません。",
         "checkedAt": "2026-10-01"
-      }
+      },
+      "nameReadings": [
+        {
+          "name": "乾退助",
+          "kana": "いぬい たいすけ",
+          "evidence": {
+            "sourceIds": [
+              "kotobank_inui_taisuke_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "kondo",

@@ -14,7 +14,10 @@ const root = path.resolve(__dirname, '..');
 // Transfer size is left to the host's HTTP compression (gzip/brotli), which
 // shrinks plain JSON further than any pre-encoding the browser must undo.
 function browserWrapper(data) {
-  return `window.BM_DATA=JSON.parse(${JSON.stringify(JSON.stringify(data))});\n`;
+  // JSON uses double quotes; single-quoting its JS literal avoids escaping every
+  // field name. Escape backslashes first, then literal single quotes.
+  const json = JSON.stringify(data).replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+  return `window.BM_DATA=JSON.parse('${json}');\n`;
 }
 
 function expectedOutputs(documents = loadV2Documents(root), imageRoot = root) {

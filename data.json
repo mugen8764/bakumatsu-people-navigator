@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.117",
+    "version": "1.0.118",
     "updated": "2026-10-06"
   },
   "sources": {
@@ -2884,6 +2884,55 @@
       "note": "肖像の本人同定と採録元を展示本文で確認。図書掲載の肖像図版。原写真・原像の作者、撮影・制作時期、制作形態の詳細は未確認です。 採録元の本文は未閲覧。NDL展示の公開画像の利用条件を、送信限定書籍全体の再利用へ拡張しない。",
       "locator": "肖像1枚目・動的な出典欄：『明治大正実話稿』（村居銕城 著・刊、1938年）、NDLデジタルコレクション pid/1258105・62コマ。リンク先の書誌・送信限定の表示（本文未閲覧）を確認",
       "contentCheckedAt": "2026-10-01"
+    },
+    "kochi_pref_takechi_reading": {
+      "title": "高知県教育委員会「武市半平太旧宅及び墓」",
+      "url": "https://www.kochinet.ed.jp/bunkazai/details/410-1/410-1-01.htm",
+      "note": "姓名全体の読みと本人の対応を確認。使用時期・役職の根拠には転用しない。",
+      "locator": "表題「武市半平太旧宅及び墓」の全体ふりがな、旧宅本文の武市瑞山・通称半平太",
+      "contentCheckedAt": "2026-10-06"
+    },
+    "ndl_authority_shungaku_reading": {
+      "title": "国立国会図書館典拠「松平, 慶永, 1828-1890」",
+      "url": "https://id.ndl.go.jp/auth/ndlna/00270753",
+      "note": "姓名全体の読みと本人の対応を確認。使用時期・役職の根拠には転用しない。",
+      "locator": "別名「松平, 春嶽 (マツダイラ, シュンガク)」",
+      "contentCheckedAt": "2026-10-06"
+    },
+    "kotobank_okubo_tadahiro_reading": {
+      "title": "講談社「デジタル版 日本人名大辞典+Plus・大久保忠寛」（コトバンク）",
+      "url": "https://kotobank.jp/word/%E5%A4%A7%E4%B9%85%E4%BF%9D%E5%BF%A0%E5%AF%9B-17873",
+      "note": "姓名全体の読みと本人の対応を確認。使用時期・役職の根拠には転用しない。",
+      "locator": "同辞典の見出し「大久保忠寛 おおくぼ-ただひろ」と「大久保一翁」参照",
+      "contentCheckedAt": "2026-10-06"
+    },
+    "kotobank_inui_taisuke_reading": {
+      "title": "講談社「デジタル版 日本人名大辞典+Plus・乾退助」（コトバンク）",
+      "url": "https://kotobank.jp/word/%E4%B9%BE%E9%80%80%E5%8A%A9-1055647",
+      "note": "姓名全体の読みと本人の対応を確認。使用時期・役職の根拠には転用しない。",
+      "locator": "同辞典の見出し「乾退助 いぬい-たいすけ」と「板垣退助」参照",
+      "contentCheckedAt": "2026-10-06"
+    },
+    "ndl_authority_katsu_reading": {
+      "title": "国立国会図書館典拠「勝, 安芳, 1823-1899」",
+      "url": "https://id.ndl.go.jp/auth/ndlna/00270314",
+      "note": "姓名全体の読みと本人の対応を確認。使用時期・役職の根拠には転用しない。",
+      "locator": "別名「勝, 麟太郎 (カツ, リンタロウ)」「勝, 海舟」",
+      "contentCheckedAt": "2026-10-06"
+    },
+    "ndl_kodomo_yoshitomi_reading": {
+      "title": "国立国会図書館国際子ども図書館「徳川慶喜」",
+      "url": "https://www.kodomo.go.jp/yareki/person/person_20.html",
+      "note": "姓名全体の読みと本人の対応を確認。使用時期・役職の根拠には転用しない。",
+      "locator": "「将軍後継者」末段の徳川慶福の全体ふりがなと徳川家茂への改名",
+      "contentCheckedAt": "2026-10-06"
+    },
+    "bunka_murata_zoroku_reading": {
+      "title": "文化庁・文化遺産オンライン「村田蔵六書状」（愛媛県歴史文化博物館）",
+      "url": "https://online.bunka.go.jp/heritages/detail/273972/3",
+      "note": "姓名全体の読みと本人の対応を確認。使用時期・役職の根拠には転用しない。",
+      "locator": "表題「村田蔵六書状」の全体ふりがな、概要の作者「村田蔵六（大村益次郎）」",
+      "contentCheckedAt": "2026-10-06"
     }
   },
   "factions": {
@@ -10834,6 +10883,18 @@
         "紀州慶福",
         "14代将軍"
       ],
+      "nameReadings": [
+        {
+          "name": "徳川慶福",
+          "kana": "とくがわ よしとみ",
+          "evidence": {
+            "sourceIds": [
+              "ndl_kodomo_yoshitomi_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
       "born": "1846–1866",
       "defaultFaction": "幕府",
       "activeRange": [
@@ -11207,6 +11268,18 @@
         "安房守",
         "海舟"
       ],
+      "nameReadings": [
+        {
+          "name": "勝麟太郎",
+          "kana": "かつ りんたろう",
+          "evidence": {
+            "sourceIds": [
+              "ndl_authority_katsu_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
       "born": "1823–1899",
       "defaultFaction": "幕府",
       "activeRange": [
@@ -11393,6 +11466,18 @@
       "kana": "おおくぼ いちおう",
       "aliases": [
         "大久保忠寛"
+      ],
+      "nameReadings": [
+        {
+          "name": "大久保忠寛",
+          "kana": "おおくぼ ただひろ",
+          "evidence": {
+            "sourceIds": [
+              "kotobank_okubo_tadahiro_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
       ],
       "born": "1818–1888",
       "defaultFaction": "幕府",
@@ -11884,6 +11969,18 @@
         "松平春嶽",
         "春嶽公",
         "越前福井藩主"
+      ],
+      "nameReadings": [
+        {
+          "name": "松平春嶽",
+          "kana": "まつだいら しゅんがく",
+          "evidence": {
+            "sourceIds": [
+              "ndl_authority_shungaku_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
       ],
       "born": "1828–1890",
       "defaultFaction": "幕府",
@@ -14491,6 +14588,18 @@
         "村田蔵六",
         "益次郎"
       ],
+      "nameReadings": [
+        {
+          "name": "村田蔵六",
+          "kana": "むらた ぞうろく",
+          "evidence": {
+            "sourceIds": [
+              "bunka_murata_zoroku_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
       "born": "1824–1869",
       "defaultFaction": "長州藩",
       "activeRange": [
@@ -15862,6 +15971,18 @@
         "武市半平太",
         "瑞山"
       ],
+      "nameReadings": [
+        {
+          "name": "武市半平太",
+          "kana": "たけち はんぺいた",
+          "evidence": {
+            "sourceIds": [
+              "kochi_pref_takechi_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ],
       "born": "1829–1865",
       "defaultFaction": "土佐藩",
       "activeRange": [
@@ -16444,6 +16565,18 @@
       "aliases": [
         "乾退助",
         "板垣退助"
+      ],
+      "nameReadings": [
+        {
+          "name": "乾退助",
+          "kana": "いぬい たいすけ",
+          "evidence": {
+            "sourceIds": [
+              "kotobank_inui_taisuke_reading"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
       ],
       "born": "1837–1919",
       "defaultFaction": "土佐藩",

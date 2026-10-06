@@ -38,7 +38,7 @@ test('UTF-8 browser scripts round-trip Unicode, line separators and lone surroga
 });
 
 test('browser encoding handles small JSON values without external APIs', () => {
-  for (const data of [null, true, 0, '', [], {}, 'ABABABA', 'ああああ']) {
+  for (const data of [null, true, 0, '', [], {}, 'ABABABA', 'ああああ', "'\"\\\n\r\t", "\\'", "\\\\'"]) {
     const context = { window: {} };
     vm.runInNewContext(browserWrapper(data), context);
     assert.deepEqual(JSON.parse(JSON.stringify(context.window.BM_DATA)), data);
@@ -47,5 +47,5 @@ test('browser encoding handles small JSON values without external APIs', () => {
 
 test('browser data is plain JSON text rather than a custom encoding', () => {
   const data = { title: '幕末', items: [1, 2, 3] };
-  assert.equal(browserWrapper(data), `window.BM_DATA=JSON.parse(${JSON.stringify(JSON.stringify(data))});\n`);
+  assert.equal(browserWrapper(data), `window.BM_DATA=JSON.parse('{"title":"幕末","items":[1,2,3]}');\n`);
 });
