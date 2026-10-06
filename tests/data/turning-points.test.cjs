@@ -20,7 +20,7 @@ test('authored comparisons appear only at their destination and retain status ev
       if (index !== destination) assert.equal(domain.turningPointAt(person, index), null);
     }
   }
-  assert.equal(domain.turningPointAt(domain.getPerson('ryoma'), 8), null);
+  assert.equal(domain.turningPointAt(domain.getPerson('ryoma'), 9), null);
   assert.equal(domain.turningPointAt(undefined, 8), null);
 });
 
@@ -53,6 +53,27 @@ test('turning points reject invalid chronology and unsupported evidence', () => 
   const outside = projectLegacyData(data);
   outside.people.people.find(person => person.id === 'abe').turningPoints = structuredClone(points.slice(0, 1));
   assert.throws(() => validateV2Documents(outside), /outside active range/);
+});
+
+test('first major-person expansion retains adjacent comparisons and separate evidence', () => {
+  const expected = [['ryoma', '1864-kinmon', '1865-choshu', ['ndl_portrait_katsu_detail', 'nagasaki_kameyama_1865']],
+    ['hijikata', '1867-taisei', '1868-toba', ['ndl_portrait_hijikata_detail']],
+    ['iwakura', '1860-sakurada', '1862-bunkyu', ['ndl_portrait_iwakura_detail', 'ndl_iwakura_exile']]];
+  const documents = projectLegacyData(data);
+  const restored = assembleLegacyData(documents);
+  for (const [id, from, to, sourceIds] of expected) {
+    const person = domain.getPerson(id);
+    const point = domain.turningPointAt(person, domain.sceneById.get(to).index);
+    assert.equal(point.fromSceneId, from);
+    assert.equal(point.toScene.index, point.fromScene.index + 1);
+    assert.equal(point.evidence.reviewStatus, 'verified');
+    assert.deepEqual(point.evidence.sourceIds, sourceIds);
+    assert.deepEqual(restored.people.find(p => p.id === id).turningPoints, person.turningPoints);
+    assert.deepEqual(point.beforeStatus, domain.statusAt(person, point.fromScene.index));
+    assert.deepEqual(point.afterStatus, domain.statusAt(person, point.toScene.index));
+    assert.ok(point.context);
+  }
+  assert.equal(domain.getPerson('ii').turningPoints, undefined);
 });
 
 test('office help follows the displayed role without assigning a new office', () => {

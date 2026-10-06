@@ -44,7 +44,6 @@
   try {
     storage = window.localStorage;
   } catch {
-    // The application remains usable without persistence.
   }
   const environment = { history: window.history, location: window.location, storage };
   const initial = window.BM_ROUTER.readInitialRoute(data, domain, environment);
@@ -93,8 +92,6 @@
     requestAnimationFrame(revealActiveTab);
   }
 
-  // Explains why the detail shows someone else while the chosen person is
-  // outside the selected period, and offers the nearest scene that has them.
   function renderSelectionStatus() {
     const status = $('#selectionStatus');
     const preferred = domain.getPerson(state.preferredPerson);
@@ -175,7 +172,6 @@
     renderAll({ historyMode: 'push' });
     const heading = $('#eventDetailTitle');
     if (heading) {
-      // The sticky tabs wrap at narrow widths and when text is enlarged.
       heading.style.scrollMarginTop = `${$('.tabs-shell').getBoundingClientRect().height + 16}px`;
       heading.scrollIntoView({ block: 'start', behavior: 'auto' });
       heading.focus({ preventScroll: true });
@@ -312,7 +308,6 @@
   $('#brandMarkHome').addEventListener('click', resetApp);
   $('#brandTitleHome').addEventListener('click', resetApp);
   function syncRouteFromLocation() {
-    // One history traversal fires both popstate and hashchange; render it once.
     if (window.location.href === appliedLocation) return;
     searchController.clearStatus();
     const route = window.BM_ROUTER.readHashRoute(domain, window.location);

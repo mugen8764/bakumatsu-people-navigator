@@ -14,7 +14,6 @@
       context: '前段の事件、別地点の動き、後続の展開などを示します。現場参加を示すものではありません。'
     };
 
-    // A small reading route through existing records, separate from incident sections.
     const choshuEventPath = ['first-choshu-expedition', 'choshu_reform', 'satcho-agreement', 'second-choshu-war'];
 
     function relatedEventPath(currentId) {

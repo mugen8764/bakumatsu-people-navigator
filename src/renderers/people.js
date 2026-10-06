@@ -23,8 +23,6 @@
       if (state.personFactionFilter !== 'すべて') {
         people = people.filter(person => domain.factionAt(person, state.scene) === state.personFactionFilter);
       }
-      // The scene's main cast leads the list in event order, so a long scene
-      // still opens with the people the overview names; the rest follow by faction.
       const cast = new Map((data.events[shared.scene().event]?.people || []).map((id, index) => [id, index]));
       const castRank = person => (cast.has(person.id) ? cast.get(person.id) : cast.size);
       people.sort((a, b) => castRank(a) - castRank(b)

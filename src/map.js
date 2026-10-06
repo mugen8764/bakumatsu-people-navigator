@@ -33,8 +33,6 @@
 
   function mapLabelBox(x, y, anchor, width) {
     const left = anchor === 'end' ? x - width : x;
-    // Japanese fallback fonts have different ascents and descents across
-    // browsers. Reserve space around the 11.5px text before placing neighbours.
     return { left, right: left + width, top: y - 16, bottom: y + 6 };
   }
 

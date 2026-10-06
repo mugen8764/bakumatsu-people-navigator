@@ -1650,7 +1650,24 @@
         "identityNote": "国立国会図書館が岩倉具視の肖像として掲載。",
         "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。 国立国会図書館が提供する縮小画像を使用。",
         "checkedAt": "2026-09-12"
-      }
+      },
+      "turningPoints": [
+        {
+          "fromSceneId": "1860-sakurada",
+          "toSceneId": "1862-bunkyu",
+          "title": "和宮降嫁の推進から、洛中追放へ",
+          "before": "公武合体策の立場で和宮降嫁を推進する。",
+          "after": "幕府と通じているとの嫌疑を受けて失脚し、1862年から洛中を追放され岩倉村に蟄居する。",
+          "context": "宮中で策を進める立場と、失脚・追放後の立場を比べる。1867年の王政復古の計画をこの時点へ遡らせない。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_iwakura_detail",
+              "ndl_iwakura_exile"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "sanjo",
@@ -1915,7 +1932,24 @@
         "identityNote": "国立国会図書館が坂本龍馬の肖像として掲載。",
         "rightsNote": "同展示会は掲載肖像の著作権保護期間満了と、出典明示による転載利用を案内しています。国立国会図書館が提供する縮小画像を使用。",
         "checkedAt": "2026-09-25"
-      }
+      },
+      "turningPoints": [
+        {
+          "fromSceneId": "1864-kinmon",
+          "toSceneId": "1865-choshu",
+          "title": "海軍を学ぶ立場から、社中の結成へ",
+          "before": "1864年、勝海舟が開いた神戸海軍操練所で学ぶ。",
+          "after": "1865年、薩摩藩などの援助を得て長崎で亀山社中を結成し、海運業を中心に活動する。",
+          "context": "海軍教育を受ける立場と、社中を結成して活動する立場を比べる。思想の変化や、後の盟約・政体構想までを一本の経緯にはまとめない。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_katsu_detail",
+              "nagasaki_kameyama_1865"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
+      ]
     },
     {
       "id": "goto",
@@ -2156,6 +2190,22 @@
       },
       "termIds": [
         "roshigumi"
+      ],
+      "turningPoints": [
+        {
+          "fromSceneId": "1867-taisei",
+          "toSceneId": "1868-toba",
+          "title": "京都の副長・幕臣から、各地の転戦へ",
+          "before": "新選組副長として京都の治安維持を担い、1867年には見廻組肝煎格を命じられて幕臣となる。",
+          "after": "1868年、鳥羽・伏見の戦いの後に宇都宮・会津などを転戦する。",
+          "context": "京都での組織上の役割と戊辰戦争期の行動を比べる。思想の変化や、鳥羽・伏見当日の配置を示す比較ではない。",
+          "evidence": {
+            "sourceIds": [
+              "ndl_portrait_hijikata_detail"
+            ],
+            "reviewStatus": "verified"
+          }
+        }
       ]
     },
     {

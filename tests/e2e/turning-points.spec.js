@@ -81,3 +81,28 @@ for (const colorScheme of ['light', 'dark']) {
     expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze()).violations).toEqual([]);
   });
 }
+
+for (const colorScheme of ['light', 'dark']) {
+  test('major-person comparisons in '+colorScheme, { tag: '@cross-browser' }, async ({page}) => {
+    for (const width of [320,390,1280]) {
+      await page.setViewportSize({width,height:900});
+      await page.emulateMedia({colorScheme});
+      for (const [id,from,to] of [['ryoma','1864-kinmon','1865-choshu'],['hijikata','1867-taisei','1868-toba'],['iwakura','1860-sakurada','1862-bunkyu']]) {
+        await page.goto('/#scene='+to+'&view=people&person='+id);
+        const point=page.locator('#personTurningPoint');
+        await expect(point.locator('.turning-side')).toHaveCount(2);
+        await expect(point.locator('.turning-context')).toBeVisible();
+        expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+        expect((await new AxeBuilder({page}).include('#personTurningPoint').withTags(['wcag2a','wcag2aa','wcag21aa']).analyze()).violations).toEqual([]);
+        await point.locator('[data-turning-scene]').focus();
+        await page.keyboard.press('Enter');
+        await expect(page).toHaveURL(new RegExp('scene='+from));
+        await expect(point).toBeFocused();
+        await point.getByRole('button').click();
+        await expect(page).toHaveURL(new RegExp('scene='+to));
+        await page.reload();
+        await expect(point.locator('.turning-side')).toHaveCount(2);
+      }
+    }
+  });
+}
