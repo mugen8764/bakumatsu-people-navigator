@@ -5,14 +5,10 @@
 
   const htmlEntities = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
 
-  // Every renderer builds markup with template strings, so any value that comes
-  // from the data files has to pass through this before it reaches innerHTML.
   function escapeHtml(value) {
     return String(value ?? '').replace(/[&<>"']/g, character => htmlEntities[character]);
   }
 
-  // Where focus lands when the control a reader activated is not redrawn, for
-  // example after following a person link into a different detail panel.
   const focusFallbacks = {
     people: ['#personDetail .detail-title'],
     factions: ['#factionDetail .detail-title'],
@@ -26,9 +22,6 @@
     return Boolean(element?.isConnected && element.getClientRects().length);
   }
 
-  // Renderers replace their markup wholesale, so the element a keyboard user
-  // just activated is usually destroyed. Its data-* attribute identifies the
-  // redrawn equivalent, which receives focus again.
   function focusKey(element) {
     const attribute = [...(element?.attributes || [])].find(item => item.name.startsWith('data-'));
     return attribute ? `[${attribute.name}="${CSS.escape(attribute.value)}"]` : '';

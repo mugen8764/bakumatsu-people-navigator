@@ -58,6 +58,14 @@
       return `<details class="office-help" id="personOfficeHelp"><summary>役職を知る：${terms.map(term => esc(term.title)).join('・')}</summary>${terms.map(term => `<section><h3>${esc(term.title)} <span class="term-reading">${esc(term.kana)}</span></h3><p>${esc(term.meaning)} ${shared.reviewBadge(term.evidence)}</p><p class="muted">${esc(term.context)}</p><details class="source-disclosure"><summary>解説の根拠</summary><div class="source-list">${shared.sourceLinks(term.evidence.sourceIds)}</div></details></section>`).join('')}</details>`;
     }
 
+    function incidentHistory(person) {
+      const entries = domain.incidentHistoryFor(person.id);
+      if (!entries.length) return '';
+      const labels = { onsite: '現場での関与', decision: '意思決定・指揮', context: '背景・前後関係' };
+      const list = (items, start) => `<ol class="person-incident-list" start="${start}">${items.map(({ incident, participant }) => `<li data-person-incident="${esc(incident.id)}"><p class="muted">${esc(incident.date)} ${shared.reviewBadge(incident.evidence)}</p><button type="button" class="incident-history-link" data-open-event="${esc(incident.id)}">${esc(incident.title)} →</button><p><strong>${esc(participant.displayName)}</strong> <span class="badge">${labels[participant.involvement]}</span></p><p>${esc(participant.role)} ${shared.reviewBadge(participant.evidence)}</p></li>`).join('')}</ol>`;
+      return `<section class="section person-incident-history" aria-labelledby="personIncidentHistoryTitle"><h3 id="personIncidentHistoryTitle">事件でたどる <span class="muted">${entries.length}件</span></h3><p class="muted">時点・記載日付順。期間が重なる場合があります。背景の関与は現場参加を示しません。</p>${list(entries.slice(0, 3), 1)}${entries.length > 3 ? `<details class="incident-history-more"><summary>残り${entries.length - 3}件の事件を見る</summary>${list(entries.slice(3), 4)}</details>` : ''}</section>`;
+    }
+
     function renderDetail() {
       const person = domain.getPerson(state.selectedPerson);
       const status = domain.statusAt(person, state.scene);
@@ -70,7 +78,6 @@
       const offices = domain.officeTermsFor(status.role);
       const incident = domain.incidentAt(state);
       const participant = incident?.participants.find(item => item.personId === person.id);
-      const incidentLinks = Object.values(data.incidents || {}).filter(item => item.participants.some(member => member.personId === person.id));
       const incidentContext = participant ? `<section class="person-incident"><button type="button" class="button" data-open-event="${esc(incident.id)}">← ${esc(incident.title)}へ戻る</button><h3>${esc(incident.title)}での役割</h3><p><strong>${esc(participant.role)}</strong> ${shared.reviewBadge(participant.evidence)}</p><p>${esc(participant.summary)}</p><details class="source-disclosure"><summary>この役割の根拠</summary><div class="source-list">${shared.sourceLinks(participant.evidence.sourceIds)}</div></details></section><h3 class="section">${esc(shared.scene().year)}年の人物情報</h3>` : '';
       const eventPeerGroups = domain.eventPeerGroupsFor(person.id, state.scene);
       const laterName = domain.laterNameAt(person, state.scene);
@@ -90,6 +97,7 @@
       <div class="snapshot"><strong>${shared.dateLabel(shared.scene())}の位置づけ ${shared.reviewBadge(status.evidence)}</strong>${esc(status.importance)}</div>
       <div class="section person-stance"><h3>この時点の行動・立場</h3><p>${esc(status.stance)}</p></div>
       ${turningPoint(person)}
+      ${incidentHistory(person)}
       ${officeHelp(offices)}
       ${shared.portraitCredit(person, '肖像の出典・年代・利用条件')}
       ${shared.backgroundTerms(person.termIds)}
@@ -100,7 +108,7 @@
         return `<div class="rel"><button type="button" data-other-person="${esc(other.id)}">${esc(domain.statusAt(other, state.scene).display)}</button> — ${esc(relation.label)} ${shared.reviewBadge(relation.evidence)}<br><span class="muted">${esc(relation.text)}</span></div>`;
       }).join('') : '<span class="muted">登録済みの主要関係はありません。</span>'}</div></div>
       ${eventPeerGroups.length ? `<div class="section event-peers"><h3>同じ事件の関係者</h3><p class="muted">同じ事件に関わった人物のうち、上の主要関係には含まれない人物です。直接の人物関係を示すものではありません。</p>${eventPeerGroups.map(group => `<section class="event-peer-group"><h4>${esc(group.title)}</h4><div class="tags">${group.people.map(other => `<button type="button" class="tag" data-event-peer="${esc(other.id)}">${esc(domain.statusAt(other, state.scene).display)}</button>`).join('')}</div></section>`).join('')}</div>` : ''}
-      ${incidentLinks.length || person.events.length ? `<div class="section"><h3>関連事件</h3><div class="tags">${incidentLinks.map(item => `<button type="button" class="tag" data-open-event="${esc(item.id)}">${esc(item.title)}</button>`).join('')}${person.events.map(id => data.events[id] ? `<button type="button" class="tag" data-open-event="${esc(id)}">${esc(data.events[id].title)}</button>` : '').join('')}</div></div>` : ''}
+      ${person.events.length ? `<div class="section"><h3>関連する年代の概要</h3><div class="tags">${person.events.map(id => data.events[id] ? `<button type="button" class="tag" data-open-event="${esc(id)}">${esc(data.events[id].title)}</button>` : '').join('')}</div></div>` : ''}
       <div class="section"><h3>人物の変化</h3><div class="history-list">${history.map(item => `<div class="history-item ${item.scene.index === state.scene ? 'current' : ''}"><button type="button" data-history-scene="${item.scene.index}"><b>${esc(item.scene.year)}年 ${esc(item.value.display)} ${shared.reviewBadge(item.value.evidence)}</b>${esc(item.value.role)}</button></div>`).join('')}</div></div>
       <div class="actions"><button type="button" class="button" id="personToGraph">相関図</button><button type="button" class="button" id="personToMap">地図</button></div>
       <details class="source-disclosure section"><summary>参考資料を見る</summary>

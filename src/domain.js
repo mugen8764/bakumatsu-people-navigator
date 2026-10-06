@@ -5,8 +5,6 @@
 }(typeof globalThis !== 'undefined' ? globalThis : this, () => {
   'use strict';
 
-  // A different display name never inherits the basic registered name's kana.
-  // Keep every verified reading; callers must not silently choose the first.
   function readingKanasFor(person, displayName) {
     if (!person || !displayName) return [];
     if (displayName === person.name) return person.kana ? [person.kana] : [];
@@ -20,6 +18,23 @@
     const sceneById = new Map(data.scenes.map((scene, index) => [scene.id, { ...scene, index }]));
     const eventScene = new Map(data.scenes.map((scene, index) => [scene.event, index]));
     const incidents = Object.values(data.incidents || {});
+
+    const dateParts = incident => {
+      const first = incident.date.split('／')[0].replace(/(\d{4}[^]*?)\d{4}[^]*/, '$1');
+      return [Number(first.match(/^(\d{4})年?/)?.[1] || sceneById.get(incident.sceneId).year),
+        Number(first.match(/(\d+)(?:[〜～-]\d+)?月/)?.[1] || 0), Number(first.match(/(\d+)(?:[〜～-]\d+)?日/)?.[1] || 0)];
+    };
+    const orderedIncidents = incidents.map((incident, index) => ({ incident, index, date: dateParts(incident) }))
+      .sort((a, b) => sceneById.get(a.incident.sceneId).order - sceneById.get(b.incident.sceneId).order
+        || a.date[0] - b.date[0] || a.date[1] - b.date[1] || a.date[2] - b.date[2] || a.index - b.index)
+      .map(item => item.incident);
+
+    function incidentHistoryFor(personId) {
+      return orderedIncidents.flatMap(incident => {
+        const participant = incident.participants.find(item => item.personId === personId);
+        return participant ? [{ incident, participant }] : [];
+      });
+    }
 
     function getIncident(id) {
       return incidents.find(incident => incident.id === id) || null;
@@ -54,8 +69,6 @@
       return statusAt(person, sceneIndex)?.faction || person?.defaultFaction;
     }
 
-    // Only authored, sourced comparisons are turning points. Text differences
-    // between status summaries do not establish a historical change.
     function turningPointAt(person, sceneIndex) {
       const point = person?.turningPoints?.find(item => item.toSceneId === data.scenes[sceneIndex]?.id);
       if (!point) return null;
@@ -120,9 +133,6 @@
         .filter(person => statusAt(person, sceneIndex));
     }
 
-    // People who share the scene's main event or one of its incidents with the
-    // person, grouped by that event. Shared participation is not a relation, so
-    // registered relations are excluded and each person is listed once.
     function eventPeerGroupsFor(personId, sceneIndex) {
       const directlyRelated = new Set(relationsFor(personId, sceneIndex, 'all').map(
         relation => (relation.a === personId ? relation.b : relation.a)
@@ -227,6 +237,7 @@
       factionAt,
       getPerson,
       incidentsAt,
+      incidentHistoryFor,
       getIncident,
       incidentAt,
       laterNameAt,

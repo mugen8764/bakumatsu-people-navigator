@@ -35,7 +35,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
 .muted{color:var(--muted)}
 
 .app-loading .top{min-height:401px}
-.app-loading #view-people{min-height:1507px}
+.app-loading #view-people{min-height:1714px}
 .app-loading #personCards{min-height:687px;background:repeating-linear-gradient(135deg,var(--card) 0 18px,var(--panel) 18px 36px);border-radius:14px;opacity:.55}
 .app-loading #personDetail{min-height:796px}
 .hero{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;margin-bottom:14px}
@@ -326,7 +326,7 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
 }
 @media(max-width:680px){
   .app-loading .top{min-height:535px}
-  .app-loading #view-people{min-height:2921px}
+  .app-loading #view-people{min-height:3164px}
   .app-loading #personCards{min-height:1381px}
 }
 @media(max-width:430px){
@@ -347,7 +347,7 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
 
   .app-loading .scene-dashboard{min-height:178px}
   .app-loading .scene-at-glance{min-height:116px}
-  .app-loading #view-people{min-height:3006px}
+  .app-loading #view-people{min-height:3248px}
   .app-loading #personCards{min-height:1300px}
 }
 .review-status{border-color:var(--danger);color:var(--danger);background:transparent;font-size:.62rem;white-space:nowrap}
@@ -407,6 +407,11 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
 .navigation-status .link-button{color:var(--text);text-decoration:underline;text-underline-offset:3px}
 .tabs{position:sticky;top:0;z-index:12;background:var(--bg)}
 .tab-secondary{margin-left:auto}
+.person-incident-list{list-style:none;margin:0;padding:0}
+.person-incident-list li{border-left:3px solid var(--border);padding:8px 0 8px 12px;margin:8px 0}
+.person-incident-list p{margin:4px 0;overflow-wrap:anywhere}
+.incident-history-link{display:block;background:transparent;border:0;padding:6px 0;color:var(--accent);font-weight:800;text-align:left;overflow-wrap:anywhere}
+.incident-history-more summary{cursor:pointer;padding:10px 0;color:var(--accent);font-weight:750}
 .source-disclosure{border-top:1px solid var(--border);padding-top:10px}
 .source-disclosure summary{cursor:pointer;color:var(--muted);font-size:.78rem;font-weight:750}
 .source-disclosure[open] summary{margin-bottom:8px;color:var(--accent)}
