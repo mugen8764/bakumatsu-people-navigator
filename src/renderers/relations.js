@@ -22,19 +22,13 @@
       const centerLabel = selected ? '<text x="0" y="-23" text-anchor="middle" class="node-center-label">中心人物</text>' : '';
       return `<g transform="translate(${x} ${y})" class="node graph-person ${selected ? 'selected' : ''}" data-graph-person="${esc(person.id)}" role="button" tabindex="0" aria-label="${esc(status.display)}を選択"><rect class="node-card" x="${left}" y="${top}" width="${width}" height="${height}" rx="18"></rect><rect class="node-stripe" x="${left}" y="${top}" width="10" height="${height}" rx="5" fill="${esc(shared.factionColor(status.faction))}"></rect>${centerLabel}<text x="0" y="-4" text-anchor="middle" class="node-label">${esc(status.display)}</text><text x="0" y="17" text-anchor="middle" class="node-faction">${esc(status.faction)}</text></g>`;
     }
-
-    // Card half-sizes match personNode: the selected card is 168×78, others 142×68.
     const centerCard = { halfWidth: 84, halfHeight: 39 };
     const otherCard = { halfWidth: 71, halfHeight: 34 };
-
-    // Distance from a box centre to its edge along a unit direction.
     function reach(direction, halfWidth, halfHeight) {
       const alongX = Math.abs(direction.x) > 1e-6 ? halfWidth / Math.abs(direction.x) : Infinity;
       const alongY = Math.abs(direction.y) > 1e-6 ? halfHeight / Math.abs(direction.y) : Infinity;
       return Math.min(alongX, alongY);
     }
-
-    // Prefer a natural two-line break, with shorter lines for narrow gaps.
     function splitLabel(text, lineCount = 2) {
       const characters = Array.from(text);
       if (lineCount > 2) {
@@ -53,8 +47,6 @@
       const lineHeight = Math.max(12.5, Math.ceil(measurement.getBBox().height) + 1);
       const length = Math.hypot(to.x - from.x, to.y - from.y) || 1;
       const direction = { x: (to.x - from.x) / length, y: (to.y - from.y) / length };
-      // Use the rendered font metrics: system fonts differ between platforms,
-      // and the SVG text's baseline is not its vertical centre.
       const span = lines => {
         measurement.innerHTML = lines.map((line, index) => `<tspan x="0" dy="${index ? lineHeight : 0}">${esc(line)}</tspan>`).join('');
         const bounds = measurement.getBBox();
@@ -110,9 +102,6 @@
         : '<p>この人物の関係に増減はありません。</p>';
       $('#relationChanges').innerHTML = `<div class="relation-changes-heading"><span class="eyebrow">関係の変化</span><small>${esc(previousScene.year)} → ${esc(shared.scene().year)}</small></div>${content}`;
     }
-
-    // Without a registered relation, people who shared an event at this scene
-    // are the next step. They are labelled as co-participants, not as ties.
     function sharedEventPeers(person) {
       const groups = domain.eventPeerGroupsFor(person.id, state.scene);
       if (!groups.length) return '';
@@ -144,7 +133,6 @@
       const relations = domain.relationsFor(person.id, state.scene, state.relationType);
       const others = relations.map(relation => domain.getPerson(relation.a === person.id ? relation.b : relation.a)).filter(Boolean);
       const center = { x: 410, y: 295 };
-      // Wide enough that a two-line label fits between the centre and a side card.
       const radiusX = 262;
       const radiusY = Math.min(215, 155 + others.length * 5);
       const points = others.map((other, index) => ({
@@ -152,15 +140,10 @@
         x: center.x + Math.cos((Math.PI * 2 * index / Math.max(others.length, 1)) - Math.PI / 2) * radiusX,
         y: center.y + Math.sin((Math.PI * 2 * index / Math.max(others.length, 1)) - Math.PI / 2) * radiusY
       }));
-      // Relations carry no direction, so edges are plain lines. Labels go on
-      // top of the cards, centred on the stretch of line left visible between
-      // the two cards, so neither card hides them.
       let html = '';
       let labels = '';
       const measurement = document.createElementNS('http://www.w3.org/2000/svg', 'text');
       measurement.setAttribute('class', 'edge-label');
-      // The graph is display:none on mobile. Measure outside it so resizing
-      // to desktop still has valid text geometry without another selection.
       const surface = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
       surface.setAttribute('aria-hidden', 'true');
       surface.setAttribute('width', '0');

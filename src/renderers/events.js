@@ -30,6 +30,10 @@
       }).join('')}</ol></nav>`;
     }
 
+    function incidentReading(id) {
+      return `<nav class="related-event-path incident-reading" aria-label="時系列の事件を読む"><p class="muted">時点・記載日付に沿った読書順です。因果関係は示しません。</p><div class="actions">${domain.incidentNeighbors(id).map((item, index) => item ? `<button type="button" class="button" data-related-event="${esc(item.id)}">${index ? '次の事件：' : '← 前の事件：'}${esc(item.title)}${index ? ' →' : ''}<small>${esc(item.date)}</small></button>` : '').join('')}</div></nav>`;
+    }
+
     function incidentDetail(incident) {
       const people = new Map(incident.participants.map(item => [item.personId, item]));
       const navigation = [{ id: 'eventDetailTitle', label: '概要' }];
@@ -56,7 +60,7 @@
         ${shared.backgroundTerms(incident.termIds)}
         <div class="actions"><button type="button" class="button" id="eventToMap">地図で見る</button></div>
         <details class="source-disclosure section"><summary id="incidentSourcesTitle">事件・役割・関係の根拠</summary><div class="source-list">${shared.sourceLinks(incident.evidence.sourceIds)}</div>${evidenceItems.map(item => `<section class="section"><h3>${esc(item.title)} ${shared.reviewBadge(item.evidence)}</h3><div class="source-list">${shared.sourceLinks(item.evidence.sourceIds)}</div></section>`).join('')}</details>
-        ${incident.participants.some(item => domain.getPerson(item.personId).portrait) ? '<p class="portrait-note">肖像は選択時点の姿とは限りません。各画像の出典・利用条件は以下で確認できます。</p>' : ''}${incident.participants.map(item => shared.portraitCredit(domain.getPerson(item.personId))).join('')}`;
+        ${incident.participants.some(item => domain.getPerson(item.personId).portrait) ? '<p class="portrait-note">肖像は選択時点の姿とは限りません。各画像の出典・利用条件は以下で確認できます。</p>' : ''}${incident.participants.map(item => shared.portraitCredit(domain.getPerson(item.personId))).join('')}${incidentReading(incident.id)}`;
     }
 
     function render() {

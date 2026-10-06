@@ -36,6 +36,11 @@
       });
     }
 
+    function incidentNeighbors(id) {
+      const index = orderedIncidents.findIndex(incident => incident.id === id);
+      return index < 0 ? [] : [orderedIncidents[index - 1] || null, orderedIncidents[index + 1] || null];
+    }
+
     function getIncident(id) {
       return incidents.find(incident => incident.id === id) || null;
     }
@@ -238,6 +243,7 @@
       getPerson,
       incidentsAt,
       incidentHistoryFor,
+      incidentNeighbors,
       getIncident,
       incidentAt,
       laterNameAt,

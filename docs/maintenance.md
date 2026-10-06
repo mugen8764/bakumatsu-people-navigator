@@ -223,3 +223,25 @@ npm run check:production -- --wait
 3. 新しい認証情報での配信成功後に旧トークンを失効させる。
 
 認証情報の値はリポジトリ・文書・Issue・ログへ保存しません。
+
+### 相関図の描画補足
+
+配信容量を保つため、relationsの描画補足コメントを以下で保持します。
+
+```text
+Card half-sizes match personNode: the selected card is 168×78, others 142×68.
+Distance from a box centre to its edge along a unit direction.
+Prefer a natural two-line break, with shorter lines for narrow gaps.
+Use the rendered font metrics: system fonts differ between platforms,
+and the SVG text's baseline is not its vertical centre.
+Without a registered relation, people who shared an event at this scene
+are the next step. They are labelled as co-participants, not as ties.
+Wide enough that a two-line label fits between the centre and a side card.
+Relations carry no direction, so edges are plain lines. Labels go on
+top of the cards, centred on the stretch of line left visible between
+the two cards, so neither card hides them.
+The graph is display:none on mobile. Measure outside it so resizing
+to desktop still has valid text geometry without another selection.
+```
+
+個別事件末尾の前後ボタンは人物の事件時系列と同じ読書順を使い、既存event routeへ移動します。scene order、記載日付中の最初の年・月・日、同値なら正本登録順で一意にします。年・月だけの事件は欠けた成分を0として並べますが、日付表示は原文のままで精密化しません。期間・暦の違いを解消した厳密な発生日比較や因果関係ではありません。
