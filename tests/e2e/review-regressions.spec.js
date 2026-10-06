@@ -299,15 +299,15 @@ test('long scenes open the person list with the main cast and stay compact on ph
   expect(await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth)).toBe(false);
 });
 
-test('the compact phone incident row keeps its label for screen readers', async ({ page }) => {
+test('the compact phone incident row shows its label and total', async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 780 });
   await page.goto('/#scene=1862-bunkyu&view=people');
   const label = page.locator('#sceneIncidents > span');
-  await expect(label).toHaveText('この時期の事件');
+  await expect(label).toHaveText('この時期の事件 全4件');
   const style = await label.evaluate(element => {
     const computed = getComputedStyle(element);
     return { display: computed.display, width: element.getBoundingClientRect().width };
   });
   expect(style.display).not.toBe('none');
-  expect(style.width).toBeLessThanOrEqual(1);
+  expect(style.width).toBeGreaterThan(100);
 });

@@ -8,6 +8,7 @@ for (const colorScheme of ['light', 'dark']) {
     await page.setViewportSize({ width: 320, height: 780 });
     await page.emulateMedia({ colorScheme });
     await page.goto('/#event=kinmon-conflict');
+    await page.locator('#sceneIncidentsToggle').click();
     await page.locator('[data-scene-incident="first-choshu-expedition"]').click();
     await expect(page.locator('#eventDetailTitle')).toHaveText('第一次長州征討');
     await expect(page.locator('.incident-lead')).toContainText('戦闘に至らず撤兵');

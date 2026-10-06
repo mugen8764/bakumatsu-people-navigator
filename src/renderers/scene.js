@@ -8,6 +8,8 @@
     const esc = shared.escapeHtml;
     let sceneControlsInitialized = false;
     let sourcesRendered = false;
+    let incidentScene = -1;
+    let incidentsExpanded = false;
 
     function initializeReadingGuide() {
       const steps = [
@@ -199,8 +201,17 @@
       $('#sceneInsights').innerHTML = scene.insights.map(insight => `<div class="insight">${esc(insight)}</div>`).join('');
       renderSceneAtGlance(event, scene);
       const incidents = domain.incidentsAt(state.scene);
+      if (incidentScene !== state.scene) incidentsExpanded = false;
+      incidentScene = state.scene;
       $('#sceneIncidents').hidden = !incidents.length;
-      $('#sceneIncidents').innerHTML = '<span>この時期の事件</span>' + incidents.map(item => `<button type="button" class="button" data-scene-incident="${esc(item.id)}">${esc(item.title)} <span aria-hidden="true">→</span></button>`).join('');
+      const incidentButton = item => `<button type="button" class="button" data-scene-incident="${esc(item.id)}">${esc(item.title)} <span aria-hidden="true">→</span></button>`;
+      $('#sceneIncidents').innerHTML = `<span>この時期の事件 <small>全${incidents.length}件</small></span><div class="scene-incident-buttons">${incidents.slice(0, 2).map(incidentButton).join('')}${incidents.length > 2 ? `<button id="sceneIncidentsToggle" type="button" class="button scene-incidents-toggle" aria-expanded="${incidentsExpanded}" aria-controls="sceneIncidentMore">${incidentsExpanded ? '閉じる' : `ほか${incidents.length - 2}件`}</button><div id="sceneIncidentMore" class="scene-incident-more" data-expanded="${incidentsExpanded}">${incidents.slice(2).map(incidentButton).join('')}</div>` : ''}</div>`;
+      $('#sceneIncidentsToggle')?.addEventListener('click', event => {
+        incidentsExpanded = !incidentsExpanded;
+        event.currentTarget.setAttribute('aria-expanded', String(incidentsExpanded));
+        event.currentTarget.textContent = incidentsExpanded ? '閉じる' : `ほか${incidents.length - 2}件`;
+        $('#sceneIncidentMore').dataset.expanded = String(incidentsExpanded);
+      });
       $$('[data-scene-incident]').forEach(button => button.addEventListener('click', () => actions.openEvent(button.dataset.sceneIncident)));
       renderSceneChanges(event);
       renderScenePeople(event);
