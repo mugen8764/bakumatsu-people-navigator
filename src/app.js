@@ -159,7 +159,7 @@
     renderAll({ historyMode: 'push' });
   }
 
-  function openEvent(id) {
+  function openEvent(id, options = {}) {
     const incident = Object.hasOwn(data.incidents || {}, id) ? data.incidents[id] : null;
     const index = incident ? domain.sceneById.get(incident.sceneId)?.index : domain.eventScene.get(id);
     if (index === undefined) return;
@@ -168,7 +168,7 @@
     state.selectedIncident = incident?.id || '';
     if (incident) {
       const participantIds = new Set(incident.participants.map(item => item.personId));
-      const current = [state.preferredPerson, state.selectedPerson].find(personId => participantIds.has(personId));
+      const current = [options.personId, state.preferredPerson, state.selectedPerson].find(personId => participantIds.has(personId));
       window.BM_STATE.choosePerson(state, current || incident.participants[0].personId);
     }
     state.view = 'events';
@@ -187,7 +187,12 @@
     appliedLocation = window.location.href;
   }
 
-  Object.assign(actions, { openEvent, revealPersonDetail, selectFaction, selectPerson, setScene, setView, syncRoute });
+  function selectGuide(id) {
+    window.BM_STATE.applyRoute(state, data, { guide: id });
+    renderAll({ historyMode: 'push' });
+  }
+
+  Object.assign(actions, { openEvent, revealPersonDetail, selectFaction, selectGuide, selectPerson, setScene, setView, syncRoute });
 
   function clearCopyStatuses() {
     $$('[data-copy-status]').forEach(status => { status.textContent = ''; });

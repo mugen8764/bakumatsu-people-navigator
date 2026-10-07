@@ -3,6 +3,11 @@
 }(typeof globalThis !== 'undefined' ? globalThis : this, () => {
   'use strict';
 
+  const readingGuides = {
+    bakumatsu: '1853-blackships 1858-ansei kazunomiya-marriage august18-coup 1864-kinmon satcho-agreement second-choshu-war 1867-taisei 1868-toba edo-castle-surrender 1868-tohoku hakodate-1869'.split(' '),
+    shinsengumi: 'roshigumi-1863 ikedaya goryo-eji-formation-1867 toba-fushimi-battle koshu-katsunuma aizu-siege hakodate-1869'.split(' ')
+  };
+
   function createSceneRenderer(context) {
     const { $, $$, actions, data, domain, shared, state } = context;
     const esc = shared.escapeHtml;
@@ -10,43 +15,27 @@
     let sourcesRendered = false;
     let incidentScene = -1;
     let incidentsExpanded = false;
-    const guideSteps = [
-      ['scene', '1853-blackships'], ['scene', '1858-ansei'],
-      ['incident', 'kazunomiya-marriage'], ['incident', 'august18-coup'],
-      ['scene', '1864-kinmon'], ['incident', 'satcho-agreement'],
-      ['incident', 'second-choshu-war'], ['scene', '1867-taisei'],
-      ['scene', '1868-toba'], ['incident', 'edo-castle-surrender'],
-      ['scene', '1868-tohoku'], ['incident', 'hakodate-1869']
-    ];
-
-    function initializeReadingGuide() {
-      $('#readingGuideSteps').innerHTML = guideSteps.map(([kind, id]) => {
-        const item = kind === 'scene' ? domain.sceneById.get(id) : domain.getIncident(id);
-        const scene = kind === 'scene' ? item : domain.sceneById.get(item.sceneId);
-        return `<li><span class="muted">${esc(scene.year)}年 · ${kind === 'scene' ? '時点' : '事件'}</span> <strong class="guide-current" hidden>現在地</strong><h2>${esc(item.title)}</h2><p class="guide-summary">${esc(item.summary)}</p>${shared.reviewBadge(item.evidence)}<button type="button" class="button" data-guide-kind="${kind}" data-guide-id="${esc(id)}">${kind === 'scene' ? 'この時点を見る' : '事件を読む'}<span class="visually-hidden">：${esc(item.title)}</span> →</button></li>`;
-      }).join('');
-      $$('[data-guide-id]').forEach(button => button.addEventListener('click', () => {
-        $('#readingGuide').open = false;
-        if (button.dataset.guideKind === 'incident') actions.openEvent(button.dataset.guideId);
-        else {
-          actions.setScene(domain.sceneById.get(button.dataset.guideId).index, { view: 'people' });
-          const heading = $('#sceneTitle');
-          heading.scrollIntoView({ block: 'start', behavior: 'auto' });
-          heading.focus({ preventScroll: true });
-        }
-      }));
+    function loadReadingGuide() {
+      const script = $('#readingGuideScript');
+      if (!$('#readingGuide').open || script.src) return;
+      script.type = '';
+      script.onload = renderReadingGuide;
+      script.onerror = () => { $('#readingGuideIntro').textContent = 'ガイドを読み込めませんでした。再読み込みしてください。'; };
+      script.src = script.dataset.src;
     }
 
-    function renderGuidePosition() {
-      const current = domain.guidePosition(guideSteps, state);
-      $$('#readingGuideSteps li').forEach((item, index) => {
-        if (index === current) item.setAttribute('aria-current', 'step');
-        else item.removeAttribute('aria-current');
-        item.querySelector('.guide-current').hidden = index !== current;
-      });
+    function renderReadingGuide() {
+      const guide = readingGuides[state.guide];
+      const choice = $('#readingGuideSelect');
+      choice.value = state.guide;
+      $('#readingGuideTitle').textContent = choice.selectedOptions[0].textContent;
+      $('#readingGuidePeriod').textContent = choice.selectedOptions[0].dataset.period;
+      const steps = guide.map(id => [domain.sceneById.has(id) ? 'scene' : 'incident', id]);
+      const current = domain.guidePosition(steps, state);
       const position = $('#readingGuidePosition');
-      position.textContent = current < 0 ? '12ステップ' : `${current + 1} / ${guideSteps.length}`;
-      position.setAttribute('aria-label', current < 0 ? '全12ステップ・対応する現在地なし' : `現在地 ${current + 1} / ${guideSteps.length}`);
+      position.textContent = current < 0 ? `${guide.length}ステップ` : `${current + 1} / ${guide.length}`;
+      position.setAttribute('aria-label', current < 0 ? `全${guide.length}ステップ・対応する現在地なし` : `現在地 ${current + 1} / ${guide.length}`);
+      window.BM_RENDER_GUIDE?.render(context, { steps }, current);
     }
 
     function eventPeopleAtCurrentScene(event, limit = Infinity) {
@@ -195,12 +184,13 @@
     function renderScene() {
       const scene = shared.scene();
       if (!sceneControlsInitialized) {
-        initializeReadingGuide();
+        $('#readingGuide').addEventListener('toggle', loadReadingGuide);
+        $('#readingGuideSelect').addEventListener('change', event => actions.selectGuide(event.target.value));
         $('#sceneSelect').innerHTML = data.scenes.map((item, index) => `<option value="${index}">${esc(item.year)} ${esc(item.title)}</option>`).join('');
         $('#sceneRange').max = data.scenes.length - 1;
         sceneControlsInitialized = true;
       }
-      renderGuidePosition();
+      renderReadingGuide();
       $('#sceneSelect').value = state.scene;
       $('#sceneRange').value = state.scene;
       $('#sceneRange').setAttribute('aria-valuetext', `${scene.year}年 ${scene.title}`);
@@ -260,5 +250,5 @@
     return { renderScene, renderSources, renderTabs };
   }
 
-  return { createSceneRenderer };
+  return { createSceneRenderer, readingGuides };
 }));

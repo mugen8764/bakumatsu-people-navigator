@@ -24,7 +24,7 @@
   <meta name="twitter:image:alt" content="幕末人物・勢力ナビ。人物・勢力・事件・場所を時点ごとの関係からたどる。">
   <meta name="theme-color" content="#8b4333">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="src/styles.css?v=d54f096f54e17cf8">
+  <link rel="stylesheet" href="src/styles.css?v=dbc140ccdca749f5">
 </head>
 <body>
 <main class="page">
@@ -32,8 +32,8 @@
   <header class="hero">
     <div class="brand"><a id="brandMarkHome" class="mark brand-home" href="./" aria-label="初期状態に戻る">幕</a><div><h1><a id="brandTitleHome" class="brand-home brand-title-home" href="./">幕末人物・勢力ナビ</a></h1><p class="lead">人物の「その時」を、事件・勢力・関係の変化からすばやくつかむ歴史ナビゲーション。</p></div></div>
     <details id="readingGuide" class="panel reading-guide">
-    <summary>幕末の流れを読む <small>1853–1869 · <span id="readingGuidePosition">1 / 12</span></small></summary>
-    <div class="reading-guide-body"><p>時点はその年の概況、事件は個別の出来事です。順に開いて、人物・勢力・関係の変化をたどれます。</p><ol id="readingGuideSteps"></ol></div>
+    <summary><span id="readingGuideTitle">幕末の流れを読む</span> <small><span id="readingGuidePeriod">1853–1869</span> · <span id="readingGuidePosition">1 / 12</span></small></summary>
+    <div class="reading-guide-body"><label class="guide-choice">読書ガイド<select id="readingGuideSelect"><option value="bakumatsu" data-period="1853–1869">幕末の流れを読む</option><option value="shinsengumi" data-period="1863–1869">新選組を追う</option></select></label><p id="readingGuideIntro">時点はその年の概況、事件は個別の出来事です。順に開いて、人物・勢力・関係の変化をたどれます。</p><ol id="readingGuideSteps"></ol></div>
     </details>
   </header>
 
@@ -156,19 +156,20 @@
   <footer class="panel"><div class="footer-row"><div><strong>幕末人物・勢力ナビ 1853–1869</strong><br>史実の背景知識を、人物・勢力・事件・場所のつながりとして整理した静的サイトです。</div><div class="footer-links"><button id="footerSources" class="link-button" type="button">出典・編集方針</button><a href="https://github.com/mugen8764/bakumatsu-people-navigator">GitHub</a><button id="copyLink" class="link-button" type="button" data-copy-link aria-describedby="copyStatus">現在の表示URLをコピー</button></div></div><div id="copyStatus" class="status-line" data-copy-status aria-live="polite"></div></footer>
 </main>
 <noscript><p style="padding:20px">このサイトの表示にはJavaScriptが必要です。</p></noscript>
-<script src="map-data.js?v=d54f096f54e17cf8"></script>
-<script src="data.js?v=d54f096f54e17cf8"></script>
-<script src="src/domain.js?v=d54f096f54e17cf8"></script>
-<script src="src/state.js?v=d54f096f54e17cf8"></script>
-<script src="src/router.js?v=d54f096f54e17cf8"></script>
-<script src="src/search.js?v=d54f096f54e17cf8"></script>
-<script src="src/map.js?v=d54f096f54e17cf8"></script>
-<script src="src/renderers/shared.js?v=d54f096f54e17cf8"></script>
-<script src="src/renderers/scene.js?v=d54f096f54e17cf8"></script>
-<script src="src/renderers/people.js?v=d54f096f54e17cf8"></script>
-<script src="src/renderers/factions.js?v=d54f096f54e17cf8"></script>
-<script src="src/renderers/relations.js?v=d54f096f54e17cf8"></script>
-<script src="src/renderers/events.js?v=d54f096f54e17cf8"></script>
-<script src="src/app.js?v=d54f096f54e17cf8"></script>
+<script src="map-data.js?v=dbc140ccdca749f5"></script>
+<script src="data.js?v=dbc140ccdca749f5"></script>
+<script src="src/domain.js?v=dbc140ccdca749f5"></script>
+<script src="src/state.js?v=dbc140ccdca749f5"></script>
+<script src="src/router.js?v=dbc140ccdca749f5"></script>
+<script src="src/search.js?v=dbc140ccdca749f5"></script>
+<script src="src/map.js?v=dbc140ccdca749f5"></script>
+<script src="src/renderers/shared.js?v=dbc140ccdca749f5"></script>
+<script src="src/renderers/scene.js?v=dbc140ccdca749f5"></script>
+<script id="readingGuideScript" type="text/plain" data-src="src/renderers/reading-guide.js?v=dbc140ccdca749f5"></script>
+<script src="src/renderers/people.js?v=dbc140ccdca749f5"></script>
+<script src="src/renderers/factions.js?v=dbc140ccdca749f5"></script>
+<script src="src/renderers/relations.js?v=dbc140ccdca749f5"></script>
+<script src="src/renderers/events.js?v=dbc140ccdca749f5"></script>
+<script src="src/app.js?v=dbc140ccdca749f5"></script>
 </body>
 </html>

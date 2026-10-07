@@ -15,6 +15,7 @@
     const state = {
       scene: Number.isInteger(initial.scene) ? initial.scene : 0,
       view: views.has(initial.view) ? initial.view : 'people',
+      guide: initial.guide === 'shinsengumi' ? initial.guide : 'bakumatsu',
       selectedPerson: initial.selectedPerson || 'abe',
       preferredPerson: initial.preferredPerson || initial.selectedPerson || 'abe',
       selectedFaction: initial.selectedFaction || '幕府',
@@ -62,6 +63,7 @@
   }
 
   function applyRoute(state, data, route) {
+    if (route.guide !== undefined) state.guide = route.guide === 'shinsengumi' ? route.guide : 'bakumatsu';
     if (route.scene !== undefined) setScene(state, data, route.scene);
     if (route.view !== undefined && views.has(route.view)) state.view = route.view;
     if (route.selectedPerson !== undefined) choosePerson(state, route.selectedPerson);
@@ -99,6 +101,7 @@
   function resetState(state, data, domain) {
     setScene(state, data, 0);
     state.view = 'people';
+    state.guide = 'bakumatsu';
     choosePerson(state, 'abe');
     state.selectedFaction = '幕府';
     state.personFactionFilter = 'すべて';

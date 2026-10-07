@@ -44,6 +44,7 @@
       selectedPerson,
       preferredPerson: hash.get('preferred') || storedChoice || selectedPerson,
       selectedIncident: eventId,
+      guide: hash.get('guide'),
       selectedFaction: hash.get('faction') || safeGet(storage, 'bm.faction') || '幕府',
       selectedPlace: hash.get('place') || safeGet(storage, 'bm.place') || ''
     };
@@ -52,6 +53,7 @@
   function readHashRoute(domain, location) {
     const hash = hashParams(location);
     const route = {};
+    route.guide = hash.get('guide');
     if (hash.has('scene')) route.scene = sceneIndex(domain.sceneById, hash.get('scene'));
     if (hash.has('view')) route.view = hash.get('view');
     if (hash.has('person')) route.selectedPerson = hash.get('person');
@@ -79,6 +81,7 @@
     if (state.selectedFaction) query.set('faction', state.selectedFaction);
     if (state.selectedPlace) query.set('place', state.selectedPlace);
     if (state.selectedIncident) query.set('event', state.selectedIncident);
+    if (state.guide === 'shinsengumi') query.set('guide', state.guide);
     const url = `${location.pathname}${location.search}#${query}`;
     const currentUrl = `${location.pathname}${location.search}${location.hash || ''}`;
     try {
