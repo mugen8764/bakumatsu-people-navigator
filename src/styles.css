@@ -370,6 +370,7 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
 }
 .review-status{border-color:var(--danger);color:var(--danger);background:transparent;font-size:.62rem;white-space:nowrap}
 .review-status.disputed{border-color:var(--accent);color:var(--accent)}
+@media(prefers-color-scheme:dark){.snapshot .review-status.disputed,.history-item.current .review-status.disputed{color:var(--text)}}
 
 
 .top{padding:0;overflow:visible}

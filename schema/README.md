@@ -86,6 +86,10 @@ const evidence = (person.nameReadings || []).filter(item => item.name === partic
 
 歴史的主張を含む項目は `evidence.sourceIds` と `evidence.reviewStatus` を持ちます。`verified` には当該内容を直接支える出典が必要で、スキーマは少なくとも1件の出典参照を要求します。`needs_review`・`disputed` を生成時に落としたり、自動的に確定扱いへ変えたりしません。
 
+任意の `evidence.reviewSummary` は、利用者向けに編集した校正理由のプレーンテキストです。1〜300文字、空白のみは不可で、`needs_review`・`disputed` にだけ登録できます。既存の `note` は内部編集メモであり、公開用の代替にはしません。理由の欠落は未登録を意味し、校正完了や理由がないことを意味しません。新しい史実・調査手順・URL取得障害・内部ルールを公開文へ混ぜず、既存の根拠が支える不明点・見解差を1〜3文へ編集します。
+
+正本v2から互換 `data.json`・`data.js` へ `reviewSummary` を保持します。人物の基本情報と時点別状態は逆projectionでも保持します。`note` は従来どおり互換生成へ転送しません。初回の画面対応は人物の参考資料欄、対象データは5状態に限定します。外部利用者は任意項目を無視しても従来の表示・校正状態を使えます。旧スキーマで未知フィールドを拒否する場合は、固定SHA更新時にスキーマ一式も更新してください。構造版は `schemaVersion: 2` のまま、新スキーマは従来データを受け入れます。今後の登録は項目ごとに根拠と公開文を確認し、全noteの自動公開・一括展開を行いません（[Issue #46](https://github.com/mugen8764/bakumatsu-people-navigator/issues/46)）。
+
 出典本文の該当箇所 `locator` と内容確認日 `contentCheckedAt` は対で記録します。到達性確認日とは別です。人物単位の広範な略歴を、個別の役職・関係の根拠へ自動昇格させません。
 
 ## 検証コマンドの違い

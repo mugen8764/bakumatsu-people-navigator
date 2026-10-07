@@ -104,8 +104,10 @@
       "required": ["sourceIds", "reviewStatus"],
       "properties": {
         "sourceIds": { "$ref": "#/$defs/idList" },
-        "reviewStatus": { "enum": ["verified", "needs_review", "disputed"] }
-      }
+        "reviewStatus": { "enum": ["verified", "needs_review", "disputed"] },
+        "reviewSummary": { "type": "string", "minLength": 1, "maxLength": 300, "pattern": "\\S" }
+      },
+      "allOf": [{ "if": { "properties": { "reviewStatus": { "const": "verified" } }, "required": ["reviewStatus"] }, "then": { "properties": { "reviewSummary": false } } }]
     },
     "meta": {
       "type": "object",

@@ -7,6 +7,45 @@ const mappings = require(path.resolve(__dirname, '../../schema/v2/id-mappings.js
 const { projectLegacyData } = require(path.resolve(__dirname, '../../scripts/lib/project-v2.cjs'));
 const { validateCurrentData, validateV2Documents } = require(path.resolve(__dirname, '../../scripts/validate-data.cjs'));
 const { assembleLegacyData } = require('../../scripts/lib/assemble-legacy-data.cjs');
+const { loadV2Documents } = require('../../scripts/lib/v2-files.cjs');
+
+test('public review summaries survive generation without exposing internal notes', () => {
+  const documents = loadV2Documents(path.resolve(__dirname, '../..'));
+  const samples = documents.personStatuses.statuses.filter(status => status.evidence.reviewSummary);
+  assert.equal(samples.length, 5);
+  const generated = assembleLegacyData(documents);
+  validateCurrentData(generated);
+  const projected = projectLegacyData(generated);
+  validateV2Documents(projected);
+  for (const sample of samples) {
+    const actual = projected.personStatuses.statuses.find(status => status.id === sample.id).evidence;
+    assert.equal(actual.reviewSummary, sample.evidence.reviewSummary);
+    assert.equal(actual.reviewStatus, sample.evidence.reviewStatus);
+    assert.deepEqual(actual.sourceIds, sample.evidence.sourceIds);
+    assert.equal('note' in actual, false);
+    assert.ok(sample.evidence.note);
+  }
+});
+
+test('optional review summaries accept old data and reject unsafe contract shapes', () => {
+  for (const value of ['', '  ', 42, 'a'.repeat(301)]) {
+    const documents = projectLegacyData(data);
+    const status = documents.personStatuses.statuses[0];
+    status.evidence.reviewStatus = 'needs_review';
+    status.evidence.reviewSummary = value;
+    assert.throws(() => validateV2Documents(documents), /JSON Schema validation/);
+    const generated = assembleLegacyData(documents);
+    // Empty summaries are omitted by the generator; validate supplied consumer data directly.
+    generated.people[0].statuses[status.startSceneId].evidence.reviewSummary = value;
+    assert.throws(() => validateCurrentData(generated), /JSON Schema validation/);
+  }
+  const old = structuredClone(data);
+  for (const person of old.people) for (const status of Object.values(person.statuses)) delete status.evidence.reviewSummary;
+  assert.doesNotThrow(() => validateCurrentData(old));
+  const invalid = projectLegacyData(data);
+  invalid.people.people[0].evidence.reviewSummary = '確認中です。';
+  assert.throws(() => validateV2Documents(invalid), /JSON Schema validation/);
+});
 
 test('basic person evidence keeps uncertainty through generation and projection', () => {
   for (const reviewStatus of ['needs_review', 'disputed']) {

@@ -16,6 +16,18 @@ const domain = createDomain(data);
 // Scenes are named by ID so inserting a scene does not shift the assertions.
 const sceneAt = id => domain.sceneById.get(id).index;
 
+test('review explanations only show curated public text and escape markup', () => {
+  const shared = createShared({ data, state: { scene: 0 } });
+  for (const reviewStatus of ['needs_review', 'disputed']) {
+    assert.equal(shared.reviewExplanation({ reviewStatus, note: '内部手順' }), '');
+    const html = shared.reviewExplanation({ reviewStatus, note: '内部手順', reviewSummary: '<script>確認中</script>' });
+    assert.ok(html.includes(reviewStatus === 'disputed' ? '諸説がある点' : '確認中の点'));
+    assert.ok(html.includes('&lt;script&gt;確認中&lt;/script&gt;'));
+    assert.ok(!html.includes('内部手順'));
+  }
+  assert.equal(shared.reviewExplanation({ reviewStatus: 'verified', reviewSummary: '余分な文' }), '');
+});
+
 test('search normalization and aliases retain current behavior', () => {
   assert.equal(normalise(' 桂・小 五郎 '), '桂小五郎');
   assert.equal(searchAll(data, '桂小五郎')[0].id, 'kido');

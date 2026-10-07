@@ -29,12 +29,13 @@
       "properties": {
         "sourceIds": { "$ref": "#/$defs/referenceList" },
         "reviewStatus": { "enum": ["verified", "disputed", "needs_review"] },
-        "note": { "$ref": "#/$defs/nonEmptyString" }
+        "note": { "$ref": "#/$defs/nonEmptyString" },
+        "reviewSummary": { "type": "string", "minLength": 1, "maxLength": 300, "pattern": "\\S", "description": "公開用の校正理由。内部noteから自動生成しない。" }
       },
       "allOf": [
         {
           "if": { "properties": { "reviewStatus": { "const": "verified" } }, "required": ["reviewStatus"] },
-          "then": { "properties": { "sourceIds": { "minItems": 1 } } }
+          "then": { "properties": { "sourceIds": { "minItems": 1 }, "reviewSummary": false } }
         }
       ]
     }

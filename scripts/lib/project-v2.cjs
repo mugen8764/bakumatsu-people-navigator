@@ -72,7 +72,7 @@ function projectLegacyData(data) {
       ...(person.portrait ? { portrait: structuredClone(person.portrait) } : {}),
       ...(person.turningPoints ? { turningPoints: structuredClone(person.turningPoints) } : {}),
       evidence: person.evidence
-        ? evidence(person.evidence.sourceIds, person.evidence.reviewStatus)
+        ? structuredClone(person.evidence)
         : evidence(person.sources)
     }))
   };
@@ -96,7 +96,9 @@ function projectLegacyData(data) {
           factionId: factionId(entry.status.faction || person.defaultFaction),
           stance: entry.status.stance,
           importance: entry.status.importance,
-          evidence: evidence(person.sources, 'needs_review', '人物単位の出典から、状態ごとの確認へ細分化する必要がある。')
+          evidence: entry.status.evidence
+            ? structuredClone(entry.status.evidence)
+            : evidence(person.sources, 'needs_review', '人物単位の出典から、状態ごとの確認へ細分化する必要がある。')
         };
       });
     })

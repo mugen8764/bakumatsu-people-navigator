@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.124",
+    "version": "1.0.125",
     "updated": "2026-10-07"
   },
   "sources": {
@@ -18657,7 +18657,8 @@
               "nagaoka_kawai_reform",
               "tadami_kawai_chronology"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "needs_review",
+            "reviewSummary": "役職の就任・退任や兼任の期間を、各時点に対応させる確認が残っています。"
           }
         },
         "1868-toba": {
@@ -19076,7 +19077,8 @@
               "ndl_manjiro",
               "tosashimizu_manjiro"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "needs_review",
+            "reviewSummary": "1867〜1868年の勤務先・活動と、1869年の教授任命月日は確認中です。教育活動がこの期間を通じて続いたとは断定していません。"
           }
         }
       }
@@ -19147,7 +19149,8 @@
               "fukushima_saito",
               "aizu_shinsengumi"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "needs_review",
+            "reviewSummary": "三番隊隊長の就任時期と、この期間の各事件での配置は確認中です。"
           }
         },
         "1867-taisei": {
@@ -19245,7 +19248,8 @@
             "sourceIds": [
               "maekawa_yamanami"
             ],
-            "reviewStatus": "disputed"
+            "reviewStatus": "disputed",
+            "reviewSummary": "脱走の有無と理由には異なる説明があります。土方歳三との個人的な対立を動機として断定していません。"
           }
         }
       }
@@ -21423,7 +21427,8 @@
               "ryoma_izo_faq",
               "ryoma_izo_grave"
             ],
-            "reviewStatus": "disputed"
+            "reviewStatus": "disputed",
+            "reviewSummary": "資料によって捕縛年が異なるため、この時点の拘束状況は確定できません。"
           }
         },
         "1864-kinmon": {

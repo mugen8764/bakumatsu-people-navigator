@@ -16,7 +16,8 @@ function toObject(items, valueFor) {
 function evidence(value) {
   return {
     sourceIds: [...value.sourceIds],
-    reviewStatus: value.reviewStatus
+    reviewStatus: value.reviewStatus,
+    ...(value.reviewSummary ? { reviewSummary: value.reviewSummary } : {})
   };
 }
 
