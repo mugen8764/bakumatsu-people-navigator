@@ -22,6 +22,11 @@ for (const width of [320, 390, 1280]) {
         const nav = page.getByRole('navigation', { name: '人物内の移動' });
         await expect(nav).toBeVisible();
         const expected = targets(id, scene);
+        await expect(nav.locator('[data-person-section="personCurrentTitle"]')).toHaveText('この時点');
+        await expect(nav.locator('[data-person-section="personHistoryTitle"]')).toHaveText('時点履歴');
+        await expect(page.locator('#personHistoryTitle')).toHaveText('時点履歴');
+        const rows = await nav.locator('button').evaluateAll(items => [...new Set(items.map(item => Math.round(item.getBoundingClientRect().top)))]);
+        if (width <= 390) expect(rows.length).toBeLessThanOrEqual(2);
         expect(await nav.locator('button').evaluateAll(items => items.map(x => x.dataset.personSection))).toEqual(expected);
         expect(await nav.evaluate(x => getComputedStyle(x).position)).toBe('static');
         const url = page.url();
@@ -58,6 +63,8 @@ test('absent sections have no navigation and existing details still work', async
   for (const [id, scene] of [['meiji', 11], ['okubo-ichio', 11], ['kawaji-toshiakira', 0], ['nariaki', 0]]) {
     await page.goto(`/#scene=${data.scenes[scene].id}&view=people&person=${id}`);
     const nav = page.getByRole('navigation', { name: '人物内の移動' });
+    await expect(nav.locator('[data-person-section="personCurrentTitle"]')).toHaveText('この時点');
+    await expect(nav.locator('[data-person-section="personHistoryTitle"]')).toHaveText('時点履歴');
     expect(await nav.locator('button').evaluateAll(items => items.map(x => x.dataset.personSection))).toEqual(targets(id, scene));
     if (!domain.getPerson(id).portrait) await expect(page.locator('#personDetail .portrait-credit')).toHaveCount(0);
     if (await page.locator('.office-trigger').count()) {

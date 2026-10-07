@@ -73,11 +73,11 @@
         return;
       }
       const relations = domain.relationsFor(person.id, state.scene);
-      const navigation = [{ id: 'personCurrentTitle', label: '現在' }];
+      const navigation = [{ id: 'personCurrentTitle', label: 'この時点' }];
       if (person.turningPoints?.length) navigation.push({ id: 'personTurningPointTitle', label: '転換点' });
       if (domain.incidentHistoryFor(person.id).length) navigation.push({ id: 'personIncidentHistoryTitle', label: '事件' });
       if (relations.length) navigation.push({ id: 'personRelationsTitle', label: '関係' });
-      navigation.push({ id: 'personHistoryTitle', label: '変化' }, { id: 'personSourcesTitle', label: '出典' });
+      navigation.push({ id: 'personHistoryTitle', label: '時点履歴' }, { id: 'personSourcesTitle', label: '出典' });
       const offices = domain.officeTermsFor(status.role);
       const incident = domain.incidentAt(state);
       const participant = incident?.participants.find(item => item.personId === person.id);
@@ -113,7 +113,7 @@
       }).join('') : '<span class="muted">登録済みの主要関係はありません。</span>'}</div></div>
       ${eventPeerGroups.length ? `<div class="section event-peers"><h3>同じ事件の関係者</h3><p class="muted">同じ事件に関わった人物のうち、上の主要関係には含まれない人物です。直接の人物関係を示すものではありません。</p>${eventPeerGroups.map(group => `<section class="event-peer-group"><h4>${esc(group.title)}</h4><div class="tags">${group.people.map(other => `<button type="button" class="tag" data-event-peer="${esc(other.id)}">${esc(domain.statusAt(other, state.scene).display)}</button>`).join('')}</div></section>`).join('')}</div>` : ''}
       ${person.events.length ? `<div class="section"><h3>関連する年代の概要</h3><div class="tags">${person.events.map(id => data.events[id] ? `<button type="button" class="tag" data-open-event="${esc(id)}">${esc(data.events[id].title)}</button>` : '').join('')}</div></div>` : ''}
-      <div class="section"><h3 id="personHistoryTitle" tabindex="-1">人物の変化</h3><div class="history-list">${history.map(item => `<div class="history-item ${item.scene.index === state.scene ? 'current' : ''}"><button type="button" data-history-scene="${item.scene.index}"><b>${esc(item.scene.year)}年 ${esc(item.value.display)} ${shared.reviewBadge(item.value.evidence)}</b>${esc(item.value.role)}</button></div>`).join('')}</div></div>
+      <div class="section"><h3 id="personHistoryTitle" tabindex="-1">時点履歴</h3><div class="history-list">${history.map(item => `<div class="history-item ${item.scene.index === state.scene ? 'current' : ''}"><button type="button" data-history-scene="${item.scene.index}"><b>${esc(item.scene.year)}年 ${esc(item.value.display)} ${shared.reviewBadge(item.value.evidence)}</b>${esc(item.value.role)}</button></div>`).join('')}</div></div>
       <div class="actions"><button type="button" class="button" id="personToGraph">相関図</button><button type="button" class="button" id="personToMap">地図</button></div>
       <details class="source-disclosure section"><summary id="personSourcesTitle">参考資料を見る</summary>
         <section class="section" data-person-sources="basic"><h3>人物の基本情報 ${shared.reviewBadge(person.evidence)}</h3><div class="source-list">${shared.sourceLinks(person.sources)}</div></section>
