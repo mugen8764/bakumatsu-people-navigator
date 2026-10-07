@@ -56,6 +56,9 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
 .reading-guide-body{padding:0 16px 16px}
 .reading-guide-body ol{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px 30px;padding-left:24px}
 .reading-guide-body li{min-width:0;padding:8px}
+.reading-guide-body li[aria-current]{background:var(--accent-soft);outline:2px solid var(--accent);border-radius:10px}
+.reading-guide-body li[aria-current]>.muted,.guide-current{color:var(--text)}
+.guide-current{font-size:.8rem}
 .reading-guide-body h2{font-size:1rem;margin:4px 0}
 .reading-guide-body p{margin:6px 0 10px}
 .reading-guide .button{min-height:44px;white-space:normal;text-align:left}
@@ -490,6 +493,7 @@ footer{margin-top:16px;padding:16px;color:var(--muted);font-size:.79rem}
 @media(max-width:680px){
   .hero{margin-bottom:4px;row-gap:0}
   .reading-guide>summary{min-height:24px;padding:0 10px}
+  .guide-summary{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
   .hero h1{font-size:1.65rem}
   .lead,.version{display:none}
   .scene-controls{grid-template-columns:minmax(0,1fr);gap:6px;padding:7px 11px}

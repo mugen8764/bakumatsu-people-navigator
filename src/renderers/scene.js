@@ -10,20 +10,20 @@
     let sourcesRendered = false;
     let incidentScene = -1;
     let incidentsExpanded = false;
+    const guideSteps = [
+      ['scene', '1853-blackships'], ['scene', '1858-ansei'],
+      ['incident', 'kazunomiya-marriage'], ['incident', 'august18-coup'],
+      ['scene', '1864-kinmon'], ['incident', 'satcho-agreement'],
+      ['incident', 'second-choshu-war'], ['scene', '1867-taisei'],
+      ['scene', '1868-toba'], ['incident', 'edo-castle-surrender'],
+      ['scene', '1868-tohoku'], ['incident', 'hakodate-1869']
+    ];
 
     function initializeReadingGuide() {
-      const steps = [
-        ['scene', '1853-blackships'], ['scene', '1858-ansei'],
-        ['incident', 'kazunomiya-marriage'], ['incident', 'august18-coup'],
-        ['scene', '1864-kinmon'], ['incident', 'satcho-agreement'],
-        ['incident', 'second-choshu-war'], ['scene', '1867-taisei'],
-        ['scene', '1868-toba'], ['incident', 'edo-castle-surrender'],
-        ['scene', '1868-tohoku'], ['incident', 'hakodate-1869']
-      ];
-      $('#readingGuideSteps').innerHTML = steps.map(([kind, id]) => {
+      $('#readingGuideSteps').innerHTML = guideSteps.map(([kind, id]) => {
         const item = kind === 'scene' ? domain.sceneById.get(id) : domain.getIncident(id);
         const scene = kind === 'scene' ? item : domain.sceneById.get(item.sceneId);
-        return `<li><span class="muted">${esc(scene.year)}年 · ${kind === 'scene' ? '時点' : '事件'}</span><h2>${esc(item.title)}</h2><p>${esc(item.summary)} ${shared.reviewBadge(item.evidence)}</p><button type="button" class="button" data-guide-kind="${kind}" data-guide-id="${esc(id)}">${kind === 'scene' ? 'この時点を見る' : '事件を読む'}<span class="visually-hidden">：${esc(item.title)}</span> →</button></li>`;
+        return `<li><span class="muted">${esc(scene.year)}年 · ${kind === 'scene' ? '時点' : '事件'}</span> <strong class="guide-current" hidden>現在地</strong><h2>${esc(item.title)}</h2><p class="guide-summary">${esc(item.summary)}</p>${shared.reviewBadge(item.evidence)}<button type="button" class="button" data-guide-kind="${kind}" data-guide-id="${esc(id)}">${kind === 'scene' ? 'この時点を見る' : '事件を読む'}<span class="visually-hidden">：${esc(item.title)}</span> →</button></li>`;
       }).join('');
       $$('[data-guide-id]').forEach(button => button.addEventListener('click', () => {
         $('#readingGuide').open = false;
@@ -35,6 +35,18 @@
           heading.focus({ preventScroll: true });
         }
       }));
+    }
+
+    function renderGuidePosition() {
+      const current = domain.guidePosition(guideSteps, state);
+      $$('#readingGuideSteps li').forEach((item, index) => {
+        if (index === current) item.setAttribute('aria-current', 'step');
+        else item.removeAttribute('aria-current');
+        item.querySelector('.guide-current').hidden = index !== current;
+      });
+      const position = $('#readingGuidePosition');
+      position.textContent = current < 0 ? '12ステップ' : `${current + 1} / ${guideSteps.length}`;
+      position.setAttribute('aria-label', current < 0 ? '全12ステップ・対応する現在地なし' : `現在地 ${current + 1} / ${guideSteps.length}`);
     }
 
     function eventPeopleAtCurrentScene(event, limit = Infinity) {
@@ -188,6 +200,7 @@
         $('#sceneRange').max = data.scenes.length - 1;
         sceneControlsInitialized = true;
       }
+      renderGuidePosition();
       $('#sceneSelect').value = state.scene;
       $('#sceneRange').value = state.scene;
       $('#sceneRange').setAttribute('aria-valuetext', `${scene.year}年 ${scene.title}`);

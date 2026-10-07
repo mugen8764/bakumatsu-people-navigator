@@ -53,6 +53,16 @@
       return incidentsAt(state.scene).find(incident => incident.id === state.selectedIncident) || null;
     }
 
+    function guidePosition(steps, state) {
+      const incident = incidentAt(state);
+      const exact = incident ? steps.findIndex(([kind, id]) => kind === 'incident' && id === incident.id) : -1;
+      if (exact >= 0) return exact;
+      const sceneId = data.scenes[state.scene]?.id;
+      const sceneStep = steps.findIndex(([kind, id]) => kind === 'scene' && id === sceneId);
+      if (sceneStep >= 0) return sceneStep;
+      return steps.findIndex(([kind, id]) => kind === 'incident' && getIncident(id)?.sceneId === sceneId);
+    }
+
     function getPerson(id) {
       return personById.get(id);
     }
@@ -246,6 +256,7 @@
       incidentNeighbors,
       getIncident,
       incidentAt,
+      guidePosition,
       laterNameAt,
       nearestSceneForFaction,
       nearestSceneForPerson,
