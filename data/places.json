@@ -213,11 +213,11 @@
       "name": "新潟・北越",
       "longitude": 139.04,
       "latitude": 37.9,
-      "note": "北越戦争の主要地域。新政府軍と長岡藩などが戦った。",
+      "note": "戊辰戦争が北越へ展開した地域。北越諸藩は奥羽諸藩と同盟を結び、新政府軍に抵抗した。",
       "evidence": {
         "sourceIds": ["gsi_maps_coordinates", "archives_toba_fushimi", "archives_boshin_war"],
         "reviewStatus": "verified",
-        "note": "表示用概略座標と戊辰戦争が北越へ展開したことを確認。"
+        "note": "表示用概略座標は地理院地図、北越への戦争展開は「鳥羽・伏見の戦い」、北越諸藩の同盟と抵抗は「戊辰戦争」で確認。長岡藩の個別戦闘はこの出典群から確定しない。"
       }
     },
     {
