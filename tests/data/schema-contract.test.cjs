@@ -12,7 +12,7 @@ const { loadV2Documents } = require('../../scripts/lib/v2-files.cjs');
 test('public review summaries survive generation without exposing internal notes', () => {
   const documents = loadV2Documents(path.resolve(__dirname, '../..'));
   const samples = documents.personStatuses.statuses.filter(status => status.evidence.reviewSummary);
-  assert.equal(samples.length, 5);
+  assert.equal(samples.length, 9);
   const generated = assembleLegacyData(documents);
   validateCurrentData(generated);
   const projected = projectLegacyData(generated);

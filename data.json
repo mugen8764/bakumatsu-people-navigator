@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.127",
-    "updated": "2026-10-08"
+    "version": "1.0.128",
+    "updated": "2026-10-09"
   },
   "sources": {
     "archives_timeline": {
@@ -11582,7 +11582,8 @@
               "ndl_portrait_okubo_ichio",
               "ndl_okubo_ichio_papers"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "needs_review",
+            "reviewSummary": "1861年の再登用は確認されていますが、1862年の現職や各役職の在任・兼任期間は確認中です。"
           }
         },
         "1863-joi": {
@@ -11622,7 +11623,8 @@
               "ndl_okubo_ichio_papers",
               "fukuroi_minato_ichio"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "needs_review",
+            "reviewSummary": "会計総裁の任命月日が不明なため、この1月時点での在任は確認中です。若年寄は就任前として区別しています。"
           }
         },
         "1868-edo": {
@@ -18678,7 +18680,8 @@
               "nagaoka_kawai_reform",
               "tadami_kawai_chronology"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "needs_review",
+            "reviewSummary": "正月の出立日と、この時点での役職は確認中です。4月の家老就任を1月へ遡らせていません。"
           }
         },
         "1868-edo": {
@@ -19056,7 +19059,8 @@
               "tosashimizu_manjiro",
               "ndl_manjiro"
             ],
-            "reviewStatus": "needs_review"
+            "reviewStatus": "needs_review",
+            "reviewSummary": "1862〜1865年の勤務・役職・所属期間は確認中です。以前の航海経験から、この期間の活動が継続したとは断定していません。"
           }
         },
         "1866-satcho": {
