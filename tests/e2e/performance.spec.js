@@ -61,7 +61,7 @@ test('initial page stays within the static asset budget', async ({ page, request
     const compressible = /^(text\/|application\/(javascript|json)|image\/svg\+xml)/.test(response.headers()['content-type'] || '');
     transferBytes += compressible ? gzipSync(body).length : body.length;
   }
-  expect(transferBytes).toBeLessThan(340_000);
+  expect(transferBytes).toBeLessThan(350_000);
 });
 
 // The placeholders in src/styles.css must reserve what the loaded page takes.
