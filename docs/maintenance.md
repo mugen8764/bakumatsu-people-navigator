@@ -80,7 +80,7 @@ npm test
 
 Bashでは `STATIC_SITE_ROOT=dist PLAYWRIGHT_ALL_BROWSERS=1 npm test` と指定します。環境変数は同じシェルの後続コマンドにも残るため、元の条件に戻す際は新しいシェルを使うか解除してください。
 
-Chromiumは対象の全検査、Firefox・WebKitは `@cross-browser` の主要操作を実行します。設定の正本は [playwright.config.cjs](../playwright.config.cjs) です。CIではLinux上で3ブラウザーを準備し、`STATIC_SITE_ROOT=dist` を指定します。
+Chromiumは対象の全検査、Firefox・WebKitは `@cross-browser` の主要操作を実行します。設定の正本は [playwright.config.cjs](../playwright.config.cjs) です。CIではLinux上のブラウザー別ジョブで各ブラウザーを準備し、同じ `public-site` artifactを `dist/` に取得して `STATIC_SITE_ROOT=dist npm run test:e2e -- --project=<browser>` を実行します。projectの対象・workerの既定・retryは設定を維持し、E2Eジョブで再ビルドしません。
 
 ブラウザー検査は `@playwright/test` ではなく [tests/support/test.cjs](../tests/support/test.cjs) から `test` と `expect` を読み込みます。未捕捉のページエラーでテストを失敗させ、失敗時にはコンソールエラーを添付します。アプリは起動時の例外を捕捉して共通のエラー表示にするため、原因はこの添付で確認します。
 
@@ -204,7 +204,7 @@ git diff --check
 
 [CI](../.github/workflows/ci.yml) が生成した `public-site` artifactを、[デプロイ](../.github/workflows/deploy.yml) が対象コミットのままCloudflare Pagesへ配置します。Cloudflare側のGit連携からの直接デプロイを併用しない運用です。ホスティング設定を変更する際は管理画面でも確認してください。
 
-CIではpush・pull requestごとにactionlintでワークフローを検査し、公開用distを生成してデータ・ブラウザー検査を実行します。配信後は [Production smoke](../.github/workflows/production-smoke.yml)、全出典の到達性は [週次リンク検査](../.github/workflows/source-links.yml) で確認します。
+CIではpush・pull requestごとにactionlint、unit/data、公開用distの単一ビルドの順に実行し、ビルドジョブだけが `public-site` をアップロードします。その後Chromium・Firefox・WebKitのmatrixジョブを並列実行します。`fail-fast: false` で他ブラウザーの結果も残し、失敗時のHTML report・スクリーンショット・trace等は `playwright-diagnostics-<browser>` に分離します。最終 `test` ジョブは全ジョブのsuccessを要求し、失敗・キャンセル・タイムアウト・skipを成功にしません。artifactが保存済みでも、CI run全体が成功したmainへのpushだけがDeployの条件を満たします。DeployはそのCI run IDからartifactを取得し、同じ `head_sha` をcheckout・配信SHAに使用します。配信後は [Production smoke](../.github/workflows/production-smoke.yml)、全出典の到達性は [週次リンク検査](../.github/workflows/source-links.yml) で確認します。
 
 本番照合は [check-production.cjs](../scripts/check-production.cjs) が管理します。
 
