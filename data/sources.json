@@ -2525,11 +2525,11 @@
     },
     {
       "id": "mofa_paris_exposition",
-      "title": "外務省外交史料館 特別展示「マッサンと呼ばれた外交官」",
-      "url": "https://www.mofa.go.jp/mofaj/files/000194546.pdf",
-      "locator": "21頁「3-1 パリ万国博覧会：徳川慶喜の国書案」",
-      "contentCheckedAt": "2026-09-26",
-      "note": "1867年のパリ万博への日本初参加、慶喜が弟昭武を名代として派遣したこと、留学を望んだことを確認。"
+      "title": "外務省外交史料館 特別展示「外交史料に見る日本万国博覧会への道」：万国博覧会との出会い",
+      "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/banpaku/page1.html",
+      "locator": "「万国博覧会との出会い」概説：1867年パリ万博の公式出品、将軍名代の徳川昭武と渋沢篤太夫の随行",
+      "contentCheckedAt": "2026-10-15",
+      "note": "1867年の日本からの初の公式出品、慶喜の弟昭武の名代派遣、渋沢篤太夫の随行、薩摩・佐賀両藩の出品を展示解説本文で確認。旧PDF（https://www.mofa.go.jp/mofaj/files/000194546.pdf）は404。旧登録の「マッサンと呼ばれた外交官」という出典名は本ページの展示名と一致しないため訂正。本ページではフランス皇帝宛て国書案や留学への配慮の記述は確認できない。"
     },
     {
       "id": "ndl_shibusawa_france",
