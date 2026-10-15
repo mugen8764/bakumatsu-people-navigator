@@ -5425,7 +5425,8 @@
             "sourceIds": [
               "mofa_paris_exposition"
             ],
-            "reviewStatus": "verified"
+            "reviewStatus": "needs_review",
+            "note": "弟昭武の名代派遣は外務省の代替HTMLで確認。フランス皇帝への国書で昭武らへの配慮を求めた部分は、旧PDFの404により本文を再確認できず、代替HTMLにも該当記述がないため校正中。歴史記述は保持する。"
           }
         },
         {
