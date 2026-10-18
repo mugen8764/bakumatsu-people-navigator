@@ -3,6 +3,34 @@ const { catalog } = require('../support/catalog.cjs');
 const AxeBuilder = require('@axe-core/playwright').default;
 const crossBrowser = { tag: '@cross-browser' };
 
+for (const width of [320, 390, 1280]) {
+  for (const colorScheme of ['light', 'dark']) {
+    test(`Paris dispatch keeps Yoshinobu offsite at ${width}px ${colorScheme}`, crossBrowser, async ({ page }) => {
+      await page.setViewportSize({ width, height: 900 });
+      await page.emulateMedia({ colorScheme });
+      await page.goto('/#event=paris-exposition-1867');
+      const card = page.locator('.decision [data-event-person="yoshinobu"]');
+      await expect(card).toContainText('自身の名代として弟昭武をパリ万国博覧会へ派遣した。現地参加者ではない。');
+      await expect(card).toContainText('出典校正中');
+      await expect(card).not.toContainText('配慮を求めた');
+      await expect(page.locator('.onsite [data-event-person="yoshinobu"]')).toHaveCount(0);
+      await page.locator('[data-incident-section="incidentSourcesTitle"]').click();
+      const sources = page.locator('.source-disclosure section').filter({ has: page.getByRole('heading', { name: '徳川慶喜：弟を名代として派遣' }) });
+      await expect(sources.locator('a')).toHaveCount(2);
+      await expect(sources.locator('a').last()).toHaveAttribute('href', 'https://www.city.matsudo.chiba.jp/tojo/rekishikan_shoukai/rekishi/nenpyou/1837-1869.html');
+      await expect(sources).toContainText('慶応3年昭武欄1月11日・3月24日');
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+      const audit = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
+      expect(audit.violations).toEqual([]);
+      await card.focus();
+      await card.press('Enter');
+      await expect(page.locator('.person-incident')).toContainText('現地参加者ではない');
+      await page.reload();
+      await expect(page.locator('.person-incident')).toContainText('現地参加者ではない');
+    });
+  }
+}
+
 for (const colorScheme of ['light', 'dark']) {
   test(`first expedition connects the Choshu sequence at 320px in ${colorScheme}`, async ({ page }) => {
     await page.setViewportSize({ width: 320, height: 780 });
