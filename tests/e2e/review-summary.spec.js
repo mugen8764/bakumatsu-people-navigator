@@ -100,9 +100,18 @@ test('review shortcuts preserve keyboard order and manual disclosure control', {
   }
 });
 
-test('person, scene, history and reload always target the current status reason', { tag: '@cross-browser' }, async ({ page }) => {
+test('person, scene, history and reload always target the current status reason', { tag: '@cross-browser' }, async ({ page, browser }) => {
   const saito = samples.find(status => status.personId === 'saito');
   const yamanami = samples.find(status => status.personId === 'yamanami');
+  const firstVisit = await browser.newContext({ viewport: { width: 1280, height: 900 }, reducedMotion: 'reduce' });
+  try {
+    const freshPage = await firstVisit.newPage();
+    await freshPage.goto(`/#scene=${yamanami.startSceneId}&view=people&person=yamanami`);
+    await freshPage.locator(triggerSelector).click();
+    await expectReviewDestination(freshPage, yamanami);
+  } finally {
+    await firstVisit.close();
+  }
   const sceneIndex = id => String(scenes.findIndex(scene => scene.id === id));
   await page.goto(`/#scene=${saito.startSceneId}&view=people&person=saito`);
   await page.locator(triggerSelector).click();

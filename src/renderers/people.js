@@ -132,6 +132,8 @@
         if (disclosure) disclosure.open = true;
         target.style.scrollMarginTop = `${$('.tabs-shell').getBoundingClientRect().height + 16}px`;
         target.scrollIntoView({ block: 'start', behavior: 'auto' });
+        // The sticky detail can move when its newly opened content is scrolled.
+        if (target.getBoundingClientRect().bottom > window.innerHeight) target.scrollIntoView({ block: 'start', behavior: 'auto' });
         target.focus({ preventScroll: true });
       }));
       const officeTrigger = $('.office-trigger', box);
