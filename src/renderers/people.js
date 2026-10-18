@@ -90,6 +90,7 @@
         .sort((a, b) => a.scene.index - b.scene.index);
       const evidenceLinks = evidence => shared.sourceLinks(evidence?.sourceIds)
         || '<p class="muted">この項目の出典は確認中です。</p>';
+      const reviewLabel = shared.reviewReasonLabel(status.evidence);
       const relationSources = relations.map(relation => {
         const other = domain.getPerson(relation.a === person.id ? relation.b : relation.a);
         return `<section class="section" data-relation-sources="${esc(other.id)}"><h4>${esc(domain.statusAt(other, state.scene).display)} — ${esc(relation.label)} ${shared.reviewBadge(relation.evidence)}</h4><div class="source-list">${evidenceLinks(relation.evidence)}</div></section>`;
@@ -98,7 +99,7 @@
       ${person.portrait ? '<p class="portrait-note">史料肖像｜選択時点の姿とは限りません。</p>' : ''}
       <nav class="incident-section-nav person-section-nav" aria-label="人物内の移動">${navigation.map(item => `<button type="button" data-person-section="${item.id}">${item.label}</button>`).join('')}</nav>
       ${incidentContext}
-      <div class="snapshot"><h3 id="personCurrentTitle" tabindex="-1">${shared.dateLabel(shared.scene())}の位置づけ ${shared.reviewBadge(status.evidence)}</h3>${esc(status.importance)}</div>
+      <div class="snapshot"><h3 id="personCurrentTitle" tabindex="-1">${shared.dateLabel(shared.scene())}の位置づけ ${shared.reviewBadge(status.evidence)}</h3>${esc(status.importance)}${reviewLabel ? `<div class="actions"><button type="button" class="button" data-person-section="personStatusReview">${esc(reviewLabel)}を見る</button></div>` : ''}</div>
       <div class="section person-stance"><h3>この時点の行動・立場</h3><p>${esc(status.stance)}</p></div>
       ${turningPoint(person)}
       ${incidentHistory(person)}
@@ -117,7 +118,7 @@
       <div class="actions"><button type="button" class="button" id="personToGraph">相関図</button><button type="button" class="button" id="personToMap">地図</button></div>
       <details class="source-disclosure section"><summary id="personSourcesTitle">参考資料を見る</summary>
         <section class="section" data-person-sources="basic"><h3>人物の基本情報 ${shared.reviewBadge(person.evidence)}</h3>${shared.reviewExplanation(person.evidence)}<div class="source-list">${shared.sourceLinks(person.sources)}</div></section>
-        <section class="section" data-person-sources="status"><h3>この時点の行動・立場 ${shared.reviewBadge(status.evidence)}</h3><p class="muted">${shared.dateLabel(shared.scene())}の位置づけと行動・立場の根拠です。</p>${shared.reviewExplanation(status.evidence)}<div class="source-list">${evidenceLinks(status.evidence)}</div></section>
+        <section class="section" data-person-sources="status"><h3>この時点の行動・立場 ${shared.reviewBadge(status.evidence)}</h3><p class="muted">${shared.dateLabel(shared.scene())}の位置づけと行動・立場の根拠です。</p>${shared.reviewExplanation(status.evidence, 'personStatusReview')}<div class="source-list">${evidenceLinks(status.evidence)}</div></section>
         ${relations.length ? `<section class="section" data-person-sources="relations"><h3>この関係の根拠</h3>${relationSources}</section>` : ''}
       </details>`;
       shared.bindPortraits(box);
@@ -131,6 +132,8 @@
         if (disclosure) disclosure.open = true;
         target.style.scrollMarginTop = `${$('.tabs-shell').getBoundingClientRect().height + 16}px`;
         target.scrollIntoView({ block: 'start', behavior: 'auto' });
+        // The sticky detail can move when its newly opened content is scrolled.
+        if (target.getBoundingClientRect().bottom > window.innerHeight) target.scrollIntoView({ block: 'start', behavior: 'auto' });
         target.focus({ preventScroll: true });
       }));
       const officeTrigger = $('.office-trigger', box);

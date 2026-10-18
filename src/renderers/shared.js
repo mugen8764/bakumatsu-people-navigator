@@ -106,10 +106,15 @@
       return '<span class="badge review-status" title="項目単位の出典を確認中です">出典校正中</span>';
     }
 
-    function reviewExplanation(evidence) {
-      if (!evidence?.reviewSummary || !['needs_review', 'disputed'].includes(evidence.reviewStatus)) return '';
-      const label = evidence.reviewStatus === 'disputed' ? '諸説がある点' : '確認中の点';
-      return `<p class="review-explanation"><strong>${label}</strong><br>${escapeHtml(evidence.reviewSummary)}</p>`;
+    function reviewReasonLabel(evidence) {
+      if (!evidence?.reviewSummary?.trim() || !['needs_review', 'disputed'].includes(evidence.reviewStatus)) return '';
+      return evidence.reviewStatus === 'disputed' ? '諸説がある点' : '確認中の点';
+    }
+
+    function reviewExplanation(evidence, id = '') {
+      const label = reviewReasonLabel(evidence);
+      if (!label) return '';
+      return `<p class="review-explanation"${id ? ` id="${escapeHtml(id)}" tabindex="-1"` : ''}><strong>${label}</strong><br>${escapeHtml(evidence.reviewSummary)}</p>`;
     }
 
     function backgroundTerms(ids = []) {
@@ -118,7 +123,7 @@
       return `<section class="background-terms section"><h3>背景を知る</h3><div class="term-list">${terms.map(term => `<details class="background-term"><summary>${escapeHtml(term.title)}<span class="term-reading">${escapeHtml(term.kana)}</span></summary><p>${escapeHtml(term.meaning)} ${reviewBadge(term.evidence)}</p><p class="term-context">${escapeHtml(term.context)}</p><div class="source-list">${sourceLinks(term.evidence.sourceIds)}</div></details>`).join('')}</div></section>`;
     }
 
-    return { avatar, backgroundTerms, bindPortraits, portraitCredit, dateLabel, escapeHtml, factionColor, factionShort, preserveFocus, reviewBadge, reviewExplanation, scene, sourceCard, sourceLinks };
+    return { avatar, backgroundTerms, bindPortraits, portraitCredit, dateLabel, escapeHtml, factionColor, factionShort, preserveFocus, reviewBadge, reviewExplanation, reviewReasonLabel, scene, sourceCard, sourceLinks };
   }
 
   return { createShared, escapeHtml };
