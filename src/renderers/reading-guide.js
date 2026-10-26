@@ -16,7 +16,8 @@
 .guide-current{font-size:.8rem}
 .reading-guide-body h2{font-size:1rem;margin:4px 0}
 .reading-guide-body p{margin:6px 0 10px}
-.reading-guide .button{min-height:44px;white-space:normal;text-align:left}
+.guide-person-action{display:block;margin-top:8px}
+.reading-guide .button{min-height:44px;max-width:100%;white-space:normal;text-align:left;overflow-wrap:anywhere}
 @media(max-width:680px){.guide-summary{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}}
 `;
   document.head.append(style);
@@ -38,7 +39,10 @@
           const scene = kind === 'scene' ? item : domain.sceneById.get(item.sceneId);
           const participant = personId ? item.participants.find(person => person.personId === personId) : null;
           const focus = participant ? `<span class="guide-focus">人物の動き：${esc(domain.getPerson(personId).name)}</span>` : '';
-          return `<li><span class="muted">${esc(scene.year)}年 · ${kind === 'scene' ? '時点' : '事件'}</span> <strong class="guide-current" hidden>現在地</strong>${focus}<h2>${esc(item.title)}</h2><p class="guide-summary">${esc(participant?.summary || item.summary)}</p>${shared.reviewBadge(participant?.evidence || item.evidence)}<button type="button" class="button" data-guide-kind="${kind}" data-guide-id="${esc(id)}"${participant ? ` data-guide-person="${esc(personId)}"` : ''}>${kind === 'scene' ? 'この時点を見る' : '事件を読む'}<span class="visually-hidden">：${esc(item.title)}</span> →</button></li>`;
+          const personName = participant ? domain.getPerson(personId).name : '';
+          const nameNote = participant && participant.displayName !== personName ? `<p class="muted">${esc(personName)}の事件中の名前：${esc(participant.displayName)}</p>` : '';
+          const personButton = participant ? `<button type="button" class="button guide-person-action" data-guide-event="${esc(id)}" data-guide-focus-person="${esc(personId)}">${esc(personName)}の関与を見る<span class="visually-hidden">：${esc(item.title)}</span> →</button>` : '';
+          return `<li><span class="muted">${esc(scene.year)}年 · ${kind === 'scene' ? '時点' : '事件'}</span> <strong class="guide-current" hidden>現在地</strong>${focus}<h2>${esc(item.title)}</h2><p class="guide-summary">${esc(participant?.summary || item.summary)}</p>${nameNote}${shared.reviewBadge(participant?.evidence || item.evidence)}<button type="button" class="button" data-guide-kind="${kind}" data-guide-id="${esc(id)}"${participant ? ` data-guide-person="${esc(personId)}"` : ''}>${kind === 'scene' ? 'この時点を見る' : '事件を読む'}<span class="visually-hidden">：${esc(item.title)}</span> →</button>${personButton}</li>`;
         }).join('');
         $$('[data-guide-id]').forEach(button => button.addEventListener('click', () => {
           $('#readingGuide').open = false;
@@ -49,6 +53,10 @@
             heading.scrollIntoView({ block: 'start', behavior: 'auto' });
             heading.focus({ preventScroll: true });
           }
+        }));
+        $$('[data-guide-focus-person]').forEach(button => button.addEventListener('click', () => {
+          $('#readingGuide').open = false;
+          actions.openEvent(button.dataset.guideEvent, { personId: button.dataset.guideFocusPerson, focusPerson: true });
         }));
         renderedGuide = state.guide;
       }
