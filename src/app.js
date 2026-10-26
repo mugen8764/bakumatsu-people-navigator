@@ -174,11 +174,15 @@
     state.view = 'events';
     window.BM_STATE.ensureSelections(state, data, domain);
     renderAll({ historyMode: 'push' });
-    const heading = $('#eventDetailTitle');
-    if (heading) {
-      heading.style.scrollMarginTop = `${$('.tabs-shell').getBoundingClientRect().height + 16}px`;
-      heading.scrollIntoView({ block: 'start', behavior: 'auto' });
-      heading.focus({ preventScroll: true });
+    const personCard = options.focusPerson && $$('#eventDetail .incident-person[data-event-person]')
+      .find(button => button.dataset.eventPerson === options.personId);
+    // Keep the involvement category beside the role even in the middle of a long lane.
+    if (personCard) personCard.querySelector('.incident-focus-label').hidden = false;
+    const target = personCard || $('#eventDetailTitle');
+    if (target) {
+      target.style.scrollMarginTop = `${$('.tabs-shell').getBoundingClientRect().height + 16}px`;
+      target.scrollIntoView({ block: 'start', behavior: 'auto' });
+      target.focus({ preventScroll: true });
     }
   }
 
