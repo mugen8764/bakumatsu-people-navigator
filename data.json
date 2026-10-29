@@ -2969,6 +2969,13 @@
       "note": "記念館の後世の年表。1866年11月の町奉行兼任、1867年10月の御年寄役、1868年正月の藩主供奉と江戸への移動、同年4月の家老就任を確認。任免の具体日・在任区間は記載なし。年表内の事件日付や対象外の戦闘・死去の細部は採用しない。",
       "locator": "「年表」慶応元（1865）〜慶応4（1868）年：10月郡奉行、11月御番頭格兼町奉行、10月御年寄役、正月供奉・2月帰藩・4月家老就任",
       "contentCheckedAt": "2026-10-06"
+    },
+    "osaka_museum_atsuhime_exhibition": {
+      "title": "大阪歴史博物館「天璋院篤姫展・第一章 御台所への道のり」",
+      "url": "https://www.osakamushis.jp/news/2008/atsuhime/atsuhime_item.html",
+      "note": "縁組みによる将軍家との関係強化を藩政に有利と考えた斉彬が、於一を養子として篤姫と改名したこと。養女化と幕府への実子としての届出は別に説明されている。",
+      "locator": "「第一章 御台所への道のり」第3段落（斉彬の政治的意図、於一の養女化と改名）",
+      "contentCheckedAt": "2026-10-29"
     }
   },
   "factions": {
@@ -23388,7 +23395,8 @@
       "text": "斉彬は篤姫を将軍家へ送り、薩摩と幕府を結ぶ構想を持った。",
       "evidence": {
         "sourceIds": [
-          "ibusuki_atsuhime"
+          "ibusuki_atsuhime",
+          "osaka_museum_atsuhime_exhibition"
         ],
         "reviewStatus": "verified"
       }
