@@ -661,9 +661,35 @@
     },
     {
       "id": "ibusuki_atsuhime",
-      "title": "指宿市観光協会「天璋院篤姫について」",
-      "url": "https://www.ibusuki.or.jp/info/machiaruki/atsuhime/atsuhimeinfo/index.php",
-      "note": "篤姫の斉彬養女化、1853年の鹿児島出立、近衛家養女化と1856年の家定への輿入れ。"
+      "title": "国立国会図書館国際子ども図書館「篤姫／天璋院」",
+      "url": "https://www.kodomo.go.jp/yareki/person/person_01.html",
+      "note": "斉彬の養女となったこと、薩摩を離れ1856年に家定の正室となったこと、家定没後に天璋院と名のり大奥に暮らし続けたこと。",
+      "locator": "「将軍の御台所」第1・2段落、「徳川家存続のために」第1・2段落",
+      "contentCheckedAt": "2026-10-29"
+    },
+    {
+      "id": "kagoshima_library_atsuhime_names",
+      "title": "鹿児島県立図書館「篤姫の名前の変遷と時期を知りたい。」（レファレンス協同データベース）",
+      "url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000052780&page=ref_view",
+      "note": "嘉永6年の斉彬養女化と篤への改名、安政3年の近衛家養女化、家定没後の安政5年の天璋院への改称。",
+      "locator": "登録番号1000052780「回答」の篤・敬子・天璋院の各行",
+      "contentCheckedAt": "2026-10-29"
+    },
+    {
+      "id": "yamaga_atsuhime_departure",
+      "title": "山鹿市地域振興公社「豊前街道」",
+      "url": "https://yamaga.site/?tourist=%E8%B1%8A%E5%89%8D%E8%A1%97%E9%81%93",
+      "note": "嘉永6年（1853）に篤姫が鹿児島を出立したこと。",
+      "locator": "「豊前街道」本文最終段落（篤姫の嘉永6年の鹿児島出立と山鹿での宿泊）",
+      "contentCheckedAt": "2026-10-29"
+    },
+    {
+      "id": "naegi_atsuhime_marriage",
+      "title": "中津川市苗木遠山史料館「苗木文書にみる篤姫」",
+      "url": "https://www.city.nakatsugawa.lg.jp/museum/t/archives/materials/1615.html",
+      "note": "嘉永6年（1853）10月には江戸の薩摩藩邸に到着していたことと、安政3年（1856）の家定との婚儀を説明する。「苗木日記」と「見聞雑書」の紹介。",
+      "locator": "「収蔵品紹介」冒頭の嘉永6年10月の江戸薩摩藩邸到着・安政3年の婚儀の段落、および「見聞雑書」の引用段落",
+      "contentCheckedAt": "2026-10-29"
     },
     {
       "id": "mofa_harris_credentials",
