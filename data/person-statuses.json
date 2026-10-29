@@ -5451,10 +5451,13 @@
       "importance": "この時点では将軍家への輿入れ準備中で、家定との婚姻は1856年。",
       "evidence": {
         "sourceIds": [
-          "ibusuki_atsuhime"
+          "ibusuki_atsuhime",
+          "kagoshima_library_atsuhime_names",
+          "yamaga_atsuhime_departure",
+          "naegi_atsuhime_marriage"
         ],
         "reviewStatus": "verified",
-        "note": "指宿市観光協会の人物解説で、1853年の改名・斉彬養女化・鹿児島出立と、1856年の家定との婚姻を確認。"
+        "note": "鹿児島県立図書館の回答で嘉永6年の斉彬養女化と篤への改名を確認し、実子としての幕府への届出とは区別。山鹿市地域振興公社で1853年の鹿児島出立、苗木遠山史料館で同年10月には江戸の薩摩藩邸に到着していたことと1856年の婚儀、国際子ども図書館で家定正室となったことを確認。1854年の状態に婚姻後の役職を遡及させない。"
       }
     },
     {
@@ -5488,10 +5491,11 @@
       "evidence": {
         "sourceIds": [
           "kagoshima_tenshoin",
-          "ibusuki_atsuhime"
+          "ibusuki_atsuhime",
+          "kagoshima_library_atsuhime_names"
         ],
         "reviewStatus": "verified",
-        "note": "鹿児島県と指宿市観光協会の解説で家定正室、家定死後の天璋院への改称、徳川家にとどまった経歴を確認。根拠を確認できない和宮降嫁の調整役という記述は削除。"
+        "note": "国際子ども図書館で家定正室、家定没後の天璋院への改称と大奥での暮らしの継続を確認。鹿児島県立図書館の回答で家定没後の安政5年の改称、鹿児島県「郷土の偉人」で徳川家の立場を貫いたことと後年の家達養育を確認。根拠を確認できない和宮降嫁の調整役という記述は削除したままとする。"
       }
     },
     {
