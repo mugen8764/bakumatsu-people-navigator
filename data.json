@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "幕末人物・勢力ナビ 1853–1869",
-    "version": "1.0.133",
-    "updated": "2026-10-29"
+    "version": "1.0.134",
+    "updated": "2026-11-07"
   },
   "sources": {
     "archives_timeline": {
@@ -23864,22 +23864,6 @@
           "ndl_kido_iwakura_proposal_1869"
         ],
         "reviewStatus": "verified"
-      }
-    },
-    {
-      "a": "komei",
-      "b": "sanjo",
-      "start": 5,
-      "end": 6,
-      "type": "対立",
-      "label": "急進尊攘への不信",
-      "text": "孝明天皇が尊攘派に強い反感を持つ中、八月十八日の政変で三条ら七卿は長州へ逃れた。",
-      "evidence": {
-        "sourceIds": [
-          "cultural_heritage_aug18",
-          "jacar_sanjo_detail"
-        ],
-        "reviewStatus": "needs_review"
       }
     },
     {

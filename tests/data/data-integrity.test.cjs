@@ -44,7 +44,7 @@ test('the published collection sizes stay at the current release baseline', () =
     factions: 19,
     scenes: 16,
     events: 16,
-    relations: 128,
+    relations: 127,
     factionRelations: 18,
     places: 35,
     sources: 448
