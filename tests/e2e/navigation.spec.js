@@ -44,7 +44,8 @@ test('footer links expose reader-facing publication information', async ({ page 
   await expect(page).toHaveURL(/scene=1866-satcho&view=sources&person=kido/);
 
   await expect(page.locator('#view-sources a[href="LICENSE"]')).toHaveText('ライセンス全文');
-  await expect(page.locator('a[href="https://github.com/mugen8764/bakumatsu-people-navigator"]')).toHaveCount(2);
+  await expect(page.locator('#view-sources a[href="https://github.com/mugen8764/bakumatsu-people-navigator"]')).toHaveCount(1);
+  await expect(page.locator('footer a[href="https://github.com/mugen8764/bakumatsu-people-navigator"]')).toHaveCount(0);
   await expect(page.locator('footer a[href="README.md"]')).toHaveCount(0);
   await expect(page.locator('footer a[href="SOURCES.md"]')).toHaveCount(0);
 });
