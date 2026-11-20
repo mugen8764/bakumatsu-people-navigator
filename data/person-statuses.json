@@ -6815,16 +6815,16 @@
       "startSceneId": "1862-bunkyu",
       "endSceneId": "1863-aug18",
       "displayName": "楠本イネ",
-      "role": "長崎で診療・医学を研鑽",
+      "role": "蘭方産科医",
       "factionId": "medicine-learning",
-      "stance": "開業しながら、長崎養生所のポンペらの講義で学んだ。",
+      "stance": "1861年には長崎で開業し、長崎養生所のポンペらの講義を受けた。1862〜63年の診療・受講の継続は確認中。",
       "importance": "診療と学習を重ねた医師の活動を見る。",
       "evidence": {
         "sourceIds": [
           "ndl_portrait_ine"
         ],
         "reviewStatus": "needs_review",
-        "note": "1861年の受講は確認できるが、各時点の受講期間は未確定。"
+        "note": "NDLの解説は1861年の長崎開業・受講を記す。1862〜63年の継続診療・受講期間は未確定で、長崎養生所への所属を示すものではない。当該期間の日付付き診療記録・受講記録を確認できた場合に再検討する。"
       }
     },
     {
@@ -6835,13 +6835,15 @@
       "displayName": "楠本イネ",
       "role": "蘭方産科医",
       "factionId": "medicine-learning",
-      "stance": "医学を学び診療にあたる。この年に伊篤という名へ改めたとされる。月日は確認中。",
+      "stance": "1864年に伊篤へ改名したとされる。月日やこの時点の診療・学習の状況は確認中。",
       "importance": "イネと伊篤という名前を同じ人物として探せる。",
       "evidence": {
         "sourceIds": [
-          "seiyo_ine_timeline"
+          "seiyo_ine_timeline",
+          "ndl_portrait_ine"
         ],
-        "reviewStatus": "needs_review"
+        "reviewStatus": "needs_review",
+        "note": "西予市年表2頁の1864年条は改名年を記すが、月日・署名の実使用期間・年内の診療継続は示さない。表示名は従来の楠本イネを維持し、当該時点の日付付き署名・診療記録が確認できた場合に再検討する。"
       }
     },
     {
@@ -6852,14 +6854,15 @@
       "displayName": "楠本伊篤",
       "role": "蘭方産科医",
       "factionId": "medicine-learning",
-      "stance": "楠本イネとして知られる医師。伊篤という名での具体的な活動時期は確認中。",
+      "stance": "1864年に伊篤へ改名したとされる医師。1865年の名前の使用と診療の状況は確認中。",
       "importance": "史料によって異なる名前の表記をつなぐ。",
       "evidence": {
         "sourceIds": [
           "seiyo_ine_timeline",
           "ndl_portrait_ine"
         ],
-        "reviewStatus": "needs_review"
+        "reviewStatus": "needs_review",
+        "note": "西予市年表の1864年改名とNDLの別称・医師経歴を根拠とする。1865年の伊篤名の署名・診療記録は未確認。表示名は従来の楠本伊篤を維持するが、改名年だけで実使用期間を確定しない。当該年の日付付き署名・診療記録が確認できた場合に再検討する。"
       }
     },
     {
@@ -6887,7 +6890,7 @@
       "displayName": "楠本伊篤",
       "role": "蘭方産科医",
       "factionId": "medicine-learning",
-      "stance": "幕末から明治にかけて医療に携わる。時点ごとの居所や診療の細部は確認中。",
+      "stance": "蘭方産科を学んだ医師。1867〜69年の居所・診療と、伊篤という名の使用時期は確認中。",
       "importance": "政局の変化と並行する医療活動への入口。",
       "evidence": {
         "sourceIds": [
@@ -6895,7 +6898,7 @@
           "seiyo_ine_timeline"
         ],
         "reviewStatus": "needs_review",
-        "note": "1870年以後の東京での開業や宮中の仕事を、この期間の現職として扱わない。"
+        "note": "1867〜69年の各時点の居所・継続診療・伊篤名の実使用期間は未確定。西予市年表3頁の1869年条には大坂移住・同年9月の襲撃後の大村益次郎看護の記載があるが、箱館戦争終結までの各時点へ遡及しない。1870年以後の東京開業・宮中の仕事もこの期間の現職として扱わない。表示名は従来の楠本伊篤を維持し、当該期間の日付付き居住・診療記録や署名が確認できた場合に再検討する。"
       }
     },
     {
